@@ -165,7 +165,17 @@
   .watch { grid-template-columns: repeat(auto-fill, minmax(min(240px, 100%), 1fr)); }
   .map { grid-template-columns: repeat(auto-fill, minmax(min(180px, 100%), 1fr)); }
   .section { margin-top: 26px; }
-  .stat { display: flex; justify-content: space-between; gap: 12px; border-bottom: 1px dotted var(--line); padding: 7px 0; }
+  .stat { display: flex; justify-content: space-between; gap: 12px; width: 100%; background: transparent; border: 0; border-bottom: 1px dotted var(--line); padding: 7px 0; text-align: left; cursor: pointer; }
+  .stat.on { outline: 1px solid var(--green); }
+  .break { color: var(--dim); font-size: 12px; margin: 6px 0 0; }
+  .fold-btn, .more, .legend-btn { width: 100%; display: flex; justify-content: space-between; gap: 8px; background: transparent; border: 1px solid var(--line); color: var(--ink); padding: 8px; margin: 6px 0; text-align: left; }
+  .fold-btn span, .sev { font-family: "IBM Plex Mono", ui-monospace, monospace; }
+  .fold-body { margin: 0 0 8px; }
+  .legend { display: flex; flex-wrap: wrap; gap: 12px; color: var(--dim); font-size: 12px; margin: 8px 0; }
+  .legend i { margin-right: 4px; }
+  .led.off { background: transparent; box-shadow: none; border: 1px solid var(--dim); }
+  #tip { position: fixed; z-index: 60; max-width: 240px; background: #000; color: var(--bright); border: 1px solid var(--green); padding: 6px 8px; font-size: 12px; pointer-events: none; display: none; }
+  #tip a { pointer-events: auto; }
   .stat b { color: var(--green); }
   .stat b.off { background: var(--green); color: #000; padding: 0 4px; }
   .sev { display: inline-block; padding: 0 6px; letter-spacing: 0.12em; font-size: 12px; }
@@ -324,9 +334,10 @@
   <p class="foot" id="foot"></p>
   <p class="err" id="errs"></p>
 </div>
+<div id="tip" role="tooltip"></div>
 <script>
 /*__DATA__*/
-const state = { q: "", tag: "", tab: "ledger", range: "all", field: "" };
+const state = { q: "", tag: "", tab: "ledger", range: "all", field: "", focus: "", open: {}, more: {}, assetsOff: [] };
 
 function ageHours(item) {
   const stamp = Date.parse(item && item.published || "");
@@ -344,18 +355,66 @@ function inRange(item) {
   if (!state.range || state.range === "all") return true;
   return bucketOf(item) === state.range;
 }
+function watchIds() {
+  const ids = new Set();
+  (DESK.sources || []).forEach((src) => {
+    if (!src.offline && ageDays(src.lastDate) <= 14) ids.add(src.id);
+  });
+  return ids;
+}
+function focusMatch(item) {
+  if (!state.focus) return true;
+  if (state.focus === "new") return ageHours(item) <= 24;
+  if (state.focus === "escalating") return item.severity === "ACTION" || item.severity === "CRITICAL";
+  if (state.focus === "resolved") return item.kind === "page" || item.lane === "site";
+  if (state.focus === "watch") return watchIds().has(item.sourceId);
+  return true;
+}
 function passes(item) {
-  return matches(item) && inRange(item);
+  return matches(item) && inRange(item) && focusMatch(item);
+}
+function isOpen(id, fallback) {
+  if (Object.prototype.hasOwnProperty.call(state.open, id)) return !!state.open[id];
+  return !!fallback;
+}
+function remember() {
+  try {
+    localStorage.setItem("desk-ui", JSON.stringify({
+      open: state.open, more: state.more, focus: state.focus, range: state.range,
+      assetsOff: state.assetsOff, tab: state.tab, field: state.field
+    }));
+  } catch (err) { /* private mode */ }
+}
+function fold(id, title, body, fallback) {
+  const open = isOpen(id, fallback);
+  return `<div class="fold">
+    <button type="button" class="fold-btn" data-fold="${esc(id)}" aria-expanded="${open ? "true" : "false"}">${title}<span>${open ? "−" : "+"}</span></button>
+    ${open ? `<div class="fold-body">${body}</div>` : ""}
+  </div>`;
 }
 const RANGE_LABEL = { "24h": "Last 24 hours", "48h": "24 to 48 hours", "72h": "48 to 72 hours", "4d": "4+ days" };
-function groupedHtml(items, draw) {
+function groupedHtml(items, draw, opts) {
+  const options = opts || {};
   const keys = state.range === "all" ? ["24h", "48h", "72h", "4d"] : [state.range];
   let html = "";
+  let any = false;
   keys.forEach((key) => {
     const rows = items.filter((item) => bucketOf(item) === key);
     if (!rows.length) return;
-    html += `<h3 class="group">${esc(RANGE_LABEL[key])} · ${rows.length}</h3>` + rows.map(draw).join("");
+    any = true;
+    const id = (options.store || "feed") + "-" + key;
+    const limit = options.short || 0;
+    const expanded = !!state.more[id];
+    const visible = limit && !expanded ? rows.slice(0, limit) : rows;
+    let body = visible.map(draw).join("");
+    if (limit && rows.length > limit) {
+      body += `<button type="button" class="more" data-more="${esc(id)}">${expanded ? "Show less" : "Show more"} · ${rows.length}</button>`;
+    }
+    const heading = `${esc(RANGE_LABEL[key])} · ${rows.length}`;
+    if (options.collapse) html += fold(id, heading, body, key === "24h" && options.firstOpen);
+    else html += `<h3 class="group">${heading}</h3>${body}`;
   });
+  if (!any) return `<p class="empty">Nothing in this window yet. It builds up with each refresh.</p>`;
   return html;
 }
 
@@ -421,6 +480,28 @@ function row(item) {
 function empty(text) {
   return `<p class="empty">${esc(text)}</p>`;
 }
+function statusParts() {
+  const items = allItems();
+  const threats = ((DESK.threats || {}).items || []);
+  const heads = [];
+  ((DESK.markets || {}).regions || []).forEach((region) => (region.headlines || []).forEach((item) => heads.push(item)));
+  const science = ((DESK.science || {}).items || []);
+  const active = (DESK.sources || []).filter((src) => !src.offline && ageDays(src.lastDate) <= 14);
+  return {
+    new: [
+      ["Podcasts and posts", items.filter((item) => ageHours(item) <= 24).length],
+      ["Threats", threats.filter((item) => ageHours(item) <= 24).length],
+      ["Headlines", heads.filter((item) => ageHours(item) <= 24).length],
+      ["Frontier lab", science.filter((item) => ageHours(item) <= 24).length]
+    ],
+    watch: active.slice(0, 8).map((src) => [src.short || src.name, src.count || 0]),
+    escalating: [
+      ["ACTION", threats.filter((item) => item.severity === "ACTION").length],
+      ["CRITICAL", threats.filter((item) => item.severity === "CRITICAL").length]
+    ],
+    resolved: ((DESK.pages || []).filter((page) => !page.changed && page.status !== "error")).map((page) => [page.name, page.status || "unchanged"])
+  };
+}
 function renderStatus(items) {
   const desk = DESK;
   const threats = ((desk.threats || {}).items || []);
@@ -428,38 +509,73 @@ function renderStatus(items) {
   const onWatch = (desk.sources || []).filter((src) => !src.offline && ageDays(src.lastDate) <= 14).length;
   const escalating = threats.filter((item) => item.severity === "ACTION" || item.severity === "CRITICAL").length;
   const resolved = (desk.pages || []).filter((page) => !page.changed && page.status !== "error").length;
+  const parts = statusParts();
   const rows = [
-    ["New intel", String(newIntel), false],
-    ["On watch", String(onWatch || (desk.sources || []).length), false],
-    ["Escalating", String(escalating), escalating > 0],
-    ["Resolved", String(resolved), false]
+    ["new", "New intel", String(newIntel), false, parts.new],
+    ["watch", "On watch", String(onWatch || (desk.sources || []).length), false, parts.watch],
+    ["escalating", "Escalating", String(escalating), escalating > 0, parts.escalating],
+    ["resolved", "Resolved", String(resolved), false, parts.resolved]
   ];
-  document.getElementById("status").innerHTML = rows.map(([name, value, off]) =>
-    `<div class="stat"><span>${esc(name)}</span><b class="${off ? "off" : ""}">${esc(value)}</b></div>`
-  ).join("");
+  const buttons = rows.map(([key, name, value, off, bits]) => {
+    const title = bits.map(([label, count]) => `${label}: ${count}`).join("\n");
+    return `<button type="button" class="stat${state.focus === key ? " on" : ""}" data-focus="${key}" title="${esc(title)}"><span>${esc(name)}</span><b class="${off ? "off" : ""}">${esc(value)}</b></button>`;
+  }).join("");
+  const openBits = (rows.find((row) => row[0] === state.focus) || [])[4] || [];
+  const detail = state.focus ? `<p class="break">${openBits.map(([label, count]) => `${esc(label)} ${esc(String(count))}`).join(" · ")}</p>` : "";
+  document.getElementById("status").innerHTML = buttons + detail;
 }
 function renderToday(items) {
   const rows = items.filter(passes).slice(0, 6);
   const host = document.getElementById("today");
   host.innerHTML = rows.length ? `<div class="stack">${rows.map(card).join("")}</div>` : empty("Nothing in that window.");
 }
-function renderWatch(items) {
-  const latest = new Map();
-  items.filter(passes).forEach((item) => {
-    if (state.range === "all" && ageHours(item) > 72) return;
-    if (!latest.has(item.sourceId)) latest.set(item.sourceId, item);
-  });
-  const cards = [...latest.values()].slice(0, 8).map(card).join("");
-  document.getElementById("watch").innerHTML = cards || empty("No source in that window.");
+function rankOf(item) {
+  return { STANDBY: 0, ALERT: 1, ACTION: 2, CRITICAL: 3 }[(item.severity || "STANDBY").toUpperCase()] || 0;
+}
+function watchPool() {
+  const pool = [];
+  const push = (item, section, severity) => {
+    if (!item || !safeUrl(item.url)) return;
+    pool.push(Object.assign({}, item, { severity: severity || item.severity || "STANDBY", section }));
+  };
+  allItems().forEach((item) => push(item, item.lane === "x" ? "X" : "Podcasts", "STANDBY"));
+  ((DESK.threats || {}).items || []).forEach((item) => push(item, "World threat board", item.severity));
+  ((DESK.markets || {}).regions || []).forEach((region) => (region.headlines || []).forEach((item) => push(item, region.name + " headlines", "STANDBY")));
+  ((DESK.science || {}).items || []).forEach((item) => push(item, "Frontier lab", item.review === "PEER-REVIEWED" ? "ALERT" : "STANDBY"));
+  const seen = new Set();
+  return pool.filter((item) => {
+    if (!passes(item)) return false;
+    if (seen.has(item.url)) return false;
+    seen.add(item.url);
+    return true;
+  }).sort((a, b) => rankOf(b) - rankOf(a) || Date.parse(b.published || 0) - Date.parse(a.published || 0)).slice(0, 10);
+}
+function renderWatch() {
+  const cards = watchPool().map((item) => {
+    const sev = (item.severity || "STANDBY").toLowerCase();
+    return card(item).replace("<article class=\"card\">", `<article class="card"><span class="sev sev-${sev}">${esc(item.severity || "STANDBY")}</span> <span class="meta">${esc(item.section)}</span>`);
+  }).join("");
+  document.getElementById("watch").innerHTML = cards || empty("Nothing at that level in this window.");
 }
 function renderChanged() {
   const host = document.getElementById("changed");
-  if (DESK.baseline) {
-    host.innerHTML = empty("Baseline capture. The next refresh lists only what is new since this run.");
-    return;
-  }
-  const rows = (DESK.changes || []).filter((item) => safeUrl(item.url)).filter(passes);
-  host.innerHTML = rows.length ? `<div class="list">${rows.map(row).join("")}</div>` : empty("No new items since the last run.");
+  const doc = DESK.changes || {};
+  const groups = doc.groups || {};
+  const counts = doc.counts || {};
+  const when = doc.sinceLabel || DESK.updated || "the previous run";
+  const blocks = [
+    ["new", "New items"],
+    ["severity", "Severity changes"],
+    ["pages", "Page changes"],
+    ["prices", "Price moves"]
+  ];
+  const body = blocks.map(([key, label]) => {
+    const rows = (groups[key] || []).filter((item) => !state.q || matches(item));
+    const count = counts[key] != null ? counts[key] : rows.length;
+    const inner = rows.length ? rows.map(row).join("") : `<p class="meta">None this refresh.</p>`;
+    return fold("chg-" + key, `${esc(label)} · ${count}`, inner, key === "new");
+  }).join("");
+  host.innerHTML = `<p class="sub">Changed since last refresh at ${esc(when)}</p>${body}`;
 }
 function renderMap() {
   const nodes = (DESK.sources || []).map((src) => {
@@ -475,7 +591,7 @@ function renderMap() {
       <div class="meta">${esc(String(src.count || 0))} in window</div>
     </a>`;
   }).join("");
-  document.getElementById("map").innerHTML = nodes || empty("No sources on file.");
+  document.getElementById("map").innerHTML = `<p class="legend"><span><i class="led live"></i>Filed in the last 7 days</span><span><i class="led stale"></i>Older than 7 days</span><span><i class="led off"></i>Feed offline</span></p>` + (nodes || empty("No sources on file."));
   const pages = (DESK.pages || []).map((page) => {
     const url = safeUrl(page.finalUrl || page.url);
     if (!url) return "";
@@ -516,16 +632,13 @@ function renderChips(items) {
   });
 }
 function renderCasebook(items) {
-  const host = document.getElementById("casebook");
-  const html = groupedHtml(items.filter(matches).slice(0, 80), row);
-  host.innerHTML = html || empty("No briefs in that window.");
+  document.getElementById("casebook").innerHTML = groupedHtml(items.filter(matches), row, { collapse: true, short: 3, store: "brief", firstOpen: true });
 }
 function renderPanel(items) {
   const host = document.getElementById("panel");
   const matched = items.filter(matches);
   if (state.tab === "ledger") {
-    const html = groupedHtml(matched, row);
-    host.innerHTML = html ? `<div class="list">${html}</div>` : empty("Situation log is empty for that filter.");
+    host.innerHTML = `<div class="list">${groupedHtml(matched, row, { collapse: true, store: "log", firstOpen: true })}</div>`;
     return;
   }
   if (state.tab === "archive") {
@@ -636,20 +749,36 @@ function renderMarkets() {
       return `<div class="venue"><div><b>${esc(venue.name)}</b> ${esc(venue.indexName)}<div class="meta">${esc(status.hours)}</div></div><div><span class="${status.open ? "pill-open" : "pill-closed"}">${esc(status.why)}</span><div>${level} <span class="meta">${esc(change)}</span></div></div></div>`;
     }).join("");
     const headlines = (region.headlines || []).filter(passes);
-    const heads = headlines.length ? headlines.map(row).join("") : `<p class="meta">No headlines in that window.</p>`;
+    const heads = headlines.length
+      ? headlines.slice(0, 8).map(row).join("")
+      : `<p class="meta">No headlines in this window yet. It builds up with each refresh.</p>`;
     return `<article class="card"><h3>${esc(region.name)}</h3>${venues}${heads}</article>`;
   }).join("");
   document.getElementById("markets").innerHTML = html || empty("Market feeds have not been loaded.");
 }
+function threatCard(item) {
+  const sev = item.severity || "STANDBY";
+  return row(item).replace("<article class=\"row\">", `<article class="row"><span class="sev sev-${sev.toLowerCase()}">${esc(sev)}</span> `);
+}
 function renderThreats() {
   const rows = ((DESK.threats || {}).items || []).filter(passes);
-  const host = document.getElementById("threats");
-  const nwsNote = rows.some((item) => item.kind === "nws") ? "" : `<p class="note-plain">No active NWS alert for Franklin / Williamson County, Tennessee, or the tornado, flood, and hurricane filters on this run.</p>`;
-  host.innerHTML = nwsNote + (rows.length ? groupedHtml(rows, (item) => {
-    const sev = item.severity || "STANDBY";
-    const base = row(item);
-    return base.replace("<article class=\"row\">", `<article class="row"><span class="sev sev-${sev.toLowerCase()}">${esc(sev)}</span> `);
-  }) : empty("No threats in that window."));
+  const local = (item) => item.kind === "nws" && (item.tags || []).includes("tennessee");
+  const cats = [
+    ["natural", "Natural disasters", (item) => ["quake", "storm", "gdacs"].includes(item.kind) || (item.kind === "nws" && !local(item))],
+    ["war", "War & conflict", (item) => item.kind === "conflict"],
+    ["health", "Pandemics & outbreaks", (item) => item.kind === "who" || item.kind === "cdc"],
+    ["space", "Space & existential", (item) => ["neo", "sentry", "clock"].includes(item.kind)],
+    ["tn", "Local Tennessee alerts", local]
+  ];
+  const rank = { STANDBY: 0, ALERT: 1, ACTION: 2, CRITICAL: 3 };
+  const html = cats.map(([id, name, test]) => {
+    const mine = rows.filter(test);
+    const top = mine.reduce((best, item) => rank[item.severity] > rank[best] ? item.severity : best, "STANDBY");
+    const body = mine.length ? mine.map(threatCard).join("") : `<p class="meta">None in this window.</p>`;
+    return fold("threat-" + id, `${esc(name)} · ${mine.length} · <span class="sev sev-${top.toLowerCase()}">${esc(top)}</span>`, body, false);
+  }).join("");
+  const nwsNote = rows.some(local) ? "" : `<p class="note-plain">No active NWS alert for Franklin / Williamson County on this run.</p>`;
+  document.getElementById("threats").innerHTML = nwsNote + html;
 }
 function project(lat, lon) {
   return [(Number(lon) + 180) * (800 / 360), (90 - Number(lat)) * (400 / 180)];
@@ -682,55 +811,68 @@ function renderImpact() {
   renderTimeline(threats);
 }
 function renderTimeline(events) {
+  const host = document.getElementById("timeline");
   const series = ((DESK.assets || {}).series || []).filter((asset) => (asset.points || []).length >= 2);
   if (!series.length) {
-    document.getElementById("timeline").innerHTML = empty("No price history to plot.");
+    host.innerHTML = empty("No price history to plot.");
     return;
   }
   const width = 640;
-  const height = 160;
-  const lines = series.map((asset, index) => {
+  const height = 180;
+  const left = 36;
+  const right = 12;
+  const top = 16;
+  const bottom = 28;
+  const legend = series.map((asset) => {
+    const off = state.assetsOff.includes(asset.id);
+    return `<button type="button" class="legend-btn" data-asset="${esc(asset.id)}" aria-pressed="${off ? "false" : "true"}">${off ? "○" : "●"} ${esc(asset.name)}</button>`;
+  }).join("");
+  const visible = series.filter((asset) => !state.assetsOff.includes(asset.id));
+  const lines = visible.map((asset) => {
     const pts = asset.points.slice(-30);
     const start = Number(pts[0].price) || 1;
     const coords = pts.map((point, i) => {
-      const x = (i / (pts.length - 1)) * (width - 20) + 10;
+      const x = left + (i / (pts.length - 1)) * (width - left - right);
       const pct = ((Number(point.price) / start) - 1) * 100;
-      const y = 80 - Math.max(-70, Math.min(70, pct * 2));
-      return `${x.toFixed(1)},${y.toFixed(1)}`;
-    }).join(" ");
-    const alpha = 0.45 + (index / series.length) * 0.55;
-    return `<polyline fill="none" stroke="#39ff14" stroke-opacity="${alpha.toFixed(2)}" stroke-width="1.4" points="${coords}"><title>${esc(asset.name)}</title></polyline>`;
+      const y = 90 - Math.max(-60, Math.min(60, pct * 1.6));
+      return { x, y, point, pct, asset };
+    });
+    const poly = coords.map((dot) => `${dot.x.toFixed(1)},${dot.y.toFixed(1)}`).join(" ");
+    const dots = coords.map((dot) => `<circle cx="${dot.x.toFixed(1)}" cy="${dot.y.toFixed(1)}" r="3.2" fill="#39ff14" data-tip="${esc(asset.name)} · ${esc(dot.point.date)} · ${esc(fmtNum(dot.point.price))} (${dot.pct >= 0 ? "+" : ""}${dot.pct.toFixed(1)}% from start)"></circle>`).join("");
+    return `<polyline fill="none" stroke="#39ff14" stroke-width="1.4" points="${poly}"></polyline>${dots}`;
   }).join("");
-  const marks = events.slice(0, 24).map((item) => {
+  const newest = Date.now();
+  const oldest = newest - 30 * 86400000;
+  const marks = events.slice(0, 20).map((item) => {
     const t = Date.parse(item.published || "");
-    if (!Number.isFinite(t)) return "";
-    const newest = Date.now();
-    const oldest = newest - 30 * 86400000;
-    if (t < oldest || t > newest) return "";
-    const x = ((t - oldest) / (newest - oldest)) * (width - 20) + 10;
-    return `<line x1="${x.toFixed(1)}" y1="12" x2="${x.toFixed(1)}" y2="148" stroke="#1f7a32" stroke-width="1"><title>${esc(item.title || "")}</title></line>`;
+    if (!Number.isFinite(t) || t < oldest || t > newest) return "";
+    const x = left + ((t - oldest) / (newest - oldest)) * (width - left - right);
+    const url = safeUrl(item.url);
+    const tip = esc(item.title || "Event");
+    return `<a href="${esc(url)}" target="_blank" rel="noopener" data-tip="${tip}"><line x1="${x.toFixed(1)}" y1="${top}" x2="${x.toFixed(1)}" y2="${height - bottom}" stroke="#1f7a32" stroke-width="6" stroke-opacity="0.35"></line><line x1="${x.toFixed(1)}" y1="${top}" x2="${x.toFixed(1)}" y2="${height - bottom}" stroke="#7dff6b" stroke-width="1"></line></a>`;
   }).join("");
-  document.getElementById("timeline").innerHTML = `<h3 class="group">30-day overlay</h3><p class="note-plain">Each line is percent change from the first stored close. Vertical marks are located events in the selected window. Not a forecast.</p><svg class="plot" viewBox="0 0 ${width} ${height}">${marks}${lines}</svg>`;
+  const firstDate = (visible[0] && visible[0].points.slice(-30)[0].date) || "";
+  const lastDate = (visible[0] && visible[0].points.slice(-1)[0].date) || "";
+  host.innerHTML = `<h3 class="group">30-day overlay</h3><p class="note-plain">Percent change of each asset from its first stored close, with located events as vertical marks. Click a mark for the event. Not a forecast.</p><div class="legend">${legend}</div><svg class="plot" viewBox="0 0 ${width} ${height}" role="img" aria-label="Asset percent change versus events"><text x="4" y="96" fill="#1f7a32" font-size="10" transform="rotate(-90 8 96)">% from start</text><text x="${left}" y="${height - 8}" fill="#1f7a32" font-size="10">${esc(firstDate)}</text><text x="${width - 90}" y="${height - 8}" fill="#1f7a32" font-size="10">${esc(lastDate)}</text>${marks}${lines}</svg>`;
+}
+function labCard(item) {
+  const review = item.review || "NEWS";
+  const klass = review === "PEER-REVIEWED" ? "sev-action" : review === "PREPRINT" ? "sev-alert" : "sev-standby";
+  return row(item).replace("<article class=\"row\">", `<article class="row"><span class="sev ${klass}">${esc(review)}</span> `);
 }
 function renderLabs() {
-  const fields = ["physics", "propulsion", "biomedical", "quantum", "technology", "ai"];
-  const items = ((DESK.science || {}).items || []).filter(passes).filter((item) => !state.field || item.field === state.field);
-  document.getElementById("fields").innerHTML = ["", ...fields].map((field) => {
-    const label = field || "all fields";
-    const on = state.field === field;
-    return `<button type="button" data-field="${esc(field)}" class="${on ? "on" : ""}">${esc(label)}</button>`;
+  const names = { physics: "Physics", propulsion: "Propulsion", biomedical: "Biomedical", quantum: "Quantum", technology: "Technology", ai: "AI" };
+  const items = ((DESK.science || {}).items || []).filter(passes);
+  const html = Object.keys(names).map((field) => {
+    const mine = items.filter((item) => item.field === field).sort((a, b) => Date.parse(b.published || 0) - Date.parse(a.published || 0));
+    const top = mine.slice(0, 3).map((item) => esc(item.title)).join(" · ");
+    const id = "lab-" + field;
+    const open = !!state.more[id];
+    const shown = open ? mine : mine.slice(0, 3);
+    const body = (shown.length ? shown.map(labCard).join("") : `<p class="meta">None in this window.</p>`)
+      + (mine.length > 3 ? `<button type="button" class="more" data-more="${id}">${open ? "Show less" : "Show more"} · ${mine.length}</button>` : "");
+    return fold(id, `${esc(names[field])} · ${mine.length}<span class="meta">${top ? " · " + top : ""}</span>`, body, false);
   }).join("");
-  document.getElementById("fields").querySelectorAll("button").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      state.field = btn.dataset.field || "";
-      render();
-    });
-  });
-  const html = groupedHtml(items, (item) => {
-    const review = item.review || "NEWS";
-    const klass = review === "PEER-REVIEWED" ? "sev-action" : review === "PREPRINT" ? "sev-alert" : "sev-standby";
-    return row(item).replace("<article class=\"row\">", `<article class="row"><span class="sev ${klass}">${esc(review)}</span> <span class="meta">${esc(item.field || "")}</span> `);
-  });
   document.getElementById("labs").innerHTML = html || empty("No lab items in that window.");
 }
 function renderBoards() {
@@ -760,6 +902,7 @@ function render() {
   renderCasebook(items);
   renderPanel(items);
   renderBoards();
+  bindDesk();
   const errs = desk.errors || [];
   document.getElementById("errs").textContent = errs.length ? errs.join(" · ") : "";
   const xReason = (desk.x && desk.x.reason) || "";
@@ -771,11 +914,77 @@ function render() {
   document.getElementById("foot").textContent =
     `Times are America/Chicago. Notes are official descriptions only. Market levels are blank when a feed does not answer. Asset notes are historical patterns, not advice. ${xLine} Refresh opens the GitHub Action; choose Run workflow there.`;
 }
+function showTip(event) {
+  const tip = document.getElementById("tip");
+  const text = event.currentTarget.getAttribute("data-tip");
+  if (!tip || !text) return;
+  tip.textContent = text;
+  tip.style.display = "block";
+  tip.style.left = Math.min(window.innerWidth - 250, event.clientX + 12) + "px";
+  tip.style.top = Math.min(window.innerHeight - 80, event.clientY + 12) + "px";
+}
+function hideTip() {
+  const tip = document.getElementById("tip");
+  if (tip) tip.style.display = "none";
+}
+function bindDesk() {
+  document.querySelectorAll("[data-fold]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      state.open[btn.dataset.fold] = btn.getAttribute("aria-expanded") !== "true";
+      remember();
+      render();
+    });
+  });
+  document.querySelectorAll("[data-more]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      state.more[btn.dataset.more] = !state.more[btn.dataset.more];
+      remember();
+      render();
+    });
+  });
+  document.querySelectorAll("[data-focus]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      state.focus = state.focus === btn.dataset.focus ? "" : btn.dataset.focus;
+      remember();
+      render();
+    });
+  });
+  document.querySelectorAll("[data-asset]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const id = btn.dataset.asset;
+      state.assetsOff = state.assetsOff.includes(id) ? state.assetsOff.filter((item) => item !== id) : state.assetsOff.concat(id);
+      remember();
+      render();
+    });
+  });
+  document.querySelectorAll("[data-tip]").forEach((node) => {
+    node.addEventListener("mouseenter", showTip);
+    node.addEventListener("mousemove", showTip);
+    node.addEventListener("mouseleave", hideTip);
+    node.addEventListener("click", showTip);
+  });
+}
 function boot() {
   if (typeof DESK === "undefined") {
     document.getElementById("app").insertAdjacentHTML("beforeend", "<p class='empty'>This is the template. Run python3 build.py.</p>");
     return;
   }
+  try {
+    const saved = JSON.parse(localStorage.getItem("desk-ui") || "{}");
+    state.open = saved.open || {};
+    state.more = saved.more || {};
+    state.focus = saved.focus || "";
+    state.assetsOff = saved.assetsOff || [];
+    if (saved.range) state.range = saved.range;
+    if (saved.tab) state.tab = saved.tab;
+    if (saved.field) state.field = saved.field;
+  } catch (err) { /* ignore stored state */ }
+  document.querySelectorAll("#ranges button").forEach((btn) => btn.classList.toggle("on", btn.dataset.range === state.range));
+  document.querySelectorAll(".tabs button").forEach((btn) => {
+    const on = btn.dataset.tab === state.tab;
+    btn.classList.toggle("on", on);
+    btn.setAttribute("aria-selected", on ? "true" : "false");
+  });
   document.getElementById("q").addEventListener("input", (event) => {
     state.q = event.target.value.trim().toLowerCase();
     render();
