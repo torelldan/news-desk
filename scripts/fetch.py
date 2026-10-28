@@ -27,6 +27,15 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 SOURCES_PATH = Path(__file__).resolve().parent / "sources.json"
 UA = "news-desk/1.0 (+https://github.com/torelldan/news-desk)"
+BROWSER_UA = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) "
+    "Chrome/131.0.0.0 Safari/537.36"
+)
+BROWSER_HEADERS = {
+    "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml, */*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.9",
+}
 ITUNES = "{http://www.itunes.com/dtds/podcast-1.0.dtd}"
 DC = "{http://purl.org/dc/elements/1.1/}"
 CONTENT = "{http://purl.org/rss/1.0/modules/content/}encoded"
@@ -48,10 +57,13 @@ def save_json(path: Path, obj) -> None:
     tmp.replace(path)
 
 
-def get_bytes(url: str, timeout: int = 45, headers: dict | None = None) -> tuple[bytes, str, int]:
+def get_bytes(url: str, timeout: int = 45, headers: dict | None = None, user_agent: str | None = None) -> tuple[bytes, str, int]:
     last = None
     for attempt in range(2):
-        req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "*/*", **(headers or {})})
+        base = {"User-Agent": user_agent or UA, "Accept": "*/*"}
+        if headers:
+            base.update(headers)
+        req = urllib.request.Request(url, headers=base)
         try:
             with urllib.request.urlopen(req, timeout=timeout) as resp:
                 return resp.read(), resp.geturl(), getattr(resp, "status", 200)
@@ -126,8 +138,8 @@ def stamp_item(source_id, source_name, lane, kind, title, guest, note, url, when
     return item
 
 
-def fetch_feed_items(spec: dict, lane: str, kind: str, now: datetime) -> tuple[list[dict], str, str]:
-    raw, _final, _status = get_bytes(spec["feed"], timeout=60)
+def fetch_feed_items(spec: dict, lane: str, kind: str, now: datetime, user_agent: str | None = None, extra_headers: dict | None = None) -> tuple[list[dict], str, str]:
+    raw, _final, _status = get_bytes(spec["feed"], timeout=60, headers=extra_headers, user_agent=user_agent)
     root = parse_xml(raw)
     channel = root.find("channel")
     if channel is None:
@@ -248,29 +260,67 @@ def fetch_huberman(spec: dict, now: datetime, cache: dict) -> tuple[list[dict], 
     return items, cache
 
 
+def http_error_body(err: urllib.error.HTTPError) -> str:
+    try:
+        raw = err.read()
+    except Exception:
+        return ""
+    if isinstance(raw, bytes):
+        return raw.decode("utf-8", "replace")
+    return str(raw or "")
+
+
+def x_offline(info: dict) -> dict:
+    return {
+        "online": False,
+        "note": "X feed offline",
+        "reason": info.get("reason") or "",
+        "status": info.get("status"),
+        "title": info.get("title") or "",
+        "detail": info.get("detail") or "",
+    }
+
+
 def x_get(path: str, token: str, params: dict) -> dict:
+    """Public X API call. Authorization is a Bearer header and is never logged."""
     safe = d.assert_public_x_path(path)
     query = urllib.parse.urlencode(params)
     url = X_API + safe + ("?" + query if query else "")
-    raw, _final, _status = get_bytes(url, timeout=30, headers={"Authorization": f"Bearer {token}"})
+    raw, _final, _status = get_bytes(url, timeout=30, headers={
+        "Authorization": f"Bearer {token}",
+        "Accept": "application/json",
+    })
     return json.loads(raw.decode("utf-8"))
 
 
 def fetch_x(accounts: list[dict], token: str, now: datetime, retain_days: int) -> tuple[list[dict], dict]:
+    token = d.normalize_bearer(token)
     if not token:
         print("  X_BEARER_TOKEN is not set. Skipping X.")
         return [], {"online": False, "note": "X feed offline", "reason": "missing X_BEARER_TOKEN"}
     cutoff_date = (now.date() - timedelta(days=retain_days)).isoformat()
     handles = [a["handle"] for a in accounts]
     by_handle = {a["handle"].lower(): a for a in accounts}
+    found_users = []
     try:
-        found = x_get("/2/users/by", token, {"usernames": ",".join(handles)})
+        for batch in d.username_batches(handles):
+            found = x_get("/2/users/by", token, {"usernames": ",".join(batch)})
+            found_users.extend(found.get("data") or [])
+            for item in found.get("errors") or []:
+                if isinstance(item, dict):
+                    print(f"  X user skip: {item.get('value') or ''} {item.get('title') or item.get('detail') or ''}".rstrip())
+    except urllib.error.HTTPError as err:
+        info = d.describe_x_error(err.code, http_error_body(err), token)
+        print(f"  X lookup failed: {info['reason']}")
+        return [], x_offline(info)
     except Exception as err:
-        print(f"  X lookup failed: {err}")
-        return [], {"online": False, "note": "X feed offline", "reason": "lookup failed"}
+        reason = d.scrub_secret(str(err), token)
+        print(f"  X lookup failed: {reason}")
+        return [], {"online": False, "note": "X feed offline", "reason": reason}
     posts: list[dict] = []
     errors = []
-    for user in found.get("data") or []:
+    tweet_failure = None
+    for user in found_users:
         handle = user.get("username") or ""
         spec = by_handle.get(handle.lower())
         uid = str(user.get("id") or "")
@@ -286,9 +336,16 @@ def fetch_x(accounts: list[dict], token: str, now: datetime, retain_days: int) -
                     "tweet.fields": "created_at,referenced_tweets,note_tweet",
                 },
             )
+        except urllib.error.HTTPError as err:
+            info = d.describe_x_error(err.code, http_error_body(err), token)
+            tweet_failure = info
+            errors.append(f"@{handle}: {info['reason']}")
+            print(f"  X @{handle} failed: {info['reason']}")
+            continue
         except Exception as err:
-            errors.append(f"@{handle}: {err}")
-            print(f"  X @{handle} failed: {err}")
+            reason = d.scrub_secret(str(err), token)
+            errors.append(f"@{handle}: {reason}")
+            print(f"  X @{handle} failed: {reason}")
             continue
         for tweet in payload.get("data") or []:
             refs = tweet.get("referenced_tweets") or []
@@ -311,9 +368,10 @@ def fetch_x(accounts: list[dict], token: str, now: datetime, retain_days: int) -
                 d.clean_note(text, limit=2000), url, created, True, [f"@{handle}"],
             ))
     status = {"online": True, "note": "", "reason": "", "errors": errors}
-    if errors and not posts and not (found.get("data") or []):
-        status = {"online": False, "note": "X feed offline", "reason": "; ".join(errors)}
-    print(f"  X: {len(posts)} public posts, accounts {len(found.get('data') or [])}")
+    if found_users and errors and not posts and len(errors) >= len(found_users):
+        status = x_offline(tweet_failure or {"reason": errors[0]})
+        status["reason"] = "; ".join(errors)
+    print(f"  X: {len(posts)} public posts, accounts {len(found_users)}")
     return posts, status
 
 
@@ -367,6 +425,30 @@ def fetch_pages(spec: dict, now: datetime, previous: dict) -> tuple[dict, list[d
         rows.append(row)
     print("  pages: " + ", ".join(f"{r['id']}={r['status']}" for r in rows))
     return {"checkedAt": now.isoformat(timespec="seconds"), "pages": rows}, changes
+
+
+def fetch_carota(spec: dict, now: datetime) -> tuple[list[dict], str, str]:
+    """Substack often answers 403 to a bot UA from GitHub Actions. Try a browser UA, then fallback feed URLs."""
+    last = None
+    for url in d.carota_feed_candidates(spec.get("feed") or ""):
+        attempt = dict(spec)
+        attempt["feed"] = url
+        try:
+            items, home, channel = fetch_feed_items(
+                attempt, "substack", "substack", now,
+                user_agent=BROWSER_UA, extra_headers=BROWSER_HEADERS,
+            )
+            if url != spec.get("feed"):
+                print(f"  carota used fallback feed {url}")
+            return items, home, channel
+        except urllib.error.HTTPError as err:
+            last = err
+            print(f"  carota {url} HTTP {err.code} {err.reason}")
+            if err.code not in (401, 403, 429):
+                raise
+    if last is not None:
+        raise last
+    raise RuntimeError("Carota feed URL missing")
 
 
 def keep_source(previous: list[dict], source_id: str) -> list[dict]:
@@ -441,7 +523,7 @@ def main() -> int:
     carota["skipTitle"] = []
     carota["rejectChannel"] = []
     try:
-        posts, home, channel_title = fetch_feed_items(carota, "substack", "substack", now)
+        posts, home, channel_title = fetch_carota(carota, now)
         signals.extend(posts)
         homes[carota["id"]] = (home or carota["home"], channel_title)
         content_ok += 1
@@ -543,7 +625,14 @@ def main() -> int:
         "errors": errors,
         "retainDays": retain,
         "today": now.strftime("%Y-%m-%d"),
-        "x": {"online": bool(x_status.get("online")), "note": x_status.get("note") or "", "reason": x_status.get("reason") or ""},
+        "x": {
+            "online": bool(x_status.get("online")),
+            "note": x_status.get("note") or "",
+            "reason": x_status.get("reason") or "",
+            "status": x_status.get("status"),
+            "title": x_status.get("title") or "",
+            "detail": x_status.get("detail") or "",
+        },
     }
     save_json(DATA / "episodes.json", episodes)
     save_json(DATA / "signals.json", signals)
