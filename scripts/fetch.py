@@ -10,6 +10,8 @@ from __future__ import annotations
 import json
 import os
 import re
+import shutil
+import subprocess
 import sys
 import time
 import urllib.error
@@ -140,6 +142,10 @@ def stamp_item(source_id, source_name, lane, kind, title, guest, note, url, when
 
 def fetch_feed_items(spec: dict, lane: str, kind: str, now: datetime, user_agent: str | None = None, extra_headers: dict | None = None) -> tuple[list[dict], str, str]:
     raw, _final, _status = get_bytes(spec["feed"], timeout=60, headers=extra_headers, user_agent=user_agent)
+    return fetch_feed_from_raw(spec, lane, kind, now, raw)
+
+
+def fetch_feed_from_raw(spec: dict, lane: str, kind: str, now: datetime, raw: bytes) -> tuple[list[dict], str, str]:
     root = parse_xml(raw)
     channel = root.find("channel")
     if channel is None:
@@ -281,6 +287,23 @@ def x_offline(info: dict) -> dict:
     }
 
 
+def tweet_skip_reason(tweet: dict, cutoff_date: str) -> str | None:
+    """Why a public post is left out. None means keep it. Retweets and replies are never kept."""
+    refs = tweet.get("referenced_tweets") or []
+    kinds = {str(ref.get("type") or "") for ref in refs if isinstance(ref, dict)}
+    text = ((tweet.get("note_tweet") or {}).get("text")) or tweet.get("text") or ""
+    if "retweeted" in kinds or "replied_to" in kinds or str(text).lower().startswith("rt @"):
+        return "repost"
+    created = d.parse_pubdate(tweet.get("created_at") or "")
+    if created is None:
+        return "nodate"
+    if created.strftime("%Y-%m-%d") < cutoff_date:
+        return "old"
+    if not str(tweet.get("id") or "").isdigit():
+        return "nolink"
+    return None
+
+
 def x_get(path: str, token: str, params: dict) -> dict:
     """Public X API call. Authorization is a Bearer header and is never logged."""
     safe = d.assert_public_x_path(path)
@@ -336,6 +359,16 @@ def fetch_x(accounts: list[dict], token: str, now: datetime, retain_days: int) -
                     "tweet.fields": "created_at,referenced_tweets,note_tweet",
                 },
             )
+            if not payload.get("data"):
+                print(f"  X @{handle}: timeline empty with exclude, retrying without it")
+                payload = x_get(
+                    f"/2/users/{uid}/tweets",
+                    token,
+                    {
+                        "max_results": "10",
+                        "tweet.fields": "created_at,referenced_tweets,note_tweet",
+                    },
+                )
         except urllib.error.HTTPError as err:
             info = d.describe_x_error(err.code, http_error_body(err), token)
             tweet_failure = info
@@ -347,26 +380,30 @@ def fetch_x(accounts: list[dict], token: str, now: datetime, retain_days: int) -
             errors.append(f"@{handle}: {reason}")
             print(f"  X @{handle} failed: {reason}")
             continue
-        for tweet in payload.get("data") or []:
-            refs = tweet.get("referenced_tweets") or []
-            kinds = {str(ref.get("type") or "") for ref in refs if isinstance(ref, dict)}
-            if "retweeted" in kinds or "replied_to" in kinds:
+        rows = payload.get("data") or []
+        dropped = {"repost": 0, "nodate": 0, "old": 0, "nolink": 0}
+        kept_here = 0
+        for tweet in rows:
+            reason = tweet_skip_reason(tweet, cutoff_date)
+            if reason:
+                dropped[reason] = dropped.get(reason, 0) + 1
                 continue
             text = ((tweet.get("note_tweet") or {}).get("text")) or tweet.get("text") or ""
             text = re.sub(r"\s+", " ", text).strip()
-            if text.lower().startswith("rt @"):
-                continue
             created = d.parse_pubdate(tweet.get("created_at") or "")
-            if created is None or created.strftime("%Y-%m-%d") < cutoff_date:
-                continue
             url = f"https://x.com/{handle}/status/{tweet.get('id')}"
-            if not d.http_url(url) or not str(tweet.get("id") or "").isdigit():
-                continue
             title = text[:90] + ("…" if len(text) > 90 else "")
             posts.append(stamp_item(
                 spec["id"], spec["name"], "x", "x", title or f"@{handle}", "",
                 d.clean_note(text, limit=2000), url, created, True, [f"@{handle}"],
             ))
+            kept_here += 1
+        meta = payload.get("meta") or {}
+        print(
+            f"  X @{handle}: api={meta.get('result_count', len(rows))} kept={kept_here} dropped={dropped}"
+        )
+        if rows and kept_here == 0:
+            print(f"  X @{handle}: sample created_at={rows[0].get('created_at')!r}")
     status = {"online": True, "note": "", "reason": "", "errors": errors}
     if found_users and errors and not posts and len(errors) >= len(found_users):
         status = x_offline(tweet_failure or {"reason": errors[0]})
@@ -427,25 +464,52 @@ def fetch_pages(spec: dict, now: datetime, previous: dict) -> tuple[dict, list[d
     return {"checkedAt": now.isoformat(timespec="seconds"), "pages": rows}, changes
 
 
+def curl_bytes(url: str, timeout: int = 45, headers: dict | None = None, user_agent: str | None = None) -> tuple[bytes, str, int]:
+    """Fetch through curl. GitHub Actions' Python TLS handshake is rejected by Substack's Cloudflare."""
+    cmd = [
+        "curl", "-sS", "--compressed", "--http1.1", "-L",
+        "--max-time", str(int(timeout)),
+        "-A", user_agent or BROWSER_UA,
+        "-w", "\n%{http_code}",
+    ]
+    for key, value in (headers or {}).items():
+        cmd.extend(["-H", f"{key}: {value}"])
+    cmd.append(url)
+    proc = subprocess.run(cmd, capture_output=True, timeout=timeout + 10)
+    if proc.returncode != 0 and not proc.stdout:
+        err = proc.stderr.decode("utf-8", "replace").strip()[:300]
+        raise urllib.error.URLError(f"curl exit {proc.returncode}: {err}")
+    raw = proc.stdout
+    body, _, code_raw = raw.rpartition(b"\n")
+    try:
+        code = int(code_raw.strip() or "0")
+    except ValueError:
+        code = 0
+    if code >= 400 or code == 0:
+        raise urllib.error.HTTPError(url, code or 0, f"HTTP {code}", hdrs=None, fp=None)
+    return body, url, code
+
+
 def fetch_carota(spec: dict, now: datetime) -> tuple[list[dict], str, str]:
-    """Substack often answers 403 to a bot UA from GitHub Actions. Try a browser UA, then fallback feed URLs."""
+    """Load the Substack feed with curl (browser TLS), then feed.xml / www, then urllib."""
     last = None
+    loaders = []
+    if shutil.which("curl"):
+        loaders.append(("curl", curl_bytes))
+    loaders.append(("urllib", get_bytes))
     for url in d.carota_feed_candidates(spec.get("feed") or ""):
         attempt = dict(spec)
         attempt["feed"] = url
-        try:
-            items, home, channel = fetch_feed_items(
-                attempt, "substack", "substack", now,
-                user_agent=BROWSER_UA, extra_headers=BROWSER_HEADERS,
-            )
-            if url != spec.get("feed"):
-                print(f"  carota used fallback feed {url}")
-            return items, home, channel
-        except urllib.error.HTTPError as err:
-            last = err
-            print(f"  carota {url} HTTP {err.code} {err.reason}")
-            if err.code not in (401, 403, 429):
-                raise
+        for name, loader in loaders:
+            try:
+                raw, _final, _status = loader(url, timeout=60, headers=BROWSER_HEADERS, user_agent=BROWSER_UA)
+                items, home, channel = fetch_feed_from_raw(attempt, "substack", "substack", now, raw)
+                if name != "urllib" or url != spec.get("feed"):
+                    print(f"  carota used {name} {url}")
+                return items, home, channel
+            except Exception as err:
+                last = err
+                print(f"  carota {url} via {name}: {err}")
     if last is not None:
         raise last
     raise RuntimeError("Carota feed URL missing")
@@ -529,8 +593,9 @@ def main() -> int:
         content_ok += 1
     except Exception as err:
         errors.append(f"Carota Wealth: {err}")
-        print(f"  carota FAILED: {err}")
-        signals.extend([row for row in prev_sigs if row.get("kind") == "substack"])
+        cached = [row for row in prev_sigs if row.get("kind") == "substack"]
+        print(f"  carota FAILED: {err}; keeping {len(cached)} cached posts")
+        signals.extend(cached)
         homes[carota["id"]] = (carota["home"], "")
 
     try:

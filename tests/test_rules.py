@@ -9,6 +9,14 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 import desklib as d
 
 
+def test_x_created_at_with_milliseconds():
+    parsed = d.parse_pubdate("2026-10-28T19:02:49.000Z")
+    assert parsed is not None
+    assert parsed.strftime("%Y-%m-%d") == "2026-10-28"
+    assert parsed.hour == 14  # 19:02 UTC is 2:02 PM CT in October
+    assert d.parse_pubdate("Wed, 28 Oct 2026 19:02:49 GMT") is not None
+
+
 def test_ct_conversion():
     raw = "Fri, 23 Oct 2026 17:00:00 -0000"
     ct = d.parse_pubdate(raw)
@@ -147,13 +155,11 @@ def test_bearer_and_x_errors():
 
 
 def test_carota_fallback_after_403():
-    import io
     import urllib.error
     from datetime import datetime
     from zoneinfo import ZoneInfo
     import fetch
     calls = []
-    real = fetch.get_bytes
     rss = b"""<?xml version="1.0"?><rss version="2.0"><channel>
       <title>The Wealth Regime</title>
       <link>https://carotawealth.substack.com</link>
@@ -165,13 +171,22 @@ def test_carota_fallback_after_403():
       </item>
     </channel></rss>"""
 
-    def fake(url, timeout=45, headers=None, user_agent=None):
-        calls.append((url, user_agent))
+    def fake_curl(url, timeout=45, headers=None, user_agent=None):
+        calls.append(("curl", url))
         if url == "https://carotawealth.substack.com/feed":
-            raise urllib.error.HTTPError(url, 403, "Forbidden", hdrs=None, fp=io.BytesIO(b"blocked"))
-        return rss, url, 200
+            raise urllib.error.URLError("SSL: SSLV3_ALERT_HANDSHAKE_FAILURE")
+        if url.endswith("/feed.xml"):
+            return rss, url, 200
+        raise urllib.error.HTTPError(url, 403, "Forbidden", hdrs=None, fp=None)
 
-    fetch.get_bytes = fake
+    def fake_urllib(url, timeout=45, headers=None, user_agent=None):
+        calls.append(("urllib", url))
+        raise urllib.error.HTTPError(url, 403, "Forbidden", hdrs=None, fp=None)
+
+    real_curl, real_get, real_which = fetch.curl_bytes, fetch.get_bytes, fetch.shutil.which
+    fetch.curl_bytes = fake_curl
+    fetch.get_bytes = fake_urllib
+    fetch.shutil.which = lambda name: "/usr/bin/curl" if name == "curl" else real_which(name)
     try:
         spec = {
             "id": "carota", "name": "Carota Wealth", "feed": "https://carotawealth.substack.com/feed",
@@ -179,13 +194,25 @@ def test_carota_fallback_after_403():
         }
         items, home, channel = fetch.fetch_carota(spec, datetime.now(ZoneInfo("America/Chicago")))
     finally:
-        fetch.get_bytes = real
-    assert calls[0][0] == "https://carotawealth.substack.com/feed"
-    assert calls[0][1] == fetch.BROWSER_UA
-    assert calls[1][0] == "https://carotawealth.substack.com/feed.xml"
+        fetch.curl_bytes, fetch.get_bytes, fetch.shutil.which = real_curl, real_get, real_which
+    assert calls[0] == ("curl", "https://carotawealth.substack.com/feed")
+    assert ("curl", "https://carotawealth.substack.com/feed.xml") in calls
     assert len(items) == 1
     assert channel == "The Wealth Regime"
     assert home == "https://carotawealth.substack.com"
+
+
+def test_x_millis_posts_are_not_dropped():
+    import fetch
+    reason = fetch.tweet_skip_reason(
+        {"id": "99", "text": "Public post from the account.", "created_at": "2026-10-28T19:02:49.000Z"},
+        "2026-06-01",
+    )
+    assert reason is None
+    assert fetch.tweet_skip_reason(
+        {"id": "99", "text": "hello", "created_at": "2026-10-28T19:02:49.000Z", "referenced_tweets": [{"type": "replied_to"}]},
+        "2026-06-01",
+    ) == "repost"
 
 
 def test_urls_and_ids():
@@ -196,6 +223,7 @@ def test_urls_and_ids():
 
 
 if __name__ == "__main__":
+    test_x_created_at_with_milliseconds()
     test_ct_conversion()
     test_jre_skips_and_keeps_main_feed()
     test_other_shows_stay_on_their_feeds()
@@ -207,5 +235,6 @@ if __name__ == "__main__":
     test_x_paths_never_include_dms()
     test_bearer_and_x_errors()
     test_carota_fallback_after_403()
+    test_x_millis_posts_are_not_dropped()
     test_urls_and_ids()
     print("ok")
