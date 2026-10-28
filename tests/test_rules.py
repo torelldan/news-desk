@@ -154,52 +154,53 @@ def test_bearer_and_x_errors():
     assert len(urls) == len(set(urls))
 
 
-def test_carota_fallback_after_403():
+def test_carota_reads_site_and_keeps_cached_titles():
     import urllib.error
     from datetime import datetime
     from zoneinfo import ZoneInfo
     import fetch
     calls = []
-    rss = b"""<?xml version="1.0"?><rss version="2.0"><channel>
-      <title>The Wealth Regime</title>
-      <link>https://carotawealth.substack.com</link>
-      <item>
-        <title>Inflation note</title>
-        <link>https://carotawealth.substack.com/p/inflation-note</link>
-        <pubDate>Fri, 02 Oct 2026 16:54:37 GMT</pubDate>
-        <description>The government revised how inflation is measured and the grocery store did not follow that revision.</description>
-      </item>
-    </channel></rss>"""
+    sitemap = b"""<?xml version="1.0"?><urlset>
+      <url><loc>https://carotawealth.com/research</loc></url>
+    </urlset>"""
+    page = """<html><body>
+      <h2 class="sec-title">Market <em>Overview</em></h2>
+      <p class="sec-sub">Cross-asset view spanning U.S. indices, hard assets, and forex in one live dashboard for the desk.</p>
+      <h2 class="sec-title">The Inflation Number Changed. Your Cost of Living Didn't.</h2>
+      <p class="sec-sub">This site section repeats a cached essay title and should collapse to one row.</p>
+    </body></html>""".encode()
 
-    def fake_curl(url, timeout=45, headers=None, user_agent=None):
-        calls.append(("curl", url))
-        if url == "https://carotawealth.substack.com/feed":
-            raise urllib.error.URLError("SSL: SSLV3_ALERT_HANDSHAKE_FAILURE")
-        if url.endswith("/feed.xml"):
-            return rss, url, 200
-        raise urllib.error.HTTPError(url, 403, "Forbidden", hdrs=None, fp=None)
+    def fake_get(url, timeout=45, headers=None, user_agent=None):
+        calls.append(url)
+        if url.endswith("sitemap.xml"):
+            return sitemap, url, 200
+        if url.rstrip("/").endswith("/research"):
+            return page, "https://carotawealth.com/research", 200
+        raise urllib.error.HTTPError(url, 404, "Not Found", hdrs=None, fp=None)
 
-    def fake_urllib(url, timeout=45, headers=None, user_agent=None):
-        calls.append(("urllib", url))
-        raise urllib.error.HTTPError(url, 403, "Forbidden", hdrs=None, fp=None)
-
-    real_curl, real_get, real_which = fetch.curl_bytes, fetch.get_bytes, fetch.shutil.which
-    fetch.curl_bytes = fake_curl
-    fetch.get_bytes = fake_urllib
-    fetch.shutil.which = lambda name: "/usr/bin/curl" if name == "curl" else real_which(name)
+    cached = [{
+        "id": "carota:old", "kind": "substack", "lane": "substack", "sourceId": "carota",
+        "source": "Carota Wealth", "title": "The Inflation Number Changed. Your Cost of Living Didn't.",
+        "guest": "", "note": "Cached official essay.", "url": "https://carotawealth.substack.com/p/the-inflation-number-changed-your",
+        "published": "2026-10-02T11:54:37-05:00", "date": "2026-10-02", "label": "Oct 2, 2026 11:54 AM CT",
+        "weekday": "Fri", "timeKnown": True, "tags": ["substack", "carota"],
+    }]
+    real = fetch.get_bytes
+    fetch.get_bytes = fake_get
     try:
-        spec = {
-            "id": "carota", "name": "Carota Wealth", "feed": "https://carotawealth.substack.com/feed",
-            "skipTitle": [], "rejectChannel": [], "_retain": 120,
-        }
-        items, home, channel = fetch.fetch_carota(spec, datetime.now(ZoneInfo("America/Chicago")))
+        spec = {"id": "carota", "name": "Carota Wealth", "_retain": 120}
+        items, home, channel = fetch.fetch_carota(spec, datetime(2026, 10, 28, 12, tzinfo=ZoneInfo("America/Chicago")), cached)
     finally:
-        fetch.curl_bytes, fetch.get_bytes, fetch.shutil.which = real_curl, real_get, real_which
-    assert calls[0] == ("curl", "https://carotawealth.substack.com/feed")
-    assert ("curl", "https://carotawealth.substack.com/feed.xml") in calls
-    assert len(items) == 1
-    assert channel == "The Wealth Regime"
-    assert home == "https://carotawealth.substack.com"
+        fetch.get_bytes = real
+    assert all("substack.com" not in url for url in calls)
+    titles = [item["title"] for item in items]
+    assert titles.count("The Inflation Number Changed. Your Cost of Living Didn't.") == 1
+    kept = [item for item in items if item["title"].startswith("The Inflation")][0]
+    assert kept["date"] == "2026-10-02"
+    assert "/p/" in kept["url"]
+    assert any(item["title"] == "Market Overview" and item["url"].endswith("#market-overview") for item in items)
+    assert home == "https://carotawealth.com/research"
+    assert channel == "Carota Wealth"
 
 
 def test_x_millis_posts_are_not_dropped():
@@ -247,7 +248,7 @@ if __name__ == "__main__":
     test_page_hash_ignores_clocks()
     test_x_paths_never_include_dms()
     test_bearer_and_x_errors()
-    test_carota_fallback_after_403()
+    test_carota_reads_site_and_keeps_cached_titles()
     test_x_millis_posts_are_not_dropped()
     test_board_helpers()
     test_urls_and_ids()

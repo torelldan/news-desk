@@ -490,29 +490,151 @@ def curl_bytes(url: str, timeout: int = 45, headers: dict | None = None, user_ag
     return body, url, code
 
 
-def fetch_carota(spec: dict, now: datetime) -> tuple[list[dict], str, str]:
-    """Load the Substack feed with curl (browser TLS), then feed.xml / www, then urllib."""
-    last = None
-    loaders = []
-    if shutil.which("curl"):
-        loaders.append(("curl", curl_bytes))
-    loaders.append(("urllib", get_bytes))
-    for url in d.carota_feed_candidates(spec.get("feed") or ""):
-        attempt = dict(spec)
-        attempt["feed"] = url
-        for name, loader in loaders:
-            try:
-                raw, _final, _status = loader(url, timeout=60, headers=BROWSER_HEADERS, user_agent=BROWSER_UA)
-                items, home, channel = fetch_feed_from_raw(attempt, "substack", "substack", now, raw)
-                if name != "urllib" or url != spec.get("feed"):
-                    print(f"  carota used {name} {url}")
-                return items, home, channel
-            except Exception as err:
-                last = err
-                print(f"  carota {url} via {name}: {err}")
-    if last is not None:
-        raise last
-    raise RuntimeError("Carota feed URL missing")
+def _carota_title_key(title: str) -> str:
+    return re.sub(r"[^a-z0-9]+", " ", (title or "").lower()).strip()
+
+
+def _carry_carota_dates(items: list[dict], previous: list[dict]) -> list[dict]:
+    """A section with no pubDate keeps the day we first saved that title."""
+    known = {}
+    for row in previous or []:
+        key = _carota_title_key(row.get("title") or "")
+        if key and key not in known:
+            known[key] = row
+    for item in items:
+        prior = known.get(_carota_title_key(item.get("title") or ""))
+        if not prior:
+            continue
+        for field in ("published", "date", "label", "weekday", "timeKnown"):
+            if prior.get(field) not in (None, ""):
+                item[field] = prior[field]
+    return items
+
+
+def _dedupe_carota(items: list[dict]) -> list[dict]:
+    chosen = {}
+    order = []
+    for item in items:
+        key = _carota_title_key(item.get("title") or "")
+        if not key or not d.http_url(item.get("url") or ""):
+            continue
+        if key not in chosen:
+            order.append(key)
+            chosen[key] = item
+            continue
+        old = chosen[key]
+        # Prefer a real essay URL (/p/ or a dated post) over a page fragment when titles match.
+        old_essay = "/p/" in (old.get("url") or "")
+        new_essay = "/p/" in (item.get("url") or "")
+        if new_essay and not old_essay:
+            chosen[key] = item
+        elif old_essay == new_essay and len(item.get("note") or "") > len(old.get("note") or ""):
+            chosen[key] = item
+    return [chosen[key] for key in order]
+
+
+def _sections_from_html(html: str, page_url: str, now: datetime, spec: dict) -> list[dict]:
+    """Research-desk headings plus any article/JSON-LD posts on the page."""
+    items = []
+    seen = set()
+
+    def add(title, summary, url, when):
+        title = re.sub(r"\s+", " ", title or "").strip()
+        summary = re.sub(r"\s+", " ", summary or "").strip()
+        url = d.http_url(url or "")
+        key = _carota_title_key(title)
+        if not title or not url or not key or key in seen or len(summary) < 40:
+            return
+        seen.add(key)
+        items.append(stamp_item(
+            spec["id"], spec["name"], "substack", "substack", title, "", summary[:700], url, when, False,
+        ))
+
+    for block in re.findall(r'<script type="application/ld\+json">(.*?)</script>', html, re.S | re.I):
+        try:
+            payload = json.loads(block)
+        except json.JSONDecodeError:
+            continue
+        nodes = payload if isinstance(payload, list) else [payload]
+        for node in nodes:
+            if not isinstance(node, dict):
+                continue
+            kind = str(node.get("@type") or "")
+            if kind not in {"Article", "BlogPosting", "NewsArticle"}:
+                continue
+            when = d.parse_pubdate(str(node.get("datePublished") or "")) or now
+            add(node.get("headline") or node.get("name"), node.get("description") or "", node.get("url") or page_url, when)
+
+    cleaned = re.sub(r"<style[\s\S]*?</style>", " ", html, flags=re.I)
+    for match in re.finditer(r'class="sec-title"[^>]*>(.*?)</h2>', cleaned, re.S | re.I):
+        title = re.sub(r"<[^>]+>", " ", match.group(1))
+        title = re.sub(r"\s+", " ", title).strip()
+        chunk = cleaned[match.end():match.end() + 800]
+        sub = re.search(r'class="sec-sub"[^>]*>(.*?)</p>', chunk, re.S | re.I)
+        summary = re.sub(r"<[^>]+>", " ", sub.group(1)) if sub else ""
+        slug = re.sub(r"[^a-z0-9]+", "-", title.lower()).strip("-")
+        base = page_url.split("#")[0].rstrip("/")
+        add(title, summary, f"{base}#{slug}", now)
+    return items
+
+
+def _carota_page_urls() -> list[str]:
+    urls = []
+    try:
+        raw, _final, _status = get_bytes("https://carotawealth.com/sitemap.xml", timeout=30)
+        for loc in re.findall(r"<loc>\s*([^<]+)\s*</loc>", raw.decode("utf-8", "replace")):
+            if loc not in urls:
+                urls.append(loc.strip())
+    except Exception as err:
+        print(f"  carota sitemap: {err}")
+    for extra in (
+        "https://carotawealth.com/research",
+        "https://carotawealth.com/insights",
+        "https://carotawealth.com/blog",
+        "https://carotawealth.com/news",
+    ):
+        if extra not in urls:
+            urls.append(extra)
+    return urls
+
+
+def fetch_carota(spec: dict, now: datetime, previous: list | None = None) -> tuple[list[dict], str, str]:
+    """Read carotawealth.com with urllib. Do not call the Substack host."""
+    site_items = []
+    seen_paths = set()
+    for url in _carota_page_urls():
+        if "substack.com" in url:
+            continue
+        path = urllib.parse.urlparse(url).path.rstrip("/") or "/"
+        if path in seen_paths:
+            continue
+        seen_paths.add(path)
+        try:
+            raw, final, _status = get_bytes(url, timeout=30)
+        except urllib.error.HTTPError as err:
+            if err.code == 404:
+                continue
+            print(f"  carota page {url}: HTTP {err.code}")
+            continue
+        except Exception as err:
+            print(f"  carota page {url}: {err}")
+            continue
+        html = raw.decode("utf-8", "replace")
+        if "<html" not in html.lower() and "<urlset" in html.lower():
+            continue
+        found = _sections_from_html(html, final or url, now, spec)
+        print(f"  carota page {final or url}: {len(found)} sections")
+        site_items.extend(found)
+    cached = [row for row in (previous or []) if row.get("sourceId") == spec["id"] or row.get("kind") == "substack"]
+    site_items = _carry_carota_dates(site_items, cached)
+    merged = _dedupe_carota(site_items + cached)
+    cutoff = (now.date() - timedelta(days=int(spec.get("_retain") or 120))).isoformat()
+    merged = [row for row in merged if (row.get("date") or "") >= cutoff]
+    merged.sort(key=lambda row: row.get("published") or "", reverse=True)
+    print(f"  carota site sections {len(site_items)}; with cached posts {len(merged)}; substack feed not requested")
+    if not merged and not site_items:
+        raise RuntimeError("carotawealth.com returned no articles and no cache was available")
+    return merged, "https://carotawealth.com/research", "Carota Wealth"
 
 
 def keep_source(previous: list[dict], source_id: str) -> list[dict]:
@@ -673,7 +795,7 @@ def main() -> int:
     carota["skipTitle"] = []
     carota["rejectChannel"] = []
     try:
-        posts, home, channel_title = fetch_carota(carota, now)
+        posts, home, channel_title = fetch_carota(carota, now, prev_sigs)
         signals.extend(posts)
         homes[carota["id"]] = (home or carota["home"], channel_title)
         content_ok += 1
