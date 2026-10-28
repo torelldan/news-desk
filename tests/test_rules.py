@@ -220,10 +220,12 @@ def test_board_helpers():
     assert boards.index_change(100, 80) == (20.0, 25.0)
     assert boards.index_change(None, 10) == (None, None)
     assert boards.quake_severity(7.1) == "CRITICAL"
-    assert boards.quake_severity(6.2) == "WARNING"
-    assert boards.quake_severity(4.6) == "WATCH"
+    assert boards.quake_severity(6.2) == "ACTION"
+    assert boards.quake_severity(5.6) == "ALERT"
+    assert boards.quake_severity(4.6) == "STANDBY"
     assert boards.alert_severity("Tornado Warning", "Extreme") == "CRITICAL"
-    assert boards.alert_severity("Flood Watch", "Minor") == "WATCH"
+    assert boards.alert_severity("Flood Warning", "Severe") == "ACTION"
+    assert boards.alert_severity("Flood Watch", "Minor") == "ALERT"
 
 
 def test_urls_and_ids():

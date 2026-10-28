@@ -41,9 +41,9 @@
       "timeKnown": true,
       "tags": [
         "quake",
-        "warning"
+        "action"
       ],
-      "severity": "WARNING",
+      "severity": "ACTION",
       "lat": -14.0558,
       "lon": 165.5455,
       "mag": 6.9
@@ -65,9 +65,9 @@
       "timeKnown": true,
       "tags": [
         "quake",
-        "warning"
+        "action"
       ],
-      "severity": "WARNING",
+      "severity": "ACTION",
       "lat": 27.7953,
       "lon": 139.6184,
       "mag": 6.5
@@ -89,9 +89,9 @@
       "timeKnown": true,
       "tags": [
         "quake",
-        "warning"
+        "action"
       ],
-      "severity": "WARNING",
+      "severity": "ACTION",
       "lat": -14.0424,
       "lon": 165.8666,
       "mag": 6.3
@@ -113,9 +113,9 @@
       "timeKnown": true,
       "tags": [
         "quake",
-        "warning"
+        "action"
       ],
-      "severity": "WARNING",
+      "severity": "ACTION",
       "lat": -14.9964,
       "lon": 167.3039,
       "mag": 6.1
@@ -137,9 +137,9 @@
       "timeKnown": true,
       "tags": [
         "quake",
-        "warning"
+        "action"
       ],
-      "severity": "WARNING",
+      "severity": "ACTION",
       "lat": -13.9312,
       "lon": 165.446,
       "mag": 6.0
@@ -161,9 +161,9 @@
       "timeKnown": true,
       "tags": [
         "quake",
-        "watch"
+        "alert"
       ],
-      "severity": "WATCH",
+      "severity": "ALERT",
       "lat": 32.4625,
       "lon": 94.0534,
       "mag": 5.9
@@ -185,9 +185,9 @@
       "timeKnown": true,
       "tags": [
         "quake",
-        "watch"
+        "alert"
       ],
-      "severity": "WATCH",
+      "severity": "ALERT",
       "lat": -54.0337,
       "lon": 7.044,
       "mag": 5.9
@@ -209,9 +209,9 @@
       "timeKnown": true,
       "tags": [
         "quake",
-        "watch"
+        "alert"
       ],
-      "severity": "WATCH",
+      "severity": "ALERT",
       "lat": -13.9418,
       "lon": 165.6471,
       "mag": 5.9
@@ -233,9 +233,9 @@
       "timeKnown": true,
       "tags": [
         "quake",
-        "watch"
+        "alert"
       ],
-      "severity": "WATCH",
+      "severity": "ALERT",
       "lat": -13.9141,
       "lon": 165.6671,
       "mag": 5.8
@@ -257,9 +257,9 @@
       "timeKnown": true,
       "tags": [
         "quake",
-        "watch"
+        "alert"
       ],
-      "severity": "WATCH",
+      "severity": "ALERT",
       "lat": -14.0833,
       "lon": 165.6982,
       "mag": 5.8
@@ -281,9 +281,9 @@
       "timeKnown": true,
       "tags": [
         "quake",
-        "watch"
+        "alert"
       ],
-      "severity": "WATCH",
+      "severity": "ALERT",
       "lat": -13.9017,
       "lon": 165.5967,
       "mag": 5.8
@@ -305,9 +305,9 @@
       "timeKnown": true,
       "tags": [
         "quake",
-        "watch"
+        "alert"
       ],
-      "severity": "WATCH",
+      "severity": "ALERT",
       "lat": -13.9084,
       "lon": 165.5627,
       "mag": 5.7
@@ -329,9 +329,9 @@
       "timeKnown": true,
       "tags": [
         "quake",
-        "watch"
+        "alert"
       ],
-      "severity": "WATCH",
+      "severity": "ALERT",
       "lat": 38.7199,
       "lon": 14.152,
       "mag": 5.7
@@ -353,9 +353,9 @@
       "timeKnown": true,
       "tags": [
         "quake",
-        "watch"
+        "alert"
       ],
-      "severity": "WATCH",
+      "severity": "ALERT",
       "lat": -14.0693,
       "lon": 165.8001,
       "mag": 5.6
@@ -377,9 +377,9 @@
       "timeKnown": true,
       "tags": [
         "quake",
-        "watch"
+        "alert"
       ],
-      "severity": "WATCH",
+      "severity": "ALERT",
       "lat": 35.7015,
       "lon": 140.7059,
       "mag": 5.5
@@ -401,9 +401,9 @@
       "timeKnown": true,
       "tags": [
         "quake",
-        "watch"
+        "alert"
       ],
-      "severity": "WATCH",
+      "severity": "ALERT",
       "lat": 58.1005,
       "lon": -32.1508,
       "mag": 5.5
@@ -425,9 +425,9 @@
       "timeKnown": true,
       "tags": [
         "quake",
-        "watch"
+        "alert"
       ],
-      "severity": "WATCH",
+      "severity": "ALERT",
       "lat": -13.8946,
       "lon": 165.389,
       "mag": 5.5
@@ -449,9 +449,9 @@
       "timeKnown": true,
       "tags": [
         "quake",
-        "watch"
+        "alert"
       ],
-      "severity": "WATCH",
+      "severity": "ALERT",
       "lat": -18.283,
       "lon": -178.0109,
       "mag": 5.5
@@ -473,9 +473,9 @@
       "timeKnown": true,
       "tags": [
         "quake",
-        "watch"
+        "alert"
       ],
-      "severity": "WATCH",
+      "severity": "ALERT",
       "lat": -14.5918,
       "lon": 167.3063,
       "mag": 5.5
@@ -497,9 +497,9 @@
       "timeKnown": true,
       "tags": [
         "quake",
-        "watch"
+        "standby"
       ],
-      "severity": "WATCH",
+      "severity": "STANDBY",
       "lat": 12.6676,
       "lon": 142.9938,
       "mag": 5.4
@@ -521,9 +521,9 @@
       "timeKnown": true,
       "tags": [
         "quake",
-        "watch"
+        "standby"
       ],
-      "severity": "WATCH",
+      "severity": "STANDBY",
       "lat": 32.5388,
       "lon": 93.9028,
       "mag": 5.4
@@ -545,9 +545,9 @@
       "timeKnown": true,
       "tags": [
         "quake",
-        "watch"
+        "standby"
       ],
-      "severity": "WATCH",
+      "severity": "STANDBY",
       "lat": -9.0977,
       "lon": 110.3861,
       "mag": 5.4
@@ -569,9 +569,9 @@
       "timeKnown": true,
       "tags": [
         "quake",
-        "watch"
+        "standby"
       ],
-      "severity": "WATCH",
+      "severity": "STANDBY",
       "lat": -4.3644,
       "lon": 143.0843,
       "mag": 5.4
@@ -593,9 +593,9 @@
       "timeKnown": true,
       "tags": [
         "quake",
-        "watch"
+        "standby"
       ],
-      "severity": "WATCH",
+      "severity": "STANDBY",
       "lat": -13.8848,
       "lon": 165.5769,
       "mag": 5.4
@@ -617,9 +617,9 @@
       "timeKnown": true,
       "tags": [
         "quake",
-        "watch"
+        "standby"
       ],
-      "severity": "WATCH",
+      "severity": "STANDBY",
       "lat": 2.4277,
       "lon": 126.7587,
       "mag": 5.3
@@ -641,9 +641,9 @@
       "timeKnown": true,
       "tags": [
         "quake",
-        "watch"
+        "standby"
       ],
-      "severity": "WATCH",
+      "severity": "STANDBY",
       "lat": 27.8572,
       "lon": 139.6916,
       "mag": 5.3
@@ -665,9 +665,9 @@
       "timeKnown": true,
       "tags": [
         "quake",
-        "watch"
+        "standby"
       ],
-      "severity": "WATCH",
+      "severity": "STANDBY",
       "lat": 31.8226,
       "lon": 131.873,
       "mag": 5.3
@@ -689,9 +689,9 @@
       "timeKnown": true,
       "tags": [
         "quake",
-        "watch"
+        "standby"
       ],
-      "severity": "WATCH",
+      "severity": "STANDBY",
       "lat": 52.1565,
       "lon": 159.1963,
       "mag": 5.3
@@ -713,9 +713,9 @@
       "timeKnown": true,
       "tags": [
         "quake",
-        "watch"
+        "standby"
       ],
-      "severity": "WATCH",
+      "severity": "STANDBY",
       "lat": 32.5629,
       "lon": 94.048,
       "mag": 5.3
@@ -737,9 +737,9 @@
       "timeKnown": true,
       "tags": [
         "storm",
-        "warning"
+        "action"
       ],
-      "severity": "WARNING"
+      "severity": "ACTION"
     },
     {
       "id": "storm:e618ef23b48c73ee",
@@ -758,9 +758,9 @@
       "timeKnown": true,
       "tags": [
         "storm",
-        "warning"
+        "action"
       ],
-      "severity": "WARNING"
+      "severity": "ACTION"
     },
     {
       "id": "storm:ec5f60db7bdde678",
@@ -779,9 +779,9 @@
       "timeKnown": true,
       "tags": [
         "storm",
-        "warning"
+        "action"
       ],
-      "severity": "WARNING"
+      "severity": "ACTION"
     },
     {
       "id": "storm:ed96df472c311d83",
@@ -800,9 +800,9 @@
       "timeKnown": true,
       "tags": [
         "storm",
-        "warning"
+        "action"
       ],
-      "severity": "WARNING"
+      "severity": "ACTION"
     },
     {
       "id": "storm:678d58b83c6efdc4",
@@ -821,9 +821,9 @@
       "timeKnown": true,
       "tags": [
         "storm",
-        "warning"
+        "action"
       ],
-      "severity": "WARNING"
+      "severity": "ACTION"
     },
     {
       "id": "storm:6ad239d06bb81d26",
@@ -842,9 +842,9 @@
       "timeKnown": true,
       "tags": [
         "storm",
-        "warning"
+        "action"
       ],
-      "severity": "WARNING",
+      "severity": "ACTION",
       "lat": 19.2,
       "lon": -109.2
     },
@@ -865,9 +865,9 @@
       "timeKnown": true,
       "tags": [
         "storm",
-        "warning"
+        "action"
       ],
-      "severity": "WARNING"
+      "severity": "ACTION"
     },
     {
       "id": "storm:d0c7a9f250f6619e",
@@ -886,9 +886,9 @@
       "timeKnown": true,
       "tags": [
         "storm",
-        "warning"
+        "action"
       ],
-      "severity": "WARNING"
+      "severity": "ACTION"
     },
     {
       "id": "storm:6351f1367051f576",
@@ -907,9 +907,9 @@
       "timeKnown": true,
       "tags": [
         "storm",
-        "warning"
+        "action"
       ],
-      "severity": "WARNING"
+      "severity": "ACTION"
     },
     {
       "id": "storm:fd4c6f97b257d4ad",
@@ -928,9 +928,9 @@
       "timeKnown": true,
       "tags": [
         "storm",
-        "warning"
+        "action"
       ],
-      "severity": "WARNING"
+      "severity": "ACTION"
     },
     {
       "id": "gdacs:f443a4e28cb306ff",
@@ -949,9 +949,9 @@
       "timeKnown": true,
       "tags": [
         "gdacs",
-        "watch"
+        "alert"
       ],
-      "severity": "WATCH",
+      "severity": "ALERT",
       "lat": 35.7015,
       "lon": 140.7059
     },
@@ -972,9 +972,9 @@
       "timeKnown": true,
       "tags": [
         "gdacs",
-        "watch"
+        "alert"
       ],
-      "severity": "WATCH",
+      "severity": "ALERT",
       "lat": 58.1005,
       "lon": -32.1508
     },
@@ -995,9 +995,9 @@
       "timeKnown": true,
       "tags": [
         "gdacs",
-        "watch"
+        "alert"
       ],
-      "severity": "WATCH",
+      "severity": "ALERT",
       "lat": -14.0693,
       "lon": 165.8001
     },
@@ -1018,9 +1018,9 @@
       "timeKnown": true,
       "tags": [
         "gdacs",
-        "watch"
+        "alert"
       ],
-      "severity": "WATCH",
+      "severity": "ALERT",
       "lat": -13.9312,
       "lon": 165.446
     },
@@ -1041,9 +1041,9 @@
       "timeKnown": true,
       "tags": [
         "gdacs",
-        "watch"
+        "alert"
       ],
-      "severity": "WATCH",
+      "severity": "ALERT",
       "lat": -13.8946,
       "lon": 165.389
     },
@@ -1064,9 +1064,9 @@
       "timeKnown": true,
       "tags": [
         "gdacs",
-        "watch"
+        "alert"
       ],
-      "severity": "WATCH",
+      "severity": "ALERT",
       "lat": 32.91348172501469,
       "lon": 119.67609807075007
     },
@@ -1087,9 +1087,9 @@
       "timeKnown": true,
       "tags": [
         "gdacs",
-        "watch"
+        "alert"
       ],
-      "severity": "WATCH",
+      "severity": "ALERT",
       "lat": -21.097293260699125,
       "lon": 23.346351233652108
     },
@@ -1110,9 +1110,9 @@
       "timeKnown": true,
       "tags": [
         "gdacs",
-        "watch"
+        "alert"
       ],
-      "severity": "WATCH",
+      "severity": "ALERT",
       "lat": -13.8962,
       "lon": 165.6262
     },
@@ -1133,9 +1133,9 @@
       "timeKnown": true,
       "tags": [
         "gdacs",
-        "watch"
+        "alert"
       ],
-      "severity": "WATCH",
+      "severity": "ALERT",
       "lat": -23.05220381931141,
       "lon": 21.406766273349273
     },
@@ -1156,9 +1156,9 @@
       "timeKnown": true,
       "tags": [
         "gdacs",
-        "watch"
+        "alert"
       ],
-      "severity": "WATCH",
+      "severity": "ALERT",
       "lat": 46.44306759375421,
       "lon": 114.50471902120746
     },
@@ -1179,9 +1179,9 @@
       "timeKnown": true,
       "tags": [
         "gdacs",
-        "watch"
+        "alert"
       ],
-      "severity": "WATCH",
+      "severity": "ALERT",
       "lat": -18.283,
       "lon": -178.0109
     },
@@ -1202,9 +1202,9 @@
       "timeKnown": true,
       "tags": [
         "gdacs",
-        "watch"
+        "alert"
       ],
-      "severity": "WATCH",
+      "severity": "ALERT",
       "lat": -20.976836191259714,
       "lon": 129.1083305196497
     },
@@ -1225,9 +1225,9 @@
       "timeKnown": true,
       "tags": [
         "relief",
-        "watch"
+        "standby"
       ],
-      "severity": "WATCH"
+      "severity": "STANDBY"
     },
     {
       "id": "who:53dcad2ca08ee68e",
@@ -1246,9 +1246,9 @@
       "timeKnown": true,
       "tags": [
         "who",
-        "watch"
+        "alert"
       ],
-      "severity": "WATCH"
+      "severity": "ALERT"
     },
     {
       "id": "who:437902596b1d1f7b",
@@ -1258,7 +1258,7 @@
       "sourceId": "who",
       "title": "WHO statement on notification of withdrawal of the United States",
       "guest": "",
-      "note": "WHO regrets the United States’ notification of withdrawal from WHO – a decision that makes both the United States and the world less safe. The notification of withdrawal raises issues that will be considered by the WHO Executive Board at its regular meeting starting on 2 February and by the World Health Assembly at its annual meeting in May 2026.",
+      "note": "WHO regrets the United States\u2019 notification of withdrawal from WHO \u2013 a decision that makes both the United States and the world less safe. The notification of withdrawal raises issues that will be considered by the WHO Executive Board at its regular meeting starting on 2 February and by the World Health Assembly at its annual meeting in May 2026.",
       "url": "https://www.who.int/news/item/24-01-2026-who-statement-on-notification-of-withdrawal-of-the-united-states",
       "published": "2026-01-24T14:09:49-06:00",
       "date": "2026-01-24",
@@ -1267,9 +1267,9 @@
       "timeKnown": true,
       "tags": [
         "who",
-        "watch"
+        "alert"
       ],
-      "severity": "WATCH"
+      "severity": "ALERT"
     },
     {
       "id": "who:b9834dbabc404bb9",
@@ -1279,7 +1279,7 @@
       "sourceId": "who",
       "title": "Timor-Leste certified malaria-free by WHO",
       "guest": "",
-      "note": "The World Health Organization (WHO) has certified Timor-Leste as malaria-free, a remarkable achievement for a country that prioritized the disease and embarked on a concerted, nation-wide response shortly after gaining independence in 2002. “WHO congratulates the people and government of Timor-Leste on this significant milestone,” said Dr Tedros Adhanom Ghebreyesus, WHO Director-General.",
+      "note": "The World Health Organization (WHO) has certified Timor-Leste as malaria-free, a remarkable achievement for a country that prioritized the disease and embarked on a concerted, nation-wide response shortly after gaining independence in 2002. \u201cWHO congratulates the people and government of Timor-Leste on this significant milestone,\u201d said Dr Tedros Adhanom Ghebreyesus, WHO Director-General.",
       "url": "https://www.who.int/news/item/24-07-2025-timor-leste-certified-malaria-free-by-who",
       "published": "2025-07-23T05:07:41-05:00",
       "date": "2025-07-23",
@@ -1288,9 +1288,9 @@
       "timeKnown": true,
       "tags": [
         "who",
-        "watch"
+        "alert"
       ],
-      "severity": "WATCH"
+      "severity": "ALERT"
     },
     {
       "id": "who:94212d920c1591cd",
@@ -1309,9 +1309,9 @@
       "timeKnown": true,
       "tags": [
         "who",
-        "watch"
+        "alert"
       ],
-      "severity": "WATCH"
+      "severity": "ALERT"
     },
     {
       "id": "who:5529fda8585d156b",
@@ -1321,7 +1321,7 @@
       "sourceId": "who",
       "title": "Strengthening public health across Lebanon with EIB Global",
       "guest": "",
-      "note": "Dr Tedros Adhanom Ghebreyesus, Director-General of the World Health Organization (WHO), and Thomas Östros, Vice-President of the European Investment Bank (EIB Global), met at the EIB Group Forum in Luxembourg and signed an agreement for a €10 million grant to strengthen public health across Lebanon.",
+      "note": "Dr Tedros Adhanom Ghebreyesus, Director-General of the World Health Organization (WHO), and Thomas \u00d6stros, Vice-President of the European Investment Bank (EIB Global), met at the EIB Group Forum in Luxembourg and signed an agreement for a \u20ac10 million grant to strengthen public health across Lebanon.",
       "url": "https://www.who.int/news/item/06-03-2025-strengthening-public-health-across-lebanon-with-eib-global",
       "published": "2025-04-01T06:55:48-05:00",
       "date": "2025-04-01",
@@ -1330,9 +1330,9 @@
       "timeKnown": true,
       "tags": [
         "who",
-        "watch"
+        "alert"
       ],
-      "severity": "WATCH"
+      "severity": "ALERT"
     },
     {
       "id": "who:7d9b8115b93608dc",
@@ -1342,7 +1342,7 @@
       "sourceId": "who",
       "title": "Frank, in-depth discussion as Belgium and WHO map ahead priorities for collaboration",
       "guest": "",
-      "note": "In a three-day strategic dialogue, Belgium and WHO reviewed progress in their longstanding partnership, and agreed to further boost their collaboration on universal health coverage, health-systems strengthening and equitable access to essential vaccines, medicines and health technologies. Christophe Payot, Ambassador of Belgium to the United Nations and other international organizations in Geneva – discussed issues of strategic importance, exchanged views on how to smoothly align WHO strategic d",
+      "note": "In a three-day strategic dialogue, Belgium and WHO reviewed progress in their longstanding partnership, and agreed to further boost their collaboration on universal health coverage, health-systems strengthening and equitable access to essential vaccines, medicines and health technologies. Christophe Payot, Ambassador of Belgium to the United Nations and other international organizations in Geneva \u2013 discussed issues of strategic importance, exchanged views on how to smoothly align WHO strategic d",
       "url": "https://www.who.int/news/item/11-03-2025-frank--in-depth-discussion-as-belgium-and-who-map-ahead-priorities-for-collaboration",
       "published": "2025-03-11T03:49:23-05:00",
       "date": "2025-03-11",
@@ -1351,9 +1351,9 @@
       "timeKnown": true,
       "tags": [
         "who",
-        "watch"
+        "alert"
       ],
-      "severity": "WATCH"
+      "severity": "ALERT"
     },
     {
       "id": "cdc:12c7ca9ea1a41c99",
@@ -1372,9 +1372,9 @@
       "timeKnown": true,
       "tags": [
         "cdc",
-        "watch"
+        "standby"
       ],
-      "severity": "WATCH"
+      "severity": "STANDBY"
     },
     {
       "id": "headline:c3270df917055733",
@@ -1382,7 +1382,7 @@
       "lane": "threat",
       "source": "UN News",
       "sourceId": "headline",
-      "title": "Security Council LIVE: Children and war, ‘each one is a life’ - UN News",
+      "title": "Security Council LIVE: Children and war, \u2018each one is a life\u2019 - UN News",
       "guest": "",
       "note": "",
       "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE85UUN5YlhIb2xKZUFXSlRScmtLQXpTWDNfTzdQME9KN0NqYm5URzlkYkpXQXZCd3EwR0J0Q2lZbXp4UUN5SllvVDNTdFpoRm1TVjVUNl9ZUQ?oc=5",
@@ -1394,9 +1394,9 @@
       "tags": [
         "headline",
         "conflict",
-        "watch"
+        "alert"
       ],
-      "severity": "WATCH"
+      "severity": "ALERT"
     },
     {
       "id": "headline:a697c242ed7125e8",
@@ -1416,9 +1416,9 @@
       "tags": [
         "headline",
         "conflict",
-        "watch"
+        "alert"
       ],
-      "severity": "WATCH"
+      "severity": "ALERT"
     },
     {
       "id": "headline:3e92c07b34c0e402",
@@ -1438,9 +1438,9 @@
       "tags": [
         "headline",
         "conflict",
-        "watch"
+        "alert"
       ],
-      "severity": "WATCH"
+      "severity": "ALERT"
     },
     {
       "id": "headline:0fc86ae00b125bff",
@@ -1460,17 +1460,17 @@
       "tags": [
         "headline",
         "conflict",
-        "watch"
+        "alert"
       ],
-      "severity": "WATCH"
+      "severity": "ALERT"
     },
     {
       "id": "headline:9259dc60897f05db",
       "kind": "conflict",
       "lane": "threat",
-      "source": "Försvarshögskolan",
+      "source": "F\u00f6rsvarsh\u00f6gskolan",
       "sourceId": "headline",
-      "title": "How can civilians be better protected in war? - Försvarshögskolan",
+      "title": "How can civilians be better protected in war? - F\u00f6rsvarsh\u00f6gskolan",
       "guest": "",
       "note": "",
       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPcXc0YndZVWZSRG03QTF5TW84cGdLczdfZlA2WDNYRUp0MG5fUlNwMnFtUm93cjJxUGlnOWk5ekJDUGctbDNwTUVCV0U2UUVPVWhDclRtNWQ0ZjAtd3BkYlluS1JYQlo3ME9FZnhQM2hnb0RNalh3ajdtSFNpd19sUUVPR0gwVUljY3phcW8yMzgzX1NnTVQybUlZRXhacFlhVjMwRG1oY0ZSREh5UFFIanY5NjhRcmRm?oc=5",
@@ -1482,9 +1482,9 @@
       "tags": [
         "headline",
         "conflict",
-        "watch"
+        "alert"
       ],
-      "severity": "WATCH"
+      "severity": "ALERT"
     },
     {
       "id": "headline:535d4515831b8907",
@@ -1504,9 +1504,9 @@
       "tags": [
         "headline",
         "conflict",
-        "watch"
+        "alert"
       ],
-      "severity": "WATCH"
+      "severity": "ALERT"
     },
     {
       "id": "neo:0a0f73afe6b6b310",
@@ -1630,9 +1630,9 @@
       "timeKnown": true,
       "tags": [
         "neo",
-        "warning"
+        "action"
       ],
-      "severity": "WARNING"
+      "severity": "ACTION"
     },
     {
       "id": "sentry:513532e0e0ea6ef9",
@@ -1651,9 +1651,9 @@
       "timeKnown": true,
       "tags": [
         "sentry",
-        "watch"
+        "alert"
       ],
-      "severity": "WATCH"
+      "severity": "ALERT"
     },
     {
       "id": "sentry:2dc5c86a057f704e",
@@ -1672,9 +1672,9 @@
       "timeKnown": true,
       "tags": [
         "sentry",
-        "watch"
+        "alert"
       ],
-      "severity": "WATCH"
+      "severity": "ALERT"
     },
     {
       "id": "sentry:d8dd27e8fcda181e",
@@ -1693,9 +1693,9 @@
       "timeKnown": true,
       "tags": [
         "sentry",
-        "watch"
+        "alert"
       ],
-      "severity": "WATCH"
+      "severity": "ALERT"
     },
     {
       "id": "clock:bulletin",
@@ -1714,9 +1714,9 @@
       "timeKnown": true,
       "tags": [
         "clock",
-        "watch"
+        "standby"
       ],
-      "severity": "WATCH"
+      "severity": "STANDBY"
     }
   ]
 }

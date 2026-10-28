@@ -145,24 +145,30 @@ def index_change(price, previous):
 
 
 def quake_severity(mag) -> str:
+    """STANDBY, ALERT, ACTION, CRITICAL. Calmest first."""
     try:
         mag = float(mag)
     except (TypeError, ValueError):
-        return "WATCH"
+        return "STANDBY"
     if mag >= 7:
         return "CRITICAL"
     if mag >= 6:
-        return "WARNING"
-    return "WATCH"
+        return "ACTION"
+    if mag >= 5.5:
+        return "ALERT"
+    return "STANDBY"
 
 
 def alert_severity(event: str, severity: str) -> str:
     name = (event or "").lower()
-    if "tornado warning" in name or "hurricane warning" in name or "extreme" in (severity or "").lower():
+    level = (severity or "").lower()
+    if "tornado warning" in name or "hurricane warning" in name or level == "extreme":
         return "CRITICAL"
-    if "warning" in name or (severity or "").lower() in {"severe", "extreme"}:
-        return "WARNING"
-    return "WATCH"
+    if "warning" in name or level == "severe":
+        return "ACTION"
+    if "watch" in name or "advisory" in name:
+        return "ALERT"
+    return "STANDBY"
 
 
 def _get(url: str, timeout: int = 30, headers: dict | None = None) -> bytes:
@@ -396,8 +402,8 @@ def fetch_threats(now: datetime) -> dict:
         "label": d.ct_label(now, True),
         "weekday": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"][now.weekday()],
         "timeKnown": True,
-        "tags": ["clock", "watch"],
-        "severity": "WATCH",
+        "tags": ["clock", "standby"],
+        "severity": "STANDBY",
     })
     return {"items": items + extras}
 
@@ -413,7 +419,7 @@ def _try_nhc(now):
                     continue
                 published = d.parse_pubdate(node.findtext("pubDate") or "") or now
                 note = d.clean_note(node.findtext("description") or "")
-                extra = {"severity": "WARNING"}
+                extra = {"severity": "ACTION"}
                 point = _point_from(node)
                 if point:
                     extra["lat"], extra["lon"] = point
@@ -489,7 +495,7 @@ def _try_gdacs(now):
                 continue
             published = d.parse_pubdate(node.findtext("pubDate") or "") or now
             alert = (node.findtext("{http://www.gdacs.org}alertlevel") or node.findtext("gdacs:alertlevel") or "").lower()
-            sev = "CRITICAL" if "red" in alert else "WARNING" if "orange" in alert else "WATCH"
+            sev = "CRITICAL" if "red" in alert else "ACTION" if "orange" in alert else "ALERT"
             extra = {"severity": sev}
             point = _point_from(node)
             if point:
@@ -515,14 +521,14 @@ def _try_relief(now):
             published = d.parse_pubdate(created) or now
             country = ((fields.get("primary_country") or {}).get("name")) or ""
             kind = ((fields.get("primary_type") or {}).get("name")) or "disaster"
-            rows.append(_item("relief", "threat", "ReliefWeb", title, f"{kind}. {country}".strip(), link, published, ["relief", "watch"], {"severity": "WATCH"}))
+            rows.append(_item("relief", "threat", "ReliefWeb", title, f"{kind}. {country}".strip(), link, published, ["relief", "alert"], {"severity": "ALERT"}))
     except Exception as err:
         print(f"  reliefweb: {err}")
     if not rows:
         rows.append(_item(
             "relief", "threat", "ReliefWeb", "ReliefWeb disasters",
             "The disasters feed did not answer this run. The link opens the public list.",
-            "https://reliefweb.int/disasters", now, ["relief", "watch"], {"severity": "WATCH"},
+            "https://reliefweb.int/disasters", now, ["relief", "standby"], {"severity": "STANDBY"},
         ))
     return rows
 
@@ -541,7 +547,7 @@ def _try_who(now):
             if not title or not link:
                 continue
             published = d.parse_pubdate(node.findtext("pubDate") or "") or now
-            rows.append(_item("who", "threat", "WHO", title, d.clean_note(node.findtext("description") or ""), link, published, ["who", "watch"], {"severity": "WATCH"}))
+            rows.append(_item("who", "threat", "WHO", title, d.clean_note(node.findtext("description") or ""), link, published, ["who", "alert"], {"severity": "ALERT"}))
         if rows:
             break
     return rows[:6]
@@ -554,7 +560,7 @@ def _try_cdc(now):
             row = dict(row)
             row["kind"] = "cdc"
             row["source"] = "CDC HAN"
-            row["severity"] = "WARNING" if re.search(r"alert|advisory|warning", row.get("title") or "", re.I) else "WATCH"
+            row["severity"] = "ACTION" if re.search(r"alert|advisory|warning", row.get("title") or "", re.I) else "ALERT"
             row["tags"] = list(dict.fromkeys((row.get("tags") or []) + ["cdc", row["severity"].lower()]))
             rows.append(row)
     except Exception as err:
@@ -562,7 +568,7 @@ def _try_cdc(now):
     rows.append(_item(
         "cdc", "threat", "CDC HAN", "CDC Health Alert Network notices",
         "Official HAN index. A dedicated CDC RSS feed did not answer this run.",
-        "https://www.cdc.gov/han/php/notices/index.html", now, ["cdc", "watch"], {"severity": "WATCH"},
+        "https://www.cdc.gov/han/php/notices/index.html", now, ["cdc", "standby"], {"severity": "STANDBY"},
     ))
     return rows[:5]
 
@@ -574,8 +580,8 @@ def _try_conflict(now):
             row = dict(row)
             row["kind"] = "conflict"
             row["lane"] = "threat"
-            row["severity"] = "WATCH"
-            row["tags"] = list(dict.fromkeys((row.get("tags") or []) + ["conflict", "watch"]))
+            row["severity"] = "ALERT"
+            row["tags"] = list(dict.fromkeys((row.get("tags") or []) + ["conflict", "alert"]))
             rows.append(row)
         return rows
     except Exception as err:
@@ -599,9 +605,9 @@ def _try_neos(now):
             link = "https://cneos.jpl.nasa.gov/ca/"
             note = f"NASA/JPL close-approach distance {dist} AU." if dist else "NASA/JPL close approach."
             try:
-                sev = "CRITICAL" if float(dist) < 0.01 else "WARNING" if float(dist) < 0.02 else "WATCH"
+                sev = "CRITICAL" if float(dist) < 0.01 else "ACTION" if float(dist) < 0.02 else "ALERT" if float(dist) < 0.035 else "STANDBY"
             except ValueError:
-                sev = "WATCH"
+                sev = "ALERT"
             rows.append(_item("neo", "threat", "NASA/JPL CNEOS", f"Close approach {name}", note, link, when, ["neo", sev.lower()], {"severity": sev}))
     except Exception as err:
         print(f"  cneos: {err}")
@@ -611,7 +617,7 @@ def _try_neos(now):
         for rec in data[:3]:
             name = rec.get("des") or rec.get("fullname") or "sentry object"
             link = "https://cneos.jpl.nasa.gov/sentry/"
-            rows.append(_item("sentry", "threat", "NASA/JPL Sentry", f"Sentry object {name}", "Impact-monitoring list. See the JPL page for the risk table.", link, now, ["sentry", "watch"], {"severity": "WATCH"}))
+            rows.append(_item("sentry", "threat", "NASA/JPL Sentry", f"Sentry object {name}", "Impact-monitoring list. See the JPL page for the risk table.", link, now, ["sentry", "alert"], {"severity": "ALERT"}))
     except Exception as err:
         print(f"  sentry: {err}")
     return rows
