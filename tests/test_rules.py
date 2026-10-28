@@ -215,6 +215,17 @@ def test_x_millis_posts_are_not_dropped():
     ) == "repost"
 
 
+def test_board_helpers():
+    import boards
+    assert boards.index_change(100, 80) == (20.0, 25.0)
+    assert boards.index_change(None, 10) == (None, None)
+    assert boards.quake_severity(7.1) == "CRITICAL"
+    assert boards.quake_severity(6.2) == "WARNING"
+    assert boards.quake_severity(4.6) == "WATCH"
+    assert boards.alert_severity("Tornado Warning", "Extreme") == "CRITICAL"
+    assert boards.alert_severity("Flood Watch", "Minor") == "WATCH"
+
+
 def test_urls_and_ids():
     assert d.http_url("https://example.com/a") == "https://example.com/a"
     assert d.http_url("javascript:alert(1)") == ""
@@ -236,5 +247,6 @@ if __name__ == "__main__":
     test_bearer_and_x_errors()
     test_carota_fallback_after_403()
     test_x_millis_posts_are_not_dropped()
+    test_board_helpers()
     test_urls_and_ids()
     print("ok")

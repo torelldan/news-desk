@@ -1,18 +1,16 @@
 {
   "baseline": false,
-  "checkedAt": "2026-10-28T14:12:46-05:00",
-  "checkedLabel": "Oct 28, 2026 2:12 PM CT",
-  "errors": [
-    "Carota Wealth: <urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1010)>"
-  ],
+  "checkedAt": "2026-10-28T15:13:41-05:00",
+  "checkedLabel": "Oct 28, 2026 3:13 PM CT",
+  "errors": [],
   "retainDays": 120,
   "today": "2026-10-28",
   "x": {
-    "detail": "",
-    "note": "",
     "online": true,
+    "note": "",
     "reason": "",
     "status": null,
-    "title": ""
+    "title": "",
+    "detail": ""
   }
 }

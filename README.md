@@ -50,6 +50,17 @@ Signals:
 
 Every row links to its source. If a row has no http(s) link, it is dropped.
 
+## Prepared citizen desk
+
+The page is a situation log, not a trading terminal. Section names: Watchlist, Intel briefs, Situation Log, Signals, Cache. Economic watch, the threat board, the impact map, and the frontier lab sit beside the podcast and X feeds.
+
+- Economic watch: session hours are converted to America/Chicago in the browser, including daylight time. OPEN/CLOSED treats Saturday and Sunday as closed. Only NYSE holidays are listed; other venues can show OPEN on a local holiday. Index levels come from Yahoo Finance (Stooq is not required). A blank level is `n/a`. Headlines are Google News RSS.
+- World threat board: USGS M4.5+ for the week, NHC storm RSS, NWS alerts for Franklin TN (35.925, -86.869), Tennessee, then U.S. tornado, flood, and hurricane warnings, GDACS, ReliefWeb, WHO outbreak notices, CDC HAN when the feed answers, conflict headlines, NASA/JPL close approaches and Sentry, and a link to the Bulletin Doomsday Clock. Severity is WATCH, WARNING, or CRITICAL.
+- Impact map: an equirectangular land outline with those events that include coordinates. DXY (or UUP), gold, silver, BTC, and ETH show a level and a short sparkline from Yahoo or CoinGecko. The correlation notes are typical historical patterns, not predictions or advice.
+- Frontier lab: a capped set of arXiv preprints, phys.org, NASA, Nature, ScienceDaily, bioRxiv, medRxiv, IEEE Spectrum, MIT Technology Review, and the Google AI blog. Preprints are tagged PREPRINT. Journal article URLs are tagged PEER-REVIEWED. News is tagged NEWS.
+
+If a feed fails, the previous JSON for that board is kept and the error is listed in `data/meta.json`. No key is required beyond `X_BEARER_TOKEN`.
+
 ## X feed offline
 
 The refresh job reads the Actions secret `X_BEARER_TOKEN`. If that secret is missing, or the API rejects it, X is skipped, the rest of the desk still updates, and the page shows **X feed offline**.

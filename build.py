@@ -38,6 +38,11 @@ def main() -> None:
         "pages": pages.get("pages") if isinstance(pages, dict) else [],
         "changes": changes.get("items") if isinstance(changes, dict) else [],
         "sources": load("sources.json", []),
+        "markets": load("markets.json", {"regions": [], "holidayNote": ""}),
+        "threats": load("threats.json", {"items": []}),
+        "assets": load("assets.json", {"series": []}),
+        "science": load("science.json", {"items": []}),
+        "world": load("world.json", {"viewBox": "0 0 800 400", "path": ""}),
     }
     template = (ROOT / "template.html").read_text()
     if "/*__DATA__*/" not in template:
@@ -47,7 +52,10 @@ def main() -> None:
     (ROOT / "index.html").write_text(html)
     n_eps = len(desk["episodes"])
     n_sig = len(desk["signals"])
-    print(f"wrote index.html: {n_eps} episodes, {n_sig} signals, {len(desk['sources'])} sources, updated {desk['updated'] or 'unfetched'}")
+    n_m = len((desk["markets"] or {}).get("regions") or [])
+    n_t = len((desk["threats"] or {}).get("items") or [])
+    n_s = len((desk["science"] or {}).get("items") or [])
+    print(f"wrote index.html: {n_eps} episodes, {n_sig} signals, {n_m} markets, {n_t} threats, {n_s} papers, updated {desk['updated'] or 'unfetched'}")
 
 
 if __name__ == "__main__":
