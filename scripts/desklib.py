@@ -49,14 +49,20 @@ def parse_pubdate(raw: str) -> datetime | None:
     raw = (raw or "").strip()
     if not raw:
         return None
+    # X API created_at is ISO-8601 with milliseconds: 2026-10-28T19:02:49.000Z
+    iso = raw[:-1] + "+00:00" if raw.endswith("Z") else raw
+    try:
+        return to_ct(datetime.fromisoformat(iso))
+    except ValueError:
+        pass
     try:
         return to_ct(parsedate_to_datetime(raw))
     except (TypeError, ValueError, IndexError, OverflowError):
         pass
-    for fmt in ("%Y-%m-%dT%H:%M:%S%z", "%Y-%m-%dT%H:%M:%SZ", "%Y-%m-%d"):
+    for fmt in ("%Y-%m-%dT%H:%M:%S.%f%z", "%Y-%m-%dT%H:%M:%S%z", "%Y-%m-%dT%H:%M:%SZ", "%Y-%m-%d"):
         try:
-            dt = datetime.strptime(raw.replace("Z", "+0000") if fmt.endswith("Z") else raw, fmt)
-            return to_ct(dt)
+            stamp = raw.replace("Z", "+0000") if raw.endswith("Z") else raw
+            return to_ct(datetime.strptime(stamp, fmt))
         except ValueError:
             continue
     return None
