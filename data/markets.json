@@ -1,0 +1,796 @@
+{
+  "holidayNote": "OPEN/CLOSED uses weekday sessions in each exchange's zone, converted to America/Chicago. Only the NYSE holiday list is included; other venues may be open on a local holiday.",
+  "regions": [
+    {
+      "id": "usa",
+      "name": "USA",
+      "venues": [
+        {
+          "name": "NYSE / Nasdaq",
+          "indexName": "S&P 500",
+          "symbol": "^GSPC",
+          "timezone": "America/New_York",
+          "sessions": [
+            {
+              "open": "09:30",
+              "close": "16:00"
+            }
+          ],
+          "holidays": [
+            "2026-01-01",
+            "2026-01-19",
+            "2026-02-16",
+            "2026-04-03",
+            "2026-05-25",
+            "2026-06-19",
+            "2026-07-03",
+            "2026-09-07",
+            "2026-11-26",
+            "2026-12-25"
+          ],
+          "level": 7743.98,
+          "change": 21.38,
+          "changePct": 0.28,
+          "asOf": "2026-10-28",
+          "source": "https://finance.yahoo.com/quote/%5EGSPC"
+        }
+      ],
+      "headlines": [
+        {
+          "id": "headline:925b765d475ad870",
+          "kind": "headline",
+          "lane": "news",
+          "source": "PBS",
+          "sourceId": "headline",
+          "title": "WATCH LIVE: Fed chair Warsh holds briefing after latest interest rate decision - PBS",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOeDRabTk3MGZlX1gzSnlMWEhPLTczT3pUckE2Q3R4cUpHT0lfQnFKRHo1eWdiQ1FiVXBXQlV6RVhpSTROYUZoYlFzRVlxMWlGUFdZcW5jMXpKdlBiZHRJMzNSOGJMTUFMWVdDVS1sbkFNcy12TGlnVE5rclMyREY5SEl6dEEwVE1VdFMyX0V2VWtFLWVVQ05iUWJMT2M1blZPZkNOUi1xLVFCWi1WZGxsZFJhXzDSAboBQVVfeXFMTV9BakhETXRqMkhSSzY5V1hjVHZ2Y1VkVzFMX19ua1BLUTRGQWdLWTI3aEcwMkhROG5tSjlDMHRLbDAtczhuV2djeUl2VHVydUo2NGFxcVk3YmpkdDRNMndOYlRlVzA0X3Y0WWxLU3hTanFreDdqdXA4ZmJPWk1QWU1BbHdocmo4VmVwLXEtTU5GUFhsYkhUN1VmZXB4TnE2SmItLVMtang4Tmd2NDdwanpPVUVpczB5aFZn?oc=5",
+          "published": "2026-10-28T09:14:27-05:00",
+          "date": "2026-10-28",
+          "label": "Oct 28, 2026 9:14 AM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline"
+          ]
+        },
+        {
+          "id": "headline:fb72f4d9651b43f8",
+          "kind": "headline",
+          "lane": "news",
+          "source": "NBC News",
+          "sourceId": "headline",
+          "title": "Federal Reserve leaves interest rates unchanged despite rising inflation - NBC News",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPcHhyOWk0NW9KMUxVdWU1d015dG1YZmdWV2JsbGFRbTV5UFUxZUdENy10ZHl4M3FQakxWNW53enE3Um9IT3NCUUtDaDlkLWpXX0lpUWZPV214WURKVVdLcWtTczUzdjZiVm9HUFNzRmVSeUd2TzF2VDBpWlFvbzdyeWotdl9zOVAzaDhCZW9MQQ?oc=5",
+          "published": "2026-10-28T13:44:23-05:00",
+          "date": "2026-10-28",
+          "label": "Oct 28, 2026 1:44 PM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline"
+          ]
+        },
+        {
+          "id": "headline:ac9795f545cf6606",
+          "kind": "headline",
+          "lane": "news",
+          "source": "CBS News",
+          "sourceId": "headline",
+          "title": "Federal Reserve to announce its latest interest rate today. Here's what economists expect. - CBS News",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQTjc3SWhXX3BBd29iUjJQRC1HZ1k2M1ZzU3RORWEySTQ4TGdaSjdaMjIwNTVUWFJpZW5OZmU4X2JPYlNSOWEzRW1BNHJVRTk3azhSRExhRTRlNG8tNzhsMHhIcUpIZGdScG5jWnNGR1A1VVdpWTVNcDhMYm5kZjFWSzJn?oc=5",
+          "published": "2026-10-28T10:29:04-05:00",
+          "date": "2026-10-28",
+          "label": "Oct 28, 2026 10:29 AM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline"
+          ]
+        },
+        {
+          "id": "headline:404424603c8661a2",
+          "kind": "headline",
+          "lane": "news",
+          "source": "ABC News - Breaking News, Latest News and Videos",
+          "sourceId": "headline",
+          "title": "Federal Reserve holds interest rates steady as midterm elections loom - ABC News - Breaking News, Latest News and Videos",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPUEhoYVl4OGJtaXFLRU1idHB1dmlvYk1uNEtNNnlMVkFlZEN4N3hpNVB5cmNjWkFEajM2WUZ4bDJJN0pNYlpra21QSGI4cFFwLWllM0xxZlptYWRmdkRlbXAwRWVLcGRBd3J3MDFpUDBvUjVWMElMOGwtZlJMemRJQzczLXI1cWNFMnJKeEcwcGJhUjkzVjZfZ3puam1BQUZFMTRFZ1BIa9IBrAFBVV95cUxQeXRhLUNLYUFqaEtwY25VNnhEUzVzZmRMczBrdVo0SnJXdjdCZjhCbVpURUZJQ2M2MUwyVzlHblFrcTQ0UGhIYUVubHhUZHFVbldqNnJxOFprRG9FRmJIV3ZPaFJiSHZ2a1k0N2R4Q2swcFJ2cDNhZVVJdG0zbG9qaFdvd1l5MXcwbjFWZnBFelBZdFZBMk9pekEzOGFmaEVqVVNmTkx4dXU0eXha?oc=5",
+          "published": "2026-10-28T13:42:08-05:00",
+          "date": "2026-10-28",
+          "label": "Oct 28, 2026 1:42 PM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "north-america",
+      "name": "North America",
+      "venues": [
+        {
+          "name": "TSX",
+          "indexName": "S&P/TSX",
+          "symbol": "^GSPTSE",
+          "timezone": "America/Toronto",
+          "sessions": [
+            {
+              "open": "09:30",
+              "close": "16:00"
+            }
+          ],
+          "holidays": [],
+          "level": 36265.09,
+          "change": 93.59,
+          "changePct": 0.26,
+          "asOf": "2026-10-28",
+          "source": "https://finance.yahoo.com/quote/%5EGSPTSE"
+        },
+        {
+          "name": "BMV",
+          "indexName": "IPC Mexico",
+          "symbol": "^MXX",
+          "timezone": "America/Mexico_City",
+          "sessions": [
+            {
+              "open": "08:30",
+              "close": "15:00"
+            }
+          ],
+          "holidays": [],
+          "level": 69201.94,
+          "change": -509.93,
+          "changePct": -0.73,
+          "asOf": "2026-10-28",
+          "source": "https://finance.yahoo.com/quote/%5EMXX"
+        }
+      ],
+      "headlines": [
+        {
+          "id": "headline:fd242053ac3f7e12",
+          "kind": "headline",
+          "lane": "news",
+          "source": "The Real Economy Blog",
+          "sourceId": "headline",
+          "title": "Bank of Canada raises interest rate to 2.5%—with more hikes to come - The Real Economy Blog",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPR1liaEw3bWxBRHk4dFhMcGs3QnNPQzRxX2lYVjJpb1c4XzRBbGtuWERYY2lCQlY2dXoyUWFwdzc4Mk5Ba2J1a245b0t3cEJxREg5NThyZERKdkZ3YWJGZ3RPUFB6dXZ1dFduNEdxbTJWQVVLdDNMR09DS080RXYwWGY1MHV4bldORWNENklKSU9tc0FoeUFTd0pLRml1Zw?oc=5",
+          "published": "2026-10-28T10:45:34-05:00",
+          "date": "2026-10-28",
+          "label": "Oct 28, 2026 10:45 AM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline"
+          ]
+        },
+        {
+          "id": "headline:77559bae5ffe2785",
+          "kind": "headline",
+          "lane": "news",
+          "source": "CoStar",
+          "sourceId": "headline",
+          "title": "News | Bank of Canada raises key rate to 2.5% in first hike in three years - CoStar",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNWXBvS3N6VVR0eW00azA4a193bWxrcy00MEMxV0JiUVdDOW1vU0U5Y0lHckdCRzRxSnVwTVZ0SEVWNXdlVUNuTl9aeEdQZGY3Wjh0Yk9xWVRHUWs5N2pGWXZsU0pJNmNIbHlobkVqU3BGMklzZlR6V3BfMEoxYWdlUFh4NGR5Z0J6NjllYWFzemhENTltYnBWRmNtMXJtQkh4NWMtZklWOU1QMXVO?oc=5",
+          "published": "2026-10-28T11:00:59-05:00",
+          "date": "2026-10-28",
+          "label": "Oct 28, 2026 11:00 AM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline"
+          ]
+        },
+        {
+          "id": "headline:6baf8524d5d277ad",
+          "kind": "headline",
+          "lane": "news",
+          "source": "France 24",
+          "sourceId": "headline",
+          "title": "Canada hikes rates to contain oil price surge caused by Iran war - France 24",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNTmJfQVlMcjhHVnZBSHZqV1R2bVZQSUlnTHJRbTYtMEdfS0JGVTZSLUlxOVFuWXF6eTEtaG1yOGJQZVh4UWNacU12b1Zoa1NqdnBVMXZnTkpibTk4YjR2MDJZaDZsdFZ1Z0xxR0NEbzM4N1lfb0RYc0lnNlQxUFc1RWIxanI5b0N6TlJ2VFV0eml1WGV5LWZua185Qk1OMWRjalE0eGFGN2V6QWNKeWRTMQ?oc=5",
+          "published": "2026-10-28T10:56:34-05:00",
+          "date": "2026-10-28",
+          "label": "Oct 28, 2026 10:56 AM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline"
+          ]
+        },
+        {
+          "id": "headline:61ce1002630c200b",
+          "kind": "headline",
+          "lane": "news",
+          "source": "TD Stories",
+          "sourceId": "headline",
+          "title": "The Bank of Canada just raised its policy interest rate - TD Stories",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPcW1qVGhfcjBhOFF0Rlo4TDBtVVBRc2VGRzdYakdSSi0tUWtUN244WVRESjFsemJmRUZLWktoZ3F0TVFXdEpBZWsxOXVJSUVBWGlHd1h2eHZIWFR0a3J4dndGWTlDbWZNbFAtcjRQY3o4cE9vcDBMdTM4RTBiaHhyYWsxTk8?oc=5",
+          "published": "2026-10-28T09:49:09-05:00",
+          "date": "2026-10-28",
+          "label": "Oct 28, 2026 9:49 AM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "latin-america",
+      "name": "Latin America",
+      "venues": [
+        {
+          "name": "B3",
+          "indexName": "Ibovespa",
+          "symbol": "^BVSP",
+          "timezone": "America/Sao_Paulo",
+          "sessions": [
+            {
+              "open": "10:00",
+              "close": "17:00"
+            }
+          ],
+          "holidays": [],
+          "level": 170946.55,
+          "change": -4763.45,
+          "changePct": -2.71,
+          "asOf": "2026-10-28",
+          "source": "https://finance.yahoo.com/quote/%5EBVSP"
+        }
+      ],
+      "headlines": [
+        {
+          "id": "headline:99700c86d28edd89",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Bloomberg.com",
+          "sourceId": "headline",
+          "title": "Brazil Markets Crater, Some Stocks Sink 50% After Lula Victory - Bloomberg.com",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPRWNieW1WT3NpRmdERGNsa1dyWDNVZ2JWYWJqckFwX21zVXZyQTZSWTJ4dTlGRVN0dXlyWEZJek9NcHdzeTgxSGZUY0x4d0dpVmY5dzYyNDdLSUZsZmt6b3RjRlpGeVlfLWJVazN6bG1TSUdGRm9teGZGSVhLeWEwRHFzNDRJM09MemxoaGxoWktpWXNJZFZVZlhGR3I4bTcwOWxNRjdnU3VOejdZczYtMFBiLUs?oc=5",
+          "published": "2026-10-26T15:23:54-05:00",
+          "date": "2026-10-26",
+          "label": "Oct 26, 2026 3:23 PM CT",
+          "weekday": "Mon",
+          "timeKnown": true,
+          "tags": [
+            "headline"
+          ]
+        },
+        {
+          "id": "headline:25118ee9f9e6d31f",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Reuters",
+          "sourceId": "headline",
+          "title": "Brazil's markets recover some ground after selloff; minister vows fiscal discipline - Reuters",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOMXExT19UeVJNZFFadkVlQ3A1WXBnSnFqR1RfVEF4N3VqcmNUdUMtMF9SRS1DWUlFSEFDZnBJNzVMNUltbmVaQVg1NkJWWWJvTDdSVW1JZzhybGJiX0xGbklmSTZnUTFESmNoRXc1VGJELXRYNi1tc092eE4xYlA3QXF5VmRmdWNzdU9ROWs2dU1ZNjcycnR0LTNvNzZ4TzIwOTUyWC1BYnZVMTFDdC1wUFpRd0xPYVc2ODM3UHVR?oc=5",
+          "published": "2026-10-27T10:16:54-05:00",
+          "date": "2026-10-27",
+          "label": "Oct 27, 2026 10:16 AM CT",
+          "weekday": "Tue",
+          "timeKnown": true,
+          "tags": [
+            "headline"
+          ]
+        },
+        {
+          "id": "headline:9f6d5ba8712b5484",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Eurasia Business News",
+          "sourceId": "headline",
+          "title": "Brazilian Markets Crash 15% After Lula’s Unexpected Election - Eurasia Business News",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQWERKTEFBeG9SbFF0aEJqRlNIZ2RleE5kT0lKYkxyeXBwZU9hN3dDemhsZU56NGttZWZPNXlfSmJmUnh3WC1CMVNiOElVZEpOVU1mRF9Mbmw2bE94S0NjQldfbnZfWEV0VHV1Y2ItMjg0S29TUnBCRTFrOERBQkg1amlQTjF0OGlIeUt4aU9Rd3dmSnpoZnR3VDNzanFBZ2JqRm96Mg?oc=5",
+          "published": "2026-10-26T18:23:36-05:00",
+          "date": "2026-10-26",
+          "label": "Oct 26, 2026 6:23 PM CT",
+          "weekday": "Mon",
+          "timeKnown": true,
+          "tags": [
+            "headline"
+          ]
+        },
+        {
+          "id": "headline:dd577350a8e8fb8c",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Valor International",
+          "sourceId": "headline",
+          "title": "Investors look to Lula’s economic team after market rout - Valor International",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNXzVnLTRGWnJIZy1yeUM0azl3N2ozc1dGSExQaDJEdmZVWHlCbG5QUHhpNHpYTXptSjBVbDFDVzJmRVota256d21aeTk4Nkl6VGlFSWNqZlhYVkJtckM1TzhtT0l0bE1YNFlEbGROM0NBZ0NDUXk0RDdUazVfQW5ubkp2VlZZakdGODhHeXppLVRRQ2N2TkhfR1d4b2NnaDhvVUtSR1pfTTN0SjFqaDFYV2NZV3ZLVmJqOEFoZnhjb9IBzgFBVV95cUxQVzFCZi1QdXZLUDRyWWlObm50cnJpZ21VQnVtbWd5QjltVWtEeTRPcUJTZWVLRWRrcjcwdjBWRnZvRG5YTzJlaTljLUlSS3FyX01HUUk5LXlPOHUtVGF1M0ZoTXF3MF9IWXEwZy1fNW8xMmgwV3poZVhFd2lyZElzankzLTJ0YWZYakZHeGxPcXo2TGlrb1QyNUtIT0JJMFM2cTBPdkZrYlp1TlRkSjdRWEwtaFRnbXBVWV9CMGRBMEVUZ19UN2NjZmFxaW1pdw?oc=5",
+          "published": "2026-10-27T05:23:53-05:00",
+          "date": "2026-10-27",
+          "label": "Oct 27, 2026 5:23 AM CT",
+          "weekday": "Tue",
+          "timeKnown": true,
+          "tags": [
+            "headline"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "russia",
+      "name": "Russia",
+      "venues": [
+        {
+          "name": "MOEX",
+          "indexName": "IMOEX",
+          "symbol": "IMOEX.ME",
+          "timezone": "Europe/Moscow",
+          "sessions": [
+            {
+              "open": "10:00",
+              "close": "18:50"
+            }
+          ],
+          "holidays": [],
+          "level": null,
+          "change": null,
+          "changePct": null,
+          "asOf": "",
+          "source": "https://finance.yahoo.com/quote/IMOEX.ME"
+        }
+      ],
+      "headlines": [
+        {
+          "id": "headline:7fb417463c25dc44",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Investing.com",
+          "sourceId": "headline",
+          "title": "Russia stocks higher at close of trade; MOEX Russia Index up 0.92% - Investing.com",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNNkdYamlQS1JhbFpidEVkRHdyREswQ1Y1OXJWZHdybEFydTFwUnJnSV81N2NiNDBZNGlmZUdDd1ZZS0ZXMlFIcGdaeFdraVFwbHJGbnA4dFU5R2NlUVM3UzFuTUtPdGRJM2gwdzBnRXc1VExIMENEenpFTTVfWENoOFZ0TG1NamwyUTA2aURJVmltRHBzVDNTT1hfRTJCR2VrbU55N3NqenVaR0phdThXR0d2OUMtU2xldkNNNA?oc=5",
+          "published": "2026-10-27T17:38:00-05:00",
+          "date": "2026-10-27",
+          "label": "Oct 27, 2026 5:38 PM CT",
+          "weekday": "Tue",
+          "timeKnown": true,
+          "tags": [
+            "headline"
+          ]
+        },
+        {
+          "id": "headline:15360042c05ea045",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Investing.com",
+          "sourceId": "headline",
+          "title": "Russia stocks higher at close of trade; MOEX Russia Index up 1.09% - Investing.com",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPTUdiV0xDVng2Q2RNVTd4a3FSeTcxOE5pdFdBQnZGTmZuc0tVZ1ZfUVhRSUNibXgxbnFfcGd1clFTLW1JSFRIMWF4X2g1bGxvZVBQdWRSM3VHVjdvOFhMYW5BcGtKdkdqWWhMQmxZaXFEdFlpb00waVltQ0wxRzZuSk5fSkdHSGlvMWdsMFlUMV9yd2Vjc2JHUGtSNUZ4bG1RZFhVMUlOUzFVVTlGUVBNZGxsYTNiTmJxRV9rRQ?oc=5",
+          "published": "2026-10-26T16:28:14-05:00",
+          "date": "2026-10-26",
+          "label": "Oct 26, 2026 4:28 PM CT",
+          "weekday": "Mon",
+          "timeKnown": true,
+          "tags": [
+            "headline"
+          ]
+        },
+        {
+          "id": "headline:c7678c77a8118cac",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Investing.com UK",
+          "sourceId": "headline",
+          "title": "Russia shares higher at close of trade; MOEX Russia Index up 0.92% - Investing.com UK",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPNzQwaU14RTVfYndnekFYVjYwTzVqZXlDZjdCNnlWN3lndldSNWtuWXhCRlNMNVJUeEctUjN5dldKV2tVS0oxNDBENG5wU0xOSVc0c2NZRk1wbFU5S01feTAxTUZ4eHEzblZTQ1hqTkFIRE9UeVNNdUlqOE5ZaEZYMFRTeXBCQ2xGUnJTRXEzS0o0aWZJU3cyZ3VPSVduLW9SWnVzS2JnMWJ2TEFkMEJScUJ1a2tCUGdDLUVN?oc=5",
+          "published": "2026-10-27T16:20:00-05:00",
+          "date": "2026-10-27",
+          "label": "Oct 27, 2026 4:20 PM CT",
+          "weekday": "Tue",
+          "timeKnown": true,
+          "tags": [
+            "headline"
+          ]
+        },
+        {
+          "id": "headline:2a1b4d82ca1574fe",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Investing.com UK",
+          "sourceId": "headline",
+          "title": "Russia shares higher at close of trade; MOEX Russia Index up 1.09% - Investing.com UK",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOYzNlZlBVRlp3YV8tN1ZsX1E0OWQyekJnbFBhektSOW5uaXZiZDFsOWdpdnFMU0ZYRndLWHJLdkhkWm10elQ2eVVDSVM3V3FOQVVlN0x6X1N3cVpYRWxuak80SFdERUo0U3VLb2NGb0pOX21FTzMzYUtrS0hJTXREYWpRYnRNdjV2enl2aHJqQVNQSmg0SF85SzdxYzl1ZmZVcjNCMWo0N0FZams3VVQ4Z3JGMWRSOG9rZkxB?oc=5",
+          "published": "2026-10-26T16:20:00-05:00",
+          "date": "2026-10-26",
+          "label": "Oct 26, 2026 4:20 PM CT",
+          "weekday": "Mon",
+          "timeKnown": true,
+          "tags": [
+            "headline"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "china",
+      "name": "China",
+      "venues": [
+        {
+          "name": "Shanghai",
+          "indexName": "SSE Composite",
+          "symbol": "000001.SS",
+          "timezone": "Asia/Shanghai",
+          "sessions": [
+            {
+              "open": "09:30",
+              "close": "11:30"
+            },
+            {
+              "open": "13:00",
+              "close": "15:00"
+            }
+          ],
+          "holidays": [],
+          "level": 3648.3,
+          "change": -49.22,
+          "changePct": -1.33,
+          "asOf": "2026-10-28",
+          "source": "https://finance.yahoo.com/quote/000001.SS"
+        }
+      ],
+      "headlines": [
+        {
+          "id": "headline:6ef7bbccbdf0391f",
+          "kind": "headline",
+          "lane": "news",
+          "source": "The Economist",
+          "sourceId": "headline",
+          "title": "China’s stock markets are the great global exception - The Economist",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPUHp6ajdhVDZUMl85TS1mb2FwRThEUTBZOUVmc3dhdUJid1NyaGlHNXI2TDQwcWliOW0zWXFBS0NlM1BIYmpCZlNHeFBlNnBaaGZIWjBpNkt5WU5ndmhvWkxBUzd3SWFpUnFBVkJwemlvUWptT3VVS2IwakFrWVA1dDMyaWgyMWUwbEdqWGM4bndMcWlaeElkZFFqTzRiUG5qUGpibjhRN0RhYnh0ZWFV?oc=5",
+          "published": "2026-10-28T14:48:19-05:00",
+          "date": "2026-10-28",
+          "label": "Oct 28, 2026 2:48 PM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline"
+          ]
+        },
+        {
+          "id": "headline:be33a6ec609b9032",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Financial Times",
+          "sourceId": "headline",
+          "title": "China rushes to shore up markets as AI trade sours - Financial Times",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNSnVPSDFLZ1NVWE1fVVJTTkxTTXJOWTFYd2RjQTlnTUFMbTFSODdBX3Z2V2RQWkNGeDNobEVadzhRejdYcWNXcjNWOXdPTVU0SHhyaGdFSnhFcTdkT0hiTW1Lejg2ZHkzdG1FSDdEMldNRXFrdzhEVXpCdmJSajBPNkJ2Q1A?oc=5",
+          "published": "2026-10-27T22:56:37-05:00",
+          "date": "2026-10-27",
+          "label": "Oct 27, 2026 10:56 PM CT",
+          "weekday": "Tue",
+          "timeKnown": true,
+          "tags": [
+            "headline"
+          ]
+        },
+        {
+          "id": "headline:b5860c8181bdfc8b",
+          "kind": "headline",
+          "lane": "news",
+          "source": "The New York Times",
+          "sourceId": "headline",
+          "title": "China Steps In to Rescue Stocks, But the Market Continues to Fall - The New York Times",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNbUVXYUQxZUhYNnBqZ2lQbjlZLVRyTkphZVhyRDlLWHI3RGk3U3NJTWNOMXEyVG8xVkQtU2wtNGRDUDVrcEc4ZlJVem5heHlWUVExYmtOOVE2MFBNX1kyYm90RHp4OTNaWEJVanhlTm1rVC1zUEFQYVBKSHpPS2M0QzZxM2g2d1RRNDNSV3NxNlh5amZZZ2tv?oc=5",
+          "published": "2026-10-27T09:15:17-05:00",
+          "date": "2026-10-27",
+          "label": "Oct 27, 2026 9:15 AM CT",
+          "weekday": "Tue",
+          "timeKnown": true,
+          "tags": [
+            "headline"
+          ]
+        },
+        {
+          "id": "headline:b6ba8f4bba944ad4",
+          "kind": "headline",
+          "lane": "news",
+          "source": "South China Morning Post",
+          "sourceId": "headline",
+          "title": "Massive state buying can’t reverse China’s stock slide, analysts warn - South China Morning Post",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPdVBFVXJrWFBKYXF4S3YtNFgzeWRESzFYSjF1SndnaHRPbm5HVUtJd1FZSl9ST0huVW1leGtRbDJ1TlBKYVM5UEJnOW51RHN5OVRSQmkxazgxTWV2V2ZRcGkzaVdFRFlhZGJ6d3UwX1pFNGFaWk1rbWhETkZXX3RxczkxQ3A4LURCUmVzSUxhU2M3VG1OUFhXWGo1cFlMbTRTeHhCQWdqMzRaaEdwemJoMWdoNkhTWEM5WGdRWExOZFJ1RE5zUnM4TFlFb9IBywFBVV95cUxPdVBFVXJrWFBKYXF4S3YtNFgzeWRESzFYSjF1SndnaHRPbm5HVUtJd1FZSl9ST0huVW1leGtRbDJ1TlBKYVM5UEJnOW51RHN5OVRSQmkxazgxTWV2V2ZRcGkzaVdFRFlhZGJ6d3UwX1pFNGFaWk1rbWhETkZXX3RxczkxQ3A4LURCUmVzSUxhU2M3VG1OUFhXWGo1cFlMbTRTeHhCQWdqMzRaaEdwemJoMWdoNkhTWEM5WGdRWExOZFJ1RE5zUnM4TFlFbw?oc=5",
+          "published": "2026-10-28T01:00:06-05:00",
+          "date": "2026-10-28",
+          "label": "Oct 28, 2026 1:00 AM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "europe",
+      "name": "Europe",
+      "venues": [
+        {
+          "name": "Xetra",
+          "indexName": "EURO STOXX 50",
+          "symbol": "^STOXX50E",
+          "timezone": "Europe/Berlin",
+          "sessions": [
+            {
+              "open": "09:00",
+              "close": "17:30"
+            }
+          ],
+          "holidays": [],
+          "level": 6167.81,
+          "change": 3.12,
+          "changePct": 0.05,
+          "asOf": "2026-10-28",
+          "source": "https://finance.yahoo.com/quote/%5ESTOXX50E"
+        }
+      ],
+      "headlines": [
+        {
+          "id": "headline:6a23f36818ee2621",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Modern Diplomacy",
+          "sourceId": "headline",
+          "title": "Will France’s Debt Crisis Stop the ECB From Raising Interest Rates Again? - Modern Diplomacy",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNQnUyZFRYWjZpUUxHd2hfWFNrZjZJM1pCRDRxUDRCdk5sQW9ad0dRMzd2TGlITVZtQzBVRzBVZVFDTXFJekRWZnZKZFhpdmU4cjQxSFVmcDMyeVlOSVpENE4ybTcwNVFCMVJiVzFMa3hYU2VsV1BDQ091ZWwtTGNleHFDcEdJY3dOX2I2R3U0SWVYcHViOUNMTHVpUGR4TW1VRTBhMG1FQldKeHBUMmJF?oc=5",
+          "published": "2026-10-28T02:53:05-05:00",
+          "date": "2026-10-28",
+          "label": "Oct 28, 2026 2:53 AM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline"
+          ]
+        },
+        {
+          "id": "headline:53e16444a5428511",
+          "kind": "headline",
+          "lane": "news",
+          "source": "https://economy.ac/",
+          "sourceId": "headline",
+          "title": "European Competitiveness: Capital Rules Built for a Lost Lead - https://economy.ac/",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBsMGNJVFByRDRKSTBINEZNRnB2NHRzbi0zdDJoM1dzUGItLUZzbF9DSnZLZXZBX0MxcWhwTnVVMzJTSFRrRE9sTUYwTGxGVXZnLW1abW9fMVBqUQ?oc=5",
+          "published": "2026-10-28T07:44:51-05:00",
+          "date": "2026-10-28",
+          "label": "Oct 28, 2026 7:44 AM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline"
+          ]
+        },
+        {
+          "id": "headline:bd546b050614e944",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Financial Times",
+          "sourceId": "headline",
+          "title": "The ECB needs a smooth transmission and a smooth transition - Financial Times",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNOTFFNmZtR2pBeURVeWxIZi0tVWRZeEpIYjZoYkg3N2RMOE9ZOW9HM0hTZXZWQW4tdzgzQkFsTWNYbEpuTmdiU25uOE5KZG8xNnNscDBxMmJjeVVaZG9oeTlGdi0waWJTRUpsbGVUWkhKM3BVdnJ2YnhubWtMekJWU2lTMks?oc=5",
+          "published": "2026-10-28T04:57:54-05:00",
+          "date": "2026-10-28",
+          "label": "Oct 28, 2026 4:57 AM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline"
+          ]
+        },
+        {
+          "id": "headline:553d02648a4f3687",
+          "kind": "headline",
+          "lane": "news",
+          "source": "www.tmgm.com",
+          "sourceId": "headline",
+          "title": "Euro gains modestly against CAD after expected BoC rate rise as attention turns to ECB - www.tmgm.com",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQWTRsODJJcTJDZmFiVzhUb2dIZFAtWXZtTXVRWEx0UlFrelZNSWhDWWREWWtxbDlNZHVCQ2NicFpLWVcwdV94dG9GNFdLR29DWWZOdFJxTldJS1AxZ2s1Yi13RUtiTkJWOHdtVGY1M0kxN3ViQzc1eVAzeGtmeG9mX2I2ZS1ETl9OWWUtQlJOY0pMMzA3V3NzTE9Xci1LN05USlZSU1VlelhTQ1pINkFESXFqNHN5QlVTSVlfcEtHUkVGd09XcUtUVlFEdTRSSlo5T1NCUW04QThPbDhy?oc=5",
+          "published": "2026-10-28T11:49:29-05:00",
+          "date": "2026-10-28",
+          "label": "Oct 28, 2026 11:49 AM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "asia",
+      "name": "Asia",
+      "venues": [
+        {
+          "name": "Tokyo",
+          "indexName": "Nikkei 225",
+          "symbol": "^N225",
+          "timezone": "Asia/Tokyo",
+          "sessions": [
+            {
+              "open": "09:00",
+              "close": "11:30"
+            },
+            {
+              "open": "12:30",
+              "close": "15:00"
+            }
+          ],
+          "holidays": [],
+          "level": 63268.37,
+          "change": 1078.72,
+          "changePct": 1.73,
+          "asOf": "2026-10-28",
+          "source": "https://finance.yahoo.com/quote/%5EN225"
+        },
+        {
+          "name": "Hong Kong",
+          "indexName": "Hang Seng",
+          "symbol": "^HSI",
+          "timezone": "Asia/Hong_Kong",
+          "sessions": [
+            {
+              "open": "09:30",
+              "close": "12:00"
+            },
+            {
+              "open": "13:00",
+              "close": "16:00"
+            }
+          ],
+          "holidays": [],
+          "level": 23041.32,
+          "change": -170.49,
+          "changePct": -0.73,
+          "asOf": "2026-10-28",
+          "source": "https://finance.yahoo.com/quote/%5EHSI"
+        },
+        {
+          "name": "India",
+          "indexName": "BSE Sensex",
+          "symbol": "^BSESN",
+          "timezone": "Asia/Kolkata",
+          "sessions": [
+            {
+              "open": "09:15",
+              "close": "15:30"
+            }
+          ],
+          "holidays": [],
+          "level": 73598.67,
+          "change": -8.08,
+          "changePct": -0.01,
+          "asOf": "2026-10-28",
+          "source": "https://finance.yahoo.com/quote/%5EBSESN"
+        }
+      ],
+      "headlines": [
+        {
+          "id": "headline:7b13116fe6b0ada7",
+          "kind": "headline",
+          "lane": "news",
+          "source": "chinadailyhk",
+          "sourceId": "headline",
+          "title": "Northern Metropolis: A strategic reimagining of Hong Kong’s future - chinadailyhk",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5FSjlRVUxKNlpHWXMzM0JxTzNLNFVrZUxqTXZZTnZkcFEwRXItbXlQbFlTSkhRQ2FQUUZOcnZqdEFTZmdwNXRYRG5YaVlrTWl5OGlVNWwyWWY?oc=5",
+          "published": "2026-10-28T12:02:59-05:00",
+          "date": "2026-10-28",
+          "label": "Oct 28, 2026 12:02 PM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline"
+          ]
+        },
+        {
+          "id": "headline:0142fb0353348f89",
+          "kind": "headline",
+          "lane": "news",
+          "source": "South China Morning Post",
+          "sourceId": "headline",
+          "title": "Japan’s US$6 billion port plan aims to revive Bangladesh’s bruised economy - South China Morning Post",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPQjRBQmNCeXc5bTlkNERIRmFWeWdFby1wR2d1ZzBsWkFUVHg4UjgzN0poMFhpdDBDc1hkYTUzYzhMN3NZSzQwUEMtTEVxVF9jRndxUlhVRm5sNEZ3RmZfdTlVVXR5ZTVOY08yQnh0RmdVYUttbGJ2N2ZFV2FVWXhLajgyTE1aa0s1Zk0zVTE0eWdOSFdpU0hWQ3NZcVA2X3o3YXRnN0w4YnIxeFdOUjNRTFduNFZ5NWZQTkw5X2J1UWhtZ9IBwgFBVV95cUxQTUsxdERlUWgyN1hmaWRTTU1PcTBGZGd5TUZZSXNlNmJiV1VYSGlGb3JJRFRkUEEzWG0zdERQLXdUdnJOb25XRndrbTJ5ZFdPNkpTMGhLU0o5UG1JWFFDM2E3SHRERi1XU2lkbXo0ZHdkWVVzVHZQbF9ZVzE0YURLOXBqQUxleG00d19DX0JRZm1mdFBKMGVwYVhvRVNWd2pmQ1dBdHp4RTU5bHNXXzlCX0ZpZHM0X25UNWJiR3kwNmlFQQ?oc=5",
+          "published": "2026-10-28T05:00:24-05:00",
+          "date": "2026-10-28",
+          "label": "Oct 28, 2026 5:00 AM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline"
+          ]
+        },
+        {
+          "id": "headline:877e419c4da1caaf",
+          "kind": "headline",
+          "lane": "news",
+          "source": "https://economy.ac/",
+          "sourceId": "headline",
+          "title": "Beijing’s Dilemma Over Hong Kong’s Wealth Hub - https://economy.ac/",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5LSmE2NVZNLUJWQXREdE9UNXJRQU8xUkpRYnREa05nYjVWWWFfY0tVandxbXlUX3EwR0NfSjAycnJ6eUNHclFqT3p5bDFmaFJCZEduLTdQQncwUQ?oc=5",
+          "published": "2026-10-27T21:31:19-05:00",
+          "date": "2026-10-27",
+          "label": "Oct 27, 2026 9:31 PM CT",
+          "weekday": "Tue",
+          "timeKnown": true,
+          "tags": [
+            "headline"
+          ]
+        },
+        {
+          "id": "headline:be33a6ec609b9032",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Financial Times",
+          "sourceId": "headline",
+          "title": "China rushes to shore up markets as AI trade sours - Financial Times",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNSnVPSDFLZ1NVWE1fVVJTTkxTTXJOWTFYd2RjQTlnTUFMbTFSODdBX3Z2V2RQWkNGeDNobEVadzhRejdYcWNXcjNWOXdPTVU0SHhyaGdFSnhFcTdkT0hiTW1Lejg2ZHkzdG1FSDdEMldNRXFrdzhEVXpCdmJSajBPNkJ2Q1A?oc=5",
+          "published": "2026-10-27T22:56:37-05:00",
+          "date": "2026-10-27",
+          "label": "Oct 27, 2026 10:56 PM CT",
+          "weekday": "Tue",
+          "timeKnown": true,
+          "tags": [
+            "headline"
+          ]
+        }
+      ]
+    }
+  ]
+}

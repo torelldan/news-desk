@@ -542,6 +542,7 @@ def main() -> int:
     now = datetime.now(d.CT)
     catalog = json.loads(SOURCES_PATH.read_text())
     retain = int(catalog.get("retainDays") or 120)
+    prev_meta = load_json(DATA / "meta.json", {})
     prev_eps = load_json(DATA / "episodes.json", [])
     prev_sigs = load_json(DATA / "signals.json", [])
     prev_pages = load_json(DATA / "pages.json", {})
@@ -621,8 +622,27 @@ def main() -> int:
             errors.append(f"X {err}")
     else:
         signals.extend([row for row in prev_sigs if row.get("kind") == "x"])
-        if x_status.get("reason") and x_status.get("reason") != "missing X_BEARER_TOKEN":
+        # A laptop run without the secret should not mark a good cached capture offline.
+        if x_status.get("reason") == "missing X_BEARER_TOKEN" and any(row.get("kind") == "x" for row in signals):
+            prior = prev_meta.get("x") or {}
+            if prior.get("online"):
+                x_status = dict(prior)
+        elif x_status.get("reason") and x_status.get("reason") != "missing X_BEARER_TOKEN":
             errors.append("X feed offline: " + x_status.get("reason"))
+
+    from boards import fetch_assets, fetch_markets, fetch_science, fetch_threats, refresh_file
+    board_ok = 0
+    for label, producer in (
+        ("markets", lambda: fetch_markets(now)),
+        ("threats", lambda: fetch_threats(now)),
+        ("assets", lambda: fetch_assets(now)),
+        ("science", lambda: fetch_science(now)),
+    ):
+        before = len(errors)
+        refresh_file(DATA / f"{label}.json", producer, errors, label)
+        if len(errors) == before:
+            board_ok += 1
+    content_ok += board_ok
 
     if content_ok == 0:
         print("All content fetches failed. Leaving data/ untouched.")
