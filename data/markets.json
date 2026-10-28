@@ -148,9 +148,9 @@
             }
           ],
           "holidays": [],
-          "level": 69201.94,
-          "change": -509.93,
-          "changePct": -0.73,
+          "level": 69182.4,
+          "change": -529.47,
+          "changePct": -0.76,
           "asOf": "2026-10-28",
           "source": "https://finance.yahoo.com/quote/%5EMXX"
         }
@@ -169,6 +169,25 @@
           "published": "2026-10-28T10:45:34-05:00",
           "date": "2026-10-28",
           "label": "Oct 28, 2026 10:45 AM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline"
+          ]
+        },
+        {
+          "id": "headline:7bebd45fadabde76",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Bloomberg.com",
+          "sourceId": "headline",
+          "title": "Rate Hike Kicks Canada’s Housing Market When It’s Down - Bloomberg.com",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNVTl4M2NBYkNEM0hKY2doUkhDQVI5VUxxV0JzdmE2eFJNeTcyYTZxQXk5bzY3TVBTa1BDRlhURUlWTmEzalJuem81NmhXaTlWLUdLZlUzODdJNlFldG1EVVhxOHZRWmlfamJybG1PTzBITk5QZGZTR0MyQlJCNmEzSVJoNkhjbTdiMFo3SDVTR1ZuWVRxSlhtbjJqLUR3c0VlNFY0dF9FY2QzY0psdDhLMVVpTQ?oc=5",
+          "published": "2026-10-28T15:26:07-05:00",
+          "date": "2026-10-28",
+          "label": "Oct 28, 2026 3:26 PM CT",
           "weekday": "Wed",
           "timeKnown": true,
           "tags": [
@@ -212,25 +231,6 @@
           "tags": [
             "headline"
           ]
-        },
-        {
-          "id": "headline:61ce1002630c200b",
-          "kind": "headline",
-          "lane": "news",
-          "source": "TD Stories",
-          "sourceId": "headline",
-          "title": "The Bank of Canada just raised its policy interest rate - TD Stories",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPcW1qVGhfcjBhOFF0Rlo4TDBtVVBRc2VGRzdYakdSSi0tUWtUN244WVRESjFsemJmRUZLWktoZ3F0TVFXdEpBZWsxOXVJSUVBWGlHd1h2eHZIWFR0a3J4dndGWTlDbWZNbFAtcjRQY3o4cE9vcDBMdTM4RTBiaHhyYWsxTk8?oc=5",
-          "published": "2026-10-28T09:49:09-05:00",
-          "date": "2026-10-28",
-          "label": "Oct 28, 2026 9:49 AM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline"
-          ]
         }
       ]
     },
@@ -250,33 +250,14 @@
             }
           ],
           "holidays": [],
-          "level": 170946.55,
-          "change": -4763.45,
-          "changePct": -2.71,
+          "level": 171006.09,
+          "change": -4703.91,
+          "changePct": -2.68,
           "asOf": "2026-10-28",
           "source": "https://finance.yahoo.com/quote/%5EBVSP"
         }
       ],
       "headlines": [
-        {
-          "id": "headline:99700c86d28edd89",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Bloomberg.com",
-          "sourceId": "headline",
-          "title": "Brazil Markets Crater, Some Stocks Sink 50% After Lula Victory - Bloomberg.com",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPRWNieW1WT3NpRmdERGNsa1dyWDNVZ2JWYWJqckFwX21zVXZyQTZSWTJ4dTlGRVN0dXlyWEZJek9NcHdzeTgxSGZUY0x4d0dpVmY5dzYyNDdLSUZsZmt6b3RjRlpGeVlfLWJVazN6bG1TSUdGRm9teGZGSVhLeWEwRHFzNDRJM09MemxoaGxoWktpWXNJZFZVZlhGR3I4bTcwOWxNRjdnU3VOejdZczYtMFBiLUs?oc=5",
-          "published": "2026-10-26T15:23:54-05:00",
-          "date": "2026-10-26",
-          "label": "Oct 26, 2026 3:23 PM CT",
-          "weekday": "Mon",
-          "timeKnown": true,
-          "tags": [
-            "headline"
-          ]
-        },
         {
           "id": "headline:25118ee9f9e6d31f",
           "kind": "headline",
@@ -290,6 +271,25 @@
           "published": "2026-10-27T10:16:54-05:00",
           "date": "2026-10-27",
           "label": "Oct 27, 2026 10:16 AM CT",
+          "weekday": "Tue",
+          "timeKnown": true,
+          "tags": [
+            "headline"
+          ]
+        },
+        {
+          "id": "headline:112294a2360e4f23",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Funds Society",
+          "sourceId": "headline",
+          "title": "Global Asset Managers Demand Fiscal Adjustment Following Lula’s Victory, but See Opportunities in Brazil - Funds Society",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQSWNEMGRPSkx6QkUxUWhSMnhzenAzdDUxQlJmRXhtOWN5V2I0T1pVWFA1cnVvVmpoYTB6Z1JxMHhtRDZLaXQ1OG16TUdJeDBlQ1RTNmExN1hwbUxYaTVrZXVRaGwzWjZMTGdyYzBMZHdpOFN1UHJyN2t6SkExWDFJTFg4NEhsS2loR0NkZUJEeW1FekJESk5IOF8wMzR3RXFUSkt0ZGhsZl9FVFR3VVNYN3VIancyVEU2ZE5yV2Fua0FNZnhNUE1Fb1lnM29BOW84SmJTVGtrVFI2M1EwcW0tLUFR?oc=5",
+          "published": "2026-10-27T13:20:24-05:00",
+          "date": "2026-10-27",
+          "label": "Oct 27, 2026 1:20 PM CT",
           "weekday": "Tue",
           "timeKnown": true,
           "tags": [
@@ -495,9 +495,9 @@
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNSnVPSDFLZ1NVWE1fVVJTTkxTTXJOWTFYd2RjQTlnTUFMbTFSODdBX3Z2V2RQWkNGeDNobEVadzhRejdYcWNXcjNWOXdPTVU0SHhyaGdFSnhFcTdkT0hiTW1Lejg2ZHkzdG1FSDdEMldNRXFrdzhEVXpCdmJSajBPNkJ2Q1A?oc=5",
-          "published": "2026-10-27T22:56:37-05:00",
+          "published": "2026-10-27T22:54:50-05:00",
           "date": "2026-10-27",
-          "label": "Oct 27, 2026 10:56 PM CT",
+          "label": "Oct 27, 2026 10:54 PM CT",
           "weekday": "Tue",
           "timeKnown": true,
           "tags": [
@@ -524,18 +524,18 @@
           ]
         },
         {
-          "id": "headline:b6ba8f4bba944ad4",
+          "id": "headline:a801451801f4e10a",
           "kind": "headline",
           "lane": "news",
-          "source": "South China Morning Post",
+          "source": "Yahoo Finance",
           "sourceId": "headline",
-          "title": "Massive state buying can’t reverse China’s stock slide, analysts warn - South China Morning Post",
+          "title": "Investors Who Piled Into China’s AI Boom Just Watched About $480 Billion Vanish in Under Four Months. Are America’s AI Bulls Next? - Yahoo Finance",
           "guest": "",
           "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPdVBFVXJrWFBKYXF4S3YtNFgzeWRESzFYSjF1SndnaHRPbm5HVUtJd1FZSl9ST0huVW1leGtRbDJ1TlBKYVM5UEJnOW51RHN5OVRSQmkxazgxTWV2V2ZRcGkzaVdFRFlhZGJ6d3UwX1pFNGFaWk1rbWhETkZXX3RxczkxQ3A4LURCUmVzSUxhU2M3VG1OUFhXWGo1cFlMbTRTeHhCQWdqMzRaaEdwemJoMWdoNkhTWEM5WGdRWExOZFJ1RE5zUnM4TFlFb9IBywFBVV95cUxPdVBFVXJrWFBKYXF4S3YtNFgzeWRESzFYSjF1SndnaHRPbm5HVUtJd1FZSl9ST0huVW1leGtRbDJ1TlBKYVM5UEJnOW51RHN5OVRSQmkxazgxTWV2V2ZRcGkzaVdFRFlhZGJ6d3UwX1pFNGFaWk1rbWhETkZXX3RxczkxQ3A4LURCUmVzSUxhU2M3VG1OUFhXWGo1cFlMbTRTeHhCQWdqMzRaaEdwemJoMWdoNkhTWEM5WGdRWExOZFJ1RE5zUnM4TFlFbw?oc=5",
-          "published": "2026-10-28T01:00:06-05:00",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNWHhhS014Y2VNaThmTmFXRE9fS1ZFQVhaakVLbTRSdUlWYVkzaW1OX2xRbEU3WnI2Z0dWZnVyYURrVkNxaDByTWRBMUZPU01xaDhtMGhRd05pS244dGN2QnZsdmJVdjh4YlNPWHJNSnVJdzRrV3h1S0t5TXNGNnBsR2M4c1liWlNnczROYW5rOVlHRnVINkV2MjZ3?oc=5",
+          "published": "2026-10-28T12:15:02-05:00",
           "date": "2026-10-28",
-          "label": "Oct 28, 2026 1:00 AM CT",
+          "label": "Oct 28, 2026 12:15 PM CT",
           "weekday": "Wed",
           "timeKnown": true,
           "tags": [
@@ -607,6 +607,25 @@
           ]
         },
         {
+          "id": "headline:9aed1d830a1c9500",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Reuters",
+          "sourceId": "headline",
+          "title": "COMMENTARY: ECB can cool rate bets, but may not want to yet - Reuters",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPaG8tZ1VDYmVRZ3M3MWFadDRTYXUyQ0tOeGtFenNJU0oyZXlrRHV3VHBMYUZNOHNiaE5QcFJZRHhkbERBbThSNUZGNjJ2b1ljLWdzcUxEWHk5QkNzWmtaeXZhSkZPd2ZwSE5OcWVFTWRpN1JNUi1KdE5lLUhCTGwxbm5YcnE5SGR2QklBYzI3dGU1SzltWHhDTHFaaVk0WllDV3BESVh4ajF5dHp5?oc=5",
+          "published": "2026-10-28T06:01:02-05:00",
+          "date": "2026-10-28",
+          "label": "Oct 28, 2026 6:01 AM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline"
+          ]
+        },
+        {
           "id": "headline:bd546b050614e944",
           "kind": "headline",
           "lane": "news",
@@ -619,25 +638,6 @@
           "published": "2026-10-28T04:57:54-05:00",
           "date": "2026-10-28",
           "label": "Oct 28, 2026 4:57 AM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline"
-          ]
-        },
-        {
-          "id": "headline:553d02648a4f3687",
-          "kind": "headline",
-          "lane": "news",
-          "source": "www.tmgm.com",
-          "sourceId": "headline",
-          "title": "Euro gains modestly against CAD after expected BoC rate rise as attention turns to ECB - www.tmgm.com",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQWTRsODJJcTJDZmFiVzhUb2dIZFAtWXZtTXVRWEx0UlFrelZNSWhDWWREWWtxbDlNZHVCQ2NicFpLWVcwdV94dG9GNFdLR29DWWZOdFJxTldJS1AxZ2s1Yi13RUtiTkJWOHdtVGY1M0kxN3ViQzc1eVAzeGtmeG9mX2I2ZS1ETl9OWWUtQlJOY0pMMzA3V3NzTE9Xci1LN05USlZSU1VlelhTQ1pINkFESXFqNHN5QlVTSVlfcEtHUkVGd09XcUtUVlFEdTRSSlo5T1NCUW04QThPbDhy?oc=5",
-          "published": "2026-10-28T11:49:29-05:00",
-          "date": "2026-10-28",
-          "label": "Oct 28, 2026 11:49 AM CT",
           "weekday": "Wed",
           "timeKnown": true,
           "tags": [
@@ -772,18 +772,18 @@
           ]
         },
         {
-          "id": "headline:be33a6ec609b9032",
+          "id": "headline:aff5dab7b00fa40a",
           "kind": "headline",
           "lane": "news",
-          "source": "Financial Times",
+          "source": "Vietnam Investment Review - VIR",
           "sourceId": "headline",
-          "title": "China rushes to shore up markets as AI trade sours - Financial Times",
+          "title": "Asia storage launches self storage marketplace aggregator platform in Hong Kong - Vietnam Investment Review - VIR",
           "guest": "",
           "note": "",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNSnVPSDFLZ1NVWE1fVVJTTkxTTXJOWTFYd2RjQTlnTUFMbTFSODdBX3Z2V2RQWkNGeDNobEVadzhRejdYcWNXcjNWOXdPTVU0SHhyaGdFSnhFcTdkT0hiTW1Lejg2ZHkzdG1FSDdEMldNRXFrdzhEVXpCdmJSajBPNkJ2Q1A?oc=5",
-          "published": "2026-10-27T22:56:37-05:00",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQa1NfWnpMV0RJRGNmREdSNmZuZ0dBZDljNGpDQV9scVdoejZ3QjVrTDhwUUswaUR6XzFPRlhVVVFQaDRNQXk2U3k3OVkyb0oxR0lNcDJkenVHUVg0NDd2a3RheDZ1VGxjVi1ta25RX3dtVmJZVDBLRXgwNVZnTHlGdF9nYTlxRjd0MXBQMURkQWlGZDdWZERMOVlZZkxsbEVGcEhrWU1ia2QwZ0lCX1E4?oc=5",
+          "published": "2026-10-27T22:01:25-05:00",
           "date": "2026-10-27",
-          "label": "Oct 27, 2026 10:56 PM CT",
+          "label": "Oct 27, 2026 10:01 PM CT",
           "weekday": "Tue",
           "timeKnown": true,
           "tags": [
