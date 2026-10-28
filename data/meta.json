@@ -1,16 +1,18 @@
 {
   "baseline": false,
-  "checkedAt": "2026-10-28T13:50:00-05:00",
-  "checkedLabel": "Oct 28, 2026 1:50 PM CT",
+  "checkedAt": "2026-10-28T14:02:49-05:00",
+  "checkedLabel": "Oct 28, 2026 2:02 PM CT",
   "errors": [
-    "Carota Wealth: HTTP Error 403: Forbidden",
-    "X feed offline: lookup failed"
+    "Carota Wealth: <urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1010)>"
   ],
   "retainDays": 120,
   "today": "2026-10-28",
   "x": {
-    "note": "X feed offline",
-    "online": false,
-    "reason": "lookup failed"
+    "detail": "",
+    "note": "",
+    "online": true,
+    "reason": "",
+    "status": null,
+    "title": ""
   }
 }
