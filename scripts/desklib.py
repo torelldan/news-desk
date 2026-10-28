@@ -3,7 +3,9 @@
 from __future__ import annotations
 
 import hashlib
+import json
 import re
+import urllib.parse
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from html import unescape
@@ -283,6 +285,112 @@ def stable_page_text(html: str) -> str:
 
 def page_hash(html: str) -> str:
     return hashlib.sha256(stable_page_text(html).encode("utf-8")).hexdigest()
+
+
+X_STATUS = {
+    401: ("Unauthorized", ""),
+    402: ("Payment Required", "credits or plan"),
+    403: ("Forbidden", "credits or plan"),
+    429: ("Too Many Requests", "rate limit"),
+}
+
+
+def normalize_bearer(raw: str) -> str:
+    """Strip whitespace and a pasted Bearer prefix. Decode %3D so a URL-encoded secret still works."""
+    token = (raw or "").strip().strip('"').strip("'")
+    if token.lower().startswith("bearer "):
+        token = token[7:].strip()
+    if "%3d" in token.lower():
+        token = urllib.parse.unquote(token).strip()
+    return token
+
+
+def scrub_secret(text: str, secret: str) -> str:
+    text = text or ""
+    secret = secret or ""
+    if len(secret) >= 8 and secret in text:
+        text = text.replace(secret, "[redacted]")
+    return text
+
+
+def parse_x_error_body(body: str) -> tuple[str, str]:
+    """Pull title and detail from an X API error JSON body."""
+    title = ""
+    detail = ""
+    data = None
+    if body:
+        try:
+            data = json.loads(body)
+        except json.JSONDecodeError:
+            data = None
+    if isinstance(data, dict):
+        title = str(data.get("title") or "")
+        detail = str(data.get("detail") or "")
+        errors = data.get("errors")
+        if isinstance(errors, list) and errors and isinstance(errors[0], dict):
+            first = errors[0]
+            title = title or str(first.get("title") or first.get("message") or first.get("code") or "")
+            if not detail:
+                message = str(first.get("detail") or first.get("message") or "")
+                if message and message != title:
+                    detail = message
+        if not title and data.get("error"):
+            title = str(data.get("error"))
+    if not title and not detail and body:
+        detail = re.sub(r"\s+", " ", body).strip()[:300]
+    return title[:180], detail[:400]
+
+
+def describe_x_error(status: int, body: str, token: str = "") -> dict:
+    """Safe log line: HTTP status, hint, and title/detail. The bearer token is never included."""
+    title, detail = parse_x_error_body(body)
+    title = scrub_secret(title, token)
+    detail = scrub_secret(detail, token)
+    label, hint = X_STATUS.get(int(status), ("", ""))
+    head = f"HTTP {int(status)}"
+    if label:
+        head += f" {label}"
+    if hint:
+        head += f" ({hint})"
+    tail = ""
+    if title and detail and detail != title:
+        tail = f"{title} — {detail}"
+    elif title:
+        tail = title
+    elif detail:
+        tail = detail
+    reason = f"{head}: {tail}" if tail else head
+    return {
+        "status": int(status),
+        "title": title,
+        "detail": detail,
+        "reason": scrub_secret(reason, token),
+    }
+
+
+def username_batches(handles: list[str], size: int = 100) -> list[list[str]]:
+    """Public username lookup is one batched /2/users/by call per 100 handles."""
+    clean: list[str] = []
+    for handle in handles:
+        name = str(handle or "").strip().lstrip("@")
+        if name and name not in clean:
+            clean.append(name)
+    return [clean[i:i + size] for i in range(0, len(clean), size)]
+
+
+def carota_feed_candidates(primary: str) -> list[str]:
+    """Primary Substack feed, then the same feed under fallback URLs if the first is forbidden."""
+    urls = []
+    for url in (
+        primary,
+        "https://carotawealth.substack.com/feed",
+        "https://carotawealth.substack.com/feed.xml",
+        "https://www.carotawealth.substack.com/feed",
+    ):
+        url = (url or "").strip()
+        if url and url not in urls:
+            urls.append(url)
+    return urls
 
 
 def assert_public_x_path(path: str) -> str:

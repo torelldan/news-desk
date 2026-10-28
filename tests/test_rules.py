@@ -117,6 +117,77 @@ def test_x_paths_never_include_dms():
             raise AssertionError(blocked)
 
 
+def test_bearer_and_x_errors():
+    assert d.normalize_bearer("abc%3D%3D") == "abc=="
+    assert d.normalize_bearer("Bearer abc%3D") == "abc="
+    assert d.normalize_bearer("  raw-token==  ") == "raw-token=="
+    body = '{"title":"CreditsDepleted","detail":"Your enrolled account does not have any credits.","status":402}'
+    info = d.describe_x_error(402, body, token="super-secret-token")
+    assert info["status"] == 402
+    assert info["title"] == "CreditsDepleted"
+    assert "credits" in info["detail"].lower()
+    assert "HTTP 402 Payment Required (credits or plan)" in info["reason"]
+    assert "CreditsDepleted" in info["reason"]
+    assert "super-secret-token" not in info["reason"]
+    leaked = '{"title":"Bad","detail":"rejected super-secret-token"}'
+    hidden = d.describe_x_error(401, leaked, token="super-secret-token")
+    assert "super-secret-token" not in hidden["reason"]
+    assert "HTTP 401 Unauthorized" in hidden["reason"]
+    assert hidden["detail"] == "rejected [redacted]"
+    limited = '{"errors":[{"message":"Rate limit exceeded","code":88}]}'
+    rate = d.describe_x_error(429, limited)
+    assert "HTTP 429 Too Many Requests (rate limit)" in rate["reason"]
+    assert "Rate limit exceeded" in rate["reason"]
+    batches = d.username_batches(["@joerogan", "joerogan", "lexfridman"])
+    assert batches == [["joerogan", "lexfridman"]]
+    urls = d.carota_feed_candidates("https://carotawealth.substack.com/feed")
+    assert urls[0] == "https://carotawealth.substack.com/feed"
+    assert "https://carotawealth.substack.com/feed.xml" in urls
+    assert len(urls) == len(set(urls))
+
+
+def test_carota_fallback_after_403():
+    import io
+    import urllib.error
+    from datetime import datetime
+    from zoneinfo import ZoneInfo
+    import fetch
+    calls = []
+    real = fetch.get_bytes
+    rss = b"""<?xml version="1.0"?><rss version="2.0"><channel>
+      <title>The Wealth Regime</title>
+      <link>https://carotawealth.substack.com</link>
+      <item>
+        <title>Inflation note</title>
+        <link>https://carotawealth.substack.com/p/inflation-note</link>
+        <pubDate>Fri, 02 Oct 2026 16:54:37 GMT</pubDate>
+        <description>The government revised how inflation is measured and the grocery store did not follow that revision.</description>
+      </item>
+    </channel></rss>"""
+
+    def fake(url, timeout=45, headers=None, user_agent=None):
+        calls.append((url, user_agent))
+        if url == "https://carotawealth.substack.com/feed":
+            raise urllib.error.HTTPError(url, 403, "Forbidden", hdrs=None, fp=io.BytesIO(b"blocked"))
+        return rss, url, 200
+
+    fetch.get_bytes = fake
+    try:
+        spec = {
+            "id": "carota", "name": "Carota Wealth", "feed": "https://carotawealth.substack.com/feed",
+            "skipTitle": [], "rejectChannel": [], "_retain": 120,
+        }
+        items, home, channel = fetch.fetch_carota(spec, datetime.now(ZoneInfo("America/Chicago")))
+    finally:
+        fetch.get_bytes = real
+    assert calls[0][0] == "https://carotawealth.substack.com/feed"
+    assert calls[0][1] == fetch.BROWSER_UA
+    assert calls[1][0] == "https://carotawealth.substack.com/feed.xml"
+    assert len(items) == 1
+    assert channel == "The Wealth Regime"
+    assert home == "https://carotawealth.substack.com"
+
+
 def test_urls_and_ids():
     assert d.http_url("https://example.com/a") == "https://example.com/a"
     assert d.http_url("javascript:alert(1)") == ""
@@ -134,5 +205,7 @@ if __name__ == "__main__":
     test_guest_parser()
     test_page_hash_ignores_clocks()
     test_x_paths_never_include_dms()
+    test_bearer_and_x_errors()
+    test_carota_fallback_after_403()
     test_urls_and_ids()
     print("ok")

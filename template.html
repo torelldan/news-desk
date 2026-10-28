@@ -503,8 +503,10 @@ function render() {
     : "Run python3 scripts/fetch.py && python3 build.py";
   const banner = document.getElementById("xbanner");
   const offline = !(desk.x && desk.x.online);
+  const reason = (desk.x && desk.x.reason) || "";
+  const note = (desk.x && desk.x.note) || "X feed offline";
   banner.hidden = !offline;
-  banner.textContent = (desk.x && desk.x.note) || "X feed offline";
+  banner.textContent = offline && reason && reason !== "missing X_BEARER_TOKEN" ? `${note} — ${reason}` : note;
   renderStatus(items);
   renderToday(items);
   renderWatch(items);
@@ -515,7 +517,12 @@ function render() {
   renderPanel(items);
   const errs = desk.errors || [];
   document.getElementById("errs").textContent = errs.length ? errs.join(" · ") : "";
-  const xLine = offline ? "X feed offline until a bearer token is set." : "X public posts are on.";
+  const xReason = (desk.x && desk.x.reason) || "";
+  const xLine = !offline
+    ? "X public posts are on."
+    : (xReason && xReason !== "missing X_BEARER_TOKEN"
+      ? `X feed offline. ${xReason}`
+      : "X feed offline until a bearer token is set.");
   document.getElementById("foot").textContent =
     `Times are America/Chicago. Notes are official descriptions only. ${xLine} Refresh opens the GitHub Action; choose Run workflow there.`;
 }

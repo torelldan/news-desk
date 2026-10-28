@@ -44,7 +44,7 @@ Rules the fetcher enforces:
 
 Signals:
 
-- Carota Wealth Substack RSS (`carotawealth.substack.com/feed`).
+- Carota Wealth Substack RSS (`carotawealth.substack.com/feed`). GitHub Actions is often answered 403, so this feed is requested with a browser User-Agent and, if that is still forbidden, `feed.xml` and the `www` host.
 - Carota Wealth pages `about.html`, `services.html`, `research.html`, and `contact.html`. The fetcher stores a hash of the stable copy in `data/pages.json`. Digits and calendar words are ignored so a live price or an “as of” date does not count as a change. The first sighting of a page is a baseline, not a change.
 - X accounts, public posts only: `@AlchemyAmerican` `@AmericanALCHMY` `@hubermanlab` `@joerogan` `@lexfridman` `@JonesDanny` `@ShawnRyanShow` `@ShawnRyan762` `@juliandorey`. Retweets and replies are dropped. **Direct messages are never requested.** The only X paths the script will call are `/2/users/by` and `/2/users/{id}/tweets`.
 
@@ -53,6 +53,10 @@ Every row links to its source. If a row has no http(s) link, it is dropped.
 ## X feed offline
 
 The refresh job reads the Actions secret `X_BEARER_TOKEN`. If that secret is missing, or the API rejects it, X is skipped, the rest of the desk still updates, and the page shows **X feed offline**.
+
+Lookup is one batched `GET /2/users/by?usernames=` call, then `GET /2/users/{id}/tweets` with `Authorization: Bearer`. A secret pasted with `%3D` in place of `=` is URL-decoded. The workflow log and `data/meta.json` (`x.status`, `x.title`, `x.detail`, `x.reason`) record the HTTP status and the API error title and detail. The token is never written to the log or the JSON.
+
+The 2026-10-28 run reached X and got **HTTP 402 Payment Required**. That is a credits or plan rejection, not a missing secret (that case is logged as `missing X_BEARER_TOKEN`, and a bad token is HTTP 401). Add credits, or a plan that includes user lookup and recent posts, in the X developer portal, then run the workflow again.
 
 To turn X on:
 
