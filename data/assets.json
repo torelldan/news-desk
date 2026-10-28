@@ -97,7 +97,7 @@
         },
         {
           "date": "2026-10-27",
-          "price": 102.131
+          "price": 102.132
         }
       ],
       "source": "https://finance.yahoo.com/quote/DX-Y.NYB"
@@ -309,8 +309,8 @@
     {
       "id": "btc",
       "name": "BTC",
-      "level": 81294.96,
-      "changePct": 0.33,
+      "level": 81281.14,
+      "changePct": 0.31,
       "asOf": "2026-10-28",
       "points": [
         {
@@ -431,7 +431,7 @@
         },
         {
           "date": "2026-10-28",
-          "price": 81294.96
+          "price": 81281.14
         }
       ],
       "source": "https://www.coingecko.com/en/coins/bitcoin"
@@ -439,8 +439,8 @@
     {
       "id": "eth",
       "name": "ETH",
-      "level": 2362.46,
-      "changePct": 0.2,
+      "level": 2363.53,
+      "changePct": 0.25,
       "asOf": "2026-10-28",
       "points": [
         {
@@ -561,7 +561,7 @@
         },
         {
           "date": "2026-10-28",
-          "price": 2362.46
+          "price": 2363.53
         }
       ],
       "source": "https://www.coingecko.com/en/coins/ethereum"
