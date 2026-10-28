@@ -749,7 +749,7 @@
       "sourceId": "storm",
       "title": "There are no tropical cyclones at this time.",
       "guest": "",
-      "note": "No tropical cyclones as of Wed, 28 Oct 2026 20:38:46 GMT",
+      "note": "No tropical cyclones as of Wed, 28 Oct 2026 21:23:20 GMT",
       "url": "https://www.nhc.noaa.gov/",
       "published": "2026-10-30T00:21:11-05:00",
       "date": "2026-10-30",
@@ -1218,9 +1218,9 @@
       "guest": "",
       "note": "The disasters feed did not answer this run. The link opens the public list.",
       "url": "https://reliefweb.int/disasters",
-      "published": "2026-10-28T15:40:57-05:00",
+      "published": "2026-10-28T16:53:49-05:00",
       "date": "2026-10-28",
-      "label": "Oct 28, 2026 3:40 PM CT",
+      "label": "Oct 28, 2026 4:53 PM CT",
       "weekday": "Wed",
       "timeKnown": true,
       "tags": [
@@ -1365,9 +1365,9 @@
       "guest": "",
       "note": "Official HAN index. A dedicated CDC RSS feed did not answer this run.",
       "url": "https://www.cdc.gov/han/php/notices/index.html",
-      "published": "2026-10-28T15:40:57-05:00",
+      "published": "2026-10-28T16:53:49-05:00",
       "date": "2026-10-28",
-      "label": "Oct 28, 2026 3:40 PM CT",
+      "label": "Oct 28, 2026 4:53 PM CT",
       "weekday": "Wed",
       "timeKnown": true,
       "tags": [
@@ -1393,6 +1393,7 @@
       "timeKnown": true,
       "tags": [
         "headline",
+        "standby",
         "conflict",
         "alert"
       ],
@@ -1415,6 +1416,7 @@
       "timeKnown": true,
       "tags": [
         "headline",
+        "standby",
         "conflict",
         "alert"
       ],
@@ -1437,6 +1439,7 @@
       "timeKnown": true,
       "tags": [
         "headline",
+        "standby",
         "conflict",
         "alert"
       ],
@@ -1459,6 +1462,7 @@
       "timeKnown": true,
       "tags": [
         "headline",
+        "standby",
         "conflict",
         "alert"
       ],
@@ -1481,6 +1485,7 @@
       "timeKnown": true,
       "tags": [
         "headline",
+        "standby",
         "conflict",
         "alert"
       ],
@@ -1503,6 +1508,99 @@
       "timeKnown": true,
       "tags": [
         "headline",
+        "standby",
+        "conflict",
+        "alert"
+      ],
+      "severity": "ALERT"
+    },
+    {
+      "id": "headline:e98e8d3507e0ebec",
+      "kind": "conflict",
+      "lane": "threat",
+      "source": "Report.az",
+      "sourceId": "headline",
+      "title": "Armed conflicts significantly worsen situation of women, Scheherazade Foundation president says - Report.az",
+      "guest": "",
+      "note": "",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQcDVpM3UwZllORnVpT2RLSVIyZEJYX0tld3kwVWN3alh0cWNKU2JLUDZfbGd0a1VmVHhPNmVWdTJTaU0xNzkzRFZaZkhZb0NYOXpGOVI3NGJMWVlYR08zOGxKOEdmX3Iwbi1BekxESlRQUHlGNFNOSEtBZVVNUkNCNXNPb0NfWDlYdEpuQ3RCU05FSHV6NkpHQnFVQWJRMDNUTkxTc3JQQ09laXN0YldxcS1SeEZCcVd3V1dJazl3ckplS3E1VHU4VklfcHk?oc=5",
+      "published": "2026-10-28T03:28:22-05:00",
+      "date": "2026-10-28",
+      "label": "Oct 28, 2026 3:28 AM CT",
+      "weekday": "Wed",
+      "timeKnown": true,
+      "tags": [
+        "headline",
+        "standby",
+        "conflict",
+        "alert"
+      ],
+      "severity": "ALERT"
+    },
+    {
+      "id": "headline:63fb5515a9b8f064",
+      "kind": "conflict",
+      "lane": "threat",
+      "source": "Tamil Guardian",
+      "sourceId": "headline",
+      "title": "ITJP report points to massacre of more than 300 wounded LTTE fighters at Ananthapuram - Tamil Guardian",
+      "guest": "",
+      "note": "",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPMGNLRnVuNjlPWFZZZDlUb0tXMGpDV0FBRXRwb0NDMVQ4SktHZUZFV0RWNERTRVlKcFRfbUctLTkyUWJ3Um02X05hbHhaVWc4TDNsOWprU1pOUlBocFV5TUx4UzBtLXlJdVZMQWc5MU9fdXphUXhjQ21UMFd6VDh3dHJBWGdabU9TMGhoTzFVOTc5NXRCbzJtUnpkM0gwWlVVd1J2NTJUR3VDZkhJWXc?oc=5",
+      "published": "2026-10-28T09:10:39-05:00",
+      "date": "2026-10-28",
+      "label": "Oct 28, 2026 9:10 AM CT",
+      "weekday": "Wed",
+      "timeKnown": true,
+      "tags": [
+        "headline",
+        "standby",
+        "conflict",
+        "alert"
+      ],
+      "severity": "ALERT"
+    },
+    {
+      "id": "headline:f9ce4cea0ac230b0",
+      "kind": "conflict",
+      "lane": "threat",
+      "source": "RBC-Ukraine",
+      "sourceId": "headline",
+      "title": "UK has just over 1,000 days to prepare for potential war with Russia - Defense Minister - RBC-Ukraine",
+      "guest": "",
+      "note": "",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQbU95cTZvRTB6YnJ6THRCX3pVREl2UXRZYmhmOTRvaHZ5MnJid2Rlci1YWkNSSmQ1d2gxWWZ1SU9LOU9jeTUtenVuTC01V2lUSEppcVR6TmlvMV9YQmFyU2EtbVVqZ1F2b1ZsV2tKdEpicVI0ZTJ1SHFKZVNQQ09Ga2p3dG4yNjJLdnlPaHU2YTM0Z0k?oc=5",
+      "published": "2026-10-27T10:55:50-05:00",
+      "date": "2026-10-27",
+      "label": "Oct 27, 2026 10:55 AM CT",
+      "weekday": "Tue",
+      "timeKnown": true,
+      "tags": [
+        "headline",
+        "standby",
+        "conflict",
+        "alert"
+      ],
+      "severity": "ALERT"
+    },
+    {
+      "id": "headline:ed23c859b983a57d",
+      "kind": "conflict",
+      "lane": "threat",
+      "source": "Big News Network.com",
+      "sourceId": "headline",
+      "title": "Women and girls death toll in armed conflict doubles since 2021 - Big News Network.com",
+      "guest": "",
+      "note": "",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPaVR0NmwxeVI5SE1neVJYbHY2dmJsSm1weHBxT1ltRnNXUVlyZW1MZXFwSGUyRmpkVDVzVGRINVI5MmZvX1V3SzNQVDB3VGlpZUE2Z1VTMlllOEtybTFROW0yNEQ3SGwwWnNwYXFaczE0aFZGSXpJQUwySW93bWlBUXNYd0RFbGZZRDhTMkFFY2VZUU14bjJVVkZ0bFU2UEV0U05GYW1Fd2Nzb0lJX2c?oc=5",
+      "published": "2026-10-26T11:05:00-05:00",
+      "date": "2026-10-26",
+      "label": "Oct 26, 2026 11:05 AM CT",
+      "weekday": "Mon",
+      "timeKnown": true,
+      "tags": [
+        "headline",
+        "standby",
         "conflict",
         "alert"
       ],
@@ -1518,9 +1616,9 @@
       "guest": "",
       "note": "NASA/JPL close-approach distance 0.000827061532517659 AU.",
       "url": "https://cneos.jpl.nasa.gov/ca/",
-      "published": "2026-10-28T15:40:57-05:00",
+      "published": "2026-10-28T16:53:49-05:00",
       "date": "2026-10-28",
-      "label": "Oct 28, 2026 3:40 PM CT",
+      "label": "Oct 28, 2026 4:53 PM CT",
       "weekday": "Wed",
       "timeKnown": true,
       "tags": [
@@ -1539,9 +1637,9 @@
       "guest": "",
       "note": "NASA/JPL close-approach distance 0.0021032915876806 AU.",
       "url": "https://cneos.jpl.nasa.gov/ca/",
-      "published": "2026-10-28T15:40:57-05:00",
+      "published": "2026-10-28T16:53:49-05:00",
       "date": "2026-10-28",
-      "label": "Oct 28, 2026 3:40 PM CT",
+      "label": "Oct 28, 2026 4:53 PM CT",
       "weekday": "Wed",
       "timeKnown": true,
       "tags": [
@@ -1560,9 +1658,9 @@
       "guest": "",
       "note": "NASA/JPL close-approach distance 0.00317497717055824 AU.",
       "url": "https://cneos.jpl.nasa.gov/ca/",
-      "published": "2026-10-28T15:40:57-05:00",
+      "published": "2026-10-28T16:53:49-05:00",
       "date": "2026-10-28",
-      "label": "Oct 28, 2026 3:40 PM CT",
+      "label": "Oct 28, 2026 4:53 PM CT",
       "weekday": "Wed",
       "timeKnown": true,
       "tags": [
@@ -1581,9 +1679,9 @@
       "guest": "",
       "note": "NASA/JPL close-approach distance 0.00682778408630668 AU.",
       "url": "https://cneos.jpl.nasa.gov/ca/",
-      "published": "2026-10-28T15:40:57-05:00",
+      "published": "2026-10-28T16:53:49-05:00",
       "date": "2026-10-28",
-      "label": "Oct 28, 2026 3:40 PM CT",
+      "label": "Oct 28, 2026 4:53 PM CT",
       "weekday": "Wed",
       "timeKnown": true,
       "tags": [
@@ -1602,9 +1700,9 @@
       "guest": "",
       "note": "NASA/JPL close-approach distance 0.00795386356544704 AU.",
       "url": "https://cneos.jpl.nasa.gov/ca/",
-      "published": "2026-10-28T15:40:57-05:00",
+      "published": "2026-10-28T16:53:49-05:00",
       "date": "2026-10-28",
-      "label": "Oct 28, 2026 3:40 PM CT",
+      "label": "Oct 28, 2026 4:53 PM CT",
       "weekday": "Wed",
       "timeKnown": true,
       "tags": [
@@ -1623,9 +1721,9 @@
       "guest": "",
       "note": "NASA/JPL close-approach distance 0.011715191719348 AU.",
       "url": "https://cneos.jpl.nasa.gov/ca/",
-      "published": "2026-10-28T15:40:57-05:00",
+      "published": "2026-10-28T16:53:49-05:00",
       "date": "2026-10-28",
-      "label": "Oct 28, 2026 3:40 PM CT",
+      "label": "Oct 28, 2026 4:53 PM CT",
       "weekday": "Wed",
       "timeKnown": true,
       "tags": [
@@ -1644,9 +1742,9 @@
       "guest": "",
       "note": "Impact-monitoring list. See the JPL page for the risk table.",
       "url": "https://cneos.jpl.nasa.gov/sentry/",
-      "published": "2026-10-28T15:40:57-05:00",
+      "published": "2026-10-28T16:53:49-05:00",
       "date": "2026-10-28",
-      "label": "Oct 28, 2026 3:40 PM CT",
+      "label": "Oct 28, 2026 4:53 PM CT",
       "weekday": "Wed",
       "timeKnown": true,
       "tags": [
@@ -1665,9 +1763,9 @@
       "guest": "",
       "note": "Impact-monitoring list. See the JPL page for the risk table.",
       "url": "https://cneos.jpl.nasa.gov/sentry/",
-      "published": "2026-10-28T15:40:57-05:00",
+      "published": "2026-10-28T16:53:49-05:00",
       "date": "2026-10-28",
-      "label": "Oct 28, 2026 3:40 PM CT",
+      "label": "Oct 28, 2026 4:53 PM CT",
       "weekday": "Wed",
       "timeKnown": true,
       "tags": [
@@ -1686,9 +1784,9 @@
       "guest": "",
       "note": "Impact-monitoring list. See the JPL page for the risk table.",
       "url": "https://cneos.jpl.nasa.gov/sentry/",
-      "published": "2026-10-28T15:40:57-05:00",
+      "published": "2026-10-28T16:53:49-05:00",
       "date": "2026-10-28",
-      "label": "Oct 28, 2026 3:40 PM CT",
+      "label": "Oct 28, 2026 4:53 PM CT",
       "weekday": "Wed",
       "timeKnown": true,
       "tags": [
@@ -1707,9 +1805,9 @@
       "guest": "",
       "note": "The official setting is published by the Bulletin. This row is only the link.",
       "url": "https://thebulletin.org/doomsday-clock/",
-      "published": "2026-10-28T15:40:57-05:00",
+      "published": "2026-10-28T16:53:49-05:00",
       "date": "2026-10-28",
-      "label": "Oct 28, 2026 3:40 PM CT",
+      "label": "Oct 28, 2026 4:53 PM CT",
       "weekday": "Wed",
       "timeKnown": true,
       "tags": [

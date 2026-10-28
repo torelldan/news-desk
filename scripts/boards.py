@@ -37,7 +37,7 @@ REGIONS = [
     {
         "id": "usa",
         "name": "USA",
-        "query": "United States economy Federal Reserve when:2d",
+        "query": "United States economy Federal Reserve when:14d",
         "venues": [{
             "name": "NYSE / Nasdaq", "indexName": "S&P 500", "symbol": "^GSPC",
             "timezone": "America/New_York", "sessions": [{"open": "09:30", "close": "16:00"}],
@@ -47,7 +47,7 @@ REGIONS = [
     {
         "id": "north-america",
         "name": "North America",
-        "query": "Canada OR Mexico economy central bank when:2d",
+        "query": "Canada OR Mexico economy central bank when:14d",
         "venues": [
             {"name": "TSX", "indexName": "S&P/TSX", "symbol": "^GSPTSE", "timezone": "America/Toronto",
              "sessions": [{"open": "09:30", "close": "16:00"}], "holidays": []},
@@ -58,7 +58,7 @@ REGIONS = [
     {
         "id": "latin-america",
         "name": "Latin America",
-        "query": "Brazil economy B3 markets when:2d",
+        "query": "Brazil economy B3 markets when:14d",
         "venues": [{
             "name": "B3", "indexName": "Ibovespa", "symbol": "^BVSP", "timezone": "America/Sao_Paulo",
             "sessions": [{"open": "10:00", "close": "17:00"}], "holidays": [],
@@ -67,7 +67,7 @@ REGIONS = [
     {
         "id": "russia",
         "name": "Russia",
-        "query": "Russia economy MOEX when:2d",
+        "query": "Russia economy MOEX when:14d",
         "venues": [{
             "name": "MOEX", "indexName": "IMOEX", "symbol": "IMOEX.ME", "timezone": "Europe/Moscow",
             "sessions": [{"open": "10:00", "close": "18:50"}], "holidays": [],
@@ -76,7 +76,7 @@ REGIONS = [
     {
         "id": "china",
         "name": "China",
-        "query": "China economy Shanghai markets when:2d",
+        "query": "China economy Shanghai markets when:14d",
         "venues": [{
             "name": "Shanghai", "indexName": "SSE Composite", "symbol": "000001.SS", "timezone": "Asia/Shanghai",
             "sessions": [{"open": "09:30", "close": "11:30"}, {"open": "13:00", "close": "15:00"}], "holidays": [],
@@ -85,7 +85,7 @@ REGIONS = [
     {
         "id": "europe",
         "name": "Europe",
-        "query": "Europe ECB economy markets when:2d",
+        "query": "Europe ECB economy markets when:14d",
         "venues": [{
             "name": "Xetra", "indexName": "EURO STOXX 50", "symbol": "^STOXX50E", "timezone": "Europe/Berlin",
             "sessions": [{"open": "09:00", "close": "17:30"}], "holidays": [],
@@ -94,7 +94,7 @@ REGIONS = [
     {
         "id": "asia",
         "name": "Asia",
-        "query": "Japan OR Hong Kong OR India economy markets when:2d",
+        "query": "Japan OR Hong Kong OR India economy markets when:14d",
         "venues": [
             {"name": "Tokyo", "indexName": "Nikkei 225", "symbol": "^N225", "timezone": "Asia/Tokyo",
              "sessions": [{"open": "09:00", "close": "11:30"}, {"open": "12:30", "close": "15:00"}], "holidays": []},
@@ -235,7 +235,8 @@ def _yahoo(symbol: str, range_: str = "1mo") -> dict | None:
     }
 
 
-def _headlines(query: str, now: datetime, limit: int = 4) -> list[dict]:
+def _headlines(query: str, now: datetime, retain_days: int = 120, limit: int = 40) -> list[dict]:
+    """Read every item the RSS still publishes. Callers merge this with older saved rows."""
     url = "https://news.google.com/rss/search?q=" + urllib.parse.quote(query) + "&hl=en-US&gl=US&ceid=US:en"
     raw = _get(url, timeout=25)
     root = ET.fromstring(raw)
@@ -243,8 +244,8 @@ def _headlines(query: str, now: datetime, limit: int = 4) -> list[dict]:
     if channel is None:
         return []
     rows = []
-    cutoff = (now.date() - timedelta(days=7)).isoformat()
-    for node in channel.findall("item")[:12]:
+    cutoff = (now.date() - timedelta(days=retain_days)).isoformat()
+    for node in channel.findall("item"):
         title = re.sub(r"\s+", " ", (node.findtext("title") or "")).strip()
         link = d.http_url(node.findtext("link") or "")
         if not title or not link:
@@ -255,10 +256,22 @@ def _headlines(query: str, now: datetime, limit: int = 4) -> list[dict]:
         if published.strftime("%Y-%m-%d") < cutoff:
             continue
         source = (node.findtext("source") or "Google News").strip()
-        rows.append(_item("headline", "news", source, title, "", link, published, ["headline"]))
+        rows.append(_item("headline", "news", source, title, "", link, published, ["headline", "standby"], {"severity": "STANDBY"}))
         if len(rows) >= limit:
             break
     return rows
+
+
+def merge_rows(fresh, previous, cutoff: str, cap: int = 40) -> list[dict]:
+    """Keep prior rows whose dates are still inside the window, then add new ones. Dedupe by URL."""
+    chosen = {}
+    for row in list(previous or []) + list(fresh or []):
+        url = row.get("url") or ""
+        if not url or (row.get("date") or "") < cutoff:
+            continue
+        chosen[url] = row
+    rows = sorted(chosen.values(), key=lambda row: row.get("published") or "", reverse=True)
+    return rows[:cap]
 
 
 def _item(kind, lane, source, title, note, url, when, tags, extra=None) -> dict:
@@ -285,7 +298,7 @@ def _item(kind, lane, source, title, note, url, when, tags, extra=None) -> dict:
     return row
 
 
-def fetch_markets(now: datetime) -> dict:
+def fetch_markets(now: datetime, previous: dict | None = None, retain_days: int = 120) -> dict:
     regions = []
     for spec in REGIONS:
         venues = []
@@ -304,11 +317,16 @@ def fetch_markets(now: datetime) -> dict:
                 "asOf": quote.get("asOf") or "",
                 "source": quote.get("source") or f"https://finance.yahoo.com/quote/{urllib.parse.quote(venue['symbol'], safe='')}",
             })
-        headlines = []
+        prior_regions = {row.get("id"): row for row in ((previous or {}).get("regions") or [])}
+        old_heads = (prior_regions.get(spec["id"]) or {}).get("headlines") or []
+        cutoff = (now.date() - timedelta(days=retain_days)).isoformat()
         try:
-            headlines = _headlines(spec["query"], now, 4)
+            fresh = _headlines(spec["query"], now, retain_days, 40)
+            headlines = merge_rows(fresh, old_heads, cutoff, 40)
         except Exception as err:
-            print(f"  headlines {spec['id']}: {err}")
+            print(f"  headlines {spec['id']}: {err}; keeping {len(old_heads)} cached")
+            headlines = merge_rows([], old_heads, cutoff, 40)
+        print(f"  headlines {spec['id']}: {len(headlines)}")
         regions.append({"id": spec["id"], "name": spec["name"], "venues": venues, "headlines": headlines})
     return {
         "holidayNote": "OPEN/CLOSED uses weekday sessions in each exchange's zone, converted to America/Chicago. Only the NYSE holiday list is included; other venues may be open on a local holiday.",
@@ -776,6 +794,68 @@ def _science_feed(spec: dict, now: datetime, cutoff: str) -> list[dict]:
         ))
         if len(rows) >= 4:
             break
+    return rows
+
+
+def extra_sources(markets: dict, threats: dict, science: dict) -> list[dict]:
+    """World-desk rows for the boards, not only the podcast and X list."""
+    rows = []
+
+    def add(source_id, name, short, lane, url, items):
+        latest = None
+        for item in items:
+            if latest is None or (item.get("published") or "") > (latest.get("published") or ""):
+                latest = item
+        rows.append({
+            "id": source_id,
+            "name": name,
+            "short": short,
+            "lane": lane,
+            "url": url,
+            "subtitle": lane,
+            "lastLabel": (latest or {}).get("label") or "",
+            "lastDate": (latest or {}).get("date") or "",
+            "count": len(items),
+            "offline": False,
+        })
+
+    for region in (markets or {}).get("regions") or []:
+        venue = (region.get("venues") or [{}])[0]
+        add(
+            "mkt-" + region["id"], region["name"] + " markets", region["name"][:8].upper(),
+            "economy", venue.get("source") or "https://finance.yahoo.com/", region.get("headlines") or [],
+        )
+    kind_home = {
+        "quake": ("USGS earthquakes", "USGS", "https://earthquake.usgs.gov/earthquakes/map/"),
+        "storm": ("NHC storms", "NHC", "https://www.nhc.noaa.gov/"),
+        "nws": ("NWS alerts", "NWS", "https://www.weather.gov/"),
+        "gdacs": ("GDACS", "GDACS", "https://www.gdacs.org/"),
+        "relief": ("ReliefWeb", "RELIEF", "https://reliefweb.int/disasters"),
+        "who": ("WHO outbreaks", "WHO", "https://www.who.int/emergencies/disease-outbreak-news"),
+        "cdc": ("CDC HAN", "CDC", "https://www.cdc.gov/han/php/notices/index.html"),
+        "conflict": ("Conflict wires", "WAR", "https://news.google.com/"),
+        "neo": ("JPL close approaches", "CNEOS", "https://cneos.jpl.nasa.gov/ca/"),
+        "sentry": ("JPL Sentry", "SENTRY", "https://cneos.jpl.nasa.gov/sentry/"),
+        "clock": ("Doomsday Clock", "CLOCK", "https://thebulletin.org/doomsday-clock/"),
+    }
+    by_kind = {}
+    for item in (threats or {}).get("items") or []:
+        by_kind.setdefault(item.get("kind"), []).append(item)
+    for kind, (name, short, url) in kind_home.items():
+        add("threat-" + kind, name, short, "threat", url, by_kind.get(kind) or [])
+    by_field = {}
+    for item in (science or {}).get("items") or []:
+        by_field.setdefault(item.get("field") or "science", []).append(item)
+    field_url = {
+        "physics": "https://phys.org/physics-news/",
+        "propulsion": "https://www.nasa.gov/news/",
+        "biomedical": "https://www.nature.com/",
+        "quantum": "https://arxiv.org/list/quant-ph/recent",
+        "technology": "https://www.technologyreview.com/",
+        "ai": "https://blog.google/technology/ai/",
+    }
+    for field, items in by_field.items():
+        add("lab-" + field, field + " lab", field[:8].upper(), "science", field_url.get(field, "https://arxiv.org/"), items)
     return rows
 
 

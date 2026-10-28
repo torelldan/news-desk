@@ -538,6 +538,91 @@ def source_row(spec_id, name, short, lane, url, subtitle, items, offline=False) 
     }
 
 
+def _slim(item, note=None, section=""):
+    return {
+        "id": item.get("id") or "",
+        "title": item.get("title") or item.get("name") or "",
+        "url": item.get("url") or item.get("source") or "",
+        "source": item.get("source") or "",
+        "label": item.get("label") or "",
+        "published": item.get("published") or "",
+        "date": item.get("date") or "",
+        "severity": item.get("severity") or "",
+        "kind": item.get("kind") or "",
+        "note": item.get("note") if note is None else note,
+        "section": section or item.get("lane") or item.get("kind") or "",
+    }
+
+
+def _headlines_of(markets):
+    rows = []
+    for region in (markets or {}).get("regions") or []:
+        for head in region.get("headlines") or []:
+            row = dict(head)
+            row["section"] = (region.get("name") or "Markets") + " headlines"
+            rows.append(row)
+    return rows
+
+
+def desk_changes(now, prev_meta, prev_seen, change_items, page_changes, prev_markets, markets, prev_threats, threats, prev_science, science):
+    """What is different since the previous saved desk, grouped for the page."""
+    prev_ids = set(prev_seen or [])
+    for bucket in (
+        (prev_threats or {}).get("items") or [],
+        (prev_science or {}).get("items") or [],
+        _headlines_of(prev_markets),
+    ):
+        for item in bucket:
+            if item.get("id"):
+                prev_ids.add(item["id"])
+    fresh = []
+    for item in change_items:
+        fresh.append(_slim(item, section=item.get("lane") or "Desk"))
+    for item in (threats or {}).get("items") or []:
+        if item.get("id") not in prev_ids:
+            fresh.append(_slim(item, section="World threat board"))
+    for item in (science or {}).get("items") or []:
+        if item.get("id") not in prev_ids:
+            fresh.append(_slim(item, section="Frontier lab"))
+    for item in _headlines_of(markets):
+        if item.get("id") not in prev_ids:
+            fresh.append(_slim(item, section=item.get("section") or "Economic watch"))
+    old_sev = {item.get("id"): item.get("severity") for item in (prev_threats or {}).get("items") or []}
+    severity = []
+    for item in (threats or {}).get("items") or []:
+        before = old_sev.get(item.get("id"))
+        after = item.get("severity")
+        if before and after and before != after:
+            severity.append(_slim(item, note=f"{before} → {after}", section="World threat board"))
+    old_px = {}
+    for region in (prev_markets or {}).get("regions") or []:
+        for venue in region.get("venues") or []:
+            old_px[venue.get("symbol")] = venue
+    prices = []
+    for region in (markets or {}).get("regions") or []:
+        for venue in region.get("venues") or []:
+            before = old_px.get(venue.get("symbol")) or {}
+            if before.get("level") is None or venue.get("level") is None:
+                continue
+            if abs(float(before["level"]) - float(venue["level"])) < 0.009:
+                continue
+            prices.append(_slim({
+                "id": "px-" + str(venue.get("symbol")),
+                "title": f"{venue.get('indexName')} {before.get('level')} → {venue.get('level')}",
+                "url": venue.get("source") or "",
+                "source": region.get("name") or "",
+                "kind": "price",
+            }, note="Level moved since the last refresh.", section="Economic watch"))
+    pages = [_slim(item, section="Carota pages") for item in page_changes or []]
+    return {
+        "baseline": False,
+        "since": (prev_meta or {}).get("checkedAt") or "",
+        "sinceLabel": (prev_meta or {}).get("checkedLabel") or "",
+        "counts": {"new": len(fresh), "severity": len(severity), "pages": len(pages), "prices": len(prices)},
+        "groups": {"new": fresh[:30], "severity": severity[:30], "pages": pages[:30], "prices": prices[:30]},
+    }
+
+
 def main() -> int:
     now = datetime.now(d.CT)
     catalog = json.loads(SOURCES_PATH.read_text())
@@ -630,16 +715,20 @@ def main() -> int:
         elif x_status.get("reason") and x_status.get("reason") != "missing X_BEARER_TOKEN":
             errors.append("X feed offline: " + x_status.get("reason"))
 
-    from boards import fetch_assets, fetch_markets, fetch_science, fetch_threats, refresh_file
+    from boards import extra_sources, fetch_assets, fetch_markets, fetch_science, fetch_threats, refresh_file
+    prev_markets = load_json(DATA / "markets.json", {})
+    prev_threats = load_json(DATA / "threats.json", {})
+    prev_science = load_json(DATA / "science.json", {})
     board_ok = 0
+    boards_out = {}
     for label, producer in (
-        ("markets", lambda: fetch_markets(now)),
+        ("markets", lambda: fetch_markets(now, prev_markets, retain)),
         ("threats", lambda: fetch_threats(now)),
         ("assets", lambda: fetch_assets(now)),
         ("science", lambda: fetch_science(now)),
     ):
         before = len(errors)
-        refresh_file(DATA / f"{label}.json", producer, errors, label)
+        boards_out[label] = refresh_file(DATA / f"{label}.json", producer, errors, label) or {}
         if len(errors) == before:
             board_ok += 1
     content_ok += board_ok
@@ -692,6 +781,7 @@ def main() -> int:
             "X feed offline" if x_offline else f"@{account['handle']}",
             mine, offline=x_offline,
         ))
+    catalog_rows.extend(extra_sources(boards_out.get("markets") or {}, boards_out.get("threats") or {}, boards_out.get("science") or {}))
 
     all_items = episodes + signals
     current_ids = [row["id"] for row in all_items]
@@ -702,6 +792,12 @@ def main() -> int:
         baseline = False
         change_items = [row for row in all_items if row["id"] not in prev_seen]
     change_items.sort(key=lambda row: row.get("published") or "", reverse=True)
+    change_groups = desk_changes(
+        now, prev_meta, prev_seen, change_items, page_changes,
+        prev_markets, boards_out.get("markets") or {},
+        prev_threats, boards_out.get("threats") or {},
+        prev_science, boards_out.get("science") or {},
+    )
 
     meta = {
         "baseline": baseline,
@@ -722,11 +818,7 @@ def main() -> int:
     save_json(DATA / "episodes.json", episodes)
     save_json(DATA / "signals.json", signals)
     save_json(DATA / "pages.json", pages_doc)
-    save_json(DATA / "changes.json", {
-        "baseline": baseline,
-        "since": prev_seen_doc.get("checkedAt"),
-        "items": change_items[:80],
-    })
+    save_json(DATA / "changes.json", change_groups)
     save_json(DATA / "meta.json", meta)
     save_json(DATA / "sources.json", catalog_rows)
     save_json(DATA / "seen.json", {"checkedAt": meta["checkedAt"], "ids": current_ids})
