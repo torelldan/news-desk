@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>News Desk</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23050605'/%3E%3Crect x='2' y='3' width='8' height='10' fill='%2339ff14'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&amp;display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #050605;
+    --ink: #dfffe0;
+    --dim: #7f9c86;
+    --green: #39ff14;
+    --magenta: #ff2bd6;
+    --line: #1d3d24;
+    --panel: rgba(7, 10, 7, 0.94);
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--bg); color: var(--ink); }
+  body {
+    font-family: "Share Tech Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    min-height: 100%;
+    background-image:
+      linear-gradient(rgba(57, 255, 20, 0.035) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(57, 255, 20, 0.035) 1px, transparent 1px);
+    background-size: 26px 26px;
+  }
+  body::before {
+    content: "";
+    pointer-events: none;
+    position: fixed;
+    inset: 0;
+    z-index: 40;
+    background: repeating-linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.16) 0px,
+      rgba(0, 0, 0, 0.16) 1px,
+      transparent 2px,
+      transparent 4px
+    );
+    opacity: 0.35;
+  }
+  a { color: var(--green); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:hover { color: var(--magenta); }
+  button, input { font: inherit; color: inherit; }
+  button { cursor: pointer; }
+  :focus-visible { outline: 2px solid var(--magenta); outline-offset: 2px; }
+  .paper {
+    position: relative;
+    z-index: 1;
+    max-width: 1120px;
+    margin: 22px auto 48px;
+    padding: 22px 18px 36px;
+    background: var(--panel);
+    border: 1px solid var(--line);
+  }
+  .tick { position: absolute; width: 12px; height: 12px; border: 2px solid var(--green); }
+  .tick.tl { top: -2px; left: -2px; border-right: 0; border-bottom: 0; }
+  .tick.tr { top: -2px; right: -2px; border-left: 0; border-bottom: 0; }
+  .tick.bl { bottom: -2px; left: -2px; border-right: 0; border-top: 0; }
+  .tick.br { bottom: -2px; right: -2px; border-left: 0; border-top: 0; }
+  .mast {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 8px 18px;
+    align-items: end;
+    border-top: 3px solid var(--green);
+    border-bottom: 3px solid var(--green);
+    padding: 12px 0 14px;
+  }
+  .kicker {
+    margin: 0;
+    color: var(--magenta);
+    letter-spacing: 0.22em;
+    font-size: 12px;
+  }
+  .wordmark {
+    margin: 0;
+    font-size: clamp(40px, 8vw, 76px);
+    line-height: 0.85;
+    letter-spacing: 0.06em;
+    color: var(--green);
+    text-shadow: 2px 0 var(--magenta);
+    position: relative;
+  }
+  .wordmark span {
+    display: inline-block;
+    animation: glitch 5.5s infinite steps(1);
+  }
+  @keyframes glitch {
+    0%, 88%, 100% { transform: none; }
+    90% { transform: translate(-2px, 0); text-shadow: 3px 0 var(--magenta); }
+    93% { transform: translate(2px, 1px); }
+    96% { transform: skewX(-6deg); }
+  }
+  .sub { margin: 6px 0 0; color: var(--dim); letter-spacing: 0.12em; font-size: 12px; text-transform: uppercase; }
+  .tools { display: flex; gap: 8px; align-items: center; justify-content: flex-end; }
+  .tools input {
+    background: #070907;
+    border: 1px solid var(--line);
+    padding: 8px 10px;
+    min-width: min(320px, 70vw);
+  }
+  a.refresh {
+    display: inline-block;
+    border: 1px solid var(--magenta);
+    color: var(--magenta);
+    text-decoration: none;
+    padding: 8px 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+  a.refresh:hover { background: var(--magenta); color: #14010f; }
+  .checked { grid-column: 1 / -1; color: var(--dim); font-size: 13px; }
+  .banner {
+    margin: 12px 0 0;
+    border: 1px solid var(--magenta);
+    color: var(--magenta);
+    padding: 8px 10px;
+    letter-spacing: 0.08em;
+  }
+  .front {
+    display: grid;
+    grid-template-columns: minmax(0, 1.55fr) minmax(260px, 0.75fr);
+    gap: 22px;
+    margin-top: 18px;
+  }
+  h2 {
+    margin: 0 0 10px;
+    font-size: 14px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--green);
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 4px;
+  }
+  h2 em { color: var(--magenta); font-style: normal; }
+  .lead, .card, .node, .row, .prior, .barline {
+    border: 1px solid var(--line);
+    background: #070a07;
+  }
+  .front, .section, .stack, .watch, .map, .list, .split, .card, .row, .node, .lead, .head {
+    min-width: 0;
+    max-width: 100%;
+  }
+  .head { flex-wrap: wrap; }
+  h1, h2, h3, p, a, time, .src { overflow-wrap: anywhere; }
+  .lead, .card { padding: 12px; }
+  .lead h3, .card h3 { margin: 6px 0; font-size: 20px; line-height: 1.25; font-weight: 400; }
+  .card h3 { font-size: 16px; }
+  .meta, .guest, time, .src { color: var(--dim); font-size: 12px; letter-spacing: 0.06em; }
+  .head { display: flex; justify-content: space-between; gap: 8px; }
+  .guest { color: var(--magenta); margin-bottom: 6px; }
+  .card p, .lead p, .row p {
+    margin: 6px 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .open { font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; }
+  .stack, .watch, .map, .list { display: grid; gap: 10px; }
+  .watch { grid-template-columns: repeat(auto-fill, minmax(min(240px, 100%), 1fr)); }
+  .map { grid-template-columns: repeat(auto-fill, minmax(min(180px, 100%), 1fr)); }
+  .section { margin-top: 26px; }
+  .stat { display: flex; justify-content: space-between; gap: 12px; border-bottom: 1px dotted var(--line); padding: 7px 0; }
+  .stat b { color: var(--green); }
+  .stat b.off { color: var(--magenta); }
+  .priors { margin: 0; padding: 0; list-style: none; display: grid; gap: 8px; }
+  .priors li { padding: 8px; border-left: 2px solid var(--magenta); color: var(--ink); }
+  .priors strong { color: var(--green); font-weight: 400; }
+  .node { display: block; padding: 10px; text-decoration: none; color: inherit; min-height: 92px; }
+  .node:hover { border-color: var(--green); }
+  .node b { display: block; color: var(--green); letter-spacing: 0.08em; }
+  .led { display: inline-block; width: 8px; height: 8px; margin-right: 6px; background: var(--dim); box-shadow: 0 0 6px var(--dim); }
+  .led.live { background: var(--green); box-shadow: 0 0 8px var(--green); }
+  .led.stale { background: var(--magenta); box-shadow: 0 0 8px var(--magenta); }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+  .chips button, .tabs button {
+    background: transparent;
+    border: 1px solid var(--line);
+    color: var(--dim);
+    padding: 5px 8px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .chips button.on, .tabs button.on { border-color: var(--green); color: var(--green); }
+  .tabs { display: flex; gap: 6px; margin-bottom: 10px; }
+  .row { padding: 8px 10px; }
+  .row h3 { margin: 2px 0; font-size: 15px; font-weight: 400; }
+  .empty { color: var(--dim); border: 1px dashed var(--line); padding: 12px; }
+  .bars { display: grid; gap: 6px; }
+  .barline { display: grid; grid-template-columns: 52px 1fr 36px; gap: 8px; align-items: center; padding: 4px 8px; }
+  .bar { height: 8px; background: #102013; }
+  .bar i { display: block; height: 100%; background: linear-gradient(90deg, var(--green), var(--magenta)); }
+  .split { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .foot { margin-top: 28px; color: var(--dim); font-size: 12px; border-top: 1px solid var(--line); padding-top: 10px; }
+  .err { color: var(--magenta); font-size: 12px; }
+  @media (max-width: 800px) {
+    .front, .split, .mast { grid-template-columns: 1fr; }
+    .tools { justify-content: flex-start; flex-wrap: wrap; }
+    .paper { margin: 8px; overflow-x: clip; }
+    .wordmark { letter-spacing: 0.03em; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .wordmark span { animation: none; }
+  }
+</style>
+</head>
+<body>
+<div class="paper" id="app">
+  <i class="tick tl"></i><i class="tick tr"></i><i class="tick bl"></i><i class="tick br"></i>
+  <header class="mast">
+    <div>
+      <p class="kicker">signal // public copy</p>
+      <h1 class="wordmark">NEWS <span>DESK</span></h1>
+      <p class="sub">Chicago time · hacker zine ledger · direct messages never collected</p>
+    </div>
+    <div class="tools">
+      <input id="q" type="search" placeholder="filter the ledger" aria-label="Filter the ledger" />
+      <a class="refresh" href="https://github.com/torelldan/news-desk/actions/workflows/refresh.yml">Refresh</a>
+    </div>
+    <p class="checked" id="checked"></p>
+  </header>
+  <p class="banner" id="xbanner" hidden>X feed offline</p>
+  <div class="front">
+    <div>
+      <h2><em>01</em> // Today</h2>
+      <div id="today"></div>
+    </div>
+    <aside>
+      <h2><em>00</em> // Status</h2>
+      <div id="status"></div>
+      <div class="section">
+        <h2><em>09</em> // Investigation priorities</h2>
+        <ol class="priors">
+          <li><strong>Main feeds.</strong> Every new episode from AREA52 DEBRIEFED, JRE, American Alchemy, Danny Jones, Huberman Lab, Lex Fridman, the Shawn Ryan Show, and Julian Dorey.</li>
+          <li><strong>Leave the side shows.</strong> Skip JRE MMA Show and Protect Our Parks. The Shawn Ryan feed is not Target Intelligence. Julian Dorey is not Julian Dorey Daily.</li>
+          <li><strong>No cross-promos.</strong> Items that are “You Might Enjoy” promotions stay out. That footer is cut from notes.</li>
+          <li><strong>Public posts only.</strong> The named X accounts, without retweets or replies. Direct messages are never requested.</li>
+          <li><strong>Carota Wealth.</strong> Substack RSS, plus copy changes on the about, services, research, and contact pages.</li>
+          <li><strong>Official words.</strong> Notes come from the source description. The desk does not write recaps.</li>
+        </ol>
+      </div>
+    </aside>
+  </div>
+  <section class="section">
+    <h2><em>02</em> // Priority watch</h2>
+    <div class="watch" id="watch"></div>
+  </section>
+  <section class="section">
+    <h2><em>03</em> // What changed</h2>
+    <div id="changed"></div>
+  </section>
+  <section class="section">
+    <h2><em>04</em> // World desk</h2>
+    <div class="map" id="map"></div>
+    <div class="list" id="pages" style="margin-top:10px"></div>
+  </section>
+  <section class="section">
+    <h2><em>05</em> // Casebook</h2>
+    <div class="chips" id="chips"></div>
+    <div class="list" id="casebook"></div>
+  </section>
+  <section class="section">
+    <div class="tabs" role="tablist">
+      <button type="button" role="tab" data-tab="ledger" class="on">Ledger</button>
+      <button type="button" role="tab" data-tab="patterns">Patterns</button>
+      <button type="button" role="tab" data-tab="archive">Archive</button>
+    </div>
+    <div id="panel"></div>
+  </section>
+  <p class="foot" id="foot"></p>
+  <p class="err" id="errs"></p>
+</div>
+<script>
+/*__DATA__*/
+const state = { q: "", tag: "", tab: "ledger" };
+
+function esc(value) {
+  return String(value ?? "").replace(/[&<>"']/g, (ch) => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+  }[ch]));
+}
+function safeUrl(value) {
+  try {
+    const url = new URL(value);
+    if (url.protocol === "https:" || url.protocol === "http:") return url.href;
+  } catch (err) { /* not a link */ }
+  return "";
+}
+function ctToday() {
+  return new Intl.DateTimeFormat("en-CA", { timeZone: "America/Chicago" }).format(new Date());
+}
+function ageDays(date) {
+  if (!date) return 9999;
+  const ms = Date.parse(ctToday() + "T00:00:00Z") - Date.parse(date + "T00:00:00Z");
+  return Math.round(ms / 86400000);
+}
+function allItems() {
+  const desk = typeof DESK === "undefined" ? null : DESK;
+  if (!desk) return [];
+  return [...(desk.episodes || []), ...(desk.signals || [])]
+    .filter((item) => safeUrl(item.url))
+    .sort((a, b) => Date.parse(b.published) - Date.parse(a.published));
+}
+function matches(item) {
+  if (state.tag && !(item.tags || []).includes(state.tag)) return false;
+  if (!state.q) return true;
+  const blob = [item.title, item.guest, item.note, item.source, item.label, item.kind, ...(item.tags || [])]
+    .join(" ").toLowerCase();
+  return state.q.split(/\s+/).every((part) => blob.includes(part));
+}
+function card(item) {
+  const url = safeUrl(item.url);
+  if (!url) return "";
+  const note = item.note && item.note !== item.title
+    ? `<p>${esc(item.note)}</p>`
+    : (item.note ? "" : `<p>No official description on the source.</p>`);
+  const guest = item.guest ? `<div class="guest">${esc(item.guest)}</div>` : "";
+  return `<article class="card">
+    <div class="head"><span class="src">${esc(item.source)}</span><time>${esc(item.label)}</time></div>
+    <h3><a href="${esc(url)}" target="_blank" rel="noopener">${esc(item.title)}</a></h3>
+    ${guest}${note}
+    <a class="open" href="${esc(url)}" target="_blank" rel="noopener">source</a>
+  </article>`;
+}
+function row(item) {
+  const url = safeUrl(item.url);
+  if (!url) return "";
+  const guest = item.guest ? ` · ${esc(item.guest)}` : "";
+  const note = item.note ? `<p>${esc(item.note)}</p>` : "";
+  return `<article class="row">
+    <div class="head"><span class="src">${esc(item.source)}${guest}</span><time>${esc(item.label)}</time></div>
+    <h3><a href="${esc(url)}" target="_blank" rel="noopener">${esc(item.title)}</a></h3>
+    ${note}
+  </article>`;
+}
+function empty(text) {
+  return `<p class="empty">${esc(text)}</p>`;
+}
+function renderStatus(items) {
+  const desk = DESK;
+  const today = ctToday();
+  const todayN = items.filter((item) => item.date === today).length;
+  const quiet = (desk.sources || []).filter((src) => !src.offline && ageDays(src.lastDate) > 14).length;
+  const changedPages = (desk.pages || []).filter((page) => page.changed).length;
+  const online = desk.x && desk.x.online;
+  const rows = [
+    ["On the wire today", String(todayN), false],
+    ["Ledger", String(items.length), false],
+    ["Sources", String((desk.sources || []).length), false],
+    ["Quiet over 14 days", String(quiet), quiet > 0],
+    ["Page deltas", String(changedPages), changedPages > 0],
+    ["X feed", online ? "ONLINE" : "OFFLINE", !online]
+  ];
+  document.getElementById("status").innerHTML = rows.map(([name, value, off]) =>
+    `<div class="stat"><span>${esc(name)}</span><b class="${off ? "off" : ""}">${esc(value)}</b></div>`
+  ).join("");
+}
+function renderToday(items) {
+  const host = document.getElementById("today");
+  if (state.q || state.tag) {
+    const rows = items.filter(matches).slice(0, 6);
+    host.innerHTML = rows.length
+      ? `<p class="sub">Matches</p><div class="stack">${rows.map(card).join("")}</div>`
+      : empty("Nothing in the window matches.");
+    return;
+  }
+  const today = ctToday();
+  let rows = items.filter((item) => item.date === today);
+  let quiet = false;
+  if (!rows.length) {
+    rows = items.slice(0, 4);
+    quiet = true;
+  }
+  if (!rows.length) {
+    host.innerHTML = empty("Nothing on the desk yet.");
+    return;
+  }
+  const kicker = quiet ? `<p class="sub">Quiet so far today. Latest still on the desk.</p>` : "";
+  host.innerHTML = kicker + `<div class="stack">${rows.slice(0, 6).map(card).join("")}</div>`;
+}
+function renderWatch(items) {
+  const latest = new Map();
+  items.filter(matches).forEach((item) => {
+    if (ageDays(item.date) > 7) return;
+    if (!latest.has(item.sourceId)) latest.set(item.sourceId, item);
+  });
+  const cards = [...latest.values()].slice(0, 8).map(card).join("");
+  document.getElementById("watch").innerHTML = cards || empty("No source has filed in the last 7 days.");
+}
+function renderChanged() {
+  const host = document.getElementById("changed");
+  if (DESK.baseline) {
+    host.innerHTML = empty("Baseline capture. The next refresh lists only what is new since this run.");
+    return;
+  }
+  const rows = (DESK.changes || []).filter((item) => safeUrl(item.url)).filter(matches);
+  host.innerHTML = rows.length ? `<div class="list">${rows.map(row).join("")}</div>` : empty("No new items since the last run.");
+}
+function renderMap() {
+  const nodes = (DESK.sources || []).map((src) => {
+    const url = safeUrl(src.url);
+    if (!url) return "";
+    const age = ageDays(src.lastDate);
+    const led = src.offline ? "off" : age <= 7 ? "live" : "stale";
+    const when = src.lastLabel || (src.offline ? "X feed offline" : "no item in window");
+    return `<a class="node" href="${esc(url)}" target="_blank" rel="noopener">
+      <b><i class="led ${led}"></i>${esc(src.short || src.name)}</b>
+      <span class="src">${esc(src.name)}</span>
+      <div class="meta">${esc(when)}</div>
+      <div class="meta">${esc(String(src.count || 0))} in window</div>
+    </a>`;
+  }).join("");
+  document.getElementById("map").innerHTML = nodes || empty("No sources on file.");
+  const pages = (DESK.pages || []).map((page) => {
+    const url = safeUrl(page.finalUrl || page.url);
+    if (!url) return "";
+    return `<article class="row">
+      <div class="head"><span class="src">Carota · ${esc(page.name)}</span><time>${esc(page.checkedLabel || "")}</time></div>
+      <h3><a href="${esc(url)}" target="_blank" rel="noopener">${esc(page.status || "watched")}</a></h3>
+      <p class="meta">${esc(page.error || "Hash stored for the next comparison.")}</p>
+    </article>`;
+  }).join("");
+  document.getElementById("pages").innerHTML = pages;
+}
+function chipLabel(tag) {
+  const src = (DESK.sources || []).find((row) => row.id === tag);
+  if (src) return src.short || src.name;
+  return tag;
+}
+function renderChips(items) {
+  const lanes = ["podcast", "substack", "x", "site"];
+  const counts = {};
+  items.forEach((item) => (item.tags || []).forEach((tag) => { counts[tag] = (counts[tag] || 0) + 1; }));
+  const sourceIds = new Set((DESK.sources || []).map((src) => src.id));
+  const chips = [];
+  lanes.forEach((lane) => { if (counts[lane]) chips.push(lane); });
+  (DESK.sources || []).forEach((src) => { if (counts[src.id]) chips.push(src.id); });
+  Object.entries(counts)
+    .filter(([tag, count]) => count >= 2 && !lanes.includes(tag) && !sourceIds.has(tag) && !tag.startsWith("@"))
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 10)
+    .forEach(([tag]) => chips.push(tag));
+  document.getElementById("chips").innerHTML = chips.map((tag) =>
+    `<button type="button" data-tag="${esc(tag)}" class="${state.tag === tag ? "on" : ""}" aria-pressed="${state.tag === tag}">${esc(chipLabel(tag))}</button>`
+  ).join("");
+  document.getElementById("chips").querySelectorAll("button").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      state.tag = state.tag === btn.dataset.tag ? "" : btn.dataset.tag;
+      render();
+    });
+  });
+}
+function renderCasebook(items) {
+  const rows = items.filter(matches).slice(0, 40);
+  const host = document.getElementById("casebook");
+  host.innerHTML = rows.length ? rows.map(row).join("") : empty("No casebook rows for that filter.");
+}
+function renderPanel(items) {
+  const host = document.getElementById("panel");
+  const matched = items.filter(matches);
+  if (state.tab === "ledger") {
+    host.innerHTML = matched.length ? `<div class="list">${matched.map(row).join("")}</div>` : empty("Ledger is empty for that filter.");
+    return;
+  }
+  if (state.tab === "archive") {
+    const old = matched.filter((item) => ageDays(item.date) > 21);
+    host.innerHTML = old.length ? `<div class="list">${old.map(row).join("")}</div>` : empty("Nothing older than 21 days in this window.");
+    return;
+  }
+  const days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+  const tally = Object.fromEntries(days.map((day) => [day, 0]));
+  matched.forEach((item) => { if (tally[item.weekday] != null) tally[item.weekday] += 1; });
+  const max = Math.max(1, ...Object.values(tally));
+  const bars = days.map((day) => `<div class="barline"><span>${day}</span><div class="bar"><i style="width:${Math.round(100 * tally[day] / max)}%"></i></div><span>${tally[day]}</span></div>`).join("");
+  const bySource = {};
+  matched.forEach((item) => { bySource[item.source] = (bySource[item.source] || 0) + 1; });
+  const loud = Object.entries(bySource).sort((a, b) => b[1] - a[1]).slice(0, 8)
+    .map(([name, count]) => `<div class="stat"><span>${esc(name)}</span><b>${count}</b></div>`).join("");
+  const guests = {};
+  matched.forEach((item) => { if (item.guest) guests[item.guest] = (guests[item.guest] || 0) + 1; });
+  const repeats = Object.entries(guests).filter(([, count]) => count >= 2).sort((a, b) => b[1] - a[1]).slice(0, 8);
+  const guestHtml = repeats.length
+    ? repeats.map(([name, count]) => `<div class="stat"><span>${esc(name)}</span><b>${count}</b></div>`).join("")
+    : empty("No guest shows up twice in this window.");
+  const quiet = (DESK.sources || []).filter((src) => !src.offline && ageDays(src.lastDate) > 14);
+  const quietHtml = quiet.length
+    ? quiet.map((src) => `<div class="stat"><span>${esc(src.name)}</span><b class="off">${esc(src.lastLabel || "silent")}</b></div>`).join("")
+    : empty("No watched source has been silent for 14 days.");
+  host.innerHTML = `<div class="split"><div><h2>Weekday cadence</h2><div class="bars">${bars}</div></div><div><h2>Volume</h2>${loud || empty("No volume.")}</div></div>
+    <div class="split" style="margin-top:12px"><div><h2>Repeat names</h2>${guestHtml}</div><div><h2>Gone quiet</h2>${quietHtml}</div></div>`;
+}
+function render() {
+  const items = allItems();
+  const desk = DESK;
+  document.getElementById("checked").textContent = desk.updated
+    ? `Sources checked ${desk.updated}. Window ${desk.retainDays || 120} days. Filter applies across the page.`
+    : "Run python3 scripts/fetch.py && python3 build.py";
+  const banner = document.getElementById("xbanner");
+  const offline = !(desk.x && desk.x.online);
+  banner.hidden = !offline;
+  banner.textContent = (desk.x && desk.x.note) || "X feed offline";
+  renderStatus(items);
+  renderToday(items);
+  renderWatch(items);
+  renderChanged();
+  renderMap();
+  renderChips(items);
+  renderCasebook(items);
+  renderPanel(items);
+  const errs = desk.errors || [];
+  document.getElementById("errs").textContent = errs.length ? errs.join(" · ") : "";
+  const xLine = offline ? "X feed offline until a bearer token is set." : "X public posts are on.";
+  document.getElementById("foot").textContent =
+    `Times are America/Chicago. Notes are official descriptions only. ${xLine} Refresh opens the GitHub Action; choose Run workflow there.`;
+}
+function boot() {
+  if (typeof DESK === "undefined") {
+    document.getElementById("app").insertAdjacentHTML("beforeend", "<p class='empty'>This is the template. Run python3 build.py.</p>");
+    return;
+  }
+  document.getElementById("q").addEventListener("input", (event) => {
+    state.q = event.target.value.trim().toLowerCase();
+    render();
+  });
+  document.querySelectorAll(".tabs button").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      state.tab = btn.dataset.tab;
+      document.querySelectorAll(".tabs button").forEach((el) => {
+        el.classList.toggle("on", el === btn);
+        el.setAttribute("aria-selected", el === btn ? "true" : "false");
+      });
+      render();
+    });
+  });
+  render();
+}
+boot();
+</script>
+</body>
+</html>

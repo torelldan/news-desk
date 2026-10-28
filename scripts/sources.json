@@ -1,0 +1,92 @@
+{
+  "retainDays": 120,
+  "podcasts": [
+    {
+      "id": "area52",
+      "name": "AREA52 DEBRIEFED",
+      "short": "AREA52",
+      "feed": "https://anchor.fm/s/e81d3f74/podcast/rss",
+      "skipTitle": [],
+      "rejectChannel": []
+    },
+    {
+      "id": "jre",
+      "name": "Joe Rogan Experience",
+      "short": "JRE",
+      "feed": "https://feeds.megaphone.fm/GLT1412515089",
+      "skipTitle": ["jre mma", "protect our parks"],
+      "rejectChannel": []
+    },
+    {
+      "id": "alchemy",
+      "name": "American Alchemy",
+      "short": "ALCHEMY",
+      "feed": "https://feeds.megaphone.fm/jessemichels",
+      "skipTitle": [],
+      "rejectChannel": []
+    },
+    {
+      "id": "danny",
+      "name": "Danny Jones",
+      "short": "DANNY",
+      "feed": "https://feeds.megaphone.fm/QCD2752074976",
+      "skipTitle": [],
+      "rejectChannel": []
+    },
+    {
+      "id": "lex",
+      "name": "Lex Fridman",
+      "short": "LEX",
+      "feed": "https://lexfridman.com/feed/podcast/",
+      "skipTitle": [],
+      "rejectChannel": []
+    },
+    {
+      "id": "shawn",
+      "name": "Shawn Ryan Show",
+      "short": "SRS",
+      "feed": "https://feeds.megaphone.fm/WWO7410387571",
+      "skipTitle": [],
+      "rejectChannel": ["target intelligence"]
+    },
+    {
+      "id": "julian",
+      "name": "Julian Dorey",
+      "short": "DOREY",
+      "feed": "https://feeds.megaphone.fm/QCD7565826865",
+      "skipTitle": [],
+      "rejectChannel": ["julian dorey daily"]
+    }
+  ],
+  "huberman": {
+    "id": "huberman",
+    "name": "Huberman Lab",
+    "short": "HUBERMAN",
+    "list": "https://www.hubermanlab.com/all-episodes",
+    "home": "https://www.hubermanlab.com/all-episodes"
+  },
+  "x": [
+    {"id": "alchemyamerican", "handle": "AlchemyAmerican", "name": "American Alchemy", "short": "@AlchemyAmerican"},
+    {"id": "americanalchmy", "handle": "AmericanALCHMY", "name": "American Alchemy", "short": "@AmericanALCHMY"},
+    {"id": "hubermanlab", "handle": "hubermanlab", "name": "Huberman Lab", "short": "@hubermanlab"},
+    {"id": "joerogan", "handle": "joerogan", "name": "Joe Rogan", "short": "@joerogan"},
+    {"id": "lexfridman", "handle": "lexfridman", "name": "Lex Fridman", "short": "@lexfridman"},
+    {"id": "jonesdanny", "handle": "JonesDanny", "name": "Danny Jones", "short": "@JonesDanny"},
+    {"id": "shawnryanshow", "handle": "ShawnRyanShow", "name": "Shawn Ryan Show", "short": "@ShawnRyanShow"},
+    {"id": "shawnryan762", "handle": "ShawnRyan762", "name": "Shawn Ryan", "short": "@ShawnRyan762"},
+    {"id": "juliandorey", "handle": "juliandorey", "name": "Julian Dorey", "short": "@juliandorey"}
+  ],
+  "carota": {
+    "id": "carota",
+    "name": "Carota Wealth",
+    "short": "CAROTA",
+    "feed": "https://carotawealth.substack.com/feed",
+    "home": "https://carotawealth.substack.com",
+    "pages": [
+      {"id": "about", "name": "About", "url": "https://carotawealth.com/about.html"},
+      {"id": "services", "name": "Services", "url": "https://carotawealth.com/services.html"},
+      {"id": "research", "name": "Research", "url": "https://carotawealth.com/research.html"},
+      {"id": "contact", "name": "Contact", "url": "https://carotawealth.com/contact.html"}
+    ]
+  }
+}
