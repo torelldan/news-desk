@@ -44,7 +44,7 @@ Rules the fetcher enforces:
 
 Signals:
 
-- Carota Wealth Substack RSS (`carotawealth.substack.com/feed`). Actions' Python TLS handshake is rejected by Substack, so the feed is downloaded with `curl`, then `feed.xml` and the `www` host. If every attempt fails, the previously saved Substack posts stay in `data/signals.json`.
+- Carota Wealth is read from carotawealth.com (the sitemap, the research page, and any insights or blog URL that answers) with the same Python client Actions uses for the about, services, research, and contact pages. The Substack host is not requested. Previously saved Substack posts stay in the log and are deduped by title.
 - Carota Wealth pages `about.html`, `services.html`, `research.html`, and `contact.html`. The fetcher stores a hash of the stable copy in `data/pages.json`. Digits and calendar words are ignored so a live price or an “as of” date does not count as a change. The first sighting of a page is a baseline, not a change.
 - X accounts, public posts only: `@AlchemyAmerican` `@AmericanALCHMY` `@hubermanlab` `@joerogan` `@lexfridman` `@JonesDanny` `@ShawnRyanShow` `@ShawnRyan762` `@juliandorey`. Retweets and replies are dropped. **Direct messages are never requested.** The only X paths the script will call are `/2/users/by` and `/2/users/{id}/tweets`.
 
