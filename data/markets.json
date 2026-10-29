@@ -28,14 +28,35 @@
             "2026-11-26",
             "2026-12-25"
           ],
-          "level": 7713.44,
-          "change": -30.54,
-          "changePct": -0.39,
+          "level": 7700.79,
+          "change": -43.19,
+          "changePct": -0.56,
           "asOf": "2026-10-29",
           "source": "https://finance.yahoo.com/quote/%5EGSPC"
         }
       ],
       "headlines": [
+        {
+          "id": "headline:292c7ecd36bbb191",
+          "kind": "headline",
+          "lane": "news",
+          "source": "NewsCord",
+          "sourceId": "headline",
+          "title": "U.S. Economy Grows 3.4% Annualized In Third Quarter, Fed Leaves Rates Unchanged: how 11 outlets framed it - NewsCord",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNYkY2UU5yV0hJMy1EQi1DWjlZRVJ6RUNERG5UalhRcnozZW5ZYTJ5bTM2NzBPY0trMUhBRUJXNmJ5aEdoVTlrdWlocVE5ODNFNjl5ZFQ3NUJGcXd6em1SZk55OTlvRk1WMWY5UlRQWTNYM04tMnhySHBFSTc5ZTFVUmpOZzB3YkdlOFM0MlpwREZkT3RpR0NqcTU3bWQxNzV2dU4yZm1iT0pUTGpjbmJwVS15QW0yZ3dsRDYwU2gzSk56Sk9HZW0tVHpRZVdWM0FOVjVfQkstdm5mR2NRVmFWVkV3?oc=5",
+          "published": "2026-10-29T12:21:37-05:00",
+          "date": "2026-10-29",
+          "label": "Oct 29, 2026 12:21 PM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
         {
           "id": "headline:212f33144b674551",
           "kind": "headline",
@@ -49,6 +70,27 @@
           "published": "2026-10-29T11:38:22-05:00",
           "date": "2026-10-29",
           "label": "Oct 29, 2026 11:38 AM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:71a708a7fd2bd557",
+          "kind": "headline",
+          "lane": "news",
+          "source": "WKZO",
+          "sourceId": "headline",
+          "title": "IMF says Federal Reserve is ‘appropriately’ keeping close eye on data - WKZO",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQYUMtaWVZTnpHRzlJZGRHLVhHc21rblg5YWd4d050aDl2UnJCWkIxTTl6RHVQdlhuRUl2SndXeEltU3dVYjNreldqN1dCNGlEZG1YMHRNRGZGN3RBV1Q0Y2p0R3JOWmdzOGZuS0RhV0JnNHpGWTIxeEVwUkFjMzEwRzJzNEVkSEhpVjl3MWVFRGZQS19lQ0pBVlIxNF8?oc=5",
+          "published": "2026-10-29T11:33:44-05:00",
+          "date": "2026-10-29",
+          "label": "Oct 29, 2026 11:33 AM CT",
           "weekday": "Thu",
           "timeKnown": true,
           "tags": [
@@ -91,6 +133,27 @@
           "published": "2026-10-29T09:26:35-05:00",
           "date": "2026-10-29",
           "label": "Oct 29, 2026 9:26 AM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:ccfc50186df47a25",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Crypto News",
+          "sourceId": "headline",
+          "title": "Bitcoin price reclaims $80K as US GDP beats forecasts - Crypto News",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9VZHV4S21ZOWJjb2xhWHZSM1JzVThkNndfcXEwQUdQb2NMOGNmVUk3RTJhV1R1X1NpcU4zTkR1ZUdidVJfRUlvQWhFVnV0Sk9kdzlwSHBtM0pCNEVwck9rZ0dJUE52MlI1Y2J3TEwzOFZNWlI5c3lWcTM0bnk3QQ?oc=5",
+          "published": "2026-10-29T09:19:47-05:00",
+          "date": "2026-10-29",
+          "label": "Oct 29, 2026 9:19 AM CT",
           "weekday": "Thu",
           "timeKnown": true,
           "tags": [
@@ -226,6 +289,27 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:c6c8c192429ba3ac",
+          "kind": "headline",
+          "lane": "news",
+          "source": "KTEN",
+          "sourceId": "headline",
+          "title": "Last snapshot of the US economy before midterms shows stronger growth but higher inflation - KTEN",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxOQVZLb1R6WF9yMEU5S0FNWTlTNGJLU3U0WVNuQndmbXZhNDVhZDJlQjRwWFVPd3NHQllmdnAtdnhhVmcyZzV0cmg5Y1RfWGxTUmNWT2FCRko0QVg4SU9hV0pvMWpGc25CWjhGYnVJQUJTNmNZWHVrdFRVZDEyLU5naWZwX0Q5a3htVU1lYXgxYnRfakZIUGhmems1UGFVSFYybTVUMWQ1Tkh6cGdOSkRFSVVNYjBKbTlBd1hDVzlhSVlSeFNBNjFHUzllb0lCY1QzdjVWb1Y2em5NN053cDh3ZDFna3A3enFwT3EtN2ptMkszTkdCNEo5UXVSczdOWXpaWGM1c1Z3?oc=5",
+          "published": "2026-10-29T07:36:01-05:00",
+          "date": "2026-10-29",
+          "label": "Oct 29, 2026 7:36 AM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:31811de26c9b472f",
           "kind": "headline",
           "lane": "news",
@@ -259,6 +343,27 @@
           "published": "2026-10-29T01:41:00-05:00",
           "date": "2026-10-29",
           "label": "Oct 29, 2026 1:41 AM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:7ba5fa2fc5706439",
+          "kind": "headline",
+          "lane": "news",
+          "source": "The Korea Herald",
+          "sourceId": "headline",
+          "title": "Korea's chip boom catches US Fed chair's eye - The Korea Herald",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5ZYVVuTHozM1BEMzY4NlVPc00zOWdxRG9hdXlPNktwSnZjNTNEcXZRZmNRS203dUpiM0pJdGNNcnFxVV9ianFQTG9HYkpOSENsU3BtVk15QQ?oc=5",
+          "published": "2026-10-29T01:18:34-05:00",
+          "date": "2026-10-29",
+          "label": "Oct 29, 2026 1:18 AM CT",
           "weekday": "Thu",
           "timeKnown": true,
           "tags": [
@@ -751,123 +856,18 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:050b755366157f96",
+          "id": "headline:1726fe674bbd5b1e",
           "kind": "headline",
           "lane": "news",
           "source": "BBC",
           "sourceId": "headline",
-          "title": "What is happening with US interest rates? - BBC",
+          "title": "What is happening with US interest rates and the economy? - BBC",
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBCUjRHSy1QVjJNSHJQRURaMmoxQjhhZkJFLW11U1NyRjJ3d2dPWjVpRjhpSDNRM0VpOE5ZUlljdjJOTkpiQVdNM3dFcEpRNXVnaldQc3dsMzl1TFZ4eEE?oc=5",
           "published": "2026-10-28T13:04:55-05:00",
           "date": "2026-10-28",
           "label": "Oct 28, 2026 1:04 PM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:65f97756e38959ed",
-          "kind": "headline",
-          "lane": "news",
-          "source": "The Tribune-Democrat",
-          "sourceId": "headline",
-          "title": "Federal Reserve likely to skip rate hike despite elevated inflation - The Tribune-Democrat",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPY1lYTjRDRUZKUmZtd3NIM0taTzAyUmo5ZUVvcXZiVEtVdGZZT25Nd1VJRVNELVA1ZzBsN1dPX1N3OFlpZDVxRWl2b051Y3BuWGpNSjRKSVhYY0lTNmZULVllcTJ4SnA5a194VzFVdzJuX2ZQSzRYOXNlakN2RF9mS25od3A4dlA5V1Fvclo2dUNwb2hHMWphbEJGY2ZWY2R3Y0xHVEF3WlVjZlRXS1d5UGVTQlFOSnhleXdGaGxlaVY2QzVuRGlvWHYxVGV0QkNSa0toLVZBLVJPMElzWmFqc195T2pDME5wMThr?oc=5",
-          "published": "2026-10-28T12:15:00-05:00",
-          "date": "2026-10-28",
-          "label": "Oct 28, 2026 12:15 PM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:0de3dde39de80f9e",
-          "kind": "headline",
-          "lane": "news",
-          "source": "ABC News - Breaking News, Latest News and Videos",
-          "sourceId": "headline",
-          "title": "Federal Reserve raises interest rates for the 1st time since 2023 - ABC News - Breaking News, Latest News and Videos",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOYktxZlJxRVNrdUZFRWViQjVMLUh3OGJwNGhrVFpJY2E5QTAyajNfcnFSb09rZUVkSnVMUHd4WkpsYktvZGczX05nRzVhSTdKNWtfU2hWb09IYnNQQ01tTlMwMV95YzJkbWVDMklwZ19XMC1RNmVsckpGS3FpNUpiRlUxZkVtNXk5NE5YRnpBSTI4eEhVOWxaUlBzZDlxb3p1ZVBFeHFR0gGrAUFVX3lxTFBrZzU3UXhjRlBBblFYNzJZZ3dINVFwMnpIOFQwRlJ1NmRTa3JNUGlkamJyS08wRjM5UlFuMkRJcHAtUEQxYjF3b2Yyc2E2V1hOOEhQRHRPckpidllEOHpLRG9VUTFxSUwyaE95SzNNZ0pkemQwQkNBYkZPbTBpN0ZMYTBWU25nT3FrUVNNal9Eb0lCNnJwZTVFUVVhM0dDRlMzQ1pQTF8xRTV6bw?oc=5",
-          "published": "2026-10-28T10:52:10-05:00",
-          "date": "2026-10-28",
-          "label": "Oct 28, 2026 10:52 AM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:ac9795f545cf6606",
-          "kind": "headline",
-          "lane": "news",
-          "source": "CBS News",
-          "sourceId": "headline",
-          "title": "Federal Reserve to announce its latest interest rate today. Here's what economists expect. - CBS News",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQTjc3SWhXX3BBd29iUjJQRC1HZ1k2M1ZzU3RORWEySTQ4TGdaSjdaMjIwNTVUWFJpZW5OZmU4X2JPYlNSOWEzRW1BNHJVRTk3azhSRExhRTRlNG8tNzhsMHhIcUpIZGdScG5jWnNGR1A1VVdpWTVNcDhMYm5kZjFWSzJn?oc=5",
-          "published": "2026-10-28T10:29:04-05:00",
-          "date": "2026-10-28",
-          "label": "Oct 28, 2026 10:29 AM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:3e34fb35274b2984",
-          "kind": "headline",
-          "lane": "news",
-          "source": "PBS",
-          "sourceId": "headline",
-          "title": "WATCH: Warsh holds briefing after Fed leaves key interest rate unchanged - PBS",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOeDRabTk3MGZlX1gzSnlMWEhPLTczT3pUckE2Q3R4cUpHT0lfQnFKRHo1eWdiQ1FiVXBXQlV6RVhpSTROYUZoYlFzRVlxMWlGUFdZcW5jMXpKdlBiZHRJMzNSOGJMTUFMWVdDVS1sbkFNcy12TGlnVE5rclMyREY5SEl6dEEwVE1VdFMyX0V2VWtFLWVVQ05iUWJMT2M1blZPZkNOUi1xLVFCWi1WZGxsZFJhXzDSAboBQVVfeXFMTV9BakhETXRqMkhSSzY5V1hjVHZ2Y1VkVzFMX19ua1BLUTRGQWdLWTI3aEcwMkhROG5tSjlDMHRLbDAtczhuV2djeUl2VHVydUo2NGFxcVk3YmpkdDRNMndOYlRlVzA0X3Y0WWxLU3hTanFreDdqdXA4ZmJPWk1QWU1BbHdocmo4VmVwLXEtTU5GUFhsYkhUN1VmZXB4TnE2SmItLVMtang4Tmd2NDdwanpPVUVpczB5aFZn?oc=5",
-          "published": "2026-10-28T09:14:27-05:00",
-          "date": "2026-10-28",
-          "label": "Oct 28, 2026 9:14 AM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:ac0db3a46b9659ed",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Scripps News",
-          "sourceId": "headline",
-          "title": "Presidents get blamed for the economy. A new report argues Trump actually deserves it. - Scripps News",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQc2w5SWg0NTJPSUpOSUIzWlkzWkVzQjFQQ0hTYlBFOVQwYXQxTTFXOHBGN3YtaG1jRTlhNjJGMjc3eFllTmZXdnVuTGJUTjBzN0ZqUEphNXFfY3BMX2llVzl4QWI4b3U2dHh4SEYzTTJsUDBLTEkwV1BiejY3YUtEUFhBWEl3b1RvUTBjTHBWMUtlQmNSU0Jtd216Y1JwNG5ra29ubjYyM2JuUXE3X1drU3J3?oc=5",
-          "published": "2026-10-28T06:15:42-05:00",
-          "date": "2026-10-28",
-          "label": "Oct 28, 2026 6:15 AM CT",
           "weekday": "Wed",
           "timeKnown": true,
           "tags": [
@@ -894,9 +894,9 @@
             }
           ],
           "holidays": [],
-          "level": 36201.97,
-          "change": -63.13,
-          "changePct": -0.17,
+          "level": 36120.17,
+          "change": -144.93,
+          "changePct": -0.4,
           "asOf": "2026-10-29",
           "source": "https://finance.yahoo.com/quote/%5EGSPTSE"
         },
@@ -912,9 +912,9 @@
             }
           ],
           "holidays": [],
-          "level": 69538.79,
-          "change": 356.4,
-          "changePct": 0.52,
+          "level": 69562.3,
+          "change": 379.91,
+          "changePct": 0.55,
           "asOf": "2026-10-29",
           "source": "https://finance.yahoo.com/quote/%5EMXX"
         }
@@ -1227,6 +1227,27 @@
           "published": "2026-10-28T12:00:38-05:00",
           "date": "2026-10-28",
           "label": "Oct 28, 2026 12:00 PM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:005d14e97a6f0c9a",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Al Jazeera",
+          "sourceId": "headline",
+          "title": "Bank of Canada raises interest rates for the first time in three years - Al Jazeera",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxON3BTWEVocFBBVHUxMkx1MFBnaVhBQWRmMlFJX3ZLUl96OVRrdFVxNGg3WmZDaUpEbjRWR2dwc3hfQzNiLWRIXzRqYTBlTUYyNTNTeHJoWVlhOVJzU1NuMnQ5MnNyai13RGFOUlNRaWUtZXhSQXdyTGRzS2dIOHI4ZlQzWTluZ3pIRTZBLXViSlUyUVNFV3g3RXRQZURZeG5Ca3dlTTVnUmpIOUp3YklEUTRCeTRkd9IBuwFBVV95cUxQaWpQODdTMWNnc1ZNanA4bWU2TExUeHVYUjh4R1k5ZmFsbXNTd2I1MGlJejY0SEQtRm9HUXRJZzJBNmd6WDRBcXJWTHZ4eFZoNUc3RllsY242bl80OUFNQ2JSZV9SbUtSdTRUYWVrbzFkZG5RUDRJQVE2RDR1dG5lWnJ6aW1wZS1oRE0wRjBSYnVDdUdZVjFEQlpkcmxWYnJTWlFnb181TFlRNkpQdzZPUnh2T19ibWZjN2xN?oc=5",
+          "published": "2026-10-28T11:50:22-05:00",
+          "date": "2026-10-28",
+          "label": "Oct 28, 2026 11:50 AM CT",
           "weekday": "Wed",
           "timeKnown": true,
           "tags": [
@@ -1738,27 +1759,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:554decfc805182fd",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Financial Post",
-          "sourceId": "headline",
-          "title": "Opinion: A Nobel for recognizing complexity in economic science - Financial Post",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPU3NYQm90SzF0NGQ0QU1DamczSzJYUDlxWUhPN3pzWG1BQlFJdU9kQkl2b0lyNUZtb2xSY3UySlJpeEZFNjJJNl9GMmh3VUswQlpBVGVWbnp0MlU5aHVETU5FZmp0cUNCRG9qdTlIQXk2dXBqWWVweTN3dlY4TGFuTzNGZ05JZkpkNy1fMWJURnczNmhYYmc?oc=5",
-          "published": "2026-10-27T05:04:24-05:00",
-          "date": "2026-10-27",
-          "label": "Oct 27, 2026 5:04 AM CT",
-          "weekday": "Tue",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ]
     },
@@ -1778,14 +1778,35 @@
             }
           ],
           "holidays": [],
-          "level": 169549.5,
-          "change": -1456.5,
-          "changePct": -0.85,
+          "level": 169050.56,
+          "change": -1955.44,
+          "changePct": -1.14,
           "asOf": "2026-10-29",
           "source": "https://finance.yahoo.com/quote/%5EBVSP"
         }
       ],
       "headlines": [
+        {
+          "id": "headline:f9dd1afca7825623",
+          "kind": "headline",
+          "lane": "news",
+          "source": "ad-hoc-news.de",
+          "sourceId": "headline",
+          "title": "Bovespa at 170,580 as fiscal concerns weigh on Brazil stocks - ad-hoc-news.de",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNMWRKbEQzMEQwcDFjSVdOQkliVjRvOXhyNWszN0FaMTNVTHItT0JZWnRDTU5acnltWTRKUm93dXRrZGxHYVFoMTE2X29DdmJDUElsSVV6QVA5WXdkV1U4VS1GSUNDdUNTWTBXTHJpTVlNRFFMVkFwNUhEd1d6UFY5WGFPMlllakVwTFFHRFBLTXpTY2pwM1p5N2lXOW5vaS1mQkY3bVczU091X2t0d2lxNW9NZmtGb0hfMHJuYkM3dw?oc=5",
+          "published": "2026-10-29T12:58:31-05:00",
+          "date": "2026-10-29",
+          "label": "Oct 29, 2026 12:58 PM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
         {
           "id": "headline:edd7bdef98923722",
           "kind": "headline",
@@ -2595,27 +2616,6 @@
           "published": "2026-10-26T06:41:31-05:00",
           "date": "2026-10-26",
           "label": "Oct 26, 2026 6:41 AM CT",
-          "weekday": "Mon",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:c2d315023ca23660",
-          "kind": "headline",
-          "lane": "news",
-          "source": "TradingView",
-          "sourceId": "headline",
-          "title": "Brazil stocks slide after Lula's election win; Petrobras leads Quant-rated holdings - TradingView",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNczdPLVJvX0RxZTk5cHVMejZhdUczSUFtUmh1dkdnSWlrVjVJcjJsNENqbjhyQUR5ZzZkMDVsU0Y5Ymh6UTVFZFRZSnZwUk5GdFVfZFp4aS1wZ1MwLUdoTFdNSV9pM05VVzZ1Z0JURk5jeFRhYlNNTHB5NnQ0dWlPMzgxektmeGJqaTJoX2JTT3hFYThxSUJVSmx5ZXRVbDllQXdLam9pRjFOU2U3SDdKYnR2cGFNMkpXOElkcjFQczJaSWVsU3E4dlJkalc0cHlEdnNpaUxLaXJENTNTb2c?oc=5",
-          "published": "2026-10-26T06:35:17-05:00",
-          "date": "2026-10-26",
-          "label": "Oct 26, 2026 6:35 AM CT",
           "weekday": "Mon",
           "timeKnown": true,
           "tags": [
@@ -3816,6 +3816,27 @@
       ],
       "headlines": [
         {
+          "id": "headline:c4c17ba66e0be8d5",
+          "kind": "headline",
+          "lane": "news",
+          "source": "The New York Times",
+          "sourceId": "headline",
+          "title": "Christine Lagarde to Step Down as President of European Central Bank - The New York Times",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPQlNTZHA1c0ZVYjVybG1UOVAzU09UdjAydEpmOHgtWmZfWlFDNlpGSjNqWEFyamxqb1V4Rm5fcmhnc0FIUVprMzRoWnp2eGxJaEZrbHlDNUpmRDlIblBrZXRaNDhsZFB0Nl9naElYMHdBa2VtdmJ0bTY2MGFsV0pVT2pGaGY?oc=5",
+          "published": "2026-10-29T12:19:02-05:00",
+          "date": "2026-10-29",
+          "label": "Oct 29, 2026 12:19 PM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:3a14b4757d1de03e",
           "kind": "headline",
           "lane": "news",
@@ -3846,9 +3867,30 @@
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPXzdxQXdBY2xpYmxjbER5SnUxc2ZHM1JCZlJLYmJkaTJjbjNTLV9vZWEzblBWN0EzUWdvTzItY1NfSzFVV3VWMHNObHViNFl1S1NGSFJnaEF5cmlQMUR3dENYaTk4SGt5TkE4akxwV1pGZE0tN0F3NG56WjVib1BrcW91NHBGVHhHWUMwWThPYzl1US1rdEVB?oc=5",
-          "published": "2026-10-29T11:08:00-05:00",
+          "published": "2026-10-29T11:37:00-05:00",
           "date": "2026-10-29",
-          "label": "Oct 29, 2026 11:08 AM CT",
+          "label": "Oct 29, 2026 11:37 AM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:68e46344ce4e1a02",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Yahoo Finance",
+          "sourceId": "headline",
+          "title": "ECB keeps Europe steady as 13% Google plunge fans AI jitters - Yahoo Finance",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNWjBPTkdNTS1MdFEwWlB0TjhJbHN6ZEw4VFZjd2FpMmd2YTA5alR0aDhZdzE1Qy03eUZWVU5ScWxEeE9EbmdsNXFka2pZZE0tU21BS2NZd0pIdlpiOWtUbUM5V1Nvak11TlRNZ3dvWXBnOTdPWTdTZU40UExKWHkxdWc3VWU1ZUk2S3owbF9lYjJEbThvSkEwM0pfYWZQYVYxb2c?oc=5",
+          "published": "2026-10-29T09:23:12-05:00",
+          "date": "2026-10-29",
+          "label": "Oct 29, 2026 9:23 AM CT",
           "weekday": "Thu",
           "timeKnown": true,
           "tags": [
@@ -3942,6 +3984,27 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:74914486c09199d2",
+          "kind": "headline",
+          "lane": "news",
+          "source": "This is Money",
+          "sourceId": "headline",
+          "title": "ECB chief Christine Lagarde quits as eurozone economy stumbles - This is Money",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOTmFPTTRMVExHRXJDZGVrQldlSHhTd1FWTVRyRE1Wdm1pM3pzOTQ2S0tEM2x0cGhkaWRaY3N2eWxUY3p0OTUyWFZDQm40UWU5WTE2cER0MU9ZQ2dGMTFKOUtpSmdXY2NONU5xRG5jRWctZ1Z4bXE0eldaSGN1MWZycVR3NVE0b2pCTFNzcFZwdTVRQ0Myd3BMN056LUhKMzJHWGFlSmo3Q0VQUUMyNGZPMEhjOXNBamxsWUhvOUtwNURIcXQzU19WMWEzNDRWd2JfNVlXdGQxN0JXV21qYjdGMG5VV3NDVTQ?oc=5",
+          "published": "2026-10-29T08:36:01-05:00",
+          "date": "2026-10-29",
+          "label": "Oct 29, 2026 8:36 AM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:8ceb5f2c3590c8a4",
           "kind": "headline",
           "lane": "news",
@@ -4017,27 +4080,6 @@
           "published": "2026-10-29T07:05:09-05:00",
           "date": "2026-10-29",
           "label": "Oct 29, 2026 7:05 AM CT",
-          "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:74914486c09199d2",
-          "kind": "headline",
-          "lane": "news",
-          "source": "This is Money",
-          "sourceId": "headline",
-          "title": "ECB chief Christine Lagarde quits as eurozone economy stumbles - This is Money",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOTmFPTTRMVExHRXJDZGVrQldlSHhTd1FWTVRyRE1Wdm1pM3pzOTQ2S0tEM2x0cGhkaWRaY3N2eWxUY3p0OTUyWFZDQm40UWU5WTE2cER0MU9ZQ2dGMTFKOUtpSmdXY2NONU5xRG5jRWctZ1Z4bXE0eldaSGN1MWZycVR3NVE0b2pCTFNzcFZwdTVRQ0Myd3BMN056LUhKMzJHWGFlSmo3Q0VQUUMyNGZPMEhjOXNBamxsWUhvOUtwNURIcXQzU19WMWEzNDRWd2JfNVlXdGQxN0JXV21qYjdGMG5VV3NDVTQ?oc=5",
-          "published": "2026-10-29T07:03:15-05:00",
-          "date": "2026-10-29",
-          "label": "Oct 29, 2026 7:03 AM CT",
           "weekday": "Thu",
           "timeKnown": true,
           "tags": [
@@ -4164,6 +4206,27 @@
           "published": "2026-10-29T06:24:30-05:00",
           "date": "2026-10-29",
           "label": "Oct 29, 2026 6:24 AM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:0946723870b11af9",
+          "kind": "headline",
+          "lane": "news",
+          "source": "The Japan Times",
+          "sourceId": "headline",
+          "title": "ECB President Lagarde resigns at time of mounting challenges for Europe - The Japan Times",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFA3SzFWUFpLRXFvREhjYklSclEyTkFpN0tIWTNXdVYwaHBNTnctbk5IZ3pJcHI4QjU2U01JYzVhMFdnemp2SjhDOFg4VHk1YUt2bjhjYVUzVGR3eGMtZ1Z2RFNRSjIwOXJpbFFKdkxIMmtrSnM1RlpKNVJNS3VLdw?oc=5",
+          "published": "2026-10-29T06:09:00-05:00",
+          "date": "2026-10-29",
+          "label": "Oct 29, 2026 6:09 AM CT",
           "weekday": "Thu",
           "timeKnown": true,
           "tags": [
@@ -4446,6 +4509,27 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:c08ad854a5568ecc",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Reuters",
+          "sourceId": "headline",
+          "title": "Equities and bond yields dip with AI jitters and economic data in focus - Reuters",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNbTZuQXNrYUZEUEdVMGdDOEljdHJ1bW0zeHR6Yl9nYXp5dWd0cXU2WGk2QXVITW5xOVhlOUNVYm83QzFaRDZXcFdaZDZXa2xUd2otaXRjcmhmaWZ2aF8zVC03WFc5RkliNkhLZjk1MzhqUHBGZ3NmdmRKbF9CSklOUzhBQQ?oc=5",
+          "published": "2026-10-28T21:28:00-05:00",
+          "date": "2026-10-28",
+          "label": "Oct 28, 2026 9:28 PM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:fcf84d226e110ddb",
           "kind": "headline",
           "lane": "news",
@@ -4566,90 +4650,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:93f7bab8cb0c68a6",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Greek City Times",
-          "sourceId": "headline",
-          "title": "European Central Bank Expected to Hold Interest Rates at 2.5% - Greek City Times",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQNFhGUDVxMTNsS2J4dlY0MlVkZnY5dTFHampFSm1xbU9iWDlWekVYYTl3Yl9vOTRkaXJuSkpJWFIwLVprOVYyR1VmNl8xT2dfNlk5dzUzVUg0U3ZGbG4yMFJFbHVQQTkwcmxVZmFSTlpwb3VEaTI3bWZ1b1Jvc0M0ZVZzYWpDTFk1UnZvUXZSc29FRV9fOENhMWNJWFRva0Nj?oc=5",
-          "published": "2026-10-28T00:47:59-05:00",
-          "date": "2026-10-28",
-          "label": "Oct 28, 2026 12:47 AM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:07850dff6d8cee68",
-          "kind": "headline",
-          "lane": "news",
-          "source": "ET Now",
-          "sourceId": "headline",
-          "title": "Stock market triggers today, October 28: Jio Platforms mega listing today, Q2 earnings, Fed and ECB decisions - What should investors watch? - ET Now",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxPejEtQnVmanUzdGFVdURyVTFjYTVpSlM3Rlc2cjdCRk83SzJ5RDk5ZTVjcnFIRWFld2kxMmhaTXlpQm1HakNXMEVkSW1xREIwLVJTN0Y5c0RaeUZscWxIcGdRX2hmZDFVOVBKR19EQ2lUNzlBUG5vbnE2Wmp4VEdFR0E5anc3UFowMU1UcEdhWXpIU1QtbDFUR01KSWJ0ZzEtbTgxUHMxUU55QkZEX3o5QjFvcGdpRG8wR2dGdjlBdVVQZC16akh4NkJmeW9XeGFfMkVldjF5clFSa3RGZWdHYmhsdzB1UXpWN3dBUVFKT2dtd29LWVdjN2hmNFdRTWoxWi1uNGxJQk5adHliMm1vVkFKTdIBmAJBVV95cUxQZk0tSHM5RmJobXdudXZaclN3NkhXRFdVazVHVzNYRDd3X20ySldhSXY3NmEwWVcwblZpQWhHSEdSVWZETFpiZUZhZzRzdTc0aEQ0eW95YzhGdDlCaUxwSmx2VkRYRlBxVDlyb3g1OXptSTd4WlJzRTNvUk5EaDJtczJoYUVaQVUtLWlBQV9HLXdRVzFCN2Y4RWM4UFVRRkp0c2hqM010Z0g3M3U4Vm1ZekY4enhHQlh1WDZhNTVKb0hRSHpqOElHS0hBVmZick40LVU1NTZselVhVzdOYnE2QldHS3dsM3ItNVVUYkhBanFkSzZPd0hudnBNOXR0NjdZUzFqcDM5dXRJUmpuYVNSYm1rX1BaWUhG?oc=5",
-          "published": "2026-10-27T21:35:44-05:00",
-          "date": "2026-10-27",
-          "label": "Oct 27, 2026 9:35 PM CT",
-          "weekday": "Tue",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:80aebfeca37a21b0",
-          "kind": "headline",
-          "lane": "news",
-          "source": "https://economy.ac/",
-          "sourceId": "headline",
-          "title": "Iran War Price Shock Fuels Inflation Fears, with EU and Japan Raising Rates and U.S. Long-Term Yields Surging - https://economy.ac/",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE56Z05DQjdtWVp0T2N1Z3dkT0hVSVg5NHk4QkJjNkpNVVZibWlJdFZkWjR0a25GR0lGY0RIZ2l5QU11MnQ5ank4Si1mZzJvMlhraTBjZEYxMA?oc=5",
-          "published": "2026-10-27T04:33:07-05:00",
-          "date": "2026-10-27",
-          "label": "Oct 27, 2026 4:33 AM CT",
-          "weekday": "Tue",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:6276307fa2142c1e",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Yahoo Finance",
-          "sourceId": "headline",
-          "title": "Euro zone mortgage demand falls as rates rise, ECB survey shows - Yahoo Finance",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOZzJzakVNU2RhLUxjLUlpUGZ1LTM5LXRSOHUxMVI1V0JLT2E1WTZnZVRhdkRrTW1yeWt0WXpUaDdyNW5pSFNwclM1eXgtRUZMV29JQS1lZnJiaGVQbkVha0dyazFDZ0M4T0xtT2tJQ0w0Wlh4MnFsb19LZlBzQ3ZuUkxBR0lodnZEckFlNDl4Nm9EYmZvTEtkaDBfU2w?oc=5",
-          "published": "2026-10-27T04:04:02-05:00",
-          "date": "2026-10-27",
-          "label": "Oct 27, 2026 4:04 AM CT",
-          "weekday": "Tue",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ]
     },
@@ -4713,9 +4713,9 @@
             }
           ],
           "holidays": [],
-          "level": 74151.04,
-          "change": 905.01,
-          "changePct": 1.24,
+          "level": 73246.03,
+          "change": -352.64,
+          "changePct": -0.48,
           "asOf": "2026-10-29",
           "source": "https://finance.yahoo.com/quote/%5EBSESN"
         }
