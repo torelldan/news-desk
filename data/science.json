@@ -10,9 +10,9 @@
       "guest": "",
       "note": "",
       "url": "https://www.nature.com/articles/s41586-026-11348-z",
-      "published": "2026-10-29T08:18:39-05:00",
+      "published": "2026-10-29T08:54:44-05:00",
       "date": "2026-10-29",
-      "label": "Oct 29, 2026 8:18 AM CT",
+      "label": "Oct 29, 2026 8:54 AM CT",
       "weekday": "Thu",
       "timeKnown": true,
       "tags": [
@@ -34,9 +34,9 @@
       "guest": "",
       "note": "",
       "url": "https://www.nature.com/articles/s41586-026-11335-4",
-      "published": "2026-10-29T08:18:39-05:00",
+      "published": "2026-10-29T08:54:44-05:00",
       "date": "2026-10-29",
-      "label": "Oct 29, 2026 8:18 AM CT",
+      "label": "Oct 29, 2026 8:54 AM CT",
       "weekday": "Thu",
       "timeKnown": true,
       "tags": [
@@ -58,9 +58,9 @@
       "guest": "",
       "note": "",
       "url": "https://www.nature.com/articles/d41586-026-03486-1",
-      "published": "2026-10-29T08:18:39-05:00",
+      "published": "2026-10-29T08:54:44-05:00",
       "date": "2026-10-29",
-      "label": "Oct 29, 2026 8:18 AM CT",
+      "label": "Oct 29, 2026 8:54 AM CT",
       "weekday": "Thu",
       "timeKnown": true,
       "tags": [
@@ -82,9 +82,9 @@
       "guest": "",
       "note": "",
       "url": "https://www.nature.com/articles/d41586-026-03484-3",
-      "published": "2026-10-29T08:18:39-05:00",
+      "published": "2026-10-29T08:54:44-05:00",
       "date": "2026-10-29",
-      "label": "Oct 29, 2026 8:18 AM CT",
+      "label": "Oct 29, 2026 8:54 AM CT",
       "weekday": "Thu",
       "timeKnown": true,
       "tags": [
@@ -94,6 +94,30 @@
       ],
       "field": "biomedical",
       "review": "PEER-REVIEWED",
+      "severity": ""
+    },
+    {
+      "id": "paper:27fe995e11351ea9",
+      "kind": "paper",
+      "lane": "science",
+      "source": "NASA",
+      "sourceId": "paper",
+      "title": "Contractor to Civil Servant: NASA Welcomes Jared Spiers",
+      "guest": "",
+      "note": "Jared Spiers had an interest in contributing to NASA’s mission long before becoming a civil servant for the agency. Growing up close to NASA’s Stennis Space Center near Bay St.",
+      "url": "https://www.nasa.gov/centers-and-facilities/stennis/contractor-to-civil-servant-jared-spiers/",
+      "published": "2026-10-29T08:27:34-05:00",
+      "date": "2026-10-29",
+      "label": "Oct 29, 2026 8:27 AM CT",
+      "weekday": "Thu",
+      "timeKnown": true,
+      "tags": [
+        "science",
+        "propulsion",
+        "news"
+      ],
+      "field": "propulsion",
+      "review": "NEWS",
       "severity": ""
     },
     {
@@ -381,30 +405,6 @@
         "news"
       ],
       "field": "physics",
-      "review": "NEWS",
-      "severity": ""
-    },
-    {
-      "id": "paper:2ba7e0f155caf6d2",
-      "kind": "paper",
-      "lane": "science",
-      "source": "NASA",
-      "sourceId": "paper",
-      "title": "NASA Welcomes Vietnam as Newest Artemis Accords Signatory",
-      "guest": "",
-      "note": "The Socialist Republic of Vietnam became the 78th nation to sign the Artemis Accords, joining a growing coalition of like-minded nations committed to the peaceful, transparent, and responsible exploration of space.",
-      "url": "https://www.nasa.gov/organizations/oiir/nasa-welcomes-vietnam-as-newest-artemis-accords-signatory/",
-      "published": "2026-10-28T16:50:01-05:00",
-      "date": "2026-10-28",
-      "label": "Oct 28, 2026 4:50 PM CT",
-      "weekday": "Wed",
-      "timeKnown": true,
-      "tags": [
-        "science",
-        "propulsion",
-        "news"
-      ],
-      "field": "propulsion",
       "review": "NEWS",
       "severity": ""
     },
