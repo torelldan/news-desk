@@ -28,14 +28,56 @@
             "2026-11-26",
             "2026-12-25"
           ],
-          "level": 7700.79,
-          "change": -43.19,
-          "changePct": -0.56,
+          "level": 7720.39,
+          "change": -23.59,
+          "changePct": -0.3,
           "asOf": "2026-10-29",
           "source": "https://finance.yahoo.com/quote/%5EGSPC"
         }
       ],
       "headlines": [
+        {
+          "id": "headline:fe5607647dd2a903",
+          "kind": "headline",
+          "lane": "news",
+          "source": "The New York Times",
+          "sourceId": "headline",
+          "title": "In Moving Gradually, Fed Risks Having to Play Catch-Up to Quell Inflation - The New York Times",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQT0duQ2s1THJaQTllWHI4eXh0UEZXVjVLUkdBbUFyaHpERDhqQkxLcnhTRzVQU3k0MW5FeWF4Q25BZnJ4dHZuckZiRHZnN2V4eEljbEZDbFFxZnFZREJnQ29wTHdJSDhfV0FzYkdRQ1NkblZyZDAwTmZOdzhyZFlUc3N6M25CMWt6Y0VQMGZ3QmE?oc=5",
+          "published": "2026-10-29T13:55:42-05:00",
+          "date": "2026-10-29",
+          "label": "Oct 29, 2026 1:55 PM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:bda843e699fa239e",
+          "kind": "headline",
+          "lane": "news",
+          "source": "The Center Square",
+          "sourceId": "headline",
+          "title": "Economist: Strong GDP growth, inflation complicate Fed's decisions - The Center Square",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNV2FrUzUzdWZvVE9BbUlUNkh1QWxkMEFjM1Q2UjYzUW5OS1VmUmRkRGd2WmtoaHFZV0E2XzctX0xvM0pHa0JNbjRTUFA2SXhxcFowV3BTcnFvZm0tRUpxQjJneUhxV0VmODk0YkJ2NHZscHdRWFJSdWhaaUtXaElEQm42czdvaGZhd0Y2ZVhtY0lqQkVl0gGaAUFVX3lxTE5aWEgyZnBOd1pqcjc0eGcxd2hITldHdnZwWHBHdWZFY1NNQ2N3dlNTRjFHUG4zVHh5WEJlbkh0dTItcjB1ZktoeVM5UTdDc3BQUTR6S29UcmZ1M3NIcWdPUjRNMGhpLTU5T0JjZGpRaW9iWXZpOXZaRnVKWXNiNFphV0htdFE1Q25mTk4yLURLbnJPNWtWSXlNdkE?oc=5",
+          "published": "2026-10-29T12:48:00-05:00",
+          "date": "2026-10-29",
+          "label": "Oct 29, 2026 12:48 PM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
         {
           "id": "headline:292c7ecd36bbb191",
           "kind": "headline",
@@ -91,6 +133,27 @@
           "published": "2026-10-29T11:33:44-05:00",
           "date": "2026-10-29",
           "label": "Oct 29, 2026 11:33 AM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:5b8ef97b6ef43f3b",
+          "kind": "headline",
+          "lane": "news",
+          "source": "ing think",
+          "sourceId": "headline",
+          "title": "Robust US growth, but momentum is cooling - ing think",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBjZjhXbnRaWlpoM3JQTXRGVVFhWjhjUEJ5Wjd4WE5BNkNEcUxiNmlkdEpDV19rOUttZGtkOHN6ZUNtQndTYUI0UThPeURwWVZ2Sm5CUTFxTy1nY3NRZ3EtZVp4N1N5TGtDY0FZRURZZ2w5VUVHQlJlcm9GQlI?oc=5",
+          "published": "2026-10-29T10:37:45-05:00",
+          "date": "2026-10-29",
+          "label": "Oct 29, 2026 10:37 AM CT",
           "weekday": "Thu",
           "timeKnown": true,
           "tags": [
@@ -226,6 +289,27 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:335e05571038846f",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Kitco",
+          "sourceId": "headline",
+          "title": "Gold falls toward $4,000 as core PCE rises, U.S. growth accelerates - Kitco AM Report - Kitco",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNalJVZXZXWkd1UFNOSzgtUEVTaENRVDRVcmJYaFpwY3NoUEVlYnF2UFlIVVVmaURIYVFEN1E4R3JlN3lpN2I4b2dCeE1udV9JRjhfUnBRdDNpTFJSSXl4NlVORU1qakx3WDdrOVpWZ19FQTZCMFYtZHZEenMzdWFPSmp4eFZXVDdSYkRmcGZxS05Hd3VaRUFjRjR2RHVMTjhiUVBkTlQ0a3dBLXFRQmN1U2wzdllWOGN0dG1sQkpn?oc=5",
+          "published": "2026-10-29T08:03:11-05:00",
+          "date": "2026-10-29",
+          "label": "Oct 29, 2026 8:03 AM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:2a35dd76e8da0bc7",
           "kind": "headline",
           "lane": "news",
@@ -301,6 +385,27 @@
           "published": "2026-10-29T07:36:01-05:00",
           "date": "2026-10-29",
           "label": "Oct 29, 2026 7:36 AM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:d3e31b86ffff07c6",
+          "kind": "headline",
+          "lane": "news",
+          "source": "CNBC",
+          "sourceId": "headline",
+          "title": "Third-quarter U.S. GDP increases a better-than-expected 3.4% as September inflation accelerates - CNBC",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE8tOHQ3dWJWb2pyV0NpTXJad09nT09UdEVBeVM5ZktFNWRmNzFCSU4yR1M0ZElteXY4Q1hpTWhlTk80c3NSVkhJU3FoUnpRSy1nam51empjM0x3aXVnR0VxNEJtTUszdklkYWNlVkp4OEFMZ1VXeFZpNUZsUFp4d9IBgwFBVV95cUxQQkR2M3pFZE5nUVhVczFhYy1rcWRLS2VZcGRxOEJiQURlc2F4c0p3UEtmQnFaS0VsWkVhRWNYbUdsdUtfVzZxZGpqajF2WXFmc1lRWVdGY1RHODk0dWg5LW1seTdLeWVlMTk3V2tEdDh5YWR4cUI5bnZ4bk5tbHhHYmVlMA?oc=5",
+          "published": "2026-10-29T07:32:52-05:00",
+          "date": "2026-10-29",
+          "label": "Oct 29, 2026 7:32 AM CT",
           "weekday": "Thu",
           "timeKnown": true,
           "tags": [
@@ -688,6 +793,27 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:4ddd7673f58069bc",
+          "kind": "headline",
+          "lane": "news",
+          "source": "BNN Bloomberg",
+          "sourceId": "headline",
+          "title": "U.S. Federal Reserve keeps rates unchanged despite elevated inflation - BNN Bloomberg",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQcUlSeGRaV0llbkRuM0kyalU1NWdSajNNSDE0RWNwSk5GOFhaeVNBVFB1d21CSXdrMlhIWk1ILWVDdy1DRU9CcWhJLXc4U3paU0pHSnluWDlPU0FQa3BELWlLTHJhZnlhWk05RjVkU1BiVlp5b0NwS0JGLXRvdGtLNWNuTzYxNmVETEZ1QVFOSHNuWGQtTlJ6WjR2M3ZjdFNXNXhJa1VpV19fRVZVXzhpTU9qMzU5VEJheGJhcmZTRTU0M3pSbTlyLVlJcXZNSjdUdHpXWUhmU0o2SWVRb3AyQ0ZkbTJ1TFM1aVhxY1Fsb3RGUjNvSk9mQTRZRQ?oc=5",
+          "published": "2026-10-28T14:40:47-05:00",
+          "date": "2026-10-28",
+          "label": "Oct 28, 2026 2:40 PM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:4c11c6658516d7f1",
           "kind": "headline",
           "lane": "news",
@@ -749,132 +875,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:864b9755a96a9537",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Daily Investor",
-          "sourceId": "headline",
-          "title": "US Federal Reserve leaves interest rates unchanged - Daily Investor",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQODgzUDM5eGthSGtHQU9sMGRGX3Z3cGVodS1HekpCd19mSXg4dFdmRWRJUXZ6LUxzRjdYcVpxUmt0ZDY0dXU2ejNMYkk1VmIwazMyNDQ3eVBUbWJGcElaTW95d1ZPRmFsQmlyTmo0bGNjZUxzMExweUN3UDFCS1pvM2xwcng2WG9WSy1nODVPR3E4dG1va2Zr?oc=5",
-          "published": "2026-10-28T13:24:12-05:00",
-          "date": "2026-10-28",
-          "label": "Oct 28, 2026 1:24 PM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:36e9c817b3873f72",
-          "kind": "headline",
-          "lane": "news",
-          "source": "The Tribune-Democrat",
-          "sourceId": "headline",
-          "title": "Federal Reserve keeps rates unchanged despite elevated inflation, gives little signal of next move - The Tribune-Democrat",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxOclljNC1IektIbU9xamZrX3NLc3VkYmQ0U0laT29GbUlwcDJELVg4OTZtdTUtTW94SXRJZnRza2ZvVTNZOU01eEd6YWZJUE5OMmQzMXlwVjR2b1hnNVY4SXlDZldGQmVyMGNOdEZRSmlWSm15anFDcW9rV2NIUUIzUmFkLTRyQy0yZ0pwMERBdUNXbWtsVUdieHNGUFVZM3I2QXN0THpkNGdXeUVSR0E3ckY5SUFTNTBGTktBT184UllNenNfV3czNFpfdzFMRkxoOXlSbzRpMGVJQTg3YWdUWkVvUHd6N09wRTgzZFFmalhlQ1VLdHF4RkJiSFV1R2JiU3l1YjBubWRrdEI3Mk0xNW41RQ?oc=5",
-          "published": "2026-10-28T13:23:00-05:00",
-          "date": "2026-10-28",
-          "label": "Oct 28, 2026 1:23 PM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:ef84a7f973dd1869",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Breitbart News",
-          "sourceId": "headline",
-          "title": "Federal Reserve expected to pass on interest rate hike, for now - Breitbart News",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPUXo5YmJucm9hNkZYQVU2TnoweGdPZ3pyWWVRT25QQ1pONEZ4VFBTeWdkb2tLNkZtN1Jpb1B3ekRFOUtXRkxyWDM3Y2dWOVZQOElaOHpQQVRXT3NUbEFoN2V5MXZIQnBfQm9wb0cwUjc5VGFKclRhZEc2XzZPSk1WdTdFakRPWHpFdHpnUnJFSXB1QzBXa0JSMUktQ0VlVk3SAZ8BQVVfeXFMT1F6OWJibnJvYTZGWEFVNk56MHhnT2d6clllUU9uUENaTjRGeFRQU3lnZG9rSzZGbTdSaW9Qd3pERTlLV0ZMclgzN2NnVjlWUDhJWjh6UEFUV09zVGxBaDdleTF2SEJwX0JvcG9HMFI3OVRhSnJUYWRHNl82T0pNVnU3RWpET1h6RXR6Z1JyRUlwdUMwV2tCUjFJLUNFZVZN?oc=5",
-          "published": "2026-10-28T13:22:55-05:00",
-          "date": "2026-10-28",
-          "label": "Oct 28, 2026 1:22 PM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:a094d0f98b01e58e",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Action News 5",
-          "sourceId": "headline",
-          "title": "Federal Reserve keeps interest rates unchanged ahead of midterms despite elevated inflation - Action News 5",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNWWtMVGEyWHFEbFZkcThmR293WWYwNnJaZk1tcjVQMVpCU21ieHdyVFpGVnRVYXMzdDZWa2g2Vk4tRnlMSV9xajhSWENBN3JQWm5TU0ZRTXJ3d0RtcTQxS1YybDlqbmUtdTFIZzJxVjlUMWl1Vmo1dXN5b3hJZERHS1hQMlZlMzFSenJXMnFMYUFtM3ZnU1dJT0otODhYZ2RheVJOZExHVzdHdC1GWXBoQngtZXEyNjlBS0ZhMnNWWFRIbk0zVWpCalhpYmJJWGZLVDFtZFNzeldoTTTSAdsBQVVfeXFMTVlrTFRhMlhxRGxWZHE4Zkdvd1lmMDZyWmZNbXI1UDFaQlNtYnh3clRaRlZ0VWFzM3Q2VmtoNlZOLUZ5TElfcWo4UlhDQTdyUFpuU1NGUU1yd3dEbXE0MUtWMmw5am5lLXUxSGcycVY5VDFpdVZqNXVzeW94SWRER0tYUDJWZTMxUnpyVzJxTGFBbTN2Z1NXSU9KLTg4WGdkYXlSTmRMR1c3R3QtRllwaEJ4LWVxMjY5QUtGYTJzVlhUSG5NM1VqQmpYaWJiSVhmS1QxbWRTc3pXaE00?oc=5",
-          "published": "2026-10-28T13:20:00-05:00",
-          "date": "2026-10-28",
-          "label": "Oct 28, 2026 1:20 PM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:564c2c8e2b1feb00",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Upstox",
-          "sourceId": "headline",
-          "title": "US Fed keeps interest rates unchanged at 3.75-4% citing elevated global uncertainty; inflation concerns remain - Upstox",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOVGt5Y2VyUGY5S3JGbDVycnVsZHE0ZFVlWlZWeXNETTRZR3ZNRzdaQ2xGRXBLR3UtQlJWb1ZKdFJYTm5kaVdYUlJfekF5THpZSnBlX1Eta3pxSDlGNUxvWDEwc2pWX2t1c0x1aHJLSEdDRzNoRFZrUkZmTERsUDFLUzhaUU83bDV1UlBUc0xQNEJ3VEdzc2lTZ2dSMWo3bl9uVGtPeFUyQVRaRzRmc0c1TjMtdkR6ZWxIWHdRVVZrd3BId1otWDBwbEpEMkkzX0htU3pXeXdSRU1MU3Fqc2ZsN0JRbHRkVzlnaXdPLVpXY2syM0tKUHQ1ZGJNdkdRUUk?oc=5",
-          "published": "2026-10-28T13:10:47-05:00",
-          "date": "2026-10-28",
-          "label": "Oct 28, 2026 1:10 PM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:1726fe674bbd5b1e",
-          "kind": "headline",
-          "lane": "news",
-          "source": "BBC",
-          "sourceId": "headline",
-          "title": "What is happening with US interest rates and the economy? - BBC",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBCUjRHSy1QVjJNSHJQRURaMmoxQjhhZkJFLW11U1NyRjJ3d2dPWjVpRjhpSDNRM0VpOE5ZUlljdjJOTkpiQVdNM3dFcEpRNXVnaldQc3dsMzl1TFZ4eEE?oc=5",
-          "published": "2026-10-28T13:04:55-05:00",
-          "date": "2026-10-28",
-          "label": "Oct 28, 2026 1:04 PM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ]
     },
@@ -894,9 +894,9 @@
             }
           ],
           "holidays": [],
-          "level": 36120.17,
-          "change": -144.93,
-          "changePct": -0.4,
+          "level": 36249.03,
+          "change": -16.07,
+          "changePct": -0.04,
           "asOf": "2026-10-29",
           "source": "https://finance.yahoo.com/quote/%5EGSPTSE"
         },
@@ -912,9 +912,9 @@
             }
           ],
           "holidays": [],
-          "level": 69562.3,
-          "change": 379.91,
-          "changePct": 0.55,
+          "level": 69787.41,
+          "change": 605.02,
+          "changePct": 0.87,
           "asOf": "2026-10-29",
           "source": "https://finance.yahoo.com/quote/%5EMXX"
         }
@@ -996,6 +996,27 @@
           "published": "2026-10-28T15:11:19-05:00",
           "date": "2026-10-28",
           "label": "Oct 28, 2026 3:11 PM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:b6f545627e454a11",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Advisor.ca",
+          "sourceId": "headline",
+          "title": "Bank of Canada delivers 1st hike in three years - Advisor.ca",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQVHdTSEVpbVFFRFVDRmlUM3g5aHdWUUdzVkJiUnYzYS1tZ1JfU1ZQS1BSajE0QUxramZIckpwajlDRHEzQVJXS1dZaVdQYU1tX0Vla0x6UnZ2cjlkYzJRR1oydUhsZXpkeWpjaDFzTDRLbURpZXB4ZnJXYlQ4U05QaDBJdlRvLWxZQ2U3aDNtSQ?oc=5",
+          "published": "2026-10-28T15:06:31-05:00",
+          "date": "2026-10-28",
+          "label": "Oct 28, 2026 3:06 PM CT",
           "weekday": "Wed",
           "timeKnown": true,
           "tags": [
@@ -1320,6 +1341,27 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:ef08f72d9112331a",
+          "kind": "headline",
+          "lane": "news",
+          "source": "The Globe and Mail",
+          "sourceId": "headline",
+          "title": "How will the Bank of Canada rate hike affect your finances and the economy? We answered your questions - The Globe and Mail",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOS3hRSGRtUkMxNC1OSXYyTTI4NmFYYmFkOWVFa0hqSDhLZVZKN2w4dGNublh1NUw1Z2NFT29qWTk5N0F6NmNPWjBEanREVGJrREpXRmk5aEw0MFBCYWdfWkRTQ3BMdEZ2NGNZaHBDMkFCR2QyekJ1cklZcUItSkswN2FjU0VIdUMxYW85My1Cd1BCbXc?oc=5",
+          "published": "2026-10-28T11:08:01-05:00",
+          "date": "2026-10-28",
+          "label": "Oct 28, 2026 11:08 AM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:77559bae5ffe2785",
           "kind": "headline",
           "lane": "news",
@@ -1434,7 +1476,7 @@
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOa0RHRkZSSnhuS0RZemtyRnhUc1RVMWVhVk9EdWV4Q2dRN0QwNFlPTkNraWJzcU1pVkVWS09CTTBrdjBUakNHSk9QaVQ1VlR5eGUtS3I4WWQ4TnRqbU5BQVc5QVNsV2wwNE13Qk94NS01ZzR4SHNqamxlZFZjcU5MLVV0Vnc1TFJXME1MRDdPeFF3ME9yVzlNb3JpUllhemFmY0gwSnBMczMzRVVMSzNxUGRhQVhsR3pvVnJNblhIcGhpQTBhZ0Uwakt4U1JYWERUUmZaNG4yNjRFQVR1cnBfODlrR0d5ZnR2Z3lsWFhtV3IyRFpIc1U2V3RsVkQ?oc=5",
-          "published": "2026-10-28T09:56:18-05:00",
+          "published": "2026-10-28T09:56:19-05:00",
           "date": "2026-10-28",
           "label": "Oct 28, 2026 9:56 AM CT",
           "weekday": "Wed",
@@ -1717,48 +1759,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:32bab8e3312fad34",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Financial Post",
-          "sourceId": "headline",
-          "title": "Philip Cross: A Nobel Prize in economics for flawed foundations - Financial Post",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNQlUxNWtJVFA0RTA1cXNUM0lNRFlZcEpYc2d5UndrZkh2Z0prWjJjOUNIbFBuTS1kWHZDRV94Y2tUZElnVUotVEtpOEJYZElqT0NPUGd3Z0dwQXV5WUV5c04xbExlN0NrVkNRaGw2VnlicDJzV3hUczVCZXhxZHRNNVJLanBBeUFkejBjTjN0Ym1ya3Qwblhqd1ZpelM?oc=5",
-          "published": "2026-10-27T06:30:05-05:00",
-          "date": "2026-10-27",
-          "label": "Oct 27, 2026 6:30 AM CT",
-          "weekday": "Tue",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:a4343a8f66a30057",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Bloomberg.com",
-          "sourceId": "headline",
-          "title": "Bank of Canada Seen Hiking as Oil Creates Stubborn Inflation: Decision Guide - Bloomberg.com",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNVFVFYlRPQS1CVFpwZG9ITFJ2dlZpRmlhaTFlcnU5emE0YmF2Q1h5R2FDU25vVnVNdHVGcGc4NkZrclQyNXlvdl9WaVNudGVpekp2Z2E5LXkxUzZUV0xFMXNwTjFtRUZfWWZGOWd0SF9KUjFNU2ZlVE5tcGVsdldfTGRPYkt4QU1UdW8yMnIwT3J3eHBmaEJaQm5tUFRVcUVOX0x2T05WOS1DU2YtOTVaeG8zLWpqam1PNGJ4Yzd0TWFSVG1h?oc=5",
-          "published": "2026-10-27T05:30:00-05:00",
-          "date": "2026-10-27",
-          "label": "Oct 27, 2026 5:30 AM CT",
-          "weekday": "Tue",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ]
     },
@@ -1778,9 +1778,9 @@
             }
           ],
           "holidays": [],
-          "level": 169050.56,
-          "change": -1955.44,
-          "changePct": -1.14,
+          "level": 169186.42,
+          "change": -1819.58,
+          "changePct": -1.06,
           "asOf": "2026-10-29",
           "source": "https://finance.yahoo.com/quote/%5EBVSP"
         }
@@ -3601,27 +3601,6 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:03faaa319691fe21",
-          "kind": "headline",
-          "lane": "news",
-          "source": "The Washington Post",
-          "sourceId": "headline",
-          "title": "Opinion | China can manipulate statistics. It can’t fool markets forever. - The Washington Post",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPNHV0TldIakhUbkNHLTRjNklURTNCSnJnWHhfQk9GZVFGbUhUczIwOXZyNTVLbmF6QnpOdmU4cmN6bndOSVNxRVM0T2ctRGxSTkp3N2hfREVUcGFHYVZkU3Nwd1JCYlJFbXR3Q1MxTEUyN2czOTFMVExMZDVkZG5kb1BwT2dsOTQ5LTY1Tmxxa1FTYlU?oc=5",
-          "published": "2026-10-22T00:56:13-05:00",
-          "date": "2026-10-22",
-          "label": "Oct 22, 2026 12:56 AM CT",
-          "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
           "id": "headline:f0352ad95da87302",
           "kind": "headline",
           "lane": "news",
@@ -3697,6 +3676,27 @@
           "published": "2026-10-21T03:42:45-05:00",
           "date": "2026-10-21",
           "label": "Oct 21, 2026 3:42 AM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:03faaa319691fe21",
+          "kind": "headline",
+          "lane": "news",
+          "source": "The Washington Post",
+          "sourceId": "headline",
+          "title": "Opinion | China can manipulate statistics. It can’t fool markets forever. - The Washington Post",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPNHV0TldIakhUbkNHLTRjNklURTNCSnJnWHhfQk9GZVFGbUhUczIwOXZyNTVLbmF6QnpOdmU4cmN6bndOSVNxRVM0T2ctRGxSTkp3N2hfREVUcGFHYVZkU3Nwd1JCYlJFbXR3Q1MxTEUyN2czOTFMVExMZDVkZG5kb1BwT2dsOTQ5LTY1Tmxxa1FTYlU?oc=5",
+          "published": "2026-10-21T02:00:00-05:00",
+          "date": "2026-10-21",
+          "label": "Oct 21, 2026 2:00 AM CT",
           "weekday": "Wed",
           "timeKnown": true,
           "tags": [
@@ -3816,6 +3816,27 @@
       ],
       "headlines": [
         {
+          "id": "headline:9b51890e1ecf585c",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Global Banking & Finance Review",
+          "sourceId": "headline",
+          "title": "ECB Keeps Rates Unchanged as Lagarde Resigns; Euro, Bond Yields Fall - Global Banking & Finance Review",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNTFZwYllIVEtVMUczMGF2WTBhbml1R3c4OTJjM1VaWFdvY2Vtcm5mbzhSeVQ4dG1FLUlhWFdWMVFVeHhReGNsU3BCNDA4QmxYWUEtQjE1NWM2bU5vSi0ydHkzd1B1bWFPUWxBYUgzUVRVWXlpaG9vaEd0NTRzYk9ERWVDdw?oc=5",
+          "published": "2026-10-29T13:06:46-05:00",
+          "date": "2026-10-29",
+          "label": "Oct 29, 2026 1:06 PM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:c4c17ba66e0be8d5",
           "kind": "headline",
           "lane": "news",
@@ -3933,27 +3954,6 @@
           "published": "2026-10-29T08:53:22-05:00",
           "date": "2026-10-29",
           "label": "Oct 29, 2026 8:53 AM CT",
-          "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:ff4fc145d53e12ac",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Global Banking & Finance Review",
-          "sourceId": "headline",
-          "title": "ECB keeps rates unchanged, euro slips - Global Banking & Finance Review",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNTFZwYllIVEtVMUczMGF2WTBhbml1R3c4OTJjM1VaWFdvY2Vtcm5mbzhSeVQ4dG1FLUlhWFdWMVFVeHhReGNsU3BCNDA4QmxYWUEtQjE1NWM2bU5vSi0ydHkzd1B1bWFPUWxBYUgzUVRVWXlpaG9vaEd0NTRzYk9ERWVDdw?oc=5",
-          "published": "2026-10-29T08:42:31-05:00",
-          "date": "2026-10-29",
-          "label": "Oct 29, 2026 8:42 AM CT",
           "weekday": "Thu",
           "timeKnown": true,
           "tags": [
@@ -4731,6 +4731,27 @@
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOSTNqSzZRc09uUmpXOUEwbDdxaHk2NkIyc25ERWVpYnNBeEN3RERodGhuY25qSGcwSGtXaHVBbWpWalBPZ0FUOGJtNXR1ZWMxRS1lSUh2dVR3a3pzMlRXWHpwdHdNeXFDZWlkaEFPWkRYRWhrNWNjYWFnZ25lN25PM1EtUDNINVZJUk5PSE5xSlAtVjRSUnlJYjFKUHlHZDBRYW54TGJ5SjRWY3hiRDE3c3g3THpTU0N0SExBbjhwMmcwYWhjMWFWQ2VVN0JHOWJjQUxLZTFFM0YwRy02dmh2d1VB0gHiAUFVX3lxTE5JM2pLNlFzT25Salc5QTBsN3FoeTY2QjJzbkRFZWlic0F4Q3dERGh0aG5jbmpIZzBIa1dodUFtalZqUE9nQVQ4Ym01dHVlYzFFLWVJSHZ1VHdrenMyVFdYenB0d015cUNlaWRoQU9aRFhFaGs1Y2NhYWdnbmU3bk8zUS1QM0g1VklSTk9ITnFKUC1WNFJSeUliMUpQeUdkMFFhbnhMYnlKNFZjeGJEMTdzeDdMelNTQ3RITEFuOHAyZzBhaGMxYVZDZVU3Qkc5YmNBTEtlMUUzRjBHLTZ2aHZ3VUE?oc=5",
+          "published": "2026-10-29T06:05:10-05:00",
+          "date": "2026-10-29",
+          "label": "Oct 29, 2026 6:05 AM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:ba07167617ee0c84",
+          "kind": "headline",
+          "lane": "news",
+          "source": "South China Morning Post",
+          "sourceId": "headline",
+          "title": "Later hours unlikely to boost bottle sales at Hong Kong wine festival: exhibitors - South China Morning Post",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNQmJub1ljbWlJaUZKZW5BQ0tuSG1mQ1FGOFRPaFJUMmxNTzJVVERSRllnQy0tMHR5em4tUUcwNlpkUEJZdHU1QVQ0UkhxRFdDV184SnpacVVEZXJPUXlJVnc0U2xNS3ZvdTFmWW5TaUxxc1h1ZnVQVVZ3YksxdHhISm1Td0d4Zl9mLUhwUElOVEZsdXY3dlhlY2diVFc4bXF6dVhQS3hRMkc2VEtOVEdHOUplckdPTWpyZW9PbHVtV1BOQ2xhZFpEZzVLSk9tV0txM0I2TXhjbjMxa2lLQWY5aC130gHiAUFVX3lxTE5JM2pLNlFzT25Salc5QTBsN3FoeTY2QjJzbkRFZWlic0F4Q3dERGh0aG5jbmpIZzBIa1dodUFtalZqUE9nQVQ4Ym01dHVlYzFFLWVJSHZ1VHdrenMyVFdYenB0d015cUNlaWRoQU9aRFhFaGs1Y2NhYWdnbmU3bk8zUS1QM0g1VklSTk9ITnFKUC1WNFJSeUliMUpQeUdkMFFhbnhMYnlKNFZjeGJEMTdzeDdMelNTQ3RITEFuOHAyZzBhaGMxYVZDZVU3Qkc5YmNBTEtlMUUzRjBHLTZ2aHZ3VUE?oc=5",
           "published": "2026-10-29T06:05:10-05:00",
           "date": "2026-10-29",
           "label": "Oct 29, 2026 6:05 AM CT",
@@ -5529,27 +5550,6 @@
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQbFdNMTl4aWFoakZBMXNBZzZnYzE1bExJY21VTm5RS1E0b1hyZHZ0c0xsY01aX1RZVUd1eGFyS2p3WUQ1MHEyR2pXdXBWUXJXZlBrbVVNRVBKNk1ZQnI3M3liOUp1dTBJTWhsQjB3R1FqVUw3a1FvTm1PUV9DZ3pOMF9rMzNtTEpLcHp6QTktU1k3MlhVeHZxVEduNEdrcjdORFZ6bUN5bnA0QkxsMW1RbkxkOVdEeHh1bmxzbGZYa1VHMVlOMXV1SG54UTVvRE5uVjY0aTQxMNIB1wFBVV95cUxNLWtUUFdPN0R3RTFfWDJKTFJReldlejltYlJrU1d1TnNIdFdWeUtQTVo4UjlDa0FWTE5Kdk9qLXpEa3JJWnhKWXNxR09aRDhkVU1vdFFBSXBnc3V6TjNoZGY3cXFPYlFOdVhyYUdKX1ViSXR4R3doa0taQzF0bnNWM2lzRHBiSHl1bzlMTjk1MnladGRaX2wyMmRIV0hUVmJoX0RhRWdSbXlrdVdYSjFfbnhQM2xjVmZSTXE1RmNwMFVib2UtWVVQRjlOaUJra0VxejRyRThHcw?oc=5",
-          "published": "2026-10-21T02:00:00-05:00",
-          "date": "2026-10-21",
-          "label": "Oct 21, 2026 2:00 AM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:fd06cfd6d15d4698",
-          "kind": "headline",
-          "lane": "news",
-          "source": "South China Morning Post",
-          "sourceId": "headline",
-          "title": "Only 3% of Hong Kong firms have fully integrated AI into workflows, survey finds - South China Morning Post",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQUUtQX01aR0R0OWxKY1dWcXU3UDJ2RHY1aG9kMExHXzJXZzNlYkQ1LUxOSFZIVWszTFhLdE9tN0xrSmhuUnpMaUZLYTN3VXVHYTJidGIyNDhuR3ctcC03Q0h4YzEzMXFnQ3M4aE1FQk13ME05ZXNEZDlqYXYyU2JXZ0FoR2xiemlUbU8zbFN4OXhWRElCTjlUa0JVWEpvWGc5RmVNRktTYUlrOGt3enNuVlg0WFIyajhjWlpDd1lES2Y0aTd6Y3U3Q0s3ck4zckN4WmVwQl9HMNIB1wFBVV95cUxQeE1PNEVzWW1TT1pSQk5JRlM5LWRjX25jSGE5anp1WnJpeWplM1Z0SVBGQWZhR2FWS2luSkZTNGxPUVV6SVljWmxpQXQxOXI1bEFkeW5QZE9kcjlOdGo2dlhSc1hSbWhoVi1fd1VIYlFLOHhSNmZYeG1jWnh5NTA2RDJZX2NxdmhGOHRnRDY3T3pBZy1uSGhKYXM5VXZUYk1RWjh6WlpZdWJLY2lkdzhuQnVpYlRucjRBek1IRVJrRzdkbkxRU3dDSkZSb1Q5R3BZMXhhUzFpNA?oc=5",
           "published": "2026-10-21T02:00:00-05:00",
           "date": "2026-10-21",
           "label": "Oct 21, 2026 2:00 AM CT",
