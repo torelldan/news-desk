@@ -28,9 +28,9 @@
             "2026-11-26",
             "2026-12-25"
           ],
-          "level": 7610.71,
-          "change": -109.68,
-          "changePct": -1.42,
+          "level": 7536.25,
+          "change": -184.14,
+          "changePct": -2.39,
           "asOf": "2026-10-30",
           "source": "https://finance.yahoo.com/quote/%5EGSPC"
         }
@@ -163,6 +163,27 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:aeb555fbcdf97897",
+          "kind": "headline",
+          "lane": "news",
+          "source": "FXStreet",
+          "sourceId": "headline",
+          "title": "A hot US economy is supposed to sink Gold. It didn't. Here's why - FXStreet",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPVmlUN3Qwbk0zN2djUm9fT1dhT2Q5dU1yXzBZWlpPV3JLM2J6T0pSTW9ERndDRm9zc2R6V2gyem9ETENjTXdfQ29ncExmb2dsdVE2YnBRR3JIZGlBN3ZaTkhuMVZiU0cyZjlNcGtXdDRpUm9QUDFhNnYxcUUzbGp5Y3lkREtaUm12bVNDSTBOZzJlYUkzLW5Xc01ZMXMxOUdyTUk5LVUyd2xnaGc?oc=5",
+          "published": "2026-10-29T13:06:45-05:00",
+          "date": "2026-10-29",
+          "label": "Oct 29, 2026 1:06 PM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:bda843e699fa239e",
           "kind": "headline",
           "lane": "news",
@@ -259,6 +280,27 @@
           "published": "2026-10-29T11:33:44-05:00",
           "date": "2026-10-29",
           "label": "Oct 29, 2026 11:33 AM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:102f2896560b1c9e",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Gulf Times",
+          "sourceId": "headline",
+          "title": "Robust consumer spending, AI-related investment power US economy in third quarter | Gulf Times - Gulf Times",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNSFljbWJHOWlXTTlHYjAzdkxsZXJwNkVxRGNmdkR6NFQ2UDg2RTdEbHd4ZVFlWWUzRFZvblVtVnNEdkd6T1lKaXkwV3o4QmRWa29OMHd5LS1mZmNIRnlhajJVY3RUX3NoNkhIWVpRWFRyRGdIS3FIMjc2amRSaHIxQVRlN2k2M1dKekVERzg5S1MzRFg1N2NUa2EzcDRpZlZNd3ZWSXlodEFqdTZuLVJyUkxSUVRJdG9JbXI2LVpsRnVGQ3hpeGNBUE8wd9IB0AFBVV95cUxQZC1sLXp4VzhLRkVCY0hHcWFTVjBNQTVHM0lMb1dYMTMwbWd6NUVOZnp1V2w5LTlPY29fUlZDN2NBNERaQk41Wl9lT2JveG9lX2JIOGhBeGdxbHhQazRuemkwZ3dKYWJzNEtTaDZJSU5tamw2SENDZXRYaklvUzRZaHV1X09TTml5Y2NGVEhVMjE0ZVE5cjhCd1U4M3Y1R0d3TnNwYUNGMV9UYkxzdUQyc0VLckRkeXlGVHp5blhodWJTMVpyeGlhdUdjcEZOZ25k?oc=5",
+          "published": "2026-10-29T11:23:00-05:00",
+          "date": "2026-10-29",
+          "label": "Oct 29, 2026 11:23 AM CT",
           "weekday": "Thu",
           "timeKnown": true,
           "tags": [
@@ -833,48 +875,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:fd12d2801cfc091c",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Bloomberg",
-          "sourceId": "headline",
-          "title": "Fed Says More Data Will Help Next Rate Decision as It Stands Pat - Bloomberg",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNYTNINnF3d0YzSWhxXzBuRUxDc2RycVdyV1FFVGFMcFMtdUZxVmx4RGQ5NDdJRmpRdlhMRlN4d1NTV1BFYVFXekxSQUhjRjBKWlNxTzNrb04xTmx5THJ1OVBZem1HWldlb2EzaWFsbmVNYUIxVWtqano5ZFJZanllZVJTYWNuYXVqRzFxMjRRSjVqaXBvWFQ5cTJiSElpWldqbjA5bXl6eEM?oc=5",
-          "published": "2026-10-28T15:16:34-05:00",
-          "date": "2026-10-28",
-          "label": "Oct 28, 2026 3:16 PM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:368ceb875e6e865c",
-          "kind": "headline",
-          "lane": "news",
-          "source": "IndexBox",
-          "sourceId": "headline",
-          "title": "Fed Chair Warsh: US Economy Not Overheating Despite AI Investment Boom - News and Statistics - IndexBox",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNY3k5Q3Y1R2dFakNoRFZTSmpXakJVS19wQ2NIRDVETEtsYktlWEtBdnFZb1Jzc3FTeHFyOHM1QXB3Sno2azlJdXU4NS1sekg1NERsQUk5c19aay1YWExuR1k2S0NNelVwOGlxMGlaeXZPTThjMS1PanBqSFlXRzdxV2w0UG5EMEE?oc=5",
-          "published": "2026-10-28T15:10:30-05:00",
-          "date": "2026-10-28",
-          "label": "Oct 28, 2026 3:10 PM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ]
     },
@@ -894,9 +894,9 @@
             }
           ],
           "holidays": [],
-          "level": 35581.22,
-          "change": -667.78,
-          "changePct": -1.84,
+          "level": 35332.64,
+          "change": -916.36,
+          "changePct": -2.53,
           "asOf": "2026-10-30",
           "source": "https://finance.yahoo.com/quote/%5EGSPTSE"
         },
@@ -912,14 +912,77 @@
             }
           ],
           "holidays": [],
-          "level": 69726.49,
-          "change": -60.91,
+          "level": 69725.74,
+          "change": -61.66,
           "changePct": -0.09,
           "asOf": "2026-10-30",
           "source": "https://finance.yahoo.com/quote/%5EMXX"
         }
       ],
       "headlines": [
+        {
+          "id": "headline:5fcd4b4a96dc7f4a",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Mortgage Professional America",
+          "sourceId": "headline",
+          "title": "Economists flag Q3 downside as Canada’s GDP stalls in August - Mortgage Professional America",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQcUx4dWNlQlZ6Tk0xYTQ1dVdGMnB0VG52M09lcGVINHVSNnJ2YlMzNHJkQ1ZGYmZIR2UyaVVXUUdYbDZQeldsSWlUVVAwRUxHR3F6TTR1dlpQZDk0bS10WW0wODFna3pFXzBVTjA5SzcxQmozUnJKZ2JoZy1sVmtjS2p4dEZBRGVYdzB5eFNUS2V0aVJjZ1JuRXdCUVppX2FIOW1qTW9KX01aUlFCQWRPTTJnaGJDd3hUWGVCUFZvbERPaDBa?oc=5",
+          "published": "2026-10-30T13:06:01-05:00",
+          "date": "2026-10-30",
+          "label": "Oct 30, 2026 1:06 PM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:6fe98b4fad3ae29b",
+          "kind": "headline",
+          "lane": "news",
+          "source": "WSJ",
+          "sourceId": "headline",
+          "title": "Canada GDP Seen Dipping in September After Two Flat Months - WSJ",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPVkY5NVM0azFpTzNyUEdNVzF0UWNKanpKMHR3cXJNTU5Zd1hJcUdDR1VUNmM0X3ZRRzFnZXdqaGtBTEJyVzFpdUZaV2lNZ2JfODdSQVBKMmRDSXc1NEc5cDBXQ21tTUlKU2oyQi01WTh5QTJTWm1xS1doTVV0cU92Nll5bi1wSm1JUEVRQ0F0ZG5ZWVd1aUVzSnh2Zw?oc=5",
+          "published": "2026-10-30T10:53:00-05:00",
+          "date": "2026-10-30",
+          "label": "Oct 30, 2026 10:53 AM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:5cde4cc5861487cb",
+          "kind": "headline",
+          "lane": "news",
+          "source": "IndexBox",
+          "sourceId": "headline",
+          "title": "Canada GDP Flat in August, Q3 Growth at 1.3% vs BoC's 2% Forecast - News and Statistics - IndexBox",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQQ0doeXZhQmVZUnU5RV9WcGc5M2VBM3lyUE9OMEtWRnQ2Um5VOXV0NF8tQ2Z5SlQ0VThxSzljVE8xMFktRkRpejlSQ1IwRi1rTjQtczNhZEtvVkwxU1pyVXg1TXI5VEhjNm5Ebi1QYlExTTk3eDNmSm9INjNCbS1XQzNhN2cwRkFraXVibHl0NEphelZrSlA2VDdEVjJXekxwUG1sLW0tY2VWTmNRYkNWWl9sbmV4UQ?oc=5",
+          "published": "2026-10-30T10:00:24-05:00",
+          "date": "2026-10-30",
+          "label": "Oct 30, 2026 10:00 AM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
         {
           "id": "headline:07f0362acc296d76",
           "kind": "headline",
@@ -933,6 +996,48 @@
           "published": "2026-10-30T09:41:00-05:00",
           "date": "2026-10-30",
           "label": "Oct 30, 2026 9:41 AM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:46898b77e1d88ea2",
+          "kind": "headline",
+          "lane": "news",
+          "source": "CBC",
+          "sourceId": "headline",
+          "title": "Canadian economy stalled in August, points to September decline: StatsCan - CBC",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBFdjhqZ1dPMk5zTEtmZ09TTjRxMGFra2NaM3pmYUQzMHp6aWp4bGw1OUtMcEFNTmZPdEVDWnpfd0xnR3U0dV9mMHgwU2hUbnU4YkpHeldzcmNpdktEbFpCTWM3eUR3blAwLTVaaGxSNVZpQkE?oc=5",
+          "published": "2026-10-30T09:21:08-05:00",
+          "date": "2026-10-30",
+          "label": "Oct 30, 2026 9:21 AM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:5002d4a243b54ed2",
+          "kind": "headline",
+          "lane": "news",
+          "source": "BNN Bloomberg",
+          "sourceId": "headline",
+          "title": "A 0.2% gain was expected, but Canada’s GDP stalled again in August - BNN Bloomberg",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPMDUwdlBfNUJhOFoyQjcxZTE1NXdyaXpWSmU4eGdQZ25TN2NfNWtSUmZnRU5WMnJHWENpVEdZZTFlSlltZ2twaWdtY0pfaERuYks0cjhWd285eC1NcjFHUzg3dTAxbHpWUEM4cUZ2UHpmXy1vZ0o5ZExDZVhobTFheV9XcjRNU3pmWWhFNFlGcEFvSG44RDMzNWVZTkJBakQyTnd2Nl9WeGFUYXNCRGRyVQ?oc=5",
+          "published": "2026-10-30T09:07:41-05:00",
+          "date": "2026-10-30",
+          "label": "Oct 30, 2026 9:07 AM CT",
           "weekday": "Fri",
           "timeKnown": true,
           "tags": [
@@ -984,12 +1089,12 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:bacd2d175eaab8f3",
+          "id": "headline:fa30cb971b0a2efe",
           "kind": "headline",
           "lane": "news",
-          "source": "Bloomberg",
+          "source": "Bloomberg.com",
           "sourceId": "headline",
-          "title": "Canada Economy Tracks 1.3% Third Quarter Annualized Growth - Bloomberg",
+          "title": "Canada Economy Tracks 1.3% Third Quarter Annualized Growth - Bloomberg.com",
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNYkFnQnJrUFNBQmxrV3NlOXEwT0JzVVhBOTRfVjc0QUJaLVhxbGFsUFlEVGVvNm1TYUhqV3g2djEtUi1jR19MaUlUa3JDdWZxUlUxak1sQ3k5dE50Q1Vsc0E0OU1peWx6NTBZQlRyMWhJMzdhVUswaWloZmVIRm8wTElhdTBjcUZLNTFFd0JaU0dya2RCU25pazdibTIwU211cXdoWFZWNWFMWVR0?oc=5",
@@ -1026,12 +1131,12 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:4538b022dcaa25eb",
+          "id": "headline:7bebd45fadabde76",
           "kind": "headline",
           "lane": "news",
-          "source": "Bloomberg",
+          "source": "Bloomberg.com",
           "sourceId": "headline",
-          "title": "Rate Hike Kicks Canada’s Housing Market When It’s Down - Bloomberg",
+          "title": "Rate Hike Kicks Canada’s Housing Market When It’s Down - Bloomberg.com",
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNVTl4M2NBYkNEM0hKY2doUkhDQVI5VUxxV0JzdmE2eFJNeTcyYTZxQXk5bzY3TVBTa1BDRlhURUlWTmEzalJuem81NmhXaTlWLUdLZlUzODdJNlFldG1EVVhxOHZRWmlfamJybG1PTzBITk5QZGZTR0MyQlJCNmEzSVJoNkhjbTdiMFo3SDVTR1ZuWVRxSlhtbjJqLUR3c0VlNFY0dF9FY2QzY0psdDhLMVVpTQ?oc=5",
@@ -1059,6 +1164,27 @@
           "published": "2026-10-28T21:04:47-05:00",
           "date": "2026-10-28",
           "label": "Oct 28, 2026 9:04 PM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:215c3844fdf07856",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Daily Hive",
+          "sourceId": "headline",
+          "title": "Bank of Canada increases policy interest rate for the first time in more than three years - Daily Hive",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPdzZudUNtbjE0ZG9qRUg3RjdRcGlRYUU1WG1TLUhwcnhLSGRINjRSVFpSdWRfZk1DZ1g5QUhkWTBzR2dPZFBFMUhSUVNXZkN0aHRranlSVlFwYU16cmNpN1Z4RHBrbGxPWjJ0T3MtaG5ONi1zN0x1a3pqTDRYWUlMcDJVb2x5alhoUGRGQVhvLXQ?oc=5",
+          "published": "2026-10-28T19:44:00-05:00",
+          "date": "2026-10-28",
+          "label": "Oct 28, 2026 7:44 PM CT",
           "weekday": "Wed",
           "timeKnown": true,
           "tags": [
@@ -1320,27 +1446,6 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:215c3844fdf07856",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Daily Hive",
-          "sourceId": "headline",
-          "title": "Bank of Canada increases policy interest rate for the first time in more than three years - Daily Hive",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPdzZudUNtbjE0ZG9qRUg3RjdRcGlRYUU1WG1TLUhwcnhLSGRINjRSVFpSdWRfZk1DZ1g5QUhkWTBzR2dPZFBFMUhSUVNXZkN0aHRranlSVlFwYU16cmNpN1Z4RHBrbGxPWjJ0T3MtaG5ONi1zN0x1a3pqTDRYWUlMcDJVb2x5alhoUGRGQVhvLXQ?oc=5",
-          "published": "2026-10-28T12:44:00-05:00",
-          "date": "2026-10-28",
-          "label": "Oct 28, 2026 12:44 PM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
           "id": "headline:00cbd69f25704d57",
           "kind": "headline",
           "lane": "news",
@@ -1446,12 +1551,12 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:8e50703c836a6515",
+          "id": "headline:4b43045d79627171",
           "kind": "headline",
           "lane": "news",
-          "source": "Bloomberg",
+          "source": "Bloomberg.com",
           "sourceId": "headline",
-          "title": "Bank of Canada Hikes to 2.5%, Says More Could Be Needed - Bloomberg",
+          "title": "Bank of Canada Hikes to 2.5%, Says More Could Be Needed - Bloomberg.com",
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNS1pJV3EyMEt0Z1NKR1pQMXB3ZHI3QkptV0Y5Qk1UWEJ2U3Y5Nk9nLVA0WGQxTG5ZUjZRWDItd29HTWs1LXJRUUc1b3FtcFlSdXR1c3Nncnk3MHYxTUNnY0psVG5SMUpDOEJCSTlBWWdRTno0UHZCV0liX0FGcXF2MzJ4czB2eWcxMDRpY0ktRktEZjI5Nll4OW5hNkFENENGSkFHLXc0RQ?oc=5",
@@ -1654,111 +1759,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:e70a89a28a9a8ef7",
-          "kind": "headline",
-          "lane": "news",
-          "source": "The Logic",
-          "sourceId": "headline",
-          "title": "Bank of Canada raises key interest rate amid soaring energy costs - The Logic",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBhUE5UU1dqRzBYblozVVNoYnZvRVpXWkZHbHZHSFNBaGlTS1h1cmJKNjRQN0l5QkhaTmZzY2puWHcxV0lKUWRUa1FNc3dCRHFiQ1V4aUxGNk1DVEpBcFF1d1huVUlmRWNWU0pwRmpjRG9qcHp0?oc=5",
-          "published": "2026-10-28T09:49:00-05:00",
-          "date": "2026-10-28",
-          "label": "Oct 28, 2026 9:49 AM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:bd931780b65fe1e6",
-          "kind": "headline",
-          "lane": "news",
-          "source": "IndexBox",
-          "sourceId": "headline",
-          "title": "Bank of Canada Hikes Key Rate to 2.50% as Inflation Stays Near 3% - News and Statistics - IndexBox",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPbWFBZWhqbm1rVG9SVDlxUjk0WWZCdnNLN1h6YUU5Ujc2d0ltNmc1dmx0WWlvWHpqVGRmRVdhMXF1SEkxdHg0UXBmMkk2d2RPcllKT2dVZVVsS1NKYmE1d2pMTkN3dlI1NnptSnllTFNURzhJOWhmTWFhNWNqQ2xNZlQ4cXpnNTdEQTZ1M25PWHc1RFU4NnFMMWRuVnp3aFE1ajJTcXBlV0tqVktrczhtZEZ6VWFTb2c?oc=5",
-          "published": "2026-10-28T09:40:33-05:00",
-          "date": "2026-10-28",
-          "label": "Oct 28, 2026 9:40 AM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:d6fa024ee705f02c",
-          "kind": "headline",
-          "lane": "news",
-          "source": "BigGo Finance",
-          "sourceId": "headline",
-          "title": "Oil Prices Breach $100 Threshold as Bank of Canada Hikes 25 Basis Points, Ending Three-Year Easing Cycle - BigGo Finance",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBsanhSMzR4aDJpN0dxR2ltRWxlRkFGeW1td1Z2dXp2SFJleDRaeU9QTnhjbUF4LWktXzFGM0piRVVBNDhWYWtncGgzaU1XWGRLblNCVkYycDQ1aVZlbTZiczdvVDF2ZzMycFRiMV9CeTI3U010YXc?oc=5",
-          "published": "2026-10-28T09:35:00-05:00",
-          "date": "2026-10-28",
-          "label": "Oct 28, 2026 9:35 AM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:5adb8c56291504f7",
-          "kind": "headline",
-          "lane": "news",
-          "source": "BNN Bloomberg",
-          "sourceId": "headline",
-          "title": "Bank of Canada raises interest rate as inflation projected to worsen - BNN Bloomberg",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQUVZvUUdjZ2RQMmlBU0dvRUhmLWwyalgxQXY2Z0JDcGlSaHZXOHQzZExlejE3X3RfQ005RnlhZlhWTGs4aGxFR01oVHU1SmcxWHp6bFVUSnk5ZDFQUkhSOWs3Wm5KRFZyMHZ5M3I2NW5Za0pnVjdGdExkZFdiVW1WZDVzdWlwdUJzZEM2bTBBOHFwNEZEcEo2YXhzUFRrYWQtbHJYYWRyY0hYVFRsamkzRmFoRnpoV0dFN2ZneU5CbnZQdzA?oc=5",
-          "published": "2026-10-28T09:34:51-05:00",
-          "date": "2026-10-28",
-          "label": "Oct 28, 2026 9:34 AM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:032c2c56fe00c015",
-          "kind": "headline",
-          "lane": "news",
-          "source": "BNN Bloomberg",
-          "sourceId": "headline",
-          "title": "Bank of Canada raises interest rate as inflation projected to worsen - BNN Bloomberg",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOV3BSR0RoU3ltekVkVGl5M2kwbnIwOTVJaVR0YjMxak03LVlTQXZKWGhWV1JvLUNKOXg0RFpnb3pKakVndnhFSmpuZ2J6SGF6dXc3aFhORVJqZTVyc05CaVBPRFRkb2pwMlRCV1lhNEpLNWwydHdFRWc3YjRzTG4yZ3NYYUgwTlJ3ODJVNXJ1Z1BQZFRzclhIVGhqV29STUFJellCeGFHRVBaWThQZEdTVEV2X3lkTHYzYmdYS2RNZms?oc=5",
-          "published": "2026-10-28T09:34:51-05:00",
-          "date": "2026-10-28",
-          "label": "Oct 28, 2026 9:34 AM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ]
     },
@@ -1778,9 +1778,9 @@
             }
           ],
           "holidays": [],
-          "level": 168032.88,
-          "change": -1153.12,
-          "changePct": -0.68,
+          "level": 167510.45,
+          "change": -1675.55,
+          "changePct": -0.99,
           "asOf": "2026-10-30",
           "source": "https://finance.yahoo.com/quote/%5EBVSP"
         }
@@ -2037,6 +2037,27 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:658b03ddc9feaa6e",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Hürriyet Daily News",
+          "sourceId": "headline",
+          "title": "Lula win triggers investor jitters in Brazil - Hürriyet Daily News",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPdjQxeGJreWhxcEFPY3RJUElVYWJKT0s3UkdCUEplZmhhcjB4UEROaXhFRGQ5M3VlOEVVRnI1dThOODBqM1YwcVI2RzNIMkphZElpOWdDdTVScjBNeDMtRTJXUVhYQjVGMUVpRkZBbmtxQjNOZHVUZk5KQjV5aHM0SEw3b0l6MFlrZlR5MDFB?oc=5",
+          "published": "2026-10-26T22:35:04-05:00",
+          "date": "2026-10-26",
+          "label": "Oct 26, 2026 10:35 PM CT",
+          "weekday": "Mon",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:e7a23e6594015309",
           "kind": "headline",
           "lane": "news",
@@ -2247,12 +2268,12 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:5055cca0dadfdb76",
+          "id": "headline:99700c86d28edd89",
           "kind": "headline",
           "lane": "news",
-          "source": "Bloomberg",
+          "source": "Bloomberg.com",
           "sourceId": "headline",
-          "title": "Brazil Markets Crater, Some Stocks Sink 50% After Lula Victory - Bloomberg",
+          "title": "Brazil Markets Crater, Some Stocks Sink 50% After Lula Victory - Bloomberg.com",
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPRWNieW1WT3NpRmdERGNsa1dyWDNVZ2JWYWJqckFwX21zVXZyQTZSWTJ4dTlGRVN0dXlyWEZJek9NcHdzeTgxSGZUY0x4d0dpVmY5dzYyNDdLSUZsZmt6b3RjRlpGeVlfLWJVazN6bG1TSUdGRm9teGZGSVhLeWEwRHFzNDRJM09MemxoaGxoWktpWXNJZFZVZlhGR3I4bTcwOWxNRjdnU3VOejdZczYtMFBiLUs?oc=5",
@@ -2268,12 +2289,12 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:249dc585f888c364",
+          "id": "headline:e4479f66faef6917",
           "kind": "headline",
           "lane": "news",
-          "source": "Bloomberg",
+          "source": "Bloomberg.com",
           "sourceId": "headline",
-          "title": "One-Day Wipeout Tops 60% For the Hardest-Hit Brazilian Stocks - Bloomberg",
+          "title": "One-Day Wipeout Tops 60% For the Hardest-Hit Brazilian Stocks - Bloomberg.com",
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQQWFNRG1qRm1FN0dSWjVRNjFTVlpCamRKVUszMkljSnhRVVlCRlY2blowbjA1bWcxNlJqSmsyVng2M2JTNWN5Q1hYeWhRMkRRQ21ET21HRi1JRG9ad3dteTg3NjFBUTN6dk51SjJxX09pM3JwTDJaRFBrZWZCTmRLOXl4MmlaR1JVWUY5SVBoMlRGbXhWa3Z6SG5PeG0taUpjRXQwTncwUmVVQnRjWThtUw?oc=5",
@@ -2595,27 +2616,6 @@
           "published": "2026-10-26T08:39:15-05:00",
           "date": "2026-10-26",
           "label": "Oct 26, 2026 8:39 AM CT",
-          "weekday": "Mon",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:9e1311886130c16b",
-          "kind": "headline",
-          "lane": "news",
-          "source": "FinanceFeeds",
-          "sourceId": "headline",
-          "title": "Brazilian Real Falls 12% to R$5.60 and Ibovespa Hits Circuit Breaker After Lula Wins Runoff - FinanceFeeds",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQWTUtdXBReTRfUXpMZElVS0Vkc3BHT0xRZllab18xMUpHVWo0QkN1TmVicHFsbmpDVzJhejNkaTlCa1dKSUROaUdMaDluU1V0Y0JpNk5GdlRFbEg2UE9DX2Vpa3lkLWp2bGVqYlUybUxDcEFkZXdzcFk2bDQ3d2xoMnRtX2tzRktycF8wc2Y4dlRUNG9sMWRJU1JRSzBfR3d1OUxocGNfR2JxSm5xdUQtZmVpNkRaZw?oc=5",
-          "published": "2026-10-26T08:20:23-05:00",
-          "date": "2026-10-26",
-          "label": "Oct 26, 2026 8:20 AM CT",
           "weekday": "Mon",
           "timeKnown": true,
           "tags": [
@@ -2962,14 +2962,56 @@
             }
           ],
           "holidays": [],
-          "level": 3599.02,
-          "change": -52.42,
-          "changePct": -1.44,
+          "level": 3651.43,
+          "change": -30.03,
+          "changePct": -0.82,
           "asOf": "2026-10-30",
           "source": "https://finance.yahoo.com/quote/000001.SS"
         }
       ],
       "headlines": [
+        {
+          "id": "headline:43d8c941cd286342",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Global Times",
+          "sourceId": "headline",
+          "title": "Foreign companies report strong growth in China operations, highlighting market opportunities ahead of CIIE and APEC meetings - Global Times",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBZYnFBZHFzWGRUUktaV09aYnBMTXJlTHJ6UWtLd2xIX19aYTNXMmFUOXZoZkdfd0IzdktnS3JTMmZPZHJNaU8tNkdKS2dpWWlSNmRmV1J2c1ZXc0pLOXRIb3Nn?oc=5",
+          "published": "2026-10-30T07:07:00-05:00",
+          "date": "2026-10-30",
+          "label": "Oct 30, 2026 7:07 AM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:898114c31f1b19b2",
+          "kind": "headline",
+          "lane": "news",
+          "source": "JournalArta",
+          "sourceId": "headline",
+          "title": "China’s Tech Stocks Enter Bear Market Despite $19 Billion State Support - JournalArta",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPa05FTWFtNFVjM1h4ZWJ3UnJuZDhmSjhXblFDajI0bGg3VnJBN1BkM3pRaEV1TFJpVU9wLUxHcWE2WTB1NUxDRnM0QzhiOUNnZWF4V2RVQ043UGVtVjdHMXduQllrNTVlb0dBek9Ca1ZQVFNRWWNUTUFGQjhxQUtmZ3hn?oc=5",
+          "published": "2026-10-30T02:33:32-05:00",
+          "date": "2026-10-30",
+          "label": "Oct 30, 2026 2:33 AM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
         {
           "id": "headline:e6618b1c447cea55",
           "kind": "headline",
@@ -2983,6 +3025,48 @@
           "published": "2026-10-30T02:00:07-05:00",
           "date": "2026-10-30",
           "label": "Oct 30, 2026 2:00 AM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:ca47317b497ca115",
+          "kind": "headline",
+          "lane": "news",
+          "source": "People's Daily Online",
+          "sourceId": "headline",
+          "title": "Interview: China's import expo offers showcase for \"Made in Cote d'Ivoire,\" says Ivorian export promotion agency chief - People's Daily Online",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5iazgxRW9DUFNXQUpQV2ZyZ09HNUQ3Slp4UHlFcWVzclBuNFpHWDhjZkY2V29tdVJTNVRxdlBHeUNtcTBHR1RrMGtKQ2g0bjYxOWhrR2FpSkg0UHhidnpsTExmM2Q?oc=5",
+          "published": "2026-10-30T00:14:00-05:00",
+          "date": "2026-10-30",
+          "label": "Oct 30, 2026 12:14 AM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:4e347316190e7ac7",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Yahoo Finance",
+          "sourceId": "headline",
+          "title": "Why isn’t China’s AI and tech boom saving its stock markets? - Yahoo Finance",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQc2VZQllld21ldGpFSnQ5dUVWTThtd1g5cXpLay1aRWQtRGlFVG92bjZCZGhMS1l3cFJxVDV5OW5JMmsxYnBlUFlzRWttMFpyRDZ3dHhsOTg5R2ljZWJkUmFMVDJZeFlLX3FFVXVKRjZHVGNxaklYUkdZSFdxWXcyQ1hfeHRxQ3ZpU3BV?oc=5",
+          "published": "2026-10-30T00:05:20-05:00",
+          "date": "2026-10-30",
+          "label": "Oct 30, 2026 12:05 AM CT",
           "weekday": "Fri",
           "timeKnown": true,
           "tags": [
@@ -3559,6 +3643,27 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:f6883b10810f0e83",
+          "kind": "headline",
+          "lane": "news",
+          "source": "The Straits Times",
+          "sourceId": "headline",
+          "title": "China’s market is tougher than ever. Where can Singapore firms still find room to grow? - The Straits Times",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQa09UZUdTQTFtVTFkeFd1ZFRUMUNnb3RJWDBWMDFCX25HeUd3ejNLaG1WemRaSGdPN05iR0ZGSkNuVEs4T3lhVTk4bUNXbnh4d2dRczFhSmlNYWM5SnJpb2xCSGdUVFgxRWZkekpGRnJSX09jdmFqeVFXbG5GZHMyRVRiX0RPRVY0Ymx4UnhDY3BzYzdVZURZODZkM1lBZXRpM3dMQnRJQVBiU3NWZEFZYllvTFVUblNmMTNWR3pjLUxweWhRUHVF?oc=5",
+          "published": "2026-10-23T04:00:00-05:00",
+          "date": "2026-10-23",
+          "label": "Oct 23, 2026 4:00 AM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:ee189ce8ef1f11eb",
           "kind": "headline",
           "lane": "news",
@@ -3580,27 +3685,6 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:445d3b533963e1e4",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Coinpaper",
-          "sourceId": "headline",
-          "title": "China's CSI 300 Falls 20% From June Peak After Tech Stocks Extend Months-Long Selloff - Coinpaper",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPd2lUeDRXVkw1MmdWQ1RFdDlGMXpZa2xyVXRQcHFyb0U0NWQyRGM4bUFqVTcyNnBZRUp2Y1hSVy1rYUh0bjZlTWU4Ynp0ZGV1Qk96a001ei1XYVg3OXRwSFotSnhURlcyY0xVOF9QZHBGbVFpUGlUc1JtdF9DNHpBZWdxMzhEQUg1c012RkRfeVFXU0taWVVubHQzbXM2X0c1Mk5LcUZQRDQ0dk9HbzV5OHVR?oc=5",
-          "published": "2026-10-22T11:37:43-05:00",
-          "date": "2026-10-22",
-          "label": "Oct 22, 2026 11:37 AM CT",
-          "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
           "id": "headline:56f0628883a6f203",
           "kind": "headline",
           "lane": "news",
@@ -3613,6 +3697,27 @@
           "published": "2026-10-22T04:33:21-05:00",
           "date": "2026-10-22",
           "label": "Oct 22, 2026 4:33 AM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:445d3b533963e1e4",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Coinpaper",
+          "sourceId": "headline",
+          "title": "China's CSI 300 Falls 20% From June Peak After Tech Stocks Extend Months-Long Selloff - Coinpaper",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPd2lUeDRXVkw1MmdWQ1RFdDlGMXpZa2xyVXRQcHFyb0U0NWQyRGM4bUFqVTcyNnBZRUp2Y1hSVy1rYUh0bjZlTWU4Ynp0ZGV1Qk96a001ei1XYVg3OXRwSFotSnhURlcyY0xVOF9QZHBGbVFpUGlUc1JtdF9DNHpBZWdxMzhEQUg1c012RkRfeVFXU0taWVVubHQzbXM2X0c1Mk5LcUZQRDQ0dk9HbzV5OHVR?oc=5",
+          "published": "2026-10-22T02:00:00-05:00",
+          "date": "2026-10-22",
+          "label": "Oct 22, 2026 2:00 AM CT",
           "weekday": "Thu",
           "timeKnown": true,
           "tags": [
@@ -3704,111 +3809,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:b069c01b6c8f16f5",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Demokratis.co.id",
-          "sourceId": "headline",
-          "title": "China's CSI 300 Enters Bear Market After 10 Week Decline - Demokratis.co.id",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1OTllCNXVfSG9WR0ZUbWk4NndlOGtSNVVZRUVYeEpPdk9rX0JPb1EzYzI4ek5HSnc2YlV4U0lYRFlvakh3VEZpTWNtZmhwYWNrSG1ZTjJfRVJZYy1uNTBSV1ZsZXZFUDdPbW93SENB?oc=5",
-          "published": "2026-10-21T23:05:12-05:00",
-          "date": "2026-10-21",
-          "label": "Oct 21, 2026 11:05 PM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:16c1bda02fb37d16",
-          "kind": "headline",
-          "lane": "news",
-          "source": "International Business Times Australia",
-          "sourceId": "headline",
-          "title": "China Stocks Slide as CATL Plunges 10%, Shanghai Composite Falls 0.6% on Weak Consumer Demand Worries - International Business Times Australia",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNWTRCR3g2SUIycFdzM1V3YURWUU5rbkdFa08xbzl5LXNKSDllX2JsUms2NGdRRzh2OUw5VG0yQktsaklScUV0WUlIRDMtWDhOVklyMlJTN3FGeFFnMnV0bTdPemtyb3ljUzJ1d3BWczRVcnFydmZkaDVLMmRpQWNvYQ?oc=5",
-          "published": "2026-10-21T05:06:01-05:00",
-          "date": "2026-10-21",
-          "label": "Oct 21, 2026 5:06 AM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:349007690cbaf282",
-          "kind": "headline",
-          "lane": "news",
-          "source": "The Economic Times",
-          "sourceId": "headline",
-          "title": "Global Market: China, Hong Kong stocks fall as CATL slump, consumer worries weigh - The Economic Times",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQVjczX3IyZkIyRm9mYVZ3cXNPYnN5WXNnS09keFFEWVJXNXA1eHlodVhSbFJQUnJ6M2FLc2t1SjA2SEdVSXBmLUlHdEMzSmhXcTh0Tk4wYlFKYlhRY0dLTzQ3dXBraFpzM0ZBSWdSZ2xhTHl1aG81eG9BbC14SXhCcWx4N2FFM2tuRU1NSkZ6eV94Y2x3ODZVVFF4blVsT0VXeXM4alFKTVE2R0JmWkoyTDRvcWVWQWVCNGc1SHFscng0MjdNUjFZOEd2aUVWWUxlOWdZMF92UXJySVJiWHBNNHZiYVQ3ZnRRdGRR0gHwAUFVX3lxTE85RTZ2RG5sU3psd0dxQks0NUJWUlZRMF80V2FObDg5MUFQbnFNT1BXdy1STW1McnBtZGg2VnlDdlF3YUZ1QjVUcXV1XzZQTEYzSnBTbWlYWTg5elBvWXBKM2xjNzdCVmRTcXJUbVozdFEtRTRrRWwtSTBsS2VfOGVGR2JleEREeWJSV0Fxalo2UXNqbVl3OGdBblA3MUxnVzFpb1hmdXNEbmR1TW4yT2ZoQjBMVXVtUUNrTTh3SFlHUEJvXzltRmlKLWZGcXlxMWtuVmRFS1gtaTVfRzJWSWtFNG5ZWkc4MHBzd2pqd2pxaQ?oc=5",
-          "published": "2026-10-21T03:42:45-05:00",
-          "date": "2026-10-21",
-          "label": "Oct 21, 2026 3:42 AM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:03faaa319691fe21",
-          "kind": "headline",
-          "lane": "news",
-          "source": "The Washington Post",
-          "sourceId": "headline",
-          "title": "Opinion | China can manipulate statistics. It can’t fool markets forever. - The Washington Post",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPNHV0TldIakhUbkNHLTRjNklURTNCSnJnWHhfQk9GZVFGbUhUczIwOXZyNTVLbmF6QnpOdmU4cmN6bndOSVNxRVM0T2ctRGxSTkp3N2hfREVUcGFHYVZkU3Nwd1JCYlJFbXR3Q1MxTEUyN2czOTFMVExMZDVkZG5kb1BwT2dsOTQ5LTY1Tmxxa1FTYlU?oc=5",
-          "published": "2026-10-21T02:00:00-05:00",
-          "date": "2026-10-21",
-          "label": "Oct 21, 2026 2:00 AM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:456773a2e9a5b335",
-          "kind": "headline",
-          "lane": "news",
-          "source": "CNBC",
-          "sourceId": "headline",
-          "title": "China's stock market sinks into bear territory as CSI 300 extends 10-week rout - CNBC",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNWmt2MnVkcmdCNXBPMzNIaHJwWlFIV2J2SU5pNk52MENwNi10dW56Q2duNHZBc181R1BQeXBQNlQwSzY0V2RSWlR1U3k4OFdRMDJyR25tTEVveUVCNWl4d08tVXhZY3BKTmFVNXA2V3BNMGpjSmxUZ09SOGtFc29MS1Fn0gGHAUFVX3lxTE9JbzZ4T01zVW93dG8xM0Q1TUtoU1hCYWVULTVQX285THphbnRNYWdvVVp5Wml4VDBGSlBHUFdEZFlHOU1TSWZFR1ZXUFVJVl9xbDRGeTBjUUkzY21fTVp4ZXpTSW9rdDBNNUZlY2QzMll0VGtyM1lVYnNFM0JoVFlhZ3NvX3pjRQ?oc=5",
-          "published": "2026-10-21T02:00:00-05:00",
-          "date": "2026-10-21",
-          "label": "Oct 21, 2026 2:00 AM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ]
     },
@@ -3828,14 +3828,35 @@
             }
           ],
           "holidays": [],
-          "level": 6150.47,
-          "change": -56.6,
-          "changePct": -0.91,
+          "level": 6131.31,
+          "change": -75.76,
+          "changePct": -1.22,
           "asOf": "2026-10-30",
           "source": "https://finance.yahoo.com/quote/%5ESTOXX50E"
         }
       ],
       "headlines": [
+        {
+          "id": "headline:67628a4fbba0b555",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Crypto Briefing",
+          "sourceId": "headline",
+          "title": "ECB's Philip Lane says AI is reshaping the euro area economy, but Europe is still playing catch-up - Crypto Briefing",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1BdkJTSjNvRVBOdUNMS0ozYU83bEp3RzZjZE9fcXpGTVNKaFpTUTlpSDNEZEpZNzJ1VWVzejR1aFBmQTFGeHBCQlZaYkQzVUt0Znk4aHBjVENFanBJU0FHWlp2N25rdWFCNjdyQ3ozcERBUQ?oc=5",
+          "published": "2026-10-30T11:15:49-05:00",
+          "date": "2026-10-30",
+          "label": "Oct 30, 2026 11:15 AM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
         {
           "id": "headline:19033644ec29d98b",
           "kind": "headline",
@@ -3921,12 +3942,12 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:b835fb5403f6bf92",
+          "id": "headline:74914486c09199d2",
           "kind": "headline",
           "lane": "news",
           "source": "This is Money",
           "sourceId": "headline",
-          "title": "ECB chief Christine Lagarde quits as she appears on video with plasters on her face after surgery - This is Money",
+          "title": "ECB chief Christine Lagarde quits as eurozone economy stumbles - This is Money",
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOTmFPTTRMVExHRXJDZGVrQldlSHhTd1FWTVRyRE1Wdm1pM3pzOTQ2S0tEM2x0cGhkaWRaY3N2eWxUY3p0OTUyWFZDQm40UWU5WTE2cER0MU9ZQ2dGMTFKOUtpSmdXY2NONU5xRG5jRWctZ1Z4bXE0eldaSGN1MWZycVR3NVE0b2pCTFNzcFZwdTVRQ0Myd3BMN056LUhKMzJHWGFlSmo3Q0VQUUMyNGZPMEhjOXNBamxsWUhvOUtwNURIcXQzU19WMWEzNDRWd2JfNVlXdGQxN0JXV21qYjdGMG5VV3NDVTQ?oc=5",
@@ -4026,12 +4047,12 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:332b3a878b8ca692",
+          "id": "headline:5c61bba693180cb0",
           "kind": "headline",
           "lane": "news",
-          "source": "Bloomberg",
+          "source": "Bloomberg.com",
           "sourceId": "headline",
-          "title": "Lagarde Downplays Risk of Inflation Broadening as ECB Holds - Bloomberg",
+          "title": "Lagarde Downplays Risk of Inflation Broadening as ECB Holds - Bloomberg.com",
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOa3U1eWxUQjVMQm1pVkhVYVd3TUc1XzNsQXNfNUJEODRYWlE5bVpScmxYZGlOblFmUGV2T3lsd3doUUFXRlFlQks0a2NFVVZlOHMyZnFEVU9IdlNzMTR2SVlPbmRVbjc2ak5lcHdQX25mSk04TUctUEo3LVRSdUxvUXFPQUR1MURjeV82RkhFajllZElDalRBZzVEdnc1OWV1SDBjbHZCTVlrTGVmeEhsbVVtNDg?oc=5",
@@ -4059,6 +4080,27 @@
           "published": "2026-10-29T09:25:13-05:00",
           "date": "2026-10-29",
           "label": "Oct 29, 2026 9:25 AM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:b7baaf87a615f207",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Reuters",
+          "sourceId": "headline",
+          "title": "VIEW ECB keeps rates unchanged; euro and bond yields fall - Reuters",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNRS1GTl9NNk5PZHlwa1lfREJ1SlVlb0w0YnVJVHVldVJta1ROanY3MXdQSVZ4NHVjajBINE44VV93cGFtWngtVGxjMV8zaHFPbG8weVEzUE1KUWVDZDRFeXZpckZlTk55d1ZkOVZ1dlBhbFdreWY3ZHUzQmtrc2FmajZmRVlZLWVsTEZ6YmJOaHYxbmI1?oc=5",
+          "published": "2026-10-29T09:21:50-05:00",
+          "date": "2026-10-29",
+          "label": "Oct 29, 2026 9:21 AM CT",
           "weekday": "Thu",
           "timeKnown": true,
           "tags": [
@@ -4236,6 +4278,27 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:1197d70b4fb8ba95",
+          "kind": "headline",
+          "lane": "news",
+          "source": "BNN Bloomberg",
+          "sourceId": "headline",
+          "title": "European Central Bank president resigns at time of mounting challenges for Europe - BNN Bloomberg",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQeEJEZFhBTmt2SkhhN0VZVnpIWTVuRkFMelAyZVc2bzhuTWI2VmtvbzFFaUFJbzZoY2dMbTVreFA1MGlWUnVNVzVrMnR1MzRTbElMakk1QWVyNDlOczVmNVNVUUVUTFZrWjA4T1ltX3IxcE9HVGFNUFFFNkJrSG12Y001Wk1tbzNNVHBMQzNoMVNWLVlqaEV0ck5XUk9HTzFZc3FiZGZIQUJuMHREUjRlN2k1LWY4S3NRUFlBQ1ZXSUNOaVV2bEF0Y1ZRT3YxZThKTklGU0p6NHp2R3pk?oc=5",
+          "published": "2026-10-29T06:50:40-05:00",
+          "date": "2026-10-29",
+          "label": "Oct 29, 2026 6:50 AM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:e0e4c01ea1a447c1",
           "kind": "headline",
           "lane": "news",
@@ -4290,6 +4353,27 @@
           "published": "2026-10-29T06:35:16-05:00",
           "date": "2026-10-29",
           "label": "Oct 29, 2026 6:35 AM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:0dc30e71e81bd12a",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Bruegel",
+          "sourceId": "headline",
+          "title": "An opportunity to stocktake and strengthen the governance and policies of the European Central Bank - Bruegel",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNbE5KVlpSUEdyNXBrY0g2LXVFY1hMTTUwdllzTC13c0cyalB0cGJQRVNBNGJsMXVSclpObEdKU296ZjdXckoxNW9vOF81bVpGUTlxZkZwR2NmQmtYaE9MTnQ4QTBxVjZpN1dSSVgzMUFaaWhILW1PSjZrNkJ3SzFnZFA3UFc5cW90bkVac2lnakpCdFZyY2x0QzhjRi0wbjR4aTZPemZWMm1Od3BZb2t4MlEzQktJdzBTVC1B?oc=5",
+          "published": "2026-10-29T06:34:39-05:00",
+          "date": "2026-10-29",
+          "label": "Oct 29, 2026 6:34 AM CT",
           "weekday": "Thu",
           "timeKnown": true,
           "tags": [
@@ -4404,12 +4488,12 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:fed39b3bab6b72c4",
+          "id": "headline:7e09a114f2c36692",
           "kind": "headline",
           "lane": "news",
-          "source": "Bloomberg",
+          "source": "Bloomberg.com",
           "sourceId": "headline",
-          "title": "ECB Set to Hold Rates to Assess France and Energy Risks - Bloomberg",
+          "title": "ECB Set to Hold Rates to Assess France and Energy Risks - Bloomberg.com",
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQSndmME9aZjVxMHpuMHp5WWhzRk9QdFpxVTI3c2drV2ZRYjhqS3NUaVdOamVDbFN5eF9PY0MxRjdZSmwya0lYejByaVBzaFdGdTF3czViYVQ4VUN4ejQ5MnFfVkFXOTZKNnpSSlJwVFA4ZTZydGM5eWFPMWhOSTJ6bEJYZ0xrZEM2V09vLVJDMEZ5d2UtVEgwLTBDVUhHUWhaLVVyV3BhTGtRQQ?oc=5",
@@ -4591,90 +4675,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:17691df8a21d6e40",
-          "kind": "headline",
-          "lane": "news",
-          "source": "TradingView",
-          "sourceId": "headline",
-          "title": "European markets see modest gains as ECB decision looms - TradingView",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOb21Qdi0tZXVBeWJhdlF1ZTZWM3ZpZFB4MlloYWFmRzJLdHZWVEU3WERkRVUybzBvOGRRZ2h3cjdENlg3bVlVQ2s3TU53Zlk1ajlmak9GU0gzTXZnelA0ZXk5d2dBUk0xU2tfOWZoRkxpS2pTMnp5Ync1RFY5X2NsTTRSRmlBVlRUOEtUd3hDWGxQYmNsdDdiLTU0bFdUVFM3YWFhQzhmZWZrT1hCYnZwb2NfaHY2LV8xaGc?oc=5",
-          "published": "2026-10-29T03:23:23-05:00",
-          "date": "2026-10-29",
-          "label": "Oct 29, 2026 3:23 AM CT",
-          "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:c2b981636723b9b7",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Le Monde.fr",
-          "sourceId": "headline",
-          "title": "European Central Bank meets as France's deteriorating public finances continue to drive questions - Le Monde.fr",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOd0NEZGkwVVYyU0U5bGx0eDhObF9RSWo0MjNSUWxHYnloNlJoQnlpbUxDQXlCY0ZYNzVJcDhRRUlTLWVmMTJDaVZXZDBPVFJPSjJfTGh5Tmw3RWM4aGF2d09SVEJaUnlPTW1GMks2WlBPdFVhMjdMcG95SGlTZ1pLb1htRndYbmVaREszeHVHNTdIM1U2TEZRcjNBVjNLaGVXZmRKMjhQNk5DNXBBcElBdVF1WXE5a1p5dE44czRlbHN5eEZHMGVoVVI2cDRyU1BVSmNwQ0tLNi1UVVNXcGtPWEJkaDFLYXp3WGRFV1I4NVdLSmdVaXdYTjV3?oc=5",
-          "published": "2026-10-29T02:01:47-05:00",
-          "date": "2026-10-29",
-          "label": "Oct 29, 2026 2:01 AM CT",
-          "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:0557505f81f43637",
-          "kind": "headline",
-          "lane": "news",
-          "source": "TradingView",
-          "sourceId": "headline",
-          "title": "European Stocks Head Higher Ahead of ECB - TradingView",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNdl9hcENHTjJpb3FHMklmVDVLbFdzaUdYMEs0UTBwbmJHZlFxYk1Na3Q0RnZZRGRXQlR6UUFhSE5SV2Fxal9fYmRaX1o3VFlfUk9WemNjajlabFVuS042WjJiSWJyemtYVzVYSGZXc3o0NGVCOGFxa2s2THFja1RsUXpYVlhUUkxaeGJNLVQ0M21obGV6WWc?oc=5",
-          "published": "2026-10-29T01:27:00-05:00",
-          "date": "2026-10-29",
-          "label": "Oct 29, 2026 1:27 AM CT",
-          "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:c07489dc13c577b7",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Global Banking & Finance Review",
-          "sourceId": "headline",
-          "title": "ECB President Lagarde Resigns Amid Major Economic Challenges - Global Banking & Finance Review",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNakdGTTVrQ25RSUs4QnV3ZHJiOUQ5TEtPS2szVHhBSnFrS1FRMVJMS29zeEw5VGhXM09zV0dNdGdsNllyWWpsNE9DWW41amU1UTIyWWFxYUJ5OEpNRTE0Y1Nwb1RFS3A5a29Oelk3VUpudFd4Q21MSzNmMEllS2VkbEJxbEVWdXBhdVFpcnFXakVWYlpBLVlucU5FVHNoeG1ZeGc?oc=5",
-          "published": "2026-10-28T23:59:35-05:00",
-          "date": "2026-10-28",
-          "label": "Oct 28, 2026 11:59 PM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ]
     },
@@ -4720,9 +4720,9 @@
             }
           ],
           "holidays": [],
-          "level": 23294.42,
-          "change": 335.77,
-          "changePct": 1.46,
+          "level": 22958.65,
+          "change": -136.18,
+          "changePct": -0.59,
           "asOf": "2026-10-30",
           "source": "https://finance.yahoo.com/quote/%5EHSI"
         },
@@ -4738,14 +4738,35 @@
             }
           ],
           "holidays": [],
-          "level": 74459.53,
-          "change": 308.49,
-          "changePct": 0.42,
+          "level": 74151.04,
+          "change": 905.01,
+          "changePct": 1.24,
           "asOf": "2026-10-30",
           "source": "https://finance.yahoo.com/quote/%5EBSESN"
         }
       ],
       "headlines": [
+        {
+          "id": "headline:f8771334c6dea2a1",
+          "kind": "headline",
+          "lane": "news",
+          "source": "UzDaily",
+          "sourceId": "headline",
+          "title": "Uzbekistan, Hong Kong Discuss Investment and Market Access - UzDaily",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQQUVTbXVZbFRfWktDS3VhbzZ0UzIzenR5MlY5T2drVFNYQXJhYUJOMUpWYklXZ2pZOVR5amdJTHE3TzFXaVgxZkt0VWZKYmpfekNPUFRjdlkyUDJjR0cxZHlZVjY1aDZwTHJEMC16WFZscE4zOFpIQ2R2VTFsWjJLYVZQbDE4b0dEM2M3YQ?oc=5",
+          "published": "2026-10-30T04:10:00-05:00",
+          "date": "2026-10-30",
+          "label": "Oct 30, 2026 4:10 AM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
         {
           "id": "headline:f41fe77d4284824a",
           "kind": "headline",
@@ -4756,6 +4777,27 @@
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxOVlllQ3REVll5eHhLRS1YRjRUaDYybENTUlR1aGYzclF4dzJxekVrOTE3VjVkdUNobUNYUTV6OFR1a2o0Z0RJOFprczRwZ3VpUll1ZjRFbW5YZ1JKTS1yal83QlY1c3BacWRORXVlZzBuZy1fYmFBS0dKelprVWZPdDQtNjVhOXltQ2o1TnpRQTZfby1FMlpBTzhHZHE4OGhIdlNvS0VxazVBMl9NanY0OHVtWHo1Qk5sTWRGQVhBRk12RXdKa0tuaXVLRU0xTEpNTVVTQkZoN0FqemZ6OXpDeWZkeHVVcFQwVFlIUTJuNUZXNnc0M1BGZ3NReDZSQ0hwQnRPa1AzYTdoX3pUckpERXduc3BkM3h3dE5Pei1GOV9TX2c?oc=5",
+          "published": "2026-10-29T20:20:06-05:00",
+          "date": "2026-10-29",
+          "label": "Oct 29, 2026 8:20 PM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:bb4a11a6acedf6ba",
+          "kind": "headline",
+          "lane": "news",
+          "source": "South China Morning Post",
+          "sourceId": "headline",
+          "title": "As AI transforms global markets, Cyberport Venture & Capital Forum 2026 brings together the investors and innovators shaping what's next - South China Morning Post",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMi3gJBVV95cUxOOFBtbzU5NjQ1ZWtuNzhkeE11dnN0Y2JSekE3ZVlhTVp6SXhYYlF6bk1KdDIzUDV1N3AyQmExRkpCRmVIT2dsdjJmZHZyaFEyMmpVTHc2UkhhZ3JRQUJVSlJZRWNYdnB1QnJHZDNwUUtCdDMxYklxY3lTOTVTT3ZJVG5pTHRHR1pycHJxNUw5WUFlaDV5WDdITmdDMkJiNXYyaVdBaG5IckF5WHFFSmxfaS00dUxNb1JUQ3pra2V3SGo4YTNlTkwwcHlxYWJJbV9kQ0pzVUhZMXRaajVjT0xHSWdQLUlDc2QzQzJRbGV4RGFaWWVCMi1selNmRHhTTFhwYVF4cGtuUnNGU3RxTkFPR1BpY2xZTkszU1Nxdzh1X1hYckJoUE5XNGNhcGIzbkxjY3dQSTZoRUc4eHhaU3J6bjJiUl9OYXZZM1FWcjMzUW5uU2NES3B6X29xbFd6dw?oc=5",
           "published": "2026-10-29T20:20:06-05:00",
           "date": "2026-10-29",
           "label": "Oct 29, 2026 8:20 PM CT",
@@ -5536,48 +5578,6 @@
           "published": "2026-10-22T02:00:00-05:00",
           "date": "2026-10-22",
           "label": "Oct 22, 2026 2:00 AM CT",
-          "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:f4c74c71d9eb964a",
-          "kind": "headline",
-          "lane": "news",
-          "source": "South China Morning Post",
-          "sourceId": "headline",
-          "title": "Hong Kong stocks fall most in 7 months as chance of strong stimulus shrinks - South China Morning Post",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNSjd4bzZJdTNZb3FyaENKbERoTjl4X1pkbWJha2dyZWpnYmdYNDIwTUZTYTcycWlMeTBTcXVIbHZud3paZnF2LTdoS0tHRHVRblN6N0tLTGtFZWV4UGEtamVTNXlHN1V1cTByZlExdHRRNnZkOV9UTmlZUlV2TUhYcndhdU1KeWVOVlp5Q01CMlRDcFhMb29fLXFPQTBKZThHcUwtT3luTWMySjhsZGFVX1VfcnJkbGFNaDQzVGQtNWFvUm5xVVBXM25GWDRld9IBzgFBVV95cUxQdlZRVWNGLVZZdGFZUURFdktjTlZNY1ZieVNIS0VDSU5FSDYyOFE1d1B4dVZjbUh1OC1QT2ZjbUMteFhid1gxeTc5QXpiajFsYkU5ZlFFNjdnQmRON3N5Q3JEOERrODJNNHo4b1dmOFc3bmRXTWo2NDlZdUMzd0tfemlwWldBSW5EUnpoYnY2U2FySm1GZE9NNjZqUXR1ZTlfWUZNMldPMlJxQW8xNHE3d1JuNE8yRE9NVXhTT2plVzRSX005eFN4SzlEU0tsUQ?oc=5",
-          "published": "2026-10-22T02:00:00-05:00",
-          "date": "2026-10-22",
-          "label": "Oct 22, 2026 2:00 AM CT",
-          "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:072f538d041cf1da",
-          "kind": "headline",
-          "lane": "news",
-          "source": "The Economic Times",
-          "sourceId": "headline",
-          "title": "Global Market: Hong Kong stocks slump to four-month low as China stimulus hopes fade - The Economic Times",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNWjctZUdIVE11clFid3NYa2NEUkdVLXNJbmpFRnpoSzNqM191aWgtZ1gycC1IS3hKSFd2TnVxZ0xsamJmejU3TmJ3MTd6dTlQVDNfSVp5dDBuZlpmWGNYZjNZT29GWUF1M01MUjRMV01Qa2pjQUNUQXBFWS12Rno4VkFWd1Nod0xXdm1JTHJMbHloVjFmdkx6V2Zrb2w3SktsSGxkSzREdTR3Q3RuZHM4X2IxbHZPaHFkbHB4RDVOMXdrVWkwV0t0T1dWYU5MMjQxLTBqNC1Eek5DOXhLS2hMNG1rTWtuRklPbHhXeEtlM01oQdIB9wFBVV95cUxQVDgwMlZ5bTBsSXlkVWo4RFFJYmYyUmd5Q2xTM0dJeWhsLUdqYkxuWVJ5MmliQTVQdldSbTJET3cyMmQ4bXhaQjhXZWdiNXcwV0RmWnJFMnc0aDZKOXRSbUNIQnV0WkJ2MEhBQ0tzSmtNNmp2b05venpqT2VJNHJsU2pwSUdzRXllWC1yR3dvOWNHTm9BX2pkV0syT294ekMxUl8xTWVoXzJNNlJpOEI4UjgxZ3UyOXlZdkpHYlkya3M2aENCUjN2MlRFMlY2WjRwQUVaX3VPVlk2UElFNXRXLWM0a05VY2NmckpMckI2RzhPOTZfeTNn?oc=5",
-          "published": "2026-10-22T00:58:45-05:00",
-          "date": "2026-10-22",
-          "label": "Oct 22, 2026 12:58 AM CT",
           "weekday": "Thu",
           "timeKnown": true,
           "tags": [
