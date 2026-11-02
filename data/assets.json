@@ -3,8 +3,8 @@
     {
       "id": "dxy",
       "name": "DXY",
-      "level": 101.78,
-      "changePct": -0.1,
+      "level": 101.79,
+      "changePct": -0.09,
       "asOf": "2026-11-02",
       "points": [
         {
@@ -93,7 +93,7 @@
         },
         {
           "date": "2026-11-01",
-          "price": 101.776
+          "price": 101.788
         }
       ],
       "source": "https://finance.yahoo.com/quote/DX-Y.NYB"
@@ -297,8 +297,8 @@
     {
       "id": "btc",
       "name": "BTC",
-      "level": 76874.4,
-      "changePct": -1.86,
+      "level": 76800.84,
+      "changePct": -1.96,
       "asOf": "2026-11-02",
       "points": [
         {
@@ -419,7 +419,7 @@
         },
         {
           "date": "2026-11-02",
-          "price": 76874.4
+          "price": 76800.84
         }
       ],
       "source": "https://www.coingecko.com/en/coins/bitcoin"
@@ -427,8 +427,8 @@
     {
       "id": "eth",
       "name": "ETH",
-      "level": 2255.73,
-      "changePct": -1.53,
+      "level": 2252.61,
+      "changePct": -1.66,
       "asOf": "2026-11-02",
       "points": [
         {
@@ -549,7 +549,7 @@
         },
         {
           "date": "2026-11-02",
-          "price": 2255.73
+          "price": 2252.61
         }
       ],
       "source": "https://www.coingecko.com/en/coins/ethereum"
