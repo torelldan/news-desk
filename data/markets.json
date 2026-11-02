@@ -28,14 +28,56 @@
             "2026-11-26",
             "2026-12-25"
           ],
-          "level": 7625.46,
-          "change": 45.39,
-          "changePct": 0.6,
+          "level": 7541.4,
+          "change": -38.67,
+          "changePct": -0.51,
           "asOf": "2026-11-02",
           "source": "https://finance.yahoo.com/quote/%5EGSPC"
         }
       ],
       "headlines": [
+        {
+          "id": "headline:b4734f58855501da",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Federal Reserve Bank of San Francisco",
+          "sourceId": "headline",
+          "title": "The Impact of El Niño on the U.S. Economy - Federal Reserve Bank of San Francisco",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOalhPOUpTbXI0SDN5ODdvbm9USkZvS2RxZ1BjRVo0RDJkODNhbGtjZmo0V29hMVZKbDR4WXRtTzFQSkRaWlF4M3hwVEV1dzFsX2d3bDI4cTVpZnpVOFUxX3VUN0YxdENybWxlR1VMZUFxRmFPY0dzRzlHREZKWmJOb3cwQUlxNDBya2J3Y0Nid0l1T1RHa3Vpd29FRkJ3Q1hvNG5uM2E2NXdJbGpYZ3VfVUtlZw?oc=5",
+          "published": "2026-11-02T12:00:00-06:00",
+          "date": "2026-11-02",
+          "label": "Nov 2, 2026 12:00 PM CT",
+          "weekday": "Mon",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:680b19a637ced25f",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Investopedia",
+          "sourceId": "headline",
+          "title": "The Midterm Elections Could Reshape the US Economy. Here’s How - Investopedia",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQbm0wd3hYMzNIZmRzUFlDQ01QSlNYekVhOWxBWUFPN3g2QmpVVU1DVGJSS1VnbXJNaGNmTXlPWmR5dkc4a2c3b1NiMk15a2hZd181RldIeVBvYVJraUQ0dUVRUndPMW9yRmRRbUlSNDFMX1FsRkJQamJqSTdmSWpWODJvOUNzWkxMWkRGWDY2MUFWM1RRYXNvZmotMFdZdE1XZHhjb1VuYTRhQnBHWWlKYjBsb08?oc=5",
+          "published": "2026-11-02T11:33:00-06:00",
+          "date": "2026-11-02",
+          "label": "Nov 2, 2026 11:33 AM CT",
+          "weekday": "Mon",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
         {
           "id": "headline:d96f8b7e2d160e4a",
           "kind": "headline",
@@ -217,27 +259,6 @@
           "published": "2026-10-29T15:34:17-05:00",
           "date": "2026-10-29",
           "label": "Oct 29, 2026 3:34 PM CT",
-          "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:9e7d971144661511",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Investopedia",
-          "sourceId": "headline",
-          "title": "How The Midterm Elections Could Reshape The U.S. Economy - Investopedia",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQbm0wd3hYMzNIZmRzUFlDQ01QSlNYekVhOWxBWUFPN3g2QmpVVU1DVGJSS1VnbXJNaGNmTXlPWmR5dkc4a2c3b1NiMk15a2hZd181RldIeVBvYVJraUQ0dUVRUndPMW9yRmRRbUlSNDFMX1FsRkJQamJqSTdmSWpWODJvOUNzWkxMWkRGWDY2MUFWM1RRYXNvZmotMFdZdE1XZHhjb1VuYTRhQnBHWWlKYjBsb08?oc=5",
-          "published": "2026-10-29T15:08:10-05:00",
-          "date": "2026-10-29",
-          "label": "Oct 29, 2026 3:08 PM CT",
           "weekday": "Thu",
           "timeKnown": true,
           "tags": [
@@ -854,27 +875,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:ea9e14ed516bbff3",
-          "kind": "headline",
-          "lane": "news",
-          "source": "The Business Times",
-          "sourceId": "headline",
-          "title": "After Fed’s expected hold on rates, Warsh paints sanguine picture of US economy - The Business Times",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOYmtycmF1R3UxZjVyNnl0WHlnMi1menE4UGFtc2JjbVV2SHdZOUx3c1JYUS1zeDg2SHJ5N2RjTUVhdDkySVl2U09qMU5lTlp6eTlRNXJYSWRKdHB1QUZycmlIcUlydi00OXhZUEJWWkNwN3V3TENrTlotbldCcXphNkdacHEzTS10ZVUxNC1WOGdPSVhYNEpuSkZ2Zl9DZFJLdk12YkI3Q0J4akF0dkY5MFpIQVU2WnloTFE3azBoOHp1OWM?oc=5",
-          "published": "2026-10-29T01:41:00-05:00",
-          "date": "2026-10-29",
-          "label": "Oct 29, 2026 1:41 AM CT",
-          "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ]
     },
@@ -894,9 +894,9 @@
             }
           ],
           "holidays": [],
-          "level": 35911.61,
-          "change": 291.61,
-          "changePct": 0.82,
+          "level": 35801.09,
+          "change": 181.09,
+          "changePct": 0.51,
           "asOf": "2026-11-02",
           "source": "https://finance.yahoo.com/quote/%5EGSPTSE"
         },
@@ -921,18 +921,18 @@
       ],
       "headlines": [
         {
-          "id": "headline:e49276df750d5f7c",
+          "id": "headline:64244a4eb4a64322",
           "kind": "headline",
           "lane": "news",
-          "source": "WSJ",
+          "source": "Finimize",
           "sourceId": "headline",
-          "title": "Growth Plays Key Supporting Role in Bank of Canada Rate-Hike Decision - WSJ",
+          "title": "Rosenberg Thinks The Bank Of Canada Is Near The End - Finimize",
           "guest": "",
           "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNNXowUFJ3U0ZfbXR1d0FKMEoyVm0yUkt3bkNXdFQ2ZHhjVmt6MWhVTHUwNlhwSVlwWWFQMmlrUnFxTGc4Ry1zQXRHb1lGbUEya3NxQzhKZXBIX2FHYXBRWFlqd25fenh4RzlULW9uVHI1OVF0d05kc25MWV9xRHdMYzFXYTFWa2hBUlBWd205NENwcVFMM3RnNUs3R0g4YTIxM0NvcmpfVk95bkVfR29DcXk0SXF3MXhFS2c?oc=5",
-          "published": "2026-11-02T04:51:14-06:00",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPN1R6U3I1VVhSemtXbExuNFNKVF9ndWhnQktDMWlEanJSNDZLNVNTZzREM0IyX09zRi0zc1JtaHN5YWhZQXF2TDBQY19SWkdDYVVZai0xaWxxRlhtc2xzbVZUOFBYUTFWa2R5YkNKMm1HczNqcWR0ZmQyajJseFNEZkdpV3ZTVFU?oc=5",
+          "published": "2026-11-02T10:05:44-06:00",
           "date": "2026-11-02",
-          "label": "Nov 2, 2026 4:51 AM CT",
+          "label": "Nov 2, 2026 10:05 AM CT",
           "weekday": "Mon",
           "timeKnown": true,
           "tags": [
@@ -1026,12 +1026,12 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:0accbb627f60bf0f",
+          "id": "headline:e66b1d07593ba774",
           "kind": "headline",
           "lane": "news",
-          "source": "Bloomberg",
+          "source": "Bloomberg.com",
           "sourceId": "headline",
-          "title": "Charting the Global Economy: Central Banks Hold Rates Steady - Bloomberg",
+          "title": "Charting the Global Economy: Central Banks Hold Rates Steady - Bloomberg.com",
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNY3BaR0kxN0tHQ3cxTlFIRXZYb3gzenNEbzVfMTBacm5hZWtDRlJVWUtiaWc2WDJ0TzNpaDNDSkw2WGNtUE1ZVUNKclNzVU5RYXI5enloblp0N21rOXV3LWNNVW8tUUxCWm1pNEd5UzhjX2tTc01CZGJBYXdkamFPMG9XajZLSUNGZUFOcVdMTjdTZ1dfdGZCVS1rUjZiMXZWN0lGR0VDUFNsVlJYUV9r?oc=5",
@@ -1488,12 +1488,12 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:1d01fd65524e37ba",
+          "id": "headline:3a5f3a1a7eacf4da",
           "kind": "headline",
           "lane": "news",
-          "source": "Bloomberg",
+          "source": "Bloomberg.com",
           "sourceId": "headline",
-          "title": "Bank of Canada Chief Warns US Deficits Are Unsustainable and Costly - Bloomberg",
+          "title": "Bank of Canada Chief Warns US Deficits Are Unsustainable and Costly - Bloomberg.com",
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQaHZWOXV5TkhlcnNFcjd1a1UyRldiZC01VGZ2MmsxWjNZMkxCdm8yRllKLXBNOG5NVFFwU3UwbFdkNkJ5VzZjRkVLekZrS2VVRHNTV3ZZbkJpak1CNkhyd2NvUUJfTFM4d1BLUzlOUzlqZGhzdVhORlBaZlM5VVNiM3pyU2dhMmZGd1JyLUJxUHFhS3NxcU9HSlNqR29VRUxRRlRRWkxuX1B5RDlHMzJGV3YzemU5NkJYb3Z3QUxfZlB3ZjJBRkZmOHBZVQ?oc=5",
@@ -1787,6 +1787,27 @@
       ],
       "headlines": [
         {
+          "id": "headline:e6871fdef35486ce",
+          "kind": "headline",
+          "lane": "news",
+          "source": "ad-hoc-news.de",
+          "sourceId": "headline",
+          "title": "Energisa stock fell 33.1% amid Brazil election selloff - ad-hoc-news.de",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNWG11YUF1YmNScFFTdXNlelRXV3EzVHRuMHJ2VHJwYnVkQ3FlbFRZaS1mMGdBMmI4a2k5bnAyNWVyY1NjT0k4UWJJU3cwcVRTUWsydW9YWjZTOTBnVFFDbEtTVTNvREtKUUlnN21NakVTdEdwZ2pqek5pTzVZU1RwQnlMN2FsV2NHbDItQzhVRUx3dGNvVDhEcmxtSXNoVjRaSEhOSDRzRmpRcHNIa0ZXRU1B?oc=5",
+          "published": "2026-11-01T18:19:41-06:00",
+          "date": "2026-11-01",
+          "label": "Nov 1, 2026 6:19 PM CT",
+          "weekday": "Sun",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:d0724625653e7264",
           "kind": "headline",
           "lane": "news",
@@ -1841,6 +1862,27 @@
           "published": "2026-10-30T07:45:00-05:00",
           "date": "2026-10-30",
           "label": "Oct 30, 2026 7:45 AM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:93f474a7f8c625bb",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Valor International",
+          "sourceId": "headline",
+          "title": "Brazilian assets slide amid investor flight to safer bets - Valor International",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQbXRZaGlYNFBVX0I0VWttUGx5MDRxb2xfdkZOOXN6R0JBQzhMdEtsOURqSHV2cU1hQVEtV2ZMLUV1V1phZ3NCSVE4b3pJeWVCVXdwWDNBUy1mZlFZUDBBZjBZcVhNTUNUeEFVWERDS09PXzNfOW5YOG9mRkdDdjRXV0tDLUhwV0M0RXJjdTRYY1pjUWdTQThtYndRV3VDR1RsMzdLVE9MamNiUGUyNy1PeElWWG5kVEJuUGlmMmVHdGZVQUlRZ2JoTHk3UEFCbHNB0gHQAUFVX3lxTFBtdFloaVg0UFVfQjRVa21QbHkwNHFvbF92Rk45c3pHQkFDOEx0S2w5RGpIdXZxTWFBUS1XZkwtRXVXWmFnc0JJUThvekl5ZUJVd3BYM0FTLWZmUVlQMEFmMFlxWE1NQ1R4QVVYRENLT09fM185blg4b2ZGR0N2NFdXS0MtSHBXQzRFcmN1NFhjWmNRZ1NBOG1id1FXdUNHVGwzN0tUT0xqY2JQZTI3LU94SVZYbmRUQm5QaWYyZUd0ZlVBSVFnYmhMeTdQQUJsc0E?oc=5",
+          "published": "2026-10-30T06:05:07-05:00",
+          "date": "2026-10-30",
+          "label": "Oct 30, 2026 6:05 AM CT",
           "weekday": "Fri",
           "timeKnown": true,
           "tags": [
@@ -2163,12 +2205,12 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:8f4172d0352c1eea",
+          "id": "headline:b072de3582cecd05",
           "kind": "headline",
           "lane": "news",
           "source": "Chosunbiz",
           "sourceId": "headline",
-          "title": "Lula victory triggers Brazil market rout as stocks, real and bonds plunge - Chosunbiz",
+          "title": "Lula win triggers Brazil market rout as investors dump assets - Chosunbiz",
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOc2tGUjRScjNiaWtDVFpMOHRlVDg0NkhvX1p0Sm9ROXdDeEx2V3luOFRYczFQeFBlQm5udG1ZSjBJN1JBYjNOZHJ1b28zbVAyaGNmVjFUS29RNjVWSldXZm9EQnJHU0xSOHNkS1ZEY2prZk40NG9VcGtQaks0Y3RTUkc5MVRwcE0y0gGcAUFVX3lxTE1FbDNuQUVOTzZEWWEzNzlTT2w2QWhhczVZMEloODBtem9BYmlzNEk3d2t4RmFuZVBOSjU1VWJubEdGd3NrVk42MG5HWlY0S1J1bWRHZDVXSmt0VkVNYXFMVGpFT0pUZ2c5SHkxRXhxQUR5dWE0MjRZbElNOEFaZkZkVnVLQkMtcnRvM0lQdENuNVlNRkVlZFZQb21RMw?oc=5",
@@ -2373,12 +2415,12 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:5055cca0dadfdb76",
+          "id": "headline:99700c86d28edd89",
           "kind": "headline",
           "lane": "news",
-          "source": "Bloomberg",
+          "source": "Bloomberg.com",
           "sourceId": "headline",
-          "title": "Brazil Markets Crater, Some Stocks Sink 50% After Lula Victory - Bloomberg",
+          "title": "Brazil Markets Crater, Some Stocks Sink 50% After Lula Victory - Bloomberg.com",
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPRWNieW1WT3NpRmdERGNsa1dyWDNVZ2JWYWJqckFwX21zVXZyQTZSWTJ4dTlGRVN0dXlyWEZJek9NcHdzeTgxSGZUY0x4d0dpVmY5dzYyNDdLSUZsZmt6b3RjRlpGeVlfLWJVazN6bG1TSUdGRm9teGZGSVhLeWEwRHFzNDRJM09MemxoaGxoWktpWXNJZFZVZlhGR3I4bTcwOWxNRjdnU3VOejdZczYtMFBiLUs?oc=5",
@@ -2574,48 +2616,6 @@
           "published": "2026-10-26T11:26:11-05:00",
           "date": "2026-10-26",
           "label": "Oct 26, 2026 11:26 AM CT",
-          "weekday": "Mon",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:bb8d277babb3b469",
-          "kind": "headline",
-          "lane": "news",
-          "source": "The Edge Malaysia",
-          "sourceId": "headline",
-          "title": "Brazil stocks, real tumble as Lula win shifts investor focus - The Edge Malaysia",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1OVXNLYTFtbHo5d0MtZEtDZHhLazRPZ3FWSFNqODdhTGNLWmhTVk9QVGxkZUR1Rjh3b2RTeXU0RHA0ZVh6ZFJSZmNfUjc1ZG82?oc=5",
-          "published": "2026-10-26T11:19:26-05:00",
-          "date": "2026-10-26",
-          "label": "Oct 26, 2026 11:19 AM CT",
-          "weekday": "Mon",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:ed35dfb68d94b0c9",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Pluang",
-          "sourceId": "headline",
-          "title": "Brazil's Ibovespa plunges 17% and real drops 12% after Lula's surprise reelection, triggering trading halt. - Pluang",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNUS1HX2stZG12UmhwcGhweXlwTzg1ZUxEXzh4bUtXMkNGVHdJWlMzNEx5TGZEVDFqM2dDUW8wQVlublhyM3QzVjM1MnVRZ0JDOTJwaTduWjMwcUYtcVhvd2E5dHgzZFJSaTlIOHlodGxlaEtoU1NvR0kzalFnZlRjX19BLU9IVktIZWtr?oc=5",
-          "published": "2026-10-26T11:05:26-05:00",
-          "date": "2026-10-26",
-          "label": "Oct 26, 2026 11:05 AM CT",
           "weekday": "Mon",
           "timeKnown": true,
           "tags": [
@@ -3067,14 +3067,35 @@
             }
           ],
           "holidays": [],
-          "level": 3638.03,
-          "change": 39.01,
-          "changePct": 1.08,
+          "level": 3599.02,
+          "change": -52.42,
+          "changePct": -1.44,
           "asOf": "2026-11-02",
           "source": "https://finance.yahoo.com/quote/000001.SS"
         }
       ],
       "headlines": [
+        {
+          "id": "headline:2767531532ff048d",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Bloomberg.com",
+          "sourceId": "headline",
+          "title": "China to Boost Use of Stock Support Tools to Stabilize Market - Bloomberg.com",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQenZrelR1TmRUa08wT2REcVBvTEpNNWdOTXo0OXowMTRrVVB5a05MRm1Pb2lOSEdQSTlLTVdEUm9JLS1NU1JOSUM3VDNJOXBCUGhSY0p4enJtOTFvR0RobFlHNTFtWl9pTFgtTkhzOU1meEVKZThNcDBwQ1MwUjhWR1dsTTNJOE1SVHFtbTVUT3RxRWc5ODFZVV8tOHZ0MXdJSXlYNG9tMnB0c003WUUzTUVn?oc=5",
+          "published": "2026-11-02T09:05:22-06:00",
+          "date": "2026-11-02",
+          "label": "Nov 2, 2026 9:05 AM CT",
+          "weekday": "Mon",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
         {
           "id": "headline:2e7a4c5ad8c35f05",
           "kind": "headline",
@@ -3088,6 +3109,69 @@
           "published": "2026-11-01T23:34:22-06:00",
           "date": "2026-11-01",
           "label": "Nov 1, 2026 11:34 PM CT",
+          "weekday": "Sun",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:f62b027a984535b7",
+          "kind": "headline",
+          "lane": "news",
+          "source": "The Economic Times",
+          "sourceId": "headline",
+          "title": "China stocks edge higher as reports of market support lift sentiment - The Economic Times",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOM1BDNjdSREszdmFQY0NXT2Jta3hMZ1l0d05UTHJ6S202MzlILUtjRmRsX2RhbkEzZWJvRG85OFdlaDB4NjJ4clJhamcycTRIOGFHWElFQXd3NjR3bmFVY0NubnRBWXJWQ1RrZlZjR3hGMXpZNWxYVHllRmpzY1BNekN1S081MUtMcFpQQVRQYVYwUV8zWDBKMXlNRUlmOU0yVnNheHA1Z05ZU3Bvc2VnNGRIeFoxLUwyeEM1UHpwVVdmeEVPTURPZktaUmhqTW1ya2ozRzczU1RLM3JNRmfSAeMBQVVfeXFMTzBlUEgzVndsTldBUnZDVU1IOGNrbTdhUnplWHBxaU1Lb2tDV1hkX0ZXQlI2Z1lscXYzT0FKLVpDSzJaY0ZsWXhJZUdQaXE0RGFCeWtzczhENDlxeEV2YXlkQkFCOXFEczJsUjdHUzlfdjh4cEJYbllWaXRWdGFVWlU0bktzanIzX2NkUVdoM3VPdjJOUkJKRmEwUTZhek95LWZwaFRWX1o5dWMwbWNKRkl3RXZtdnlTa0cxSGFtVEdUaFFzVjQ4ZlI3Q2NqOHhMNnpfMnVDQnJNc2YyRDJ0VFJQY00?oc=5",
+          "published": "2026-11-01T23:34:22-06:00",
+          "date": "2026-11-01",
+          "label": "Nov 1, 2026 11:34 PM CT",
+          "weekday": "Sun",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:e3add28e1168da72",
+          "kind": "headline",
+          "lane": "news",
+          "source": "The East is Read",
+          "sourceId": "headline",
+          "title": "PBOC Deputy Governor Outlines Next Steps for Renminbi Internationalisation - The East is Read",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1WX3dFS1ZWcmx3bTFCTEZ4Q3FmbTZfNXNXUUVWclZYUUYtTDVIYnpwNmtyUVc4QzZBa2ViR3l5V0U4aWp3bmVoTG5kU2dUQzhkQ1ppUU82QjctSllJTUttNUVYUjVqNVVQQV83UWlrZmE?oc=5",
+          "published": "2026-11-01T20:53:12-06:00",
+          "date": "2026-11-01",
+          "label": "Nov 1, 2026 8:53 PM CT",
+          "weekday": "Sun",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:d07c6dbd654b4e1a",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Reuters",
+          "sourceId": "headline",
+          "title": "China's shift to new policy rate signals easier funding conditions - Reuters",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQR1Y5OGZoNEh2ZzdKN3pfVGlFWG8zT0tUdk9xOXQ2T0JfVlREREdhUWhpaFlTZmJPMV8wZ0h5SUg2YWd1bHA5M3FIaVFBZUdwbG1sbi0xMnNXdDFVNWotcmJTbHpCZWhCV0stcDd2WDFvcTZ6RkxsQ050V2ltZW5UUFgxcUk2ei0xQjROZENtTXdPX1A3ZGJ5RWluMVV5eHdvUThnbVdpb19vaTA0RGR5ZWVyLVg2bVh6Q2c?oc=5",
+          "published": "2026-11-01T19:39:00-06:00",
+          "date": "2026-11-01",
+          "label": "Nov 1, 2026 7:39 PM CT",
           "weekday": "Sun",
           "timeKnown": true,
           "tags": [
@@ -3830,90 +3914,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:e2567b237ac21cbc",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Global Times",
-          "sourceId": "headline",
-          "title": "China approves Citi's wholly foreign-owned securities firm amid efforts to boost market entry and streamline foreign capital - Global Times",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFB0YUJ4aGwxM09QZEtYb2pfem93cVR0NUZRRkxPUVloYmFOQUo0ODVaWF9JX204enFLYlFuSTdxc1gwQi1rQUxSRDNNcGZILU5OVXYxWWNPRW12NXBuT1FzVE93?oc=5",
-          "published": "2026-10-25T06:43:00-05:00",
-          "date": "2026-10-25",
-          "label": "Oct 25, 2026 6:43 AM CT",
-          "weekday": "Sun",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:a9bcdd6d664418d3",
-          "kind": "headline",
-          "lane": "news",
-          "source": "AFR",
-          "sourceId": "headline",
-          "title": "Luxury groups’ value drops by $398b as Chinese consumer demand fades - AFR",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNR1FhT29DMG5hYlVpMENad252a3VvY3J0bExUdGl3TGllNUdobW1DZEJlWmJWWFo5VjdKbzBEM2J6VHdRUEhia3JWdlRXQVNudzNRcW9hVHFyUTdwS05QWGg4N0h1VlZJS0tBOVU1cVkzcV8tWENPTDl4Wkx4NWpoUTVhZ0l0ZS0wZFlOa05sb1Y3cG1jMHJCdTJrMWpreEVqcFoxd01LU1d4QXFhbDM2djM2aw?oc=5",
-          "published": "2026-10-25T04:00:00-05:00",
-          "date": "2026-10-25",
-          "label": "Oct 25, 2026 4:00 AM CT",
-          "weekday": "Sun",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:a6472ff7df47029a",
-          "kind": "headline",
-          "lane": "news",
-          "source": "London Stock Exchange",
-          "sourceId": "headline",
-          "title": "Shanghai-London Stock Connect welcomes its first issuer: Huatai Securities - London Stock Exchange",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPVGZPN0xQSlVqNm5LZkFvN3hqQkdmcGtsSnVZbmpYcjNEUkM3SU5UdzZuMVlyRlJVeXp1OE9BelhxN2RlMmlvTFhlMFE1WnJlYXlZeGlwdmZyRTk3WFQxalQyYjIzdDVPYU54RDRHT2t1Qjh0ZUZYMXpLUEc0RHZ0YUc5QzZGYUV6b251ZVY2OGt3enY5OFcxUjlLQjh3SjVvQXpUZW1xVHpfYUdZelZCVURnamwxVlBRck51UWFR?oc=5",
-          "published": "2026-10-23T21:01:55-05:00",
-          "date": "2026-10-23",
-          "label": "Oct 23, 2026 9:01 PM CT",
-          "weekday": "Fri",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:191f441ff795d389",
-          "kind": "headline",
-          "lane": "news",
-          "source": "China Daily Global Edition",
-          "sourceId": "headline",
-          "title": "Tech firms give A-share markets boost - China Daily Global Edition",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPUG52UzVsamk5YjR3Wk1XUHVGRE11ZDhZekdCa1lsNGZaV3J1dXVKdktOMlN2cjM2SHZmRUVSSTRpSFpkTlF6b3hQZDhkRHp5VlVtNGdlR3FHbEc5b3lpUXJKRDdZSE9NSF94N3hJSDZ2TUFBcW4wMW8wRjFLV2FYcnhR?oc=5",
-          "published": "2026-10-23T19:28:44-05:00",
-          "date": "2026-10-23",
-          "label": "Oct 23, 2026 7:28 PM CT",
-          "weekday": "Fri",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ]
     },
@@ -3933,14 +3933,35 @@
             }
           ],
           "holidays": [],
-          "level": 6150.81,
-          "change": 19.5,
-          "changePct": 0.32,
+          "level": 6176.06,
+          "change": 44.75,
+          "changePct": 0.73,
           "asOf": "2026-11-02",
           "source": "https://finance.yahoo.com/quote/%5ESTOXX50E"
         }
       ],
       "headlines": [
+        {
+          "id": "headline:d1cbfd045b26adde",
+          "kind": "headline",
+          "lane": "news",
+          "source": "The Mighty 790 KFGO",
+          "sourceId": "headline",
+          "title": "Euro zone countries are integrating faster with US than with each other, ECB says - The Mighty 790 KFGO",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQTzFjOEcxUzZna3JBTWRrT09odHpQVmR3dTZjN1VuV3VFU21BU21MTUlGbUs2S08tUUU3N3E3bXZIU3VOWW5XaXhjWTBLVVdOVmhVWktBME0yNElaQmU5S1BHTUE5eTJRc1VNa2hfUkNFMDNXV1FjbDNNckQzYm8tWVVFcl81TFZEYUNIclhpbEMtTzlQZWNMVWlZZFR4OU9zWndpY2dnU0FNVkVoREE?oc=5",
+          "published": "2026-11-02T05:10:40-06:00",
+          "date": "2026-11-02",
+          "label": "Nov 2, 2026 5:10 AM CT",
+          "weekday": "Mon",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
         {
           "id": "headline:0f739abe07df3037",
           "kind": "headline",
@@ -3975,27 +3996,6 @@
           "published": "2026-11-02T04:11:06-06:00",
           "date": "2026-11-02",
           "label": "Nov 2, 2026 4:11 AM CT",
-          "weekday": "Mon",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:d1cbfd045b26adde",
-          "kind": "headline",
-          "lane": "news",
-          "source": "The Mighty 790 KFGO",
-          "sourceId": "headline",
-          "title": "Euro zone countries are integrating faster with US than with each other, ECB says - The Mighty 790 KFGO",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQTzFjOEcxUzZna3JBTWRrT09odHpQVmR3dTZjN1VuV3VFU21BU21MTUlGbUs2S08tUUU3N3E3bXZIU3VOWW5XaXhjWTBLVVdOVmhVWktBME0yNElaQmU5S1BHTUE5eTJRc1VNa2hfUkNFMDNXV1FjbDNNckQzYm8tWVVFcl81TFZEYUNIclhpbEMtTzlQZWNMVWlZZFR4OU9zWndpY2dnU0FNVkVoREE?oc=5",
-          "published": "2026-11-02T03:56:24-06:00",
-          "date": "2026-11-02",
-          "label": "Nov 2, 2026 3:56 AM CT",
           "weekday": "Mon",
           "timeKnown": true,
           "tags": [
@@ -4047,12 +4047,12 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:0accbb627f60bf0f",
+          "id": "headline:e66b1d07593ba774",
           "kind": "headline",
           "lane": "news",
-          "source": "Bloomberg",
+          "source": "Bloomberg.com",
           "sourceId": "headline",
-          "title": "Charting the Global Economy: Central Banks Hold Rates Steady - Bloomberg",
+          "title": "Charting the Global Economy: Central Banks Hold Rates Steady - Bloomberg.com",
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNY3BaR0kxN0tHQ3cxTlFIRXZYb3gzenNEbzVfMTBacm5hZWtDRlJVWUtiaWc2WDJ0TzNpaDNDSkw2WGNtUE1ZVUNKclNzVU5RYXI5enloblp0N21rOXV3LWNNVW8tUUxCWm1pNEd5UzhjX2tTc01CZGJBYXdkamFPMG9XajZLSUNGZUFOcVdMTjdTZ1dfdGZCVS1rUjZiMXZWN0lGR0VDUFNsVlJYUV9r?oc=5",
@@ -4110,6 +4110,27 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:53e16444a5428511",
+          "kind": "headline",
+          "lane": "news",
+          "source": "https://economy.ac/",
+          "sourceId": "headline",
+          "title": "European Competitiveness: Capital Rules Built for a Lost Lead - https://economy.ac/",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBsMGNJVFByRDRKSTBINEZNRnB2NHRzbi0zdDJoM1dzUGItLUZzbF9DSnZLZXZBX0MxcWhwTnVVMzJTSFRrRE9sTUYwTGxGVXZnLW1abW9fMVBqUQ?oc=5",
+          "published": "2026-10-30T02:00:00-05:00",
+          "date": "2026-10-30",
+          "label": "Oct 30, 2026 2:00 AM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:19033644ec29d98b",
           "kind": "headline",
           "lane": "news",
@@ -4122,6 +4143,27 @@
           "published": "2026-10-30T01:52:32-05:00",
           "date": "2026-10-30",
           "label": "Oct 30, 2026 1:52 AM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:d9a8e5c2b85c0ccf",
+          "kind": "headline",
+          "lane": "news",
+          "source": "investingLive",
+          "sourceId": "headline",
+          "title": "France's economy contracts in Q3 as growth troubles pile up for the ECB - investingLive",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPVGFYWXQzdzBsYWF1eV9kNDVSZUpPcUFxdGtYS3dNRHc3RndvUUJHRk1KQUhQNzY4VV9pZ2VJWjJmSENWQVYtVV9IYkg3VW1HZE1xRnp6LUY2azFmbUN5Tk95cmFXX29hb1BsanhQRGFvbUhMemdNS2l5YklxdWM0MEpsUG5xaXc1bWlQQVI2SWIxYVdXaElvWVRKeDd1ajkwaDJjTk13?oc=5",
+          "published": "2026-10-30T01:30:00-05:00",
+          "date": "2026-10-30",
+          "label": "Oct 30, 2026 1:30 AM CT",
           "weekday": "Fri",
           "timeKnown": true,
           "tags": [
@@ -4257,12 +4299,12 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:0889728cfbc5bdf6",
+          "id": "headline:3a14b4757d1de03e",
           "kind": "headline",
           "lane": "news",
-          "source": "Bloomberg",
+          "source": "Bloomberg.com",
           "sourceId": "headline",
-          "title": "ECB’s Lagarde Steps Aside as European Economic Pressure Builds - Bloomberg",
+          "title": "ECB’s Lagarde Steps Aside as European Economic Pressure Builds - Bloomberg.com",
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNS1dfeUMzcUE2bHhCVi1lcGg2VnQ0U00zNzJFY1RNSi1pOW9WYmlYQ3gtM1Nza2lQYWJuTldIVG8yN0htYWgtZllBTFRLdUVkOTBKcmhkTTRZWU5peDJnNWlCbnhGM2UteEJPNm43b29NY1A5NGEzWW9XSEFxS2o4ZHRkQ3FybDN2ZnEybE1JdVJDZk5CeHJxNFB1bndrTndfX0N0amJJTWpKYUZzYWlpUlBFV3QzOW8?oc=5",
@@ -4488,27 +4530,6 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:c322c3f9782f194c",
-          "kind": "headline",
-          "lane": "news",
-          "source": "WSJ",
-          "sourceId": "headline",
-          "title": "ECB Leaves Rates Unchanged as Challenges Mount for Lagarde’s Successor - WSJ",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOcG81Z2FUM3Y0clJEaWJ6SFhSRU5Ed3JuVUZGZXZpOXRBZVN4YmhWMUJ2eDZJNWttc1NCV0dxWFVWV0ppM2d5OE1zVDZ5V1RyMHFUbGdQcG9QelFheHQwMl9oRUwwX3V0SEpCdGxJcVVvbVFDTU5CeVdzSXA3WEhuT1pWa1JsWXdNTksxd2pPQjBmSmd0c3g3YjZlV1dxamF3eEQxOWp4YTVpRWE3UmRoT3lXZ2hfNzVOTFFCZzVPZw?oc=5",
-          "published": "2026-10-29T08:27:00-05:00",
-          "date": "2026-10-29",
-          "label": "Oct 29, 2026 8:27 AM CT",
-          "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
           "id": "headline:b6b43f430c80d3f9",
           "kind": "headline",
           "lane": "news",
@@ -4521,6 +4542,27 @@
           "published": "2026-10-29T08:18:31-05:00",
           "date": "2026-10-29",
           "label": "Oct 29, 2026 8:18 AM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:c322c3f9782f194c",
+          "kind": "headline",
+          "lane": "news",
+          "source": "WSJ",
+          "sourceId": "headline",
+          "title": "ECB Leaves Rates Unchanged as Challenges Mount for Lagarde’s Successor - WSJ",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOcG81Z2FUM3Y0clJEaWJ6SFhSRU5Ed3JuVUZGZXZpOXRBZVN4YmhWMUJ2eDZJNWttc1NCV0dxWFVWV0ppM2d5OE1zVDZ5V1RyMHFUbGdQcG9QelFheHQwMl9oRUwwX3V0SEpCdGxJcVVvbVFDTU5CeVdzSXA3WEhuT1pWa1JsWXdNTksxd2pPQjBmSmd0c3g3YjZlV1dxamF3eEQxOWp4YTVpRWE3UmRoT3lXZ2hfNzVOTFFCZzVPZw?oc=5",
+          "published": "2026-10-29T08:17:25-05:00",
+          "date": "2026-10-29",
+          "label": "Oct 29, 2026 8:17 AM CT",
           "weekday": "Thu",
           "timeKnown": true,
           "tags": [
@@ -4738,48 +4780,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:18d1ea92ca291b4f",
-          "kind": "headline",
-          "lane": "news",
-          "source": "This is Money",
-          "sourceId": "headline",
-          "title": "ECB chief Christine Lagarde quits as eurozone economy stumbles - This is Money",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxOcVZCWmM1MlRBam1WOEJveUEzTTR4cldaaFhpQlBlOHdfYUkyYjdfV0JMOHQwdHJvaGlEbW8yV0tXRlRWUDR5MHBtQmdGWVlxTk40cFVNZ2gyeTY3V2NWclJLczZFcnFRcThCcWFfcndTLW1MMmFoTU0tWjJXdXYzYVM1ZUxRbUJWdWtXOFJDTDVLM055aG1mWFUwQUo3SVNBZ0dfZktWVFBGa0c3clpWYlNuT0tUbnQteE45bWc5dlBnTlRuOHBxYnRQZ0t6TF9pdEs2NWQ0YnFBMlhDNUVTU0JCeWFES1J2N1VWOWotMkQwZTVvVkZNSmRzZTZJS0VZaEp1b05qdTNEeC0zWWxtZkhRVQ?oc=5",
-          "published": "2026-10-29T06:24:30-05:00",
-          "date": "2026-10-29",
-          "label": "Oct 29, 2026 6:24 AM CT",
-          "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:0946723870b11af9",
-          "kind": "headline",
-          "lane": "news",
-          "source": "The Japan Times",
-          "sourceId": "headline",
-          "title": "ECB President Lagarde resigns at time of mounting challenges for Europe - The Japan Times",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFA3SzFWUFpLRXFvREhjYklSclEyTkFpN0tIWTNXdVYwaHBNTnctbk5IZ3pJcHI4QjU2U01JYzVhMFdnemp2SjhDOFg4VHk1YUt2bjhjYVUzVGR3eGMtZ1Z2RFNRSjIwOXJpbFFKdkxIMmtrSnM1RlpKNVJNS3VLdw?oc=5",
-          "published": "2026-10-29T06:09:00-05:00",
-          "date": "2026-10-29",
-          "label": "Oct 29, 2026 6:09 AM CT",
-          "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ]
     },
@@ -4803,9 +4803,9 @@
             }
           ],
           "holidays": [],
-          "level": 63081.86,
-          "change": -208.25,
-          "changePct": -0.33,
+          "level": 63290.11,
+          "change": -1369.36,
+          "changePct": -2.12,
           "asOf": "2026-11-02",
           "source": "https://finance.yahoo.com/quote/%5EN225"
         },
@@ -4825,9 +4825,9 @@
             }
           ],
           "holidays": [],
-          "level": 23393.32,
-          "change": 98.9,
-          "changePct": 0.42,
+          "level": 23294.42,
+          "change": 335.77,
+          "changePct": 1.46,
           "asOf": "2026-11-02",
           "source": "https://finance.yahoo.com/quote/%5EHSI"
         },
@@ -4843,14 +4843,77 @@
             }
           ],
           "holidays": [],
-          "level": 75692.78,
-          "change": 1233.25,
-          "changePct": 1.66,
+          "level": 74459.53,
+          "change": 308.49,
+          "changePct": 0.42,
           "asOf": "2026-11-02",
           "source": "https://finance.yahoo.com/quote/%5EBSESN"
         }
       ],
       "headlines": [
+        {
+          "id": "headline:f7e8da485a696c16",
+          "kind": "headline",
+          "lane": "news",
+          "source": "chinadailyhk",
+          "sourceId": "headline",
+          "title": "HK, Shenzhen can play vital roles in APEC cooperation - chinadailyhk",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5mTDdUVm96WWsxVTR0YndNQm40V1ZPSWYxTkV5cUl3eFFNVjB1OS1POEZaSnJraEU0LUJMQ0VTZzZmbWNfTVRIMUh1X3YtN3g1VVRBOGdrNzI?oc=5",
+          "published": "2026-11-02T10:55:04-06:00",
+          "date": "2026-11-02",
+          "label": "Nov 2, 2026 10:55 AM CT",
+          "weekday": "Mon",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:69433a4dcf925ed6",
+          "kind": "headline",
+          "lane": "news",
+          "source": "BlackRock",
+          "sourceId": "headline",
+          "title": "Weekly market commentary - BlackRock",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQLWJDTjBBalYwVHVpc0VxV1BwRE1xeUt1RWlLQ1VJdnJQRXNnb3p6MnFNbjRBV0s0TnlldW4wSVIycFRQeVNISWJ3VV9wMWdjX1ZndE1Tc24tNzc0anNYWjl0SVBsRDhSa0dVTWlyVVYxX0w5b2JhTFB0Tm9Vb2FwYVZubTU1SVJlcy0zMEpXOEM4ZlhiSU1QazdVQVlldw?oc=5",
+          "published": "2026-11-02T10:18:03-06:00",
+          "date": "2026-11-02",
+          "label": "Nov 2, 2026 10:18 AM CT",
+          "weekday": "Mon",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:2925032901169436",
+          "kind": "headline",
+          "lane": "news",
+          "source": "South China Morning Post",
+          "sourceId": "headline",
+          "title": "Legal body’s new Hong Kong office targets developing Southeast Asian economies - South China Morning Post",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQeHZjTFhjbC05QXJubHY0UGRHT2NMVWpYUi1udkRSeFpUbVlnZjJ5UUF2Zm10Wk9TRkpUSFB3VjZmU0lMNDkwaWJtT2dCWlAxTG9aWlVVN3N2S0wxWWlBQ3JDY3A2Yk1UYXNtQ01UZ1o1S2hhelJHdkp0dGI0eTd5SWJEODVib1ZiRXZqdTN6aVlkdmRudGl5RW1KUmpsQUVCdVlkX3VHTU9VUnZMNzR2OEZmTmRWSlh2b21UTWNwa1RYNk04QzlMS0xkZ21VWEJkdXBuTTI5Wk1MdjDSAdsBQVVfeXFMTU1MdW1ZYThEOXdoNkNYaXJLbldYNzltM2FiQUxfY3JwMEc1U1BETXVMZXE2Q3JFdENCZHN0bHV5SWlEeHFZTVhtZzZkMDY2Vk5QNzQ5RFNTeVM2dnJCOVVHb3ZyMFJYV1p6XzdTaDI4NXoxY3E4RXNVY2xCVVdQX1BNRHVoMXJUM2NaM2dlQ0xBb3NfVWlEbFhpSDl6WFFoQzc1b1RMTVo5Y05rb1ZocG1NaFp2RnI5YWNrTnlROWZDazdwOGotWXR5Vkx6ZGpTOEJraFRoNXAzbmhv?oc=5",
+          "published": "2026-11-02T08:02:32-06:00",
+          "date": "2026-11-02",
+          "label": "Nov 2, 2026 8:02 AM CT",
+          "weekday": "Mon",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
         {
           "id": "headline:d19d64e259c3e9d2",
           "kind": "headline",
@@ -4865,6 +4928,69 @@
           "date": "2026-11-02",
           "label": "Nov 2, 2026 2:30 AM CT",
           "weekday": "Mon",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:136f309d3834d9f9",
+          "kind": "headline",
+          "lane": "news",
+          "source": "The Standard (HK)",
+          "sourceId": "headline",
+          "title": "FPS to unlock QR-code payments in over 40 markets through UnionPay collaboration: Paul Chan - The Standard (HK)",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOOGYwN0haYjN1Qmx1ZlprYVhld3UwU3BxN3dQYkpNcDVOTkpnNnVVRkJwSl9iYVNldVlmYkQ3YXVnXzAzc2VSMjRlbjg0ZVh2dFZMb0lxbkRSQllmLU95R0FKTUxxYl93eExqeElCaWdNSVdSZGhZTl9ya3liSUNlUy1nOTRCTVlkN1BITWRYaHdiQ2ZaTC0wdW9LY2xlNDdnQzUzeUFoWG9aZHVWc0hmNmk2QURmY2x0WFlEREhBcTZwQnBFcjl4RHRIaHNMaldHYkduR0lzQ2JnOFp0?oc=5",
+          "published": "2026-11-02T01:08:30-06:00",
+          "date": "2026-11-02",
+          "label": "Nov 2, 2026 1:08 AM CT",
+          "weekday": "Mon",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:e7128ddb00d6d962",
+          "kind": "headline",
+          "lane": "news",
+          "source": "香港電台新聞網",
+          "sourceId": "headline",
+          "title": "John Lee says HK offers businesses long-term certainty - 香港電台新聞網",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9rajV2YmpfV0RndFU1djQ4ZEFGaU0xek5DX2cxOW9OSXlkX2ltSVJCMmlXVXRvazJPb1ZlX2JZT0VyT3Bldl95Rzk5TXhWUFRmMGxmVDd5WklhaVY2N2F2NDAzbVF3TUFwQU1JdVpWWQ?oc=5",
+          "published": "2026-11-01T21:11:00-06:00",
+          "date": "2026-11-01",
+          "label": "Nov 1, 2026 9:11 PM CT",
+          "weekday": "Sun",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:42b0117aa03f8852",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Reuters",
+          "sourceId": "headline",
+          "title": "COMMENTARY: India's booming growth has an earnings problem - Reuters",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQU3ZYY3ZYdTVpNEJOdnk4a2xCTmVRM2xlempwRWFSNm14Y0JpRWx0WjExUTM4eHFpU3BDOTdiNFdwelp0Z2RXNHdRT19mOVBpem5sNGs3SVhJeEljajNERHhRSHVLNVJRcWRCS1pxQVQ0RjBGS3BYZ09IWEo1R29EUGowcHpNU0FjN1JabHRqZU9NNXdtVW1ocXdzYnI4NGRLbVJpSzlRYTJSUnZMSC1GM2NKLUFSNUNPU2ItSklLNU9pWmE0T29Rc0dDazhlbFhw?oc=5",
+          "published": "2026-11-01T17:00:00-06:00",
+          "date": "2026-11-01",
+          "label": "Nov 1, 2026 5:00 PM CT",
+          "weekday": "Sun",
           "timeKnown": true,
           "tags": [
             "headline",
@@ -4957,6 +5083,48 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:ecf8f0fd8be09b42",
+          "kind": "headline",
+          "lane": "news",
+          "source": "South China Morning Post",
+          "sourceId": "headline",
+          "title": "Hong Kong may raise GDP forecast as growth poised for 5-year high: Paul Chan - South China Morning Post",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPNUdnQWY2cW5PMGMwN0pXN2lLc0xWN083RktLbmY2d0oyRThhTnlsSkZ2RS1LZU9sYm9uckdNWmY5bVEtaXdsOVdnNW1TSXBWTlpzaGg2M1VtMllsalk1czhnQU5FVjFhTTZhT2ZSLUpMaHJjaTdCV3dzZ1RTczA2a3RXdGF4RXZhTEZhdVJLZk5VTmM1X1IzbEp2VVlnX3hBRGV2cEZyR0VEeTIwdDZOVkFXY2dxdnYwN1UyMlcwbm9sR3Q4OUo1Smp1dXNOWHRIMUM1dtIB1AFBVV95cUxPNUdnQWY2cW5PMGMwN0pXN2lLc0xWN083RktLbmY2d0oyRThhTnlsSkZ2RS1LZU9sYm9uckdNWmY5bVEtaXdsOVdnNW1TSXBWTlpzaGg2M1VtMllsalk1czhnQU5FVjFhTTZhT2ZSLUpMaHJjaTdCV3dzZ1RTczA2a3RXdGF4RXZhTEZhdVJLZk5VTmM1X1IzbEp2VVlnX3hBRGV2cEZyR0VEeTIwdDZOVkFXY2dxdnYwN1UyMlcwbm9sR3Q4OUo1Smp1dXNOWHRIMUM1dg?oc=5",
+          "published": "2026-10-31T05:20:59-05:00",
+          "date": "2026-10-31",
+          "label": "Oct 31, 2026 5:20 AM CT",
+          "weekday": "Sat",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:1b892fba60765ac5",
+          "kind": "headline",
+          "lane": "news",
+          "source": "South China Morning Post",
+          "sourceId": "headline",
+          "title": "Exclusive | Bordeaux officials hail exclusive 5-year deal for Hong Kong to host Vinexpo - South China Morning Post",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNa2VWUGxSUzdBYjl6bXBxcld1MExQRFA3R1J3bFVuU1IwWFlLZmJLWFFJTW83eFZ3bzdCWnlyNmdvamZaejNPRjRvMzRyVmtXOUkxM3Y5dC1KcXN0NkZfVmp4bXpIRWkwelNITzVac1hERV96eENudDRGV0lyTjFxVzFkMUxHUFFwdkxVWHBhUDVKZjZrYTVpcGlsZnJ2Tjh1TkJNMkQyMHRlWnJPbXVKdWRvcUhrenlrS3hiZ3VSZ2JMWWxtdnphM2VrSHB1aTRvNVNUWdIB1AFBVV95cUxQckQ5Z0s1MzdFT3ktc0VDNGk5Um5qck0xSWt4N0lvVkNtTVhNUS1uX2VySnhQZnl0RVF2LUU1bzZwUUFBOUhLbXgyWm53TGRxc21lRFh0eUxxYng5V1dhLXBBMVJDMEdIV2ZuRVQ4RGpvajBzQUhCYl94MnRVa3ZZbU1QVmZ2VXE3Mm9GZC14Yk1kcnM3ZEVucXBUcUFDR0hiMmVxTXpFaXdyekhDUTgyeFdrWWdvU2FiMV9wdmJkTk03aWpIZ010MzItbnZUOWduYXE0Uw?oc=5",
+          "published": "2026-10-30T20:00:15-05:00",
+          "date": "2026-10-30",
+          "label": "Oct 30, 2026 8:00 PM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:c24f26ba9d15ae03",
           "kind": "headline",
           "lane": "news",
@@ -5009,6 +5177,27 @@
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNNC1RMmVYbWZkM0o0azFnN3kwR1FqSGlPT004RUU1WV9zNVkxZDBNeDU4V1VhVzZodERyS1NvME1vSkVnaXJaOUtJaW5NSFhzcFdJWkxWUVY2MFZDbWRPTlNVemczOWVyZU50bmRiRnFIZDQ1VE42THVrWU1YSDdzelhOR3NtUHRhekYzejlJbllXRUlGSndVZU02dWJQc1RJLUczNXpmYkxCVVUtZWxVTjdrNWF1RVU5N1lGRnFHM3J5a0nSAcMBQVVfeXFMTTQtUTJlWG1mZDNKNGsxZzd5MEdRakhpT09NOEVFNVlfczVZMWQwTXg1OFdVYVc2aHREcktTbzBNb0pFZ2lyWjlLSWluTUhYc3BXSVpMVlFWNjBWQ21kT05TVXpnMzllcmVOdG5kYkZxSGQ0NVRONkx1a1lNWEg3c3pYTkdzbVB0YXpGM3o5SW5ZV0VJRkp3VWVNNnViUHNUSS1HMzV6ZmJMQlVVLWVsVU43azVhdUVVOTdZRkZxRzNyeWtJ?oc=5",
           "published": "2026-10-30T02:00:07-05:00",
+          "date": "2026-10-30",
+          "label": "Oct 30, 2026 2:00 AM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:3a106d03bc0cffca",
+          "kind": "headline",
+          "lane": "news",
+          "source": "HKTDC Research",
+          "sourceId": "headline",
+          "title": "Economic and Trade Information: Hong Kong - HKTDC Research",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1SMm5rcGEwOG05Nkl0MUF4YzNVYTFjbmlXMzNXazhmUEdsUWhYTW5kN0ZjNmhiY3N4dEpyWW1DV0RsWVQ3ZUNPZUYyZU5wYkFjQ0dIRmF1SUozVFZtanR3?oc=5",
+          "published": "2026-10-30T02:00:00-05:00",
           "date": "2026-10-30",
           "label": "Oct 30, 2026 2:00 AM CT",
           "weekday": "Fri",
@@ -5272,6 +5461,27 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:13f9c159ac7cc9b4",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Britannica",
+          "sourceId": "headline",
+          "title": "Asia - Manufacturing, Industries, Economies - Britannica",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9kYW9tSmlpc3RKVjRhTUhNWGliRkJmZG9pNDc2Y21qbzBHejJVdXZCYnpSSG0wX1hPU0hZVjQ4bWhwdlJLTzhuc1hlSkZIYllVd2kyQ29wZFpfYmlnTUxXRg?oc=5",
+          "published": "2026-10-29T00:00:00-05:00",
+          "date": "2026-10-29",
+          "label": "Oct 29, 2026 12:00 AM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:2f491ad7bf61ccab",
           "kind": "headline",
           "lane": "news",
@@ -5305,6 +5515,27 @@
           "published": "2026-10-28T23:38:02-05:00",
           "date": "2026-10-28",
           "label": "Oct 28, 2026 11:38 PM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:9b01fffff4353eac",
+          "kind": "headline",
+          "lane": "news",
+          "source": "The Japan Times",
+          "sourceId": "headline",
+          "title": "China’s rare-earth success offers lessons in economic security - The Japan Times",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxONUVtRVVyMlg2d0tHdFB6UjZleWo0WkFGSjh2aWl5Z0lyNEUwSXhCUExDaTdlX3RHb3FLOW5uMl9MNGNTSXpCWDBlOGEtWEF2NkNydlNaNnFYV2E5WFk5eEFrWXhLcmx0WjFBaGI5UzRZVVFjckw3TzJGSnV1Vkt3WkJLSENYbWhkQTkzT25vbEF0UE96a2c?oc=5",
+          "published": "2026-10-28T23:04:00-05:00",
+          "date": "2026-10-28",
+          "label": "Oct 28, 2026 11:04 PM CT",
           "weekday": "Wed",
           "timeKnown": true,
           "tags": [
@@ -5398,6 +5629,27 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:1f764577bc50b702",
+          "kind": "headline",
+          "lane": "news",
+          "source": "India Briefing",
+          "sourceId": "headline",
+          "title": "India FTA Tracker 2026: Live Updates on Trade & Economic Pacts - India Briefing",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOVVVzZ1hTXzdnRWM4OWR2MmRvbnh3bGk5RVNyQ2lHazhQRTFIMnIydF9rYjdIeTF1RGFLcWFvYzU4ck1iQ241Zkxkb2pXU3NvUXdxSG9sNnZYYUtIWjhxTlFBWWhQSUxmZ0x4Tkt0M0dvLXFWYnF1R3lvNUdvekViRk9MVUw?oc=5",
+          "published": "2026-10-28T02:00:00-05:00",
+          "date": "2026-10-28",
+          "label": "Oct 28, 2026 2:00 AM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:a62434d7e22eb1f4",
           "kind": "headline",
           "lane": "news",
@@ -5432,258 +5684,6 @@
           "date": "2026-10-28",
           "label": "Oct 28, 2026 12:37 AM CT",
           "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:4762b67a50310014",
-          "kind": "headline",
-          "lane": "news",
-          "source": "The Economic Times",
-          "sourceId": "headline",
-          "title": "Global Market: China, Hong Kong stocks rebound as SK Hynix earnings lift AI optimism - The Economic Times",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNZ3REakE3UWU5cThfQXRjdGVDZnloR0hISzRyUWZpVFNGTWhUR2NmQTVWTGVzVDJCRkcwMVNQTk8xSGNpMGJodHRhR2t2ZzlRa3JBYU5xRU5pSlJPSHhTVEJJVk1mVWFTUlR4YUZITXpHLV9Fa3dsal9mSGdfT05Sc3hnRmJENERlMHNvMUt4ZXNBRmRHWGMtWFRQT05XYldpWVlIMlJ2amltS2JKQk9PWXVxclp3VEdWU2Zyczc3UzVmbE5mTkJOZ2lVTjMtT3ZYTm1DeVpGZEQ2bTNVZGZpX3BiUkpnTnNsUTVLVnIwQ1TSAfYBQVVfeXFMTi1KaXg4SER6dEhDS0V5bjRyYldDSGxzRjd2Tnc2dUNCN3ZyWjdoSV9CcWVVN0plWDUydi1MOW85VVpoQ1A5dC1BVFFaWW0yWHVTdDFWTkFnZFFIMEQ1YXRYeGJYSXJxMU1WZzhCNWxWTDBqLXBJLWFuMjVxSUxHb2xGakRqVkRHV280aUtfTFNVeU01MjktWGFYaW95eWI0cVdDbFczcVVYdGZhaThYZzNBRF9sYjJaUWdaUmZDclNKQnlfeFlaY1JMdTRzWkxBRzFiX2wxLTh0U1NEOXRsQklWdGVVd3VnSHFNTFZBcmxJMlQ2WkZR?oc=5",
-          "published": "2026-10-28T00:37:23-05:00",
-          "date": "2026-10-28",
-          "label": "Oct 28, 2026 12:37 AM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:aff5dab7b00fa40a",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Vietnam Investment Review - VIR",
-          "sourceId": "headline",
-          "title": "Asia storage launches self storage marketplace aggregator platform in Hong Kong - Vietnam Investment Review - VIR",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQa1NfWnpMV0RJRGNmREdSNmZuZ0dBZDljNGpDQV9scVdoejZ3QjVrTDhwUUswaUR6XzFPRlhVVVFQaDRNQXk2U3k3OVkyb0oxR0lNcDJkenVHUVg0NDd2a3RheDZ1VGxjVi1ta25RX3dtVmJZVDBLRXgwNVZnTHlGdF9nYTlxRjd0MXBQMURkQWlGZDdWZERMOVlZZkxsbEVGcEhrWU1ia2QwZ0lCX1E4?oc=5",
-          "published": "2026-10-27T22:01:25-05:00",
-          "date": "2026-10-27",
-          "label": "Oct 27, 2026 10:01 PM CT",
-          "weekday": "Tue",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:6e73718377a737c1",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Gulf Times",
-          "sourceId": "headline",
-          "title": "QBA eyes robust economic, investment ties with Iraq, Lebanon and Hong Kong | Gulf Times - Gulf Times",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPcEpLbFkxbU5VR0pyOTVDZ1dSeVJ1aW0yMUtVa3lxalNVdjd4YjVPbEY0TWpQbXJzZEdPLWlBcnp6SGxLVWx2YWlJMVlmZjhtX09fQzBxUjR3QWhkeVFqNnUxclBUdXU2WnNOTExtcUJrSjFqTTFMODVrZktzQ05wUFRMcndjYVNVNFhBaEMwQXJiTmxoMWV6d0xGQXQ0aGVobkxINWxSeDRUVGY2dVJfU19lLXgyTVhnSlo0RTJ2MEzSAcYBQVVfeXFMTWZHdm51dlFwckRUQlU2ZUJiVnNLLWdkZG9tN2ZSWHNvN1QyLXhXQ0VhRm5pX2kyalpWMV9Rb0xrZ0pTUzJWQWVRemJPZ0h4QkN6eGtCejBRVjVfTEI0SDNiWTRabHZBZ0YwVmFtTkRrTzNaM3FIdDZ4TGQ1Q3phaEFPamxWM1hBOWRIdHhTZ0hxQU00bHF0SzFoMFBOUjhuQnlyTGpLYW1DUjhLbVpnTGdjT202VEw3VURiTDFTVWxpNFo4Nmln?oc=5",
-          "published": "2026-10-27T14:39:00-05:00",
-          "date": "2026-10-27",
-          "label": "Oct 27, 2026 2:39 PM CT",
-          "weekday": "Tue",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:fcbe8e888271cb0b",
-          "kind": "headline",
-          "lane": "news",
-          "source": "The New York Times",
-          "sourceId": "headline",
-          "title": "What China’s Patriotic Stock Buying Tells Us About Its Economy - The New York Times",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNbUVXYUQxZUhYNnBqZ2lQbjlZLVRyTkphZVhyRDlLWHI3RGk3U3NJTWNOMXEyVG8xVkQtU2wtNGRDUDVrcEc4ZlJVem5heHlWUVExYmtOOVE2MFBNX1kyYm90RHp4OTNaWEJVanhlTm1rVC1zUEFQYVBKSHpPS2M0QzZxM2g2d1RRNDNSV3NxNlh5amZZZ2tv?oc=5",
-          "published": "2026-10-27T09:15:17-05:00",
-          "date": "2026-10-27",
-          "label": "Oct 27, 2026 9:15 AM CT",
-          "weekday": "Tue",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:08682d3269dbe91a",
-          "kind": "headline",
-          "lane": "news",
-          "source": "一财全球Yicai Global",
-          "sourceId": "headline",
-          "title": "Hong Kong’s First Five-Year Plan Can Help Secure Its Place as a Global Financial Centre - 一财全球Yicai Global",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNcDVVeG5qa0o4X2F4bG1MZXZGVXpXSVVGNk5fV3h4QzRaaUJUNXRyZUUyUl9uYnd1OHpDTTdIQ2o3ZzRXUnBnb19lSlN0RDc3dmVuMlMyTHNyLWZtUUpyWlFuMzNEY3NiOEpBaHJIVTFQb3BIa3g5bEVyMWJXcUthXzI4dEU2MkJrY2JSYXlTMFFjYlowOFBYYVZ6QXNIazFWaEs4M1F3cjZ1czduNjdiRHl0S1RVNTVHTHJPMGVWakJfQ3hHLWpGNmlyQ3lEQQ?oc=5",
-          "published": "2026-10-27T03:36:56-05:00",
-          "date": "2026-10-27",
-          "label": "Oct 27, 2026 3:36 AM CT",
-          "weekday": "Tue",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:4bf4ea04b95266d9",
-          "kind": "headline",
-          "lane": "news",
-          "source": "The Economic Times",
-          "sourceId": "headline",
-          "title": "Global Market: China, Hong Kong stocks slip as technology shares extend losses - The Economic Times",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQRGxYOVl4RWE4WEdDQnJFWS1WOUNDNlU1WnhRVFhLdDJDb2FSZnF3V2pSTVc4VlFzR2dkRjRTNUNLOVlYUWU0ckVNY2NXS0lNYnBnQzhkaHRzQXU1SEtTVC0tclNDdGZVRlJuUEE3RjlJOVh0WjNXYlR1TDVlTkdvZUs0RWZ0RkxrSGFSaFhJYV8wcmxzMWhmamhrTjlNdmszdXBSaWUtbk5VRWwwMG42RUhjTjFJbXFaNWtZLUZTUzdDMmVBdnRIejZoM1RYZUp1QjkwQ19CMXBIQ1lBRW1zbjgwR1RwWEZLZURKb0RGRkNiWFYw0gHuAUFVX3lxTE83aVotSy1YYTZGSjIyb3FsblRLTWhEV214aDdTQXNDUmZBTG43ODdjUUpxTlVJczdQVnFCbFVldXFaV1M1SnZ3X1BLSzIyVHB3eUtCYTF5WU9mRUVFTDN6OS1Ick1rS0hneHBFY0VIZUZacktEZTZYSlFzeWpkd0JRVlVEdndqVFo2RjJpOTlTbWFmVXNXeER0ZU1PSGtpcm92QnBPeWpZYnAweEFrLU00Z1JIY012WVJzaUJURnZjZF8tNjhwdVRBc1dHZ2N5UFZrQktUckNXZEhFRHppLVJLamlWZHFoR201cU1rTUE?oc=5",
-          "published": "2026-10-27T01:24:46-05:00",
-          "date": "2026-10-27",
-          "label": "Oct 27, 2026 1:24 AM CT",
-          "weekday": "Tue",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:577e20946e25579e",
-          "kind": "headline",
-          "lane": "news",
-          "source": "South China Morning Post",
-          "sourceId": "headline",
-          "title": "Can Hong Kong deliver in trying to build its yuan credentials? - South China Morning Post",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQaUhKaG1ZWEwxLW96M2RYcEUyaEtBRWtYamx0b1R1Vm9EWGI1X3JoSFJFX2ZoY1lCb0t2WGlPTGlUQTNhU2N3THhnSlE5SkVGcG51OWR4Y04tMzVPb1ZpeW53MVpLa1RpWFdCUWtqRE8yMjBubFJHdjhEcDJXTGw4TDI1SWpMdVduQUlGemxoQnlRVUxiSkNSamFQc1A2dlFrcXJrT1VEUGd4eEFid0FDYkZJYXFMY3VQV29COWRZTlRQVkHSAcMBQVVfeXFMUGlISmhtWVhMMS1vejNkWHBFMmhLQUVrWGpsdG9UdVZvRFhiNV9yaEhSRV9maGNZQm9LdlhpT0xpVEEzYVNjd0x4Z0pROUpFRnBudTlkeGNOLTM1T29WaXludzFaS2tUaVhXQlFrakRPMjIwbmxSR3Y4RHAyV0xsOEwyNUlqTHVXbkFJRnpsaEJ5UVVMYkpDUmphUHNQNnZRa3Fya09VRFBneHhBYndBQ2JGSWFxTGN1UFdvQjlkWU5UUFZB?oc=5",
-          "published": "2026-10-26T19:30:06-05:00",
-          "date": "2026-10-26",
-          "label": "Oct 26, 2026 7:30 PM CT",
-          "weekday": "Mon",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:5f794c903daada66",
-          "kind": "headline",
-          "lane": "news",
-          "source": "South China Morning Post",
-          "sourceId": "headline",
-          "title": "How Hong Kong’s yuan push is becoming a challenge to the US dollar - South China Morning Post",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNMElvTk4wR1RGRWdZdko0Q0ZDWm10Q19UZDdrdlFxNlpiUElnODJLMzM2eWNIR3ZVVHRnV0FYYWlDaHNWc2VZTVI1ZlJydS1tR21xVV9iTXVfSnJtUUdiU1ZsazRnQ3NfdXZ1N0pfaWNnTzRSV1NSM1JrOV9UazVmcXltc3l5SkZFWURlOXVOUDdBVmJEdjBRZ1VkeUZ0c01PZ1NEbHBKZUJCcXpfeExmTUg2M2l5MzIxYkRBOF9mM0xMNE3SAcMBQVVfeXFMUGlISmhtWVhMMS1vejNkWHBFMmhLQUVrWGpsdG9UdVZvRFhiNV9yaEhSRV9maGNZQm9LdlhpT0xpVEEzYVNjd0x4Z0pROUpFRnBudTlkeGNOLTM1T29WaXludzFaS2tUaVhXQlFrakRPMjIwbmxSR3Y4RHAyV0xsOEwyNUlqTHVXbkFJRnpsaEJ5UVVMYkpDUmphUHNQNnZRa3Fya09VRFBneHhBYndBQ2JGSWFxTGN1UFdvQjlkWU5UUFZB?oc=5",
-          "published": "2026-10-26T19:30:06-05:00",
-          "date": "2026-10-26",
-          "label": "Oct 26, 2026 7:30 PM CT",
-          "weekday": "Mon",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:231f1f3431974bcb",
-          "kind": "headline",
-          "lane": "news",
-          "source": "South China Morning Post",
-          "sourceId": "headline",
-          "title": "Opinion | A 5-year plan can’t make Hong Kong’s market. It can fix the plumbing - South China Morning Post",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQQ3V3Q19jUUFWNVF6U3ZkTmFFM2t2X080R2RpRXlUM2dfOUNVNEhWLTVWTlFvbHBDX3NCcDhqSG1SLXVlYnY3UjZaTkwtYm80N1NOLV9CWTdLUXlZQ0VDSkJRbmhUcnhwbjlDSjl0QXFCbXg5a2RZTTdMR1QzMm9rV3NpWXV4cDJIMndPWFk5dnpISW5JYTZCWG56eU95WHNQSURPOFJNYzZrSU51dDlYTU13dWQ3MTZCUkHSAboBQVVfeXFMTWttZEd5MnQxRXQ3OWsyVnVVeDEyajNVYWs2c3ZtWmRkQlpCazZpZFR6WWVEZU5sMW9XMlhWRGdUc293UW1DWkZDX1FiakpEdFMxUHF3S3l1eFF6SFFYV2VtUzdtY21wbVVqTEQtZGRSN1NLbDRkWUJ0ZlRRbE5ydEJjUl9WelFOUDlCREhlYTE0Z282WDlHdnpCU0xJeUpMTnVLQTVQRzgxdm5jei1lQjBVY05pc2t1QkdB?oc=5",
-          "published": "2026-10-26T16:30:06-05:00",
-          "date": "2026-10-26",
-          "label": "Oct 26, 2026 4:30 PM CT",
-          "weekday": "Mon",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:7a6270c522a1c18b",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Britannica",
-          "sourceId": "headline",
-          "title": "Hong Kong - Manufacturing, Trade, Economy - Britannica",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1HUklCQ2hGNnd2RWIycWtqT3BfZkwxMDZoeG9GR0ZxQXBMYUtSR3JDZmxjY1ZTRXR6MDFKS3NkcnFQM0V4bGwyMV9UWjRRR0o3TVR3RnpSaE10ang5WGJMSVQ3Q1VlZFE?oc=5",
-          "published": "2026-10-26T02:35:00-05:00",
-          "date": "2026-10-26",
-          "label": "Oct 26, 2026 2:35 AM CT",
-          "weekday": "Mon",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:69433a4dcf925ed6",
-          "kind": "headline",
-          "lane": "news",
-          "source": "BlackRock",
-          "sourceId": "headline",
-          "title": "Weekly market commentary - BlackRock",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQLWJDTjBBalYwVHVpc0VxV1BwRE1xeUt1RWlLQ1VJdnJQRXNnb3p6MnFNbjRBV0s0TnlldW4wSVIycFRQeVNISWJ3VV9wMWdjX1ZndE1Tc24tNzc0anNYWjl0SVBsRDhSa0dVTWlyVVYxX0w5b2JhTFB0Tm9Vb2FwYVZubTU1SVJlcy0zMEpXOEM4ZlhiSU1QazdVQVlldw?oc=5",
-          "published": "2026-10-26T02:00:00-05:00",
-          "date": "2026-10-26",
-          "label": "Oct 26, 2026 2:00 AM CT",
-          "weekday": "Mon",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:0a7d6e61e8dac936",
-          "kind": "headline",
-          "lane": "news",
-          "source": "chinadailyhk",
-          "sourceId": "headline",
-          "title": "What is Hong Kong’s future role in APEC? - chinadailyhk",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9qR0hhTUxNTk92Mlp4OW1QNUpnU3A5RTJ0U3g5Um9JZVk4RkVYVlBaZEo0N3NhTTAyMHpDRTFhYzU1VmhjbXBqQkxoN1RKM3ZPTWxfdUR3?oc=5",
-          "published": "2026-10-25T19:27:00-05:00",
-          "date": "2026-10-25",
-          "label": "Oct 25, 2026 7:27 PM CT",
-          "weekday": "Sun",
           "timeKnown": true,
           "tags": [
             "headline",
