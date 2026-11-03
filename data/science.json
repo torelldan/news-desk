@@ -1,6 +1,30 @@
 {
   "items": [
     {
+      "id": "paper:4049e3ef1764822e",
+      "kind": "paper",
+      "lane": "science",
+      "source": "Nature",
+      "sourceId": "paper",
+      "title": "Whence dragons?",
+      "guest": "",
+      "note": "",
+      "url": "https://www.nature.com/articles/d41586-026-03277-8",
+      "published": "2026-11-03T14:08:16-06:00",
+      "date": "2026-11-03",
+      "label": "Nov 3, 2026 2:08 PM CT",
+      "weekday": "Tue",
+      "timeKnown": true,
+      "tags": [
+        "science",
+        "biomedical",
+        "peer-reviewed"
+      ],
+      "field": "biomedical",
+      "review": "PEER-REVIEWED",
+      "severity": ""
+    },
+    {
       "id": "paper:7e1c661816d002d8",
       "kind": "paper",
       "lane": "science",
@@ -10,9 +34,9 @@
       "guest": "",
       "note": "",
       "url": "https://www.nature.com/articles/d41586-026-03562-6",
-      "published": "2026-11-03T08:03:47-06:00",
+      "published": "2026-11-03T14:08:16-06:00",
       "date": "2026-11-03",
-      "label": "Nov 3, 2026 8:03 AM CT",
+      "label": "Nov 3, 2026 2:08 PM CT",
       "weekday": "Tue",
       "timeKnown": true,
       "tags": [
@@ -34,9 +58,9 @@
       "guest": "",
       "note": "",
       "url": "https://www.nature.com/articles/d41586-026-03560-8",
-      "published": "2026-11-03T08:03:47-06:00",
+      "published": "2026-11-03T14:08:16-06:00",
       "date": "2026-11-03",
-      "label": "Nov 3, 2026 8:03 AM CT",
+      "label": "Nov 3, 2026 2:08 PM CT",
       "weekday": "Tue",
       "timeKnown": true,
       "tags": [
@@ -58,9 +82,9 @@
       "guest": "",
       "note": "",
       "url": "https://www.nature.com/articles/d41586-026-03559-1",
-      "published": "2026-11-03T08:03:47-06:00",
+      "published": "2026-11-03T14:08:16-06:00",
       "date": "2026-11-03",
-      "label": "Nov 3, 2026 8:03 AM CT",
+      "label": "Nov 3, 2026 2:08 PM CT",
       "weekday": "Tue",
       "timeKnown": true,
       "tags": [
@@ -73,27 +97,147 @@
       "severity": ""
     },
     {
-      "id": "paper:5b8c576456e1af94",
+      "id": "paper:f6e27f80f06c5dad",
       "kind": "paper",
       "lane": "science",
-      "source": "Nature",
+      "source": "IEEE Spectrum",
       "sourceId": "paper",
-      "title": "China should share the evidence behind animal-testing alternatives openly",
+      "title": "IEEE Computer Society Chapter Offers Webinars With Industry Experts",
       "guest": "",
-      "note": "",
-      "url": "https://www.nature.com/articles/d41586-026-03561-7",
-      "published": "2026-11-03T08:03:47-06:00",
+      "note": "To help engineers keep up with emerging technologies such as AI, cloud computing, and sustainable infrastructure, and learn how they can be applied in practice, the IEEE Computer Society ’s Central Indiana Chapter recently launched its Tech Talk Series. The live webinar series connects IEEE members, undergrad and graduate students, and engineering professionals from IEEE Region 4 with industry practitioners.",
+      "url": "https://spectrum.ieee.org/ieee-industry-experts-webinar",
+      "published": "2026-11-03T13:00:02-06:00",
       "date": "2026-11-03",
-      "label": "Nov 3, 2026 8:03 AM CT",
+      "label": "Nov 3, 2026 1:00 PM CT",
       "weekday": "Tue",
       "timeKnown": true,
       "tags": [
         "science",
-        "biomedical",
-        "peer-reviewed"
+        "technology",
+        "news"
       ],
-      "field": "biomedical",
-      "review": "PEER-REVIEWED",
+      "field": "technology",
+      "review": "NEWS",
+      "severity": ""
+    },
+    {
+      "id": "paper:a6cd779bfe41bf1a",
+      "kind": "paper",
+      "lane": "science",
+      "source": "NASA",
+      "sourceId": "paper",
+      "title": "Astronaut and Earth",
+      "guest": "",
+      "note": "CSA (Canadian Space Agency) astronaut Joshua Kutryk is pictured during the Oct. The International Space Station was soaring 267 miles above the South Atlantic Ocean at the time of this photograph.",
+      "url": "https://www.nasa.gov/image-article/astronaut-and-earth/",
+      "published": "2026-11-03T10:37:42-06:00",
+      "date": "2026-11-03",
+      "label": "Nov 3, 2026 10:37 AM CT",
+      "weekday": "Tue",
+      "timeKnown": true,
+      "tags": [
+        "science",
+        "propulsion",
+        "news"
+      ],
+      "field": "propulsion",
+      "review": "NEWS",
+      "severity": ""
+    },
+    {
+      "id": "paper:17b4c960ce029d5f",
+      "kind": "paper",
+      "lane": "science",
+      "source": "Phys.org physics",
+      "sourceId": "paper",
+      "title": "Physicists step closer to the 'Zeptoverse' after 42-year particle search",
+      "guest": "",
+      "note": "Physicists have found evidence of a particle decay so rare that it is expected to occur only around once in every 10 billion \"beauty\" particles. The result, from the upgraded LHCb experiment at CERN's Large Hadron Collider (LHC), follows a search spanning more than 40 years and brings physicists closer to exploring the \"Zeptoverse\"—an unexplored world that exists at distances of a billionth of a trillionth of a meter, or a \"zeptometer,\" where new particles and forces of nature may be hiding.",
+      "url": "https://phys.org/news/2026-11-physicists-closer-zeptoverse-year-particle.html",
+      "published": "2026-11-03T09:40:30-06:00",
+      "date": "2026-11-03",
+      "label": "Nov 3, 2026 9:40 AM CT",
+      "weekday": "Tue",
+      "timeKnown": true,
+      "tags": [
+        "science",
+        "physics",
+        "news"
+      ],
+      "field": "physics",
+      "review": "NEWS",
+      "severity": ""
+    },
+    {
+      "id": "paper:41aeefc110b57f52",
+      "kind": "paper",
+      "lane": "science",
+      "source": "NASA",
+      "sourceId": "paper",
+      "title": "TB 26-10 Printed Circuit Board Assembly Chip Resistor Body Cracking",
+      "guest": "",
+      "note": "Sills, Langley Research Center, joel.w.sills@nasa.gov. Download PDF here Chip resistors are widely used in NASA projects, yet cases of alumina substrate cracking during environmental testing are rare.",
+      "url": "https://www.nasa.gov/centers-and-facilities/nesc/tb-26-10-printed-circuit-board-assembly-chip-resistor-body-cracking/",
+      "published": "2026-11-03T09:35:14-06:00",
+      "date": "2026-11-03",
+      "label": "Nov 3, 2026 9:35 AM CT",
+      "weekday": "Tue",
+      "timeKnown": true,
+      "tags": [
+        "science",
+        "propulsion",
+        "news"
+      ],
+      "field": "propulsion",
+      "review": "NEWS",
+      "severity": ""
+    },
+    {
+      "id": "paper:a19ddb74fea46101",
+      "kind": "paper",
+      "lane": "science",
+      "source": "NASA",
+      "sourceId": "paper",
+      "title": "NASA Astronaut, STEM Creator Connect with Students for STEM Day",
+      "guest": "",
+      "note": "Students across the country will have the opportunity to connect directly with the International Space Station during a live, interactive in-flight call with NASA astronaut Anil Menon and Mark Rober STEM content creator and founder of ClassCrunchLabs Foundation.",
+      "url": "https://www.nasa.gov/learning-resources/nasa-astronaut-stem-creator-connect-with-students-for-stem-day/",
+      "published": "2026-11-03T09:15:50-06:00",
+      "date": "2026-11-03",
+      "label": "Nov 3, 2026 9:15 AM CT",
+      "weekday": "Tue",
+      "timeKnown": true,
+      "tags": [
+        "science",
+        "propulsion",
+        "news"
+      ],
+      "field": "propulsion",
+      "review": "NEWS",
+      "severity": ""
+    },
+    {
+      "id": "paper:4fdead80080931f3",
+      "kind": "paper",
+      "lane": "science",
+      "source": "Phys.org physics",
+      "sourceId": "paper",
+      "title": "Fingernail-sized chip untangles mixed light into clean beams",
+      "guest": "",
+      "note": "Stanford engineers and colleagues designed a chip that can take a muddled mixture of light from multiple lasers and output clean beams of light. It's the first time researchers have demonstrated a device that can take in mixed, or partially coherent, light and sort its photons into a clear set of separate beams.",
+      "url": "https://phys.org/news/2026-11-fingernail-sized-chip-untangles.html",
+      "published": "2026-11-03T08:20:12-06:00",
+      "date": "2026-11-03",
+      "label": "Nov 3, 2026 8:20 AM CT",
+      "weekday": "Tue",
+      "timeKnown": true,
+      "tags": [
+        "science",
+        "physics",
+        "news"
+      ],
+      "field": "physics",
+      "review": "NEWS",
       "severity": ""
     },
     {
@@ -241,30 +385,6 @@
       "severity": ""
     },
     {
-      "id": "paper:7681432399e1c42e",
-      "kind": "paper",
-      "lane": "science",
-      "source": "NASA",
-      "sourceId": "paper",
-      "title": "The Pacific’s Busy Storm Season",
-      "guest": "",
-      "note": "Super Typhoon In-fa developed an unusually large eye, and the remnants of Typhoon Champi transitioned into an extratropical storm that targeted Alaska.",
-      "url": "https://science.nasa.gov/earth/earth-observatory/the-pacifics-busy-storm-season/",
-      "published": "2026-11-02T23:01:00-06:00",
-      "date": "2026-11-02",
-      "label": "Nov 2, 2026 11:01 PM CT",
-      "weekday": "Mon",
-      "timeKnown": true,
-      "tags": [
-        "science",
-        "propulsion",
-        "news"
-      ],
-      "field": "propulsion",
-      "review": "NEWS",
-      "severity": ""
-    },
-    {
       "id": "paper:1804a33540e8de57",
       "kind": "paper",
       "lane": "science",
@@ -333,54 +453,6 @@
         "news"
       ],
       "field": "physics",
-      "review": "NEWS",
-      "severity": ""
-    },
-    {
-      "id": "paper:b0269b3b7d6760d6",
-      "kind": "paper",
-      "lane": "science",
-      "source": "NASA",
-      "sourceId": "paper",
-      "title": "Happy 65 Years: NASA’s Johnson Space Center Then and Now",
-      "guest": "",
-      "note": "Sixty-five years ago, a bold vision took root in Houston: a NASA center dedicated to human spaceflight. Since its founding, NASA’s Johnson Space Center has helped lead the nation’s human spaceflight program, supporting missions from Project Mercury through Artemis.",
-      "url": "https://www.nasa.gov/centers-and-facilities/johnson/happy-65-years-nasas-johnson-space-center-then-and-now/",
-      "published": "2026-11-02T15:35:59-06:00",
-      "date": "2026-11-02",
-      "label": "Nov 2, 2026 3:35 PM CT",
-      "weekday": "Mon",
-      "timeKnown": true,
-      "tags": [
-        "science",
-        "propulsion",
-        "news"
-      ],
-      "field": "propulsion",
-      "review": "NEWS",
-      "severity": ""
-    },
-    {
-      "id": "paper:0d204f4fd87990dd",
-      "kind": "paper",
-      "lane": "science",
-      "source": "NASA",
-      "sourceId": "paper",
-      "title": "TB 26-09 Measured Hammer-Tap Inputs",
-      "guest": "",
-      "note": "Sills, Langley Research Center, joel.w.sills@nasa.gov. Download the PDF version An instrumented hammer test does not require an idealized single half-sine waveform.",
-      "url": "https://www.nasa.gov/centers-and-facilities/nesc/tb-26-09-measured-hammer-tap-inputs/",
-      "published": "2026-11-02T14:47:41-06:00",
-      "date": "2026-11-02",
-      "label": "Nov 2, 2026 2:47 PM CT",
-      "weekday": "Mon",
-      "timeKnown": true,
-      "tags": [
-        "science",
-        "propulsion",
-        "news"
-      ],
-      "field": "propulsion",
       "review": "NEWS",
       "severity": ""
     },
@@ -745,30 +817,6 @@
       "severity": ""
     },
     {
-      "id": "paper:3df791738f9d5105",
-      "kind": "paper",
-      "lane": "science",
-      "source": "Phys.org physics",
-      "sourceId": "paper",
-      "title": "Single molecules could provide the building blocks for future quantum networks",
-      "guest": "",
-      "note": "Quantum computers rely on qubits as their units of information. To connect them into a larger network across long distances, they need to transmit quantum information using light.",
-      "url": "https://phys.org/news/2026-11-molecules-blocks-future-quantum-networks.html",
-      "published": "2026-11-02T11:00:05-06:00",
-      "date": "2026-11-02",
-      "label": "Nov 2, 2026 11:00 AM CT",
-      "weekday": "Mon",
-      "timeKnown": true,
-      "tags": [
-        "science",
-        "physics",
-        "news"
-      ],
-      "field": "physics",
-      "review": "NEWS",
-      "severity": ""
-    },
-    {
       "id": "paper:c05db37b48281de8",
       "kind": "paper",
       "lane": "science",
@@ -814,30 +862,6 @@
       ],
       "field": "propulsion",
       "review": "PREPRINT",
-      "severity": ""
-    },
-    {
-      "id": "paper:32d17afb25c7d603",
-      "kind": "paper",
-      "lane": "science",
-      "source": "Phys.org physics",
-      "sourceId": "paper",
-      "title": "Ultrathin kagome material opens a route to study unusual quantum states",
-      "guest": "",
-      "note": "How atoms are arranged inside materials can influence the behavior of electrons and the resulting electronic states. Kagome lattices, repeating arrangements of atoms forming triangles that share corners (with hexagonal spaces between them), have been linked with the emergence of unusual electronic states.",
-      "url": "https://phys.org/news/2026-10-ultrathin-kagome-material-route-unusual.html",
-      "published": "2026-11-02T07:00:01-06:00",
-      "date": "2026-11-02",
-      "label": "Nov 2, 2026 7:00 AM CT",
-      "weekday": "Mon",
-      "timeKnown": true,
-      "tags": [
-        "science",
-        "physics",
-        "news"
-      ],
-      "field": "physics",
-      "review": "NEWS",
       "severity": ""
     },
     {
@@ -1150,30 +1174,6 @@
       ],
       "field": "biomedical",
       "review": "PREPRINT",
-      "severity": ""
-    },
-    {
-      "id": "paper:caaa8eb05ec82344",
-      "kind": "paper",
-      "lane": "science",
-      "source": "IEEE Spectrum",
-      "sourceId": "paper",
-      "title": "Systems Thinking Is Vital in the Age of AI",
-      "guest": "",
-      "note": "Modern engineering projects increasingly combine human judgment with machine capability. An engineer can define a problem, then ask an artificial intelligence tool to search relevant research and technical standards, generate design options, test them in simulation, and compare the results.",
-      "url": "https://spectrum.ieee.org/systems-thinking-vital-in-ai",
-      "published": "2026-10-28T13:00:02-05:00",
-      "date": "2026-10-28",
-      "label": "Oct 28, 2026 1:00 PM CT",
-      "weekday": "Wed",
-      "timeKnown": true,
-      "tags": [
-        "science",
-        "technology",
-        "news"
-      ],
-      "field": "technology",
-      "review": "NEWS",
       "severity": ""
     },
     {
