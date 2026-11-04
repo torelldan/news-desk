@@ -28,14 +28,56 @@
             "2026-11-26",
             "2026-12-25"
           ],
-          "level": 7564.22,
-          "change": 22.82,
-          "changePct": 0.3,
+          "level": 7568.92,
+          "change": 27.52,
+          "changePct": 0.36,
           "asOf": "2026-11-03",
           "source": "https://finance.yahoo.com/quote/%5EGSPC"
         }
       ],
       "headlines": [
+        {
+          "id": "headline:0de3dde39de80f9e",
+          "kind": "headline",
+          "lane": "news",
+          "source": "ABC News - Breaking News, Latest News and Videos",
+          "sourceId": "headline",
+          "title": "Federal Reserve raises interest rates for the 1st time since 2023 - ABC News - Breaking News, Latest News and Videos",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOYktxZlJxRVNrdUZFRWViQjVMLUh3OGJwNGhrVFpJY2E5QTAyajNfcnFSb09rZUVkSnVMUHd4WkpsYktvZGczX05nRzVhSTdKNWtfU2hWb09IYnNQQ01tTlMwMV95YzJkbWVDMklwZ19XMC1RNmVsckpGS3FpNUpiRlUxZkVtNXk5NE5YRnpBSTI4eEhVOWxaUlBzZDlxb3p1ZVBFeHFR0gGrAUFVX3lxTFBrZzU3UXhjRlBBblFYNzJZZ3dINVFwMnpIOFQwRlJ1NmRTa3JNUGlkamJyS08wRjM5UlFuMkRJcHAtUEQxYjF3b2Yyc2E2V1hOOEhQRHRPckpidllEOHpLRG9VUTFxSUwyaE95SzNNZ0pkemQwQkNBYkZPbTBpN0ZMYTBWU25nT3FrUVNNal9Eb0lCNnJwZTVFUVVhM0dDRlMzQ1pQTF8xRTV6bw?oc=5",
+          "published": "2026-11-04T00:57:45-06:00",
+          "date": "2026-11-04",
+          "label": "Nov 4, 2026 12:57 AM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:0b815614adf1a0e0",
+          "kind": "headline",
+          "lane": "news",
+          "source": "El Cronista",
+          "sourceId": "headline",
+          "title": "Wall Street the Day After: Which Indicators to Watch Closely After the Midterms - El Cronista",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQM0tvTmw4V0VpVkJDQk1IVWl1WEMxUDB2eEJpV3BKSlktYTVwNG45aVBTUU5ObnV0eEVSNWhIVzFTdm1kMXZGbm4zLUJUb3V0Qm9nSHNpX0xsNVQ0RUpodDFkcU9NWmhWSHB6VFpJS2V6MzBaQ3ZoZkw5Q2EzUkVFd1dEUEFjcXpubnV0YlFCVllZdEtDbktJVUxCSm9oWjFqdC1IRHdpY3kzSnloN011RnAwNlhuUQ?oc=5",
+          "published": "2026-11-03T11:16:25-06:00",
+          "date": "2026-11-03",
+          "label": "Nov 3, 2026 11:16 AM CT",
+          "weekday": "Tue",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
         {
           "id": "headline:ebca6de923116481",
           "kind": "headline",
@@ -71,6 +113,27 @@
           "date": "2026-11-03",
           "label": "Nov 3, 2026 3:00 AM CT",
           "weekday": "Tue",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:8cba3d3e3e4504d2",
+          "kind": "headline",
+          "lane": "news",
+          "source": "ABC News - Breaking News, Latest News and Videos",
+          "sourceId": "headline",
+          "title": "Fed holds interest rates steady in 1st move since Iran war spiked oil prices - ABC News - Breaking News, Latest News and Videos",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOWVgwU0l2bjYwREJ2NE9WVC1ObnpJa3Qxa2syS0lmUXphVm8zTWpnYVJ5NXpFZmxWYUZlVXpmc3ZFQzk2ZnZlYjNSUHRPb3F1emZhVDdPNEMxak1mM2wzOEZtYnA5dklfUFlfOUdVRU5lSXNmTlhqMy1pUElaMjNBTEFJbV9IRHNkRGt1NHJKVDVFd1Za0gGaAUFVX3lxTE9IOWFDX2MzMVhjUXl2VE1oTGNTTlowMmxkMUZnNEQ1TzhKemJ3TmlSTElmdzVPQ3VmR2E3OGdNLXN2dVBHQ2xiLXl0WWJfdjBUQktuSnNwbTNQV3puQzBJTUVZS295S2lHYU9iQVpFd05FQkw4WmhmZ2EyU3dCUWt0bHNCUy1xX0pHME5ZbVBlZ1RXSkxnSVZ1TWc?oc=5",
+          "published": "2026-11-02T13:16:37-06:00",
+          "date": "2026-11-02",
+          "label": "Nov 2, 2026 1:16 PM CT",
+          "weekday": "Mon",
           "timeKnown": true,
           "tags": [
             "headline",
@@ -163,6 +226,27 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:e7fd25e0469cdcb9",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Carolina Coast Online",
+          "sourceId": "headline",
+          "title": "The U.S. economy is undergoing a structural shift - Carolina Coast Online",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQYm44RlBYd09oT0M3RzEzaDRXc3VJV19FV2RkSWNkM1ZJWHV5ZVlQemNqZUVTYkxvc1pzekxSeHZ3c1VpZkRrTGcxMTlXNVl4LWl6a0ktTkEtWks5RFJpYktIcXk0Ry1aVUQzS2kxb3FfUzJmaXp2N05zc2RCR21vSVNBUXN0THJUeXFydEVrVDB1UldYbXF3ZEZ3?oc=5",
+          "published": "2026-11-02T08:11:00-06:00",
+          "date": "2026-11-02",
+          "label": "Nov 2, 2026 8:11 AM CT",
+          "weekday": "Mon",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:dbeaa0cfa0cbc989",
           "kind": "headline",
           "lane": "news",
@@ -172,9 +256,9 @@
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNR2NrRDdoQ1MwS0paZFliV01BelV0MS1tQkNMSEdJYmYweWctanpzZU5hMllmVUtjQWR2cXBPSVhFeFluSFlMbi1ZVTg1ZS1TYzRMam81MFlRbWxockRRN2RpeEk2OGhpYWVXUVpsX3lvcUx4QUFERERGQVdkeVRndHJNeExJTU9DLS1GRW9GTW0?oc=5",
-          "published": "2026-11-02T10:53:05-06:00",
+          "published": "2026-11-02T02:00:00-06:00",
           "date": "2026-11-02",
-          "label": "Nov 2, 2026 10:53 AM CT",
+          "label": "Nov 2, 2026 2:00 AM CT",
           "weekday": "Mon",
           "timeKnown": true,
           "tags": [
@@ -709,6 +793,27 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:232f213c9ce92e7c",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Yahoo Finance",
+          "sourceId": "headline",
+          "title": "IMF says Federal Reserve is 'appropriately' keeping close eye on data - Yahoo Finance",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNRE05Y214SmpEbURJUXQwdlBZNjR3ei1DSHFlNmR0aHhGdTdWdU1aaFZhSWtqWjVOYnoyc3JSOW5zNVpfNEVWdzE3alJXNnJUaFg3b2IwZThxQlhlNkh1eWF0bWZRdXFPZld1RTNvNDJiRE4zRjJLcG9WdlBvT3UwZUpTYW9PMVgwSEx3bVlHNERieXJfbG1fT1Y2OWxTX3ZqOGV1NjZ3?oc=5",
+          "published": "2026-10-29T11:19:28-05:00",
+          "date": "2026-10-29",
+          "label": "Oct 29, 2026 11:19 AM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:314967a8692b1fe4",
           "kind": "headline",
           "lane": "news",
@@ -770,111 +875,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:e201b1857f6b421f",
-          "kind": "headline",
-          "lane": "news",
-          "source": "South China Morning Post",
-          "sourceId": "headline",
-          "title": "US economy grows 3.4% in 3Q, driven by consumers, AI investment - South China Morning Post",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNNDZCS2dLc3IzYVU2dURlZk1DODdyeUV1LUNnSTA0TExXVk9naW15TXdQZWlyNHUxekU3RHpCYWoyU0RJWHJKcHpDN2oxYWdNc1VDU0pHV2V1cngxSm1aQ2FLb1hpLUNmQUdJTDUtUjF5amZiS0gxQk9VTXZtTmZjeHZWWlE0eEhhZWpIQkZzenVVLVZXVTBZV2hnSXpZcUw0Um5VYjFyQVNSTUJuaFZ5ZEt4RzlWckFCQmZydW91S0s0RkVrRlRFOElzeldYNFVzVEktRtIB1AFBVV95cUxOYzg2QkswUXVUWFVnQVB5dmUtZlhkcHVSRF9FOF8yUzBWXy1FUkY3QVp5OWlvS0xibk4wUnRJbklqWWhobHhKdGFSQUxia19FMkxBQVBoTHdvUHBlZ3BVeVM4NVRuWDY4R2ZKczEyZWpaNy00ZzRmRGR3Z2dRZlV2bWhQcFVYVlBzYjQxMnN5cG9YNk5JT1ZRN0cwc1VsM0hRaVlOZHAwckNRcVdhNnBDRkpSSzhIenlNUV9sa2Rab2F2dUlSQmdrYUlmSWpjeDMyUk5MNA?oc=5",
-          "published": "2026-10-29T09:26:35-05:00",
-          "date": "2026-10-29",
-          "label": "Oct 29, 2026 9:26 AM CT",
-          "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:5f1f6951c23d4fd5",
-          "kind": "headline",
-          "lane": "news",
-          "source": "South China Morning Post",
-          "sourceId": "headline",
-          "title": "US economy grows 3.4% in 3Q, driven by consumers, AI investment - South China Morning Post",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOYzg2QkswUXVUWFVnQVB5dmUtZlhkcHVSRF9FOF8yUzBWXy1FUkY3QVp5OWlvS0xibk4wUnRJbklqWWhobHhKdGFSQUxia19FMkxBQVBoTHdvUHBlZ3BVeVM4NVRuWDY4R2ZKczEyZWpaNy00ZzRmRGR3Z2dRZlV2bWhQcFVYVlBzYjQxMnN5cG9YNk5JT1ZRN0cwc1VsM0hRaVlOZHAwckNRcVdhNnBDRkpSSzhIenlNUV9sa2Rab2F2dUlSQmdrYUlmSWpjeDMyUk5MNNIB1AFBVV95cUxOYzg2QkswUXVUWFVnQVB5dmUtZlhkcHVSRF9FOF8yUzBWXy1FUkY3QVp5OWlvS0xibk4wUnRJbklqWWhobHhKdGFSQUxia19FMkxBQVBoTHdvUHBlZ3BVeVM4NVRuWDY4R2ZKczEyZWpaNy00ZzRmRGR3Z2dRZlV2bWhQcFVYVlBzYjQxMnN5cG9YNk5JT1ZRN0cwc1VsM0hRaVlOZHAwckNRcVdhNnBDRkpSSzhIenlNUV9sa2Rab2F2dUlSQmdrYUlmSWpjeDMyUk5MNA?oc=5",
-          "published": "2026-10-29T09:26:35-05:00",
-          "date": "2026-10-29",
-          "label": "Oct 29, 2026 9:26 AM CT",
-          "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:ccfc50186df47a25",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Crypto News",
-          "sourceId": "headline",
-          "title": "Bitcoin price reclaims $80K as US GDP beats forecasts - Crypto News",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9VZHV4S21ZOWJjb2xhWHZSM1JzVThkNndfcXEwQUdQb2NMOGNmVUk3RTJhV1R1X1NpcU4zTkR1ZUdidVJfRUlvQWhFVnV0Sk9kdzlwSHBtM0pCNEVwck9rZ0dJUE52MlI1Y2J3TEwzOFZNWlI5c3lWcTM0bnk3QQ?oc=5",
-          "published": "2026-10-29T09:19:47-05:00",
-          "date": "2026-10-29",
-          "label": "Oct 29, 2026 9:19 AM CT",
-          "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:17be8ca2705b803f",
-          "kind": "headline",
-          "lane": "news",
-          "source": "WSJ",
-          "sourceId": "headline",
-          "title": "Federal Debt Hits 100% of GDP - WSJ",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5DV1RvZTQwdmNyaVBrQW00ZjBxTTJmYnItRGQwNkh4RHgxQTJlbXJOOWNjZFl0SmkyNkgzTGtjQXFwZGpkVXZQanRyZTl1TWgwSlhWTlZ4dV9Ndk5Ec1VvZmVNTUVqdzFvMEFJRlE2SXFtZlk?oc=5",
-          "published": "2026-10-29T09:00:17-05:00",
-          "date": "2026-10-29",
-          "label": "Oct 29, 2026 9:00 AM CT",
-          "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:21708cf4a3b1f376",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Mortgage Professional America",
-          "sourceId": "headline",
-          "title": "US economy surges in Q3, lifting mortgage market outlook - Mortgage Professional America",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQRlJSVkZibnA5cF9QUnZTLU5paEo2VGozeWM0TXVPTFZFNDNHR3pkLUh0TlBQZG1xZ2VFTThVUkxSV2MyUDkzQ0NBOGw0c3IwTHpRMkJ5dFlrM1E1V19qem9VUnhOdXFfUmlMX3JRSE93TTlEanVCT3dYR3JvU29ZdFN1bElrNG5FeTFYQndvNFRGUkFGRVB4bWFJZTZoeEluaF9Rc2E4eFNzYmhOZ1V4SzByWWVlelYtRWJ0TFJvTQ?oc=5",
-          "published": "2026-10-29T08:53:12-05:00",
-          "date": "2026-10-29",
-          "label": "Oct 29, 2026 8:53 AM CT",
-          "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ]
     },
@@ -894,9 +894,9 @@
             }
           ],
           "holidays": [],
-          "level": 35552.03,
-          "change": -249.07,
-          "changePct": -0.7,
+          "level": 35532.3,
+          "change": -268.8,
+          "changePct": -0.75,
           "asOf": "2026-11-03",
           "source": "https://finance.yahoo.com/quote/%5EGSPTSE"
         },
@@ -912,14 +912,77 @@
             }
           ],
           "holidays": [],
-          "level": 70428.77,
-          "change": 649.57,
-          "changePct": 0.93,
+          "level": 70184.33,
+          "change": 405.12,
+          "changePct": 0.58,
           "asOf": "2026-11-03",
           "source": "https://finance.yahoo.com/quote/%5EMXX"
         }
       ],
       "headlines": [
+        {
+          "id": "headline:718e55ad0b4556fe",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Penticton Herald",
+          "sourceId": "headline",
+          "title": "Fiscal and monetary policy are not at odds, Bank of Canada's Macklem tells MPs - Penticton Herald",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNTVZXeTM5Q1RxTHJQcFdIZFpyOHBIeGlWU1VvRUdOY2NCT1lmZkFlWHpGTkF4ejg2VEJRN3gzSVRmQ2F1RmtSSmF3enJxSzJRMldjMjRlNHNZWEF1c0F1UFMwbnFZb19HTEoyajB1WmJsWWpqYmxQcUNWVlVpSnlpTjUwZVAxWjI1UHBTZkQ3ajFnR2pFQmNscXNidzZDR0Fa?oc=5",
+          "published": "2026-11-03T13:30:53-06:00",
+          "date": "2026-11-03",
+          "label": "Nov 3, 2026 1:30 PM CT",
+          "weekday": "Tue",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:6461971e9e88711f",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Bloomberg.com",
+          "sourceId": "headline",
+          "title": "Bank of Canada Says Fiscal and Monetary Policy Aren’t at Odds - Bloomberg.com",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOcUMtQTJISmhvYVNoZTJWd2tCNXdaaEMwVUxyZml3Z0h4RXBNNEtEeUNKME5mZk9TZkdiYVFQZ3UyVThrZk1YLVpoTjhLZWZJZDdwVG8xMTZtak5sUDM0eC1CeW53aTNIQWhwN2ZJcUd3N1BVV2RHZTFHamJ4cC03bFk5V1J3cXBmV05Ud0s4Q3BnZkVCS0RKclpqX19zSnE0cmt2M0s1b29DYVRETjVSQldR?oc=5",
+          "published": "2026-11-03T13:03:58-06:00",
+          "date": "2026-11-03",
+          "label": "Nov 3, 2026 1:03 PM CT",
+          "weekday": "Tue",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:b17dfcf5eb38a1db",
+          "kind": "headline",
+          "lane": "news",
+          "source": "WSJ",
+          "sourceId": "headline",
+          "title": "Bank of Canada Gov. Macklem Pledges to Proceed Carefully on Further Rate Increases - WSJ",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQOXFIN1hXNGpRRHBPc2pNQU5qNnZUQkdZQV95NzhCcTR2anNDcERhLVBXbU93REhqZHdfU1ZjSnB3dU5wRHBsVmhWNlBJaHN6Tms3ZnJQenBCS1FTX3Q2ZVE5U0RRb2lwRE95YU5CbWtzRE9SSWVZeWpKaDdCTWxGdU0zR1pRaWduZGFUUGxERUkzUW82dEd4Y3k0WE5PMUt1RzlmNlFzR0ZuT1Vtd2lYSmdRZVpyS0k1YWxwUDB1TXlHN00?oc=5",
+          "published": "2026-11-03T12:38:23-06:00",
+          "date": "2026-11-03",
+          "label": "Nov 3, 2026 12:38 PM CT",
+          "weekday": "Tue",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
         {
           "id": "headline:1b6449911d5da8e5",
           "kind": "headline",
@@ -1425,12 +1488,12 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:bacd2d175eaab8f3",
+          "id": "headline:fa30cb971b0a2efe",
           "kind": "headline",
           "lane": "news",
-          "source": "Bloomberg",
+          "source": "Bloomberg.com",
           "sourceId": "headline",
-          "title": "Canada Economy Tracks 1.3% Third Quarter Annualized Growth - Bloomberg",
+          "title": "Canada Economy Tracks 1.3% Third Quarter Annualized Growth - Bloomberg.com",
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNYkFnQnJrUFNBQmxrV3NlOXEwT0JzVVhBOTRfVjc0QUJaLVhxbGFsUFlEVGVvNm1TYUhqV3g2djEtUi1jR19MaUlUa3JDdWZxUlUxak1sQ3k5dE50Q1Vsc0E0OU1peWx6NTBZQlRyMWhJMzdhVUswaWloZmVIRm8wTElhdTBjcUZLNTFFd0JaU0dya2RCU25pazdibTIwU211cXdoWFZWNWFMWVR0?oc=5",
@@ -1696,69 +1759,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:8722f9fa8dcc01d9",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Horizon Weekly",
-          "sourceId": "headline",
-          "title": "Bank of Canada raises key interest rate to 2.5% amid renewed inflation pressures - Horizon Weekly",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNcUFLWDRlbGZIYU9keGNjRzZBRW1LMzd0WXZhUktGQW9TWXQ0LXFOWGpxRVgyeWhoYmxTbjdzT2xqMy1CUXhVUWpMX1hjQ1lkZmZJRDhPcVRMOElob08xWnlKNlIwOW9La3pZeHlhNWc5Y1I4TzBJekhIR0JRUzlDR0ZlSHVMVGJvQWllX040YVBwUFJCNFRNc255eDdrTVRXS2doS0pvV2Z6V1Vi?oc=5",
-          "published": "2026-10-28T15:11:19-05:00",
-          "date": "2026-10-28",
-          "label": "Oct 28, 2026 3:11 PM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:522b4b8b89c37c5d",
-          "kind": "headline",
-          "lane": "news",
-          "source": "constructconnect.com",
-          "sourceId": "headline",
-          "title": "Bank of Canada delivers 1st hike in three years, raises key rate to 2.5% - constructconnect.com",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxONHh4ZEhsX180OGlXQ3pNa1hrR0RkNGZESW9LdE1saXpTUmVLekVoTUJ3RU4wX0RkTk5jMzA4MF9hQk1LVkVVZkJpOEFZdnlZWVBSeDNaWjdTQkxmTlIycnlPaGdfSGtOR1dkbldOekY2RWZTTG9RR3k1bnh0OUFaakg0TmxNSW9yRDNJa3F5TEhyQktManlWZmhYZzRpZ1NPMEVvODhkQms1M2JRSnFoYmNWb2J3TXhLMjA5YXp5cmY3T1dtSThCWG44Sk0?oc=5",
-          "published": "2026-10-28T15:10:35-05:00",
-          "date": "2026-10-28",
-          "label": "Oct 28, 2026 3:10 PM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:b6f545627e454a11",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Advisor.ca",
-          "sourceId": "headline",
-          "title": "Bank of Canada delivers 1st hike in three years - Advisor.ca",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQVHdTSEVpbVFFRFVDRmlUM3g5aHdWUUdzVkJiUnYzYS1tZ1JfU1ZQS1BSajE0QUxramZIckpwajlDRHEzQVJXS1dZaVdQYU1tX0Vla0x6UnZ2cjlkYzJRR1oydUhsZXpkeWpjaDFzTDRLbURpZXB4ZnJXYlQ4U05QaDBJdlRvLWxZQ2U3aDNtSQ?oc=5",
-          "published": "2026-10-28T15:06:31-05:00",
-          "date": "2026-10-28",
-          "label": "Oct 28, 2026 3:06 PM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ]
     },
@@ -1778,14 +1778,35 @@
             }
           ],
           "holidays": [],
-          "level": 165633.28,
-          "change": -2288.72,
-          "changePct": -1.36,
+          "level": 165529.0,
+          "change": -2393.0,
+          "changePct": -1.43,
           "asOf": "2026-11-03",
           "source": "https://finance.yahoo.com/quote/%5EBVSP"
         }
       ],
       "headlines": [
+        {
+          "id": "headline:2c6abdde099741c9",
+          "kind": "headline",
+          "lane": "news",
+          "source": "ad-hoc-news.de",
+          "sourceId": "headline",
+          "title": "Bovespa Closes at 165,569.36 Points as Petrobras and Vale Slide - ad-hoc-news.de",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPNjlvZWtJQ2dzbUpELWNjcHhYcXR2MlhDZFVLZnQxcnMzNERkbEZ5TU93OWJaX2NDRkVLY1FucTdDWEpoM0VPNmVIOTJ5a1pvcVdURWhpdHhtWXJaWjBPekQyLWVKTzROY2FZMk1uM2E0YkJFUmRTS3NnaFNqOE5aNWlLM3BNbUxvenIwNnMzelpXVDhHN0ZiVFNZN2VaU3plOTc3RHhKbDE3WUcyd0ZwR0luMHRBWnlqV28zbDNTS192ZGs?oc=5",
+          "published": "2026-11-03T15:54:20-06:00",
+          "date": "2026-11-03",
+          "label": "Nov 3, 2026 3:54 PM CT",
+          "weekday": "Tue",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
         {
           "id": "headline:c46c8941e3f126dc",
           "kind": "headline",
@@ -2415,27 +2436,6 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:b9c1455167463942",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Bloomberg.com",
-          "sourceId": "headline",
-          "title": "EM Stocks Fall Before Key Earnings, Brazil in Focus as Lula Wins - Bloomberg.com",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNSVE2akJ2V1E1aU91WFdEVWpINTdOSFVKNTFkLXUxR2dna001RU9sek10OTd3QU9nb0E3R1o2Z2tjUVNRaU94UTZqNlNUVXV1MElEU0pPTnhmMk95Ny0wbG11YXdJbjZoRmNFc3ladThialB4SGdJZUhJRWNiaDYxdW9TbXlIc1NuRW5tRWh3SmdmbnN1b2diem5IX29BUjZubXdCRTJudW1NdUgzM2dYRnowRmU?oc=5",
-          "published": "2026-10-26T15:45:04-05:00",
-          "date": "2026-10-26",
-          "label": "Oct 26, 2026 3:45 PM CT",
-          "weekday": "Mon",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
           "id": "headline:2339a70aba452fd3",
           "kind": "headline",
           "lane": "news",
@@ -2650,6 +2650,27 @@
         }
       ],
       "headlines": [
+        {
+          "id": "headline:6869ef7d2accaab0",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Investing.com",
+          "sourceId": "headline",
+          "title": "Russia stocks lower at close of trade; MOEX Russia Index down 0.35% - Investing.com",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNTmNvMW1kQXl5U1VSVmZ3ZU1KeFp5SDJtelVRaUN0d2V6U0luRVhjMGtZVHpubXdDS1ZxcENKMkFnRlJJSkhxeVhfcEtNSWNVR1NGdElCMnYzVVJRel80VWF0V3VESzM4MHY4eF9NUDZrY2xNTzZ4VFduS0tDbGZHc2dXcXJkQ0YxYVh5RnJqRjZBeEpoN2UwaWxza09pTXVmY1YzbnBmME11VHNFMEdRdUtSQlhidGtBaTdUbk1n?oc=5",
+          "published": "2026-11-03T15:35:42-06:00",
+          "date": "2026-11-03",
+          "label": "Nov 3, 2026 3:35 PM CT",
+          "weekday": "Tue",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
         {
           "id": "headline:3c28118dea7a4885",
           "kind": "headline",
@@ -2880,27 +2901,6 @@
           ]
         },
         {
-          "id": "headline:15360042c05ea045",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Investing.com",
-          "sourceId": "headline",
-          "title": "Russia stocks higher at close of trade; MOEX Russia Index up 1.09% - Investing.com",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPTUdiV0xDVng2Q2RNVTd4a3FSeTcxOE5pdFdBQnZGTmZuc0tVZ1ZfUVhRSUNibXgxbnFfcGd1clFTLW1JSFRIMWF4X2g1bGxvZVBQdWRSM3VHVjdvOFhMYW5BcGtKdkdqWWhMQmxZaXFEdFlpb00waVltQ0wxRzZuSk5fSkdHSGlvMWdsMFlUMV9yd2Vjc2JHUGtSNUZ4bG1RZFhVMUlOUzFVVTlGUVBNZGxsYTNiTmJxRV9rRQ?oc=5",
-          "published": "2026-10-26T16:23:13-05:00",
-          "date": "2026-10-26",
-          "label": "Oct 26, 2026 4:23 PM CT",
-          "weekday": "Mon",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
           "id": "headline:2a1b4d82ca1574fe",
           "kind": "headline",
           "lane": "news",
@@ -2932,6 +2932,27 @@
           "published": "2026-10-26T13:20:53-05:00",
           "date": "2026-10-26",
           "label": "Oct 26, 2026 1:20 PM CT",
+          "weekday": "Mon",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:15360042c05ea045",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Investing.com",
+          "sourceId": "headline",
+          "title": "Russia stocks higher at close of trade; MOEX Russia Index up 1.09% - Investing.com",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPTUdiV0xDVng2Q2RNVTd4a3FSeTcxOE5pdFdBQnZGTmZuc0tVZ1ZfUVhRSUNibXgxbnFfcGd1clFTLW1JSFRIMWF4X2g1bGxvZVBQdWRSM3VHVjdvOFhMYW5BcGtKdkdqWWhMQmxZaXFEdFlpb00waVltQ0wxRzZuSk5fSkdHSGlvMWdsMFlUMV9yd2Vjc2JHUGtSNUZ4bG1RZFhVMUlOUzFVVTlGUVBNZGxsYTNiTmJxRV9rRQ?oc=5",
+          "published": "2026-10-26T02:00:00-05:00",
+          "date": "2026-10-26",
+          "label": "Oct 26, 2026 2:00 AM CT",
           "weekday": "Mon",
           "timeKnown": true,
           "tags": [
@@ -3130,14 +3151,140 @@
             }
           ],
           "holidays": [],
-          "level": 3638.03,
-          "change": 39.01,
-          "changePct": 1.08,
-          "asOf": "2026-11-03",
+          "level": 3686.17,
+          "change": 78.07,
+          "changePct": 2.16,
+          "asOf": "2026-11-04",
           "source": "https://finance.yahoo.com/quote/000001.SS"
         }
       ],
       "headlines": [
+        {
+          "id": "headline:a0235a44e52a5567",
+          "kind": "headline",
+          "lane": "news",
+          "source": "The Astana Times",
+          "sourceId": "headline",
+          "title": "Kazakhstan and China Build a Digital Bridge for Data Economy - The Astana Times",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNcmU1WTVWNHVIc2tzR09XR21ILTg3WEYtT1dERFZZdlVsVXZmanBuNW1qUC1ldnBlR2M0MU5mRzQwdzZTMjgyQVFwbEt6Rjl5LTQ5THZmVDFGYkJBckZISHFFbEFDUFYxQldXVFJuTGptbFBwc2JHdVlPME5aVVBKSkpzTWNLWjg3UmJYQ3pETVNtcHZaenRIMQ?oc=5",
+          "published": "2026-11-04T04:59:53-06:00",
+          "date": "2026-11-04",
+          "label": "Nov 4, 2026 4:59 AM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:1075330381b68be2",
+          "kind": "headline",
+          "lane": "news",
+          "source": "South China Morning Post",
+          "sourceId": "headline",
+          "title": "At this year’s CIIE, EU firms test Beijing’s promise to open up its markets - South China Morning Post",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOSVZYWmFObDZpQ3dKcXhac1l4T093RkVjb0R0QTVvOFVqYVVKM0ROT2lUVTNua3BnSTNGZWJ5dHVHTGc3eDZOVldZX1o3VjBJZUVqd2pxeVBlUThCanY3ZkNia0l1Q1dLZVo4dFVEeVVYQVVZUW1jYUJSZWg5NHE2NElZYVZHcGNBeHJaQ2ZxQWdyanlPWlRNZThYNV9ZWEJNcFlLdTNObjEyZzlvdG8tTjVQZFJzRUtuLUVJS2s0cllvdVhxNkY2RW5yanFYdw?oc=5",
+          "published": "2026-11-04T03:00:10-06:00",
+          "date": "2026-11-04",
+          "label": "Nov 4, 2026 3:00 AM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:e950b386674f26ed",
+          "kind": "headline",
+          "lane": "news",
+          "source": "The Economic Times",
+          "sourceId": "headline",
+          "title": "China stocks struggle near one-year lows despite fresh government support measures - The Economic Times",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOZkVnc0FLZEpmNExBT0M0TmFWMUJFOE1TY2UzNjVJT29BM0wtRnFBbG50RHhobGhxZ0J3Z1VIQS01T29MWDI2U3p1VU5fM3J4QlA5aFBKUThhR29NVEtoR041WjhvYzhXVlI1TG5MZjVXMW9pQlNnV0ZuTVRuMTkyaU81cEVvcWlxUjNRUkNHQmhZUDg5WDR2bF9jQ1pqOFkyNVBER1B0VXNPWDRma1dYTk5VUHhlSUREcDRlNmZXemF0S2szamtpR3lqNlpqbXNvUmVZOXZkWVc1VHFlV1VJLTl4bkRKUkVlTDFfNlhpWXTSAfYBQVVfeXFMTjZmT3JQNlFkZHB4LTN4a1JxSEJCVEZYUU9GMk1jMDZZTHpaZkxjYlNXWkI5azNuTWYxbndsRGl3dE9Nc0FRSXo1UldOSC1yLTlvajduTlEwTUpQb19pZDdRMzJVaGlQd3pvaUNpNjZ5WXl2OHZQUzRVV3JXV21BMzN5S0RGSGJ6VWNycjVseFhXeVdHaWxneU5peU95TUlScUFmdk9Pck4wR0xWOEQzTTgwMTJ6MnRHTmdpcHBIMmFkcEhPRndHNlUtUENMVkJZY25za2lITy1QU0htdDdDdFJKVmp4MjY0cGtyVTFIeVRMdG9OVUp3?oc=5",
+          "published": "2026-11-04T00:09:35-06:00",
+          "date": "2026-11-04",
+          "label": "Nov 4, 2026 12:09 AM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:f5c56b59ccf3d5c6",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Bloomberg.com",
+          "sourceId": "headline",
+          "title": "China Steps in to Boost Stocks, Cool Off Yuan - Bloomberg.com",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNcXZZcm5qZDJaUl9uVG45eUJGaldNd3hzU3R2TFkycXZHeHRoY1pLaHc2Rko4cUplM2d5ZXZMMWtjSmZmdTQtRE1JVV95R2V2RGNRcFZKb3ZhVFY3bW9xSzNfaUwyTVVYSnl0NUhOWjNFYnFEY000Y214c2hmQWFKOC1YbWpEV0I3Smo2ak5aVWJ3cGtMcEp0R1lvcDdxdWs?oc=5",
+          "published": "2026-11-03T21:29:10-06:00",
+          "date": "2026-11-03",
+          "label": "Nov 3, 2026 9:29 PM CT",
+          "weekday": "Tue",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:2bdad4b664b12153",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Bloomberg.com",
+          "sourceId": "headline",
+          "title": "Wall Street Banks Are Finally Seeing Their China Bets Pay Off - Bloomberg.com",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQVmNqcmljbHgzNm5iWjctYkN0RUdNZGxXa1IteVhIUzFQRFBEWVlfOUI2cjdKY3NINHBwLUlqZDJpNFFaZ1d4WGFDSmhCdW1MNE5jVjI4MFU4aGxNUE41SUdXbkMySldmZ2tBejJfaktDTlh3elBuNEUxVExteU94SU5FR0hhbzY3bWVlb0lpVnFYWGNrNmVzeFZhR005MTAtNFQ1UENwU0NFd1J0UGhVdVVBVUEyWmJLT1E?oc=5",
+          "published": "2026-11-03T16:00:25-06:00",
+          "date": "2026-11-03",
+          "label": "Nov 3, 2026 4:00 PM CT",
+          "weekday": "Tue",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:a2c47289801865a3",
+          "kind": "headline",
+          "lane": "news",
+          "source": "KuCoin",
+          "sourceId": "headline",
+          "title": "China's IPO Freeze May Spill Over to US Markets - KuCoin",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNMERLWHVMTUtfYnRHVHdSQ3NXcS01S2JwbmoyREVIQ2ZRUXdkeWtQTGkyNWlpMzVleXgtMVNsV0FMSjV3UjdFZUE4cnVEclRVMUw4c1I3TS10SUtIVC1MdXBuYVdYWHJ5UHh2QnAza3U5M1ZjVUR2eVlQNm9lOVZnOG8ycW1GOGlC?oc=5",
+          "published": "2026-11-03T15:23:11-06:00",
+          "date": "2026-11-03",
+          "label": "Nov 3, 2026 3:23 PM CT",
+          "weekday": "Tue",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
         {
           "id": "headline:710c2f4d38cefbdb",
           "kind": "headline",
@@ -3151,27 +3298,6 @@
           "published": "2026-11-03T09:50:00-06:00",
           "date": "2026-11-03",
           "label": "Nov 3, 2026 9:50 AM CT",
-          "weekday": "Tue",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:6d1cd9f0ba10bad0",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Bloomberg",
-          "sourceId": "headline",
-          "title": "China Steps in to Boost Stocks, Cool Off Yuan - Bloomberg",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNcXZZcm5qZDJaUl9uVG45eUJGaldNd3hzU3R2TFkycXZHeHRoY1pLaHc2Rko4cUplM2d5ZXZMMWtjSmZmdTQtRE1JVV95R2V2RGNRcFZKb3ZhVFY3bW9xSzNfaUwyTVVYSnl0NUhOWjNFYnFEY000Y214c2hmQWFKOC1YbWpEV0I3Smo2ak5aVWJ3cGtMcEp0R1lvcDdxdWs?oc=5",
-          "published": "2026-11-03T06:29:06-06:00",
-          "date": "2026-11-03",
-          "label": "Nov 3, 2026 6:29 AM CT",
           "weekday": "Tue",
           "timeKnown": true,
           "tags": [
@@ -3736,7 +3862,7 @@
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQc2VZQllld21ldGpFSnQ5dUVWTThtd1g5cXpLay1aRWQtRGlFVG92bjZCZGhMS1l3cFJxVDV5OW5JMmsxYnBlUFlzRWttMFpyRDZ3dHhsOTg5R2ljZWJkUmFMVDJZeFlLX3FFVXVKRjZHVGNxaklYUkdZSFdxWXcyQ1hfeHRxQ3ZpU3BV?oc=5",
-          "published": "2026-10-30T00:05:00-05:00",
+          "published": "2026-10-30T00:05:20-05:00",
           "date": "2026-10-30",
           "label": "Oct 30, 2026 12:05 AM CT",
           "weekday": "Fri",
@@ -3872,111 +3998,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:6ef7bbccbdf0391f",
-          "kind": "headline",
-          "lane": "news",
-          "source": "The Economist",
-          "sourceId": "headline",
-          "title": "China’s stock markets are the great global exception - The Economist",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPUHp6ajdhVDZUMl85TS1mb2FwRThEUTBZOUVmc3dhdUJid1NyaGlHNXI2TDQwcWliOW0zWXFBS0NlM1BIYmpCZlNHeFBlNnBaaGZIWjBpNkt5WU5ndmhvWkxBUzd3SWFpUnFBVkJwemlvUWptT3VVS2IwakFrWVA1dDMyaWgyMWUwbEdqWGM4bndMcWlaeElkZFFqTzRiUG5qUGpibjhRN0RhYnh0ZWFV?oc=5",
-          "published": "2026-10-28T14:48:19-05:00",
-          "date": "2026-10-28",
-          "label": "Oct 28, 2026 2:48 PM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:a801451801f4e10a",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Yahoo Finance",
-          "sourceId": "headline",
-          "title": "Investors Who Piled Into China’s AI Boom Just Watched About $480 Billion Vanish in Under Four Months. Are America’s AI Bulls Next? - Yahoo Finance",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNWHhhS014Y2VNaThmTmFXRE9fS1ZFQVhaakVLbTRSdUlWYVkzaW1OX2xRbEU3WnI2Z0dWZnVyYURrVkNxaDByTWRBMUZPU01xaDhtMGhRd05pS244dGN2QnZsdmJVdjh4YlNPWHJNSnVJdzRrV3h1S0t5TXNGNnBsR2M4c1liWlNnczROYW5rOVlHRnVINkV2MjZ3?oc=5",
-          "published": "2026-10-28T12:15:02-05:00",
-          "date": "2026-10-28",
-          "label": "Oct 28, 2026 12:15 PM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:38875db8fbfe8d4f",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Seoul Economic Daily",
-          "sourceId": "headline",
-          "title": "China's CXMT Joins Shanghai Composite Three Months After Listing - Seoul Economic Daily",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNbXlzTW5TQmJWci1iSDM2My1JdjVCaWx1eE9ia29zc19FZHZkcktKbHZoM1h3WEpvV3BiaVd5YlVwMHdWSXNvOUxHb3R4UE1TRm84ZlFIWVppa1h2SlFxYnZUOXBjLVQteTFObzBGVHRaM2RuSk01ajVyV3JMYmdBVGNGcTd0SnowR09TOENEQmJPeTJWX29hQzlkRDg0emJacVViMUZ3?oc=5",
-          "published": "2026-10-28T07:30:13-05:00",
-          "date": "2026-10-28",
-          "label": "Oct 28, 2026 7:30 AM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:be33a6ec609b9032",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Financial Times",
-          "sourceId": "headline",
-          "title": "China rushes to shore up markets as AI trade sours - Financial Times",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNSnVPSDFLZ1NVWE1fVVJTTkxTTXJOWTFYd2RjQTlnTUFMbTFSODdBX3Z2V2RQWkNGeDNobEVadzhRejdYcWNXcjNWOXdPTVU0SHhyaGdFSnhFcTdkT0hiTW1Lejg2ZHkzdG1FSDdEMldNRXFrdzhEVXpCdmJSajBPNkJ2Q1A?oc=5",
-          "published": "2026-10-28T05:21:56-05:00",
-          "date": "2026-10-28",
-          "label": "Oct 28, 2026 5:21 AM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:b6ba8f4bba944ad4",
-          "kind": "headline",
-          "lane": "news",
-          "source": "South China Morning Post",
-          "sourceId": "headline",
-          "title": "Massive state buying can’t reverse China’s stock slide, analysts warn - South China Morning Post",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPdVBFVXJrWFBKYXF4S3YtNFgzeWRESzFYSjF1SndnaHRPbm5HVUtJd1FZSl9ST0huVW1leGtRbDJ1TlBKYVM5UEJnOW51RHN5OVRSQmkxazgxTWV2V2ZRcGkzaVdFRFlhZGJ6d3UwX1pFNGFaWk1rbWhETkZXX3RxczkxQ3A4LURCUmVzSUxhU2M3VG1OUFhXWGo1cFlMbTRTeHhCQWdqMzRaaEdwemJoMWdoNkhTWEM5WGdRWExOZFJ1RE5zUnM4TFlFb9IBywFBVV95cUxPdVBFVXJrWFBKYXF4S3YtNFgzeWRESzFYSjF1SndnaHRPbm5HVUtJd1FZSl9ST0huVW1leGtRbDJ1TlBKYVM5UEJnOW51RHN5OVRSQmkxazgxTWV2V2ZRcGkzaVdFRFlhZGJ6d3UwX1pFNGFaWk1rbWhETkZXX3RxczkxQ3A4LURCUmVzSUxhU2M3VG1OUFhXWGo1cFlMbTRTeHhCQWdqMzRaaEdwemJoMWdoNkhTWEM5WGdRWExOZFJ1RE5zUnM4TFlFbw?oc=5",
-          "published": "2026-10-28T01:00:06-05:00",
-          "date": "2026-10-28",
-          "label": "Oct 28, 2026 1:00 AM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ]
     },
@@ -3996,10 +4017,10 @@
             }
           ],
           "holidays": [],
-          "level": 6144.56,
-          "change": -31.5,
-          "changePct": -0.51,
-          "asOf": "2026-11-03",
+          "level": 6252.71,
+          "change": 108.15,
+          "changePct": 1.76,
+          "asOf": "2026-11-04",
           "source": "https://finance.yahoo.com/quote/%5ESTOXX50E"
         }
       ],
@@ -4866,10 +4887,10 @@
             }
           ],
           "holidays": [],
-          "level": 63081.86,
-          "change": -208.25,
-          "changePct": -0.33,
-          "asOf": "2026-11-02",
+          "level": 62188.63,
+          "change": -893.23,
+          "changePct": -1.42,
+          "asOf": "2026-11-04",
           "source": "https://finance.yahoo.com/quote/%5EN225"
         },
         {
@@ -4888,10 +4909,10 @@
             }
           ],
           "holidays": [],
-          "level": 23393.32,
-          "change": 98.9,
-          "changePct": 0.42,
-          "asOf": "2026-11-03",
+          "level": 23919.5,
+          "change": 393.53,
+          "changePct": 1.67,
+          "asOf": "2026-11-04",
           "source": "https://finance.yahoo.com/quote/%5EHSI"
         },
         {
@@ -4906,14 +4927,77 @@
             }
           ],
           "holidays": [],
-          "level": 75692.78,
-          "change": 1233.25,
-          "changePct": 1.66,
-          "asOf": "2026-11-03",
+          "level": 77301.4,
+          "change": 383.55,
+          "changePct": 0.5,
+          "asOf": "2026-11-04",
           "source": "https://finance.yahoo.com/quote/%5EBSESN"
         }
       ],
       "headlines": [
+        {
+          "id": "headline:99b2e3ea785766a6",
+          "kind": "headline",
+          "lane": "news",
+          "source": "South China Morning Post",
+          "sourceId": "headline",
+          "title": "Yachts, jewels and jets: Hong Kong’s luxury expo connects brands with customers - South China Morning Post",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPSFVqc2F5TG8yLS1lREpUbkJvZl9PbW1ORW14bGNRRzRhZnRtZ3d4NDU4Rl84d2RPZjN3RjFCV1J1cWZJeEpZcXhtTG5neWNxYnZyUEdCMWk2REQ2alVibUcwcW44MGxfNjdobl9VRHA2cTdfbVFqR2RWQlZ4aGE2UkgxUUt3NGNUZHdCU2tzS01qODlEX0J6MURaSFdvMFFsQTJraW9HTVZxWUpTSUJHZjhseGFSZUdoTmRMek05dFJCRW9YRHNjMmdIUE5FeWdDeFZIdGtrX0F3aE1ESGfSAd4BQVVfeXFMT0tRTXFHZWRmdHAtYzZnU2lmdnZmdDdlOV9wMXNudUxwdDY5OVdYWVFMLWdZYnR0QjNBWlNaLV9mcEFlY2VTRWtwbjU4RUdYVWhjclhrb1JRMkd6ZVNNVFM4UXA0clFzMGZ4ZmQ4LWVKYkZ5emZKZXZ0UFlHcm05UHFmSEphLVkyV3Rva1FfdU9pblBEY0I5WXlvcGVycUo1MjRCY1ZOazZxQnRSbjlaamViNWRBYmFDUEFoeDFOLVdVZzRHS2tMUzVZU0hUOFlMTlppMFJnM0h1Uk9PQkZB?oc=5",
+          "published": "2026-11-04T04:31:31-06:00",
+          "date": "2026-11-04",
+          "label": "Nov 4, 2026 4:31 AM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:b4fcd552aa8f0d65",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Bloomberg.com",
+          "sourceId": "headline",
+          "title": "Hong Kong Deal Boom Slows With Most IPOs Abandoned Since 2008 - Bloomberg.com",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNMWJCTGR0R0kwc1hsYjVSOHNHZUtmYWpEZE50Ry04TUtsb2t0ZjduYmFuQjdQZ2NnMTZlYnhRdG40a200NHFoQ2V6cGg2V2dKZElXMXhNOFlFOEp1NWFWTjQtR0lfSnVDaG9Salg2OVNmSEpKbUJCWGdNc0tKYjJrSF9FVGVoc2tTU1ZyTEJsNUc0VkI3Nmp4TnZxTUpYbGw3OEsySDBQMWJwY1lXYVh6b1JR?oc=5",
+          "published": "2026-11-03T17:00:00-06:00",
+          "date": "2026-11-03",
+          "label": "Nov 3, 2026 5:00 PM CT",
+          "weekday": "Tue",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:d7a90c4ca574a5ee",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Investing.com Australia",
+          "sourceId": "headline",
+          "title": "Hong Kong economy grows 5.2% in third quarter By Investing.com - Investing.com Australia",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQNlU4TFY0UzBoSVBjUU55RVc2QXAxRFRsekc2Q01zUkM4a2x0T2IzRl91M0ZlMTR0am00eEpDZ1JCdEktVzFjalFXbWJISkQzNDdoYkdRaTZEM2FjMUFQbXBMMzFIS0hNWHlVV1NLTGlJTV80MWRXdTlkY1Z2c25ZSURUS0R6T19CcU9qZGtZS3pMOW5fZnNZajFVdEg5SXM4aE1oNGFSYw?oc=5",
+          "published": "2026-11-03T15:56:48-06:00",
+          "date": "2026-11-03",
+          "label": "Nov 3, 2026 3:56 PM CT",
+          "weekday": "Tue",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
         {
           "id": "headline:6cf504f3da8d3d6e",
           "kind": "headline",
@@ -5104,6 +5188,27 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:19d80a80e821db44",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Yahoo Finance",
+          "sourceId": "headline",
+          "title": "Hong Kong Q3 GDP expands by 5.2% year-on-year, outlook positive - Yahoo Finance",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQYk5CVHRsSkdOMkNkcThldEJJam9zb2RLTHBEdnFOQ1hZRGxHand0WldCQXFkOWNnaDFCVU90ME9rYmt2bUg3YjZjODlRT1RzQzhOaEJtSTdMY0ZlRm9YQ3RLQUxZZkFkSjN6OHNRTjUzclZQb2hQak1GMXdFNGczMU1YVjNGdnowWldSa2lB?oc=5",
+          "published": "2026-11-03T03:15:30-06:00",
+          "date": "2026-11-03",
+          "label": "Nov 3, 2026 3:15 AM CT",
+          "weekday": "Tue",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:b51ab502b71a938f",
           "kind": "headline",
           "lane": "news",
@@ -5113,9 +5218,9 @@
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPM3BzWGhkYlFic3Y1aXZVS3ZxelpkUnZuUENVb29DRzVVMmZFNFFsQ1lyRVRRdjhrMzFQUjlRSVJHbHA0eUJLSTRGZm51cTVOak0tcEZPSHduMEMzdmlRaFpBeHFfMERieDNJUGstXzd3a05QWnZ0NjUwRTd0UnJEQkhsbkVpRmJkOU9Ka1BMWnd6WW9NOEZ0YW9abWtqbDZNZDhQNE9rV3l6aUk4SWRHT3ZKNVlsYko3Y2dscw?oc=5",
-          "published": "2026-11-03T03:06:48-06:00",
+          "published": "2026-11-03T03:15:07-06:00",
           "date": "2026-11-03",
-          "label": "Nov 3, 2026 3:06 AM CT",
+          "label": "Nov 3, 2026 3:15 AM CT",
           "weekday": "Tue",
           "timeKnown": true,
           "tags": [
@@ -5251,12 +5356,12 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:2d42abaef2382e1c",
+          "id": "headline:5e5f7f2b034769b1",
           "kind": "headline",
           "lane": "news",
-          "source": "Bloomberg",
+          "source": "Bloomberg.com",
           "sourceId": "headline",
-          "title": "China’s He Says Will Support Free, Open Economy in Hong Kong - Bloomberg",
+          "title": "China’s He Says Will Support Free, Open Economy in Hong Kong - Bloomberg.com",
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNMFBqYTdVYlVZX2lKSFU3LWVLMzM5TmV2ckFsVFlob0Qzai1zVmN5SzJ2dkJuT0dLZGVwRVgxOXNoaTBENGhYQTJqcm5Pb2hKcjFPSFg2a1prZGMzRXNTYlNxV0FMaHVuM29MeDBpWFdaTzB5ZUhrNGFBRllzYXlwOW1CLV9DVHdmNmRwVG9QVV9xbWhsZk5ORzV4N0lZVFpBREE3NXJNOHNnUHpWR2dr?oc=5",
@@ -5663,90 +5768,6 @@
           "date": "2026-10-30",
           "label": "Oct 30, 2026 2:00 AM CT",
           "weekday": "Fri",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:f41fe77d4284824a",
-          "kind": "headline",
-          "lane": "news",
-          "source": "South China Morning Post",
-          "sourceId": "headline",
-          "title": "As AI transforms global markets, Cyberport Venture & Capital Forum 2026 brings together the investors and innovators shaping what's next - South China Morning Post",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxOVlllQ3REVll5eHhLRS1YRjRUaDYybENTUlR1aGYzclF4dzJxekVrOTE3VjVkdUNobUNYUTV6OFR1a2o0Z0RJOFprczRwZ3VpUll1ZjRFbW5YZ1JKTS1yal83QlY1c3BacWRORXVlZzBuZy1fYmFBS0dKelprVWZPdDQtNjVhOXltQ2o1TnpRQTZfby1FMlpBTzhHZHE4OGhIdlNvS0VxazVBMl9NanY0OHVtWHo1Qk5sTWRGQVhBRk12RXdKa0tuaXVLRU0xTEpNTVVTQkZoN0FqemZ6OXpDeWZkeHVVcFQwVFlIUTJuNUZXNnc0M1BGZ3NReDZSQ0hwQnRPa1AzYTdoX3pUckpERXduc3BkM3h3dE5Pei1GOV9TX2c?oc=5",
-          "published": "2026-10-29T20:20:06-05:00",
-          "date": "2026-10-29",
-          "label": "Oct 29, 2026 8:20 PM CT",
-          "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:bb4a11a6acedf6ba",
-          "kind": "headline",
-          "lane": "news",
-          "source": "South China Morning Post",
-          "sourceId": "headline",
-          "title": "As AI transforms global markets, Cyberport Venture & Capital Forum 2026 brings together the investors and innovators shaping what's next - South China Morning Post",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMi3gJBVV95cUxOOFBtbzU5NjQ1ZWtuNzhkeE11dnN0Y2JSekE3ZVlhTVp6SXhYYlF6bk1KdDIzUDV1N3AyQmExRkpCRmVIT2dsdjJmZHZyaFEyMmpVTHc2UkhhZ3JRQUJVSlJZRWNYdnB1QnJHZDNwUUtCdDMxYklxY3lTOTVTT3ZJVG5pTHRHR1pycHJxNUw5WUFlaDV5WDdITmdDMkJiNXYyaVdBaG5IckF5WHFFSmxfaS00dUxNb1JUQ3pra2V3SGo4YTNlTkwwcHlxYWJJbV9kQ0pzVUhZMXRaajVjT0xHSWdQLUlDc2QzQzJRbGV4RGFaWWVCMi1selNmRHhTTFhwYVF4cGtuUnNGU3RxTkFPR1BpY2xZTkszU1Nxdzh1X1hYckJoUE5XNGNhcGIzbkxjY3dQSTZoRUc4eHhaU3J6bjJiUl9OYXZZM1FWcjMzUW5uU2NES3B6X29xbFd6dw?oc=5",
-          "published": "2026-10-29T20:20:06-05:00",
-          "date": "2026-10-29",
-          "label": "Oct 29, 2026 8:20 PM CT",
-          "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:bbe2074674f98463",
-          "kind": "headline",
-          "lane": "news",
-          "source": "South China Morning Post",
-          "sourceId": "headline",
-          "title": "Traders await Hong Kong’s marquee financial summit: a good omen for stocks? - South China Morning Post",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOY1dmMmxtTWNULWh3bHN2anJmN1pzMkRPU2tiV1l6S0ktUnpWWkpWbDJ3UWFXVzF6b3FMUERlN0VQcHdHclY4NFFjUHI2bmdrWnpmMDF3WUphX3hoNE9uMmI1U0RXUEV4NGdUdTYtX3JIbFlJd1VGb3ZTLWVYdDZKbVo2TG1qc3BXQTVZZ05pS1JZUmJkRGZ6bVlHbFpZcm9jMm9kWWFMeWZMd1FXc05nRGw4ZTk1eUdwUmMtRUdOeUlXOVo0Z1HSAcYBQVVfeXFMTzhCTHZvRDRvZk4xWnNfVWJzOVRvRW5NbjdUSVdlWlVhNUpfbVA4MXJGWmhUdnZYc2JNdEZmVDlzTGdUZXM1clVfSG41U2F4Q0M4bFE2NUVhNk9jNjE2Tkl1Y3lGMUFSUk1hTXFhaHNoeEtJZk9uaUNSODhabzJBRnBtOWhBRTMxWnViUUNrSWFNV3VNNXFiQnFjMGZVSlRPT294Y0ZvUEhhMVRMRXJ1dTMxamVqdFhBYmdqczhxcTZDZ0ExcFJn?oc=5",
-          "published": "2026-10-29T20:00:21-05:00",
-          "date": "2026-10-29",
-          "label": "Oct 29, 2026 8:00 PM CT",
-          "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:e4e754551bcac2d8",
-          "kind": "headline",
-          "lane": "news",
-          "source": "South China Morning Post",
-          "sourceId": "headline",
-          "title": "Traders await Hong Kong’s marquee financial summit: a good omen for stocks? - South China Morning Post",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOY1dmMmxtTWNULWh3bHN2anJmN1pzMkRPU2tiV1l6S0ktUnpWWkpWbDJ3UWFXVzF6b3FMUERlN0VQcHdHclY4NFFjUHI2bmdrWnpmMDF3WUphX3hoNE9uMmI1U0RXUEV4NGdUdTYtX3JIbFlJd1VGb3ZTLWVYdDZKbVo2TG1qc3BXQTVZZ05pS1JZUmJkRGZ6bVlHbFpZcm9jMm9kWWFMeWZMd1FXc05nRGw4ZTk1eUdwUmMtRUdOeUlXOVo0Z1E?oc=5",
-          "published": "2026-10-29T20:00:21-05:00",
-          "date": "2026-10-29",
-          "label": "Oct 29, 2026 8:00 PM CT",
-          "weekday": "Thu",
           "timeKnown": true,
           "tags": [
             "headline",
