@@ -1,0 +1,677 @@
+{
+  "days": [
+    {
+      "date": "2026-11-04",
+      "label": "Nov 4, 2026 1:56 PM CT",
+      "threats": [
+        {
+          "id": "quake:baf8745573686e7c",
+          "title": "M6.4 southeast of Easter Island",
+          "severity": "ACTION",
+          "kind": "quake"
+        },
+        {
+          "id": "quake:de68330bae9edd43",
+          "title": "M6.2 43 km ESE of Port-Olry, Vanuatu",
+          "severity": "ACTION",
+          "kind": "quake"
+        },
+        {
+          "id": "quake:e37d9bfcf16206ec",
+          "title": "M6.0 165 km NW of Port-Olry, Vanuatu",
+          "severity": "ACTION",
+          "kind": "quake"
+        },
+        {
+          "id": "quake:4dece1e3250efb44",
+          "title": "M6.0 58 km SSE of Shima, Japan",
+          "severity": "ACTION",
+          "kind": "quake"
+        },
+        {
+          "id": "quake:bac50c9c06fe91a0",
+          "title": "M5.8 110 km ENE of Barcelona, Philippines",
+          "severity": "ALERT",
+          "kind": "quake"
+        },
+        {
+          "id": "quake:53d19b6824ba0713",
+          "title": "M5.7 82 km NE of Kiunga, Papua New Guinea",
+          "severity": "ALERT",
+          "kind": "quake"
+        },
+        {
+          "id": "quake:6856cc6a54a1c5f1",
+          "title": "M5.7 271 km WSW of Tual, Indonesia",
+          "severity": "ALERT",
+          "kind": "quake"
+        },
+        {
+          "id": "quake:22517429854347e2",
+          "title": "M5.4 24 km NNW of Rioblanco, Colombia",
+          "severity": "STANDBY",
+          "kind": "quake"
+        },
+        {
+          "id": "quake:fc251099d19c9f7f",
+          "title": "M5.4 203 km NW of Port-Olry, Vanuatu",
+          "severity": "STANDBY",
+          "kind": "quake"
+        },
+        {
+          "id": "quake:f0cc87f76734acd4",
+          "title": "M5.4 114 km ENE of Barcelona, Philippines",
+          "severity": "STANDBY",
+          "kind": "quake"
+        },
+        {
+          "id": "quake:bddbc306977e933a",
+          "title": "M5.4 South Sandwich Islands region",
+          "severity": "STANDBY",
+          "kind": "quake"
+        },
+        {
+          "id": "quake:37343ce04e97747d",
+          "title": "M5.4 113 km ENE of Barcelona, Philippines",
+          "severity": "STANDBY",
+          "kind": "quake"
+        },
+        {
+          "id": "quake:e560ca742b1d7b7c",
+          "title": "M5.4 109 km ENE of Luganville, Vanuatu",
+          "severity": "STANDBY",
+          "kind": "quake"
+        },
+        {
+          "id": "quake:c763a0f6d7146eae",
+          "title": "M5.3 81 km SSE of Palekastro, Greece",
+          "severity": "STANDBY",
+          "kind": "quake"
+        },
+        {
+          "id": "quake:23d2ceaca7bdcf59",
+          "title": "M5.3 161 km WNW of Tobelo, Indonesia",
+          "severity": "STANDBY",
+          "kind": "quake"
+        },
+        {
+          "id": "quake:899e47ec1d539e2e",
+          "title": "M5.2 91 km ESE of Kyzyl-Eshme, Kyrgyzstan",
+          "severity": "STANDBY",
+          "kind": "quake"
+        },
+        {
+          "id": "quake:2f6a659d6dff0a35",
+          "title": "M5.2 Mid-Indian Ridge",
+          "severity": "STANDBY",
+          "kind": "quake"
+        },
+        {
+          "id": "quake:0038a733615b2276",
+          "title": "M5.2 Volcano Islands, Japan region",
+          "severity": "STANDBY",
+          "kind": "quake"
+        },
+        {
+          "id": "quake:b4a2f5ff9d0e9460",
+          "title": "M5.2 200 km NW of Port-Olry, Vanuatu",
+          "severity": "STANDBY",
+          "kind": "quake"
+        },
+        {
+          "id": "quake:d5f5d7499a278dfa",
+          "title": "M5.2 4 km E of La Miel, Panama",
+          "severity": "STANDBY",
+          "kind": "quake"
+        },
+        {
+          "id": "quake:11a51d452b15a46d",
+          "title": "M5.2 Reykjanes Ridge",
+          "severity": "STANDBY",
+          "kind": "quake"
+        },
+        {
+          "id": "quake:851ebc0d8ec77017",
+          "title": "M5.1 50 km WSW of Huarmey, Peru",
+          "severity": "STANDBY",
+          "kind": "quake"
+        },
+        {
+          "id": "quake:7260938bf5805bf9",
+          "title": "M5.1 19 km WNW of Tomohon, Indonesia",
+          "severity": "STANDBY",
+          "kind": "quake"
+        },
+        {
+          "id": "quake:774ffa8224d52879",
+          "title": "M5.1 Kermadec Islands region",
+          "severity": "STANDBY",
+          "kind": "quake"
+        },
+        {
+          "id": "quake:5c1b61b32aaebb77",
+          "title": "M5.1 Banda Sea",
+          "severity": "STANDBY",
+          "kind": "quake"
+        },
+        {
+          "id": "quake:62b79b551473166b",
+          "title": "M5.1 South Sandwich Islands region",
+          "severity": "STANDBY",
+          "kind": "quake"
+        },
+        {
+          "id": "quake:89144307107bd45c",
+          "title": "M5.1 201 km NW of Port-Olry, Vanuatu",
+          "severity": "STANDBY",
+          "kind": "quake"
+        },
+        {
+          "id": "quake:ea36162e63b1eb5e",
+          "title": "M5.1 Balleny Islands region",
+          "severity": "STANDBY",
+          "kind": "quake"
+        },
+        {
+          "id": "quake:0b82058b7239309a",
+          "title": "M5.1 97 km NNE of Finschhafen, Papua New Guinea",
+          "severity": "STANDBY",
+          "kind": "quake"
+        },
+        {
+          "id": "quake:1ed504653342ebe7",
+          "title": "M5.1 218 km NNW of Bamboo Flat, India",
+          "severity": "STANDBY",
+          "kind": "quake"
+        },
+        {
+          "id": "storm:6351f1367051f576",
+          "title": "Atlantic Tropical Weather Outlook",
+          "severity": "ACTION",
+          "kind": "storm"
+        },
+        {
+          "id": "storm:e618ef23b48c73ee",
+          "title": "There are no tropical cyclones at this time.",
+          "severity": "ACTION",
+          "kind": "storm"
+        },
+        {
+          "id": "storm:ec5f60db7bdde678",
+          "title": "Eastern North Pacific Tropical Weather Outlook",
+          "severity": "ACTION",
+          "kind": "storm"
+        },
+        {
+          "id": "storm:e618ef23b48c73ee",
+          "title": "There are no tropical cyclones at this time.",
+          "severity": "ACTION",
+          "kind": "storm"
+        },
+        {
+          "id": "storm:6351f1367051f576",
+          "title": "Atlantic Tropical Weather Outlook",
+          "severity": "ACTION",
+          "kind": "storm"
+        },
+        {
+          "id": "storm:fd4c6f97b257d4ad",
+          "title": "Eastern Pacific Tropical Weather Outlook",
+          "severity": "ACTION",
+          "kind": "storm"
+        },
+        {
+          "id": "storm:77a16df7c04a1c9e",
+          "title": "Central Pacific Tropical Weather Outlook",
+          "severity": "ACTION",
+          "kind": "storm"
+        },
+        {
+          "id": "nws:be7229333290be5d",
+          "title": "Wind Advisory",
+          "severity": "ALERT",
+          "kind": "nws"
+        },
+        {
+          "id": "relief:0109da81b6fc36e7",
+          "title": "ReliefWeb disasters",
+          "severity": "STANDBY",
+          "kind": "relief"
+        },
+        {
+          "id": "who:53dcad2ca08ee68e",
+          "title": "New WHO technical package to help countries improve health data for COVID-19 response and beyond",
+          "severity": "ALERT",
+          "kind": "who"
+        },
+        {
+          "id": "who:34e06283c9e6424f",
+          "title": "COVID-19 disrupting mental health services in most countries, WHO survey",
+          "severity": "ALERT",
+          "kind": "who"
+        },
+        {
+          "id": "who:96ed914230f7e2c2",
+          "title": "Global partnership to make available 120 million affordable, quality COVID-19 rapid tests for low- and middle-income countries",
+          "severity": "ALERT",
+          "kind": "who"
+        },
+        {
+          "id": "who:af23d8d888512d6c",
+          "title": "Managing the COVID-19 infodemic: Promoting healthy behaviours and mitigating the harm from misinformation and disinformation",
+          "severity": "ALERT",
+          "kind": "who"
+        },
+        {
+          "id": "who:d4b1b93168f99a56",
+          "title": "WHO’s three messages for UNGA75",
+          "severity": "ALERT",
+          "kind": "who"
+        },
+        {
+          "id": "who:5fac872a6e87d32c",
+          "title": "COVID-19 could reverse decades of progress toward eliminating preventable child deaths, agencies warn",
+          "severity": "ALERT",
+          "kind": "who"
+        },
+        {
+          "id": "headline:e690bd89fc9d54af",
+          "title": "Another child dies of measles as CDC reportedly holds up health alert - Ars Technica",
+          "severity": "ACTION",
+          "kind": "cdc"
+        },
+        {
+          "id": "cdc:12c7ca9ea1a41c99",
+          "title": "CDC Health Alert Network notices",
+          "severity": "STANDBY",
+          "kind": "cdc"
+        },
+        {
+          "id": "headline:03859e503e8592bb",
+          "title": "The Military AI Industry’s Involvement in Armed Conflict: Implications Under International Humanitarian Law - Analysis - Eurasia Review",
+          "severity": "ALERT",
+          "kind": "conflict"
+        },
+        {
+          "id": "headline:33ab8eef7527ac23",
+          "title": "Armed conflicts: Judith Suminwa outlines measures to protect women affected by conflict - ACP | Agence Congolaise de Presse",
+          "severity": "ALERT",
+          "kind": "conflict"
+        },
+        {
+          "id": "headline:2df553f32bfedc9b",
+          "title": "'2025 saw 25 state-based armed conflicts': Indian Navy chief flags dangers of growing acceptance for wars - Firstpost",
+          "severity": "ALERT",
+          "kind": "conflict"
+        },
+        {
+          "id": "neo:9934e838c1539fdc",
+          "title": "Close approach 2019 XF2",
+          "severity": "CRITICAL",
+          "kind": "neo"
+        },
+        {
+          "id": "neo:1095427f35282423",
+          "title": "Close approach 2026 QQ8",
+          "severity": "CRITICAL",
+          "kind": "neo"
+        },
+        {
+          "id": "neo:d545dfda650a0803",
+          "title": "Close approach 2010 VQ",
+          "severity": "ACTION",
+          "kind": "neo"
+        },
+        {
+          "id": "neo:c40f68639c269424",
+          "title": "Close approach 2026 VJ",
+          "severity": "ACTION",
+          "kind": "neo"
+        },
+        {
+          "id": "neo:dbc237db66be6c4b",
+          "title": "Close approach 2026 UG4",
+          "severity": "ACTION",
+          "kind": "neo"
+        },
+        {
+          "id": "neo:0d13b3b6bfed84a2",
+          "title": "Close approach 2025 XN6",
+          "severity": "ACTION",
+          "kind": "neo"
+        },
+        {
+          "id": "sentry:513532e0e0ea6ef9",
+          "title": "Sentry object 2011 TO",
+          "severity": "ALERT",
+          "kind": "sentry"
+        },
+        {
+          "id": "sentry:2dc5c86a057f704e",
+          "title": "Sentry object 2012 BA102",
+          "severity": "ALERT",
+          "kind": "sentry"
+        },
+        {
+          "id": "sentry:d8dd27e8fcda181e",
+          "title": "Sentry object 2014 HN197",
+          "severity": "ALERT",
+          "kind": "sentry"
+        },
+        {
+          "id": "clock:bulletin",
+          "title": "Doomsday Clock",
+          "severity": "STANDBY",
+          "kind": "clock"
+        }
+      ],
+      "trends": [],
+      "triggers": [
+        "gold-3",
+        "silver-5"
+      ],
+      "outlooks": [
+        {
+          "id": "quake:baf8745573686e7c",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ACTION"
+        },
+        {
+          "id": "quake:de68330bae9edd43",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ACTION"
+        },
+        {
+          "id": "quake:e37d9bfcf16206ec",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ACTION"
+        },
+        {
+          "id": "quake:4dece1e3250efb44",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ACTION"
+        },
+        {
+          "id": "quake:bac50c9c06fe91a0",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "quake:53d19b6824ba0713",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "quake:6856cc6a54a1c5f1",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "quake:22517429854347e2",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:fc251099d19c9f7f",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:f0cc87f76734acd4",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:bddbc306977e933a",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:37343ce04e97747d",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:e560ca742b1d7b7c",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:c763a0f6d7146eae",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:23d2ceaca7bdcf59",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:899e47ec1d539e2e",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:2f6a659d6dff0a35",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:0038a733615b2276",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:b4a2f5ff9d0e9460",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:d5f5d7499a278dfa",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:11a51d452b15a46d",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:851ebc0d8ec77017",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:7260938bf5805bf9",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:774ffa8224d52879",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:5c1b61b32aaebb77",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:62b79b551473166b",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:89144307107bd45c",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:ea36162e63b1eb5e",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:0b82058b7239309a",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:1ed504653342ebe7",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "storm:6351f1367051f576",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ACTION"
+        },
+        {
+          "id": "storm:e618ef23b48c73ee",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ACTION"
+        },
+        {
+          "id": "storm:ec5f60db7bdde678",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ACTION"
+        },
+        {
+          "id": "storm:e618ef23b48c73ee",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ACTION"
+        },
+        {
+          "id": "storm:6351f1367051f576",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ACTION"
+        },
+        {
+          "id": "storm:fd4c6f97b257d4ad",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ACTION"
+        },
+        {
+          "id": "storm:77a16df7c04a1c9e",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ACTION"
+        },
+        {
+          "id": "nws:be7229333290be5d",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "relief:0109da81b6fc36e7",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "who:53dcad2ca08ee68e",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "who:34e06283c9e6424f",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "who:96ed914230f7e2c2",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "who:af23d8d888512d6c",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "who:d4b1b93168f99a56",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "who:5fac872a6e87d32c",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:e690bd89fc9d54af",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ACTION"
+        },
+        {
+          "id": "cdc:12c7ca9ea1a41c99",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:03859e503e8592bb",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:33ab8eef7527ac23",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:2df553f32bfedc9b",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "neo:9934e838c1539fdc",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "CRITICAL"
+        },
+        {
+          "id": "neo:1095427f35282423",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "CRITICAL"
+        },
+        {
+          "id": "neo:d545dfda650a0803",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ACTION"
+        },
+        {
+          "id": "neo:c40f68639c269424",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ACTION"
+        },
+        {
+          "id": "neo:dbc237db66be6c4b",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ACTION"
+        },
+        {
+          "id": "neo:0d13b3b6bfed84a2",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ACTION"
+        },
+        {
+          "id": "sentry:513532e0e0ea6ef9",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "sentry:2dc5c86a057f704e",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "sentry:d8dd27e8fcda181e",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "clock:bulletin",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        }
+      ]
+    }
+  ]
+}

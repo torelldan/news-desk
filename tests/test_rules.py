@@ -116,7 +116,9 @@ def test_page_hash_ignores_clocks():
 def test_x_paths_never_include_dms():
     assert d.assert_public_x_path("/2/users/by") == "/2/users/by"
     assert d.assert_public_x_path("/2/users/99/tweets") == "/2/users/99/tweets"
-    for blocked in ("/2/dm_events", "/2/dm_conversations", "/1.1/direct_messages/events/list.json", "/2/users/9/dm"):
+    assert d.assert_public_x_path("/2/trends/by/woeid/23424977") == "/2/trends/by/woeid/23424977"
+    assert d.assert_public_x_path("/2/tweets/search/recent") == "/2/tweets/search/recent"
+    for blocked in ("/2/dm_events", "/2/dm_conversations", "/1.1/direct_messages/events/list.json", "/2/users/9/dm", "/2/users/personalized_trends"):
         try:
             d.assert_public_x_path(blocked)
         except RuntimeError:
@@ -154,52 +156,53 @@ def test_bearer_and_x_errors():
     assert len(urls) == len(set(urls))
 
 
-def test_carota_fallback_after_403():
+def test_carota_reads_site_and_keeps_cached_titles():
     import urllib.error
     from datetime import datetime
     from zoneinfo import ZoneInfo
     import fetch
     calls = []
-    rss = b"""<?xml version="1.0"?><rss version="2.0"><channel>
-      <title>The Wealth Regime</title>
-      <link>https://carotawealth.substack.com</link>
-      <item>
-        <title>Inflation note</title>
-        <link>https://carotawealth.substack.com/p/inflation-note</link>
-        <pubDate>Fri, 02 Oct 2026 16:54:37 GMT</pubDate>
-        <description>The government revised how inflation is measured and the grocery store did not follow that revision.</description>
-      </item>
-    </channel></rss>"""
+    sitemap = b"""<?xml version="1.0"?><urlset>
+      <url><loc>https://carotawealth.com/research</loc></url>
+    </urlset>"""
+    page = """<html><body>
+      <h2 class="sec-title">Market <em>Overview</em></h2>
+      <p class="sec-sub">Cross-asset view spanning U.S. indices, hard assets, and forex in one live dashboard for the desk.</p>
+      <h2 class="sec-title">The Inflation Number Changed. Your Cost of Living Didn't.</h2>
+      <p class="sec-sub">This site section repeats a cached essay title and should collapse to one row.</p>
+    </body></html>""".encode()
 
-    def fake_curl(url, timeout=45, headers=None, user_agent=None):
-        calls.append(("curl", url))
-        if url == "https://carotawealth.substack.com/feed":
-            raise urllib.error.URLError("SSL: SSLV3_ALERT_HANDSHAKE_FAILURE")
-        if url.endswith("/feed.xml"):
-            return rss, url, 200
-        raise urllib.error.HTTPError(url, 403, "Forbidden", hdrs=None, fp=None)
+    def fake_get(url, timeout=45, headers=None, user_agent=None):
+        calls.append(url)
+        if url.endswith("sitemap.xml"):
+            return sitemap, url, 200
+        if url.rstrip("/").endswith("/research"):
+            return page, "https://carotawealth.com/research", 200
+        raise urllib.error.HTTPError(url, 404, "Not Found", hdrs=None, fp=None)
 
-    def fake_urllib(url, timeout=45, headers=None, user_agent=None):
-        calls.append(("urllib", url))
-        raise urllib.error.HTTPError(url, 403, "Forbidden", hdrs=None, fp=None)
-
-    real_curl, real_get, real_which = fetch.curl_bytes, fetch.get_bytes, fetch.shutil.which
-    fetch.curl_bytes = fake_curl
-    fetch.get_bytes = fake_urllib
-    fetch.shutil.which = lambda name: "/usr/bin/curl" if name == "curl" else real_which(name)
+    cached = [{
+        "id": "carota:old", "kind": "substack", "lane": "substack", "sourceId": "carota",
+        "source": "Carota Wealth", "title": "The Inflation Number Changed. Your Cost of Living Didn't.",
+        "guest": "", "note": "Cached official essay.", "url": "https://carotawealth.substack.com/p/the-inflation-number-changed-your",
+        "published": "2026-10-02T11:54:37-05:00", "date": "2026-10-02", "label": "Oct 2, 2026 11:54 AM CT",
+        "weekday": "Fri", "timeKnown": True, "tags": ["substack", "carota"],
+    }]
+    real = fetch.get_bytes
+    fetch.get_bytes = fake_get
     try:
-        spec = {
-            "id": "carota", "name": "Carota Wealth", "feed": "https://carotawealth.substack.com/feed",
-            "skipTitle": [], "rejectChannel": [], "_retain": 120,
-        }
-        items, home, channel = fetch.fetch_carota(spec, datetime.now(ZoneInfo("America/Chicago")))
+        spec = {"id": "carota", "name": "Carota Wealth", "_retain": 120}
+        items, home, channel = fetch.fetch_carota(spec, datetime(2026, 10, 28, 12, tzinfo=ZoneInfo("America/Chicago")), cached)
     finally:
-        fetch.curl_bytes, fetch.get_bytes, fetch.shutil.which = real_curl, real_get, real_which
-    assert calls[0] == ("curl", "https://carotawealth.substack.com/feed")
-    assert ("curl", "https://carotawealth.substack.com/feed.xml") in calls
-    assert len(items) == 1
-    assert channel == "The Wealth Regime"
-    assert home == "https://carotawealth.substack.com"
+        fetch.get_bytes = real
+    assert all("substack.com" not in url for url in calls)
+    titles = [item["title"] for item in items]
+    assert titles.count("The Inflation Number Changed. Your Cost of Living Didn't.") == 1
+    kept = [item for item in items if item["title"].startswith("The Inflation")][0]
+    assert kept["date"] == "2026-10-02"
+    assert "/p/" in kept["url"]
+    assert any(item["title"] == "Market Overview" and item["url"].endswith("#market-overview") for item in items)
+    assert home == "https://carotawealth.com/research"
+    assert channel == "Carota Wealth"
 
 
 def test_x_millis_posts_are_not_dropped():
@@ -235,6 +238,94 @@ def test_urls_and_ids():
     assert d.make_id("jre", "https://example.com/a") != d.make_id("lex", "https://example.com/a")
 
 
+def test_trend_filter_and_confidence():
+    import citizen
+    kept = citizen.filter_trends([
+        {"trend_name": "Hurricane in the Gulf", "tweet_count": 12000},
+        {"trend_name": "Taylor Swift", "tweet_count": 900000},
+        {"trend_name": "gold inflation", "tweet_count": 4000},
+    ], "US")
+    names = {row["name"] for row in kept}
+    assert "Hurricane in the Gulf" in names
+    assert "Taylor Swift" not in names
+    assert "gold inflation" in names
+    x_only = citizen.confidence_for({"lane": "x", "kind": "trend"})
+    assert x_only["confidence"] == "rumor"
+    confirmed = citizen.confidence_for({"lane": "x", "kind": "trend"}, extra_domains=2)
+    assert confirmed["confidence"] != "confirmed"
+    official = citizen.confidence_for({"lane": "official", "kind": "quake"}, extra_domains=1)
+    assert official["confidence"] == "confirmed"
+    line = citizen.so_what({"kind": "quake", "severity": "ACTION"})
+    assert line.startswith("Money:")
+    assert "Action:" in line
+    quiet = citizen.so_what({"kind": "episode", "severity": "STANDBY", "lane": "podcast"})
+    assert "no action needed" in quiet
+
+
+def test_triggers_outlook_and_impact():
+    import citizen
+    threats = [{
+        "id": "storm-1",
+        "kind": "storm",
+        "title": "Hurricane moving into the Gulf",
+        "note": "Tropical storm in the Gulf",
+        "url": "https://www.nhc.noaa.gov/",
+        "severity": "ALERT",
+        "date": "2026-11-01",
+    }]
+    assets = {"series": [{
+        "id": "gold",
+        "name": "Gold",
+        "changePct": 3.4,
+        "source": "https://finance.yahoo.com/quote/GC=F",
+        "points": [
+            {"date": "2026-10-30", "price": 100},
+            {"date": "2026-10-31", "price": 101},
+            {"date": "2026-11-01", "price": 102},
+            {"date": "2026-11-02", "price": 104},
+            {"date": "2026-11-04", "price": 103},
+        ],
+    }]}
+    boilerplate = [{
+        "id": "outlook",
+        "kind": "storm",
+        "title": "Atlantic Tropical Weather Outlook",
+        "note": "For the North Atlantic...Caribbean Sea and the Gulf of America: A non-tropical low in the central Atlantic.",
+        "url": "https://www.nhc.noaa.gov/",
+        "severity": "ALERT",
+        "date": "2026-11-04",
+    }]
+    quiet = citizen.evaluate_triggers(boilerplate, {"series": []}, {"items": []})
+    assert "gulf-storm" not in {row["id"] for row in quiet["items"]}
+    fired = citizen.evaluate_triggers(threats, assets, {"items": []})
+    ids = {row["id"] for row in fired["items"]}
+    assert "gulf-storm" in ids
+    assert "gold-3" in ids
+    assert threats[0]["severity"] == "ACTION"
+    assert fired["checklist"] == ["fuel", "water", "cash", "meds"]
+    history = {"days": [{"date": "2026-10-31", "threats": [{"id": "storm-1", "severity": "STANDBY"}]}]}
+    citizen.apply_outlook(threats, history, "2026-11-01")
+    assert threats[0]["arrowDay"] == "↑"
+    window = citizen.event_window(assets["series"][0]["points"], "2026-11-01")
+    assert window["m1"] == 1.0
+    assert window["p1"] == round((104 / 101 - 1) * 100, 2)
+    report = citizen.impact_report(threats, assets)
+    assert report["events"] and report["events"][0]["moves"][0]["p1"] == window["p1"]
+    doc = citizen.trends_from_search([{"category": "earthquake", "query": "earthquake", "tweets": [{"id": "10", "text": "quake"}], "resultCount": 4}])
+    assert doc["mode"] == "recent-search"
+    assert "not available" in doc["note"]
+    citizen.annotate_trends(doc, [])
+    assert doc["items"][0]["confidence"] == "rumor"
+    brief = citizen.morning_brief(threats, doc, fired, assets, {"items": []})
+    assert "Gulf" in brief or "Hurricane" in brief
+    assert "trigger" in brief.lower()
+    stored = citizen.record_history({"days": []}, "2026-11-01", threats, doc, fired, "Nov 1")
+    later = citizen.record_history(stored, "2026-11-08", [{"id": "storm-1", "title": "Hurricane", "severity": "CRITICAL", "kind": "storm"}], doc, fired, "Nov 8")
+    look = citizen.weekly_lookback(later, "2026-11-08")
+    assert look["escalated"]
+    assert any(call["verdict"] == "right" for call in look["calls"]) or look["escalated"]
+
+
 if __name__ == "__main__":
     test_x_created_at_with_milliseconds()
     test_ct_conversion()
@@ -247,8 +338,10 @@ if __name__ == "__main__":
     test_page_hash_ignores_clocks()
     test_x_paths_never_include_dms()
     test_bearer_and_x_errors()
-    test_carota_fallback_after_403()
+    test_carota_reads_site_and_keeps_cached_titles()
     test_x_millis_posts_are_not_dropped()
     test_board_helpers()
     test_urls_and_ids()
+    test_trend_filter_and_confidence()
+    test_triggers_outlook_and_impact()
     print("ok")

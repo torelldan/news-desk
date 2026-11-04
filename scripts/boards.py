@@ -230,7 +230,7 @@ def _yahoo(symbol: str, range_: str = "1mo") -> dict | None:
         "change": change,
         "changePct": pct,
         "asOf": as_of,
-        "points": points[-30:],
+        "points": points[-120:],
         "source": f"https://finance.yahoo.com/quote/{quoted}",
     }
 
@@ -646,9 +646,9 @@ def fetch_assets(now: datetime) -> dict:
     for spec in ASSETS:
         quote = None
         if spec["kind"] == "yahoo":
-            quote = _yahoo(spec["symbol"], "1mo")
+            quote = _yahoo(spec["symbol"], "6mo")
             if quote is None and spec.get("fallback"):
-                quote = _yahoo(spec["fallback"], "1mo")
+                quote = _yahoo(spec["fallback"], "6mo")
         else:
             quote = _coin(spec["coin"])
         series.append({
@@ -657,14 +657,14 @@ def fetch_assets(now: datetime) -> dict:
             "level": None if not quote else quote.get("level"),
             "changePct": None if not quote else quote.get("changePct"),
             "asOf": "" if not quote else quote.get("asOf") or "",
-            "points": [] if not quote else (quote.get("points") or [])[-30:],
+            "points": [] if not quote else (quote.get("points") or [])[-100:],
             "source": (quote or {}).get("source") or "",
         })
     return {"series": series}
 
 
 def _coin(coin: str) -> dict | None:
-    url = f"https://api.coingecko.com/api/v3/coins/{coin}/market_chart?vs_currency=usd&days=30"
+    url = f"https://api.coingecko.com/api/v3/coins/{coin}/market_chart?vs_currency=usd&days=90"
     try:
         payload = json.loads(_get(url, timeout=30, headers={"Accept": "application/json"}))
     except Exception as err:
@@ -687,7 +687,7 @@ def _coin(coin: str) -> dict | None:
         "change": change,
         "changePct": pct,
         "asOf": points[-1]["date"],
-        "points": points[-30:],
+        "points": points[-120:],
         "source": f"https://www.coingecko.com/en/coins/{coin}",
     }
 

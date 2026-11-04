@@ -1,0 +1,51 @@
+{
+  "items": [
+    {
+      "id": "gold-3",
+      "title": "Gold 3.26% on the day (threshold +3%)",
+      "severity": "ALERT",
+      "why": "Daily move from the stored gold series.",
+      "url": "https://finance.yahoo.com/quote/GC%3DF",
+      "checklist": [
+        "fuel",
+        "water",
+        "cash",
+        "meds"
+      ],
+      "kind": "trigger",
+      "lane": "desk",
+      "source": "Desk threshold",
+      "confidence": "reported",
+      "sourceCount": 1,
+      "action": "Run the short checklist: fuel, water, cash, meds.",
+      "soWhat": "Money: a stored threshold fired. Supplies: fuel, water, cash, meds. Travel: no change unless the trigger names a place. Safety: confirm the linked source before you treat it as local. Action: Run the short checklist: fuel, water, cash, meds."
+    },
+    {
+      "id": "silver-5",
+      "title": "Silver 5.34% on the day (threshold +5%)",
+      "severity": "ALERT",
+      "why": "Daily move from the stored silver series.",
+      "url": "https://finance.yahoo.com/quote/SI%3DF",
+      "checklist": [
+        "fuel",
+        "water",
+        "cash",
+        "meds"
+      ],
+      "kind": "trigger",
+      "lane": "desk",
+      "source": "Desk threshold",
+      "confidence": "reported",
+      "sourceCount": 1,
+      "action": "Run the short checklist: fuel, water, cash, meds.",
+      "soWhat": "Money: a stored threshold fired. Supplies: fuel, water, cash, meds. Travel: no change unless the trigger names a place. Safety: confirm the linked source before you treat it as local. Action: Run the short checklist: fuel, water, cash, meds."
+    }
+  ],
+  "checklist": [
+    "fuel",
+    "water",
+    "cash",
+    "meds"
+  ],
+  "note": "Thresholds: Gulf tropical system, outbreak naming the US, quake M7+, Tennessee tornado or hurricane warning, gold +3% day, silver +5% day, BTC or ETH -10% day."
+}

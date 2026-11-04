@@ -490,29 +490,151 @@ def curl_bytes(url: str, timeout: int = 45, headers: dict | None = None, user_ag
     return body, url, code
 
 
-def fetch_carota(spec: dict, now: datetime) -> tuple[list[dict], str, str]:
-    """Load the Substack feed with curl (browser TLS), then feed.xml / www, then urllib."""
-    last = None
-    loaders = []
-    if shutil.which("curl"):
-        loaders.append(("curl", curl_bytes))
-    loaders.append(("urllib", get_bytes))
-    for url in d.carota_feed_candidates(spec.get("feed") or ""):
-        attempt = dict(spec)
-        attempt["feed"] = url
-        for name, loader in loaders:
-            try:
-                raw, _final, _status = loader(url, timeout=60, headers=BROWSER_HEADERS, user_agent=BROWSER_UA)
-                items, home, channel = fetch_feed_from_raw(attempt, "substack", "substack", now, raw)
-                if name != "urllib" or url != spec.get("feed"):
-                    print(f"  carota used {name} {url}")
-                return items, home, channel
-            except Exception as err:
-                last = err
-                print(f"  carota {url} via {name}: {err}")
-    if last is not None:
-        raise last
-    raise RuntimeError("Carota feed URL missing")
+def _carota_title_key(title: str) -> str:
+    return re.sub(r"[^a-z0-9]+", " ", (title or "").lower()).strip()
+
+
+def _carry_carota_dates(items: list[dict], previous: list[dict]) -> list[dict]:
+    """A section with no pubDate keeps the day we first saved that title."""
+    known = {}
+    for row in previous or []:
+        key = _carota_title_key(row.get("title") or "")
+        if key and key not in known:
+            known[key] = row
+    for item in items:
+        prior = known.get(_carota_title_key(item.get("title") or ""))
+        if not prior:
+            continue
+        for field in ("published", "date", "label", "weekday", "timeKnown"):
+            if prior.get(field) not in (None, ""):
+                item[field] = prior[field]
+    return items
+
+
+def _dedupe_carota(items: list[dict]) -> list[dict]:
+    chosen = {}
+    order = []
+    for item in items:
+        key = _carota_title_key(item.get("title") or "")
+        if not key or not d.http_url(item.get("url") or ""):
+            continue
+        if key not in chosen:
+            order.append(key)
+            chosen[key] = item
+            continue
+        old = chosen[key]
+        # Prefer a real essay URL (/p/ or a dated post) over a page fragment when titles match.
+        old_essay = "/p/" in (old.get("url") or "")
+        new_essay = "/p/" in (item.get("url") or "")
+        if new_essay and not old_essay:
+            chosen[key] = item
+        elif old_essay == new_essay and len(item.get("note") or "") > len(old.get("note") or ""):
+            chosen[key] = item
+    return [chosen[key] for key in order]
+
+
+def _sections_from_html(html: str, page_url: str, now: datetime, spec: dict) -> list[dict]:
+    """Research-desk headings plus any article/JSON-LD posts on the page."""
+    items = []
+    seen = set()
+
+    def add(title, summary, url, when):
+        title = re.sub(r"\s+", " ", title or "").strip()
+        summary = re.sub(r"\s+", " ", summary or "").strip()
+        url = d.http_url(url or "")
+        key = _carota_title_key(title)
+        if not title or not url or not key or key in seen or len(summary) < 40:
+            return
+        seen.add(key)
+        items.append(stamp_item(
+            spec["id"], spec["name"], "substack", "substack", title, "", summary[:700], url, when, False,
+        ))
+
+    for block in re.findall(r'<script type="application/ld\+json">(.*?)</script>', html, re.S | re.I):
+        try:
+            payload = json.loads(block)
+        except json.JSONDecodeError:
+            continue
+        nodes = payload if isinstance(payload, list) else [payload]
+        for node in nodes:
+            if not isinstance(node, dict):
+                continue
+            kind = str(node.get("@type") or "")
+            if kind not in {"Article", "BlogPosting", "NewsArticle"}:
+                continue
+            when = d.parse_pubdate(str(node.get("datePublished") or "")) or now
+            add(node.get("headline") or node.get("name"), node.get("description") or "", node.get("url") or page_url, when)
+
+    cleaned = re.sub(r"<style[\s\S]*?</style>", " ", html, flags=re.I)
+    for match in re.finditer(r'class="sec-title"[^>]*>(.*?)</h2>', cleaned, re.S | re.I):
+        title = re.sub(r"<[^>]+>", " ", match.group(1))
+        title = re.sub(r"\s+", " ", title).strip()
+        chunk = cleaned[match.end():match.end() + 800]
+        sub = re.search(r'class="sec-sub"[^>]*>(.*?)</p>', chunk, re.S | re.I)
+        summary = re.sub(r"<[^>]+>", " ", sub.group(1)) if sub else ""
+        slug = re.sub(r"[^a-z0-9]+", "-", title.lower()).strip("-")
+        base = page_url.split("#")[0].rstrip("/")
+        add(title, summary, f"{base}#{slug}", now)
+    return items
+
+
+def _carota_page_urls() -> list[str]:
+    urls = []
+    try:
+        raw, _final, _status = get_bytes("https://carotawealth.com/sitemap.xml", timeout=30)
+        for loc in re.findall(r"<loc>\s*([^<]+)\s*</loc>", raw.decode("utf-8", "replace")):
+            if loc not in urls:
+                urls.append(loc.strip())
+    except Exception as err:
+        print(f"  carota sitemap: {err}")
+    for extra in (
+        "https://carotawealth.com/research",
+        "https://carotawealth.com/insights",
+        "https://carotawealth.com/blog",
+        "https://carotawealth.com/news",
+    ):
+        if extra not in urls:
+            urls.append(extra)
+    return urls
+
+
+def fetch_carota(spec: dict, now: datetime, previous: list | None = None) -> tuple[list[dict], str, str]:
+    """Read carotawealth.com with urllib. Do not call the Substack host."""
+    site_items = []
+    seen_paths = set()
+    for url in _carota_page_urls():
+        if "substack.com" in url:
+            continue
+        path = urllib.parse.urlparse(url).path.rstrip("/") or "/"
+        if path in seen_paths:
+            continue
+        seen_paths.add(path)
+        try:
+            raw, final, _status = get_bytes(url, timeout=30)
+        except urllib.error.HTTPError as err:
+            if err.code == 404:
+                continue
+            print(f"  carota page {url}: HTTP {err.code}")
+            continue
+        except Exception as err:
+            print(f"  carota page {url}: {err}")
+            continue
+        html = raw.decode("utf-8", "replace")
+        if "<html" not in html.lower() and "<urlset" in html.lower():
+            continue
+        found = _sections_from_html(html, final or url, now, spec)
+        print(f"  carota page {final or url}: {len(found)} sections")
+        site_items.extend(found)
+    cached = [row for row in (previous or []) if row.get("sourceId") == spec["id"] or row.get("kind") == "substack"]
+    site_items = _carry_carota_dates(site_items, cached)
+    merged = _dedupe_carota(site_items + cached)
+    cutoff = (now.date() - timedelta(days=int(spec.get("_retain") or 120))).isoformat()
+    merged = [row for row in merged if (row.get("date") or "") >= cutoff]
+    merged.sort(key=lambda row: row.get("published") or "", reverse=True)
+    print(f"  carota site sections {len(site_items)}; with cached posts {len(merged)}; substack feed not requested")
+    if not merged and not site_items:
+        raise RuntimeError("carotawealth.com returned no articles and no cache was available")
+    return merged, "https://carotawealth.com/research", "Carota Wealth"
 
 
 def keep_source(previous: list[dict], source_id: str) -> list[dict]:
@@ -623,6 +745,78 @@ def desk_changes(now, prev_meta, prev_seen, change_items, page_changes, prev_mar
     }
 
 
+def fetch_trends(token: str, now: datetime) -> dict:
+    """Public WOEID trends, or recent-search counts if that endpoint is not on the plan.
+
+    Never calls direct messages or personalized trends.
+    """
+    import citizen
+
+    token = d.normalize_bearer(token)
+    if not token:
+        print("  X trends skipped: no bearer token")
+        return {
+            "mode": "offline",
+            "note": "X trends skipped: missing X_BEARER_TOKEN. Direct messages are never requested.",
+            "items": [],
+        }
+    raw_kept = []
+    errors = []
+    endpoint_ok = False
+    for place, woeid in (("US", "23424977"), ("worldwide", "1")):
+        try:
+            payload = x_get(
+                f"/2/trends/by/woeid/{woeid}",
+                token,
+                {"max_trends": "50", "trend.fields": "trend_name,tweet_count"},
+            )
+            endpoint_ok = True
+            raw_kept.extend(citizen.filter_trends(payload.get("data") or [], place))
+        except urllib.error.HTTPError as err:
+            info = d.describe_x_error(err.code, http_error_body(err), token)
+            errors.append(f"{place} {info.get('reason') or err.code}")
+            print(f"  X trends {place}: {info.get('reason')}")
+        except Exception as err:
+            errors.append(f"{place}: {d.scrub_secret(str(err), token)}")
+            print(f"  X trends {place}: {err}")
+    if endpoint_ok:
+        note = "X trends by WOEID (US 23424977 and worldwide 1). Kept only when the name matches a threat or preparedness theme."
+        if errors:
+            note += " Partial: " + "; ".join(errors)
+        if not raw_kept:
+            note += " The endpoint answered and none of the names matched."
+        return {"mode": "trends", "note": note, "items": raw_kept[:12]}
+
+    buckets = []
+    search_errors = []
+    for category, query in citizen.SEARCH_QUERIES:
+        try:
+            payload = x_get(
+                "/2/tweets/search/recent",
+                token,
+                {
+                    "query": f"{query} lang:en -is:retweet -is:reply",
+                    "max_results": "10",
+                    "tweet.fields": "created_at,public_metrics",
+                },
+            )
+            tweets = payload.get("data") or []
+            count = (payload.get("meta") or {}).get("result_count", len(tweets))
+            buckets.append({"category": category, "query": query, "tweets": tweets, "resultCount": count})
+        except urllib.error.HTTPError as err:
+            info = d.describe_x_error(err.code, http_error_body(err), token)
+            search_errors.append(f"{category} {info.get('reason') or err.code}")
+        except Exception as err:
+            search_errors.append(f"{category}: {d.scrub_secret(str(err), token)}")
+    doc = citizen.trends_from_search(buckets)
+    if errors:
+        doc["note"] = "The X trends endpoint was not available (" + "; ".join(errors) + "). " + doc["note"]
+    if search_errors:
+        doc["note"] += " Search gaps: " + "; ".join(search_errors)
+    print(f"  X trends fallback recent-search: {len(doc.get('items') or [])} keyword buckets")
+    return doc
+
+
 def main() -> int:
     now = datetime.now(d.CT)
     catalog = json.loads(SOURCES_PATH.read_text())
@@ -673,7 +867,7 @@ def main() -> int:
     carota["skipTitle"] = []
     carota["rejectChannel"] = []
     try:
-        posts, home, channel_title = fetch_carota(carota, now)
+        posts, home, channel_title = fetch_carota(carota, now, prev_sigs)
         signals.extend(posts)
         homes[carota["id"]] = (home or carota["home"], channel_title)
         content_ok += 1
@@ -799,6 +993,110 @@ def main() -> int:
         prev_science, boards_out.get("science") or {},
     )
 
+    import citizen
+    today = now.strftime("%Y-%m-%d")
+    prev_history = load_json(DATA / "history.json", {"days": []})
+    prev_trends = load_json(DATA / "trends.json", {"items": []})
+    threat_items = (boards_out.get("threats") or {}).get("items") or []
+    try:
+        trends = fetch_trends(token, now)
+    except Exception as err:
+        errors.append(f"X trends: {err}")
+        trends = {"mode": "offline", "note": f"X trends failed: {err}", "items": []}
+    triggers = citizen.evaluate_triggers(threat_items, boards_out.get("assets") or {}, trends)
+    citizen.apply_outlook(threat_items, prev_history, today)
+    trends = citizen.annotate_trends(trends, threat_items)
+    try:
+        local = citizen.fetch_local(now)
+    except Exception as err:
+        errors.append(f"Local layer: {err}")
+        local = {"place": "37179", "items": [], "gaps": [str(err)]}
+    try:
+        radar = citizen.fetch_radar(now)
+    except Exception as err:
+        errors.append(f"Narrative radar: {err}")
+        radar = {"items": [], "note": f"n/a — {err}"}
+    impact = citizen.impact_report(threat_items, boards_out.get("assets") or {})
+    brief = citizen.morning_brief(threat_items, trends, triggers, boards_out.get("assets") or {}, local)
+    history = citizen.record_history(prev_history, today, threat_items, trends, triggers, d.ct_label(now, True))
+    lookback = citizen.weekly_lookback(history, today)
+    if boards_out.get("threats"):
+        boards_out["threats"]["items"] = threat_items
+        save_json(DATA / "threats.json", boards_out["threats"])
+
+    def _brief_row(item, section, note=""):
+        return {
+            "id": item.get("id") or "",
+            "title": item.get("title") or item.get("name") or "",
+            "url": item.get("url") or "",
+            "source": section,
+            "note": note or item.get("why") or item.get("note") or "",
+            "section": section,
+            "severity": item.get("severity") or "",
+            "kind": item.get("kind") or "",
+            "label": item.get("label") or "",
+            "published": item.get("published") or "",
+        }
+
+    def _window(prev_map, items, section):
+        fresh, up, down, gone = [], [], [], []
+        current = {}
+        for item in items:
+            current[item.get("id")] = item
+            before = prev_map.get(item.get("id"))
+            if before is None:
+                fresh.append(_brief_row(item, section))
+            elif citizen._rank(item.get("severity") or "") > citizen._rank(before if isinstance(before, str) else (before.get("severity") or "")):
+                fresh_before = before if isinstance(before, str) else (before.get("severity") or "")
+                up.append(_brief_row(item, section, f"{fresh_before} → {item.get('severity')}"))
+            elif citizen._rank(item.get("severity") or "") < citizen._rank(before if isinstance(before, str) else (before.get("severity") or "")):
+                fresh_before = before if isinstance(before, str) else (before.get("severity") or "")
+                down.append(_brief_row(item, section, f"{fresh_before} → {item.get('severity')}"))
+        for item_id, before in prev_map.items():
+            if item_id in current:
+                continue
+            sev = before if isinstance(before, str) else (before.get("severity") or "")
+            title = item_id if isinstance(before, str) else (before.get("title") or item_id)
+            if citizen._rank(sev) >= citizen._rank("ALERT"):
+                gone.append(_brief_row({"id": item_id, "title": title, "severity": sev}, section, "No longer on the board."))
+        return {"new": fresh[:20], "escalated": up[:20], "deescalated": down[:20], "resolved": gone[:20]}
+
+    prev_threat_map = {item.get("id"): item for item in (prev_threats or {}).get("items") or []}
+    prev_trend_map = {item.get("id"): item for item in (prev_trends or {}).get("items") or []}
+    yday = (now.date() - timedelta(days=1)).isoformat()
+    ysnap = None
+    for snap in prev_history.get("days") or []:
+        if (snap.get("date") or "") <= yday and (ysnap is None or snap.get("date") > ysnap.get("date", "")):
+            ysnap = snap
+    def _by_name(rows, name_key="name"):
+        return {(row.get(name_key) or row.get("title") or "").lower(): row for row in rows if (row.get(name_key) or row.get("title"))}
+
+    trend_refresh = _window(prev_trend_map, trends.get("items") or [], "Today")
+    names_now = _by_name(trends.get("items") or [])
+    empty_trends = {"new": [], "escalated": [], "deescalated": [], "resolved": []}
+    change_groups["sinceRefresh"] = {
+        "label": prev_meta.get("checkedLabel") or "the previous refresh",
+        "threats": _window(prev_threat_map, threat_items, "World threat board"),
+        "trends": trend_refresh,
+    }
+    if ysnap:
+        y_threats = {row.get("id"): row for row in ysnap.get("threats") or []}
+        names_yday = _by_name(ysnap.get("trends") or [])
+        trend_yday_new = [_brief_row(item, "Today") for key, item in names_now.items() if key not in names_yday][:20]
+        change_groups["sinceYesterday"] = {
+            "label": ysnap.get("label") or ysnap.get("date") or yday,
+            "threats": _window(y_threats, threat_items, "World threat board"),
+            "trends": {"new": trend_yday_new, "escalated": [], "deescalated": [], "resolved": []},
+        }
+    else:
+        change_groups["sinceYesterday"] = {
+            "label": "no stored yesterday",
+            "note": "Since yesterday starts once a prior day is in data/history.json.",
+            "threats": {"new": [], "escalated": [], "deescalated": [], "resolved": []},
+            "trends": empty_trends,
+        }
+    change_groups["trendsMode"] = trends.get("mode") or ""
+
     meta = {
         "baseline": baseline,
         "checkedAt": now.isoformat(timespec="seconds"),
@@ -806,6 +1104,8 @@ def main() -> int:
         "errors": errors,
         "retainDays": retain,
         "today": now.strftime("%Y-%m-%d"),
+        "brief": brief,
+        "trends": {"mode": trends.get("mode") or "", "note": trends.get("note") or ""},
         "x": {
             "online": bool(x_status.get("online")),
             "note": x_status.get("note") or "",
@@ -823,6 +1123,13 @@ def main() -> int:
     save_json(DATA / "sources.json", catalog_rows)
     save_json(DATA / "seen.json", {"checkedAt": meta["checkedAt"], "ids": current_ids})
     save_json(DATA / "huberman_notes.json", notes)
+    save_json(DATA / "trends.json", trends)
+    save_json(DATA / "triggers.json", triggers)
+    save_json(DATA / "local.json", local)
+    save_json(DATA / "radar.json", radar)
+    save_json(DATA / "impact.json", impact)
+    save_json(DATA / "history.json", history)
+    save_json(DATA / "lookback.json", lookback)
     print(
         f"saved {len(episodes)} episodes, {len(signals)} signals, "
         f"{len(change_items)} changes, baseline={baseline}, x={meta['x']['note'] or 'online'}, "
