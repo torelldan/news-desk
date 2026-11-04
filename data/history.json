@@ -2,7 +2,7 @@
   "days": [
     {
       "date": "2026-11-04",
-      "label": "Nov 4, 2026 2:26 PM CT",
+      "label": "Nov 4, 2026 5:05 PM CT",
       "outlooks": [
         {
           "id": "quake:baf8745573686e7c",
@@ -31,11 +31,6 @@
         },
         {
           "id": "quake:53d19b6824ba0713",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ALERT"
-        },
-        {
-          "id": "quake:6856cc6a54a1c5f1",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
@@ -150,6 +145,11 @@
           "severity": "STANDBY"
         },
         {
+          "id": "quake:9fc0c262b6b07c70",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
           "id": "quake:fd03fc03232d6c3e",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "STANDBY"
@@ -255,6 +255,11 @@
           "severity": "ALERT"
         },
         {
+          "id": "neo:6e5db1d2bf656873",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "CRITICAL"
+        },
+        {
           "id": "neo:9934e838c1539fdc",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "CRITICAL"
@@ -276,11 +281,6 @@
         },
         {
           "id": "neo:dbc237db66be6c4b",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ACTION"
-        },
-        {
-          "id": "neo:0d13b3b6bfed84a2",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ACTION"
         },
@@ -341,12 +341,6 @@
           "kind": "quake",
           "severity": "ALERT",
           "title": "M5.7 82 km NE of Kiunga, Papua New Guinea"
-        },
-        {
-          "id": "quake:6856cc6a54a1c5f1",
-          "kind": "quake",
-          "severity": "ALERT",
-          "title": "M5.7 271 km WSW of Tual, Indonesia"
         },
         {
           "id": "quake:22517429854347e2",
@@ -481,6 +475,12 @@
           "title": "M5.1 Balleny Islands region"
         },
         {
+          "id": "quake:9fc0c262b6b07c70",
+          "kind": "quake",
+          "severity": "STANDBY",
+          "title": "M5.0 south of the Fiji Islands"
+        },
+        {
           "id": "quake:fd03fc03232d6c3e",
           "kind": "quake",
           "severity": "STANDBY",
@@ -607,6 +607,12 @@
           "title": "'2025 saw 25 state-based armed conflicts': Indian Navy chief flags dangers of growing acceptance for wars - Firstpost"
         },
         {
+          "id": "neo:6e5db1d2bf656873",
+          "kind": "neo",
+          "severity": "CRITICAL",
+          "title": "Close approach 2026 VN1"
+        },
+        {
           "id": "neo:9934e838c1539fdc",
           "kind": "neo",
           "severity": "CRITICAL",
@@ -637,12 +643,6 @@
           "title": "Close approach 2026 UG4"
         },
         {
-          "id": "neo:0d13b3b6bfed84a2",
-          "kind": "neo",
-          "severity": "ACTION",
-          "title": "Close approach 2025 XN6"
-        },
-        {
           "id": "sentry:513532e0e0ea6ef9",
           "kind": "sentry",
           "severity": "ALERT",
@@ -667,18 +667,7 @@
           "title": "Doomsday Clock"
         }
       ],
-      "trends": [
-        {
-          "category": "war",
-          "name": "Iran War",
-          "volume": null
-        },
-        {
-          "category": "war",
-          "name": "God of War Laufey",
-          "volume": null
-        }
-      ],
+      "trends": [],
       "triggers": [
         "gold-3",
         "silver-5"

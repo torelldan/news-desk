@@ -1,44 +1,5 @@
 {
-  "items": [
-    {
-      "action": "Read the source. No kit change unless you are in the named area.",
-      "category": "war",
-      "confidence": "rumor",
-      "id": "trend:b7182c9733f85904",
-      "kind": "trend",
-      "lane": "x",
-      "name": "Iran War",
-      "note": "US trend · war",
-      "place": "US",
-      "samples": [],
-      "severity": "ALERT",
-      "soWhat": "Money: no direct quote move. Supplies: no change. Travel: no change. Safety: read the source. Action: Read the source. No kit change unless you are in the named area.",
-      "source": "X trends",
-      "sourceCount": 1,
-      "title": "Iran War",
-      "url": "https://x.com/search?q=Iran%20War&src=typed_query&f=live",
-      "volume": null
-    },
-    {
-      "action": "Read the source. No kit change unless you are in the named area.",
-      "category": "war",
-      "confidence": "rumor",
-      "id": "trend:68404d73108f6e35",
-      "kind": "trend",
-      "lane": "x",
-      "name": "God of War Laufey",
-      "note": "US trend · war",
-      "place": "US",
-      "samples": [],
-      "severity": "ALERT",
-      "soWhat": "Money: no direct quote move. Supplies: no change. Travel: no change. Safety: read the source. Action: Read the source. No kit change unless you are in the named area.",
-      "source": "X trends",
-      "sourceCount": 1,
-      "title": "God of War Laufey",
-      "url": "https://x.com/search?q=God%20of%20War%20Laufey&src=typed_query&f=live",
-      "volume": null
-    }
-  ],
+  "items": [],
   "mode": "trends",
-  "note": "X trends by WOEID (US 23424977 and worldwide 1). Kept only when the name matches a threat or preparedness theme."
+  "note": "X trends by WOEID (US 23424977 and worldwide 1). Kept only when the name matches a threat or preparedness theme. The endpoint answered and none of the names matched."
 }

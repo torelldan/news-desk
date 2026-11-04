@@ -1,103 +1,168 @@
 {
   "baseline": false,
   "counts": {
-    "new": 7,
+    "new": 12,
     "pages": 0,
-    "prices": 4,
+    "prices": 5,
     "severity": 0
   },
   "groups": {
     "new": [
       {
         "date": "2026-11-04",
-        "id": "americanalchmy:28b4f9713c7f3828",
+        "id": "americanalchmy:c8e01a9df5fa62b0",
         "kind": "x",
-        "label": "Nov 4, 2026 2:00 PM CT",
-        "note": "Jordan Jozak recalls being shown a crystal orb during his time in the GATE program. 🔮 Jozak’s story raises the question: Is the GATE program recruiting psionic assets to better understand non-human tech?",
-        "published": "2026-11-04T14:00:01-06:00",
+        "label": "Nov 4, 2026 4:30 PM CT",
+        "note": "",
+        "published": "2026-11-04T16:30:00-06:00",
         "section": "x",
         "severity": "",
         "source": "American Alchemy",
-        "title": "Jordan Jozak recalls being shown a crystal orb during his time in the GATE program. 🔮 Joza…",
-        "url": "https://x.com/AmericanALCHMY/status/2118070786376241404"
+        "title": "What does Elon Musk know about UFOs? 🤔 https://t.co/RAlUbOkQW5",
+        "url": "https://x.com/AmericanALCHMY/status/2118108530641400075"
       },
       {
         "date": "2026-11-04",
-        "id": "paper:5e91f3bba5d1e684",
-        "kind": "paper",
-        "label": "Nov 4, 2026 2:26 PM CT",
+        "id": "shawnryan762:b392d600f69064cd",
+        "kind": "x",
+        "label": "Nov 4, 2026 3:12 PM CT",
+        "note": "Former Trump Intelligence Chief Joe Kent Warned the Iran War Could Cost Republicans the Midterms \"I think our, our political opponents would love us to believe that this very unpopular thing we're doing is popular to convince us to keep doing it.” “I think the conventional wisdom would tell you, and I think the president was told this ... that wartime presidents are always popular.",
+        "published": "2026-11-04T15:12:16-06:00",
+        "section": "x",
+        "severity": "",
+        "source": "Shawn Ryan",
+        "title": "Former Trump Intelligence Chief Joe Kent Warned the Iran War Could Cost Republicans the Mi…",
+        "url": "https://x.com/ShawnRyan762/status/2118088964905287928"
+      },
+      {
+        "date": "2026-11-04",
+        "id": "juliandorey:3d74f30d9a475195",
+        "kind": "x",
+        "label": "Nov 4, 2026 3:03 PM CT",
+        "note": "Mike Clum made the documentary that put the pressure on the Kern County Sheriff's Office to make the case. He flew back in to record with me reacting to what went down.",
+        "published": "2026-11-04T15:03:31-06:00",
+        "section": "x",
+        "severity": "",
+        "source": "Julian Dorey",
+        "title": "EDP445 has been arrested. Mike Clum made the documentary that put the pressure on the Kern…",
+        "url": "https://x.com/juliandorey/status/2118086763218395234"
+      },
+      {
+        "date": "2026-11-04",
+        "id": "shawnryan762:b18f78b3610577b2",
+        "kind": "x",
+        "label": "Nov 4, 2026 2:30 PM CT",
         "note": "",
-        "published": "2026-11-04T14:26:47-06:00",
-        "section": "Frontier lab",
+        "published": "2026-11-04T14:30:00-06:00",
+        "section": "x",
         "severity": "",
-        "source": "Nature",
-        "title": "Spider snooze stages",
-        "url": "https://www.nature.com/articles/d41586-026-03487-0"
+        "source": "Shawn Ryan",
+        "title": "Have you ever heard of happy hat? 😂 @BussinWTB https://t.co/MlzN7e1aD5",
+        "url": "https://x.com/ShawnRyan762/status/2118078330545062052"
       },
       {
         "date": "2026-11-04",
-        "id": "paper:ff5e0452efbfedf9",
-        "kind": "paper",
-        "label": "Nov 4, 2026 2:26 PM CT",
-        "note": "",
-        "published": "2026-11-04T14:26:47-06:00",
-        "section": "Frontier lab",
-        "severity": "",
-        "source": "Nature",
-        "title": "Why not to wait even a few minutes before fleeing a tsunami",
-        "url": "https://www.nature.com/articles/d41586-026-03539-5"
+        "id": "quake:9fc0c262b6b07c70",
+        "kind": "quake",
+        "label": "Nov 4, 2026 3:24 PM CT",
+        "note": "USGS earthquake, magnitude 4.5 or greater, past 7 days.",
+        "published": "2026-11-04T15:24:25-06:00",
+        "section": "World threat board",
+        "severity": "STANDBY",
+        "source": "USGS",
+        "title": "M5.0 south of the Fiji Islands",
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tw43"
       },
       {
         "date": "2026-11-04",
-        "id": "paper:a86f9b20d1030dc0",
-        "kind": "paper",
-        "label": "Nov 4, 2026 2:26 PM CT",
-        "note": "",
-        "published": "2026-11-04T14:26:47-06:00",
-        "section": "Frontier lab",
-        "severity": "",
-        "source": "Nature",
-        "title": "Toothbrush zaps bacteria with electricity made when bristles move",
-        "url": "https://www.nature.com/articles/d41586-026-03586-y"
+        "id": "neo:6e5db1d2bf656873",
+        "kind": "neo",
+        "label": "Nov 4, 2026 5:05 PM CT",
+        "note": "NASA/JPL close-approach distance 0.00400014883201178 AU.",
+        "published": "2026-11-04T17:05:29-06:00",
+        "section": "World threat board",
+        "severity": "CRITICAL",
+        "source": "NASA/JPL CNEOS",
+        "title": "Close approach 2026 VN1",
+        "url": "https://cneos.jpl.nasa.gov/ca/"
       },
       {
         "date": "2026-11-04",
-        "id": "paper:2e9c6d350f67d43b",
+        "id": "paper:118294d821116571",
         "kind": "paper",
-        "label": "Nov 4, 2026 2:26 PM CT",
-        "note": "",
-        "published": "2026-11-04T14:26:47-06:00",
+        "label": "Nov 4, 2026 4:40 PM CT",
+        "note": "A recent study published in Nature Electronics and carried out by researchers from nanoGUNE's Quantum Hardware research group, Quantum Motion, London Center for Nanotechnology, Imperial College London and the University of Cambridge introduces a new superinductor created within a silicon integrated circuit fabricated in a commercial complementary metal–oxide–semiconductor (CMOS) process.",
+        "published": "2026-11-04T16:40:08-06:00",
         "section": "Frontier lab",
         "severity": "",
-        "source": "Nature",
-        "title": "A guide to Nature Index tables",
-        "url": "https://www.nature.com/articles/d41586-026-03344-0"
+        "source": "Phys.org physics",
+        "title": "A new superinductor created within a silicon integrated circuit",
+        "url": "https://phys.org/news/2026-11-superinductor-silicon-circuit.html"
       },
       {
         "date": "2026-11-04",
-        "id": "paper:a0257fb45c76a346",
+        "id": "paper:7cdb96e0cde668b0",
         "kind": "paper",
-        "label": "Nov 4, 2026 2:17 PM CT",
-        "note": "23, NASA Administrator Jared Isaacman and other agency leaders shared the agency’s path to returning Americans to the lunar surface in 2028.",
-        "published": "2026-11-04T14:17:07-06:00",
+        "label": "Nov 4, 2026 3:20 PM CT",
+        "note": "Fermions are among the most important particles in physics and include both everyday electrons and more exotic variants. Chiral fermions, like gloves, come in left- and right-handed versions and were proposed over a century ago.",
+        "published": "2026-11-04T15:20:21-06:00",
         "section": "Frontier lab",
         "severity": "",
-        "source": "NASA",
-        "title": "NASA Shares Plans to Accelerate Artemis, Return to Moon",
-        "url": "https://www.nasa.gov/missions/artemis/nasa-shares-plans-to-accelerate-artemis-return-to-moon/"
+        "source": "Phys.org physics",
+        "title": "New research uncovers chiral topological phases in metals without structural order",
+        "url": "https://phys.org/news/2026-11-uncovers-chiral-topological-phases-metals.html"
       },
       {
-        "date": "2026-10-30",
-        "id": "headline:b9df4a0c5bc1365c",
+        "date": "2026-11-04",
+        "id": "headline:4635919ea413b17f",
         "kind": "headline",
-        "label": "Oct 30, 2026 6:00 AM CT",
+        "label": "Nov 4, 2026 2:33 PM CT",
         "note": "",
-        "published": "2026-10-30T06:00:23-05:00",
+        "published": "2026-11-04T14:33:07-06:00",
         "section": "USA headlines",
         "severity": "STANDBY",
-        "source": "ABC7 New York",
-        "title": "What to know about the US economy as midterm elections near - ABC7 New York",
-        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9SZTdBWnpvTmE2cndxcURuSk9QY2taWWx3Y0tUVEZNcE41Zi00OGpfVEhHbFBZOXlXTzRWbXRqNkdJQm90a3R3ZGlCV3U5QTIxeE85TG5PeW1MS1hEY2xoZ1Y1bTJzdC1PZEEwc1h2ckQ4Yl9vdVp1MU9fbzROdw?oc=5"
+        "source": "Investopedia",
+        "title": "What’s Likely to Change for the U.S. Economy After Democrats’ Resounding Victory in the Midterms? - Investopedia",
+        "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQY3pVQkJ3cjVJM3V3R2k3R2dxXzlfeUZ0VktHYXJUTTdKMHJhdmxhWExCR0J2aDlXSnBScjZ1WnJhRVB5V1o0eGF1S0YwZ1N3WnVIOUd5MU9UUVh0bzFpQjdjSndlbWpXc1lFcXVLYXdIc2h6Y2hhdUN2MXJBNUs4OFdKUkFod2JocXBKU010dHlWd1pxb19VQVB2Q1h2VE13SFdtTjNEQktmRy1qWTNaRGdVZEJfY2c1MThfV1NMeXVwZDhyLXVPNEhiM2EyZkRNMXVicktqMVNDV0k5eWxxQU51MA?oc=5"
+      },
+      {
+        "date": "2026-11-04",
+        "id": "headline:8fd4b422b918d2be",
+        "kind": "headline",
+        "label": "Nov 4, 2026 8:48 AM CT",
+        "note": "",
+        "published": "2026-11-04T08:48:52-06:00",
+        "section": "Latin America headlines",
+        "severity": "STANDBY",
+        "source": "Valor International",
+        "title": "Analysts shift to more defensive stock picks for the month - Valor International",
+        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQRUpqeGY0R2JBdF9ub2FEcnprc1FKTGREa3BVZW9Gd3E3M1lZV0VLUWd6QVZvRkNDMFh0dGVILTdrQnpDUVdIWVQ0UXJMVDluejFvaVFrNXhPNEhKa2pXU3NUbVFzU2l4Rzk5SkVyTmJsNEpVeGRDSUQ2c2s0VXNxdHRVLTBuUHpYMU1fdWJRWEFVQVJsN29nMGU2Y21fZW11U3RZcVpIWWJhaVBfV2Vvcl9RYnBsRmNtQXE0b1FuaXJwT3IwLW9GLVVYTkFkekQtUHfSAdIBQVVfeXFMUEVKanhmNEdiQXRfbm9hRHJ6a3NRSkxkRGtwVWVvRndxNzNZWVdFS1FnekFWb0ZDQzBYdHRlSC03a0J6Q1FXSFlUNFFyTFQ5bnoxb2lRazV4TzRISmtqV1NzVG1Rc1NpeEc5OUpFck5ibDRKVXhkQ0lENnNrNFVzcXR0VS0wblB6WDFNX3ViUVhBVUFSbDdvZzBlNmNtX2VtdVN0WXFaSFliYWlQX1dlb3JfUWJwbEZjbUFxNG9RbmlycE9yMC1vRi1VWE5BZHpELVB3?oc=5"
+      },
+      {
+        "date": "2026-11-04",
+        "id": "headline:4d99098e58e0ed4c",
+        "kind": "headline",
+        "label": "Nov 4, 2026 8:58 AM CT",
+        "note": "",
+        "published": "2026-11-04T08:58:01-06:00",
+        "section": "China headlines",
+        "severity": "STANDBY",
+        "source": "Moldova 1",
+        "title": "Moldova secures China market access for fresh cherries - Moldova 1",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxORFo2dzZ4WE80SndhMGZuZ1lCVWVkbXNqVDBrNGsxUV9KMm1WaElYTjV2ODNBV25sU2lxN0NEdHRubDRPTEM1YUFzVTBtb0tFOFVTTmVBcDd1RVNNX05RbElRUmxmazFaUFpqQS01ZGY4QzQ3TFVibUxpUFgwQkNjMmJIYzNrZzFxVVE?oc=5"
+      },
+      {
+        "date": "2026-11-04",
+        "id": "headline:9b5a5ca3fdb965f3",
+        "kind": "headline",
+        "label": "Nov 4, 2026 5:00 AM CT",
+        "note": "",
+        "published": "2026-11-04T05:00:00-06:00",
+        "section": "Europe headlines",
+        "severity": "STANDBY",
+        "source": "Zprávy Kurzy.cz",
+        "title": "Knowledge gaps, behaviour parity: gender differences in financial literacy in Europe - Zprávy Kurzy.cz",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNdEVUaW5GdkpYb2tSUnB4UFRhaVdUVGVPbkw1VS03ckFvOWkyNmpJUDE5LWdXNzdHNHNId0NFeGFqclpHUi1aTnBnb2c0elo5X2lWY2NOT0lZWFRHSmVUOUZDaFlKcERmRVRTTEdXaHYzZEZEdDNYRDdGR0FUUlpFTXhYTzdkT29YaGQzSkFRUVgwaVMwQ0tKRFlUb2J6S3RpTHZFd3N2c09jZnV6RVJPZU9vNVU?oc=5"
       }
     ],
     "pages": [],
@@ -112,7 +177,7 @@
         "section": "Economic watch",
         "severity": "",
         "source": "USA",
-        "title": "S&P 500 7695.92 → 7701.66",
+        "title": "S&P 500 7701.66 → 7688.62",
         "url": "https://finance.yahoo.com/quote/%5EGSPC"
       },
       {
@@ -125,7 +190,7 @@
         "section": "Economic watch",
         "severity": "",
         "source": "North America",
-        "title": "S&P/TSX 36321.1 → 36363.53",
+        "title": "S&P/TSX 36363.53 → 36341.4",
         "url": "https://finance.yahoo.com/quote/%5EGSPTSE"
       },
       {
@@ -138,7 +203,7 @@
         "section": "Economic watch",
         "severity": "",
         "source": "North America",
-        "title": "IPC Mexico 70712.94 → 70624.59",
+        "title": "IPC Mexico 70624.59 → 70819.8",
         "url": "https://finance.yahoo.com/quote/%5EMXX"
       },
       {
@@ -151,27 +216,115 @@
         "section": "Economic watch",
         "severity": "",
         "source": "Latin America",
-        "title": "Ibovespa 167277.31 → 167216.31",
+        "title": "Ibovespa 167216.31 → 167563.47",
         "url": "https://finance.yahoo.com/quote/%5EBVSP"
+      },
+      {
+        "date": "",
+        "id": "px-^STOXX50E",
+        "kind": "price",
+        "label": "",
+        "note": "Level moved since the last refresh.",
+        "published": "",
+        "section": "Economic watch",
+        "severity": "",
+        "source": "Europe",
+        "title": "EURO STOXX 50 6265.71 → 6144.56",
+        "url": "https://finance.yahoo.com/quote/%5ESTOXX50E"
       }
     ],
     "severity": []
   },
-  "since": "2026-11-04T13:59:18-06:00",
-  "sinceLabel": "Nov 4, 2026 1:59 PM CT",
+  "since": "2026-11-04T14:26:47-06:00",
+  "sinceLabel": "Nov 4, 2026 2:26 PM CT",
   "sinceRefresh": {
-    "label": "Nov 4, 2026 1:59 PM CT",
+    "label": "Nov 4, 2026 2:26 PM CT",
     "threats": {
       "deescalated": [],
       "escalated": [],
-      "new": [],
-      "resolved": []
+      "new": [
+        {
+          "id": "quake:9fc0c262b6b07c70",
+          "kind": "quake",
+          "label": "Nov 4, 2026 3:24 PM CT",
+          "note": "USGS earthquake, magnitude 4.5 or greater, past 7 days.",
+          "published": "2026-11-04T15:24:25-06:00",
+          "section": "World threat board",
+          "severity": "STANDBY",
+          "source": "World threat board",
+          "title": "M5.0 south of the Fiji Islands",
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tw43"
+        },
+        {
+          "id": "neo:6e5db1d2bf656873",
+          "kind": "neo",
+          "label": "Nov 4, 2026 5:05 PM CT",
+          "note": "NASA/JPL close-approach distance 0.00400014883201178 AU.",
+          "published": "2026-11-04T17:05:29-06:00",
+          "section": "World threat board",
+          "severity": "CRITICAL",
+          "source": "World threat board",
+          "title": "Close approach 2026 VN1",
+          "url": "https://cneos.jpl.nasa.gov/ca/"
+        }
+      ],
+      "resolved": [
+        {
+          "id": "quake:6856cc6a54a1c5f1",
+          "kind": "",
+          "label": "",
+          "note": "No longer on the board.",
+          "published": "",
+          "section": "World threat board",
+          "severity": "ALERT",
+          "source": "World threat board",
+          "title": "M5.7 271 km WSW of Tual, Indonesia",
+          "url": ""
+        },
+        {
+          "id": "neo:0d13b3b6bfed84a2",
+          "kind": "",
+          "label": "",
+          "note": "No longer on the board.",
+          "published": "",
+          "section": "World threat board",
+          "severity": "ACTION",
+          "source": "World threat board",
+          "title": "Close approach 2025 XN6",
+          "url": ""
+        }
+      ]
     },
     "trends": {
       "deescalated": [],
       "escalated": [],
       "new": [],
-      "resolved": []
+      "resolved": [
+        {
+          "id": "trend:b7182c9733f85904",
+          "kind": "",
+          "label": "",
+          "note": "No longer on the board.",
+          "published": "",
+          "section": "Today",
+          "severity": "ALERT",
+          "source": "Today",
+          "title": "Iran War",
+          "url": ""
+        },
+        {
+          "id": "trend:68404d73108f6e35",
+          "kind": "",
+          "label": "",
+          "note": "No longer on the board.",
+          "published": "",
+          "section": "Today",
+          "severity": "ALERT",
+          "source": "Today",
+          "title": "God of War Laufey",
+          "url": ""
+        }
+      ]
     }
   },
   "sinceYesterday": {
