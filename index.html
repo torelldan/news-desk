@@ -123,10 +123,12 @@
   }
   .front {
     display: grid;
-    grid-template-columns: minmax(0, 1.55fr) minmax(260px, 0.75fr);
-    gap: 22px;
-    margin-top: 18px;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 12px;
+    margin-top: 8px;
+    align-items: start;
   }
+  .side { display: grid; gap: 8px; align-content: start; }
   h2 {
     margin: 0 0 10px;
     font-size: 26px;
@@ -162,9 +164,19 @@
   }
   .open { font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; }
   .stack, .watch, .map, .list { display: grid; gap: 10px; }
-  .watch { grid-template-columns: repeat(auto-fill, minmax(min(240px, 100%), 1fr)); }
+  .watch { display: block; }
   .map { grid-template-columns: repeat(auto-fill, minmax(min(180px, 100%), 1fr)); }
-  .section { margin-top: 26px; }
+  .section { margin-top: 8px; }
+  .section.shut .section-body { display: none; }
+  .section-head { align-items: baseline; margin: 0; }
+  .section-head .sec-title { color: var(--green); font-family: "VT323", ui-monospace, monospace; font-size: 22px; letter-spacing: 0.08em; text-transform: uppercase; white-space: nowrap; }
+  .section-head .sec-sum { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .section-head .pm { color: var(--green); }
+  .order-line, .watch-line { display: grid; grid-template-columns: 92px minmax(0, 1fr) auto; gap: 2px 8px; align-items: baseline; border-bottom: 1px dotted var(--line); padding: 6px 0; }
+  .order-line h3, .watch-line h3 { margin: 0; font-size: 14px; font-weight: 400; }
+  .order-line .so, .watch-line .so { grid-column: 1 / -1; margin: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .read { margin: 6px 0 0; padding-left: 18px; }
+  .read li { margin: 8px 0; color: var(--bright); }
   .stat { display: flex; justify-content: space-between; gap: 12px; width: 100%; background: transparent; border: 0; border-bottom: 1px dotted var(--line); padding: 7px 0; text-align: left; cursor: pointer; }
   .stat.on { outline: 1px solid var(--green); }
   .break { color: var(--dim); font-size: 12px; margin: 6px 0 0; }
@@ -265,86 +277,102 @@
     </div>
   </header>
   <p class="banner" id="xbanner" hidden>X feed offline</p>
-  <section class="section" id="briefing">
-    <h2><em>00</em> // Morning brief</h2>
-    <div id="brief"></div>
-  </section>
-  <section class="section" id="economic">
-    <h2><em>01</em> // Economic watch</h2>
-    <p class="note-plain" id="holiday-note"></p>
-    <div class="markets" id="markets"></div>
-  </section>
   <div class="front">
-    <div>
-      <h2><em>02</em> // Today</h2>
-      <div id="today"></div>
+    <section class="section shut" data-sec="today">
+      <button type="button" class="fold-btn section-head" data-fold="sec-today" aria-expanded="false"><span class="sec-title">02 // Today</span><span class="sec-sum" id="sum-today"></span><span class="pm">+</span></button>
+      <div class="section-body" id="today"></div>
+    </section>
+    <div class="side">
+      <section class="section shut" data-sec="brief">
+        <button type="button" class="fold-btn section-head" data-fold="sec-brief" aria-expanded="false"><span class="sec-title">Morning brief</span><span class="sec-sum" id="sum-brief"></span><span class="pm">+</span></button>
+        <div class="section-body" id="brief"></div>
+      </section>
+      <section class="section shut" data-sec="orders">
+        <button type="button" class="fold-btn section-head" data-fold="sec-orders" aria-expanded="false"><span class="sec-title">Standing orders</span><span class="sec-sum" id="sum-orders"></span><span class="pm">+</span></button>
+        <div class="section-body">
+          <div id="status"></div>
+          <div id="orders"></div>
+        </div>
+      </section>
     </div>
-    <aside>
-      <h2><em>00</em> // Status</h2>
-      <div id="status"></div>
-      <div class="section">
-        <h2>Standing orders</h2>
-        <div id="orders"></div>
-      </div>
-    </aside>
   </div>
-  <section class="section">
-    <h2>Preparedness triggers</h2>
-    <div id="triggers"></div>
-  </section>
-  <section class="section">
-    <h2>Local layer · Thompson's Station · 37179</h2>
-    <div id="local"></div>
-  </section>
-  <section class="section">
-    <h2><em>03</em> // Watchlist</h2>
-    <div class="watch" id="watch"></div>
-  </section>
-  <section class="section">
-    <h2><em>04</em> // What changed</h2>
-    <div id="changed"></div>
-  </section>
-  <section class="section">
-    <h2><em>05</em> // World threat board</h2>
-    <div class="threats" id="threats"></div>
-  </section>
-  <section class="section">
-    <h2><em>06</em> // Impact map</h2>
-    <div id="impact"></div>
-    <div class="assets" id="assets"></div>
-    <div id="correlations"></div>
-    <div id="timeline"></div>
-  </section>
-  <section class="section">
-    <h2><em>07</em> // Frontier lab</h2>
-    <div class="chips" id="fields"></div>
-    <div class="labs" id="labs"></div>
-  </section>
-  <section class="section">
-    <h2><em>08</em> // World desk</h2>
-    <div class="map" id="map"></div>
-    <div class="list" id="pages" style="margin-top:10px"></div>
-  </section>
-  <section class="section">
-    <h2>Narrative radar</h2>
-    <div id="radar"></div>
-  </section>
-  <section class="section">
-    <h2>Weekly look-back</h2>
-    <div id="lookback"></div>
-  </section>
-  <section class="section">
-    <h2><em>09</em> // Intel briefs</h2>
-    <div class="chips" id="chips"></div>
-    <div class="list" id="casebook"></div>
-  </section>
-  <section class="section">
-    <div class="tabs" role="tablist">
-      <button type="button" role="tab" data-tab="ledger" class="on">Situation Log</button>
-      <button type="button" role="tab" data-tab="patterns">Signals</button>
-      <button type="button" role="tab" data-tab="archive">Cache</button>
+  <section class="section shut" data-sec="econ">
+    <button type="button" class="fold-btn section-head" data-fold="sec-econ" aria-expanded="false"><span class="sec-title">01 // Economic watch</span><span class="sec-sum" id="sum-econ"></span><span class="pm">+</span></button>
+    <div class="section-body">
+      <p class="note-plain" id="holiday-note"></p>
+      <div class="markets" id="markets"></div>
     </div>
-    <div id="panel"></div>
+  </section>
+  <section class="section shut" data-sec="triggers">
+    <button type="button" class="fold-btn section-head" data-fold="sec-triggers" aria-expanded="false"><span class="sec-title">Preparedness triggers</span><span class="sec-sum" id="sum-triggers"></span><span class="pm">+</span></button>
+    <div class="section-body" id="triggers"></div>
+  </section>
+  <section class="section shut" data-sec="local">
+    <button type="button" class="fold-btn section-head" data-fold="sec-local" aria-expanded="false"><span class="sec-title">Local · 37179</span><span class="sec-sum" id="sum-local"></span><span class="pm">+</span></button>
+    <div class="section-body" id="local"></div>
+  </section>
+  <section class="section shut" data-sec="watch">
+    <button type="button" class="fold-btn section-head" data-fold="sec-watch" aria-expanded="false"><span class="sec-title">03 // Watchlist</span><span class="sec-sum" id="sum-watch"></span><span class="pm">+</span></button>
+    <div class="section-body watch" id="watch"></div>
+  </section>
+  <section class="section shut" data-sec="changed">
+    <button type="button" class="fold-btn section-head" data-fold="sec-changed" aria-expanded="false"><span class="sec-title">04 // What changed</span><span class="sec-sum" id="sum-changed"></span><span class="pm">+</span></button>
+    <div class="section-body" id="changed"></div>
+  </section>
+  <section class="section shut" data-sec="threats">
+    <button type="button" class="fold-btn section-head" data-fold="sec-threats" aria-expanded="false"><span class="sec-title">05 // World threat board</span><span class="sec-sum" id="sum-threats"></span><span class="pm">+</span></button>
+    <div class="section-body threats" id="threats"></div>
+  </section>
+  <section class="section shut" data-sec="impact">
+    <button type="button" class="fold-btn section-head" data-fold="sec-impact" aria-expanded="false"><span class="sec-title">06 // Impact map</span><span class="sec-sum" id="sum-impact"></span><span class="pm">+</span></button>
+    <div class="section-body">
+      <div id="market-read"></div>
+      <div id="insights"></div>
+      <div id="impact"></div>
+      <div class="assets" id="assets"></div>
+      <div id="correlations"></div>
+      <div id="timeline"></div>
+    </div>
+  </section>
+  <section class="section shut" data-sec="labs">
+    <button type="button" class="fold-btn section-head" data-fold="sec-labs" aria-expanded="false"><span class="sec-title">07 // Frontier lab</span><span class="sec-sum" id="sum-labs"></span><span class="pm">+</span></button>
+    <div class="section-body">
+      <div class="chips" id="fields"></div>
+      <div class="labs" id="labs"></div>
+    </div>
+  </section>
+  <section class="section shut" data-sec="map">
+    <button type="button" class="fold-btn section-head" data-fold="sec-map" aria-expanded="false"><span class="sec-title">08 // World desk</span><span class="sec-sum" id="sum-map"></span><span class="pm">+</span></button>
+    <div class="section-body">
+      <div class="map" id="map"></div>
+      <div class="list" id="pages" style="margin-top:10px"></div>
+    </div>
+  </section>
+  <section class="section shut" data-sec="radar">
+    <button type="button" class="fold-btn section-head" data-fold="sec-radar" aria-expanded="false"><span class="sec-title">Narrative radar</span><span class="sec-sum" id="sum-radar"></span><span class="pm">+</span></button>
+    <div class="section-body" id="radar"></div>
+  </section>
+  <section class="section shut" data-sec="look">
+    <button type="button" class="fold-btn section-head" data-fold="sec-look" aria-expanded="false"><span class="sec-title">Weekly look-back</span><span class="sec-sum" id="sum-look"></span><span class="pm">+</span></button>
+    <div class="section-body" id="lookback"></div>
+  </section>
+  <section class="section shut" data-sec="briefs">
+    <button type="button" class="fold-btn section-head" data-fold="sec-briefs" aria-expanded="false"><span class="sec-title">09 // Intel briefs</span><span class="sec-sum" id="sum-briefs"></span><span class="pm">+</span></button>
+    <div class="section-body">
+      <div class="chips" id="chips"></div>
+      <div class="list" id="casebook"></div>
+    </div>
+  </section>
+  <section class="section shut" data-sec="log">
+    <button type="button" class="fold-btn section-head" data-fold="sec-log" aria-expanded="false"><span class="sec-title">Situation log</span><span class="sec-sum" id="sum-log"></span><span class="pm">+</span></button>
+    <div class="section-body">
+      <div class="tabs" role="tablist">
+        <button type="button" role="tab" data-tab="ledger" class="on">Situation Log</button>
+        <button type="button" role="tab" data-tab="patterns">Signals</button>
+        <button type="button" role="tab" data-tab="archive">Cache</button>
+      </div>
+      <div id="panel"></div>
+    </div>
   </section>
   <p class="foot" id="foot"></p>
   <p class="err" id="errs"></p>
@@ -399,6 +427,82 @@ function remember() {
       assetsOff: state.assetsOff, tab: state.tab, field: state.field
     }));
   } catch (err) { /* private mode */ }
+}
+function publicText(text) {
+  return String(text || "")
+    .replace(/\(volume n\/a[^)]*\)/gi, "")
+    .replace(/volume n\/a/gi, "")
+    .replace(/computed from stored prices/gi, "")
+    .replace(/data\/history\.json/gi, "a prior day")
+    .replace(/\bstored\b/gi, "")
+    .replace(/\bseed\b/gi, "")
+    .replace(/X_BEARER_TOKEN/g, "")
+    .replace(/\s{2,}/g, " ")
+    .replace(/\s+([.,;:])/g, "$1")
+    .trim();
+}
+function clip(text, n) {
+  const clean = publicText(text);
+  if (clean.length <= n) return clean;
+  return clean.slice(0, n).trim() + "…";
+}
+function paintSections() {
+  const setSum = (id, chip, count, headline) => {
+    const sec = document.querySelector(`[data-sec="${id}"]`);
+    const sum = document.getElementById("sum-" + id);
+    if (!sec || !sum) return;
+    const open = isOpen("sec-" + id, false);
+    sec.classList.toggle("shut", !open);
+    const btn = sec.querySelector(".section-head");
+    if (btn) {
+      btn.setAttribute("aria-expanded", open ? "true" : "false");
+      const pm = btn.querySelector(".pm");
+      if (pm) pm.textContent = open ? "−" : "+";
+    }
+    const klass = String(chip || "STANDBY").toLowerCase();
+    sum.innerHTML = `<span class="sev sev-${esc(klass)}">${esc(chip || "STANDBY")}</span> ${esc(String(count))} · ${esc(clip(headline || "Nothing new", 88))}`;
+  };
+  const threats = ((DESK.threats || {}).items || []).slice().sort((a, b) => rankOf(b) - rankOf(a));
+  const lead = threats[0];
+  const brief = publicText(DESK.brief || "No brief on this check.");
+  setSum("brief", (lead && lead.severity) || "STANDBY", "1", brief.split(". ")[0] || brief);
+  const trends = ((DESK.trends || {}).items || []);
+  setSum("today", trends[0] ? (trends[0].severity || "ALERT") : "STANDBY", String(trends.length), trends[0] ? trends[0].name : "No matching topic");
+  setSum("orders", (lead && lead.severity) || "STANDBY", String(threats.length), lead ? lead.title : "No open order");
+  const regions = ((DESK.markets || {}).regions || []);
+  const mover = regions.map((region) => {
+    const venue = (region.venues || [])[0] || {};
+    return { region, venue, abs: Math.abs(Number(venue.changePct) || 0) };
+  }).sort((a, b) => b.abs - a.abs)[0];
+  const econLine = mover
+    ? `${mover.region.name} ${mover.venue.indexName || ""} ${mover.venue.changePct == null ? "no quote" : (mover.venue.changePct > 0 ? "+" : "") + mover.venue.changePct + "%"}`
+    : "No quotes";
+  setSum("econ", "STANDBY", String(regions.length), econLine);
+  const triggers = ((DESK.triggers || {}).items || []);
+  setSum("triggers", triggers[0] ? (triggers[0].severity || "ALERT") : "STANDBY", String(triggers.length), triggers[0] ? triggers[0].title : "No trigger is on");
+  const local = ((DESK.local || {}).items || []).slice().sort((a, b) => rankOf(b) - rankOf(a));
+  setSum("local", (local[0] && local[0].severity) || "STANDBY", String(local.length), local[0] ? local[0].title : "No local notice");
+  setSum("watch", (lead && lead.severity) || "STANDBY", String(threats.length), lead ? lead.title : "No watch item");
+  const changed = DESK.changes || {};
+  const fresh = (((changed.sinceRefresh || {}).threats || {}).new || []).length + (((changed.sinceRefresh || {}).trends || {}).new || []).length;
+  const firstChange = ((((changed.sinceRefresh || {}).threats || {}).escalated || [])[0]) || ((((changed.sinceRefresh || {}).threats || {}).new || [])[0]);
+  setSum("changed", fresh ? "ALERT" : "STANDBY", String(fresh), firstChange ? firstChange.title : "No change since the last refresh");
+  setSum("threats", (lead && lead.severity) || "STANDBY", String(threats.length), lead ? lead.title : "No threat");
+  const gold = (((DESK.assets || {}).series || []).find((asset) => /gold/i.test(asset.name || ""))) || {};
+  const goldMove = gold.changePct == null ? "Gold quote missing" : `Gold ${gold.changePct > 0 ? "up" : "down"} ${Math.abs(gold.changePct)}% today`;
+  setSum("impact", Math.abs(Number(gold.changePct) || 0) >= 3 ? "ALERT" : "STANDBY", String(((DESK.assets || {}).series || []).length), goldMove);
+  const papers = ((DESK.science || {}).items || []);
+  setSum("labs", "STANDBY", String(papers.length), papers[0] ? papers[0].title : "No lab item");
+  const sources = DESK.sources || [];
+  setSum("map", "STANDBY", String(sources.length), sources[0] ? (sources[0].short || sources[0].name) : "No source");
+  const radar = ((DESK.radar || {}).items || []);
+  setSum("radar", radar[0] && radar[0].call === "real" ? "ALERT" : "STANDBY", String(radar.length), radar[0] ? radar[0].title : "No narrative");
+  const look = DESK.lookback || {};
+  const escalated = look.escalated || [];
+  setSum("look", escalated.length ? "ALERT" : "STANDBY", String(escalated.length), escalated[0] ? escalated[0].title : "Nothing escalated this week");
+  const posts = allItems();
+  setSum("briefs", "STANDBY", String(posts.length), posts[0] ? posts[0].title : "No brief");
+  setSum("log", "STANDBY", String(posts.length), posts[0] ? posts[0].title : "Empty log");
 }
 function fold(id, title, body, fallback) {
   const open = isOpen(id, fallback);
@@ -590,7 +694,7 @@ function renderStatus(items) {
   document.getElementById("status").innerHTML = buttons + detail;
 }
 function renderBrief() {
-  const text = DESK.brief || "The morning brief is written on the next refresh from the stored board.";
+  const text = publicText(DESK.brief || "No brief on this check.");
   document.getElementById("brief").innerHTML = `<p class="brief">${esc(text)}</p>`;
 }
 function renderToday() {
@@ -598,38 +702,57 @@ function renderToday() {
   const items = (doc.items || []).filter(passes);
   const cards = items.map((item) => {
     if (!claim(item)) return linkLine(item, "an earlier section");
-    const volume = item.volume == null || item.volume === "" ? "volume n/a" : `${item.volume} posts`;
+    const volume = item.volume == null || item.volume === "" ? "" : `${item.volume} posts`;
     const samples = (item.samples || []).map((sample) => {
       const url = safeUrl(sample.url);
       if (!url) return "";
       return `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(sample.text || sample.title || "source")}</a>`;
     }).filter(Boolean).join(" · ");
     const body = Object.assign({}, item, {
-      source: `${item.source || "X"} · ${item.category || "theme"} · ${item.place || ""}`,
-      note: `${volume}. ${item.note || ""} ${samples ? "Sources: " + samples.replace(/<[^>]+>/g, "") : ""}`.trim()
+      source: `${item.category || "topic"}`,
+      note: [volume, publicText(item.note || "")].filter(Boolean).join(". ")
     });
     const html = card(body);
     return samples ? html.replace("</article>", `<p class="meta">Sample sources: ${samples}</p></article>`) : html;
   }).join("");
+  const offline = !doc.mode || doc.mode === "offline" || /bearer|token|woeid|endpoint/i.test(doc.note || "");
+  const note = items.length
+    ? (doc.mode === "recent-search" ? "Keyword counts, because the trends list was not available." : "Topics that match the threat list.")
+    : (offline ? "Trends are offline on this check." : "No topic matched the threat list.");
   const host = document.getElementById("today");
-  host.innerHTML = `<p class="note-plain">${esc(doc.note || "X trends have not been fetched.")}</p>` + (cards ? `<div class="stack">${cards}</div>` : empty("No trending topic matched the threat list."));
+  host.innerHTML = `<p class="note-plain">${esc(note)}</p>` + (cards ? `<div class="stack">${cards}</div>` : empty("No topic matched the threat list."));
 }
 function renderOrders() {
   const threats = ((DESK.threats || {}).items || []).filter((item) => passes(item));
   const locals = ((DESK.local || {}).items || []).filter((item) => item.kind !== "na" && item.severity && item.severity !== "STANDBY" && passes(item));
   const pool = threats.concat(locals).sort((a, b) => rankOf(b) - rankOf(a) || String(b.published || "").localeCompare(String(a.published || "")));
-  const rows = pool.map((item) => {
-    const arrow = `<span class="arrow">${esc(item.arrowDay || "→")} since yesterday · ${esc(item.arrowWeek || "→")} since last week</span>`;
-    const outlook = item.outlook || "72-hour outlook starts once a prior day is stored.";
-    const action = item.action || "Read the source.";
-    if (!claim(item)) {
-      return `<li>${linkLine(item, item.lane === "local" ? "Local layer" : "Standing orders")}</li>`;
-    }
-    return `<li id="order-${esc(item.id || "")}">${threatCard(item)}<p class="meta">${arrow}. ${esc(outlook)}</p><p><strong>Do this:</strong> ${esc(action)}</p></li>`;
+  const unique = [];
+  pool.forEach((item) => {
+    if (!claim(item)) return;
+    unique.push(item);
+  });
+  const openAll = !!state.more["orders-all"];
+  const shown = openAll ? unique : unique.slice(0, 5);
+  const rows = shown.map((item) => {
+    const sev = item.severity || "STANDBY";
+    const url = safeUrl(item.url);
+    const title = url
+      ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(item.title || "")}</a>`
+      : esc(item.title || "");
+    const arrows = `${item.arrowDay || "→"} day · ${item.arrowWeek || "→"} week`;
+    return `<article class="order-line" id="order-${esc(item.id || "")}">
+      <span class="sev sev-${sev.toLowerCase()}">${esc(sev)}</span>
+      <h3>${title}</h3>
+      <span class="arrow">${esc(arrows)}</span>
+      <p class="so">${esc(clip(soWhat(item), 160))}</p>
+    </article>`;
   }).join("");
+  const more = unique.length > 5
+    ? `<button type="button" class="more" data-more="orders-all">${openAll ? "Show top 5" : "Show all"} · ${unique.length}</button>`
+    : "";
   document.getElementById("orders").innerHTML = rows
-    ? `<ol class="priors">${rows}</ol>`
-    : empty("No open threat or local watch item in this window.");
+    ? rows + more
+    : empty("No open threat in this window.");
 }
 function rankOf(item) {
   return { STANDBY: 0, ALERT: 1, ACTION: 2, CRITICAL: 3 }[(item.severity || "STANDBY").toUpperCase()] || 0;
@@ -653,17 +776,22 @@ function watchPool() {
   }).sort((a, b) => rankOf(b) - rankOf(a) || Date.parse(b.published || 0) - Date.parse(a.published || 0)).slice(0, 10);
 }
 function renderWatch() {
-  const items = ((DESK.threats || {}).items || []).filter(passes);
-  const groups = ["CRITICAL", "ACTION", "ALERT", "STANDBY"].map((level) => {
-    const mine = items.filter((item) => (item.severity || "STANDBY") === level);
-    if (!mine.length) return "";
-    const lines = mine.map((item) => {
-      if (seenStory(item)) return linkLine(item, "Standing orders");
-      return `<p class="meta">${esc(item.title)}</p>`;
-    }).join("");
-    return `<div class="group"><h3>${esc(level)} · ${mine.length}</h3>${lines}</div>`;
+  const items = ((DESK.threats || {}).items || []).filter(passes)
+    .sort((a, b) => rankOf(b) - rankOf(a) || String(b.published || "").localeCompare(String(a.published || "")));
+  const lines = items.map((item) => {
+    const sev = item.severity || "STANDBY";
+    const url = safeUrl(item.url);
+    const title = seenStory(item)
+      ? `<a href="#order-${esc(item.id || "")}">${esc(item.title || "")}</a>`
+      : (url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(item.title || "")}</a>` : esc(item.title || ""));
+    return `<article class="watch-line">
+      <span class="sev sev-${sev.toLowerCase()}">${esc(sev)}</span>
+      <h3>${title}</h3>
+      <span class="arrow">${esc(item.arrowDay || "→")}</span>
+      <p class="so">${esc(clip(soWhat(item), 140))}</p>
+    </article>`;
   }).join("");
-  document.getElementById("watch").innerHTML = groups || empty("No watch items in this window.");
+  document.getElementById("watch").innerHTML = lines || empty("No watch items in this window.");
 }
 function deltaBlock(pack, title) {
   if (!pack) return "";
@@ -695,9 +823,9 @@ function renderChanged() {
   host.innerHTML = `
     <h3 class="group">Since last refresh · ${esc(refresh.label || doc.sinceLabel || DESK.updated || "previous run")}</h3>
     ${refreshBody || `<p class="meta">No status change, new threat, or new trend since that refresh.</p>`}
-    <h3 class="group">Since yesterday · ${esc(yesterday.label || "no stored yesterday")}</h3>
-    ${yesterday.note ? `<p class="note-plain">${esc(yesterday.note)}</p>` : ""}
-    ${yBody || `<p class="meta">No stored change versus yesterday.</p>`}
+    <h3 class="group">Since yesterday · ${esc(/no stored|history\.json/i.test(yesterday.label || "") ? "no prior day yet" : publicText(yesterday.label || "no prior day yet"))}</h3>
+    ${/history\.json|stored/i.test(yesterday.note || "") ? `<p class="note-plain">No prior day to compare yet.</p>` : (yesterday.note ? `<p class="note-plain">${esc(publicText(yesterday.note))}</p>` : "")}
+    ${yBody || `<p class="meta">No change versus yesterday.</p>`}
     ${pages ? `<h3 class="group">Page changes · Carota pages</h3>${pages}` : ""}`;
 }
 function renderTriggers() {
@@ -732,20 +860,20 @@ function renderRadar() {
       return url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(sample.source || sample.title || "source")}</a>` : "";
     }).filter(Boolean).join(" · ");
     return `<article class="row">
-      <div class="head"><span class="src">${esc(item.call || "")} · score ${esc(String(item.score == null ? "n/a" : item.score))}</span><time>${esc(item.velocity || "")}</time></div>
+      <div class="head"><span class="src">${esc(item.call === "real" ? "follow-through" : item.call === "mixed" ? "talk, little follow-through" : "noise")}</span><time>${esc(item.velocity === "fast" ? "spreading fast" : item.velocity === "building" ? "building" : item.velocity === "slow" ? "slow" : "quiet")}</time></div>
       <h3>${esc(item.title || "")}</h3>
       <p>${esc(item.read || item.note || "")}</p>
-      <p class="meta">Drivers: ${esc((item.drivers || []).join(", ") || "n/a")} · Follow-through: ${esc((item.followThrough || []).join(", ") || "none stored")} · ${esc(confidenceOf(item) || "rumor")}</p>
+      <p class="meta">Who is driving it: ${esc((item.drivers || []).join(", ") || "unclear")} · Follow-through: ${esc((item.followThrough || []).join(", ") || "none yet")} · ${esc(confidenceOf(item) || "rumor")}</p>
       ${samples ? `<p class="meta">Sources: ${samples}</p>` : ""}
       ${soLine(item)}
     </article>`;
   }).join("");
-  document.getElementById("radar").innerHTML = `<p class="note-plain">${esc(doc.note || "")}</p>${cards || empty("No narrative tracks on this run.")}`;
+  document.getElementById("radar").innerHTML = cards || empty("No narrative on this check.");
 }
 function renderLookback() {
   const doc = DESK.lookback || {};
   const block = (rows, label) => {
-    if (!rows || !rows.length) return `<h3 class="group">${esc(label)}</h3><p class="meta">None in the stored week.</p>`;
+    if (!rows || !rows.length) return `<h3 class="group">${esc(label)}</h3><p class="meta">None this week.</p>`;
     return `<h3 class="group">${esc(label)}</h3>` + rows.map((row) => `<p class="meta">${esc(row.title || "")} · ${esc(row.verdict || "")} ${esc(row.note || "")}</p>`).join("");
   };
   document.getElementById("lookback").innerHTML = `<p class="note-plain">${esc(doc.note || "")}</p>${block(doc.escalated, "Escalated")}${block(doc.fizzled, "Fizzled")}${block(doc.calls, "Calls")}`;
@@ -771,7 +899,7 @@ function renderMap() {
     return `<article class="row">
       <div class="head"><span class="src">Carota · ${esc(page.name)}</span><time>${esc(page.checkedLabel || "")}</time></div>
       <h3><a href="${esc(url)}" target="_blank" rel="noopener">${esc(page.status || "watched")}</a></h3>
-      <p class="meta">${esc(page.error || "Hash stored for the next comparison.")}</p>
+      <p class="meta">${esc(publicText(page.error || "Unchanged since the last check."))}</p>
     </article>`;
   }).join("");
   document.getElementById("pages").innerHTML = pages;
@@ -918,7 +1046,7 @@ function sparkline(points) {
 function renderMarkets() {
   const desk = DESK.markets || {};
   const note = document.getElementById("holiday-note");
-  if (note) note.textContent = desk.holidayNote || "";
+  if (note) note.textContent = "Hours are Chicago time. Weekends are closed. Only the NYSE holiday list is included.";
   const now = new Date();
   const html = (desk.regions || []).map((region) => {
     const venues = (region.venues || []).map((venue) => {
@@ -937,8 +1065,14 @@ function renderMarkets() {
     });
     const heads = headlines.length
       ? headlines.slice(0, 8).map(row).join("")
-      : `<p class="meta">No headlines in this window yet. It builds up with each refresh.</p>`;
-    return `<article class="card"><h3>${esc(region.name)}</h3>${venues}${heads}</article>`;
+      : `<p class="meta">No headline in this window.</p>`;
+    const anyOpen = (region.venues || []).some((venue) => venueStatus(venue, now).open);
+    const primary = (region.venues || [])[0] || {};
+    const move = primary.changePct == null ? "no quote" : `${primary.changePct > 0 ? "+" : ""}${primary.changePct}%`;
+    const top = headlines[0] ? clip(headlines[0].title, 72) : "No headline";
+    const slug = String(region.name || "region").toLowerCase().replace(/[^a-z0-9]+/g, "-");
+    const summary = `${esc(region.name)} · ${anyOpen ? "OPEN" : "CLOSED"} · ${esc(primary.indexName || primary.name || "")} ${esc(move)} · ${esc(top)}`;
+    return fold("mkt-" + slug, summary, venues + heads, false);
   }).join("");
   document.getElementById("markets").innerHTML = html || empty("Market feeds have not been loaded.");
 }
@@ -963,11 +1097,136 @@ function renderThreats() {
     const body = mine.length ? mine.map((item) => seenStory(item) ? linkLine(item, "Standing orders") : threatCard(item)).join("") : `<p class="meta">None in this window.</p>`;
     return fold("threat-" + id, `${esc(name)} · ${mine.length} · <span class="sev sev-${top.toLowerCase()}">${esc(top)}</span>`, body, false);
   }).join("");
-  const nwsNote = `<p class="note-plain">Full cards live in Standing orders. This board is the index. Local Williamson County notices are in the local layer.</p>`;
+  const nwsNote = `<p class="note-plain">Open items are listed under Standing orders. Williamson County notices are under Local.</p>`;
   document.getElementById("threats").innerHTML = nwsNote + html;
 }
 function project(lat, lon) {
   return [(Number(lon) + 180) * (800 / 360), (90 - Number(lat)) * (400 / 180)];
+}
+function twoDayPct(asset) {
+  const pts = (asset.points || []).filter((point) => point && point.price != null && point.date);
+  if (pts.length < 3) return null;
+  const last = Number(pts[pts.length - 1].price);
+  const prior = Number(pts[pts.length - 3].price);
+  if (!prior) return null;
+  return ((last / prior) - 1) * 100;
+}
+function meaningOf(name, dir) {
+  const blob = String(name || "").toLowerCase();
+  if (blob.includes("gold") || blob.includes("silver")) {
+    return dir === "up"
+      ? "A fast rise in bullion has often shown up when people want a safer place for cash."
+      : "A fast drop in bullion has often faded when the scare did not spread.";
+  }
+  if (blob.includes("bitcoin") || blob.includes("btc") || blob.includes("ether") || blob.includes("eth")) {
+    return dir === "up"
+      ? "Crypto often swings harder than gold on the same headline."
+      : "A sharp crypto drop often tracks a rush out of risk, and it can reverse in a day.";
+  }
+  return dir === "up"
+    ? "A stronger dollar has often come with tighter money."
+    : "A weaker dollar has often lined up with easier money.";
+}
+function marketReadHtml() {
+  const recent = ((DESK.threats || {}).items || []).filter((item) => {
+    if (ageHours(item) > 72) return false;
+    if (item.kind === "conflict") return true;
+    return item.kind === "storm" && /hurricane|tropical storm|typhoon/i.test(item.title || "") && !/outlook|there are no|no tropical/i.test(item.title || "");
+  }).sort((a, b) => rankOf(b) - rankOf(a));
+  const bullets = [];
+  ((DESK.assets || {}).series || []).forEach((asset) => {
+    const day = asset.changePct == null ? null : Number(asset.changePct);
+    const two = twoDayPct(asset);
+    const useTwo = two != null && (day == null || Math.abs(two) >= Math.abs(day));
+    const move = useTwo ? two : day;
+    if (move == null || Math.abs(move) < 1) return;
+    const dir = move > 0 ? "up" : "down";
+    const span = useTwo ? "in two days" : "today";
+    const hook = recent.map((item) => item.title || "").find((title) => title.length <= 90 && !/analysis|implications|opinion|explainer|what we know/i.test(title));
+    const after = hook ? ` after ${hook}` : "";
+    const big = /gold|silver/i.test(asset.name || "") && move >= 3;
+    const action = big
+      ? "What to do: fuel, water, cash, meds. This is not a buy order."
+      : "What to do: no action.";
+    bullets.push(`${asset.name} ${dir} ${Math.abs(move).toFixed(1)}% ${span}${after}. ${meaningOf(asset.name, dir)} ${action}`);
+  });
+  const lines = (bullets.slice(0, 4)).map((line) => `<li>${esc(line)}</li>`).join("");
+  return `<h3 class="group">Market read</h3>${lines ? `<ul class="read">${lines}</ul>` : `<p class="meta">No move large enough to act on.</p>`}`;
+}
+function returnsOf(points) {
+  const out = {};
+  let prev = null;
+  (points || []).forEach((point) => {
+    if (!point || point.price == null || !point.date) return;
+    const price = Number(point.price);
+    if (prev) out[point.date] = ((price / prev) - 1) * 100;
+    prev = price;
+  });
+  return out;
+}
+function catOf(item) {
+  const kind = item.kind || "";
+  if (kind === "quake") return "earthquake";
+  if (kind === "storm") return "hurricane";
+  if (kind === "conflict") return "war";
+  if (kind === "who" || kind === "cdc") return "outbreak";
+  if (kind === "neo" || kind === "sentry" || kind === "clock") return "existential";
+  return "";
+}
+function insightHtml() {
+  const byCat = {};
+  ((DESK.threats || {}).items || []).forEach((item) => {
+    const cat = catOf(item);
+    if (!cat || !item.date) return;
+    (byCat[cat] = byCat[cat] || new Set()).add(item.date);
+  });
+  const hits = [];
+  ((DESK.assets || {}).series || []).forEach((asset) => {
+    const rets = returnsOf(asset.points || []);
+    const days = Object.keys(rets).sort().slice(-90);
+    const windowDays = new Set(days);
+    Object.keys(byCat).forEach((cat) => {
+      const used = [...byCat[cat]].filter((day) => windowDays.has(day) && rets[day] != null);
+      if (used.length < 4) return;
+      const down = used.filter((day) => rets[day] < -0.3).length;
+      const up = used.filter((day) => rets[day] > 0.3).length;
+      const side = down >= up ? "fell" : "rose";
+      const n = down >= up ? down : up;
+      if (n / used.length < 0.75) return;
+      const confidence = used.length >= 6 && n / used.length >= 0.8 ? "medium" : "low";
+      const action = confidence === "low"
+        ? "What to do: no action. The count is too small to act on."
+        : "What to do: no action from this count alone. Use the standing order if that threat is still open.";
+      const label = cat === "war" ? "war-escalation" : cat;
+      hits.push({
+        score: (n / used.length) * Math.log(used.length),
+        text: `Over 90 days, ${asset.name} ${side} on ${n} of ${used.length} ${label} days. Confidence: ${confidence}. ${action}`
+      });
+    });
+  });
+  hits.sort((a, b) => b.score - a.score);
+  const top = hits.slice(0, 3);
+  if (!top.length) return `<p class="meta">No meaningful link this period.</p>`;
+  return `<ul class="read">${top.map((hit) => `<li>${esc(hit.text)}</li>`).join("")}</ul>`;
+}
+function numberDumpHtml() {
+  const impact = DESK.impact || {};
+  const moveText = (move) => ["m1", "p1", "p3"].map((key) => {
+    const value = move[key];
+    const label = { m1: "day before", p1: "next day", p3: "three days on" }[key];
+    return `${label} ${value == null ? "—" : (value > 0 ? "+" : "") + value + "%"}`;
+  }).join(" · ");
+  const events = (impact.events || []).map((event) => {
+    const moves = (event.moves || []).map((move) => {
+      const href = move.id ? `#asset-${move.id}` : "";
+      const name = href ? `<a href="${esc(href)}">${esc(move.name || "")}</a>` : esc(move.name || "");
+      return `<p class="meta">${name}: ${esc(moveText(move))}</p>`;
+    }).join("");
+    const url = safeUrl(event.url);
+    const title = url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(event.title || "")}</a>` : esc(event.title || "");
+    return `<article class="row"><h3>${title}</h3>${moves}</article>`;
+  }).join("");
+  return events || `<p class="meta">No major event with prices around it.</p>`;
 }
 function renderImpact() {
   const threats = ((DESK.threats || {}).items || []).filter((item) => Number.isFinite(Number(item.lat)) && Number.isFinite(Number(item.lon))).filter(passes);
@@ -979,36 +1238,17 @@ function renderImpact() {
     return `<a href="${esc(url)}" target="_blank" rel="noopener"><circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${radius}" fill="#39ff14"><title>${title}</title></circle></a>`;
   }).join("");
   const path = (DESK.world || {}).path || "";
-  document.getElementById("impact").innerHTML = `<svg class="plot" viewBox="0 0 800 400" role="img" aria-label="World plot of located events"><path class="land" d="${path}"></path>${dots}</svg><p class="note-plain">${threats.length} located events in this window. Marker size follows STANDBY, ALERT, ACTION, CRITICAL.</p>`;
+  document.getElementById("impact").innerHTML = fold("show-map", `Map · ${threats.length} located events`, `<svg class="plot" viewBox="0 0 800 400" role="img" aria-label="World plot of located events"><path class="land" d="${path}"></path>${dots}</svg><p class="note-plain">Marker size follows the status: standby, alert, action, critical.</p>`, false);
   const cards = ((DESK.assets || {}).series || []).map((asset) => {
     const src = safeUrl(asset.source);
     const name = src ? `<a href="${esc(src)}" target="_blank" rel="noopener">${esc(asset.name)}</a>` : esc(asset.name);
     const change = asset.changePct === null || asset.changePct === undefined ? "n/a" : `${asset.changePct > 0 ? "+" : ""}${asset.changePct}%`;
     return `<article class="card" id="asset-${esc(asset.id || "")}"><div class="head"><b>${name}</b><span>${esc(change)}</span></div><div>${esc(fmtNum(asset.level))}</div>${sparkline((asset.points || []).slice(-8))}</article>`;
   }).join("");
-  document.getElementById("assets").innerHTML = cards || empty("Asset quotes are n/a until a free feed answers.");
-  const impact = DESK.impact || {};
-  const moveText = (move) => ["m1", "p1", "p3"].map((key) => {
-    const value = move[key];
-    const label = { m1: "-1d", p1: "+1d", p3: "+3d" }[key];
-    return `${label} ${value == null ? "n/a" : (value > 0 ? "+" : "") + value + "%"}`;
-  }).join(" · ");
-  const events = (impact.events || []).map((event) => {
-    const moves = (event.moves || []).map((move) => {
-      const href = move.id ? `#asset-${move.id}` : (safeUrl(move.source) || "");
-      const name = href ? `<a href="${esc(href)}">${esc(move.name || move.id || "")}</a>` : esc(move.name || "");
-      return `<p class="meta">${name}: ${esc(moveText(move))}</p>`;
-    }).join("");
-    const url = safeUrl(event.url);
-    const title = url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(event.title || "")}</a>` : esc(event.title || "");
-    return `<article class="row"><div class="head"><span class="src">${esc(event.category || "")} · ${esc(event.severity || "")}</span><time>${esc(event.date || "")}</time></div><h3>${title}</h3>${moves}<p class="meta"><a href="#order-${esc(event.id || "")}">Standing orders</a></p></article>`;
-  }).join("");
-  const corrs = (impact.correlations || []).filter((row) => row.r != null).slice(0, 12);
-  const corrHtml = corrs.map((row) => {
-    const read = row.read || {};
-    return `<article class="row"><h3>${esc(row.asset)} · ${esc(row.category)} · ${esc(String(row.window))}d</h3><p>r=${esc(String(row.r))} · ${esc(read.call || "")} · confidence ${esc(read.confidence || "n/a")}</p><p class="meta">${esc(read.text || "")}</p></article>`;
-  }).join("");
-  document.getElementById("correlations").innerHTML = `<h3 class="group">Computed from stored prices</h3><p class="note-plain">${esc(impact.note || "")}</p>${events || `<p class="meta">No ACTION or CRITICAL event with a date in this window.</p>`}${corrHtml || `<p class="meta">Rolling correlations are n/a until the stored window has at least 3 event days and 5 price days.</p>`}`;
+  document.getElementById("assets").innerHTML = cards || empty("Quotes did not answer on this check.");
+  document.getElementById("market-read").innerHTML = marketReadHtml();
+  document.getElementById("insights").innerHTML = insightHtml();
+  document.getElementById("correlations").innerHTML = fold("show-numbers", "Show the numbers", numberDumpHtml(), false);
   renderTimeline(threats);
 }
 function renderTimeline(events) {
@@ -1054,7 +1294,7 @@ function renderTimeline(events) {
   }).join("");
   const firstDate = (visible[0] && visible[0].points.slice(-30)[0].date) || "";
   const lastDate = (visible[0] && visible[0].points.slice(-1)[0].date) || "";
-  host.innerHTML = `<h3 class="group">30-day overlay</h3><p class="note-plain">Percent change of each asset from its first stored close, with located events as vertical marks. Click a mark for the event. Not a forecast.</p><div class="legend">${legend}</div><svg class="plot" viewBox="0 0 ${width} ${height}" role="img" aria-label="Asset percent change versus events"><text x="4" y="96" fill="#1f7a32" font-size="10" transform="rotate(-90 8 96)">% from start</text><text x="${left}" y="${height - 8}" fill="#1f7a32" font-size="10">${esc(firstDate)}</text><text x="${width - 90}" y="${height - 8}" fill="#1f7a32" font-size="10">${esc(lastDate)}</text>${marks}${lines}</svg>`;
+  host.innerHTML = fold("show-lines", "Price lines", `<p class="note-plain">Each line is the move from the first close on the chart. Vertical marks are events. Not a forecast.</p><div class="legend">${legend}</div><svg class="plot" viewBox="0 0 ${width} ${height}" role="img" aria-label="Asset moves versus events"><text x="4" y="96" fill="#1f7a32" font-size="10" transform="rotate(-90 8 96)">% from start</text><text x="${left}" y="${height - 8}" fill="#1f7a32" font-size="10">${esc(firstDate)}</text><text x="${width - 90}" y="${height - 8}" fill="#1f7a32" font-size="10">${esc(lastDate)}</text>${marks}${lines}</svg>`, false);
 }
 function labCard(item) {
   const review = item.review || "NEWS";
@@ -1091,10 +1331,8 @@ function render() {
     : "Run python3 scripts/fetch.py && python3 build.py";
   const banner = document.getElementById("xbanner");
   const offline = !(desk.x && desk.x.online);
-  const reason = (desk.x && desk.x.reason) || "";
-  const note = (desk.x && desk.x.note) || "X feed offline";
   banner.hidden = !offline;
-  banner.textContent = offline && reason && reason !== "missing X_BEARER_TOKEN" ? `${note} — ${reason}` : note;
+  banner.textContent = offline ? "X feed offline" : "";
   renderStatus(items);
   renderBrief();
   renderToday();
@@ -1110,17 +1348,14 @@ function render() {
   renderChips(items);
   renderCasebook(items);
   renderPanel(items);
+  paintSections();
   bindDesk();
   const errs = desk.errors || [];
   document.getElementById("errs").textContent = errs.length ? errs.join(" · ") : "";
   const xReason = (desk.x && desk.x.reason) || "";
-  const xLine = !offline
-    ? "X public posts are on."
-    : (xReason && xReason !== "missing X_BEARER_TOKEN"
-      ? `X feed offline. ${xReason}`
-      : "X feed offline until a bearer token is set.");
+  const xLine = offline ? "X feed offline." : "X public posts are on.";
   document.getElementById("foot").textContent =
-    `Times are America/Chicago. Notes are official descriptions only. Market levels are blank when a feed does not answer. Asset moves and correlations are computed from stored prices, not a forecast. ${xLine} Direct messages are never requested. Refresh opens the GitHub Action; choose Run workflow there.`;
+    `Times are America/Chicago. Notes come from the source. A blank quote means that feed did not answer. This is not a forecast or a trade instruction. ${xLine} Direct messages are never requested.`;
 }
 function showTip(event) {
   const tip = document.getElementById("tip");
@@ -1136,36 +1371,9 @@ function hideTip() {
   if (tip) tip.style.display = "none";
 }
 function bindDesk() {
-  document.querySelectorAll("[data-fold]").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      state.open[btn.dataset.fold] = btn.getAttribute("aria-expanded") !== "true";
-      remember();
-      render();
-    });
-  });
-  document.querySelectorAll("[data-more]").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      state.more[btn.dataset.more] = !state.more[btn.dataset.more];
-      remember();
-      render();
-    });
-  });
-  document.querySelectorAll("[data-focus]").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      state.focus = state.focus === btn.dataset.focus ? "" : btn.dataset.focus;
-      remember();
-      render();
-    });
-  });
-  document.querySelectorAll("[data-asset]").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const id = btn.dataset.asset;
-      state.assetsOff = state.assetsOff.includes(id) ? state.assetsOff.filter((item) => item !== id) : state.assetsOff.concat(id);
-      remember();
-      render();
-    });
-  });
   document.querySelectorAll("[data-tip]").forEach((node) => {
+    if (node.dataset.tipBound) return;
+    node.dataset.tipBound = "1";
     node.addEventListener("mouseenter", showTip);
     node.addEventListener("mousemove", showTip);
     node.addEventListener("mouseleave", hideTip);
@@ -1192,6 +1400,36 @@ function boot() {
     const on = btn.dataset.tab === state.tab;
     btn.classList.toggle("on", on);
     btn.setAttribute("aria-selected", on ? "true" : "false");
+  });
+  document.getElementById("app").addEventListener("click", (event) => {
+    const fold = event.target.closest("[data-fold]");
+    if (fold) {
+      state.open[fold.dataset.fold] = fold.getAttribute("aria-expanded") !== "true";
+      remember();
+      render();
+      return;
+    }
+    const more = event.target.closest("[data-more]");
+    if (more) {
+      state.more[more.dataset.more] = !state.more[more.dataset.more];
+      remember();
+      render();
+      return;
+    }
+    const focus = event.target.closest("[data-focus]");
+    if (focus) {
+      state.focus = state.focus === focus.dataset.focus ? "" : focus.dataset.focus;
+      remember();
+      render();
+      return;
+    }
+    const asset = event.target.closest("[data-asset]");
+    if (asset) {
+      const id = asset.dataset.asset;
+      state.assetsOff = state.assetsOff.includes(id) ? state.assetsOff.filter((item) => item !== id) : state.assetsOff.concat(id);
+      remember();
+      render();
+    }
   });
   document.getElementById("q").addEventListener("input", (event) => {
     state.q = event.target.value.trim().toLowerCase();
