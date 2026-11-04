@@ -52,7 +52,7 @@ Every row links to its source. If a row has no http(s) link, it is dropped.
 
 ## Prepared citizen desk
 
-The page is a situation log, not a trading terminal. Section names: Watchlist, Intel briefs, Situation Log, Signals, Cache. Economic watch, the threat board, the impact map, and the frontier lab sit beside the podcast and X feeds.
+The page is a situation log, not a trading terminal. Every section starts collapsed to one line (status, count, top headline) and opens on click. That choice is remembered in the browser. On a wide screen, Today sits beside the morning brief and standing orders. Standing orders show the top five items until you ask for the rest. The impact section leads with a plain market read; the price table stays behind “Show the numbers.”
 
 - Economic watch: session hours are converted to America/Chicago in the browser, including daylight time. OPEN/CLOSED treats Saturday and Sunday as closed. Only NYSE holidays are listed; other venues can show OPEN on a local holiday. Index levels come from Yahoo Finance. A blank level is `n/a`. Headlines are Google News RSS, kept and deduped for `retainDays`, so the 48h / 72h / 4+ day windows fill in across refreshes.
 - World threat board: USGS M4.5+ for the week, NHC storm RSS, NWS alerts for Franklin TN (35.925, -86.869), Tennessee, then U.S. tornado, flood, and hurricane warnings, GDACS, ReliefWeb, WHO outbreak notices, CDC HAN when the feed answers, conflict headlines, NASA/JPL close approaches and Sentry, and a link to the Bulletin Doomsday Clock. Severity runs STANDBY, ALERT, ACTION, CRITICAL.
