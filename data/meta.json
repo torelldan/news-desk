@@ -14,5 +14,10 @@
     "reason": "",
     "status": null,
     "title": ""
+  },
+  "brief": "The lead item is CRITICAL: Close approach 2019 XF2. X trends are offline on this run, so Today has no topic list. The largest stored daily move is ETH at +5.56%. A preparedness trigger is on (Gold 3.26% on the day (threshold +3%), Silver 5.34% on the day (threshold +5%)). Checklist: fuel, water, cash, meds. Thompson's Station and Williamson County have no ACTION or CRITICAL local notice in this pull.",
+  "trends": {
+    "mode": "offline",
+    "note": "X trends skipped: missing X_BEARER_TOKEN. Direct messages are never requested. The refresh job will call the public trends endpoint, or recent-search counts if that endpoint is not on the plan."
   }
 }

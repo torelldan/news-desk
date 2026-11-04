@@ -22,7 +22,14 @@
       "severity": "ACTION",
       "lat": -36.4058,
       "lon": -98.0489,
-      "mag": 6.4
+      "mag": 6.4,
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "Top off fuel and water. Recheck this item on the next refresh.",
+      "soWhat": "Money: local insurers sometimes move. Supplies: water and a light. Travel: avoid damaged roads. Safety: structure and aftershocks. Action: Top off fuel and water. Recheck this item on the next refresh.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "quake:de68330bae9edd43",
@@ -46,7 +53,14 @@
       "severity": "ACTION",
       "lat": -15.1891,
       "lon": 167.4523,
-      "mag": 6.2
+      "mag": 6.2,
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "Top off fuel and water. Recheck this item on the next refresh.",
+      "soWhat": "Money: local insurers sometimes move. Supplies: water and a light. Travel: avoid damaged roads. Safety: structure and aftershocks. Action: Top off fuel and water. Recheck this item on the next refresh.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "quake:e37d9bfcf16206ec",
@@ -70,7 +84,14 @@
       "severity": "ACTION",
       "lat": -14.1689,
       "lon": 165.8242,
-      "mag": 6.0
+      "mag": 6.0,
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "Top off fuel and water. Recheck this item on the next refresh.",
+      "soWhat": "Money: local insurers sometimes move. Supplies: water and a light. Travel: avoid damaged roads. Safety: structure and aftershocks. Action: Top off fuel and water. Recheck this item on the next refresh.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "quake:4dece1e3250efb44",
@@ -94,7 +115,14 @@
       "severity": "ACTION",
       "lat": 33.822,
       "lon": 136.9854,
-      "mag": 6.0
+      "mag": 6.0,
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "Top off fuel and water. Recheck this item on the next refresh.",
+      "soWhat": "Money: local insurers sometimes move. Supplies: water and a light. Travel: avoid damaged roads. Safety: structure and aftershocks. Action: Top off fuel and water. Recheck this item on the next refresh.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "quake:bac50c9c06fe91a0",
@@ -118,7 +146,14 @@
       "severity": "ALERT",
       "lat": 8.3638,
       "lon": 127.4204,
-      "mag": 5.8
+      "mag": 5.8,
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "Read the source. No kit change unless you are in the named area.",
+      "soWhat": "Money: local insurers sometimes move. Supplies: water and a light. Travel: avoid damaged roads. Safety: structure and aftershocks. Action: Read the source. No kit change unless you are in the named area.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "quake:53d19b6824ba0713",
@@ -142,7 +177,14 @@
       "severity": "ALERT",
       "lat": -5.6991,
       "lon": 141.9018,
-      "mag": 5.7
+      "mag": 5.7,
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "Read the source. No kit change unless you are in the named area.",
+      "soWhat": "Money: local insurers sometimes move. Supplies: water and a light. Travel: avoid damaged roads. Safety: structure and aftershocks. Action: Read the source. No kit change unless you are in the named area.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "quake:6856cc6a54a1c5f1",
@@ -166,7 +208,14 @@
       "severity": "ALERT",
       "lat": -6.3231,
       "lon": 130.3957,
-      "mag": 5.7
+      "mag": 5.7,
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "Read the source. No kit change unless you are in the named area.",
+      "soWhat": "Money: local insurers sometimes move. Supplies: water and a light. Travel: avoid damaged roads. Safety: structure and aftershocks. Action: Read the source. No kit change unless you are in the named area.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "quake:22517429854347e2",
@@ -190,7 +239,14 @@
       "severity": "STANDBY",
       "lat": 3.7386,
       "lon": -75.7198,
-      "mag": 5.4
+      "mag": 5.4,
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "no action needed",
+      "soWhat": "Money: local insurers sometimes move. Supplies: water and a light. Travel: avoid damaged roads. Safety: structure and aftershocks. Action: no action needed.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "quake:fc251099d19c9f7f",
@@ -214,7 +270,14 @@
       "severity": "STANDBY",
       "lat": -13.8672,
       "lon": 165.6167,
-      "mag": 5.4
+      "mag": 5.4,
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "no action needed",
+      "soWhat": "Money: local insurers sometimes move. Supplies: water and a light. Travel: avoid damaged roads. Safety: structure and aftershocks. Action: no action needed.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "quake:f0cc87f76734acd4",
@@ -238,7 +301,14 @@
       "severity": "STANDBY",
       "lat": 8.4677,
       "lon": 127.4269,
-      "mag": 5.4
+      "mag": 5.4,
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "no action needed",
+      "soWhat": "Money: local insurers sometimes move. Supplies: water and a light. Travel: avoid damaged roads. Safety: structure and aftershocks. Action: no action needed.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "quake:bddbc306977e933a",
@@ -262,7 +332,14 @@
       "severity": "STANDBY",
       "lat": -60.2079,
       "lon": -27.9532,
-      "mag": 5.4
+      "mag": 5.4,
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "no action needed",
+      "soWhat": "Money: local insurers sometimes move. Supplies: water and a light. Travel: avoid damaged roads. Safety: structure and aftershocks. Action: no action needed.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "quake:37343ce04e97747d",
@@ -286,7 +363,14 @@
       "severity": "STANDBY",
       "lat": 8.3695,
       "lon": 127.4427,
-      "mag": 5.4
+      "mag": 5.4,
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "no action needed",
+      "soWhat": "Money: local insurers sometimes move. Supplies: water and a light. Travel: avoid damaged roads. Safety: structure and aftershocks. Action: no action needed.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "quake:e560ca742b1d7b7c",
@@ -310,7 +394,14 @@
       "severity": "STANDBY",
       "lat": -15.1213,
       "lon": 168.0994,
-      "mag": 5.4
+      "mag": 5.4,
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "no action needed",
+      "soWhat": "Money: local insurers sometimes move. Supplies: water and a light. Travel: avoid damaged roads. Safety: structure and aftershocks. Action: no action needed.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "quake:c763a0f6d7146eae",
@@ -334,7 +425,14 @@
       "severity": "STANDBY",
       "lat": 34.4807,
       "lon": 26.4694,
-      "mag": 5.3
+      "mag": 5.3,
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "no action needed",
+      "soWhat": "Money: local insurers sometimes move. Supplies: water and a light. Travel: avoid damaged roads. Safety: structure and aftershocks. Action: no action needed.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "quake:23d2ceaca7bdcf59",
@@ -358,7 +456,14 @@
       "severity": "STANDBY",
       "lat": 2.4345,
       "lon": 126.7433,
-      "mag": 5.3
+      "mag": 5.3,
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "no action needed",
+      "soWhat": "Money: local insurers sometimes move. Supplies: water and a light. Travel: avoid damaged roads. Safety: structure and aftershocks. Action: no action needed.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "quake:899e47ec1d539e2e",
@@ -382,7 +487,14 @@
       "severity": "STANDBY",
       "lat": 39.3619,
       "lon": 73.3023,
-      "mag": 5.2
+      "mag": 5.2,
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "no action needed",
+      "soWhat": "Money: local insurers sometimes move. Supplies: water and a light. Travel: avoid damaged roads. Safety: structure and aftershocks. Action: no action needed.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "quake:2f6a659d6dff0a35",
@@ -406,7 +518,14 @@
       "severity": "STANDBY",
       "lat": -35.5195,
       "lon": 78.3027,
-      "mag": 5.2
+      "mag": 5.2,
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "no action needed",
+      "soWhat": "Money: local insurers sometimes move. Supplies: water and a light. Travel: avoid damaged roads. Safety: structure and aftershocks. Action: no action needed.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "quake:0038a733615b2276",
@@ -430,7 +549,14 @@
       "severity": "STANDBY",
       "lat": 24.1441,
       "lon": 141.6725,
-      "mag": 5.2
+      "mag": 5.2,
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "no action needed",
+      "soWhat": "Money: local insurers sometimes move. Supplies: water and a light. Travel: avoid damaged roads. Safety: structure and aftershocks. Action: no action needed.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "quake:b4a2f5ff9d0e9460",
@@ -454,7 +580,14 @@
       "severity": "STANDBY",
       "lat": -13.8729,
       "lon": 165.6456,
-      "mag": 5.2
+      "mag": 5.2,
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "no action needed",
+      "soWhat": "Money: local insurers sometimes move. Supplies: water and a light. Travel: avoid damaged roads. Safety: structure and aftershocks. Action: no action needed.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "quake:d5f5d7499a278dfa",
@@ -478,7 +611,14 @@
       "severity": "STANDBY",
       "lat": 7.565,
       "lon": -80.291,
-      "mag": 5.2
+      "mag": 5.2,
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "no action needed",
+      "soWhat": "Money: local insurers sometimes move. Supplies: water and a light. Travel: avoid damaged roads. Safety: structure and aftershocks. Action: no action needed.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "quake:11a51d452b15a46d",
@@ -502,7 +642,14 @@
       "severity": "STANDBY",
       "lat": 58.1064,
       "lon": -32.1058,
-      "mag": 5.2
+      "mag": 5.2,
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "no action needed",
+      "soWhat": "Money: local insurers sometimes move. Supplies: water and a light. Travel: avoid damaged roads. Safety: structure and aftershocks. Action: no action needed.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "quake:851ebc0d8ec77017",
@@ -526,7 +673,14 @@
       "severity": "STANDBY",
       "lat": -10.1699,
       "lon": -78.5994,
-      "mag": 5.1
+      "mag": 5.1,
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "no action needed",
+      "soWhat": "Money: local insurers sometimes move. Supplies: water and a light. Travel: avoid damaged roads. Safety: structure and aftershocks. Action: no action needed.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "quake:7260938bf5805bf9",
@@ -550,7 +704,14 @@
       "severity": "STANDBY",
       "lat": 1.392,
       "lon": 124.6476,
-      "mag": 5.1
+      "mag": 5.1,
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "no action needed",
+      "soWhat": "Money: local insurers sometimes move. Supplies: water and a light. Travel: avoid damaged roads. Safety: structure and aftershocks. Action: no action needed.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "quake:774ffa8224d52879",
@@ -574,7 +735,14 @@
       "severity": "STANDBY",
       "lat": -31.2244,
       "lon": -177.7236,
-      "mag": 5.1
+      "mag": 5.1,
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "no action needed",
+      "soWhat": "Money: local insurers sometimes move. Supplies: water and a light. Travel: avoid damaged roads. Safety: structure and aftershocks. Action: no action needed.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "quake:5c1b61b32aaebb77",
@@ -598,7 +766,14 @@
       "severity": "STANDBY",
       "lat": -6.9205,
       "lon": 129.9514,
-      "mag": 5.1
+      "mag": 5.1,
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "no action needed",
+      "soWhat": "Money: local insurers sometimes move. Supplies: water and a light. Travel: avoid damaged roads. Safety: structure and aftershocks. Action: no action needed.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "quake:62b79b551473166b",
@@ -622,7 +797,14 @@
       "severity": "STANDBY",
       "lat": -56.2566,
       "lon": -27.1985,
-      "mag": 5.1
+      "mag": 5.1,
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "no action needed",
+      "soWhat": "Money: local insurers sometimes move. Supplies: water and a light. Travel: avoid damaged roads. Safety: structure and aftershocks. Action: no action needed.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "quake:89144307107bd45c",
@@ -646,7 +828,14 @@
       "severity": "STANDBY",
       "lat": -13.8611,
       "lon": 165.6455,
-      "mag": 5.1
+      "mag": 5.1,
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "no action needed",
+      "soWhat": "Money: local insurers sometimes move. Supplies: water and a light. Travel: avoid damaged roads. Safety: structure and aftershocks. Action: no action needed.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "quake:ea36162e63b1eb5e",
@@ -670,7 +859,14 @@
       "severity": "STANDBY",
       "lat": -62.4457,
       "lon": 155.2618,
-      "mag": 5.1
+      "mag": 5.1,
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "no action needed",
+      "soWhat": "Money: local insurers sometimes move. Supplies: water and a light. Travel: avoid damaged roads. Safety: structure and aftershocks. Action: no action needed.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "quake:0b82058b7239309a",
@@ -694,7 +890,14 @@
       "severity": "STANDBY",
       "lat": -5.8137,
       "lon": 148.3151,
-      "mag": 5.1
+      "mag": 5.1,
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "no action needed",
+      "soWhat": "Money: local insurers sometimes move. Supplies: water and a light. Travel: avoid damaged roads. Safety: structure and aftershocks. Action: no action needed.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "quake:1ed504653342ebe7",
@@ -718,7 +921,14 @@
       "severity": "STANDBY",
       "lat": 13.3785,
       "lon": 91.6593,
-      "mag": 5.1
+      "mag": 5.1,
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "no action needed",
+      "soWhat": "Money: local insurers sometimes move. Supplies: water and a light. Travel: avoid damaged roads. Safety: structure and aftershocks. Action: no action needed.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "storm:6351f1367051f576",
@@ -739,7 +949,14 @@
         "storm",
         "action"
       ],
-      "severity": "ACTION"
+      "severity": "ACTION",
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "Top off fuel and water. Recheck this item on the next refresh.",
+      "soWhat": "Money: fuel prices can jump locally. Supplies: fuel, water, cash, meds. Travel: delay Gulf or county travel. Safety: follow the warning, not the rumor. Action: Top off fuel and water. Recheck this item on the next refresh.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "storm:e618ef23b48c73ee",
@@ -760,7 +977,14 @@
         "storm",
         "action"
       ],
-      "severity": "ACTION"
+      "severity": "ACTION",
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "Top off fuel and water. Recheck this item on the next refresh.",
+      "soWhat": "Money: fuel prices can jump locally. Supplies: fuel, water, cash, meds. Travel: delay Gulf or county travel. Safety: follow the warning, not the rumor. Action: Top off fuel and water. Recheck this item on the next refresh.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "storm:ec5f60db7bdde678",
@@ -781,7 +1005,14 @@
         "storm",
         "action"
       ],
-      "severity": "ACTION"
+      "severity": "ACTION",
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "Top off fuel and water. Recheck this item on the next refresh.",
+      "soWhat": "Money: fuel prices can jump locally. Supplies: fuel, water, cash, meds. Travel: delay Gulf or county travel. Safety: follow the warning, not the rumor. Action: Top off fuel and water. Recheck this item on the next refresh.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "storm:e618ef23b48c73ee",
@@ -802,7 +1033,14 @@
         "storm",
         "action"
       ],
-      "severity": "ACTION"
+      "severity": "ACTION",
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "Top off fuel and water. Recheck this item on the next refresh.",
+      "soWhat": "Money: fuel prices can jump locally. Supplies: fuel, water, cash, meds. Travel: delay Gulf or county travel. Safety: follow the warning, not the rumor. Action: Top off fuel and water. Recheck this item on the next refresh.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "storm:6351f1367051f576",
@@ -823,7 +1061,14 @@
         "storm",
         "action"
       ],
-      "severity": "ACTION"
+      "severity": "ACTION",
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "Top off fuel and water. Recheck this item on the next refresh.",
+      "soWhat": "Money: fuel prices can jump locally. Supplies: fuel, water, cash, meds. Travel: delay Gulf or county travel. Safety: follow the warning, not the rumor. Action: Top off fuel and water. Recheck this item on the next refresh.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "storm:fd4c6f97b257d4ad",
@@ -844,7 +1089,14 @@
         "storm",
         "action"
       ],
-      "severity": "ACTION"
+      "severity": "ACTION",
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "Top off fuel and water. Recheck this item on the next refresh.",
+      "soWhat": "Money: fuel prices can jump locally. Supplies: fuel, water, cash, meds. Travel: delay Gulf or county travel. Safety: follow the warning, not the rumor. Action: Top off fuel and water. Recheck this item on the next refresh.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "storm:77a16df7c04a1c9e",
@@ -865,7 +1117,14 @@
         "storm",
         "action"
       ],
-      "severity": "ACTION"
+      "severity": "ACTION",
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "Top off fuel and water. Recheck this item on the next refresh.",
+      "soWhat": "Money: fuel prices can jump locally. Supplies: fuel, water, cash, meds. Travel: delay Gulf or county travel. Safety: follow the warning, not the rumor. Action: Top off fuel and water. Recheck this item on the next refresh.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "nws:be7229333290be5d",
@@ -887,7 +1146,14 @@
         "alert",
         "tennessee"
       ],
-      "severity": "ALERT"
+      "severity": "ALERT",
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "Read the source. No kit change unless you are in the named area.",
+      "soWhat": "Money: fuel prices can jump locally. Supplies: fuel, water, cash, meds. Travel: delay Gulf or county travel. Safety: follow the warning, not the rumor. Action: Read the source. No kit change unless you are in the named area.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "relief:0109da81b6fc36e7",
@@ -908,7 +1174,14 @@
         "relief",
         "standby"
       ],
-      "severity": "STANDBY"
+      "severity": "STANDBY",
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "no action needed",
+      "soWhat": "Money: no direct move. Supplies: no change. Travel: no change. Safety: routine. Action: no action needed.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "who:53dcad2ca08ee68e",
@@ -929,7 +1202,14 @@
         "who",
         "alert"
       ],
-      "severity": "ALERT"
+      "severity": "ALERT",
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "Read the source. No kit change unless you are in the named area.",
+      "soWhat": "Money: travel and pharma names can move. Supplies: a basic med kit. Travel: check the destination. Safety: official health notice over social posts. Action: Read the source. No kit change unless you are in the named area.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "who:34e06283c9e6424f",
@@ -950,7 +1230,14 @@
         "who",
         "alert"
       ],
-      "severity": "ALERT"
+      "severity": "ALERT",
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "Read the source. No kit change unless you are in the named area.",
+      "soWhat": "Money: travel and pharma names can move. Supplies: a basic med kit. Travel: check the destination. Safety: official health notice over social posts. Action: Read the source. No kit change unless you are in the named area.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "who:96ed914230f7e2c2",
@@ -971,7 +1258,14 @@
         "who",
         "alert"
       ],
-      "severity": "ALERT"
+      "severity": "ALERT",
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "Read the source. No kit change unless you are in the named area.",
+      "soWhat": "Money: travel and pharma names can move. Supplies: a basic med kit. Travel: check the destination. Safety: official health notice over social posts. Action: Read the source. No kit change unless you are in the named area.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "who:af23d8d888512d6c",
@@ -992,7 +1286,14 @@
         "who",
         "alert"
       ],
-      "severity": "ALERT"
+      "severity": "ALERT",
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "Read the source. No kit change unless you are in the named area.",
+      "soWhat": "Money: travel and pharma names can move. Supplies: a basic med kit. Travel: check the destination. Safety: official health notice over social posts. Action: Read the source. No kit change unless you are in the named area.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "who:d4b1b93168f99a56",
@@ -1013,7 +1314,14 @@
         "who",
         "alert"
       ],
-      "severity": "ALERT"
+      "severity": "ALERT",
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "Read the source. No kit change unless you are in the named area.",
+      "soWhat": "Money: travel and pharma names can move. Supplies: a basic med kit. Travel: check the destination. Safety: official health notice over social posts. Action: Read the source. No kit change unless you are in the named area.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "who:5fac872a6e87d32c",
@@ -1034,7 +1342,14 @@
         "who",
         "alert"
       ],
-      "severity": "ALERT"
+      "severity": "ALERT",
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "Read the source. No kit change unless you are in the named area.",
+      "soWhat": "Money: travel and pharma names can move. Supplies: a basic med kit. Travel: check the destination. Safety: official health notice over social posts. Action: Read the source. No kit change unless you are in the named area.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "headline:e690bd89fc9d54af",
@@ -1057,7 +1372,14 @@
         "cdc",
         "action"
       ],
-      "severity": "ACTION"
+      "severity": "ACTION",
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "Top off fuel and water. Recheck this item on the next refresh.",
+      "soWhat": "Money: travel and pharma names can move. Supplies: a basic med kit. Travel: check the destination. Safety: official health notice over social posts. Action: Top off fuel and water. Recheck this item on the next refresh.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "cdc:12c7ca9ea1a41c99",
@@ -1078,7 +1400,14 @@
         "cdc",
         "standby"
       ],
-      "severity": "STANDBY"
+      "severity": "STANDBY",
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "no action needed",
+      "soWhat": "Money: no direct move. Supplies: no change. Travel: no change. Safety: routine. Action: no action needed.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "headline:03859e503e8592bb",
@@ -1101,7 +1430,14 @@
         "conflict",
         "alert"
       ],
-      "severity": "ALERT"
+      "severity": "ALERT",
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "Read the source. No kit change unless you are in the named area.",
+      "soWhat": "Money: gold and energy often react. Supplies: no extra food run from one headline. Travel: avoid the named region. Safety: this is not a local shelter order. Action: Read the source. No kit change unless you are in the named area.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "headline:33ab8eef7527ac23",
@@ -1124,7 +1460,14 @@
         "conflict",
         "alert"
       ],
-      "severity": "ALERT"
+      "severity": "ALERT",
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "Read the source. No kit change unless you are in the named area.",
+      "soWhat": "Money: gold and energy often react. Supplies: no extra food run from one headline. Travel: avoid the named region. Safety: this is not a local shelter order. Action: Read the source. No kit change unless you are in the named area.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "headline:2df553f32bfedc9b",
@@ -1147,7 +1490,14 @@
         "conflict",
         "alert"
       ],
-      "severity": "ALERT"
+      "severity": "ALERT",
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "Read the source. No kit change unless you are in the named area.",
+      "soWhat": "Money: gold and energy often react. Supplies: no extra food run from one headline. Travel: avoid the named region. Safety: this is not a local shelter order. Action: Read the source. No kit change unless you are in the named area.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "neo:9934e838c1539fdc",
@@ -1168,7 +1518,14 @@
         "neo",
         "critical"
       ],
-      "severity": "CRITICAL"
+      "severity": "CRITICAL",
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "Treat this as urgent. Confirm it on the linked official source, then handle water, cash, and a way out.",
+      "soWhat": "Money: no reason to trade the headline. Supplies: fuel, water, cash, meds. Travel: check the named area. Safety: confirm it on the official source. Action: Treat this as urgent. Confirm it on the linked official source, then handle water, cash, and a way out.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "neo:1095427f35282423",
@@ -1189,7 +1546,14 @@
         "neo",
         "critical"
       ],
-      "severity": "CRITICAL"
+      "severity": "CRITICAL",
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "Treat this as urgent. Confirm it on the linked official source, then handle water, cash, and a way out.",
+      "soWhat": "Money: no reason to trade the headline. Supplies: fuel, water, cash, meds. Travel: check the named area. Safety: confirm it on the official source. Action: Treat this as urgent. Confirm it on the linked official source, then handle water, cash, and a way out.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "neo:d545dfda650a0803",
@@ -1210,7 +1574,14 @@
         "neo",
         "action"
       ],
-      "severity": "ACTION"
+      "severity": "ACTION",
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "Top off fuel and water. Recheck this item on the next refresh.",
+      "soWhat": "Money: no reason to trade the headline. Supplies: fuel, water, cash, meds. Travel: check the named area. Safety: confirm it on the official source. Action: Top off fuel and water. Recheck this item on the next refresh.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "neo:c40f68639c269424",
@@ -1231,7 +1602,14 @@
         "neo",
         "action"
       ],
-      "severity": "ACTION"
+      "severity": "ACTION",
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "Top off fuel and water. Recheck this item on the next refresh.",
+      "soWhat": "Money: no reason to trade the headline. Supplies: fuel, water, cash, meds. Travel: check the named area. Safety: confirm it on the official source. Action: Top off fuel and water. Recheck this item on the next refresh.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "neo:dbc237db66be6c4b",
@@ -1252,7 +1630,14 @@
         "neo",
         "action"
       ],
-      "severity": "ACTION"
+      "severity": "ACTION",
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "Top off fuel and water. Recheck this item on the next refresh.",
+      "soWhat": "Money: no reason to trade the headline. Supplies: fuel, water, cash, meds. Travel: check the named area. Safety: confirm it on the official source. Action: Top off fuel and water. Recheck this item on the next refresh.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "neo:0d13b3b6bfed84a2",
@@ -1273,7 +1658,14 @@
         "neo",
         "action"
       ],
-      "severity": "ACTION"
+      "severity": "ACTION",
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "Top off fuel and water. Recheck this item on the next refresh.",
+      "soWhat": "Money: no reason to trade the headline. Supplies: fuel, water, cash, meds. Travel: check the named area. Safety: confirm it on the official source. Action: Top off fuel and water. Recheck this item on the next refresh.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "sentry:513532e0e0ea6ef9",
@@ -1294,7 +1686,14 @@
         "sentry",
         "alert"
       ],
-      "severity": "ALERT"
+      "severity": "ALERT",
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "Read the source. No kit change unless you are in the named area.",
+      "soWhat": "Money: no direct quote move. Supplies: no change. Travel: no change. Safety: read the source. Action: Read the source. No kit change unless you are in the named area.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "sentry:2dc5c86a057f704e",
@@ -1315,7 +1714,14 @@
         "sentry",
         "alert"
       ],
-      "severity": "ALERT"
+      "severity": "ALERT",
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "Read the source. No kit change unless you are in the named area.",
+      "soWhat": "Money: no direct quote move. Supplies: no change. Travel: no change. Safety: read the source. Action: Read the source. No kit change unless you are in the named area.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "sentry:d8dd27e8fcda181e",
@@ -1336,7 +1742,14 @@
         "sentry",
         "alert"
       ],
-      "severity": "ALERT"
+      "severity": "ALERT",
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "Read the source. No kit change unless you are in the named area.",
+      "soWhat": "Money: no direct quote move. Supplies: no change. Travel: no change. Safety: read the source. Action: Read the source. No kit change unless you are in the named area.",
+      "confidence": "reported",
+      "sourceCount": 1
     },
     {
       "id": "clock:bulletin",
@@ -1357,7 +1770,14 @@
         "clock",
         "standby"
       ],
-      "severity": "STANDBY"
+      "severity": "STANDBY",
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "action": "no action needed",
+      "soWhat": "Money: no direct move. Supplies: no change. Travel: no change. Safety: routine. Action: no action needed.",
+      "confidence": "reported",
+      "sourceCount": 1
     }
   ]
 }

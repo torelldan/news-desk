@@ -745,6 +745,78 @@ def desk_changes(now, prev_meta, prev_seen, change_items, page_changes, prev_mar
     }
 
 
+def fetch_trends(token: str, now: datetime) -> dict:
+    """Public WOEID trends, or recent-search counts if that endpoint is not on the plan.
+
+    Never calls direct messages or personalized trends.
+    """
+    import citizen
+
+    token = d.normalize_bearer(token)
+    if not token:
+        print("  X trends skipped: no bearer token")
+        return {
+            "mode": "offline",
+            "note": "X trends skipped: missing X_BEARER_TOKEN. Direct messages are never requested.",
+            "items": [],
+        }
+    raw_kept = []
+    errors = []
+    endpoint_ok = False
+    for place, woeid in (("US", "23424977"), ("worldwide", "1")):
+        try:
+            payload = x_get(
+                f"/2/trends/by/woeid/{woeid}",
+                token,
+                {"max_trends": "50", "trend.fields": "trend_name,tweet_count"},
+            )
+            endpoint_ok = True
+            raw_kept.extend(citizen.filter_trends(payload.get("data") or [], place))
+        except urllib.error.HTTPError as err:
+            info = d.describe_x_error(err.code, http_error_body(err), token)
+            errors.append(f"{place} {info.get('reason') or err.code}")
+            print(f"  X trends {place}: {info.get('reason')}")
+        except Exception as err:
+            errors.append(f"{place}: {d.scrub_secret(str(err), token)}")
+            print(f"  X trends {place}: {err}")
+    if endpoint_ok:
+        note = "X trends by WOEID (US 23424977 and worldwide 1). Kept only when the name matches a threat or preparedness theme."
+        if errors:
+            note += " Partial: " + "; ".join(errors)
+        if not raw_kept:
+            note += " The endpoint answered and none of the names matched."
+        return {"mode": "trends", "note": note, "items": raw_kept[:12]}
+
+    buckets = []
+    search_errors = []
+    for category, query in citizen.SEARCH_QUERIES:
+        try:
+            payload = x_get(
+                "/2/tweets/search/recent",
+                token,
+                {
+                    "query": f"{query} lang:en -is:retweet -is:reply",
+                    "max_results": "10",
+                    "tweet.fields": "created_at,public_metrics",
+                },
+            )
+            tweets = payload.get("data") or []
+            count = (payload.get("meta") or {}).get("result_count", len(tweets))
+            buckets.append({"category": category, "query": query, "tweets": tweets, "resultCount": count})
+        except urllib.error.HTTPError as err:
+            info = d.describe_x_error(err.code, http_error_body(err), token)
+            search_errors.append(f"{category} {info.get('reason') or err.code}")
+        except Exception as err:
+            search_errors.append(f"{category}: {d.scrub_secret(str(err), token)}")
+    doc = citizen.trends_from_search(buckets)
+    if errors:
+        doc["note"] = "The X trends endpoint was not available (" + "; ".join(errors) + "). " + doc["note"]
+    if search_errors:
+        doc["note"] += " Search gaps: " + "; ".join(search_errors)
+    print(f"  X trends fallback recent-search: {len(doc.get('items') or [])} keyword buckets")
+    return doc
+
+
 def main() -> int:
     now = datetime.now(d.CT)
     catalog = json.loads(SOURCES_PATH.read_text())
@@ -921,6 +993,110 @@ def main() -> int:
         prev_science, boards_out.get("science") or {},
     )
 
+    import citizen
+    today = now.strftime("%Y-%m-%d")
+    prev_history = load_json(DATA / "history.json", {"days": []})
+    prev_trends = load_json(DATA / "trends.json", {"items": []})
+    threat_items = (boards_out.get("threats") or {}).get("items") or []
+    try:
+        trends = fetch_trends(token, now)
+    except Exception as err:
+        errors.append(f"X trends: {err}")
+        trends = {"mode": "offline", "note": f"X trends failed: {err}", "items": []}
+    triggers = citizen.evaluate_triggers(threat_items, boards_out.get("assets") or {}, trends)
+    citizen.apply_outlook(threat_items, prev_history, today)
+    trends = citizen.annotate_trends(trends, threat_items)
+    try:
+        local = citizen.fetch_local(now)
+    except Exception as err:
+        errors.append(f"Local layer: {err}")
+        local = {"place": "37179", "items": [], "gaps": [str(err)]}
+    try:
+        radar = citizen.fetch_radar(now)
+    except Exception as err:
+        errors.append(f"Narrative radar: {err}")
+        radar = {"items": [], "note": f"n/a — {err}"}
+    impact = citizen.impact_report(threat_items, boards_out.get("assets") or {})
+    brief = citizen.morning_brief(threat_items, trends, triggers, boards_out.get("assets") or {}, local)
+    history = citizen.record_history(prev_history, today, threat_items, trends, triggers, d.ct_label(now, True))
+    lookback = citizen.weekly_lookback(history, today)
+    if boards_out.get("threats"):
+        boards_out["threats"]["items"] = threat_items
+        save_json(DATA / "threats.json", boards_out["threats"])
+
+    def _brief_row(item, section, note=""):
+        return {
+            "id": item.get("id") or "",
+            "title": item.get("title") or item.get("name") or "",
+            "url": item.get("url") or "",
+            "source": section,
+            "note": note or item.get("why") or item.get("note") or "",
+            "section": section,
+            "severity": item.get("severity") or "",
+            "kind": item.get("kind") or "",
+            "label": item.get("label") or "",
+            "published": item.get("published") or "",
+        }
+
+    def _window(prev_map, items, section):
+        fresh, up, down, gone = [], [], [], []
+        current = {}
+        for item in items:
+            current[item.get("id")] = item
+            before = prev_map.get(item.get("id"))
+            if before is None:
+                fresh.append(_brief_row(item, section))
+            elif citizen._rank(item.get("severity") or "") > citizen._rank(before if isinstance(before, str) else (before.get("severity") or "")):
+                fresh_before = before if isinstance(before, str) else (before.get("severity") or "")
+                up.append(_brief_row(item, section, f"{fresh_before} → {item.get('severity')}"))
+            elif citizen._rank(item.get("severity") or "") < citizen._rank(before if isinstance(before, str) else (before.get("severity") or "")):
+                fresh_before = before if isinstance(before, str) else (before.get("severity") or "")
+                down.append(_brief_row(item, section, f"{fresh_before} → {item.get('severity')}"))
+        for item_id, before in prev_map.items():
+            if item_id in current:
+                continue
+            sev = before if isinstance(before, str) else (before.get("severity") or "")
+            title = item_id if isinstance(before, str) else (before.get("title") or item_id)
+            if citizen._rank(sev) >= citizen._rank("ALERT"):
+                gone.append(_brief_row({"id": item_id, "title": title, "severity": sev}, section, "No longer on the board."))
+        return {"new": fresh[:20], "escalated": up[:20], "deescalated": down[:20], "resolved": gone[:20]}
+
+    prev_threat_map = {item.get("id"): item for item in (prev_threats or {}).get("items") or []}
+    prev_trend_map = {item.get("id"): item for item in (prev_trends or {}).get("items") or []}
+    yday = (now.date() - timedelta(days=1)).isoformat()
+    ysnap = None
+    for snap in prev_history.get("days") or []:
+        if (snap.get("date") or "") <= yday and (ysnap is None or snap.get("date") > ysnap.get("date", "")):
+            ysnap = snap
+    def _by_name(rows, name_key="name"):
+        return {(row.get(name_key) or row.get("title") or "").lower(): row for row in rows if (row.get(name_key) or row.get("title"))}
+
+    trend_refresh = _window(prev_trend_map, trends.get("items") or [], "Today")
+    names_now = _by_name(trends.get("items") or [])
+    empty_trends = {"new": [], "escalated": [], "deescalated": [], "resolved": []}
+    change_groups["sinceRefresh"] = {
+        "label": prev_meta.get("checkedLabel") or "the previous refresh",
+        "threats": _window(prev_threat_map, threat_items, "World threat board"),
+        "trends": trend_refresh,
+    }
+    if ysnap:
+        y_threats = {row.get("id"): row for row in ysnap.get("threats") or []}
+        names_yday = _by_name(ysnap.get("trends") or [])
+        trend_yday_new = [_brief_row(item, "Today") for key, item in names_now.items() if key not in names_yday][:20]
+        change_groups["sinceYesterday"] = {
+            "label": ysnap.get("label") or ysnap.get("date") or yday,
+            "threats": _window(y_threats, threat_items, "World threat board"),
+            "trends": {"new": trend_yday_new, "escalated": [], "deescalated": [], "resolved": []},
+        }
+    else:
+        change_groups["sinceYesterday"] = {
+            "label": "no stored yesterday",
+            "note": "Since yesterday starts once a prior day is in data/history.json.",
+            "threats": {"new": [], "escalated": [], "deescalated": [], "resolved": []},
+            "trends": empty_trends,
+        }
+    change_groups["trendsMode"] = trends.get("mode") or ""
+
     meta = {
         "baseline": baseline,
         "checkedAt": now.isoformat(timespec="seconds"),
@@ -928,6 +1104,8 @@ def main() -> int:
         "errors": errors,
         "retainDays": retain,
         "today": now.strftime("%Y-%m-%d"),
+        "brief": brief,
+        "trends": {"mode": trends.get("mode") or "", "note": trends.get("note") or ""},
         "x": {
             "online": bool(x_status.get("online")),
             "note": x_status.get("note") or "",
@@ -945,6 +1123,13 @@ def main() -> int:
     save_json(DATA / "sources.json", catalog_rows)
     save_json(DATA / "seen.json", {"checkedAt": meta["checkedAt"], "ids": current_ids})
     save_json(DATA / "huberman_notes.json", notes)
+    save_json(DATA / "trends.json", trends)
+    save_json(DATA / "triggers.json", triggers)
+    save_json(DATA / "local.json", local)
+    save_json(DATA / "radar.json", radar)
+    save_json(DATA / "impact.json", impact)
+    save_json(DATA / "history.json", history)
+    save_json(DATA / "lookback.json", lookback)
     print(
         f"saved {len(episodes)} episodes, {len(signals)} signals, "
         f"{len(change_items)} changes, baseline={baseline}, x={meta['x']['note'] or 'online'}, "

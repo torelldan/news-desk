@@ -228,6 +228,9 @@
   .split { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
   .foot { margin-top: 28px; color: var(--dim); font-size: 12px; border-top: 1px solid var(--line); padding-top: 10px; }
   .err { color: var(--green); font-size: 12px; }
+  .brief { border: 1px solid var(--line); padding: 12px 14px; margin: 0 0 8px; color: var(--bright); line-height: 1.45; }
+  .so { color: var(--dim); font-size: 12px; margin: 6px 0 0; }
+  .arrow { color: var(--green); letter-spacing: 0.04em; }
   @media (max-width: 800px) {
     .front, .split, .mast { grid-template-columns: 1fr; }
     .tools { justify-content: flex-start; flex-wrap: wrap; }
@@ -262,6 +265,10 @@
     </div>
   </header>
   <p class="banner" id="xbanner" hidden>X feed offline</p>
+  <section class="section" id="briefing">
+    <h2><em>00</em> // Morning brief</h2>
+    <div id="brief"></div>
+  </section>
   <section class="section" id="economic">
     <h2><em>01</em> // Economic watch</h2>
     <p class="note-plain" id="holiday-note"></p>
@@ -277,18 +284,18 @@
       <div id="status"></div>
       <div class="section">
         <h2>Standing orders</h2>
-        <ol class="priors">
-          <li><strong>Main feeds.</strong> New episodes from AREA52 DEBRIEFED, JRE, American Alchemy, Danny Jones, Huberman Lab, Lex Fridman, the Shawn Ryan Show, and Julian Dorey.</li>
-          <li><strong>Leave the side shows.</strong> Skip JRE MMA Show and Protect Our Parks. Shawn Ryan Show is not Target Intelligence. Julian Dorey is not Julian Dorey Daily.</li>
-          <li><strong>No cross-promos.</strong> “You Might Enjoy” promotions stay out. That footer is cut from notes.</li>
-          <li><strong>Public posts only.</strong> The named X accounts, without retweets or replies. Direct messages are never requested.</li>
-          <li><strong>Carota Wealth.</strong> The publisher’s Substack and the about, services, research, and contact pages.</li>
-          <li><strong>Official words.</strong> Notes come from the source. The desk does not write recaps. Market figures are blank when a feed does not answer.</li>
-          <li><strong>Patterns, not advice.</strong> Asset notes describe typical historical reactions. They are not predictions or instructions.</li>
-        </ol>
+        <div id="orders"></div>
       </div>
     </aside>
   </div>
+  <section class="section">
+    <h2>Preparedness triggers</h2>
+    <div id="triggers"></div>
+  </section>
+  <section class="section">
+    <h2>Local layer · Thompson's Station · 37179</h2>
+    <div id="local"></div>
+  </section>
   <section class="section">
     <h2><em>03</em> // Watchlist</h2>
     <div class="watch" id="watch"></div>
@@ -317,6 +324,14 @@
     <h2><em>08</em> // World desk</h2>
     <div class="map" id="map"></div>
     <div class="list" id="pages" style="margin-top:10px"></div>
+  </section>
+  <section class="section">
+    <h2>Narrative radar</h2>
+    <div id="radar"></div>
+  </section>
+  <section class="section">
+    <h2>Weekly look-back</h2>
+    <div id="lookback"></div>
   </section>
   <section class="section">
     <h2><em>09</em> // Intel briefs</h2>
@@ -452,6 +467,50 @@ function matches(item) {
     .join(" ").toLowerCase();
   return state.q.split(/\s+/).every((part) => blob.includes(part));
 }
+let claimed = new Set();
+function storyKey(item) {
+  return String((item && (item.title || item.name)) || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim().slice(0, 90);
+}
+function claim(item) {
+  const key = storyKey(item);
+  if (!key) return true;
+  if (claimed.has(key)) return false;
+  claimed.add(key);
+  return true;
+}
+function seenStory(item) {
+  return claimed.has(storyKey(item));
+}
+function soWhat(item) {
+  if (item && item.soWhat) return item.soWhat;
+  const lane = String((item && (item.lane || item.kind)) || "");
+  const sev = String((item && item.severity) || "STANDBY").toUpperCase();
+  if (lane === "x" || lane === "podcast" || lane === "substack" || sev === "STANDBY") {
+    return "Money: no direct move. Supplies: no change. Travel: no change. Safety: routine. Action: no action needed.";
+  }
+  if (sev === "CRITICAL") return "Money: local prices can jump. Supplies: fuel, water, cash, meds. Travel: delay if you are in the named area. Safety: follow the official notice. Action: run the short checklist.";
+  if (sev === "ACTION") return "Money: watch fuel and insurance. Supplies: top off water. Travel: check the route. Safety: read the warning. Action: recheck on the next refresh.";
+  return "Money: no position change. Supplies: no change. Travel: no change. Safety: read the source. Action: no action needed.";
+}
+function confidenceOf(item) {
+  if (!item) return "";
+  let level = item.confidence || "";
+  if ((item.lane === "x" || item.kind === "x" || item.kind === "trend") && level === "confirmed") level = "rumor";
+  if (!level && (item.lane === "x" || item.kind === "x" || item.kind === "trend")) level = "rumor";
+  if (!level) return "";
+  const n = item.sourceCount == null ? "" : ` · ${item.sourceCount} independent`;
+  return `${level}${n}`;
+}
+function soLine(item) {
+  return `<p class="so">${esc(soWhat(item))}</p>`;
+}
+function linkLine(item, where) {
+  const url = safeUrl(item.url);
+  const title = esc(item.title || item.name || "item");
+  const jump = item.id ? ` <a href="#order-${esc(item.id)}">standing orders</a>` : "";
+  const src = url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${title}</a>` : title;
+  return `<p class="meta">${src} · also in ${esc(where)}.${jump}</p>`;
+}
 function card(item) {
   const url = safeUrl(item.url);
   if (!url) return "";
@@ -459,10 +518,13 @@ function card(item) {
     ? `<p>${esc(item.note)}</p>`
     : (item.note ? "" : `<p>No official description on the source.</p>`);
   const guest = item.guest ? `<div class="guest">${esc(item.guest)}</div>` : "";
+  const conf = confidenceOf(item);
   return `<article class="card">
-    <div class="head"><span class="src">${esc(item.source)}</span><time>${esc(item.label)}</time></div>
+    <div class="head"><span class="src">${esc(item.source)}</span><time>${esc(item.label || "")}</time></div>
     <h3><a href="${esc(url)}" target="_blank" rel="noopener">${esc(item.title)}</a></h3>
     ${guest}${note}
+    ${conf ? `<p class="meta">${esc(conf)}</p>` : ""}
+    ${soLine(item)}
     <a class="open" href="${esc(url)}" target="_blank" rel="noopener">source</a>
   </article>`;
 }
@@ -471,10 +533,13 @@ function row(item) {
   if (!url) return "";
   const guest = item.guest ? ` · ${esc(item.guest)}` : "";
   const note = item.note ? `<p>${esc(item.note)}</p>` : "";
+  const conf = confidenceOf(item);
   return `<article class="row">
-    <div class="head"><span class="src">${esc(item.source)}${guest}</span><time>${esc(item.label)}</time></div>
-    <h3><a href="${esc(url)}" target="_blank" rel="noopener">${esc(item.title)}</a></h3>
+    <div class="head"><span class="src">${esc(item.source)}${guest}</span><time>${esc(item.label || "")}</time></div>
+    <h3><a href="${esc(url)}" target="_blank" rel="noopener">${esc(item.title || item.name || "")}</a></h3>
     ${note}
+    ${conf ? `<p class="meta">${esc(conf)}</p>` : ""}
+    ${soLine(item)}
   </article>`;
 }
 function empty(text) {
@@ -524,10 +589,47 @@ function renderStatus(items) {
   const detail = state.focus ? `<p class="break">${openBits.map(([label, count]) => `${esc(label)} ${esc(String(count))}`).join(" · ")}</p>` : "";
   document.getElementById("status").innerHTML = buttons + detail;
 }
-function renderToday(items) {
-  const rows = items.filter(passes).slice(0, 6);
+function renderBrief() {
+  const text = DESK.brief || "The morning brief is written on the next refresh from the stored board.";
+  document.getElementById("brief").innerHTML = `<p class="brief">${esc(text)}</p>`;
+}
+function renderToday() {
+  const doc = DESK.trends || {};
+  const items = (doc.items || []).filter(passes);
+  const cards = items.map((item) => {
+    if (!claim(item)) return linkLine(item, "an earlier section");
+    const volume = item.volume == null || item.volume === "" ? "volume n/a" : `${item.volume} posts`;
+    const samples = (item.samples || []).map((sample) => {
+      const url = safeUrl(sample.url);
+      if (!url) return "";
+      return `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(sample.text || sample.title || "source")}</a>`;
+    }).filter(Boolean).join(" · ");
+    const body = Object.assign({}, item, {
+      source: `${item.source || "X"} · ${item.category || "theme"} · ${item.place || ""}`,
+      note: `${volume}. ${item.note || ""} ${samples ? "Sources: " + samples.replace(/<[^>]+>/g, "") : ""}`.trim()
+    });
+    const html = card(body);
+    return samples ? html.replace("</article>", `<p class="meta">Sample sources: ${samples}</p></article>`) : html;
+  }).join("");
   const host = document.getElementById("today");
-  host.innerHTML = rows.length ? `<div class="stack">${rows.map(card).join("")}</div>` : empty("Nothing in that window.");
+  host.innerHTML = `<p class="note-plain">${esc(doc.note || "X trends have not been fetched.")}</p>` + (cards ? `<div class="stack">${cards}</div>` : empty("No trending topic matched the threat list."));
+}
+function renderOrders() {
+  const threats = ((DESK.threats || {}).items || []).filter((item) => passes(item));
+  const locals = ((DESK.local || {}).items || []).filter((item) => item.kind !== "na" && item.severity && item.severity !== "STANDBY" && passes(item));
+  const pool = threats.concat(locals).sort((a, b) => rankOf(b) - rankOf(a) || String(b.published || "").localeCompare(String(a.published || "")));
+  const rows = pool.map((item) => {
+    const arrow = `<span class="arrow">${esc(item.arrowDay || "→")} since yesterday · ${esc(item.arrowWeek || "→")} since last week</span>`;
+    const outlook = item.outlook || "72-hour outlook starts once a prior day is stored.";
+    const action = item.action || "Read the source.";
+    if (!claim(item)) {
+      return `<li>${linkLine(item, item.lane === "local" ? "Local layer" : "Standing orders")}</li>`;
+    }
+    return `<li id="order-${esc(item.id || "")}">${threatCard(item)}<p class="meta">${arrow}. ${esc(outlook)}</p><p><strong>Do this:</strong> ${esc(action)}</p></li>`;
+  }).join("");
+  document.getElementById("orders").innerHTML = rows
+    ? `<ol class="priors">${rows}</ol>`
+    : empty("No open threat or local watch item in this window.");
 }
 function rankOf(item) {
   return { STANDBY: 0, ALERT: 1, ACTION: 2, CRITICAL: 3 }[(item.severity || "STANDBY").toUpperCase()] || 0;
@@ -551,31 +653,102 @@ function watchPool() {
   }).sort((a, b) => rankOf(b) - rankOf(a) || Date.parse(b.published || 0) - Date.parse(a.published || 0)).slice(0, 10);
 }
 function renderWatch() {
-  const cards = watchPool().map((item) => {
-    const sev = (item.severity || "STANDBY").toLowerCase();
-    return card(item).replace("<article class=\"card\">", `<article class="card"><span class="sev sev-${sev}">${esc(item.severity || "STANDBY")}</span> <span class="meta">${esc(item.section)}</span>`);
+  const items = ((DESK.threats || {}).items || []).filter(passes);
+  const groups = ["CRITICAL", "ACTION", "ALERT", "STANDBY"].map((level) => {
+    const mine = items.filter((item) => (item.severity || "STANDBY") === level);
+    if (!mine.length) return "";
+    const lines = mine.map((item) => {
+      if (seenStory(item)) return linkLine(item, "Standing orders");
+      return `<p class="meta">${esc(item.title)}</p>`;
+    }).join("");
+    return `<div class="group"><h3>${esc(level)} · ${mine.length}</h3>${lines}</div>`;
   }).join("");
-  document.getElementById("watch").innerHTML = cards || empty("Nothing at that level in this window.");
+  document.getElementById("watch").innerHTML = groups || empty("No watch items in this window.");
+}
+function deltaBlock(pack, title) {
+  if (!pack) return "";
+  const parts = [
+    ["escalated", "Escalations"],
+    ["deescalated", "De-escalations"],
+    ["new", "New"],
+    ["resolved", "Resolved"]
+  ].map(([key, label]) => {
+    const rows = (pack[key] || []).filter((item) => !state.q || matches(item));
+    if (!rows.length) return "";
+    const lines = rows.map((item) => {
+      const url = safeUrl(item.url);
+      const name = url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(item.title || item.name || "")}</a>` : esc(item.title || "");
+      return `<p class="meta">${name} · ${esc(item.section || title)} · ${esc(item.note || item.severity || "")}</p>`;
+    }).join("");
+    return `<h3 class="group">${esc(label)} · ${esc(title)}</h3>${lines}`;
+  }).join("");
+  return parts;
 }
 function renderChanged() {
   const host = document.getElementById("changed");
   const doc = DESK.changes || {};
-  const groups = doc.groups || {};
-  const counts = doc.counts || {};
-  const when = doc.sinceLabel || DESK.updated || "the previous run";
-  const blocks = [
-    ["new", "New items"],
-    ["severity", "Severity changes"],
-    ["pages", "Page changes"],
-    ["prices", "Price moves"]
-  ];
-  const body = blocks.map(([key, label]) => {
-    const rows = (groups[key] || []).filter((item) => !state.q || matches(item));
-    const count = counts[key] != null ? counts[key] : rows.length;
-    const inner = rows.length ? rows.map(row).join("") : `<p class="meta">None this refresh.</p>`;
-    return fold("chg-" + key, `${esc(label)} · ${count}`, inner, key === "new");
+  const refresh = doc.sinceRefresh || {};
+  const yesterday = doc.sinceYesterday || {};
+  const refreshBody = deltaBlock(refresh.threats, "World threat board") + deltaBlock(refresh.trends, "Today");
+  const yBody = deltaBlock(yesterday.threats, "World threat board") + deltaBlock(yesterday.trends, "Today");
+  const pages = ((doc.groups || {}).pages || []).slice(0, 6).map((item) => `<p class="meta">${esc(item.title || "Page")} · Carota pages</p>`).join("");
+  host.innerHTML = `
+    <h3 class="group">Since last refresh · ${esc(refresh.label || doc.sinceLabel || DESK.updated || "previous run")}</h3>
+    ${refreshBody || `<p class="meta">No status change, new threat, or new trend since that refresh.</p>`}
+    <h3 class="group">Since yesterday · ${esc(yesterday.label || "no stored yesterday")}</h3>
+    ${yesterday.note ? `<p class="note-plain">${esc(yesterday.note)}</p>` : ""}
+    ${yBody || `<p class="meta">No stored change versus yesterday.</p>`}
+    ${pages ? `<h3 class="group">Page changes · Carota pages</h3>${pages}` : ""}`;
+}
+function renderTriggers() {
+  const doc = DESK.triggers || {};
+  const items = doc.items || [];
+  const list = items.map((item) => {
+    claim(item);
+    return `<li id="trigger-${esc(item.id || "")}"><strong class="sev sev-${(item.severity || "alert").toLowerCase()}">${esc(item.severity || "ALERT")}</strong> ${esc(item.title || "")}<p class="meta">${esc(item.why || "")}</p>${soLine(item)}</li>`;
   }).join("");
-  host.innerHTML = `<p class="sub">Changed since last refresh at ${esc(when)}</p>${body}`;
+  const kit = (doc.checklist || []).length && items.length
+    ? `<p class="note-plain">Checklist: ${(doc.checklist || []).map(esc).join(", ")}.</p>`
+    : `<p class="note-plain">No trigger is on. Checklist stays on the shelf.</p>`;
+  document.getElementById("triggers").innerHTML = `<p class="note-plain">${esc(doc.note || "")}</p>${kit}${list ? `<ol class="priors">${list}</ol>` : ""}`;
+}
+function renderLocal() {
+  const doc = DESK.local || {};
+  const items = (doc.items || []).filter((item) => !state.q || matches(item));
+  const rows = items.map((item) => {
+    const anchor = `id="local-${esc(item.id || "")}"`;
+    if (!claim(item)) return `<div ${anchor}>${linkLine(item, "Standing orders")}</div>`;
+    return `<div ${anchor}>${row(item)}</div>`;
+  }).join("");
+  const gaps = (doc.gaps || []).map((gap) => `<p class="meta">n/a · ${esc(gap)}</p>`).join("");
+  document.getElementById("local").innerHTML = `<p class="note-plain">${esc(doc.place || "Thompson's Station, Williamson County, Middle Tennessee, 37179.")}</p>${rows || empty("Local feeds have not been loaded.")}${gaps}`;
+}
+function renderRadar() {
+  const doc = DESK.radar || {};
+  const cards = (doc.items || []).filter((item) => !state.q || matches(item)).map((item) => {
+    if (!claim(item)) return linkLine(item, "an earlier section");
+    const samples = (item.samples || []).map((sample) => {
+      const url = safeUrl(sample.url);
+      return url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(sample.source || sample.title || "source")}</a>` : "";
+    }).filter(Boolean).join(" · ");
+    return `<article class="row">
+      <div class="head"><span class="src">${esc(item.call || "")} · score ${esc(String(item.score == null ? "n/a" : item.score))}</span><time>${esc(item.velocity || "")}</time></div>
+      <h3>${esc(item.title || "")}</h3>
+      <p>${esc(item.read || item.note || "")}</p>
+      <p class="meta">Drivers: ${esc((item.drivers || []).join(", ") || "n/a")} · Follow-through: ${esc((item.followThrough || []).join(", ") || "none stored")} · ${esc(confidenceOf(item) || "rumor")}</p>
+      ${samples ? `<p class="meta">Sources: ${samples}</p>` : ""}
+      ${soLine(item)}
+    </article>`;
+  }).join("");
+  document.getElementById("radar").innerHTML = `<p class="note-plain">${esc(doc.note || "")}</p>${cards || empty("No narrative tracks on this run.")}`;
+}
+function renderLookback() {
+  const doc = DESK.lookback || {};
+  const block = (rows, label) => {
+    if (!rows || !rows.length) return `<h3 class="group">${esc(label)}</h3><p class="meta">None in the stored week.</p>`;
+    return `<h3 class="group">${esc(label)}</h3>` + rows.map((row) => `<p class="meta">${esc(row.title || "")} · ${esc(row.verdict || "")} ${esc(row.note || "")}</p>`).join("");
+  };
+  document.getElementById("lookback").innerHTML = `<p class="note-plain">${esc(doc.note || "")}</p>${block(doc.escalated, "Escalated")}${block(doc.fizzled, "Fizzled")}${block(doc.calls, "Calls")}`;
 }
 function renderMap() {
   const nodes = (DESK.sources || []).map((src) => {
@@ -632,13 +805,22 @@ function renderChips(items) {
   });
 }
 function renderCasebook(items) {
-  document.getElementById("casebook").innerHTML = groupedHtml(items.filter(matches), row, { collapse: true, short: 3, store: "brief", firstOpen: true });
+  const lines = items.filter(matches).slice(0, 16).map((item) => {
+    if (seenStory(item)) return linkLine(item, "its section");
+    return `<p class="meta"><a href="#log-${esc(item.id || "")}">${esc(item.title || "")}</a> · Situation log · ${esc(item.source || "")}</p>`;
+  }).join("");
+  document.getElementById("casebook").innerHTML = lines || empty("Nothing in that window.");
 }
 function renderPanel(items) {
   const host = document.getElementById("panel");
   const matched = items.filter(matches);
   if (state.tab === "ledger") {
-    host.innerHTML = `<div class="list">${groupedHtml(matched, row, { collapse: true, store: "log", firstOpen: true })}</div>`;
+    const logRow = (item) => {
+      if (seenStory(item)) return linkLine(item, "its section");
+      claim(item);
+      return `<div id="log-${esc(item.id || "")}">${row(item)}</div>`;
+    };
+    host.innerHTML = `<div class="list">${groupedHtml(matched, logRow, { collapse: true, store: "log", firstOpen: true })}</div>`;
     return;
   }
   if (state.tab === "archive") {
@@ -748,7 +930,11 @@ function renderMarkets() {
         : esc(fmtNum(venue.level));
       return `<div class="venue"><div><b>${esc(venue.name)}</b> ${esc(venue.indexName)}<div class="meta">${esc(status.hours)}</div></div><div><span class="${status.open ? "pill-open" : "pill-closed"}">${esc(status.why)}</span><div>${level} <span class="meta">${esc(change)}</span></div></div></div>`;
     }).join("");
-    const headlines = (region.headlines || []).filter(passes);
+    const headlines = (region.headlines || []).filter(passes).filter((item) => {
+      if (seenStory(item)) return false;
+      claim(item);
+      return true;
+    });
     const heads = headlines.length
       ? headlines.slice(0, 8).map(row).join("")
       : `<p class="meta">No headlines in this window yet. It builds up with each refresh.</p>`;
@@ -774,10 +960,10 @@ function renderThreats() {
   const html = cats.map(([id, name, test]) => {
     const mine = rows.filter(test);
     const top = mine.reduce((best, item) => rank[item.severity] > rank[best] ? item.severity : best, "STANDBY");
-    const body = mine.length ? mine.map(threatCard).join("") : `<p class="meta">None in this window.</p>`;
+    const body = mine.length ? mine.map((item) => seenStory(item) ? linkLine(item, "Standing orders") : threatCard(item)).join("") : `<p class="meta">None in this window.</p>`;
     return fold("threat-" + id, `${esc(name)} · ${mine.length} · <span class="sev sev-${top.toLowerCase()}">${esc(top)}</span>`, body, false);
   }).join("");
-  const nwsNote = rows.some(local) ? "" : `<p class="note-plain">No active NWS alert for Franklin / Williamson County on this run.</p>`;
+  const nwsNote = `<p class="note-plain">Full cards live in Standing orders. This board is the index. Local Williamson County notices are in the local layer.</p>`;
   document.getElementById("threats").innerHTML = nwsNote + html;
 }
 function project(lat, lon) {
@@ -798,16 +984,31 @@ function renderImpact() {
     const src = safeUrl(asset.source);
     const name = src ? `<a href="${esc(src)}" target="_blank" rel="noopener">${esc(asset.name)}</a>` : esc(asset.name);
     const change = asset.changePct === null || asset.changePct === undefined ? "n/a" : `${asset.changePct > 0 ? "+" : ""}${asset.changePct}%`;
-    return `<article class="card"><div class="head"><b>${name}</b><span>${esc(change)}</span></div><div>${esc(fmtNum(asset.level))}</div>${sparkline((asset.points || []).slice(-8))}</article>`;
+    return `<article class="card" id="asset-${esc(asset.id || "")}"><div class="head"><b>${name}</b><span>${esc(change)}</span></div><div>${esc(fmtNum(asset.level))}</div>${sparkline((asset.points || []).slice(-8))}</article>`;
   }).join("");
   document.getElementById("assets").innerHTML = cards || empty("Asset quotes are n/a until a free feed answers.");
-  document.getElementById("correlations").innerHTML = `<h3 class="group">Typical historical patterns</h3><p class="note-plain">These are familiar historical reactions, not predictions and not advice.</p>
-    <div class="list">
-      <article class="row"><h3>War or escalation</h3><p>Gold and silver have often risen while risk assets fell. A flight to bullion is a common pattern, not a forecast.</p></article>
-      <article class="row"><h3>Fed and rate shocks</h3><p>The dollar index has often strengthened when U.S. rates jump, and eased when cuts are priced in.</p></article>
-      <article class="row"><h3>China crypto policy</h3><p>Bitcoin has often moved when Beijing tightened or loosened rules on trading and mining.</p></article>
-      <article class="row"><h3>Major quakes and storms</h3><p>Local currencies and insurers have sometimes moved; global gold is usually little changed unless the shock is systemic.</p></article>
-    </div>`;
+  const impact = DESK.impact || {};
+  const moveText = (move) => ["m1", "p1", "p3"].map((key) => {
+    const value = move[key];
+    const label = { m1: "-1d", p1: "+1d", p3: "+3d" }[key];
+    return `${label} ${value == null ? "n/a" : (value > 0 ? "+" : "") + value + "%"}`;
+  }).join(" · ");
+  const events = (impact.events || []).map((event) => {
+    const moves = (event.moves || []).map((move) => {
+      const href = move.id ? `#asset-${move.id}` : (safeUrl(move.source) || "");
+      const name = href ? `<a href="${esc(href)}">${esc(move.name || move.id || "")}</a>` : esc(move.name || "");
+      return `<p class="meta">${name}: ${esc(moveText(move))}</p>`;
+    }).join("");
+    const url = safeUrl(event.url);
+    const title = url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(event.title || "")}</a>` : esc(event.title || "");
+    return `<article class="row"><div class="head"><span class="src">${esc(event.category || "")} · ${esc(event.severity || "")}</span><time>${esc(event.date || "")}</time></div><h3>${title}</h3>${moves}<p class="meta"><a href="#order-${esc(event.id || "")}">Standing orders</a></p></article>`;
+  }).join("");
+  const corrs = (impact.correlations || []).filter((row) => row.r != null).slice(0, 12);
+  const corrHtml = corrs.map((row) => {
+    const read = row.read || {};
+    return `<article class="row"><h3>${esc(row.asset)} · ${esc(row.category)} · ${esc(String(row.window))}d</h3><p>r=${esc(String(row.r))} · ${esc(read.call || "")} · confidence ${esc(read.confidence || "n/a")}</p><p class="meta">${esc(read.text || "")}</p></article>`;
+  }).join("");
+  document.getElementById("correlations").innerHTML = `<h3 class="group">Computed from stored prices</h3><p class="note-plain">${esc(impact.note || "")}</p>${events || `<p class="meta">No ACTION or CRITICAL event with a date in this window.</p>`}${corrHtml || `<p class="meta">Rolling correlations are n/a until the stored window has at least 3 event days and 5 price days.</p>`}`;
   renderTimeline(threats);
 }
 function renderTimeline(events) {
@@ -882,6 +1083,7 @@ function renderBoards() {
   renderLabs();
 }
 function render() {
+  claimed = new Set();
   const items = allItems();
   const desk = DESK;
   document.getElementById("checked").textContent = desk.updated
@@ -894,14 +1096,20 @@ function render() {
   banner.hidden = !offline;
   banner.textContent = offline && reason && reason !== "missing X_BEARER_TOKEN" ? `${note} — ${reason}` : note;
   renderStatus(items);
-  renderToday(items);
-  renderWatch(items);
+  renderBrief();
+  renderToday();
+  renderLocal();
+  renderTriggers();
+  renderOrders();
+  renderWatch();
   renderChanged();
+  renderBoards();
+  renderRadar();
+  renderLookback();
   renderMap();
   renderChips(items);
   renderCasebook(items);
   renderPanel(items);
-  renderBoards();
   bindDesk();
   const errs = desk.errors || [];
   document.getElementById("errs").textContent = errs.length ? errs.join(" · ") : "";
@@ -912,7 +1120,7 @@ function render() {
       ? `X feed offline. ${xReason}`
       : "X feed offline until a bearer token is set.");
   document.getElementById("foot").textContent =
-    `Times are America/Chicago. Notes are official descriptions only. Market levels are blank when a feed does not answer. Asset notes are historical patterns, not advice. ${xLine} Refresh opens the GitHub Action; choose Run workflow there.`;
+    `Times are America/Chicago. Notes are official descriptions only. Market levels are blank when a feed does not answer. Asset moves and correlations are computed from stored prices, not a forecast. ${xLine} Direct messages are never requested. Refresh opens the GitHub Action; choose Run workflow there.`;
 }
 function showTip(event) {
   const tip = document.getElementById("tip");

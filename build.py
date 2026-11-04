@@ -43,6 +43,14 @@ def main() -> None:
         "assets": load("assets.json", {"series": []}),
         "science": load("science.json", {"items": []}),
         "world": load("world.json", {"viewBox": "0 0 800 400", "path": ""}),
+        "trends": load("trends.json", {"mode": "offline", "note": "X trends have not been fetched.", "items": []}),
+        "triggers": load("triggers.json", {"items": [], "checklist": [], "note": ""}),
+        "local": load("local.json", {"place": "Thompson's Station / Williamson County / 37179", "items": [], "gaps": []}),
+        "radar": load("radar.json", {"items": [], "note": ""}),
+        "impact": load("impact.json", {"events": [], "correlations": [], "note": ""}),
+        "history": load("history.json", {"days": []}),
+        "lookback": load("lookback.json", {"note": "No stored history yet.", "escalated": [], "fizzled": [], "calls": []}),
+        "brief": meta.get("brief") or "",
     }
     template = (ROOT / "template.html").read_text()
     if "/*__DATA__*/" not in template:

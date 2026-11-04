@@ -400,12 +400,16 @@ def carota_feed_candidates(primary: str) -> list[str]:
 
 
 def assert_public_x_path(path: str) -> str:
-    """Allow only public user lookup and public tweet reads. Never DMs."""
+    """Public lookup, public posts, public trends, and public recent search. Never DMs."""
     path = "/" + path.lstrip("/")
     lowered = path.lower()
     if "/dm" in lowered or "direct_message" in lowered or "dm_event" in lowered:
         raise RuntimeError("refusing X direct-message endpoint")
+    if "personalized_trends" in lowered:
+        raise RuntimeError("refusing personalized X trends")
     if path == "/2/users/by" or re.fullmatch(r"/2/users/\d+/tweets", path):
+        return path
+    if re.fullmatch(r"/2/trends/by/woeid/\d+", path) or path == "/2/tweets/search/recent":
         return path
     raise RuntimeError(f"refusing unexpected X path: {path}")
 

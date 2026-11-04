@@ -1,0 +1,5 @@
+{
+  "mode": "offline",
+  "note": "X trends skipped: missing X_BEARER_TOKEN. Direct messages are never requested. The refresh job will call the public trends endpoint, or recent-search counts if that endpoint is not on the plan.",
+  "items": []
+}

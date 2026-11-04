@@ -116,7 +116,9 @@ def test_page_hash_ignores_clocks():
 def test_x_paths_never_include_dms():
     assert d.assert_public_x_path("/2/users/by") == "/2/users/by"
     assert d.assert_public_x_path("/2/users/99/tweets") == "/2/users/99/tweets"
-    for blocked in ("/2/dm_events", "/2/dm_conversations", "/1.1/direct_messages/events/list.json", "/2/users/9/dm"):
+    assert d.assert_public_x_path("/2/trends/by/woeid/23424977") == "/2/trends/by/woeid/23424977"
+    assert d.assert_public_x_path("/2/tweets/search/recent") == "/2/tweets/search/recent"
+    for blocked in ("/2/dm_events", "/2/dm_conversations", "/1.1/direct_messages/events/list.json", "/2/users/9/dm", "/2/users/personalized_trends"):
         try:
             d.assert_public_x_path(blocked)
         except RuntimeError:
@@ -236,6 +238,94 @@ def test_urls_and_ids():
     assert d.make_id("jre", "https://example.com/a") != d.make_id("lex", "https://example.com/a")
 
 
+def test_trend_filter_and_confidence():
+    import citizen
+    kept = citizen.filter_trends([
+        {"trend_name": "Hurricane in the Gulf", "tweet_count": 12000},
+        {"trend_name": "Taylor Swift", "tweet_count": 900000},
+        {"trend_name": "gold inflation", "tweet_count": 4000},
+    ], "US")
+    names = {row["name"] for row in kept}
+    assert "Hurricane in the Gulf" in names
+    assert "Taylor Swift" not in names
+    assert "gold inflation" in names
+    x_only = citizen.confidence_for({"lane": "x", "kind": "trend"})
+    assert x_only["confidence"] == "rumor"
+    confirmed = citizen.confidence_for({"lane": "x", "kind": "trend"}, extra_domains=2)
+    assert confirmed["confidence"] != "confirmed"
+    official = citizen.confidence_for({"lane": "official", "kind": "quake"}, extra_domains=1)
+    assert official["confidence"] == "confirmed"
+    line = citizen.so_what({"kind": "quake", "severity": "ACTION"})
+    assert line.startswith("Money:")
+    assert "Action:" in line
+    quiet = citizen.so_what({"kind": "episode", "severity": "STANDBY", "lane": "podcast"})
+    assert "no action needed" in quiet
+
+
+def test_triggers_outlook_and_impact():
+    import citizen
+    threats = [{
+        "id": "storm-1",
+        "kind": "storm",
+        "title": "Hurricane moving into the Gulf",
+        "note": "Tropical storm in the Gulf",
+        "url": "https://www.nhc.noaa.gov/",
+        "severity": "ALERT",
+        "date": "2026-11-01",
+    }]
+    assets = {"series": [{
+        "id": "gold",
+        "name": "Gold",
+        "changePct": 3.4,
+        "source": "https://finance.yahoo.com/quote/GC=F",
+        "points": [
+            {"date": "2026-10-30", "price": 100},
+            {"date": "2026-10-31", "price": 101},
+            {"date": "2026-11-01", "price": 102},
+            {"date": "2026-11-02", "price": 104},
+            {"date": "2026-11-04", "price": 103},
+        ],
+    }]}
+    boilerplate = [{
+        "id": "outlook",
+        "kind": "storm",
+        "title": "Atlantic Tropical Weather Outlook",
+        "note": "For the North Atlantic...Caribbean Sea and the Gulf of America: A non-tropical low in the central Atlantic.",
+        "url": "https://www.nhc.noaa.gov/",
+        "severity": "ALERT",
+        "date": "2026-11-04",
+    }]
+    quiet = citizen.evaluate_triggers(boilerplate, {"series": []}, {"items": []})
+    assert "gulf-storm" not in {row["id"] for row in quiet["items"]}
+    fired = citizen.evaluate_triggers(threats, assets, {"items": []})
+    ids = {row["id"] for row in fired["items"]}
+    assert "gulf-storm" in ids
+    assert "gold-3" in ids
+    assert threats[0]["severity"] == "ACTION"
+    assert fired["checklist"] == ["fuel", "water", "cash", "meds"]
+    history = {"days": [{"date": "2026-10-31", "threats": [{"id": "storm-1", "severity": "STANDBY"}]}]}
+    citizen.apply_outlook(threats, history, "2026-11-01")
+    assert threats[0]["arrowDay"] == "↑"
+    window = citizen.event_window(assets["series"][0]["points"], "2026-11-01")
+    assert window["m1"] == 1.0
+    assert window["p1"] == round((104 / 101 - 1) * 100, 2)
+    report = citizen.impact_report(threats, assets)
+    assert report["events"] and report["events"][0]["moves"][0]["p1"] == window["p1"]
+    doc = citizen.trends_from_search([{"category": "earthquake", "query": "earthquake", "tweets": [{"id": "10", "text": "quake"}], "resultCount": 4}])
+    assert doc["mode"] == "recent-search"
+    assert "not available" in doc["note"]
+    citizen.annotate_trends(doc, [])
+    assert doc["items"][0]["confidence"] == "rumor"
+    brief = citizen.morning_brief(threats, doc, fired, assets, {"items": []})
+    assert "Gulf" in brief or "Hurricane" in brief
+    assert "trigger" in brief.lower()
+    stored = citizen.record_history({"days": []}, "2026-11-01", threats, doc, fired, "Nov 1")
+    later = citizen.record_history(stored, "2026-11-08", [{"id": "storm-1", "title": "Hurricane", "severity": "CRITICAL", "kind": "storm"}], doc, fired, "Nov 8")
+    look = citizen.weekly_lookback(later, "2026-11-08")
+    assert look["escalated"]
+    assert any(call["verdict"] == "right" for call in look["calls"]) or look["escalated"]
+
+
 if __name__ == "__main__":
     test_x_created_at_with_milliseconds()
     test_ct_conversion()
@@ -252,4 +342,6 @@ if __name__ == "__main__":
     test_x_millis_posts_are_not_dropped()
     test_board_helpers()
     test_urls_and_ids()
+    test_trend_filter_and_confidence()
+    test_triggers_outlook_and_impact()
     print("ok")
