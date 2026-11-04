@@ -28,14 +28,56 @@
             "2026-11-26",
             "2026-12-25"
           ],
-          "level": 7704.45,
-          "change": 135.53,
+          "level": 7704.47,
+          "change": 135.55,
           "changePct": 1.79,
           "asOf": "2026-11-04",
           "source": "https://finance.yahoo.com/quote/%5EGSPC"
         }
       ],
       "headlines": [
+        {
+          "id": "headline:dcf115624ce24107",
+          "kind": "headline",
+          "lane": "news",
+          "source": "The Guardian",
+          "sourceId": "headline",
+          "title": "After the US midterms, what will a lame duck Trump mean for the global economy? - The Guardian",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNMnZRT0MyRlJQZFBrYkRoNTB5LV84MXFhZmlpeGhadldPTUtqTnpHQ0RrTDR0eXZPRzQxeURDeTFudHhha0VoUFk4MjJfZ0hjRnp0cFFGUXFGeHd4cFNXSzF4N195TWtGMGdHbkZ6NTdzVWs4bnR3bTVMOUl4MWw5a2VUaWFVaElkOS1QZnh0Z2NOWUZOak83NUNXVFljX1k?oc=5",
+          "published": "2026-11-04T12:41:00-06:00",
+          "date": "2026-11-04",
+          "label": "Nov 4, 2026 12:41 PM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:fe8bc66c619ea400",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Reuters",
+          "sourceId": "headline",
+          "title": "Trump is still in charge, but Democrats gain leverage in coming economic debate - Reuters",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPeEozcW5LWjk4cHhZdVFGWDhTREJDVHk5ZGVGZk5nTmxXVTN6dE42RzVhbkk4dlFyMk5Qdi1YN1M4c0Fnc0VFOW1ETWFiN2x6QTBmSkRjNTdhWU5wc3hVOGlFNjdFbVdZU2NleGwxM3lfRkhrOEJTUW9INnd6OTM0M3FKaERvQUNPbEllVlpKak9mNUJWSktReEdvYmV4cEtCei1WSkQzVzZyTE1yTGhEVnZRX3B3bS1FaFc4dWhB?oc=5",
+          "published": "2026-11-04T12:13:54-06:00",
+          "date": "2026-11-04",
+          "label": "Nov 4, 2026 12:13 PM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
         {
           "id": "headline:836d145584ef2f05",
           "kind": "headline",
@@ -298,6 +340,27 @@
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNR2NrRDdoQ1MwS0paZFliV01BelV0MS1tQkNMSEdJYmYweWctanpzZU5hMllmVUtjQWR2cXBPSVhFeFluSFlMbi1ZVTg1ZS1TYzRMam81MFlRbWxockRRN2RpeEk2OGhpYWVXUVpsX3lvcUx4QUFERERGQVdkeVRndHJNeExJTU9DLS1GRW9GTW0?oc=5",
+          "published": "2026-11-02T02:00:00-06:00",
+          "date": "2026-11-02",
+          "label": "Nov 2, 2026 2:00 AM CT",
+          "weekday": "Mon",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:d12f9097e3404309",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Deloitte",
+          "sourceId": "headline",
+          "title": "What’s happening this week in economics? - Deloitte",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNcV9VYnV0R0RPcWN0d2g1SHJIVlNmaVA1TV9nXzRKdVlFcWtSMjQ1T1B0djE4dDNRanZvSVFGX0ZBNUd6cnZkVnAtenFuMnFzdU9zYzg5cFdkTVRxU1F5YVVXVFhVWGdhd2RsTDBkNS1Xcm9ub1FnMFp5NnB3WVBYa3JJa1FVbG5IT0ZRRHphTUhtNThkenVJS1ZrdWNDdw?oc=5",
           "published": "2026-11-02T02:00:00-06:00",
           "date": "2026-11-02",
           "label": "Nov 2, 2026 2:00 AM CT",
@@ -812,69 +875,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:fc6d8981d6c3feab",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Reuters",
-          "sourceId": "headline",
-          "title": "IMF says Federal Reserve is 'appropriately' keeping close eye on data - Reuters",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQWUpQV1B2bkYwd3RoS1ViczMxN1pFekJVTjgzekMxeFIxOFlsUmRiV1NBMzNyWGJYRlR5WTh4M25jdWZhbkZMOUhkVjUwdzk1TmFfWjROaG1yZXBzanc3NHdRamxMVWh2bFNNQ0RvWE9WVzFTTDI1RVJXYlFyV0dLaXNLOW1wOXNfdGxkdHlMQThseGQ0LWxjLUF4QjJFbzBESmwxUXlFSGIwQQ?oc=5",
-          "published": "2026-10-29T11:20:09-05:00",
-          "date": "2026-10-29",
-          "label": "Oct 29, 2026 11:20 AM CT",
-          "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:232f213c9ce92e7c",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Yahoo Finance",
-          "sourceId": "headline",
-          "title": "IMF says Federal Reserve is 'appropriately' keeping close eye on data - Yahoo Finance",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNRE05Y214SmpEbURJUXQwdlBZNjR3ei1DSHFlNmR0aHhGdTdWdU1aaFZhSWtqWjVOYnoyc3JSOW5zNVpfNEVWdzE3alJXNnJUaFg3b2IwZThxQlhlNkh1eWF0bWZRdXFPZld1RTNvNDJiRE4zRjJLcG9WdlBvT3UwZUpTYW9PMVgwSEx3bVlHNERieXJfbG1fT1Y2OWxTX3ZqOGV1NjZ3?oc=5",
-          "published": "2026-10-29T11:19:28-05:00",
-          "date": "2026-10-29",
-          "label": "Oct 29, 2026 11:19 AM CT",
-          "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:314967a8692b1fe4",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Council on Foreign Relations",
-          "sourceId": "headline",
-          "title": "Alan Greenspan’s Legacy as Chair of the Federal Reserve - Council on Foreign Relations",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxObHFhMVg5cmQyVGpsU3A5Rk5oaF9YUnpnVHViUVE0QWNsaTlMWHpoS1ZabVlZOFUwOTZhUnZNd3hMM2VzYlZLc21NS0lGUEhkbk9fOS1DZml0U0s3OUI5VVN2emRJOW50SVhmaVNDaWZpZVJ6bElvQ2N3TldPUXFxR1hzZFc4NUE?oc=5",
-          "published": "2026-10-29T11:14:04-05:00",
-          "date": "2026-10-29",
-          "label": "Oct 29, 2026 11:14 AM CT",
-          "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ]
     },
@@ -894,9 +894,9 @@
             }
           ],
           "holidays": [],
-          "level": 36286.93,
-          "change": 754.63,
-          "changePct": 2.12,
+          "level": 36327.64,
+          "change": 795.34,
+          "changePct": 2.24,
           "asOf": "2026-11-04",
           "source": "https://finance.yahoo.com/quote/%5EGSPTSE"
         },
@@ -912,9 +912,9 @@
             }
           ],
           "holidays": [],
-          "level": 71345.82,
-          "change": 1161.49,
-          "changePct": 1.65,
+          "level": 70870.18,
+          "change": 685.85,
+          "changePct": 0.98,
           "asOf": "2026-11-04",
           "source": "https://finance.yahoo.com/quote/%5EMXX"
         }
@@ -972,9 +972,9 @@
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQOXFIN1hXNGpRRHBPc2pNQU5qNnZUQkdZQV95NzhCcTR2anNDcERhLVBXbU93REhqZHdfU1ZjSnB3dU5wRHBsVmhWNlBJaHN6Tms3ZnJQenBCS1FTX3Q2ZVE5U0RRb2lwRE95YU5CbWtzRE9SSWVZeWpKaDdCTWxGdU0zR1pRaWduZGFUUGxERUkzUW82dEd4Y3k0WE5PMUt1RzlmNlFzR0ZuT1Vtd2lYSmdRZVpyS0k1YWxwUDB1TXlHN00?oc=5",
-          "published": "2026-11-03T12:37:00-06:00",
+          "published": "2026-11-03T12:38:23-06:00",
           "date": "2026-11-03",
-          "label": "Nov 3, 2026 12:37 PM CT",
+          "label": "Nov 3, 2026 12:38 PM CT",
           "weekday": "Tue",
           "timeKnown": true,
           "tags": [
@@ -1778,9 +1778,9 @@
             }
           ],
           "holidays": [],
-          "level": 167632.59,
-          "change": 2103.59,
-          "changePct": 1.27,
+          "level": 167358.55,
+          "change": 1829.55,
+          "changePct": 1.11,
           "asOf": "2026-11-04",
           "source": "https://finance.yahoo.com/quote/%5EBVSP"
         }
@@ -2651,6 +2651,27 @@
       ],
       "headlines": [
         {
+          "id": "headline:c405d37429af40b7",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Cryptopolitan",
+          "sourceId": "headline",
+          "title": "Big players to dominate Russia’s crypto trade when it starts in December - Cryptopolitan",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNT2Z4SzBsSm8wZWNjdEVqQmZsRXZhdG9qWGpXRFA5cnRUNmJLMUdyNEUxWXRTbTdBeXlnMFh0S1ZyeEtKNVRXcXB5bXJDY2dnYzZkVTFnQ1UxOWhXSzlGei1hMHM4bEVKS3QyVkhCSkc0dXRvaU1GcG00TGFyVDFZZTdkNVdCN1d4Vmh3Vm5wVmtNZ0REbzdyc3YzcVFPMU4wUXk3ag?oc=5",
+          "published": "2026-11-04T10:16:42-06:00",
+          "date": "2026-11-04",
+          "label": "Nov 4, 2026 10:16 AM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:6869ef7d2accaab0",
           "kind": "headline",
           "lane": "news",
@@ -3180,6 +3201,27 @@
         }
       ],
       "headlines": [
+        {
+          "id": "headline:6ba2ac233a06b4af",
+          "kind": "headline",
+          "lane": "news",
+          "source": "ad-hoc-news.de",
+          "sourceId": "headline",
+          "title": "Shanghai Composite closes 2.16 percent higher at 3,686.17 points - ad-hoc-news.de",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPeTFCUFNwS0R2enpyRm5QZnk5eHNhSFJ5b2lET0VSVHhlOXdHeVZjcjdaa1h2Yy0tWkNpUU5UUlVLeHp6YXBWbDQ4ZUtvUU1fM3VkNXB5OXY0Qm93NENjM21jMHZpaDFFd3dSTVBzUTFqdXRrR3pHLUtsYkRxNEpFTmtGdkhiVkZ3Vzg2Q3k4aTctRXJXM1ByVkR1a2dmdW5NRWF3VzZoY09NR2NTM3hUbGhSalVfYVBDV0hKbU1zZ2hoVWM2?oc=5",
+          "published": "2026-11-04T11:55:38-06:00",
+          "date": "2026-11-04",
+          "label": "Nov 4, 2026 11:55 AM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
         {
           "id": "headline:5f084cbf80b505d7",
           "kind": "headline",
@@ -3998,27 +4040,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:e1268b3f5aaff131",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Yahoo! Finance Canada",
-          "sourceId": "headline",
-          "title": "SSE Composite Index (000001.SS) Charts, Data & News - Yahoo Finance - Yahoo! Finance Canada",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE04SkFfNHVsVzVybWo0NW02M2xTbmFaWE1kMU1oeHNjWm12VGRyVUltaGExYXZycWctY3ZTRGlUR29jTnpiVzdhdzFfY3pUNTJWTzRvUWpGUjU?oc=5",
-          "published": "2026-10-29T07:22:17-05:00",
-          "date": "2026-10-29",
-          "label": "Oct 29, 2026 7:22 AM CT",
-          "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ]
     },
@@ -4047,6 +4068,27 @@
       ],
       "headlines": [
         {
+          "id": "headline:fa7b2a0ce3b910a4",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Pensions & Investments",
+          "sourceId": "headline",
+          "title": "ECB presidential nominee Klaas Knot favors collective DC model - Pensions & Investments",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQVXZCbjVvNzlIclZINnVWU0N0NEF5UGJabGtJX1czSzVSZ2RXbFEtMk5lWUxNMmRuZDJyN2hhOU1HdmZEd1FaM3AwcXpFMzFtdjFPc3hOcDlOMElpRVdPWWdUZGJBWGlTUnliQ0RVMEY3REdMc3BUTFFqMU5jbVlpWWMtd09OSzZvcjAwTkttOTdNOXAwVDZ3ZmNYd0x5VmgzNWVEcG1hbzA1eTJwZGE0?oc=5",
+          "published": "2026-11-04T09:58:00-06:00",
+          "date": "2026-11-04",
+          "label": "Nov 4, 2026 9:58 AM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:8ecb6cde55fc6d1f",
           "kind": "headline",
           "lane": "news",
@@ -4059,6 +4101,27 @@
           "published": "2026-11-04T05:48:45-06:00",
           "date": "2026-11-04",
           "label": "Nov 4, 2026 5:48 AM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:025225e2a49cbdf4",
+          "kind": "headline",
+          "lane": "news",
+          "source": "https://economy.ac/",
+          "sourceId": "headline",
+          "title": "\"Curbing China's Low-Cost Export Advantage\": Europe Targets Yuan Exchange Rate as China Faces Twin Pressures on Exports and Domestic Demand - https://economy.ac/",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1ydHBCUzNQYm1OUzNNekNlWm9nZXRQUnFUeDFWejNZY19vR1puVFkyb0twU0lmNGJKR0ZkOFZyZFpZbklUT3NnRTNwWEItUmZZRkhjTjlzdw?oc=5",
+          "published": "2026-11-04T01:58:27-06:00",
+          "date": "2026-11-04",
+          "label": "Nov 4, 2026 1:58 AM CT",
           "weekday": "Wed",
           "timeKnown": true,
           "tags": [
@@ -4843,48 +4906,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:41c5af3ebdcbcd97",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Yahoo Finance",
-          "sourceId": "headline",
-          "title": "ECB's Lagarde steps down, saying she can't remain neutral on world events - Yahoo Finance",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQOGhQU3BRODVKeXNCcWZyTkcwNXhpRk9UcHlHSThFRVlnUGVTM3djWWl5aGMxRG8zQ1BZOWQ5WkpWTzJfVFN2Z1pScXhITFlNTXRyYW1rMFV6NUsyTmVHbUYtMHdYeXFDSkt6ZWhPbjBOSGJ2WmZ1MGlFRW9RdnMtYUdEZUNuSjdNOElLRm42bkFuZllwMHB1aHFPb1gzTEI0T0RF?oc=5",
-          "published": "2026-10-29T11:51:29-05:00",
-          "date": "2026-10-29",
-          "label": "Oct 29, 2026 11:51 AM CT",
-          "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:f7e1c774ecc12d86",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Al Jazeera",
-          "sourceId": "headline",
-          "title": "European Central Bank President Lagarde to step down early - Al Jazeera",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxObXhwd2QxUFN0UDFReVNUcnBHZWJpSS0ycm93LXN3SlJvakgyUUNYdXBsMkZkdndaakFvTDBQMWc3SDlVekVqeEp5X3lNVElWQlhhaHN1ZEwwZWFTYjJ0eFpyRXRsYXpxbXh3WU9ZQW9KbmVnZnZ3YVQ2RGRPX3hRX1NYZHBQdEF5Y3E3bExkZWg5aTd4MjNaOWtlUjVjTUFNd0HSAacBQVVfeXFMTTVyWGMzV3BRTU1mRHJiZ2EwcV9DQUkxMEtKMlRGUDBCRmVxRFhGSVVtcXhpS0haQVpDSUxHYWpfZENEeDZaakpNQk52ckVGLWJXQnRfczdqUi1weGpzVkhpTWprZm5kLVVHSk43RGxrS0VhWmtvRllYcFNFZEFNdGZleXV0WjRGX1B4YkJKVV9JTlEwN3ZhcFdwaExoZ0dTckdLMmQwZFk?oc=5",
-          "published": "2026-10-29T11:37:54-05:00",
-          "date": "2026-10-29",
-          "label": "Oct 29, 2026 11:37 AM CT",
-          "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ]
     },
@@ -4948,9 +4969,9 @@
             }
           ],
           "holidays": [],
-          "level": 77301.4,
-          "change": 383.55,
-          "changePct": 0.5,
+          "level": 76917.85,
+          "change": 1225.07,
+          "changePct": 1.62,
           "asOf": "2026-11-04",
           "source": "https://finance.yahoo.com/quote/%5EBSESN"
         }
