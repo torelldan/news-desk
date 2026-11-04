@@ -1,12 +1,15 @@
 {
   "baseline": false,
-  "checkedAt": "2026-11-04T13:26:58-06:00",
-  "checkedLabel": "Nov 4, 2026 1:26 PM CT",
-  "errors": [
-    "Carota Wealth: <urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1010)>"
-  ],
+  "brief": "The lead item is CRITICAL: Close approach 2019 XF2. The busiest matching X topic is Iran War (volume n/a, war). The largest stored daily move is ETH at +5.6%. A preparedness trigger is on (Gold 3.22% on the day (threshold +3%), Silver 5.32% on the day (threshold +5%)). Checklist: fuel, water, cash, meds. Thompson's Station and Williamson County have no ACTION or CRITICAL local notice in this pull.",
+  "checkedAt": "2026-11-04T13:59:18-06:00",
+  "checkedLabel": "Nov 4, 2026 1:59 PM CT",
+  "errors": [],
   "retainDays": 120,
   "today": "2026-11-04",
+  "trends": {
+    "mode": "trends",
+    "note": "X trends by WOEID (US 23424977 and worldwide 1). Kept only when the name matches a threat or preparedness theme."
+  },
   "x": {
     "detail": "",
     "note": "",
@@ -14,10 +17,5 @@
     "reason": "",
     "status": null,
     "title": ""
-  },
-  "brief": "The lead item is CRITICAL: Close approach 2019 XF2. X trends are offline on this run, so Today has no topic list. The largest stored daily move is ETH at +5.56%. A preparedness trigger is on (Gold 3.26% on the day (threshold +3%), Silver 5.34% on the day (threshold +5%)). Checklist: fuel, water, cash, meds. Thompson's Station and Williamson County have no ACTION or CRITICAL local notice in this pull.",
-  "trends": {
-    "mode": "offline",
-    "note": "X trends skipped: missing X_BEARER_TOKEN. Direct messages are never requested. The refresh job will call the public trends endpoint, or recent-search counts if that endpoint is not on the plan."
   }
 }

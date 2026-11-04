@@ -28,9 +28,9 @@
             "2026-11-26",
             "2026-12-25"
           ],
-          "level": 7704.47,
-          "change": 135.55,
-          "changePct": 1.79,
+          "level": 7695.92,
+          "change": 127.0,
+          "changePct": 1.68,
           "asOf": "2026-11-04",
           "source": "https://finance.yahoo.com/quote/%5EGSPC"
         }
@@ -91,6 +91,27 @@
           "published": "2026-11-04T08:33:15-06:00",
           "date": "2026-11-04",
           "label": "Nov 4, 2026 8:33 AM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:8cba3d3e3e4504d2",
+          "kind": "headline",
+          "lane": "news",
+          "source": "ABC News - Breaking News, Latest News and Videos",
+          "sourceId": "headline",
+          "title": "Fed holds interest rates steady in 1st move since Iran war spiked oil prices - ABC News - Breaking News, Latest News and Videos",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOWVgwU0l2bjYwREJ2NE9WVC1ObnpJa3Qxa2syS0lmUXphVm8zTWpnYVJ5NXpFZmxWYUZlVXpmc3ZFQzk2ZnZlYjNSUHRPb3F1emZhVDdPNEMxak1mM2wzOEZtYnA5dklfUFlfOUdVRU5lSXNmTlhqMy1pUElaMjNBTEFJbV9IRHNkRGt1NHJKVDVFd1Za0gGaAUFVX3lxTE9IOWFDX2MzMVhjUXl2VE1oTGNTTlowMmxkMUZnNEQ1TzhKemJ3TmlSTElmdzVPQ3VmR2E3OGdNLXN2dVBHQ2xiLXl0WWJfdjBUQktuSnNwbTNQV3puQzBJTUVZS295S2lHYU9iQVpFd05FQkw4WmhmZ2EyU3dCUWt0bHNCUy1xX0pHME5ZbVBlZ1RXSkxnSVZ1TWc?oc=5",
+          "published": "2026-11-04T03:02:08-06:00",
+          "date": "2026-11-04",
+          "label": "Nov 4, 2026 3:02 AM CT",
           "weekday": "Wed",
           "timeKnown": true,
           "tags": [
@@ -196,27 +217,6 @@
           "published": "2026-11-02T15:48:04-06:00",
           "date": "2026-11-02",
           "label": "Nov 2, 2026 3:48 PM CT",
-          "weekday": "Mon",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:8cba3d3e3e4504d2",
-          "kind": "headline",
-          "lane": "news",
-          "source": "ABC News - Breaking News, Latest News and Videos",
-          "sourceId": "headline",
-          "title": "Fed holds interest rates steady in 1st move since Iran war spiked oil prices - ABC News - Breaking News, Latest News and Videos",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOWVgwU0l2bjYwREJ2NE9WVC1ObnpJa3Qxa2syS0lmUXphVm8zTWpnYVJ5NXpFZmxWYUZlVXpmc3ZFQzk2ZnZlYjNSUHRPb3F1emZhVDdPNEMxak1mM2wzOEZtYnA5dklfUFlfOUdVRU5lSXNmTlhqMy1pUElaMjNBTEFJbV9IRHNkRGt1NHJKVDVFd1Za0gGaAUFVX3lxTE9IOWFDX2MzMVhjUXl2VE1oTGNTTlowMmxkMUZnNEQ1TzhKemJ3TmlSTElmdzVPQ3VmR2E3OGdNLXN2dVBHQ2xiLXl0WWJfdjBUQktuSnNwbTNQV3puQzBJTUVZS295S2lHYU9iQVpFd05FQkw4WmhmZ2EyU3dCUWt0bHNCUy1xX0pHME5ZbVBlZ1RXSkxnSVZ1TWc?oc=5",
-          "published": "2026-11-02T13:16:37-06:00",
-          "date": "2026-11-02",
-          "label": "Nov 2, 2026 1:16 PM CT",
           "weekday": "Mon",
           "timeKnown": true,
           "tags": [
@@ -894,9 +894,9 @@
             }
           ],
           "holidays": [],
-          "level": 36327.64,
-          "change": 795.34,
-          "changePct": 2.24,
+          "level": 36321.1,
+          "change": 788.8,
+          "changePct": 2.22,
           "asOf": "2026-11-04",
           "source": "https://finance.yahoo.com/quote/%5EGSPTSE"
         },
@@ -912,9 +912,9 @@
             }
           ],
           "holidays": [],
-          "level": 70870.18,
-          "change": 685.85,
-          "changePct": 0.98,
+          "level": 70712.94,
+          "change": 528.61,
+          "changePct": 0.75,
           "asOf": "2026-11-04",
           "source": "https://finance.yahoo.com/quote/%5EMXX"
         }
@@ -1778,9 +1778,9 @@
             }
           ],
           "holidays": [],
-          "level": 167358.55,
-          "change": 1829.55,
-          "changePct": 1.11,
+          "level": 167277.31,
+          "change": 1748.31,
+          "changePct": 1.06,
           "asOf": "2026-11-04",
           "source": "https://finance.yahoo.com/quote/%5EBVSP"
         }
@@ -2100,27 +2100,6 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:25118ee9f9e6d31f",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Reuters",
-          "sourceId": "headline",
-          "title": "Brazil's markets recover some ground after selloff; minister vows fiscal discipline - Reuters",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOMXExT19UeVJNZFFadkVlQ3A1WXBnSnFqR1RfVEF4N3VqcmNUdUMtMF9SRS1DWUlFSEFDZnBJNzVMNUltbmVaQVg1NkJWWWJvTDdSVW1JZzhybGJiX0xGbklmSTZnUTFESmNoRXc1VGJELXRYNi1tc092eE4xYlA3QXF5VmRmdWNzdU9ROWs2dU1ZNjcycnR0LTNvNzZ4TzIwOTUyWC1BYnZVMTFDdC1wUFpRd0xPYVc2ODM3UHVR?oc=5",
-          "published": "2026-10-27T10:16:54-05:00",
-          "date": "2026-10-27",
-          "label": "Oct 27, 2026 10:16 AM CT",
-          "weekday": "Tue",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
           "id": "headline:92b69a49e979d43d",
           "kind": "headline",
           "lane": "news",
@@ -2196,6 +2175,27 @@
           "published": "2026-10-27T05:23:53-05:00",
           "date": "2026-10-27",
           "label": "Oct 27, 2026 5:23 AM CT",
+          "weekday": "Tue",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:25118ee9f9e6d31f",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Reuters",
+          "sourceId": "headline",
+          "title": "Brazil's markets recover some ground after selloff; minister vows fiscal discipline - Reuters",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOMXExT19UeVJNZFFadkVlQ3A1WXBnSnFqR1RfVEF4N3VqcmNUdUMtMF9SRS1DWUlFSEFDZnBJNzVMNUltbmVaQVg1NkJWWWJvTDdSVW1JZzhybGJiX0xGbklmSTZnUTFESmNoRXc1VGJELXRYNi1tc092eE4xYlA3QXF5VmRmdWNzdU9ROWs2dU1ZNjcycnR0LTNvNzZ4TzIwOTUyWC1BYnZVMTFDdC1wUFpRd0xPYVc2ODM3UHVR?oc=5",
+          "published": "2026-10-27T02:00:00-05:00",
+          "date": "2026-10-27",
+          "label": "Oct 27, 2026 2:00 AM CT",
           "weekday": "Tue",
           "timeKnown": true,
           "tags": [
@@ -3391,12 +3391,12 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:2bdad4b664b12153",
+          "id": "headline:4f2bab2d3bcd3ef4",
           "kind": "headline",
           "lane": "news",
-          "source": "Bloomberg.com",
+          "source": "Bloomberg",
           "sourceId": "headline",
-          "title": "Wall Street Banks Are Finally Seeing Their China Bets Pay Off - Bloomberg.com",
+          "title": "Wall Street Banks Are Finally Seeing Their China Bets Pay Off - Bloomberg",
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQVmNqcmljbHgzNm5iWjctYkN0RUdNZGxXa1IteVhIUzFQRFBEWVlfOUI2cjdKY3NINHBwLUlqZDJpNFFaZ1d4WGFDSmhCdW1MNE5jVjI4MFU4aGxNUE41SUdXbkMySldmZ2tBejJfaktDTlh3elBuNEUxVExteU94SU5FR0hhbzY3bWVlb0lpVnFYWGNrNmVzeFZhR005MTAtNFQ1UENwU0NFd1J0UGhVdVVBVUEyWmJLT1E?oc=5",
@@ -4110,6 +4110,27 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:df1de9625e7cc258",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Yahoo Finance",
+          "sourceId": "headline",
+          "title": "ECB's Lagarde urges climate resilience drive after scorching summer - Yahoo Finance",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNUmdNUXVIRmIwMzdScG8tSW5oSE9HSTRZWXR3eERwbWNpNWQ5VmNZel9DT1poMTYxeWF0WlV3UVI0cjdiSXpyTG5BZTJ6YzJLS2ZsbVNPU3U0NzdHT21MUjF6WGc2ajV2ZVFXS05FNVJTUWxENXNFTnRjYU94NWdNT2pES0xTR2xiTElXUGVZTFE5LWZ1dGE3WWJNRlMxRTZKTVVxQQ?oc=5",
+          "published": "2026-11-04T05:01:34-06:00",
+          "date": "2026-11-04",
+          "label": "Nov 4, 2026 5:01 AM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:025225e2a49cbdf4",
           "kind": "headline",
           "lane": "news",
@@ -4698,6 +4719,27 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:2b35c57d0fe64eb1",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Atlantic Council",
+          "sourceId": "headline",
+          "title": "As energy prices threaten inflation again, Lagarde’s European Central Bank legacy offers lessons - Atlantic Council",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOSG9lRzBYRXpRdldOZ0dGMXd6MGF3c1lLQ0tyVHozTHRpaDVLX0ItU2p1cFdFY29tSV92SmZSVVR1Vnd1TVhwQXFKSC1ONXI0ZlhNNV9sc0xhM3c2SU11cm01Uno3NHZyTzhUUkcyUUpJRER3MDd2MG11QjlnekY0azg4WENLM0ROelpRVjd6VEJxak04bFRadVdGUjRTRUEwTTF4LTF5TGdTZ3FxZlNObUJTcm91cDYtX0FWSlJrWTVjNnZzVXZBRkt0eU9BbU1RUkJrQ2xuYTgyTzB1Mk1pVA?oc=5",
+          "published": "2026-10-30T10:34:00-05:00",
+          "date": "2026-10-30",
+          "label": "Oct 30, 2026 10:34 AM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:53e16444a5428511",
           "kind": "headline",
           "lane": "news",
@@ -4857,48 +4899,6 @@
           "published": "2026-10-29T13:57:37-05:00",
           "date": "2026-10-29",
           "label": "Oct 29, 2026 1:57 PM CT",
-          "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:9b51890e1ecf585c",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Global Banking & Finance Review",
-          "sourceId": "headline",
-          "title": "ECB Keeps Rates Unchanged as Lagarde Resigns; Euro, Bond Yields Fall - Global Banking & Finance Review",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNTFZwYllIVEtVMUczMGF2WTBhbml1R3c4OTJjM1VaWFdvY2Vtcm5mbzhSeVQ4dG1FLUlhWFdWMVFVeHhReGNsU3BCNDA4QmxYWUEtQjE1NWM2bU5vSi0ydHkzd1B1bWFPUWxBYUgzUVRVWXlpaG9vaEd0NTRzYk9ERWVDdw?oc=5",
-          "published": "2026-10-29T13:06:46-05:00",
-          "date": "2026-10-29",
-          "label": "Oct 29, 2026 1:06 PM CT",
-          "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:3a14b4757d1de03e",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Bloomberg.com",
-          "sourceId": "headline",
-          "title": "ECB’s Lagarde Steps Aside as European Economic Pressure Builds - Bloomberg.com",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNS1dfeUMzcUE2bHhCVi1lcGg2VnQ0U00zNzJFY1RNSi1pOW9WYmlYQ3gtM1Nza2lQYWJuTldIVG8yN0htYWgtZllBTFRLdUVkOTBKcmhkTTRZWU5peDJnNWlCbnhGM2UteEJPNm43b29NY1A5NGEzWW9XSEFxS2o4ZHRkQ3FybDN2ZnEybE1JdVJDZk5CeHJxNFB1bndrTndfX0N0amJJTWpKYUZzYWlpUlBFV3QzOW8?oc=5",
-          "published": "2026-10-29T12:02:01-05:00",
-          "date": "2026-10-29",
-          "label": "Oct 29, 2026 12:02 PM CT",
           "weekday": "Thu",
           "timeKnown": true,
           "tags": [
