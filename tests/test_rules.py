@@ -222,10 +222,18 @@ def test_board_helpers():
     import boards
     assert boards.index_change(100, 80) == (20.0, 25.0)
     assert boards.index_change(None, 10) == (None, None)
-    assert boards.quake_severity(7.1) == "CRITICAL"
-    assert boards.quake_severity(6.2) == "ACTION"
-    assert boards.quake_severity(5.6) == "ALERT"
+    assert boards.quake_severity(7.1) == "ALERT"
+    assert boards.quake_severity(7.1, "12 km NE of Knoxville, Tennessee") == "CRITICAL"
+    assert boards.quake_severity(6.2) == "STANDBY"
+    assert boards.quake_severity(6.2, "Ridgecrest, California") == "ACTION"
+    assert boards.quake_severity(5.6, "Nashville, Tennessee") == "ALERT"
     assert boards.quake_severity(4.6) == "STANDBY"
+    assert boards._storm_severity("There are no tropical cyclones at this time.", "") == "STANDBY"
+    assert boards._storm_severity("Atlantic Tropical Weather Outlook", "No cyclones") == "STANDBY"
+    assert boards._sentry_level({"ts_max": "0", "ps_max": "-6.15", "ip": "2.9e-06"}) == ""
+    assert boards._sentry_level({"ts_max": "1", "ps_max": "-4", "ip": "0"}) == "ALERT"
+    assert boards._sentry_soon({"range": "2095-2122"}, 2026) is False
+    assert boards._sentry_soon({"range": "2028-2030"}, 2026) is True
     assert boards.alert_severity("Tornado Warning", "Extreme") == "CRITICAL"
     assert boards.alert_severity("Flood Warning", "Severe") == "ACTION"
     assert boards.alert_severity("Flood Watch", "Minor") == "ALERT"
@@ -244,22 +252,29 @@ def test_trend_filter_and_confidence():
         {"trend_name": "Hurricane in the Gulf", "tweet_count": 12000},
         {"trend_name": "Taylor Swift", "tweet_count": 900000},
         {"trend_name": "gold inflation", "tweet_count": 4000},
+        {"trend_name": "Secretary of War", "tweet_count": 80000},
     ], "US")
     names = {row["name"] for row in kept}
     assert "Hurricane in the Gulf" in names
     assert "Taylor Swift" not in names
     assert "gold inflation" in names
+    assert "Secretary of War" not in names
+    assert citizen.topic_of("Iran war") == "iran-war"
     x_only = citizen.confidence_for({"lane": "x", "kind": "trend"})
     assert x_only["confidence"] == "rumor"
     confirmed = citizen.confidence_for({"lane": "x", "kind": "trend"}, extra_domains=2)
     assert confirmed["confidence"] != "confirmed"
     official = citizen.confidence_for({"lane": "official", "kind": "quake"}, extra_domains=1)
     assert official["confidence"] == "confirmed"
-    line = citizen.so_what({"kind": "quake", "severity": "ACTION"})
-    assert line.startswith("Money:")
-    assert "Action:" in line
+    line = citizen.so_what({"kind": "nws", "severity": "ACTION", "title": "Flood Warning", "note": "Bradley, TN"})
+    assert "Bradley" in line
+    assert "Gulf" not in line
+    flyby = citizen.so_what({"kind": "neo", "severity": "CRITICAL", "title": "Close approach 2019 XF2"})
+    assert flyby == "no action needed"
+    assert "water" not in flyby
+    assert citizen.so_what({"kind": "quake", "severity": "ACTION", "title": "M6.1 Fiji region"}) == "no action needed"
     quiet = citizen.so_what({"kind": "episode", "severity": "STANDBY", "lane": "podcast"})
-    assert "no action needed" in quiet
+    assert quiet == ""
 
 
 def test_triggers_outlook_and_impact():
@@ -318,7 +333,7 @@ def test_triggers_outlook_and_impact():
     assert doc["items"][0]["confidence"] == "rumor"
     brief = citizen.morning_brief(threats, doc, fired, assets, {"items": []})
     assert "Gulf" in brief or "Hurricane" in brief
-    assert "trigger" in brief.lower()
+    assert "flyby" not in brief.lower() or "not an emergency" in brief.lower()
     stored = citizen.record_history({"days": []}, "2026-11-01", threats, doc, fired, "Nov 1")
     later = citizen.record_history(stored, "2026-11-08", [{"id": "storm-1", "title": "Hurricane", "severity": "CRITICAL", "kind": "storm"}], doc, fired, "Nov 8")
     look = citizen.weekly_lookback(later, "2026-11-08")

@@ -1006,6 +1006,13 @@ def main() -> int:
     triggers = citizen.evaluate_triggers(threat_items, boards_out.get("assets") or {}, trends)
     citizen.apply_outlook(threat_items, prev_history, today)
     trends = citizen.annotate_trends(trends, threat_items)
+    google_trends = citizen.fetch_google_trends(now)
+    if not google_trends.get("ok"):
+        errors.append("Google Trends: " + (google_trends.get("note") or "unavailable"))
+    velocity = citizen.news_velocity(threat_items)
+    trends = citizen.keep_rising(trends, prev_history, today, google_trends.get("items") or [], velocity)
+    if google_trends.get("note"):
+        trends["googleNote"] = google_trends.get("note")
     try:
         local = citizen.fetch_local(now)
     except Exception as err:
@@ -1017,7 +1024,7 @@ def main() -> int:
         errors.append(f"Narrative radar: {err}")
         radar = {"items": [], "note": f"n/a — {err}"}
     impact = citizen.impact_report(threat_items, boards_out.get("assets") or {})
-    brief = citizen.morning_brief(threat_items, trends, triggers, boards_out.get("assets") or {}, local)
+    brief = citizen.morning_brief(threat_items, trends, triggers, boards_out.get("assets") or {}, local, boards_out.get("markets") or {})
     history = citizen.record_history(prev_history, today, threat_items, trends, triggers, d.ct_label(now, True))
     lookback = citizen.weekly_lookback(history, today)
     if boards_out.get("threats"):
@@ -1105,7 +1112,11 @@ def main() -> int:
         "retainDays": retain,
         "today": now.strftime("%Y-%m-%d"),
         "brief": brief,
-        "trends": {"mode": trends.get("mode") or "", "note": trends.get("note") or ""},
+        "trends": {
+            "mode": trends.get("mode") or "",
+            "note": trends.get("note") or "",
+            "google": trends.get("googleNote") or "",
+        },
         "x": {
             "online": bool(x_status.get("online")),
             "note": x_status.get("note") or "",

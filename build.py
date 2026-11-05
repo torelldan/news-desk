@@ -36,7 +36,7 @@ def main() -> None:
         "episodes": load("episodes.json", []),
         "signals": load("signals.json", []),
         "pages": pages.get("pages") if isinstance(pages, dict) else [],
-        "changes": changes.get("items") if isinstance(changes, dict) else [],
+        "changes": changes if isinstance(changes, dict) else {"items": changes or []},
         "sources": load("sources.json", []),
         "markets": load("markets.json", {"regions": [], "holidayNote": ""}),
         "threats": load("threats.json", {"items": []}),

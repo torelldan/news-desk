@@ -1,6 +1,6 @@
 {
   "baseline": false,
-  "brief": "The lead item is CRITICAL: Close approach 2019 XF2. The busiest matching X topic is Secretary of War (volume n/a, war). The largest stored daily move is ETH at -7.83%. No preparedness trigger is on. No extra action beyond the standing order on the lead item. Thompson's Station and Williamson County have no ACTION or CRITICAL local notice in this pull.",
+  "brief": "The stock tape is the story: the S&P 500 is -4.36% today. What to do: no action unless you need cash this week. Current war coverage is on the board: Exclusive | Trump Acknowledges Iran War Is Partly to Blame for Republican Losses - WSJ; Vance blames Iran war for GOP midterm losses - PBS. Rising topic: iran war (4 outlets this window).",
   "checkedAt": "2026-11-05T15:12:20-06:00",
   "checkedLabel": "Nov 5, 2026 3:12 PM CT",
   "errors": [],
@@ -8,7 +8,8 @@
   "today": "2026-11-05",
   "trends": {
     "mode": "trends",
-    "note": "X trends by WOEID (US 23424977 and worldwide 1). Kept only when the name matches a threat or preparedness theme."
+    "note": "X name-only matches were dropped.",
+    "google": "Google Trends US daily list answered (10 topics). Kept the ones that match a war, government, or threat topic. None of today's search trends matched."
   },
   "x": {
     "detail": "",

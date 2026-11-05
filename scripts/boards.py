@@ -144,17 +144,39 @@ def index_change(price, previous):
     return change, round(100.0 * change / previous, 2)
 
 
-def quake_severity(mag) -> str:
-    """STANDBY, ALERT, ACTION, CRITICAL. Calmest first."""
+_US_PLACE = re.compile(
+    r",\s*(Alabama|Alaska|Arizona|Arkansas|California|Colorado|Connecticut|Delaware|Florida|Georgia|"
+    r"Hawaii|Idaho|Illinois|Indiana|Iowa|Kansas|Kentucky|Louisiana|Maine|Maryland|Massachusetts|"
+    r"Michigan|Minnesota|Mississippi|Missouri|Montana|Nebraska|Nevada|New Hampshire|New Jersey|"
+    r"New Mexico|New York|North Carolina|North Dakota|Ohio|Oklahoma|Oregon|Pennsylvania|"
+    r"Rhode Island|South Carolina|South Dakota|Tennessee|Texas|Utah|Vermont|Virginia|Washington|"
+    r"West Virginia|Wisconsin|Wyoming|Puerto Rico|Guam)\b",
+    re.I,
+)
+
+
+def is_us_place(place: str) -> bool:
+    return bool(_US_PLACE.search(place or ""))
+
+
+def quake_severity(mag, place: str = "", tsunami: bool = False) -> str:
+    """Distant quakes stay quiet. CRITICAL is a U.S. or tsunami-linked shock, not every M6."""
     try:
         mag = float(mag)
     except (TypeError, ValueError):
         return "STANDBY"
-    if mag >= 7:
-        return "CRITICAL"
-    if mag >= 6:
+    home = is_us_place(place) or bool(tsunami)
+    if home:
+        if mag >= 7:
+            return "CRITICAL"
+        if mag >= 6:
+            return "ACTION"
+        if mag >= 5.5:
+            return "ALERT"
+        return "STANDBY"
+    if mag >= 8:
         return "ACTION"
-    if mag >= 5.5:
+    if mag >= 7:
         return "ALERT"
     return "STANDBY"
 
@@ -379,13 +401,22 @@ def fetch_threats(now: datetime) -> dict:
             if mag is None or not url or len(coords) < 2:
                 continue
             when = datetime.fromtimestamp(int(props.get("time") or 0) / 1000, timezone.utc)
-            sev = quake_severity(mag)
+            place = props.get("place") or "earthquake"
+            tsunami = str(props.get("tsunami") or "") == "1"
+            sev = quake_severity(mag, place, tsunami)
+            if sev == "STANDBY" and not is_us_place(place) and not tsunami:
+                continue
+            note = "USGS earthquake, magnitude 4.5 or greater, past 7 days."
+            if tsunami:
+                note += " A tsunami flag is set."
+            elif not is_us_place(place):
+                note += " Outside the United States, with no tsunami flag."
             quakes.append(_item(
                 "quake", "threat", "USGS",
-                f"M{float(mag):.1f} {props.get('place') or 'earthquake'}",
-                "USGS earthquake, magnitude 4.5 or greater, past 7 days.",
+                f"M{float(mag):.1f} {place}",
+                note,
                 url, when, ["quake", sev.lower()],
-                {"severity": sev, "lat": coords[1], "lon": coords[0], "mag": float(mag)},
+                {"severity": sev, "lat": coords[1], "lon": coords[0], "mag": float(mag), "usImpact": is_us_place(place) or tsunami},
             ))
         quakes.sort(key=lambda row: row.get("mag") or 0, reverse=True)
         items.extend(quakes[:30])
@@ -399,7 +430,7 @@ def fetch_threats(now: datetime) -> dict:
     extras.extend(_try_relief(now))
     extras.extend(_try_who(now))
     extras.extend(_try_cdc(now))
-    extras.extend(_try_conflict(now))
+    extras.extend(_try_desks(now))
     extras.extend(_try_neos(now))
     if not items and not extras:
         raise RuntimeError("threat feeds returned nothing")
@@ -423,7 +454,40 @@ def fetch_threats(now: datetime) -> dict:
         "tags": ["clock", "standby"],
         "severity": "STANDBY",
     })
-    return {"items": items + extras}
+    kept = [row for row in items + extras if _in_year(row, now.year) or row.get("kind") == "clock"]
+    return {"items": _dedupe_titles(kept)}
+
+
+def _in_year(row: dict, year: int) -> bool:
+    date = str(row.get("date") or "")
+    if len(date) >= 4 and date[:4].isdigit():
+        return int(date[:4]) == year
+    return False
+
+
+def _dedupe_titles(rows: list[dict]) -> list[dict]:
+    seen = set()
+    out = []
+    for row in rows:
+        key = re.sub(r"\W+", " ", (row.get("title") or "").lower()).strip()
+        if key and key in seen:
+            continue
+        if key:
+            seen.add(key)
+        out.append(row)
+    return out
+
+
+def _storm_severity(title: str, note: str) -> str:
+    title_l = (title or "").lower()
+    blob = f"{title} {note}".lower()
+    if "tropical weather outlook" in title_l or re.search(r"there are no tropical cyclones|no tropical cyclones at this time", title_l):
+        return "STANDBY"
+    if "hurricane warning" in blob or "tropical storm warning" in blob:
+        return "CRITICAL" if "hurricane warning" in blob else "ACTION"
+    if re.search(r"\bhurricane\s+[a-z]", blob):
+        return "ACTION"
+    return "STANDBY"
 
 
 def _try_nhc(now):
@@ -437,7 +501,9 @@ def _try_nhc(now):
                     continue
                 published = d.parse_pubdate(node.findtext("pubDate") or "") or now
                 note = d.clean_note(node.findtext("description") or "")
-                extra = {"severity": "ACTION"}
+                extra = {"severity": _storm_severity(title, note)}
+                if extra["severity"] == "STANDBY" and ("outlook" in title.lower() or "no tropical cyclones" in title.lower()):
+                    continue
                 point = _point_from(node)
                 if point:
                     extra["lat"], extra["lon"] = point
@@ -446,8 +512,6 @@ def _try_nhc(now):
                     if match:
                         extra["lat"] = float(match.group(1))
                         extra["lon"] = -float(match.group(2))
-                if "hurricane warning" in title.lower():
-                    extra["severity"] = "CRITICAL"
                 rows.append(_item("storm", "threat", "NHC", title, note, link, published, ["storm", extra["severity"].lower()], extra))
         except Exception as err:
             print(f"  nhc {url}: {err}")
@@ -565,7 +629,12 @@ def _try_who(now):
             if not title or not link:
                 continue
             published = d.parse_pubdate(node.findtext("pubDate") or "") or now
-            rows.append(_item("who", "threat", "WHO", title, d.clean_note(node.findtext("description") or ""), link, published, ["who", "alert"], {"severity": "ALERT"}))
+            if published.year < now.year:
+                continue
+            if re.search(r"covid", title, re.I) and published.year < now.year:
+                continue
+            sev = "ALERT" if re.search(r"outbreak|cases|deaths|epidemic", title, re.I) else "STANDBY"
+            rows.append(_item("who", "threat", "WHO", title, d.clean_note(node.findtext("description") or ""), link, published, ["who", sev.lower()], {"severity": sev}))
         if rows:
             break
     return rows[:6]
@@ -578,7 +647,8 @@ def _try_cdc(now):
             row = dict(row)
             row["kind"] = "cdc"
             row["source"] = "CDC HAN"
-            row["severity"] = "ACTION" if re.search(r"alert|advisory|warning", row.get("title") or "", re.I) else "ALERT"
+            official = bool(re.search(r"health alert network|\bHAN\b", row.get("title") or "", re.I))
+            row["severity"] = "ACTION" if official else "ALERT"
             row["tags"] = list(dict.fromkeys((row.get("tags") or []) + ["cdc", row["severity"].lower()]))
             rows.append(row)
     except Exception as err:
@@ -591,53 +661,136 @@ def _try_cdc(now):
     return rows[:5]
 
 
-def _try_conflict(now):
-    try:
-        rows = []
-        for row in _headlines("armed conflict war", now, 6):
+def _try_desks(now):
+    """Current Iran war, Ukraine war, and U.S. government headlines. Not a generic 'war' keyword."""
+    specs = (
+        ("war-iran", "Iran war", 'Iran (war OR strike OR missile OR IRGC OR ceasefire) when:14d'),
+        ("war-ukraine", "Ukraine war", 'Ukraine (Russia OR missile OR ceasefire OR Kyiv OR front) when:14d'),
+        ("usgov", "US government", '("White House" OR Congress OR Pentagon OR "Supreme Court") when:7d'),
+    )
+    rows = []
+    for kind, source, query in specs:
+        try:
+            found = _headlines(query, now, retain_days=21, limit=8)
+        except Exception as err:
+            print(f"  {kind}: {err}")
+            continue
+        kept = 0
+        for row in found:
+            if str(row.get("date") or "")[:4] != str(now.year):
+                continue
+            if re.search(r"\b(essay|analysis|implications under)\b", row.get("title") or "", re.I):
+                continue
             row = dict(row)
-            row["kind"] = "conflict"
-            row["lane"] = "threat"
+            row["kind"] = kind
+            row["lane"] = "news"
             row["severity"] = "ALERT"
-            row["tags"] = list(dict.fromkeys((row.get("tags") or []) + ["conflict", "alert"]))
+            row["confidence"] = "reported"
+            row["sourceCount"] = 1
+            row["tags"] = list(dict.fromkeys((row.get("tags") or []) + [kind, "alert"]))
             rows.append(row)
-        return rows
-    except Exception as err:
-        print(f"  conflict: {err}")
-        return []
+            kept += 1
+            if kept >= 4:
+                break
+        print(f"  {kind} {kept}")
+    return rows
+
+
+def _sentry_soon(rec: dict, year: int) -> bool:
+    years = [int(n) for n in re.findall(r"2\d{3}", str(rec.get("range") or ""))]
+    if not years:
+        return False
+    return min(years) <= year + 15
+
+
+def _sentry_level(rec: dict) -> str:
+    """Torino, Palermo, or impact probability. A name on the list is not a risk by itself."""
+    try:
+        torino = float(rec.get("ts_max") or 0)
+    except (TypeError, ValueError):
+        torino = 0
+    try:
+        palermo = float(rec.get("ps_max") or -10)
+    except (TypeError, ValueError):
+        palermo = -10
+    try:
+        prob = float(rec.get("ip") or 0)
+    except (TypeError, ValueError):
+        prob = 0
+    if torino >= 5 or prob >= 0.01:
+        return "CRITICAL"
+    # Cumulative odds under 1 percent, with Torino 0, are not a citizen alert.
+    if torino >= 2 or prob >= 0.01 or palermo > -2:
+        return "ACTION"
+    if torino >= 1:
+        return "ALERT"
+    return ""
 
 
 def _try_neos(now):
     rows = []
+    risky = {}
+    try:
+        sentry = json.loads(_get("https://ssd-api.jpl.nasa.gov/sentry.api", timeout=30))
+        for rec in sentry.get("data") or []:
+            if not _sentry_soon(rec, now.year):
+                continue
+            level = _sentry_level(rec)
+            if not level:
+                continue
+            for key in (rec.get("des"), rec.get("fullname")):
+                if key:
+                    risky[str(key).upper()] = (level, rec)
+    except Exception as err:
+        print(f"  sentry: {err}")
     start = now.strftime("%Y-%m-%d")
     end = (now + timedelta(days=60)).strftime("%Y-%m-%d")
-    url = f"https://ssd-api.jpl.nasa.gov/cad.api?dist-max=0.05&date-min={start}&date-max={end}&sort=dist&limit=6"
+    url = f"https://ssd-api.jpl.nasa.gov/cad.api?dist-max=0.05&date-min={start}&date-max={end}&sort=dist&limit=8"
+    au_miles = 92955807.3
+    ld_au = 0.002569
     try:
         payload = json.loads(_get(url, timeout=30))
         fields = payload.get("fields") or []
         for rec in payload.get("data") or []:
             row = dict(zip(fields, rec))
-            name = row.get("des") or row.get("fullname") or "close approach"
-            dist = row.get("dist") or ""
-            when = d.parse_pubdate(row.get("cd") or "") or now
-            link = "https://cneos.jpl.nasa.gov/ca/"
-            note = f"NASA/JPL close-approach distance {dist} AU." if dist else "NASA/JPL close approach."
+            name = row.get("des") or "close approach"
             try:
-                sev = "CRITICAL" if float(dist) < 0.01 else "ACTION" if float(dist) < 0.02 else "ALERT" if float(dist) < 0.035 else "STANDBY"
+                dist = float(row.get("dist") or 0)
             except ValueError:
-                sev = "ALERT"
-            rows.append(_item("neo", "threat", "NASA/JPL CNEOS", f"Close approach {name}", note, link, when, ["neo", sev.lower()], {"severity": sev}))
+                continue
+            if dist <= 0:
+                continue
+            ld = dist / ld_au
+            if ld > 5 and name.upper() not in risky:
+                continue
+            miles = dist * au_miles
+            when = d.parse_pubdate(row.get("cd") or "") or now
+            hit = risky.get(name.upper())
+            sev = hit[0] if hit else "STANDBY"
+            risk = ""
+            if hit:
+                rec_s = hit[1]
+                risk = f" Torino {rec_s.get('ts_max')}, Palermo {rec_s.get('ps_max')}, impact probability {rec_s.get('ip')}."
+            note = f"Miss distance about {miles:,.0f} miles ({ld:.1f} lunar distances).{risk or ' No Torino or Palermo impact risk on this flyby.'}"
+            link = "https://cneos.jpl.nasa.gov/ca/"
+            rows.append(_item("neo", "threat", "NASA/JPL CNEOS", f"Close approach {name}", note, link, when, ["neo", sev.lower()], {"severity": sev, "lunar": round(ld, 2)}))
     except Exception as err:
         print(f"  cneos: {err}")
-    try:
-        sentry = json.loads(_get("https://ssd-api.jpl.nasa.gov/sentry.api", timeout=30))
-        data = sentry.get("data") or []
-        for rec in data[:3]:
-            name = rec.get("des") or rec.get("fullname") or "sentry object"
-            link = "https://cneos.jpl.nasa.gov/sentry/"
-            rows.append(_item("sentry", "threat", "NASA/JPL Sentry", f"Sentry object {name}", "Impact-monitoring list. See the JPL page for the risk table.", link, now, ["sentry", "alert"], {"severity": "ALERT"}))
-    except Exception as err:
-        print(f"  sentry: {err}")
+    for key, (level, rec) in list(risky.items())[:5]:
+        if any(key in (row.get("title") or "").upper() for row in rows):
+            continue
+        if not str(key).startswith("(") and " " in str(key):
+            continue
+        name = rec.get("des") or key
+        if any(name.upper() in (row.get("title") or "").upper() for row in rows):
+            continue
+        note = f"Torino {rec.get('ts_max')}, Palermo {rec.get('ps_max')}, impact probability {rec.get('ip')}."
+        rows.append(_item(
+            "sentry", "threat", "NASA/JPL Sentry", f"Sentry risk {name}", note,
+            "https://cneos.jpl.nasa.gov/sentry/", now, ["sentry", level.lower()], {"severity": level},
+        ))
+        if sum(1 for row in rows if row.get("kind") == "sentry") >= 3:
+            break
     return rows
 
 
