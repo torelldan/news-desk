@@ -1,7 +1,65 @@
 {
   "calls": [],
-  "escalated": [],
-  "fizzled": [],
+  "escalated": [
+    {
+      "note": "New since 2026-11-04 · now ACTION",
+      "title": "M6.1 Fiji region"
+    },
+    {
+      "note": "New since 2026-11-04 · now ACTION",
+      "title": "Flood Warning"
+    },
+    {
+      "note": "New since 2026-11-04 · now ALERT",
+      "title": "Protecting the natural environment in armed conflict - ICRC"
+    },
+    {
+      "note": "New since 2026-11-04 · now ALERT",
+      "title": "The ecological fallout of Israel’s war in Gaza - The Hindu"
+    },
+    {
+      "note": "New since 2026-11-04 · now CRITICAL",
+      "title": "Close approach 2026 VP1"
+    },
+    {
+      "note": "New since 2026-11-04 · now CRITICAL",
+      "title": "Close approach 2026 VG3"
+    },
+    {
+      "note": "New since 2026-11-04 · now CRITICAL",
+      "title": "Close approach 2026 VK2"
+    }
+  ],
+  "fizzled": [
+    {
+      "note": "On the board 2026-11-04 at ACTION, absent now.",
+      "title": "M6.4 southeast of Easter Island"
+    },
+    {
+      "note": "On the board 2026-11-04 at ALERT, absent now.",
+      "title": "M5.8 110 km ENE of Barcelona, Philippines"
+    },
+    {
+      "note": "On the board 2026-11-04 at ALERT, absent now.",
+      "title": "M5.7 82 km NE of Kiunga, Papua New Guinea"
+    },
+    {
+      "note": "On the board 2026-11-04 at ALERT, absent now.",
+      "title": "Wind Advisory"
+    },
+    {
+      "note": "On the board 2026-11-04 at ACTION, absent now.",
+      "title": "Close approach 2010 VQ"
+    },
+    {
+      "note": "On the board 2026-11-04 at ACTION, absent now.",
+      "title": "Close approach 2026 VJ"
+    },
+    {
+      "note": "On the board 2026-11-04 at ACTION, absent now.",
+      "title": "Close approach 2026 UG4"
+    }
+  ],
   "note": "Compared with the stored board on 2026-11-04.",
   "since": "2026-11-04"
 }

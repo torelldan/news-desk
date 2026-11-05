@@ -672,6 +672,698 @@
         "gold-3",
         "silver-5"
       ]
+    },
+    {
+      "date": "2026-11-05",
+      "label": "Nov 5, 2026 2:41 PM CT",
+      "outlooks": [
+        {
+          "id": "quake:de68330bae9edd43",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "ACTION"
+        },
+        {
+          "id": "quake:633822cca8003864",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ACTION"
+        },
+        {
+          "id": "quake:e37d9bfcf16206ec",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "ACTION"
+        },
+        {
+          "id": "quake:4dece1e3250efb44",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "ACTION"
+        },
+        {
+          "id": "quake:22517429854347e2",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:fc251099d19c9f7f",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:c763a0f6d7146eae",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:899e47ec1d539e2e",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:2f6a659d6dff0a35",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:0038a733615b2276",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:b4a2f5ff9d0e9460",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:d5f5d7499a278dfa",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:107be0cbb6aaa012",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:851ebc0d8ec77017",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:7260938bf5805bf9",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:774ffa8224d52879",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:5c1b61b32aaebb77",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:62b79b551473166b",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:89144307107bd45c",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:ea36162e63b1eb5e",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:0b82058b7239309a",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:b5e587acd5bf41ca",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:fd03fc03232d6c3e",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:0f6e99689d009fbd",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:4eed971dcbb57c43",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:1886b455cfbee8a0",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:f646ac531076d1c9",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:cd967022eaf24773",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:552d423350a73fde",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:9f2049cc75c04569",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "storm:6351f1367051f576",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "ACTION"
+        },
+        {
+          "id": "storm:e618ef23b48c73ee",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "ACTION"
+        },
+        {
+          "id": "storm:ec5f60db7bdde678",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "ACTION"
+        },
+        {
+          "id": "storm:e618ef23b48c73ee",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "ACTION"
+        },
+        {
+          "id": "storm:6351f1367051f576",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "ACTION"
+        },
+        {
+          "id": "storm:fd4c6f97b257d4ad",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "ACTION"
+        },
+        {
+          "id": "storm:77a16df7c04a1c9e",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "ACTION"
+        },
+        {
+          "id": "nws:e9b89308c4d1da8c",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ACTION"
+        },
+        {
+          "id": "relief:0109da81b6fc36e7",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "who:53dcad2ca08ee68e",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "who:34e06283c9e6424f",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "who:96ed914230f7e2c2",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "who:af23d8d888512d6c",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "who:d4b1b93168f99a56",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "who:5fac872a6e87d32c",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:e690bd89fc9d54af",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "ACTION"
+        },
+        {
+          "id": "cdc:12c7ca9ea1a41c99",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:2c663e8a0ad872cf",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:d869056c692defda",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:03859e503e8592bb",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:33ab8eef7527ac23",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:2df553f32bfedc9b",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "neo:b6525019da5f0286",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "CRITICAL"
+        },
+        {
+          "id": "neo:7ef188732835b7d0",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "CRITICAL"
+        },
+        {
+          "id": "neo:6e5db1d2bf656873",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "CRITICAL"
+        },
+        {
+          "id": "neo:77f0360ca43ad1fb",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "CRITICAL"
+        },
+        {
+          "id": "neo:9934e838c1539fdc",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "CRITICAL"
+        },
+        {
+          "id": "neo:1095427f35282423",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "CRITICAL"
+        },
+        {
+          "id": "sentry:513532e0e0ea6ef9",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "sentry:2dc5c86a057f704e",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "sentry:d8dd27e8fcda181e",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "clock:bulletin",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        }
+      ],
+      "threats": [
+        {
+          "id": "quake:de68330bae9edd43",
+          "kind": "quake",
+          "severity": "ACTION",
+          "title": "M6.2 43 km ESE of Port-Olry, Vanuatu"
+        },
+        {
+          "id": "quake:633822cca8003864",
+          "kind": "quake",
+          "severity": "ACTION",
+          "title": "M6.1 Fiji region"
+        },
+        {
+          "id": "quake:e37d9bfcf16206ec",
+          "kind": "quake",
+          "severity": "ACTION",
+          "title": "M6.0 165 km NW of Port-Olry, Vanuatu"
+        },
+        {
+          "id": "quake:4dece1e3250efb44",
+          "kind": "quake",
+          "severity": "ACTION",
+          "title": "M6.0 58 km SSE of Shima, Japan"
+        },
+        {
+          "id": "quake:22517429854347e2",
+          "kind": "quake",
+          "severity": "STANDBY",
+          "title": "M5.4 24 km NNW of Rioblanco, Colombia"
+        },
+        {
+          "id": "quake:fc251099d19c9f7f",
+          "kind": "quake",
+          "severity": "STANDBY",
+          "title": "M5.4 203 km NW of Port-Olry, Vanuatu"
+        },
+        {
+          "id": "quake:c763a0f6d7146eae",
+          "kind": "quake",
+          "severity": "STANDBY",
+          "title": "M5.3 81 km SSE of Palekastro, Greece"
+        },
+        {
+          "id": "quake:899e47ec1d539e2e",
+          "kind": "quake",
+          "severity": "STANDBY",
+          "title": "M5.2 91 km ESE of Kyzyl-Eshme, Kyrgyzstan"
+        },
+        {
+          "id": "quake:2f6a659d6dff0a35",
+          "kind": "quake",
+          "severity": "STANDBY",
+          "title": "M5.2 Mid-Indian Ridge"
+        },
+        {
+          "id": "quake:0038a733615b2276",
+          "kind": "quake",
+          "severity": "STANDBY",
+          "title": "M5.2 Volcano Islands, Japan region"
+        },
+        {
+          "id": "quake:b4a2f5ff9d0e9460",
+          "kind": "quake",
+          "severity": "STANDBY",
+          "title": "M5.2 200 km NW of Port-Olry, Vanuatu"
+        },
+        {
+          "id": "quake:d5f5d7499a278dfa",
+          "kind": "quake",
+          "severity": "STANDBY",
+          "title": "M5.2 4 km E of La Miel, Panama"
+        },
+        {
+          "id": "quake:107be0cbb6aaa012",
+          "kind": "quake",
+          "severity": "STANDBY",
+          "title": "M5.1 19 km NNW of Masumbwe, Tanzania"
+        },
+        {
+          "id": "quake:851ebc0d8ec77017",
+          "kind": "quake",
+          "severity": "STANDBY",
+          "title": "M5.1 50 km WSW of Huarmey, Peru"
+        },
+        {
+          "id": "quake:7260938bf5805bf9",
+          "kind": "quake",
+          "severity": "STANDBY",
+          "title": "M5.1 19 km WNW of Tomohon, Indonesia"
+        },
+        {
+          "id": "quake:774ffa8224d52879",
+          "kind": "quake",
+          "severity": "STANDBY",
+          "title": "M5.1 Kermadec Islands region"
+        },
+        {
+          "id": "quake:5c1b61b32aaebb77",
+          "kind": "quake",
+          "severity": "STANDBY",
+          "title": "M5.1 Banda Sea"
+        },
+        {
+          "id": "quake:62b79b551473166b",
+          "kind": "quake",
+          "severity": "STANDBY",
+          "title": "M5.1 South Sandwich Islands region"
+        },
+        {
+          "id": "quake:89144307107bd45c",
+          "kind": "quake",
+          "severity": "STANDBY",
+          "title": "M5.1 201 km NW of Port-Olry, Vanuatu"
+        },
+        {
+          "id": "quake:ea36162e63b1eb5e",
+          "kind": "quake",
+          "severity": "STANDBY",
+          "title": "M5.1 Balleny Islands region"
+        },
+        {
+          "id": "quake:0b82058b7239309a",
+          "kind": "quake",
+          "severity": "STANDBY",
+          "title": "M5.1 97 km NNE of Finschhafen, Papua New Guinea"
+        },
+        {
+          "id": "quake:b5e587acd5bf41ca",
+          "kind": "quake",
+          "severity": "STANDBY",
+          "title": "M5.0 130 km NE of Thang, India"
+        },
+        {
+          "id": "quake:fd03fc03232d6c3e",
+          "kind": "quake",
+          "severity": "STANDBY",
+          "title": "M5.0 207 km ESE of Sarangani, Philippines"
+        },
+        {
+          "id": "quake:0f6e99689d009fbd",
+          "kind": "quake",
+          "severity": "STANDBY",
+          "title": "M5.0 South Sandwich Islands region"
+        },
+        {
+          "id": "quake:4eed971dcbb57c43",
+          "kind": "quake",
+          "severity": "STANDBY",
+          "title": "M5.0 Mid-Indian Ridge"
+        },
+        {
+          "id": "quake:1886b455cfbee8a0",
+          "kind": "quake",
+          "severity": "STANDBY",
+          "title": "M5.0 115 km SE of Bushehr, Iran"
+        },
+        {
+          "id": "quake:f646ac531076d1c9",
+          "kind": "quake",
+          "severity": "STANDBY",
+          "title": "M5.0 196 km NW of Port-Olry, Vanuatu"
+        },
+        {
+          "id": "quake:cd967022eaf24773",
+          "kind": "quake",
+          "severity": "STANDBY",
+          "title": "M5.0 111 km W of Petrolia, CA"
+        },
+        {
+          "id": "quake:552d423350a73fde",
+          "kind": "quake",
+          "severity": "STANDBY",
+          "title": "M4.9 101 km SSE of Palekastro, Greece"
+        },
+        {
+          "id": "quake:9f2049cc75c04569",
+          "kind": "quake",
+          "severity": "STANDBY",
+          "title": "M4.9 175 km WNW of Panguna, Papua New Guinea"
+        },
+        {
+          "id": "storm:6351f1367051f576",
+          "kind": "storm",
+          "severity": "ACTION",
+          "title": "Atlantic Tropical Weather Outlook"
+        },
+        {
+          "id": "storm:e618ef23b48c73ee",
+          "kind": "storm",
+          "severity": "ACTION",
+          "title": "There are no tropical cyclones at this time."
+        },
+        {
+          "id": "storm:ec5f60db7bdde678",
+          "kind": "storm",
+          "severity": "ACTION",
+          "title": "Eastern North Pacific Tropical Weather Outlook"
+        },
+        {
+          "id": "storm:e618ef23b48c73ee",
+          "kind": "storm",
+          "severity": "ACTION",
+          "title": "There are no tropical cyclones at this time."
+        },
+        {
+          "id": "storm:6351f1367051f576",
+          "kind": "storm",
+          "severity": "ACTION",
+          "title": "Atlantic Tropical Weather Outlook"
+        },
+        {
+          "id": "storm:fd4c6f97b257d4ad",
+          "kind": "storm",
+          "severity": "ACTION",
+          "title": "Eastern Pacific Tropical Weather Outlook"
+        },
+        {
+          "id": "storm:77a16df7c04a1c9e",
+          "kind": "storm",
+          "severity": "ACTION",
+          "title": "Central Pacific Tropical Weather Outlook"
+        },
+        {
+          "id": "nws:e9b89308c4d1da8c",
+          "kind": "nws",
+          "severity": "ACTION",
+          "title": "Flood Warning"
+        },
+        {
+          "id": "relief:0109da81b6fc36e7",
+          "kind": "relief",
+          "severity": "STANDBY",
+          "title": "ReliefWeb disasters"
+        },
+        {
+          "id": "who:53dcad2ca08ee68e",
+          "kind": "who",
+          "severity": "ALERT",
+          "title": "New WHO technical package to help countries improve health data for COVID-19 response and beyond"
+        },
+        {
+          "id": "who:34e06283c9e6424f",
+          "kind": "who",
+          "severity": "ALERT",
+          "title": "COVID-19 disrupting mental health services in most countries, WHO survey"
+        },
+        {
+          "id": "who:96ed914230f7e2c2",
+          "kind": "who",
+          "severity": "ALERT",
+          "title": "Global partnership to make available 120 million affordable, quality COVID-19 rapid tests for low- and middle-income countries"
+        },
+        {
+          "id": "who:af23d8d888512d6c",
+          "kind": "who",
+          "severity": "ALERT",
+          "title": "Managing the COVID-19 infodemic: Promoting healthy behaviours and mitigating the harm from misinformation and disinformation"
+        },
+        {
+          "id": "who:d4b1b93168f99a56",
+          "kind": "who",
+          "severity": "ALERT",
+          "title": "WHO’s three messages for UNGA75"
+        },
+        {
+          "id": "who:5fac872a6e87d32c",
+          "kind": "who",
+          "severity": "ALERT",
+          "title": "COVID-19 could reverse decades of progress toward eliminating preventable child deaths, agencies warn"
+        },
+        {
+          "id": "headline:e690bd89fc9d54af",
+          "kind": "cdc",
+          "severity": "ACTION",
+          "title": "Another child dies of measles as CDC reportedly holds up health alert - Ars Technica"
+        },
+        {
+          "id": "cdc:12c7ca9ea1a41c99",
+          "kind": "cdc",
+          "severity": "STANDBY",
+          "title": "CDC Health Alert Network notices"
+        },
+        {
+          "id": "headline:2c663e8a0ad872cf",
+          "kind": "conflict",
+          "severity": "ALERT",
+          "title": "Protecting the natural environment in armed conflict - ICRC"
+        },
+        {
+          "id": "headline:d869056c692defda",
+          "kind": "conflict",
+          "severity": "ALERT",
+          "title": "The ecological fallout of Israel’s war in Gaza - The Hindu"
+        },
+        {
+          "id": "headline:03859e503e8592bb",
+          "kind": "conflict",
+          "severity": "ALERT",
+          "title": "The Military AI Industry’s Involvement in Armed Conflict: Implications Under International Humanitarian Law - Analysis - Eurasia Review"
+        },
+        {
+          "id": "headline:33ab8eef7527ac23",
+          "kind": "conflict",
+          "severity": "ALERT",
+          "title": "Armed conflicts: Judith Suminwa outlines measures to protect women affected by conflict - ACP | Agence Congolaise de Presse"
+        },
+        {
+          "id": "headline:2df553f32bfedc9b",
+          "kind": "conflict",
+          "severity": "ALERT",
+          "title": "'2025 saw 25 state-based armed conflicts': Indian Navy chief flags dangers of growing acceptance for wars - Firstpost"
+        },
+        {
+          "id": "neo:b6525019da5f0286",
+          "kind": "neo",
+          "severity": "CRITICAL",
+          "title": "Close approach 2026 VP1"
+        },
+        {
+          "id": "neo:7ef188732835b7d0",
+          "kind": "neo",
+          "severity": "CRITICAL",
+          "title": "Close approach 2026 VG3"
+        },
+        {
+          "id": "neo:6e5db1d2bf656873",
+          "kind": "neo",
+          "severity": "CRITICAL",
+          "title": "Close approach 2026 VN1"
+        },
+        {
+          "id": "neo:77f0360ca43ad1fb",
+          "kind": "neo",
+          "severity": "CRITICAL",
+          "title": "Close approach 2026 VK2"
+        },
+        {
+          "id": "neo:9934e838c1539fdc",
+          "kind": "neo",
+          "severity": "CRITICAL",
+          "title": "Close approach 2019 XF2"
+        },
+        {
+          "id": "neo:1095427f35282423",
+          "kind": "neo",
+          "severity": "CRITICAL",
+          "title": "Close approach 2026 QQ8"
+        },
+        {
+          "id": "sentry:513532e0e0ea6ef9",
+          "kind": "sentry",
+          "severity": "ALERT",
+          "title": "Sentry object 2011 TO"
+        },
+        {
+          "id": "sentry:2dc5c86a057f704e",
+          "kind": "sentry",
+          "severity": "ALERT",
+          "title": "Sentry object 2012 BA102"
+        },
+        {
+          "id": "sentry:d8dd27e8fcda181e",
+          "kind": "sentry",
+          "severity": "ALERT",
+          "title": "Sentry object 2014 HN197"
+        },
+        {
+          "id": "clock:bulletin",
+          "kind": "clock",
+          "severity": "STANDBY",
+          "title": "Doomsday Clock"
+        }
+      ],
+      "trends": [],
+      "triggers": []
     }
   ]
 }
