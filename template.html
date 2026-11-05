@@ -383,8 +383,13 @@
 const state = { q: "", tag: "", tab: "ledger", range: "all", field: "", focus: "", open: {}, more: {}, assetsOff: [] };
 
 function ageHours(item) {
-  const stamp = Date.parse(item && item.published || "");
-  if (!Number.isFinite(stamp)) return 1e9;
+  let stamp = Date.parse(item && item.published || "");
+  if (!Number.isFinite(stamp) && item && item.date) stamp = Date.parse(`${item.date}T12:00:00`);
+  if (!Number.isFinite(stamp)) {
+    const kind = String((item && (item.kind || item.lane)) || "");
+    if (kind === "trend" || kind === "buzz" || kind === "tape" || kind === "market" || item && item.rise) return 0;
+    return 1e9;
+  }
   return (Date.now() - stamp) / 36e5;
 }
 function bucketOf(item) {
@@ -446,6 +451,88 @@ function clip(text, n) {
   if (clean.length <= n) return clean;
   return clean.slice(0, n).trim() + "…";
 }
+function uniqueTitles(items) {
+  const seen = new Set();
+  return items.filter((item) => {
+    const key = storyKey(item);
+    if (!key) return true;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+function onBoard(item) {
+  if (!item || !passes(item)) return false;
+  if (item.date && String(item.date).slice(0, 4) !== "2026" && item.kind !== "clock" && item.kind !== "trend") return false;
+  if (/there are no tropical cyclones/i.test(item.title || "")) return false;
+  if (/tropical weather outlook/i.test(item.title || "")) return false;
+  return true;
+}
+function todayItems() {
+  return uniqueTitles(((DESK.trends || {}).items || []).filter(passes));
+}
+function orderItems() {
+  const threats = ((DESK.threats || {}).items || []).filter((item) => onBoard(item) && needsAction(item));
+  const locals = ((DESK.local || {}).items || []).filter((item) => item.kind !== "na" && needsAction(item) && passes(item));
+  return uniqueTitles(threats.concat(locals).sort((a, b) => rankOf(b) - rankOf(a) || String(b.published || "").localeCompare(String(a.published || ""))));
+}
+function watchItems() {
+  const watchRank = (item) => item.kind === "war-iran" || item.kind === "war-ukraine" ? 3 : item.kind === "usgov" ? 2 : 1;
+  return uniqueTitles(((DESK.threats || {}).items || []).filter((item) => onBoard(item) && !needsAction(item) && (item.severity === "ALERT" || ["war-iran", "war-ukraine", "usgov"].includes(item.kind)))
+    .sort((a, b) => watchRank(b) - watchRank(a) || String(a.title || "").localeCompare(String(b.title || ""))));
+}
+function threatItems() {
+  return ((DESK.threats || {}).items || []).filter(onBoard);
+}
+function triggerItems() {
+  return ((DESK.triggers || {}).items || []).filter(passes);
+}
+function localItems() {
+  return ((DESK.local || {}).items || []).filter((item) => passes(item) && (safeUrl(item.url) || item.title));
+}
+function labItems() {
+  const names = { physics: 1, propulsion: 1, biomedical: 1, quantum: 1, technology: 1, ai: 1 };
+  return ((DESK.science || {}).items || []).filter((item) => passes(item) && names[item.field] && safeUrl(item.url));
+}
+function mapSources() {
+  return (DESK.sources || []).filter((src) => safeUrl(src.url));
+}
+function radarItems() {
+  return ((DESK.radar || {}).items || []).filter((item) => (!state.q || matches(item)) && passes(item));
+}
+function lookRows() {
+  const doc = DESK.lookback || {};
+  return [].concat(doc.escalated || [], doc.fizzled || [], doc.calls || []);
+}
+function logPool() {
+  const matched = allItems().filter((item) => matches(item) && safeUrl(item.url));
+  if (state.tab === "archive") return (state.range === "all" || state.range === "4d") ? matched.filter((item) => bucketOf(item) === "4d") : [];
+  return matched.filter(inRange);
+}
+function briefLines() {
+  return logPool().slice(0, 16);
+}
+function changeRows() {
+  const doc = DESK.changes || {};
+  const rows = [];
+  [doc.sinceRefresh || {}, doc.sinceYesterday || {}].forEach((block) => {
+    ["threats", "trends"].forEach((section) => {
+      const pack = block[section] || {};
+      ["escalated", "deescalated", "new", "resolved"].forEach((key) => {
+        (pack[key] || []).forEach((item) => {
+          if (!state.q || matches(item)) rows.push(item);
+        });
+      });
+    });
+  });
+  ((doc.groups || {}).pages || []).slice(0, 6).forEach((item) => rows.push(item));
+  const tape = marketTape();
+  if (tape) rows.push(tape);
+  return rows;
+}
+function topSeverity(items) {
+  return items.reduce((best, item) => rankOf(item) > rankOf({ severity: best }) ? (item.severity || "STANDBY") : best, "STANDBY");
+}
 function paintSections() {
   const setSum = (id, chip, count, headline) => {
     const sec = document.querySelector(`[data-sec="${id}"]`);
@@ -462,15 +549,13 @@ function paintSections() {
     const klass = String(chip || "STANDBY").toLowerCase();
     sum.innerHTML = `<span class="sev sev-${esc(klass)}">${esc(chip || "STANDBY")}</span> ${esc(String(count))} · ${esc(clip(headline || "Nothing new", 88))}`;
   };
-  const threats = ((DESK.threats || {}).items || []).slice().sort((a, b) => rankOf(b) - rankOf(a));
-  const lead = threats[0];
-  const brief = publicText(DESK.brief || "No brief on this check.");
-  setSum("brief", (lead && lead.severity) || "STANDBY", "1", brief.split(". ")[0] || brief);
-  const trends = ((DESK.trends || {}).items || []);
-  setSum("today", trends[0] ? (trends[0].severity || "ALERT") : "STANDBY", String(trends.length), trends[0] ? trends[0].name : "No matching topic");
+  const brief = publicText(DESK.brief || "");
   const tape = marketTape();
-  const orders = threats.filter(needsAction);
-  setSum("orders", (orders[0] && orders[0].severity) || "STANDBY", String(orders.length), orders[0] ? orders[0].title : "Nothing needs an action");
+  setSum("brief", tape ? tape.severity : "STANDBY", brief ? "1" : "0", brief ? brief.split(". ")[0] : "No brief on this check");
+  const today = todayItems();
+  setSum("today", today.length ? topSeverity(today) : "STANDBY", String(today.length), today[0] ? (today[0].name || today[0].title) : "No matching topic");
+  const orders = state.more["orders-all"] ? orderItems() : orderItems().slice(0, 5);
+  setSum("orders", orders.length ? topSeverity(orders) : "STANDBY", String(orders.length), orders[0] ? orders[0].title : "Nothing needs an action");
   const regions = ((DESK.markets || {}).regions || []);
   const mover = regions.map((region) => {
     const venue = (region.venues || [])[0] || {};
@@ -479,37 +564,31 @@ function paintSections() {
   const econLine = mover
     ? `${mover.region.name} ${mover.venue.indexName || ""} ${mover.venue.changePct == null ? "no quote" : (mover.venue.changePct > 0 ? "+" : "") + mover.venue.changePct + "%"}`
     : "No quotes";
-  const econSev = tape ? tape.severity : "STANDBY";
-  setSum("econ", econSev, String(regions.length), tape ? tape.title : econLine);
-  const triggers = ((DESK.triggers || {}).items || []);
-  setSum("triggers", triggers[0] ? (triggers[0].severity || "ALERT") : "STANDBY", String(triggers.length), triggers[0] ? triggers[0].title : "No trigger is on");
-  const local = ((DESK.local || {}).items || []).slice().sort((a, b) => rankOf(b) - rankOf(a));
-  setSum("local", (local[0] && local[0].severity) || "STANDBY", String(local.length), local[0] ? local[0].title : "No local notice");
-  const watchRank = (item) => item.kind === "war-iran" || item.kind === "war-ukraine" ? 3 : item.kind === "usgov" ? 2 : 1;
-  const watching = threats.filter((item) => item.severity === "ALERT" || ["war-iran", "war-ukraine", "usgov"].includes(item.kind)).sort((a, b) => watchRank(b) - watchRank(a));
-  setSum("watch", (watching[0] && watching[0].severity) || "STANDBY", String(watching.length), watching[0] ? watching[0].title : "Nothing to monitor");
-  const changed = DESK.changes || {};
-  const yNew = (((changed.sinceYesterday || {}).threats || {}).new || []).length + (((changed.sinceYesterday || {}).trends || {}).new || []).length;
-  const yUp = (((changed.sinceYesterday || {}).threats || {}).escalated || []).length;
-  const firstChange = ((((changed.sinceYesterday || {}).threats || {}).escalated || [])[0]) || ((((changed.sinceYesterday || {}).threats || {}).new || [])[0]) || ((((changed.sinceRefresh || {}).trends || {}).new || [])[0]);
-  const changedLine = tape ? tape.title : (firstChange ? firstChange.title : "No change versus yesterday");
-  setSum("changed", (yNew + yUp) || tape ? "ALERT" : "STANDBY", String(yNew + yUp + (tape ? 1 : 0)), changedLine);
-  setSum("threats", (lead && lead.severity) || "STANDBY", String(threats.length), lead ? lead.title : "No threat");
-  const gold = (((DESK.assets || {}).series || []).find((asset) => /gold/i.test(asset.name || ""))) || {};
-  const goldMove = gold.changePct == null ? "Gold quote missing" : `Gold ${gold.changePct > 0 ? "up" : "down"} ${Math.abs(gold.changePct)}% today`;
-  setSum("impact", Math.abs(Number(gold.changePct) || 0) >= 3 ? "ALERT" : "STANDBY", String(((DESK.assets || {}).series || []).length), goldMove);
-  const papers = ((DESK.science || {}).items || []);
-  setSum("labs", "STANDBY", String(papers.length), papers[0] ? papers[0].title : "No lab item");
-  const sources = DESK.sources || [];
+  setSum("econ", tape ? tape.severity : "STANDBY", String(regions.length), tape ? tape.title : econLine);
+  const triggers = triggerItems();
+  setSum("triggers", triggers.length ? topSeverity(triggers) : "STANDBY", String(triggers.length), triggers[0] ? triggers[0].title : "No trigger is on");
+  const local = localItems();
+  setSum("local", local.length ? topSeverity(local) : "STANDBY", String(local.length), local[0] ? local[0].title : "No local notice");
+  const watching = watchItems();
+  setSum("watch", watching.length ? topSeverity(watching) : "STANDBY", String(watching.length), watching[0] ? watching[0].title : "Nothing to monitor");
+  const changes = changeRows();
+  setSum("changed", changes.length ? "ALERT" : "STANDBY", String(changes.length), changes[0] ? (changes[0].title || changes[0].name) : "No change versus yesterday");
+  const board = threatItems();
+  setSum("threats", board.length ? topSeverity(board) : "STANDBY", String(board.length), board[0] ? board[0].title : "No threat in this window");
+  const bullets = marketBullets();
+  setSum("impact", bullets.length && tape ? tape.severity : "STANDBY", String(bullets.length), bullets[0] || "No clear link between the headlines and these prices");
+  const papers = labItems();
+  setSum("labs", "STANDBY", String(papers.length), papers[0] ? papers[0].title : "No lab item in this window");
+  const sources = mapSources();
   setSum("map", "STANDBY", String(sources.length), sources[0] ? (sources[0].short || sources[0].name) : "No source");
-  const radar = ((DESK.radar || {}).items || []);
-  setSum("radar", radar[0] && radar[0].call === "real" ? "ALERT" : "STANDBY", String(radar.length), radar[0] ? radar[0].title : "No narrative");
-  const look = DESK.lookback || {};
-  const escalated = look.escalated || [];
-  setSum("look", escalated.length ? "ALERT" : "STANDBY", String(escalated.length), escalated[0] ? escalated[0].title : "Nothing escalated this week");
-  const posts = allItems();
-  setSum("briefs", "STANDBY", String(posts.length), posts[0] ? posts[0].title : "No brief");
-  setSum("log", "STANDBY", String(posts.length), posts[0] ? posts[0].title : "Empty log");
+  const radar = radarItems();
+  setSum("radar", radar.some((item) => item.call === "real") ? "ALERT" : "STANDBY", String(radar.length), radar[0] ? radar[0].title : "No narrative in this window");
+  const look = lookRows();
+  setSum("look", (DESK.lookback || {}).escalated && (DESK.lookback.escalated || []).length ? "ALERT" : "STANDBY", String(look.length), look[0] ? look[0].title : "Nothing escalated this week");
+  const briefs = briefLines();
+  setSum("briefs", "STANDBY", String(briefs.length), briefs[0] ? briefs[0].title : "Nothing in this window");
+  const log = logPool();
+  setSum("log", "STANDBY", String(log.length), log[0] ? log[0].title : "Nothing in this window");
 }
 function fold(id, title, body, fallback) {
   const open = isOpen(id, fallback);
@@ -525,18 +604,18 @@ function groupedHtml(items, draw, opts) {
   let html = "";
   let any = false;
   keys.forEach((key) => {
-    const rows = items.filter((item) => bucketOf(item) === key);
-    if (!rows.length) return;
+    const drawn = items.filter((item) => bucketOf(item) === key).map(draw).filter(Boolean);
+    if (!drawn.length) return;
     any = true;
     const id = (options.store || "feed") + "-" + key;
     const limit = options.short || 0;
     const expanded = !!state.more[id];
-    const visible = limit && !expanded ? rows.slice(0, limit) : rows;
-    let body = visible.map(draw).join("");
-    if (limit && rows.length > limit) {
-      body += `<button type="button" class="more" data-more="${esc(id)}">${expanded ? "Show less" : "Show more"} · ${rows.length}</button>`;
+    const visible = limit && !expanded ? drawn.slice(0, limit) : drawn;
+    let body = visible.join("");
+    if (limit && drawn.length > limit) {
+      body += `<button type="button" class="more" data-more="${esc(id)}">${expanded ? "Show less" : "Show more"} · ${drawn.length}</button>`;
     }
-    const heading = `${esc(RANGE_LABEL[key])} · ${rows.length}`;
+    const heading = `${esc(RANGE_LABEL[key])} · ${drawn.length}`;
     if (options.collapse) html += fold(id, heading, body, key === "24h" && options.firstOpen);
     else html += `<h3 class="group">${heading}</h3>${body}`;
   });
@@ -749,7 +828,7 @@ function renderBrief() {
 }
 function renderToday() {
   const doc = DESK.trends || {};
-  const items = (doc.items || []).filter(passes);
+  const items = todayItems();
   const cards = items.map((item) => {
     if (!claim(item)) return linkLine(item, "an earlier section");
     const volume = item.volume == null || item.volume === "" ? "" : `${item.volume} posts`;
@@ -773,14 +852,7 @@ function renderToday() {
   host.innerHTML = `<p class="note-plain">${esc(note)}</p>` + (cards ? `<div class="stack">${cards}</div>` : empty("No topic matched the threat list."));
 }
 function renderOrders() {
-  const threats = ((DESK.threats || {}).items || []).filter((item) => passes(item) && needsAction(item));
-  const locals = ((DESK.local || {}).items || []).filter((item) => item.kind !== "na" && needsAction(item) && passes(item));
-  const pool = threats.concat(locals).sort((a, b) => rankOf(b) - rankOf(a) || String(b.published || "").localeCompare(String(a.published || "")));
-  const unique = [];
-  pool.forEach((item) => {
-    if (!claim(item)) return;
-    unique.push(item);
-  });
+  const unique = orderItems();
   const openAll = !!state.more["orders-all"];
   const shown = openAll ? unique : unique.slice(0, 5);
   const rows = shown.map((item) => {
@@ -826,9 +898,7 @@ function watchPool() {
   }).sort((a, b) => rankOf(b) - rankOf(a) || Date.parse(b.published || 0) - Date.parse(a.published || 0)).slice(0, 10);
 }
 function renderWatch() {
-  const watchRank = (item) => item.kind === "war-iran" || item.kind === "war-ukraine" ? 3 : item.kind === "usgov" ? 2 : 1;
-  const items = ((DESK.threats || {}).items || []).filter((item) => passes(item) && !needsAction(item) && (item.severity === "ALERT" || ["war-iran", "war-ukraine", "usgov"].includes(item.kind)))
-    .sort((a, b) => watchRank(b) - watchRank(a) || String(b.title || "").localeCompare(String(a.title || "")));
+  const items = watchItems();
   const lines = items.map((item) => {
     const sev = item.severity || "STANDBY";
     const url = safeUrl(item.url);
@@ -889,18 +959,22 @@ function renderChanged() {
   const refreshBody = deltaBlock(refresh.threats, "World threat board") + deltaBlock(refresh.trends, "Today");
   const yBody = deltaBlock(yesterday.threats, "World threat board") + deltaBlock(yesterday.trends, "Today");
   const pages = ((doc.groups || {}).pages || []).slice(0, 6).map((item) => `<p class="meta">${esc(item.title || "Page")} · Carota pages</p>`).join("");
+  if (!changeRows().length) {
+    host.innerHTML = `<p class="meta">No change versus yesterday.</p>`;
+    return;
+  }
   host.innerHTML = `
     <h3 class="group">Since last refresh · ${esc(refresh.label || doc.sinceLabel || DESK.updated || "previous run")}</h3>
-    ${refreshBody || `<p class="meta">No status change, new threat, or new trend since that refresh.</p>`}
+    ${refreshBody}
     <h3 class="group">Since yesterday · ${esc(priorLabel(yesterday))}</h3>
     ${priorNote(yesterday)}
-    ${yBody || `<p class="meta">No status change versus yesterday.</p>`}
+    ${yBody}
     ${tapeLine()}
     ${pages ? `<h3 class="group">Page changes · Carota pages</h3>${pages}` : ""}`;
 }
 function renderTriggers() {
   const doc = DESK.triggers || {};
-  const items = doc.items || [];
+  const items = triggerItems();
   const list = items.map((item) => {
     claim(item);
     return `<li id="trigger-${esc(item.id || "")}"><strong class="sev sev-${(item.severity || "alert").toLowerCase()}">${esc(item.severity || "ALERT")}</strong> ${esc(item.title || "")}<p class="meta">${esc(item.why || "")}</p>${soLine(item)}</li>`;
@@ -912,7 +986,7 @@ function renderTriggers() {
 }
 function renderLocal() {
   const doc = DESK.local || {};
-  const items = (doc.items || []).filter((item) => !state.q || matches(item));
+  const items = localItems();
   const rows = items.map((item) => {
     const anchor = `id="local-${esc(item.id || "")}"`;
     if (!claim(item)) return `<div ${anchor}>${linkLine(item, "Standing orders")}</div>`;
@@ -923,7 +997,7 @@ function renderLocal() {
 }
 function renderRadar() {
   const doc = DESK.radar || {};
-  const cards = (doc.items || []).filter((item) => !state.q || matches(item)).map((item) => {
+  const cards = radarItems().map((item) => {
     if (!claim(item)) return linkLine(item, "an earlier section");
     const samples = (item.samples || []).map((sample) => {
       const url = safeUrl(sample.url);
@@ -943,13 +1017,16 @@ function renderRadar() {
 function renderLookback() {
   const doc = DESK.lookback || {};
   const block = (rows, label) => {
-    if (!rows || !rows.length) return `<h3 class="group">${esc(label)}</h3><p class="meta">None this week.</p>`;
-    return `<h3 class="group">${esc(label)}</h3>` + rows.map((row) => `<p class="meta">${esc(row.title || "")} · ${esc(row.verdict || "")} ${esc(row.note || "")}</p>`).join("");
+    if (!rows || !rows.length) return "";
+    return `<h3 class="group">${esc(label)} · ${rows.length}</h3>` + rows.map((row) => `<p class="meta">${esc(row.title || "")} · ${esc(row.verdict || "")} ${esc(row.note || "")}</p>`).join("");
   };
-  document.getElementById("lookback").innerHTML = `<p class="note-plain">${esc(doc.note || "")}</p>${block(doc.escalated, "Escalated")}${block(doc.fizzled, "Fizzled")}${block(doc.calls, "Calls")}`;
+  const body = `${block(doc.escalated, "Escalated")}${block(doc.fizzled, "Fizzled")}${block(doc.calls, "Calls")}`;
+  document.getElementById("lookback").innerHTML = body
+    ? `<p class="note-plain">${esc(doc.note || "")}</p>${body}`
+    : `<p class="meta">Nothing escalated this week.</p>`;
 }
 function renderMap() {
-  const nodes = (DESK.sources || []).map((src) => {
+  const nodes = mapSources().map((src) => {
     const url = safeUrl(src.url);
     if (!url) return "";
     const age = ageDays(src.lastDate);
@@ -1002,16 +1079,16 @@ function renderChips(items) {
     });
   });
 }
-function renderCasebook(items) {
-  const lines = items.filter(matches).slice(0, 16).map((item) => {
+function renderCasebook() {
+  const lines = briefLines().map((item) => {
     if (seenStory(item)) return linkLine(item, "its section");
     return `<p class="meta"><a href="#log-${esc(item.id || "")}">${esc(item.title || "")}</a> · Situation log · ${esc(item.source || "")}</p>`;
   }).join("");
   document.getElementById("casebook").innerHTML = lines || empty("Nothing in that window.");
 }
-function renderPanel(items) {
+function renderPanel() {
   const host = document.getElementById("panel");
-  const matched = items.filter(matches);
+  const matched = logPool();
   if (state.tab === "ledger") {
     const logRow = (item) => {
       if (seenStory(item)) return linkLine(item, "its section");
@@ -1148,21 +1225,18 @@ function renderMarkets() {
 }
 function threatCard(item) {
   const sev = item.severity || "STANDBY";
-  return row(item).replace("<article class=\"row\">", `<article class="row"><span class="sev sev-${sev.toLowerCase()}">${esc(sev)}</span> `);
+  const html = row(item);
+  if (!html) return `<p class="meta">${esc(item.title || "Untitled")}</p>`;
+  return html.replace("<article class=\"row\">", `<article class="row"><span class="sev sev-${sev.toLowerCase()}">${esc(sev)}</span> `);
 }
 function renderThreats() {
-  const rows = ((DESK.threats || {}).items || []).filter(passes).filter((item) => {
-    if (item.date && String(item.date).slice(0, 4) !== "2026") return false;
-    if (/there are no tropical cyclones/i.test(item.title || "")) return false;
-    if (/tropical weather outlook/i.test(item.title || "")) return false;
-    return true;
-  });
+  const rows = threatItems();
   const local = (item) => item.kind === "nws" && (item.tags || []).includes("tennessee");
   const cats = [
     ["iran", "Iran war", (item) => item.kind === "war-iran"],
     ["ukraine", "Ukraine war", (item) => item.kind === "war-ukraine"],
     ["gov", "US government", (item) => item.kind === "usgov"],
-    ["natural", "Natural disasters", (item) => ["quake", "storm", "gdacs"].includes(item.kind) || (item.kind === "nws" && !local(item))],
+    ["natural", "Natural disasters", (item) => ["quake", "storm", "gdacs", "relief"].includes(item.kind) || (item.kind === "nws" && !local(item))],
     ["war", "Other conflict", (item) => item.kind === "conflict"],
     ["health", "Pandemics & outbreaks", (item) => item.kind === "who" || item.kind === "cdc"],
     ["space", "Space & existential", (item) => ["neo", "sentry", "clock"].includes(item.kind)],
@@ -1171,9 +1245,10 @@ function renderThreats() {
   const rank = { STANDBY: 0, ALERT: 1, ACTION: 2, CRITICAL: 3 };
   const html = cats.map(([id, name, test]) => {
     const mine = rows.filter(test);
+    const lines = mine.map((item) => seenStory(item) ? linkLine(item, "Standing orders") : threatCard(item)).filter(Boolean);
     const top = mine.reduce((best, item) => rank[item.severity] > rank[best] ? item.severity : best, "STANDBY");
-    const body = mine.length ? mine.map((item) => seenStory(item) ? linkLine(item, "Standing orders") : threatCard(item)).join("") : `<p class="meta">None in this window.</p>`;
-    return fold("threat-" + id, `${esc(name)} · ${mine.length} · <span class="sev sev-${top.toLowerCase()}">${esc(top)}</span>`, body, false);
+    const body = lines.length ? lines.join("") : `<p class="meta">None in this window.</p>`;
+    return fold("threat-" + id, `${esc(name)} · ${lines.length} · <span class="sev sev-${top.toLowerCase()}">${esc(top)}</span>`, body, false);
   }).join("");
   const nwsNote = `<p class="note-plain">Open items are listed under Standing orders. Williamson County notices are under Local.</p>`;
   document.getElementById("threats").innerHTML = nwsNote + html;
@@ -1205,7 +1280,7 @@ function meaningOf(name, dir) {
     ? "A stronger dollar has often come with tighter money."
     : "A weaker dollar has often lined up with easier money.";
 }
-function marketReadHtml() {
+function marketBullets() {
   const tape = marketTape();
   const bullets = [];
   if (tape) {
@@ -1230,7 +1305,11 @@ function marketReadHtml() {
     bullets.push(`${asset.name} ${dir} ${Math.abs(move).toFixed(1)}% ${span}${after}. ${meaning} ${action}`);
   });
   if (!tape && !bullets.length) bullets.push("No clear link between the headlines and these prices.");
-  const lines = (bullets.slice(0, 4)).map((line) => `<li>${esc(line)}</li>`).join("");
+  return bullets.slice(0, 4);
+}
+function marketReadHtml() {
+  const bullets = marketBullets();
+  const lines = bullets.map((line) => `<li>${esc(line)}</li>`).join("");
   return `<h3 class="group">Market read</h3>${lines ? `<ul class="read">${lines}</ul>` : `<p class="meta">No clear link between the headlines and these prices.</p>`}`;
 }
 function returnsOf(points) {
@@ -1383,16 +1462,13 @@ function labCard(item) {
 }
 function renderLabs() {
   const names = { physics: "Physics", propulsion: "Propulsion", biomedical: "Biomedical", quantum: "Quantum", technology: "Technology", ai: "AI" };
-  const items = ((DESK.science || {}).items || []).filter(passes);
+  const items = labItems();
   const html = Object.keys(names).map((field) => {
     const mine = items.filter((item) => item.field === field).sort((a, b) => Date.parse(b.published || 0) - Date.parse(a.published || 0));
     const top = mine.slice(0, 3).map((item) => esc(item.title)).join(" · ");
-    const id = "lab-" + field;
-    const open = !!state.more[id];
-    const shown = open ? mine : mine.slice(0, 3);
-    const body = (shown.length ? shown.map(labCard).join("") : `<p class="meta">None in this window.</p>`)
-      + (mine.length > 3 ? `<button type="button" class="more" data-more="${id}">${open ? "Show less" : "Show more"} · ${mine.length}</button>` : "");
-    return fold(id, `${esc(names[field])} · ${mine.length}<span class="meta">${top ? " · " + top : ""}</span>`, body, false);
+    const body = mine.length ? mine.map(labCard).filter(Boolean).join("") : `<p class="meta">None in this window.</p>`;
+    const count = mine.filter((item) => labCard(item)).length;
+    return fold("lab-" + field, `${esc(names[field])} · ${count}<span class="meta">${top ? " · " + top : ""}</span>`, body || `<p class="meta">None in this window.</p>`, false);
   }).join("");
   document.getElementById("labs").innerHTML = html || empty("No lab items in that window.");
 }
@@ -1426,8 +1502,8 @@ function render() {
   renderLookback();
   renderMap();
   renderChips(items);
-  renderCasebook(items);
-  renderPanel(items);
+  renderCasebook();
+  renderPanel();
   paintSections();
   bindDesk();
   const errs = desk.errors || [];

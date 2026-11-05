@@ -1009,8 +1009,8 @@ def main() -> int:
     google_trends = citizen.fetch_google_trends(now)
     if not google_trends.get("ok"):
         errors.append("Google Trends: " + (google_trends.get("note") or "unavailable"))
-    velocity = citizen.news_velocity(threat_items)
-    trends = citizen.keep_rising(trends, prev_history, today, google_trends.get("items") or [], velocity)
+    velocity = citizen.news_velocity(threat_items, now)
+    trends = citizen.keep_rising(trends, prev_history, today, google_trends.get("items") or [], velocity, now)
     if google_trends.get("note"):
         trends["googleNote"] = google_trends.get("note")
     try:

@@ -2,108 +2,132 @@
   "googleNote": "Google Trends US daily list answered (10 topics). Kept the ones that match a war, government, or threat topic. None of today's search trends matched.",
   "items": [
     {
-      "category": "iran-war",
-      "confidence": "reported",
       "id": "velocity:4ee4bc978244e41e",
-      "kind": "trend",
-      "lane": "news",
-      "look": "news",
       "name": "iran war",
-      "note": "The same topic showed up across several outlets.",
-      "rise": "4 outlets this window",
-      "samples": [
-        {
-          "source": "WSJ",
-          "text": "Exclusive | Trump Acknowledges Iran War Is Partly to Blame for Republican Losses - WSJ",
-          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNWmVDbWFnYVgyV3EyWXY0RVI0ZWE0UTdMRWJvSmFVa0lJVE9WajlzWEMzZ0lJM0l2VWVaVWE0TjZOc2pTWU1YcHd4dHh2dU00WVBzMXpfcEdQVzRGaVoyNEw0cUQ0c0l1blgzQTJyOFBTQmhVd2JScDlpTGQ1R2JnRk5PODBVU1o3QmNqajZnME1BTnRqd2N4Yk1LM3NjTVRJU29LWjhRTUVUOTVZcFNwNUFrUm1UUEE?oc=5"
-        },
-        {
-          "source": "PBS",
-          "text": "Vance blames Iran war for GOP midterm losses - PBS",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNR3hPeE5hNmhGaGtEbTNfZXdZUTJiaDctVDhSd2g0T1FIUVdyOGFnWHFfaXp6Y1Z4VmNqOXJ6VC1Ob3BfbHF0Y2RZQlQ0cDdTWDVDRGVjMmxyOGtoeU5JOUdMbGg3MXJZYTBwSGVPaWlyS2VHRnkyclVnQ3JhZm00bGpObWR5SUZ1bWc?oc=5"
-        },
-        {
-          "source": "Institute for the Study of War",
-          "text": "Iran Update, November 4, 2026 - Institute for the Study of War",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPckpWSVBWREltTGMxckdQTzROOXdyVEQzQTJQUXZvMGhxcnlEWExZUVNyT3AxN1hpN1Jjal9aeDVpQ1BkbDNYdlM0OHlVcndQUjBibUh3TE13anRrZGp3anVOSXU3VE1Yc2FHYTBjUVJlclkzUUFkdF8xNWp2d1BGY1ZjbDc?oc=5"
-        }
-      ],
-      "severity": "ALERT",
-      "soWhat": "no action needed",
-      "source": "News velocity",
-      "sourceCount": 4,
       "title": "iran war",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNWmVDbWFnYVgyV3EyWXY0RVI0ZWE0UTdMRWJvSmFVa0lJVE9WajlzWEMzZ0lJM0l2VWVaVWE0TjZOc2pTWU1YcHd4dHh2dU00WVBzMXpfcEdQVzRGaVoyNEw0cUQ0c0l1blgzQTJyOFBTQmhVd2JScDlpTGQ1R2JnRk5PODBVU1o3QmNqajZnME1BTnRqd2N4Yk1LM3NjTVRJU29LWjhRTUVUOTVZcFNwNUFrUm1UUEE?oc=5"
-    },
-    {
-      "category": "ukraine-war",
-      "confidence": "reported",
-      "id": "velocity:efd2da34e68ca58f",
-      "kind": "trend",
-      "lane": "news",
-      "look": "news",
-      "name": "ukraine war",
-      "note": "The same topic showed up across several outlets.",
+      "category": "iran-war",
       "rise": "4 outlets this window",
+      "look": "news",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNWmVDbWFnYVgyV3EyWXY0RVI0ZWE0UTdMRWJvSmFVa0lJVE9WajlzWEMzZ0lJM0l2VWVaVWE0TjZOc2pTWU1YcHd4dHh2dU00WVBzMXpfcEdQVzRGaVoyNEw0cUQ0c0l1blgzQTJyOFBTQmhVd2JScDlpTGQ1R2JnRk5PODBVU1o3QmNqajZnME1BTnRqd2N4Yk1LM3NjTVRJU29LWjhRTUVUOTVZcFNwNUFrUm1UUEE?oc=5",
       "samples": [
         {
-          "source": "AP News",
-          "text": "What to know about the Melania Trump-brokered ceasefire in Russian-occupied Oleshky - AP News",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxONllIN0YycVhheUhkdFhFSTdabU5DMmJGMFNIQS15NWYwQV9BTS0tV3lPeHJkUGVsWmNNX3FZMkI5bEdzUF9sNXAtUklUb2JsRDZ1UkNScEFJMHRjRWZITGJxMS1hTWdyM0hhdjk3eUM2dkNiTG1IVjQta28takE4YUUwaWYtQ0MyNGE1aFkzUS1VQXQyNkEweDl4TWZYRGx4NlpZU2szYi1tdw?oc=5"
+          "text": "Exclusive | Trump Acknowledges Iran War Is Partly to Blame for Republican Losses - WSJ",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNWmVDbWFnYVgyV3EyWXY0RVI0ZWE0UTdMRWJvSmFVa0lJVE9WajlzWEMzZ0lJM0l2VWVaVWE0TjZOc2pTWU1YcHd4dHh2dU00WVBzMXpfcEdQVzRGaVoyNEw0cUQ0c0l1blgzQTJyOFBTQmhVd2JScDlpTGQ1R2JnRk5PODBVU1o3QmNqajZnME1BTnRqd2N4Yk1LM3NjTVRJU29LWjhRTUVUOTVZcFNwNUFrUm1UUEE?oc=5",
+          "source": "WSJ",
+          "published": "2026-11-03T23:07:00-06:00",
+          "date": "2026-11-03"
         },
         {
+          "text": "Vance blames Iran war for GOP midterm losses - PBS",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNR3hPeE5hNmhGaGtEbTNfZXdZUTJiaDctVDhSd2g0T1FIUVdyOGFnWHFfaXp6Y1Z4VmNqOXJ6VC1Ob3BfbHF0Y2RZQlQ0cDdTWDVDRGVjMmxyOGtoeU5JOUdMbGg3MXJZYTBwSGVPaWlyS2VHRnkyclVnQ3JhZm00bGpObWR5SUZ1bWc?oc=5",
+          "source": "PBS",
+          "published": "2026-11-04T10:56:43-06:00",
+          "date": "2026-11-04"
+        },
+        {
+          "text": "Iran Update, November 4, 2026 - Institute for the Study of War",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPckpWSVBWREltTGMxckdQTzROOXdyVEQzQTJQUXZvMGhxcnlEWExZUVNyT3AxN1hpN1Jjal9aeDVpQ1BkbDNYdlM0OHlVcndQUjBibUh3TE13anRrZGp3anVOSXU3VE1Yc2FHYTBjUVJlclkzUUFkdF8xNWp2d1BGY1ZjbDc?oc=5",
           "source": "Institute for the Study of War",
-          "text": "Russian Offensive Campaign Assessment, November 4, 2026 - Institute for the Study of War",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPQUs3b2pfMjM2cGdvOUh0Ylp5elBTekxyWVQ2M0t2M0I3NV9QcmMyaFhiMkFtZm8tME5nMXlnSk1lbFRaUEN6NXE1MlhPQzJkamJxZkgwOWR4T3oyZVhaVXB4UlluM2IwZEl5V19NdVNIRHQxSHdDQnpWbGgtT0E2UGZVVmIwbXFzU3NZVGhvNFluU0w1MWNRVXYtMmpSNzhuMGJnZy1yLUNkRzA?oc=5"
-        },
-        {
-          "source": "CNBC",
-          "text": "Russia confirms new Ukraine peace talks as Melania Trump prepares to host ceasefire meeting - CNBC",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPalFTQUJtQy1ORXE4SmxzX1hBNVVXWE1FNFhhZUFBMExLT1Z2emNib05OMXlHNlJ3aUk0aGtsU1ZYZ1pRb1oyMkNxZUFQY1AyRWZ5WGU1Y0JINVFZV1VqZUFLMjN0RXU2UXZWeUhseUdCODNyUGUtbHladVg0Q0dtNjUydFdXME1ocW9LLXRRekFad9IBlwFBVV95cUxNcnZ2QVdpVV8wZjNfT3N1M0t0cEt4Sy03dTJCbk1sMDVlTGktY1BOczdIN1E1WFhFdDVFY04wUHB1YnYtVjN4SExtRjZBU1VMRmxldml0VFRzdm4tUnZCQkhoSk9LWnlULWRnbUpxSS1iRVI3Q0NuTjNXeERZNnlZbU5wWktjR1V5SHk2aVdsMncteVNKOGFB?oc=5"
+          "published": "2026-11-05T02:18:19-06:00",
+          "date": "2026-11-05"
         }
       ],
-      "severity": "ALERT",
-      "soWhat": "no action needed",
-      "source": "News velocity",
-      "sourceCount": 4,
-      "title": "ukraine war",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxONllIN0YycVhheUhkdFhFSTdabU5DMmJGMFNIQS15NWYwQV9BTS0tV3lPeHJkUGVsWmNNX3FZMkI5bEdzUF9sNXAtUklUb2JsRDZ1UkNScEFJMHRjRWZITGJxMS1hTWdyM0hhdjk3eUM2dkNiTG1IVjQta28takE4YUUwaWYtQ0MyNGE1aFkzUS1VQXQyNkEweDl4TWZYRGx4NlpZU2szYi1tdw?oc=5"
-    },
-    {
-      "category": "us-gov",
-      "confidence": "reported",
-      "id": "velocity:bd817662251631b7",
       "kind": "trend",
       "lane": "news",
-      "look": "news",
-      "name": "us gov",
+      "source": "News velocity",
+      "severity": "ALERT",
       "note": "The same topic showed up across several outlets.",
+      "confidence": "reported",
+      "sourceCount": 4,
+      "soWhat": "no action needed",
+      "published": "2026-11-05T16:57:59-06:00",
+      "date": "2026-11-05"
+    },
+    {
+      "id": "velocity:efd2da34e68ca58f",
+      "name": "ukraine war",
+      "title": "ukraine war",
+      "category": "ukraine-war",
       "rise": "4 outlets this window",
+      "look": "news",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxONllIN0YycVhheUhkdFhFSTdabU5DMmJGMFNIQS15NWYwQV9BTS0tV3lPeHJkUGVsWmNNX3FZMkI5bEdzUF9sNXAtUklUb2JsRDZ1UkNScEFJMHRjRWZITGJxMS1hTWdyM0hhdjk3eUM2dkNiTG1IVjQta28takE4YUUwaWYtQ0MyNGE1aFkzUS1VQXQyNkEweDl4TWZYRGx4NlpZU2szYi1tdw?oc=5",
       "samples": [
         {
-          "source": "NBC News",
-          "text": "Supreme Court: SCOTUS Decisions & News on the U.S. Federal Court - NBC News",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBvUjl4NXlsVDkzYWJJUzh6bVNZUVJkQk43ejl6T0JKcWh0Rk5PY1BKUGE5MmY5RGtUZElzOVc0UTU3NW5NdGlFSXJ1a2dncV9Jay1qUUJoaDI3UQ?oc=5"
+          "text": "What to know about the Melania Trump-brokered ceasefire in Russian-occupied Oleshky - AP News",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxONllIN0YycVhheUhkdFhFSTdabU5DMmJGMFNIQS15NWYwQV9BTS0tV3lPeHJkUGVsWmNNX3FZMkI5bEdzUF9sNXAtUklUb2JsRDZ1UkNScEFJMHRjRWZITGJxMS1hTWdyM0hhdjk3eUM2dkNiTG1IVjQta28takE4YUUwaWYtQ0MyNGE1aFkzUS1VQXQyNkEweDl4TWZYRGx4NlpZU2szYi1tdw?oc=5",
+          "source": "AP News",
+          "published": "2026-10-28T02:00:00-05:00",
+          "date": "2026-10-28"
         },
         {
-          "source": "Council on Foreign Relations",
-          "text": "Democrats Win Control of Congress. Here’s How That Could Affect U.S. Foreign Policy. - Council on Foreign Relations",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQdzZKMkhBVFVPeU5mVkdPZ2JkYTIyajkzVVFMNnZ1Y0prUEpibWpMeEpiVVhBWnNqSkhRUVhsNGFVbmRvZHQ0akduR3V6ZlViaEtPZzdMMjg5emdwWW9SVnAxLTRsMFlERXFNbFhXM0paZnlDZ3N4aC1BY1dzYVBYa0hxUWE3d0lhaHJSMWNDOUpHOThvNWQ2ZGY2aS1SUFRGTDZsNGNVNC1XZkp4MGc?oc=5"
+          "text": "Russian Offensive Campaign Assessment, November 4, 2026 - Institute for the Study of War",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPQUs3b2pfMjM2cGdvOUh0Ylp5elBTekxyWVQ2M0t2M0I3NV9QcmMyaFhiMkFtZm8tME5nMXlnSk1lbFRaUEN6NXE1MlhPQzJkamJxZkgwOWR4T3oyZVhaVXB4UlluM2IwZEl5V19NdVNIRHQxSHdDQnpWbGgtT0E2UGZVVmIwbXFzU3NZVGhvNFluU0w1MWNRVXYtMmpSNzhuMGJnZy1yLUNkRzA?oc=5",
+          "source": "Institute for the Study of War",
+          "published": "2026-11-04T19:15:23-06:00",
+          "date": "2026-11-04"
         },
         {
-          "source": "Reuters",
-          "text": "Trump White House maps path to govern without Congress if Democrats win - Reuters",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOOXdkX2hvMlBTTmRRRGlTbndZSTFnWnZyYkJ5STRjNFBOUkdwQ3VDUjRuTUQySzhQMkp2UXh0MW5VS3E4WHVXeEhQQ2JnRnUxV0pIVTM3T1J6Y0o3Y1JWamZ4YXMwNEtjazNiU3pERzRaWC1XNXZBZk56UU1KSUFNMWtZS0hrUjNUSW5ILW9kdWVQa3BqYkNPSl9tQk90SEtWcDdXRjZXdkdUT1IzS2ViaTgwTmE5MnlCclh1T0pB?oc=5"
+          "text": "Russia confirms new Ukraine peace talks as Melania Trump prepares to host ceasefire meeting - CNBC",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPalFTQUJtQy1ORXE4SmxzX1hBNVVXWE1FNFhhZUFBMExLT1Z2emNib05OMXlHNlJ3aUk0aGtsU1ZYZ1pRb1oyMkNxZUFQY1AyRWZ5WGU1Y0JINVFZV1VqZUFLMjN0RXU2UXZWeUhseUdCODNyUGUtbHladVg0Q0dtNjUydFdXME1ocW9LLXRRekFad9IBlwFBVV95cUxNcnZ2QVdpVV8wZjNfT3N1M0t0cEt4Sy03dTJCbk1sMDVlTGktY1BOczdIN1E1WFhFdDVFY04wUHB1YnYtVjN4SExtRjZBU1VMRmxldml0VFRzdm4tUnZCQkhoSk9LWnlULWRnbUpxSS1iRVI3Q0NuTjNXeERZNnlZbU5wWktjR1V5SHk2aVdsMncteVNKOGFB?oc=5",
+          "source": "CNBC",
+          "published": "2026-11-03T07:22:25-06:00",
+          "date": "2026-11-03"
         }
       ],
-      "severity": "ALERT",
-      "soWhat": "no action needed",
+      "kind": "trend",
+      "lane": "news",
       "source": "News velocity",
+      "severity": "ALERT",
+      "note": "The same topic showed up across several outlets.",
+      "confidence": "reported",
       "sourceCount": 4,
+      "soWhat": "no action needed",
+      "published": "2026-11-05T16:57:59-06:00",
+      "date": "2026-11-05"
+    },
+    {
+      "id": "velocity:bd817662251631b7",
+      "name": "us gov",
       "title": "us gov",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBvUjl4NXlsVDkzYWJJUzh6bVNZUVJkQk43ejl6T0JKcWh0Rk5PY1BKUGE5MmY5RGtUZElzOVc0UTU3NW5NdGlFSXJ1a2dncV9Jay1qUUJoaDI3UQ?oc=5"
+      "category": "us-gov",
+      "rise": "4 outlets this window",
+      "look": "news",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBvUjl4NXlsVDkzYWJJUzh6bVNZUVJkQk43ejl6T0JKcWh0Rk5PY1BKUGE5MmY5RGtUZElzOVc0UTU3NW5NdGlFSXJ1a2dncV9Jay1qUUJoaDI3UQ?oc=5",
+      "samples": [
+        {
+          "text": "Supreme Court: SCOTUS Decisions & News on the U.S. Federal Court - NBC News",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBvUjl4NXlsVDkzYWJJUzh6bVNZUVJkQk43ejl6T0JKcWh0Rk5PY1BKUGE5MmY5RGtUZElzOVc0UTU3NW5NdGlFSXJ1a2dncV9Jay1qUUJoaDI3UQ?oc=5",
+          "source": "NBC News",
+          "published": "2026-11-03T14:57:23-06:00",
+          "date": "2026-11-03"
+        },
+        {
+          "text": "Democrats Win Control of Congress. Here’s How That Could Affect U.S. Foreign Policy. - Council on Foreign Relations",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQdzZKMkhBVFVPeU5mVkdPZ2JkYTIyajkzVVFMNnZ1Y0prUEpibWpMeEpiVVhBWnNqSkhRUVhsNGFVbmRvZHQ0akduR3V6ZlViaEtPZzdMMjg5emdwWW9SVnAxLTRsMFlERXFNbFhXM0paZnlDZ3N4aC1BY1dzYVBYa0hxUWE3d0lhaHJSMWNDOUpHOThvNWQ2ZGY2aS1SUFRGTDZsNGNVNC1XZkp4MGc?oc=5",
+          "source": "Council on Foreign Relations",
+          "published": "2026-11-04T10:40:14-06:00",
+          "date": "2026-11-04"
+        },
+        {
+          "text": "Trump White House maps path to govern without Congress if Democrats win - Reuters",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOOXdkX2hvMlBTTmRRRGlTbndZSTFnWnZyYkJ5STRjNFBOUkdwQ3VDUjRuTUQySzhQMkp2UXh0MW5VS3E4WHVXeEhQQ2JnRnUxV0pIVTM3T1J6Y0o3Y1JWamZ4YXMwNEtjazNiU3pERzRaWC1XNXZBZk56UU1KSUFNMWtZS0hrUjNUSW5ILW9kdWVQa3BqYkNPSl9tQk90SEtWcDdXRjZXdkdUT1IzS2ViaTgwTmE5MnlCclh1T0pB?oc=5",
+          "source": "Reuters",
+          "published": "2026-11-02T09:00:11-06:00",
+          "date": "2026-11-02"
+        }
+      ],
+      "kind": "trend",
+      "lane": "news",
+      "source": "News velocity",
+      "severity": "ALERT",
+      "note": "The same topic showed up across several outlets.",
+      "confidence": "reported",
+      "sourceCount": 4,
+      "soWhat": "no action needed",
+      "published": "2026-11-05T16:57:59-06:00",
+      "date": "2026-11-05"
     }
   ],
   "mode": "trends",
-  "note": "X trends by WOEID (US 23424977 and worldwide 1). Kept only when the name matches a threat or preparedness theme. The endpoint answered and none of the names matched."
+  "note": "X trends by WOEID (US 23424977 and worldwide 1). Kept only when the name matches a threat or preparedness theme. The endpoint answered and none of the names matched. Buzz rows carry the newest source time."
 }
