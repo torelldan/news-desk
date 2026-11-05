@@ -598,6 +598,8 @@ def fetch_google_trends(now: datetime) -> dict:
             nsrc = (news.findtext(f"{ht}news_item_source") or "").strip()
             if nurl and ntitle:
                 samples.append({"text": ntitle[:180], "url": nurl, "source": nsrc})
+        published = d.parse_pubdate(node.findtext("pubDate") or "")
+        stamp = published.isoformat(timespec="seconds") if published else now.isoformat(timespec="seconds")
         items.append({
             "id": d.make_id("gtrend", title.lower()),
             "name": title,
@@ -617,6 +619,8 @@ def fetch_google_trends(now: datetime) -> dict:
             "confidence": "reported" if samples else "rumor",
             "sourceCount": max(1, len({sample.get("source") for sample in samples})),
             "soWhat": "no action needed",
+            "published": stamp,
+            "date": stamp[:10],
         })
         if len(items) >= 6:
             break
@@ -626,7 +630,7 @@ def fetch_google_trends(now: datetime) -> dict:
     return {"ok": True, "note": note, "items": items}
 
 
-def news_velocity(threats: list[dict]) -> list[dict]:
+def news_velocity(threats: list[dict], when: datetime | None = None) -> list[dict]:
     buckets: dict[str, list] = {}
     for item in threats or []:
         topic = {"war-iran": "iran-war", "war-ukraine": "ukraine-war", "usgov": "us-gov"}.get(item.get("kind") or "")
@@ -643,6 +647,8 @@ def news_velocity(threats: list[dict]) -> list[dict]:
                 sources.append(src)
         if len(sources) < 3:
             continue
+        times = [row.get("published") or "" for row in rows if row.get("published")]
+        newest = when.isoformat(timespec="seconds") if when is not None else (max(times) if times else "")
         out.append({
             "id": d.make_id("velocity", topic),
             "name": topic.replace("-", " "),
@@ -651,7 +657,13 @@ def news_velocity(threats: list[dict]) -> list[dict]:
             "rise": f"{len(sources)} outlets this window",
             "look": "news",
             "url": rows[0].get("url") or "",
-            "samples": [{"text": row.get("title") or "", "url": row.get("url") or "", "source": row.get("source") or ""} for row in rows[:3]],
+            "samples": [{
+                "text": row.get("title") or "",
+                "url": row.get("url") or "",
+                "source": row.get("source") or "",
+                "published": row.get("published") or "",
+                "date": row.get("date") or "",
+            } for row in rows[:3]],
             "kind": "trend",
             "lane": "news",
             "source": "News velocity",
@@ -660,11 +672,29 @@ def news_velocity(threats: list[dict]) -> list[dict]:
             "confidence": "reported",
             "sourceCount": len(sources),
             "soWhat": "no action needed",
+            "published": newest,
+            "date": newest[:10] if newest else "",
         })
     return out
 
 
-def keep_rising(trends: dict, history: dict, today: str, google_items: list, velocity_items: list) -> dict:
+def _stamp_trend(item: dict, when: datetime | None) -> dict:
+    """Give a buzz row a real clock. Prefer the newest sample, otherwise the refresh time."""
+    row = dict(item)
+    newest = row.get("published") or ""
+    for sample in row.get("samples") or []:
+        raw = sample.get("published") or ""
+        if raw and raw > newest:
+            newest = raw
+    if not newest and when is not None:
+        newest = when.isoformat(timespec="seconds")
+    if newest:
+        row["published"] = newest
+        row["date"] = newest[:10]
+    return row
+
+
+def keep_rising(trends: dict, history: dict, today: str, google_items: list, velocity_items: list, when: datetime | None = None) -> dict:
     yday = (datetime.fromisoformat(today) - timedelta(days=1)).date().isoformat()
     snap = _snapshot_on_or_before((history or {}).get("days") or [], yday)
     old = {(row.get("name") or "").lower(): row.get("volume") for row in (snap or {}).get("trends") or []}
@@ -687,13 +717,13 @@ def keep_rising(trends: dict, history: dict, today: str, google_items: list, vel
         if not rise:
             dropped += 1
             continue
-        row = dict(item)
+        row = _stamp_trend(item, when)
         row["rise"] = rise
         row["look"] = "chatter" if row.get("lane") == "x" else "news"
         row["soWhat"] = "no action needed"
         kept.append(row)
     for item in (google_items or []) + (velocity_items or []):
-        kept.append(item)
+        kept.append(_stamp_trend(item, when))
     seen = set()
     unique = []
     for item in kept:

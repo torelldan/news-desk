@@ -260,6 +260,20 @@ def test_trend_filter_and_confidence():
     assert "gold inflation" in names
     assert "Secretary of War" not in names
     assert citizen.topic_of("Iran war") == "iran-war"
+    stamped = citizen.news_velocity([
+        {"kind": "war-iran", "title": "Iran war one", "source": "A", "url": "https://a.example/1", "published": "2026-11-05T02:00:00-06:00", "date": "2026-11-05"},
+        {"kind": "war-iran", "title": "Iran war two", "source": "B", "url": "https://b.example/2", "published": "2026-11-05T10:00:00-06:00", "date": "2026-11-05"},
+        {"kind": "war-iran", "title": "Iran war three", "source": "C", "url": "https://c.example/3", "published": "2026-11-04T10:00:00-06:00", "date": "2026-11-04"},
+    ])
+    assert stamped[0]["date"] == "2026-11-05"
+    from datetime import datetime
+    found = citizen.news_velocity([
+        {"kind": "war-ukraine", "title": "Ukraine one", "source": "A", "url": "https://a.example/1", "published": "2026-11-04T19:15:23-06:00", "date": "2026-11-04"},
+        {"kind": "war-ukraine", "title": "Ukraine two", "source": "B", "url": "https://b.example/2", "published": "2026-11-04T19:15:23-06:00", "date": "2026-11-04"},
+        {"kind": "war-ukraine", "title": "Ukraine three", "source": "C", "url": "https://c.example/3", "published": "2026-11-04T19:15:23-06:00", "date": "2026-11-04"},
+    ], datetime.fromisoformat("2026-11-05T16:57:59-06:00"))
+    assert found[0]["published"].startswith("2026-11-05T16:57:59")
+    assert found[0]["date"] == "2026-11-05"
     x_only = citizen.confidence_for({"lane": "x", "kind": "trend"})
     assert x_only["confidence"] == "rumor"
     confirmed = citizen.confidence_for({"lane": "x", "kind": "trend"}, extra_domains=2)
