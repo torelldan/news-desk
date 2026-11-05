@@ -1,108 +1,31 @@
 {
-  "gaps": [],
+  "place": "Thompson's Station / Williamson County / Middle Tennessee (37179)",
   "items": [
     {
-      "action": "no action needed",
-      "confidence": "reported",
-      "date": "2026-11-05",
       "id": "local-nws-none",
-      "kind": "nws",
-      "label": "Nov 5, 2026 3:12 PM CT",
-      "lane": "local",
-      "note": "api.weather.gov answered for 35.802,-86.907 and returned no alerts.",
-      "published": "2026-11-05T15:12:20-06:00",
-      "severity": "STANDBY",
-      "soWhat": "Money: fuel prices can jump locally. Supplies: fuel, water, cash, meds. Travel: delay Gulf or county travel. Safety: follow the warning, not the rumor. Action: no action needed.",
-      "source": "NWS",
-      "sourceCount": 1,
-      "tags": [
-        "tennessee",
-        "williamson"
-      ],
       "title": "No active NWS alert for Thompson's Station (37179)",
-      "url": "https://api.weather.gov/alerts/active?point=35.802,-86.907"
-    },
-    {
-      "action": "no action needed",
-      "confidence": "reported",
-      "date": "2025-10-06",
-      "id": "local-power-williamson",
-      "kind": "power",
-      "label": "2025-10-06",
+      "note": "api.weather.gov answered for 35.802,-86.907 and returned no alerts.",
+      "url": "https://api.weather.gov/alerts/active?point=35.802,-86.907",
+      "source": "NWS",
+      "kind": "nws",
       "lane": "local",
-      "note": "Customers served: 0. Source timestamp 2025-10-06 is older than 2 days. Public Power_TN summary, not a utility ticket.",
-      "published": "2026-11-05T15:12:20-06:00",
       "severity": "STANDBY",
-      "soWhat": "Money: no direct move. Supplies: no change. Travel: no change. Safety: routine. Action: no action needed.",
-      "source": "Power_TN",
-      "sourceCount": 1,
-      "tags": [
-        "tennessee",
-        "williamson"
-      ],
-      "title": "Williamson County power: 0 customers affected",
-      "url": "https://services1.arcgis.com/utFj6xjAHT9GdIit/arcgis/rest/services/Power_TN/FeatureServer"
-    },
-    {
-      "action": "no action needed",
-      "confidence": "reported",
-      "date": "2026-07-31",
-      "id": "local-road:0c89dc10ec9d8f92",
-      "kind": "road",
-      "label": "2026-07-31",
-      "lane": "local",
-      "note": "Widening Project",
-      "published": "2026-11-05T15:12:20-06:00",
-      "severity": "STANDBY",
-      "soWhat": "Money: no direct move. Supplies: no change. Travel: no change. Safety: routine. Action: no action needed.",
-      "source": "TDOT SmartWay",
-      "sourceCount": 1,
-      "tags": [
-        "tennessee",
-        "williamson"
-      ],
-      "title": "State Route 11 NB in Williamson County - between LOG MILE 12 and LOG MILE 13 Widening Project may cause delays Mon 07/27/2026 through Fri 07/31/2026 from 9:00 AM to 3:00 PM (CT).",
-      "url": "https://smartway.tn.gov/"
-    },
-    {
-      "action": "Read the source. No kit change unless you are in the named area.",
-      "confidence": "reported",
       "date": "2026-11-05",
-      "id": "local-road:db145ecce08a23fa",
-      "kind": "road",
-      "label": "2026-11-05",
-      "lane": "local",
-      "note": "Debris on Roadway",
-      "published": "2026-11-05T15:12:20-06:00",
-      "severity": "ALERT",
-      "soWhat": "Money: no direct quote move. Supplies: no change. Travel: no change. Safety: read the source. Action: Read the source. No kit change unless you are in the named area.",
-      "source": "TDOT SmartWay",
-      "sourceCount": 1,
+      "label": "Nov 5, 2026 4:18 PM CT",
+      "published": "2026-11-05T16:18:24-06:00",
       "tags": [
         "tennessee",
         "williamson"
       ],
-      "title": "Interstate 840 WB in Williamson County - near MILE MARKER 22 Debris on Roadway reported at 11/05/2026 3:04 PM (CT). WB left lane (of 2 lanes) blocked.",
-      "url": "https://smartway.tn.gov/"
-    },
-    {
-      "confidence": "rumor",
-      "date": "",
-      "id": "local-na:808d8bc066f40c3e",
-      "kind": "na",
-      "label": "n/a",
-      "lane": "local",
-      "note": "n/a — the TEMA news page answered, but no notice links could be read.",
-      "published": "",
-      "severity": "STANDBY",
-      "source": "n/a",
-      "sourceCount": 0,
-      "tags": [
-        "tennessee"
-      ],
-      "title": "TEMA notices",
-      "url": "https://www.tn.gov/tema/news.html"
+      "confidence": "reported",
+      "sourceCount": 1,
+      "soWhat": "",
+      "action": "no action needed"
     }
   ],
-  "place": "Thompson's Station / Williamson County / Middle Tennessee (37179)"
+  "gaps": [
+    "Power_TN row hidden (2025-10-06, affected 0, served 0).",
+    "1 ended road projects hidden.",
+    "TEMA news page answered with no dated notices."
+  ]
 }

@@ -49,18 +49,58 @@ POWER_QUERY = (
 )
 ROAD_QUERY = (
     "https://spatial.tdot.tn.gov/arcgis/rest/services/Smartway/Smartway_Events/FeatureServer/0/query"
-    "?where=UPPER(DESCRIPTION)%20LIKE%20%27%25WILLIAMSON%25%27&outFields=DESCRIPTION,EVENT_SUBTYPE,CD_ROAD_NAMES,REVISED_DATE&returnGeometry=false&resultRecordCount=12&f=json"
+    "?where=UPPER(DESCRIPTION)%20LIKE%20%27%25WILLIAMSON%25%27&outFields=DESCRIPTION,EVENT_SUBTYPE,CD_ROAD_NAMES,REVISED_DATE&returnGeometry=false&resultRecordCount=40&orderByFields=REVISED_DATE%20DESC&f=json"
 )
 TEMA_PAGE = "https://www.tn.gov/tema/news.html"
 NWS_POINT = "https://api.weather.gov/alerts/active?point=35.802,-86.907"
 
 
-def match_theme(text: str) -> str:
+_BLOCK_TOPIC = re.compile(
+    r"\b(secretary of war|department of war|art of war|rules of war|state of war|war room)\b",
+    re.I,
+)
+
+
+def topic_of(text: str) -> str:
+    """A real topic, not a substring inside a title or a job name."""
     blob = text or ""
-    for name, pattern in THEMES:
-        if pattern.search(blob):
-            return name
+    if _BLOCK_TOPIC.search(blob):
+        return ""
+    if re.search(r"\biran\b", blob, re.I) and re.search(r"\b(war|strike|missile|irgc|ceasefire|attack)\b", blob, re.I):
+        return "iran-war"
+    if re.search(r"\b(ukraine|kyiv)\b", blob, re.I):
+        return "ukraine-war"
+    if re.search(r"\b(white house|congress|pentagon|supreme court|senate)\b", blob, re.I):
+        return "us-gov"
+    if re.search(r"\b(hurricane|tropical storm|typhoon)\b", blob, re.I):
+        return "hurricane"
+    if re.search(r"\b(flood|flooding)\b", blob, re.I):
+        return "flood"
+    if re.search(r"\btornado(es)?\b", blob, re.I):
+        return "tornado"
+    if re.search(r"\b(earthquake|seismic)\b", blob, re.I):
+        return "earthquake"
+    if re.search(r"\b(outbreak|bird flu|h5n1|measles|ebola|mpox)\b", blob, re.I):
+        return "outbreak"
+    if re.search(r"\b(inflation|recession|stockpile|blackout|preparedness)\b", blob, re.I):
+        return "economic"
+    if re.search(r"\b(gold|silver)\b", blob, re.I) and re.search(r"\b(inflation|price|surge|selloff|rally)\b", blob, re.I):
+        return "economic"
     return ""
+
+
+def match_theme(text: str) -> str:
+    found = topic_of(text)
+    if found in {"iran-war", "ukraine-war"}:
+        return "war"
+    if found == "us-gov":
+        return "economic"
+    return found
+
+
+def _all_clear(title: str, note: str = "") -> bool:
+    blob = f"{title} {note}".lower()
+    return bool(re.search(r"there are no tropical cyclones|no tropical cyclones at this time|tropical weather outlook", blob) and not re.search(r"\b(hurricane|tropical storm)\s+[a-z]", blob))
 
 
 def confidence_for(item: dict, extra_domains: int = 0) -> dict:
@@ -87,32 +127,35 @@ def confidence_for(item: dict, extra_domains: int = 0) -> dict:
 
 
 def so_what(item: dict) -> str:
-    """One line: money, supplies, travel, safety, and a concrete action."""
+    """A line only when this item calls for something specific. Otherwise nothing to do."""
     sev = (item.get("severity") or "STANDBY").upper()
     kind = (item.get("kind") or item.get("category") or item.get("lane") or "").lower()
-    action = item.get("action") or _action(kind, sev)
-    if sev == "STANDBY" and kind not in {"storm", "nws", "quake", "hurricane", "tornado", "flood"}:
-        money, supplies, travel, safety = "no direct move", "no change", "no change", "routine"
-        action = "no action needed"
-    elif kind in {"quake", "earthquake"}:
-        money, supplies, travel, safety = "local insurers sometimes move", "water and a light", "avoid damaged roads", "structure and aftershocks"
-    elif kind in {"storm", "hurricane", "nws", "flood", "tornado"}:
-        money, supplies, travel, safety = "fuel prices can jump locally", "fuel, water, cash, meds", "delay Gulf or county travel", "follow the warning, not the rumor"
-    elif kind in {"who", "cdc", "outbreak"}:
-        money, supplies, travel, safety = "travel and pharma names can move", "a basic med kit", "check the destination", "official health notice over social posts"
-    elif kind in {"conflict", "war"}:
-        money, supplies, travel, safety = "gold and energy often react", "no extra food run from one headline", "avoid the named region", "this is not a local shelter order"
-    elif kind == "trigger":
-        money, supplies, travel, safety = "a stored threshold fired", "fuel, water, cash, meds", "no change unless the trigger names a place", "confirm the linked source before you treat it as local"
-    elif kind in {"economic", "price"} or "gold" in kind:
-        money, supplies, travel, safety = "dollar, gold, or crypto moved", "cash on hand if a trigger fired", "no change", "not a trade instruction"
-    else:
-        if sev in {"CRITICAL", "ACTION"}:
-            money, supplies, travel, safety = "no reason to trade the headline", "fuel, water, cash, meds", "check the named area", "confirm it on the official source"
-        else:
-            money, supplies, travel, safety = "no direct quote move", "no change", "no change", "read the source"
-    action = action.rstrip(".")
-    return f"Money: {money}. Supplies: {supplies}. Travel: {travel}. Safety: {safety}. Action: {action}."
+    title = item.get("title") or ""
+    note = item.get("note") or ""
+    if kind in {"episode", "podcast", "x", "substack", "page", "headline"} or (item.get("lane") or "") in {"podcast", "x", "substack"}:
+        return ""
+    if kind in {"neo", "sentry"} or "close approach" in title.lower():
+        return "no action needed"
+    if _all_clear(title, note):
+        return "no action needed"
+    if kind in {"quake", "earthquake"} and not item.get("usImpact"):
+        return "no action needed"
+    if kind == "nws" and sev in {"ACTION", "CRITICAL"}:
+        where = note.split(".")[0][:80] if note else "the warned area"
+        return f"{title} covers {where}. What to do: stay off those roads."
+    if kind in {"storm", "hurricane"} and sev in {"ACTION", "CRITICAL"}:
+        return f"{title}. What to do: follow that warning if you are in the named area."
+    if kind in {"war-iran", "war-ukraine", "conflict"}:
+        return "What to do: no action at home. Skip travel into the named fighting if a trip was planned."
+    if kind == "usgov":
+        return ""
+    if kind in {"market", "price"} or item.get("tape"):
+        return "The stock tape moved hard. What to do: no action unless you need cash this week. Not a trade instruction."
+    if kind == "trigger" and sev in {"ACTION", "CRITICAL"}:
+        return "What to do: fuel, water, cash, and meds, because this threshold is a local hazard."
+    if sev in {"STANDBY", "ALERT"}:
+        return "no action needed" if sev == "ALERT" else ""
+    return "no action needed"
 
 
 def _action(kind: str, sev: str) -> str:
@@ -181,8 +224,8 @@ def apply_outlook(items: list[dict], history: dict, today: str) -> None:
             item["outlook"] = "Lower than yesterday. The 72-hour path is easing if it holds."
         else:
             item["outlook"] = "Steady versus yesterday. No 72-hour escalation in the stored record."
-        item["action"] = item.get("action") or _action(item.get("kind") or "", item.get("severity") or "STANDBY")
         item["soWhat"] = so_what(item)
+        item["action"] = "no action needed" if item["soWhat"] in {"", "no action needed"} else item["soWhat"]
         conf = confidence_for(item, extra_domains=int(item.get("extraDomains") or 0))
         item.update(conf)
 
@@ -528,6 +571,143 @@ def annotate_trends(doc: dict, threats: list[dict]) -> dict:
     return doc
 
 
+def fetch_google_trends(now: datetime) -> dict:
+    import xml.etree.ElementTree as ET
+    import boards
+
+    url = "https://trends.google.com/trending/rss?geo=US"
+    try:
+        raw = boards._get(url, timeout=25, headers={"Accept": "application/rss+xml"})
+        root = ET.fromstring(raw)
+    except Exception as err:
+        return {"ok": False, "note": f"Google Trends did not answer: {err}", "items": []}
+    ht = "{https://trends.google.com/trending/rss}"
+    items = []
+    seen = 0
+    for node in root.findall(".//item"):
+        seen += 1
+        title = (node.findtext("title") or "").strip()
+        topic = topic_of(title)
+        if not title or not topic:
+            continue
+        traffic = (node.findtext(f"{ht}approx_traffic") or "").strip()
+        samples = []
+        for news in node.findall(f"{ht}news_item"):
+            ntitle = (news.findtext(f"{ht}news_item_title") or "").strip()
+            nurl = d.http_url(news.findtext(f"{ht}news_item_url") or "")
+            nsrc = (news.findtext(f"{ht}news_item_source") or "").strip()
+            if nurl and ntitle:
+                samples.append({"text": ntitle[:180], "url": nurl, "source": nsrc})
+        items.append({
+            "id": d.make_id("gtrend", title.lower()),
+            "name": title,
+            "title": title,
+            "category": topic,
+            "place": "US",
+            "volume": traffic or None,
+            "rise": f"US daily list {traffic}".strip(),
+            "look": "news" if len(samples) >= 2 else "chatter",
+            "url": samples[0]["url"] if samples else "https://trends.google.com/trending?geo=US",
+            "samples": samples[:3],
+            "kind": "trend",
+            "lane": "news",
+            "source": "Google Trends",
+            "severity": "ALERT" if topic in {"iran-war", "ukraine-war", "hurricane", "outbreak"} else "STANDBY",
+            "note": f"US search trend. Traffic {traffic or 'not given'}.",
+            "confidence": "reported" if samples else "rumor",
+            "sourceCount": max(1, len({sample.get("source") for sample in samples})),
+            "soWhat": "no action needed",
+        })
+        if len(items) >= 6:
+            break
+    note = f"Google Trends US daily list answered ({seen} topics). Kept the ones that match a war, government, or threat topic."
+    if not items:
+        note += " None of today's search trends matched."
+    return {"ok": True, "note": note, "items": items}
+
+
+def news_velocity(threats: list[dict]) -> list[dict]:
+    buckets: dict[str, list] = {}
+    for item in threats or []:
+        topic = {"war-iran": "iran-war", "war-ukraine": "ukraine-war", "usgov": "us-gov"}.get(item.get("kind") or "")
+        topic = topic or topic_of(item.get("title") or "")
+        if topic not in {"iran-war", "ukraine-war", "us-gov"}:
+            continue
+        buckets.setdefault(topic, []).append(item)
+    out = []
+    for topic, rows in buckets.items():
+        sources = []
+        for row in rows:
+            src = row.get("source") or ""
+            if src and src not in sources:
+                sources.append(src)
+        if len(sources) < 3:
+            continue
+        out.append({
+            "id": d.make_id("velocity", topic),
+            "name": topic.replace("-", " "),
+            "title": topic.replace("-", " "),
+            "category": topic,
+            "rise": f"{len(sources)} outlets this window",
+            "look": "news",
+            "url": rows[0].get("url") or "",
+            "samples": [{"text": row.get("title") or "", "url": row.get("url") or "", "source": row.get("source") or ""} for row in rows[:3]],
+            "kind": "trend",
+            "lane": "news",
+            "source": "News velocity",
+            "severity": "ALERT",
+            "note": "The same topic showed up across several outlets.",
+            "confidence": "reported",
+            "sourceCount": len(sources),
+            "soWhat": "no action needed",
+        })
+    return out
+
+
+def keep_rising(trends: dict, history: dict, today: str, google_items: list, velocity_items: list) -> dict:
+    yday = (datetime.fromisoformat(today) - timedelta(days=1)).date().isoformat()
+    snap = _snapshot_on_or_before((history or {}).get("days") or [], yday)
+    old = {(row.get("name") or "").lower(): row.get("volume") for row in (snap or {}).get("trends") or []}
+    backed = {(item.get("name") or "").lower() for item in (google_items or []) + (velocity_items or [])}
+    backed |= {item.get("category") for item in (velocity_items or [])}
+    kept = []
+    dropped = 0
+    for item in (trends or {}).get("items") or []:
+        name = item.get("name") or ""
+        if not topic_of(name):
+            dropped += 1
+            continue
+        volume = item.get("volume")
+        prev = old.get(name.lower())
+        rise = ""
+        if isinstance(volume, (int, float)) and isinstance(prev, (int, float)) and volume > prev:
+            rise = f"up vs yesterday ({prev} → {volume})"
+        elif name.lower() in backed or topic_of(name) in backed:
+            rise = "also showing up off X"
+        if not rise:
+            dropped += 1
+            continue
+        row = dict(item)
+        row["rise"] = rise
+        row["look"] = "chatter" if row.get("lane") == "x" else "news"
+        row["soWhat"] = "no action needed"
+        kept.append(row)
+    for item in (google_items or []) + (velocity_items or []):
+        kept.append(item)
+    seen = set()
+    unique = []
+    for item in kept:
+        key = (item.get("name") or "").lower()
+        if not key or key in seen:
+            continue
+        seen.add(key)
+        unique.append(item)
+    note = (trends or {}).get("note") or ""
+    if dropped:
+        note = (note + " " if note else "") + f"Dropped {dropped} X topics that were a name match or had no rise versus yesterday."
+    return {"mode": (trends or {}).get("mode") or "trends", "note": note.strip(), "items": unique[:12]}
+
+
 def _millis_day(value) -> str:
     try:
         stamp = int(value) / 1000
@@ -597,13 +777,15 @@ def fetch_local(now: datetime) -> dict:
             affected = attrs.get("CustomersAffected")
             served = attrs.get("CustomersServed")
             when = _millis_day(attrs.get("Timestamp"))
-            stale = ""
-            if when and when < (now.date() - timedelta(days=2)).isoformat():
-                stale = f" Source timestamp {when} is older than 2 days."
-            items.append({
+            stale_power = bool(when and when < (now.date() - timedelta(days=7)).isoformat())
+            empty_power = affected in (0, None) and served in (0, None)
+            if stale_power or empty_power:
+                gaps.append(f"Power_TN row hidden ({when or 'no date'}, affected {affected}, served {served}).")
+            else:
+                items.append({
                 "id": "local-power-williamson",
                 "title": f"Williamson County power: {affected if affected is not None else 'n/a'} customers affected",
-                "note": f"Customers served: {served if served is not None else 'n/a'}.{stale} Public Power_TN summary, not a utility ticket.",
+                "note": f"Customers served: {served if served is not None else 'n/a'}. Public Power_TN summary.",
                 "url": "https://services1.arcgis.com/utFj6xjAHT9GdIit/arcgis/rest/services/Power_TN/FeatureServer",
                 "source": "Power_TN",
                 "kind": "power",
@@ -623,10 +805,18 @@ def fetch_local(now: datetime) -> dict:
         feats = payload.get("features") or []
         if not feats:
             items.append(_na("TDOT Williamson roads", "https://smartway.tn.gov/", "n/a — SmartWay returned no Williamson County events."))
-        for feat in feats[:6]:
+        hidden_roads = 0
+        kept_roads = 0
+        for feat in feats[:40]:
             attrs = feat.get("attributes") or {}
             desc = (attrs.get("DESCRIPTION") or "Road notice").strip()
             when = _millis_day(attrs.get("REVISED_DATE")) or now.strftime("%Y-%m-%d")
+            ended = when < now.strftime("%Y-%m-%d") and re.search(r"scheduled|widening|project", desc, re.I)
+            live = re.search(r"debris|closure|blocked|crash|flood|disabled", desc, re.I)
+            if ended and not live:
+                hidden_roads += 1
+                continue
+            kept_roads += 1
             items.append({
                 "id": d.make_id("local-road", desc[:80]),
                 "title": desc[:180],
@@ -641,6 +831,10 @@ def fetch_local(now: datetime) -> dict:
                 "published": now.isoformat(timespec="seconds"),
                 "tags": ["tennessee", "williamson"],
             })
+            if kept_roads >= 6:
+                break
+        if hidden_roads:
+            gaps.append(f"{hidden_roads} ended road projects hidden.")
     except Exception as err:
         gaps.append(f"TDOT: {err}")
         items.append(_na("TDOT Williamson roads", "https://smartway.tn.gov/", f"n/a — {err}"))
@@ -675,10 +869,9 @@ def fetch_local(now: datetime) -> dict:
             if kept >= 4:
                 break
         if kept == 0:
-            items.append(_na("TEMA notices", TEMA_PAGE, "n/a — the TEMA news page answered, but no notice links could be read."))
+            gaps.append("TEMA news page answered with no dated notices.")
     except Exception as err:
         gaps.append(f"TEMA: {err}")
-        items.append(_na("TEMA notices", TEMA_PAGE, f"n/a — {err}"))
 
     for item in items:
         if item.get("confidence"):
@@ -791,17 +984,29 @@ def fetch_radar(now: datetime) -> dict:
         else:
             velocity = "quiet"
         score = min(100, domains * 8 + (20 if "officials" in drivers else 0) + len(follow) * 15 + recent * 4)
+        official_act = bool(rows) and (
+            "officials" in drivers or bool(follow) or any(
+                re.search(r"\b(department of energy|european commission|white house|pentagon|congress|fema|appropriat|procurement|budget)\b", f"{row.get('title') or ''} {row.get('source') or ''}", re.I)
+                for row in rows
+            )
+        )
         if not rows:
-            read = "No recent public headlines. Score is noise until a source appears."
+            read = "No recent public headlines."
             call = "noise"
-        elif "officials" in drivers and follow:
-            read = "Official sources plus a budget, order, procurement, shortage, or bill. This has real-world follow-through."
+        elif official_act:
+            for row in rows:
+                blob = f"{row.get('title') or ''} {row.get('source') or ''} {row.get('url') or ''}"
+                if re.search(r"\.gov|department of energy|european commission|white house|pentagon|fema", blob, re.I):
+                    drivers = sorted(set(drivers) | {"officials"})
+            read = "An official body acted or is named in the sources: an agency, a budget, a law, or a procurement step. That is follow-through."
             call = "real"
+            if not follow:
+                follow = ["official step"]
         elif domains >= 3:
-            read = "Several outlets are repeating it, without a stored official action. Treat as reported, not confirmed."
+            read = "Several outlets are repeating it. No official step is in the sources."
             call = "mixed"
         else:
-            read = "Thin sourcing. More noise than follow-through on this pass."
+            read = "Thin sourcing. More chatter than follow-through on this pass."
             call = "noise"
         if call == "noise":
             score = min(score, 35)
@@ -819,7 +1024,7 @@ def fetch_radar(now: datetime) -> dict:
             "kind": "radar",
             "lane": "news",
             "severity": "ALERT" if call == "real" else "STANDBY",
-            "confidence": "reported" if domains >= 2 else "rumor",
+            "confidence": "confirmed" if call == "real" and domains >= 2 else ("reported" if rows else "rumor"),
             "sourceCount": domains,
             "score": score if rows else 0,
             "call": call,
@@ -836,44 +1041,49 @@ def fetch_radar(now: datetime) -> dict:
     return {"items": stories, "note": "Public news search only. Spread velocity is how many of those headlines are from the last 3 days. Score is a desk count, not a prediction."}
 
 
-def morning_brief(threats, trends, triggers, assets, local) -> str:
-    lines = []
-    ranked = sorted(threats or [], key=lambda item: (-_rank(item.get("severity") or ""), item.get("title") or ""))
-    if ranked:
-        top = ranked[0]
-        lines.append(f"The lead item is {top.get('severity') or 'STANDBY'}: {top.get('title')}.")
-    else:
-        lines.append("No open threat is on the board.")
-    trend_items = (trends or {}).get("items") or []
-    if trend_items:
-        lead = max(trend_items, key=lambda item: item.get("volume") or 0)
-        volume = lead.get("volume")
-        volume_bit = f"{volume} posts" if volume is not None else "volume n/a"
-        lines.append(f"The busiest matching X topic is {lead.get('name')} ({volume_bit}, {lead.get('category')}).")
-    elif (trends or {}).get("mode") == "offline":
-        lines.append("X trends are offline on this run, so Today has no topic list.")
-    else:
-        lines.append("No X trend matched the threat or preparedness list.")
-    moves = []
-    for series in (assets or {}).get("series") or []:
-        if series.get("changePct") is None:
+def _sp500(markets) -> float | None:
+    for region in (markets or {}).get("regions") or []:
+        if (region.get("name") or "").lower() not in {"usa", "united states"}:
             continue
-        moves.append(series)
-    if moves:
-        biggest = max(moves, key=lambda series: abs(float(series["changePct"])))
-        sign = "+" if float(biggest["changePct"]) > 0 else ""
-        lines.append(f"The largest stored daily move is {biggest.get('name')} at {sign}{biggest['changePct']}%.")
-    fired = (triggers or {}).get("items") or []
-    if fired:
-        names = ", ".join(row.get("title") or row.get("id") for row in fired[:3])
-        lines.append(f"A preparedness trigger is on ({names}). Checklist: fuel, water, cash, meds.")
-    else:
-        lines.append("No preparedness trigger is on. No extra action beyond the standing order on the lead item.")
-    local_hot = [item for item in (local or {}).get("items") or [] if item.get("severity") in {"ACTION", "CRITICAL"}]
+        for venue in region.get("venues") or []:
+            name = f"{venue.get('indexName') or ''} {venue.get('name') or ''}".lower()
+            if "s&p" in name or "spx" in name or "gspc" in name:
+                if venue.get("changePct") is None:
+                    return None
+                return float(venue["changePct"])
+    return None
+
+
+def morning_brief(threats, trends, triggers, assets, local, markets=None) -> str:
+    lines = []
+    sp = _sp500(markets)
+    if sp is not None and abs(sp) >= 3:
+        sign = "+" if sp > 0 else ""
+        lines.append(f"The stock tape is the story: the S&P 500 is {sign}{sp}% today. What to do: no action unless you need cash this week.")
+    real = [
+        item for item in threats or []
+        if item.get("severity") in {"ACTION", "CRITICAL"}
+        and item.get("kind") not in {"neo", "sentry", "clock"}
+        and not _all_clear(item.get("title") or "", item.get("note") or "")
+    ]
+    real.sort(key=lambda item: (-_rank(item.get("severity") or ""), item.get("title") or ""))
+    if real:
+        top = real[0]
+        lines.append(f"Open risk: {top.get('severity')} {top.get('title')}.")
+    elif sp is None or abs(sp) < 3:
+        lines.append("No rare risk is on the board. A routine flyby or an empty storm outlook is not an emergency.")
+    wars = [item.get("title") for item in threats or [] if item.get("kind") in {"war-iran", "war-ukraine"}][:2]
+    if wars:
+        lines.append("Current war coverage is on the board: " + "; ".join(wars) + ".")
+    trend_items = [item for item in (trends or {}).get("items") or [] if item.get("rise") not in (None, "", "flat")]
+    if trend_items:
+        lead = trend_items[0]
+        lines.append(f"Rising topic: {lead.get('name')} ({lead.get('rise')}).")
+    local_hot = [item for item in (local or {}).get("items") or [] if item.get("severity") in {"ACTION", "CRITICAL"} and not item.get("stale")]
     if local_hot:
-        lines.append(f"Local layer: {local_hot[0].get('title')}.")
-    else:
-        lines.append("Thompson's Station and Williamson County have no ACTION or CRITICAL local notice in this pull.")
+        lines.append(f"Local: {local_hot[0].get('title')}.")
+    if not lines:
+        lines.append("Nothing on the board needs an action today.")
     return " ".join(lines[:5])
 
 

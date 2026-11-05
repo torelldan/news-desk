@@ -468,7 +468,9 @@ function paintSections() {
   setSum("brief", (lead && lead.severity) || "STANDBY", "1", brief.split(". ")[0] || brief);
   const trends = ((DESK.trends || {}).items || []);
   setSum("today", trends[0] ? (trends[0].severity || "ALERT") : "STANDBY", String(trends.length), trends[0] ? trends[0].name : "No matching topic");
-  setSum("orders", (lead && lead.severity) || "STANDBY", String(threats.length), lead ? lead.title : "No open order");
+  const tape = marketTape();
+  const orders = threats.filter(needsAction);
+  setSum("orders", (orders[0] && orders[0].severity) || "STANDBY", String(orders.length), orders[0] ? orders[0].title : "Nothing needs an action");
   const regions = ((DESK.markets || {}).regions || []);
   const mover = regions.map((region) => {
     const venue = (region.venues || [])[0] || {};
@@ -477,16 +479,21 @@ function paintSections() {
   const econLine = mover
     ? `${mover.region.name} ${mover.venue.indexName || ""} ${mover.venue.changePct == null ? "no quote" : (mover.venue.changePct > 0 ? "+" : "") + mover.venue.changePct + "%"}`
     : "No quotes";
-  setSum("econ", "STANDBY", String(regions.length), econLine);
+  const econSev = tape ? tape.severity : "STANDBY";
+  setSum("econ", econSev, String(regions.length), tape ? tape.title : econLine);
   const triggers = ((DESK.triggers || {}).items || []);
   setSum("triggers", triggers[0] ? (triggers[0].severity || "ALERT") : "STANDBY", String(triggers.length), triggers[0] ? triggers[0].title : "No trigger is on");
   const local = ((DESK.local || {}).items || []).slice().sort((a, b) => rankOf(b) - rankOf(a));
   setSum("local", (local[0] && local[0].severity) || "STANDBY", String(local.length), local[0] ? local[0].title : "No local notice");
-  setSum("watch", (lead && lead.severity) || "STANDBY", String(threats.length), lead ? lead.title : "No watch item");
+  const watchRank = (item) => item.kind === "war-iran" || item.kind === "war-ukraine" ? 3 : item.kind === "usgov" ? 2 : 1;
+  const watching = threats.filter((item) => item.severity === "ALERT" || ["war-iran", "war-ukraine", "usgov"].includes(item.kind)).sort((a, b) => watchRank(b) - watchRank(a));
+  setSum("watch", (watching[0] && watching[0].severity) || "STANDBY", String(watching.length), watching[0] ? watching[0].title : "Nothing to monitor");
   const changed = DESK.changes || {};
-  const fresh = (((changed.sinceRefresh || {}).threats || {}).new || []).length + (((changed.sinceRefresh || {}).trends || {}).new || []).length;
-  const firstChange = ((((changed.sinceRefresh || {}).threats || {}).escalated || [])[0]) || ((((changed.sinceRefresh || {}).threats || {}).new || [])[0]);
-  setSum("changed", fresh ? "ALERT" : "STANDBY", String(fresh), firstChange ? firstChange.title : "No change since the last refresh");
+  const yNew = (((changed.sinceYesterday || {}).threats || {}).new || []).length + (((changed.sinceYesterday || {}).trends || {}).new || []).length;
+  const yUp = (((changed.sinceYesterday || {}).threats || {}).escalated || []).length;
+  const firstChange = ((((changed.sinceYesterday || {}).threats || {}).escalated || [])[0]) || ((((changed.sinceYesterday || {}).threats || {}).new || [])[0]) || ((((changed.sinceRefresh || {}).trends || {}).new || [])[0]);
+  const changedLine = tape ? tape.title : (firstChange ? firstChange.title : "No change versus yesterday");
+  setSum("changed", (yNew + yUp) || tape ? "ALERT" : "STANDBY", String(yNew + yUp + (tape ? 1 : 0)), changedLine);
   setSum("threats", (lead && lead.severity) || "STANDBY", String(threats.length), lead ? lead.title : "No threat");
   const gold = (((DESK.assets || {}).series || []).find((asset) => /gold/i.test(asset.name || ""))) || {};
   const goldMove = gold.changePct == null ? "Gold quote missing" : `Gold ${gold.changePct > 0 ? "up" : "down"} ${Math.abs(gold.changePct)}% today`;
@@ -561,7 +568,7 @@ function allItems() {
   const desk = typeof DESK === "undefined" ? null : DESK;
   if (!desk) return [];
   return [...(desk.episodes || []), ...(desk.signals || [])]
-    .filter((item) => safeUrl(item.url))
+    .filter((item) => safeUrl(item.url) && !lowValue(item))
     .sort((a, b) => Date.parse(b.published) - Date.parse(a.published));
 }
 function matches(item) {
@@ -586,15 +593,14 @@ function seenStory(item) {
   return claimed.has(storyKey(item));
 }
 function soWhat(item) {
-  if (item && item.soWhat) return item.soWhat;
-  const lane = String((item && (item.lane || item.kind)) || "");
-  const sev = String((item && item.severity) || "STANDBY").toUpperCase();
-  if (lane === "x" || lane === "podcast" || lane === "substack" || sev === "STANDBY") {
-    return "Money: no direct move. Supplies: no change. Travel: no change. Safety: routine. Action: no action needed.";
-  }
-  if (sev === "CRITICAL") return "Money: local prices can jump. Supplies: fuel, water, cash, meds. Travel: delay if you are in the named area. Safety: follow the official notice. Action: run the short checklist.";
-  if (sev === "ACTION") return "Money: watch fuel and insurance. Supplies: top off water. Travel: check the route. Safety: read the warning. Action: recheck on the next refresh.";
-  return "Money: no position change. Supplies: no change. Travel: no change. Safety: read the source. Action: no action needed.";
+  if (!item) return "";
+  const kind = String(item.kind || "");
+  const title = String(item.title || "");
+  if (kind === "neo" || kind === "sentry" || /close approach/i.test(title)) return "no action needed";
+  if (/there are no tropical cyclones|tropical weather outlook/i.test(title)) return "no action needed";
+  const text = item.soWhat || "";
+  if (/fuel, water, cash|delay gulf|way out/i.test(text) && /neo|sentry|outlook|flyby|fiji|vanuatu|japan/i.test(title + " " + kind)) return "no action needed";
+  return text;
 }
 function confidenceOf(item) {
   if (!item) return "";
@@ -606,7 +612,51 @@ function confidenceOf(item) {
   return `${level}${n}`;
 }
 function soLine(item) {
-  return `<p class="so">${esc(soWhat(item))}</p>`;
+  const text = soWhat(item);
+  if (!text) return "";
+  return `<p class="so">${esc(text)}</p>`;
+}
+function needsAction(item) {
+  const text = soWhat(item);
+  if (!text || /no action/i.test(text)) return false;
+  if (item.kind === "market" || item.kind === "war-iran" || item.kind === "war-ukraine" || item.kind === "usgov") return false;
+  return true;
+}
+function lowValue(item) {
+  if (!item) return false;
+  const lane = item.lane || item.kind || "";
+  if (lane !== "x" && item.kind !== "x") return false;
+  const title = String(item.title || "").replace(/https?:\/\/\S+/g, "").trim();
+  const words = title.split(/\s+/).filter(Boolean);
+  if (words.length <= 2) return true;
+  return /^(cringe|lol|lmao|wow|yum|dinner|lunch|breakfast)\b/i.test(title) || /\b(promo code|use code|merch drop)\b/i.test(title);
+}
+function marketTape() {
+  const regions = ((DESK.markets || {}).regions || []);
+  let sp = null;
+  let url = "";
+  regions.forEach((region) => {
+    if ((region.name || "").toLowerCase() !== "usa") return;
+    (region.venues || []).forEach((venue) => {
+      const name = `${venue.indexName || ""} ${venue.name || ""}`.toLowerCase();
+      if (name.includes("s&p") && venue.changePct != null) {
+        sp = Number(venue.changePct);
+        url = venue.source || "";
+      }
+    });
+  });
+  if (sp == null || Math.abs(sp) < 3) return null;
+  const sign = sp > 0 ? "+" : "";
+  return {
+    id: "tape-spx",
+    title: `S&P 500 ${sign}${sp}% today`,
+    severity: Math.abs(sp) >= 6 ? "CRITICAL" : "ACTION",
+    url: url || "https://finance.yahoo.com/quote/%5EGSPC",
+    kind: "market",
+    soWhat: "The stock tape moved hard. What to do: no action unless you need cash this week. Not a trade instruction.",
+    arrowDay: "↓",
+    arrowWeek: "→"
+  };
 }
 function linkLine(item, where) {
   const url = safeUrl(item.url);
@@ -723,8 +773,8 @@ function renderToday() {
   host.innerHTML = `<p class="note-plain">${esc(note)}</p>` + (cards ? `<div class="stack">${cards}</div>` : empty("No topic matched the threat list."));
 }
 function renderOrders() {
-  const threats = ((DESK.threats || {}).items || []).filter((item) => passes(item));
-  const locals = ((DESK.local || {}).items || []).filter((item) => item.kind !== "na" && item.severity && item.severity !== "STANDBY" && passes(item));
+  const threats = ((DESK.threats || {}).items || []).filter((item) => passes(item) && needsAction(item));
+  const locals = ((DESK.local || {}).items || []).filter((item) => item.kind !== "na" && needsAction(item) && passes(item));
   const pool = threats.concat(locals).sort((a, b) => rankOf(b) - rankOf(a) || String(b.published || "").localeCompare(String(a.published || "")));
   const unique = [];
   pool.forEach((item) => {
@@ -752,7 +802,7 @@ function renderOrders() {
     : "";
   document.getElementById("orders").innerHTML = rows
     ? rows + more
-    : empty("No open threat in this window.");
+    : empty("Nothing needs an action today.");
 }
 function rankOf(item) {
   return { STANDBY: 0, ALERT: 1, ACTION: 2, CRITICAL: 3 }[(item.severity || "STANDBY").toUpperCase()] || 0;
@@ -776,8 +826,9 @@ function watchPool() {
   }).sort((a, b) => rankOf(b) - rankOf(a) || Date.parse(b.published || 0) - Date.parse(a.published || 0)).slice(0, 10);
 }
 function renderWatch() {
-  const items = ((DESK.threats || {}).items || []).filter(passes)
-    .sort((a, b) => rankOf(b) - rankOf(a) || String(b.published || "").localeCompare(String(a.published || "")));
+  const watchRank = (item) => item.kind === "war-iran" || item.kind === "war-ukraine" ? 3 : item.kind === "usgov" ? 2 : 1;
+  const items = ((DESK.threats || {}).items || []).filter((item) => passes(item) && !needsAction(item) && (item.severity === "ALERT" || ["war-iran", "war-ukraine", "usgov"].includes(item.kind)))
+    .sort((a, b) => watchRank(b) - watchRank(a) || String(b.title || "").localeCompare(String(a.title || "")));
   const lines = items.map((item) => {
     const sev = item.severity || "STANDBY";
     const url = safeUrl(item.url);
@@ -812,6 +863,24 @@ function deltaBlock(pack, title) {
   }).join("");
   return parts;
 }
+function priorLabel(yesterday) {
+  const days = ((DESK.history || {}).days || []).map((day) => day.date).filter(Boolean).sort();
+  const label = yesterday.label || "";
+  if (days.length >= 2) return label && !/no stored|no prior/i.test(label) ? label : days[days.length - 2];
+  if (/no stored|history\.json|no prior/i.test(`${label} ${yesterday.note || ""}`)) return "no prior day yet";
+  return label || "yesterday";
+}
+function priorNote(yesterday) {
+  const days = (DESK.history || {}).days || [];
+  if (days.length >= 2) return "";
+  if (yesterday.note) return `<p class="note-plain">${esc(publicText(yesterday.note))}</p>`;
+  return `<p class="note-plain">No prior day to compare yet.</p>`;
+}
+function tapeLine() {
+  const tape = marketTape();
+  if (!tape) return "";
+  return `<h3 class="group">Market · Economic watch</h3><p class="meta">${esc(tape.title)}. ${esc(tape.soWhat)}</p>`;
+}
 function renderChanged() {
   const host = document.getElementById("changed");
   const doc = DESK.changes || {};
@@ -823,9 +892,10 @@ function renderChanged() {
   host.innerHTML = `
     <h3 class="group">Since last refresh · ${esc(refresh.label || doc.sinceLabel || DESK.updated || "previous run")}</h3>
     ${refreshBody || `<p class="meta">No status change, new threat, or new trend since that refresh.</p>`}
-    <h3 class="group">Since yesterday · ${esc(/no stored|history\.json/i.test(yesterday.label || "") ? "no prior day yet" : publicText(yesterday.label || "no prior day yet"))}</h3>
-    ${/history\.json|stored/i.test(yesterday.note || "") ? `<p class="note-plain">No prior day to compare yet.</p>` : (yesterday.note ? `<p class="note-plain">${esc(publicText(yesterday.note))}</p>` : "")}
-    ${yBody || `<p class="meta">No change versus yesterday.</p>`}
+    <h3 class="group">Since yesterday · ${esc(priorLabel(yesterday))}</h3>
+    ${priorNote(yesterday)}
+    ${yBody || `<p class="meta">No status change versus yesterday.</p>`}
+    ${tapeLine()}
     ${pages ? `<h3 class="group">Page changes · Carota pages</h3>${pages}` : ""}`;
 }
 function renderTriggers() {
@@ -1081,11 +1151,19 @@ function threatCard(item) {
   return row(item).replace("<article class=\"row\">", `<article class="row"><span class="sev sev-${sev.toLowerCase()}">${esc(sev)}</span> `);
 }
 function renderThreats() {
-  const rows = ((DESK.threats || {}).items || []).filter(passes);
+  const rows = ((DESK.threats || {}).items || []).filter(passes).filter((item) => {
+    if (item.date && String(item.date).slice(0, 4) !== "2026") return false;
+    if (/there are no tropical cyclones/i.test(item.title || "")) return false;
+    if (/tropical weather outlook/i.test(item.title || "")) return false;
+    return true;
+  });
   const local = (item) => item.kind === "nws" && (item.tags || []).includes("tennessee");
   const cats = [
+    ["iran", "Iran war", (item) => item.kind === "war-iran"],
+    ["ukraine", "Ukraine war", (item) => item.kind === "war-ukraine"],
+    ["gov", "US government", (item) => item.kind === "usgov"],
     ["natural", "Natural disasters", (item) => ["quake", "storm", "gdacs"].includes(item.kind) || (item.kind === "nws" && !local(item))],
-    ["war", "War & conflict", (item) => item.kind === "conflict"],
+    ["war", "Other conflict", (item) => item.kind === "conflict"],
     ["health", "Pandemics & outbreaks", (item) => item.kind === "who" || item.kind === "cdc"],
     ["space", "Space & existential", (item) => ["neo", "sentry", "clock"].includes(item.kind)],
     ["tn", "Local Tennessee alerts", local]
@@ -1128,12 +1206,12 @@ function meaningOf(name, dir) {
     : "A weaker dollar has often lined up with easier money.";
 }
 function marketReadHtml() {
-  const recent = ((DESK.threats || {}).items || []).filter((item) => {
-    if (ageHours(item) > 72) return false;
-    if (item.kind === "conflict") return true;
-    return item.kind === "storm" && /hurricane|tropical storm|typhoon/i.test(item.title || "") && !/outlook|there are no|no tropical/i.test(item.title || "");
-  }).sort((a, b) => rankOf(b) - rankOf(a));
+  const tape = marketTape();
   const bullets = [];
+  if (tape) {
+    bullets.push(`${tape.title}. Stocks set the tape. Crypto moved with that risk-off day, not because of an unrelated headline. ${tape.soWhat}`);
+  }
+  const recent = [];
   ((DESK.assets || {}).series || []).forEach((asset) => {
     const day = asset.changePct == null ? null : Number(asset.changePct);
     const two = twoDayPct(asset);
@@ -1143,15 +1221,17 @@ function marketReadHtml() {
     const dir = move > 0 ? "up" : "down";
     const span = useTwo ? "in two days" : "today";
     const hook = recent.map((item) => item.title || "").find((title) => title.length <= 90 && !/analysis|implications|opinion|explainer|what we know/i.test(title));
-    const after = hook ? ` after ${hook}` : "";
-    const big = /gold|silver/i.test(asset.name || "") && move >= 3;
+    const after = !tape && hook ? ` after ${hook}` : "";
+    const big = !tape && /gold|silver/i.test(asset.name || "") && move >= 3;
     const action = big
-      ? "What to do: fuel, water, cash, meds. This is not a buy order."
+      ? "What to do: no action. A metal move is not a shelter order."
       : "What to do: no action.";
-    bullets.push(`${asset.name} ${dir} ${Math.abs(move).toFixed(1)}% ${span}${after}. ${meaningOf(asset.name, dir)} ${action}`);
+    const meaning = tape ? "It moved with the stock tape." : meaningOf(asset.name, dir);
+    bullets.push(`${asset.name} ${dir} ${Math.abs(move).toFixed(1)}% ${span}${after}. ${meaning} ${action}`);
   });
+  if (!tape && !bullets.length) bullets.push("No clear link between the headlines and these prices.");
   const lines = (bullets.slice(0, 4)).map((line) => `<li>${esc(line)}</li>`).join("");
-  return `<h3 class="group">Market read</h3>${lines ? `<ul class="read">${lines}</ul>` : `<p class="meta">No move large enough to act on.</p>`}`;
+  return `<h3 class="group">Market read</h3>${lines ? `<ul class="read">${lines}</ul>` : `<p class="meta">No clear link between the headlines and these prices.</p>`}`;
 }
 function returnsOf(points) {
   const out = {};
