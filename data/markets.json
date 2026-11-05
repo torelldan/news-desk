@@ -37,6 +37,27 @@
       ],
       "headlines": [
         {
+          "id": "headline:b676f9835d077585",
+          "kind": "headline",
+          "lane": "news",
+          "source": "아시아경제",
+          "sourceId": "headline",
+          "title": "Cleveland Fed President: \"Further Tightening Needed to Curb Inflation\" - 아시아경제",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBTNmJHOU5wOS03c3Z4b1h2ZGVjdmJMOEowMXZvY0ZDeTA1RUs1aHZNREFHMFljVy1fRlppMHN5eHA0eVp2aWtFX0VmSWpmenhwY1FHczQtMHJMZGs3UXlTbzlkU3FTQWlrTEh6V0ZnWVBzcEdUU0NHM1FJb3A?oc=5",
+          "published": "2026-11-05T15:15:14-06:00",
+          "date": "2026-11-05",
+          "label": "Nov 5, 2026 3:15 PM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:7af0b39c1166ee4a",
           "kind": "headline",
           "lane": "news",
@@ -46,9 +67,9 @@
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQMWtwVUlRTV9kWEhscjBBRXpHMEZFdTM2eU16VE1VV0NHQkdBZTNUN3hmdm81UnJYUUFZaFc5Qm4xa1lMTnRMR081U0FPS2g5ajczYVJRVVFkSjdCMzV6RXRmMmlmQ3lybHA1WHhsMDAtMHlDeVNnX2l4UnFsbERhSHRUYWZicFZo?oc=5",
-          "published": "2026-11-05T09:36:02-06:00",
+          "published": "2026-11-05T09:35:22-06:00",
           "date": "2026-11-05",
-          "label": "Nov 5, 2026 9:36 AM CT",
+          "label": "Nov 5, 2026 9:35 AM CT",
           "weekday": "Thu",
           "timeKnown": true,
           "tags": [
@@ -854,27 +875,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:bda843e699fa239e",
-          "kind": "headline",
-          "lane": "news",
-          "source": "The Center Square",
-          "sourceId": "headline",
-          "title": "Economist: Strong GDP growth, inflation complicate Fed's decisions - The Center Square",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNV2FrUzUzdWZvVE9BbUlUNkh1QWxkMEFjM1Q2UjYzUW5OS1VmUmRkRGd2WmtoaHFZV0E2XzctX0xvM0pHa0JNbjRTUFA2SXhxcFowV3BTcnFvZm0tRUpxQjJneUhxV0VmODk0YkJ2NHZscHdRWFJSdWhaaUtXaElEQm42czdvaGZhd0Y2ZVhtY0lqQkVl0gGaAUFVX3lxTE5aWEgyZnBOd1pqcjc0eGcxd2hITldHdnZwWHBHdWZFY1NNQ2N3dlNTRjFHUG4zVHh5WEJlbkh0dTItcjB1ZktoeVM5UTdDc3BQUTR6S29UcmZ1M3NIcWdPUjRNMGhpLTU5T0JjZGpRaW9iWXZpOXZaRnVKWXNiNFphV0htdFE1Q25mTk4yLURLbnJPNWtWSXlNdkE?oc=5",
-          "published": "2026-10-29T12:48:00-05:00",
-          "date": "2026-10-29",
-          "label": "Oct 29, 2026 12:48 PM CT",
-          "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ]
     },
@@ -912,14 +912,56 @@
             }
           ],
           "holidays": [],
-          "level": 71109.97,
-          "change": 290.17,
-          "changePct": 0.41,
+          "level": 71087.56,
+          "change": 267.77,
+          "changePct": 0.38,
           "asOf": "2026-11-05",
           "source": "https://finance.yahoo.com/quote/%5EMXX"
         }
       ],
       "headlines": [
+        {
+          "id": "headline:39a082ca0d13201e",
+          "kind": "headline",
+          "lane": "news",
+          "source": "BNN Bloomberg",
+          "sourceId": "headline",
+          "title": "Bank of Canada keeps 2% inflation target in mandate renewal - BNN Bloomberg",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQTjdrVm5EVGNub3pWYkRBejhiQXhsMXEtTXV6S2RIc1pjMFRLQjZEb3NKR2ZiVGh2SFRoY1VqdTNtUUo4d0ItOTBjZHhqMGpVcm5FRExEblFTQ1pITWU0Z1pTbXgxSnBVc0dsb3VLUTFsZ3FwMm1jR0N4YnZzUVB2X1Nyb25jbHNWMXlrZWQyMzg5QjZ1b2pIQzZfOC1YOGlFbmdxMXlQVDdObGU5anB6VWdsc2FaTS1h?oc=5",
+          "published": "2026-11-05T15:59:55-06:00",
+          "date": "2026-11-05",
+          "label": "Nov 5, 2026 3:59 PM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:b17dfcf5eb38a1db",
+          "kind": "headline",
+          "lane": "news",
+          "source": "WSJ",
+          "sourceId": "headline",
+          "title": "Bank of Canada Gov. Macklem Pledges to Proceed Carefully on Further Rate Increases - WSJ",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQOXFIN1hXNGpRRHBPc2pNQU5qNnZUQkdZQV95NzhCcTR2anNDcERhLVBXbU93REhqZHdfU1ZjSnB3dU5wRHBsVmhWNlBJaHN6Tms3ZnJQenBCS1FTX3Q2ZVE5U0RRb2lwRE95YU5CbWtzRE9SSWVZeWpKaDdCTWxGdU0zR1pRaWduZGFUUGxERUkzUW82dEd4Y3k0WE5PMUt1RzlmNlFzR0ZuT1Vtd2lYSmdRZVpyS0k1YWxwUDB1TXlHN00?oc=5",
+          "published": "2026-11-05T15:27:56-06:00",
+          "date": "2026-11-05",
+          "label": "Nov 5, 2026 3:27 PM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
         {
           "id": "headline:165d2bf652fc0006",
           "kind": "headline",
@@ -933,6 +975,27 @@
           "published": "2026-11-05T14:12:04-06:00",
           "date": "2026-11-05",
           "label": "Nov 5, 2026 2:12 PM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:f1db267c47ba35dd",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Traders Union",
+          "sourceId": "headline",
+          "title": "Bank of Canada outlines risk-based monetary policy approach for Canadian economy - Traders Union",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPbk4wSHpwSVhHRmJnT3ZuYU01aWY4WFZ6MUFIZFR3MGFxQjV5dk13c05RYlpTdjJpUE9YYzRmNkg3SGJkZVh2a0hhOHpwalBPN1JYT1FLVzVZeHV3NWs1c3FpWW5WT0dQUmtnQUFqMnE1NHZQMWlHUm1tTnJtQWtCRDljN0o3dzNFaV95NGotdzBfZUpPS3BULQ?oc=5",
+          "published": "2026-11-05T10:21:42-06:00",
+          "date": "2026-11-05",
+          "label": "Nov 5, 2026 10:21 AM CT",
           "weekday": "Thu",
           "timeKnown": true,
           "tags": [
@@ -984,6 +1047,27 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:c74da5e583851ec7",
+          "kind": "headline",
+          "lane": "news",
+          "source": "BNN Bloomberg",
+          "sourceId": "headline",
+          "title": "Fiscal and monetary policy are not at odds, Bank of Canada's Macklem tells MPs - BNN Bloomberg",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPRGloaFpTMDdfbUQtMkR5RkVialJNSDViSmZPN3VUQjVnSG9WUEc5T2Fjd2NpRVZKbXpDVkNqei15SWs4OXFLTm9JM1kwQXhFTzdDOWNyN2wwUnBkRlh1ekV6N1ZVbm16OWpTc3FDWkZuY2M2TGJJTjUxV1ozRGxXWG8yaTFBUG5GRi0tamE4R3lrdjYteFhEX185cjNWSkVYSVJ3Yy1JZnROeDZFV3dHb1dGaHFVMXNFZS13cVNnZmVvbXc?oc=5",
+          "published": "2026-11-03T13:39:28-06:00",
+          "date": "2026-11-03",
+          "label": "Nov 3, 2026 1:39 PM CT",
+          "weekday": "Tue",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:718e55ad0b4556fe",
           "kind": "headline",
           "lane": "news",
@@ -1017,27 +1101,6 @@
           "published": "2026-11-03T13:03:58-06:00",
           "date": "2026-11-03",
           "label": "Nov 3, 2026 1:03 PM CT",
-          "weekday": "Tue",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:b17dfcf5eb38a1db",
-          "kind": "headline",
-          "lane": "news",
-          "source": "WSJ",
-          "sourceId": "headline",
-          "title": "Bank of Canada Gov. Macklem Pledges to Proceed Carefully on Further Rate Increases - WSJ",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQOXFIN1hXNGpRRHBPc2pNQU5qNnZUQkdZQV95NzhCcTR2anNDcERhLVBXbU93REhqZHdfU1ZjSnB3dU5wRHBsVmhWNlBJaHN6Tms3ZnJQenBCS1FTX3Q2ZVE5U0RRb2lwRE95YU5CbWtzRE9SSWVZeWpKaDdCTWxGdU0zR1pRaWduZGFUUGxERUkzUW82dEd4Y3k0WE5PMUt1RzlmNlFzR0ZuT1Vtd2lYSmdRZVpyS0k1YWxwUDB1TXlHN00?oc=5",
-          "published": "2026-11-03T12:37:00-06:00",
-          "date": "2026-11-03",
-          "label": "Nov 3, 2026 12:37 PM CT",
           "weekday": "Tue",
           "timeKnown": true,
           "tags": [
@@ -1696,69 +1759,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:7bebd45fadabde76",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Bloomberg.com",
-          "sourceId": "headline",
-          "title": "Rate Hike Kicks Canada’s Housing Market When It’s Down - Bloomberg.com",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNVTl4M2NBYkNEM0hKY2doUkhDQVI5VUxxV0JzdmE2eFJNeTcyYTZxQXk5bzY3TVBTa1BDRlhURUlWTmEzalJuem81NmhXaTlWLUdLZlUzODdJNlFldG1EVVhxOHZRWmlfamJybG1PTzBITk5QZGZTR0MyQlJCNmEzSVJoNkhjbTdiMFo3SDVTR1ZuWVRxSlhtbjJqLUR3c0VlNFY0dF9FY2QzY0psdDhLMVVpTQ?oc=5",
-          "published": "2026-10-29T08:00:00-05:00",
-          "date": "2026-10-29",
-          "label": "Oct 29, 2026 8:00 AM CT",
-          "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:6a828a0e7a023575",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Frequency News",
-          "sourceId": "headline",
-          "title": "Bank of Canada raises key interest rate to 2.5 per cent, drawing criticism from Ford - Frequency News",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNTjNEakVVODQ2REp5QnNnNEVISlZpZENac0dTVUlOTWxzbHBnaEdZdU5aZnhvWmhnMW96UFBwSmpJdk5MSUxiTG9KZlExbTU4QXpvTWdiOXZ1cnV2VHV0cHdDTlJBTjk2cnpKT0hVX1R3WU9ZYS1qVF9rWkRQYzhLWHZEZUZ5VHdYYmRqMkJaMURPWG1lYkRrWEZSSlBDTUt0Tll2dDVtZlpINEN5YjI4dkQ5R1g0anQtQ0E?oc=5",
-          "published": "2026-10-28T21:04:47-05:00",
-          "date": "2026-10-28",
-          "label": "Oct 28, 2026 9:04 PM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:9b98f2774db305a5",
-          "kind": "headline",
-          "lane": "news",
-          "source": "McKinsey & Company",
-          "sourceId": "headline",
-          "title": "Global Economics Intelligence executive summary (September 2026) - McKinsey & Company",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPSmgzTkdja3YzVE1LaEtHbGFYak1oUU9Pei1CR1AwOW4wak5uY3hRQk0wb1o1SWhObGhxTUZDaEZqSUZ0TjdqUS1Ed3hwclZJRi1YV0RLQzZIY3paTzR3R2l0dkp5TkhLYVdXbm5NREhjc0lSazNjRmhJNlc4Y0Z5c2d0MWZ0WWNqNVhWRjFIRUdnWHJvaEYzdmp6NnV3cXd3bjdybm9EVTN4TEgwdUJsVA?oc=5",
-          "published": "2026-10-28T19:00:00-05:00",
-          "date": "2026-10-28",
-          "label": "Oct 28, 2026 7:00 PM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ]
     },
@@ -1778,9 +1778,9 @@
             }
           ],
           "holidays": [],
-          "level": 166595.7,
-          "change": -968.3,
-          "changePct": -0.58,
+          "level": 166191.45,
+          "change": -1372.55,
+          "changePct": -0.82,
           "asOf": "2026-11-05",
           "source": "https://finance.yahoo.com/quote/%5EBVSP"
         }
@@ -2650,6 +2650,48 @@
         }
       ],
       "headlines": [
+        {
+          "id": "headline:9055dd45211bd090",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Investing.com",
+          "sourceId": "headline",
+          "title": "Russia stocks higher at close of trade; MOEX Russia Index up 0.58% - Investing.com",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQMEVUTXBYeWl2UFJ5MFpaVW52Z05BUUdGM2ktSUtHTzc4RnBEVFl6ck1KV2hYQlhjR0dJdnRUU2RidkV1T0xwUzZuY291SmxzNHNDM3UxbHppc1ZzUEtvamhTdklrVkdDdklBRGpsWF80QkxKU0QtTjA0VFlkZjc1a1NHbWVXYmNwZXk1X3BBa3dpVEFzamhEV0FlbFBYXzJpdWRxMWRxM1ZaOHpFV1QwYzhWOUNxNlEtbVRvbg?oc=5",
+          "published": "2026-11-05T15:24:39-06:00",
+          "date": "2026-11-05",
+          "label": "Nov 5, 2026 3:24 PM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:d2b214a893ae7310",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Investing.com India",
+          "sourceId": "headline",
+          "title": "Russia shares higher at close of trade; MOEX Russia Index up 0.58% - Investing.com India",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOUGw3RTFMZ0FDTUtMSFNhZUhjSS02V1M0UGx3SEFkVDMxamMxU3ZxTjZxSjV2RmlkY0FKZjBRQWZqY240ZkNEemsya0hDRXVWbjNVN2tRa0NzcDBFWHVkODhTSWJzaFdKeWtnYnJNb044Q1dCYlNvUmx1d28yNTJpOHN2V0ZkanRucllFQWFtWVVEYVBKeUlEQld1SjhMTlNrdFV6S1hGc09aNENaNE00aWFGcUtseENRZmhN?oc=5",
+          "published": "2026-11-05T15:24:27-06:00",
+          "date": "2026-11-05",
+          "label": "Nov 5, 2026 3:24 PM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
         {
           "id": "headline:c405d37429af40b7",
           "kind": "headline",
@@ -5167,27 +5209,6 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:6cf504f3da8d3d6e",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Investing.com India",
-          "sourceId": "headline",
-          "title": "Hong Kong economy grows 5.2% in third quarter By Investing.com - Investing.com India",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNU1Y2NGU1Q3EtT3A1Z05iYzc2THp1eFlpVkdfSnFzSUVkLTVtM25BT3ZkY2lUNHZNUHZjZUdyWjVZWEMwMWRlOUFFWU5RRWRadERfZnlIc2VfQkFFbi1NZ085eE9rbm8tTFFSWVJEVEphUGk2R1BqNTJUM2k0Yl80YzJxdThTalVnM0N6VHBoVzB6c0hmZlhOME1Ub2Y0RUVzLVRGbXFPaw?oc=5",
-          "published": "2026-11-03T05:44:21-06:00",
-          "date": "2026-11-03",
-          "label": "Nov 3, 2026 5:44 AM CT",
-          "weekday": "Tue",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
           "id": "headline:881a5988e4b86207",
           "kind": "headline",
           "lane": "news",
@@ -5209,6 +5230,27 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:43722a7612f95c64",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Investing.com Nigeria",
+          "sourceId": "headline",
+          "title": "Hong Kong economy grows 5.2% in third quarter By Investing.com - Investing.com Nigeria",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPVm9zMkxUWG1xaU4tMDFJSXc3YXJyd25HNm8ycWhRM1RwSG5BTzVDUTJBdFc5QUlYVEVjUHdjel9IbnVNTFFsZmFzUUN1dXFva2hHeURGMzE2ZmJYeE1JQnJxTkJHYnRrNFlYaDJEbnJteGNRUFk3ZF95WGVDaU5EMXAxeW1GWThYNTJSVGJ2RmZHLXhKczlsRUhhdkwtNzhlWUNSSVM1MA?oc=5",
+          "published": "2026-11-03T04:48:21-06:00",
+          "date": "2026-11-03",
+          "label": "Nov 3, 2026 4:48 AM CT",
+          "weekday": "Tue",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:5f58225aa62fcd11",
           "kind": "headline",
           "lane": "news",
@@ -5221,6 +5263,27 @@
           "published": "2026-11-03T04:27:24-06:00",
           "date": "2026-11-03",
           "label": "Nov 3, 2026 4:27 AM CT",
+          "weekday": "Tue",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:6cf504f3da8d3d6e",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Investing.com India",
+          "sourceId": "headline",
+          "title": "Hong Kong economy grows 5.2% in third quarter By Investing.com - Investing.com India",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNU1Y2NGU1Q3EtT3A1Z05iYzc2THp1eFlpVkdfSnFzSUVkLTVtM25BT3ZkY2lUNHZNUHZjZUdyWjVZWEMwMWRlOUFFWU5RRWRadERfZnlIc2VfQkFFbi1NZ085eE9rbm8tTFFSWVJEVEphUGk2R1BqNTJUM2k0Yl80YzJxdThTalVnM0N6VHBoVzB6c0hmZlhOME1Ub2Y0RUVzLVRGbXFPaw?oc=5",
+          "published": "2026-11-03T04:25:28-06:00",
+          "date": "2026-11-03",
+          "label": "Nov 3, 2026 4:25 AM CT",
           "weekday": "Tue",
           "timeKnown": true,
           "tags": [
@@ -5788,27 +5851,6 @@
           "published": "2026-10-31T09:39:19-05:00",
           "date": "2026-10-31",
           "label": "Oct 31, 2026 9:39 AM CT",
-          "weekday": "Sat",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:d9c3a4b6bdc9eeb5",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Bloomberg.com",
-          "sourceId": "headline",
-          "title": "The Giant Asian Market Where Stock Trading Doubled in Three Years - Bloomberg.com",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPd1QxWC1NYkxrYThrYUZ5VHNkMkJGcDZaWl90WnRfM1ZDTlNxMGdoNGpKOU9odWhLSHc1VGdMVlNfVU1nNEZINDVTM0l1UVpwRFpjSmlQcXpaV2gzalBLYUFYU2xocURwSng4eFUydUU1eUpvNHBFalgzQXlnMUZyRWhqX3lJVHBLSW5MYmk2NXFnUEZDYURQQzZHWXRVSHFVVlpJd1h0cF9taWR0dXFfVnpDa045Q0Y4SUVfVG9uRHk?oc=5",
-          "published": "2026-10-31T05:45:01-05:00",
-          "date": "2026-10-31",
-          "label": "Oct 31, 2026 5:45 AM CT",
           "weekday": "Sat",
           "timeKnown": true,
           "tags": [

@@ -1,15 +1,15 @@
 {
   "baseline": false,
   "brief": "The stock tape is the story: the S&P 500 is -4.36% today. What to do: no action unless you need cash this week. Current war coverage is on the board: Exclusive | Trump Acknowledges Iran War Is Partly to Blame for Republican Losses - WSJ; Vance blames Iran war for GOP midterm losses - PBS. Rising topic: iran war (4 outlets this window).",
-  "checkedAt": "2026-11-05T15:12:20-06:00",
-  "checkedLabel": "Nov 5, 2026 3:12 PM CT",
+  "checkedAt": "2026-11-05T16:57:59-06:00",
+  "checkedLabel": "Nov 5, 2026 4:57 PM CT",
   "errors": [],
   "retainDays": 120,
   "today": "2026-11-05",
   "trends": {
+    "google": "Google Trends US daily list answered (10 topics). Kept the ones that match a war, government, or threat topic. None of today's search trends matched.",
     "mode": "trends",
-    "note": "X name-only matches were dropped.",
-    "google": "Google Trends US daily list answered (10 topics). Kept the ones that match a war, government, or threat topic. None of today's search trends matched."
+    "note": "X trends by WOEID (US 23424977 and worldwide 1). Kept only when the name matches a threat or preparedness theme. The endpoint answered and none of the names matched."
   },
   "x": {
     "detail": "",

@@ -1,31 +1,31 @@
 {
-  "place": "Thompson's Station / Williamson County / Middle Tennessee (37179)",
+  "gaps": [
+    "Power_TN row hidden (2025-10-06, affected 0, served 0).",
+    "1 ended road projects hidden.",
+    "TEMA: curl: (22) The requested URL returned error: 403\n"
+  ],
   "items": [
     {
-      "id": "local-nws-none",
-      "title": "No active NWS alert for Thompson's Station (37179)",
-      "note": "api.weather.gov answered for 35.802,-86.907 and returned no alerts.",
-      "url": "https://api.weather.gov/alerts/active?point=35.802,-86.907",
-      "source": "NWS",
-      "kind": "nws",
-      "lane": "local",
-      "severity": "STANDBY",
+      "action": "no action needed",
+      "confidence": "reported",
       "date": "2026-11-05",
-      "label": "Nov 5, 2026 4:18 PM CT",
-      "published": "2026-11-05T16:18:24-06:00",
+      "id": "local-nws-none",
+      "kind": "nws",
+      "label": "Nov 5, 2026 4:57 PM CT",
+      "lane": "local",
+      "note": "api.weather.gov answered for 35.802,-86.907 and returned no alerts.",
+      "published": "2026-11-05T16:57:59-06:00",
+      "severity": "STANDBY",
+      "soWhat": "",
+      "source": "NWS",
+      "sourceCount": 1,
       "tags": [
         "tennessee",
         "williamson"
       ],
-      "confidence": "reported",
-      "sourceCount": 1,
-      "soWhat": "",
-      "action": "no action needed"
+      "title": "No active NWS alert for Thompson's Station (37179)",
+      "url": "https://api.weather.gov/alerts/active?point=35.802,-86.907"
     }
   ],
-  "gaps": [
-    "Power_TN row hidden (2025-10-06, affected 0, served 0).",
-    "1 ended road projects hidden.",
-    "TEMA news page answered with no dated notices."
-  ]
+  "place": "Thompson's Station / Williamson County / Middle Tennessee (37179)"
 }

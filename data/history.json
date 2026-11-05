@@ -675,207 +675,7 @@
     },
     {
       "date": "2026-11-05",
-      "label": "Nov 5, 2026 3:12 PM CT",
-      "threats": [
-        {
-          "id": "quake:734d191ecf71fad1",
-          "title": "M4.5 111 km ESE of Atka, Alaska",
-          "severity": "STANDBY",
-          "kind": "quake"
-        },
-        {
-          "id": "quake:ab77a03e5cf52daa",
-          "title": "M4.5 121 km SE of Atka, Alaska",
-          "severity": "STANDBY",
-          "kind": "quake"
-        },
-        {
-          "id": "relief:0109da81b6fc36e7",
-          "title": "ReliefWeb disasters",
-          "severity": "STANDBY",
-          "kind": "relief"
-        },
-        {
-          "id": "who:53dcad2ca08ee68e",
-          "title": "New WHO technical package to help countries improve health data for COVID-19 response and beyond",
-          "severity": "STANDBY",
-          "kind": "who"
-        },
-        {
-          "id": "headline:e690bd89fc9d54af",
-          "title": "Another child dies of measles as CDC reportedly holds up health alert - Ars Technica",
-          "severity": "ALERT",
-          "kind": "cdc"
-        },
-        {
-          "id": "cdc:12c7ca9ea1a41c99",
-          "title": "CDC Health Alert Network notices",
-          "severity": "STANDBY",
-          "kind": "cdc"
-        },
-        {
-          "id": "headline:d0e17ff63b086de1",
-          "title": "Exclusive | Trump Acknowledges Iran War Is Partly to Blame for Republican Losses - WSJ",
-          "severity": "ALERT",
-          "kind": "war-iran"
-        },
-        {
-          "id": "headline:90b337ad3de37707",
-          "title": "Vance blames Iran war for GOP midterm losses - PBS",
-          "severity": "ALERT",
-          "kind": "war-iran"
-        },
-        {
-          "id": "headline:421e3f4743e0ca4c",
-          "title": "Iran Update, November 4, 2026 - Institute for the Study of War",
-          "severity": "ALERT",
-          "kind": "war-iran"
-        },
-        {
-          "id": "headline:4244127e9d33cc93",
-          "title": "Iran, Qatari mediators hold third day of talks to end US-Iran war - Reuters",
-          "severity": "ALERT",
-          "kind": "war-iran"
-        },
-        {
-          "id": "headline:b6ce1bcd90f751dc",
-          "title": "What to know about the Melania Trump-brokered ceasefire in Russian-occupied Oleshky - AP News",
-          "severity": "ALERT",
-          "kind": "war-ukraine"
-        },
-        {
-          "id": "headline:57a21ad6ee992e96",
-          "title": "Russian Offensive Campaign Assessment, November 4, 2026 - Institute for the Study of War",
-          "severity": "ALERT",
-          "kind": "war-ukraine"
-        },
-        {
-          "id": "headline:583628fdb46675a0",
-          "title": "Russia confirms new Ukraine peace talks as Melania Trump prepares to host ceasefire meeting - CNBC",
-          "severity": "ALERT",
-          "kind": "war-ukraine"
-        },
-        {
-          "id": "headline:5efba88de5e565e1",
-          "title": "Pope Leo’s appeals help bring humanitarian ceasefire to southern Ukraine - Vatican News",
-          "severity": "ALERT",
-          "kind": "war-ukraine"
-        },
-        {
-          "id": "headline:e8b24ea6c3b3f5b9",
-          "title": "Supreme Court: SCOTUS Decisions & News on the U.S. Federal Court - NBC News",
-          "severity": "ALERT",
-          "kind": "usgov"
-        },
-        {
-          "id": "headline:f6304544d0edab83",
-          "title": "Democrats Win Control of Congress. Here’s How That Could Affect U.S. Foreign Policy. - Council on Foreign Relations",
-          "severity": "ALERT",
-          "kind": "usgov"
-        },
-        {
-          "id": "headline:db580f48dc0ba9f9",
-          "title": "Trump White House maps path to govern without Congress if Democrats win - Reuters",
-          "severity": "ALERT",
-          "kind": "usgov"
-        },
-        {
-          "id": "headline:940bf23c01d39740",
-          "title": "6 PNW lawmakers could gain powerful positions as Democrats flip Congress - Oregon Public Broadcasting - OPB",
-          "severity": "ALERT",
-          "kind": "usgov"
-        },
-        {
-          "id": "neo:b6525019da5f0286",
-          "title": "Close approach 2026 VP1",
-          "severity": "STANDBY",
-          "kind": "neo"
-        },
-        {
-          "id": "neo:7ef188732835b7d0",
-          "title": "Close approach 2026 VG3",
-          "severity": "STANDBY",
-          "kind": "neo"
-        },
-        {
-          "id": "neo:6e5db1d2bf656873",
-          "title": "Close approach 2026 VN1",
-          "severity": "STANDBY",
-          "kind": "neo"
-        },
-        {
-          "id": "neo:77f0360ca43ad1fb",
-          "title": "Close approach 2026 VK2",
-          "severity": "STANDBY",
-          "kind": "neo"
-        },
-        {
-          "id": "neo:9934e838c1539fdc",
-          "title": "Close approach 2019 XF2",
-          "severity": "STANDBY",
-          "kind": "neo"
-        },
-        {
-          "id": "neo:1095427f35282423",
-          "title": "Close approach 2026 QQ8",
-          "severity": "STANDBY",
-          "kind": "neo"
-        },
-        {
-          "id": "neo:9931f86a7752cac2",
-          "title": "Close approach 2026 VY1",
-          "severity": "STANDBY",
-          "kind": "neo"
-        },
-        {
-          "id": "neo:da8d506430a87192",
-          "title": "Close approach 2026 VT3",
-          "severity": "STANDBY",
-          "kind": "neo"
-        },
-        {
-          "id": "sentry:3ab270749382d96a",
-          "title": "Sentry risk 2010 RF12",
-          "severity": "CRITICAL",
-          "kind": "sentry"
-        },
-        {
-          "id": "sentry:eaf2dfbac69c099f",
-          "title": "Sentry risk 2017 WT28",
-          "severity": "CRITICAL",
-          "kind": "sentry"
-        },
-        {
-          "id": "sentry:25c8cd34aca63fd0",
-          "title": "Sentry risk 101955",
-          "severity": "ACTION",
-          "kind": "sentry"
-        },
-        {
-          "id": "clock:bulletin",
-          "title": "Doomsday Clock",
-          "severity": "STANDBY",
-          "kind": "clock"
-        }
-      ],
-      "trends": [
-        {
-          "name": "iran war",
-          "category": "iran-war",
-          "volume": null
-        },
-        {
-          "name": "ukraine war",
-          "category": "ukraine-war",
-          "volume": null
-        },
-        {
-          "name": "us gov",
-          "category": "us-gov",
-          "volume": null
-        }
-      ],
-      "triggers": [],
+      "label": "Nov 5, 2026 4:57 PM CT",
       "outlooks": [
         {
           "id": "quake:734d191ecf71fad1",
@@ -923,7 +723,7 @@
           "severity": "ALERT"
         },
         {
-          "id": "headline:4244127e9d33cc93",
+          "id": "headline:6a4e9dc101a1757e",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
@@ -1008,26 +808,193 @@
           "severity": "STANDBY"
         },
         {
-          "id": "sentry:3ab270749382d96a",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "CRITICAL"
-        },
-        {
-          "id": "sentry:eaf2dfbac69c099f",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "CRITICAL"
-        },
-        {
-          "id": "sentry:25c8cd34aca63fd0",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ACTION"
-        },
-        {
           "id": "clock:bulletin",
           "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
           "severity": "STANDBY"
         }
-      ]
+      ],
+      "threats": [
+        {
+          "id": "quake:734d191ecf71fad1",
+          "kind": "quake",
+          "severity": "STANDBY",
+          "title": "M4.5 111 km ESE of Atka, Alaska"
+        },
+        {
+          "id": "quake:ab77a03e5cf52daa",
+          "kind": "quake",
+          "severity": "STANDBY",
+          "title": "M4.5 121 km SE of Atka, Alaska"
+        },
+        {
+          "id": "relief:0109da81b6fc36e7",
+          "kind": "relief",
+          "severity": "STANDBY",
+          "title": "ReliefWeb disasters"
+        },
+        {
+          "id": "who:53dcad2ca08ee68e",
+          "kind": "who",
+          "severity": "STANDBY",
+          "title": "New WHO technical package to help countries improve health data for COVID-19 response and beyond"
+        },
+        {
+          "id": "headline:e690bd89fc9d54af",
+          "kind": "cdc",
+          "severity": "ALERT",
+          "title": "Another child dies of measles as CDC reportedly holds up health alert - Ars Technica"
+        },
+        {
+          "id": "cdc:12c7ca9ea1a41c99",
+          "kind": "cdc",
+          "severity": "STANDBY",
+          "title": "CDC Health Alert Network notices"
+        },
+        {
+          "id": "headline:d0e17ff63b086de1",
+          "kind": "war-iran",
+          "severity": "ALERT",
+          "title": "Exclusive | Trump Acknowledges Iran War Is Partly to Blame for Republican Losses - WSJ"
+        },
+        {
+          "id": "headline:90b337ad3de37707",
+          "kind": "war-iran",
+          "severity": "ALERT",
+          "title": "Vance blames Iran war for GOP midterm losses - PBS"
+        },
+        {
+          "id": "headline:421e3f4743e0ca4c",
+          "kind": "war-iran",
+          "severity": "ALERT",
+          "title": "Iran Update, November 4, 2026 - Institute for the Study of War"
+        },
+        {
+          "id": "headline:6a4e9dc101a1757e",
+          "kind": "war-iran",
+          "severity": "ALERT",
+          "title": "Trump confirms strikes on Iran as Tehran warns against return to war - AFP.com"
+        },
+        {
+          "id": "headline:b6ce1bcd90f751dc",
+          "kind": "war-ukraine",
+          "severity": "ALERT",
+          "title": "What to know about the Melania Trump-brokered ceasefire in Russian-occupied Oleshky - AP News"
+        },
+        {
+          "id": "headline:57a21ad6ee992e96",
+          "kind": "war-ukraine",
+          "severity": "ALERT",
+          "title": "Russian Offensive Campaign Assessment, November 4, 2026 - Institute for the Study of War"
+        },
+        {
+          "id": "headline:583628fdb46675a0",
+          "kind": "war-ukraine",
+          "severity": "ALERT",
+          "title": "Russia confirms new Ukraine peace talks as Melania Trump prepares to host ceasefire meeting - CNBC"
+        },
+        {
+          "id": "headline:5efba88de5e565e1",
+          "kind": "war-ukraine",
+          "severity": "ALERT",
+          "title": "Pope Leo’s appeals help bring humanitarian ceasefire to southern Ukraine - Vatican News"
+        },
+        {
+          "id": "headline:e8b24ea6c3b3f5b9",
+          "kind": "usgov",
+          "severity": "ALERT",
+          "title": "Supreme Court: SCOTUS Decisions & News on the U.S. Federal Court - NBC News"
+        },
+        {
+          "id": "headline:f6304544d0edab83",
+          "kind": "usgov",
+          "severity": "ALERT",
+          "title": "Democrats Win Control of Congress. Here’s How That Could Affect U.S. Foreign Policy. - Council on Foreign Relations"
+        },
+        {
+          "id": "headline:db580f48dc0ba9f9",
+          "kind": "usgov",
+          "severity": "ALERT",
+          "title": "Trump White House maps path to govern without Congress if Democrats win - Reuters"
+        },
+        {
+          "id": "headline:940bf23c01d39740",
+          "kind": "usgov",
+          "severity": "ALERT",
+          "title": "6 PNW lawmakers could gain powerful positions as Democrats flip Congress - Oregon Public Broadcasting - OPB"
+        },
+        {
+          "id": "neo:b6525019da5f0286",
+          "kind": "neo",
+          "severity": "STANDBY",
+          "title": "Close approach 2026 VP1"
+        },
+        {
+          "id": "neo:7ef188732835b7d0",
+          "kind": "neo",
+          "severity": "STANDBY",
+          "title": "Close approach 2026 VG3"
+        },
+        {
+          "id": "neo:6e5db1d2bf656873",
+          "kind": "neo",
+          "severity": "STANDBY",
+          "title": "Close approach 2026 VN1"
+        },
+        {
+          "id": "neo:77f0360ca43ad1fb",
+          "kind": "neo",
+          "severity": "STANDBY",
+          "title": "Close approach 2026 VK2"
+        },
+        {
+          "id": "neo:9934e838c1539fdc",
+          "kind": "neo",
+          "severity": "STANDBY",
+          "title": "Close approach 2019 XF2"
+        },
+        {
+          "id": "neo:1095427f35282423",
+          "kind": "neo",
+          "severity": "STANDBY",
+          "title": "Close approach 2026 QQ8"
+        },
+        {
+          "id": "neo:9931f86a7752cac2",
+          "kind": "neo",
+          "severity": "STANDBY",
+          "title": "Close approach 2026 VY1"
+        },
+        {
+          "id": "neo:da8d506430a87192",
+          "kind": "neo",
+          "severity": "STANDBY",
+          "title": "Close approach 2026 VT3"
+        },
+        {
+          "id": "clock:bulletin",
+          "kind": "clock",
+          "severity": "STANDBY",
+          "title": "Doomsday Clock"
+        }
+      ],
+      "trends": [
+        {
+          "category": "iran-war",
+          "name": "iran war",
+          "volume": null
+        },
+        {
+          "category": "ukraine-war",
+          "name": "ukraine war",
+          "volume": null
+        },
+        {
+          "category": "us-gov",
+          "name": "us gov",
+          "volume": null
+        }
+      ],
+      "triggers": []
     }
   ]
 }

@@ -1,18 +1,9 @@
 {
   "items": [
     {
-      "id": "radar:577df950f7803bec",
-      "title": "US and Europe preparedness surge",
-      "note": "You can go your own way: US diverges from world on emergency preparedness - The Guardian",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPRzdzcXR0SkxnNkpMQ1hZcHJNY2FSakZ2cjNTZUN5Uzk2N1lLNW1aSWJxemJwMURiaG9XYU8tZjFlZEM1UXE3Q1JibjlxQVdSVWpPbUx3cFB5Q2hvRk9SNm4zWmlxU3FZMm92YXBCOFRPY2JnVGZSUW0zVEJWdTRLaC01R19QZFo2Q1E?oc=5",
-      "source": "The Guardian",
-      "kind": "radar",
-      "lane": "news",
-      "severity": "ALERT",
-      "confidence": "confirmed",
-      "sourceCount": 8,
-      "score": 96,
       "call": "real",
+      "confidence": "confirmed",
+      "date": "2026-11-02",
       "drivers": [
         "officials",
         "social"
@@ -20,48 +11,48 @@
       "followThrough": [
         "official step"
       ],
-      "velocity": "building",
+      "id": "radar:577df950f7803bec",
+      "kind": "radar",
+      "label": "Nov 2, 2026 6:02 AM CT",
+      "lane": "news",
+      "note": "You can go your own way: US diverges from world on emergency preparedness - The Guardian",
+      "published": "2026-11-02T06:02:00-06:00",
+      "read": "An official body acted or is named in the sources: an agency, a budget, a law, or a procurement step. That is follow-through.",
       "samples": [
         {
+          "source": "The Guardian",
           "title": "You can go your own way: US diverges from world on emergency preparedness - The Guardian",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPRzdzcXR0SkxnNkpMQ1hZcHJNY2FSakZ2cjNTZUN5Uzk2N1lLNW1aSWJxemJwMURiaG9XYU8tZjFlZEM1UXE3Q1JibjlxQVdSVWpPbUx3cFB5Q2hvRk9SNm4zWmlxU3FZMm92YXBCOFRPY2JnVGZSUW0zVEJWdTRLaC01R19QZFo2Q1E?oc=5",
-          "source": "The Guardian"
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPRzdzcXR0SkxnNkpMQ1hZcHJNY2FSakZ2cjNTZUN5Uzk2N1lLNW1aSWJxemJwMURiaG9XYU8tZjFlZEM1UXE3Q1JibjlxQVdSVWpPbUx3cFB5Q2hvRk9SNm4zWmlxU3FZMm92YXBCOFRPY2JnVGZSUW0zVEJWdTRLaC01R19QZFo2Q1E?oc=5"
         },
         {
+          "source": "Department of Energy (.gov)",
           "title": "Rising to the Challenge: DOE/NNSA Recognizes National Preparedness Month with the Phoenix Ascent Exercise - Department of Energy (.gov)",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNdkFKTkg3N1pKMnJuamNMV09QNlNkT1pGcWwyZzZNT1NpaEs2QVhNYW5OdERnTkhTWnpaOXpiUXJVYVAyTE5MQ01LWWlTVWtXd1lDOE9BS0h1LXY2dGROb0F1TUVCZWFyLUtaNXAwLTB2OXNESnJLdUNKRFotei16b1lfcUpYaDVjODFnTkRrWE1GS01MVnk1OVNBeUdxWWQxWUswUkhaWGJLR1prMnotS1ZlSXQwZw?oc=5",
-          "source": "Department of Energy (.gov)"
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNdkFKTkg3N1pKMnJuamNMV09QNlNkT1pGcWwyZzZNT1NpaEs2QVhNYW5OdERnTkhTWnpaOXpiUXJVYVAyTE5MQ01LWWlTVWtXd1lDOE9BS0h1LXY2dGROb0F1TUVCZWFyLUtaNXAwLTB2OXNESnJLdUNKRFotei16b1lfcUpYaDVjODFnTkRrWE1GS01MVnk1OVNBeUdxWWQxWUswUkhaWGJLR1prMnotS1ZlSXQwZw?oc=5"
         },
         {
+          "source": "City of Boise",
           "title": "City of Boise Awarded $25,000 for Heat Planning and Preparedness - City of Boise",
-          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNUmJlMWxfcHZxNnAzNW03VkxwenFVeGVKclJCdGhuSnhzenBZZ3ZsdlpnWmtaSFNvTVZpS1djSHpoYWM4UDlZSlVybU1UR1lQSG55MlR6Y2d5XzA4dWpWdjFyWEdnWnp0YmJZSVI2ck9qR3M1ZjVORE05S3E2TFZzRzhBdllwemlnV0xreUVRY1lVc0lOcGVyMHRuTFVLUmtOc3RqbTkyUDJJbEZKR2NNbE9odktsUllxVTJYLUpIeUY?oc=5",
-          "source": "City of Boise"
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNUmJlMWxfcHZxNnAzNW03VkxwenFVeGVKclJCdGhuSnhzenBZZ3ZsdlpnWmtaSFNvTVZpS1djSHpoYWM4UDlZSlVybU1UR1lQSG55MlR6Y2d5XzA4dWpWdjFyWEdnWnp0YmJZSVI2ck9qR3M1ZjVORE05S3E2TFZzRzhBdllwemlnV0xreUVRY1lVc0lOcGVyMHRuTFVLUmtOc3RqbTkyUDJJbEZKR2NNbE9odktsUllxVTJYLUpIeUY?oc=5"
         },
         {
+          "source": "European Civil Protection and Humanitarian Aid Operations",
           "title": "Commission takes new steps to prepare Europeans for growing crisis risks - European Civil Protection and Humanitarian Aid Operations",
-          "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPUmI4aHpIYlpZNjdtOW1xXzlPaDFvbE1QWDMzUFpXQkRwTTR6TUFJNjdOU0owSkJPbFhLblkwbW1sbE9NbWxwV25uZ0RLWHY0SEVFVUxqd0JRdmM2SWdCVXE0REw1SzFYYjY0UHFaclNZdTF5YkYwMjB2WGh6RThWU1NtMEpnbkd5Z0xXa2l4blVQVWF0WDVjOUlqSVo0YkxlQTVoWjNpOVFldFVCX3Q4WDEzVENiTGppTHNUZjE5Zm9mTndaZFZvVGFISUhMdERSYk1vdEtNSVVpcDFITDYtbDU3eG0wYU0?oc=5",
-          "source": "European Civil Protection and Humanitarian Aid Operations"
+          "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPUmI4aHpIYlpZNjdtOW1xXzlPaDFvbE1QWDMzUFpXQkRwTTR6TUFJNjdOU0owSkJPbFhLblkwbW1sbE9NbWxwV25uZ0RLWHY0SEVFVUxqd0JRdmM2SWdCVXE0REw1SzFYYjY0UHFaclNZdTF5YkYwMjB2WGh6RThWU1NtMEpnbkd5Z0xXa2l4blVQVWF0WDVjOUlqSVo0YkxlQTVoWjNpOVFldFVCX3Q4WDEzVENiTGppTHNUZjE5Zm9mTndaZFZvVGFISUhMdERSYk1vdEtNSVVpcDFITDYtbDU3eG0wYU0?oc=5"
         }
       ],
-      "read": "An official body acted or is named in the sources: an agency, a budget, a law, or a procurement step. That is follow-through.",
-      "date": "2026-11-02",
-      "label": "Nov 2, 2026 6:02 AM CT",
-      "published": "2026-11-02T06:02:00-06:00",
-      "soWhat": "no action needed"
+      "score": 96,
+      "severity": "ALERT",
+      "soWhat": "no action needed",
+      "source": "The Guardian",
+      "sourceCount": 8,
+      "title": "US and Europe preparedness surge",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPRzdzcXR0SkxnNkpMQ1hZcHJNY2FSakZ2cjNTZUN5Uzk2N1lLNW1aSWJxemJwMURiaG9XYU8tZjFlZEM1UXE3Q1JibjlxQVdSVWpPbUx3cFB5Q2hvRk9SNm4zWmlxU3FZMm92YXBCOFRPY2JnVGZSUW0zVEJWdTRLaC01R19QZFo2Q1E?oc=5",
+      "velocity": "building"
     },
     {
-      "id": "radar:04a94119d0a7648b",
-      "title": "Pentagon off-grid and 90-day stories",
-      "note": "Pentagon orders bases to plan for 90 days without the grid as Britain urges families to stockpile food and water - Fortune",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNdXJuX0NKeklxRkMzdjV2MUQ5MHVpWGJubmZ0MVhwZmlWTjJyTkNYbnBnQXRaS0poX3djd2I1dl9NeWZEcDlNV2FOMHhuX2tiNkFhNU8tRmhneWFIQjdmZkxSRTVVZnZYYjB5RDMwY3ZlWWVDSWlOTlpjWE1jUW14ZWtNVWJKSmJTX2RxYUhPa1RzeFI0NjJEMy1B?oc=5",
-      "source": "Fortune",
-      "kind": "radar",
-      "lane": "news",
-      "severity": "ALERT",
-      "confidence": "confirmed",
-      "sourceCount": 8,
-      "score": 64,
       "call": "real",
+      "confidence": "confirmed",
+      "date": "2026-10-26",
       "drivers": [
         "officials",
         "press",
@@ -70,48 +61,48 @@
       "followThrough": [
         "official step"
       ],
-      "velocity": "slow",
+      "id": "radar:04a94119d0a7648b",
+      "kind": "radar",
+      "label": "Oct 26, 2026 2:00 AM CT",
+      "lane": "news",
+      "note": "Pentagon orders bases to plan for 90 days without the grid as Britain urges families to stockpile food and water - Fortune",
+      "published": "2026-10-26T02:00:00-05:00",
+      "read": "An official body acted or is named in the sources: an agency, a budget, a law, or a procurement step. That is follow-through.",
       "samples": [
         {
+          "source": "Fortune",
           "title": "Pentagon orders bases to plan for 90 days without the grid as Britain urges families to stockpile food and water - Fortune",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNdXJuX0NKeklxRkMzdjV2MUQ5MHVpWGJubmZ0MVhwZmlWTjJyTkNYbnBnQXRaS0poX3djd2I1dl9NeWZEcDlNV2FOMHhuX2tiNkFhNU8tRmhneWFIQjdmZkxSRTVVZnZYYjB5RDMwY3ZlWWVDSWlOTlpjWE1jUW14ZWtNVWJKSmJTX2RxYUhPa1RzeFI0NjJEMy1B?oc=5",
-          "source": "Fortune"
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNdXJuX0NKeklxRkMzdjV2MUQ5MHVpWGJubmZ0MVhwZmlWTjJyTkNYbnBnQXRaS0poX3djd2I1dl9NeWZEcDlNV2FOMHhuX2tiNkFhNU8tRmhneWFIQjdmZkxSRTVVZnZYYjB5RDMwY3ZlWWVDSWlOTlpjWE1jUW14ZWtNVWJKSmJTX2RxYUhPa1RzeFI0NjJEMy1B?oc=5"
         },
         {
+          "source": "Fox News",
           "title": "Inside the Pentagon's doomsday plan to keep America fighting if global war erupts - Fox News",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQeUxQdFZ3Rjg4Sm9EdTZMUTRrckdjMV91M3hKUDlQM095VTBScHZTdVNzSU91U0FoVDhLbFZRU24xS2stb1dETnlSdG1mdTdPb1pFZHlHOVBpQnh1ZWNkTGJSTk94SjItd0syOU54NmduRUFwa0JVd3VOTHRFT2RsbXpOYjJxSF9vdE1nc3ZmbDlacjF6SXBPU0JydjhzSXBNd3lVZ1VB0gGrAUFVX3lxTFBPalR4RVBjeFNlZFFzQ0dXRGdfSTRyYk1wT3MxQjhvaGZhazE5NmE5ZWhlTzFib0ZUU2p3T2lOSFJNMjZUN2h4ZFJDOVpxb20tWFVHMjJoRnVlVWVCdUlrNFc3LUJtQ0NzeW5BMGNGcWhVVmNSMWNVR2x6UkFDMlFSdU9GbUttNlVLZUVJbWZUVHRGUlJ3QXpyQWhFS1cwZDdyUExVblZGMDBQYw?oc=5",
-          "source": "Fox News"
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQeUxQdFZ3Rjg4Sm9EdTZMUTRrckdjMV91M3hKUDlQM095VTBScHZTdVNzSU91U0FoVDhLbFZRU24xS2stb1dETnlSdG1mdTdPb1pFZHlHOVBpQnh1ZWNkTGJSTk94SjItd0syOU54NmduRUFwa0JVd3VOTHRFT2RsbXpOYjJxSF9vdE1nc3ZmbDlacjF6SXBPU0JydjhzSXBNd3lVZ1VB0gGrAUFVX3lxTFBPalR4RVBjeFNlZFFzQ0dXRGdfSTRyYk1wT3MxQjhvaGZhazE5NmE5ZWhlTzFib0ZUU2p3T2lOSFJNMjZUN2h4ZFJDOVpxb20tWFVHMjJoRnVlVWVCdUlrNFc3LUJtQ0NzeW5BMGNGcWhVVmNSMWNVR2x6UkFDMlFSdU9GbUttNlVLZUVJbWZUVHRGUlJ3QXpyQWhFS1cwZDdyUExVblZGMDBQYw?oc=5"
         },
         {
+          "source": "Newsweek",
           "title": "What Is FORTRESS? Pentagon’s 90-Day Plan to Keep US Military Bases Running - Newsweek",
-          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBmZkZwbHprRGItX2J6NG9GeUhhcFNYTkZ3VExjODZsMEJudTJYRmRxS0VLU2o0QndWQ3pkVWoyYU9jQU80eWxuY09SNVpCZnBnTEwzbDJPMUhyeW5mSTd1aFBuWFFYZV91V1AtRGxXQ21FOTVjZHI1a1RKbw?oc=5",
-          "source": "Newsweek"
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBmZkZwbHprRGItX2J6NG9GeUhhcFNYTkZ3VExjODZsMEJudTJYRmRxS0VLU2o0QndWQ3pkVWoyYU9jQU80eWxuY09SNVpCZnBnTEwzbDJPMUhyeW5mSTd1aFBuWFFYZV91V1AtRGxXQ21FOTVjZHI1a1RKbw?oc=5"
         },
         {
+          "source": "Cleveland.com",
           "title": "Why the Pentagon wants major U.S. military bases ready to stand alone - Cleveland.com",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQand0MUt1NUtwS3QtbXdkTlcyQlFFMHA3U3pSOVFnWE4xbFJFYVM4dU5tc2g5Q0UwQlM4VWZCaV85M3lTN01vbmlBSS1GVk9WMEtHR2lzN2VtVkJpUEQxT2RHbVFjbDNKTXJJWXBtM2VRLTBKVWljVFl6UG9aMnF4elU1b1B6eHpBakJESDBvSXlvQlFwQjg0WlByV3FUeThxRUZWcVRIbll1akVqN05WctIBxAFBVV95cUxPeVVRc1lwRGRvZkNMWnNoS19VTWFuYlBVVFp0TTlyamRKY3RGdGtwdHNxbTg1X2o2MkhuVndKV2l0SE5YTFNPaU9OMkd4N1JnMDkzcmxOQWpXNDNtZ2tRNjk5dkoxUm1VMGYxSE53VTZENXZJUzhscFVtTWR5ZC03ek1DTDYwU1RMYjFvU0VmOG1Lem1MM1R0dlM0c0pSdGFPYXZJUUFJVG5oOTJhYjRKQWdTMnJIZ3VDM1hpb3Ruanc2TjMz?oc=5",
-          "source": "Cleveland.com"
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQand0MUt1NUtwS3QtbXdkTlcyQlFFMHA3U3pSOVFnWE4xbFJFYVM4dU5tc2g5Q0UwQlM4VWZCaV85M3lTN01vbmlBSS1GVk9WMEtHR2lzN2VtVkJpUEQxT2RHbVFjbDNKTXJJWXBtM2VRLTBKVWljVFl6UG9aMnF4elU1b1B6eHpBakJESDBvSXlvQlFwQjg0WlByV3FUeThxRUZWcVRIbll1akVqN05WctIBxAFBVV95cUxPeVVRc1lwRGRvZkNMWnNoS19VTWFuYlBVVFp0TTlyamRKY3RGdGtwdHNxbTg1X2o2MkhuVndKV2l0SE5YTFNPaU9OMkd4N1JnMDkzcmxOQWpXNDNtZ2tRNjk5dkoxUm1VMGYxSE53VTZENXZJUzhscFVtTWR5ZC03ek1DTDYwU1RMYjFvU0VmOG1Lem1MM1R0dlM0c0pSdGFPYXZJUUFJVG5oOTJhYjRKQWdTMnJIZ3VDM1hpb3Ruanc2TjMz?oc=5"
         }
       ],
-      "read": "An official body acted or is named in the sources: an agency, a budget, a law, or a procurement step. That is follow-through.",
-      "date": "2026-10-26",
-      "label": "Oct 26, 2026 2:00 AM CT",
-      "published": "2026-10-26T02:00:00-05:00",
-      "soWhat": "no action needed"
+      "score": 64,
+      "severity": "ALERT",
+      "soWhat": "no action needed",
+      "source": "Fortune",
+      "sourceCount": 8,
+      "title": "Pentagon off-grid and 90-day stories",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNdXJuX0NKeklxRkMzdjV2MUQ5MHVpWGJubmZ0MVhwZmlWTjJyTkNYbnBnQXRaS0poX3djd2I1dl9NeWZEcDlNV2FOMHhuX2tiNkFhNU8tRmhneWFIQjdmZkxSRTVVZnZYYjB5RDMwY3ZlWWVDSWlOTlpjWE1jUW14ZWtNVWJKSmJTX2RxYUhPa1RzeFI0NjJEMy1B?oc=5",
+      "velocity": "slow"
     },
     {
-      "id": "radar:39da30b683ff4744",
-      "title": "Official follow-through",
-      "note": "Government Watchdog Dings FEMA for Staff Reductions and Lack of Planning - Taxpayers for Common Sense",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNVmt1cVNXWEFjME5BMGhkRDZ1cUJFWUJWWlVXQkEtelFhU0l3ZUxzcDcyQlN5NjYwcE8tWTNDU3JNUWtHZFpmeWpNcHZqaXlpNGxCWU9MRU9YLTFYTi13Nllia1ZpVXEzbFl5a3o5TXplUzJ1VGNZTXNZdlFPR3RBSGIyTFh3c1EwdnE4bHduNWVZREE3ZTIzbmR5Z3pKdWsydk5yNGpWMWZQZDg?oc=5",
-      "source": "Taxpayers for Common Sense",
-      "kind": "radar",
-      "lane": "news",
-      "severity": "ALERT",
-      "confidence": "confirmed",
-      "sourceCount": 8,
-      "score": 68,
       "call": "real",
+      "confidence": "confirmed",
+      "date": "2026-10-30",
       "drivers": [
         "officials",
         "social"
@@ -119,34 +110,43 @@
       "followThrough": [
         "official step"
       ],
-      "velocity": "slow",
+      "id": "radar:39da30b683ff4744",
+      "kind": "radar",
+      "label": "Oct 30, 2026 2:00 AM CT",
+      "lane": "news",
+      "note": "Government Watchdog Dings FEMA for Staff Reductions and Lack of Planning - Taxpayers for Common Sense",
+      "published": "2026-10-30T02:00:00-05:00",
+      "read": "An official body acted or is named in the sources: an agency, a budget, a law, or a procurement step. That is follow-through.",
       "samples": [
         {
+          "source": "Taxpayers for Common Sense",
           "title": "Government Watchdog Dings FEMA for Staff Reductions and Lack of Planning - Taxpayers for Common Sense",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNVmt1cVNXWEFjME5BMGhkRDZ1cUJFWUJWWlVXQkEtelFhU0l3ZUxzcDcyQlN5NjYwcE8tWTNDU3JNUWtHZFpmeWpNcHZqaXlpNGxCWU9MRU9YLTFYTi13Nllia1ZpVXEzbFl5a3o5TXplUzJ1VGNZTXNZdlFPR3RBSGIyTFh3c1EwdnE4bHduNWVZREE3ZTIzbmR5Z3pKdWsydk5yNGpWMWZQZDg?oc=5",
-          "source": "Taxpayers for Common Sense"
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNVmt1cVNXWEFjME5BMGhkRDZ1cUJFWUJWWlVXQkEtelFhU0l3ZUxzcDcyQlN5NjYwcE8tWTNDU3JNUWtHZFpmeWpNcHZqaXlpNGxCWU9MRU9YLTFYTi13Nllia1ZpVXEzbFl5a3o5TXplUzJ1VGNZTXNZdlFPR3RBSGIyTFh3c1EwdnE4bHduNWVZREE3ZTIzbmR5Z3pKdWsydk5yNGpWMWZQZDg?oc=5"
         },
         {
+          "source": "The Guardian",
           "title": "Hurricane Isaias ‘biggest test’ for Fema since Trump cuts, experts warn - The Guardian",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPdDBlUDB2YnUzWHBCa2FFWTE3QVhrLW5TSmYtcF80bE9DS3lsM3hJbE9lbC1kYmVIR3JMcXhEbWEtU0ZIdWV0Z0s3bl91LUl4YlA0RFA0US1fVmJTeWlWTmhjaVptUFlvNE44QVV0WVd4dVhDTnhmeHc5MnZPOE9BMzJrZFlFRHc?oc=5",
-          "source": "The Guardian"
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPdDBlUDB2YnUzWHBCa2FFWTE3QVhrLW5TSmYtcF80bE9DS3lsM3hJbE9lbC1kYmVIR3JMcXhEbWEtU0ZIdWV0Z0s3bl91LUl4YlA0RFA0US1fVmJTeWlWTmhjaVptUFlvNE44QVV0WVd4dVhDTnhmeHc5MnZPOE9BMzJrZFlFRHc?oc=5"
         },
         {
+          "source": "Roll Call",
           "title": "Defense Production Act funds steered to GOP-backed energy projects - Roll Call",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNME9KRUtjdGxEbS1jRGhKUm1iS0U1VnNTOXdpWkVDRE1fVldQa3U1VDFFd1c0Nmx1N0tMUFpvbHQwWklCRnBlUTQzUDFMdXotRlhMVTgwUE5JbV92Qk5Md194N1Y2dmJYZmtjcGFzZTkzb2N0eUVDaVlJbDh4VXFjbDZ3TmJLdlEzN1U1ck55V2VSbzl0Z2xVLUsxd1ZrM1JR?oc=5",
-          "source": "Roll Call"
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNME9KRUtjdGxEbS1jRGhKUm1iS0U1VnNTOXdpWkVDRE1fVldQa3U1VDFFd1c0Nmx1N0tMUFpvbHQwWklCRnBlUTQzUDFMdXotRlhMVTgwUE5JbV92Qk5Md194N1Y2dmJYZmtjcGFzZTkzb2N0eUVDaVlJbDh4VXFjbDZ3TmJLdlEzN1U1ck55V2VSbzl0Z2xVLUsxd1ZrM1JR?oc=5"
         },
         {
+          "source": "Federal News Network",
           "title": "The federal government knows it’s cheaper to prevent disasters than rebuild after them - Federal News Network",
-          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQTFZielBKYlp2NTdmdkdjdXZyNXRUR1dJRHBic29DTzVLME9HdmhtMlRzcTh4c205T09FcG9lU2JsZDVtd2FibUhlcEx4VFFjVkF1bUVGZjRmUVVlLTBUUlBwOUJCRDBSNy1PdFVacm1ocWNxVWpRMkpxaUZvdjRJc1p2eXd4OURGSEo4RWdoYWNRdXNlSC1hM2Izb3pRaUhJbXQzZ25rZ3VRMGJCMDRrRDNIcW15ZHRjOGdDYk8ydHlVUlcxbktvOEFnRWtzOHdiZ3c?oc=5",
-          "source": "Federal News Network"
+          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQTFZielBKYlp2NTdmdkdjdXZyNXRUR1dJRHBic29DTzVLME9HdmhtMlRzcTh4c205T09FcG9lU2JsZDVtd2FibUhlcEx4VFFjVkF1bUVGZjRmUVVlLTBUUlBwOUJCRDBSNy1PdFVacm1ocWNxVWpRMkpxaUZvdjRJc1p2eXd4OURGSEo4RWdoYWNRdXNlSC1hM2Izb3pRaUhJbXQzZ25rZ3VRMGJCMDRrRDNIcW15ZHRjOGdDYk8ydHlVUlcxbktvOEFnRWtzOHdiZ3c?oc=5"
         }
       ],
-      "read": "An official body acted or is named in the sources: an agency, a budget, a law, or a procurement step. That is follow-through.",
-      "date": "2026-10-30",
-      "label": "Oct 30, 2026 2:00 AM CT",
-      "published": "2026-10-30T02:00:00-05:00",
-      "soWhat": "no action needed"
+      "score": 68,
+      "severity": "ALERT",
+      "soWhat": "no action needed",
+      "source": "Taxpayers for Common Sense",
+      "sourceCount": 8,
+      "title": "Official follow-through",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNVmt1cVNXWEFjME5BMGhkRDZ1cUJFWUJWWlVXQkEtelFhU0l3ZUxzcDcyQlN5NjYwcE8tWTNDU3JNUWtHZFpmeWpNcHZqaXlpNGxCWU9MRU9YLTFYTi13Nllia1ZpVXEzbFl5a3o5TXplUzJ1VGNZTXNZdlFPR3RBSGIyTFh3c1EwdnE4bHduNWVZREE3ZTIzbmR5Z3pKdWsydk5yNGpWMWZQZDg?oc=5",
+      "velocity": "slow"
     }
   ],
   "note": "Public news search only. Spread velocity is how many of those headlines are from the last 3 days. Score is a desk count, not a prediction."
