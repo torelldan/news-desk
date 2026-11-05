@@ -675,7 +675,7 @@
     },
     {
       "date": "2026-11-05",
-      "label": "Nov 5, 2026 2:41 PM CT",
+      "label": "Nov 5, 2026 3:12 PM CT",
       "outlooks": [
         {
           "id": "quake:de68330bae9edd43",
@@ -1362,7 +1362,13 @@
           "title": "Doomsday Clock"
         }
       ],
-      "trends": [],
+      "trends": [
+        {
+          "category": "war",
+          "name": "Secretary of War",
+          "volume": null
+        }
+      ],
       "triggers": []
     }
   ]

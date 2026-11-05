@@ -1,5 +1,25 @@
 {
-  "items": [],
+  "items": [
+    {
+      "action": "Read the source. No kit change unless you are in the named area.",
+      "category": "war",
+      "confidence": "rumor",
+      "id": "trend:ad8d3e694820a2c0",
+      "kind": "trend",
+      "lane": "x",
+      "name": "Secretary of War",
+      "note": "US trend · war",
+      "place": "US",
+      "samples": [],
+      "severity": "ALERT",
+      "soWhat": "Money: no direct quote move. Supplies: no change. Travel: no change. Safety: read the source. Action: Read the source. No kit change unless you are in the named area.",
+      "source": "X trends",
+      "sourceCount": 1,
+      "title": "Secretary of War",
+      "url": "https://x.com/search?q=Secretary%20of%20War&src=typed_query&f=live",
+      "volume": null
+    }
+  ],
   "mode": "trends",
-  "note": "X trends by WOEID (US 23424977 and worldwide 1). Kept only when the name matches a threat or preparedness theme. The endpoint answered and none of the names matched."
+  "note": "X trends by WOEID (US 23424977 and worldwide 1). Kept only when the name matches a threat or preparedness theme."
 }
