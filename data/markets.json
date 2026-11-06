@@ -921,6 +921,27 @@
       ],
       "headlines": [
         {
+          "id": "headline:ddd582816742d9ba",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Bloomberg.com",
+          "sourceId": "headline",
+          "title": "Carney, Bank of Canada Renew Framework to Focus on 2% Inflation Target - Bloomberg.com",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOczRHYVNTT0tlZ1NzMmpsTHJtdTY2ZkxLYlBRVmVjdGpZYW1lRElmeXVpZEhuZ3R6V0dhWGxBRUZsQXp5THZlbmExUG43T0gtX2dOSUJtMzFjWWE2bDlWSE1iV09LVlg3RmhhekwzSzQyVjFFV29ldThZS0RjbGc0emFOZ1lVVHBKQkJERkxKMjBPRks1OTM2QzU1bEZzSGFaRTV5ZXhLdDB0N1BwQ3RRMHdYaVBYalFHSmM4?oc=5",
+          "published": "2026-11-05T16:46:35-06:00",
+          "date": "2026-11-05",
+          "label": "Nov 5, 2026 4:46 PM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:39a082ca0d13201e",
           "kind": "headline",
           "lane": "news",
@@ -933,27 +954,6 @@
           "published": "2026-11-05T15:59:55-06:00",
           "date": "2026-11-05",
           "label": "Nov 5, 2026 3:59 PM CT",
-          "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:b17dfcf5eb38a1db",
-          "kind": "headline",
-          "lane": "news",
-          "source": "WSJ",
-          "sourceId": "headline",
-          "title": "Bank of Canada Gov. Macklem Pledges to Proceed Carefully on Further Rate Increases - WSJ",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQOXFIN1hXNGpRRHBPc2pNQU5qNnZUQkdZQV95NzhCcTR2anNDcERhLVBXbU93REhqZHdfU1ZjSnB3dU5wRHBsVmhWNlBJaHN6Tms3ZnJQenBCS1FTX3Q2ZVE5U0RRb2lwRE95YU5CbWtzRE9SSWVZeWpKaDdCTWxGdU0zR1pRaWduZGFUUGxERUkzUW82dEd4Y3k0WE5PMUt1RzlmNlFzR0ZuT1Vtd2lYSmdRZVpyS0k1YWxwUDB1TXlHN00?oc=5",
-          "published": "2026-11-05T15:27:56-06:00",
-          "date": "2026-11-05",
-          "label": "Nov 5, 2026 3:27 PM CT",
           "weekday": "Thu",
           "timeKnown": true,
           "tags": [
@@ -1101,6 +1101,27 @@
           "published": "2026-11-03T13:03:58-06:00",
           "date": "2026-11-03",
           "label": "Nov 3, 2026 1:03 PM CT",
+          "weekday": "Tue",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:b17dfcf5eb38a1db",
+          "kind": "headline",
+          "lane": "news",
+          "source": "WSJ",
+          "sourceId": "headline",
+          "title": "Bank of Canada Gov. Macklem Pledges to Proceed Carefully on Further Rate Increases - WSJ",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQOXFIN1hXNGpRRHBPc2pNQU5qNnZUQkdZQV95NzhCcTR2anNDcERhLVBXbU93REhqZHdfU1ZjSnB3dU5wRHBsVmhWNlBJaHN6Tms3ZnJQenBCS1FTX3Q2ZVE5U0RRb2lwRE95YU5CbWtzRE9SSWVZeWpKaDdCTWxGdU0zR1pRaWduZGFUUGxERUkzUW82dEd4Y3k0WE5PMUt1RzlmNlFzR0ZuT1Vtd2lYSmdRZVpyS0k1YWxwUDB1TXlHN00?oc=5",
+          "published": "2026-11-03T12:37:00-06:00",
+          "date": "2026-11-03",
+          "label": "Nov 3, 2026 12:37 PM CT",
           "weekday": "Tue",
           "timeKnown": true,
           "tags": [
@@ -1738,27 +1759,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:fa1f81aa9ec48d7f",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Financial Post",
-          "sourceId": "headline",
-          "title": "Economists call for at least one more rate hike as Bank of Canada looks to 'stamp out' inflation - Financial Post",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPUXk2WkJOOFNZVEVFbXJfOGNQM01yajAzQjVRX2Y2QzctNnYxQlRNRUhJUVIzWUI4Qkp4cFg5QTNTLVh4dXBlZDVoUjIza2x1UkVsQjBadDhCOXNPTUJfUFRBcTdqb0k4UVpmS3ZzcTg5UXNqLUd1dExvVzJBTTlqbUFtZjI0Q0lfN080TlRkRVpGMERyYXdUcDVJNEwzWUlud1ptUHZWRXBKbFZyTllBR1llYy1DNDljbGJfOGFNa0paN1Z1YmdONA?oc=5",
-          "published": "2026-10-29T08:32:54-05:00",
-          "date": "2026-10-29",
-          "label": "Oct 29, 2026 8:32 AM CT",
-          "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ]
     },
@@ -2193,9 +2193,9 @@
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNXzVnLTRGWnJIZy1yeUM0azl3N2ozc1dGSExQaDJEdmZVWHlCbG5QUHhpNHpYTXptSjBVbDFDVzJmRVota256d21aeTk4Nkl6VGlFSWNqZlhYVkJtckM1TzhtT0l0bE1YNFlEbGROM0NBZ0NDUXk0RDdUazVfQW5ubkp2VlZZakdGODhHeXppLVRRQ2N2TkhfR1d4b2NnaDhvVUtSR1pfTTN0SjFqaDFYV2NZV3ZLVmJqOEFoZnhjb9IBzgFBVV95cUxQVzFCZi1QdXZLUDRyWWlObm50cnJpZ21VQnVtbWd5QjltVWtEeTRPcUJTZWVLRWRrcjcwdjBWRnZvRG5YTzJlaTljLUlSS3FyX01HUUk5LXlPOHUtVGF1M0ZoTXF3MF9IWXEwZy1fNW8xMmgwV3poZVhFd2lyZElzankzLTJ0YWZYakZHeGxPcXo2TGlrb1QyNUtIT0JJMFM2cTBPdkZrYlp1TlRkSjdRWEwtaFRnbXBVWV9CMGRBMEVUZ19UN2NjZmFxaW1pdw?oc=5",
-          "published": "2026-10-27T05:23:53-05:00",
+          "published": "2026-10-27T02:00:00-05:00",
           "date": "2026-10-27",
-          "label": "Oct 27, 2026 5:23 AM CT",
+          "label": "Oct 27, 2026 2:00 AM CT",
           "weekday": "Tue",
           "timeKnown": true,
           "tags": [
@@ -3244,6 +3244,27 @@
       ],
       "headlines": [
         {
+          "id": "headline:1c2cc69b42ea59c3",
+          "kind": "headline",
+          "lane": "news",
+          "source": "China Daily",
+          "sourceId": "headline",
+          "title": "CIIE critical platform for China market - China Daily",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE05UmJUaGwzUDlhWlZqRHV5anE0VHpUbS1uVzF3TFI4b2pWS0dlUFlQMDk2c0dla2RDQzg1aDNpODRneFQ4OW9saFBJOWo0OVFIQlZzUXphNkxTMEdmYUJCLUZHalJsRWVraGw1Z3BoZmZTeWhnRjJGYVYyR05oQQ?oc=5",
+          "published": "2026-11-05T17:12:32-06:00",
+          "date": "2026-11-05",
+          "label": "Nov 5, 2026 5:12 PM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:1609c952ef7db2bd",
           "kind": "headline",
           "lane": "news",
@@ -4061,27 +4082,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:d5b767948fa12846",
-          "kind": "headline",
-          "lane": "news",
-          "source": "The Straits Times",
-          "sourceId": "headline",
-          "title": "Chinese regulators to hold talks on market support tools: Media - The Straits Times",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQbE1kMmQ3LW5zV1dtUDNDVTFIa2llUmFmR1V3bUVoZHl4d3FUQ3FPMnE4RVpxT1hoUWVBd2FWd0dHSHBzSTFCTGtUY2hsV2RCYVVYeHRhVnNwTjllTEFzbFAtLWJyR0dBRzhscmoyVVhqMEpEYU5PVU1UNmhic2lsRGJUY0tVcHloZm8tMFNqR00xeHZSRFNEN0RWQTNLUQ?oc=5",
-          "published": "2026-11-01T19:55:00-06:00",
-          "date": "2026-11-01",
-          "label": "Nov 1, 2026 7:55 PM CT",
-          "weekday": "Sun",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ]
     },
@@ -4101,9 +4101,9 @@
             }
           ],
           "holidays": [],
-          "level": 6231.54,
-          "change": -34.17,
-          "changePct": -0.55,
+          "level": 6265.71,
+          "change": 121.15,
+          "changePct": 1.97,
           "asOf": "2026-11-05",
           "source": "https://finance.yahoo.com/quote/%5ESTOXX50E"
         }
@@ -4971,9 +4971,9 @@
             }
           ],
           "holidays": [],
-          "level": 62188.63,
-          "change": -893.23,
-          "changePct": -1.42,
+          "level": 57309.04,
+          "change": -4879.59,
+          "changePct": -7.85,
           "asOf": "2026-11-05",
           "source": "https://finance.yahoo.com/quote/%5EN225"
         },

@@ -675,8 +675,13 @@
     },
     {
       "date": "2026-11-05",
-      "label": "Nov 5, 2026 4:57 PM CT",
+      "label": "Nov 5, 2026 6:37 PM CT",
       "outlooks": [
+        {
+          "id": "quake:4aacdd22d8fcf171",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
         {
           "id": "quake:734d191ecf71fad1",
           "outlook": "First reading. Watch the next 72 hours.",
@@ -708,17 +713,17 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:d0e17ff63b086de1",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ALERT"
-        },
-        {
           "id": "headline:90b337ad3de37707",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
         {
           "id": "headline:421e3f4743e0ca4c",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:4244127e9d33cc93",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
@@ -733,17 +738,17 @@
           "severity": "ALERT"
         },
         {
+          "id": "headline:a5c4e99876afbe8b",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
           "id": "headline:57a21ad6ee992e96",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
         {
-          "id": "headline:583628fdb46675a0",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ALERT"
-        },
-        {
-          "id": "headline:5efba88de5e565e1",
+          "id": "headline:973092ca57a30c74",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
@@ -758,12 +763,12 @@
           "severity": "ALERT"
         },
         {
-          "id": "headline:db580f48dc0ba9f9",
+          "id": "headline:2a7d9bd233dda8db",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
         {
-          "id": "headline:940bf23c01d39740",
+          "id": "headline:db580f48dc0ba9f9",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
@@ -815,6 +820,12 @@
       ],
       "threats": [
         {
+          "id": "quake:4aacdd22d8fcf171",
+          "kind": "quake",
+          "severity": "STANDBY",
+          "title": "M4.6 147 km SSE of False Pass, Alaska"
+        },
+        {
           "id": "quake:734d191ecf71fad1",
           "kind": "quake",
           "severity": "STANDBY",
@@ -851,12 +862,6 @@
           "title": "CDC Health Alert Network notices"
         },
         {
-          "id": "headline:d0e17ff63b086de1",
-          "kind": "war-iran",
-          "severity": "ALERT",
-          "title": "Exclusive | Trump Acknowledges Iran War Is Partly to Blame for Republican Losses - WSJ"
-        },
-        {
           "id": "headline:90b337ad3de37707",
           "kind": "war-iran",
           "severity": "ALERT",
@@ -867,6 +872,12 @@
           "kind": "war-iran",
           "severity": "ALERT",
           "title": "Iran Update, November 4, 2026 - Institute for the Study of War"
+        },
+        {
+          "id": "headline:4244127e9d33cc93",
+          "kind": "war-iran",
+          "severity": "ALERT",
+          "title": "Iran, Qatari mediators hold third day of talks to end US-Iran war - Reuters"
         },
         {
           "id": "headline:6a4e9dc101a1757e",
@@ -881,22 +892,22 @@
           "title": "What to know about the Melania Trump-brokered ceasefire in Russian-occupied Oleshky - AP News"
         },
         {
+          "id": "headline:a5c4e99876afbe8b",
+          "kind": "war-ukraine",
+          "severity": "ALERT",
+          "title": "Local ceasefire brokered by Melania Trump starts in southern Ukraine - NPR"
+        },
+        {
           "id": "headline:57a21ad6ee992e96",
           "kind": "war-ukraine",
           "severity": "ALERT",
           "title": "Russian Offensive Campaign Assessment, November 4, 2026 - Institute for the Study of War"
         },
         {
-          "id": "headline:583628fdb46675a0",
+          "id": "headline:973092ca57a30c74",
           "kind": "war-ukraine",
           "severity": "ALERT",
-          "title": "Russia confirms new Ukraine peace talks as Melania Trump prepares to host ceasefire meeting - CNBC"
-        },
-        {
-          "id": "headline:5efba88de5e565e1",
-          "kind": "war-ukraine",
-          "severity": "ALERT",
-          "title": "Pope Leo’s appeals help bring humanitarian ceasefire to southern Ukraine - Vatican News"
+          "title": "US to mediate trilateral talks with Ukraine, Russia in Abu Dhabi next week, US envoy says - Reuters"
         },
         {
           "id": "headline:e8b24ea6c3b3f5b9",
@@ -911,16 +922,16 @@
           "title": "Democrats Win Control of Congress. Here’s How That Could Affect U.S. Foreign Policy. - Council on Foreign Relations"
         },
         {
+          "id": "headline:2a7d9bd233dda8db",
+          "kind": "usgov",
+          "severity": "ALERT",
+          "title": "Democrats win full control of Congress, ushering in a new era of divided government - NPR"
+        },
+        {
           "id": "headline:db580f48dc0ba9f9",
           "kind": "usgov",
           "severity": "ALERT",
           "title": "Trump White House maps path to govern without Congress if Democrats win - Reuters"
-        },
-        {
-          "id": "headline:940bf23c01d39740",
-          "kind": "usgov",
-          "severity": "ALERT",
-          "title": "6 PNW lawmakers could gain powerful positions as Democrats flip Congress - Oregon Public Broadcasting - OPB"
         },
         {
           "id": "neo:b6525019da5f0286",
