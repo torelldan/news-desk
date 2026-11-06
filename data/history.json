@@ -1009,7 +1009,7 @@
     },
     {
       "date": "2026-11-06",
-      "label": "Nov 6, 2026 9:23 AM CT",
+      "label": "Nov 6, 2026 1:58 PM CT",
       "outlooks": [
         {
           "id": "quake:10d9e947d9195018",
@@ -1077,12 +1077,12 @@
           "severity": "ALERT"
         },
         {
-          "id": "headline:7175ff5cfaafa88d",
+          "id": "headline:fba40c63243c8681",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
         {
-          "id": "headline:fba40c63243c8681",
+          "id": "headline:7175ff5cfaafa88d",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
@@ -1092,8 +1092,8 @@
           "severity": "ALERT"
         },
         {
-          "id": "headline:f6304544d0edab83",
-          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "id": "headline:96bd83c59ce80ad2",
+          "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
         {
@@ -1102,12 +1102,12 @@
           "severity": "ALERT"
         },
         {
-          "id": "headline:60a95f06e9b0418c",
-          "outlook": "First reading. Watch the next 72 hours.",
+          "id": "headline:db580f48dc0ba9f9",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
           "severity": "ALERT"
         },
         {
-          "id": "headline:db580f48dc0ba9f9",
+          "id": "headline:2a7d9bd233dda8db",
           "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
           "severity": "ALERT"
         },
@@ -1237,16 +1237,16 @@
           "title": "Melania Trump touts rare agreement she brokered between Russia and Ukraine - NPR"
         },
         {
-          "id": "headline:7175ff5cfaafa88d",
-          "kind": "war-ukraine",
-          "severity": "ALERT",
-          "title": "War in Ukraine | Global Conflict Tracker - Council on Foreign Relations"
-        },
-        {
           "id": "headline:fba40c63243c8681",
           "kind": "war-ukraine",
           "severity": "ALERT",
           "title": "Oleshky Ceasefire Demonstrates That Russia Has the Capability, but Not the Will, to End Civilian Suffering in Ukraine - Institute for the Study of War"
+        },
+        {
+          "id": "headline:7175ff5cfaafa88d",
+          "kind": "war-ukraine",
+          "severity": "ALERT",
+          "title": "War in Ukraine | Global Conflict Tracker - Council on Foreign Relations"
         },
         {
           "id": "headline:973092ca57a30c74",
@@ -1255,10 +1255,10 @@
           "title": "US to mediate trilateral talks with Ukraine, Russia in Abu Dhabi next week, US envoy says - Reuters"
         },
         {
-          "id": "headline:f6304544d0edab83",
+          "id": "headline:96bd83c59ce80ad2",
           "kind": "usgov",
           "severity": "ALERT",
-          "title": "Democrats Win Control of Congress. Here’s How That Could Affect U.S. Foreign Policy. - Council on Foreign Relations"
+          "title": "Democrats won control of Congress. So what does that mean for the Supreme Court? - SCOTUSblog"
         },
         {
           "id": "headline:7da7157bc2e79edb",
@@ -1267,16 +1267,16 @@
           "title": "Pentagon sued over its Project Meridian advisory committee - Federal News Network"
         },
         {
-          "id": "headline:60a95f06e9b0418c",
-          "kind": "usgov",
-          "severity": "ALERT",
-          "title": "It was a big night for doctors to win seats in Congress, riding the blue wave - NPR"
-        },
-        {
           "id": "headline:db580f48dc0ba9f9",
           "kind": "usgov",
           "severity": "ALERT",
           "title": "Trump White House maps path to govern without Congress if Democrats win - Reuters"
+        },
+        {
+          "id": "headline:2a7d9bd233dda8db",
+          "kind": "usgov",
+          "severity": "ALERT",
+          "title": "Democrats win full control of Congress, ushering in a new era of divided government - NPR"
         },
         {
           "id": "neo:7ef188732835b7d0",
@@ -1334,6 +1334,11 @@
         }
       ],
       "trends": [
+        {
+          "category": "tornado",
+          "name": "tornado warning",
+          "volume": "1000+"
+        },
         {
           "category": "iran-war",
           "name": "iran war",

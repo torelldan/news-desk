@@ -1,6 +1,44 @@
 {
-  "googleNote": "Google Trends US daily list answered (10 topics). Kept the ones that match a war, government, or threat topic. None of today's search trends matched.",
+  "googleNote": "Google Trends US daily list answered (10 topics). Kept the ones that match a war, government, or threat topic.",
   "items": [
+    {
+      "category": "tornado",
+      "confidence": "reported",
+      "date": "2026-11-06",
+      "id": "gtrend:df1cc90d676ed133",
+      "kind": "trend",
+      "lane": "news",
+      "look": "news",
+      "name": "tornado warning",
+      "note": "US search trend. Traffic 1000+.",
+      "place": "US",
+      "published": "2026-11-06T13:30:00-06:00",
+      "rise": "US daily list 1000+",
+      "samples": [
+        {
+          "source": "WRAL",
+          "text": "Lightning causes house fire in Raleigh, family of 4 displaced",
+          "url": "https://www.wral.com/news/local/lightning-damages-raleigh-home-november-2026/"
+        },
+        {
+          "source": "Charlotte Observer",
+          "text": "UPDATE: Sampson County under a tornado warning Friday afternoon - take cover now",
+          "url": "https://www.charlotteobserver.com/news/weather-news/article317963349.html"
+        },
+        {
+          "source": "CBS17.com",
+          "text": "Tornado warning issued in Wayne County; several Raleigh vehicle crashes reported as storms hit central NC",
+          "url": "https://www.cbs17.com/weather/weather-stories/flood-advisory-issued-in-central-north-carolina-with-up-to-4-inches-of-rainfall-possible/"
+        }
+      ],
+      "severity": "STANDBY",
+      "soWhat": "no action needed",
+      "source": "Google Trends",
+      "sourceCount": 3,
+      "title": "tornado warning",
+      "url": "https://www.wral.com/news/local/lightning-damages-raleigh-home-november-2026/",
+      "volume": "1000+"
+    },
     {
       "category": "iran-war",
       "confidence": "reported",
@@ -11,7 +49,7 @@
       "look": "news",
       "name": "iran war",
       "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-06T09:23:07-06:00",
+      "published": "2026-11-06T13:58:12-06:00",
       "rise": "4 outlets this window",
       "samples": [
         {
@@ -23,7 +61,7 @@
         },
         {
           "date": "2026-11-05",
-          "published": "2026-11-05T17:15:21-06:00",
+          "published": "2026-11-05T17:53:18-06:00",
           "source": "Axios",
           "text": "Trump meets with national security team, says Iran war decision coming \"soon\" - Axios",
           "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQbW9jcGlzTlNQdWswMmp6NFFqVi1CRE9RSEtaOHp1U3FIUWp6Z0xYLW4tb2dld0tyQ3I0ODVILXBmZGNuSGxSNXo3TXJ4VWloN2tPeXZYcUZ5R195eno1U2lYUzloME1PN094Q2llQkZtWHpiNEtKOGU0d0k2SFRoSjFUTHpvUQ?oc=5"
@@ -53,7 +91,7 @@
       "look": "news",
       "name": "ukraine war",
       "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-06T09:23:07-06:00",
+      "published": "2026-11-06T13:58:12-06:00",
       "rise": "4 outlets this window",
       "samples": [
         {
@@ -65,17 +103,17 @@
         },
         {
           "date": "2026-11-04",
-          "published": "2026-11-04T18:00:00-06:00",
-          "source": "Council on Foreign Relations",
-          "text": "War in Ukraine | Global Conflict Tracker - Council on Foreign Relations",
-          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBzNzUzWFZFa3dRQ094S3NlRzRSbVloSUU5ZGhYSHZBLUYxdTlvdGdaTmN6b09EOGZlYmVTaGRnSFVzbk12T0Z4bDJJTnF6bGI4S1ZaVXhNUDY3cEJweFJVVWZZQ2c4T0NOT3lWVy1BMHFFRGJNdUQ5Rg?oc=5"
-        },
-        {
-          "date": "2026-11-04",
           "published": "2026-11-04T19:15:23-06:00",
           "source": "Institute for the Study of War",
           "text": "Oleshky Ceasefire Demonstrates That Russia Has the Capability, but Not the Will, to End Civilian Suffering in Ukraine - Institute for the Study of War",
           "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxObUtrMGdpN1lUU0RqM2JlQm5KanJLeWtnNXFzZWFnWjdscHdNYzNwQmRaLUI1Q1F2dzQ4ZkNQT2pNWC03a2JuYlloZUlad29EVzU4U19hQkh2QVdTeUFvTzIxNFdSczZfdjZEWldaYVFtWGJESnNmYUx1RnREQUVHT0kza29qeVZLbGtrX2NhclhjeEFMQnlDaDdDS0Q5RE14cHBCeGZiYVVrd1RrbXRoZzJ0cXhsTjcxTndidHViNGhlZFFtbk5yaDdwSzZsV0JqbW1VYV9aSmQ5WFQzcHVUU2JaV0cxWi1hcWJnZy02cWw3WmNmZU5YYnpITnZRUQ?oc=5"
+        },
+        {
+          "date": "2026-11-04",
+          "published": "2026-11-04T18:00:00-06:00",
+          "source": "Council on Foreign Relations",
+          "text": "War in Ukraine | Global Conflict Tracker - Council on Foreign Relations",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBzNzUzWFZFa3dRQ094S3NlRzRSbVloSUU5ZGhYSHZBLUYxdTlvdGdaTmN6b09EOGZlYmVTaGRnSFVzbk12T0Z4bDJJTnF6bGI4S1ZaVXhNUDY3cEJweFJVVWZZQ2c4T0NOT3lWVy1BMHFFRGJNdUQ5Rg?oc=5"
         }
       ],
       "severity": "ALERT",
@@ -95,15 +133,15 @@
       "look": "news",
       "name": "us gov",
       "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-06T09:23:07-06:00",
+      "published": "2026-11-06T13:58:12-06:00",
       "rise": "4 outlets this window",
       "samples": [
         {
-          "date": "2026-11-04",
-          "published": "2026-11-04T10:40:14-06:00",
-          "source": "Council on Foreign Relations",
-          "text": "Democrats Win Control of Congress. Here’s How That Could Affect U.S. Foreign Policy. - Council on Foreign Relations",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQdzZKMkhBVFVPeU5mVkdPZ2JkYTIyajkzVVFMNnZ1Y0prUEpibWpMeEpiVVhBWnNqSkhRUVhsNGFVbmRvZHQ0akduR3V6ZlViaEtPZzdMMjg5emdwWW9SVnAxLTRsMFlERXFNbFhXM0paZnlDZ3N4aC1BY1dzYVBYa0hxUWE3d0lhaHJSMWNDOUpHOThvNWQ2ZGY2aS1SUFRGTDZsNGNVNC1XZkp4MGc?oc=5"
+          "date": "2026-11-06",
+          "published": "2026-11-06T08:30:34-06:00",
+          "source": "SCOTUSblog",
+          "text": "Democrats won control of Congress. So what does that mean for the Supreme Court? - SCOTUSblog",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOam8taXNKRE42cm5ycTFaZWdPb3BBdDVpcnZ1UXR1Q3AtdkV6endFaVpWSkZjcHBzWXNZSV9kc2VkTXN4Tzdfd1BEcXN1WldFRi05M2g2a3pyS0JFclRnM2IydXM4WWdINWZIdnN6bGQ4enl4RTBfSm0zb1ZpWHNJQ0VubzBsWnBxcXdrUVRqV1lzYzlkLW84UEZnQ2tya3R4M0h4OTFQVzlNRHFqSXYzOFV3?oc=5"
         },
         {
           "date": "2026-11-05",
@@ -113,11 +151,11 @@
           "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQeUlnY3VGRE9oMmxoREFMdmFvdTZhMW5iOVlSWGxheGs4YjNEQmNEX1dNemVQT3BDakFPTmRiVHM0WTZGU1lWSkhVT1dvREU1bm9iemZkbHV1d21sMWZTTjJtM3pEUy1BeW1oYVdoUG1oai1TUTdMZks3RjJVNVdzV3dsRmRUUWo1RHJ4eWlIeElMQmdTeTBtdWtGZDQ0RURjMmpuMVJrVlFucUxzR0E?oc=5"
         },
         {
-          "date": "2026-11-04",
-          "published": "2026-11-04T14:46:26-06:00",
-          "source": "NPR",
-          "text": "It was a big night for doctors to win seats in Congress, riding the blue wave - NPR",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOOU45M0dfSTZkNEVCSmZwWHFBZVlJdmhFclRqY3NnMlZKYkdnR2QwN3lKVlZPUGM4cEVpR09lUGpwM1dKWHhCV2xBN0ZyaDhHWWlldFh1V3Nqbm12Zm5lTFVHR2dQSm5aVmFPZktvVjE4VlluVU02VFZ6M3FPOFgtUEtGNFdOOVNXYjlJNHByN2N5alBRNlAwTUdjcXdXb0E?oc=5"
+          "date": "2026-11-02",
+          "published": "2026-11-02T09:00:11-06:00",
+          "source": "Reuters",
+          "text": "Trump White House maps path to govern without Congress if Democrats win - Reuters",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOOXdkX2hvMlBTTmRRRGlTbndZSTFnWnZyYkJ5STRjNFBOUkdwQ3VDUjRuTUQySzhQMkp2UXh0MW5VS3E4WHVXeEhQQ2JnRnUxV0pIVTM3T1J6Y0o3Y1JWamZ4YXMwNEtjazNiU3pERzRaWC1XNXZBZk56UU1KSUFNMWtZS0hrUjNUSW5ILW9kdWVQa3BqYkNPSl9tQk90SEtWcDdXRjZXdkdUT1IzS2ViaTgwTmE5MnlCclh1T0pB?oc=5"
         }
       ],
       "severity": "ALERT",
@@ -125,7 +163,7 @@
       "source": "News velocity",
       "sourceCount": 4,
       "title": "us gov",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQdzZKMkhBVFVPeU5mVkdPZ2JkYTIyajkzVVFMNnZ1Y0prUEpibWpMeEpiVVhBWnNqSkhRUVhsNGFVbmRvZHQ0akduR3V6ZlViaEtPZzdMMjg5emdwWW9SVnAxLTRsMFlERXFNbFhXM0paZnlDZ3N4aC1BY1dzYVBYa0hxUWE3d0lhaHJSMWNDOUpHOThvNWQ2ZGY2aS1SUFRGTDZsNGNVNC1XZkp4MGc?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOam8taXNKRE42cm5ycTFaZWdPb3BBdDVpcnZ1UXR1Q3AtdkV6endFaVpWSkZjcHBzWXNZSV9kc2VkTXN4Tzdfd1BEcXN1WldFRi05M2g2a3pyS0JFclRnM2IydXM4WWdINWZIdnN6bGQ4enl4RTBfSm0zb1ZpWHNJQ0VubzBsWnBxcXdrUVRqV1lzYzlkLW84UEZnQ2tya3R4M0h4OTFQVzlNRHFqSXYzOFV3?oc=5"
     }
   ],
   "mode": "trends",
