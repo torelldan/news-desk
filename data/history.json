@@ -1706,6 +1706,329 @@
         }
       ],
       "triggers": []
+    },
+    {
+      "date": "2026-11-08",
+      "label": "Nov 8, 2026 12:23 PM CT",
+      "outlooks": [
+        {
+          "id": "quake:10d9e947d9195018",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:3916e67fc5aa3af5",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:4aacdd22d8fcf171",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "relief:0109da81b6fc36e7",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "who:53dcad2ca08ee68e",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "cdc:12c7ca9ea1a41c99",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:588a4720bf88cf65",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:6de543e6a8278f44",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:4244127e9d33cc93",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:b6ae75be891f2e32",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:42b713d8d722af0f",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:c8e70c08d4bcc609",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:7175ff5cfaafa88d",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:973092ca57a30c74",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:96bd83c59ce80ad2",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:7da7157bc2e79edb",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:db580f48dc0ba9f9",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:4b63a838fc81d247",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "neo:b821cf9a75a3a099",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "neo:77f0360ca43ad1fb",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "neo:9934e838c1539fdc",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "neo:1095427f35282423",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "neo:9931f86a7752cac2",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "neo:da8d506430a87192",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "neo:d545dfda650a0803",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "neo:f955ce19039c136e",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "clock:bulletin",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        }
+      ],
+      "threats": [
+        {
+          "id": "quake:10d9e947d9195018",
+          "kind": "quake",
+          "severity": "STANDBY",
+          "title": "M4.7 139 km SSE of False Pass, Alaska"
+        },
+        {
+          "id": "quake:3916e67fc5aa3af5",
+          "kind": "quake",
+          "severity": "STANDBY",
+          "title": "M4.6 11 km ENE of Yigo Village, Guam"
+        },
+        {
+          "id": "quake:4aacdd22d8fcf171",
+          "kind": "quake",
+          "severity": "STANDBY",
+          "title": "M4.6 147 km SSE of False Pass, Alaska"
+        },
+        {
+          "id": "relief:0109da81b6fc36e7",
+          "kind": "relief",
+          "severity": "STANDBY",
+          "title": "ReliefWeb disasters"
+        },
+        {
+          "id": "who:53dcad2ca08ee68e",
+          "kind": "who",
+          "severity": "STANDBY",
+          "title": "New WHO technical package to help countries improve health data for COVID-19 response and beyond"
+        },
+        {
+          "id": "cdc:12c7ca9ea1a41c99",
+          "kind": "cdc",
+          "severity": "STANDBY",
+          "title": "CDC Health Alert Network notices"
+        },
+        {
+          "id": "headline:588a4720bf88cf65",
+          "kind": "war-iran",
+          "severity": "ALERT",
+          "title": "After midterms, Trump is left to weigh his next move in Iran war that contributed to GOP loss - PBS"
+        },
+        {
+          "id": "headline:6de543e6a8278f44",
+          "kind": "war-iran",
+          "severity": "ALERT",
+          "title": "Iran Update, November 7, 2026 - Institute for the Study of War"
+        },
+        {
+          "id": "headline:4244127e9d33cc93",
+          "kind": "war-iran",
+          "severity": "ALERT",
+          "title": "Iran, Qatari mediators hold third day of talks to end US-Iran war - Reuters"
+        },
+        {
+          "id": "headline:b6ae75be891f2e32",
+          "kind": "war-iran",
+          "severity": "ALERT",
+          "title": "Risk of Iran war escalation remains high despite Democratic sweep in U.S. midterm elections - CNBC"
+        },
+        {
+          "id": "headline:42b713d8d722af0f",
+          "kind": "war-ukraine",
+          "severity": "ALERT",
+          "title": "Russian Offensive Campaign Assessment, November 7, 2026 - Institute for the Study of War"
+        },
+        {
+          "id": "headline:c8e70c08d4bcc609",
+          "kind": "war-ukraine",
+          "severity": "ALERT",
+          "title": "Why Ukraine and Russia agreed to a ceasefire in just one city - NPR"
+        },
+        {
+          "id": "headline:7175ff5cfaafa88d",
+          "kind": "war-ukraine",
+          "severity": "ALERT",
+          "title": "War in Ukraine | Global Conflict Tracker - Council on Foreign Relations"
+        },
+        {
+          "id": "headline:973092ca57a30c74",
+          "kind": "war-ukraine",
+          "severity": "ALERT",
+          "title": "US to mediate trilateral talks with Ukraine, Russia in Abu Dhabi next week, US envoy says - Reuters"
+        },
+        {
+          "id": "headline:96bd83c59ce80ad2",
+          "kind": "usgov",
+          "severity": "ALERT",
+          "title": "Democrats won control of Congress. So what does that mean for the Supreme Court? - SCOTUSblog"
+        },
+        {
+          "id": "headline:7da7157bc2e79edb",
+          "kind": "usgov",
+          "severity": "ALERT",
+          "title": "Pentagon sued over its Project Meridian advisory committee - Federal News Network"
+        },
+        {
+          "id": "headline:db580f48dc0ba9f9",
+          "kind": "usgov",
+          "severity": "ALERT",
+          "title": "Trump White House maps path to govern without Congress if Democrats win - Reuters"
+        },
+        {
+          "id": "headline:4b63a838fc81d247",
+          "kind": "usgov",
+          "severity": "ALERT",
+          "title": "Inside Congress Live, Nov 06, 2026 - Live Updates - Politico"
+        },
+        {
+          "id": "neo:b821cf9a75a3a099",
+          "kind": "neo",
+          "severity": "STANDBY",
+          "title": "Close approach 2026 VR5"
+        },
+        {
+          "id": "neo:77f0360ca43ad1fb",
+          "kind": "neo",
+          "severity": "STANDBY",
+          "title": "Close approach 2026 VK2"
+        },
+        {
+          "id": "neo:9934e838c1539fdc",
+          "kind": "neo",
+          "severity": "STANDBY",
+          "title": "Close approach 2019 XF2"
+        },
+        {
+          "id": "neo:1095427f35282423",
+          "kind": "neo",
+          "severity": "STANDBY",
+          "title": "Close approach 2026 QQ8"
+        },
+        {
+          "id": "neo:9931f86a7752cac2",
+          "kind": "neo",
+          "severity": "STANDBY",
+          "title": "Close approach 2026 VY1"
+        },
+        {
+          "id": "neo:da8d506430a87192",
+          "kind": "neo",
+          "severity": "STANDBY",
+          "title": "Close approach 2026 VT3"
+        },
+        {
+          "id": "neo:d545dfda650a0803",
+          "kind": "neo",
+          "severity": "STANDBY",
+          "title": "Close approach 2010 VQ"
+        },
+        {
+          "id": "neo:f955ce19039c136e",
+          "kind": "neo",
+          "severity": "STANDBY",
+          "title": "Close approach 2026 VO2"
+        },
+        {
+          "id": "clock:bulletin",
+          "kind": "clock",
+          "severity": "STANDBY",
+          "title": "Doomsday Clock"
+        }
+      ],
+      "trends": [
+        {
+          "category": "iran-war",
+          "name": "iran war",
+          "volume": null
+        },
+        {
+          "category": "ukraine-war",
+          "name": "ukraine war",
+          "volume": null
+        },
+        {
+          "category": "us-gov",
+          "name": "us gov",
+          "volume": null
+        }
+      ],
+      "triggers": []
     }
   ]
 }

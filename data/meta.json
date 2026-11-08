@@ -1,13 +1,15 @@
 {
   "baseline": false,
-  "brief": "No rare risk is on the board. A routine flyby or an empty storm outlook is not an emergency. Current war coverage is on the board: Vance blames Iran war for GOP midterm losses - PBS; Risk of Iran war escalation remains high despite Democratic sweep in U.S. midterm elections - CNBC. Rising topic: earthquake now (US daily list 500+).",
-  "checkedAt": "2026-11-07T12:03:58-06:00",
-  "checkedLabel": "Nov 7, 2026 12:03 PM CT",
-  "errors": [],
+  "brief": "No rare risk is on the board. A routine flyby or an empty storm outlook is not an emergency. Current war coverage is on the board: After midterms, Trump is left to weigh his next move in Iran war that contributed to GOP loss - PBS; Iran Update, November 7, 2026 - Institute for the Study of War. Rising topic: iran war (4 outlets this window).",
+  "checkedAt": "2026-11-08T12:23:09-06:00",
+  "checkedLabel": "Nov 8, 2026 12:23 PM CT",
+  "errors": [
+    "Joe Rogan Experience: no element found: line 7287, column 22"
+  ],
   "retainDays": 120,
-  "today": "2026-11-07",
+  "today": "2026-11-08",
   "trends": {
-    "google": "Google Trends US daily list answered (10 topics). Kept the ones that match a war, government, or threat topic.",
+    "google": "Google Trends US daily list answered (10 topics). Kept the ones that match a war, government, or threat topic. None of today's search trends matched.",
     "mode": "trends",
     "note": "X trends by WOEID (US 23424977 and worldwide 1). Kept only when the name matches a threat or preparedness theme. The endpoint answered and none of the names matched."
   },

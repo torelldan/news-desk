@@ -1,61 +1,39 @@
 {
-  "googleNote": "Google Trends US daily list answered (10 topics). Kept the ones that match a war, government, or threat topic.",
+  "googleNote": "Google Trends US daily list answered (10 topics). Kept the ones that match a war, government, or threat topic. None of today's search trends matched.",
   "items": [
-    {
-      "category": "earthquake",
-      "confidence": "rumor",
-      "date": "2026-11-07",
-      "id": "gtrend:53ed4c8d42152fb3",
-      "kind": "trend",
-      "lane": "news",
-      "look": "chatter",
-      "name": "earthquake now",
-      "note": "US search trend. Traffic 500+.",
-      "place": "US",
-      "published": "2026-11-07T11:50:00-06:00",
-      "rise": "US daily list 500+",
-      "samples": [],
-      "severity": "STANDBY",
-      "soWhat": "no action needed",
-      "source": "Google Trends",
-      "sourceCount": 1,
-      "title": "earthquake now",
-      "url": "https://trends.google.com/trending?geo=US",
-      "volume": "500+"
-    },
     {
       "category": "iran-war",
       "confidence": "reported",
-      "date": "2026-11-07",
+      "date": "2026-11-08",
       "id": "velocity:4ee4bc978244e41e",
       "kind": "trend",
       "lane": "news",
       "look": "news",
       "name": "iran war",
       "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-07T12:03:58-06:00",
+      "published": "2026-11-08T12:23:09-06:00",
       "rise": "4 outlets this window",
       "samples": [
         {
-          "date": "2026-11-04",
-          "published": "2026-11-04T10:56:43-06:00",
+          "date": "2026-11-05",
+          "published": "2026-11-05T17:46:36-06:00",
           "source": "PBS",
-          "text": "Vance blames Iran war for GOP midterm losses - PBS",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNR3hPeE5hNmhGaGtEbTNfZXdZUTJiaDctVDhSd2g0T1FIUVdyOGFnWHFfaXp6Y1Z4VmNqOXJ6VC1Ob3BfbHF0Y2RZQlQ0cDdTWDVDRGVjMmxyOGtoeU5JOUdMbGg3MXJZYTBwSGVPaWlyS2VHRnkyclVnQ3JhZm00bGpObWR5SUZ1bWc?oc=5"
+          "text": "After midterms, Trump is left to weigh his next move in Iran war that contributed to GOP loss - PBS",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQbnpIQndTWTgxS3RiNDhYandQeXhRMmNOUkUxUmlVdzFzWmc1TjhSNW5XamZkWXNoaUtrSVQ0eTBYNUhkQzNBS2duUEVsd3Y3Z2NjLU5RMFFNbmlnVmwtaVhFdmp3ODlpakp4U3pxQk1BRUIweDZ4amcyUWZyRUhRRXYxYmR6b2txSThCR2dTcWtwa005UHBIb0wxRll3RjBQa2xrbDdGUzl2SlJkZVh4d19ESldNVFdjWlZHTEpkVmZ1MFJhLTc3YWJB0gHPAUFVX3lxTE5DUHNBaG5aNWVIQXZVT1RQQzdnOFktSE5Gc3pVZFROOGVSYjFVR0dKZEY4RTZ0bUVVQ2FaNzBOZERGMXVSYWNVa3Nsazd1UVg4dGxCZXBBbzJyRzhiRV9Rc2ZwVGxqbGlfVFM4WEdaYjhuUVlubEVnS2FVOHFCaUQyVzdaSEZjVGZmSW5xb2wyVExob1VQb0dkdTNfOFluOGNLb241S2p1RERoNmNqaVVUMm1CMkh0c1djZ01oYmNLX2hDckR0UHprUE82RTBvNA?oc=5"
         },
         {
           "date": "2026-11-07",
-          "published": "2026-11-07T07:03:12-06:00",
-          "source": "CNBC",
-          "text": "Risk of Iran war escalation remains high despite Democratic sweep in U.S. midterm elections - CNBC",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQMWQ5c2RBN2lVLVVlYWRjNS03cFo4RkpVQXgzZUhWN2lyaS0tUHA1SXJ2Vm56MDQ4R0JCNlFubmt2bEhEZG5maGpLV0J6M3JRWm1iUHVWb0dXUnJWN19fU1dLS2tTY2lRNmI3YzNKM1ZPb2RHSE1pb19kWE9mS0RNRlNjZWU?oc=5"
+          "published": "2026-11-07T20:13:50-06:00",
+          "source": "Institute for the Study of War",
+          "text": "Iran Update, November 7, 2026 - Institute for the Study of War",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNTVZibnpzSFBKemozbnlwa1RsZ0xnRTZHTVZMWWM5TWlEcDFZX3pEczNpWURDdWU0ZmdzZExoZjBwY0NhTUJEVTJfTFhINFhkeTAzODc5V0VlT1lJazdJSXl2aWVoLVFWTTdGZGsxSV9QSnhiM0NPOEt6R3ppZ3JFRlBuSGM?oc=5"
         },
         {
-          "date": "2026-11-03",
-          "published": "2026-11-03T20:59:43-06:00",
-          "source": "AFP.com",
-          "text": "Trump confirms strikes on Iran as Tehran warns against return to war - AFP.com",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOMzRNMk9XMXBCU3hrZFo3Z1NKcFVKYlF3Q251cXZnZ0U3eFI5TmFUaU1SUWV6VFFNWUh2YjRZOGhIanBPb1lzLUp6NHhFY1JqWUprdDNEczhjSEI1MG4yMnRNbWVCSkdrTnE4MEVMMlNEMFVYTHhZYnZ2TWl5dTJybllGZXB0OUQxelE?oc=5"
+          "date": "2026-11-01",
+          "published": "2026-11-01T06:24:00-06:00",
+          "source": "Reuters",
+          "text": "Iran, Qatari mediators hold third day of talks to end US-Iran war - Reuters",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPdXU0aVh0RXlJYm1BOUtMU2FncFZnaDY5dVo4LXR0OFhsUzl1V2s0ZHpoeU5VX2d4cjg0RWRXRkRLLVhRRFJ6QlVKd3dEQ3ZtNVF0c0laVUtZZU1DTFB2bVVpN01abDA1RDRBWXJLRzFSVzZpQmFaWFBVaVdhNG9GdEVranBrT2M5NzlmWFVKSXo5QjJla0JLZ2x3SG9pOE9mb0xOaUNaZmxxbzQ4RlVVY04tZnRxZWNLNVBoby1WMXQ?oc=5"
         }
       ],
       "severity": "ALERT",
@@ -63,27 +41,34 @@
       "source": "News velocity",
       "sourceCount": 4,
       "title": "iran war",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNR3hPeE5hNmhGaGtEbTNfZXdZUTJiaDctVDhSd2g0T1FIUVdyOGFnWHFfaXp6Y1Z4VmNqOXJ6VC1Ob3BfbHF0Y2RZQlQ0cDdTWDVDRGVjMmxyOGtoeU5JOUdMbGg3MXJZYTBwSGVPaWlyS2VHRnkyclVnQ3JhZm00bGpObWR5SUZ1bWc?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQbnpIQndTWTgxS3RiNDhYandQeXhRMmNOUkUxUmlVdzFzWmc1TjhSNW5XamZkWXNoaUtrSVQ0eTBYNUhkQzNBS2duUEVsd3Y3Z2NjLU5RMFFNbmlnVmwtaVhFdmp3ODlpakp4U3pxQk1BRUIweDZ4amcyUWZyRUhRRXYxYmR6b2txSThCR2dTcWtwa005UHBIb0wxRll3RjBQa2xrbDdGUzl2SlJkZVh4d19ESldNVFdjWlZHTEpkVmZ1MFJhLTc3YWJB0gHPAUFVX3lxTE5DUHNBaG5aNWVIQXZVT1RQQzdnOFktSE5Gc3pVZFROOGVSYjFVR0dKZEY4RTZ0bUVVQ2FaNzBOZERGMXVSYWNVa3Nsazd1UVg4dGxCZXBBbzJyRzhiRV9Rc2ZwVGxqbGlfVFM4WEdaYjhuUVlubEVnS2FVOHFCaUQyVzdaSEZjVGZmSW5xb2wyVExob1VQb0dkdTNfOFluOGNLb241S2p1RERoNmNqaVVUMm1CMkh0c1djZ01oYmNLX2hDckR0UHprUE82RTBvNA?oc=5"
     },
     {
       "category": "ukraine-war",
       "confidence": "reported",
-      "date": "2026-11-07",
+      "date": "2026-11-08",
       "id": "velocity:efd2da34e68ca58f",
       "kind": "trend",
       "lane": "news",
       "look": "news",
       "name": "ukraine war",
       "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-07T12:03:58-06:00",
+      "published": "2026-11-08T12:23:09-06:00",
       "rise": "4 outlets this window",
       "samples": [
         {
-          "date": "2026-11-04",
-          "published": "2026-11-04T19:15:23-06:00",
+          "date": "2026-11-07",
+          "published": "2026-11-07T20:13:50-06:00",
           "source": "Institute for the Study of War",
-          "text": "Oleshky Ceasefire Demonstrates That Russia Has the Capability, but Not the Will, to End Civilian Suffering in Ukraine - Institute for the Study of War",
-          "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxObUtrMGdpN1lUU0RqM2JlQm5KanJLeWtnNXFzZWFnWjdscHdNYzNwQmRaLUI1Q1F2dzQ4ZkNQT2pNWC03a2JuYlloZUlad29EVzU4U19hQkh2QVdTeUFvTzIxNFdSczZfdjZEWldaYVFtWGJESnNmYUx1RnREQUVHT0kza29qeVZLbGtrX2NhclhjeEFMQnlDaDdDS0Q5RE14cHBCeGZiYVVrd1RrbXRoZzJ0cXhsTjcxTndidHViNGhlZFFtbk5yaDdwSzZsV0JqbW1VYV9aSmQ5WFQzcHVUU2JaV0cxWi1hcWJnZy02cWw3WmNmZU5YYnpITnZRUQ?oc=5"
+          "text": "Russian Offensive Campaign Assessment, November 7, 2026 - Institute for the Study of War",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxObGI2Y05zVlYxdTlfSjFmejdOZ3VDc0RIQzNjSmFuMUZMX05BY2NZLWd2a25mY05YUE1ZODFUdHliMjVKZ21zMFBXSkkyWmNKdElES1o3OF9INXdOY3o2NW82NEo3Y2R5bWNPSjRhejNQRVE2UjBFYVFWZUJLTU91RWNDNFBwNGlvb2xCOUlZcHQ4TVNZd2RzOU5kb3lETlVQNkVCdGp0QlZITFE?oc=5"
+        },
+        {
+          "date": "2026-10-27",
+          "published": "2026-10-27T02:00:00-05:00",
+          "source": "NPR",
+          "text": "Why Ukraine and Russia agreed to a ceasefire in just one city - NPR",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPSjZub3owR0N5S3lzZVhsNjB4OS0zRVVnNFJkMWZkbnVhR0pyQmVleDk2akZRbEdxZ19YMV9fT3p6TlJiNlFCcU9GMmF0Ty1Ma3Q5cldwWm5LTVhrYWl6cVdNNEs0dk4ybUc1X2M5U0VYOEtTR0JPaXVyUFFvaHJQdDB2M0lRWVViN2RPSGs5T19XWFpBVG9jNW1QR3ZxRTAwcWdlZEhPZW4zdw?oc=5"
         },
         {
           "date": "2026-11-04",
@@ -91,13 +76,6 @@
           "source": "Council on Foreign Relations",
           "text": "War in Ukraine | Global Conflict Tracker - Council on Foreign Relations",
           "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBzNzUzWFZFa3dRQ094S3NlRzRSbVloSUU5ZGhYSHZBLUYxdTlvdGdaTmN6b09EOGZlYmVTaGRnSFVzbk12T0Z4bDJJTnF6bGI4S1ZaVXhNUDY3cEJweFJVVWZZQ2c4T0NOT3lWVy1BMHFFRGJNdUQ5Rg?oc=5"
-        },
-        {
-          "date": "2026-11-06",
-          "published": "2026-11-06T09:45:43-06:00",
-          "source": "Reuters",
-          "text": "Russia using own version of Starlink for military comms over Ukraine, Kyiv says - Reuters",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPQ1dZdi15b2M2dnJjdnlIVmFTclRLVE12aDlKQWdsWVJiWV9QcTd5NlNCby1YQUNSbGk4RmZ6X0ROMnJzcEoyVjh4dlhxXzd3aTU2T0otcEhWSzVYcmFPcEhkRDgycHl0bmUzZ3JfOW12ZmZnc1Z6VkZsb3VVdGVXd0hSc3pndThoY2FXUEp0MXJQVlVfaUFnT1FEX01DZkxQeWRGMEhrOEFmTTQxYkFFYVVOYzdjUQ?oc=5"
         }
       ],
       "severity": "ALERT",
@@ -105,19 +83,19 @@
       "source": "News velocity",
       "sourceCount": 4,
       "title": "ukraine war",
-      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxObUtrMGdpN1lUU0RqM2JlQm5KanJLeWtnNXFzZWFnWjdscHdNYzNwQmRaLUI1Q1F2dzQ4ZkNQT2pNWC03a2JuYlloZUlad29EVzU4U19hQkh2QVdTeUFvTzIxNFdSczZfdjZEWldaYVFtWGJESnNmYUx1RnREQUVHT0kza29qeVZLbGtrX2NhclhjeEFMQnlDaDdDS0Q5RE14cHBCeGZiYVVrd1RrbXRoZzJ0cXhsTjcxTndidHViNGhlZFFtbk5yaDdwSzZsV0JqbW1VYV9aSmQ5WFQzcHVUU2JaV0cxWi1hcWJnZy02cWw3WmNmZU5YYnpITnZRUQ?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxObGI2Y05zVlYxdTlfSjFmejdOZ3VDc0RIQzNjSmFuMUZMX05BY2NZLWd2a25mY05YUE1ZODFUdHliMjVKZ21zMFBXSkkyWmNKdElES1o3OF9INXdOY3o2NW82NEo3Y2R5bWNPSjRhejNQRVE2UjBFYVFWZUJLTU91RWNDNFBwNGlvb2xCOUlZcHQ4TVNZd2RzOU5kb3lETlVQNkVCdGp0QlZITFE?oc=5"
     },
     {
       "category": "us-gov",
       "confidence": "reported",
-      "date": "2026-11-07",
+      "date": "2026-11-08",
       "id": "velocity:bd817662251631b7",
       "kind": "trend",
       "lane": "news",
       "look": "news",
       "name": "us gov",
       "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-07T12:03:58-06:00",
+      "published": "2026-11-08T12:23:09-06:00",
       "rise": "4 outlets this window",
       "samples": [
         {
@@ -128,18 +106,18 @@
           "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOam8taXNKRE42cm5ycTFaZWdPb3BBdDVpcnZ1UXR1Q3AtdkV6endFaVpWSkZjcHBzWXNZSV9kc2VkTXN4Tzdfd1BEcXN1WldFRi05M2g2a3pyS0JFclRnM2IydXM4WWdINWZIdnN6bGQ4enl4RTBfSm0zb1ZpWHNJQ0VubzBsWnBxcXdrUVRqV1lzYzlkLW84UEZnQ2tya3R4M0h4OTFQVzlNRHFqSXYzOFV3?oc=5"
         },
         {
-          "date": "2026-11-06",
-          "published": "2026-11-06T09:32:54-06:00",
-          "source": "Center for American Progress",
-          "text": "5 Steps That Congress Should Take To End the War in Iran - Center for American Progress",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPTHBpUDNNWDBiRmxnLWtBcWdvc2JxUS10aEtJR2VENkM2b1FUYXpwOVR6YUk4Y0wzNnhMMTJvRXp1a1VZYnFVLTM2XzhXT1BMelEwWUwwOFB6VTV6Z2ZKUDl0aFBwSDVLb0J5NlN0a2tkY21HZGQ0aWVvM0ktYVo4WnN0eFh5RzlGd2dnd1VmcGNvaGJib25WbkNPY295X2M?oc=5"
-        },
-        {
           "date": "2026-11-04",
           "published": "2026-11-04T17:02:02-06:00",
           "source": "Federal News Network",
           "text": "Pentagon sued over its Project Meridian advisory committee - Federal News Network",
           "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQeUlnY3VGRE9oMmxoREFMdmFvdTZhMW5iOVlSWGxheGs4YjNEQmNEX1dNemVQT3BDakFPTmRiVHM0WTZGU1lWSkhVT1dvREU1bm9iemZkbHV1d21sMWZTTjJtM3pEUy1BeW1oYVdoUG1oai1TUTdMZks3RjJVNVdzV3dsRmRUUWo1RHJ4eWlIeElMQmdTeTBtdWtGZDQ0RURjMmpuMVJrVlFucUxzR0E?oc=5"
+        },
+        {
+          "date": "2026-11-02",
+          "published": "2026-11-02T09:00:11-06:00",
+          "source": "Reuters",
+          "text": "Trump White House maps path to govern without Congress if Democrats win - Reuters",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOOXdkX2hvMlBTTmRRRGlTbndZSTFnWnZyYkJ5STRjNFBOUkdwQ3VDUjRuTUQySzhQMkp2UXh0MW5VS3E4WHVXeEhQQ2JnRnUxV0pIVTM3T1J6Y0o3Y1JWamZ4YXMwNEtjazNiU3pERzRaWC1XNXZBZk56UU1KSUFNMWtZS0hrUjNUSW5ILW9kdWVQa3BqYkNPSl9tQk90SEtWcDdXRjZXdkdUT1IzS2ViaTgwTmE5MnlCclh1T0pB?oc=5"
         }
       ],
       "severity": "ALERT",
