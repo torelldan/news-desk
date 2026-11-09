@@ -2,19 +2,19 @@
   "gaps": [
     "Power_TN row hidden (2025-10-06, affected 0, served 0).",
     "1 ended road projects hidden.",
-    "TEMA news page answered with no dated notices."
+    "TEMA: curl: (22) The requested URL returned error: 403\n"
   ],
   "items": [
     {
       "action": "no action needed",
       "confidence": "reported",
-      "date": "2026-11-08",
+      "date": "2026-11-09",
       "id": "local-nws-none",
       "kind": "nws",
-      "label": "Nov 8, 2026 12:23 PM CT",
+      "label": "Nov 9, 2026 9:26 AM CT",
       "lane": "local",
       "note": "api.weather.gov answered for 35.802,-86.907 and returned no alerts.",
-      "published": "2026-11-08T12:23:09-06:00",
+      "published": "2026-11-09T09:26:44-06:00",
       "severity": "STANDBY",
       "soWhat": "",
       "source": "NWS",
