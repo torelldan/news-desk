@@ -1147,6 +1147,35 @@ def main() -> int:
     save_json(DATA / "impact.json", impact)
     save_json(DATA / "history.json", history)
     save_json(DATA / "lookback.json", lookback)
+    import blackout
+    rumor_samples = []
+    rumor_note = ""
+    if blackout.watch_state(now.date())["liveWindow"] and token:
+        try:
+            payload = x_get(
+                "/2/tweets/search/recent",
+                token,
+                {
+                    "query": '"November 17" (blackout OR shutdown) lang:en -is:retweet',
+                    "max_results": "10",
+                    "tweet.fields": "created_at",
+                },
+            )
+            tweets = payload.get("data") or []
+            rumor_note = f"{len(tweets)} recent public posts mention a November 17 blackout. That is not an outage."
+            for tweet in tweets[:3]:
+                tid = str(tweet.get("id") or "")
+                if tid.isdigit():
+                    rumor_samples.append({"text": (tweet.get("text") or "")[:180], "url": f"https://x.com/i/web/status/{tid}"})
+        except Exception as err:
+            errors.append(f"Blackout X search: {d.scrub_secret(str(err), token)}")
+    blackout_doc = blackout.fetch_blackout(now, local, rumor_samples, rumor_note)
+    for gap in blackout_doc.get("gaps") or []:
+        if gap and gap not in errors:
+            errors.append(gap)
+    meta["errors"] = errors
+    save_json(DATA / "meta.json", meta)
+    save_json(DATA / "blackout.json", blackout_doc)
     print(
         f"saved {len(episodes)} episodes, {len(signals)} signals, "
         f"{len(change_items)} changes, baseline={baseline}, x={meta['x']['note'] or 'online'}, "
