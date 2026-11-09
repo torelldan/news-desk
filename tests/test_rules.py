@@ -369,6 +369,23 @@ def test_triggers_outlook_and_impact():
     assert any(call["verdict"] == "right" for call in look["calls"]) or look["escalated"]
 
 
+def test_blackout_rumor_hides_after_nov_18():
+    from datetime import date
+    event = date(2026, 11, 17)
+    hide_after = date(2026, 11, 18)
+    def visible(day):
+        return day <= hide_after
+    def days_until(day):
+        return (event - day).days
+    assert days_until(date(2026, 11, 9)) == 8
+    assert days_until(date(2026, 11, 17)) == 0
+    assert visible(date(2026, 11, 18)) is True
+    assert visible(date(2026, 11, 19)) is False
+    page = open("template.html", encoding="utf-8").read()
+    assert "2026-11-18" in page
+    assert "No blackout, internet shutdown, or bank wipe is scheduled." in page
+
+
 if __name__ == "__main__":
     test_x_created_at_with_milliseconds()
     test_ct_conversion()
@@ -387,4 +404,5 @@ if __name__ == "__main__":
     test_urls_and_ids()
     test_trend_filter_and_confidence()
     test_triggers_outlook_and_impact()
+    test_blackout_rumor_hides_after_nov_18()
     print("ok")

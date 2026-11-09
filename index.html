@@ -492,6 +492,26 @@ function threatItems() {
 function triggerItems() {
   return ((DESK.triggers || {}).items || []).filter(passes);
 }
+function blackoutCard() {
+  const today = ctToday();
+  if (today > "2026-11-18") return null;
+  const days = daysUntilEvent("2026-11-17");
+  return {
+    id: "blackout-nov-17",
+    kind: "blackout",
+    title: "Nov 17 'global blackout' rumor",
+    severity: "STANDBY",
+    url: "https://www.preparedstates.com/guides/november-17-blackout",
+    published: `${today}T12:00:00`,
+    date: today,
+    days
+  };
+}
+function preparednessItems() {
+  const card = blackoutCard();
+  const extra = card && passes(card) ? [card] : [];
+  return extra.concat(triggerItems());
+}
 function localItems() {
   return ((DESK.local || {}).items || []).filter((item) => passes(item) && (safeUrl(item.url) || item.title));
 }
@@ -592,8 +612,12 @@ function paintSections() {
     ? `${mover.region.name} ${mover.venue.indexName || ""} ${mover.venue.changePct == null ? "no quote" : (mover.venue.changePct > 0 ? "+" : "") + mover.venue.changePct + "%"}`
     : "No quotes";
   setSum("econ", tape ? tape.severity : "STANDBY", String(regions.length), tape ? tape.title : econLine);
-  const triggers = triggerItems();
-  setSum("triggers", triggers.length ? topSeverity(triggers) : "STANDBY", String(triggers.length), triggers[0] ? triggers[0].title : "No trigger is on");
+  const triggers = preparednessItems();
+  const triggerLead = triggers[0];
+  const triggerLine = triggerLead && triggerLead.kind === "blackout"
+    ? `${triggerLead.days > 1 ? triggerLead.days + " days" : triggerLead.days === 1 ? "Tomorrow" : triggerLead.days === 0 ? "Today" : "Test day passed"} · Rumor. No blackout is scheduled`
+    : (triggerLead ? triggerLead.title : "No trigger is on");
+  setSum("triggers", triggers.length ? topSeverity(triggers) : "STANDBY", String(triggers.length), triggerLine);
   const local = localItems();
   setSum("local", local.length ? topSeverity(local) : "STANDBY", String(local.length), local[0] ? local[0].title : "No local notice");
   const watching = watchItems();
@@ -670,6 +694,13 @@ function safeUrl(value) {
     if (url.protocol === "https:" || url.protocol === "http:") return url.href;
   } catch (err) { /* not a link */ }
   return "";
+}
+function daysUntilEvent(iso) {
+  const today = ctToday();
+  const start = Date.parse(`${today}T00:00:00Z`);
+  const end = Date.parse(`${iso}T00:00:00Z`);
+  if (!Number.isFinite(start) || !Number.isFinite(end)) return null;
+  return Math.round((end - start) / 86400000);
 }
 function ctToday() {
   return new Intl.DateTimeFormat("en-CA", { timeZone: "America/Chicago" }).format(new Date());
@@ -1000,17 +1031,36 @@ function renderChanged() {
     return `<p class="meta">${name} · ${esc(item.section || "Desk")} · ${esc(item.note || item.severity || item.change || "")}</p>`;
   }).join("");
 }
+function blackoutHtml(card) {
+  const when = card.days > 1 ? `${card.days} days until Nov 17` : card.days === 1 ? "1 day until Nov 17" : card.days === 0 ? "Nov 17 is today" : "Nov 17 has passed";
+  const links = [
+    ["Prepared States", "https://www.preparedstates.com/guides/november-17-blackout"],
+    ["LB.ua disinformation centre", "https://en.lb.ua/news/2026/11/09/48708_disinformation_centre_debunks.html"],
+    ["Blackout map", "https://blackoutmap.net/blog/global-blackout-november-rumour"]
+  ].map(([name, url]) => `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(name)}</a>`).join(" · ");
+  return `<article class="card">
+    <div class="head"><span class="sev sev-standby">STANDBY</span><time>${esc(when)}</time></div>
+    <h3>${esc(card.title)}</h3>
+    <p><strong>Verdict.</strong> Rumor. No blackout, internet shutdown, or bank wipe is scheduled.</p>
+    <p><strong>What’s real.</strong> FEMA/FCC nationwide Emergency Alert System test, Tue Nov 17, 2026, about 1:20 PM CT (2:20 PM ET), about one minute, radio and TV only (not phones). The message says “This is only a test. No action is required.” Backup date Dec 3, 2026.</p>
+    <p><strong>What to do.</strong> Nothing special. Keep normal 72-hour readiness.</p>
+    <p class="meta">${links}</p>
+  </article>`;
+}
 function renderTriggers() {
   const doc = DESK.triggers || {};
-  const items = triggerItems();
-  const list = items.map((item) => {
+  const items = preparednessItems();
+  const card = items.find((item) => item.kind === "blackout");
+  const triggers = items.filter((item) => item.kind !== "blackout");
+  const list = triggers.map((item) => {
     claim(item);
     return `<li id="trigger-${esc(item.id || "")}"><strong class="sev sev-${(item.severity || "alert").toLowerCase()}">${esc(item.severity || "ALERT")}</strong> ${esc(item.title || "")}<p class="meta">${esc(item.why || "")}</p>${soLine(item)}</li>`;
   }).join("");
-  const kit = (doc.checklist || []).length && items.length
+  const kit = triggers.length && (doc.checklist || []).length
     ? `<p class="note-plain">Checklist: ${(doc.checklist || []).map(esc).join(", ")}.</p>`
-    : `<p class="note-plain">No trigger is on. Checklist stays on the shelf.</p>`;
-  document.getElementById("triggers").innerHTML = `<p class="note-plain">${esc(doc.note || "")}</p>${kit}${list ? `<ol class="priors">${list}</ol>` : ""}`;
+    : "";
+  const body = `${card ? blackoutHtml(card) : ""}${kit}${list ? `<ol class="priors">${list}</ol>` : ""}`;
+  document.getElementById("triggers").innerHTML = body || empty("No trigger is on.");
 }
 function renderLocal() {
   const doc = DESK.local || {};
