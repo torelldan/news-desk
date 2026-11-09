@@ -975,7 +975,13 @@ def main() -> int:
             "X feed offline" if x_offline else f"@{account['handle']}",
             mine, offline=x_offline,
         ))
-    catalog_rows.extend(extra_sources(boards_out.get("markets") or {}, boards_out.get("threats") or {}, boards_out.get("science") or {}))
+    threat_gaps = (boards_out.get("threats") or {}).get("gaps") or []
+    for gap in threat_gaps:
+        if gap and gap not in errors:
+            errors.append(gap)
+    catalog_rows.extend(extra_sources(
+        boards_out.get("markets") or {}, boards_out.get("threats") or {}, boards_out.get("science") or {}, threat_gaps,
+    ))
 
     all_items = episodes + signals
     current_ids = [row["id"] for row in all_items]

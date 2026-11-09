@@ -228,6 +228,15 @@ def test_board_helpers():
     assert boards.quake_severity(6.2, "Ridgecrest, California") == "ACTION"
     assert boards.quake_severity(5.6, "Nashville, Tennessee") == "ALERT"
     assert boards.quake_severity(4.6) == "STANDBY"
+    assert boards.keep_quake(5.7, "Hasaki, Japan", False, "", 0) is False
+    assert boards.keep_quake(6.4, "off Honshu, Japan", False, "yellow", 0) is True
+    assert boards.keep_quake(6.4, "off Honshu, Japan", False, "", 0) is False
+    old = {"severity": "ALERT", "published": "2026-10-28T12:00:00-05:00", "title": "old wire"}
+    fresh = {"severity": "ALERT", "published": "2026-11-09T08:00:00-06:00", "title": "new wire"}
+    from datetime import datetime
+    boards.demote_stale_alerts([old, fresh], datetime.fromisoformat("2026-11-09T09:26:00-06:00"))
+    assert old["severity"] == "STANDBY"
+    assert fresh["severity"] == "ALERT"
     assert boards._storm_severity("There are no tropical cyclones at this time.", "") == "STANDBY"
     assert boards._storm_severity("Atlantic Tropical Weather Outlook", "No cyclones") == "STANDBY"
     assert boards._sentry_level({"ts_max": "0", "ps_max": "-6.15", "ip": "2.9e-06"}) == ""
@@ -260,6 +269,11 @@ def test_trend_filter_and_confidence():
     assert "gold inflation" in names
     assert "Secretary of War" not in names
     assert citizen.topic_of("Iran war") == "iran-war"
+    assert citizen.topic_of("Eisenkot asked to form Israel's government") == "israel"
+    assert citizen.topic_of("COP31 opens in Antalya") == "climate"
+    assert citizen.topic_of("G7 ministers meet Rubio in Paris") == "g7"
+    assert citizen.topic_of("Trump casts doubt on the midterms") == "election"
+    assert citizen.topic_of("Krakow attack wounds several") == "attack"
     stamped = citizen.news_velocity([
         {"kind": "war-iran", "title": "Iran war one", "source": "A", "url": "https://a.example/1", "published": "2026-11-05T02:00:00-06:00", "date": "2026-11-05"},
         {"kind": "war-iran", "title": "Iran war two", "source": "B", "url": "https://b.example/2", "published": "2026-11-05T10:00:00-06:00", "date": "2026-11-05"},
