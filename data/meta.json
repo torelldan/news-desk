@@ -1,8 +1,8 @@
 {
   "baseline": false,
-  "brief": "No rare risk is on the board. A routine flyby or an empty storm outlook is not an emergency. Current war coverage is on the board: Exclusive | Trump Acknowledges Iran War Is Partly to Blame for Republican Losses - WSJ; Trump says renewed Iran strikes ‘highly unlikely’ if talks progress but warns he could still strike - CNBC. Rising topic: iran war (4 outlets this window).",
-  "checkedAt": "2026-11-09T09:26:44-06:00",
-  "checkedLabel": "Nov 9, 2026 9:26 AM CT",
+  "brief": "No rare risk is on the board. A routine flyby or an empty storm outlook is not an emergency. Current war coverage is on the board: Vance blames Iran war for GOP midterm losses - PBS; Trump says renewed Iran strikes ‘highly unlikely’ if talks progress but warns he could still strike - CNBC. Rising topic: white house (US daily list 500+).",
+  "checkedAt": "2026-11-09T10:59:24-06:00",
+  "checkedLabel": "Nov 9, 2026 10:59 AM CT",
   "errors": [
     "GDACS: not well-formed (invalid token): line 13, column 416",
     "ReliefWeb: disasters feed did not answer. curl: (22) The requested URL returned error: 410\n",
@@ -12,7 +12,7 @@
   "retainDays": 120,
   "today": "2026-11-09",
   "trends": {
-    "google": "Google Trends US daily list answered (10 topics). Kept the ones that match a war, government, or threat topic. None of today's search trends matched.",
+    "google": "Google Trends US daily list answered (10 topics). Kept the ones that match a war, government, or threat topic.",
     "mode": "trends",
     "note": "X trends by WOEID (US 23424977 and worldwide 1). Kept only when the name matches a threat or preparedness theme. The endpoint answered and none of the names matched."
   },

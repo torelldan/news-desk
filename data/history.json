@@ -2032,8 +2032,13 @@
     },
     {
       "date": "2026-11-09",
-      "label": "Nov 9, 2026 9:26 AM CT",
+      "label": "Nov 9, 2026 10:59 AM CT",
       "outlooks": [
+        {
+          "id": "quake:cb415447006964cd",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
         {
           "id": "quake:10d9e947d9195018",
           "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
@@ -2050,24 +2055,9 @@
           "severity": "STANDBY"
         },
         {
-          "id": "relief:0109da81b6fc36e7",
-          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
-          "severity": "STANDBY"
-        },
-        {
-          "id": "who:53dcad2ca08ee68e",
-          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
-          "severity": "STANDBY"
-        },
-        {
-          "id": "cdc:12c7ca9ea1a41c99",
-          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:d0e17ff63b086de1",
+          "id": "headline:90b337ad3de37707",
           "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ALERT"
+          "severity": "STANDBY"
         },
         {
           "id": "headline:7149be05df5e1387",
@@ -2075,12 +2065,12 @@
           "severity": "ALERT"
         },
         {
-          "id": "headline:4244127e9d33cc93",
-          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "id": "headline:39dc062f06b65c08",
+          "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
         {
-          "id": "headline:7078290ae757e85a",
+          "id": "headline:d52542cc65075beb",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
@@ -2092,35 +2082,115 @@
         {
           "id": "headline:b6ce1bcd90f751dc",
           "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ALERT"
+          "severity": "STANDBY"
         },
         {
-          "id": "headline:c92155a940ad7fb8",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ALERT"
+          "id": "headline:c8e70c08d4bcc609",
+          "outlook": "Lower than yesterday. The 72-hour path is easing if it holds.",
+          "severity": "STANDBY"
         },
         {
           "id": "headline:7175ff5cfaafa88d",
-          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
-          "severity": "ALERT"
+          "outlook": "Lower than yesterday. The 72-hour path is easing if it holds.",
+          "severity": "STANDBY"
         },
         {
-          "id": "headline:96bd83c59ce80ad2",
-          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
-          "severity": "ALERT"
+          "id": "headline:af51794a74e641dd",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
         },
         {
-          "id": "headline:d4330933ed1963de",
+          "id": "headline:dba595e192a40d03",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:0b3ddf2a6200b1d5",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:e614664f1ff69b42",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:e775c30153f2f6a8",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
         {
-          "id": "headline:7da7157bc2e79edb",
-          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "id": "headline:fcc4908db8e1be8c",
+          "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
         {
-          "id": "headline:020f223139ef6c6b",
+          "id": "headline:5220bfe4a0aae5a9",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:3c8ebfeb8883cd8a",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:42774c269809659e",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:c619f3ad5ad8825e",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:fc75d498e524c217",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:3494fd3e0e4ec3cf",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:4fb8dc1806cbdcab",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:4cdce17e80a54e42",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:71efce0c3821d072",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:e97732913e19a8ce",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:20544ca9b57d323a",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:49f40d767ff101f9",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:634711115a2d23fa",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:084057158812c361",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
@@ -2152,6 +2222,12 @@
       ],
       "threats": [
         {
+          "id": "quake:cb415447006964cd",
+          "kind": "quake",
+          "severity": "STANDBY",
+          "title": "M6.1 144 km SE of Hasaki, Japan"
+        },
+        {
           "id": "quake:10d9e947d9195018",
           "kind": "quake",
           "severity": "STANDBY",
@@ -2170,28 +2246,10 @@
           "title": "M4.6 147 km SSE of False Pass, Alaska"
         },
         {
-          "id": "relief:0109da81b6fc36e7",
-          "kind": "relief",
-          "severity": "STANDBY",
-          "title": "ReliefWeb disasters"
-        },
-        {
-          "id": "who:53dcad2ca08ee68e",
-          "kind": "who",
-          "severity": "STANDBY",
-          "title": "New WHO technical package to help countries improve health data for COVID-19 response and beyond"
-        },
-        {
-          "id": "cdc:12c7ca9ea1a41c99",
-          "kind": "cdc",
-          "severity": "STANDBY",
-          "title": "CDC Health Alert Network notices"
-        },
-        {
-          "id": "headline:d0e17ff63b086de1",
+          "id": "headline:90b337ad3de37707",
           "kind": "war-iran",
-          "severity": "ALERT",
-          "title": "Exclusive | Trump Acknowledges Iran War Is Partly to Blame for Republican Losses - WSJ"
+          "severity": "STANDBY",
+          "title": "Vance blames Iran war for GOP midterm losses - PBS"
         },
         {
           "id": "headline:7149be05df5e1387",
@@ -2200,16 +2258,16 @@
           "title": "Trump says renewed Iran strikes ‘highly unlikely’ if talks progress but warns he could still strike - CNBC"
         },
         {
-          "id": "headline:4244127e9d33cc93",
+          "id": "headline:39dc062f06b65c08",
           "kind": "war-iran",
           "severity": "ALERT",
-          "title": "Iran, Qatari mediators hold third day of talks to end US-Iran war - Reuters"
+          "title": "Trump to meet Iran war mediator Qatar, no imminent deal seen to end the war - Reuters"
         },
         {
-          "id": "headline:7078290ae757e85a",
+          "id": "headline:d52542cc65075beb",
           "kind": "war-iran",
           "severity": "ALERT",
-          "title": "Trump administration held talks with Iran on deporting Iranians during the war, court documents show - PBS"
+          "title": "Trump reacts to Vance’s Iran war post, says he’d make the same call - Politico"
         },
         {
           "id": "headline:42b713d8d722af0f",
@@ -2220,44 +2278,140 @@
         {
           "id": "headline:b6ce1bcd90f751dc",
           "kind": "war-ukraine",
-          "severity": "ALERT",
+          "severity": "STANDBY",
           "title": "What to know about the Melania Trump-brokered ceasefire in Russian-occupied Oleshky - AP News"
         },
         {
-          "id": "headline:c92155a940ad7fb8",
+          "id": "headline:c8e70c08d4bcc609",
           "kind": "war-ukraine",
-          "severity": "ALERT",
-          "title": "Melania Trump touts rare agreement she brokered between Russia and Ukraine - NPR"
+          "severity": "STANDBY",
+          "title": "Why Ukraine and Russia agreed to a ceasefire in just one city - NPR"
         },
         {
           "id": "headline:7175ff5cfaafa88d",
           "kind": "war-ukraine",
-          "severity": "ALERT",
+          "severity": "STANDBY",
           "title": "War in Ukraine | Global Conflict Tracker - Council on Foreign Relations"
         },
         {
-          "id": "headline:96bd83c59ce80ad2",
+          "id": "headline:af51794a74e641dd",
           "kind": "usgov",
-          "severity": "ALERT",
-          "title": "Democrats won control of Congress. So what does that mean for the Supreme Court? - SCOTUSblog"
+          "severity": "STANDBY",
+          "title": "Trump Says in Interview That He Will Accept Election Results - The New York Times"
         },
         {
-          "id": "headline:d4330933ed1963de",
+          "id": "headline:dba595e192a40d03",
           "kind": "usgov",
-          "severity": "ALERT",
-          "title": "Congress is coming back to Washington. Here's what to expect - NPR"
+          "severity": "STANDBY",
+          "title": "6 takeaways from Democrats' big wave on election night - NPR"
         },
         {
-          "id": "headline:7da7157bc2e79edb",
+          "id": "headline:0b3ddf2a6200b1d5",
           "kind": "usgov",
-          "severity": "ALERT",
-          "title": "Pentagon sued over its Project Meridian advisory committee - Federal News Network"
+          "severity": "STANDBY",
+          "title": "Secretary Rubio’s Meeting with Venezuelan Foreign Minister Blanco - U.S. Department of State (.gov)"
         },
         {
-          "id": "headline:020f223139ef6c6b",
+          "id": "headline:e614664f1ff69b42",
           "kind": "usgov",
+          "severity": "STANDBY",
+          "title": "Democrats’ blue wave and a bad night for Trump: key US midterms takeaways - The Guardian"
+        },
+        {
+          "id": "headline:e775c30153f2f6a8",
+          "kind": "israel",
           "severity": "ALERT",
-          "title": "Democrats flex congressional majorities as Trump accepts electoral losses - Reuters"
+          "title": "Israel's president formally gives Eisenkot the first chance to form the next government - PBS"
+        },
+        {
+          "id": "headline:fcc4908db8e1be8c",
+          "kind": "israel",
+          "severity": "ALERT",
+          "title": "Israeli president picks Gadi Eisenkot, Netanyahu rival, to try to form government - Reuters"
+        },
+        {
+          "id": "headline:5220bfe4a0aae5a9",
+          "kind": "israel",
+          "severity": "ALERT",
+          "title": "Israel's president taps opposition candidate, not Netanyahu, to form a government - NPR"
+        },
+        {
+          "id": "headline:3c8ebfeb8883cd8a",
+          "kind": "israel",
+          "severity": "ALERT",
+          "title": "Israel’s president picks Eisenkot over Netanyahu to form next government - Al Jazeera"
+        },
+        {
+          "id": "headline:42774c269809659e",
+          "kind": "climate",
+          "severity": "ALERT",
+          "title": "COP31 to take place 9-20 November 2026 in Antalya, Türkiye - Welcome to the United Nations"
+        },
+        {
+          "id": "headline:c619f3ad5ad8825e",
+          "kind": "climate",
+          "severity": "ALERT",
+          "title": "COP31 summit leaders urge crisis-wracked world to move faster on climate - Reuters"
+        },
+        {
+          "id": "headline:fc75d498e524c217",
+          "kind": "climate",
+          "severity": "ALERT",
+          "title": "A Guide to COP31 Climate Talks in Antalya, Turkey - The New York Times"
+        },
+        {
+          "id": "headline:3494fd3e0e4ec3cf",
+          "kind": "climate",
+          "severity": "STANDBY",
+          "title": "WHO at COP31: climate change and health briefing and key messages - World Health Organization (WHO)"
+        },
+        {
+          "id": "headline:4fb8dc1806cbdcab",
+          "kind": "diplomacy",
+          "severity": "ALERT",
+          "title": "G7 allies to assess impact of Trump's midterm setback at Paris talks - Reuters"
+        },
+        {
+          "id": "headline:4cdce17e80a54e42",
+          "kind": "diplomacy",
+          "severity": "ALERT",
+          "title": "Europe to press US on Ukraine peace and Iran at Paris G7 talks - France 24"
+        },
+        {
+          "id": "headline:71efce0c3821d072",
+          "kind": "diplomacy",
+          "severity": "ALERT",
+          "title": "G7: Priorities of the G7 Foreign Ministers’ Meeting in Paris - La France à l'ONU"
+        },
+        {
+          "id": "headline:e97732913e19a8ce",
+          "kind": "diplomacy",
+          "severity": "ALERT",
+          "title": "G7 talks in Paris take on global crises amid uncertainty over U.S. approach - Spectrum News"
+        },
+        {
+          "id": "headline:20544ca9b57d323a",
+          "kind": "attack",
+          "severity": "ALERT",
+          "title": "Polish gunman who killed 6 people in Krakow has 'ultranationalistic' views, authorities say - NPR"
+        },
+        {
+          "id": "headline:49f40d767ff101f9",
+          "kind": "attack",
+          "severity": "ALERT",
+          "title": "Gunman with far-right views who killed 6 in Poland shooting rampage dies in hospital, police say - NBC News"
+        },
+        {
+          "id": "headline:634711115a2d23fa",
+          "kind": "attack",
+          "severity": "ALERT",
+          "title": "At least 6 killed, several injured in shooting at Polish market square: Police - ABC News - Breaking News, Latest News and Videos"
+        },
+        {
+          "id": "headline:084057158812c361",
+          "kind": "attack",
+          "severity": "ALERT",
+          "title": "Suspect in Mass Shooting in Krakow, Poland, Dies in Hospital. Here’s What to Know. - The New York Times"
         },
         {
           "id": "neo:9934e838c1539fdc",
@@ -2291,6 +2445,11 @@
         }
       ],
       "trends": [
+        {
+          "category": "us-gov",
+          "name": "white house",
+          "volume": "500+"
+        },
         {
           "category": "iran-war",
           "name": "iran war",
