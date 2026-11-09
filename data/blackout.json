@@ -1,0 +1,56 @@
+{
+  "visible": true,
+  "expires": "2026-11-18",
+  "daysUntil": 8,
+  "eventDate": "2026-11-17",
+  "backupDate": "2026-12-03",
+  "postponed": false,
+  "liveWindow": false,
+  "verdict": "Rumor: no blackout scheduled",
+  "real": "FEMA/FCC nationwide Emergency Alert System test at about 2:20 PM ET (1:20 PM CT), radio and TV only, about one minute. The message is “This is only a test. No action is required.” Phones are not included. Backup date is Dec 3, 2026.",
+  "action": "Nothing special. Keep a normal 72-hour kit. No extra shopping.",
+  "factChecks": [
+    {
+      "name": "Prepared States",
+      "url": "https://www.preparedstates.com/guides/november-17-blackout"
+    },
+    {
+      "name": "LB.ua disinformation centre",
+      "url": "https://en.lb.ua/news/2026/11/09/48708_disinformation_centre_debunks.html"
+    },
+    {
+      "name": "Blackout map",
+      "url": "https://blackoutmap.net/blog/global-blackout-november-rumour"
+    },
+    {
+      "name": "Krakobit",
+      "url": "https://krakobit.com/news/internet-shutdown-rumor-november-17/"
+    }
+  ],
+  "signals": [
+    {
+      "source": "Live checks",
+      "ok": true,
+      "note": "Rumor, outage, and EAS checks run on refreshes from Nov 14 through Nov 18.",
+      "verifiedOutage": false
+    }
+  ],
+  "samples": [],
+  "severity": "STANDBY",
+  "gaps": [],
+  "card": {
+    "id": "blackout-nov-17",
+    "kind": "blackout",
+    "lane": "desk",
+    "title": "Nov 17 blackout watch",
+    "severity": "STANDBY",
+    "url": "https://www.preparedstates.com/guides/november-17-blackout",
+    "published": "2026-11-09T10:19:23-06:00",
+    "date": "2026-11-09",
+    "label": "Nov 9, 2026 10:19 AM CT",
+    "source": "Desk",
+    "soWhat": "Nothing special. Keep a normal 72-hour kit. No extra shopping.",
+    "confidence": "reported",
+    "sourceCount": 4
+  }
+}

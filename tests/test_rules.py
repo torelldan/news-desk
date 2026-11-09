@@ -369,6 +369,29 @@ def test_triggers_outlook_and_impact():
     assert any(call["verdict"] == "right" for call in look["calls"]) or look["escalated"]
 
 
+def test_blackout_dates_and_severity():
+    import blackout
+    from datetime import date
+    early = blackout.watch_state(date(2026, 11, 9))
+    assert early["visible"] is True
+    assert early["daysUntil"] == 8
+    assert early["liveWindow"] is False
+    assert early["expires"] == "2026-11-18"
+    assert blackout.watch_state(date(2026, 11, 14))["liveWindow"] is True
+    assert blackout.watch_state(date(2026, 11, 17))["daysUntil"] == 0
+    assert blackout.watch_state(date(2026, 11, 18))["visible"] is True
+    assert blackout.watch_state(date(2026, 11, 19))["visible"] is False
+    held = blackout.watch_state(date(2026, 11, 20), postponed=True)
+    assert held["visible"] is True
+    assert held["expires"] == "2026-12-03"
+    assert blackout.watch_state(date(2026, 12, 3), postponed=True)["visible"] is True
+    assert blackout.watch_state(date(2026, 12, 4), postponed=True)["visible"] is False
+    assert blackout.severity_for([{"verifiedOutage": False, "note": "900 posts"}]) == "STANDBY"
+    assert blackout.severity_for([{"verifiedOutage": True}]) == "ACTION"
+    assert blackout.re_postponed("FEMA postponed the EAS test") is True
+    assert blackout.re_postponed("backup date December 3 is already on the calendar") is False
+
+
 if __name__ == "__main__":
     test_x_created_at_with_milliseconds()
     test_ct_conversion()
@@ -387,4 +410,5 @@ if __name__ == "__main__":
     test_urls_and_ids()
     test_trend_filter_and_confidence()
     test_triggers_outlook_and_impact()
+    test_blackout_dates_and_severity()
     print("ok")

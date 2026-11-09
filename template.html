@@ -277,6 +277,10 @@
     </div>
   </header>
   <p class="banner" id="xbanner" hidden>X feed offline</p>
+  <section class="section shut" data-sec="blackout">
+    <button type="button" class="fold-btn section-head" data-fold="sec-blackout" aria-expanded="false"><span class="sec-title">Blackout watch</span><span class="sec-sum" id="sum-blackout"></span><span class="pm">+</span></button>
+    <div class="section-body" id="blackout"></div>
+  </section>
   <div class="front">
     <section class="section shut" data-sec="today">
       <button type="button" class="fold-btn section-head" data-fold="sec-today" aria-expanded="false"><span class="sec-title">02 // Today</span><span class="sec-sum" id="sum-today"></span><span class="pm">+</span></button>
@@ -387,7 +391,7 @@ function ageHours(item) {
   if (!Number.isFinite(stamp) && item && item.date) stamp = Date.parse(`${item.date}T12:00:00`);
   if (!Number.isFinite(stamp)) {
     const kind = String((item && (item.kind || item.lane)) || "");
-    if (kind === "trend" || kind === "buzz" || kind === "tape" || kind === "market" || item && item.rise) return 0;
+    if (kind === "trend" || kind === "buzz" || kind === "tape" || kind === "market" || kind === "blackout" || item && item.rise) return 0;
     return 1e9;
   }
   return (Date.now() - stamp) / 36e5;
@@ -467,6 +471,26 @@ function onBoard(item) {
   if (/there are no tropical cyclones/i.test(item.title || "")) return false;
   if (/tropical weather outlook/i.test(item.title || "")) return false;
   return true;
+}
+function blackoutActive() {
+  const doc = DESK.blackout || {};
+  if (!doc.visible) return false;
+  const today = ctToday();
+  if (doc.expires && today > doc.expires) return false;
+  return true;
+}
+function blackoutItems() {
+  if (!blackoutActive()) return [];
+  const card = (DESK.blackout || {}).card;
+  if (!card || !passes(card)) return [];
+  return [card];
+}
+function daysUntilEvent(iso) {
+  const today = ctToday();
+  const start = Date.parse(`${today}T00:00:00Z`);
+  const end = Date.parse(`${iso}T00:00:00Z`);
+  if (!Number.isFinite(start) || !Number.isFinite(end)) return null;
+  return Math.round((end - start) / 86400000);
 }
 function todayItems() {
   return uniqueTitles(((DESK.trends || {}).items || []).filter(passes));
@@ -576,6 +600,13 @@ function paintSections() {
     const klass = String(chip || "STANDBY").toLowerCase();
     sum.innerHTML = `<span class="sev sev-${esc(klass)}">${esc(chip || "STANDBY")}</span> ${esc(String(count))} · ${esc(clip(headline || "Nothing new", 88))}`;
   };
+  const bo = blackoutItems();
+  const boDoc = DESK.blackout || {};
+  const boDays = daysUntilEvent(boDoc.eventDate || "2026-11-17");
+  const boWhen = boDays === 0 ? "Today" : boDays === 1 ? "Tomorrow" : boDays > 1 ? `${boDays} days` : "Test day passed";
+  const boSec = document.querySelector('[data-sec="blackout"]');
+  if (boSec) boSec.hidden = !blackoutActive();
+  setSum("blackout", bo.length ? (boDoc.severity || "STANDBY") : "STANDBY", String(bo.length), bo.length ? `${boWhen} · ${boDoc.verdict || "Rumor: no blackout scheduled"}` : "Not in this date window");
   const brief = publicText(DESK.brief || "");
   const tape = marketTape();
   setSum("brief", tape ? tape.severity : "STANDBY", brief ? "1" : "0", brief ? brief.split(". ")[0] : "No brief on this check");
@@ -857,6 +888,39 @@ function renderStatus(items) {
   const openBits = (rows.find((row) => row[0] === state.focus) || [])[4] || [];
   const detail = state.focus ? `<p class="break">${openBits.map(([label, count]) => `${esc(label)} ${esc(String(count))}`).join(" · ")}</p>` : "";
   document.getElementById("status").innerHTML = buttons + detail;
+}
+function renderBlackout() {
+  const host = document.getElementById("blackout");
+  const sec = document.querySelector('[data-sec="blackout"]');
+  if (!host || !sec) return;
+  if (!blackoutActive()) {
+    sec.hidden = true;
+    host.innerHTML = "";
+    return;
+  }
+  sec.hidden = false;
+  const items = blackoutItems();
+  if (!items.length) {
+    host.innerHTML = empty("Not in this date window.");
+    return;
+  }
+  const doc = DESK.blackout || {};
+  const days = daysUntilEvent(doc.eventDate || "2026-11-17");
+  const when = days === 0 ? "Nov 17 is today" : days === 1 ? "1 day until Nov 17" : days > 1 ? `${days} days until Nov 17` : "The Nov 17 test day has passed";
+  const sev = doc.severity || "STANDBY";
+  const links = (doc.factChecks || []).map((row) => {
+    const url = safeUrl(row.url);
+    return url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(row.name || "fact check")}</a>` : "";
+  }).filter(Boolean).join(" · ");
+  const signals = (doc.signals || []).map((row) => `<p class="meta">${esc(row.source || "")}: ${esc(row.note || "")}</p>`).join("");
+  host.innerHTML = `<article class="card">
+    <div class="head"><span class="sev sev-${sev.toLowerCase()}">${esc(sev)}</span><time>${esc(when)}</time></div>
+    <h3>${esc(doc.verdict || "Rumor: no blackout scheduled")}</h3>
+    <p><strong>What’s real.</strong> ${esc(doc.real || "")}</p>
+    <p><strong>What to do.</strong> ${esc(doc.action || "Nothing special. Keep a normal 72-hour kit.")}</p>
+    ${links ? `<p class="meta">Fact checks: ${links}</p>` : ""}
+    ${signals}
+  </article>`;
 }
 function renderBrief() {
   const text = publicText(DESK.brief || "No brief on this check.");
@@ -1523,6 +1587,7 @@ function render() {
   banner.textContent = offline ? "X feed offline" : "";
   renderStatus(items);
   renderBrief();
+  renderBlackout();
   renderToday();
   renderLocal();
   renderTriggers();
