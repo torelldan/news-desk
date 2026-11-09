@@ -178,7 +178,23 @@ def quake_severity(mag, place: str = "", tsunami: bool = False) -> str:
         return "ACTION"
     if mag >= 7:
         return "ALERT"
+    if mag >= 6:
+        return "STANDBY"
     return "STANDBY"
+
+
+def keep_quake(mag, place: str = "", tsunami: bool = False, alert: str = "", felt: int = 0) -> bool:
+    """Distant quakes stay off the board unless they are M6+ with a reported impact."""
+    try:
+        mag = float(mag)
+    except (TypeError, ValueError):
+        return False
+    if is_us_place(place) or tsunami:
+        return quake_severity(mag, place, tsunami) != "STANDBY" or True
+    impact = str(alert or "").lower() in {"yellow", "orange", "red"} or int(felt or 0) >= 5
+    if mag >= 6 and impact:
+        return True
+    return quake_severity(mag, place, tsunami) != "STANDBY"
 
 
 def alert_severity(event: str, severity: str) -> str:
@@ -388,6 +404,7 @@ def _point_from(node: ET.Element):
 
 def fetch_threats(now: datetime) -> dict:
     items = []
+    gaps: list[str] = []
     network_ok = False
     try:
         payload = json.loads(_get("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geojson", timeout=40))
@@ -403,10 +420,20 @@ def fetch_threats(now: datetime) -> dict:
             when = datetime.fromtimestamp(int(props.get("time") or 0) / 1000, timezone.utc)
             place = props.get("place") or "earthquake"
             tsunami = str(props.get("tsunami") or "") == "1"
+            alert = str(props.get("alert") or "")
+            try:
+                felt = int(props.get("felt") or 0)
+            except (TypeError, ValueError):
+                felt = 0
             sev = quake_severity(mag, place, tsunami)
-            if sev == "STANDBY" and not is_us_place(place) and not tsunami:
+            impact = alert.lower() in {"yellow", "orange", "red"} or felt >= 5
+            if not is_us_place(place) and not tsunami and float(mag) >= 6 and impact and sev == "STANDBY":
+                sev = "ALERT"
+            if not keep_quake(mag, place, tsunami, alert, felt):
                 continue
             note = "USGS earthquake, magnitude 4.5 or greater, past 7 days."
+            if impact and not is_us_place(place):
+                note += " Reported shaking or an alert color is on the USGS record."
             if tsunami:
                 note += " A tsunami flag is set."
             elif not is_us_place(place):
@@ -422,16 +449,13 @@ def fetch_threats(now: datetime) -> dict:
         items.extend(quakes[:30])
         print(f"  quakes {len(quakes[:30])}")
     except Exception as err:
+        gaps.append(f"USGS: {err}")
         print(f"  usgs FAILED: {err}")
     extras = []
-    extras.extend(_try_nhc(now))
-    extras.extend(_try_nws(now))
-    extras.extend(_try_gdacs(now))
-    extras.extend(_try_relief(now))
-    extras.extend(_try_who(now))
-    extras.extend(_try_cdc(now))
-    extras.extend(_try_desks(now))
-    extras.extend(_try_neos(now))
+    for producer in (_try_nhc, _try_nws, _try_gdacs, _try_relief, _try_who, _try_cdc, _try_desks, _try_neos):
+        batch, batch_gaps = producer(now)
+        extras.extend(batch)
+        gaps.extend(batch_gaps)
     if not items and not extras:
         raise RuntimeError("threat feeds returned nothing")
     if not network_ok and not any(row.get("kind") != "clock" for row in extras):
@@ -455,7 +479,35 @@ def fetch_threats(now: datetime) -> dict:
         "severity": "STANDBY",
     })
     kept = [row for row in items + extras if _in_year(row, now.year) or row.get("kind") == "clock"]
-    return {"items": _dedupe_titles(kept)}
+    kept = _drop_old_health(kept, now)
+    return {"items": demote_stale_alerts(_dedupe_titles(kept), now), "gaps": gaps}
+
+
+def demote_stale_alerts(rows: list[dict], now: datetime) -> list[dict]:
+    """An ALERT older than about 72 hours is no longer the live status."""
+    cutoff = now - timedelta(hours=72)
+    for row in rows:
+        if (row.get("severity") or "") != "ALERT":
+            continue
+        published = d.parse_pubdate(row.get("published") or "")
+        if published is not None and published < cutoff:
+            row["severity"] = "STANDBY"
+            row["demoted"] = "older than 72h"
+    return rows
+
+
+def _drop_old_health(rows: list[dict], now: datetime) -> list[dict]:
+    """WHO and CDC notes older than two weeks are not a current outbreak."""
+    cutoff = (now - timedelta(days=14)).date().isoformat()
+    out = []
+    for row in rows:
+        if row.get("kind") in {"who", "cdc"} and (row.get("date") or "9999") < cutoff:
+            continue
+        if row.get("kind") in {"who", "cdc"} and re.search(r"did not answer|data package|technical package", f"{row.get('title') or ''} {row.get('note') or ''}", re.I):
+            if (row.get("date") or "9999") < cutoff:
+                continue
+        out.append(row)
+    return out
 
 
 def _in_year(row: dict, year: int) -> bool:
@@ -492,9 +544,13 @@ def _storm_severity(title: str, note: str) -> str:
 
 def _try_nhc(now):
     rows = []
+    answered = False
+    failures = []
     for url in ("https://www.nhc.noaa.gov/index-at.xml", "https://www.nhc.noaa.gov/index-ep.xml", "https://www.nhc.noaa.gov/gtwo.xml"):
         try:
-            for node in _rss_items(url, 6):
+            nodes = _rss_items(url, 6)
+            answered = True
+            for node in nodes:
                 title = re.sub(r"\s+", " ", (node.findtext("title") or "")).strip()
                 link = d.http_url(node.findtext("link") or url)
                 if not title or not link:
@@ -514,8 +570,12 @@ def _try_nhc(now):
                         extra["lon"] = -float(match.group(2))
                 rows.append(_item("storm", "threat", "NHC", title, note, link, published, ["storm", extra["severity"].lower()], extra))
         except Exception as err:
+            failures.append(str(err))
             print(f"  nhc {url}: {err}")
-    return rows[:10]
+    gaps = []
+    if not answered:
+        gaps.append("NHC: outlook feeds did not answer. " + "; ".join(failures[:2]))
+    return rows[:10], gaps
 
 
 def _try_nws(now):
@@ -564,13 +624,25 @@ def _try_nws(now):
                 break
     except Exception as err:
         print(f"  nws national: {err}")
-    return rows
+        return rows, [f"NWS national alerts: {err}"]
+    return rows, []
 
 
 def _try_gdacs(now):
     rows = []
-    try:
-        for node in _rss_items("https://www.gdacs.org/xml/rss.xml", 12):
+    errors = []
+    for url in (
+        "https://www.gdacs.org/xml/rss.xml",
+        "https://www.gdacs.org/xml/rss_7d.xml",
+        "https://gdacs.org/xml/rss.xml",
+    ):
+        try:
+            nodes = _rss_items(url, 12)
+        except Exception as err:
+            errors.append(str(err))
+            print(f"  gdacs {url}: {err}")
+            continue
+        for node in nodes:
             title = re.sub(r"\s+", " ", (node.findtext("title") or "")).strip()
             link = d.http_url(node.findtext("link") or "https://www.gdacs.org/")
             if not title or not link:
@@ -583,13 +655,16 @@ def _try_gdacs(now):
             if point:
                 extra["lat"], extra["lon"] = point
             rows.append(_item("gdacs", "threat", "GDACS", title, d.clean_note(node.findtext("description") or ""), link, published, ["gdacs", sev.lower()], extra))
-    except Exception as err:
-        print(f"  gdacs: {err}")
-    return rows
+        if rows:
+            return rows, []
+    if not rows:
+        return [], ["GDACS: " + (errors[0] if errors else "RSS returned no events.")]
+    return rows, []
 
 
 def _try_relief(now):
     rows = []
+    errors = []
     url = "https://api.reliefweb.int/v1/disasters?appname=news-desk&profile=list&preset=latest&limit=8"
     try:
         payload = json.loads(_get(url, timeout=30))
@@ -605,14 +680,25 @@ def _try_relief(now):
             kind = ((fields.get("primary_type") or {}).get("name")) or "disaster"
             rows.append(_item("relief", "threat", "ReliefWeb", title, f"{kind}. {country}".strip(), link, published, ["relief", "alert"], {"severity": "ALERT"}))
     except Exception as err:
+        errors.append(str(err))
         print(f"  reliefweb: {err}")
-    if not rows:
-        rows.append(_item(
-            "relief", "threat", "ReliefWeb", "ReliefWeb disasters",
-            "The disasters feed did not answer this run. The link opens the public list.",
-            "https://reliefweb.int/disasters", now, ["relief", "standby"], {"severity": "STANDBY"},
-        ))
-    return rows
+    if rows:
+        return rows, []
+    for rss in ("https://reliefweb.int/disasters/rss.xml", "https://reliefweb.int/updates/rss.xml"):
+        try:
+            for node in _rss_items(rss, 8):
+                title = re.sub(r"\s+", " ", (node.findtext("title") or "")).strip()
+                link = d.http_url(node.findtext("link") or rss)
+                if not title or not link:
+                    continue
+                published = d.parse_pubdate(node.findtext("pubDate") or "") or now
+                rows.append(_item("relief", "threat", "ReliefWeb", title, "", link, published, ["relief", "alert"], {"severity": "ALERT"}))
+            if rows:
+                return rows, []
+        except Exception as err:
+            errors.append(str(err))
+            print(f"  reliefweb {rss}: {err}")
+    return [], ["ReliefWeb: disasters feed did not answer. " + (errors[0] if errors else "")]
 
 
 def _try_who(now):
@@ -629,15 +715,16 @@ def _try_who(now):
             if not title or not link:
                 continue
             published = d.parse_pubdate(node.findtext("pubDate") or "") or now
-            if published.year < now.year:
+            if published.year < now.year or (now - published).days > 14:
                 continue
-            if re.search(r"covid", title, re.I) and published.year < now.year:
+            if re.search(r"covid|technical package|data for covid", title, re.I):
                 continue
             sev = "ALERT" if re.search(r"outbreak|cases|deaths|epidemic", title, re.I) else "STANDBY"
             rows.append(_item("who", "threat", "WHO", title, d.clean_note(node.findtext("description") or ""), link, published, ["who", sev.lower()], {"severity": sev}))
         if rows:
             break
-    return rows[:6]
+    gaps = [] if rows else ["WHO: outbreak notices did not answer in the last 14 days."]
+    return rows[:6], gaps
 
 
 def _try_cdc(now):
@@ -653,12 +740,11 @@ def _try_cdc(now):
             rows.append(row)
     except Exception as err:
         print(f"  cdc headlines: {err}")
-    rows.append(_item(
-        "cdc", "threat", "CDC HAN", "CDC Health Alert Network notices",
-        "Official HAN index. A dedicated CDC RSS feed did not answer this run.",
-        "https://www.cdc.gov/han/php/notices/index.html", now, ["cdc", "standby"], {"severity": "STANDBY"},
-    ))
-    return rows[:5]
+        return [], [f"CDC HAN: {err}"]
+    fresh = [row for row in rows if (row.get("date") or "") >= (now - timedelta(days=14)).date().isoformat()]
+    if not fresh:
+        return [], ["CDC HAN: RSS did not answer and no notice is newer than 14 days."]
+    return fresh[:5], []
 
 
 def _try_desks(now):
@@ -666,13 +752,19 @@ def _try_desks(now):
     specs = (
         ("war-iran", "Iran war", 'Iran (war OR strike OR missile OR IRGC OR ceasefire) when:14d'),
         ("war-ukraine", "Ukraine war", 'Ukraine (Russia OR missile OR ceasefire OR Kyiv OR front) when:14d'),
-        ("usgov", "US government", '("White House" OR Congress OR Pentagon OR "Supreme Court") when:7d'),
+        ("usgov", "US government", '("White House" OR Congress OR Pentagon OR "Supreme Court" OR Rubio OR "election integrity" OR midterms) when:7d'),
+        ("israel", "Israel", 'Israel (government OR coalition OR Eisenkot OR Knesset) when:7d'),
+        ("climate", "Climate summit", '(COP31 OR Antalya) (climate OR summit OR COP) when:14d'),
+        ("diplomacy", "G7", '(G7 OR Rubio) (Paris OR ministers) when:7d'),
+        ("attack", "Attack", '(Krakow OR Kraków OR Krakow) (attack OR stabbing OR explosion) when:7d'),
     )
     rows = []
+    gaps = []
     for kind, source, query in specs:
         try:
             found = _headlines(query, now, retain_days=21, limit=8)
         except Exception as err:
+            gaps.append(f"{source}: {err}")
             print(f"  {kind}: {err}")
             continue
         kept = 0
@@ -693,7 +785,9 @@ def _try_desks(now):
             if kept >= 4:
                 break
         print(f"  {kind} {kept}")
-    return rows
+        if kept == 0:
+            gaps.append(f"{source}: 0 headlines for this check.")
+    return rows, gaps
 
 
 def _sentry_soon(rec: dict, year: int) -> bool:
@@ -729,6 +823,7 @@ def _sentry_level(rec: dict) -> str:
 
 def _try_neos(now):
     rows = []
+    gaps = []
     risky = {}
     try:
         sentry = json.loads(_get("https://ssd-api.jpl.nasa.gov/sentry.api", timeout=30))
@@ -742,6 +837,7 @@ def _try_neos(now):
                 if key:
                     risky[str(key).upper()] = (level, rec)
     except Exception as err:
+        gaps.append(f"Sentry: {err}")
         print(f"  sentry: {err}")
     start = now.strftime("%Y-%m-%d")
     end = (now + timedelta(days=60)).strftime("%Y-%m-%d")
@@ -775,6 +871,7 @@ def _try_neos(now):
             link = "https://cneos.jpl.nasa.gov/ca/"
             rows.append(_item("neo", "threat", "NASA/JPL CNEOS", f"Close approach {name}", note, link, when, ["neo", sev.lower()], {"severity": sev, "lunar": round(ld, 2)}))
     except Exception as err:
+        gaps.append(f"CNEOS close approaches: {err}")
         print(f"  cneos: {err}")
     for key, (level, rec) in list(risky.items())[:5]:
         if any(key in (row.get("title") or "").upper() for row in rows):
@@ -791,7 +888,7 @@ def _try_neos(now):
         ))
         if sum(1 for row in rows if row.get("kind") == "sentry") >= 3:
             break
-    return rows
+    return rows, gaps
 
 
 def fetch_assets(now: datetime) -> dict:
@@ -950,7 +1047,7 @@ def _science_feed(spec: dict, now: datetime, cutoff: str) -> list[dict]:
     return rows
 
 
-def extra_sources(markets: dict, threats: dict, science: dict) -> list[dict]:
+def extra_sources(markets: dict, threats: dict, science: dict, gaps: list | None = None) -> list[dict]:
     """World-desk rows for the boards, not only the podcast and X list."""
     rows = []
 
@@ -994,8 +1091,12 @@ def extra_sources(markets: dict, threats: dict, science: dict) -> list[dict]:
     by_kind = {}
     for item in (threats or {}).get("items") or []:
         by_kind.setdefault(item.get("kind"), []).append(item)
+    down = " ".join(gaps or []).lower()
     for kind, (name, short, url) in kind_home.items():
         add("threat-" + kind, name, short, "threat", url, by_kind.get(kind) or [])
+        if kind in {"gdacs", "relief", "who", "cdc", "sentry"} and kind in down or name.split()[0].lower() in down:
+            rows[-1]["offline"] = True
+            rows[-1]["subtitle"] = "source down"
     by_field = {}
     for item in (science or {}).get("items") or []:
         by_field.setdefault(item.get("field") or "science", []).append(item)

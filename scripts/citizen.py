@@ -72,6 +72,18 @@ def topic_of(text: str) -> str:
         return "ukraine-war"
     if re.search(r"\b(white house|congress|pentagon|supreme court|senate)\b", blob, re.I):
         return "us-gov"
+    if re.search(r"\b(eisenkot|knesset)\b", blob, re.I) or (
+        re.search(r"\bisrael\b", blob, re.I) and re.search(r"\b(government|coalition|minister)\b", blob, re.I)
+    ):
+        return "israel"
+    if re.search(r"\b(cop31|antalya)\b", blob, re.I) or re.search(r"climate summit", blob, re.I):
+        return "climate"
+    if re.search(r"\bg7\b", blob, re.I) or (re.search(r"\brubio\b", blob, re.I) and re.search(r"\bparis\b", blob, re.I)):
+        return "g7"
+    if re.search(r"\b(midterms?|election integrity)\b", blob, re.I):
+        return "election"
+    if re.search(r"\b(krakow|kraków)\b", blob, re.I):
+        return "attack"
     if re.search(r"\b(hurricane|tropical storm|typhoon)\b", blob, re.I):
         return "hurricane"
     if re.search(r"\b(flood|flooding)\b", blob, re.I):

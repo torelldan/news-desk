@@ -476,9 +476,14 @@ function orderItems() {
   const locals = ((DESK.local || {}).items || []).filter((item) => item.kind !== "na" && needsAction(item) && passes(item));
   return uniqueTitles(threats.concat(locals).sort((a, b) => rankOf(b) - rankOf(a) || String(b.published || "").localeCompare(String(a.published || ""))));
 }
+function shownSeverity(item) {
+  const sev = (item && item.severity) || "STANDBY";
+  if (sev === "ALERT" && ageHours(item) > 72) return "STANDBY";
+  return sev;
+}
 function watchItems() {
   const watchRank = (item) => item.kind === "war-iran" || item.kind === "war-ukraine" ? 3 : item.kind === "usgov" ? 2 : 1;
-  return uniqueTitles(((DESK.threats || {}).items || []).filter((item) => onBoard(item) && !needsAction(item) && (item.severity === "ALERT" || ["war-iran", "war-ukraine", "usgov"].includes(item.kind)))
+  return uniqueTitles(((DESK.threats || {}).items || []).filter((item) => onBoard(item) && !needsAction(item) && shownSeverity(item) === "ALERT")
     .sort((a, b) => watchRank(b) - watchRank(a) || String(a.title || "").localeCompare(String(b.title || ""))));
 }
 function threatItems() {
@@ -504,34 +509,56 @@ function lookRows() {
   const doc = DESK.lookback || {};
   return [].concat(doc.escalated || [], doc.fizzled || [], doc.calls || []);
 }
+function deskRank(item) {
+  const blob = `${item.title || ""} ${item.note || ""} ${(item.tags || []).join(" ")} ${item.kind || ""} ${item.source || ""}`.toLowerCase();
+  let score = 0;
+  if (/war-iran|war-ukraine|usgov|israel|climate|diplomacy|attack|conflict|quake|storm|nws|gdacs|market|trend/.test(item.kind || "")) score += 60;
+  if (/\b(iran|ukraine|israel|eisenkot|gaza|pentagon|congress|white house|midterm|election|cop31|antalya|g7|rubio|krakow|kraków|earthquake|hurricane|outbreak|preparedness)\b/.test(blob)) score += 40;
+  if (/\b(addiction|obsession|wellness|meditation|comedy|fishing|fly-fishing|uap|ufo)\b/.test(blob) && !/\b(iran|ukraine|war|congress|election)\b/.test(blob)) score -= 45;
+  const bare = String(item.title || "").replace(/https?:\/\/\S+/g, "").trim();
+  const words = bare.split(/\s+/).filter(Boolean);
+  if ((item.lane === "x" || item.kind === "x") && (words.length <= 6 || /https?:\/\//.test(item.title || ""))) score -= 30;
+  return score;
+}
+function byDeskRank(items) {
+  return items.slice().sort((a, b) => deskRank(b) - deskRank(a) || String(b.published || "").localeCompare(String(a.published || "")));
+}
 function logPool() {
   const matched = allItems().filter((item) => matches(item) && safeUrl(item.url));
-  if (state.tab === "archive") return (state.range === "all" || state.range === "4d") ? matched.filter((item) => bucketOf(item) === "4d") : [];
-  return matched.filter(inRange);
+  if (state.tab === "archive") return byDeskRank((state.range === "all" || state.range === "4d") ? matched.filter((item) => bucketOf(item) === "4d") : []);
+  return byDeskRank(matched.filter(inRange));
 }
 function briefLines() {
-  return logPool().slice(0, 16);
+  const news = threatItems().filter((item) => ["ALERT", "ACTION", "CRITICAL"].includes(shownSeverity(item)));
+  return uniqueTitles(byDeskRank(news.concat(logPool()))).slice(0, 16);
+}
+function changeKey(item) {
+  return `${item.id || ""}|${storyKey(item)}|${item.section || ""}`;
+}
+function changePack(block) {
+  const rows = [];
+  ["threats", "trends"].forEach((section) => {
+    const pack = (block || {})[section] || {};
+    ["escalated", "deescalated", "new", "resolved"].forEach((key) => {
+      (pack[key] || []).forEach((item) => rows.push(Object.assign({ section: item.section || section, change: key }, item)));
+    });
+  });
+  return rows;
 }
 function changeRows() {
   const doc = DESK.changes || {};
-  const rows = [];
-  [doc.sinceRefresh || {}, doc.sinceYesterday || {}].forEach((block) => {
-    ["threats", "trends"].forEach((section) => {
-      const pack = block[section] || {};
-      ["escalated", "deescalated", "new", "resolved"].forEach((key) => {
-        (pack[key] || []).forEach((item) => {
-          if (!state.q || matches(item)) rows.push(item);
-        });
-      });
-    });
-  });
-  ((doc.groups || {}).pages || []).slice(0, 6).forEach((item) => rows.push(item));
+  const refresh = changePack(doc.sinceRefresh);
+  const seen = new Set(refresh.map(changeKey));
+  const yesterday = changePack(doc.sinceYesterday).filter((item) => !seen.has(changeKey(item)));
+  const pages = ((doc.groups || {}).pages || []).slice(0, 6);
   const tape = marketTape();
-  if (tape) rows.push(tape);
-  return rows;
+  return refresh.concat(yesterday, pages, tape ? [tape] : []).filter(passes);
 }
 function topSeverity(items) {
-  return items.reduce((best, item) => rankOf(item) > rankOf({ severity: best }) ? (item.severity || "STANDBY") : best, "STANDBY");
+  return items.reduce((best, item) => {
+    const sev = shownSeverity(item);
+    return rankOf({ severity: sev }) > rankOf({ severity: best }) ? sev : best;
+  }, "STANDBY");
 }
 function paintSections() {
   const setSum = (id, chip, count, headline) => {
@@ -588,7 +615,15 @@ function paintSections() {
   const briefs = briefLines();
   setSum("briefs", "STANDBY", String(briefs.length), briefs[0] ? briefs[0].title : "Nothing in this window");
   const log = logPool();
-  setSum("log", "STANDBY", String(log.length), log[0] ? log[0].title : "Nothing in this window");
+  const buckets = { "24h": 0, "48h": 0, "72h": 0, "4d": 0 };
+  (state.range === "all" ? allItems().filter((item) => matches(item) && safeUrl(item.url)) : log).forEach((item) => {
+    const bucket = bucketOf(item);
+    if (buckets[bucket] != null) buckets[bucket] += 1;
+  });
+  const logLine = state.range === "all"
+    ? `24h ${buckets["24h"]} · 48h ${buckets["48h"]} · 72h ${buckets["72h"]} · 4+ ${buckets["4d"]}`
+    : (log[0] ? log[0].title : "Nothing in this window");
+  setSum("log", "STANDBY", String(log.length), logLine);
 }
 function fold(id, title, body, fallback) {
   const open = isOpen(id, fallback);
@@ -616,7 +651,8 @@ function groupedHtml(items, draw, opts) {
       body += `<button type="button" class="more" data-more="${esc(id)}">${expanded ? "Show less" : "Show more"} · ${drawn.length}</button>`;
     }
     const heading = `${esc(RANGE_LABEL[key])} · ${drawn.length}`;
-    if (options.collapse) html += fold(id, heading, body, key === "24h" && options.firstOpen);
+    const openBucket = options.firstOpen && (key === "24h" || (key === "48h" && (!state.range || state.range === "all")));
+    if (options.collapse) html += fold(id, heading, body, openBucket);
     else html += `<h3 class="group">${heading}</h3>${body}`;
   });
   if (!any) return `<p class="empty">Nothing in this window yet. It builds up with each refresh.</p>`;
@@ -856,7 +892,7 @@ function renderOrders() {
   const openAll = !!state.more["orders-all"];
   const shown = openAll ? unique : unique.slice(0, 5);
   const rows = shown.map((item) => {
-    const sev = item.severity || "STANDBY";
+    const sev = shownSeverity(item);
     const url = safeUrl(item.url);
     const title = url
       ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(item.title || "")}</a>`
@@ -900,7 +936,7 @@ function watchPool() {
 function renderWatch() {
   const items = watchItems();
   const lines = items.map((item) => {
-    const sev = item.severity || "STANDBY";
+    const sev = shownSeverity(item);
     const url = safeUrl(item.url);
     const title = seenStory(item)
       ? `<a href="#order-${esc(item.id || "")}">${esc(item.title || "")}</a>`
@@ -953,24 +989,16 @@ function tapeLine() {
 }
 function renderChanged() {
   const host = document.getElementById("changed");
-  const doc = DESK.changes || {};
-  const refresh = doc.sinceRefresh || {};
-  const yesterday = doc.sinceYesterday || {};
-  const refreshBody = deltaBlock(refresh.threats, "World threat board") + deltaBlock(refresh.trends, "Today");
-  const yBody = deltaBlock(yesterday.threats, "World threat board") + deltaBlock(yesterday.trends, "Today");
-  const pages = ((doc.groups || {}).pages || []).slice(0, 6).map((item) => `<p class="meta">${esc(item.title || "Page")} · Carota pages</p>`).join("");
-  if (!changeRows().length) {
-    host.innerHTML = `<p class="meta">No change versus yesterday.</p>`;
+  const rows = changeRows();
+  if (!rows.length) {
+    host.innerHTML = `<p class="meta">No change in this window.</p>`;
     return;
   }
-  host.innerHTML = `
-    <h3 class="group">Since last refresh · ${esc(refresh.label || doc.sinceLabel || DESK.updated || "previous run")}</h3>
-    ${refreshBody}
-    <h3 class="group">Since yesterday · ${esc(priorLabel(yesterday))}</h3>
-    ${priorNote(yesterday)}
-    ${yBody}
-    ${tapeLine()}
-    ${pages ? `<h3 class="group">Page changes · Carota pages</h3>${pages}` : ""}`;
+  host.innerHTML = rows.map((item) => {
+    const url = safeUrl(item.url);
+    const name = url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(item.title || item.name || "")}</a>` : esc(item.title || item.name || "");
+    return `<p class="meta">${name} · ${esc(item.section || "Desk")} · ${esc(item.note || item.severity || item.change || "")}</p>`;
+  }).join("");
 }
 function renderTriggers() {
   const doc = DESK.triggers || {};
@@ -1224,7 +1252,7 @@ function renderMarkets() {
   document.getElementById("markets").innerHTML = html || empty("Market feeds have not been loaded.");
 }
 function threatCard(item) {
-  const sev = item.severity || "STANDBY";
+  const sev = shownSeverity(item);
   const html = row(item);
   if (!html) return `<p class="meta">${esc(item.title || "Untitled")}</p>`;
   return html.replace("<article class=\"row\">", `<article class="row"><span class="sev sev-${sev.toLowerCase()}">${esc(sev)}</span> `);
@@ -1235,7 +1263,11 @@ function renderThreats() {
   const cats = [
     ["iran", "Iran war", (item) => item.kind === "war-iran"],
     ["ukraine", "Ukraine war", (item) => item.kind === "war-ukraine"],
-    ["gov", "US government", (item) => item.kind === "usgov"],
+    ["gov", "US government", (item) => item.kind === "usgov" || item.kind === "election"],
+    ["israel", "Israel", (item) => item.kind === "israel"],
+    ["climate", "Climate summits", (item) => item.kind === "climate"],
+    ["diplomacy", "G7 and diplomacy", (item) => item.kind === "diplomacy"],
+    ["attack", "Attacks", (item) => item.kind === "attack"],
     ["natural", "Natural disasters", (item) => ["quake", "storm", "gdacs", "relief"].includes(item.kind) || (item.kind === "nws" && !local(item))],
     ["war", "Other conflict", (item) => item.kind === "conflict"],
     ["health", "Pandemics & outbreaks", (item) => item.kind === "who" || item.kind === "cdc"],
@@ -1246,7 +1278,7 @@ function renderThreats() {
   const html = cats.map(([id, name, test]) => {
     const mine = rows.filter(test);
     const lines = mine.map((item) => seenStory(item) ? linkLine(item, "Standing orders") : threatCard(item)).filter(Boolean);
-    const top = mine.reduce((best, item) => rank[item.severity] > rank[best] ? item.severity : best, "STANDBY");
+    const top = mine.reduce((best, item) => (rank[shownSeverity(item)] || 0) > (rank[best] || 0) ? shownSeverity(item) : best, "STANDBY");
     const body = lines.length ? lines.join("") : `<p class="meta">None in this window.</p>`;
     return fold("threat-" + id, `${esc(name)} · ${lines.length} · <span class="sev sev-${top.toLowerCase()}">${esc(top)}</span>`, body, false);
   }).join("");
@@ -1507,7 +1539,7 @@ function render() {
   paintSections();
   bindDesk();
   const errs = desk.errors || [];
-  document.getElementById("errs").textContent = errs.length ? errs.join(" · ") : "";
+  document.getElementById("errs").textContent = errs.length ? `Source down: ${errs.join(" · ")}` : "";
   const xReason = (desk.x && desk.x.reason) || "";
   const xLine = offline ? "X feed offline." : "X public posts are on.";
   document.getElementById("foot").textContent =
