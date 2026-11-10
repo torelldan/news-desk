@@ -386,6 +386,74 @@ def test_blackout_rumor_hides_after_nov_18():
     assert "No blackout, internet shutdown, or bank wipe is scheduled." in page
 
 
+def test_conflict_kind_requires_the_headline():
+    import boards
+    import citizen
+    massie = "Rep. Thomas Massie of Kentucky launches bid to impeach Defense Secretary Pete Hegseth - MPR News"
+    assert boards.classify_desk(massie, "", "war-iran") == "usgov"
+    assert boards.classify_desk("Trump says Iran war to end fairly soon", "", "war-iran") == "war-iran"
+    assert boards.classify_desk("Markets rally after the open", "", "war-iran") == "news"
+    assert "Skip travel" not in citizen.so_what({"kind": "war-iran", "severity": "ALERT", "title": massie, "note": ""})
+    assert "Skip travel" in citizen.so_what({"kind": "war-iran", "severity": "ALERT", "title": "Trump says the Iran war is still on", "note": ""})
+
+
+def test_same_story_prefers_the_newest_outlet():
+    import boards
+    opb = "Israel's president taps opposition candidate, not Netanyahu, to form a government - Oregon Public Broadcasting - OPB"
+    reuters = "Israeli president picks Gadi Eisenkot, Netanyahu rival, to try to form government - Reuters"
+    pbs = "Israel's president takes first steps on building new government after accepting election results - PBS"
+    assert boards.same_story(opb, reuters)
+    assert boards.same_story(opb, pbs)
+    killed = "Polish gunman who killed 6 people in Krakow has 'ultranationalistic' views, authorities say - NPR"
+    died = "Suspect in mass shooting in Krakow, Poland, dies in hospital - AP"
+    square = "At least 6 killed, several injured in shooting at Polish market square: Police - ABC News"
+    assert boards.same_story(killed, died)
+    assert boards.same_story(killed, square)
+    talks = "Russia, Ukraine and US meet for Abu Dhabi talks as Trump says war can end soon - ABC News"
+    oleshky = "Oleshky Ceasefire Demonstrates That Russia Has the Capability, but Not the Will, to End Civilian Suffering in Ukraine"
+    assert boards.same_story(talks, oleshky) is False
+    rows = [
+        {"title": opb, "kind": "israel", "published": "2026-11-08T10:00:00-06:00"},
+        {"title": reuters, "kind": "israel", "published": "2026-11-08T12:00:00-06:00"},
+        {"title": pbs, "kind": "israel", "published": "2026-11-04T08:00:00-06:00"},
+        {"title": square, "kind": "attack", "published": "2026-11-09T11:00:00-06:00"},
+        {"title": killed, "kind": "attack", "published": "2026-11-07T09:00:00-06:00"},
+        {"title": died, "kind": "attack", "published": "2026-11-09T09:00:00-06:00"},
+    ]
+    kept = boards.fold_desk_rows(rows)
+    titles = [row["title"] for row in kept]
+    assert titles.count(reuters) == 1
+    assert opb not in titles and pbs not in titles
+    assert square in titles and died not in titles and killed not in titles
+    prev = [{"id": "npr", "title": "Israeli president picks Gadi Eisenkot, Netanyahu rival, to try to form government - NPR", "severity": "ALERT"}]
+    current = {"id": "opb", "title": opb, "severity": "ALERT"}
+    assert boards.prior_item(current, prev)["id"] == "npr"
+
+
+def test_tema_news_releases_parse():
+    import citizen
+    from datetime import datetime
+    html = '''
+      <a href="/tema/news.html">News</a>
+      <a href="/tema/news/2026/11/6/flash-report--2---polk-county-flooding.html">Flash Report #2 - Polk County Flooding</a>
+      <a href="/tema/news/2026/11/6/flash-report--2---polk-county-flooding.html">Read full story</a>
+      <a href="/tema/news/2026/4/13/readytn-faith.html">ReadyTN Faith Program Launches</a>
+    '''
+    rows = citizen.tema_notices(html, datetime.fromisoformat("2026-11-10T09:00:00-06:00"))
+    assert len(rows) == 1
+    assert rows[0]["date"] == "2026-11-06"
+    assert rows[0]["url"].startswith("https://www.tn.gov/tema/news/2026/11/6/")
+    assert rows[0]["severity"] == "ALERT"
+    page = open(".github/workflows/refresh.yml", encoding="utf-8").read()
+    assert "workflow_dispatch:" in page
+    assert 'cron: "7 9 * * *"' in page
+    assert 'cron: "53 16 * * *"' in page
+    template = open("template.html", encoding="utf-8").read()
+    assert "function leadItem" in template
+    assert "function changeStatus" in template
+    assert "board[0]" not in template.split("function paintSections")[1].split("function marketBullets")[0]
+
+
 if __name__ == "__main__":
     test_x_created_at_with_milliseconds()
     test_ct_conversion()
@@ -405,4 +473,7 @@ if __name__ == "__main__":
     test_trend_filter_and_confidence()
     test_triggers_outlook_and_impact()
     test_blackout_rumor_hides_after_nov_18()
+    test_conflict_kind_requires_the_headline()
+    test_same_story_prefers_the_newest_outlet()
+    test_tema_news_releases_parse()
     print("ok")

@@ -51,7 +51,9 @@ ROAD_QUERY = (
     "https://spatial.tdot.tn.gov/arcgis/rest/services/Smartway/Smartway_Events/FeatureServer/0/query"
     "?where=UPPER(DESCRIPTION)%20LIKE%20%27%25WILLIAMSON%25%27&outFields=DESCRIPTION,EVENT_SUBTYPE,CD_ROAD_NAMES,REVISED_DATE&returnGeometry=false&resultRecordCount=40&orderByFields=REVISED_DATE%20DESC&f=json"
 )
-TEMA_PAGE = "https://www.tn.gov/tema/news.html"
+# news.html is a nav shell and returns 403 to the Actions curl client.
+# The news-releases index lists dated /tema/news/YYYY/M/D/ articles and answers 200.
+TEMA_PAGE = "https://www.tn.gov/tema/news-info/news-releases.html"
 NWS_POINT = "https://api.weather.gov/alerts/active?point=35.802,-86.907"
 
 
@@ -138,6 +140,55 @@ def confidence_for(item: dict, extra_domains: int = 0) -> dict:
     return {"confidence": level, "sourceCount": domains}
 
 
+def _conflict_named(kind: str, title: str, note: str) -> bool:
+    """Travel advice only when the title or snippet names that conflict."""
+    blob = f"{title or ''} {note or ''}"
+    if kind == "war-iran":
+        return re.search(r"\biran\b", blob, re.I) is not None
+    if kind == "war-ukraine":
+        return re.search(r"\b(ukraine|kyiv|kharkiv|odesa|oleshky|donbas)\b", blob, re.I) is not None
+    if kind == "conflict":
+        return re.search(r"\b(iran|ukraine|kyiv|gaza)\b", blob, re.I) is not None
+    return False
+
+
+def tema_notices(html: str, now: datetime) -> list[dict]:
+    """Dated TEMA releases from the news-releases index. Relative links are made absolute."""
+    rows = []
+    seen = set()
+    cutoff = (now - timedelta(days=21)).date().isoformat()
+    for href, text in re.findall(r'href="([^"]+)"[^>]*>\s*([^<]{8,180})', html or ""):
+        title = re.sub(r"\s+", " ", text).strip()
+        if title.lower() in {"read full story", "news", "news releases"}:
+            continue
+        stamp = re.search(r"/tema/news/(\d{4})/(\d{1,2})/(\d{1,2})/", href)
+        if not stamp:
+            continue
+        date = f"{int(stamp.group(1)):04d}-{int(stamp.group(2)):02d}-{int(stamp.group(3)):02d}"
+        if date < cutoff or title.lower() in seen:
+            continue
+        seen.add(title.lower())
+        url = href if href.startswith("http") else "https://www.tn.gov" + href
+        hot = re.search(r"\b(flood\w*|warning|evacuation|emergency|wildfire|tornado)\b", title, re.I)
+        rows.append({
+            "id": d.make_id("local-tema", url),
+            "title": title,
+            "note": "TEMA news release.",
+            "url": url,
+            "source": "TEMA",
+            "kind": "tema",
+            "lane": "local",
+            "severity": "ALERT" if hot else "STANDBY",
+            "date": date,
+            "label": date,
+            "published": f"{date}T12:00:00-06:00",
+            "tags": ["tennessee", "williamson"],
+        })
+        if len(rows) >= 4:
+            break
+    return rows
+
+
 def so_what(item: dict) -> str:
     """A line only when this item calls for something specific. Otherwise nothing to do."""
     sev = (item.get("severity") or "STANDBY").upper()
@@ -157,8 +208,10 @@ def so_what(item: dict) -> str:
         return f"{title} covers {where}. What to do: stay off those roads."
     if kind in {"storm", "hurricane"} and sev in {"ACTION", "CRITICAL"}:
         return f"{title}. What to do: follow that warning if you are in the named area."
-    if kind in {"war-iran", "war-ukraine", "conflict"}:
+    if kind in {"war-iran", "war-ukraine", "conflict"} and _conflict_named(kind, title, note):
         return "What to do: no action at home. Skip travel into the named fighting if a trip was planned."
+    if kind in {"war-iran", "war-ukraine", "conflict"}:
+        return ""
     if kind == "usgov":
         return ""
     if kind in {"market", "price"} or item.get("tape"):
@@ -882,35 +935,15 @@ def fetch_local(now: datetime) -> dict:
         items.append(_na("TDOT Williamson roads", "https://smartway.tn.gov/", f"n/a — {err}"))
 
     try:
-        html = boards._get(TEMA_PAGE, timeout=25).decode("utf-8", "replace")
-        links = re.findall(r'href="(https://www\.tn\.gov/tema/[^"]+)"[^>]*>([^<]{12,140})', html)
-        seen = set()
-        kept = 0
-        for href, text in links:
-            title = re.sub(r"\s+", " ", text).strip()
-            if title.lower() in seen or title.lower() in {"news", "home", "contact us"}:
-                continue
-            if "/news/" not in href and not re.search(r"20\d{2}", title):
-                continue
-            seen.add(title.lower())
-            items.append({
-                "id": d.make_id("local-tema", href),
-                "title": title,
-                "note": "TEMA news index. The state page does not give a dated feed.",
-                "url": href,
-                "source": "TEMA",
-                "kind": "tema",
-                "lane": "local",
-                "severity": "STANDBY",
-                "date": now.strftime("%Y-%m-%d"),
-                "label": d.ct_label(now, True),
-                "published": now.isoformat(timespec="seconds"),
-                "tags": ["tennessee"],
-            })
-            kept += 1
-            if kept >= 4:
-                break
-        if kept == 0:
+        html = boards._get(
+            TEMA_PAGE,
+            timeout=25,
+            headers={"User-Agent": boards.BROWSER, "Accept": "text/html,application/xhtml+xml"},
+        ).decode("utf-8", "replace")
+        notices = tema_notices(html, now)
+        if notices:
+            items.extend(notices)
+        else:
             gaps.append("TEMA news page answered with no dated notices.")
     except Exception as err:
         gaps.append(f"TEMA: {err}")

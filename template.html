@@ -552,8 +552,83 @@ function briefLines() {
   const news = threatItems().filter((item) => ["ALERT", "ACTION", "CRITICAL"].includes(shownSeverity(item)));
   return uniqueTitles(byDeskRank(news.concat(logPool()))).slice(0, 16);
 }
+function storyTokens(title) {
+  const stop = new Set(["the", "and", "for", "with", "from", "that", "this", "after", "over", "into", "about", "says", "say", "new", "news", "has", "have", "was", "are", "but", "not", "its", "his", "her", "who", "what", "when", "where", "will", "their", "they", "been", "than", "also", "just", "more", "most", "out", "off", "per", "via", "you", "your"]);
+  let cleaned = String(title || "");
+  for (let i = 0; i < 2; i += 1) cleaned = cleaned.replace(/\s+[-–—|]\s+[^-–—|]{2,60}$/, "");
+  cleaned = cleaned.toLowerCase().replace(/israeli/g, "israel").replace(/kraków/g, "krakow");
+  return (cleaned.match(/[a-z0-9]{3,}/g) || []).filter((word) => !stop.has(word));
+}
+function storyNames(title) {
+  const found = new Set();
+  const text = String(title || "").toLowerCase();
+  ["krakow", "oleshky", "antalya", "cop31", "hegseth", "massie", "eisenkot", "netanyahu"].forEach((name) => {
+    if (text.includes(name)) found.add(name);
+  });
+  if (text.includes("abu dhabi")) found.add("abu dhabi");
+  return found;
+}
+function sameStoryTitle(a, b) {
+  if (!a || !b) return false;
+  const left = new Set(storyTokens(a));
+  const right = new Set(storyTokens(b));
+  const shared = [...left].filter((word) => right.has(word));
+  const small = Math.min(left.size, right.size);
+  if (small >= 2 && shared.length >= 3 && shared.length / small >= 0.35) return true;
+  const israelGov = ["israel", "president", "government", "netanyahu", "eisenkot", "knesset", "coalition"];
+  if (shared.filter((word) => israelGov.includes(word)).length >= 3) return true;
+  const namesA = storyNames(a);
+  const namesB = storyNames(b);
+  const places = ["krakow", "oleshky", "antalya", "cop31", "abu dhabi"];
+  if (places.some((name) => namesA.has(name) && namesB.has(name))) return true;
+  const violent = [a, b].every((text) => /\b(kill\w*|shoot\w*|gunman)\b/i.test(text || ""));
+  const poland = /\b(polish|poland)\b/i.test(a || "") || /\b(polish|poland)\b/i.test(b || "");
+  if (violent && poland && (namesA.has("krakow") || namesB.has("krakow"))) return true;
+  const people = ["hegseth", "massie", "eisenkot", "netanyahu"];
+  const person = people.find((name) => namesA.has(name) && namesB.has(name));
+  if (person && shared.some((word) => word !== person)) return true;
+  return false;
+}
+function previousThreatTitles() {
+  const today = String((typeof DESK !== "undefined" && DESK.today) || ctToday() || "").slice(0, 10);
+  const days = ((((typeof DESK !== "undefined" && DESK.history) || {}).days) || []).filter((day) => day.date && day.date < today);
+  days.sort((a, b) => String(a.date).localeCompare(String(b.date)));
+  const snap = days[days.length - 1];
+  return ((snap && snap.threats) || []).map((row) => row.title || "").filter(Boolean);
+}
+function foldSameStory(rows) {
+  const drop = new Set();
+  rows.forEach((item, index) => {
+    if (!item.title) return;
+    rows.forEach((other, otherIndex) => {
+      if (otherIndex <= index || drop.has(item) || drop.has(other)) return;
+      if ((item.section || "") !== (other.section || "")) return;
+      if (!sameStoryTitle(item.title, other.title)) return;
+      const newer = String(item.published || "") >= String(other.published || "") ? item : other;
+      const older = newer === item ? other : item;
+      const swap = (item.change === "new" && other.change === "resolved") || (other.change === "new" && item.change === "resolved");
+      if (swap) {
+        drop.add(item);
+        drop.add(other);
+      } else {
+        drop.add(older);
+      }
+    });
+  });
+  const prior = previousThreatTitles();
+  const live = (typeof threatItems === "function" ? threatItems() : []).map((row) => row.title || "");
+  return rows.filter((item) => {
+    if (drop.has(item)) return false;
+    const title = item.title || "";
+    if (item.change === "new" && prior.some((before) => sameStoryTitle(title, before))) return false;
+    if (item.change === "resolved" && live.some((current) => sameStoryTitle(title, current))) return false;
+    return true;
+  });
+}
 function changeKey(item) {
-  return `${item.id || ""}|${storyKey(item)}|${item.section || ""}`;
+  const story = storyKey(item);
+  if (story.length < 12) return `${item.id || ""}|${story}|${item.section || ""}`;
+  return `${story}|${item.section || ""}|${item.change || ""}`;
 }
 function changePack(block) {
   const rows = [];
@@ -572,7 +647,23 @@ function changeRows() {
   const yesterday = changePack(doc.sinceYesterday).filter((item) => !seen.has(changeKey(item)));
   const pages = ((doc.groups || {}).pages || []).slice(0, 6);
   const tape = marketTape();
-  return refresh.concat(yesterday, pages, tape ? [tape] : []).filter(passes);
+  return foldSameStory(refresh.concat(yesterday, pages, tape ? [tape] : [])).filter(passes);
+}
+function changeStatus(rows) {
+  const hot = rows.some((item) => {
+    if (item.change === "resolved" || item.change === "deescalated") return false;
+    if (item.kind === "market") return false;
+    const sev = String(shownSeverity(item) || item.severity || "").toUpperCase();
+    return sev === "ALERT" || sev === "ACTION" || sev === "CRITICAL";
+  });
+  return hot ? "ALERT" : "STANDBY";
+}
+function leadItem(items) {
+  return items.slice().sort((a, b) => {
+    const bySev = rankOf({ severity: shownSeverity(b) }) - rankOf({ severity: shownSeverity(a) });
+    if (bySev) return bySev;
+    return String(b.published || b.date || "").localeCompare(String(a.published || a.date || ""));
+  })[0];
 }
 function topSeverity(items) {
   return items.reduce((best, item) => {
@@ -623,9 +714,10 @@ function paintSections() {
   const watching = watchItems();
   setSum("watch", watching.length ? topSeverity(watching) : "STANDBY", String(watching.length), watching[0] ? watching[0].title : "Nothing to monitor");
   const changes = changeRows();
-  setSum("changed", changes.length ? "ALERT" : "STANDBY", String(changes.length), changes[0] ? (changes[0].title || changes[0].name) : "No change versus yesterday");
+  setSum("changed", changes.length ? changeStatus(changes) : "STANDBY", String(changes.length), changes[0] ? (changes[0].title || changes[0].name) : "No change versus yesterday");
   const board = threatItems();
-  setSum("threats", board.length ? topSeverity(board) : "STANDBY", String(board.length), board[0] ? board[0].title : "No threat in this window");
+  const threatLead = board.length ? leadItem(board) : null;
+  setSum("threats", board.length ? topSeverity(board) : "STANDBY", String(board.length), threatLead ? threatLead.title : "No threat in this window");
   const bullets = marketBullets();
   setSum("impact", bullets.length && tape ? tape.severity : "STANDBY", String(bullets.length), bullets[0] || "No clear link between the headlines and these prices");
   const papers = labItems();
