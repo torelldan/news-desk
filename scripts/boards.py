@@ -747,6 +747,133 @@ def _try_cdc(now):
     return fresh[:5], []
 
 
+_STORY_STOP = {
+    "the", "and", "for", "with", "from", "that", "this", "after", "over", "into",
+    "about", "says", "say", "new", "news", "has", "have", "was", "are", "but",
+    "not", "its", "his", "her", "who", "what", "when", "where", "will", "their",
+    "they", "been", "than", "also", "just", "more", "most", "out", "off", "per",
+    "via", "his", "her", "you", "your",
+}
+_PLACE_NAMES = {"krakow", "oleshky", "antalya", "cop31", "abu dhabi"}
+_PERSON_NAMES = {"hegseth", "massie", "eisenkot", "netanyahu"}
+_NAME_RE = re.compile(
+    r"\b(krakow|kraków|oleshky|eisenkot|netanyahu|cop31|antalya|hegseth|massie)\b",
+    re.I,
+)
+DESK_CAP = 4
+
+
+def _strip_outlet(title: str) -> str:
+    cleaned = title or ""
+    for _ in range(2):
+        nxt = re.sub(r"\s+[-–—|]\s+[^-–—|]{2,60}$", "", cleaned)
+        if nxt == cleaned:
+            break
+        cleaned = nxt
+    return cleaned
+
+
+def story_tokens(title: str) -> set[str]:
+    cleaned = _strip_outlet(title)
+    cleaned = re.sub(r"israeli", "israel", cleaned, flags=re.I)
+    cleaned = re.sub(r"kraków", "krakow", cleaned, flags=re.I)
+    words = re.findall(r"[a-z0-9]{3,}", cleaned.lower())
+    return {word for word in words if word not in _STORY_STOP}
+
+
+def _story_names(title: str) -> set[str]:
+    found = set()
+    for match in _NAME_RE.finditer(title or ""):
+        found.add(match.group(0).lower().replace("ó", "o"))
+    if re.search(r"abu dhabi", title or "", re.I):
+        found.add("abu dhabi")
+    return found
+
+
+def same_story(a: str, b: str) -> bool:
+    """True when two headlines are the same story under different outlets or follow-ups."""
+    if not a or not b:
+        return False
+    left, right = story_tokens(a), story_tokens(b)
+    if len(left) >= 2 and len(right) >= 2:
+        shared = left & right
+        small = min(len(left), len(right))
+        if len(shared) >= 3 and len(shared) / small >= 0.35:
+            return True
+        if len(shared & {"israel", "president", "government", "netanyahu", "eisenkot", "knesset", "coalition"}) >= 3:
+            return True
+    names_a, names_b = _story_names(a), _story_names(b)
+    if names_a & names_b & _PLACE_NAMES:
+        return True
+    violent = all(re.search(r"\b(kill\w*|shoot\w*|gunman)\b", text or "", re.I) for text in (a, b))
+    mentions_poland = re.search(r"\b(polish|poland)\b", a or "", re.I) or re.search(r"\b(polish|poland)\b", b or "", re.I)
+    mentions_krakow = "krakow" in names_a or "krakow" in names_b
+    if violent and mentions_poland and mentions_krakow:
+        return True
+    people = names_a & names_b & _PERSON_NAMES
+    if people and len((left & right) - people) >= 1:
+        return True
+    return False
+
+
+def classify_desk(title: str, note: str, hinted: str) -> str:
+    """Conflict kinds only when the headline itself names that conflict.
+
+    A Google News query can return a row that never mentions the war. Those
+    rows are reclassified from the title (for example a congressional story
+    that arrived on the Iran query) or dropped as kind ``news``.
+    """
+    blob = f"{title or ''} {note or ''}"
+    rules = (
+        ("war-iran", r"\biran\b"),
+        ("war-ukraine", r"\b(ukraine|kyiv|kharkiv|odesa|oleshky|donbas)\b"),
+        ("israel", r"\b(israel|israeli|eisenkot|netanyahu|knesset|gaza)\b"),
+        ("climate", r"\bcop31\b|\bantalya\b"),
+        ("attack", r"\bkrak[oó]w\b"),
+        ("diplomacy", r"\bg7\b"),
+        ("usgov", r"\b(white house|congress|pentagon|hegseth|massie|impeach|supreme court|midterms?|senate|rubio)\b"),
+    )
+    matched = [kind for kind, pattern in rules if re.search(pattern, blob, re.I)]
+    if hinted in matched:
+        return hinted
+    if matched:
+        return matched[0]
+    if hinted in {"war-iran", "war-ukraine", "conflict"}:
+        return "news"
+    if hinted in {"usgov", "israel", "climate", "diplomacy", "attack", "news"}:
+        return hinted
+    return "news"
+
+
+def fold_desk_rows(rows: list[dict], cap: int = DESK_CAP) -> list[dict]:
+    """Keep the newest copy of each story, then at most ``cap`` headlines per kind."""
+    ordered = sorted(rows, key=lambda row: row.get("published") or row.get("date") or "", reverse=True)
+    kept: list[dict] = []
+    for row in ordered:
+        title = row.get("title") or ""
+        if any(same_story(title, other.get("title") or "") for other in kept):
+            continue
+        kind = row.get("kind") or ""
+        if sum(1 for other in kept if other.get("kind") == kind) >= cap:
+            continue
+        kept.append(row)
+    return kept
+
+
+def prior_item(item: dict, prev_items: list) -> dict | None:
+    """The previous board row for this item, including the same story on another outlet."""
+    for prev in prev_items:
+        if not isinstance(prev, dict):
+            continue
+        if item.get("id") and item.get("id") == prev.get("id"):
+            return prev
+    title = item.get("title") or ""
+    for prev in prev_items:
+        if isinstance(prev, dict) and same_story(title, prev.get("title") or ""):
+            return prev
+    return None
+
+
 def _try_desks(now):
     """Current Iran war, Ukraine war, and U.S. government headlines. Not a generic 'war' keyword."""
     specs = (
@@ -774,20 +901,23 @@ def _try_desks(now):
             if re.search(r"\b(essay|analysis|implications under)\b", row.get("title") or "", re.I):
                 continue
             row = dict(row)
-            row["kind"] = kind
+            assigned = classify_desk(row.get("title") or "", row.get("note") or "", kind)
+            if assigned == "news":
+                continue
+            row["kind"] = assigned
             row["lane"] = "news"
             row["severity"] = "ALERT"
             row["confidence"] = "reported"
             row["sourceCount"] = 1
-            row["tags"] = list(dict.fromkeys((row.get("tags") or []) + [kind, "alert"]))
+            row["tags"] = list(dict.fromkeys((row.get("tags") or []) + [assigned, "alert"]))
             rows.append(row)
             kept += 1
-            if kept >= 4:
-                break
         print(f"  {kind} {kept}")
         if kept == 0:
             gaps.append(f"{source}: 0 headlines for this check.")
-    return rows, gaps
+    folded = fold_desk_rows(rows)
+    print(f"  desks {len(rows)} headlines, {len(folded)} after story dedupe")
+    return folded, gaps
 
 
 def _sentry_soon(rec: dict, year: int) -> bool:

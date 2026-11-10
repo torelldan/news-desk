@@ -1052,11 +1052,16 @@ def main() -> int:
         }
 
     def _window(prev_map, items, section):
+        import boards
         fresh, up, down, gone = [], [], [], []
         current = {}
+        prev_items = [value for value in prev_map.values() if isinstance(value, dict)]
+        matched_prev_ids = set()
         for item in items:
             current[item.get("id")] = item
-            before = prev_map.get(item.get("id"))
+            before = boards.prior_item(item, prev_items)
+            if isinstance(before, dict) and before.get("id"):
+                matched_prev_ids.add(before.get("id"))
             if before is None:
                 fresh.append(_brief_row(item, section))
             elif citizen._rank(item.get("severity") or "") > citizen._rank(before if isinstance(before, str) else (before.get("severity") or "")):
@@ -1066,10 +1071,12 @@ def main() -> int:
                 fresh_before = before if isinstance(before, str) else (before.get("severity") or "")
                 down.append(_brief_row(item, section, f"{fresh_before} → {item.get('severity')}"))
         for item_id, before in prev_map.items():
-            if item_id in current:
+            if item_id in current or item_id in matched_prev_ids:
                 continue
             sev = before if isinstance(before, str) else (before.get("severity") or "")
             title = item_id if isinstance(before, str) else (before.get("title") or item_id)
+            if any(boards.same_story(title, (cur.get("title") or "")) for cur in current.values()):
+                continue
             if citizen._rank(sev) >= citizen._rank("ALERT"):
                 gone.append(_brief_row({"id": item_id, "title": title, "severity": sev}, section, "No longer on the board."))
         return {"new": fresh[:20], "escalated": up[:20], "deescalated": down[:20], "resolved": gone[:20]}
