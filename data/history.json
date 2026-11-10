@@ -2467,6 +2467,455 @@
         }
       ],
       "triggers": []
+    },
+    {
+      "date": "2026-11-10",
+      "label": "Nov 10, 2026 9:11 AM CT",
+      "outlooks": [
+        {
+          "id": "quake:cb415447006964cd",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:14c0d9f90635761f",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:10d9e947d9195018",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:3916e67fc5aa3af5",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:4aacdd22d8fcf171",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:9757c9f39f71802d",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:90b337ad3de37707",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:685f24ad74b45bd4",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:86869bd5a9e8c234",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:cefdb279624f575d",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:e6cb84d611ff6e3a",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:fba40c63243c8681",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:7cdb26e8c0c19585",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:c11559ac2355ebbe",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:af51794a74e641dd",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:8c0b56f67af7958a",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:dba595e192a40d03",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:469357102787e1d8",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:fcc4908db8e1be8c",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:d7543bf990b75519",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:3c8ebfeb8883cd8a",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:42774c269809659e",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:c619f3ad5ad8825e",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:013c190c07d9f723",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:fc75d498e524c217",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:4fb8dc1806cbdcab",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:71efce0c3821d072",
+          "outlook": "Lower than yesterday. The 72-hour path is easing if it holds.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:1ab3bfc65947a7cd",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:4d802edc294b4ce5",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:befaab9fe1b7e175",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:20544ca9b57d323a",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:634711115a2d23fa",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:99df8bc5e6dbfb3f",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "neo:9934e838c1539fdc",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "neo:1095427f35282423",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "neo:da8d506430a87192",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "neo:d545dfda650a0803",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "clock:bulletin",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        }
+      ],
+      "threats": [
+        {
+          "id": "quake:cb415447006964cd",
+          "kind": "quake",
+          "severity": "STANDBY",
+          "title": "M6.1 144 km SE of Hasaki, Japan"
+        },
+        {
+          "id": "quake:14c0d9f90635761f",
+          "kind": "quake",
+          "severity": "STANDBY",
+          "title": "M4.7 103 km W of Attu Station, Alaska"
+        },
+        {
+          "id": "quake:10d9e947d9195018",
+          "kind": "quake",
+          "severity": "STANDBY",
+          "title": "M4.7 139 km SSE of False Pass, Alaska"
+        },
+        {
+          "id": "quake:3916e67fc5aa3af5",
+          "kind": "quake",
+          "severity": "STANDBY",
+          "title": "M4.6 11 km ENE of Yigo Village, Guam"
+        },
+        {
+          "id": "quake:4aacdd22d8fcf171",
+          "kind": "quake",
+          "severity": "STANDBY",
+          "title": "M4.6 147 km SSE of False Pass, Alaska"
+        },
+        {
+          "id": "headline:9757c9f39f71802d",
+          "kind": "war-iran",
+          "severity": "ALERT",
+          "title": "Trump says Iran war to end 'fairly soon,' plays down prospects of new strikes - CNBC"
+        },
+        {
+          "id": "headline:90b337ad3de37707",
+          "kind": "war-iran",
+          "severity": "STANDBY",
+          "title": "Vance blames Iran war for GOP midterm losses - PBS"
+        },
+        {
+          "id": "headline:685f24ad74b45bd4",
+          "kind": "war-iran",
+          "severity": "ALERT",
+          "title": "Trump after meeting with Qatari PM says he believes war with Iran is militarily 'effectively over' - AP News"
+        },
+        {
+          "id": "headline:86869bd5a9e8c234",
+          "kind": "war-iran",
+          "severity": "ALERT",
+          "title": "Rep. Thomas Massie of Kentucky launches bid to impeach Defense Secretary Pete Hegseth - MPR News"
+        },
+        {
+          "id": "headline:cefdb279624f575d",
+          "kind": "war-ukraine",
+          "severity": "ALERT",
+          "title": "U.S.-mediated talks on ending Russia-Ukraine war begin in Abu Dhabi - NPR"
+        },
+        {
+          "id": "headline:e6cb84d611ff6e3a",
+          "kind": "war-ukraine",
+          "severity": "ALERT",
+          "title": "Trump sees opening for Ukraine peace deal, but key questions remain ahead of Abu Dhabi talks - CNBC"
+        },
+        {
+          "id": "headline:fba40c63243c8681",
+          "kind": "war-ukraine",
+          "severity": "STANDBY",
+          "title": "Oleshky Ceasefire Demonstrates That Russia Has the Capability, but Not the Will, to End Civilian Suffering in Ukraine - Institute for the Study of War"
+        },
+        {
+          "id": "headline:7cdb26e8c0c19585",
+          "kind": "war-ukraine",
+          "severity": "ALERT",
+          "title": "Russia, Ukraine and US meet for Abu Dhabi talks as Trump says war can 'end soon' - ABC News - Breaking News, Latest News and Videos"
+        },
+        {
+          "id": "headline:c11559ac2355ebbe",
+          "kind": "usgov",
+          "severity": "ALERT",
+          "title": "Rep. Thomas Massie of Kentucky launches bid to impeach Defense Secretary Pete Hegseth - AP News"
+        },
+        {
+          "id": "headline:af51794a74e641dd",
+          "kind": "usgov",
+          "severity": "STANDBY",
+          "title": "Trump Says in Interview That He Will Accept Election Results - The New York Times"
+        },
+        {
+          "id": "headline:8c0b56f67af7958a",
+          "kind": "usgov",
+          "severity": "ALERT",
+          "title": "Secretary of War Pete Hegseth to Hold Pentagon Press Briefing – November 10, 2026 - U.S. Department of War (.gov)"
+        },
+        {
+          "id": "headline:dba595e192a40d03",
+          "kind": "usgov",
+          "severity": "STANDBY",
+          "title": "6 takeaways from Democrats' big wave on election night - NPR"
+        },
+        {
+          "id": "headline:469357102787e1d8",
+          "kind": "israel",
+          "severity": "STANDBY",
+          "title": "Israel's president takes first steps on building new government after accepting election results - PBS"
+        },
+        {
+          "id": "headline:fcc4908db8e1be8c",
+          "kind": "israel",
+          "severity": "ALERT",
+          "title": "Israeli president picks Gadi Eisenkot, Netanyahu rival, to try to form government - Reuters"
+        },
+        {
+          "id": "headline:d7543bf990b75519",
+          "kind": "israel",
+          "severity": "ALERT",
+          "title": "Israel's president taps opposition candidate, not Netanyahu, to form a government - Oregon Public Broadcasting - OPB"
+        },
+        {
+          "id": "headline:3c8ebfeb8883cd8a",
+          "kind": "israel",
+          "severity": "ALERT",
+          "title": "Israel’s president picks Eisenkot over Netanyahu to form next government - Al Jazeera"
+        },
+        {
+          "id": "headline:42774c269809659e",
+          "kind": "climate",
+          "severity": "ALERT",
+          "title": "COP31 to take place 9-20 November 2026 in Antalya, Türkiye - Welcome to the United Nations"
+        },
+        {
+          "id": "headline:c619f3ad5ad8825e",
+          "kind": "climate",
+          "severity": "ALERT",
+          "title": "COP31 summit leaders urge crisis-wracked world to move faster on climate - Reuters"
+        },
+        {
+          "id": "headline:013c190c07d9f723",
+          "kind": "climate",
+          "severity": "STANDBY",
+          "title": "Interactive: Tracking negotiating texts at the COP31 climate summit - Carbon Brief"
+        },
+        {
+          "id": "headline:fc75d498e524c217",
+          "kind": "climate",
+          "severity": "ALERT",
+          "title": "A Guide to COP31 Climate Talks in Antalya, Turkey - The New York Times"
+        },
+        {
+          "id": "headline:4fb8dc1806cbdcab",
+          "kind": "diplomacy",
+          "severity": "ALERT",
+          "title": "G7 allies to assess impact of Trump's midterm setback at Paris talks - Reuters"
+        },
+        {
+          "id": "headline:71efce0c3821d072",
+          "kind": "diplomacy",
+          "severity": "STANDBY",
+          "title": "G7: Priorities of the G7 Foreign Ministers’ Meeting in Paris - La France à l'ONU"
+        },
+        {
+          "id": "headline:1ab3bfc65947a7cd",
+          "kind": "diplomacy",
+          "severity": "ALERT",
+          "title": "G7 ministers to press Rubio on Iran, Ukraine at Paris talks - AFP.com"
+        },
+        {
+          "id": "headline:4d802edc294b4ce5",
+          "kind": "diplomacy",
+          "severity": "ALERT",
+          "title": "Rubio makes clear that Trump’s foreign policy won’t change after GOP election losses - AP News"
+        },
+        {
+          "id": "headline:befaab9fe1b7e175",
+          "kind": "attack",
+          "severity": "ALERT",
+          "title": "Gunman kills 6 in ‘terror attack’ in Kraków, Poland, officials say; 3 others found dead in his home - NBC News"
+        },
+        {
+          "id": "headline:20544ca9b57d323a",
+          "kind": "attack",
+          "severity": "ALERT",
+          "title": "Polish gunman who killed 6 people in Krakow has 'ultranationalistic' views, authorities say - NPR"
+        },
+        {
+          "id": "headline:634711115a2d23fa",
+          "kind": "attack",
+          "severity": "ALERT",
+          "title": "At least 6 killed, several injured in shooting at Polish market square: Police - ABC News - Breaking News, Latest News and Videos"
+        },
+        {
+          "id": "headline:99df8bc5e6dbfb3f",
+          "kind": "attack",
+          "severity": "ALERT",
+          "title": "Poland stunned as suspect with far-right views kills 6 in Kraków mass shooting - CNN"
+        },
+        {
+          "id": "neo:9934e838c1539fdc",
+          "kind": "neo",
+          "severity": "STANDBY",
+          "title": "Close approach 2019 XF2"
+        },
+        {
+          "id": "neo:1095427f35282423",
+          "kind": "neo",
+          "severity": "STANDBY",
+          "title": "Close approach 2026 QQ8"
+        },
+        {
+          "id": "neo:da8d506430a87192",
+          "kind": "neo",
+          "severity": "STANDBY",
+          "title": "Close approach 2026 VT3"
+        },
+        {
+          "id": "neo:d545dfda650a0803",
+          "kind": "neo",
+          "severity": "STANDBY",
+          "title": "Close approach 2010 VQ"
+        },
+        {
+          "id": "clock:bulletin",
+          "kind": "clock",
+          "severity": "STANDBY",
+          "title": "Doomsday Clock"
+        }
+      ],
+      "trends": [
+        {
+          "category": "us-gov",
+          "name": "mississippi senate race election results",
+          "volume": "5000+"
+        },
+        {
+          "category": "iran-war",
+          "name": "iran war",
+          "volume": null
+        },
+        {
+          "category": "ukraine-war",
+          "name": "ukraine war",
+          "volume": null
+        },
+        {
+          "category": "us-gov",
+          "name": "us gov",
+          "volume": null
+        }
+      ],
+      "triggers": []
     }
   ]
 }
