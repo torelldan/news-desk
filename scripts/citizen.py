@@ -158,11 +158,29 @@ def _conflict_named(kind: str, title: str, note: str) -> bool:
     return False
 
 
+def _tema_county(title: str) -> str:
+    match = re.search(r"\b([A-Za-z]+)\s+County\b", title or "")
+    return match.group(1) if match else ""
+
+
+def _tema_local(title: str, note: str = "") -> bool:
+    return re.search(r"\b(williamson\s+county|37179|thompson'?s station)\b", f"{title or ''} {note or ''}", re.I) is not None
+
+
+def _tema_event_key(title: str) -> str:
+    stem = re.sub(r"flash report\s*#?\s*\d+", " ", title or "", flags=re.I)
+    return re.sub(r"\W+", " ", stem).strip().lower()
+
+
 def tema_notices(html: str, now: datetime) -> list[dict]:
-    """Dated TEMA releases from the news-releases index. Relative links are made absolute."""
+    """Dated TEMA releases. Williamson is tagged only when the report names it.
+
+    Flash reports older than about 72 hours are left off, and an earlier report
+    is dropped once a later one covers the same event.
+    """
     rows = []
     seen = set()
-    cutoff = (now - timedelta(days=21)).date().isoformat()
+    fresh_after = (now - timedelta(hours=72)).date().isoformat()
     for href, text in re.findall(r'href="([^"]+)"[^>]*>\s*([^<]{8,180})', html or ""):
         title = re.sub(r"\s+", " ", text).strip()
         if title.lower() in {"read full story", "news", "news releases"}:
@@ -171,28 +189,52 @@ def tema_notices(html: str, now: datetime) -> list[dict]:
         if not stamp:
             continue
         date = f"{int(stamp.group(1)):04d}-{int(stamp.group(2)):02d}-{int(stamp.group(3)):02d}"
-        if date < cutoff or title.lower() in seen:
+        if date < fresh_after or title.lower() in seen:
             continue
         seen.add(title.lower())
         url = href if href.startswith("http") else "https://www.tn.gov" + href
+        county = _tema_county(title)
+        local = _tema_local(title)
         hot = re.search(r"\b(flood\w*|warning|evacuation|emergency|wildfire|tornado)\b", title, re.I)
+        closed = re.search(r"\b(all clear|closed|final report)\b", title, re.I)
+        if local and hot and not closed:
+            severity = "ALERT"
+        else:
+            severity = "STANDBY"
+        tags = ["tennessee"]
+        if county:
+            tags.append(county.lower())
+        if local:
+            tags.append("williamson")
+        place = f"{county} County" if county else "Tennessee"
+        where = "Names Williamson County." if local else f"{place}. Not a Williamson County / 37179 notice."
+        label = datetime(int(stamp.group(1)), int(stamp.group(2)), int(stamp.group(3))).strftime("%b %d, %Y").replace(" 0", " ")
         rows.append({
             "id": d.make_id("local-tema", url),
             "title": title,
-            "note": "TEMA news release.",
+            "note": f"TEMA news release, {label}. {where}",
             "url": url,
             "source": "TEMA",
             "kind": "tema",
             "lane": "local",
-            "severity": "ALERT" if hot else "STANDBY",
+            "severity": severity,
             "date": date,
-            "label": date,
+            "label": label,
             "published": f"{date}T12:00:00-06:00",
-            "tags": ["tennessee", "williamson"],
+            "tags": tags,
         })
-        if len(rows) >= 4:
+    rows.sort(key=lambda row: row.get("date") or "", reverse=True)
+    kept = []
+    seen_events = set()
+    for row in rows:
+        key = _tema_event_key(row.get("title") or "")
+        if key in seen_events:
+            continue
+        seen_events.add(key)
+        kept.append(row)
+        if len(kept) >= 4:
             break
-    return rows
+    return kept
 
 
 def _williamson_safety(now: datetime) -> list[dict]:
@@ -1288,12 +1330,24 @@ def weekly_lookback(history: dict, today: str) -> dict:
                 calls.append({"title": after.get("title"), "verdict": "wrong", "note": "The stored outlook said higher, and the status fell."})
             elif after is None:
                 calls.append({"title": row.get("id"), "verdict": "wrong", "note": "The stored outlook said higher, and the item left the board."})
+    def _cluster_notes(rows):
+        import boards
+        clustered = boards.cluster_rows(rows)
+        for row in clustered:
+            extra = int(row.get("related") or 0)
+            if not extra:
+                continue
+            sources = ", ".join(row.get("relatedSources") or [])
+            suffix = f" +{extra} related" + (f" ({sources})" if sources else "")
+            row["note"] = (row.get("note") or "") + suffix
+        return clustered
+
     return {
         "since": past.get("date") or "",
         "note": f"Compared with the stored board on {past.get('date') or 'the oldest day'}.",
-        "escalated": escalated[:12],
-        "fizzled": fizzled[:12],
-        "calls": calls[:12],
+        "escalated": _cluster_notes(escalated)[:12],
+        "fizzled": _cluster_notes(fizzled)[:12],
+        "calls": _cluster_notes(calls)[:12],
     }
 
 

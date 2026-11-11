@@ -458,11 +458,13 @@ def test_tema_news_releases_parse():
       <a href="/tema/news/2026/11/6/flash-report--2---polk-county-flooding.html">Read full story</a>
       <a href="/tema/news/2026/4/13/readytn-faith.html">ReadyTN Faith Program Launches</a>
     '''
-    rows = citizen.tema_notices(html, datetime.fromisoformat("2026-11-10T09:00:00-06:00"))
+    rows = citizen.tema_notices(html, datetime.fromisoformat("2026-11-08T12:00:00-06:00"))
     assert len(rows) == 1
     assert rows[0]["date"] == "2026-11-06"
     assert rows[0]["url"].startswith("https://www.tn.gov/tema/news/2026/11/6/")
-    assert rows[0]["severity"] == "ALERT"
+    assert rows[0]["severity"] == "STANDBY"
+    assert "williamson" not in rows[0]["tags"]
+    assert "Nov" in rows[0]["label"]
     page = open(".github/workflows/refresh.yml", encoding="utf-8").read()
     assert "workflow_dispatch:" in page
     assert 'cron: "7 9 * * *"' in page
@@ -536,6 +538,82 @@ def test_storm_watch_severity_and_european_names():
     assert "function stormItems" in page
 
 
+def test_material_updates_clusters_and_returning_items():
+    import boards
+    won = "Trump says US won Iran war, Iran responds - NPR"
+    ending = "Trump says Iran war to end fairly soon, plays down prospects of new strikes - CNBC"
+    over = "Trump after meeting with Qatari PM says he believes war with Iran is militarily effectively over - AP News"
+    assert boards.same_story(won, ending)
+    assert boards.headline_shift(won, ending)
+    assert boards.headline_shift(won, over)
+    assert boards.story_update(won, ending, "ALERT", "ALERT")
+    opb = "Israel's president taps opposition candidate, not Netanyahu, to form a government - OPB"
+    reuters = "Israeli president picks Gadi Eisenkot, Netanyahu rival, to try to form government - Reuters"
+    assert boards.same_story(opb, reuters)
+    assert boards.headline_shift(opb, reuters) is False
+    poland = [
+        {"title": "What to Know About the Mass Shooting in Poland - The New York Times", "source": "The New York Times", "severity": "ALERT", "published": "2026-11-10T18:00:00-06:00", "kind": "attack"},
+        {"title": "Gunman with far-right views who killed 6 in Poland shooting rampage dies in hospital, police say - NBC News", "source": "NBC News", "severity": "ALERT", "published": "2026-11-09T12:00:00-06:00", "kind": "attack"},
+        {"title": "At least 6 killed, several injured in shooting at Polish market square: Police - ABC News", "source": "ABC News", "severity": "ALERT", "published": "2026-11-09T09:00:00-06:00", "kind": "attack"},
+        {"title": "Poland under disinformation attack after Kraków’s massacre - European Interest", "source": "European Interest", "severity": "ALERT", "published": "2026-11-08T09:00:00-06:00", "kind": "attack"},
+    ]
+    clustered = boards.cluster_rows(poland)
+    assert len(clustered) == 1
+    assert clustered[0]["related"] == 3
+    assert "NBC News" in clustered[0]["relatedSources"]
+    cop = boards.cluster_rows([
+        {"title": "War, conflict must not distract from climate action, leaders warn COP31 - Reuters", "severity": "ALERT", "published": "2026-11-10T10:00:00-06:00"},
+        {"title": "What to Expect at COP 31: Key issues and how the negotiations work", "severity": "ALERT", "published": "2026-11-05T10:00:00-06:00"},
+    ])
+    assert len(cop) == 1 and cop[0]["related"] == 1
+    israel = boards.cluster_rows([
+        {"title": "How Israel Will Choose Its Next Prime Minister, Explained - Time Magazine", "severity": "ALERT", "published": "2026-11-10T15:00:00-06:00"},
+        {"title": "Israel's parliament sworn in as Eisenkot tries to forge a government - Reuters", "severity": "ALERT", "published": "2026-11-10T12:00:00-06:00"},
+    ])
+    assert len(israel) == 1
+    history = {"days": [
+        {"date": "2026-11-04", "threats": [{"id": "bbc", "title": "Iran's chief negotiator says Americans voted 'no to war' - BBC", "severity": "STANDBY"}]},
+        {"date": "2026-11-09", "threats": [{"id": "cnbc", "title": ending, "severity": "ALERT"}]},
+        {"date": "2026-11-10", "threats": [{"id": "ap", "title": over, "severity": "ALERT"}]},
+    ]}
+    returning = {"id": "bbc", "title": "Iran's chief negotiator says Americans voted 'no to war' - BBC", "date": "2026-11-04", "severity": "STANDBY"}
+    earlier = boards.recent_story(returning, history["days"], "2026-11-11")
+    assert earlier and earlier["id"] == "bbc"
+    assert boards.story_update(returning["title"], earlier["title"], "STANDBY", "STANDBY") is False
+    lead = {"id": "npr", "title": won, "date": "2026-11-11", "severity": "ALERT"}
+    prior = boards.recent_story(lead, history["days"], "2026-11-11")
+    assert prior and prior["id"] == "ap"
+    assert boards.story_update(lead["title"], prior["title"], "ALERT", "ALERT")
+    assert boards.old_standby_return(returning, "2026-11-11")
+    assert boards.old_standby_return(lead, "2026-11-11") is False
+
+
+def test_tema_county_age_and_local_relevance():
+    import citizen
+    from datetime import datetime
+    html = '''
+      <a href="/tema/news/2026/11/6/flash-report--2---polk-county-flooding.html">Flash Report #2 - Polk County Flooding</a>
+      <a href="/tema/news/2026/11/5/flash-report--1---polk-county-flooding.html">Flash Report #1 - Polk County Flooding</a>
+      <a href="/tema/news/2026/11/6/williamson-flood.html">Flash Flood Warning for Williamson County</a>
+    '''
+    fresh = datetime.fromisoformat("2026-11-07T12:00:00-06:00")
+    rows = citizen.tema_notices(html, fresh)
+    titles = [row["title"] for row in rows]
+    assert any("Williamson County" in title for title in titles)
+    assert sum("Polk" in title for title in titles) == 1
+    assert any(title.startswith("Flash Report #2") for title in titles)
+    polk = next(row for row in rows if "Polk" in row["title"])
+    home = next(row for row in rows if "Williamson" in row["title"])
+    assert polk["severity"] == "STANDBY"
+    assert "williamson" not in polk["tags"]
+    assert "polk" in polk["tags"]
+    assert "Nov" in polk["label"] and polk["date"] == "2026-11-06"
+    assert home["severity"] == "ALERT"
+    assert "williamson" in home["tags"]
+    stale = citizen.tema_notices(html, datetime.fromisoformat("2026-11-11T09:00:00-06:00"))
+    assert stale == []
+
+
 if __name__ == "__main__":
     test_x_created_at_with_milliseconds()
     test_ct_conversion()
@@ -559,4 +637,6 @@ if __name__ == "__main__":
     test_same_story_prefers_the_newest_outlet()
     test_tema_news_releases_parse()
     test_storm_watch_severity_and_european_names()
+    test_material_updates_clusters_and_returning_items()
+    test_tema_county_age_and_local_relevance()
     print("ok")

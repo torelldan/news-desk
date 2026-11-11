@@ -1323,7 +1323,110 @@ def same_story(a: str, b: str) -> bool:
         return True
     if _ukraine_talks(a) and _ukraine_talks(b):
         return True
+    if _poland_shooting(a) and _poland_shooting(b):
+        return True
     return False
+
+
+def _poland_shooting(title: str) -> bool:
+    blob = title or ""
+    if not re.search(r"\b(poland|polish|krak[oó]w)\b", blob, re.I):
+        return False
+    return re.search(r"\b(shoot\w*|kill\w*|gunman|massacre)\b", blob, re.I) is not None
+
+
+_CLAIM_RE = re.compile(
+    r"\b(won|victory|effectively over|ceasefire|strikes?|impeach|killed|dies|hospital|peace push|peace deal|voted|no to war)\b",
+    re.I,
+)
+_SEV_RANK = {"STANDBY": 0, "ALERT": 1, "ACTION": 2, "CRITICAL": 3}
+
+
+def _claim_tokens(title: str) -> set[str]:
+    return {match.group(0).lower() for match in _CLAIM_RE.finditer(title or "")}
+
+
+def headline_shift(new_title: str, old_title: str) -> bool:
+    """True when the lead claim changed, not when another outlet repeated it."""
+    if not new_title or not old_title:
+        return False
+    fresh, prior = _claim_tokens(new_title), _claim_tokens(old_title)
+    if not fresh and not prior:
+        return False
+    if fresh & prior:
+        return False
+    return True
+
+
+def story_update(new_title: str, old_title: str, new_sev: str = "", old_sev: str = "") -> bool:
+    if _SEV_RANK.get((new_sev or "").upper(), 0) > _SEV_RANK.get((old_sev or "").upper(), 0):
+        return True
+    return headline_shift(new_title, old_title)
+
+
+def cluster_rows(rows: list[dict]) -> list[dict]:
+    """One lead per story. Extras become a related count and source list on that lead."""
+    ordered = sorted(
+        rows or [],
+        key=lambda row: (
+            _SEV_RANK.get((row.get("severity") or "").upper(), 0),
+            row.get("published") or row.get("date") or "",
+        ),
+        reverse=True,
+    )
+    kept: list[dict] = []
+    for row in ordered:
+        title = row.get("title") or ""
+        lead = next((other for other in kept if same_story(title, other.get("title") or "")), None)
+        if lead is None:
+            copy = dict(row)
+            copy["related"] = 0
+            copy["relatedSources"] = []
+            kept.append(copy)
+            continue
+        lead["related"] = int(lead.get("related") or 0) + 1
+        src = row.get("source") or ""
+        sources = lead.setdefault("relatedSources", [])
+        if src and src != lead.get("source") and src not in sources:
+            sources.append(src)
+    return kept
+
+
+def old_standby_return(item: dict, today: str) -> bool:
+    """An old STANDBY headline is not news just because it left the board and came back."""
+    if (item.get("severity") or "").upper() != "STANDBY":
+        return False
+    published = str(item.get("date") or item.get("published") or "")[:10]
+    if len(published) < 10:
+        return False
+    try:
+        limit = (datetime.fromisoformat(today) - timedelta(days=2)).date().isoformat()
+    except ValueError:
+        return False
+    return published <= limit
+
+
+def recent_story(item: dict, days: list, today: str, window: int = 7) -> dict | None:
+    """The latest copy of this story on a snapshot from the last `window` days, before today."""
+    try:
+        start = (datetime.fromisoformat(today) - timedelta(days=window)).date().isoformat()
+    except ValueError:
+        return None
+    best = None
+    best_day = ""
+    for snap in days or []:
+        stamp = snap.get("date") or ""
+        if not stamp or stamp >= today or stamp < start:
+            continue
+        if best_day and stamp < best_day:
+            continue
+        for row in snap.get("threats") or []:
+            same_id = item.get("id") and item.get("id") == row.get("id")
+            if same_id or same_story(item.get("title") or "", row.get("title") or ""):
+                best = row
+                best_day = stamp
+                break
+    return best
 
 
 def european_named_storm(title: str, note: str = "") -> bool:
@@ -1370,13 +1473,9 @@ def classify_desk(title: str, note: str, hinted: str) -> str:
 
 
 def fold_desk_rows(rows: list[dict], cap: int = DESK_CAP) -> list[dict]:
-    """Keep the newest copy of each story, then at most ``cap`` headlines per kind."""
-    ordered = sorted(rows, key=lambda row: row.get("published") or row.get("date") or "", reverse=True)
+    """One lead per story, then at most ``cap`` headlines per kind."""
     kept: list[dict] = []
-    for row in ordered:
-        title = row.get("title") or ""
-        if any(same_story(title, other.get("title") or "") for other in kept):
-            continue
+    for row in cluster_rows(rows):
         kind = row.get("kind") or ""
         if sum(1 for other in kept if other.get("kind") == kind) >= cap:
             continue
