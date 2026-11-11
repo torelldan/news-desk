@@ -454,6 +454,69 @@ def test_tema_news_releases_parse():
     assert "board[0]" not in template.split("function paintSections")[1].split("function marketBullets")[0]
 
 
+def test_storm_watch_severity_and_european_names():
+    import boards
+    import citizen
+    assert boards.alert_severity("Tornado Watch", "Severe") == "ALERT"
+    assert boards.alert_severity("Tornado Warning", "Extreme") == "CRITICAL"
+    assert boards.alert_severity("Hurricane Warning", "Extreme") == "CRITICAL"
+    assert boards.alert_severity("Tropical Storm Warning", "Severe") == "ACTION"
+    assert boards.alert_severity("Tropical Storm Watch", "Moderate") == "ALERT"
+    assert boards.alert_severity("Flash Flood Warning", "Severe") == "ACTION"
+    assert boards.alert_severity("Flash Flood Watch", "Moderate") == "ALERT"
+    shelter = citizen.so_what({"kind": "nws", "severity": "CRITICAL", "title": "Tornado Warning", "note": "Williamson County"})
+    assert shelter.startswith("Take shelter now")
+    pena = {
+        "id": "cp042026",
+        "name": "Pena",
+        "classification": "TS",
+        "intensity": "40",
+        "latitude": "10.5N",
+        "longitude": "166.0W",
+        "latitudeNumeric": 10.5,
+        "longitudeNumeric": -166.0,
+        "movementDir": 270,
+        "movementSpeed": 8,
+        "publicAdvisory": {"url": "https://www.nhc.noaa.gov/text/HFOTCPCP4.shtml"},
+    }
+    far = boards.describe_storm(pena, "There are no coastal watches or warnings in effect.", [])
+    assert far["severity"] == "STANDBY"
+    assert "Pena" in far["title"] and "40 kt" in far["note"] and "Moving W" in far["note"]
+    assert far["url"].startswith("https://www.nhc.noaa.gov/")
+    positions = boards.forecast_positions("INIT  11/0300Z 36.0N 87.0W  70 KT  80 MPH\n12H  11/1200Z 36.2N 86.5W  35 KT  40 MPH")
+    assert boards.tropical_severity(positions, "", False, 70) == "CRITICAL"
+    assert boards.tropical_severity([(28.0, -88.0, 90)], "A Hurricane Warning is in effect for the Louisiana coast.", True, 90) == "ALERT"
+    assert boards.tropical_severity([(28.0, -88.0, 90)], "There are no coastal watches or warnings in effect.", False, 90) == "STANDBY"
+    assert boards.spc_watch_severity("Tornado Watch 412", "Williamson County TN") == "ACTION"
+    assert boards.spc_watch_severity("Severe Thunderstorm Watch 200", "Davidson County") == "ALERT"
+    assert boards.spc_watch_severity("Tornado Watch 9", "Oklahoma") == "STANDBY"
+    assert boards.spc_watch_severity("SPC - No watches are valid as of Tue Nov 10", "") == "STANDBY"
+    box = {"type": "Polygon", "coordinates": [[[-88.0, 34.0], [-85.0, 34.0], [-85.0, 37.0], [-88.0, 37.0], [-88.0, 34.0]]]}
+    label, sev = boards.outlook_at_point([{"properties": {"DN": 3, "LABEL2": "Marginal Risk"}, "geometry": box}])
+    assert label == "Marginal" and sev == "STANDBY"
+    label, sev = boards.outlook_at_point([{"properties": {"DN": 5, "LABEL2": "Enhanced"}, "geometry": box}])
+    assert sev == "ACTION"
+    label, sev = boards.outlook_at_point([{"properties": {"DN": 4, "LABEL2": "Slight"}, "geometry": {"type": "Polygon", "coordinates": [[[-80, 25], [-79, 25], [-79, 26], [-80, 26], [-80, 25]]]}}])
+    assert label == "No thunderstorm risk" and sev == "STANDBY"
+    charles = "Storm Charles brings flooding to Madeira and Portugal"
+    assert boards.classify_desk(charles, "", "windstorm") == "windstorm"
+    assert boards.same_story(
+        "Portugal shuts down as Storm Charles approaches - Fall River Herald News",
+        "‘Storm Charles’ forces Champions League cancellation - Diario AS",
+    )
+    assert boards.european_named_storm("Hurricane Charles nears the Florida coast", "") is False
+    assert boards.classify_desk("Markets rally", "", "windstorm") == "news"
+    advice = citizen.so_what({"kind": "windstorm", "severity": "STANDBY", "title": charles, "note": ""})
+    assert "No action for 37179" in advice
+    assert "European named storm" in advice
+    quiet = boards._quiet_tropical(__import__("datetime").datetime(2026, 11, 11, tzinfo=__import__("datetime").timezone.utc))
+    assert quiet["title"] == "No active tropical systems"
+    assert quiet["severity"] == "STANDBY"
+    page = open("template.html", encoding="utf-8").read()
+    assert "Storm watch" in page
+    assert "function stormItems" in page
+
+
 if __name__ == "__main__":
     test_x_created_at_with_milliseconds()
     test_ct_conversion()
@@ -476,4 +539,5 @@ if __name__ == "__main__":
     test_conflict_kind_requires_the_headline()
     test_same_story_prefers_the_newest_outlet()
     test_tema_news_releases_parse()
+    test_storm_watch_severity_and_european_names()
     print("ok")

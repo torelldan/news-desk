@@ -7,6 +7,7 @@ only when a response actually contains them. No prices are invented.
 from __future__ import annotations
 
 import json
+import math
 import re
 import subprocess
 import time
@@ -200,9 +201,15 @@ def keep_quake(mag, place: str = "", tsunami: bool = False, alert: str = "", fel
 def alert_severity(event: str, severity: str) -> str:
     name = (event or "").lower()
     level = (severity or "").lower()
-    if "tornado warning" in name or "hurricane warning" in name or level == "extreme":
+    if "tornado warning" in name or "hurricane warning" in name:
         return "CRITICAL"
-    if "warning" in name or level == "severe":
+    if "tornado watch" in name or "hurricane watch" in name or "tropical storm watch" in name or "flash flood watch" in name:
+        return "ALERT"
+    if "tropical storm warning" in name or "flash flood warning" in name or "warning" in name:
+        return "ACTION"
+    if level == "extreme":
+        return "CRITICAL"
+    if level == "severe":
         return "ACTION"
     if "watch" in name or "advisory" in name:
         return "ALERT"
@@ -578,6 +585,420 @@ def _try_nhc(now):
     return rows[:10], gaps
 
 
+HOME = (35.802, -86.907)
+# Tennessee, generous enough for a track point over the state.
+TN_BOX = (34.98, 36.72, -90.35, -81.62)
+TN_REACH_KM = 450
+_COMPASS = ["N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE", "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW"]
+_NHC_CLASS = {
+    "TD": "Tropical Depression",
+    "TS": "Tropical Storm",
+    "HU": "Hurricane",
+    "STS": "Subtropical Storm",
+    "STD": "Subtropical Depression",
+    "PTC": "Potential Tropical Cyclone",
+    "EX": "Post-tropical Cyclone",
+    "LO": "Low",
+    "DB": "Disturbance",
+    "SD": "Subtropical Depression",
+    "SS": "Subtropical Storm",
+    "TY": "Typhoon",
+    "ST": "Tropical Storm",
+    "PC": "Post-tropical Cyclone",
+}
+_OUTLOOK_DN = {
+    2: ("General thunderstorms", "STANDBY"),
+    3: ("Marginal", "STANDBY"),
+    4: ("Slight", "ALERT"),
+    5: ("Enhanced", "ACTION"),
+    6: ("Moderate", "ACTION"),
+    7: ("High", "CRITICAL"),
+}
+_MIDDLE_TN = re.compile(
+    r"\b(williamson|davidson|rutherford|maury|sumner|wilson|hickman|cheatham|dickson|bedford|marshall|middle tennessee)\b",
+    re.I,
+)
+_WATCH_PHRASE = re.compile(
+    r"hurricane watch|tropical storm watch|storm surge watch|hurricane warning|tropical storm warning|storm surge warning",
+    re.I,
+)
+
+
+def compass_point(degrees) -> str:
+    try:
+        deg = float(degrees) % 360
+    except (TypeError, ValueError):
+        return ""
+    return _COMPASS[int((deg + 11.25) // 22.5) % 16]
+
+
+def hurricane_category(knots) -> str:
+    try:
+        knots = float(knots)
+    except (TypeError, ValueError):
+        return ""
+    if knots >= 137:
+        return "Category 5"
+    if knots >= 113:
+        return "Category 4"
+    if knots >= 96:
+        return "Category 3"
+    if knots >= 83:
+        return "Category 2"
+    if knots >= 64:
+        return "Category 1"
+    return ""
+
+
+def _km(lat1, lon1, lat2, lon2) -> float:
+    radius = 6371.0
+    p1, p2 = math.radians(lat1), math.radians(lat2)
+    dphi = math.radians(lat2 - lat1)
+    dlmb = math.radians(lon2 - lon1)
+    a = math.sin(dphi / 2) ** 2 + math.cos(p1) * math.cos(p2) * math.sin(dlmb / 2) ** 2
+    return 2 * radius * math.asin(min(1.0, math.sqrt(a)))
+
+
+def _in_tennessee(lat, lon) -> bool:
+    south, north, west, east = TN_BOX
+    return south <= lat <= north and west <= lon <= east
+
+
+def forecast_positions(text: str) -> list[tuple[float, float, int]]:
+    """Lat, lon, and knots from an NHC forecast advisory."""
+    found = []
+    for match in re.finditer(
+        r"(\d+(?:\.\d+)?)\s*([NS])\s+(\d+(?:\.\d+)?)\s*([EW])\s+(\d+)\s*KT",
+        text or "",
+        re.I,
+    ):
+        lat = float(match.group(1)) * (-1 if match.group(2).upper() == "S" else 1)
+        lon = float(match.group(3)) * (-1 if match.group(4).upper() == "W" else 1)
+        found.append((lat, lon, int(match.group(5))))
+    return found
+
+
+def threatens_tennessee(positions, text: str = "") -> tuple[bool, int]:
+    """A forecast point over Tennessee, or within reach of Middle Tennessee."""
+    peak = 0
+    hit = bool(re.search(r"\btennessee\b", text or "", re.I))
+    for lat, lon, knots in positions or []:
+        if _in_tennessee(lat, lon) or _km(lat, lon, HOME[0], HOME[1]) <= TN_REACH_KM:
+            hit = True
+            peak = max(peak, knots)
+    return hit, peak
+
+
+def us_coastal_watch(text: str, watches_present: bool = False) -> bool:
+    """True when an NHC product has a US hurricane or tropical storm watch or warning."""
+    blob = text or ""
+    if re.search(r"no coastal watches or warnings in effect", blob, re.I):
+        return False
+    if _WATCH_PHRASE.search(blob):
+        return True
+    return bool(watches_present)
+
+
+def tropical_severity(positions, advisory: str, watches_present: bool, knots_now=0) -> str:
+    """STANDBY unless a US watch/warning is up, or the track reaches Tennessee."""
+    hit, peak = threatens_tennessee(positions, advisory)
+    try:
+        knots_now = int(knots_now or 0)
+    except (TypeError, ValueError):
+        knots_now = 0
+    strongest = peak or (knots_now if hit else 0)
+    if hit and strongest >= 64:
+        return "CRITICAL"
+    if hit:
+        return "ACTION"
+    if us_coastal_watch(advisory, watches_present):
+        return "ALERT"
+    return "STANDBY"
+
+
+def _point_in_ring(lon: float, lat: float, ring) -> bool:
+    inside = False
+    if len(ring) < 3:
+        return False
+    j = len(ring) - 1
+    for i, point in enumerate(ring):
+        xi, yi = point[0], point[1]
+        xj, yj = ring[j][0], ring[j][1]
+        if ((yi > lat) != (yj > lat)) and (lon < (xj - xi) * (lat - yi) / ((yj - yi) or 1e-15) + xi):
+            inside = not inside
+        j = i
+    return inside
+
+
+def _point_in_geom(lon: float, lat: float, geom: dict) -> bool:
+    kind = (geom or {}).get("type")
+    coords = (geom or {}).get("coordinates") or []
+    if kind == "Polygon":
+        if not coords or not _point_in_ring(lon, lat, coords[0]):
+            return False
+        return not any(_point_in_ring(lon, lat, hole) for hole in coords[1:])
+    if kind == "MultiPolygon":
+        return any(_point_in_geom(lon, lat, {"type": "Polygon", "coordinates": poly}) for poly in coords)
+    return False
+
+
+def outlook_at_point(features, lon=HOME[1], lat=HOME[0]) -> tuple[str, str]:
+    """Highest SPC categorical risk whose polygon contains the point."""
+    best_dn = 0
+    label = ""
+    for feature in features or []:
+        props = feature.get("properties") or {}
+        try:
+            dn = int(props.get("DN") or 0)
+        except (TypeError, ValueError):
+            dn = 0
+        if dn <= best_dn:
+            continue
+        if _point_in_geom(lon, lat, feature.get("geometry") or {}):
+            best_dn = dn
+            label = props.get("LABEL2") or props.get("LABEL") or ""
+    if best_dn <= 1:
+        return "No thunderstorm risk", "STANDBY"
+    name, sev = _OUTLOOK_DN.get(best_dn, (label or "Thunderstorms", "STANDBY"))
+    return name, sev
+
+
+def spc_watch_severity(title: str, note: str = "") -> str:
+    blob = f"{title or ''} {note or ''}"
+    if re.search(r"no watches are valid|no watches", blob, re.I):
+        return "STANDBY"
+    covers = _MIDDLE_TN.search(blob) is not None
+    if re.search(r"tornado watch", blob, re.I) and covers:
+        return "ACTION"
+    if re.search(r"severe thunderstorm watch|severe tstm watch", blob, re.I) and covers:
+        return "ALERT"
+    return "STANDBY"
+
+
+def _storm_row(now, title, note, url, severity, kind, source) -> dict:
+    row = _item(kind, "local", source, title, note, url, now, [kind, severity.lower(), "tennessee"], {"severity": severity})
+    row["soWhat"] = _storm_advice(kind, severity, title)
+    row["action"] = "no action needed" if row["soWhat"] in {"", "no action needed"} else row["soWhat"]
+    return row
+
+
+def _storm_advice(kind: str, severity: str, title: str) -> str:
+    if kind == "nws" and re.search(r"tornado warning", title or "", re.I):
+        return "Take shelter now. Interior room, lowest floor, away from windows."
+    if severity == "CRITICAL":
+        return "The forecast reaches Tennessee at hurricane strength. What to do: treat this as a local hurricane threat."
+    if severity == "ACTION" and kind == "tropical":
+        return "The track comes close to Tennessee. What to do: plan for heavy rain, flooding, or a tornado risk in Middle Tennessee."
+    if severity == "ACTION" and kind == "spc-outlook":
+        return "SPC has an enhanced or moderate risk at 37179. What to do: stay weather-aware through the outlook period."
+    if severity == "ACTION":
+        return "A tornado watch covers Middle Tennessee. What to do: know the shelter spot and stay with the warning."
+    if severity == "ALERT" and kind == "tropical":
+        return "A US hurricane or tropical storm watch or warning is in effect. No action for 37179 unless this note names Tennessee."
+    if severity == "ALERT":
+        return "A severe thunderstorm watch covers Middle Tennessee. What to do: stay weather-aware. No shelter action yet."
+    return "No action for 37179."
+
+
+def _basin_name(storm_id: str) -> str:
+    prefix = (storm_id or "")[:2].lower()
+    return {"al": "Atlantic", "ep": "East Pacific", "cp": "Central Pacific"}.get(prefix, "NHC basin")
+
+
+def describe_storm(storm: dict, advisory: str = "", positions=None) -> dict:
+    """One active-storm line: name, type, winds, movement, advisory link, severity."""
+    name = storm.get("name") or "Unnamed"
+    code = (storm.get("classification") or "").upper()
+    kind_name = _NHC_CLASS.get(code, code or "Tropical cyclone")
+    try:
+        knots = int(float(storm.get("intensity") or 0))
+    except (TypeError, ValueError):
+        knots = 0
+    category = hurricane_category(knots) if code == "HU" else ""
+    label = f"{kind_name} {name}" + (f", {category}" if category else "")
+    direction = compass_point(storm.get("movementDir"))
+    try:
+        speed = int(float(storm.get("movementSpeed") or 0))
+    except (TypeError, ValueError):
+        speed = 0
+    move = f"Moving {direction} at {speed} kt" if direction else "Movement not in the feed"
+    mph = round(knots * 1.15078) if knots else 0
+    winds = f"Max winds {knots} kt ({mph} mph)" if knots else "Max winds not in the feed"
+    positions = list(positions or [])
+    if storm.get("latitudeNumeric") is not None and storm.get("longitudeNumeric") is not None:
+        positions = [(float(storm["latitudeNumeric"]), float(storm["longitudeNumeric"]), knots)] + positions
+    watches = storm.get("windWatchesWarnings") or storm.get("stormSurgeWatchWarningGIS")
+    severity = tropical_severity(positions, advisory, bool(watches), knots)
+    where = f"{storm.get('latitude') or ''} {storm.get('longitude') or ''}".strip()
+    basin = _basin_name(storm.get("id") or "")
+    watch_line = "US hurricane or tropical storm watch/warning is in effect" if severity == "ALERT" else "No US hurricane or tropical storm watch or warning"
+    if severity in {"ACTION", "CRITICAL"}:
+        watch_line = "Forecast track reaches Tennessee"
+    elif us_coastal_watch(advisory, bool(watches)) and severity == "STANDBY":
+        watch_line = "No US hurricane or tropical storm watch or warning"
+    note = f"{winds}. {move}. {basin}" + (f" at {where}." if where else ".") + f" {watch_line}."
+    adv = storm.get("publicAdvisory") or {}
+    url = d.http_url((adv.get("url") if isinstance(adv, dict) else "") or "https://www.nhc.noaa.gov/")
+    return {
+        "title": label,
+        "note": note,
+        "url": url,
+        "severity": severity,
+        "kind": "tropical",
+        "source": "NHC",
+    }
+
+
+def _quiet_tropical(now) -> dict:
+    return _storm_row(
+        now,
+        "No active tropical systems",
+        "NHC reported no active tropical cyclones. The Atlantic hurricane season runs through Nov 30.",
+        "https://www.nhc.noaa.gov/",
+        "STANDBY",
+        "tropical",
+        "NHC",
+    )
+
+
+def _storms_from_rss(now) -> tuple[list[dict], bool]:
+    """Atlantic, East Pacific, and Central Pacific RSS when CurrentStorms.json is down."""
+    rows = []
+    answered = False
+    seen = set()
+    for url in (
+        "https://www.nhc.noaa.gov/index-at.xml",
+        "https://www.nhc.noaa.gov/index-ep.xml",
+        "https://www.nhc.noaa.gov/index-cp.xml",
+    ):
+        try:
+            nodes = _rss_items(url, 8)
+        except Exception:
+            continue
+        answered = True
+        for node in nodes:
+            title = re.sub(r"\s+", " ", (node.findtext("title") or "")).strip()
+            if not title or re.search(r"tropical weather outlook|no tropical cyclones", title, re.I):
+                continue
+            if not re.search(r"public advisory|summary for", title, re.I):
+                continue
+            key = re.sub(r"\W+", " ", title.lower())
+            if key in seen:
+                continue
+            seen.add(key)
+            link = d.http_url(node.findtext("link") or url)
+            note = d.clean_note(node.findtext("description") or "")
+            severity = tropical_severity(forecast_positions(note), f"{title} {note}", False, 0)
+            rows.append(_storm_row(now, title, note or "NHC RSS advisory.", link, severity, "tropical", "NHC"))
+    return rows, answered
+
+
+def _nhc_storm_items(now) -> tuple[list[dict], str]:
+    try:
+        payload = json.loads(_get("https://www.nhc.noaa.gov/CurrentStorms.json", timeout=25, headers={"Accept": "application/json", "User-Agent": NWS_UA}))
+    except Exception as err:
+        rows, answered = _storms_from_rss(now)
+        if not answered:
+            return [], f"NHC: {err}"
+        if not rows:
+            return [_quiet_tropical(now)], ""
+        return rows, ""
+    storms = payload.get("activeStorms") or []
+    if not storms:
+        return [_quiet_tropical(now)], ""
+    rows = []
+    for storm in storms:
+        advisory = ""
+        positions = []
+        adv = storm.get("forecastAdvisory") if isinstance(storm.get("forecastAdvisory"), dict) else {}
+        public = storm.get("publicAdvisory") if isinstance(storm.get("publicAdvisory"), dict) else {}
+        text_url = (adv or {}).get("url") or (public or {}).get("url") or ""
+        watches = storm.get("windWatchesWarnings") or storm.get("stormSurgeWatchWarningGIS")
+        near = False
+        if storm.get("latitudeNumeric") is not None and storm.get("longitudeNumeric") is not None:
+            near = _km(float(storm["latitudeNumeric"]), float(storm["longitudeNumeric"]), HOME[0], HOME[1]) < 2500 or bool(watches)
+        if text_url and (watches or near):
+            try:
+                advisory = _get(text_url, timeout=20, headers={"User-Agent": NWS_UA}).decode("utf-8", "replace")
+                positions = forecast_positions(advisory)
+            except Exception:
+                advisory = ""
+        described = describe_storm(storm, advisory, positions)
+        rows.append(_storm_row(now, described["title"], described["note"], described["url"], described["severity"], "tropical", "NHC"))
+    return rows, ""
+
+
+def _spc_watch_items(now) -> tuple[list[dict], str]:
+    try:
+        nodes = _rss_items("https://www.spc.noaa.gov/products/spcwwrss.xml", 12)
+    except Exception as err:
+        return [], f"SPC watches: {err}"
+    rows = []
+    for node in nodes:
+        title = re.sub(r"\s+", " ", (node.findtext("title") or "")).strip()
+        if not title or title.lower() in {"spc tornado/severe thunderstorm watches", "spc forecast products"}:
+            continue
+        note = d.clean_note(node.findtext("description") or "")
+        link = d.http_url(node.findtext("link") or "https://www.spc.noaa.gov/products/watch/")
+        severity = spc_watch_severity(title, note)
+        if re.search(r"no watches are valid", title, re.I):
+            title = "No SPC tornado or severe thunderstorm watches"
+            note = "SPC watch feed answered. Nothing is in effect."
+        rows.append(_storm_row(now, title, note, link, severity, "spc-watch", "SPC"))
+    if not rows:
+        rows.append(_storm_row(
+            now,
+            "No SPC tornado or severe thunderstorm watches",
+            "SPC watch feed answered with no watch products.",
+            "https://www.spc.noaa.gov/products/watch/",
+            "STANDBY",
+            "spc-watch",
+            "SPC",
+        ))
+    return rows[:8], ""
+
+
+def _spc_outlook_items(now) -> tuple[list[dict], list[str]]:
+    rows = []
+    gaps = []
+    for day in (1, 2, 3):
+        url = f"https://www.spc.noaa.gov/products/outlook/day{day}otlk_cat.nolyr.geojson"
+        page = f"https://www.spc.noaa.gov/products/outlook/day{day}otlk.html"
+        try:
+            payload = json.loads(_get(url, timeout=25, headers={"Accept": "application/geo+json", "User-Agent": NWS_UA}))
+        except Exception as err:
+            gaps.append(f"SPC day {day} outlook: {err}")
+            continue
+        label, severity = outlook_at_point(payload.get("features") or [])
+        title = f"Day {day} convective outlook: {label} at Thompson's Station (37179)"
+        note = "SPC categorical outlook for 35.802, -86.907."
+        rows.append(_storm_row(now, title, note, page, severity, "spc-outlook", "SPC"))
+    return rows, gaps
+
+
+def fetch_storm_watch(now: datetime) -> dict:
+    """Hurricane, SPC watch, and Day 1–3 outlook lines for the preparedness card."""
+    items = []
+    gaps = []
+    storms, gap = _nhc_storm_items(now)
+    if gap:
+        gaps.append(gap)
+    items.extend(storms)
+    watches, gap = _spc_watch_items(now)
+    if gap:
+        gaps.append(gap)
+    items.extend(watches)
+    outlooks, outlook_gaps = _spc_outlook_items(now)
+    gaps.extend(outlook_gaps)
+    items.extend(outlooks)
+    return {
+        "place": "Thompson's Station / Williamson County / Middle Tennessee (37179)",
+        "note": "Atlantic hurricane season runs through Nov 30. A quiet tropical line means NHC reported no active systems.",
+        "items": items,
+        "gaps": gaps,
+    }
+
+
 def _try_nws(now):
     rows = []
     headers = {"User-Agent": NWS_UA, "Accept": "application/geo+json"}
@@ -813,7 +1234,24 @@ def same_story(a: str, b: str) -> bool:
     people = names_a & names_b & _PERSON_NAMES
     if people and len((left & right) - people) >= 1:
         return True
+    if european_named_storm(a) and european_named_storm(b):
+        if re.search(r"\bcharles\b", a, re.I) and re.search(r"\bcharles\b", b, re.I):
+            return True
+        if re.search(r"\bbruna\b", a, re.I) and re.search(r"\bbruna\b", b, re.I):
+            return True
     return False
+
+
+def european_named_storm(title: str, note: str = "") -> bool:
+    """Storm Charles / Bruna style European windstorms, not Atlantic hurricanes."""
+    blob = f"{title or ''} {note or ''}"
+    if re.search(r"\bstorm\s+(charles|bruna)\b", blob, re.I):
+        return True
+    if re.search(r"\beuropean windstorm\b|\bextratropical storm\b", blob, re.I):
+        return True
+    named = re.search(r"\b(hurricane|depression|cyclone|storm)\s+(charles|bruna)\b", blob, re.I)
+    place = re.search(r"\b(madeira|portugal|spain|canary|azores|europe)\b", blob, re.I)
+    return bool(named and place)
 
 
 def classify_desk(title: str, note: str, hinted: str) -> str:
@@ -823,6 +1261,8 @@ def classify_desk(title: str, note: str, hinted: str) -> str:
     rows are reclassified from the title (for example a congressional story
     that arrived on the Iran query) or dropped as kind ``news``.
     """
+    if european_named_storm(title, note):
+        return "windstorm"
     blob = f"{title or ''} {note or ''}"
     rules = (
         ("war-iran", r"\biran\b"),
@@ -838,7 +1278,7 @@ def classify_desk(title: str, note: str, hinted: str) -> str:
         return hinted
     if matched:
         return matched[0]
-    if hinted in {"war-iran", "war-ukraine", "conflict"}:
+    if hinted in {"war-iran", "war-ukraine", "conflict", "windstorm"}:
         return "news"
     if hinted in {"usgov", "israel", "climate", "diplomacy", "attack", "news"}:
         return hinted
@@ -884,6 +1324,7 @@ def _try_desks(now):
         ("climate", "Climate summit", '(COP31 OR Antalya) (climate OR summit OR COP) when:14d'),
         ("diplomacy", "G7", '(G7 OR Rubio) (Paris OR ministers) when:7d'),
         ("attack", "Attack", '(Krakow OR Kraków OR Krakow) (attack OR stabbing OR explosion) when:7d'),
+        ("windstorm", "European storm", '("Storm Charles" OR "Storm Bruna" OR "Hurricane Charles" OR "European windstorm") (Madeira OR Portugal OR Spain OR Canary) when:7d'),
     )
     rows = []
     gaps = []
@@ -906,10 +1347,10 @@ def _try_desks(now):
                 continue
             row["kind"] = assigned
             row["lane"] = "news"
-            row["severity"] = "ALERT"
+            row["severity"] = "STANDBY" if assigned == "windstorm" else "ALERT"
             row["confidence"] = "reported"
             row["sourceCount"] = 1
-            row["tags"] = list(dict.fromkeys((row.get("tags") or []) + [assigned, "alert"]))
+            row["tags"] = list(dict.fromkeys((row.get("tags") or []) + [assigned, "standby" if assigned == "windstorm" else "alert"]))
             rows.append(row)
             kept += 1
         print(f"  {kind} {kept}")

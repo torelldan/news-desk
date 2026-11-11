@@ -909,7 +909,7 @@ def main() -> int:
         elif x_status.get("reason") and x_status.get("reason") != "missing X_BEARER_TOKEN":
             errors.append("X feed offline: " + x_status.get("reason"))
 
-    from boards import extra_sources, fetch_assets, fetch_markets, fetch_science, fetch_threats, refresh_file
+    from boards import extra_sources, fetch_assets, fetch_markets, fetch_science, fetch_storm_watch, fetch_threats, refresh_file
     prev_markets = load_json(DATA / "markets.json", {})
     prev_threats = load_json(DATA / "threats.json", {})
     prev_science = load_json(DATA / "science.json", {})
@@ -1024,6 +1024,11 @@ def main() -> int:
     except Exception as err:
         errors.append(f"Local layer: {err}")
         local = {"place": "37179", "items": [], "gaps": [str(err)]}
+    try:
+        storms = fetch_storm_watch(now)
+    except Exception as err:
+        errors.append(f"Storm watch: {err}")
+        storms = {"place": "37179", "items": [], "gaps": [f"Storm watch: {err}"], "note": ""}
     try:
         radar = citizen.fetch_radar(now)
     except Exception as err:
@@ -1150,6 +1155,7 @@ def main() -> int:
     save_json(DATA / "trends.json", trends)
     save_json(DATA / "triggers.json", triggers)
     save_json(DATA / "local.json", local)
+    save_json(DATA / "storms.json", storms)
     save_json(DATA / "radar.json", radar)
     save_json(DATA / "impact.json", impact)
     save_json(DATA / "history.json", history)

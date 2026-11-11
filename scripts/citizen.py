@@ -203,6 +203,14 @@ def so_what(item: dict) -> str:
         return "no action needed"
     if kind in {"quake", "earthquake"} and not item.get("usImpact"):
         return "no action needed"
+    if kind == "nws" and re.search(r"tornado warning", f"{title} {note}", re.I):
+        return "Take shelter now. Interior room, lowest floor, away from windows."
+    if kind == "nws" and re.search(r"flash flood", title, re.I) and sev in {"ACTION", "CRITICAL"}:
+        return f"{title}. What to do: stay off flooded roads."
+    if kind == "nws" and re.search(r"hurricane warning|tropical storm warning|hurricane watch|tropical storm watch", title, re.I):
+        return f"{title}. What to do: follow that alert if you are in the named area."
+    if kind == "windstorm":
+        return "No action for 37179. This is a European named storm, not an Atlantic hurricane."
     if kind == "nws" and sev in {"ACTION", "CRITICAL"}:
         where = note.split(".")[0][:80] if note else "the warned area"
         return f"{title} covers {where}. What to do: stay off those roads."
@@ -224,7 +232,9 @@ def so_what(item: dict) -> str:
 
 
 def _action(kind: str, sev: str) -> str:
-    if sev == "CRITICAL" and kind in {"storm", "hurricane", "nws", "tornado"}:
+    if sev == "CRITICAL" and kind in {"nws", "tornado"}:
+        return "Take shelter now. Interior room, lowest floor, away from windows."
+    if sev == "CRITICAL" and kind in {"storm", "hurricane"}:
         return "Fuel, water, cash, and meds tonight. Stay off the warned roads."
     if sev == "CRITICAL":
         return "Treat this as urgent. Confirm it on the linked official source, then handle water, cash, and a way out."
@@ -824,10 +834,8 @@ def fetch_local(now: datetime) -> dict:
             props = feat.get("properties") or {}
             title = props.get("headline") or props.get("event") or "NWS alert"
             link = d.http_url(props.get("uri") or props.get("@id") or "https://api.weather.gov/")
-            event = props.get("event") or ""
-            sev = "ACTION" if re.search(r"warning", event, re.I) else "ALERT"
-            if re.search(r"tornado|hurricane", event, re.I) and re.search(r"warning", event, re.I):
-                sev = "CRITICAL"
+            event = props.get("event") or title
+            sev = boards.alert_severity(event, props.get("severity") or "")
             items.append({
                 "id": d.make_id("local-nws", link or title),
                 "title": title,
