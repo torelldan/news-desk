@@ -1,77 +1,39 @@
 {
-  "googleNote": "Google Trends US daily list answered (10 topics). Kept the ones that match a war, government, or threat topic.",
+  "googleNote": "Google Trends US daily list answered (10 topics). Kept the ones that match a war, government, or threat topic. None of today's search trends matched.",
   "items": [
-    {
-      "category": "us-gov",
-      "confidence": "reported",
-      "date": "2026-11-10",
-      "id": "gtrend:f1ee88937a892549",
-      "kind": "trend",
-      "lane": "news",
-      "look": "news",
-      "name": "mississippi senate race election results",
-      "note": "US search trend. Traffic 5000+.",
-      "place": "US",
-      "published": "2026-11-10T08:10:00-06:00",
-      "rise": "US daily list 5000+",
-      "samples": [
-        {
-          "source": "CNN",
-          "text": "‘Where is Cindy Hyde-Smith?’: In a nail-biter Senate race, the incumbent stays out of view in Mississippi",
-          "url": "https://www.cnn.com/2026/11/09/politics/mississippi-senate-hyde-smith-colom-campaign"
-        },
-        {
-          "source": "The Clarion-Ledger",
-          "text": "When will Mississippi know who won US Senate race? Key deadlines today",
-          "url": "https://www.clarionledger.com/story/news/politics/elections/2026/11/10/hyde-smith-vs-colom-when-will-we-know-who-won-senate-race-in-mississippi/92699345007/"
-        },
-        {
-          "source": "AP News",
-          "text": "Mississippi U.S. Senate Election Live Results 2026",
-          "url": "https://apnews.com/projects/elections-2026/mississippi-us-senate-results/"
-        }
-      ],
-      "severity": "STANDBY",
-      "soWhat": "no action needed",
-      "source": "Google Trends",
-      "sourceCount": 3,
-      "title": "mississippi senate race election results",
-      "url": "https://www.cnn.com/2026/11/09/politics/mississippi-senate-hyde-smith-colom-campaign",
-      "volume": "5000+"
-    },
     {
       "category": "iran-war",
       "confidence": "reported",
-      "date": "2026-11-10",
+      "date": "2026-11-11",
       "id": "velocity:4ee4bc978244e41e",
       "kind": "trend",
       "lane": "news",
       "look": "news",
       "name": "iran war",
       "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-10T09:11:35-06:00",
+      "published": "2026-11-11T08:59:00-06:00",
       "rise": "4 outlets this window",
       "samples": [
         {
+          "date": "2026-11-11",
+          "published": "2026-11-11T04:02:53-06:00",
+          "source": "NPR",
+          "text": "Trump says US won Iran war, Iran responds - NPR",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNRi1JakU3TzJVd04yYXJFNWswV2NRSUxJaE1Ga2UzZGVhU3RyUzRGUEt2Yi0tMm9pMlVTM0t4QzFEQWx0YmlIbVlDa3JHTF9ZU2ZQTTY4eURMdUNSRXlyOGxrU2ZxLWpYYUtnS1lqblBoWHY1NkJ5MkViUVJuUTJELUEtYjFHU0d1dENZR3RB?oc=5"
+        },
+        {
+          "date": "2026-11-11",
+          "published": "2026-11-11T03:30:50-06:00",
+          "source": "CBS News",
+          "text": "Rubio says U.S. has \"no need\" to restart combat operations in Iran - CBS News",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE0zN0FDMkRwcDVyZGFpV0dvRnhidUVyU1hrc2pKQzJZMmlLZDF1bHZ0dzBtMDJLOXc5T0xNYmRuS2Q4eU1QQmFqaHJ1cVg0VGkxcWN3dEZLVlo1UlQ0ckZCaW52b0lHQzVZN2N6UElySjhIWDdXWVh5T24xcmh4Zw?oc=5"
+        },
+        {
           "date": "2026-11-10",
-          "published": "2026-11-10T00:58:32-06:00",
-          "source": "CNBC",
-          "text": "Trump says Iran war to end 'fairly soon,' plays down prospects of new strikes - CNBC",
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB2SVZ4ZGc5a3Y1STlmenVpVHNaX1MxQklrdlRKOTNlekw1ZThJU3RpZDd2RzhfLVNVZG9IUDRwQng1Q19iaTNfY01DM2lFZlpEbzJqbEZDeDJObkVPRTN1ZTYzOVFULVJuOUc0?oc=5"
-        },
-        {
-          "date": "2026-11-04",
-          "published": "2026-11-04T10:56:43-06:00",
-          "source": "PBS",
-          "text": "Vance blames Iran war for GOP midterm losses - PBS",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNR3hPeE5hNmhGaGtEbTNfZXdZUTJiaDctVDhSd2g0T1FIUVdyOGFnWHFfaXp6Y1Z4VmNqOXJ6VC1Ob3BfbHF0Y2RZQlQ0cDdTWDVDRGVjMmxyOGtoeU5JOUdMbGg3MXJZYTBwSGVPaWlyS2VHRnkyclVnQ3JhZm00bGpObWR5SUZ1bWc?oc=5"
-        },
-        {
-          "date": "2026-11-09",
-          "published": "2026-11-09T16:02:09-06:00",
-          "source": "AP News",
-          "text": "Trump after meeting with Qatari PM says he believes war with Iran is militarily 'effectively over' - AP News",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOelU0dnZ5Y2ROMkdrZXlYYURIcnJocXdKbWx1eTlPcENLMk1vX3ctTC1ycGlfQ0dlemFiX2pHRzRvSkd4NTZ3aEdxU3h5OW5ZeUo3cU50YTVPODlxb2lZMVBwRFU4bXlmYlJiTmdHSHcxUUdQMFptNG43Y1hsanUzbTJHMHc5eTlVeVlz?oc=5"
+          "published": "2026-11-10T13:57:17-06:00",
+          "source": "The Jerusalem Post",
+          "text": "Qatar PM warns of major US-Iran disagreements despite two-week reprieve from pos - The Jerusalem Post",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9BN0UxYXRjbnM0VnQ0aG5scm9jTWV1VlRTSFdEOXVZN1lzWVU4VFY3b1pmSWx3X3ZKcGFERGt6eXlaSEYyWlctQWppRzhJa3A5MlBoVlFIejRfc2kx?oc=5"
         }
       ],
       "severity": "ALERT",
@@ -79,83 +41,83 @@
       "source": "News velocity",
       "sourceCount": 4,
       "title": "iran war",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB2SVZ4ZGc5a3Y1STlmenVpVHNaX1MxQklrdlRKOTNlekw1ZThJU3RpZDd2RzhfLVNVZG9IUDRwQng1Q19iaTNfY01DM2lFZlpEbzJqbEZDeDJObkVPRTN1ZTYzOVFULVJuOUc0?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNRi1JakU3TzJVd04yYXJFNWswV2NRSUxJaE1Ga2UzZGVhU3RyUzRGUEt2Yi0tMm9pMlVTM0t4QzFEQWx0YmlIbVlDa3JHTF9ZU2ZQTTY4eURMdUNSRXlyOGxrU2ZxLWpYYUtnS1lqblBoWHY1NkJ5MkViUVJuUTJELUEtYjFHU0d1dENZR3RB?oc=5"
     },
     {
       "category": "ukraine-war",
       "confidence": "reported",
-      "date": "2026-11-10",
+      "date": "2026-11-11",
       "id": "velocity:efd2da34e68ca58f",
       "kind": "trend",
       "lane": "news",
       "look": "news",
       "name": "ukraine war",
       "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-10T09:11:35-06:00",
-      "rise": "5 outlets this window",
+      "published": "2026-11-11T08:59:00-06:00",
+      "rise": "4 outlets this window",
       "samples": [
         {
           "date": "2026-11-10",
-          "published": "2026-11-10T04:58:18-06:00",
-          "source": "NPR",
-          "text": "U.S.-mediated talks on ending Russia-Ukraine war begin in Abu Dhabi - NPR",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBTMVQyQVdJaG5fZmtRMENRcFBfcmN2bVJFdnJKRy12QmlPZEZoSThoZDBGRnBkTGxMY3ZmVTZDN3BQZkdrSWdJa1RQUElKbnNZYmo0S3VTX1JweVRqajBIM0lKa0hJcDQzVWM3N0lCYXpNOG9Td2c?oc=5"
+          "published": "2026-11-10T12:09:38-06:00",
+          "source": "PBS",
+          "text": "Russia and Ukraine hold nearly 4 hours of U.S.-mediated talks in Abu Dhabi - PBS",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOZ0xkMnRwLVZoNXRPVmtkbkFIWDBDZDg5VS1KdmRRNV9OODY0cGVhaFIyMExLclI5eFBWdUFJRVFFdFB5dmQ4bm9DcnpjZEdEQUVmRVczQjF1MUtjYjBwS3BCbGVDaGNuT29zSS15WTkwZUFUbldNUlpFZDJmZkItSm5Fa085LW83WVJkSkJJUGVnNEx5TF8zUzkxUDlBempHd1JrQWxUcE1PTEFP0gGyAUFVX3lxTFBmaHFLUzJlQVh0VVVYb0NRY29UM2lBZWxIOFhvVi0zMk15X3NTa21FNkR4blUyYU9SZEpwbDFBbUgzNE1vS2RfUE05MjdRRUpCay0ySDAyby11YmZwbV83MDh5WEFNX0pDZ3BUY011a055RHhCS2g2Tld1eWlLanB6ZGxoYk15NElIYm14V0RQNFltRWZIc1NTLWRTR1Y5LWRuQjV3MmFqaVotS3QwY2FQY2c?oc=5"
         },
         {
           "date": "2026-11-09",
-          "published": "2026-11-09T22:46:00-06:00",
-          "source": "CNBC",
-          "text": "Trump sees opening for Ukraine peace deal, but key questions remain ahead of Abu Dhabi talks - CNBC",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOaTR4b1RSQ2FtZEFXLUNXQ195VmlRWHYxQ1plQUJtVW8tdlpwSVpYVndpcS1sTGFSYy1UWWh3Z1BDYWJnLVBWODM4bmhQWHlqYzlDNEc1eFliT0hXUzE0ekNwcE9TcFh4NWltbVdpMTNwVXJtMnNxcVJSYzh1SjUtajZvMA?oc=5"
+          "published": "2026-11-09T18:03:00-06:00",
+          "source": "Reuters",
+          "text": "US attempts new peace push at first Russia-Ukraine talks in nine months - Reuters",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPeFJoc0ZJdUVhZlNDUWpsU1A0MVhlbWZXMGphaHktSWpjblNReDNXd3FXUVlnSzRVa2doWEtNd21vNHJXdm1vQU5qVnJJX1p6TlVVWi01Nkt0NzVrMkFXVkstdXdfVHJGaWtSeXlPdjdwZVJrTW9MQW9fV2NmS3RpT29EZU9mal9BVWNRWXJ6RGxWbnJzcGJ5aG5tM3JUM1BMUmNqdGhEVlZiRGRhTG0xMVI5ZWw0V2dwenJMT2NB?oc=5"
         },
         {
-          "date": "2026-11-04",
-          "published": "2026-11-04T19:15:23-06:00",
-          "source": "Institute for the Study of War",
-          "text": "Oleshky Ceasefire Demonstrates That Russia Has the Capability, but Not the Will, to End Civilian Suffering in Ukraine - Institute for the Study of War",
-          "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxObUtrMGdpN1lUU0RqM2JlQm5KanJLeWtnNXFzZWFnWjdscHdNYzNwQmRaLUI1Q1F2dzQ4ZkNQT2pNWC03a2JuYlloZUlad29EVzU4U19hQkh2QVdTeUFvTzIxNFdSczZfdjZEWldaYVFtWGJESnNmYUx1RnREQUVHT0kza29qeVZLbGtrX2NhclhjeEFMQnlDaDdDS0Q5RE14cHBCeGZiYVVrd1RrbXRoZzJ0cXhsTjcxTndidHViNGhlZFFtbk5yaDdwSzZsV0JqbW1VYV9aSmQ5WFQzcHVUU2JaV0cxWi1hcWJnZy02cWw3WmNmZU5YYnpITnZRUQ?oc=5"
+          "date": "2026-11-09",
+          "published": "2026-11-09T11:22:53-06:00",
+          "source": "AFP.com",
+          "text": "Europe top diplomats press Rubio on Ukraine at G7 - AFP.com",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5FX2UwNkdrRUt5QVZqRDRDVEJpdkJ6eHdQLTdHV2hEMXNCSVY4T0pqY0l2WS1peGpiNk1INFA5RTBVSl84SE5iUEFRY0FDYmUxc0xyOXB4TFRlVXlBNFE3bnlMTnNTaUVFRkRPZHZhUHhsOFVk?oc=5"
         }
       ],
       "severity": "ALERT",
       "soWhat": "no action needed",
       "source": "News velocity",
-      "sourceCount": 5,
+      "sourceCount": 4,
       "title": "ukraine war",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBTMVQyQVdJaG5fZmtRMENRcFBfcmN2bVJFdnJKRy12QmlPZEZoSThoZDBGRnBkTGxMY3ZmVTZDN3BQZkdrSWdJa1RQUElKbnNZYmo0S3VTX1JweVRqajBIM0lKa0hJcDQzVWM3N0lCYXpNOG9Td2c?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOZ0xkMnRwLVZoNXRPVmtkbkFIWDBDZDg5VS1KdmRRNV9OODY0cGVhaFIyMExLclI5eFBWdUFJRVFFdFB5dmQ4bm9DcnpjZEdEQUVmRVczQjF1MUtjYjBwS3BCbGVDaGNuT29zSS15WTkwZUFUbldNUlpFZDJmZkItSm5Fa085LW83WVJkSkJJUGVnNEx5TF8zUzkxUDlBempHd1JrQWxUcE1PTEFP0gGyAUFVX3lxTFBmaHFLUzJlQVh0VVVYb0NRY29UM2lBZWxIOFhvVi0zMk15X3NTa21FNkR4blUyYU9SZEpwbDFBbUgzNE1vS2RfUE05MjdRRUpCay0ySDAyby11YmZwbV83MDh5WEFNX0pDZ3BUY011a055RHhCS2g2Tld1eWlLanB6ZGxoYk15NElIYm14V0RQNFltRWZIc1NTLWRTR1Y5LWRuQjV3MmFqaVotS3QwY2FQY2c?oc=5"
     },
     {
       "category": "us-gov",
       "confidence": "reported",
-      "date": "2026-11-10",
+      "date": "2026-11-11",
       "id": "velocity:bd817662251631b7",
       "kind": "trend",
       "lane": "news",
       "look": "news",
       "name": "us gov",
       "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-10T09:11:35-06:00",
+      "published": "2026-11-11T08:59:00-06:00",
       "rise": "4 outlets this window",
       "samples": [
         {
-          "date": "2026-11-09",
-          "published": "2026-11-09T16:33:00-06:00",
-          "source": "AP News",
-          "text": "Rep. Thomas Massie of Kentucky launches bid to impeach Defense Secretary Pete Hegseth - AP News",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQZjJQVDlfd0pOX1hsbURBWTRUQXR0T2VROGp4cmRmTUl0ZnMzYmh0OE9CSTd5STBxaTAxTHU4Ni1GOUQyWTVNbUlUX2hCM2NQOFBVTzdQemFkcWJ6R1N6QmY2Mnl6TmcxR0tiSmdUSUxTS0otcW00cERJbmJuNkRKZ0NiRTJqX2JWLTMxZmtqQnVzaVRVZ290X0YycHpFRFFaQk9WVVB6ZnZSQQ?oc=5"
+          "date": "2026-11-10",
+          "published": "2026-11-10T10:45:06-06:00",
+          "source": "Los Angeles Times",
+          "text": "Rubio urges nations to ‘step up’ on Strait of Hormuz security - Los Angeles Times",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNeW8wV3dfdHJMX21PeDJHREMxME1ubmlhMkN1NHhxR0JVbDV5SkJfeWxUS25CRFBSMVB5TUQ4cTdzVTQwcWdkWDdNRXctSkt3YjU2dGZBZWNFekZycjRfY3hnb0MtVGFWcklGMlpoVkw0aERHdTgtX3Z1TmlKalQ0SW10cEpLRzNMeUd3eW55UXdyS1dnRmRUSkZ0Nl95QmhRTVlOVXhSZk9uZlFwUU1zclFZWQ?oc=5"
         },
         {
-          "date": "2026-11-03",
-          "published": "2026-11-03T21:49:22-06:00",
-          "source": "The New York Times",
-          "text": "Trump Says in Interview That He Will Accept Election Results - The New York Times",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQZnh6NEFhTFFSOFpKQ2ZaTkVfYk8wblJidGZJSGs5R0kzYmo4UlBQYXJVRDhhRFVrc09zUUMyQXBHWkJ2RGJ4UnI3WXpsTkU3VnZNeGRtd0tRckljMms0THYxZHdLbklueS1vRFZhNERXTnpZaW10dTZuUGJiZzQ1SDBadFdJN2M2cVE?oc=5"
+          "date": "2026-11-10",
+          "published": "2026-11-10T05:00:00-06:00",
+          "source": "The Guardian",
+          "text": "Republicans return to Washington to sift through wreckage of midterms rout - The Guardian",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOd1hORHBQT2hsOVhualRUcTQ4ZmIyNHgxU2RHZ2c3aTNJRlJoNVpqb2NLbGpab1daX29ZbFRRaDFxbUZXOWNTQnkzTWxreVJJMC1sLXNmOVgtMGdsR2EtM3c1OGtqUHFTZk9hRXpuVm5sNzRMVlYza0RpdTZVbm1TdTRjZ3owcGxZcS1SSXRnVVEyd0QtZ09iUi13?oc=5"
         },
         {
-          "date": "2026-11-09",
-          "published": "2026-11-09T11:56:27-06:00",
-          "source": "U.S. Department of War (.gov)",
-          "text": "Secretary of War Pete Hegseth to Hold Pentagon Press Briefing – November 10, 2026 - U.S. Department of War (.gov)",
-          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNXzBwZ0xHY3FaejhvRjZwU0ZYMW00TlhHcGtMcEZQd3hBTU5QRDUxSFBUcVFhSG5rRmVZMm1vNjcxQ2Zjcmd1X2d4dEpHVUNkNGtYX1RpOUluVzViSURNc1R1N0xoX214QU1IMzI3NjBrOGszS04xaDBTZG1MVlRINXo4RGZlendiZ0JrQVZ2UVBKODFmZ0MxQTYwdWhCQlROWnViWkNYX2g1Yk80WnlOcW9XdldFS3F6RDZiaTQ0cmc5TTFhYVBnb2htSlBOV3VkMVVYZlRkUQ?oc=5"
+          "date": "2026-11-10",
+          "published": "2026-11-10T04:00:00-06:00",
+          "source": "NPR",
+          "text": "The Democratic Party gained power across the country in the midterms. Now what? - NPR",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOcDF1ZVlXQkl2T1JYNVlzVlZmU2FObExhTEYtN0gtVndkcHloUnI2MzQ0bXA5TkJ5N3FQYU5OWWJKeW4yYkdacHluZm5Yd3docXBuSFFsc25OeW00VnlTRkhVV3RuMG53b3hBTlhEa2ZlSC1rUV9BM0ptWFgxZUlnR2trTFVEMldkTnJnQzYxajZUUQ?oc=5"
         }
       ],
       "severity": "ALERT",
@@ -163,7 +125,7 @@
       "source": "News velocity",
       "sourceCount": 4,
       "title": "us gov",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQZjJQVDlfd0pOX1hsbURBWTRUQXR0T2VROGp4cmRmTUl0ZnMzYmh0OE9CSTd5STBxaTAxTHU4Ni1GOUQyWTVNbUlUX2hCM2NQOFBVTzdQemFkcWJ6R1N6QmY2Mnl6TmcxR0tiSmdUSUxTS0otcW00cERJbmJuNkRKZ0NiRTJqX2JWLTMxZmtqQnVzaVRVZ290X0YycHpFRFFaQk9WVVB6ZnZSQQ?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNeW8wV3dfdHJMX21PeDJHREMxME1ubmlhMkN1NHhxR0JVbDV5SkJfeWxUS25CRFBSMVB5TUQ4cTdzVTQwcWdkWDdNRXctSkt3YjU2dGZBZWNFekZycjRfY3hnb0MtVGFWcklGMlpoVkw0aERHdTgtX3Z1TmlKalQ0SW10cEpLRzNMeUd3eW55UXdyS1dnRmRUSkZ0Nl95QmhRTVlOVXhSZk9uZlFwUU1zclFZWQ?oc=5"
     }
   ],
   "mode": "trends",
