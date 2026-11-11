@@ -507,10 +507,13 @@ function blackoutCard() {
     days
   };
 }
+function stormItems() {
+  return (((DESK.storms || {}).items) || []).filter((item) => passes(item) && (safeUrl(item.url) || item.title));
+}
 function preparednessItems() {
   const card = blackoutCard();
   const extra = card && passes(card) ? [card] : [];
-  return extra.concat(triggerItems());
+  return stormItems().concat(extra, triggerItems());
 }
 function localItems() {
   return ((DESK.local || {}).items || []).filter((item) => passes(item) && (safeUrl(item.url) || item.title));
@@ -835,6 +838,8 @@ function soWhat(item) {
   const kind = String(item.kind || "");
   const title = String(item.title || "");
   if (kind === "neo" || kind === "sentry" || /close approach/i.test(title)) return "no action needed";
+  if (kind === "windstorm") return item.soWhat || "No action for 37179. This is a European named storm, not an Atlantic hurricane.";
+  if (kind === "nws" && /tornado warning/i.test(title)) return item.soWhat || "Take shelter now. Interior room, lowest floor, away from windows.";
   if (/there are no tropical cyclones|tropical weather outlook/i.test(title)) return "no action needed";
   const text = item.soWhat || "";
   if (/fuel, water, cash|delay gulf|way out/i.test(text) && /neo|sentry|outlook|flyby|fiji|vanuatu|japan/i.test(title + " " + kind)) return "no action needed";
@@ -1139,11 +1144,33 @@ function blackoutHtml(card) {
     <p class="meta">${links}</p>
   </article>`;
 }
+function stormCard() {
+  const doc = DESK.storms || {};
+  const items = stormItems();
+  if (!items.length && !(doc.gaps || []).length) return "";
+  const top = items.length ? topSeverity(items) : "STANDBY";
+  const lines = items.map((item) => {
+    claim(item);
+    const sev = shownSeverity(item);
+    const url = safeUrl(item.url);
+    const name = url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(item.title || "")}</a>` : esc(item.title || "");
+    const advice = soWhat(item);
+    return `<p class="meta"><span class="sev sev-${esc(sev.toLowerCase())}">${esc(sev)}</span> ${name} · ${esc(item.label || item.date || "")}${item.note ? ` · ${esc(item.note)}` : ""}${advice ? ` · ${esc(advice)}` : ""}</p>`;
+  }).join("");
+  const gaps = (doc.gaps || []).map((gap) => `<p class="meta">Source down: ${esc(gap)}</p>`).join("");
+  return `<article class="card">
+    <div class="head"><span class="sev sev-${esc(top.toLowerCase())}">${esc(top)}</span><time>${esc(items[0] ? (items[0].label || "") : "")}</time></div>
+    <h3>Storm watch</h3>
+    <p>${esc(doc.note || "Atlantic hurricane season runs through Nov 30.")}</p>
+    ${lines}
+    ${gaps}
+  </article>`;
+}
 function renderTriggers() {
   const doc = DESK.triggers || {};
   const items = preparednessItems();
   const card = items.find((item) => item.kind === "blackout");
-  const triggers = items.filter((item) => item.kind !== "blackout");
+  const triggers = items.filter((item) => item.kind !== "blackout" && item.kind !== "tropical" && item.kind !== "spc-watch" && item.kind !== "spc-outlook");
   const list = triggers.map((item) => {
     claim(item);
     return `<li id="trigger-${esc(item.id || "")}"><strong class="sev sev-${(item.severity || "alert").toLowerCase()}">${esc(item.severity || "ALERT")}</strong> ${esc(item.title || "")}<p class="meta">${esc(item.why || "")}</p>${soLine(item)}</li>`;
@@ -1151,7 +1178,7 @@ function renderTriggers() {
   const kit = triggers.length && (doc.checklist || []).length
     ? `<p class="note-plain">Checklist: ${(doc.checklist || []).map(esc).join(", ")}.</p>`
     : "";
-  const body = `${card ? blackoutHtml(card) : ""}${kit}${list ? `<ol class="priors">${list}</ol>` : ""}`;
+  const body = `${stormCard()}${card ? blackoutHtml(card) : ""}${kit}${list ? `<ol class="priors">${list}</ol>` : ""}`;
   document.getElementById("triggers").innerHTML = body || empty("No trigger is on.");
 }
 function renderLocal() {
@@ -1410,7 +1437,7 @@ function renderThreats() {
     ["climate", "Climate summits", (item) => item.kind === "climate"],
     ["diplomacy", "G7 and diplomacy", (item) => item.kind === "diplomacy"],
     ["attack", "Attacks", (item) => item.kind === "attack"],
-    ["natural", "Natural disasters", (item) => ["quake", "storm", "gdacs", "relief"].includes(item.kind) || (item.kind === "nws" && !local(item))],
+    ["natural", "Natural disasters", (item) => ["quake", "storm", "gdacs", "relief", "windstorm"].includes(item.kind) || (item.kind === "nws" && !local(item))],
     ["war", "Other conflict", (item) => item.kind === "conflict"],
     ["health", "Pandemics & outbreaks", (item) => item.kind === "who" || item.kind === "cdc"],
     ["space", "Space & existential", (item) => ["neo", "sentry", "clock"].includes(item.kind)],

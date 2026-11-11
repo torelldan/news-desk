@@ -46,6 +46,7 @@ def main() -> None:
         "trends": load("trends.json", {"mode": "offline", "note": "X trends have not been fetched.", "items": []}),
         "triggers": load("triggers.json", {"items": [], "checklist": [], "note": ""}),
         "local": load("local.json", {"place": "Thompson's Station / Williamson County / 37179", "items": [], "gaps": []}),
+        "storms": load("storms.json", {"place": "37179", "items": [], "gaps": [], "note": ""}),
         "radar": load("radar.json", {"items": [], "note": ""}),
         "impact": load("impact.json", {"events": [], "correlations": [], "note": ""}),
         "history": load("history.json", {"days": []}),
