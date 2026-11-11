@@ -993,10 +993,60 @@ def fetch_storm_watch(now: datetime) -> dict:
     items.extend(outlooks)
     return {
         "place": "Thompson's Station / Williamson County / Middle Tennessee (37179)",
-        "note": "Atlantic hurricane season runs through Nov 30. A quiet tropical line means NHC reported no active systems.",
+        "note": storm_watch_note(items),
         "items": items,
         "gaps": gaps,
     }
+
+
+def storm_watch_note(items) -> str:
+    """The 'quiet list' sentence only when NHC actually reported no active systems."""
+    note = "Atlantic hurricane season runs through Nov 30."
+    tropical = [item for item in items or [] if item.get("kind") == "tropical"]
+    active = [item for item in tropical if not re.search(r"no active tropical", item.get("title") or "", re.I)]
+    if tropical and not active:
+        note += " A quiet tropical line means NHC reported no active systems."
+    return note
+
+
+def storm_source_rows(storms: dict) -> list[dict]:
+    """Source-map rows for the storm watch, with a count and the last check time."""
+    items = (storms or {}).get("items") or []
+    gaps = " ".join((storms or {}).get("gaps") or []).lower()
+
+    def pack(source_id, name, short, url, kinds, down_key):
+        mine = [item for item in items if item.get("kind") in kinds]
+        latest = max(mine, key=lambda item: item.get("published") or "", default=None)
+        offline = down_key in gaps and not mine
+        return {
+            "id": source_id,
+            "name": name,
+            "short": short,
+            "lane": "threat",
+            "url": url,
+            "subtitle": "source down" if offline else "threat",
+            "lastLabel": (latest or {}).get("label") or "",
+            "lastDate": (latest or {}).get("date") or "",
+            "count": len(mine),
+            "offline": offline,
+        }
+
+    return [
+        pack("threat-storm", "NHC storms", "NHC", "https://www.nhc.noaa.gov/", {"tropical"}, "nhc"),
+        pack("threat-spc", "SPC storm watch", "SPC", "https://www.spc.noaa.gov/", {"spc-watch", "spc-outlook"}, "spc"),
+    ]
+
+
+def apply_storm_sources(rows: list[dict], storms: dict) -> list[dict]:
+    by_id = {row.get("id"): row for row in rows}
+    for row in storm_source_rows(storms):
+        current = by_id.get(row["id"])
+        if current:
+            current.update(row)
+        else:
+            rows.append(row)
+            by_id[row["id"]] = row
+    return rows
 
 
 def _try_nws(now):
@@ -1194,21 +1244,51 @@ def _strip_outlet(title: str) -> str:
     return cleaned
 
 
-def story_tokens(title: str) -> set[str]:
-    cleaned = _strip_outlet(title)
+def _normalize_story_text(title: str) -> str:
+    cleaned = _strip_outlet(title or "")
     cleaned = re.sub(r"israeli", "israel", cleaned, flags=re.I)
     cleaned = re.sub(r"kraków", "krakow", cleaned, flags=re.I)
-    words = re.findall(r"[a-z0-9]{3,}", cleaned.lower())
+    cleaned = re.sub(r"\bcop\s*31\b", "cop31", cleaned, flags=re.I)
+    return cleaned
+
+
+def story_tokens(title: str) -> set[str]:
+    words = re.findall(r"[a-z0-9]{3,}", _normalize_story_text(title).lower())
     return {word for word in words if word not in _STORY_STOP}
 
 
 def _story_names(title: str) -> set[str]:
+    text = _normalize_story_text(title)
     found = set()
-    for match in _NAME_RE.finditer(title or ""):
+    for match in _NAME_RE.finditer(text or ""):
         found.add(match.group(0).lower().replace("ó", "o"))
-    if re.search(r"abu dhabi", title or "", re.I):
+    if re.search(r"abu dhabi", text or "", re.I):
         found.add("abu dhabi")
     return found
+
+
+def _israel_government(title: str) -> bool:
+    """The Eisenkot / next-prime-minister story, not every headline that says Israel."""
+    blob = (title or "").lower()
+    if "israel" not in blob:
+        return False
+    if re.search(r"\b(eisenkot|netanyahu|knesset)\b", blob):
+        return True
+    if re.search(r"prime minister", blob) and re.search(r"\b(choose|next|form|government|coalition)\b", blob):
+        return True
+    if re.search(r"\bgovernment\b", blob) and re.search(r"\b(form|forge|coalition|president)\b", blob):
+        return True
+    return False
+
+
+def _ukraine_talks(title: str) -> bool:
+    """Russia-Ukraine peace talks, including a peace-push headline that never says Abu Dhabi."""
+    blob = (title or "").lower()
+    if not re.search(r"\bukraine\b", blob) or not re.search(r"\brussia", blob):
+        return False
+    if re.search(r"\b(abu dhabi|peace push|peace talks|peace deal)\b", blob):
+        return True
+    return bool(re.search(r"\btalks\b", blob) and re.search(r"\b(peace|negotiat)\b", blob))
 
 
 def same_story(a: str, b: str) -> bool:
@@ -1239,6 +1319,10 @@ def same_story(a: str, b: str) -> bool:
             return True
         if re.search(r"\bbruna\b", a, re.I) and re.search(r"\bbruna\b", b, re.I):
             return True
+    if _israel_government(a) and _israel_government(b):
+        return True
+    if _ukraine_talks(a) and _ukraine_talks(b):
+        return True
     return False
 
 
@@ -1268,7 +1352,7 @@ def classify_desk(title: str, note: str, hinted: str) -> str:
         ("war-iran", r"\biran\b"),
         ("war-ukraine", r"\b(ukraine|kyiv|kharkiv|odesa|oleshky|donbas)\b"),
         ("israel", r"\b(israel|israeli|eisenkot|netanyahu|knesset|gaza)\b"),
-        ("climate", r"\bcop31\b|\bantalya\b"),
+        ("climate", r"\bcop\s*31\b|\bantalya\b"),
         ("attack", r"\bkrak[oó]w\b"),
         ("diplomacy", r"\bg7\b"),
         ("usgov", r"\b(white house|congress|pentagon|hegseth|massie|impeach|supreme court|midterms?|senate|rubio)\b"),

@@ -484,7 +484,7 @@ function shownSeverity(item) {
 function watchItems() {
   const watchRank = (item) => item.kind === "war-iran" || item.kind === "war-ukraine" ? 3 : item.kind === "usgov" ? 2 : 1;
   return uniqueTitles(((DESK.threats || {}).items || []).filter((item) => onBoard(item) && !needsAction(item) && shownSeverity(item) === "ALERT")
-    .sort((a, b) => watchRank(b) - watchRank(a) || String(a.title || "").localeCompare(String(b.title || ""))));
+    .sort((a, b) => watchRank(b) - watchRank(a) || rankOf({ severity: shownSeverity(b) }) - rankOf({ severity: shownSeverity(a) }) || String(b.published || b.date || "").localeCompare(String(a.published || a.date || ""))));
 }
 function threatItems() {
   return ((DESK.threats || {}).items || []).filter(onBoard);
@@ -507,8 +507,15 @@ function blackoutCard() {
     days
   };
 }
+function localTornadoItems() {
+  return ((DESK.local || {}).items || []).filter((item) => {
+    if (!passes(item)) return false;
+    return item.kind === "nws" && /tornado (watch|warning)/i.test(`${item.title || ""} ${item.note || ""}`);
+  });
+}
 function stormItems() {
-  return (((DESK.storms || {}).items) || []).filter((item) => passes(item) && (safeUrl(item.url) || item.title));
+  const storms = (((DESK.storms || {}).items) || []).filter((item) => passes(item) && (safeUrl(item.url) || item.title));
+  return localTornadoItems().concat(storms);
 }
 function preparednessItems() {
   const card = blackoutCard();
@@ -559,12 +566,26 @@ function storyTokens(title) {
   const stop = new Set(["the", "and", "for", "with", "from", "that", "this", "after", "over", "into", "about", "says", "say", "new", "news", "has", "have", "was", "are", "but", "not", "its", "his", "her", "who", "what", "when", "where", "will", "their", "they", "been", "than", "also", "just", "more", "most", "out", "off", "per", "via", "you", "your"]);
   let cleaned = String(title || "");
   for (let i = 0; i < 2; i += 1) cleaned = cleaned.replace(/\s+[-–—|]\s+[^-–—|]{2,60}$/, "");
-  cleaned = cleaned.toLowerCase().replace(/israeli/g, "israel").replace(/kraków/g, "krakow");
+  cleaned = cleaned.toLowerCase().replace(/israeli/g, "israel").replace(/kraków/g, "krakow").replace(/\bcop\s*31\b/g, "cop31");
   return (cleaned.match(/[a-z0-9]{3,}/g) || []).filter((word) => !stop.has(word));
+}
+function israelGovernment(title) {
+  const blob = String(title || "").toLowerCase();
+  if (!blob.includes("israel")) return false;
+  if (/\b(eisenkot|netanyahu|knesset)\b/.test(blob)) return true;
+  if (/prime minister/.test(blob) && /\b(choose|next|form|government|coalition)\b/.test(blob)) return true;
+  if (/\bgovernment\b/.test(blob) && /\b(form|forge|coalition|president)\b/.test(blob)) return true;
+  return false;
+}
+function ukraineTalks(title) {
+  const blob = String(title || "").toLowerCase();
+  if (!/\bukraine\b/.test(blob) || !/\brussia/.test(blob)) return false;
+  if (/\b(abu dhabi|peace push|peace talks|peace deal)\b/.test(blob)) return true;
+  return /\btalks\b/.test(blob) && /\b(peace|negotiat)/.test(blob);
 }
 function storyNames(title) {
   const found = new Set();
-  const text = String(title || "").toLowerCase();
+  const text = String(title || "").toLowerCase().replace(/\bcop\s*31\b/g, "cop31");
   ["krakow", "oleshky", "antalya", "cop31", "hegseth", "massie", "eisenkot", "netanyahu"].forEach((name) => {
     if (text.includes(name)) found.add(name);
   });
@@ -590,6 +611,8 @@ function sameStoryTitle(a, b) {
   const people = ["hegseth", "massie", "eisenkot", "netanyahu"];
   const person = people.find((name) => namesA.has(name) && namesB.has(name));
   if (person && shared.some((word) => word !== person)) return true;
+  if (israelGovernment(a) && israelGovernment(b)) return true;
+  if (ukraineTalks(a) && ukraineTalks(b)) return true;
   return false;
 }
 function previousThreatTitles() {
@@ -651,6 +674,10 @@ function changeRows() {
   const pages = ((doc.groups || {}).pages || []).slice(0, 6);
   const tape = marketTape();
   return foldSameStory(refresh.concat(yesterday, pages, tape ? [tape] : [])).filter(passes);
+}
+function changeLead(rows) {
+  const open = rows.filter((item) => item.change !== "resolved" && item.change !== "deescalated");
+  return leadItem(open.length ? open : rows);
 }
 function changeStatus(rows) {
   const hot = rows.some((item) => {
@@ -717,7 +744,8 @@ function paintSections() {
   const watching = watchItems();
   setSum("watch", watching.length ? topSeverity(watching) : "STANDBY", String(watching.length), watching[0] ? watching[0].title : "Nothing to monitor");
   const changes = changeRows();
-  setSum("changed", changes.length ? changeStatus(changes) : "STANDBY", String(changes.length), changes[0] ? (changes[0].title || changes[0].name) : "No change versus yesterday");
+  const changeHead = changes.length ? changeLead(changes) : null;
+  setSum("changed", changes.length ? changeStatus(changes) : "STANDBY", String(changes.length), changeHead ? (changeHead.title || changeHead.name) : "No change versus yesterday");
   const board = threatItems();
   const threatLead = board.length ? leadItem(board) : null;
   setSum("threats", board.length ? topSeverity(board) : "STANDBY", String(board.length), threatLead ? threatLead.title : "No threat in this window");
@@ -1144,13 +1172,19 @@ function blackoutHtml(card) {
     <p class="meta">${links}</p>
   </article>`;
 }
+function stormNote(doc, items) {
+  const active = items.some((item) => item.kind === "tropical" && !/no active tropical/i.test(item.title || ""));
+  let note = (doc && doc.note) || "Atlantic hurricane season runs through Nov 30.";
+  if (active) note = note.replace(/\s*A quiet tropical line means NHC reported no active systems\.?/i, "");
+  return note.trim();
+}
 function stormCard() {
   const doc = DESK.storms || {};
   const items = stormItems();
   if (!items.length && !(doc.gaps || []).length) return "";
   const top = items.length ? topSeverity(items) : "STANDBY";
   const lines = items.map((item) => {
-    claim(item);
+    if (item.kind !== "nws") claim(item);
     const sev = shownSeverity(item);
     const url = safeUrl(item.url);
     const name = url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(item.title || "")}</a>` : esc(item.title || "");
@@ -1161,7 +1195,7 @@ function stormCard() {
   return `<article class="card">
     <div class="head"><span class="sev sev-${esc(top.toLowerCase())}">${esc(top)}</span><time>${esc(items[0] ? (items[0].label || "") : "")}</time></div>
     <h3>Storm watch</h3>
-    <p>${esc(doc.note || "Atlantic hurricane season runs through Nov 30.")}</p>
+    <p>${esc(stormNote(doc, items))}</p>
     ${lines}
     ${gaps}
   </article>`;
@@ -1444,13 +1478,15 @@ function renderThreats() {
     ["tn", "Local Tennessee alerts", local]
   ];
   const rank = { STANDBY: 0, ALERT: 1, ACTION: 2, CRITICAL: 3 };
+  const byShown = (a, b) => rankOf({ severity: shownSeverity(b) }) - rankOf({ severity: shownSeverity(a) }) || String(b.published || b.date || "").localeCompare(String(a.published || a.date || ""));
   const html = cats.map(([id, name, test]) => {
-    const mine = rows.filter(test);
+    const mine = rows.filter(test).slice().sort(byShown);
     const lines = mine.map((item) => seenStory(item) ? linkLine(item, "Standing orders") : threatCard(item)).filter(Boolean);
     const top = mine.reduce((best, item) => (rank[shownSeverity(item)] || 0) > (rank[best] || 0) ? shownSeverity(item) : best, "STANDBY");
+    const newest = mine.reduce((best, item) => String(item.published || item.date || "") > best ? String(item.published || item.date || "") : best, "");
     const body = lines.length ? lines.join("") : `<p class="meta">None in this window.</p>`;
-    return fold("threat-" + id, `${esc(name)} · ${lines.length} · <span class="sev sev-${top.toLowerCase()}">${esc(top)}</span>`, body, false);
-  }).join("");
+    return { id, html: fold("threat-" + id, `${esc(name)} · ${lines.length} · <span class="sev sev-${top.toLowerCase()}">${esc(top)}</span>`, body, false), rank: mine.length ? (rank[top] || 0) : -1, newest };
+  }).sort((a, b) => b.rank - a.rank || String(b.newest).localeCompare(String(a.newest))).map((group) => group.html).join("");
   const nwsNote = `<p class="note-plain">Open items are listed under Standing orders. Williamson County notices are under Local.</p>`;
   document.getElementById("threats").innerHTML = nwsNote + html;
 }
