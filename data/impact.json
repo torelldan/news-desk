@@ -19,7 +19,7 @@
       "assetId": "dxy",
       "category": "climate",
       "days": 30,
-      "eventDays": 1,
+      "eventDays": 2,
       "r": null,
       "read": {
         "call": "n/a",
@@ -34,11 +34,25 @@
       "category": "earthquake",
       "days": 30,
       "eventDays": 3,
-      "r": 0.586,
+      "r": 0.585,
       "read": {
         "call": "leans together",
         "confidence": "medium",
-        "text": "DXY and earthquake event-days moved in the same direction (r=0.586 over 30 stored days, 3 event days). Leans together on this sample. This is not a cause and not advice."
+        "text": "DXY and earthquake event-days moved in the same direction (r=0.585 over 30 stored days, 3 event days). Leans together on this sample. This is not a cause and not advice."
+      },
+      "window": 30
+    },
+    {
+      "asset": "DXY",
+      "assetId": "dxy",
+      "category": "economic",
+      "days": 30,
+      "eventDays": 0,
+      "r": null,
+      "read": {
+        "call": "n/a",
+        "confidence": "n/a",
+        "text": "Not enough stored DXY days beside economic events in this 30-day window to separate a link from coincidence."
       },
       "window": 30
     },
@@ -47,7 +61,7 @@
       "assetId": "dxy",
       "category": "election",
       "days": 30,
-      "eventDays": 1,
+      "eventDays": 0,
       "r": null,
       "read": {
         "call": "n/a",
@@ -89,7 +103,7 @@
       "assetId": "dxy",
       "category": "israel",
       "days": 30,
-      "eventDays": 2,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
@@ -103,12 +117,12 @@
       "assetId": "dxy",
       "category": "war",
       "days": 30,
-      "eventDays": 3,
-      "r": 0.365,
+      "eventDays": 5,
+      "r": 0.294,
       "read": {
-        "call": "leans together",
-        "confidence": "medium",
-        "text": "DXY and war event-days moved in the same direction (r=0.365 over 30 stored days, 3 event days). Leans together on this sample. This is not a cause and not advice."
+        "call": "coincidence more likely",
+        "confidence": "low",
+        "text": "DXY and war event-days moved in the same direction (r=0.294 over 30 stored days, 5 event days). Coincidence more likely on this sample. This is not a cause and not advice."
       },
       "window": 30
     },
@@ -131,7 +145,7 @@
       "assetId": "dxy",
       "category": "climate",
       "days": 90,
-      "eventDays": 1,
+      "eventDays": 2,
       "r": null,
       "read": {
         "call": "n/a",
@@ -146,11 +160,25 @@
       "category": "earthquake",
       "days": 90,
       "eventDays": 3,
-      "r": 0.384,
+      "r": 0.383,
       "read": {
         "call": "leans together",
         "confidence": "medium",
-        "text": "DXY and earthquake event-days moved in the same direction (r=0.384 over 90 stored days, 3 event days). Leans together on this sample. This is not a cause and not advice."
+        "text": "DXY and earthquake event-days moved in the same direction (r=0.383 over 90 stored days, 3 event days). Leans together on this sample. This is not a cause and not advice."
+      },
+      "window": 90
+    },
+    {
+      "asset": "DXY",
+      "assetId": "dxy",
+      "category": "economic",
+      "days": 90,
+      "eventDays": 0,
+      "r": null,
+      "read": {
+        "call": "n/a",
+        "confidence": "n/a",
+        "text": "Not enough stored DXY days beside economic events in this 90-day window to separate a link from coincidence."
       },
       "window": 90
     },
@@ -159,7 +187,7 @@
       "assetId": "dxy",
       "category": "election",
       "days": 90,
-      "eventDays": 1,
+      "eventDays": 0,
       "r": null,
       "read": {
         "call": "n/a",
@@ -201,7 +229,7 @@
       "assetId": "dxy",
       "category": "israel",
       "days": 90,
-      "eventDays": 2,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
@@ -215,12 +243,12 @@
       "assetId": "dxy",
       "category": "war",
       "days": 90,
-      "eventDays": 3,
-      "r": 0.246,
+      "eventDays": 5,
+      "r": 0.201,
       "read": {
         "call": "coincidence more likely",
         "confidence": "low",
-        "text": "DXY and war event-days moved in the same direction (r=0.246 over 90 stored days, 3 event days). Coincidence more likely on this sample. This is not a cause and not advice."
+        "text": "DXY and war event-days moved in the same direction (r=0.201 over 90 stored days, 5 event days). Coincidence more likely on this sample. This is not a cause and not advice."
       },
       "window": 90
     },
@@ -243,7 +271,7 @@
       "assetId": "gold",
       "category": "climate",
       "days": 30,
-      "eventDays": 1,
+      "eventDays": 2,
       "r": null,
       "read": {
         "call": "n/a",
@@ -258,11 +286,25 @@
       "category": "earthquake",
       "days": 30,
       "eventDays": 3,
-      "r": -0.237,
+      "r": -0.294,
       "read": {
         "call": "coincidence more likely",
         "confidence": "low",
-        "text": "Gold and earthquake event-days moved in the opposite direction (r=-0.237 over 30 stored days, 3 event days). Coincidence more likely on this sample. This is not a cause and not advice."
+        "text": "Gold and earthquake event-days moved in the opposite direction (r=-0.294 over 30 stored days, 3 event days). Coincidence more likely on this sample. This is not a cause and not advice."
+      },
+      "window": 30
+    },
+    {
+      "asset": "Gold",
+      "assetId": "gold",
+      "category": "economic",
+      "days": 30,
+      "eventDays": 0,
+      "r": null,
+      "read": {
+        "call": "n/a",
+        "confidence": "n/a",
+        "text": "Not enough stored Gold days beside economic events in this 30-day window to separate a link from coincidence."
       },
       "window": 30
     },
@@ -271,7 +313,7 @@
       "assetId": "gold",
       "category": "election",
       "days": 30,
-      "eventDays": 1,
+      "eventDays": 0,
       "r": null,
       "read": {
         "call": "n/a",
@@ -313,7 +355,7 @@
       "assetId": "gold",
       "category": "israel",
       "days": 30,
-      "eventDays": 2,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
@@ -327,12 +369,12 @@
       "assetId": "gold",
       "category": "war",
       "days": 30,
-      "eventDays": 3,
-      "r": -0.074,
+      "eventDays": 5,
+      "r": -0.084,
       "read": {
         "call": "coincidence more likely",
         "confidence": "low",
-        "text": "Gold and war event-days moved in the opposite direction (r=-0.074 over 30 stored days, 3 event days). Coincidence more likely on this sample. This is not a cause and not advice."
+        "text": "Gold and war event-days moved in the opposite direction (r=-0.084 over 30 stored days, 5 event days). Coincidence more likely on this sample. This is not a cause and not advice."
       },
       "window": 30
     },
@@ -355,7 +397,7 @@
       "assetId": "gold",
       "category": "climate",
       "days": 90,
-      "eventDays": 1,
+      "eventDays": 2,
       "r": null,
       "read": {
         "call": "n/a",
@@ -370,11 +412,25 @@
       "category": "earthquake",
       "days": 90,
       "eventDays": 3,
-      "r": -0.139,
+      "r": -0.172,
       "read": {
         "call": "coincidence more likely",
         "confidence": "low",
-        "text": "Gold and earthquake event-days moved in the opposite direction (r=-0.139 over 90 stored days, 3 event days). Coincidence more likely on this sample. This is not a cause and not advice."
+        "text": "Gold and earthquake event-days moved in the opposite direction (r=-0.172 over 90 stored days, 3 event days). Coincidence more likely on this sample. This is not a cause and not advice."
+      },
+      "window": 90
+    },
+    {
+      "asset": "Gold",
+      "assetId": "gold",
+      "category": "economic",
+      "days": 90,
+      "eventDays": 0,
+      "r": null,
+      "read": {
+        "call": "n/a",
+        "confidence": "n/a",
+        "text": "Not enough stored Gold days beside economic events in this 90-day window to separate a link from coincidence."
       },
       "window": 90
     },
@@ -383,7 +439,7 @@
       "assetId": "gold",
       "category": "election",
       "days": 90,
-      "eventDays": 1,
+      "eventDays": 0,
       "r": null,
       "read": {
         "call": "n/a",
@@ -425,7 +481,7 @@
       "assetId": "gold",
       "category": "israel",
       "days": 90,
-      "eventDays": 2,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
@@ -439,12 +495,12 @@
       "assetId": "gold",
       "category": "war",
       "days": 90,
-      "eventDays": 3,
-      "r": -0.052,
+      "eventDays": 5,
+      "r": -0.064,
       "read": {
         "call": "coincidence more likely",
         "confidence": "low",
-        "text": "Gold and war event-days moved in the opposite direction (r=-0.052 over 90 stored days, 3 event days). Coincidence more likely on this sample. This is not a cause and not advice."
+        "text": "Gold and war event-days moved in the opposite direction (r=-0.064 over 90 stored days, 5 event days). Coincidence more likely on this sample. This is not a cause and not advice."
       },
       "window": 90
     },
@@ -467,7 +523,7 @@
       "assetId": "silver",
       "category": "climate",
       "days": 30,
-      "eventDays": 1,
+      "eventDays": 2,
       "r": null,
       "read": {
         "call": "n/a",
@@ -482,11 +538,25 @@
       "category": "earthquake",
       "days": 30,
       "eventDays": 3,
-      "r": -0.003,
+      "r": -0.047,
       "read": {
         "call": "coincidence more likely",
         "confidence": "low",
-        "text": "Silver and earthquake event-days moved in the opposite direction (r=-0.003 over 30 stored days, 3 event days). Coincidence more likely on this sample. This is not a cause and not advice."
+        "text": "Silver and earthquake event-days moved in the opposite direction (r=-0.047 over 30 stored days, 3 event days). Coincidence more likely on this sample. This is not a cause and not advice."
+      },
+      "window": 30
+    },
+    {
+      "asset": "Silver",
+      "assetId": "silver",
+      "category": "economic",
+      "days": 30,
+      "eventDays": 0,
+      "r": null,
+      "read": {
+        "call": "n/a",
+        "confidence": "n/a",
+        "text": "Not enough stored Silver days beside economic events in this 30-day window to separate a link from coincidence."
       },
       "window": 30
     },
@@ -495,7 +565,7 @@
       "assetId": "silver",
       "category": "election",
       "days": 30,
-      "eventDays": 1,
+      "eventDays": 0,
       "r": null,
       "read": {
         "call": "n/a",
@@ -537,7 +607,7 @@
       "assetId": "silver",
       "category": "israel",
       "days": 30,
-      "eventDays": 2,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
@@ -551,12 +621,12 @@
       "assetId": "silver",
       "category": "war",
       "days": 30,
-      "eventDays": 3,
-      "r": 0.044,
+      "eventDays": 5,
+      "r": 0.058,
       "read": {
         "call": "coincidence more likely",
         "confidence": "low",
-        "text": "Silver and war event-days moved in the same direction (r=0.044 over 30 stored days, 3 event days). Coincidence more likely on this sample. This is not a cause and not advice."
+        "text": "Silver and war event-days moved in the same direction (r=0.058 over 30 stored days, 5 event days). Coincidence more likely on this sample. This is not a cause and not advice."
       },
       "window": 30
     },
@@ -579,7 +649,7 @@
       "assetId": "silver",
       "category": "climate",
       "days": 90,
-      "eventDays": 1,
+      "eventDays": 2,
       "r": null,
       "read": {
         "call": "n/a",
@@ -594,11 +664,25 @@
       "category": "earthquake",
       "days": 90,
       "eventDays": 3,
-      "r": -0.024,
+      "r": -0.052,
       "read": {
         "call": "coincidence more likely",
         "confidence": "low",
-        "text": "Silver and earthquake event-days moved in the opposite direction (r=-0.024 over 90 stored days, 3 event days). Coincidence more likely on this sample. This is not a cause and not advice."
+        "text": "Silver and earthquake event-days moved in the opposite direction (r=-0.052 over 90 stored days, 3 event days). Coincidence more likely on this sample. This is not a cause and not advice."
+      },
+      "window": 90
+    },
+    {
+      "asset": "Silver",
+      "assetId": "silver",
+      "category": "economic",
+      "days": 90,
+      "eventDays": 0,
+      "r": null,
+      "read": {
+        "call": "n/a",
+        "confidence": "n/a",
+        "text": "Not enough stored Silver days beside economic events in this 90-day window to separate a link from coincidence."
       },
       "window": 90
     },
@@ -607,7 +691,7 @@
       "assetId": "silver",
       "category": "election",
       "days": 90,
-      "eventDays": 1,
+      "eventDays": 0,
       "r": null,
       "read": {
         "call": "n/a",
@@ -649,7 +733,7 @@
       "assetId": "silver",
       "category": "israel",
       "days": 90,
-      "eventDays": 2,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
@@ -663,12 +747,12 @@
       "assetId": "silver",
       "category": "war",
       "days": 90,
-      "eventDays": 3,
-      "r": 0.003,
+      "eventDays": 5,
+      "r": 0.0,
       "read": {
         "call": "coincidence more likely",
         "confidence": "low",
-        "text": "Silver and war event-days moved in the same direction (r=0.003 over 90 stored days, 3 event days). Coincidence more likely on this sample. This is not a cause and not advice."
+        "text": "Silver and war event-days moved in the opposite direction (r=0.0 over 90 stored days, 5 event days). Coincidence more likely on this sample. This is not a cause and not advice."
       },
       "window": 90
     },
@@ -691,7 +775,7 @@
       "assetId": "btc",
       "category": "climate",
       "days": 30,
-      "eventDays": 1,
+      "eventDays": 2,
       "r": null,
       "read": {
         "call": "n/a",
@@ -706,11 +790,25 @@
       "category": "earthquake",
       "days": 30,
       "eventDays": 5,
-      "r": -0.278,
+      "r": -0.221,
       "read": {
         "call": "coincidence more likely",
         "confidence": "low",
-        "text": "BTC and earthquake event-days moved in the opposite direction (r=-0.278 over 30 stored days, 5 event days). Coincidence more likely on this sample. This is not a cause and not advice."
+        "text": "BTC and earthquake event-days moved in the opposite direction (r=-0.221 over 30 stored days, 5 event days). Coincidence more likely on this sample. This is not a cause and not advice."
+      },
+      "window": 30
+    },
+    {
+      "asset": "BTC",
+      "assetId": "btc",
+      "category": "economic",
+      "days": 30,
+      "eventDays": 1,
+      "r": null,
+      "read": {
+        "call": "n/a",
+        "confidence": "n/a",
+        "text": "Not enough stored BTC days beside economic events in this 30-day window to separate a link from coincidence."
       },
       "window": 30
     },
@@ -747,7 +845,7 @@
       "assetId": "btc",
       "category": "g7",
       "days": 30,
-      "eventDays": 2,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
@@ -761,7 +859,7 @@
       "assetId": "btc",
       "category": "israel",
       "days": 30,
-      "eventDays": 2,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
@@ -775,12 +873,12 @@
       "assetId": "btc",
       "category": "war",
       "days": 30,
-      "eventDays": 4,
-      "r": 0.233,
+      "eventDays": 6,
+      "r": -0.068,
       "read": {
         "call": "coincidence more likely",
         "confidence": "low",
-        "text": "BTC and war event-days moved in the same direction (r=0.233 over 30 stored days, 4 event days). Coincidence more likely on this sample. This is not a cause and not advice."
+        "text": "BTC and war event-days moved in the opposite direction (r=-0.068 over 30 stored days, 6 event days). Coincidence more likely on this sample. This is not a cause and not advice."
       },
       "window": 30
     },
@@ -803,7 +901,7 @@
       "assetId": "btc",
       "category": "climate",
       "days": 90,
-      "eventDays": 1,
+      "eventDays": 2,
       "r": null,
       "read": {
         "call": "n/a",
@@ -818,11 +916,25 @@
       "category": "earthquake",
       "days": 90,
       "eventDays": 5,
-      "r": -0.192,
+      "r": -0.164,
       "read": {
         "call": "coincidence more likely",
         "confidence": "low",
-        "text": "BTC and earthquake event-days moved in the opposite direction (r=-0.192 over 90 stored days, 5 event days). Coincidence more likely on this sample. This is not a cause and not advice."
+        "text": "BTC and earthquake event-days moved in the opposite direction (r=-0.164 over 90 stored days, 5 event days). Coincidence more likely on this sample. This is not a cause and not advice."
+      },
+      "window": 90
+    },
+    {
+      "asset": "BTC",
+      "assetId": "btc",
+      "category": "economic",
+      "days": 90,
+      "eventDays": 1,
+      "r": null,
+      "read": {
+        "call": "n/a",
+        "confidence": "n/a",
+        "text": "Not enough stored BTC days beside economic events in this 90-day window to separate a link from coincidence."
       },
       "window": 90
     },
@@ -859,7 +971,7 @@
       "assetId": "btc",
       "category": "g7",
       "days": 90,
-      "eventDays": 2,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
@@ -873,7 +985,7 @@
       "assetId": "btc",
       "category": "israel",
       "days": 90,
-      "eventDays": 2,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
@@ -887,12 +999,12 @@
       "assetId": "btc",
       "category": "war",
       "days": 90,
-      "eventDays": 4,
-      "r": 0.045,
+      "eventDays": 6,
+      "r": -0.101,
       "read": {
         "call": "coincidence more likely",
         "confidence": "low",
-        "text": "BTC and war event-days moved in the same direction (r=0.045 over 90 stored days, 4 event days). Coincidence more likely on this sample. This is not a cause and not advice."
+        "text": "BTC and war event-days moved in the opposite direction (r=-0.101 over 90 stored days, 6 event days). Coincidence more likely on this sample. This is not a cause and not advice."
       },
       "window": 90
     },
@@ -915,7 +1027,7 @@
       "assetId": "eth",
       "category": "climate",
       "days": 30,
-      "eventDays": 1,
+      "eventDays": 2,
       "r": null,
       "read": {
         "call": "n/a",
@@ -930,11 +1042,25 @@
       "category": "earthquake",
       "days": 30,
       "eventDays": 5,
-      "r": -0.28,
+      "r": -0.251,
       "read": {
         "call": "coincidence more likely",
         "confidence": "low",
-        "text": "ETH and earthquake event-days moved in the opposite direction (r=-0.28 over 30 stored days, 5 event days). Coincidence more likely on this sample. This is not a cause and not advice."
+        "text": "ETH and earthquake event-days moved in the opposite direction (r=-0.251 over 30 stored days, 5 event days). Coincidence more likely on this sample. This is not a cause and not advice."
+      },
+      "window": 30
+    },
+    {
+      "asset": "ETH",
+      "assetId": "eth",
+      "category": "economic",
+      "days": 30,
+      "eventDays": 1,
+      "r": null,
+      "read": {
+        "call": "n/a",
+        "confidence": "n/a",
+        "text": "Not enough stored ETH days beside economic events in this 30-day window to separate a link from coincidence."
       },
       "window": 30
     },
@@ -971,7 +1097,7 @@
       "assetId": "eth",
       "category": "g7",
       "days": 30,
-      "eventDays": 2,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
@@ -985,7 +1111,7 @@
       "assetId": "eth",
       "category": "israel",
       "days": 30,
-      "eventDays": 2,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
@@ -999,12 +1125,12 @@
       "assetId": "eth",
       "category": "war",
       "days": 30,
-      "eventDays": 4,
-      "r": 0.187,
+      "eventDays": 6,
+      "r": -0.164,
       "read": {
         "call": "coincidence more likely",
         "confidence": "low",
-        "text": "ETH and war event-days moved in the same direction (r=0.187 over 30 stored days, 4 event days). Coincidence more likely on this sample. This is not a cause and not advice."
+        "text": "ETH and war event-days moved in the opposite direction (r=-0.164 over 30 stored days, 6 event days). Coincidence more likely on this sample. This is not a cause and not advice."
       },
       "window": 30
     },
@@ -1027,7 +1153,7 @@
       "assetId": "eth",
       "category": "climate",
       "days": 90,
-      "eventDays": 1,
+      "eventDays": 2,
       "r": null,
       "read": {
         "call": "n/a",
@@ -1042,11 +1168,25 @@
       "category": "earthquake",
       "days": 90,
       "eventDays": 5,
-      "r": -0.195,
+      "r": -0.18,
       "read": {
         "call": "coincidence more likely",
         "confidence": "low",
-        "text": "ETH and earthquake event-days moved in the opposite direction (r=-0.195 over 90 stored days, 5 event days). Coincidence more likely on this sample. This is not a cause and not advice."
+        "text": "ETH and earthquake event-days moved in the opposite direction (r=-0.18 over 90 stored days, 5 event days). Coincidence more likely on this sample. This is not a cause and not advice."
+      },
+      "window": 90
+    },
+    {
+      "asset": "ETH",
+      "assetId": "eth",
+      "category": "economic",
+      "days": 90,
+      "eventDays": 1,
+      "r": null,
+      "read": {
+        "call": "n/a",
+        "confidence": "n/a",
+        "text": "Not enough stored ETH days beside economic events in this 90-day window to separate a link from coincidence."
       },
       "window": 90
     },
@@ -1083,7 +1223,7 @@
       "assetId": "eth",
       "category": "g7",
       "days": 90,
-      "eventDays": 2,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
@@ -1097,7 +1237,7 @@
       "assetId": "eth",
       "category": "israel",
       "days": 90,
-      "eventDays": 2,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
@@ -1111,12 +1251,12 @@
       "assetId": "eth",
       "category": "war",
       "days": 90,
-      "eventDays": 4,
-      "r": 0.035,
+      "eventDays": 6,
+      "r": -0.143,
       "read": {
         "call": "coincidence more likely",
         "confidence": "low",
-        "text": "ETH and war event-days moved in the same direction (r=0.035 over 90 stored days, 4 event days). Coincidence more likely on this sample. This is not a cause and not advice."
+        "text": "ETH and war event-days moved in the opposite direction (r=-0.143 over 90 stored days, 6 event days). Coincidence more likely on this sample. This is not a cause and not advice."
       },
       "window": 90
     }

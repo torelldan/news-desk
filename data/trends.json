@@ -11,9 +11,16 @@
       "look": "news",
       "name": "iran war",
       "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-11T08:59:00-06:00",
+      "published": "2026-11-11T15:42:51-06:00",
       "rise": "4 outlets this window",
       "samples": [
+        {
+          "date": "2026-11-11",
+          "published": "2026-11-11T13:25:00-06:00",
+          "source": "WSJ",
+          "text": "Vance Considers Direct Talks With Iran Hard-Liner in Push to End War - WSJ",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQRjRFTzFCWWlaNjZKMmYxR3FMcHc0V2FrUENBOHFCOUFISFZFSnhYcUctSkUwYXpUMXcwVmlrUEo2cEtRTWZCbVZNdC03SVhxTlo0N3ZseEZ6N1J4NUxFVVEwT0R0bzZFS01nRDRIMENrX19WemhZZUdEWW8tSGRGajNjRjhzdUNPckhGTVRQcEtwTTQ0aTdiVVZEMUNjbVBFekJ4RF9ZRWRBVEFJTmRYcGVSelI?oc=5"
+        },
         {
           "date": "2026-11-11",
           "published": "2026-11-11T04:02:53-06:00",
@@ -22,18 +29,11 @@
           "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNRi1JakU3TzJVd04yYXJFNWswV2NRSUxJaE1Ga2UzZGVhU3RyUzRGUEt2Yi0tMm9pMlVTM0t4QzFEQWx0YmlIbVlDa3JHTF9ZU2ZQTTY4eURMdUNSRXlyOGxrU2ZxLWpYYUtnS1lqblBoWHY1NkJ5MkViUVJuUTJELUEtYjFHU0d1dENZR3RB?oc=5"
         },
         {
-          "date": "2026-11-11",
-          "published": "2026-11-11T03:30:50-06:00",
-          "source": "CBS News",
-          "text": "Rubio says U.S. has \"no need\" to restart combat operations in Iran - CBS News",
-          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE0zN0FDMkRwcDVyZGFpV0dvRnhidUVyU1hrc2pKQzJZMmlLZDF1bHZ0dzBtMDJLOXc5T0xNYmRuS2Q4eU1QQmFqaHJ1cVg0VGkxcWN3dEZLVlo1UlQ0ckZCaW52b0lHQzVZN2N6UElySjhIWDdXWVh5T24xcmh4Zw?oc=5"
-        },
-        {
-          "date": "2026-11-10",
-          "published": "2026-11-10T13:57:17-06:00",
-          "source": "The Jerusalem Post",
-          "text": "Qatar PM warns of major US-Iran disagreements despite two-week reprieve from pos - The Jerusalem Post",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9BN0UxYXRjbnM0VnQ0aG5scm9jTWV1VlRTSFdEOXVZN1lzWVU4VFY3b1pmSWx3X3ZKcGFERGt6eXlaSEYyWlctQWppRzhJa3A5MlBoVlFIejRfc2kx?oc=5"
+          "date": "2026-11-09",
+          "published": "2026-11-09T19:01:06-06:00",
+          "source": "The New York Times",
+          "text": "The Iran War Unexpectedly Drove Down Carbon Emissions This Year - The New York Times",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE41YnJEdXJIUUJDd0FYYVVtUnVDZnBPSDhZQnBaRk93cFdRZEs3U0NKd2VWaVh2ODZwVVpURGhaWEJVbjdMY2llRkNuMW82dnA1cjQ1TkxobWZPQkRONE9NVzdEVlZHWjJTNU5sdFJ0ZElac2I1Rk8zOC1ILXdRQQ?oc=5"
         }
       ],
       "severity": "ALERT",
@@ -41,7 +41,49 @@
       "source": "News velocity",
       "sourceCount": 4,
       "title": "iran war",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNRi1JakU3TzJVd04yYXJFNWswV2NRSUxJaE1Ga2UzZGVhU3RyUzRGUEt2Yi0tMm9pMlVTM0t4QzFEQWx0YmlIbVlDa3JHTF9ZU2ZQTTY4eURMdUNSRXlyOGxrU2ZxLWpYYUtnS1lqblBoWHY1NkJ5MkViUVJuUTJELUEtYjFHU0d1dENZR3RB?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQRjRFTzFCWWlaNjZKMmYxR3FMcHc0V2FrUENBOHFCOUFISFZFSnhYcUctSkUwYXpUMXcwVmlrUEo2cEtRTWZCbVZNdC03SVhxTlo0N3ZseEZ6N1J4NUxFVVEwT0R0bzZFS01nRDRIMENrX19WemhZZUdEWW8tSGRGajNjRjhzdUNPckhGTVRQcEtwTTQ0aTdiVVZEMUNjbVBFekJ4RF9ZRWRBVEFJTmRYcGVSelI?oc=5"
+    },
+    {
+      "category": "us-gov",
+      "confidence": "reported",
+      "date": "2026-11-11",
+      "id": "velocity:bd817662251631b7",
+      "kind": "trend",
+      "lane": "news",
+      "look": "news",
+      "name": "us gov",
+      "note": "The same topic showed up across several outlets.",
+      "published": "2026-11-11T15:42:51-06:00",
+      "rise": "4 outlets this window",
+      "samples": [
+        {
+          "date": "2026-11-11",
+          "published": "2026-11-11T12:30:21-06:00",
+          "source": "NBC News",
+          "text": "Midterm Elections 2026: Congress Polls, Charts and More - NBC News",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9qM2xEd3lHR1dpU2xwT1JLcDEyUXlVS0xaeGptQzlscXNJSHc1VVVXQnZpY2FfN0NYdlFLMGZfWW9SSDFLT3NQVEF5cDlKZUlaVGNmZW5VUlR6LXI1MGtGeHJZWU1icGs?oc=5"
+        },
+        {
+          "date": "2026-11-11",
+          "published": "2026-11-11T11:35:00-06:00",
+          "source": "Politico",
+          "text": "‘Draft Marco’ effort grows on Capitol Hill after midterms bloodbath - Politico",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQWGYxNFpyNDRuX09fa3NyeFR6cmlNNnVkOHFUZGpFeU11bTAwcUdjTHdpeXFCX1FjSlhuR3dVRkNQY1hlN2JlcG5xZjFDRlZlT2RGQ0JVY1BuckVzWDVyN3hsRFZKTG04SXpSdWZ5UVh1WGRxbml3NzVLTVluLVl3RWxpaVBpMGNHWVJn?oc=5"
+        },
+        {
+          "date": "2026-11-11",
+          "published": "2026-11-11T11:18:36-06:00",
+          "source": "Economist Intelligence Unit",
+          "text": "US midterms: assessing the results and implications - Economist Intelligence Unit",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOUl9MQXpoQnNsYzg5cUFqeloydXlDUmpiU2JLXzdEZXJpTkJMbWtVbnVid1V6ci0zOHpKdG9UdkhIdkJMTHVsS0Q1eWhWOG1CY0dxdF9CSFhLcm9mQlo1NDVUMlpRS1JHNTRkRXBOUjJ3QnR3bzFkaV8wTGFaM3RhRkJrTWJuUjdQdXJlR3Z5SXZqZW1sbGVB?oc=5"
+        }
+      ],
+      "severity": "ALERT",
+      "soWhat": "no action needed",
+      "source": "News velocity",
+      "sourceCount": 4,
+      "title": "us gov",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9qM2xEd3lHR1dpU2xwT1JLcDEyUXlVS0xaeGptQzlscXNJSHc1VVVXQnZpY2FfN0NYdlFLMGZfWW9SSDFLT3NQVEF5cDlKZUlaVGNmZW5VUlR6LXI1MGtGeHJZWU1icGs?oc=5"
     },
     {
       "category": "ukraine-war",
@@ -53,8 +95,8 @@
       "look": "news",
       "name": "ukraine war",
       "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-11T08:59:00-06:00",
-      "rise": "4 outlets this window",
+      "published": "2026-11-11T15:42:51-06:00",
+      "rise": "5 outlets this window",
       "samples": [
         {
           "date": "2026-11-10",
@@ -65,10 +107,10 @@
         },
         {
           "date": "2026-11-09",
-          "published": "2026-11-09T18:03:00-06:00",
-          "source": "Reuters",
-          "text": "US attempts new peace push at first Russia-Ukraine talks in nine months - Reuters",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPeFJoc0ZJdUVhZlNDUWpsU1A0MVhlbWZXMGphaHktSWpjblNReDNXd3FXUVlnSzRVa2doWEtNd21vNHJXdm1vQU5qVnJJX1p6TlVVWi01Nkt0NzVrMkFXVkstdXdfVHJGaWtSeXlPdjdwZVJrTW9MQW9fV2NmS3RpT29EZU9mal9BVWNRWXJ6RGxWbnJzcGJ5aG5tM3JUM1BMUmNqdGhEVlZiRGRhTG0xMVI5ZWw0V2dwenJMT2NB?oc=5"
+          "published": "2026-11-09T13:22:40-06:00",
+          "source": "CNN",
+          "text": "Ukraine peace talks restart after 9 months. What makes them different this time? - CNN",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNbFFSOXRLNjM4cjRJUE0xRm5IcU02NnY5LUtaNklFU2ZLbXJnejh5TjNaTEcxMDlGSkhLVWluNU1VV0N0TEVadXFPLU1FdjdaTmpWbFlrV2dKdXk1ZlRvU2hYRDlLLWpWcWVMVm9lRVNkV2dXNF9QOVNGQ3l1b1lhOGVQdkNWNXM?oc=5"
         },
         {
           "date": "2026-11-09",
@@ -81,51 +123,9 @@
       "severity": "ALERT",
       "soWhat": "no action needed",
       "source": "News velocity",
-      "sourceCount": 4,
+      "sourceCount": 5,
       "title": "ukraine war",
       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOZ0xkMnRwLVZoNXRPVmtkbkFIWDBDZDg5VS1KdmRRNV9OODY0cGVhaFIyMExLclI5eFBWdUFJRVFFdFB5dmQ4bm9DcnpjZEdEQUVmRVczQjF1MUtjYjBwS3BCbGVDaGNuT29zSS15WTkwZUFUbldNUlpFZDJmZkItSm5Fa085LW83WVJkSkJJUGVnNEx5TF8zUzkxUDlBempHd1JrQWxUcE1PTEFP0gGyAUFVX3lxTFBmaHFLUzJlQVh0VVVYb0NRY29UM2lBZWxIOFhvVi0zMk15X3NTa21FNkR4blUyYU9SZEpwbDFBbUgzNE1vS2RfUE05MjdRRUpCay0ySDAyby11YmZwbV83MDh5WEFNX0pDZ3BUY011a055RHhCS2g2Tld1eWlLanB6ZGxoYk15NElIYm14V0RQNFltRWZIc1NTLWRTR1Y5LWRuQjV3MmFqaVotS3QwY2FQY2c?oc=5"
-    },
-    {
-      "category": "us-gov",
-      "confidence": "reported",
-      "date": "2026-11-11",
-      "id": "velocity:bd817662251631b7",
-      "kind": "trend",
-      "lane": "news",
-      "look": "news",
-      "name": "us gov",
-      "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-11T08:59:00-06:00",
-      "rise": "4 outlets this window",
-      "samples": [
-        {
-          "date": "2026-11-10",
-          "published": "2026-11-10T10:45:06-06:00",
-          "source": "Los Angeles Times",
-          "text": "Rubio urges nations to ‘step up’ on Strait of Hormuz security - Los Angeles Times",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNeW8wV3dfdHJMX21PeDJHREMxME1ubmlhMkN1NHhxR0JVbDV5SkJfeWxUS25CRFBSMVB5TUQ4cTdzVTQwcWdkWDdNRXctSkt3YjU2dGZBZWNFekZycjRfY3hnb0MtVGFWcklGMlpoVkw0aERHdTgtX3Z1TmlKalQ0SW10cEpLRzNMeUd3eW55UXdyS1dnRmRUSkZ0Nl95QmhRTVlOVXhSZk9uZlFwUU1zclFZWQ?oc=5"
-        },
-        {
-          "date": "2026-11-10",
-          "published": "2026-11-10T05:00:00-06:00",
-          "source": "The Guardian",
-          "text": "Republicans return to Washington to sift through wreckage of midterms rout - The Guardian",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOd1hORHBQT2hsOVhualRUcTQ4ZmIyNHgxU2RHZ2c3aTNJRlJoNVpqb2NLbGpab1daX29ZbFRRaDFxbUZXOWNTQnkzTWxreVJJMC1sLXNmOVgtMGdsR2EtM3c1OGtqUHFTZk9hRXpuVm5sNzRMVlYza0RpdTZVbm1TdTRjZ3owcGxZcS1SSXRnVVEyd0QtZ09iUi13?oc=5"
-        },
-        {
-          "date": "2026-11-10",
-          "published": "2026-11-10T04:00:00-06:00",
-          "source": "NPR",
-          "text": "The Democratic Party gained power across the country in the midterms. Now what? - NPR",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOcDF1ZVlXQkl2T1JYNVlzVlZmU2FObExhTEYtN0gtVndkcHloUnI2MzQ0bXA5TkJ5N3FQYU5OWWJKeW4yYkdacHluZm5Yd3docXBuSFFsc25OeW00VnlTRkhVV3RuMG53b3hBTlhEa2ZlSC1rUV9BM0ptWFgxZUlnR2trTFVEMldkTnJnQzYxajZUUQ?oc=5"
-        }
-      ],
-      "severity": "ALERT",
-      "soWhat": "no action needed",
-      "source": "News velocity",
-      "sourceCount": 4,
-      "title": "us gov",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNeW8wV3dfdHJMX21PeDJHREMxME1ubmlhMkN1NHhxR0JVbDV5SkJfeWxUS25CRFBSMVB5TUQ4cTdzVTQwcWdkWDdNRXctSkt3YjU2dGZBZWNFekZycjRfY3hnb0MtVGFWcklGMlpoVkw0aERHdTgtX3Z1TmlKalQ0SW10cEpLRzNMeUd3eW55UXdyS1dnRmRUSkZ0Nl95QmhRTVlOVXhSZk9uZlFwUU1zclFZWQ?oc=5"
     }
   ],
   "mode": "trends",

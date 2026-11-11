@@ -1,11 +1,11 @@
 {
   "baseline": false,
-  "brief": "No rare risk is on the board. A routine flyby or an empty storm outlook is not an emergency. Current war coverage is on the board: Trump says US won Iran war, Iran responds - NPR; Rubio says U.S. has \"no need\" to restart combat operations in Iran - CBS News. Rising topic: iran war (4 outlets this window).",
-  "checkedAt": "2026-11-11T08:59:00-06:00",
-  "checkedLabel": "Nov 11, 2026 8:59 AM CT",
+  "brief": "No rare risk is on the board. A routine flyby or an empty storm outlook is not an emergency. Current war coverage is on the board: Vance Considers Direct Talks With Iran Hard-Liner in Push to End War - WSJ; Trump says US won Iran war, Iran responds - NPR. Rising topic: iran war (4 outlets this window).",
+  "checkedAt": "2026-11-11T15:42:51-06:00",
+  "checkedLabel": "Nov 11, 2026 3:42 PM CT",
   "errors": [
-    "GDACS: not well-formed (invalid token): line 17, column 97",
-    "ReliefWeb: disasters feed did not answer. curl: (22) The requested URL returned error: 410\n",
+    "GDACS: not well-formed (invalid token): line 13, column 416",
+    "ReliefWeb: disasters feed did not answer. fetch failed https://api.reliefweb.int/v1/disasters?appname=news-desk&profile=list&preset=latest&limit=8",
     "WHO: outbreak notices did not answer in the last 14 days.",
     "CDC HAN: RSS did not answer and no notice is newer than 14 days."
   ],

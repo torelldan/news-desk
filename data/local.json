@@ -1,7 +1,8 @@
 {
   "gaps": [
     "Power_TN row hidden (2025-10-06, affected 0, served 0).",
-    "1 ended road projects hidden."
+    "1 ended road projects hidden.",
+    "TEMA news page answered with no dated notices."
   ],
   "items": [
     {
@@ -10,10 +11,10 @@
       "date": "2026-11-11",
       "id": "local-nws-none",
       "kind": "nws",
-      "label": "Nov 11, 2026 8:59 AM CT",
+      "label": "Nov 11, 2026 3:42 PM CT",
       "lane": "local",
       "note": "api.weather.gov answered for 35.802,-86.907 and returned no alerts.",
-      "published": "2026-11-11T08:59:00-06:00",
+      "published": "2026-11-11T15:42:51-06:00",
       "severity": "STANDBY",
       "soWhat": "",
       "source": "NWS",
@@ -24,6 +25,27 @@
       ],
       "title": "No active NWS alert for Thompson's Station (37179)",
       "url": "https://api.weather.gov/alerts/active?point=35.802,-86.907"
+    },
+    {
+      "action": "Read the source. No kit change unless you are in the named area.",
+      "confidence": "reported",
+      "date": "2026-11-11",
+      "id": "local-road:ee6167e3b19130ac",
+      "kind": "road",
+      "label": "2026-11-11",
+      "lane": "local",
+      "note": "Multi-Vehicle Crash",
+      "published": "2026-11-11T15:42:51-06:00",
+      "severity": "ALERT",
+      "soWhat": "no action needed",
+      "source": "TDOT SmartWay",
+      "sourceCount": 1,
+      "tags": [
+        "tennessee",
+        "williamson"
+      ],
+      "title": "Interstate 840 WB in Williamson County - near MILE MARKER 35 Multi-Vehicle Crash reported at 11/11/2026 2:47 PM (CT). WB right lane (of 2 lanes) blocked, right shoulder blocked.",
+      "url": "https://smartway.tn.gov/"
     }
   ],
   "place": "Thompson's Station / Williamson County / Middle Tennessee (37179)"

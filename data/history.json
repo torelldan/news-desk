@@ -2919,7 +2919,7 @@
     },
     {
       "date": "2026-11-11",
-      "label": "Nov 11, 2026 8:59 AM CT",
+      "label": "Nov 11, 2026 3:42 PM CT",
       "outlooks": [
         {
           "id": "quake:cb415447006964cd",
@@ -2957,9 +2957,29 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:12d2ff45a31cf5b0",
+          "id": "headline:6cb56845c059b9bc",
           "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "STANDBY"
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:32fae8aac86477e4",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:df8d49806efdef17",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:1215e3e5c6d2c78c",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:a858765d33cbfa3c",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
         },
         {
           "id": "headline:22e562e445992f6f",
@@ -2967,12 +2987,7 @@
           "severity": "ALERT"
         },
         {
-          "id": "headline:f26733b085efee89",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ALERT"
-        },
-        {
-          "id": "headline:e9d80801a03e9ff2",
+          "id": "headline:69c8508fa68789fd",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
@@ -2982,53 +2997,33 @@
           "severity": "ALERT"
         },
         {
-          "id": "headline:683615468b4afd2d",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ALERT"
-        },
-        {
-          "id": "headline:952ebdfde1770bb6",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ALERT"
-        },
-        {
           "id": "headline:2ea2af1b6ac11481",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
         {
-          "id": "headline:07063d26072f7f01",
+          "id": "headline:8ba8b498a2b07c25",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
         {
-          "id": "headline:0f4c42576327a007",
+          "id": "headline:ffce4975835d7ee9",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
         {
-          "id": "headline:66505471a9775246",
+          "id": "headline:cac9e1463f28e640",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
         {
-          "id": "headline:973ddb52ddc892bb",
+          "id": "headline:6d19bf31c92d53e1",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
         {
-          "id": "headline:03c55bac74fde981",
+          "id": "headline:2a0656848f5b0ae7",
           "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ALERT"
-        },
-        {
-          "id": "headline:644f316a2895556c",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ALERT"
-        },
-        {
-          "id": "headline:4d802edc294b4ce5",
-          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
           "severity": "ALERT"
         },
         {
@@ -3042,27 +3037,17 @@
           "severity": "ALERT"
         },
         {
-          "id": "headline:49f40d767ff101f9",
+          "id": "headline:259cdffd8b7d23b6",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
         {
-          "id": "headline:634711115a2d23fa",
-          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
-          "severity": "ALERT"
-        },
-        {
-          "id": "headline:d3596bf2c6c658f7",
+          "id": "headline:7149be05df5e1387",
           "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ALERT"
+          "severity": "STANDBY"
         },
         {
-          "id": "headline:d7543bf990b75519",
-          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
-          "severity": "ALERT"
-        },
-        {
-          "id": "headline:dde9b8f02ff441b2",
+          "id": "headline:c92155a940ad7fb8",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "STANDBY"
         },
@@ -3072,7 +3057,12 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:e7f29065233f3a5a",
+          "id": "headline:4e510eee72448bbd",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "neo:5b3c335822ee5196",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "STANDBY"
         },
@@ -3156,10 +3146,34 @@
           "title": "M4.6 147 km SSE of False Pass, Alaska"
         },
         {
-          "id": "headline:12d2ff45a31cf5b0",
-          "kind": "windstorm",
-          "severity": "STANDBY",
-          "title": "Portugal closes all schools ahead of Storm Charles - The Weather Channel"
+          "id": "headline:6cb56845c059b9bc",
+          "kind": "war-iran",
+          "severity": "ALERT",
+          "title": "Vance Considers Direct Talks With Iran Hard-Liner in Push to End War - WSJ"
+        },
+        {
+          "id": "headline:32fae8aac86477e4",
+          "kind": "usgov",
+          "severity": "ALERT",
+          "title": "Midterm Elections 2026: Congress Polls, Charts and More - NBC News"
+        },
+        {
+          "id": "headline:df8d49806efdef17",
+          "kind": "usgov",
+          "severity": "ALERT",
+          "title": "‘Draft Marco’ effort grows on Capitol Hill after midterms bloodbath - Politico"
+        },
+        {
+          "id": "headline:1215e3e5c6d2c78c",
+          "kind": "usgov",
+          "severity": "ALERT",
+          "title": "US midterms: assessing the results and implications - Economist Intelligence Unit"
+        },
+        {
+          "id": "headline:a858765d33cbfa3c",
+          "kind": "usgov",
+          "severity": "ALERT",
+          "title": "White House sends warning to Democrats about investigating the Trump administration - PBS"
         },
         {
           "id": "headline:22e562e445992f6f",
@@ -3168,16 +3182,10 @@
           "title": "Trump says US won Iran war, Iran responds - NPR"
         },
         {
-          "id": "headline:f26733b085efee89",
-          "kind": "war-iran",
-          "severity": "ALERT",
-          "title": "Rubio says U.S. has \"no need\" to restart combat operations in Iran - CBS News"
-        },
-        {
-          "id": "headline:e9d80801a03e9ff2",
+          "id": "headline:69c8508fa68789fd",
           "kind": "climate",
           "severity": "ALERT",
-          "title": "War, conflict must not distract from climate action, leaders warn COP31 - Reuters"
+          "title": "Conflict must not distract from climate action, leaders warn COP31 - Reuters"
         },
         {
           "id": "headline:970c3406a8638313",
@@ -3186,64 +3194,40 @@
           "title": "How Israel Will Choose Its Next Prime Minister, Explained - Time Magazine"
         },
         {
-          "id": "headline:683615468b4afd2d",
-          "kind": "war-iran",
-          "severity": "ALERT",
-          "title": "Qatar PM warns of major US-Iran disagreements despite two-week reprieve from pos - The Jerusalem Post"
-        },
-        {
-          "id": "headline:952ebdfde1770bb6",
-          "kind": "israel",
-          "severity": "ALERT",
-          "title": "Israel's parliament sworn in as Eisenkot tries to forge a government - Reuters"
-        },
-        {
           "id": "headline:2ea2af1b6ac11481",
           "kind": "war-ukraine",
           "severity": "ALERT",
           "title": "Russia and Ukraine hold nearly 4 hours of U.S.-mediated talks in Abu Dhabi - PBS"
         },
         {
-          "id": "headline:07063d26072f7f01",
-          "kind": "usgov",
+          "id": "headline:8ba8b498a2b07c25",
+          "kind": "diplomacy",
           "severity": "ALERT",
-          "title": "Rubio urges nations to ‘step up’ on Strait of Hormuz security - Los Angeles Times"
+          "title": "Rubio Touts Trump’s Iran Strategy as G7 Leaders Meet in Paris - Hudson Institute"
         },
         {
-          "id": "headline:0f4c42576327a007",
-          "kind": "climate",
+          "id": "headline:ffce4975835d7ee9",
+          "kind": "diplomacy",
           "severity": "ALERT",
-          "title": "What to Expect at COP 31: Key issues and how the negotiations work - International Institute for Sustainable Development"
+          "title": "Secretary of State Marco Rubio Speaks to Reporters at G7 Meeting - C-SPAN"
         },
         {
-          "id": "headline:66505471a9775246",
+          "id": "headline:cac9e1463f28e640",
           "kind": "attack",
           "severity": "ALERT",
-          "title": "What to Know About the Mass Shooting in Poland - The New York Times"
+          "title": "Polish leaders join thousands at silent march in Kraków for mass shooting victims - The Guardian"
         },
         {
-          "id": "headline:973ddb52ddc892bb",
-          "kind": "usgov",
+          "id": "headline:6d19bf31c92d53e1",
+          "kind": "war-iran",
           "severity": "ALERT",
-          "title": "Republicans return to Washington to sift through wreckage of midterms rout - The Guardian"
+          "title": "The Iran War Unexpectedly Drove Down Carbon Emissions This Year - The New York Times"
         },
         {
-          "id": "headline:03c55bac74fde981",
-          "kind": "usgov",
-          "severity": "ALERT",
-          "title": "The Democratic Party gained power across the country in the midterms. Now what? - NPR"
-        },
-        {
-          "id": "headline:644f316a2895556c",
+          "id": "headline:2a0656848f5b0ae7",
           "kind": "war-ukraine",
           "severity": "ALERT",
-          "title": "US attempts new peace push at first Russia-Ukraine talks in nine months - Reuters"
-        },
-        {
-          "id": "headline:4d802edc294b4ce5",
-          "kind": "usgov",
-          "severity": "ALERT",
-          "title": "Rubio makes clear that Trump’s foreign policy won’t change after GOP election losses - AP News"
+          "title": "Ukraine peace talks restart after 9 months. What makes them different this time? - CNN"
         },
         {
           "id": "headline:2bf5edb43e8e30f6",
@@ -3258,34 +3242,22 @@
           "title": "G7 allies to assess impact of Trump's midterm setback at Paris talks - Reuters"
         },
         {
-          "id": "headline:49f40d767ff101f9",
-          "kind": "attack",
+          "id": "headline:259cdffd8b7d23b6",
+          "kind": "climate",
           "severity": "ALERT",
-          "title": "Gunman with far-right views who killed 6 in Poland shooting rampage dies in hospital, police say - NBC News"
+          "title": "Climate Action from Geneva to Antalya | UN Climate Change Conference COP31 - Geneva Environment Network"
         },
         {
-          "id": "headline:634711115a2d23fa",
-          "kind": "attack",
-          "severity": "ALERT",
-          "title": "At least 6 killed, several injured in shooting at Polish market square: Police - ABC News - Breaking News, Latest News and Videos"
-        },
-        {
-          "id": "headline:d3596bf2c6c658f7",
-          "kind": "attack",
-          "severity": "ALERT",
-          "title": "Poland under disinformation attack after Kraków’s massacre - European Interest"
-        },
-        {
-          "id": "headline:d7543bf990b75519",
-          "kind": "israel",
-          "severity": "ALERT",
-          "title": "Israel's president taps opposition candidate, not Netanyahu, to form a government - Oregon Public Broadcasting - OPB"
-        },
-        {
-          "id": "headline:dde9b8f02ff441b2",
-          "kind": "diplomacy",
+          "id": "headline:7149be05df5e1387",
+          "kind": "war-iran",
           "severity": "STANDBY",
-          "title": "Priorities of the G7 Foreign Ministers’ Meeting in Paris - Ministère de l'Europe et des Affaires étrangères"
+          "title": "Trump says renewed Iran strikes ‘highly unlikely’ if talks progress but warns he could still strike - CNBC"
+        },
+        {
+          "id": "headline:c92155a940ad7fb8",
+          "kind": "war-ukraine",
+          "severity": "STANDBY",
+          "title": "Melania Trump touts rare agreement she brokered between Russia and Ukraine - NPR"
         },
         {
           "id": "headline:fba40c63243c8681",
@@ -3294,10 +3266,16 @@
           "title": "Oleshky Ceasefire Demonstrates That Russia Has the Capability, but Not the Will, to End Civilian Suffering in Ukraine - Institute for the Study of War"
         },
         {
-          "id": "headline:e7f29065233f3a5a",
-          "kind": "war-iran",
+          "id": "headline:4e510eee72448bbd",
+          "kind": "windstorm",
           "severity": "STANDBY",
-          "title": "Iran's chief negotiator says Americans voted 'no to war' - BBC"
+          "title": "Portugal cancels more than 300 flights, shuts schools due to Storm Charles - Al Jazeera"
+        },
+        {
+          "id": "neo:5b3c335822ee5196",
+          "kind": "neo",
+          "severity": "STANDBY",
+          "title": "Close approach 2026 VC11"
         },
         {
           "id": "neo:aed047f2e32ddcc2",
@@ -3349,13 +3327,13 @@
           "volume": null
         },
         {
-          "category": "ukraine-war",
-          "name": "ukraine war",
+          "category": "us-gov",
+          "name": "us gov",
           "volume": null
         },
         {
-          "category": "us-gov",
-          "name": "us gov",
+          "category": "ukraine-war",
+          "name": "ukraine war",
           "volume": null
         }
       ],
