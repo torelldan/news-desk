@@ -909,7 +909,7 @@ def main() -> int:
         elif x_status.get("reason") and x_status.get("reason") != "missing X_BEARER_TOKEN":
             errors.append("X feed offline: " + x_status.get("reason"))
 
-    from boards import extra_sources, fetch_assets, fetch_markets, fetch_science, fetch_storm_watch, fetch_threats, refresh_file
+    from boards import apply_storm_sources, extra_sources, fetch_assets, fetch_markets, fetch_science, fetch_storm_watch, fetch_threats, refresh_file
     prev_markets = load_json(DATA / "markets.json", {})
     prev_threats = load_json(DATA / "threats.json", {})
     prev_science = load_json(DATA / "science.json", {})
@@ -1029,6 +1029,7 @@ def main() -> int:
     except Exception as err:
         errors.append(f"Storm watch: {err}")
         storms = {"place": "37179", "items": [], "gaps": [f"Storm watch: {err}"], "note": ""}
+    apply_storm_sources(catalog_rows, storms)
     try:
         radar = citizen.fetch_radar(now)
     except Exception as err:

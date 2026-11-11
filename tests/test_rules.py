@@ -412,6 +412,25 @@ def test_same_story_prefers_the_newest_outlet():
     talks = "Russia, Ukraine and US meet for Abu Dhabi talks as Trump says war can end soon - ABC News"
     oleshky = "Oleshky Ceasefire Demonstrates That Russia Has the Capability, but Not the Will, to End Civilian Suffering in Ukraine"
     assert boards.same_story(talks, oleshky) is False
+    time_pm = "How Israel Will Choose Its Next Prime Minister, Explained - Time Magazine"
+    eisenkot = "Israel's parliament sworn in as Eisenkot tries to forge a government - Reuters"
+    assert boards.same_story(time_pm, eisenkot)
+    assert boards.same_story(time_pm, "Israel strikes targets in Gaza - Reuters") is False
+    peace = "US attempts new peace push at first Russia-Ukraine talks in nine months - Reuters"
+    abu = "Russia, Ukraine and US meet for Abu Dhabi talks as Trump says war can end soon - ABC News"
+    assert boards.same_story(peace, abu)
+    assert boards.same_story(peace, oleshky) is False
+    cop_space = "What to Expect at COP 31: Key issues and how the negotiations work"
+    cop_tight = "COP31 to take place 9-20 November 2026 in Antalya, Türkiye"
+    assert boards.same_story(cop_space, cop_tight)
+    assert boards.classify_desk(cop_space, "", "climate") == "climate"
+    assert "quiet tropical line" not in boards.storm_watch_note([{"kind": "tropical", "title": "Tropical Storm Pena"}])
+    assert "quiet tropical line" in boards.storm_watch_note([{"kind": "tropical", "title": "No active tropical systems"}])
+    sources = boards.storm_source_rows({"items": [{"kind": "tropical", "label": "Nov 11, 2026 8:59 AM CT", "date": "2026-11-11", "published": "2026-11-11T08:59:00-06:00"}, {"kind": "spc-outlook", "label": "Nov 11, 2026 8:59 AM CT", "date": "2026-11-11", "published": "2026-11-11T08:59:00-06:00"}], "gaps": []})
+    nhc = next(row for row in sources if row["short"] == "NHC")
+    spc = next(row for row in sources if row["short"] == "SPC")
+    assert nhc["count"] == 1 and nhc["lastLabel"].startswith("Nov 11")
+    assert spc["count"] == 1 and spc["lastDate"] == "2026-11-11"
     rows = [
         {"title": opb, "kind": "israel", "published": "2026-11-08T10:00:00-06:00"},
         {"title": reuters, "kind": "israel", "published": "2026-11-08T12:00:00-06:00"},

@@ -324,11 +324,11 @@
     "url": "https://earthquake.usgs.gov/earthquakes/map/"
   },
   {
-    "count": 0,
+    "count": 1,
     "id": "threat-storm",
     "lane": "threat",
-    "lastDate": "",
-    "lastLabel": "",
+    "lastDate": "2026-11-11",
+    "lastLabel": "Nov 11, 2026 8:59 AM CT",
     "name": "NHC storms",
     "offline": false,
     "short": "NHC",
@@ -514,5 +514,17 @@
     "short": "QUANTUM",
     "subtitle": "science",
     "url": "https://arxiv.org/list/quant-ph/recent"
+  },
+  {
+    "id": "threat-spc",
+    "name": "SPC storm watch",
+    "short": "SPC",
+    "lane": "threat",
+    "url": "https://www.spc.noaa.gov/",
+    "subtitle": "threat",
+    "lastLabel": "Nov 11, 2026 8:59 AM CT",
+    "lastDate": "2026-11-11",
+    "count": 4,
+    "offline": false
   }
 ]

@@ -1,8 +1,7 @@
 {
   "gaps": [
     "Power_TN row hidden (2025-10-06, affected 0, served 0).",
-    "1 ended road projects hidden.",
-    "TEMA: curl: (35) Recv failure: Connection reset by peer\n"
+    "1 ended road projects hidden."
   ],
   "items": [
     {
@@ -25,6 +24,48 @@
       ],
       "title": "No active NWS alert for Thompson's Station (37179)",
       "url": "https://api.weather.gov/alerts/active?point=35.802,-86.907"
+    },
+    {
+      "id": "local-tema:52626b90eadd0e3a",
+      "title": "Flash Report #2 - Polk County Flooding",
+      "note": "TEMA news release.",
+      "url": "https://www.tn.gov/tema/news/2026/11/6/flash-report--2---polk-county-flooding.html",
+      "source": "TEMA",
+      "kind": "tema",
+      "lane": "local",
+      "severity": "ALERT",
+      "date": "2026-11-06",
+      "label": "2026-11-06",
+      "published": "2026-11-06T12:00:00-06:00",
+      "tags": [
+        "tennessee",
+        "williamson"
+      ],
+      "confidence": "reported",
+      "sourceCount": 1,
+      "soWhat": "no action needed",
+      "action": "no action needed"
+    },
+    {
+      "id": "local-tema:e8402007a6ab38ec",
+      "title": "Flash Report #1 - Polk County Flooding",
+      "note": "TEMA news release.",
+      "url": "https://www.tn.gov/tema/news/2026/11/5/flash-report--1---polk-county-flooding.html",
+      "source": "TEMA",
+      "kind": "tema",
+      "lane": "local",
+      "severity": "ALERT",
+      "date": "2026-11-05",
+      "label": "2026-11-05",
+      "published": "2026-11-05T12:00:00-06:00",
+      "tags": [
+        "tennessee",
+        "williamson"
+      ],
+      "confidence": "reported",
+      "sourceCount": 1,
+      "soWhat": "no action needed",
+      "action": "no action needed"
     }
   ],
   "place": "Thompson's Station / Williamson County / Middle Tennessee (37179)"

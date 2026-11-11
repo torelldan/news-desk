@@ -8,6 +8,7 @@ from __future__ import annotations
 import json
 import math
 import re
+import time
 import urllib.parse
 from datetime import datetime, timedelta
 
@@ -51,9 +52,14 @@ ROAD_QUERY = (
     "https://spatial.tdot.tn.gov/arcgis/rest/services/Smartway/Smartway_Events/FeatureServer/0/query"
     "?where=UPPER(DESCRIPTION)%20LIKE%20%27%25WILLIAMSON%25%27&outFields=DESCRIPTION,EVENT_SUBTYPE,CD_ROAD_NAMES,REVISED_DATE&returnGeometry=false&resultRecordCount=40&orderByFields=REVISED_DATE%20DESC&f=json"
 )
-# news.html is a nav shell and returns 403 to the Actions curl client.
-# The news-releases index lists dated /tema/news/YYYY/M/D/ articles and answers 200.
-TEMA_PAGE = "https://www.tn.gov/tema/news-info/news-releases.html"
+# news-releases.html often 302s to news.html. tn.gov also resets or 403s the Actions runner.
+# Try both URLs, with a short retry, then Williamson County's public-safety RSS.
+TEMA_PAGES = (
+    "https://www.tn.gov/tema/news-info/news-releases.html",
+    "https://www.tn.gov/tema/news.html",
+)
+TEMA_PAGE = TEMA_PAGES[0]
+WILLIAMSON_SAFETY_RSS = "https://www.williamsoncounty-tn.gov/RSSFeed.aspx?ModID=1&CID=PublicSafety-40"
 NWS_POINT = "https://api.weather.gov/alerts/active?point=35.802,-86.907"
 
 
@@ -182,6 +188,50 @@ def tema_notices(html: str, now: datetime) -> list[dict]:
             "date": date,
             "label": date,
             "published": f"{date}T12:00:00-06:00",
+            "tags": ["tennessee", "williamson"],
+        })
+        if len(rows) >= 4:
+            break
+    return rows
+
+
+def _williamson_safety(now: datetime) -> list[dict]:
+    """Official Williamson County public-safety RSS. Used when tn.gov will not answer."""
+    import boards
+    import xml.etree.ElementTree as ET
+
+    try:
+        raw = boards._get(
+            WILLIAMSON_SAFETY_RSS,
+            timeout=25,
+            headers={"User-Agent": boards.BROWSER, "Accept": "application/rss+xml, application/xml, text/xml"},
+        )
+        root = ET.fromstring(raw)
+    except Exception:
+        return []
+    cutoff = (now - timedelta(days=21)).date().isoformat()
+    rows = []
+    for node in root.findall("./channel/item"):
+        title = re.sub(r"\s+", " ", (node.findtext("title") or "")).strip()
+        link = d.http_url(node.findtext("link") or WILLIAMSON_SAFETY_RSS)
+        if not title or not link:
+            continue
+        published = d.parse_pubdate(node.findtext("pubDate") or "")
+        date = published.strftime("%Y-%m-%d") if published else now.strftime("%Y-%m-%d")
+        if date < cutoff:
+            continue
+        rows.append({
+            "id": d.make_id("local-williamson", link),
+            "title": title,
+            "note": "Williamson County public-safety notice. TEMA's news page did not answer.",
+            "url": link,
+            "source": "Williamson County",
+            "kind": "tema",
+            "lane": "local",
+            "severity": "ALERT" if re.search(r"\b(flood\w*|warning|evacuation|emergency|tornado)\b", title, re.I) else "STANDBY",
+            "date": date,
+            "label": date,
+            "published": published.isoformat(timespec="seconds") if published else now.isoformat(timespec="seconds"),
             "tags": ["tennessee", "williamson"],
         })
         if len(rows) >= 4:
@@ -942,19 +992,38 @@ def fetch_local(now: datetime) -> dict:
         gaps.append(f"TDOT: {err}")
         items.append(_na("TDOT Williamson roads", "https://smartway.tn.gov/", f"n/a — {err}"))
 
-    try:
-        html = boards._get(
-            TEMA_PAGE,
-            timeout=25,
-            headers={"User-Agent": boards.BROWSER, "Accept": "text/html,application/xhtml+xml"},
-        ).decode("utf-8", "replace")
-        notices = tema_notices(html, now)
+    tema_headers = {
+        "User-Agent": boards.BROWSER,
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.9",
+        "Cache-Control": "no-cache",
+        "Upgrade-Insecure-Requests": "1",
+    }
+    notices = []
+    tema_err = None
+    for attempt in range(3):
+        if attempt:
+            time.sleep(1.5 * attempt)
+        for url in TEMA_PAGES:
+            try:
+                html = boards._get(url, timeout=25, headers=tema_headers).decode("utf-8", "replace")
+                notices = tema_notices(html, now)
+                if notices:
+                    break
+            except Exception as err:
+                tema_err = err
         if notices:
-            items.extend(notices)
-        else:
+            break
+    if notices:
+        items.extend(notices)
+    else:
+        williamson = _williamson_safety(now)
+        if williamson:
+            items.extend(williamson)
+        if tema_err:
+            gaps.append(f"TEMA: {tema_err}")
+        elif not williamson:
             gaps.append("TEMA news page answered with no dated notices.")
-    except Exception as err:
-        gaps.append(f"TEMA: {err}")
 
     for item in items:
         if item.get("confidence"):
