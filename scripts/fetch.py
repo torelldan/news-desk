@@ -1069,7 +1069,17 @@ def main() -> int:
             if isinstance(before, dict) and before.get("id"):
                 matched_prev_ids.add(before.get("id"))
             if before is None:
-                fresh.append(_brief_row(item, section))
+                earlier = boards.recent_story(item, prev_history.get("days") or [], now.date().isoformat())
+                if earlier and not boards.story_update(item.get("title") or "", earlier.get("title") or "", item.get("severity") or "", earlier.get("severity") or ""):
+                    matched_prev_ids.add(earlier.get("id"))
+                elif earlier:
+                    fresh.append(_brief_row(item, section, f"Update to that story. Was: {earlier.get('title') or ''}"))
+                elif boards.old_standby_return(item, now.date().isoformat()):
+                    pass
+                else:
+                    fresh.append(_brief_row(item, section))
+            elif boards.story_update(item.get("title") or "", before.get("title") or "", item.get("severity") or "", before.get("severity") or "") and citizen._rank(item.get("severity") or "") <= citizen._rank(before.get("severity") or ""):
+                fresh.append(_brief_row(item, section, f"Update to that story. Was: {before.get('title') or ''}"))
             elif citizen._rank(item.get("severity") or "") > citizen._rank(before if isinstance(before, str) else (before.get("severity") or "")):
                 fresh_before = before if isinstance(before, str) else (before.get("severity") or "")
                 up.append(_brief_row(item, section, f"{fresh_before} → {item.get('severity')}"))
