@@ -3,14 +3,14 @@
   "items": [
     {
       "action": "No action for 37179.",
-      "date": "2026-11-11",
+      "date": "2026-11-12",
       "guest": "",
-      "id": "tropical:806a29875b94c0eb",
+      "id": "tropical:75f387f57e28d396",
       "kind": "tropical",
-      "label": "Nov 11, 2026 3:42 PM CT",
+      "label": "Nov 12, 2026 8:51 AM CT",
       "lane": "local",
-      "note": "Max winds 40 kt (46 mph). Moving W at 16 kt. Central Pacific at 9.9N 169.4W. No US hurricane or tropical storm watch or warning.",
-      "published": "2026-11-11T15:42:51-06:00",
+      "note": "Max winds 30 kt (35 mph). Moving W at 18 kt. Central Pacific at 9.8N 173.4W. No US hurricane or tropical storm watch or warning.",
+      "published": "2026-11-12T08:51:40-06:00",
       "severity": "STANDBY",
       "soWhat": "No action for 37179.",
       "source": "NHC",
@@ -21,20 +21,20 @@
         "tennessee"
       ],
       "timeKnown": true,
-      "title": "Tropical Storm Pena",
+      "title": "Potential Tropical Cyclone Pena",
       "url": "https://www.nhc.noaa.gov/text/HFOTCPCP4.shtml",
-      "weekday": "Wed"
+      "weekday": "Thu"
     },
     {
       "action": "No action for 37179.",
-      "date": "2026-11-11",
+      "date": "2026-11-12",
       "guest": "",
       "id": "spc-watch:f8d6565a3536e0e4",
       "kind": "spc-watch",
-      "label": "Nov 11, 2026 3:42 PM CT",
+      "label": "Nov 12, 2026 8:51 AM CT",
       "lane": "local",
       "note": "SPC watch feed answered. Nothing is in effect.",
-      "published": "2026-11-11T15:42:51-06:00",
+      "published": "2026-11-12T08:51:40-06:00",
       "severity": "STANDBY",
       "soWhat": "No action for 37179.",
       "source": "SPC",
@@ -47,18 +47,18 @@
       "timeKnown": true,
       "title": "No SPC tornado or severe thunderstorm watches",
       "url": "https://www.spc.noaa.gov/products/watch/",
-      "weekday": "Wed"
+      "weekday": "Thu"
     },
     {
       "action": "No action for 37179.",
-      "date": "2026-11-11",
+      "date": "2026-11-12",
       "guest": "",
-      "id": "spc-outlook:213dae113254b193",
+      "id": "spc-outlook:9a5fb27bba6f72c9",
       "kind": "spc-outlook",
-      "label": "Nov 11, 2026 3:42 PM CT",
+      "label": "Nov 12, 2026 8:51 AM CT",
       "lane": "local",
       "note": "SPC categorical outlook for 35.802, -86.907.",
-      "published": "2026-11-11T15:42:51-06:00",
+      "published": "2026-11-12T08:51:40-06:00",
       "severity": "STANDBY",
       "soWhat": "No action for 37179.",
       "source": "SPC",
@@ -69,20 +69,20 @@
         "tennessee"
       ],
       "timeKnown": true,
-      "title": "Day 1 convective outlook: Marginal at Thompson's Station (37179)",
+      "title": "Day 1 convective outlook: No thunderstorm risk at Thompson's Station (37179)",
       "url": "https://www.spc.noaa.gov/products/outlook/day1otlk.html",
-      "weekday": "Wed"
+      "weekday": "Thu"
     },
     {
       "action": "No action for 37179.",
-      "date": "2026-11-11",
+      "date": "2026-11-12",
       "guest": "",
       "id": "spc-outlook:e98c94c73083b073",
       "kind": "spc-outlook",
-      "label": "Nov 11, 2026 3:42 PM CT",
+      "label": "Nov 12, 2026 8:51 AM CT",
       "lane": "local",
       "note": "SPC categorical outlook for 35.802, -86.907.",
-      "published": "2026-11-11T15:42:51-06:00",
+      "published": "2026-11-12T08:51:40-06:00",
       "severity": "STANDBY",
       "soWhat": "No action for 37179.",
       "source": "SPC",
@@ -95,18 +95,18 @@
       "timeKnown": true,
       "title": "Day 2 convective outlook: No thunderstorm risk at Thompson's Station (37179)",
       "url": "https://www.spc.noaa.gov/products/outlook/day2otlk.html",
-      "weekday": "Wed"
+      "weekday": "Thu"
     },
     {
       "action": "No action for 37179.",
-      "date": "2026-11-11",
+      "date": "2026-11-12",
       "guest": "",
       "id": "spc-outlook:022880d1a6c39266",
       "kind": "spc-outlook",
-      "label": "Nov 11, 2026 3:42 PM CT",
+      "label": "Nov 12, 2026 8:51 AM CT",
       "lane": "local",
       "note": "SPC categorical outlook for 35.802, -86.907.",
-      "published": "2026-11-11T15:42:51-06:00",
+      "published": "2026-11-12T08:51:40-06:00",
       "severity": "STANDBY",
       "soWhat": "No action for 37179.",
       "source": "SPC",
@@ -119,7 +119,7 @@
       "timeKnown": true,
       "title": "Day 3 convective outlook: No thunderstorm risk at Thompson's Station (37179)",
       "url": "https://www.spc.noaa.gov/products/outlook/day3otlk.html",
-      "weekday": "Wed"
+      "weekday": "Thu"
     }
   ],
   "note": "Atlantic hurricane season runs through Nov 30.",

@@ -1,8 +1,8 @@
 {
   "baseline": false,
-  "brief": "No rare risk is on the board. A routine flyby or an empty storm outlook is not an emergency. Current war coverage is on the board: Vance Considers Direct Talks With Iran Hard-Liner in Push to End War - WSJ; Trump says US won Iran war, Iran responds - NPR. Rising topic: iran war (4 outlets this window).",
-  "checkedAt": "2026-11-11T15:42:51-06:00",
-  "checkedLabel": "Nov 11, 2026 3:42 PM CT",
+  "brief": "No rare risk is on the board. A routine flyby or an empty storm outlook is not an emergency. Current war coverage is on the board: Ukraine peace talks: Jared Kushner and Steve Witkoff arrive in Russia for meeting with Putin - DW.com; Vance Considers Direct Talks With Iran Hard-Liner in Push to End War - WSJ. Rising topic: ukraine war (4 outlets this window).",
+  "checkedAt": "2026-11-12T08:51:40-06:00",
+  "checkedLabel": "Nov 12, 2026 8:51 AM CT",
   "errors": [
     "GDACS: not well-formed (invalid token): line 13, column 416",
     "ReliefWeb: disasters feed did not answer. fetch failed https://api.reliefweb.int/v1/disasters?appname=news-desk&profile=list&preset=latest&limit=8",
@@ -10,7 +10,7 @@
     "CDC HAN: RSS did not answer and no notice is newer than 14 days."
   ],
   "retainDays": 120,
-  "today": "2026-11-11",
+  "today": "2026-11-12",
   "trends": {
     "google": "Google Trends US daily list answered (10 topics). Kept the ones that match a war, government, or threat topic. None of today's search trends matched.",
     "mode": "trends",

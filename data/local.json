@@ -1,20 +1,19 @@
 {
   "gaps": [
     "Power_TN row hidden (2025-10-06, affected 0, served 0).",
-    "1 ended road projects hidden.",
-    "TEMA news page answered with no dated notices."
+    "1 ended road projects hidden."
   ],
   "items": [
     {
       "action": "no action needed",
       "confidence": "reported",
-      "date": "2026-11-11",
+      "date": "2026-11-12",
       "id": "local-nws-none",
       "kind": "nws",
-      "label": "Nov 11, 2026 3:42 PM CT",
+      "label": "Nov 12, 2026 8:51 AM CT",
       "lane": "local",
       "note": "api.weather.gov answered for 35.802,-86.907 and returned no alerts.",
-      "published": "2026-11-11T15:42:51-06:00",
+      "published": "2026-11-12T08:51:40-06:00",
       "severity": "STANDBY",
       "soWhat": "",
       "source": "NWS",
@@ -27,25 +26,25 @@
       "url": "https://api.weather.gov/alerts/active?point=35.802,-86.907"
     },
     {
-      "action": "Read the source. No kit change unless you are in the named area.",
+      "action": "no action needed",
       "confidence": "reported",
       "date": "2026-11-11",
-      "id": "local-road:ee6167e3b19130ac",
-      "kind": "road",
-      "label": "2026-11-11",
+      "id": "local-tema:6482c614b1185f4a",
+      "kind": "tema",
+      "label": "Nov 11, 2026",
       "lane": "local",
-      "note": "Multi-Vehicle Crash",
-      "published": "2026-11-11T15:42:51-06:00",
-      "severity": "ALERT",
-      "soWhat": "no action needed",
-      "source": "TDOT SmartWay",
+      "note": "TEMA news release, Nov 11, 2026. Polk County. Not a Williamson County / 37179 notice.",
+      "published": "2026-11-11T12:00:00-06:00",
+      "severity": "STANDBY",
+      "soWhat": "",
+      "source": "TEMA",
       "sourceCount": 1,
       "tags": [
         "tennessee",
-        "williamson"
+        "polk"
       ],
-      "title": "Interstate 840 WB in Williamson County - near MILE MARKER 35 Multi-Vehicle Crash reported at 11/11/2026 2:47 PM (CT). WB right lane (of 2 lanes) blocked, right shoulder blocked.",
-      "url": "https://smartway.tn.gov/"
+      "title": "Tennessee Remains in State of Emergency in Response to Polk County Flooding",
+      "url": "https://www.tn.gov/tema/news/2026/11/11/tennessee-remains-in-state-of-emergency-in-response-to-polk-county-flooding.html"
     }
   ],
   "place": "Thompson's Station / Williamson County / Middle Tennessee (37179)"
