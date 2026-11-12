@@ -95,13 +95,29 @@ REGIONS = [
     {
         "id": "asia",
         "name": "Asia",
-        "query": "Japan OR Hong Kong OR India economy markets when:14d",
+        "query": "Hong Kong economy Hang Seng when:14d",
         "venues": [
-            {"name": "Tokyo", "indexName": "Nikkei 225", "symbol": "^N225", "timezone": "Asia/Tokyo",
-             "sessions": [{"open": "09:00", "close": "11:30"}, {"open": "12:30", "close": "15:00"}], "holidays": []},
             {"name": "Hong Kong", "indexName": "Hang Seng", "symbol": "^HSI", "timezone": "Asia/Hong_Kong",
              "sessions": [{"open": "09:30", "close": "12:00"}, {"open": "13:00", "close": "16:00"}], "holidays": []},
+        ],
+    },
+    {
+        "id": "japan",
+        "name": "Japan",
+        "query": "Japan economy BoJ Nikkei when:14d",
+        "venues": [
+            {"name": "Tokyo", "indexName": "Nikkei 225", "symbol": "^N225", "timezone": "Asia/Tokyo",
+             "sessions": [{"open": "09:00", "close": "11:30"}, {"open": "12:30", "close": "15:30"}], "holidays": []},
+        ],
+    },
+    {
+        "id": "india",
+        "name": "India",
+        "query": "India economy RBI Sensex Nifty when:14d",
+        "venues": [
             {"name": "India", "indexName": "BSE Sensex", "symbol": "^BSESN", "timezone": "Asia/Kolkata",
+             "sessions": [{"open": "09:15", "close": "15:30"}], "holidays": []},
+            {"name": "NSE", "indexName": "Nifty 50", "symbol": "^NSEI", "timezone": "Asia/Kolkata",
              "sessions": [{"open": "09:15", "close": "15:30"}], "holidays": []},
         ],
     },
@@ -238,7 +254,7 @@ def _get(url: str, timeout: int = 30, headers: dict | None = None) -> bytes:
         return proc.stdout
 
 
-def _yahoo(symbol: str, range_: str = "1mo") -> dict | None:
+def _yahoo(symbol: str, range_: str = "1mo", tz_name: str = "America/New_York") -> dict | None:
     quoted = urllib.parse.quote(symbol, safe="")
     url = f"https://query1.finance.yahoo.com/v8/finance/chart/{quoted}?interval=1d&range={range_}"
     try:
@@ -249,14 +265,20 @@ def _yahoo(symbol: str, range_: str = "1mo") -> dict | None:
     if not isinstance(result, dict):
         return None
     meta = result.get("meta") or {}
-    closes = (((result.get("indicators") or {}).get("quote") or [{}])[0]).get("close") or []
+    quote = ((result.get("indicators") or {}).get("quote") or [{}])[0]
+    closes = quote.get("close") or []
+    volumes = quote.get("volume") or []
     stamps = result.get("timestamp") or []
+    from deskextra import exchange_day
     points = []
-    for stamp, close in zip(stamps, closes):
+    for index, (stamp, close) in enumerate(zip(stamps, closes)):
         if close is None:
             continue
-        day = datetime.fromtimestamp(int(stamp), timezone.utc).astimezone(d.CT).strftime("%Y-%m-%d")
-        points.append({"date": day, "price": round(float(close), 4)})
+        day = exchange_day(stamp, tz_name)
+        point = {"date": day, "price": round(float(close), 4)}
+        if index < len(volumes) and volumes[index] is not None:
+            point["volume"] = volumes[index]
+        points.append(point)
     price = meta.get("regularMarketPrice")
     previous = meta.get("chartPreviousClose")
     usable = [point["price"] for point in points if point.get("price") is not None]
@@ -267,7 +289,7 @@ def _yahoo(symbol: str, range_: str = "1mo") -> dict | None:
         change, pct = index_change(price, previous)
     as_of = ""
     if meta.get("regularMarketTime"):
-        as_of = datetime.fromtimestamp(int(meta["regularMarketTime"]), timezone.utc).astimezone(d.CT).strftime("%Y-%m-%d")
+        as_of = exchange_day(meta["regularMarketTime"], tz_name)
     if price is None and not points:
         return None
     return {
@@ -275,7 +297,7 @@ def _yahoo(symbol: str, range_: str = "1mo") -> dict | None:
         "change": change,
         "changePct": pct,
         "asOf": as_of,
-        "points": points[-120:],
+        "points": points[-400:],
         "source": f"https://finance.yahoo.com/quote/{quoted}",
     }
 
@@ -343,12 +365,42 @@ def _item(kind, lane, source, title, note, url, when, tags, extra=None) -> dict:
     return row
 
 
+def _usa_headline(title: str) -> bool:
+    """A China-only currency story is not the USA region's lead."""
+    if re.search(r"\b(china|yuan|renminbi)\b", title or "", re.I) and not re.search(
+        r"\b(federal reserve|fed\b|united states|u\.s\.|white house|treasury)\b", title or "", re.I
+    ):
+        return False
+    return True
+
+
+def _moex_quote() -> dict | None:
+    from zoneinfo import ZoneInfo
+    from deskextra import moex_level
+    try:
+        payload = json.loads(_get(
+            "https://iss.moex.com/iss/engines/stock/markets/index/securities/IMOEX.json?iss.meta=off",
+            timeout=25,
+            headers={"User-Agent": NWS_UA, "Accept": "application/json"},
+        ))
+    except Exception as err:
+        print(f"  moex: {err}")
+        return None
+    quote = moex_level(payload)
+    if quote:
+        quote["asOf"] = datetime.now(timezone.utc).astimezone(ZoneInfo("Europe/Moscow")).strftime("%Y-%m-%d")
+    return quote
+
+
 def fetch_markets(now: datetime, previous: dict | None = None, retain_days: int = 120) -> dict:
     regions = []
     for spec in REGIONS:
         venues = []
         for venue in spec["venues"]:
-            quote = _yahoo(venue["symbol"], "5d") or {}
+            if venue["symbol"] == "IMOEX.ME":
+                quote = _moex_quote() or {}
+            else:
+                quote = _yahoo(venue["symbol"], "5d", venue.get("timezone") or "America/New_York") or {}
             venues.append({
                 "name": venue["name"],
                 "indexName": venue["indexName"],
@@ -367,6 +419,8 @@ def fetch_markets(now: datetime, previous: dict | None = None, retain_days: int 
         cutoff = (now.date() - timedelta(days=retain_days)).isoformat()
         try:
             fresh = _headlines(spec["query"], now, retain_days, 40)
+            if spec["id"] == "usa":
+                fresh = [row for row in fresh if _usa_headline(row.get("title") or "")]
             headlines = merge_rows(fresh, old_heads, cutoff, 40)
         except Exception as err:
             print(f"  headlines {spec['id']}: {err}; keeping {len(old_heads)} cached")
@@ -1073,6 +1127,12 @@ def _try_nws(now):
             when = d.parse_pubdate(props.get("sent") or props.get("effective") or "") or now
             sev = alert_severity(event, props.get("severity") or "")
             area = props.get("areaDesc") or "Tennessee"
+            if "area=TN" in url:
+                from deskextra import tn_alert_scope
+                scope = tn_alert_scope(props)
+                if scope == "elsewhere":
+                    sev = "STANDBY"
+                    area = f"{area}. Elsewhere in Tennessee, not Williamson County or an adjacent county."
             rows.append(_item("nws", "threat", "NWS", event, area, link, when, ["nws", sev.lower(), "tennessee"], {"severity": sev}))
     try:
         national = "https://api.weather.gov/alerts/active?status=actual&message_type=alert&severity=Extreme,Severe"
@@ -1352,7 +1412,12 @@ def headline_shift(new_title: str, old_title: str) -> bool:
         return False
     fresh, prior = _claim_tokens(new_title), _claim_tokens(old_title)
     if not fresh and not prior:
-        return False
+        left, right = story_tokens(new_title), story_tokens(old_title)
+        if len(left) < 2 or len(right) < 2:
+            return False
+        # The Kushner/Putin lead shares about a third of its tokens with the
+        # Abu Dhabi talks headline, so 0.2 would still hide that update.
+        return len(left & right) / min(len(left), len(right)) < 0.35
     if fresh & prior:
         return False
     return True
@@ -1377,18 +1442,19 @@ def cluster_rows(rows: list[dict]) -> list[dict]:
     kept: list[dict] = []
     for row in ordered:
         title = row.get("title") or ""
-        lead = next((other for other in kept if same_story(title, other.get("title") or "")), None)
+        from deskextra import rows_same_cluster
+        lead = next((other for other in kept if rows_same_cluster(row, other, same_story)), None)
         if lead is None:
             copy = dict(row)
-            copy["related"] = 0
-            copy["relatedSources"] = []
+            copy["related"] = int(row.get("related") or 0)
+            copy["relatedSources"] = list(row.get("relatedSources") or [])
             kept.append(copy)
             continue
-        lead["related"] = int(lead.get("related") or 0) + 1
-        src = row.get("source") or ""
+        lead["related"] = int(lead.get("related") or 0) + 1 + int(row.get("related") or 0)
         sources = lead.setdefault("relatedSources", [])
-        if src and src != lead.get("source") and src not in sources:
-            sources.append(src)
+        for src in [row.get("source") or ""] + list(row.get("relatedSources") or []):
+            if src and src != lead.get("source") and src not in sources:
+                sources.append(src)
     return kept
 
 

@@ -526,5 +526,41 @@
     "short": "SPC",
     "subtitle": "threat",
     "url": "https://www.spc.noaa.gov/"
+  },
+  {
+    "id": "macro-bis",
+    "name": "BIS policy rates",
+    "short": "BIS",
+    "lane": "economy",
+    "url": "https://stats.bis.org/",
+    "subtitle": "economy",
+    "lastLabel": "Nov 12, 2026",
+    "lastDate": "2026-11-12",
+    "count": 9,
+    "offline": false
+  },
+  {
+    "id": "mkt-moex",
+    "name": "MOEX IMOEX",
+    "short": "MOEX",
+    "lane": "economy",
+    "url": "https://iss.moex.com/iss/engines/stock/markets/index/securities/IMOEX.json",
+    "subtitle": "economy",
+    "lastLabel": "Nov 12, 2026",
+    "lastDate": "2026-11-12",
+    "count": 1,
+    "offline": false
+  },
+  {
+    "id": "strikes",
+    "name": "Strike headlines",
+    "short": "STRIKES",
+    "lane": "threat",
+    "url": "https://news.google.com/",
+    "subtitle": "threat",
+    "lastLabel": "Nov 12, 2026",
+    "lastDate": "2026-11-12",
+    "count": 5,
+    "offline": false
   }
 ]

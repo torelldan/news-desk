@@ -614,6 +614,70 @@ def test_tema_county_age_and_local_relevance():
     assert stale == []
 
 
+def test_nov12_rules():
+    import deskextra
+    from datetime import datetime, timezone
+    east = {"geocode": {"UGC": ["TNC093", "TNC029"], "SAME": ["047093"]}, "areaDesc": "Johnson; Cocke; Sevier"}
+    assert deskextra.tn_alert_scope(east) == "elsewhere"
+    home = {"geocode": {"UGC": ["TNC187"], "SAME": ["047187"]}, "areaDesc": "Williamson"}
+    assert deskextra.tn_alert_scope(home) == "williamson"
+    neighbor = {"geocode": {"SAME": ["047037"]}, "areaDesc": "Davidson"}
+    assert deskextra.tn_alert_scope(neighbor) == "adjacent"
+    # 2026-11-12 05:00 UTC is midnight in New York and 23:00 the day before in Chicago.
+    stamp = datetime(2026, 11, 12, 5, 0, tzinfo=timezone.utc).timestamp()
+    assert deskextra.exchange_day(stamp, "America/New_York") == "2026-11-12"
+    assert deskextra.exchange_day(stamp, "America/Chicago") == "2026-11-11"
+    kushner = {"title": "Ukraine peace talks: Jared Kushner and Steve Witkoff arrive in Russia for meeting with Putin - DW.com", "published": "2026-11-12T06:00:00-06:00"}
+    abu = {"title": "Russia and Ukraine hold nearly 4 hours of U.S.-mediated talks in Abu Dhabi - PBS", "published": "2026-11-10T12:00:00-06:00"}
+    import boards
+    assert boards.same_story(kushner["title"], abu["title"])
+    assert boards.headline_shift(kushner["title"], abu["title"])
+    letter_a = {"title": "White House tells Democrats that investigating Trump administration could be criminal - Reuters", "published": "2026-11-11T10:00:00-06:00"}
+    letter_b = {"title": "Read the letter the White House's top lawyer sent Rep. Garcia over threats to investigate Trump - PBS", "published": "2026-11-11T15:00:00-06:00"}
+    assert deskextra.same_topic_recent(letter_a, letter_b)
+    assert deskextra.published_within_hours({"published": "2026-11-12T08:00:00-06:00"}, datetime.fromisoformat("2026-11-12T20:00:00-06:00"), 36)
+    assert deskextra.published_within_hours({"published": "2026-11-10T08:00:00-06:00"}, datetime.fromisoformat("2026-11-12T20:00:00-06:00"), 36) is False
+    assert deskextra.correlation_ready(4) is False
+    assert deskextra.correlation_ready(10) is True
+    assert deskextra.quake_counts_for_market({"kind": "quake", "severity": "STANDBY"}) is False
+    assert deskextra.keep_strike("House explosion in Clarksville injures two") is False
+    assert deskextra.keep_strike("Drone strike hits Russian oil refinery in Kirishi") is True
+    assert deskextra.strike_severity("Drone strike at Ust-Luga oil terminal") == "ALERT"
+    assert deskextra.strike_severity("Missile hits a barracks in Syria") == "STANDBY"
+    assert deskextra.strike_severity("Strike on US energy infrastructure in Texas") == "ACTION"
+    rates = deskextra.parse_bis_rates("FREQ,REF_AREA,UNIT_MEASURE,UNIT_MULT,TIME_FORMAT,COMPILATION,DECIMALS,SOURCE_REF,SUPP_INFO_BREAKS,TITLE,TIME_PERIOD,OBS_VALUE,OBS_STATUS,OBS_CONF,OBS_PRE_BREAK\nM,JP,368,0,,,,,,Policy,2026-09,1.25,A,F,\n")
+    assert rates["JP"]["value"] == 1.25
+    jgb = deskextra.parse_mof_jgb_10y("Date,1Y,2Y,3Y,4Y,5Y,6Y,7Y,8Y,9Y,10Y\n2026/11/11,1.6,1.8,1.9,2.1,2.2,2.3,2.4,2.5,2.6,2.84,3.3\n")
+    assert jgb["value"] == 2.84 and jgb["asOf"] == "2026-11-11"
+    assert deskextra.macro_is_fresh({"checkedAt": "2026-11-10"}, "2026-11-12") is True
+    assert deskextra.macro_is_fresh({"checkedAt": "2026-11-01"}, "2026-11-12") is False
+    quote = deskextra.moex_level({"marketdata": {"columns": ["CURRENTVALUE", "OPENVALUE"], "data": [[2491.02, 2500.0]]}})
+    assert quote["level"] == 2491.02
+    lines = deskextra.gold_driver_lines({"gold": -1.2, "dxy": 1.4, "y10_bp": 20})
+    assert lines and "stronger dollar" in lines[0] and "not proof" in lines[0]
+    assert deskextra.vix_zone(12) == "below 15"
+    assert deskextra.vix_zone(30) == "above 25"
+    assert deskextra.rising_volume_points(5, 1) == 3
+    assert deskextra.rising_state(6, first_seen_days=10, rising_before=False, today=4, avg3=4, avg14=2, max90=5, severity_step_days=0) == "RISING"
+    assert deskextra.rising_state(4, first_seen_days=2, rising_before=False, today=2, avg3=2, avg14=2, max90=2, severity_step_days=0) == "EMERGING"
+    kept = boards.cluster_rows([{"title": "Poland shooting", "related": 7, "relatedSources": ["NBC"], "severity": "ALERT", "published": "2026-11-10"}])
+    assert kept[0]["related"] == 7 and kept[0]["relatedSources"] == ["NBC"]
+    points = [{"date": f"2026-01-{day:02d}", "price": 100 + day} for day in range(1, 11)]
+    assert deskextra.window_change(points, 5) == round(100 * (110 - 105) / 105, 2)
+    assert deskextra.implied_funds_rate(96.3) == 3.7
+    assert deskextra.curve_flag(-0.2) == "inverted"
+    assert deskextra.curve_flag(0.4) == "positive"
+    assert deskextra.wiki_confirms("Drone strike hits Ust-Luga oil terminal", "Fire at Ust-Luga after a drone attack.")
+    assert deskextra.wiki_confirms("House explosion in Clarksville", "No mention of that town.") is False
+    log, items, changes = deskextra.update_trendlog({"topics": [], "states": {}}, {"days": [
+        {"date": "2026-11-10", "threats": [{"kind": "war-iran", "title": "Iran talks", "severity": "ALERT"}]},
+        {"date": "2026-11-11", "threats": [{"kind": "war-iran", "title": "Iran talks", "severity": "ALERT"}] * 4},
+    ]}, "2026-11-12", [{"kind": "war-iran", "title": "evacuation ordered in Iran", "severity": "ALERT"}] * 6)
+    assert any(row["topic"] == "war-iran" for row in items)
+    assert changes and changes[0]["section"] == "Rising situations"
+    assert len(log["topics"]) < 5000
+
+
 if __name__ == "__main__":
     test_x_created_at_with_milliseconds()
     test_ct_conversion()
@@ -639,4 +703,5 @@ if __name__ == "__main__":
     test_storm_watch_severity_and_european_names()
     test_material_updates_clusters_and_returning_items()
     test_tema_county_age_and_local_relevance()
+    test_nov12_rules()
     print("ok")

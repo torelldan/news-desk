@@ -590,6 +590,8 @@ def impact_report(threats: list[dict], assets: dict) -> dict:
     for item in threats or []:
         if not item.get("date"):
             continue
+        if (item.get("kind") or "") == "quake" and (item.get("severity") or "").upper() == "STANDBY":
+            continue
         by_cat.setdefault(_category(item), set()).add(item["date"])
 
     correlations = []
@@ -603,7 +605,7 @@ def impact_report(threats: list[dict], assets: dict) -> dict:
                     continue
                 xs = [1.0 if day in event_days else 0.0 for day in used]
                 ys = [rets[day] for day in used]
-                if sum(xs) < 3:
+                if sum(xs) < 10:
                     coeff = None
                 else:
                     coeff = _pearson(xs, ys)
@@ -625,7 +627,7 @@ def impact_report(threats: list[dict], assets: dict) -> dict:
 
 
 def _read_corr(coeff: float | None, event_days: int, days: int, asset: str, category: str) -> dict:
-    if coeff is None or days < 5 or event_days < 3:
+    if coeff is None or days < 5 or event_days < 10:
         return {
             "call": "n/a",
             "confidence": "n/a",
@@ -1305,19 +1307,24 @@ def weekly_lookback(history: dict, today: str) -> dict:
     current = _snapshot_on_or_before(days, today) or days[-1]
     old = {row.get("id"): row for row in past.get("threats") or []}
     now = {row.get("id"): row for row in current.get("threats") or []}
+    import boards
+    old_rows = list(old.values())
+    now_rows = list(now.values())
     escalated, fizzled = [], []
-    for item_id, row in now.items():
-        before = old.get(item_id)
+    for row in now_rows:
+        before = next((prev for prev in old_rows if boards.same_story(row.get("title") or "", prev.get("title") or "") or prev.get("id") == row.get("id")), None)
         if before is None and _rank(row.get("severity") or "") >= _rank("ALERT"):
-            escalated.append({"title": row.get("title"), "note": f"New since {past.get('date')} · now {row.get('severity')}"})
+            escalated.append({"title": row.get("title"), "severity": row.get("severity"), "note": f"New since {past.get('date')} · now {row.get('severity')}"})
         elif before and _rank(row.get("severity") or "") > _rank(before.get("severity") or ""):
-            escalated.append({"title": row.get("title"), "note": f"{before.get('severity')} → {row.get('severity')} since {past.get('date')}"})
-    for item_id, row in old.items():
-        after = now.get(item_id)
+            escalated.append({"title": row.get("title"), "severity": row.get("severity"), "note": f"{before.get('severity')} → {row.get('severity')} since {past.get('date')}"})
+    for row in old_rows:
+        after = next((cur for cur in now_rows if boards.same_story(row.get("title") or "", cur.get("title") or "") or cur.get("id") == row.get("id")), None)
         if after is None and _rank(row.get("severity") or "") >= _rank("ALERT"):
-            fizzled.append({"title": row.get("title"), "note": f"On the board {past.get('date')} at {row.get('severity')}, absent now."})
+            if any(boards.same_story(row.get("title") or "", cur.get("title") or "") for cur in now_rows):
+                continue
+            fizzled.append({"title": row.get("title"), "severity": row.get("severity"), "note": f"On the board {past.get('date')} at {row.get('severity')}, absent now."})
         elif after and _rank(after.get("severity") or "") < _rank(row.get("severity") or ""):
-            fizzled.append({"title": row.get("title"), "note": f"{row.get('severity')} → {after.get('severity')} since {past.get('date')}"})
+            fizzled.append({"title": row.get("title"), "severity": after.get("severity"), "note": f"{row.get('severity')} → {after.get('severity')} since {past.get('date')}"})
     calls = []
     old_outlook = {row.get("id"): row for row in past.get("outlooks") or []}
     for item_id, row in old_outlook.items():
@@ -1345,6 +1352,7 @@ def weekly_lookback(history: dict, today: str) -> dict:
     return {
         "since": past.get("date") or "",
         "note": f"Compared with the stored board on {past.get('date') or 'the oldest day'}.",
+        "newSince": _cluster_notes(escalated)[:12],
         "escalated": _cluster_notes(escalated)[:12],
         "fizzled": _cluster_notes(fizzled)[:12],
         "calls": _cluster_notes(calls)[:12],

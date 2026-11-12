@@ -226,3 +226,29 @@ python3 build.py              # writes index.html
 ```
 
 Open `index.html` in a browser. Edit the page in `template.html`, never in `index.html` (it is overwritten on every build).
+
+### 4.6 Nov 12 paths
+
+```mermaid
+flowchart LR
+  TN["NWS area=TN alert"] --> SCOPE{"UGC/SAME is Williamson or adjacent?"}
+  SCOPE -->|yes| AL["Keep the alert severity"]
+  SCOPE -->|no| SB["STANDBY · elsewhere in TN"]
+  NEWS["Strike headline"] --> ACC{"Domestic accident?"}
+  ACC -->|yes| DROP["Drop it"]
+  ACC -->|no| SEV["STANDBY, ALERT for a chokepoint or energy cluster, ACTION only for the US"]
+```
+
+The economic-watch header uses the venue with the largest move, not the first venue. What changed lists a row as new only inside 36 hours, and lists a row as resolved only when that whole story cluster is gone. Look-back's first list is labeled "New since".
+
+```mermaid
+flowchart TD
+  G["Google News strike query"] --> F{"Domestic accident?"}
+  F -->|yes| X["Drop"]
+  F -->|no| W["Wikipedia Current events"]
+  W -->|place named| C["Tag confirmed"]
+  W -->|not named| U["Keep, unconfirmed"]
+  H["history.json plus today's board"] --> L["trendlog.json"]
+  L --> S{"Score and state"}
+  S -->|changed| CH["What changed"]
+```

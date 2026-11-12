@@ -1,0 +1,91 @@
+{
+  "items": [
+    {
+      "date": "2026-11-11",
+      "country": "",
+      "title": "Drone strike on key northern port of Ust-Luga sparks major fire as Russian military bloggers report three helicopter crews killed - https://theins.press/en",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5qNTFtMy1rV2ZPVElGbENaVW9MVzBzT2lFU1k1VnV4Zy1Wc0tETExIT0JwQkE2cDZLSGpuOVJqM0JjdkRRLWtudVZMTQ?oc=5",
+      "target_type": "transport",
+      "means": "drone",
+      "severity": "ALERT",
+      "source": "https://theins.press/en",
+      "published": "2026-11-11T02:00:00-06:00",
+      "related": 2,
+      "relatedSources": [
+        "The SOFX Report",
+        "\u041c\u0456\u043b\u0456\u0442\u0430\u0440\u043d\u0438\u0439"
+      ]
+    },
+    {
+      "date": "2026-11-11",
+      "country": "",
+      "title": "Drone Strike in Egypt Sparks Security Concerns About Suez Oil Exports - EnergyNow.com",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxORXl4NE9CYThNR3hEN296SGFXVS0xRmItUjFHSGV0OGEtdG9PMXlMQVpzZGJYVzFUX05HWFZva2pSakNiUWdSbzVFUzJ0Qjc0U0I3THVBbGVrU1Z1TV91d2FVYXp6Z25KYzRmbTJtdTlyNUl3TU82TGRZdFhuWk11UXJLUzRLYjNzTGY0Mkl4ZXhndkdxVTJ5bjNWdUF0VVplZ1E?oc=5",
+      "target_type": "energy",
+      "means": "drone",
+      "severity": "STANDBY",
+      "source": "EnergyNow.com",
+      "published": "2026-11-11T08:48:36-06:00",
+      "related": 0,
+      "relatedSources": [],
+      "confirmed": true,
+      "tags": [
+        "confirmed"
+      ]
+    },
+    {
+      "date": "2026-11-11",
+      "country": "Ukraine",
+      "title": "Ukraine drone strike kills two in Russia\u2019s Smolensk as Leningrad region faces massive attack - TRT World",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBVMUViZVh0d2JUWE1VdjNFeklSdk5MU2thNUNXRVF1djZDZUs0WGY0MkNMeHEwMDZqMUsta1JSTlp0a2FZNnVoT1Y0TC1CSkpOSUxxYkRkNzI?oc=5",
+      "target_type": "military",
+      "means": "drone",
+      "severity": "STANDBY",
+      "source": "TRT World",
+      "published": "2026-11-11T04:29:45-06:00",
+      "related": 0,
+      "relatedSources": [],
+      "confirmed": true,
+      "tags": [
+        "confirmed"
+      ]
+    },
+    {
+      "date": "2026-11-10",
+      "country": "Russia",
+      "title": "EXCLUSIVE: Recent Ukrainian attacks have reduced Russia's oil processing capacity by 30%, sources say - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPTXJUZnFVTVJmR25VaW9YQkhwMTJEM0FzTWVHLXRZOFpXV09zN18zd1RIOThGTHdiVUVmbVFnbnJqRUhfQzdSQzBDTHFLUUxtSEI3YkZyNFQ0RzdlQ3oxMVRHb1d2YUNBa3hIbWQ3VWxmYTBNaWpiVmdjOXB4ZDlzMFhQQk10a1FZWkhWem81TGNaS0JFc25FNUV6eFVhd2RIYldEQTlCU051VUFlalpnSlBoYzdOVFFFNVN4cjNjRjVuX05jNGc?oc=5",
+      "target_type": "energy",
+      "means": "",
+      "severity": "STANDBY",
+      "source": "Reuters",
+      "published": "2026-11-10T06:19:36-06:00",
+      "related": 1,
+      "relatedSources": [
+        "Radio Free Europe/Radio Liberty"
+      ]
+    },
+    {
+      "date": "2026-11-06",
+      "country": "Russia",
+      "title": "Seven Strikes in One Year: Russia\u2019s Afipsky Oil Refinery Faces Another Ukrainian Drone Attack - UNITED24 Media",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPUndQUXhXZ1VZeVJ0QVB3ZmhYekEyeUNVU3JEdlBNaDNqT0E2bWotN0txMno0VFJEUEhsY29ZSEtLUUJKZkVaZ2xlaGc4dEdyRmZsay1MQmM2b3JPdFo3TmtYeDQ3bExrVGk4UFlhQ2RzVGJ4ekc2MmpBVzRNMXVpeXl2cHczSE1USTRxci0wYzJMaHJUdnNQcE9LUXFHVFgxbUlSMHhlUmZDbzhCSXRHNUppS2Y4SGREMzhHakxHbWRQWnlDT01HN2VkLVRJM0psYkktMg?oc=5",
+      "target_type": "energy",
+      "means": "drone",
+      "severity": "STANDBY",
+      "source": "UNITED24 Media",
+      "published": "2026-11-06T03:55:40-06:00",
+      "related": 0,
+      "relatedSources": [],
+      "confirmed": true,
+      "tags": [
+        "confirmed"
+      ]
+    }
+  ],
+  "counts": {
+    "total": 5,
+    "energy": 3
+  },
+  "gaps": []
+}

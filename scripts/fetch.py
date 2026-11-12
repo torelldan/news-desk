@@ -1036,6 +1036,18 @@ def main() -> int:
         errors.append(f"Narrative radar: {err}")
         radar = {"items": [], "note": f"n/a — {err}"}
     impact = citizen.impact_report(threat_items, boards_out.get("assets") or {})
+    try:
+        import deskextra
+        energy = 0
+        drivers = deskextra.collect_drivers(
+            boards._yahoo,
+            lambda url: boards._get(url, timeout=40, headers={"User-Agent": boards.NWS_UA, "Accept": "text/csv"}).decode("utf-8", "replace"),
+            energy,
+        )
+        impact["drivers"] = drivers
+        impact["vixZone"] = deskextra.vix_zone((((drivers.get("rows") or []) and next((row.get("level") for row in drivers["rows"] if row.get("name") == "VIX"), None)) or None))
+    except Exception as err:
+        errors.append(f"Drivers: {err}")
     brief = citizen.morning_brief(threat_items, trends, triggers, boards_out.get("assets") or {}, local, boards_out.get("markets") or {})
     history = citizen.record_history(prev_history, today, threat_items, trends, triggers, d.ct_label(now, True))
     lookback = citizen.weekly_lookback(history, today)
@@ -1076,6 +1088,8 @@ def main() -> int:
                     fresh.append(_brief_row(item, section, f"Update to that story. Was: {earlier.get('title') or ''}"))
                 elif boards.old_standby_return(item, now.date().isoformat()):
                     pass
+                elif not __import__("deskextra").published_within_hours(item, now, 36):
+                    pass
                 else:
                     fresh.append(_brief_row(item, section))
             elif boards.story_update(item.get("title") or "", before.get("title") or "", item.get("severity") or "", before.get("severity") or "") and citizen._rank(item.get("severity") or "") <= citizen._rank(before.get("severity") or ""):
@@ -1091,7 +1105,8 @@ def main() -> int:
                 continue
             sev = before if isinstance(before, str) else (before.get("severity") or "")
             title = item_id if isinstance(before, str) else (before.get("title") or item_id)
-            if any(boards.same_story(title, (cur.get("title") or "")) for cur in current.values()):
+            from deskextra import rows_same_cluster
+            if any(rows_same_cluster({"title": title}, cur, boards.same_story) or boards.same_story(title, cur.get("title") or "") for cur in current.values()):
                 continue
             if citizen._rank(sev) >= citizen._rank("ALERT"):
                 gone.append(_brief_row({"id": item_id, "title": title, "severity": sev}, section, "No longer on the board."))
@@ -1171,6 +1186,22 @@ def main() -> int:
     save_json(DATA / "impact.json", impact)
     save_json(DATA / "history.json", history)
     save_json(DATA / "lookback.json", lookback)
+    try:
+        import deskextra
+        prev_macro = load_json(DATA / "macro.json", {})
+        macro = deskextra.refresh_macro(prev_macro, now.date().isoformat(), lambda url: boards._get(url, timeout=30, headers={"User-Agent": boards.NWS_UA, "Accept": "text/csv"}).decode("utf-8", "replace"))
+    except Exception as err:
+        errors.append(f"Macro: {err}")
+        macro = load_json(DATA / "macro.json", {"regions": {}, "gaps": [str(err)]})
+    save_json(DATA / "macro.json", macro)
+    try:
+        import deskextra
+        prev_log = load_json(DATA / "trendlog.json", {})
+        log, rising_items, rising_changes = deskextra.update_trendlog(prev_log, history, now.date().isoformat(), threat_items)
+        save_json(DATA / "trendlog.json", {"topics": log["topics"], "clusters": log["clusters"], "states": log["states"], "checkedAt": log["checkedAt"]})
+        save_json(DATA / "rising.json", {"items": rising_items, "changes": rising_changes, "gaps": []})
+    except Exception as err:
+        errors.append(f"Rising situations: {err}")
     print(
         f"saved {len(episodes)} episodes, {len(signals)} signals, "
         f"{len(change_items)} changes, baseline={baseline}, x={meta['x']['note'] or 'online'}, "

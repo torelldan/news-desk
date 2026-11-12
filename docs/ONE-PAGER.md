@@ -8,7 +8,7 @@ News is loud and repetitive. The desk turns dozens of official feeds and headlin
 
 - **Is anything dangerous coming here?** Tornado and severe-storm watches, hurricane tracks toward Tennessee, local weather alerts, TEMA notices that name Williamson County, power outages, road closures.
 - **What's happening in the world that I should keep an eye on?** Current wars, U.S. government, major quakes, outbreaks, asteroids, each with a plain verdict.
-- **What changed since yesterday?** Only real changes, not the same story re-run by ten outlets.
+- **What changed since yesterday?** Only real changes: a new claim, a higher severity, or a story that actually left. The same story from another outlet is not "new".
 - **Context.** Markets, gold and silver, crypto, science headlines, followed podcasts and accounts.
 
 ## How it decides what matters

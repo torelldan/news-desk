@@ -369,6 +369,16 @@ All stored times are America/Chicago (`desklib.CT`). Feed dates (UTC) are conver
 
 **Tests are run by the developer before a change is proposed, not by the refresh workflow.** The workflow does not run tests.
 
+## 9. Nov 12 additions
+
+- **Japan and India** are their own economic-watch regions. Asia keeps the Hang Seng. Tokyo's afternoon session ends at 15:30 (JPX, "12:30 pm to 3:30 pm"). IMOEX is read from the MOEX ISS API; Yahoo's `IMOEX.ME` returns 404.
+- **Macro strip** in `data/macro.json`: BIS policy rates for US, Japan, India, euro area, China, Brazil, Russia, Canada, and Mexico; Japan 10-year from the Ministry of Finance CSV (2.84% on Nov 11, 2026); India 10-year from FRED `INDIRLTLT01STM` without a browser user-agent; India CPI from OECD SDMX; Japan CPI year-over-year from the DBnomics STATJP CPI index. The file is reused for 7 days.
+- **Impact.** A market-read count needs at least 10 event days and ignores STANDBY quakes. Gold and silver driver lines say "association, not proof".
+- **Strikes** (`data/strikes.json`) come from Google News and are cross-checked against Wikipedia's Current events page. A match is tagged confirmed. A house explosion or other domestic accident is dropped. News alone is never CRITICAL. A named chokepoint (Hormuz, Red Sea, Ust-Luga, Novorossiysk, Primorsk) is ALERT. GDELT stays off.
+- **Drivers** on the impact map: 1-week, 1-month, 3-month, and 1-year changes for gold, silver, DXY, the 10-year, the real 10-year (FRED DFII10), the S&P, VIX, copper, and the gold/silver ratio; 30- and 90-day return correlations; ZQF27 and ZQH27 implied fed-funds rates beside FRED DFF; T10Y2Y and T10Y3M with an inversion flag; copper/gold beside the 10-year; GLD, SLV, and GOLDBEES.NS volume; Brent and WTI with the energy-strike count.
+- **Rising situations** persist in `data/trendlog.json` (90 days of topic rows, 14 days of cluster rows, about a 300 KB cap, topics with no activity for 30 days dropped). The existing refresh writes it, bootstrapping from `history.json`. A state change is a What changed row.
+- **Rising situations** (`data/rising.json`) score topics already on the board. EMERGING, RISING, PEAKING, and FADING are shown; a steady topic stays hidden. No new schedule.
+
 ---
 
 ## 8. Known limitations
@@ -384,16 +394,16 @@ All stored times are America/Chicago (`desklib.CT`). Feed dates (UTC) are conver
    These four are shown as "Source down", never as an all-clear.
 4. **TEMA is flaky.** tn.gov often resets or 403s the GitHub runner. The fetch tries two URLs three times, then falls back to the Williamson County public-safety RSS (which is often empty). TEMA is a real, working source when it answers. Since PR #17, a statewide report that doesn't name Williamson stays STANDBY and drops off after ~72 hours, so Local is often just the NWS line. The county comes from the title's "<Name> County" text only; a report naming several counties is tagged with the first.
 5. **Tests are not part of the refresh.** A broken rule would only be caught when someone runs the tests.
-6. **Hard-coded story names and claim words** (§4.1, §4.3) need hand upkeep as the news moves on, and must be changed in both `boards.py` and `template.html`. The claim-word test is a heuristic: a real update phrased without one of those words won't show as an update.
+6. **Hard-coded story names and claim words** (§4.1, §4.3) need hand upkeep as the news moves on, and must be changed in both `boards.py` and `template.html`. When neither headline has a claim word, token overlap under 0.35 is treated as an update (the Kushner/Putin lead shares about a third of its words with the Abu Dhabi talks line, so a 0.2 cutoff would still hide it).
 7. **Year-bound content.** NYSE holidays are hard-coded for 2026. Threat rows and the browser's `onBoard` filter keep only items dated in the current year (the browser literally checks `"2026"`). The blackout card expires after Nov 18, 2026. Some of this will need a touch in January 2027.
-8. **README drift.** The root `README.md` on `main` still says the job runs once daily at 13:15 UTC and that TEMA "stays n/a". The workflow and `citizen.py` are newer; trust them. A corrected README has been drafted alongside these docs but is not committed.
+8. **Statewide NWS alerts.** An alert for `area=TN` is ALERT only when its SAME/UGC codes include Williamson (`047187` / `TNC187`) or an adjacent county. The rest of Tennessee is STANDBY, "elsewhere in TN". The point alert for 35.802,-86.907 is unchanged.
 9. **X depends on paid API credits.** HTTP 402 means credits ran out; the page then shows X feed offline.
 10. **Market OPEN/CLOSED** knows NYSE holidays only; other venues can show OPEN on a local holiday.
 11. **Headlines are Google News titles.** Truncation such as a title ending "from pos" is in the source title; the desk does not cut titles.
 
 ---
 
-## 9. Glossary
+## 10. Glossary
 
 | Term | Meaning |
 |---|---|

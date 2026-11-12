@@ -1402,5 +1402,1245 @@
     }
   ],
   "events": [],
-  "note": "-1d is the move into the day before the event. +1d and +3d are moves from that same close to the stored close on or after those days. Correlation is Pearson between a category event-day (1/0) and that asset's daily percent change. Fewer than 5 paired days, or fewer than 3 event days, is n/a."
+  "note": "-1d is the move into the day before the event. +1d and +3d are moves from that same close to the stored close on or after those days. Correlation is Pearson between a category event-day (1/0) and that asset's daily percent change. Fewer than 5 paired days, or fewer than 3 event days, is n/a.",
+  "explainer": [
+    "Fed-funds futures implied rate 29.5 bp. Association, not proof: more rate-hike bets.",
+    "Gold/silver ratio 4.55 and copper -6.35%. Association, not proof: industrial worry is hitting silver harder."
+  ],
+  "vixZone": "15 to 25",
+  "drivers": {
+    "rows": [
+      {
+        "name": "Gold",
+        "level": 3879.7,
+        "changes": {
+          "1W": -5.68,
+          "1M": -5.56,
+          "3M": -12.57,
+          "1Y": -5.75
+        },
+        "spark": [
+          {
+            "price": 4162.2998
+          },
+          {
+            "price": 4156.7998
+          },
+          {
+            "price": 4187.1001
+          },
+          {
+            "price": 4140.7002
+          },
+          {
+            "price": 4157.0
+          },
+          {
+            "price": 4216.2998
+          },
+          {
+            "price": 4190.6001
+          },
+          {
+            "price": 4177.2998
+          },
+          {
+            "price": 4107.8999
+          },
+          {
+            "price": 4170.1001
+          },
+          {
+            "price": 4181.1001
+          },
+          {
+            "price": 4160.1001
+          },
+          {
+            "price": 4142.6001
+          },
+          {
+            "price": 4150.0
+          },
+          {
+            "price": 4060.3999
+          },
+          {
+            "price": 4007.8999
+          },
+          {
+            "price": 4038.3999
+          },
+          {
+            "price": 4074.6001
+          },
+          {
+            "price": 4051.6001
+          },
+          {
+            "price": 4031.3999
+          },
+          {
+            "price": 3898.8999
+          },
+          {
+            "price": 3969.6001
+          },
+          {
+            "price": 3940.3999
+          },
+          {
+            "price": 4073.0
+          },
+          {
+            "price": 4113.5
+          },
+          {
+            "price": 4074.8999
+          },
+          {
+            "price": 4114.5
+          },
+          {
+            "price": 4030.2
+          },
+          {
+            "price": 4000.5
+          },
+          {
+            "price": 3879.7
+          }
+        ],
+        "unit": "%"
+      },
+      {
+        "name": "Silver",
+        "level": 50.18,
+        "changes": {
+          "1W": -3.93,
+          "1M": -9.67,
+          "3M": -22.79,
+          "1Y": -0.87
+        },
+        "spark": [
+          {
+            "price": 59.977
+          },
+          {
+            "price": 60.869
+          },
+          {
+            "price": 61.168
+          },
+          {
+            "price": 59.899
+          },
+          {
+            "price": 59.064
+          },
+          {
+            "price": 60.67
+          },
+          {
+            "price": 60.141
+          },
+          {
+            "price": 59.161
+          },
+          {
+            "price": 55.55
+          },
+          {
+            "price": 56.837
+          },
+          {
+            "price": 56.995
+          },
+          {
+            "price": 56.974
+          },
+          {
+            "price": 57.706
+          },
+          {
+            "price": 57.422
+          },
+          {
+            "price": 54.764
+          },
+          {
+            "price": 53.711
+          },
+          {
+            "price": 54.108
+          },
+          {
+            "price": 54.293
+          },
+          {
+            "price": 53.457
+          },
+          {
+            "price": 52.191
+          },
+          {
+            "price": 49.097
+          },
+          {
+            "price": 50.72
+          },
+          {
+            "price": 49.587
+          },
+          {
+            "price": 52.12
+          },
+          {
+            "price": 52.233
+          },
+          {
+            "price": 51.803
+          },
+          {
+            "price": 52.564
+          },
+          {
+            "price": 51.101
+          },
+          {
+            "price": 51.881
+          },
+          {
+            "price": 50.18
+          }
+        ],
+        "unit": "%"
+      },
+      {
+        "name": "DXY",
+        "level": 103.169,
+        "changes": {
+          "1W": 1.59,
+          "1M": 0.6,
+          "3M": 3.51,
+          "1Y": 3.73
+        },
+        "spark": [
+          {
+            "price": 101.93
+          },
+          {
+            "price": 102.17
+          },
+          {
+            "price": 101.83
+          },
+          {
+            "price": 102.24
+          },
+          {
+            "price": 102.14
+          },
+          {
+            "price": 102.21
+          },
+          {
+            "price": 102.58
+          },
+          {
+            "price": 102.18
+          },
+          {
+            "price": 102.55
+          },
+          {
+            "price": 102.0
+          },
+          {
+            "price": 101.84
+          },
+          {
+            "price": 101.98
+          },
+          {
+            "price": 101.73
+          },
+          {
+            "price": 101.78
+          },
+          {
+            "price": 101.61
+          },
+          {
+            "price": 101.81
+          },
+          {
+            "price": 101.96
+          },
+          {
+            "price": 102.32
+          },
+          {
+            "price": 102.19
+          },
+          {
+            "price": 102.04
+          },
+          {
+            "price": 101.88
+          },
+          {
+            "price": 101.75
+          },
+          {
+            "price": 101.87
+          },
+          {
+            "price": 101.51
+          },
+          {
+            "price": 101.55
+          },
+          {
+            "price": 102.3
+          },
+          {
+            "price": 101.65
+          },
+          {
+            "price": 102.23
+          },
+          {
+            "price": 102.91
+          },
+          {
+            "price": 103.169
+          }
+        ],
+        "unit": "%"
+      },
+      {
+        "name": "10Y",
+        "level": 5.068,
+        "changes": {
+          "1W": 23.1,
+          "1M": -12.2,
+          "3M": 37.2,
+          "1Y": 94.8
+        },
+        "spark": [
+          {
+            "price": 5.277
+          },
+          {
+            "price": 5.311
+          },
+          {
+            "price": 5.269
+          },
+          {
+            "price": 5.277
+          },
+          {
+            "price": 5.231
+          },
+          {
+            "price": 5.244
+          },
+          {
+            "price": 5.24
+          },
+          {
+            "price": 5.217
+          },
+          {
+            "price": 5.19
+          },
+          {
+            "price": 5.089
+          },
+          {
+            "price": 5.098
+          },
+          {
+            "price": 5.136
+          },
+          {
+            "price": 5.117
+          },
+          {
+            "price": 5.146
+          },
+          {
+            "price": 4.953
+          },
+          {
+            "price": 4.988
+          },
+          {
+            "price": 4.986
+          },
+          {
+            "price": 4.993
+          },
+          {
+            "price": 5.045
+          },
+          {
+            "price": 4.989
+          },
+          {
+            "price": 4.929
+          },
+          {
+            "price": 4.894
+          },
+          {
+            "price": 4.952
+          },
+          {
+            "price": 4.894
+          },
+          {
+            "price": 4.837
+          },
+          {
+            "price": 4.859
+          },
+          {
+            "price": 4.864
+          },
+          {
+            "price": 4.983
+          },
+          {
+            "price": 4.998
+          },
+          {
+            "price": 5.068
+          }
+        ],
+        "unit": "bp"
+      },
+      {
+        "name": "Real 10Y",
+        "level": 2.66,
+        "changes": {
+          "1W": 4.0,
+          "1M": -21.0,
+          "3M": 23.0,
+          "1Y": 79.0
+        },
+        "spark": [
+          {
+            "price": 2.9
+          },
+          {
+            "price": 2.91
+          },
+          {
+            "price": 2.93
+          },
+          {
+            "price": 2.88
+          },
+          {
+            "price": 2.92
+          },
+          {
+            "price": 2.95
+          },
+          {
+            "price": 2.91
+          },
+          {
+            "price": 2.92
+          },
+          {
+            "price": 2.87
+          },
+          {
+            "price": 2.91
+          },
+          {
+            "price": 2.88
+          },
+          {
+            "price": 2.84
+          },
+          {
+            "price": 2.78
+          },
+          {
+            "price": 2.74
+          },
+          {
+            "price": 2.8
+          },
+          {
+            "price": 2.77
+          },
+          {
+            "price": 2.76
+          },
+          {
+            "price": 2.64
+          },
+          {
+            "price": 2.66
+          },
+          {
+            "price": 2.66
+          },
+          {
+            "price": 2.64
+          },
+          {
+            "price": 2.67
+          },
+          {
+            "price": 2.63
+          },
+          {
+            "price": 2.6
+          },
+          {
+            "price": 2.62
+          },
+          {
+            "price": 2.65
+          },
+          {
+            "price": 2.64
+          },
+          {
+            "price": 2.6
+          },
+          {
+            "price": 2.63
+          },
+          {
+            "price": 2.66
+          }
+        ],
+        "unit": "bp"
+      },
+      {
+        "name": "S&P",
+        "level": 7630.54,
+        "changes": {
+          "1W": 3.76,
+          "1M": -1.15,
+          "3M": -1.99,
+          "1Y": 11.45
+        },
+        "spark": [
+          {
+            "price": 7722.7202
+          },
+          {
+            "price": 7773.9502
+          },
+          {
+            "price": 7818.9302
+          },
+          {
+            "price": 7801.77
+          },
+          {
+            "price": 7765.3599
+          },
+          {
+            "price": 7811.54
+          },
+          {
+            "price": 7807.2402
+          },
+          {
+            "price": 7805.4502
+          },
+          {
+            "price": 7718.9399
+          },
+          {
+            "price": 7744.0601
+          },
+          {
+            "price": 7659.4399
+          },
+          {
+            "price": 7690.73
+          },
+          {
+            "price": 7712.5698
+          },
+          {
+            "price": 7757.1699
+          },
+          {
+            "price": 7663.4302
+          },
+          {
+            "price": 7623.6802
+          },
+          {
+            "price": 7676.77
+          },
+          {
+            "price": 7722.6001
+          },
+          {
+            "price": 7743.98
+          },
+          {
+            "price": 7720.3901
+          },
+          {
+            "price": 7580.0698
+          },
+          {
+            "price": 7541.3999
+          },
+          {
+            "price": 7568.9199
+          },
+          {
+            "price": 7688.6201
+          },
+          {
+            "price": 7353.73
+          },
+          {
+            "price": 7376.8599
+          },
+          {
+            "price": 7549.9399
+          },
+          {
+            "price": 7520.9302
+          },
+          {
+            "price": 7619.3799
+          },
+          {
+            "price": 7630.54
+          }
+        ],
+        "unit": "%"
+      },
+      {
+        "name": "VIX",
+        "level": 17.48,
+        "changes": {
+          "1W": -37.97,
+          "1M": 3.62,
+          "3M": 15.08,
+          "1Y": -12.6
+        },
+        "spark": [
+          {
+            "price": 15.31
+          },
+          {
+            "price": 15.52
+          },
+          {
+            "price": 15.01
+          },
+          {
+            "price": 15.08
+          },
+          {
+            "price": 15.41
+          },
+          {
+            "price": 14.84
+          },
+          {
+            "price": 15.21
+          },
+          {
+            "price": 15.27
+          },
+          {
+            "price": 16.87
+          },
+          {
+            "price": 16.46
+          },
+          {
+            "price": 19.99
+          },
+          {
+            "price": 18.44
+          },
+          {
+            "price": 17.31
+          },
+          {
+            "price": 16.68
+          },
+          {
+            "price": 19.03
+          },
+          {
+            "price": 19.45
+          },
+          {
+            "price": 18.39
+          },
+          {
+            "price": 17.52
+          },
+          {
+            "price": 16.91
+          },
+          {
+            "price": 17.2
+          },
+          {
+            "price": 19.42
+          },
+          {
+            "price": 21.15
+          },
+          {
+            "price": 20.83
+          },
+          {
+            "price": 16.61
+          },
+          {
+            "price": 28.18
+          },
+          {
+            "price": 25.64
+          },
+          {
+            "price": 19.92
+          },
+          {
+            "price": 19.46
+          },
+          {
+            "price": 17.49
+          },
+          {
+            "price": 17.48
+          }
+        ],
+        "unit": "%"
+      },
+      {
+        "name": "Copper",
+        "level": 6.1915,
+        "changes": {
+          "1W": -0.92,
+          "1M": -6.35,
+          "3M": -6.18,
+          "1Y": 22.64
+        },
+        "spark": [
+          {
+            "price": 6.492
+          },
+          {
+            "price": 6.5855
+          },
+          {
+            "price": 6.5945
+          },
+          {
+            "price": 6.5965
+          },
+          {
+            "price": 6.519
+          },
+          {
+            "price": 6.6425
+          },
+          {
+            "price": 6.6985
+          },
+          {
+            "price": 6.678
+          },
+          {
+            "price": 6.6115
+          },
+          {
+            "price": 6.5115
+          },
+          {
+            "price": 6.531
+          },
+          {
+            "price": 6.538
+          },
+          {
+            "price": 6.5665
+          },
+          {
+            "price": 6.543
+          },
+          {
+            "price": 6.3625
+          },
+          {
+            "price": 6.476
+          },
+          {
+            "price": 6.508
+          },
+          {
+            "price": 6.622
+          },
+          {
+            "price": 6.6415
+          },
+          {
+            "price": 6.581
+          },
+          {
+            "price": 6.4585
+          },
+          {
+            "price": 6.5435
+          },
+          {
+            "price": 6.3785
+          },
+          {
+            "price": 6.403
+          },
+          {
+            "price": 6.249
+          },
+          {
+            "price": 6.218
+          },
+          {
+            "price": 6.3285
+          },
+          {
+            "price": 6.2195
+          },
+          {
+            "price": 6.2745
+          },
+          {
+            "price": 6.1915
+          }
+        ],
+        "unit": "%"
+      },
+      {
+        "name": "Gold/silver",
+        "level": 77.3157,
+        "changes": {
+          "1W": -1.82,
+          "1M": 4.55,
+          "3M": 13.24,
+          "1Y": -4.93
+        },
+        "spark": [
+          {
+            "price": 69.3983
+          },
+          {
+            "price": 68.2909
+          },
+          {
+            "price": 68.4525
+          },
+          {
+            "price": 69.128
+          },
+          {
+            "price": 70.3813
+          },
+          {
+            "price": 69.4956
+          },
+          {
+            "price": 69.6796
+          },
+          {
+            "price": 70.609
+          },
+          {
+            "price": 73.9496
+          },
+          {
+            "price": 73.3695
+          },
+          {
+            "price": 73.3591
+          },
+          {
+            "price": 73.0175
+          },
+          {
+            "price": 71.788
+          },
+          {
+            "price": 72.272
+          },
+          {
+            "price": 74.1436
+          },
+          {
+            "price": 74.6197
+          },
+          {
+            "price": 74.6359
+          },
+          {
+            "price": 75.0484
+          },
+          {
+            "price": 75.7918
+          },
+          {
+            "price": 77.2432
+          },
+          {
+            "price": 79.4122
+          },
+          {
+            "price": 78.265
+          },
+          {
+            "price": 79.4644
+          },
+          {
+            "price": 78.1466
+          },
+          {
+            "price": 78.7529
+          },
+          {
+            "price": 78.6615
+          },
+          {
+            "price": 78.276
+          },
+          {
+            "price": 78.8673
+          },
+          {
+            "price": 77.1092
+          },
+          {
+            "price": 77.3157
+          }
+        ],
+        "unit": "%"
+      }
+    ],
+    "correlations": [
+      {
+        "driver": "DXY",
+        "d30": -0.41,
+        "d90": -0.47,
+        "metal": "Gold"
+      },
+      {
+        "driver": "10Y",
+        "d30": -0.21,
+        "d90": -0.25,
+        "metal": "Gold"
+      },
+      {
+        "driver": "Real 10Y",
+        "d30": 0.11,
+        "d90": -0.19,
+        "metal": "Gold"
+      },
+      {
+        "driver": "S&P",
+        "d30": 0.28,
+        "d90": 0.34,
+        "metal": "Gold"
+      },
+      {
+        "driver": "VIX",
+        "d30": -0.1,
+        "d90": -0.26,
+        "metal": "Gold"
+      },
+      {
+        "driver": "Copper",
+        "d30": 0.42,
+        "d90": 0.44,
+        "metal": "Gold"
+      },
+      {
+        "driver": "DXY",
+        "d30": -0.25,
+        "d90": -0.34,
+        "metal": "Silver"
+      },
+      {
+        "driver": "10Y",
+        "d30": -0.0,
+        "d90": -0.17,
+        "metal": "Silver"
+      },
+      {
+        "driver": "Real 10Y",
+        "d30": 0.31,
+        "d90": -0.12,
+        "metal": "Silver"
+      },
+      {
+        "driver": "S&P",
+        "d30": 0.45,
+        "d90": 0.43,
+        "metal": "Silver"
+      },
+      {
+        "driver": "VIX",
+        "d30": -0.25,
+        "d90": -0.3,
+        "metal": "Silver"
+      },
+      {
+        "driver": "Copper",
+        "d30": 0.57,
+        "d90": 0.59,
+        "metal": "Silver"
+      }
+    ],
+    "funds": {
+      "dff": 3.88,
+      "zqf": 4.175,
+      "zqh": 4.41
+    },
+    "curve": [
+      {
+        "name": "T10Y2Y",
+        "value": 0.25,
+        "flag": "positive",
+        "inverted": false,
+        "spark": [
+          {
+            "price": 0.37
+          },
+          {
+            "price": 0.41
+          },
+          {
+            "price": 0.46
+          },
+          {
+            "price": 0.45
+          },
+          {
+            "price": 0.47
+          },
+          {
+            "price": 0.48
+          },
+          {
+            "price": 0.51
+          },
+          {
+            "price": 0.47
+          },
+          {
+            "price": 0.44
+          },
+          {
+            "price": 0.42
+          },
+          {
+            "price": 0.37
+          },
+          {
+            "price": 0.33
+          },
+          {
+            "price": 0.35
+          },
+          {
+            "price": 0.38
+          },
+          {
+            "price": 0.33
+          },
+          {
+            "price": 0.32
+          },
+          {
+            "price": 0.31
+          },
+          {
+            "price": 0.31
+          },
+          {
+            "price": 0.32
+          },
+          {
+            "price": 0.29
+          },
+          {
+            "price": 0.38
+          },
+          {
+            "price": 0.37
+          },
+          {
+            "price": 0.38
+          },
+          {
+            "price": 0.32
+          },
+          {
+            "price": 0.34
+          },
+          {
+            "price": 0.32
+          },
+          {
+            "price": 0.38
+          },
+          {
+            "price": 0.35
+          },
+          {
+            "price": 0.32
+          },
+          {
+            "price": 0.25
+          }
+        ]
+      },
+      {
+        "name": "T10Y3M",
+        "value": 0.68,
+        "flag": "positive",
+        "inverted": false,
+        "spark": [
+          {
+            "price": 1.01
+          },
+          {
+            "price": 1.09
+          },
+          {
+            "price": 1.07
+          },
+          {
+            "price": 1.09
+          },
+          {
+            "price": 1.09
+          },
+          {
+            "price": 1.06
+          },
+          {
+            "price": 1.06
+          },
+          {
+            "price": 0.99
+          },
+          {
+            "price": 0.99
+          },
+          {
+            "price": 0.95
+          },
+          {
+            "price": 0.91
+          },
+          {
+            "price": 0.82
+          },
+          {
+            "price": 0.83
+          },
+          {
+            "price": 0.88
+          },
+          {
+            "price": 0.86
+          },
+          {
+            "price": 0.88
+          },
+          {
+            "price": 0.74
+          },
+          {
+            "price": 0.78
+          },
+          {
+            "price": 0.78
+          },
+          {
+            "price": 0.77
+          },
+          {
+            "price": 0.87
+          },
+          {
+            "price": 0.8
+          },
+          {
+            "price": 0.78
+          },
+          {
+            "price": 0.7
+          },
+          {
+            "price": 0.74
+          },
+          {
+            "price": 0.69
+          },
+          {
+            "price": 0.67
+          },
+          {
+            "price": 0.67
+          },
+          {
+            "price": 0.64
+          },
+          {
+            "price": 0.68
+          }
+        ]
+      }
+    ],
+    "copperGold": {
+      "ratio": 0.001596,
+      "yield10": 5.068
+    },
+    "volumes": [
+      {
+        "name": "GLD",
+        "price": 354.375,
+        "volume": 7025120
+      },
+      {
+        "name": "SLV",
+        "price": 45.1043,
+        "volume": 9573242
+      },
+      {
+        "name": "GOLDBEES",
+        "price": 112.71,
+        "volume": 53972037
+      }
+    ],
+    "oil": {
+      "brent": 93.79,
+      "wti": 86.85,
+      "energyStrikes": 3
+    },
+    "gaps": []
+  }
 }
