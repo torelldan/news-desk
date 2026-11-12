@@ -476,7 +476,27 @@ function orderItems() {
   const locals = ((DESK.local || {}).items || []).filter((item) => item.kind !== "na" && needsAction(item) && passes(item));
   return uniqueTitles(threats.concat(locals).sort((a, b) => rankOf(b) - rankOf(a) || String(b.published || "").localeCompare(String(a.published || ""))));
 }
+const TN_ADJACENT = new Set(["037", "149", "119", "081", "043", "021"]);
+function tnCodes(item) {
+  const found = new Set();
+  [].concat((item && item.ugc) || [], (item && item.same) || []).forEach((code) => {
+    const text = String(code || "").toUpperCase().replace(/\s/g, "");
+    const match = text.match(/(?:TNC|047)(\d{3})$/);
+    if (match) found.add(match[1]);
+  });
+  return found;
+}
+function tnScope(item) {
+  if (!item || item.kind !== "nws") return "";
+  const codes = tnCodes(item);
+  if ([...codes].some((code) => code === "187")) return "williamson";
+  if ([...codes].some((code) => TN_ADJACENT.has(code))) return "adjacent";
+  if (/Elsewhere in Tennessee/i.test(item.note || "")) return "elsewhere";
+  if (codes.size) return "elsewhere";
+  return "";
+}
 function shownSeverity(item) {
+  if (tnScope(item) === "elsewhere") return "STANDBY";
   const sev = (item && item.severity) || "STANDBY";
   if (sev === "ALERT" && ageHours(item) > 72) return "STANDBY";
   return sev;
@@ -600,8 +620,19 @@ function storyNames(title) {
   if (text.includes("abu dhabi")) found.add("abu dhabi");
   return found;
 }
+function storyFamily(title) {
+  const blob = String(title || "");
+  if (/\bg7\b/i.test(blob)) return "g7";
+  if (/white house/i.test(blob) && /\b(letter|investigat\w*|garcia)\b/i.test(blob)) return "wh-letter";
+  if (/\biran\b/i.test(blob) && /\b(war|strike|nuclear|tehran)\b/i.test(blob)) return "iran-war";
+  if (/\bmidterms?\b/i.test(blob)) return "midterm";
+  if (/\bukraine\b/i.test(blob) && /\b(talks|zelensky|kushner|witkoff|abu dhabi)\b/i.test(blob)) return "ukraine-talks";
+  return "";
+}
 function sameStoryTitle(a, b) {
   if (!a || !b) return false;
+  const family = storyFamily(a);
+  if (family && family === storyFamily(b) && (family === "g7" || family === "wh-letter")) return true;
   const left = new Set(storyTokens(a));
   const right = new Set(storyTokens(b));
   const shared = [...left].filter((word) => right.has(word));
@@ -770,9 +801,11 @@ function foldSameStory(rows) {
     }
     if (item.change === "resolved") {
       const liveRows = (typeof threatItems === "function" ? threatItems() : []);
+      const family = storyFamily(title);
+      if (family && liveRows.some((current) => storyFamily(current.title || "") === family)) return false;
       if (liveRows.some((current) => sameStoryTitle(title, current.title || "") || sameTopicRecent(item, current))) return false;
     }
-    if (item.change === "resolved" && live.some((current) => sameStoryTitle(title, current))) return false;
+    if (item.change === "resolved" && live.some((current) => sameStoryTitle(title, current) || storyFamily(title) && storyFamily(title) === storyFamily(current))) return false;
     return true;
   });
 }
@@ -1529,6 +1562,13 @@ function fmtNum(value) {
   if (!Number.isFinite(num)) return "n/a";
   return num.toLocaleString("en-US", { maximumFractionDigits: 2 });
 }
+function fmtCopperGold(value) {
+  if (value === null || value === undefined || value === "") return "n/a";
+  const num = Number(value);
+  if (!Number.isFinite(num)) return "n/a";
+  if (Math.abs(num) < 0.05) return `${(num * 1000).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })} per 1,000`;
+  return fmtNum(num);
+}
 function zonedParts(date, timeZone) {
   const fmt = new Intl.DateTimeFormat("en-US", {
     timeZone, weekday: "short", year: "numeric", month: "2-digit", day: "2-digit",
@@ -1811,7 +1851,7 @@ function driverDashboard() {
   const funds = doc.funds || {};
   const fundsLine = funds.dff == null && !funds.zqf ? "" : `<p class="meta">Fed funds: DFF ${esc(fmtNum(funds.dff))}% · ZQF27 implied ${esc(fmtNum(funds.zqf))}% · ZQH27 implied ${esc(fmtNum(funds.zqh))}%</p>`;
   const curve = (doc.curve || []).map((row) => `<article class="card"><div class="head"><b>${esc(row.name)}</b><span class="sev sev-${row.inverted ? "alert" : "standby"}">${esc(row.flag || "")}</span></div><p class="meta">${esc(fmtNum(row.value))}%</p>${sparkline(row.spark || [])}</article>`).join("");
-  const ratio = doc.copperGold ? `<p class="meta">Copper/gold ${esc(fmtNum(doc.copperGold.ratio))} beside 10Y ${esc(fmtNum(doc.copperGold.yield10))}%</p>` : "";
+  const ratio = doc.copperGold ? `<p class="meta">Copper/gold ${esc(fmtCopperGold(doc.copperGold.ratio))} beside 10Y ${esc(fmtNum(doc.copperGold.yield10))}%</p>` : "";
   const volumes = (doc.volumes || []).map((row) => `<p class="meta">${esc(row.name)} volume ${esc(fmtNum(row.volume))} · price ${esc(fmtNum(row.price))}</p>`).join("");
   const oil = doc.oil ? `<p class="meta">Brent ${esc(fmtNum(doc.oil.brent))} · WTI ${esc(fmtNum(doc.oil.wti))} · energy strikes in 7 days: ${esc(String(doc.oil.energyStrikes || 0))}</p>` : "";
   return `<h3 class="group">Gold and silver drivers</h3><div class="split">${rows}</div>${corr}${fundsLine}<h3 class="group">Yield curve</h3><div class="split">${curve}</div>${ratio}${volumes}${oil}`;

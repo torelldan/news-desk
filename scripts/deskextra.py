@@ -13,6 +13,15 @@ from zoneinfo import ZoneInfo
 
 TN_WILLIAMSON = {"187"}
 TN_ADJACENT = {"037", "149", "119", "081", "043", "021"}  # Davidson, Rutherford, Maury, Hickman, Dickson, Cheatham
+TN_COUNTY_FIPS = {
+    "johnson": "091", "cocke": "029", "greene": "059", "unicoi": "171", "carter": "019",
+    "blount": "009", "sevier": "155", "monroe": "123", "williamson": "187", "davidson": "037",
+    "rutherford": "149", "maury": "119", "hickman": "081", "dickson": "043", "cheatham": "021",
+}
+STRIKE_PLACES = (
+    ("ust-luga", "Russia"), ("ust luga", "Russia"), ("suez", "Egypt"), ("egypt", "Egypt"),
+    ("smolensk", "Russia"), ("leningrad", "Russia"), ("kirishi", "Russia"), ("afipsky", "Russia"),
+)
 
 CHOKEPOINTS = ("hormuz", "red sea", "ust-luga", "ust luga", "novorossiysk", "primorsk")
 DOMESTIC_ACCIDENT = re.compile(r"\b(house explosion|apartment explosion|gas leak|clarksville|accidental blast)\b", re.I)
@@ -43,6 +52,27 @@ def tn_alert_scope(props: dict | None) -> str:
     if codes & TN_ADJACENT or re.search(r"\b(Davidson|Rutherford|Maury|Hickman|Dickson|Cheatham)\b", area):
         return "adjacent"
     return "elsewhere"
+
+
+def tn_codes_from_area(text: str) -> dict:
+    """UGC and SAME codes named in an NWS area line, so the client can re-check the county."""
+    found = []
+    for name, code in TN_COUNTY_FIPS.items():
+        if re.search(rf"\bnot\s+{name}\b", text or "", re.I):
+            continue
+        if re.search(rf"\b{name}\b", text or "", re.I):
+            found.append(code)
+    return {"ugc": [f"TNC{code}" for code in found], "same": [f"047{code}" for code in found]}
+
+
+def nws_geo(props: dict | None) -> dict:
+    geo = (props or {}).get("geocode") or {}
+    ugc = [str(code) for code in (geo.get("UGC") or [])]
+    same = [str(code) for code in (geo.get("SAME") or [])]
+    if not ugc and not same:
+        named = tn_codes_from_area((props or {}).get("areaDesc") or "")
+        ugc, same = named["ugc"], named["same"]
+    return {"ugc": ugc, "same": same}
 
 
 def exchange_day(stamp, tz_name: str) -> str:
@@ -124,8 +154,13 @@ def quake_counts_for_market(item: dict) -> bool:
     return (item.get("severity") or "").upper() != "STANDBY"
 
 
+def clean_strike_title(title: str) -> str:
+    text = re.sub(r"\s*[-–—|]?\s*https?://\S+", "", title or "")
+    return re.sub(r"\s+", " ", text).strip(" -")
+
+
 def strike_fields(title: str) -> dict:
-    blob = title or ""
+    blob = clean_strike_title(title)
     means = ""
     match = STRIKE_MEANS.search(blob)
     if match:
@@ -140,11 +175,26 @@ def strike_fields(title: str) -> dict:
     elif re.search(r"\b(apartment|residential|civilian|hospital|school)\b", blob, re.I):
         target_type = "civilian"
     country = ""
-    for name in ("Ukraine", "Russia", "Iran", "Israel", "Syria", "Yemen", "Lebanon"):
-        if re.search(rf"\b{name}\b", blob, re.I):
+    low = blob.lower()
+    for needle, name in STRIKE_PLACES:
+        if needle in low:
             country = name
             break
+    if not country:
+        for name in ("Ukraine", "Russia", "Iran", "Israel", "Syria", "Yemen", "Lebanon", "Egypt"):
+            if re.search(rf"\b{name}\b", blob, re.I):
+                country = name
+                break
     return {"means": means, "target_type": target_type, "country": country}
+
+
+def normalize_strikes(doc: dict) -> dict:
+    for item in (doc or {}).get("items") or []:
+        title = clean_strike_title(item.get("title") or "")
+        item["title"] = title
+        if not str(item.get("country") or "").strip():
+            item["country"] = strike_fields(title).get("country") or ""
+    return doc
 
 
 def keep_strike(title: str) -> bool:
@@ -207,7 +257,8 @@ def gold_driver_lines(moves: dict) -> list[str]:
     spx = moves.get("spx")
     brent = moves.get("brent")
     deescalation = moves.get("deescalation")
-    ratio = moves.get("gs_ratio")
+    level = moves.get("gs_level")
+    change = moves.get("gs_change")
     copper = moves.get("copper")
     if gold is not None and gold < 0 and dxy is not None and dxy >= 1 and ((y10 or 0) >= 15 or (real or 0) >= 15):
         lines.append(f"Gold {gold}% with DXY {dxy}% and yields up. Association, not proof: stronger dollar / higher rates.")
@@ -217,9 +268,95 @@ def gold_driver_lines(moves: dict) -> list[str]:
         lines.append(f"VIX {vix} pts and S&P {spx}%. Association, not proof: fear premium fading.")
     if brent is not None and brent <= -5 and deescalation:
         lines.append(f"Brent {brent}% beside a de-escalation headline. Association, not proof: war premium easing.")
-    if ratio is not None and ratio >= 3 and copper is not None and copper < 0:
-        lines.append(f"Gold/silver ratio {ratio} and copper {copper}%. Association, not proof: industrial worry is hitting silver harder.")
+    mentioned = False
+    if level is not None and change is not None and change >= 3 and copper is not None and copper < 0:
+        lines.append(
+            f"Gold/silver ratio {round(float(level), 1)} (1-month change {change}%) and copper {copper}%. "
+            "Association, not proof: industrial worry is hitting silver harder."
+        )
+        mentioned = True
+    if level is not None and not mentioned:
+        extra = f" 1-month change {change}%." if change is not None else ""
+        lines.append(f"Gold/silver ratio {round(float(level), 1)}.{extra}")
     return lines
+
+
+def format_copper_gold(ratio: float | None) -> str:
+    """A copper/gold price near 0.0016 is unreadable at two decimals. Show it per 1,000."""
+    if ratio is None:
+        return "n/a"
+    number = float(ratio)
+    if abs(number) < 0.05:
+        return f"{number * 1000:.2f} per 1,000"
+    return f"{number:.2f}"
+
+
+def driver_moves(drivers: dict | None) -> dict:
+    """One gold print: the ratio is gold divided by silver, and the 1-month change stays a percent."""
+    rows = {row.get("name"): row for row in ((drivers or {}).get("rows") or [])}
+
+    def change(name: str, key: str = "1M"):
+        return ((rows.get(name) or {}).get("changes") or {}).get(key)
+
+    gold = (rows.get("Gold") or {}).get("level")
+    silver = (rows.get("Silver") or {}).get("level")
+    level = None
+    if gold not in (None, 0) and silver not in (None, 0):
+        level = round(float(gold) / float(silver), 2)
+    elif (rows.get("Gold/silver") or {}).get("level") not in (None, ""):
+        level = (rows.get("Gold/silver") or {}).get("level")
+    return {
+        "gold": change("Gold"),
+        "dxy": change("DXY"),
+        "y10_bp": change("10Y"),
+        "real_bp": change("Real 10Y"),
+        "vix": change("VIX"),
+        "spx": change("S&P"),
+        "brent": change("Brent"),
+        "copper": change("Copper"),
+        "gs_level": level,
+        "gs_change": change("Gold/silver"),
+    }
+
+
+def use_driver_snapshot(assets: dict | None, drivers: dict | None) -> None:
+    """Copy the driver gold, silver, and dollar levels onto the asset cards so the map matches."""
+    rows = {row.get("name"): row for row in ((drivers or {}).get("rows") or [])}
+    for asset in (assets or {}).get("series") or []:
+        row = rows.get(asset.get("name") or "")
+        if not row or row.get("level") in (None, ""):
+            continue
+        level = row["level"]
+        asset["level"] = level
+        points = asset.get("points") or []
+        if points:
+            points[-1]["price"] = level
+            prior = points[-2]["price"] if len(points) >= 2 else None
+            if prior not in (None, 0):
+                asset["changePct"] = round(100.0 * (float(level) / float(prior) - 1), 2)
+
+
+def story_family(title: str) -> str:
+    """A topic key for rows that are the same story even when the wording diverges."""
+    blob = title or ""
+    if re.search(r"\bg7\b", blob, re.I):
+        return "g7"
+    if re.search(r"white house", blob, re.I) and re.search(r"\b(letter|investigat\w*|garcia)\b", blob, re.I):
+        return "wh-letter"
+    if re.search(r"\biran\b", blob, re.I) and re.search(r"\b(war|strike|nuclear|tehran)\b", blob, re.I):
+        return "iran-war"
+    if re.search(r"\bmidterms?\b", blob, re.I):
+        return "midterm"
+    if re.search(r"\bukraine\b", blob, re.I) and re.search(r"\b(talks|zelensky|kushner|witkoff|abu dhabi)\b", blob, re.I):
+        return "ukraine-talks"
+    return ""
+
+
+def topic_still_live(title: str, rows: list | None) -> bool:
+    fam = story_family(title)
+    if not fam:
+        return False
+    return any(story_family(row.get("title") or "") == fam for row in rows or [])
 
 
 def vix_zone(level: float | None) -> str:
@@ -628,7 +765,7 @@ def moex_level(payload: dict) -> dict | None:
                             prev = None
                         break
                 change = None if prev in (None, 0) else round(price - prev, 2)
-                pct = None if not change else round(100.0 * change / prev, 2)
+                pct = None if change is None else round(100.0 * change / prev, 2)
                 return {
                     "level": round(price, 2),
                     "change": change,

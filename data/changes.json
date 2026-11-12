@@ -525,7 +525,27 @@
           "severity": "STANDBY",
           "source": "World threat board",
           "title": "Winter Weather Advisory",
-          "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b6ab7643ed8006a54eae4b4ccc129041d83a05e1.001.1"
+          "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b6ab7643ed8006a54eae4b4ccc129041d83a05e1.001.1",
+          "ugc": [
+            "TNC091",
+            "TNC029",
+            "TNC059",
+            "TNC171",
+            "TNC019",
+            "TNC009",
+            "TNC155",
+            "TNC123"
+          ],
+          "same": [
+            "047091",
+            "047029",
+            "047059",
+            "047171",
+            "047019",
+            "047009",
+            "047155",
+            "047123"
+          ]
         }
       ],
       "escalated": [],
@@ -591,44 +611,7 @@
           "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPMVdCMXZ3Y0NJQ3Y2ZG9YSHp3YW95Q2gtdm9QYTBjZDQzUGNvT2FHaDhuUnMxdXZXdlJrUzVrRW5RVXBzZExUTzhZT2JNSi1VWWVIWUw2RGpPS2pIcm4tUDJrMmRoQUpHVFRiY3p0c1pnazdEdUpDcThSbzV1NFNtbFF1ODhZczMtZkFYVTlwcjJEdw?oc=5"
         }
       ],
-      "resolved": [
-        {
-          "id": "headline:bdd7f810770e4092",
-          "kind": "",
-          "label": "",
-          "note": "No longer on the board.",
-          "published": "",
-          "section": "World threat board",
-          "severity": "ALERT",
-          "source": "World threat board",
-          "title": "Read the letter the White House's top lawyer sent Rep. Garcia over threats to investigate Trump - PBS",
-          "url": ""
-        },
-        {
-          "id": "headline:d213d85c6339c6e8",
-          "kind": "",
-          "label": "",
-          "note": "No longer on the board.",
-          "published": "",
-          "section": "World threat board",
-          "severity": "ALERT",
-          "source": "World threat board",
-          "title": "Ukraine's Zelensky welcomes 'changes' in US approach as talks restart - AFP.com",
-          "url": ""
-        },
-        {
-          "id": "headline:8ba8b498a2b07c25",
-          "kind": "",
-          "label": "",
-          "note": "No longer on the board.",
-          "published": "",
-          "section": "World threat board",
-          "severity": "ALERT",
-          "source": "World threat board",
-          "title": "Rubio Touts Trump’s Iran Strategy as G7 Leaders Meet in Paris - Hudson Institute",
-          "url": ""
-        }
-      ]
+      "resolved": []
     },
     "trends": {
       "deescalated": [],
@@ -666,7 +649,27 @@
           "severity": "STANDBY",
           "source": "World threat board",
           "title": "Winter Weather Advisory",
-          "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b6ab7643ed8006a54eae4b4ccc129041d83a05e1.001.1"
+          "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b6ab7643ed8006a54eae4b4ccc129041d83a05e1.001.1",
+          "ugc": [
+            "TNC091",
+            "TNC029",
+            "TNC059",
+            "TNC171",
+            "TNC019",
+            "TNC009",
+            "TNC155",
+            "TNC123"
+          ],
+          "same": [
+            "047091",
+            "047029",
+            "047059",
+            "047171",
+            "047019",
+            "047009",
+            "047155",
+            "047123"
+          ]
         },
         {
           "id": "headline:0b94d48e869b6086",
@@ -729,80 +732,7 @@
           "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPMVdCMXZ3Y0NJQ3Y2ZG9YSHp3YW95Q2gtdm9QYTBjZDQzUGNvT2FHaDhuUnMxdXZXdlJrUzVrRW5RVXBzZExUTzhZT2JNSi1VWWVIWUw2RGpPS2pIcm4tUDJrMmRoQUpHVFRiY3p0c1pnazdEdUpDcThSbzV1NFNtbFF1ODhZczMtZkFYVTlwcjJEdw?oc=5"
         }
       ],
-      "resolved": [
-        {
-          "id": "headline:32fae8aac86477e4",
-          "kind": "",
-          "label": "",
-          "note": "No longer on the board.",
-          "published": "",
-          "section": "World threat board",
-          "severity": "ALERT",
-          "source": "World threat board",
-          "title": "Midterm Elections 2026: Congress Polls, Charts and More - NBC News",
-          "url": ""
-        },
-        {
-          "id": "headline:1215e3e5c6d2c78c",
-          "kind": "",
-          "label": "",
-          "note": "No longer on the board.",
-          "published": "",
-          "section": "World threat board",
-          "severity": "ALERT",
-          "source": "World threat board",
-          "title": "US midterms: assessing the results and implications - Economist Intelligence Unit",
-          "url": ""
-        },
-        {
-          "id": "headline:8ba8b498a2b07c25",
-          "kind": "",
-          "label": "",
-          "note": "No longer on the board.",
-          "published": "",
-          "section": "World threat board",
-          "severity": "ALERT",
-          "source": "World threat board",
-          "title": "Rubio Touts Trump’s Iran Strategy as G7 Leaders Meet in Paris - Hudson Institute",
-          "url": ""
-        },
-        {
-          "id": "headline:ffce4975835d7ee9",
-          "kind": "",
-          "label": "",
-          "note": "No longer on the board.",
-          "published": "",
-          "section": "World threat board",
-          "severity": "ALERT",
-          "source": "World threat board",
-          "title": "Secretary of State Marco Rubio Speaks to Reporters at G7 Meeting - C-SPAN",
-          "url": ""
-        },
-        {
-          "id": "headline:6d19bf31c92d53e1",
-          "kind": "",
-          "label": "",
-          "note": "No longer on the board.",
-          "published": "",
-          "section": "World threat board",
-          "severity": "ALERT",
-          "source": "World threat board",
-          "title": "The Iran War Unexpectedly Drove Down Carbon Emissions This Year - The New York Times",
-          "url": ""
-        },
-        {
-          "id": "headline:2a0656848f5b0ae7",
-          "kind": "",
-          "label": "",
-          "note": "No longer on the board.",
-          "published": "",
-          "section": "World threat board",
-          "severity": "ALERT",
-          "source": "World threat board",
-          "title": "Ukraine peace talks restart after 9 months. What makes them different this time? - CNN",
-          "url": ""
-        }
-      ]
+      "resolved": []
     },
     "trends": {
       "deescalated": [],

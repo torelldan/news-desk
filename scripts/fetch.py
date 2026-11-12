@@ -1037,6 +1037,7 @@ def main() -> int:
         radar = {"items": [], "note": f"n/a — {err}"}
     impact = citizen.impact_report(threat_items, boards_out.get("assets") or {})
     try:
+        import boards
         import deskextra
         energy = 0
         drivers = deskextra.collect_drivers(
@@ -1044,7 +1045,11 @@ def main() -> int:
             lambda url: boards._get(url, timeout=40, headers={"User-Agent": boards.NWS_UA, "Accept": "text/csv"}).decode("utf-8", "replace"),
             energy,
         )
+        deskextra.use_driver_snapshot(boards_out.get("assets") or {}, drivers)
+        if boards_out.get("assets"):
+            save_json(DATA / "assets.json", boards_out["assets"])
         impact["drivers"] = drivers
+        impact["explainer"] = deskextra.gold_driver_lines(deskextra.driver_moves(drivers))
         impact["vixZone"] = deskextra.vix_zone((((drivers.get("rows") or []) and next((row.get("level") for row in drivers["rows"] if row.get("name") == "VIX"), None)) or None))
     except Exception as err:
         errors.append(f"Drivers: {err}")
@@ -1105,8 +1110,10 @@ def main() -> int:
                 continue
             sev = before if isinstance(before, str) else (before.get("severity") or "")
             title = item_id if isinstance(before, str) else (before.get("title") or item_id)
-            from deskextra import rows_same_cluster
+            from deskextra import rows_same_cluster, topic_still_live
             if any(rows_same_cluster({"title": title}, cur, boards.same_story) or boards.same_story(title, cur.get("title") or "") for cur in current.values()):
+                continue
+            if topic_still_live(title, list(current.values())):
                 continue
             if citizen._rank(sev) >= citizen._rank("ALERT"):
                 gone.append(_brief_row({"id": item_id, "title": title, "severity": sev}, section, "No longer on the board."))
@@ -1186,6 +1193,12 @@ def main() -> int:
     save_json(DATA / "impact.json", impact)
     save_json(DATA / "history.json", history)
     save_json(DATA / "lookback.json", lookback)
+    try:
+        import deskextra
+        strike_doc = load_json(DATA / "strikes.json", {"items": []})
+        save_json(DATA / "strikes.json", deskextra.normalize_strikes(strike_doc))
+    except Exception as err:
+        errors.append(f"Strikes: {err}")
     try:
         import deskextra
         prev_macro = load_json(DATA / "macro.json", {})

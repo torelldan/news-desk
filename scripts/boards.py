@@ -70,7 +70,7 @@ REGIONS = [
         "name": "Russia",
         "query": "Russia economy MOEX when:14d",
         "venues": [{
-            "name": "MOEX", "indexName": "IMOEX", "symbol": "IMOEX.ME", "timezone": "Europe/Moscow",
+            "name": "MOEX", "indexName": "IMOEX", "symbol": "IMOEX", "timezone": "Europe/Moscow",
             "sessions": [{"open": "10:00", "close": "18:50"}], "holidays": [],
         }],
     },
@@ -397,14 +397,17 @@ def fetch_markets(now: datetime, previous: dict | None = None, retain_days: int 
     for spec in REGIONS:
         venues = []
         for venue in spec["venues"]:
-            if venue["symbol"] == "IMOEX.ME":
+            imoex = venue["symbol"] in {"IMOEX", "IMOEX.ME"}
+            if imoex:
                 quote = _moex_quote() or {}
+                fallback = "https://iss.moex.com/iss/engines/stock/markets/index/securities/IMOEX.json"
             else:
                 quote = _yahoo(venue["symbol"], "5d", venue.get("timezone") or "America/New_York") or {}
+                fallback = f"https://finance.yahoo.com/quote/{urllib.parse.quote(venue['symbol'], safe='')}"
             venues.append({
                 "name": venue["name"],
                 "indexName": venue["indexName"],
-                "symbol": venue["symbol"],
+                "symbol": "IMOEX" if imoex else venue["symbol"],
                 "timezone": venue["timezone"],
                 "sessions": venue["sessions"],
                 "holidays": venue["holidays"],
@@ -412,7 +415,7 @@ def fetch_markets(now: datetime, previous: dict | None = None, retain_days: int 
                 "change": quote.get("change"),
                 "changePct": quote.get("changePct"),
                 "asOf": quote.get("asOf") or "",
-                "source": quote.get("source") or f"https://finance.yahoo.com/quote/{urllib.parse.quote(venue['symbol'], safe='')}",
+                "source": quote.get("source") or fallback,
             })
         prior_regions = {row.get("id"): row for row in ((previous or {}).get("regions") or [])}
         old_heads = (prior_regions.get(spec["id"]) or {}).get("headlines") or []
@@ -1127,13 +1130,16 @@ def _try_nws(now):
             when = d.parse_pubdate(props.get("sent") or props.get("effective") or "") or now
             sev = alert_severity(event, props.get("severity") or "")
             area = props.get("areaDesc") or "Tennessee"
+            from deskextra import nws_geo, tn_alert_scope
+            extra = {"severity": sev}
+            extra.update(nws_geo(props))
             if "area=TN" in url:
-                from deskextra import tn_alert_scope
                 scope = tn_alert_scope(props)
                 if scope == "elsewhere":
                     sev = "STANDBY"
+                    extra["severity"] = sev
                     area = f"{area}. Elsewhere in Tennessee, not Williamson County or an adjacent county."
-            rows.append(_item("nws", "threat", "NWS", event, area, link, when, ["nws", sev.lower(), "tennessee"], {"severity": sev}))
+            rows.append(_item("nws", "threat", "NWS", event, area, link, when, ["nws", sev.lower(), "tennessee"], extra))
     try:
         national = "https://api.weather.gov/alerts/active?status=actual&message_type=alert&severity=Extreme,Severe"
         payload = json.loads(_get(national, timeout=40, headers=headers))
@@ -1442,8 +1448,13 @@ def cluster_rows(rows: list[dict]) -> list[dict]:
     kept: list[dict] = []
     for row in ordered:
         title = row.get("title") or ""
-        from deskextra import rows_same_cluster
-        lead = next((other for other in kept if rows_same_cluster(row, other, same_story)), None)
+        from deskextra import rows_same_cluster, story_family
+        family = story_family(title)
+        lead = next((
+            other for other in kept
+            if (family and family == story_family(other.get("title") or "") and family in {"g7", "wh-letter"})
+            or rows_same_cluster(row, other, same_story)
+        ), None)
         if lead is None:
             copy = dict(row)
             copy["related"] = int(row.get("related") or 0)

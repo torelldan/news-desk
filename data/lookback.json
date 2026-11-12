@@ -1,214 +1,202 @@
 {
-  "calls": [],
+  "since": "2026-11-05",
+  "note": "Compared with the stored board on 2026-11-05.",
+  "newSince": [
+    {
+      "title": "Ukraine says military Starlink disrupted again as US envoys meet Putin in Moscow - BBC",
+      "severity": "ALERT",
+      "note": "New since 2026-11-05 · now ALERT",
+      "related": 0,
+      "relatedSources": []
+    },
+    {
+      "title": "What to Expect at COP 31: Key issues and how the negotiations work - International Institute for Sustainable Development",
+      "severity": "ALERT",
+      "note": "New since 2026-11-05 · now ALERT",
+      "related": 0,
+      "relatedSources": []
+    },
+    {
+      "title": "‘No war, no peace’: Can Iran break the deadlock with the US? - Al Jazeera",
+      "severity": "ALERT",
+      "note": "New since 2026-11-05 · now ALERT",
+      "related": 0,
+      "relatedSources": []
+    },
+    {
+      "title": "‘Draft Marco’ effort grows on Capitol Hill after midterms bloodbath - Politico",
+      "severity": "ALERT",
+      "note": "New since 2026-11-05 · now ALERT",
+      "related": 0,
+      "relatedSources": []
+    },
+    {
+      "title": "How Israel Will Choose Its Next Prime Minister, Explained - Time Magazine",
+      "severity": "ALERT",
+      "note": "New since 2026-11-05 · now ALERT",
+      "related": 0,
+      "relatedSources": []
+    },
+    {
+      "title": "Young, diverse voters showed up for midterms as older, Trump voters stayed home - Stateline",
+      "severity": "ALERT",
+      "note": "New since 2026-11-05 · now ALERT",
+      "related": 0,
+      "relatedSources": []
+    },
+    {
+      "title": "Most Americans want new Democratic Congress to end Trump's Iran war, Reuters/Ipsos poll finds - Reuters",
+      "severity": "ALERT",
+      "note": "New since 2026-11-05 · now ALERT",
+      "related": 0,
+      "relatedSources": []
+    },
+    {
+      "title": "Rubio urges nations to ‘step up’ on Strait of Hormuz security - AP News",
+      "severity": "ALERT",
+      "note": "New since 2026-11-05 · now ALERT",
+      "related": 0,
+      "relatedSources": []
+    },
+    {
+      "title": "Poland plans silent march after Krakow mass shooting that shocked the nation - Reuters",
+      "severity": "ALERT",
+      "note": "New since 2026-11-05 · now ALERT",
+      "related": 0,
+      "relatedSources": []
+    },
+    {
+      "title": "G7 allies to assess impact of Trump's midterm setback at Paris talks - Reuters",
+      "severity": "ALERT",
+      "note": "New since 2026-11-05 · now ALERT",
+      "related": 2,
+      "relatedSources": []
+    },
+    {
+      "title": "White House tells Democrats that investigating Trump administration could be criminal - Reuters",
+      "severity": "ALERT",
+      "source": "",
+      "note": "New since 2026-11-05 · now ALERT",
+      "related": 1,
+      "relatedSources": []
+    }
+  ],
   "escalated": [
     {
+      "title": "Ukraine says military Starlink disrupted again as US envoys meet Putin in Moscow - BBC",
+      "severity": "ALERT",
       "note": "New since 2026-11-05 · now ALERT",
       "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "Ukraine says military Starlink disrupted again as US envoys meet Putin in Moscow - BBC"
+      "relatedSources": []
     },
     {
+      "title": "What to Expect at COP 31: Key issues and how the negotiations work - International Institute for Sustainable Development",
+      "severity": "ALERT",
       "note": "New since 2026-11-05 · now ALERT",
       "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "What to Expect at COP 31: Key issues and how the negotiations work - International Institute for Sustainable Development"
+      "relatedSources": []
     },
     {
+      "title": "‘No war, no peace’: Can Iran break the deadlock with the US? - Al Jazeera",
+      "severity": "ALERT",
       "note": "New since 2026-11-05 · now ALERT",
       "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "‘No war, no peace’: Can Iran break the deadlock with the US? - Al Jazeera"
+      "relatedSources": []
     },
     {
+      "title": "‘Draft Marco’ effort grows on Capitol Hill after midterms bloodbath - Politico",
+      "severity": "ALERT",
       "note": "New since 2026-11-05 · now ALERT",
       "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "‘Draft Marco’ effort grows on Capitol Hill after midterms bloodbath - Politico"
+      "relatedSources": []
     },
     {
+      "title": "How Israel Will Choose Its Next Prime Minister, Explained - Time Magazine",
+      "severity": "ALERT",
       "note": "New since 2026-11-05 · now ALERT",
       "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "How Israel Will Choose Its Next Prime Minister, Explained - Time Magazine"
+      "relatedSources": []
     },
     {
+      "title": "Young, diverse voters showed up for midterms as older, Trump voters stayed home - Stateline",
+      "severity": "ALERT",
       "note": "New since 2026-11-05 · now ALERT",
       "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "Young, diverse voters showed up for midterms as older, Trump voters stayed home - Stateline"
+      "relatedSources": []
     },
     {
+      "title": "Most Americans want new Democratic Congress to end Trump's Iran war, Reuters/Ipsos poll finds - Reuters",
+      "severity": "ALERT",
       "note": "New since 2026-11-05 · now ALERT",
       "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "Most Americans want new Democratic Congress to end Trump's Iran war, Reuters/Ipsos poll finds - Reuters"
+      "relatedSources": []
     },
     {
+      "title": "Rubio urges nations to ‘step up’ on Strait of Hormuz security - AP News",
+      "severity": "ALERT",
       "note": "New since 2026-11-05 · now ALERT",
       "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "Rubio urges nations to ‘step up’ on Strait of Hormuz security - AP News"
+      "relatedSources": []
     },
     {
+      "title": "Poland plans silent march after Krakow mass shooting that shocked the nation - Reuters",
+      "severity": "ALERT",
       "note": "New since 2026-11-05 · now ALERT",
       "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "Poland plans silent march after Krakow mass shooting that shocked the nation - Reuters"
+      "relatedSources": []
     },
     {
-      "note": "New since 2026-11-05 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
+      "title": "G7 allies to assess impact of Trump's midterm setback at Paris talks - Reuters",
       "severity": "ALERT",
-      "title": "G7 allies to assess impact of Trump's midterm setback at Paris talks - Reuters"
+      "note": "New since 2026-11-05 · now ALERT",
+      "related": 2,
+      "relatedSources": []
     },
     {
-      "note": "New since 2026-11-05 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
+      "title": "White House tells Democrats that investigating Trump administration could be criminal - Reuters",
       "severity": "ALERT",
-      "title": "Europe top diplomats press Rubio on Ukraine at G7 - AFP.com"
+      "source": "",
+      "note": "New since 2026-11-05 · now ALERT",
+      "related": 1,
+      "relatedSources": []
     }
   ],
   "fizzled": [
     {
+      "title": "Another child dies of measles as CDC reportedly holds up health alert - Ars Technica",
+      "severity": "ALERT",
       "note": "On the board 2026-11-05 at ALERT, absent now.",
       "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "Another child dies of measles as CDC reportedly holds up health alert - Ars Technica"
+      "relatedSources": []
     },
     {
+      "title": "Russian Offensive Campaign Assessment, November 4, 2026 - Institute for the Study of War",
+      "severity": "ALERT",
       "note": "On the board 2026-11-05 at ALERT, absent now.",
       "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "Iran Update, November 4, 2026 - Institute for the Study of War"
+      "relatedSources": []
     },
     {
+      "title": "Supreme Court: SCOTUS Decisions & News on the U.S. Federal Court - NBC News",
+      "severity": "ALERT",
       "note": "On the board 2026-11-05 at ALERT, absent now.",
       "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "Trump confirms strikes on Iran as Tehran warns against return to war - AFP.com"
+      "relatedSources": []
     },
     {
+      "title": "Democrats Win Control of Congress. Here’s How That Could Affect U.S. Foreign Policy. - Council on Foreign Relations",
+      "severity": "ALERT",
       "note": "On the board 2026-11-05 at ALERT, absent now.",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "Russian Offensive Campaign Assessment, November 4, 2026 - Institute for the Study of War"
-    },
-    {
-      "note": "On the board 2026-11-05 at ALERT, absent now.",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "Supreme Court: SCOTUS Decisions & News on the U.S. Federal Court - NBC News"
-    },
-    {
-      "note": "On the board 2026-11-05 at ALERT, absent now. +1 related",
       "related": 1,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "Democrats Win Control of Congress. Here’s How That Could Affect U.S. Foreign Policy. - Council on Foreign Relations"
+      "relatedSources": []
     },
     {
-      "note": "ALERT → STANDBY since 2026-11-05 +1 related",
-      "related": 1,
-      "relatedSources": [],
+      "title": "What to know about the Melania Trump-brokered ceasefire in Russian-occupied Oleshky - AP News",
       "severity": "STANDBY",
-      "title": "What to know about the Melania Trump-brokered ceasefire in Russian-occupied Oleshky - AP News"
+      "note": "ALERT → STANDBY since 2026-11-05",
+      "related": 1,
+      "relatedSources": []
     }
   ],
-  "newSince": [
-    {
-      "note": "New since 2026-11-05 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "Ukraine says military Starlink disrupted again as US envoys meet Putin in Moscow - BBC"
-    },
-    {
-      "note": "New since 2026-11-05 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "What to Expect at COP 31: Key issues and how the negotiations work - International Institute for Sustainable Development"
-    },
-    {
-      "note": "New since 2026-11-05 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "‘No war, no peace’: Can Iran break the deadlock with the US? - Al Jazeera"
-    },
-    {
-      "note": "New since 2026-11-05 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "‘Draft Marco’ effort grows on Capitol Hill after midterms bloodbath - Politico"
-    },
-    {
-      "note": "New since 2026-11-05 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "How Israel Will Choose Its Next Prime Minister, Explained - Time Magazine"
-    },
-    {
-      "note": "New since 2026-11-05 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "Young, diverse voters showed up for midterms as older, Trump voters stayed home - Stateline"
-    },
-    {
-      "note": "New since 2026-11-05 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "Most Americans want new Democratic Congress to end Trump's Iran war, Reuters/Ipsos poll finds - Reuters"
-    },
-    {
-      "note": "New since 2026-11-05 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "Rubio urges nations to ‘step up’ on Strait of Hormuz security - AP News"
-    },
-    {
-      "note": "New since 2026-11-05 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "Poland plans silent march after Krakow mass shooting that shocked the nation - Reuters"
-    },
-    {
-      "note": "New since 2026-11-05 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "G7 allies to assess impact of Trump's midterm setback at Paris talks - Reuters"
-    },
-    {
-      "note": "New since 2026-11-05 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "Europe top diplomats press Rubio on Ukraine at G7 - AFP.com"
-    }
-  ],
-  "note": "Compared with the stored board on 2026-11-05.",
-  "since": "2026-11-05"
+  "calls": []
 }
