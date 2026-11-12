@@ -240,3 +240,15 @@ flowchart LR
 ```
 
 The economic-watch header uses the venue with the largest move, not the first venue. What changed lists a row as new only inside 36 hours, and lists a row as resolved only when that whole story cluster is gone. Look-back's first list is labeled "New since".
+
+```mermaid
+flowchart TD
+  G["Google News strike query"] --> F{"Domestic accident?"}
+  F -->|yes| X["Drop"]
+  F -->|no| W["Wikipedia Current events"]
+  W -->|place named| C["Tag confirmed"]
+  W -->|not named| U["Keep, unconfirmed"]
+  H["history.json plus today's board"] --> L["trendlog.json"]
+  L --> S{"Score and state"}
+  S -->|changed| CH["What changed"]
+```

@@ -265,15 +265,20 @@ def _yahoo(symbol: str, range_: str = "1mo", tz_name: str = "America/New_York") 
     if not isinstance(result, dict):
         return None
     meta = result.get("meta") or {}
-    closes = (((result.get("indicators") or {}).get("quote") or [{}])[0]).get("close") or []
+    quote = ((result.get("indicators") or {}).get("quote") or [{}])[0]
+    closes = quote.get("close") or []
+    volumes = quote.get("volume") or []
     stamps = result.get("timestamp") or []
     from deskextra import exchange_day
     points = []
-    for stamp, close in zip(stamps, closes):
+    for index, (stamp, close) in enumerate(zip(stamps, closes)):
         if close is None:
             continue
         day = exchange_day(stamp, tz_name)
-        points.append({"date": day, "price": round(float(close), 4)})
+        point = {"date": day, "price": round(float(close), 4)}
+        if index < len(volumes) and volumes[index] is not None:
+            point["volume"] = volumes[index]
+        points.append(point)
     price = meta.get("regularMarketPrice")
     previous = meta.get("chartPreviousClose")
     usable = [point["price"] for point in points if point.get("price") is not None]
@@ -292,7 +297,7 @@ def _yahoo(symbol: str, range_: str = "1mo", tz_name: str = "America/New_York") 
         "change": change,
         "changePct": pct,
         "asOf": as_of,
-        "points": points[-120:],
+        "points": points[-400:],
         "source": f"https://finance.yahoo.com/quote/{quoted}",
     }
 

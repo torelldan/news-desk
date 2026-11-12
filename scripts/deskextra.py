@@ -314,6 +314,295 @@ def refresh_macro(previous: dict | None, today: str, fetch) -> dict:
     return {"checkedAt": today, "regions": regions, "gaps": gaps[-8:], "note": "Slow figures refresh when older than 7 days. Last good value is kept when a source fails."}
 
 
+def window_change(points: list[dict], sessions: int) -> float | None:
+    usable = [point for point in points or [] if point.get("price") not in (None, "")]
+    if len(usable) <= sessions:
+        return None
+    last = float(usable[-1]["price"])
+    prev = float(usable[-1 - sessions]["price"])
+    if prev == 0:
+        return None
+    return round(100.0 * (last - prev) / prev, 2)
+
+
+def basis_change(points: list[dict], sessions: int) -> float | None:
+    """Change in basis points when the series is already a percent yield."""
+    usable = [point for point in points or [] if point.get("price") not in (None, "")]
+    if len(usable) <= sessions:
+        return None
+    return round((float(usable[-1]["price"]) - float(usable[-1 - sessions]["price"])) * 100, 1)
+
+
+def _pearson(xs: list[float], ys: list[float]) -> float | None:
+    n = min(len(xs), len(ys))
+    if n < 5:
+        return None
+    xs, ys = xs[:n], ys[:n]
+    mx, my = sum(xs) / n, sum(ys) / n
+    num = sum((x - mx) * (y - my) for x, y in zip(xs, ys))
+    dx = sum((x - mx) ** 2 for x in xs) ** 0.5
+    dy = sum((y - my) ** 2 for y in ys) ** 0.5
+    if dx == 0 or dy == 0:
+        return None
+    return round(num / (dx * dy), 2)
+
+
+def return_corr(metal: list[dict], driver: list[dict], sessions: int) -> float | None:
+    def rets(points):
+        out = []
+        prev = None
+        for point in points or []:
+            price = point.get("price")
+            if price in (None, ""):
+                continue
+            if prev not in (None, 0):
+                out.append((point.get("date"), (float(price) / float(prev) - 1) * 100))
+            prev = price
+        return out[-sessions:]
+    left, right = rets(metal), dict(rets(driver))
+    xs, ys = [], []
+    for day, value in left:
+        if day in right:
+            xs.append(value)
+            ys.append(right[day])
+    return _pearson(xs, ys)
+
+
+def implied_funds_rate(futures_price: float | None) -> float | None:
+    if futures_price is None:
+        return None
+    return round(100.0 - float(futures_price), 3)
+
+
+def curve_flag(value: float | None) -> str:
+    if value is None:
+        return ""
+    return "inverted" if value < 0 else "positive"
+
+
+def wiki_confirms(title: str, page_text: str) -> bool:
+    blob = (page_text or "").lower()
+    skip = {"drone", "strike", "strikes", "ukraine", "russia", "russian", "reuters", "police", "military", "oil", "terminal"}
+    for match in re.finditer(r"\b[A-Z][A-Za-z-]{4,}\b", title or ""):
+        name = match.group(0)
+        if name.lower() in skip:
+            continue
+        if name.lower() in blob:
+            return True
+    return False
+
+
+def _topic_key(row: dict) -> str:
+    return (row.get("kind") or row.get("topic") or "other").lower()
+
+
+def update_trendlog(previous: dict | None, history: dict | None, today: str, threats: list | None = None) -> tuple[dict, list]:
+    """90-day topic rows, 14-day cluster rows, pruned after 30 quiet days, capped near 300 KB."""
+    topics = [dict(row) for row in ((previous or {}).get("topics") or [])]
+    states = dict((previous or {}).get("states") or {})
+    if not topics:
+        for snap in (history or {}).get("days") or []:
+            day = snap.get("date") or ""
+            if not day:
+                continue
+            buckets: dict[str, dict] = {}
+            for row in snap.get("threats") or []:
+                key = _topic_key(row)
+                bucket = buckets.setdefault(key, {"count": 0, "severity": "STANDBY"})
+                bucket["count"] += 1
+                if (row.get("severity") or "") in {"ALERT", "ACTION", "CRITICAL"}:
+                    bucket["severity"] = row.get("severity")
+            for key, bucket in buckets.items():
+                topics.append({"date": day, "topic": key, "count": bucket["count"], "outlets": bucket["count"], "countries": 1, "severity": bucket["severity"], "keywords": [], "score": 0})
+    if threats:
+        buckets = {}
+        for row in threats:
+            key = _topic_key(row)
+            bucket = buckets.setdefault(key, {"count": 0, "severity": "STANDBY", "keywords": []})
+            bucket["count"] += 1
+            title = row.get("title") or ""
+            for word in ("evacuat", "state of emergency", "mobiliz", "martial law", "nuclear", "curfew", "no-fly", "embassy closure", "blackout", "ceasefire collapses"):
+                if word in title.lower() and word not in bucket["keywords"]:
+                    bucket["keywords"].append(word)
+            if (row.get("severity") or "") in {"ALERT", "ACTION", "CRITICAL"}:
+                bucket["severity"] = row.get("severity")
+        topics = [row for row in topics if row.get("date") != today]
+        for key, bucket in buckets.items():
+            topics.append({"date": today, "topic": key, "count": bucket["count"], "outlets": bucket["count"], "countries": 1, "severity": bucket["severity"], "keywords": bucket["keywords"], "score": 0})
+    cutoff = ""
+    try:
+        cutoff = (datetime.fromisoformat(today) - timedelta(days=90)).date().isoformat()
+    except ValueError:
+        cutoff = ""
+    if cutoff:
+        topics = [row for row in topics if (row.get("date") or "") >= cutoff]
+    last_seen: dict[str, str] = {}
+    for row in topics:
+        last_seen[row.get("topic") or ""] = max(last_seen.get(row.get("topic") or "", ""), row.get("date") or "")
+    quiet_after = ""
+    try:
+        quiet_after = (datetime.fromisoformat(today) - timedelta(days=30)).date().isoformat()
+    except ValueError:
+        quiet_after = ""
+    if quiet_after:
+        topics = [row for row in topics if last_seen.get(row.get("topic") or "", "") >= quiet_after]
+    topics.sort(key=lambda row: (row.get("date") or "", row.get("topic") or ""))
+    encoded = json.dumps(topics)
+    while len(encoded.encode("utf-8")) > 300_000 and topics:
+        topics.pop(0)
+        encoded = json.dumps(topics)
+    cluster_start = ""
+    try:
+        cluster_start = (datetime.fromisoformat(today) - timedelta(days=14)).date().isoformat()
+    except ValueError:
+        cluster_start = ""
+    clusters = [row for row in topics if not cluster_start or (row.get("date") or "") >= cluster_start]
+    items = []
+    changes = []
+    topics_today = sorted({row.get("topic") for row in topics if row.get("date") == today})
+    for topic in topics_today:
+        rows = [row for row in topics if row.get("topic") == topic]
+        counts = [row.get("count") or 0 for row in rows]
+        today_count = counts[-1] if counts else 0
+        week = counts[-8:-1] or counts[:-1] or [0]
+        week_avg = sum(week) / len(week)
+        avg3 = sum(counts[-3:]) / max(1, len(counts[-3:]))
+        avg14 = sum(counts[-14:]) / max(1, len(counts[-14:]))
+        score = rising_volume_points(today_count, week_avg)
+        reasons = []
+        ratio = round((today_count + 1) / (week_avg + 1), 1)
+        if score:
+            reasons.append(f"{ratio}x usual volume")
+        keywords = rows[-1].get("keywords") or []
+        if keywords:
+            score += min(4, 2 * len(keywords))
+            reasons.append("'" + keywords[0] + "' appeared")
+        if (rows[-1].get("outlets") or 0) >= 5:
+            score += 1
+            reasons.append("5 or more outlets")
+        first = rows[0].get("date") or today
+        try:
+            age = (datetime.fromisoformat(today) - datetime.fromisoformat(first)).days
+        except ValueError:
+            age = 99
+        state = rising_state(score, first_seen_days=age, rising_before=states.get(topic) in {"RISING", "PEAKING", "EMERGING"}, today=today_count, avg3=avg3, avg14=avg14, max90=max(counts or [0]), severity_step_days=0)
+        if not state:
+            continue
+        items.append({"topic": topic, "state": state, "score": score, "reasons": " · ".join(reasons), "spark": [{"price": row.get("count") or 0} for row in rows[-14:]]})
+        if states.get(topic) != state:
+            changes.append({"title": f"{topic} is {state}", "section": "Rising situations", "change": "updated", "severity": "ALERT", "note": " · ".join(reasons), "date": today})
+        states[topic] = state
+    return {"topics": topics, "clusters": clusters, "states": states, "checkedAt": today}, items, changes
+
+
+def collect_drivers(yahoo, fetch_text, energy_strikes: int = 0) -> dict:
+    """1W/1M/3M/1Y changes, correlations, funds futures, the curve, and ETF volume."""
+    symbols = {
+        "Gold": ("GC=F", False), "Silver": ("SI=F", False), "DXY": ("DX-Y.NYB", False),
+        "10Y": ("^TNX", True), "S&P": ("^GSPC", False), "VIX": ("^VIX", False),
+        "Copper": ("HG=F", False), "Brent": ("BZ=F", False), "WTI": ("CL=F", False),
+        "ZQF27": ("ZQF27.CBT", False), "ZQH27": ("ZQH27.CBT", False),
+        "GLD": ("GLD", False), "SLV": ("SLV", False), "GOLDBEES": ("GOLDBEES.NS", False),
+    }
+    series = {}
+    gaps = []
+    for name, (symbol, _yield) in symbols.items():
+        quote = yahoo(symbol, "2y", "America/New_York") or {}
+        points = quote.get("points") or []
+        if not points:
+            gaps.append(f"{name}: no points")
+        series[name] = points
+    for name, series_id in (("Real 10Y", "DFII10"), ("DFF", "DFF"), ("T10Y2Y", "T10Y2Y"), ("T10Y3M", "T10Y3M")):
+        try:
+            points = []
+            text = fetch_text(f"https://fred.stlouisfed.org/graph/fredgraph.csv?id={series_id}")
+            for row in parse_fred_rows(text):
+                points.append(row)
+            series[name] = points
+        except Exception as err:
+            gaps.append(f"{name}: {err}")
+            series[name] = []
+    silver = {point["date"]: point["price"] for point in series.get("Silver") or []}
+    series["Gold/silver"] = [
+        {"date": point["date"], "price": round(point["price"] / silver[point["date"]], 4)}
+        for point in series.get("Gold") or []
+        if silver.get(point["date"])
+    ]
+    copper = {point["date"]: point["price"] for point in series.get("Copper") or []}
+    series["Copper/gold"] = [
+        {"date": point["date"], "price": round(copper[point["date"]] / point["price"], 6)}
+        for point in series.get("Gold") or []
+        if copper.get(point["date"]) and point.get("price")
+    ]
+    order = ["Gold", "Silver", "DXY", "10Y", "Real 10Y", "S&P", "VIX", "Copper", "Gold/silver"]
+    rows = [driver_row(name, series[name], yield_series=name in {"10Y", "Real 10Y"}) for name in order if series.get(name)]
+    corrs = []
+    for metal in ("Gold", "Silver"):
+        for row in metal_correlations(series.get(metal) or [], {key: series.get(key) or [] for key in ("DXY", "10Y", "Real 10Y", "S&P", "VIX", "Copper")}):
+            row["metal"] = metal
+            corrs.append(row)
+    def last(name):
+        points = series.get(name) or []
+        return points[-1]["price"] if points else None
+    funds = {"dff": last("DFF"), "zqf": implied_funds_rate(last("ZQF27")), "zqh": implied_funds_rate(last("ZQH27"))}
+    curve = []
+    for name in ("T10Y2Y", "T10Y3M"):
+        points = series.get(name) or []
+        if not points:
+            continue
+        value = points[-1]["price"]
+        curve.append({"name": name, "value": value, "flag": curve_flag(value), "inverted": value < 0, "spark": [{"price": point["price"]} for point in points[-30:]]})
+    volumes = [{"name": name, "price": last(name), "volume": (series.get(name) or [{}])[-1].get("volume")} for name in ("GLD", "SLV", "GOLDBEES") if series.get(name)]
+    return {
+        "rows": rows,
+        "correlations": corrs,
+        "funds": funds,
+        "curve": curve,
+        "copperGold": {"ratio": last("Copper/gold") if False else ((series.get("Copper/gold") or [{}])[-1].get("price") if series.get("Copper/gold") else None), "yield10": last("10Y")},
+        "volumes": volumes,
+        "oil": {"brent": last("Brent"), "wti": last("WTI"), "energyStrikes": energy_strikes},
+        "gaps": gaps,
+    }
+
+
+def parse_fred_rows(csv_text: str) -> list[dict]:
+    points = []
+    for row in (csv_text or "").splitlines()[1:]:
+        bits = row.split(",")
+        if len(bits) < 2 or bits[1] in {"", "."}:
+            continue
+        try:
+            points.append({"date": bits[0], "price": float(bits[1])})
+        except ValueError:
+            continue
+    return points
+
+
+def driver_row(name: str, points: list[dict], *, yield_series: bool = False) -> dict:
+    usable = [point for point in points or [] if point.get("price") not in (None, "")]
+    level = None if not usable else round(float(usable[-1]["price"]), 4)
+    changes = {
+        "1W": window_change(usable, 5),
+        "1M": window_change(usable, 21),
+        "3M": window_change(usable, 63),
+        "1Y": window_change(usable, 252),
+    }
+    if yield_series:
+        changes = {key: basis_change(usable, sessions) for key, sessions in (("1W", 5), ("1M", 21), ("3M", 63), ("1Y", 252))}
+    return {"name": name, "level": level, "changes": changes, "spark": [{"price": point["price"]} for point in usable[-30:]], "unit": "bp" if yield_series else "%"}
+
+
+def metal_correlations(metal_points: list[dict], drivers: dict[str, list[dict]]) -> list[dict]:
+    rows = []
+    for name, points in drivers.items():
+        rows.append({
+            "driver": name,
+            "d30": return_corr(metal_points, points, 30),
+            "d90": return_corr(metal_points, points, 90),
+        })
+    return rows
+
+
 def moex_level(payload: dict) -> dict | None:
     """IMOEX from the MOEX ISS payload. Yahoo's IMOEX.ME symbol 404s."""
     for block in (payload or {}).values():

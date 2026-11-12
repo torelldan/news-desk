@@ -819,7 +819,8 @@ function changeRows() {
   const pages = ((doc.groups || {}).pages || []).slice(0, 6);
   const tape = marketTape();
   const folded = foldSameStory(refresh.concat(yesterday, pages, tape ? [tape] : [])).filter(passes);
-  return leadUpdates(folded).concat(folded);
+  const risingChanges = ((DESK.rising || {}).changes || []).filter(passes);
+  return leadUpdates(folded).concat(risingChanges, folded);
 }
 function changeLead(rows) {
   const open = rows.filter((item) => item.change !== "resolved" && item.change !== "deescalated");
@@ -1246,7 +1247,7 @@ function renderStrikes() {
   if (!items.length && !(doc.gaps || []).length) return "";
   const counts = doc.counts || {};
   const summary = `7-day strikes · ${esc(String(counts.total || items.length))} · energy ${esc(String(counts.energy || 0))}`;
-  const lines = items.map((item) => `<p class="meta"><span class="sev sev-${esc(String(item.severity || "standby").toLowerCase())}">${esc(item.severity || "STANDBY")}</span> ${esc(item.date || "")} · ${esc(item.country || "")} · ${esc(item.target_type || "")} · ${esc(item.title || "")}${item.related ? " · +" + esc(String(item.related)) + " related" : ""}</p>`).join("");
+  const lines = items.map((item) => `<p class="meta"><span class="sev sev-${esc(String(item.severity || "standby").toLowerCase())}">${esc(item.severity || "STANDBY")}</span> ${esc(item.date || "")} · ${esc(item.country || "")} · ${esc(item.target_type || "")} · ${esc(item.title || "")}${item.confirmed ? " · confirmed" : ""}${item.related ? " · +" + esc(String(item.related)) + " related" : ""}</p>`).join("");
   const gaps = (doc.gaps || []).map((gap) => `<p class="meta">Source down: ${esc(gap)}</p>`).join("");
   return `<article class="card"><div class="head"><span class="sev sev-standby">STANDBY</span></div><h3>Strikes and explosions</h3><p>${summary}</p>${lines}${gaps}</article>`;
 }
@@ -1796,6 +1797,25 @@ function numberDumpHtml() {
   }).join("");
   return events || `<p class="meta">No major event with prices around it.</p>`;
 }
+function driverDashboard() {
+  const doc = (DESK.impact || {}).drivers;
+  if (!doc) return "";
+  const changeText = (changes, unit) => ["1W", "1M", "3M", "1Y"].map((key) => {
+    const value = (changes || {})[key];
+    if (value == null) return `${key} n/a`;
+    const sign = value > 0 ? "+" : "";
+    return `${key} ${sign}${value}${unit || "%"}`;
+  }).join(" · ");
+  const rows = (doc.rows || []).map((row) => `<article class="card"><div class="head"><b>${esc(row.name)}</b><span>${esc(fmtNum(row.level))}</span></div><p class="meta">${esc(changeText(row.changes, row.unit))}</p>${sparkline(row.spark || [])}</article>`).join("");
+  const corr = (doc.correlations || []).map((row) => `<p class="meta">${esc(row.metal)} vs ${esc(row.driver)} · 30d ${row.d30 == null ? "n/a" : row.d30} · 90d ${row.d90 == null ? "n/a" : row.d90}</p>`).join("");
+  const funds = doc.funds || {};
+  const fundsLine = funds.dff == null && !funds.zqf ? "" : `<p class="meta">Fed funds: DFF ${esc(fmtNum(funds.dff))}% · ZQF27 implied ${esc(fmtNum(funds.zqf))}% · ZQH27 implied ${esc(fmtNum(funds.zqh))}%</p>`;
+  const curve = (doc.curve || []).map((row) => `<article class="card"><div class="head"><b>${esc(row.name)}</b><span class="sev sev-${row.inverted ? "alert" : "standby"}">${esc(row.flag || "")}</span></div><p class="meta">${esc(fmtNum(row.value))}%</p>${sparkline(row.spark || [])}</article>`).join("");
+  const ratio = doc.copperGold ? `<p class="meta">Copper/gold ${esc(fmtNum(doc.copperGold.ratio))} beside 10Y ${esc(fmtNum(doc.copperGold.yield10))}%</p>` : "";
+  const volumes = (doc.volumes || []).map((row) => `<p class="meta">${esc(row.name)} volume ${esc(fmtNum(row.volume))} · price ${esc(fmtNum(row.price))}</p>`).join("");
+  const oil = doc.oil ? `<p class="meta">Brent ${esc(fmtNum(doc.oil.brent))} · WTI ${esc(fmtNum(doc.oil.wti))} · energy strikes in 7 days: ${esc(String(doc.oil.energyStrikes || 0))}</p>` : "";
+  return `<h3 class="group">Gold and silver drivers</h3><div class="split">${rows}</div>${corr}${fundsLine}<h3 class="group">Yield curve</h3><div class="split">${curve}</div>${ratio}${volumes}${oil}`;
+}
 function renderImpact() {
   const threats = ((DESK.threats || {}).items || []).filter((item) => Number.isFinite(Number(item.lat)) && Number.isFinite(Number(item.lon))).filter(passes);
   const dots = threats.map((item) => {
@@ -1816,7 +1836,7 @@ function renderImpact() {
   document.getElementById("assets").innerHTML = cards || empty("Quotes did not answer on this check.");
   const explain = ((DESK.impact || {}).explainer || []).map((line) => `<li>${esc(line)}</li>`).join("");
   const zone = (DESK.impact || {}).vixZone ? `<p class="meta">VIX zone: ${esc((DESK.impact || {}).vixZone)}</p>` : "";
-  document.getElementById("market-read").innerHTML = marketReadHtml() + (explain ? `<h3 class="group">What's driving gold and silver</h3><ul class="read">${explain}</ul>` : "") + zone;
+  document.getElementById("market-read").innerHTML = marketReadHtml() + (explain ? `<h3 class="group">What's driving gold and silver</h3><ul class="read">${explain}</ul>` : "") + zone + driverDashboard();
   document.getElementById("insights").innerHTML = insightHtml();
   document.getElementById("correlations").innerHTML = fold("show-numbers", "Show the numbers", numberDumpHtml(), false);
   renderTimeline(threats);

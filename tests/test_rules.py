@@ -662,6 +662,20 @@ def test_nov12_rules():
     assert deskextra.rising_state(4, first_seen_days=2, rising_before=False, today=2, avg3=2, avg14=2, max90=2, severity_step_days=0) == "EMERGING"
     kept = boards.cluster_rows([{"title": "Poland shooting", "related": 7, "relatedSources": ["NBC"], "severity": "ALERT", "published": "2026-11-10"}])
     assert kept[0]["related"] == 7 and kept[0]["relatedSources"] == ["NBC"]
+    points = [{"date": f"2026-01-{day:02d}", "price": 100 + day} for day in range(1, 11)]
+    assert deskextra.window_change(points, 5) == round(100 * (110 - 105) / 105, 2)
+    assert deskextra.implied_funds_rate(96.3) == 3.7
+    assert deskextra.curve_flag(-0.2) == "inverted"
+    assert deskextra.curve_flag(0.4) == "positive"
+    assert deskextra.wiki_confirms("Drone strike hits Ust-Luga oil terminal", "Fire at Ust-Luga after a drone attack.")
+    assert deskextra.wiki_confirms("House explosion in Clarksville", "No mention of that town.") is False
+    log, items, changes = deskextra.update_trendlog({"topics": [], "states": {}}, {"days": [
+        {"date": "2026-11-10", "threats": [{"kind": "war-iran", "title": "Iran talks", "severity": "ALERT"}]},
+        {"date": "2026-11-11", "threats": [{"kind": "war-iran", "title": "Iran talks", "severity": "ALERT"}] * 4},
+    ]}, "2026-11-12", [{"kind": "war-iran", "title": "evacuation ordered in Iran", "severity": "ALERT"}] * 6)
+    assert any(row["topic"] == "war-iran" for row in items)
+    assert changes and changes[0]["section"] == "Rising situations"
+    assert len(log["topics"]) < 5000
 
 
 if __name__ == "__main__":
