@@ -46,6 +46,6 @@ flowchart LR
 
 ## Limits to know
 
-GitHub's morning timer is unreliable, so a fresh desk sometimes needs a manual refresh. Four world sources (GDACS, ReliefWeb, WHO, CDC HAN) are currently down, and Tennessee's TEMA site answers only some of the time. The desk is informational. It is not trading advice or an emergency alert system: for a real warning, follow official alerts.
+GitHub's morning timer is unreliable, so a fresh desk sometimes needs a manual refresh. CDC HAN's official feed currently lists no notices, and Tennessee's TEMA site answers only some of the time. The desk is informational. It is not trading advice or an emergency alert system: for a real warning, follow official alerts.
 
 *More detail: [KDD.md](KDD.md) (rules and sources) · [PFL.md](PFL.md) (how it runs).*

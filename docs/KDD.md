@@ -109,10 +109,10 @@ Two rules adjust severity after classification:
 | **NHC Storm watch** (`tropical`), `tropical_severity` | Track and advisory vs Tennessee (box 34.98–36.72 N, 90.35–81.62 W, or ≤ 450 km of home) | no U.S. watch, track misses TN | U.S. hurricane / TS / storm-surge watch or warning in effect | forecast point reaches TN | forecast point reaches TN at ≥ 64 kt (hurricane strength) |
 | **SPC watches** (`spc-watch`), `spc_watch_severity` | Must name Williamson, Davidson, Rutherford, Maury, Sumner, Wilson, Hickman, Cheatham, Dickson, Bedford, Marshall, or "Middle Tennessee" | no watches, or watches elsewhere | Severe Thunderstorm Watch covering Middle TN | **Tornado Watch** covering Middle TN | — |
 | **SPC Day 1–3 outlook** (`spc-outlook`), `outlook_at_point` | Highest categorical polygon containing 35.802, -86.907 | none, General thunder, Marginal | Slight | Enhanced, Moderate | High |
-| **GDACS** (`gdacs`) | GDACS alert level | — | Green / other | Orange | Red |
-| **ReliefWeb** (`relief`) | fixed | — | every disaster row | — | — |
-| **WHO** (`who`) | title words; ≤ 14 days old; COVID data packages skipped | other | "outbreak", "cases", "deaths", "epidemic" | — | — |
-| **CDC HAN** (`cdc`), via Google News | title names HAN | — | other CDC HAN headline | title says "Health Alert Network" / "HAN" | — |
+| **GDACS** (`gdacs`) | GeoJSON alert level. Green events older than 14 days, and events that started in a previous year, are left off the board | — | Green, or any other level | Orange | Red |
+| **ReliefWeb** (`relief`) | card status on the public disasters page | past / closed | ongoing | status `alert` | — |
+| **WHO** (`who`) | Disease Outbreak News title; ≤ 14 days old; COVID data packages skipped | other | "outbreak", "cases", "deaths", "epidemic", "disease", "virus", "fever" | — | — |
+| **CDC HAN** (`cdc`) | official message type on the HAN syndication feed, or the archive page | Health Update, Info Service | Health Advisory, any other notice | Health Alert, or a title that says HAN / CDCHAN | — |
 | **NASA/JPL CNEOS** (`neo`) | close approach ≤ 5 lunar distances in the next 60 days; takes the Sentry level when the object is on the Sentry list | routine flyby (not on Sentry) | Sentry level | Sentry level | Sentry level |
 | **NASA/JPL Sentry** (`sentry`) | first possible impact ≤ 15 years out | not listed | Torino ≥ 1 | Torino ≥ 2 or Palermo > -2 | Torino ≥ 5 or impact probability ≥ 1% |
 | **Doomsday Clock** (`clock`) | link only | always | | | |
@@ -150,10 +150,10 @@ Every fetch "fails soft": on error, the previous JSON for that board is kept and
 | **SPC watches** | `spc.noaa.gov/products/spcwwrss.xml` (≤ 8) | Empty feed gives "No SPC tornado or severe thunderstorm watches" (STANDBY). Failure gives the gap "SPC watches: …". | Storm watch |
 | **SPC outlooks** | `day{1,2,3}otlk_cat.nolyr.geojson`, point-in-polygon at 37179 | A failed day adds a gap for that day only | Storm watch |
 | **USGS** | `earthquake.usgs.gov/.../4.5_week.geojson` (top 30 by magnitude) | gap "USGS: …" | World threat board |
-| **GDACS** | `gdacs.org/xml/rss.xml`, `rss_7d.xml`, `gdacs.org/xml/rss.xml` | tries all three; then gap. **Currently broken** (XML parse error). | World threat board |
-| **ReliefWeb** | API `api.reliefweb.int/v1/disasters` | `reliefweb.int/disasters/rss.xml`, then `updates/rss.xml`. **Currently broken** (API HTTP 410, RSS empty). | World threat board |
-| **WHO** | DON RSS `who.int/feeds/entity/csr/don/en/rss.xml` | `who.int/rss-feeds/news-english.xml`. Items older than 14 days are dropped. **Currently returns nothing in 14 days.** | World threat board (Pandemics & outbreaks) |
-| **CDC HAN** | Google News search "CDC Health Alert Network" (3-day window) | none; gap when nothing is ≤ 14 days old. **Currently empty.** | World threat board |
+| **GDACS** | GeoJSON `gdacs.org/gdacsapi/api/events/geteventlist/events4app` | The old RSS files do not parse (unescaped characters). No current orange, red, or new green event gives a gap. | World threat board |
+| **ReliefWeb** | Public page `reliefweb.int/disasters` (the alert and ongoing cards) | API v1 returns HTTP 410. API v2 refuses an appname that ReliefWeb has not registered, and the RSS paths return an empty response. A page with no cards gives a gap that says so. | World threat board |
+| **WHO** | Disease Outbreak News JSON `who.int/api/news/diseaseoutbreaknews` (`$orderby=PublicationDate desc`, 12 rows). Items older than 14 days are dropped. | The old DON RSS returns 404. An empty 14-day window gives a gap. | World threat board (Pandemics & outbreaks) |
+| **CDC HAN** | Syndication RSS `tools.cdc.gov/api/v2/resources/media/413690.rss` | Archive page `cdc.gov/han/php/notices/index.html`. Google News is not used. If the feed has no items and the archive does not answer, the gap says that plainly. | World threat board |
 | **NASA/JPL** | `ssd-api.jpl.nasa.gov/sentry.api`, `cad.api` (≤ 0.05 au, next 60 days) | each independent; gap per API | World threat board (Space & existential) |
 | **Bulletin of the Atomic Scientists** | static link row to the Doomsday Clock | n/a (no fetch) | World threat board |
 
@@ -169,7 +169,7 @@ Every fetch "fails soft": on error, the previous JSON for that board is kept and
 
 | Source | Use | Fallback |
 |---|---|---|
-| **Google News RSS** (`news.google.com/rss/search`) | (a) the headline desks in §3.6; (b) region headlines for Economic watch (kept `retainDays` = 120, merged with saved rows, ≤ 40 per region); (c) CDC HAN; (d) Narrative radar queries | Region headlines keep the cached rows on failure. A desk with 0 headlines adds a gap. |
+| **Google News RSS** (`news.google.com/rss/search`) | (a) the headline desks in §3.6; (b) region headlines for Economic watch (kept `retainDays` = 120, merged with saved rows, ≤ 40 per region); (c) Narrative radar queries | Region headlines keep the cached rows on failure. A desk with 0 headlines adds a gap. |
 | **Yahoo Finance chart API** | 10 index venues (5-day) and DXY (fallback UUP), gold (GC=F), silver (SI=F) at 6 months | Missing level shows `n/a`. The whole board keeps its cache if the producer throws. |
 | **CoinGecko** | BTC, ETH 90-day daily | `None` gives a blank series |
 | **X API v2** (secret `X_BEARER_TOKEN`) | Public posts of 9 accounts; trends by WOEID; recent-search counts if trends are refused | Missing or rejected token: X is skipped, cached X posts are kept, and the page shows **X feed offline** |
@@ -385,13 +385,7 @@ All stored times are America/Chicago (`desklib.CT`). Feed dates (UTC) are conver
 
 1. **GitHub cron runs land late.** GitHub's `schedule` events on this repo arrive hours late, often in the afternoon. The eight tries (09:07, 10:17, 11:23, 12:37, 13:15, 14:41, 15:47, 16:53 UTC, which is 3:07–10:53 AM CT in winter and an hour later in summer) improve the odds but guarantee nothing. A morning-fresh desk still depends on a manual refresh. A reliable fix needs an outside trigger, which has not been chosen.
 2. **One refresh per day from the schedule.** Once a commit named `Refresh desk YYYY-MM-DD` (Chicago date) is among the last 30 commits, every later scheduled try that day skips. A manual run is never skipped. A run that changed nothing makes no commit, so it does not count as "refreshed".
-3. **Broken sources** (as of the Nov 11, 2026 8:59 AM CT refresh, `meta.json → errors`):
-   - **GDACS**: RSS XML does not parse ("not well-formed").
-   - **ReliefWeb**: API returns HTTP 410; RSS fallbacks are empty.
-   - **WHO**: no outbreak notice in the last 14 days (DON feed has been 404).
-   - **CDC HAN**: no notice newer than 14 days.
-   
-   These four are shown as "Source down", never as an all-clear.
+3. **CDC HAN has no notices on the feed that answers.** The syndication RSS (`tools.cdc.gov` media 413690) is the official feed and currently lists none. The archive page on `cdc.gov` returns HTTP 403 to an automated read. That is shown as Source down, not as an all-clear. GDACS, ReliefWeb, and WHO use the endpoints in §3.1.
 4. **TEMA is flaky.** tn.gov often resets or 403s the GitHub runner. The fetch tries two URLs three times, then falls back to the Williamson County public-safety RSS (which is often empty). TEMA is a real, working source when it answers. Since PR #17, a statewide report that doesn't name Williamson stays STANDBY and drops off after ~72 hours, so Local is often just the NWS line. The county comes from the title's "<Name> County" text only; a report naming several counties is tagged with the first.
 5. **Tests are not part of the refresh.** A broken rule would only be caught when someone runs the tests.
 6. **Hard-coded story names and claim words** (§4.1, §4.3) need hand upkeep as the news moves on, and must be changed in both `boards.py` and `template.html`. When neither headline has a claim word, token overlap under 0.35 is treated as an update (the Kushner/Putin lead shares about a third of its words with the Abu Dhabi talks line, so a 0.2 cutoff would still hide it).

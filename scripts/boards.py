@@ -1165,123 +1165,100 @@ def _try_nws(now):
     return rows, []
 
 
-def _try_gdacs(now):
+def _parsed_rows(kind: str, source: str, parsed: list[dict], now: datetime) -> list[dict]:
     rows = []
-    errors = []
-    for url in (
-        "https://www.gdacs.org/xml/rss.xml",
-        "https://www.gdacs.org/xml/rss_7d.xml",
-        "https://gdacs.org/xml/rss.xml",
-    ):
-        try:
-            nodes = _rss_items(url, 12)
-        except Exception as err:
-            errors.append(str(err))
-            print(f"  gdacs {url}: {err}")
-            continue
-        for node in nodes:
-            title = re.sub(r"\s+", " ", (node.findtext("title") or "")).strip()
-            link = d.http_url(node.findtext("link") or "https://www.gdacs.org/")
-            if not title or not link:
-                continue
-            published = d.parse_pubdate(node.findtext("pubDate") or "") or now
-            alert = (node.findtext("{http://www.gdacs.org}alertlevel") or node.findtext("gdacs:alertlevel") or "").lower()
-            sev = "CRITICAL" if "red" in alert else "ACTION" if "orange" in alert else "ALERT"
-            extra = {"severity": sev}
-            point = _point_from(node)
-            if point:
-                extra["lat"], extra["lon"] = point
-            rows.append(_item("gdacs", "threat", "GDACS", title, d.clean_note(node.findtext("description") or ""), link, published, ["gdacs", sev.lower()], extra))
-        if rows:
-            return rows, []
-    if not rows:
-        return [], ["GDACS: " + (errors[0] if errors else "RSS returned no events.")]
-    return rows, []
+    for item in parsed:
+        when = d.parse_pubdate(item.get("date") or "") or now
+        extra = {"severity": item.get("severity") or "STANDBY"}
+        if item.get("lat") is not None and item.get("lon") is not None:
+            extra["lat"], extra["lon"] = item["lat"], item["lon"]
+        severity = extra["severity"]
+        rows.append(_item(
+            kind, "threat", source, item.get("title") or "", item.get("note") or "",
+            item.get("url") or "", when, [kind, severity.lower()], extra,
+        ))
+    return rows
+
+
+def _try_gdacs(now):
+    from deskextra import GDACS_GEOJSON, parse_gdacs_events
+    try:
+        payload = json.loads(_get(GDACS_GEOJSON, timeout=40, headers={"User-Agent": NWS_UA, "Accept": "application/json"}))
+        parsed = parse_gdacs_events(payload, now.strftime("%Y-%m-%d"))
+    except Exception as err:
+        print(f"  gdacs: {err}")
+        return [], [f"GDACS: {err}"]
+    if not parsed:
+        return [], ["GDACS: the event list answered and had no current orange, red, or new green events."]
+    print(f"  gdacs {len(parsed)}")
+    return _parsed_rows("gdacs", "GDACS", parsed, now), []
 
 
 def _try_relief(now):
-    rows = []
-    errors = []
-    url = "https://api.reliefweb.int/v1/disasters?appname=news-desk&profile=list&preset=latest&limit=8"
+    from deskextra import RELIEF_DISASTERS, parse_relief_disasters
     try:
-        payload = json.loads(_get(url, timeout=30))
-        for entry in payload.get("data") or []:
-            fields = entry.get("fields") or {}
-            title = fields.get("name") or ""
-            link = d.http_url(fields.get("url") or "")
-            if not title or not link:
-                continue
-            created = ((fields.get("date") or {}).get("created")) or ""
-            published = d.parse_pubdate(created) or now
-            country = ((fields.get("primary_country") or {}).get("name")) or ""
-            kind = ((fields.get("primary_type") or {}).get("name")) or "disaster"
-            rows.append(_item("relief", "threat", "ReliefWeb", title, f"{kind}. {country}".strip(), link, published, ["relief", "alert"], {"severity": "ALERT"}))
+        html = _get(RELIEF_DISASTERS, timeout=30, headers={"User-Agent": BROWSER, "Accept": "text/html"}).decode("utf-8", "replace")
+        parsed = parse_relief_disasters(html, now.strftime("%Y-%m-%d"))
     except Exception as err:
-        errors.append(str(err))
         print(f"  reliefweb: {err}")
-    if rows:
-        return rows, []
-    for rss in ("https://reliefweb.int/disasters/rss.xml", "https://reliefweb.int/updates/rss.xml"):
-        try:
-            for node in _rss_items(rss, 8):
-                title = re.sub(r"\s+", " ", (node.findtext("title") or "")).strip()
-                link = d.http_url(node.findtext("link") or rss)
-                if not title or not link:
-                    continue
-                published = d.parse_pubdate(node.findtext("pubDate") or "") or now
-                rows.append(_item("relief", "threat", "ReliefWeb", title, "", link, published, ["relief", "alert"], {"severity": "ALERT"}))
-            if rows:
-                return rows, []
-        except Exception as err:
-            errors.append(str(err))
-            print(f"  reliefweb {rss}: {err}")
-    return [], ["ReliefWeb: disasters feed did not answer. " + (errors[0] if errors else "")]
+        return [], [
+            "ReliefWeb: API v1 is retired and API v2 requires a registered appname. "
+            f"The public disasters page did not answer. {err}"
+        ]
+    if not parsed:
+        return [], [
+            "ReliefWeb: API v1 is retired (HTTP 410) and API v2 refuses an unregistered appname. "
+            "The public disasters page listed no disasters."
+        ]
+    print(f"  reliefweb {len(parsed)}")
+    return _parsed_rows("relief", "ReliefWeb", parsed, now), []
 
 
 def _try_who(now):
-    rows = []
-    for url in ("https://www.who.int/feeds/entity/csr/don/en/rss.xml", "https://www.who.int/rss-feeds/news-english.xml"):
-        try:
-            nodes = _rss_items(url, 6)
-        except Exception as err:
-            print(f"  who {url}: {err}")
-            continue
-        for node in nodes:
-            title = re.sub(r"\s+", " ", (node.findtext("title") or "")).strip()
-            link = d.http_url(node.findtext("link") or "")
-            if not title or not link:
-                continue
-            published = d.parse_pubdate(node.findtext("pubDate") or "") or now
-            if published.year < now.year or (now - published).days > 14:
-                continue
-            if re.search(r"covid|technical package|data for covid", title, re.I):
-                continue
-            sev = "ALERT" if re.search(r"outbreak|cases|deaths|epidemic", title, re.I) else "STANDBY"
-            rows.append(_item("who", "threat", "WHO", title, d.clean_note(node.findtext("description") or ""), link, published, ["who", sev.lower()], {"severity": sev}))
-        if rows:
-            break
-    gaps = [] if rows else ["WHO: outbreak notices did not answer in the last 14 days."]
-    return rows[:6], gaps
+    from deskextra import WHO_DON, parse_who_dons
+    try:
+        payload = json.loads(_get(WHO_DON, timeout=30, headers={"User-Agent": BROWSER, "Accept": "application/json"}))
+        parsed = parse_who_dons(payload, now.strftime("%Y-%m-%d"))
+    except Exception as err:
+        print(f"  who: {err}")
+        return [], [f"WHO: {err}"]
+    if not parsed:
+        return [], ["WHO: the Disease Outbreak News list answered and had nothing in the last 14 days."]
+    print(f"  who {len(parsed)}")
+    return _parsed_rows("who", "WHO", parsed, now), []
 
 
 def _try_cdc(now):
-    rows = []
+    from deskextra import CDC_HAN_ARCHIVE, CDC_HAN_EMPTY, CDC_HAN_RSS, parse_cdc_archive, parse_cdc_han_rss
+    today = now.strftime("%Y-%m-%d")
+    feed_ok = False
     try:
-        for row in _headlines("CDC Health Alert Network", now, 3):
-            row = dict(row)
-            row["kind"] = "cdc"
-            row["source"] = "CDC HAN"
-            official = bool(re.search(r"health alert network|\bHAN\b", row.get("title") or "", re.I))
-            row["severity"] = "ACTION" if official else "ALERT"
-            row["tags"] = list(dict.fromkeys((row.get("tags") or []) + ["cdc", row["severity"].lower()]))
-            rows.append(row)
+        xml = _get(CDC_HAN_RSS, timeout=25, headers={"User-Agent": BROWSER, "Accept": "application/rss+xml, application/xml"}).decode("utf-8", "replace")
+        feed_ok = True
+        parsed = parse_cdc_han_rss(xml, today)
     except Exception as err:
-        print(f"  cdc headlines: {err}")
-        return [], [f"CDC HAN: {err}"]
-    fresh = [row for row in rows if (row.get("date") or "") >= (now - timedelta(days=14)).date().isoformat()]
-    if not fresh:
-        return [], ["CDC HAN: RSS did not answer and no notice is newer than 14 days."]
-    return fresh[:5], []
+        print(f"  cdc rss: {err}")
+        parsed = []
+        feed_error = str(err)
+    else:
+        feed_error = ""
+    if not parsed:
+        try:
+            page = _get(CDC_HAN_ARCHIVE, timeout=25, headers={"User-Agent": BROWSER, "Accept": "text/html"}).decode("utf-8", "replace")
+            parsed = parse_cdc_archive(page)
+            for item in parsed:
+                if not item.get("date"):
+                    item["date"] = today
+        except Exception as err:
+            print(f"  cdc archive: {err}")
+            if not feed_error:
+                feed_error = str(err)
+    if not parsed:
+        if feed_ok:
+            return [], [CDC_HAN_EMPTY]
+        return [], [f"CDC HAN: {feed_error or 'feed did not answer.'}"]
+    print(f"  cdc {len(parsed)}")
+    return _parsed_rows("cdc", "CDC HAN", parsed, now), []
 
 
 _STORY_STOP = {
