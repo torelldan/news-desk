@@ -1,6 +1,86 @@
 {
-  "googleNote": "Google Trends US daily list answered (10 topics). Kept the ones that match a war, government, or threat topic. None of today's search trends matched.",
+  "googleNote": "Google Trends US daily list answered (10 topics). Kept the ones that match a war, government, or threat topic.",
   "items": [
+    {
+      "category": "us-gov",
+      "confidence": "reported",
+      "date": "2026-11-12",
+      "id": "gtrend:6528fc968a7aeedd",
+      "kind": "trend",
+      "lane": "news",
+      "look": "news",
+      "name": "senate finance committee rfk jr inquiry",
+      "note": "US search trend. Traffic 2000+.",
+      "place": "US",
+      "published": "2026-11-12T11:40:00-06:00",
+      "rise": "US daily list 2000+",
+      "samples": [
+        {
+          "source": "The Guardian",
+          "text": "Senator opens investigation into evidence RFK Jr ‘unlawfully lied’ to Congress",
+          "url": "https://www.theguardian.com/us-news/2026/nov/12/senate-investigation-rfk-jr-measles-samoa"
+        },
+        {
+          "source": "AP News",
+          "text": "Senators probing RFK Jr.'s testimony on Samoa trip after AP and Guardian showed documents refute it",
+          "url": "https://apnews.com/article/samoa-rfk-jr-senate-investigation-measles-vaccines-e4b97becad6d2951d9e84ea584979c41"
+        },
+        {
+          "source": "CNN",
+          "text": "Top Democrat will investigate whether RFK Jr. lied to Congress",
+          "url": "https://www.cnn.com/2026/11/12/politics/senate-democrate-rfk-investigation"
+        }
+      ],
+      "severity": "STANDBY",
+      "soWhat": "no action needed",
+      "source": "Google Trends",
+      "sourceCount": 3,
+      "title": "senate finance committee rfk jr inquiry",
+      "url": "https://www.theguardian.com/us-news/2026/nov/12/senate-investigation-rfk-jr-measles-samoa",
+      "volume": "2000+"
+    },
+    {
+      "category": "iran-war",
+      "confidence": "reported",
+      "date": "2026-11-12",
+      "id": "velocity:4ee4bc978244e41e",
+      "kind": "trend",
+      "lane": "news",
+      "look": "news",
+      "name": "iran war",
+      "note": "The same topic showed up across several outlets.",
+      "published": "2026-11-12T12:12:00-06:00",
+      "rise": "4 outlets this window",
+      "samples": [
+        {
+          "date": "2026-11-12",
+          "published": "2026-11-12T11:20:00-06:00",
+          "source": "News From The States",
+          "text": "US senators demand end to Iran war funding in bill averting shutdown - News From The States",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPYjQybVJpU3hCWGlNOUhQVHUzT00yQVNwX3RiOFlTdzhqUzRWYzhuaVV6cWUta1FReUVnSWJ0dzE5UXZ1Uk9mdnJKT3NYRGtHcHRhaS00eVAwT2I3YWpkQzVzeGlKMGhDVU5RSy1LdW9paWdlTzgyS3lGRkMxVGs1S0hzTnJpWVFVTFF6WUE4SDU5a25lNllTdXNRMjNKLWVtMVJubXV4aw?oc=5"
+        },
+        {
+          "date": "2026-11-11",
+          "published": "2026-11-11T13:25:00-06:00",
+          "source": "WSJ",
+          "text": "Vance Considers Direct Talks With Iran Hard-Liner in Push to End War - WSJ",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQRjRFTzFCWWlaNjZKMmYxR3FMcHc0V2FrUENBOHFCOUFISFZFSnhYcUctSkUwYXpUMXcwVmlrUEo2cEtRTWZCbVZNdC03SVhxTlo0N3ZseEZ6N1J4NUxFVVEwT0R0bzZFS01nRDRIMENrX19WemhZZUdEWW8tSGRGajNjRjhzdUNPckhGTVRQcEtwTTQ0aTdiVVZEMUNjbVBFekJ4RF9ZRWRBVEFJTmRYcGVSelI?oc=5"
+        },
+        {
+          "date": "2026-11-10",
+          "published": "2026-11-10T10:27:13-06:00",
+          "source": "Reuters",
+          "text": "Most Americans want new Democratic Congress to end Trump's Iran war, Reuters/Ipsos poll finds - Reuters",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNNzd5Z2JCbEZwZWtzVERIdVpCMHZSa1lZdW5OdXVwbHozbW1rM3ByUTRyZFNyTThTOXFLUnViZWtDbHllZWFUYVZXeXhUd1E2YWdSeTZVakNuV3ozbHJqdkJkN2RNeVhvRW5XRXRSWUhmdUx0RVFsLUNXdmFoMUtzOENaMS1UbzYtY1A3SXJmNFUtWHZQOVdDVC1DWENfbUVEaUF4ZGhBTVR1NEplSTBTRnU5bDBibDlnaWhjTERn?oc=5"
+        }
+      ],
+      "severity": "ALERT",
+      "soWhat": "no action needed",
+      "source": "News velocity",
+      "sourceCount": 4,
+      "title": "iran war",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPYjQybVJpU3hCWGlNOUhQVHUzT00yQVNwX3RiOFlTdzhqUzRWYzhuaVV6cWUta1FReUVnSWJ0dzE5UXZ1Uk9mdnJKT3NYRGtHcHRhaS00eVAwT2I3YWpkQzVzeGlKMGhDVU5RSy1LdW9paWdlTzgyS3lGRkMxVGs1S0hzTnJpWVFVTFF6WUE4SDU5a25lNllTdXNRMjNKLWVtMVJubXV4aw?oc=5"
+    },
     {
       "category": "ukraine-war",
       "confidence": "reported",
@@ -11,22 +91,22 @@
       "look": "news",
       "name": "ukraine war",
       "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-12T11:53:15-06:00",
-      "rise": "4 outlets this window",
+      "published": "2026-11-12T12:12:00-06:00",
+      "rise": "3 outlets this window",
       "samples": [
         {
           "date": "2026-11-12",
-          "published": "2026-11-12T11:03:45-06:00",
-          "source": "DW.com",
-          "text": "Ukraine peace talks: Jared Kushner and Steve Witkoff conclude talks with Putin - DW.com",
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOcmZNQXFjXzc5bXVzVzdFRG1LMHlRSW1ncmhpSGFSRExjZTlqZENUOXNILUxOM1lLV1RKYUFoRklTU09BamRoNno1YThCbUU3ejJOTmpKcEFTalBjWjJQM1lfN1ZvNjVNTVktNE9jTTU2N0V5a3hVZ2pKOTZ6OS1fdDZnM3Ywb05zTnF4ZzZ6UDA3dlhLV2JJ?oc=5"
+          "published": "2026-11-12T10:31:12-06:00",
+          "source": "BBC",
+          "text": "Ukraine says military Starlink disrupted again as US envoys meet Putin in Moscow - BBC",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB2YUZtTEpkZ1E5YmYwVXlWYXFzTWc4S09mYnBkejB5Y3NHd0xKTjB3MlVGeFZKaHlUdTNJRVRvWkgzQ3hHWWpVZm1neElKcDZ3NWJqbnl4WGdLbDQ?oc=5"
         },
         {
           "date": "2026-11-11",
-          "published": "2026-11-11T05:06:13-06:00",
-          "source": "AFP.com",
-          "text": "Ukraine's Zelensky welcomes 'changes' in US approach as talks restart - AFP.com",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQRmdWQkpBUWtub0M4ZkJIN3RiTC1xSVhtamlmQ3ktNmVoOWFLVHRvWW9RNjFmRUtmM05kTE9rQVVNZWhzd2Q3Q0lNeXVLYVptV29ZOFByeWFmVUY0d2pUTjRldWdHVEVkMkVDR1BCc05PdlZmRm1PX0laOEk5cDN3NjNoalROTFBEbjYw?oc=5"
+          "published": "2026-11-11T13:59:00-06:00",
+          "source": "Atlantic Council",
+          "text": "Where the Russia-Ukraine peace talks stand after Abu Dhabi - Atlantic Council",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQXzRIQ2x3ZExSYkJzT3FOWllvR0ZwN1o4THZjdlFvb3ZaSE5GSmdsNU5LNHNTS3gyRXg0OEF2bEI2U1UxeE1vaGZaZFhXUE5NSGRqWW5NMDJuQzI0UE9PblJtNDAxSlRxMWlGU3FqU3FhbFdyNno4RUdVX0kwVmYwSEU2bEVoU1ozOTlUOFo3dE9YcVF2YnMwalhyQXE1UmprRkpVX0xoRGJxdjFVdm9qUE5PQXdUN1NMLXlB?oc=5"
         },
         {
           "date": "2026-11-05",
@@ -39,9 +119,9 @@
       "severity": "ALERT",
       "soWhat": "no action needed",
       "source": "News velocity",
-      "sourceCount": 4,
+      "sourceCount": 3,
       "title": "ukraine war",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOcmZNQXFjXzc5bXVzVzdFRG1LMHlRSW1ncmhpSGFSRExjZTlqZENUOXNILUxOM1lLV1RKYUFoRklTU09BamRoNno1YThCbUU3ejJOTmpKcEFTalBjWjJQM1lfN1ZvNjVNTVktNE9jTTU2N0V5a3hVZ2pKOTZ6OS1fdDZnM3Ywb05zTnF4ZzZ6UDA3dlhLV2JJ?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB2YUZtTEpkZ1E5YmYwVXlWYXFzTWc4S09mYnBkejB5Y3NHd0xKTjB3MlVGeFZKaHlUdTNJRVRvWkgzQ3hHWWpVZm1neElKcDZ3NWJqbnl4WGdLbDQ?oc=5"
     },
     {
       "category": "us-gov",
@@ -53,7 +133,7 @@
       "look": "news",
       "name": "us gov",
       "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-12T11:53:15-06:00",
+      "published": "2026-11-12T12:12:00-06:00",
       "rise": "4 outlets this window",
       "samples": [
         {
@@ -64,18 +144,18 @@
           "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQQmtZZ2NGUE9lNXZHZTJySFhIbHJoemVJbks5bVNEV1l4WFJSWU5xaC1TV2lWR2lwSV9vUU9GRmZjTjJCdU51UzBGcWRiamFwcTVjWWNtUGpxR3ZORG1BUFFLTERUQlpvTlFrZ190MEZfMldGOUtZdFJkVHhudkRPS2ZMaUlWZy0tVWp2SlJCck1nRHFJdUtPbFpUbndiMlVuQkhKWDJocVNGVm42aVFZZFhOSUZSNDdqMXRPQVBjOXpNVUJORmNLVw?oc=5"
         },
         {
+          "date": "2026-11-11",
+          "published": "2026-11-11T11:35:00-06:00",
+          "source": "Politico",
+          "text": "‘Draft Marco’ effort grows on Capitol Hill after midterms bloodbath - Politico",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQWGYxNFpyNDRuX09fa3NyeFR6cmlNNnVkOHFUZGpFeU11bTAwcUdjTHdpeXFCX1FjSlhuR3dVRkNQY1hlN2JlcG5xZjFDRlZlT2RGQ0JVY1BuckVzWDVyN3hsRFZKTG04SXpSdWZ5UVh1WGRxbml3NzVLTVluLVl3RWxpaVBpMGNHWVJn?oc=5"
+        },
+        {
           "date": "2026-11-10",
           "published": "2026-11-10T15:26:18-06:00",
           "source": "Stateline",
           "text": "Young, diverse voters showed up for midterms as older, Trump voters stayed home - Stateline",
           "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPWFRDeXNZTHhxNmJXV21kOEY4OWsxS1hPMTRRUE5FVG85c0Y4b3d1UFBxLWM5LWRCZ0FiQTBWMFhaNVdFR1o0c09nOTdCcHN3c0JvWXF6YnpMdDRqTldFRVJ1X1VCeHdnSVVyQzZKc3J0Uk5kTUtFX2hrYThueFpBSzRsV2lWRWVjcW9WNXZONzZ2MlJqVXJJamd1WWVUaUlUNzVxbnZjRUktMVNfYVFMTA?oc=5"
-        },
-        {
-          "date": "2026-11-10",
-          "published": "2026-11-10T10:26:00-06:00",
-          "source": "AP News",
-          "text": "Rubio urges nations to ‘step up’ on Strait of Hormuz security - AP News",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPLXl6Tnh3RFoxQXFwUm11YUVVdnZjbkNUVzc0aTVMc1lSZXBIa0RFdXV3cDduUHNMaWw2T3lHd0RhcHFyQU5kX1lEbTlFdDViNEFHNDNVRDdjM1BCb0ZMS2paZzNKeGh5WTV6V3psM1NhZ1BHMm9SUDBKWEtmVVNwZWI2SlpZeTdheV9jbkIzNA?oc=5"
         }
       ],
       "severity": "ALERT",
@@ -84,48 +164,6 @@
       "sourceCount": 4,
       "title": "us gov",
       "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQQmtZZ2NGUE9lNXZHZTJySFhIbHJoemVJbks5bVNEV1l4WFJSWU5xaC1TV2lWR2lwSV9vUU9GRmZjTjJCdU51UzBGcWRiamFwcTVjWWNtUGpxR3ZORG1BUFFLTERUQlpvTlFrZ190MEZfMldGOUtZdFJkVHhudkRPS2ZMaUlWZy0tVWp2SlJCck1nRHFJdUtPbFpUbndiMlVuQkhKWDJocVNGVm42aVFZZFhOSUZSNDdqMXRPQVBjOXpNVUJORmNLVw?oc=5"
-    },
-    {
-      "category": "iran-war",
-      "confidence": "reported",
-      "date": "2026-11-12",
-      "id": "velocity:4ee4bc978244e41e",
-      "kind": "trend",
-      "lane": "news",
-      "look": "news",
-      "name": "iran war",
-      "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-12T11:53:15-06:00",
-      "rise": "3 outlets this window",
-      "samples": [
-        {
-          "date": "2026-11-11",
-          "published": "2026-11-11T13:25:00-06:00",
-          "source": "WSJ",
-          "text": "Vance Considers Direct Talks With Iran Hard-Liner in Push to End War - WSJ",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQRjRFTzFCWWlaNjZKMmYxR3FMcHc0V2FrUENBOHFCOUFISFZFSnhYcUctSkUwYXpUMXcwVmlrUEo2cEtRTWZCbVZNdC03SVhxTlo0N3ZseEZ6N1J4NUxFVVEwT0R0bzZFS01nRDRIMENrX19WemhZZUdEWW8tSGRGajNjRjhzdUNPckhGTVRQcEtwTTQ0aTdiVVZEMUNjbVBFekJ4RF9ZRWRBVEFJTmRYcGVSelI?oc=5"
-        },
-        {
-          "date": "2026-11-11",
-          "published": "2026-11-11T04:02:53-06:00",
-          "source": "NPR",
-          "text": "Trump says US won Iran war, Iran responds - NPR",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNRi1JakU3TzJVd04yYXJFNWswV2NRSUxJaE1Ga2UzZGVhU3RyUzRGUEt2Yi0tMm9pMlVTM0t4QzFEQWx0YmlIbVlDa3JHTF9ZU2ZQTTY4eURMdUNSRXlyOGxrU2ZxLWpYYUtnS1lqblBoWHY1NkJ5MkViUVJuUTJELUEtYjFHU0d1dENZR3RB?oc=5"
-        },
-        {
-          "date": "2026-11-08",
-          "published": "2026-11-08T15:28:12-06:00",
-          "source": "CNBC",
-          "text": "Trump says renewed Iran strikes ‘highly unlikely’ if talks progress but warns he could still strike - CNBC",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNb0l6UllaNWstdHV3YXVHY3FsaTV6blctcjJ2aDl5dnNwZF9OOFdrRXM5RlN6bUYzU2ZnTGU1bndLek5kTDFTWG1LZUFuamZLbFUwUmJiMDF1a21pOFNhcjI2SzdLVHRtWWYzOHVJVl9qMk9CY3E3Y2lEY1VOZ2txYTRHOA?oc=5"
-        }
-      ],
-      "severity": "ALERT",
-      "soWhat": "no action needed",
-      "source": "News velocity",
-      "sourceCount": 3,
-      "title": "iran war",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQRjRFTzFCWWlaNjZKMmYxR3FMcHc0V2FrUENBOHFCOUFISFZFSnhYcUctSkUwYXpUMXcwVmlrUEo2cEtRTWZCbVZNdC03SVhxTlo0N3ZseEZ6N1J4NUxFVVEwT0R0bzZFS01nRDRIMENrX19WemhZZUdEWW8tSGRGajNjRjhzdUNPckhGTVRQcEtwTTQ0aTdiVVZEMUNjbVBFekJ4RF9ZRWRBVEFJTmRYcGVSelI?oc=5"
     }
   ],
   "mode": "trends",

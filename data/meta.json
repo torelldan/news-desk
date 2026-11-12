@@ -1,15 +1,16 @@
 {
   "baseline": false,
-  "brief": "No rare risk is on the board. A routine flyby or an empty storm outlook is not an emergency. Current war coverage is on the board: Ukraine peace talks: Jared Kushner and Steve Witkoff conclude talks with Putin - DW.com; Vance Considers Direct Talks With Iran Hard-Liner in Push to End War - WSJ. Rising topic: ukraine war (4 outlets this window).",
-  "checkedAt": "2026-11-12T11:53:15-06:00",
-  "checkedLabel": "Nov 12, 2026 11:53 AM CT",
+  "brief": "Open risk: ACTION Drought in Belize, Costa Rica, Cuba, Dominican Republic, Guatemala, Honduras, Haiti, Mexico, Nicaragua, El Salvador, United States. Current war coverage is on the board: US senators demand end to Iran war funding in bill averting shutdown - News From The States; Ukraine says military Starlink disrupted again as US envoys meet Putin in Moscow - BBC. Rising topic: senate finance committee rfk jr inquiry (US daily list 2000+).",
+  "checkedAt": "2026-11-12T12:12:00-06:00",
+  "checkedLabel": "Nov 12, 2026 12:12 PM CT",
   "errors": [
+    "ReliefWeb: API v1 is retired (HTTP 410) and API v2 refuses an unregistered appname. The public disasters page listed no disasters.",
     "CDC HAN: the official syndication feed answered with no notices, and the archive page did not answer."
   ],
   "retainDays": 120,
   "today": "2026-11-12",
   "trends": {
-    "google": "Google Trends US daily list answered (10 topics). Kept the ones that match a war, government, or threat topic. None of today's search trends matched.",
+    "google": "Google Trends US daily list answered (10 topics). Kept the ones that match a war, government, or threat topic.",
     "mode": "trends",
     "note": "X trends by WOEID (US 23424977 and worldwide 1). Kept only when the name matches a threat or preparedness theme. The endpoint answered and none of the names matched."
   },

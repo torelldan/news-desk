@@ -3341,7 +3341,7 @@
     },
     {
       "date": "2026-11-12",
-      "label": "Nov 12, 2026 11:53 AM CT",
+      "label": "Nov 12, 2026 12:12 PM CT",
       "outlooks": [
         {
           "id": "quake:cb415447006964cd",
@@ -3384,12 +3384,72 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:ba8abddab16e39f4",
+          "id": "gdacs:5b03b5b1064e4603",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ACTION"
+        },
+        {
+          "id": "gdacs:51066b63ff0e0cbf",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ACTION"
+        },
+        {
+          "id": "gdacs:401d90594abcb064",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
         {
-          "id": "headline:828db2845dac4587",
+          "id": "gdacs:1cb4ba0444f3c820",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "gdacs:45c098a8501cd9f7",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "gdacs:59406c5103219fc5",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "gdacs:ac901cebd78a1cb1",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "gdacs:32b6cef8a134d76a",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "who:89e94b5faca21e80",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "who:117e252933977e80",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "who:55ac2b45f22e2893",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:3c2ed3659f9303b2",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:0b94d48e869b6086",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:0f4c42576327a007",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
@@ -3399,17 +3459,17 @@
           "severity": "ALERT"
         },
         {
+          "id": "headline:cf26e4240ce4bd56",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
           "id": "headline:6cb56845c059b9bc",
           "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
           "severity": "ALERT"
         },
         {
-          "id": "headline:d213d85c6339c6e8",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ALERT"
-        },
-        {
-          "id": "headline:22e562e445992f6f",
+          "id": "headline:df8d49806efdef17",
           "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
           "severity": "ALERT"
         },
@@ -3424,12 +3484,17 @@
           "severity": "ALERT"
         },
         {
+          "id": "headline:cf978ee07c115efd",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
           "id": "headline:3dc5fcef91db1d13",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
         {
-          "id": "headline:03c55bac74fde981",
+          "id": "headline:0c8468a26e4fd669",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
@@ -3444,22 +3509,12 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:d3596bf2c6c658f7",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:7149be05df5e1387",
-          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
-          "severity": "STANDBY"
-        },
-        {
           "id": "headline:c92155a940ad7fb8",
           "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
           "severity": "STANDBY"
         },
         {
-          "id": "headline:1154c4e1a86dc519",
+          "id": "headline:6ef92fb30a52e072",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "STANDBY"
         },
@@ -3554,16 +3609,88 @@
           "title": "Winter Weather Advisory"
         },
         {
-          "id": "headline:ba8abddab16e39f4",
-          "kind": "war-ukraine",
-          "severity": "ALERT",
-          "title": "Ukraine peace talks: Jared Kushner and Steve Witkoff conclude talks with Putin - DW.com"
+          "id": "gdacs:5b03b5b1064e4603",
+          "kind": "gdacs",
+          "severity": "ACTION",
+          "title": "Drought in Burundi, Democratic Republic of Congo, Central African Republic, Eritrea, Ethiopia, Kenya, Niger, Nigeria, Rwanda, Sudan, South Sudan, Chad, Tanzania, Uganda"
         },
         {
-          "id": "headline:828db2845dac4587",
+          "id": "gdacs:51066b63ff0e0cbf",
+          "kind": "gdacs",
+          "severity": "ACTION",
+          "title": "Drought in Belize, Costa Rica, Cuba, Dominican Republic, Guatemala, Honduras, Haiti, Mexico, Nicaragua, El Salvador, United States"
+        },
+        {
+          "id": "gdacs:401d90594abcb064",
+          "kind": "gdacs",
+          "severity": "ALERT",
+          "title": "Earthquake in Japan"
+        },
+        {
+          "id": "gdacs:1cb4ba0444f3c820",
+          "kind": "gdacs",
+          "severity": "ALERT",
+          "title": "Earthquake in Off Coast Of Oregon"
+        },
+        {
+          "id": "gdacs:45c098a8501cd9f7",
+          "kind": "gdacs",
+          "severity": "ALERT",
+          "title": "Earthquake in Off East Coast Of Honshu, Japan"
+        },
+        {
+          "id": "gdacs:59406c5103219fc5",
+          "kind": "gdacs",
+          "severity": "ALERT",
+          "title": "Earthquake in South Sandwich Islands Region"
+        },
+        {
+          "id": "gdacs:ac901cebd78a1cb1",
+          "kind": "gdacs",
+          "severity": "ALERT",
+          "title": "Earthquake in Russia"
+        },
+        {
+          "id": "gdacs:32b6cef8a134d76a",
+          "kind": "gdacs",
+          "severity": "ALERT",
+          "title": "Earthquake in Nepal"
+        },
+        {
+          "id": "who:89e94b5faca21e80",
+          "kind": "who",
+          "severity": "STANDBY",
+          "title": "Ebola disease caused by Bundibugyo virus - Democratic Republic of the Congo, Kenya and Nigeria"
+        },
+        {
+          "id": "who:117e252933977e80",
+          "kind": "who",
+          "severity": "STANDBY",
+          "title": "Yellow fever - WHO African Region"
+        },
+        {
+          "id": "who:55ac2b45f22e2893",
+          "kind": "who",
+          "severity": "STANDBY",
+          "title": "Shamonda virus in human - France"
+        },
+        {
+          "id": "headline:3c2ed3659f9303b2",
+          "kind": "war-iran",
+          "severity": "ALERT",
+          "title": "US senators demand end to Iran war funding in bill averting shutdown - News From The States"
+        },
+        {
+          "id": "headline:0b94d48e869b6086",
+          "kind": "war-ukraine",
+          "severity": "ALERT",
+          "title": "Ukraine says military Starlink disrupted again as US envoys meet Putin in Moscow - BBC"
+        },
+        {
+          "id": "headline:0f4c42576327a007",
           "kind": "climate",
           "severity": "ALERT",
-          "title": "The planet ‘is being killed’, Greta Thunberg tells Cop31 climate summit - The Guardian"
+          "title": "What to Expect at COP 31: Key issues and how the negotiations work - International Institute for Sustainable Development"
         },
         {
           "id": "headline:7fd52fe5652c72c9",
@@ -3572,22 +3699,22 @@
           "title": "White House tells Democrats that investigating Trump administration could be criminal - Reuters"
         },
         {
+          "id": "headline:cf26e4240ce4bd56",
+          "kind": "war-ukraine",
+          "severity": "ALERT",
+          "title": "Where the Russia-Ukraine peace talks stand after Abu Dhabi - Atlantic Council"
+        },
+        {
           "id": "headline:6cb56845c059b9bc",
           "kind": "war-iran",
           "severity": "ALERT",
           "title": "Vance Considers Direct Talks With Iran Hard-Liner in Push to End War - WSJ"
         },
         {
-          "id": "headline:d213d85c6339c6e8",
-          "kind": "war-ukraine",
+          "id": "headline:df8d49806efdef17",
+          "kind": "usgov",
           "severity": "ALERT",
-          "title": "Ukraine's Zelensky welcomes 'changes' in US approach as talks restart - AFP.com"
-        },
-        {
-          "id": "headline:22e562e445992f6f",
-          "kind": "war-iran",
-          "severity": "ALERT",
-          "title": "Trump says US won Iran war, Iran responds - NPR"
+          "title": "‘Draft Marco’ effort grows on Capitol Hill after midterms bloodbath - Politico"
         },
         {
           "id": "headline:970c3406a8638313",
@@ -3602,16 +3729,22 @@
           "title": "Young, diverse voters showed up for midterms as older, Trump voters stayed home - Stateline"
         },
         {
+          "id": "headline:cf978ee07c115efd",
+          "kind": "war-iran",
+          "severity": "ALERT",
+          "title": "Most Americans want new Democratic Congress to end Trump's Iran war, Reuters/Ipsos poll finds - Reuters"
+        },
+        {
           "id": "headline:3dc5fcef91db1d13",
           "kind": "usgov",
           "severity": "ALERT",
           "title": "Rubio urges nations to ‘step up’ on Strait of Hormuz security - AP News"
         },
         {
-          "id": "headline:03c55bac74fde981",
-          "kind": "usgov",
+          "id": "headline:0c8468a26e4fd669",
+          "kind": "attack",
           "severity": "ALERT",
-          "title": "The Democratic Party gained power across the country in the midterms. Now what? - NPR"
+          "title": "Poland plans silent march after Krakow mass shooting that shocked the nation - Reuters"
         },
         {
           "id": "headline:4fb8dc1806cbdcab",
@@ -3626,28 +3759,16 @@
           "title": "Climate Action from Geneva to Antalya | UN Climate Change Conference COP31 - Geneva Environment Network"
         },
         {
-          "id": "headline:d3596bf2c6c658f7",
-          "kind": "attack",
-          "severity": "STANDBY",
-          "title": "Poland under disinformation attack after Kraków’s massacre - European Interest"
-        },
-        {
-          "id": "headline:7149be05df5e1387",
-          "kind": "war-iran",
-          "severity": "STANDBY",
-          "title": "Trump says renewed Iran strikes ‘highly unlikely’ if talks progress but warns he could still strike - CNBC"
-        },
-        {
           "id": "headline:c92155a940ad7fb8",
           "kind": "war-ukraine",
           "severity": "STANDBY",
           "title": "Melania Trump touts rare agreement she brokered between Russia and Ukraine - NPR"
         },
         {
-          "id": "headline:1154c4e1a86dc519",
-          "kind": "war-ukraine",
+          "id": "headline:6ef92fb30a52e072",
+          "kind": "war-iran",
           "severity": "STANDBY",
-          "title": "Russian bombing kills 31 people at Ukraine aid centre, Kyiv says - BBC"
+          "title": "After midterm loss, Trump is left to weigh his next move in Iran war that contributed to GOP debacle - AP News"
         },
         {
           "id": "headline:6a58cc3d6178f49a",
@@ -3700,6 +3821,16 @@
       ],
       "trends": [
         {
+          "category": "us-gov",
+          "name": "senate finance committee rfk jr inquiry",
+          "volume": "2000+"
+        },
+        {
+          "category": "iran-war",
+          "name": "iran war",
+          "volume": null
+        },
+        {
           "category": "ukraine-war",
           "name": "ukraine war",
           "volume": null
@@ -3707,11 +3838,6 @@
         {
           "category": "us-gov",
           "name": "us gov",
-          "volume": null
-        },
-        {
-          "category": "iran-war",
-          "name": "iran war",
           "volume": null
         }
       ],

@@ -28,9 +28,9 @@
             "2026-11-26",
             "2026-12-25"
           ],
-          "level": 7636.49,
-          "change": 17.11,
-          "changePct": 0.22,
+          "level": 7623.79,
+          "change": 4.41,
+          "changePct": 0.06,
           "asOf": "2026-11-12",
           "source": "https://finance.yahoo.com/quote/%5EGSPC"
         }
@@ -894,9 +894,9 @@
             }
           ],
           "holidays": [],
-          "level": 36258.12,
-          "change": -153.58,
-          "changePct": -0.42,
+          "level": 36216.04,
+          "change": -195.66,
+          "changePct": -0.54,
           "asOf": "2026-11-12",
           "source": "https://finance.yahoo.com/quote/%5EGSPTSE"
         },
@@ -912,9 +912,9 @@
             }
           ],
           "holidays": [],
-          "level": 71954.91,
-          "change": -51.14,
-          "changePct": -0.07,
+          "level": 71983.29,
+          "change": -22.76,
+          "changePct": -0.03,
           "asOf": "2026-11-12",
           "source": "https://finance.yahoo.com/quote/%5EMXX"
         }
@@ -1778,9 +1778,9 @@
             }
           ],
           "holidays": [],
-          "level": 171123.95,
-          "change": -936.05,
-          "changePct": -0.54,
+          "level": 170982.19,
+          "change": -1077.81,
+          "changePct": -0.63,
           "asOf": "2026-11-12",
           "source": "https://finance.yahoo.com/quote/%5EBVSP"
         }
@@ -2644,9 +2644,9 @@
             }
           ],
           "holidays": [],
-          "level": 2509.42,
-          "change": 12.04,
-          "changePct": 0.48,
+          "level": 2508.05,
+          "change": 10.67,
+          "changePct": 0.43,
           "asOf": "2026-11-12",
           "source": "https://iss.moex.com/iss/engines/stock/markets/index/securities/IMOEX.json"
         }
@@ -6601,6 +6601,27 @@
           "published": "2026-11-12T04:42:39-06:00",
           "date": "2026-11-12",
           "label": "Nov 12, 2026 4:42 AM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:92e13140bff39005",
+          "kind": "headline",
+          "lane": "news",
+          "source": "ET Now",
+          "sourceId": "headline",
+          "title": "RBI may introduce 1-hour delay for online transactions above Rs 10,000; merchants excluded, P2P transfers in focus - ET Now",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxONmVlTkxXbDU5eW1QZzVuUVNNZFJHWFFpX2MzLTRGa1lWbGhhUENFUS1jbnZzMGVhTGlpYTExTGl3cmVNcFh1d29lWFFwOWtsdEppMVptTWVBWEx6VGFITmNRTDdwY1k4WjZUX0FuQW9fMTc1dEtrX3g5MnRhSWFFNWszb1BVQTk0clp4TnFoQmtMWHo5RV9VQmk1VHBvMVE4azlycjhpdXphTnMxWnF1UDJtZmkteHN5a1J4bnoxYWxjaWgxaEJDUEp0MmhNV19RWjlZbmpuM25GelktUjNCWVhWVlZCMlJUYjlya0FvRlA5WDJtRlHSAfsBQVVfeXFMTl9WYkc5R1ZXRjJ1alc0WHc0WWEta1oxR3FuRDJMYUg5N1FiU3dOZmVxMjdFV3FlenB0OHRybjJPZDA4TnFaam5CcFI1Vk9OYlpCWGkteEI3bmo5SXlFTFZnb0h4OTBsdXZjc3dqbDh3eEFhVktPelZtbHZWVkxVOURDZ3lUdEdFOTQ2dVR0MHJLcjNfdzRoZ0hSeDVJdENoYXlIT0M1VnJqaDVtV19YYmVqY1NQcmxNeTFzRlZIeW5CSmZGdkc4ckRRdm5BdTVXQWJjRlZ6amZ0eU5zWHliWDZZOEc1dWk2d2RYR25PdWpGbFpsRDRQZzFIQlU?oc=5",
+          "published": "2026-11-12T04:38:46-06:00",
+          "date": "2026-11-12",
+          "label": "Nov 12, 2026 4:38 AM CT",
           "weekday": "Thu",
           "timeKnown": true,
           "tags": [

@@ -1,5 +1,26 @@
 {
-  "changes": [],
+  "changes": [
+    {
+      "change": "updated",
+      "date": "2026-11-12",
+      "note": "9.0x usual volume · 5 or more outlets",
+      "section": "Rising situations",
+      "severity": "ALERT",
+      "title": "gdacs is EMERGING"
+    }
+  ],
   "gaps": [],
-  "items": []
+  "items": [
+    {
+      "reasons": "9.0x usual volume · 5 or more outlets",
+      "score": 4,
+      "spark": [
+        {
+          "price": 8
+        }
+      ],
+      "state": "EMERGING",
+      "topic": "gdacs"
+    }
+  ]
 }

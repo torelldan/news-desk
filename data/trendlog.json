@@ -778,7 +778,7 @@
       "keywords": [],
       "outlets": 1,
       "score": 0,
-      "severity": "STANDBY",
+      "severity": "ALERT",
       "topic": "attack"
     },
     {
@@ -810,6 +810,16 @@
       "score": 0,
       "severity": "ALERT",
       "topic": "diplomacy"
+    },
+    {
+      "count": 8,
+      "countries": 1,
+      "date": "2026-11-12",
+      "keywords": [],
+      "outlets": 8,
+      "score": 0,
+      "severity": "ALERT",
+      "topic": "gdacs"
     },
     {
       "count": 1,
@@ -862,16 +872,6 @@
       "topic": "usgov"
     },
     {
-      "count": 3,
-      "countries": 1,
-      "date": "2026-11-12",
-      "keywords": [],
-      "outlets": 3,
-      "score": 0,
-      "severity": "ALERT",
-      "topic": "war-iran"
-    },
-    {
       "count": 4,
       "countries": 1,
       "date": "2026-11-12",
@@ -879,7 +879,27 @@
       "outlets": 4,
       "score": 0,
       "severity": "ALERT",
+      "topic": "war-iran"
+    },
+    {
+      "count": 3,
+      "countries": 1,
+      "date": "2026-11-12",
+      "keywords": [],
+      "outlets": 3,
+      "score": 0,
+      "severity": "ALERT",
       "topic": "war-ukraine"
+    },
+    {
+      "count": 3,
+      "countries": 1,
+      "date": "2026-11-12",
+      "keywords": [],
+      "outlets": 3,
+      "score": 0,
+      "severity": "STANDBY",
+      "topic": "who"
     },
     {
       "count": 1,
@@ -892,7 +912,9 @@
       "topic": "windstorm"
     }
   ],
-  "states": {},
+  "states": {
+    "gdacs": "EMERGING"
+  },
   "topics": [
     {
       "count": 2,
@@ -1671,7 +1693,7 @@
       "keywords": [],
       "outlets": 1,
       "score": 0,
-      "severity": "STANDBY",
+      "severity": "ALERT",
       "topic": "attack"
     },
     {
@@ -1703,6 +1725,16 @@
       "score": 0,
       "severity": "ALERT",
       "topic": "diplomacy"
+    },
+    {
+      "count": 8,
+      "countries": 1,
+      "date": "2026-11-12",
+      "keywords": [],
+      "outlets": 8,
+      "score": 0,
+      "severity": "ALERT",
+      "topic": "gdacs"
     },
     {
       "count": 1,
@@ -1755,16 +1787,6 @@
       "topic": "usgov"
     },
     {
-      "count": 3,
-      "countries": 1,
-      "date": "2026-11-12",
-      "keywords": [],
-      "outlets": 3,
-      "score": 0,
-      "severity": "ALERT",
-      "topic": "war-iran"
-    },
-    {
       "count": 4,
       "countries": 1,
       "date": "2026-11-12",
@@ -1772,7 +1794,27 @@
       "outlets": 4,
       "score": 0,
       "severity": "ALERT",
+      "topic": "war-iran"
+    },
+    {
+      "count": 3,
+      "countries": 1,
+      "date": "2026-11-12",
+      "keywords": [],
+      "outlets": 3,
+      "score": 0,
+      "severity": "ALERT",
       "topic": "war-ukraine"
+    },
+    {
+      "count": 3,
+      "countries": 1,
+      "date": "2026-11-12",
+      "keywords": [],
+      "outlets": 3,
+      "score": 0,
+      "severity": "STANDBY",
+      "topic": "who"
     },
     {
       "count": 1,
