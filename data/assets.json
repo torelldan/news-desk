@@ -2,9 +2,9 @@
   "series": [
     {
       "asOf": "2026-11-12",
-      "changePct": 0.25,
+      "changePct": 0.27,
       "id": "dxy",
-      "level": 103.172,
+      "level": 103.186,
       "name": "DXY",
       "points": [
         {
@@ -504,7 +504,7 @@
         },
         {
           "date": "2026-11-12",
-          "price": 103.172,
+          "price": 103.186,
           "volume": 0
         }
       ],
@@ -512,9 +512,9 @@
     },
     {
       "asOf": "2026-11-12",
-      "changePct": -2.96,
+      "changePct": -2.97,
       "id": "gold",
-      "level": 3882.1001,
+      "level": 3881.7,
       "name": "Gold",
       "points": [
         {
@@ -1014,17 +1014,17 @@
         },
         {
           "date": "2026-11-12",
-          "price": 3882.1001,
-          "volume": 211331
+          "price": 3881.7,
+          "volume": 214408
         }
       ],
       "source": "https://finance.yahoo.com/quote/GC%3DF"
     },
     {
       "asOf": "2026-11-12",
-      "changePct": -3.69,
+      "changePct": -3.71,
       "id": "silver",
-      "level": 49.965,
+      "level": 49.955,
       "name": "Silver",
       "points": [
         {
@@ -1524,17 +1524,17 @@
         },
         {
           "date": "2026-11-12",
-          "price": 49.965,
-          "volume": 55941
+          "price": 49.955,
+          "volume": 56694
         }
       ],
       "source": "https://finance.yahoo.com/quote/SI%3DF"
     },
     {
       "asOf": "2026-11-12",
-      "changePct": -3.04,
+      "changePct": -3.02,
       "id": "btc",
-      "level": 71415.79,
+      "level": 71427.03,
       "name": "BTC",
       "points": [
         {
@@ -1899,16 +1899,16 @@
         },
         {
           "date": "2026-11-12",
-          "price": 71415.79
+          "price": 71427.03
         }
       ],
       "source": "https://www.coingecko.com/en/coins/bitcoin"
     },
     {
       "asOf": "2026-11-12",
-      "changePct": -1.68,
+      "changePct": -1.74,
       "id": "eth",
-      "level": 2013.96,
+      "level": 2012.72,
       "name": "ETH",
       "points": [
         {
@@ -2273,7 +2273,7 @@
         },
         {
           "date": "2026-11-12",
-          "price": 2013.96
+          "price": 2012.72
         }
       ],
       "source": "https://www.coingecko.com/en/coins/ethereum"

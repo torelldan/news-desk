@@ -3341,7 +3341,7 @@
     },
     {
       "date": "2026-11-12",
-      "label": "Nov 12, 2026 3:00 PM CT",
+      "label": "Nov 12, 2026 4:28 PM CT",
       "outlooks": [
         {
           "id": "quake:cb415447006964cd",
@@ -3386,12 +3386,17 @@
         {
           "id": "gdacs:5b03b5b1064e4603",
           "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ACTION"
+          "severity": "STANDBY"
         },
         {
           "id": "gdacs:51066b63ff0e0cbf",
           "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ACTION"
+          "severity": "STANDBY"
+        },
+        {
+          "id": "gdacs:3f1bc45e1051d52a",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
         },
         {
           "id": "gdacs:a3e1430640985596",
@@ -3415,11 +3420,6 @@
         },
         {
           "id": "gdacs:45c098a8501cd9f7",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ALERT"
-        },
-        {
-          "id": "gdacs:59406c5103219fc5",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
@@ -3449,12 +3449,17 @@
           "severity": "ALERT"
         },
         {
-          "id": "headline:3c2ed3659f9303b2",
+          "id": "headline:b01fdf1c4fa354f1",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
         {
           "id": "headline:6e50b890c95e3f8d",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:dce4afd574944def",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
@@ -3484,13 +3489,13 @@
           "severity": "ALERT"
         },
         {
-          "id": "headline:cf978ee07c115efd",
+          "id": "headline:3dc5fcef91db1d13",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
         {
-          "id": "headline:3dc5fcef91db1d13",
-          "outlook": "First reading. Watch the next 72 hours.",
+          "id": "headline:8ba8b498a2b07c25",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
           "severity": "ALERT"
         },
         {
@@ -3499,17 +3504,12 @@
           "severity": "ALERT"
         },
         {
-          "id": "headline:4fb8dc1806cbdcab",
-          "outlook": "Lower than yesterday. The 72-hour path is easing if it holds.",
-          "severity": "STANDBY"
-        },
-        {
           "id": "headline:259cdffd8b7d23b6",
           "outlook": "Lower than yesterday. The 72-hour path is easing if it holds.",
           "severity": "STANDBY"
         },
         {
-          "id": "headline:6ef92fb30a52e072",
+          "id": "headline:8b20f7b283eed2bb",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "STANDBY"
         },
@@ -3611,14 +3611,20 @@
         {
           "id": "gdacs:5b03b5b1064e4603",
           "kind": "gdacs",
-          "severity": "ACTION",
+          "severity": "STANDBY",
           "title": "Drought in Burundi, Democratic Republic of Congo, Central African Republic, Eritrea, Ethiopia, Kenya, Niger, Nigeria, Rwanda, Sudan, South Sudan, Chad, Tanzania, Uganda"
         },
         {
           "id": "gdacs:51066b63ff0e0cbf",
           "kind": "gdacs",
-          "severity": "ACTION",
+          "severity": "STANDBY",
           "title": "Drought in Belize, Costa Rica, Cuba, Dominican Republic, Guatemala, Honduras, Haiti, Mexico, Nicaragua, El Salvador, United States"
+        },
+        {
+          "id": "gdacs:3f1bc45e1051d52a",
+          "kind": "gdacs",
+          "severity": "ALERT",
+          "title": "Earthquake in Papua New Guinea"
         },
         {
           "id": "gdacs:a3e1430640985596",
@@ -3651,12 +3657,6 @@
           "title": "Earthquake in Off East Coast Of Honshu, Japan"
         },
         {
-          "id": "gdacs:59406c5103219fc5",
-          "kind": "gdacs",
-          "severity": "ALERT",
-          "title": "Earthquake in South Sandwich Islands Region"
-        },
-        {
           "id": "who:89e94b5faca21e80",
           "kind": "who",
           "severity": "STANDBY",
@@ -3687,16 +3687,22 @@
           "title": "The historic firsts of the 2026 midterm elections - Ash Center"
         },
         {
-          "id": "headline:3c2ed3659f9303b2",
+          "id": "headline:b01fdf1c4fa354f1",
           "kind": "war-iran",
           "severity": "ALERT",
-          "title": "US senators demand end to Iran war funding in bill averting shutdown - News From The States"
+          "title": "The US midterm results could have real consequences for the war in Iran. Could it end soon? - DW.com"
         },
         {
           "id": "headline:6e50b890c95e3f8d",
           "kind": "climate",
           "severity": "ALERT",
           "title": "Trump the ‘biggest loser’ for scrapping climate action, John Kerry says at Cop31 - The Guardian"
+        },
+        {
+          "id": "headline:dce4afd574944def",
+          "kind": "war-iran",
+          "severity": "ALERT",
+          "title": "Indictment sheds light on alleged Iran-backed plots across U.S. and Europe - PBS"
         },
         {
           "id": "headline:7fd52fe5652c72c9",
@@ -3729,16 +3735,16 @@
           "title": "Young, diverse voters showed up for midterms as older, Trump voters stayed home - Stateline"
         },
         {
-          "id": "headline:cf978ee07c115efd",
-          "kind": "war-iran",
-          "severity": "ALERT",
-          "title": "Most Americans want new Democratic Congress to end Trump's Iran war, Reuters/Ipsos poll finds - Reuters"
-        },
-        {
           "id": "headline:3dc5fcef91db1d13",
           "kind": "usgov",
           "severity": "ALERT",
           "title": "Rubio urges nations to ‘step up’ on Strait of Hormuz security - AP News"
+        },
+        {
+          "id": "headline:8ba8b498a2b07c25",
+          "kind": "diplomacy",
+          "severity": "ALERT",
+          "title": "Rubio Touts Trump’s Iran Strategy as G7 Leaders Meet in Paris - Hudson Institute"
         },
         {
           "id": "headline:0c8468a26e4fd669",
@@ -3747,22 +3753,16 @@
           "title": "Poland plans silent march after Krakow mass shooting that shocked the nation - Reuters"
         },
         {
-          "id": "headline:4fb8dc1806cbdcab",
-          "kind": "diplomacy",
-          "severity": "STANDBY",
-          "title": "G7 allies to assess impact of Trump's midterm setback at Paris talks - Reuters"
-        },
-        {
           "id": "headline:259cdffd8b7d23b6",
           "kind": "climate",
           "severity": "STANDBY",
           "title": "Climate Action from Geneva to Antalya | UN Climate Change Conference COP31 - Geneva Environment Network"
         },
         {
-          "id": "headline:6ef92fb30a52e072",
+          "id": "headline:8b20f7b283eed2bb",
           "kind": "war-iran",
           "severity": "STANDBY",
-          "title": "After midterm loss, Trump is left to weigh his next move in Iran war that contributed to GOP debacle - AP News"
+          "title": "Iran downplays new U.S. task force aimed at disrupting ground transport routes - CBS News"
         },
         {
           "id": "headline:fba40c63243c8681",

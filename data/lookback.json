@@ -2,18 +2,11 @@
   "calls": [],
   "escalated": [
     {
-      "note": "New since 2026-11-05 · now STANDBY",
+      "note": "New since 2026-11-05 · now ALERT",
       "related": 0,
       "relatedSources": [],
-      "severity": "STANDBY",
-      "title": "Drought in Burundi, Democratic Republic of Congo, Central African Republic, Eritrea, Ethiopia, Kenya, Niger, Nigeria, Rwanda, Sudan, South Sudan, Chad, Tanzania, Uganda"
-    },
-    {
-      "note": "New since 2026-11-05 · now STANDBY",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "STANDBY",
-      "title": "Drought in Belize, Costa Rica, Cuba, Dominican Republic, Guatemala, Honduras, Haiti, Mexico, Nicaragua, El Salvador, United States"
+      "severity": "ALERT",
+      "title": "Earthquake in Papua New Guinea"
     },
     {
       "note": "New since 2026-11-05 · now ALERT",
@@ -55,13 +48,6 @@
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Earthquake in South Sandwich Islands Region"
-    },
-    {
-      "note": "New since 2026-11-05 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
       "title": "Ukraine peace talks: Jared Kushner and Steve Witkoff conclude meeting with Putin - DW.com"
     },
     {
@@ -76,14 +62,28 @@
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "US senators demand end to Iran war funding in bill averting shutdown - News From The States"
+      "title": "Trump the ‘biggest loser’ for scrapping climate action, John Kerry says at Cop31 - The Guardian"
     },
     {
       "note": "New since 2026-11-05 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Trump the ‘biggest loser’ for scrapping climate action, John Kerry says at Cop31 - The Guardian"
+      "title": "Indictment sheds light on alleged Iran-backed plots across U.S. and Europe - PBS"
+    },
+    {
+      "note": "New since 2026-11-05 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "Ukraine's Zelensky welcomes 'changes' in US approach as talks restart - AFP.com"
+    },
+    {
+      "note": "New since 2026-11-05 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "How Israel Will Choose Its Next Prime Minister, Explained - Time Magazine"
     }
   ],
   "fizzled": [
@@ -125,18 +125,11 @@
   ],
   "newSince": [
     {
-      "note": "New since 2026-11-05 · now STANDBY",
+      "note": "New since 2026-11-05 · now ALERT",
       "related": 0,
       "relatedSources": [],
-      "severity": "STANDBY",
-      "title": "Drought in Burundi, Democratic Republic of Congo, Central African Republic, Eritrea, Ethiopia, Kenya, Niger, Nigeria, Rwanda, Sudan, South Sudan, Chad, Tanzania, Uganda"
-    },
-    {
-      "note": "New since 2026-11-05 · now STANDBY",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "STANDBY",
-      "title": "Drought in Belize, Costa Rica, Cuba, Dominican Republic, Guatemala, Honduras, Haiti, Mexico, Nicaragua, El Salvador, United States"
+      "severity": "ALERT",
+      "title": "Earthquake in Papua New Guinea"
     },
     {
       "note": "New since 2026-11-05 · now ALERT",
@@ -178,13 +171,6 @@
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Earthquake in South Sandwich Islands Region"
-    },
-    {
-      "note": "New since 2026-11-05 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
       "title": "Ukraine peace talks: Jared Kushner and Steve Witkoff conclude meeting with Putin - DW.com"
     },
     {
@@ -199,14 +185,28 @@
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "US senators demand end to Iran war funding in bill averting shutdown - News From The States"
+      "title": "Trump the ‘biggest loser’ for scrapping climate action, John Kerry says at Cop31 - The Guardian"
     },
     {
       "note": "New since 2026-11-05 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Trump the ‘biggest loser’ for scrapping climate action, John Kerry says at Cop31 - The Guardian"
+      "title": "Indictment sheds light on alleged Iran-backed plots across U.S. and Europe - PBS"
+    },
+    {
+      "note": "New since 2026-11-05 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "Ukraine's Zelensky welcomes 'changes' in US approach as talks restart - AFP.com"
+    },
+    {
+      "note": "New since 2026-11-05 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "How Israel Will Choose Its Next Prime Minister, Explained - Time Magazine"
     }
   ],
   "note": "Compared with the stored board on 2026-11-05.",

@@ -10,9 +10,9 @@
       "guest": "",
       "note": "",
       "url": "https://www.nature.com/articles/d41586-026-03639-2",
-      "published": "2026-11-12T15:00:04-06:00",
+      "published": "2026-11-12T16:28:37-06:00",
       "date": "2026-11-12",
-      "label": "Nov 12, 2026 3:00 PM CT",
+      "label": "Nov 12, 2026 4:28 PM CT",
       "weekday": "Thu",
       "timeKnown": true,
       "tags": [
@@ -34,9 +34,9 @@
       "guest": "",
       "note": "",
       "url": "https://www.nature.com/articles/d41586-026-03665-0",
-      "published": "2026-11-12T15:00:04-06:00",
+      "published": "2026-11-12T16:28:37-06:00",
       "date": "2026-11-12",
-      "label": "Nov 12, 2026 3:00 PM CT",
+      "label": "Nov 12, 2026 4:28 PM CT",
       "weekday": "Thu",
       "timeKnown": true,
       "tags": [
@@ -58,9 +58,9 @@
       "guest": "",
       "note": "",
       "url": "https://www.nature.com/articles/s41586-026-11409-3",
-      "published": "2026-11-12T15:00:04-06:00",
+      "published": "2026-11-12T16:28:37-06:00",
       "date": "2026-11-12",
-      "label": "Nov 12, 2026 3:00 PM CT",
+      "label": "Nov 12, 2026 4:28 PM CT",
       "weekday": "Thu",
       "timeKnown": true,
       "tags": [
@@ -82,9 +82,9 @@
       "guest": "",
       "note": "",
       "url": "https://www.nature.com/articles/d41586-026-03666-z",
-      "published": "2026-11-12T15:00:04-06:00",
+      "published": "2026-11-12T16:28:37-06:00",
       "date": "2026-11-12",
-      "label": "Nov 12, 2026 3:00 PM CT",
+      "label": "Nov 12, 2026 4:28 PM CT",
       "weekday": "Thu",
       "timeKnown": true,
       "tags": [
@@ -97,6 +97,54 @@
       "severity": ""
     },
     {
+      "id": "paper:84ed75e551e07dd5",
+      "kind": "paper",
+      "lane": "science",
+      "source": "Phys.org physics",
+      "sourceId": "paper",
+      "title": "Layered superionic conductor hosts atomic vibrations that behave like liquids, glasses and crystals",
+      "guest": "",
+      "note": "Scientists from the Institute of Metal Research (IMR) of the Chinese Academy of Sciences have directly observed liquid-like, glass-like and crystal-like phonon behaviors coexisting in a crystalline solid—the layered superionic conductor AgCrSe₂.",
+      "url": "https://phys.org/news/2026-11-layered-superionic-conductor-hosts-atomic.html",
+      "published": "2026-11-12T16:00:06-06:00",
+      "date": "2026-11-12",
+      "label": "Nov 12, 2026 4:00 PM CT",
+      "weekday": "Thu",
+      "timeKnown": true,
+      "tags": [
+        "science",
+        "physics",
+        "news"
+      ],
+      "field": "physics",
+      "review": "NEWS",
+      "severity": ""
+    },
+    {
+      "id": "paper:602b6f3abe9c38c8",
+      "kind": "paper",
+      "lane": "science",
+      "source": "Phys.org physics",
+      "sourceId": "paper",
+      "title": "Ultrafast 3D imaging captures fleeting motion at 150,000 frames per second",
+      "guest": "",
+      "note": "A research team from the Institut national de la recherche scientifique (INRS), led by professor Jinyang Liang, is pushing the limits of ultrafast imaging with a new technology capable of capturing three-dimensional images at speeds of up to 150,000 frames per second. Published in the journal Nature Communications, this study establishes a new world record in profilometry.",
+      "url": "https://phys.org/news/2026-11-ultrafast-3d-imaging-captures-fleeting.html",
+      "published": "2026-11-12T15:10:01-06:00",
+      "date": "2026-11-12",
+      "label": "Nov 12, 2026 3:10 PM CT",
+      "weekday": "Thu",
+      "timeKnown": true,
+      "tags": [
+        "science",
+        "physics",
+        "news"
+      ],
+      "field": "physics",
+      "review": "NEWS",
+      "severity": ""
+    },
+    {
       "id": "paper:58711ef82c3c25e7",
       "kind": "paper",
       "lane": "science",
@@ -104,7 +152,7 @@
       "sourceId": "paper",
       "title": "Nvidia privately confirmed it could track chips to fight smuggling, even as industry publicly questioned feasibility",
       "guest": "",
-      "note": "Representatives from Nvidia told Illinois representative Bill Foster that the tracking requirements of his Chip Security Act meant to combat smuggling were technically possible, Foster told MIT Technology Review in an interview on Thursday, even while its industry group claimed they were “potentially infeasible.” Representative Foster, a Democrat who serves on the Committee on Science,…",
+      "note": "Representatives from Nvidia told Illinois representative Bill Foster that it would be technically possible to implement the anti-smuggling measures called for in the Chip Security Act, Foster told MIT Technology Review in an interview on Thursday, even while an industry group claimed they were “potentially infeasible.” Foster, a Democrat who serves on the Committee on…",
       "url": "https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/",
       "published": "2026-11-12T14:16:24-06:00",
       "date": "2026-11-12",
@@ -217,30 +265,6 @@
       "severity": ""
     },
     {
-      "id": "paper:22ae517a2da52e8b",
-      "kind": "paper",
-      "lane": "science",
-      "source": "Phys.org physics",
-      "sourceId": "paper",
-      "title": "A new twist on 'magic-angle' graphene: Tuning resistance with strain",
-      "guest": "",
-      "note": "In materials science labs around the world, researchers regularly reproduce a peculiar experiment. Under a microscope, they use tiny robotic manipulators to lay two sheets of carbon, each a single atom thick, against one another.",
-      "url": "https://phys.org/news/2026-11-magic-angle-graphene-tuning-resistance.html",
-      "published": "2026-11-12T13:00:31-06:00",
-      "date": "2026-11-12",
-      "label": "Nov 12, 2026 1:00 PM CT",
-      "weekday": "Thu",
-      "timeKnown": true,
-      "tags": [
-        "science",
-        "physics",
-        "news"
-      ],
-      "field": "physics",
-      "review": "NEWS",
-      "severity": ""
-    },
-    {
       "id": "paper:0f7d169a7b824969",
       "kind": "paper",
       "lane": "science",
@@ -285,30 +309,6 @@
         "news"
       ],
       "field": "propulsion",
-      "review": "NEWS",
-      "severity": ""
-    },
-    {
-      "id": "paper:f73cdfadfe1d78c3",
-      "kind": "paper",
-      "lane": "science",
-      "source": "Phys.org physics",
-      "sourceId": "paper",
-      "title": "Unified framework establishes rules for classifying unconventional magnets",
-      "guest": "",
-      "note": "Researchers from the Hefei Institutes of Physical Science (HFIPS) of the Chinese Academy of Sciences (CAS) have developed a unified framework for establishing symmetry criteria and classifying unconventional magnets.",
-      "url": "https://phys.org/news/2026-11-framework-unconventional-magnets.html",
-      "published": "2026-11-12T10:00:49-06:00",
-      "date": "2026-11-12",
-      "label": "Nov 12, 2026 10:00 AM CT",
-      "weekday": "Thu",
-      "timeKnown": true,
-      "tags": [
-        "science",
-        "physics",
-        "news"
-      ],
-      "field": "physics",
       "review": "NEWS",
       "severity": ""
     },

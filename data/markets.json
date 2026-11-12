@@ -28,8 +28,8 @@
             "2026-11-26",
             "2026-12-25"
           ],
-          "level": 7592.95,
-          "change": -26.43,
+          "level": 7592.4,
+          "change": -26.98,
           "changePct": -0.35,
           "asOf": "2026-11-12",
           "source": "https://finance.yahoo.com/quote/%5EGSPC"
@@ -133,6 +133,27 @@
           "published": "2026-11-11T07:12:19-06:00",
           "date": "2026-11-11",
           "label": "Nov 11, 2026 7:12 AM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:322fa1409ae40042",
+          "kind": "headline",
+          "lane": "news",
+          "source": "WTOP News",
+          "sourceId": "headline",
+          "title": "As higher prices seep into broader economy, Fed officials consider faster hikes - WTOP News",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxORDF3SmF6UkIyQldhang0dko3R1c2Y2tKR09sQkF2QUZ1dWRiOUZ5Z2V1d0JDV1hpa0R6Z3BCSF9uenhPUF95ajdjek9vUlNaMFBBN2g0c3hKeFh6WHU5YmN6bXB0QXN6SVNpdnJIb0VwbFM0Y3Zha3ZrSTFqVFBpZkdVRUNEMEpvSzJFOXUtU2NTMXlxajkyQ05rdVBSQmpIN09FVkN3U1FWYWE4S18yQlhMYw?oc=5",
+          "published": "2026-11-11T07:02:24-06:00",
+          "date": "2026-11-11",
+          "label": "Nov 11, 2026 7:02 AM CT",
           "weekday": "Wed",
           "timeKnown": true,
           "tags": [
@@ -854,27 +875,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:23a8af8b9d0eca09",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Financial Times",
-          "sourceId": "headline",
-          "title": "US economy outstrips forecasts to add 165,000 jobs in October - Financial Times",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQb0M0anJjT2l4RmNIQUZiWGdCbC1XTjVnY2o5ZTh2RHowOXQtVmJhMGZ6MmtjbGdrWGtUekdqbmlVeEEtNV9GWGxjWlMwbHl6cWx2bzVBN2pTVTJieV9zaGFYMXBjSzU0cnBNb2thRHdJek1JYzlMdmR6M1B5a2lhUzQ4U0c?oc=5",
-          "published": "2026-11-06T07:31:11-06:00",
-          "date": "2026-11-06",
-          "label": "Nov 6, 2026 7:31 AM CT",
-          "weekday": "Fri",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ]
     },
@@ -912,9 +912,9 @@
             }
           ],
           "holidays": [],
-          "level": 71777.45,
-          "change": -228.59,
-          "changePct": -0.32,
+          "level": 71811.2,
+          "change": -194.84,
+          "changePct": -0.27,
           "asOf": "2026-11-12",
           "source": "https://finance.yahoo.com/quote/%5EMXX"
         }
@@ -1778,9 +1778,9 @@
             }
           ],
           "holidays": [],
-          "level": 170873.81,
-          "change": -1186.19,
-          "changePct": -0.69,
+          "level": 171324.31,
+          "change": -735.69,
+          "changePct": -0.43,
           "asOf": "2026-11-12",
           "source": "https://finance.yahoo.com/quote/%5EBVSP"
         }
@@ -2674,27 +2674,6 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:fe7c3f70f9ea3262",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Investing.com",
-          "sourceId": "headline",
-          "title": "Russia stocks lower at close of trade; MOEX Russia Index unchanged - Investing.com",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQa09GSXRNUGJ0QXNJQ2pXWWctNjA0SlJfOVlKR21qQ19VZGtfcEVnSGJ1dXdnMThGTXJLaEc4cVV4QXZaLXZlZG4yTWJCRXFUQUFYZmJlWjFvSW03U0ltdDRNWXFld0hGMktKRGxNNEEweVhWbEpSMTlnQ0c1dEdfY0V4ZDBpcWV1b3FCWUxpY0JqLWtXaGl4RDBXWlJhQmpJV3pucG1CTFEza0VTMUxxbHBjZ1Mxc1gtbWpISkRvTQ?oc=5",
-          "published": "2026-11-08T21:22:30-06:00",
-          "date": "2026-11-08",
-          "label": "Nov 8, 2026 9:22 PM CT",
-          "weekday": "Sun",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
           "id": "headline:dd572715eee186ca",
           "kind": "headline",
           "lane": "news",
@@ -2707,6 +2686,27 @@
           "published": "2026-11-08T20:07:35-06:00",
           "date": "2026-11-08",
           "label": "Nov 8, 2026 8:07 PM CT",
+          "weekday": "Sun",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:fe7c3f70f9ea3262",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Investing.com",
+          "sourceId": "headline",
+          "title": "Russia stocks lower at close of trade; MOEX Russia Index unchanged - Investing.com",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQa09GSXRNUGJ0QXNJQ2pXWWctNjA0SlJfOVlKR21qQ19VZGtfcEVnSGJ1dXdnMThGTXJLaEc4cVV4QXZaLXZlZG4yTWJCRXFUQUFYZmJlWjFvSW03U0ltdDRNWXFld0hGMktKRGxNNEEweVhWbEpSMTlnQ0c1dEdfY0V4ZDBpcWV1b3FCWUxpY0JqLWtXaGl4RDBXWlJhQmpJV3pucG1CTFEza0VTMUxxbHBjZ1Mxc1gtbWpISkRvTQ?oc=5",
+          "published": "2026-11-08T15:25:25-06:00",
+          "date": "2026-11-08",
+          "label": "Nov 8, 2026 3:25 PM CT",
           "weekday": "Sun",
           "timeKnown": true,
           "tags": [
@@ -5696,6 +5696,27 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:1a327c2da9feca40",
+          "kind": "headline",
+          "lane": "news",
+          "source": "South China Morning Post",
+          "sourceId": "headline",
+          "title": "Why mainland China investors are finding better returns abroad than in Hong Kong - South China Morning Post",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQMnFJSDlJaGRXUkdkcF91cU1uMVVXaUdWMnMwcGZlYTJsendveWNTUFV5b29sekU0NEgxcjJOZW9YSEkySUNBeXVDTV9zOUdmTm5kTkNoblh1UG5GS3M2dVRPcEF0QkNScVhxeXI4TDlSN1ZtTEh6cmw2QnVQdVdrN2VsSjYxcDZGMnVwNW1jOVR0LTliVlp6TVRfRlRGX0xHaGNUZ2lWYmthYmFqeTJxWkxxOHFvTHE2c00wTlVLdDhueTdiUFZJNGxaQUV1M2h6RFJCMm8xN0RPVWs?oc=5",
+          "published": "2026-11-10T21:00:35-06:00",
+          "date": "2026-11-10",
+          "label": "Nov 10, 2026 9:00 PM CT",
+          "weekday": "Tue",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:fbd36e32e0f58238",
           "kind": "headline",
           "lane": "news",
@@ -5960,27 +5981,6 @@
           "published": "2026-11-08T22:08:28-06:00",
           "date": "2026-11-08",
           "label": "Nov 8, 2026 10:08 PM CT",
-          "weekday": "Sun",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:1be5868536e71503",
-          "kind": "headline",
-          "lane": "news",
-          "source": "RTHK News",
-          "sourceId": "headline",
-          "title": "Hang Seng Index climbs amid tech caution - RTHK News",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9qNHNrTlJFbUsxSFRWNG9VWGk5Wm9PaGVhZklmU0FmM3Z0alZKN1d6QmtqRENwNHEtS0twY1FRYUVwQ1d5NHhfdmxWd2tHSmZiTE5Bc3pacVdGcFJ5RkRmNjZUWmNobklNN3VQVm13TQ?oc=5",
-          "published": "2026-11-08T21:02:00-06:00",
-          "date": "2026-11-08",
-          "label": "Nov 8, 2026 9:02 PM CT",
           "weekday": "Sun",
           "timeKnown": true,
           "tags": [
@@ -6589,6 +6589,27 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:72665cd212221dde",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Business Today",
+          "sourceId": "headline",
+          "title": "Retail inflation hits two-year high of 6.09% in October, breaches RBI's 6% limit; December rate hike likely - Business Today",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQRGRFZVJzMG84b21HekJlN24xVHV2SENEREp0ZlFnaXh6ckJCV3BwWFNCUVVUSFFaWkZzZktaNHl3em5FN3V1dGdSNWZVVTVyUVhGT3hSQkZWRHI2TTMtMkoyZDM3YUZibUZfYlppMko3MEdjYUhFcDFNSW91Q2s1Q0k2VFhLZ3BKNm01YUVXTVNoSzBkTDQyRl9ycUdzRmd1VmJWeTVNUE5xNHZWOFdLcEhtQ1EwRkZ4U3R4TGdvX3pyTEU0c19mc0ExN3NhZnZKLW94ZGtCZlZsTTVaTkphaWdaSlp4dmFsNW5VM3dZLWFaMXZpd1VNY3pnaGVMMHfSAYQCQVVfeXFMTTNwSkFPS2VfR1g4UDduaW10OFlQb2Qxb3c5aGNfbDB2TlBvMm04cE1DOThEZG81YTR5TUhPcklwOEpjdldtOG5FMnl0Mk5iY1lWYWxuZGt6SncySnc3Q2NsbmxrbHZKWUFNS253QzBuLXpNWFNndzdZNnJoQ09IUWFkRUlqZUdydkR2czNxT0VSTzBXWGtxYWVycnQ1T1dwbndiNkVjbGtLa2hYaHhzQnpBX29pUXhSX2VBaGs0d2FFSE1OYVNJT0pvZ2QxR1lnRDVFT21odk5GRGMtQ3ktNnBpS0huS1hxVi04UC1tYlNSSU1fMWlCLUk3X2dNYnZ6Yng4amc?oc=5",
+          "published": "2026-11-12T05:45:58-06:00",
+          "date": "2026-11-12",
+          "label": "Nov 12, 2026 5:45 AM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:0625bf29c7c0b9c4",
           "kind": "headline",
           "lane": "news",
@@ -6664,6 +6685,27 @@
           "published": "2026-11-12T04:38:46-06:00",
           "date": "2026-11-12",
           "label": "Nov 12, 2026 4:38 AM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:86d80c76deb18a6a",
+          "kind": "headline",
+          "lane": "news",
+          "source": "The Hawk",
+          "sourceId": "headline",
+          "title": "Seoul shares snap 2-day rally amid escalating Nvidia risks - The Hawk",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOVGpoMGQ1WWpFelZ4R1Y5ek00R3dQeUtaTVNXbWpNMks0bDd4Wkx4TUZpVHFJcFpxQm1iN05mMGtzX2FRM0pEMTR1aFpwNkRsRlhTQjdoRkowZXl6Zlp2Y2NSQmpET1R3eU5xN0xvQTRfTVNTSEV6dEl1ZHBxZjZkampxZGpKMXdKNTRuZUdWUE5rQTNlSzJERkFpckl4RjYwaWhXMHVaQUxHdnB5VTh2UzJLZ2U?oc=5",
+          "published": "2026-11-12T03:04:33-06:00",
+          "date": "2026-11-12",
+          "label": "Nov 12, 2026 3:04 AM CT",
           "weekday": "Thu",
           "timeKnown": true,
           "tags": [
@@ -7021,6 +7063,27 @@
           "published": "2026-11-08T08:12:00-06:00",
           "date": "2026-11-08",
           "label": "Nov 8, 2026 8:12 AM CT",
+          "weekday": "Sun",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:f4f78c6ec3b934dd",
+          "kind": "headline",
+          "lane": "news",
+          "source": "ET Now",
+          "sourceId": "headline",
+          "title": "Samvat 2083 Outlook: Nifty 50 may rally towards 27,500; Kedia Advisory recommends 'Buy' On declines, identifies 4 major risks that could impact Indian Stock Market - ET Now",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiswJBVV95cUxPdFlXSTlUY3ZGOEVFYU5FU3NLQnZTVVJ1a3ZWYXRnZkxqbW1IRG44eEpXTDFOZzBvU0V4LTlJeUhZNFNVZTRaOEtpamhneGZDTzNHRGdWQjFzbml2V0lpME1VV3dYYlEzVVhoOUtmM2lleFZsdERzejNHaVRpTTNwM2NaM184QldEbjdYbkNMN2dwYWN1MUxZQkd5Tm5WSVR5ZkJSYjF6QmRKZnpsUUxmd2hXcGZfbFlBRVF6Znd1NXJ1QmVqcmQ2VjNqS0pVLUZ6cU9kRWRXWW1rNGYxMFNEOHN4bmM0VW1KYkV3WnRDTXczdzBZQThkU3g5Nm8xdXJLUy0xbi1ucHM3aVVwS1ZLVFhDbGtyVGlQMHhPM1NjcWFNLTFhTWR4WnN4R082ZWttS1ZV0gG4AkFVX3lxTE01VlFxOExaQ2RKOUJENlJsbzdrV0JPVU9GWE40amwzQ2Q3dG9GOFBQQnV0ekppOWxTZ09xWElDWG0tT2RLWXh1YzdEX2o0WW0wWVppdVdpazFWdkZRbUFoTl9iWGR4TEVzQ2FEX0NLT0pUSktJeUNkVFh2WUdmTDZUT0RvaWlveFFqU0c0ZFNPeWhHNFdnSnZoS1Jxb0IwM1FnU3lrTS10aHZnamdSU013czUwNXVGLVBkNndnTW9NMkFJSkF3Qm4tMThsNFFVZ3dsVTc4aWtmMm96QWxLa3NaRVl1RU11OU5aTEs0NkwxTllkUHUzbmQxSTBjcFF5c1dKdm55SFdmX2pqdE80ZnFlV1ZpVXhNS3EtSVVMS0NqUXBieE9rM1VyWF9TQ0RyV3hXbmJhQVVBQg?oc=5",
+          "published": "2026-11-08T05:42:05-06:00",
+          "date": "2026-11-08",
+          "label": "Nov 8, 2026 5:42 AM CT",
           "weekday": "Sun",
           "timeKnown": true,
           "tags": [
