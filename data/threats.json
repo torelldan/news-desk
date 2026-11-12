@@ -258,7 +258,27 @@
       "timeKnown": true,
       "title": "Winter Weather Advisory",
       "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b6ab7643ed8006a54eae4b4ccc129041d83a05e1.001.1",
-      "weekday": "Wed"
+      "weekday": "Wed",
+      "ugc": [
+        "TNC091",
+        "TNC029",
+        "TNC059",
+        "TNC171",
+        "TNC019",
+        "TNC009",
+        "TNC155",
+        "TNC123"
+      ],
+      "same": [
+        "047091",
+        "047029",
+        "047059",
+        "047171",
+        "047019",
+        "047009",
+        "047155",
+        "047123"
+      ]
     },
     {
       "action": "What to do: no action at home. Skip travel into the named fighting if a trip was planned.",

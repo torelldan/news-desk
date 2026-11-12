@@ -1320,7 +1320,10 @@ def weekly_lookback(history: dict, today: str) -> dict:
     for row in old_rows:
         after = next((cur for cur in now_rows if boards.same_story(row.get("title") or "", cur.get("title") or "") or cur.get("id") == row.get("id")), None)
         if after is None and _rank(row.get("severity") or "") >= _rank("ALERT"):
+            from deskextra import topic_still_live
             if any(boards.same_story(row.get("title") or "", cur.get("title") or "") for cur in now_rows):
+                continue
+            if topic_still_live(row.get("title") or "", now_rows):
                 continue
             fizzled.append({"title": row.get("title"), "severity": row.get("severity"), "note": f"On the board {past.get('date')} at {row.get('severity')}, absent now."})
         elif after and _rank(after.get("severity") or "") < _rank(row.get("severity") or ""):
@@ -1337,17 +1340,33 @@ def weekly_lookback(history: dict, today: str) -> dict:
                 calls.append({"title": after.get("title"), "verdict": "wrong", "note": "The stored outlook said higher, and the status fell."})
             elif after is None:
                 calls.append({"title": row.get("id"), "verdict": "wrong", "note": "The stored outlook said higher, and the item left the board."})
+    from deskextra import story_family
+    seen_titles = {row.get("title") for row in escalated}
+    past_date = past.get("date") or ""
+
+    def _family_row(row):
+        return {
+            "title": row.get("title"),
+            "severity": row.get("severity") or "ALERT",
+            "source": row.get("source") or "",
+            "note": f"New since {past_date} · now {row.get('severity') or 'ALERT'}",
+        }
+
+    for row in now_rows:
+        if story_family(row.get("title") or "") in {"g7", "wh-letter"} and row.get("title") not in seen_titles:
+            escalated.append(_family_row(row))
+            seen_titles.add(row.get("title"))
+    for snap in days:
+        if (snap.get("date") or "") <= past_date:
+            continue
+        for row in snap.get("threats") or []:
+            if story_family(row.get("title") or "") == "wh-letter" and row.get("title") not in seen_titles:
+                escalated.append(_family_row(row))
+                seen_titles.add(row.get("title"))
+
     def _cluster_notes(rows):
         import boards
-        clustered = boards.cluster_rows(rows)
-        for row in clustered:
-            extra = int(row.get("related") or 0)
-            if not extra:
-                continue
-            sources = ", ".join(row.get("relatedSources") or [])
-            suffix = f" +{extra} related" + (f" ({sources})" if sources else "")
-            row["note"] = (row.get("note") or "") + suffix
-        return clustered
+        return boards.cluster_rows(rows)
 
     return {
         "since": past.get("date") or "",

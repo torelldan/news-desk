@@ -676,6 +676,65 @@ def test_nov12_rules():
     assert any(row["topic"] == "war-iran" for row in items)
     assert changes and changes[0]["section"] == "Rising situations"
     assert len(log["topics"]) < 5000
+    ratio_lines = deskextra.gold_driver_lines({"gs_level": 77.5, "gs_change": 4.55, "copper": -2})
+    assert any("77.5" in line for line in ratio_lines)
+    assert all("ratio 4.55" not in line for line in ratio_lines)
+    assert deskextra.format_copper_gold(0.0016) == "1.60 per 1,000"
+    dirty = "Drone strike on key northern port of Ust-Luga sparks major fire - https://theins.press/en"
+    assert "http" not in deskextra.clean_strike_title(dirty)
+    assert deskextra.strike_fields(dirty)["country"] == "Russia"
+    assert deskextra.strike_fields("Drone Strike in Egypt Sparks Security Concerns About Suez Oil Exports")["country"] == "Egypt"
+    assert deskextra.story_family("Europe top diplomats press Rubio on Ukraine at G7 - AFP.com") == "g7"
+    assert deskextra.story_family("Read the letter the White House's top lawyer sent Rep. Garcia over threats to investigate Trump - PBS") == "wh-letter"
+    assert deskextra.story_family("Trump White House maps path to govern without Congress if Democrats win - Reuters") == ""
+    assert deskextra.topic_still_live(
+        "Secretary of State Marco Rubio Speaks to Reporters at G7 Meeting - C-SPAN",
+        [{"title": "Europe top diplomats press Rubio on Ukraine at G7 - AFP.com"}],
+    )
+    assert deskextra.topic_still_live(
+        "Midterm Elections 2026: Congress Polls, Charts and More - NBC News",
+        [{"title": "‘Draft Marco’ effort grows on Capitol Hill after midterms bloodbath - Politico"}],
+    )
+    assert deskextra.topic_still_live(
+        "The Iran War Unexpectedly Drove Down Carbon Emissions This Year - The New York Times",
+        [{"title": "Most Americans want new Democratic Congress to end Trump's Iran war, Reuters/Ipsos poll finds - Reuters"}],
+    )
+    named = deskextra.tn_codes_from_area("Johnson; Sevier Smoky Mountains. Elsewhere in Tennessee, not Williamson County or an adjacent county.")
+    assert "TNC091" in named["ugc"] and "047155" in named["same"]
+    assert "TNC187" not in named["ugc"]
+    flat = deskextra.moex_level({"marketdata": {"columns": ["CURRENTVALUE", "OPENVALUE"], "data": [[2500.0, 2500.0]]}})
+    assert flat["changePct"] == 0
+    russia = next(row for row in boards.REGIONS if row["id"] == "russia")
+    assert russia["venues"][0]["symbol"] == "IMOEX"
+    asia = next(row for row in boards.REGIONS if row["id"] == "asia")
+    assert [venue["indexName"] for venue in asia["venues"]] == ["Hang Seng"]
+    g7 = boards.cluster_rows([
+        {"title": "G7 allies to assess impact of Trump's midterm setback at Paris talks - Reuters", "severity": "ALERT", "source": "Reuters"},
+        {"title": "Europe top diplomats press Rubio on Ukraine at G7 - AFP.com", "severity": "ALERT", "source": "AFP"},
+        {"title": "Priorities of the G7 Foreign Ministers' Meeting in Paris - Ministère", "severity": "STANDBY", "source": "French MFA"},
+    ])
+    assert len(g7) == 1 and g7[0]["related"] == 2
+    letters = boards.cluster_rows([
+        {"title": "White House tells Democrats that investigating Trump administration could be criminal - Reuters", "severity": "ALERT", "source": "Reuters"},
+        {"title": "Read the letter the White House's top lawyer sent Rep. Garcia over threats to investigate Trump - PBS", "severity": "ALERT", "source": "PBS"},
+    ])
+    assert len(letters) == 1 and letters[0]["related"] == 1
+    import citizen
+    sample = {"days": [
+        {"date": "2026-11-05", "threats": [{"id": "a", "title": "Trump White House maps path to govern without Congress if Democrats win - Reuters", "severity": "ALERT"}]},
+        {"date": "2026-11-11", "threats": [{"id": "b", "title": "White House sends warning to Democrats about investigating the Trump administration - PBS", "severity": "ALERT"}]},
+        {"date": "2026-11-12", "threats": [
+            {"id": "d", "title": "White House tells Democrats that investigating Trump administration could be criminal - Reuters", "severity": "ALERT"},
+            {"id": "e", "title": "Europe top diplomats press Rubio on Ukraine at G7 - AFP.com", "severity": "ALERT"},
+            {"id": "f", "title": "Priorities of the G7 Foreign Ministers' Meeting in Paris - Ministère", "severity": "STANDBY"},
+            {"id": "c", "title": "G7 allies to assess impact of Trump's midterm setback at Paris talks - Reuters", "severity": "ALERT"},
+        ]},
+    ]}
+    look = citizen.weekly_lookback(sample, "2026-11-12")
+    g7_rows = [row for row in look["newSince"] if deskextra.story_family(row["title"]) == "g7"]
+    letter_rows = [row for row in look["newSince"] if deskextra.story_family(row["title"]) == "wh-letter"]
+    assert len(g7_rows) == 1 and g7_rows[0]["related"] >= 2
+    assert len(letter_rows) == 1 and letter_rows[0]["related"] >= 1
 
 
 if __name__ == "__main__":
