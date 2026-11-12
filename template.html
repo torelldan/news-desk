@@ -544,7 +544,8 @@ function radarItems() {
 }
 function lookRows() {
   const blocks = lookBlocks();
-  return [].concat(blocks.escalated, blocks.fizzled, blocks.calls);
+  const fresh = (blocks.newSince && blocks.newSince.length) ? blocks.newSince : blocks.escalated;
+  return [].concat(fresh, blocks.fizzled, blocks.calls);
 }
 function deskRank(item) {
   const blob = `${item.title || ""} ${item.note || ""} ${(item.tags || []).join(" ")} ${item.kind || ""} ${item.source || ""}`.toLowerCase();
@@ -635,7 +636,14 @@ function claimTokens(title) {
 function headlineShift(nextTitle, prevTitle) {
   const fresh = claimTokens(nextTitle);
   const prior = claimTokens(prevTitle);
-  if (!fresh.size && !prior.size) return false;
+  if (!fresh.size && !prior.size) {
+    const left = new Set(storyTokens(nextTitle));
+    const right = new Set(storyTokens(prevTitle));
+    const shared = [...left].filter((word) => right.has(word));
+    const small = Math.min(left.size, right.size);
+    if (small < 2) return false;
+    return shared.length / small < 0.35;
+  }
   const shared = [...fresh].some((word) => prior.has(word));
   return !shared;
 }
@@ -643,16 +651,42 @@ function clusterStories(items) {
   const ordered = items.slice().sort((a, b) => rankOf({ severity: shownSeverity(b) }) - rankOf({ severity: shownSeverity(a) }) || String(b.published || b.date || "").localeCompare(String(a.published || a.date || "")));
   const kept = [];
   ordered.forEach((item) => {
-    const lead = kept.find((other) => sameStoryTitle(item.title || "", other.title || ""));
+    const lead = kept.find((other) => sameStoryTitle(item.title || "", other.title || "") || sameTopicRecent(item, other));
     if (!lead) {
-      kept.push(Object.assign({}, item, { related: 0, relatedSources: [] }));
+      kept.push(Object.assign({}, item, { related: item.related || 0, relatedSources: (item.relatedSources || []).slice() }));
       return;
     }
-    lead.related += 1;
-    const src = item.source || "";
-    if (src && src !== lead.source && lead.relatedSources.indexOf(src) < 0) lead.relatedSources.push(src);
+    lead.related += 1 + (item.related || 0);
+    [item.source].concat(item.relatedSources || []).forEach((src) => {
+      if (src && src !== lead.source && lead.relatedSources.indexOf(src) < 0) lead.relatedSources.push(src);
+    });
   });
   return kept;
+}
+function properNouns(title) {
+  const cleaned = String(title || "").replace(/\s+[-–—|]\s+[^-–—|]{2,60}$/, "");
+  const skip = new Set(["the", "and", "for", "read", "letter", "news", "says"]);
+  const found = new Set();
+  (cleaned.match(/\b[A-Z][A-Za-z0-9]{2,}\b/g) || []).forEach((word) => {
+    if (!skip.has(word.toLowerCase())) found.add(word.toLowerCase());
+  });
+  if (/\bcop\s*31\b/i.test(cleaned)) found.add("cop31");
+  if (/\bg7\b/.test(cleaned)) found.add("g7");
+  return found;
+}
+function sameTopicRecent(a, b) {
+  const leftTime = Date.parse((a && (a.published || a.date)) || "");
+  const rightTime = Date.parse((b && (b.published || b.date)) || "");
+  if (!Number.isFinite(leftTime) || !Number.isFinite(rightTime)) return false;
+  if (Math.abs(leftTime - rightTime) > 48 * 36e5) return false;
+  const left = properNouns(a.title || "");
+  const right = properNouns(b.title || "");
+  return [...left].filter((word) => right.has(word)).length >= 2;
+}
+function within36h(item) {
+  const stamp = Date.parse((item && (item.published || item.date)) || "");
+  if (!Number.isFinite(stamp)) return false;
+  return (Date.now() - stamp) <= 36 * 36e5;
 }
 function relatedNote(item) {
   const count = item && item.related;
@@ -681,6 +715,7 @@ function recentStoryRows() {
 function lookBlocks() {
   const doc = (typeof DESK !== "undefined" && DESK.lookback) || {};
   return {
+    newSince: clusterStories(doc.newSince || []),
     escalated: clusterStories(doc.escalated || []),
     fizzled: clusterStories(doc.fizzled || []),
     calls: clusterStories(doc.calls || [])
@@ -731,6 +766,11 @@ function foldSameStory(rows) {
           item.note = `Update to that story. Was: ${matches[matches.length - 1].title || ""}`;
         }
       } else if (oldStandbyReturn(item)) return false;
+      else if (!within36h(item)) return false;
+    }
+    if (item.change === "resolved") {
+      const liveRows = (typeof threatItems === "function" ? threatItems() : []);
+      if (liveRows.some((current) => sameStoryTitle(title, current.title || "") || sameTopicRecent(item, current))) return false;
     }
     if (item.change === "resolved" && live.some((current) => sameStoryTitle(title, current))) return false;
     return true;
@@ -1195,6 +1235,21 @@ function watchPool() {
     return true;
   }).sort((a, b) => rankOf(b) - rankOf(a) || Date.parse(b.published || 0) - Date.parse(a.published || 0)).slice(0, 10);
 }
+function renderRising() {
+  const rows = (((DESK.rising || {}).items) || []).filter((item) => item.state).slice(0, 6);
+  if (!rows.length) return "";
+  return `<article class="card"><div class="head"><span class="sev sev-alert">RISING</span></div><h3>Rising situations</h3>${rows.map((item) => `<p class="meta"><span class="sev sev-alert">${esc(item.state)}</span> ${esc(item.topic || item.title || "")} · score ${esc(String(item.score || ""))} · ${esc(item.reasons || "")}</p>`).join("")}</article>`;
+}
+function renderStrikes() {
+  const doc = DESK.strikes || {};
+  const items = (doc.items || []).slice(0, 8);
+  if (!items.length && !(doc.gaps || []).length) return "";
+  const counts = doc.counts || {};
+  const summary = `7-day strikes · ${esc(String(counts.total || items.length))} · energy ${esc(String(counts.energy || 0))}`;
+  const lines = items.map((item) => `<p class="meta"><span class="sev sev-${esc(String(item.severity || "standby").toLowerCase())}">${esc(item.severity || "STANDBY")}</span> ${esc(item.date || "")} · ${esc(item.country || "")} · ${esc(item.target_type || "")} · ${esc(item.title || "")}${item.related ? " · +" + esc(String(item.related)) + " related" : ""}</p>`).join("");
+  const gaps = (doc.gaps || []).map((gap) => `<p class="meta">Source down: ${esc(gap)}</p>`).join("");
+  return `<article class="card"><div class="head"><span class="sev sev-standby">STANDBY</span></div><h3>Strikes and explosions</h3><p>${summary}</p>${lines}${gaps}</article>`;
+}
 function renderWatch() {
   const items = watchItems();
   const lines = items.map((item) => {
@@ -1211,7 +1266,7 @@ function renderWatch() {
       <p class="so">${esc(clip(soWhat(item), 140))}${extra ? ` · ${esc(extra)}` : ""}</p>
     </article>`;
   }).join("");
-  document.getElementById("watch").innerHTML = lines || empty("No watch items in this window.");
+  document.getElementById("watch").innerHTML = `${renderRising()}${renderStrikes()}${lines}` || empty("No watch items in this window.");
 }
 function deltaBlock(pack, title) {
   if (!pack) return "";
@@ -1358,7 +1413,8 @@ function renderLookback() {
     if (!rows || !rows.length) return "";
     return `<h3 class="group">${esc(label)} · ${rows.length}</h3>` + rows.map((row) => `<p class="meta">${esc(row.title || "")} · ${esc(row.verdict || "")} ${esc(row.note || "")}${relatedNote(row) ? " · " + esc(relatedNote(row)) : ""}</p>`).join("");
   };
-  const body = `${block(blocks.escalated, "Escalated")}${block(blocks.fizzled, "Fizzled")}${block(blocks.calls, "Calls")}`;
+  const fresh = (blocks.newSince && blocks.newSince.length) ? blocks.newSince : blocks.escalated;
+  const body = `${block(fresh, "New since")}${block(blocks.fizzled, "Fizzled")}${block(blocks.calls, "Calls")}`;
   const note = (DESK.lookback || {}).note || "";
   document.getElementById("lookback").innerHTML = body
     ? `<p class="note-plain">${esc(note)}</p>${body}`
@@ -1545,6 +1601,7 @@ function renderMarkets() {
       return `<div class="venue"><div><b>${esc(venue.name)}</b> ${esc(venue.indexName)}<div class="meta">${esc(status.hours)}</div></div><div><span class="${status.open ? "pill-open" : "pill-closed"}">${esc(status.why)}</span><div>${level} <span class="meta">${esc(change)}</span></div></div></div>`;
     }).join("");
     const headlines = (region.headlines || []).filter(passes).filter((item) => {
+      if ((region.id === "usa") && /\b(china|yuan|renminbi)\b/i.test(item.title || "") && !/\b(federal reserve|\bfed\b|united states|u\.s\.|white house|treasury)\b/i.test(item.title || "")) return false;
       if (seenStory(item)) return false;
       claim(item);
       return true;
@@ -1553,12 +1610,14 @@ function renderMarkets() {
       ? headlines.slice(0, 8).map(row).join("")
       : `<p class="meta">No headline in this window.</p>`;
     const anyOpen = (region.venues || []).some((venue) => venueStatus(venue, now).open);
-    const primary = (region.venues || [])[0] || {};
+    const primary = (region.venues || []).slice().sort((a, b) => Math.abs(Number(b.changePct) || 0) - Math.abs(Number(a.changePct) || 0))[0] || {};
     const move = primary.changePct == null ? "no quote" : `${primary.changePct > 0 ? "+" : ""}${primary.changePct}%`;
     const top = headlines[0] ? clip(headlines[0].title, 72) : "No headline";
     const slug = String(region.name || "region").toLowerCase().replace(/[^a-z0-9]+/g, "-");
+    const macro = ((DESK.macro || {}).regions || {})[region.id] || null;
+    const macroLine = macro ? `<p class="meta">FX ${esc(macro.fx || "n/a")} · policy ${esc(macro.policy || "n/a")} · 10Y ${esc(macro.yield10y || "n/a")} · CPI ${esc(macro.cpi || "n/a")}</p>` : "";
     const summary = `${esc(region.name)} · ${anyOpen ? "OPEN" : "CLOSED"} · ${esc(primary.indexName || primary.name || "")} ${esc(move)} · ${esc(top)}`;
-    return fold("mkt-" + slug, summary, venues + heads, false);
+    return fold("mkt-" + slug, summary, venues + macroLine + heads, false);
   }).join("");
   document.getElementById("markets").innerHTML = html || empty("Market feeds have not been loaded.");
 }
@@ -1672,7 +1731,10 @@ function returnsOf(points) {
 }
 function catOf(item) {
   const kind = item.kind || "";
-  if (kind === "quake") return "earthquake";
+    if (kind === "quake") {
+      if (shownSeverity(item) === "STANDBY" || (item.severity || "") === "STANDBY") return "";
+      return "earthquake";
+    }
   if (kind === "storm") return "hurricane";
   if (kind === "conflict") return "war";
   if (kind === "who" || kind === "cdc") return "outbreak";
@@ -1693,7 +1755,7 @@ function insightHtml() {
     const windowDays = new Set(days);
     Object.keys(byCat).forEach((cat) => {
       const used = [...byCat[cat]].filter((day) => windowDays.has(day) && rets[day] != null);
-      if (used.length < 4) return;
+      if (used.length < 10) return;
       const down = used.filter((day) => rets[day] < -0.3).length;
       const up = used.filter((day) => rets[day] > 0.3).length;
       const side = down >= up ? "fell" : "rose";
@@ -1752,7 +1814,9 @@ function renderImpact() {
     return `<article class="card" id="asset-${esc(asset.id || "")}"><div class="head"><b>${name}</b><span>${esc(change)}</span></div><div>${esc(fmtNum(asset.level))}</div>${sparkline((asset.points || []).slice(-8))}</article>`;
   }).join("");
   document.getElementById("assets").innerHTML = cards || empty("Quotes did not answer on this check.");
-  document.getElementById("market-read").innerHTML = marketReadHtml();
+  const explain = ((DESK.impact || {}).explainer || []).map((line) => `<li>${esc(line)}</li>`).join("");
+  const zone = (DESK.impact || {}).vixZone ? `<p class="meta">VIX zone: ${esc((DESK.impact || {}).vixZone)}</p>` : "";
+  document.getElementById("market-read").innerHTML = marketReadHtml() + (explain ? `<h3 class="group">What's driving gold and silver</h3><ul class="read">${explain}</ul>` : "") + zone;
   document.getElementById("insights").innerHTML = insightHtml();
   document.getElementById("correlations").innerHTML = fold("show-numbers", "Show the numbers", numberDumpHtml(), false);
   renderTimeline(threats);
