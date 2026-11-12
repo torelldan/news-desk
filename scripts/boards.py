@@ -548,15 +548,27 @@ def fetch_threats(now: datetime) -> dict:
 
 
 def demote_stale_alerts(rows: list[dict], now: datetime) -> list[dict]:
-    """An ALERT older than about 72 hours is no longer the live status."""
+    """An ALERT older than about 72 hours is no longer the live status.
+
+    A GDACS action or critical is aged the same way, from the event start.
+    GDACS keeps rewriting the modified time while a drought stays open, so that
+    stamp is not a new episode.
+    """
     cutoff = now - timedelta(hours=72)
     for row in rows:
-        if (row.get("severity") or "") != "ALERT":
+        severity = (row.get("severity") or "").upper()
+        gdacs = (row.get("kind") or "") == "gdacs" and severity in {"ACTION", "CRITICAL"}
+        if severity != "ALERT" and not gdacs:
             continue
-        published = d.parse_pubdate(row.get("published") or "")
-        if published is not None and published < cutoff:
-            row["severity"] = "STANDBY"
-            row["demoted"] = "older than 72h"
+        published = d.parse_pubdate(row.get("published") or row.get("date") or "")
+        if published is None or published >= cutoff:
+            continue
+        row["severity"] = "STANDBY"
+        row["demoted"] = "older than 72h"
+        tags = [tag for tag in (row.get("tags") or []) if tag not in {"alert", "action", "critical"}]
+        if "standby" not in tags:
+            tags.append("standby")
+        row["tags"] = tags
     return rows
 
 
@@ -1194,24 +1206,60 @@ def _try_gdacs(now):
     return _parsed_rows("gdacs", "GDACS", parsed, now), []
 
 
-def _try_relief(now):
-    from deskextra import RELIEF_DISASTERS, parse_relief_disasters
+def _read_response(url: str, accept: str) -> tuple[int, bytes]:
+    headers = {
+        "User-Agent": BROWSER,
+        "Accept": accept,
+        "Accept-Language": "en-US,en;q=0.9",
+        "Referer": "https://reliefweb.int/",
+    }
+    req = urllib.request.Request(url, headers=headers)
     try:
-        html = _get(RELIEF_DISASTERS, timeout=30, headers={"User-Agent": BROWSER, "Accept": "text/html"}).decode("utf-8", "replace")
-        parsed = parse_relief_disasters(html, now.strftime("%Y-%m-%d"))
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            return getattr(resp, "status", 200), resp.read()
+    except urllib.error.HTTPError as err:
+        return err.code, err.read() if err.fp else b""
     except Exception as err:
-        print(f"  reliefweb: {err}")
-        return [], [
-            "ReliefWeb: API v1 is retired and API v2 requires a registered appname. "
-            f"The public disasters page did not answer. {err}"
-        ]
-    if not parsed:
-        return [], [
-            "ReliefWeb: API v1 is retired (HTTP 410) and API v2 refuses an unregistered appname. "
-            "The public disasters page listed no disasters."
-        ]
-    print(f"  reliefweb {len(parsed)}")
-    return _parsed_rows("relief", "ReliefWeb", parsed, now), []
+        print(f"  reliefweb {url}: {err}")
+        return 0, b""
+
+
+def _try_relief(now):
+    from deskextra import (
+        RELIEF_API,
+        RELIEF_BLOCKED,
+        RELIEF_DISASTERS,
+        RELIEF_RSS,
+        parse_relief_api,
+        parse_relief_disasters,
+        parse_relief_rss,
+        relief_body_usable,
+    )
+    today = now.strftime("%Y-%m-%d")
+    page_status, page_body = _read_response(RELIEF_DISASTERS, "text/html,application/xhtml+xml")
+    page_text = page_body.decode("utf-8", "replace")
+    if relief_body_usable(page_text):
+        parsed = parse_relief_disasters(page_text, today)
+        if parsed:
+            print(f"  reliefweb {len(parsed)}")
+            return _parsed_rows("relief", "ReliefWeb", parsed, now), []
+    api_status, api_body = _read_response(RELIEF_API, "application/json")
+    if api_status == 200:
+        try:
+            parsed = parse_relief_api(json.loads(api_body.decode("utf-8", "replace")), today)
+        except json.JSONDecodeError:
+            parsed = []
+        if parsed:
+            print(f"  reliefweb api {len(parsed)}")
+            return _parsed_rows("relief", "ReliefWeb", parsed, now), []
+    rss_status, rss_body = _read_response(RELIEF_RSS, "application/rss+xml, application/xml, text/xml")
+    rss_text = rss_body.decode("utf-8", "replace")
+    parsed = parse_relief_rss(rss_text, today) if relief_body_usable(rss_text) else []
+    if parsed:
+        print(f"  reliefweb rss {len(parsed)}")
+        return _parsed_rows("relief", "ReliefWeb", parsed, now), []
+    print(f"  reliefweb blocked page={page_status} api={api_status} rss={rss_status}")
+    return [], [RELIEF_BLOCKED]
 
 
 def _try_who(now):
@@ -1229,7 +1277,7 @@ def _try_who(now):
 
 
 def _try_cdc(now):
-    from deskextra import CDC_HAN_ARCHIVE, CDC_HAN_EMPTY, CDC_HAN_RSS, parse_cdc_archive, parse_cdc_han_rss
+    from deskextra import CDC_HAN_ARCHIVE, CDC_HAN_RSS, parse_cdc_archive, parse_cdc_han_rss
     today = now.strftime("%Y-%m-%d")
     feed_ok = False
     try:
@@ -1255,7 +1303,8 @@ def _try_cdc(now):
                 feed_error = str(err)
     if not parsed:
         if feed_ok:
-            return [], [CDC_HAN_EMPTY]
+            print("  cdc 0 notices")
+            return [], []
         return [], [f"CDC HAN: {feed_error or 'feed did not answer.'}"]
     print(f"  cdc {len(parsed)}")
     return _parsed_rows("cdc", "CDC HAN", parsed, now), []
@@ -1902,9 +1951,18 @@ def extra_sources(markets: dict, threats: dict, science: dict, gaps: list | None
     down = " ".join(gaps or []).lower()
     for kind, (name, short, url) in kind_home.items():
         add("threat-" + kind, name, short, "threat", url, by_kind.get(kind) or [])
-        if kind in {"gdacs", "relief", "who", "cdc", "sentry"} and kind in down or name.split()[0].lower() in down:
+        from deskextra import cdc_marks_offline
+        failed = kind in down or name.split()[0].lower() in down
+        if kind == "cdc":
+            failed = cdc_marks_offline(gaps)
+        if kind in {"gdacs", "relief", "who", "cdc", "sentry"} and failed:
             rows[-1]["offline"] = True
             rows[-1]["subtitle"] = "source down"
+        elif kind == "cdc" and not by_kind.get(kind):
+            rows[-1]["offline"] = False
+            rows[-1]["subtitle"] = "no current alerts"
+            if not rows[-1].get("lastLabel"):
+                rows[-1]["lastLabel"] = "no current alerts"
     by_field = {}
     for item in (science or {}).get("items") or []:
         by_field.setdefault(item.get("field") or "science", []).append(item)

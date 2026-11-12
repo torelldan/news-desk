@@ -738,6 +738,7 @@ def test_nov12_rules():
 
 
 def test_hazard_source_parsers():
+    import boards
     import deskextra
     gdacs = deskextra.parse_gdacs_events({
         "features": [
@@ -795,6 +796,20 @@ def test_hazard_source_parsers():
     assert archive[0]["url"] == "https://www.cdc.gov/han/php/notices/han00530.html"
     assert archive[0]["severity"] == "ACTION"
     assert deskextra.parse_cdc_archive("<html><h1>Access Denied</h1></html>") == []
+    assert deskextra.cdc_marks_offline([]) is False
+    assert deskextra.cdc_marks_offline(["CDC HAN: the official syndication feed answered with no notices"]) is False
+    assert deskextra.cdc_marks_offline(["CDC HAN: curl: (22) HTTP 403"]) is True
+    old_drought = {"kind": "gdacs", "severity": "ACTION", "published": "2026-04-20T19:00:00-05:00", "tags": ["gdacs", "action"]}
+    fresh_drought = {"kind": "gdacs", "severity": "ACTION", "published": "2026-11-12T12:00:00-06:00", "tags": ["gdacs", "action"]}
+    other = {"kind": "storm", "severity": "ACTION", "published": "2026-04-20T19:00:00-05:00", "tags": ["storm", "action"]}
+    boards.demote_stale_alerts(
+        [old_drought, fresh_drought, other],
+        datetime.fromisoformat("2026-11-12T15:00:00-06:00"),
+    )
+    assert old_drought["severity"] == "STANDBY" and old_drought["demoted"] == "older than 72h"
+    assert "action" not in old_drought["tags"] and "standby" in old_drought["tags"]
+    assert fresh_drought["severity"] == "ACTION"
+    assert other["severity"] == "ACTION"
 
 
 if __name__ == "__main__":

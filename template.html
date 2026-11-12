@@ -180,6 +180,7 @@
   .stat { display: flex; justify-content: space-between; gap: 12px; width: 100%; background: transparent; border: 0; border-bottom: 1px dotted var(--line); padding: 7px 0; text-align: left; cursor: pointer; }
   .stat.on { outline: 1px solid var(--green); }
   .break { color: var(--dim); font-size: 12px; margin: 6px 0 0; }
+  .status-list { margin: 8px 0 4px; }
   .fold-btn, .more, .legend-btn { width: 100%; display: flex; justify-content: space-between; gap: 8px; background: transparent; border: 1px solid var(--line); color: var(--ink); padding: 8px; margin: 6px 0; text-align: left; }
   .fold-btn span, .sev { font-family: "IBM Plex Mono", ui-monospace, monospace; }
   .fold-body { margin: 0 0 8px; }
@@ -413,7 +414,10 @@ function watchIds() {
 function focusMatch(item) {
   if (!state.focus) return true;
   if (state.focus === "new") return ageHours(item) <= 24;
-  if (state.focus === "escalating") return item.severity === "ACTION" || item.severity === "CRITICAL";
+  if (state.focus === "escalating") {
+    const sev = shownSeverity(item);
+    return sev === "ACTION" || sev === "CRITICAL";
+  }
   if (state.focus === "resolved") return item.kind === "page" || item.lane === "site";
   if (state.focus === "watch") return watchIds().has(item.sourceId);
   return true;
@@ -498,7 +502,7 @@ function tnScope(item) {
 function shownSeverity(item) {
   if (tnScope(item) === "elsewhere") return "STANDBY";
   const sev = (item && item.severity) || "STANDBY";
-  if (sev === "ALERT" && ageHours(item) > 72) return "STANDBY";
+  if ((sev === "ALERT" || (item && item.kind === "gdacs" && (sev === "ACTION" || sev === "CRITICAL"))) && ageHours(item) > 72) return "STANDBY";
   return sev;
 }
 function watchItems() {
@@ -1150,48 +1154,117 @@ function row(item) {
 function empty(text) {
   return `<p class="empty">${esc(text)}</p>`;
 }
+function takeFresh(rows, seen) {
+  const kept = [];
+  (rows || []).forEach((item) => {
+    if (ageHours(item) > 24) return;
+    const key = safeUrl(item.url);
+    if (!key || seen.has(key)) return;
+    seen.add(key);
+    kept.push(item);
+  });
+  return kept;
+}
+function headlineItems() {
+  const rows = [];
+  ((DESK.markets || {}).regions || []).forEach((region) => (region.headlines || []).forEach((item) => rows.push(item)));
+  return rows;
+}
+function newIntelGroups() {
+  const seen = new Set();
+  const posts = takeFresh(allItems(), seen);
+  const threats = takeFresh((DESK.threats || {}).items || [], seen);
+  const heads = takeFresh(headlineItems(), seen);
+  const lab = takeFresh((DESK.science || {}).items || [], seen);
+  return { posts, threats, heads, lab, all: posts.concat(threats, heads, lab) };
+}
+function watchSources() {
+  return (DESK.sources || []).filter((src) => !src.offline && ageDays(src.lastDate) <= 14);
+}
+function escalatingItems() {
+  return ((DESK.threats || {}).items || []).filter((item) => {
+    const sev = shownSeverity(item);
+    return sev === "ACTION" || sev === "CRITICAL";
+  });
+}
+function resolvedPages() {
+  return (DESK.pages || []).filter((page) => !page.changed && page.status !== "error");
+}
 function statusParts() {
-  const items = allItems();
-  const threats = ((DESK.threats || {}).items || []);
-  const heads = [];
-  ((DESK.markets || {}).regions || []).forEach((region) => (region.headlines || []).forEach((item) => heads.push(item)));
-  const science = ((DESK.science || {}).items || []);
-  const active = (DESK.sources || []).filter((src) => !src.offline && ageDays(src.lastDate) <= 14);
+  const intel = newIntelGroups();
+  const hot = escalatingItems();
   return {
     new: [
-      ["Podcasts and posts", items.filter((item) => ageHours(item) <= 24).length],
-      ["Threats", threats.filter((item) => ageHours(item) <= 24).length],
-      ["Headlines", heads.filter((item) => ageHours(item) <= 24).length],
-      ["Frontier lab", science.filter((item) => ageHours(item) <= 24).length]
+      ["Podcasts and posts", intel.posts.length],
+      ["Threats", intel.threats.length],
+      ["Headlines", intel.heads.length],
+      ["Frontier lab", intel.lab.length]
     ],
-    watch: active.slice(0, 8).map((src) => [src.short || src.name, src.count || 0]),
+    watch: watchSources().map((src) => [src.short || src.name, src.count || 0]),
     escalating: [
-      ["ACTION", threats.filter((item) => item.severity === "ACTION").length],
-      ["CRITICAL", threats.filter((item) => item.severity === "CRITICAL").length]
+      ["ACTION", hot.filter((item) => shownSeverity(item) === "ACTION").length],
+      ["CRITICAL", hot.filter((item) => shownSeverity(item) === "CRITICAL").length]
     ],
-    resolved: ((DESK.pages || []).filter((page) => !page.changed && page.status !== "error")).map((page) => [page.name, page.status || "unchanged"])
+    resolved: resolvedPages().map((page) => [page.name, page.status || "unchanged"])
   };
 }
-function renderStatus(items) {
-  const desk = DESK;
-  const threats = ((desk.threats || {}).items || []);
-  const newIntel = items.filter((item) => ageHours(item) <= 24).length;
-  const onWatch = (desk.sources || []).filter((src) => !src.offline && ageDays(src.lastDate) <= 14).length;
-  const escalating = threats.filter((item) => item.severity === "ACTION" || item.severity === "CRITICAL").length;
-  const resolved = (desk.pages || []).filter((page) => !page.changed && page.status !== "error").length;
+function statusItemLine(item) {
+  const url = safeUrl(item.url || item.finalUrl);
+  const sev = item.severity ? shownSeverity(item) : (item.status || "");
+  const bits = [item.title || item.name || "Untitled", item.source || "", sev, item.label || item.date || item.checkedLabel || ""].filter(Boolean);
+  const text = bits.join(" · ");
+  return url
+    ? `<p class="meta"><a href="${esc(url)}" target="_blank" rel="noopener">${esc(text)}</a></p>`
+    : `<p class="meta">${esc(text)}</p>`;
+}
+function statusSourceLine(src) {
+  const url = safeUrl(src.url);
+  const when = src.lastLabel || src.lastDate || "no date";
+  const text = `${src.name || src.short || "Source"} · ${src.count || 0} · ${when}`;
+  return url
+    ? `<p class="meta"><a href="${esc(url)}" target="_blank" rel="noopener">${esc(text)}</a></p>`
+    : `<p class="meta">${esc(text)}</p>`;
+}
+function statusPageLine(page) {
+  const url = safeUrl(page.finalUrl || page.url);
+  const text = `${page.name || "Page"} · ${page.status || "unchanged"} · ${page.checkedLabel || ""}`.replace(/ · $/, "");
+  return url
+    ? `<p class="meta"><a href="${esc(url)}" target="_blank" rel="noopener">${esc(text)}</a></p>`
+    : `<p class="meta">${esc(text)}</p>`;
+}
+function cappedLines(key, rows, line) {
+  const cap = 8;
+  const open = !!state.more["status-" + key];
+  const shown = open ? rows : rows.slice(0, cap);
+  const more = rows.length > cap
+    ? `<button type="button" class="more" data-more="status-${key}">${open ? "Show less" : "Show all"} · ${rows.length}</button>`
+    : "";
+  const body = shown.length ? shown.map(line).join("") : `<p class="meta">Nothing in this tile.</p>`;
+  return `<div class="status-list">${body}${more}</div>`;
+}
+function renderStatus() {
+  const intel = newIntelGroups();
+  const watching = watchSources();
+  const hot = escalatingItems();
+  const quiet = resolvedPages();
   const parts = statusParts();
+  const lists = {
+    new: cappedLines("new", intel.all, statusItemLine),
+    watch: cappedLines("watch", watching, statusSourceLine),
+    escalating: cappedLines("escalating", hot, statusItemLine),
+    resolved: cappedLines("resolved", quiet, statusPageLine)
+  };
   const rows = [
-    ["new", "New intel", String(newIntel), false, parts.new],
-    ["watch", "On watch", String(onWatch || (desk.sources || []).length), false, parts.watch],
-    ["escalating", "Escalating", String(escalating), escalating > 0, parts.escalating],
-    ["resolved", "Resolved", String(resolved), false, parts.resolved]
+    ["new", "New intel", String(intel.all.length), false, parts.new],
+    ["watch", "On watch", String(watching.length), false, parts.watch],
+    ["escalating", "Escalating", String(hot.length), hot.length > 0, parts.escalating],
+    ["resolved", "Resolved", String(quiet.length), false, parts.resolved]
   ];
   const buttons = rows.map(([key, name, value, off, bits]) => {
     const title = bits.map(([label, count]) => `${label}: ${count}`).join("\n");
     return `<button type="button" class="stat${state.focus === key ? " on" : ""}" data-focus="${key}" title="${esc(title)}"><span>${esc(name)}</span><b class="${off ? "off" : ""}">${esc(value)}</b></button>`;
   }).join("");
-  const openBits = (rows.find((row) => row[0] === state.focus) || [])[4] || [];
-  const detail = state.focus ? `<p class="break">${openBits.map(([label, count]) => `${esc(label)} ${esc(String(count))}`).join(" · ")}</p>` : "";
+  const detail = state.focus ? (lists[state.focus] || "") : "";
   document.getElementById("status").innerHTML = buttons + detail;
 }
 function renderBrief() {
@@ -1459,8 +1532,9 @@ function renderMap() {
     const url = safeUrl(src.url);
     if (!url) return "";
     const age = ageDays(src.lastDate);
-    const led = src.offline ? "off" : age <= 7 ? "live" : "stale";
-    const when = src.lastLabel || (src.offline ? "X feed offline" : "no item in window");
+    const quietHan = src.subtitle === "no current alerts";
+    const led = src.offline ? "off" : (quietHan || age <= 7) ? "live" : "stale";
+    const when = quietHan ? "no current alerts" : (src.lastLabel || (src.offline ? "source down" : "no item in window"));
     return `<a class="node" href="${esc(url)}" target="_blank" rel="noopener">
       <b><i class="led ${led}"></i>${esc(src.short || src.name)}</b>
       <span class="src">${esc(src.name)}</span>

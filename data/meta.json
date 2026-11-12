@@ -1,11 +1,10 @@
 {
   "baseline": false,
-  "brief": "Open risk: ACTION Drought in Belize, Costa Rica, Cuba, Dominican Republic, Guatemala, Honduras, Haiti, Mexico, Nicaragua, El Salvador, United States. Current war coverage is on the board: Ukraine peace talks: Jared Kushner and Steve Witkoff conclude meeting with Putin - DW.com; US senators demand end to Iran war funding in bill averting shutdown - News From The States. Rising topic: ukraine war (3 outlets this window).",
+  "brief": "Current war coverage is on the board: Ukraine peace talks: Jared Kushner and Steve Witkoff conclude meeting with Putin - DW.com; US senators demand end to Iran war funding in bill averting shutdown - News From The States. Rising topic: ukraine war (3 outlets this window).",
   "checkedAt": "2026-11-12T15:00:04-06:00",
   "checkedLabel": "Nov 12, 2026 3:00 PM CT",
   "errors": [
-    "ReliefWeb: API v1 is retired (HTTP 410) and API v2 refuses an unregistered appname. The public disasters page listed no disasters.",
-    "CDC HAN: the official syndication feed answered with no notices, and the archive page did not answer."
+    "ReliefWeb: the disasters page returned no cards from this network. The RSS feed is an AWS WAF challenge, and API v2 rejects appname=torelldan-news-desk until ReliefWeb approves it."
   ],
   "retainDays": 120,
   "today": "2026-11-12",

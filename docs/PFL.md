@@ -158,7 +158,7 @@ flowchart TD
 | 2 | **Kind** | each `_try_*` fetcher; `boards.classify_desk` for headlines | title, note, query hint | `kind` | Headline that names no tracked topic: dropped (kind `news`). European storm wording wins: `windstorm`. |
 | 3 | **Base severity** | `quake_severity`, `alert_severity`, `tropical_severity`, `spc_watch_severity`, `outlook_at_point`, `_sentry_level`, `tema_notices`, … | kind-specific fields | STANDBY / ALERT / ACTION / CRITICAL | Unknown: STANDBY (the floor) |
 | 4 | **Triggers** | `citizen.evaluate_triggers`, `raise_to` | threat items, assets, trends | raised severity and trigger rows | Triggers only raise. Missing price data: that trigger can't fire. |
-| 5 | **72-hour decay** | `demote_stale_alerts` (server), `shownSeverity` (browser) | ALERT items | STANDBY if older than 72 h | Only ALERT decays |
+| 5 | **72-hour decay** | `demote_stale_alerts` (server), `shownSeverity` (browser) | ALERT items, and GDACS ACTION/CRITICAL | STANDBY if the event start is older than 72 h | Other ACTION and CRITICAL rows stay |
 | 6 | **Annotate** | `apply_outlook`, `so_what`, `confidence_for` | item, `history.json` | arrows, outlook, so-what, confidence | No history yet: "First reading. Watch the next 72 hours." |
 | 7 | **Dedupe and cluster** | `_dedupe_titles`, `same_story`, `cluster_rows` / `clusterStories`, `fold_desk_rows` (cap 4 per desk) | item list | one lead per story with `related` and `relatedSources` | A story worded in a way the matcher doesn't recognize stays separate (two rows) |
 | 8 | **What changed** | `_window`, `prior_item`, `recent_story`, `story_update`, `old_standby_return` (server); `foldSameStory`, `leadUpdates` (browser) | current items, previous `threats.json` / `trends.json`, `history.json` (7 days) | new / updated / escalated / de-escalated / resolved rows | Without history (first days) every item looks new; this fills in after refreshes |
@@ -203,7 +203,7 @@ If the button is grey or says there are conflicts, don't force it. Ask for the c
 
 ### 4.3 Reading the status
 
-- **Source down** next to a feed means that source didn't answer on the last refresh. The desk keeps the previous data and does not pretend things are clear. CDC HAN's official feed is up but currently lists no notices, and the CDC archive page blocks an automated read. TEMA comes and goes.
+- **Source down** next to a feed means that source didn't answer on the last refresh. The desk keeps the previous data and does not pretend things are clear. CDC HAN stays online when its feed answers with no notices ("no current alerts"). ReliefWeb's page is blocked from the GitHub refresh by a web challenge, so that tile can say source down. TEMA comes and goes.
 - **X feed offline** means the X token is missing or out of credits. Everything else still updates.
 - **STANDBY → ALERT → ACTION → CRITICAL** is the scale from "on file" to "act now". CRITICAL is rare on purpose.
 - **+N related** means N other outlets ran the same story; only the lead copy is shown.

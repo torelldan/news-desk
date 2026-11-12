@@ -1,7 +1,6 @@
 {
   "gaps": [
-    "ReliefWeb: API v1 is retired (HTTP 410) and API v2 refuses an unregistered appname. The public disasters page listed no disasters.",
-    "CDC HAN: the official syndication feed answered with no notices, and the archive page did not answer."
+    "ReliefWeb: the disasters page returned no cards from this network. The RSS feed is an AWS WAF challenge, and API v2 rejects appname=torelldan-news-desk until ReliefWeb approves it."
   ],
   "items": [
     {
@@ -294,19 +293,20 @@
       "note": "Orange alert. Burundi, Democratic Republic of Congo, Central African Republic, Eritrea, Ethiopia, Kenya, Niger, Nigeria, Rwanda, Sudan, South Sudan, Chad, Tanzania, Uganda",
       "outlook": "First reading. Watch the next 72 hours.",
       "published": "2026-05-20T19:00:00-05:00",
-      "severity": "ACTION",
+      "severity": "STANDBY",
       "soWhat": "no action needed",
       "source": "GDACS",
       "sourceCount": 1,
       "sourceId": "gdacs",
       "tags": [
         "gdacs",
-        "action"
+        "standby"
       ],
       "timeKnown": true,
       "title": "Drought in Burundi, Democratic Republic of Congo, Central African Republic, Eritrea, Ethiopia, Kenya, Niger, Nigeria, Rwanda, Sudan, South Sudan, Chad, Tanzania, Uganda",
       "url": "https://www.gdacs.org/report.aspx?eventid=1027450&episodeid=13&eventtype=DR",
-      "weekday": "Wed"
+      "weekday": "Wed",
+      "demoted": "older than 72h"
     },
     {
       "action": "no action needed",
@@ -324,19 +324,20 @@
       "note": "Orange alert. Belize, Costa Rica, Cuba, Dominican Republic, Guatemala, Honduras, Haiti, Mexico, Nicaragua, El Salvador, United States",
       "outlook": "First reading. Watch the next 72 hours.",
       "published": "2026-04-20T19:00:00-05:00",
-      "severity": "ACTION",
+      "severity": "STANDBY",
       "soWhat": "no action needed",
       "source": "GDACS",
       "sourceCount": 1,
       "sourceId": "gdacs",
       "tags": [
         "gdacs",
-        "action"
+        "standby"
       ],
       "timeKnown": true,
       "title": "Drought in Belize, Costa Rica, Cuba, Dominican Republic, Guatemala, Honduras, Haiti, Mexico, Nicaragua, El Salvador, United States",
       "url": "https://www.gdacs.org/report.aspx?eventid=1027449&episodeid=14&eventtype=DR",
-      "weekday": "Mon"
+      "weekday": "Mon",
+      "demoted": "older than 72h"
     },
     {
       "action": "no action needed",
