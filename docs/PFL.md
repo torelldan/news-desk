@@ -203,7 +203,7 @@ If the button is grey or says there are conflicts, don't force it. Ask for the c
 
 ### 4.3 Reading the status
 
-- **Source down** next to a feed means that source didn't answer on the last refresh. The desk keeps the previous data and does not pretend things are clear. GDACS, ReliefWeb, WHO, and CDC HAN are down at the moment; TEMA comes and goes.
+- **Source down** next to a feed means that source didn't answer on the last refresh. The desk keeps the previous data and does not pretend things are clear. CDC HAN's official feed is up but currently lists no notices, and the CDC archive page blocks an automated read. TEMA comes and goes.
 - **X feed offline** means the X token is missing or out of credits. Everything else still updates.
 - **STANDBY → ALERT → ACTION → CRITICAL** is the scale from "on file" to "act now". CRITICAL is rare on purpose.
 - **+N related** means N other outlets ran the same story; only the lead copy is shown.

@@ -4,10 +4,7 @@
   "checkedAt": "2026-11-12T11:53:15-06:00",
   "checkedLabel": "Nov 12, 2026 11:53 AM CT",
   "errors": [
-    "GDACS: not well-formed (invalid token): line 13, column 461",
-    "ReliefWeb: disasters feed did not answer. fetch failed https://api.reliefweb.int/v1/disasters?appname=news-desk&profile=list&preset=latest&limit=8",
-    "WHO: outbreak notices did not answer in the last 14 days.",
-    "CDC HAN: RSS did not answer and no notice is newer than 14 days."
+    "CDC HAN: the official syndication feed answered with no notices, and the archive page did not answer."
   ],
   "retainDays": 120,
   "today": "2026-11-12",

@@ -737,6 +737,66 @@ def test_nov12_rules():
     assert len(letter_rows) == 1 and letter_rows[0]["related"] >= 1
 
 
+def test_hazard_source_parsers():
+    import deskextra
+    gdacs = deskextra.parse_gdacs_events({
+        "features": [
+            {"geometry": {"coordinates": [11.1, 43.4]}, "properties": {
+                "name": "Flood in Italy", "alertlevel": "Green", "fromdate": "2026-09-01T00:00:00",
+                "country": "Italy", "url": {"report": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1"},
+            }},
+            {"geometry": {"coordinates": [30.0, -3.0]}, "properties": {
+                "name": "Drought in Burundi", "episodealertlevel": "Orange", "fromdate": "2026-05-21T00:00:00",
+                "country": "Burundi", "url": {"report": "https://www.gdacs.org/report.aspx?eventtype=DR&eventid=2"},
+            }},
+            {"geometry": {"coordinates": [120.0, 14.0]}, "properties": {
+                "name": "Flood in the Philippines", "alertlevel": "Green", "fromdate": "2026-11-10T00:00:00",
+                "country": "Philippines", "url": {"report": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=3"},
+            }},
+            {"geometry": {"coordinates": [-60.0, 5.0]}, "properties": {
+                "name": "Drought in Brazil", "alertlevel": "Orange", "fromdate": "2022-09-21T00:00:00",
+                "country": "Brazil", "url": {"report": "https://www.gdacs.org/report.aspx?eventtype=DR&eventid=9"},
+            }},
+        ]
+    }, "2026-11-12")
+    assert [row["title"] for row in gdacs] == ["Drought in Burundi", "Flood in the Philippines"]
+    assert gdacs[0]["severity"] == "ACTION"
+    assert gdacs[1]["severity"] == "ALERT" and gdacs[1]["lat"] == 14.0
+    html = '''
+    <article class="rw-disaster-map__article rw-river-article" data-disaster-lon="-72.43" data-disaster-lat="19.18" data-disaster-status="alert">
+      <h3 class="rw-river-article__title"><a href="https://reliefweb.int/disaster/fl-2026-000201-hti">Haiti: Floods - Oct 2026</a></h3>
+      <div class="rw-river-article__content"><p>Since 24 October 2026, heavy rains have flooded communes.</p>
+        <a href="https://reliefweb.int/disaster/ep-2025-000130-cog">Congo: Cholera Outbreak - Jul 2025</a>
+      </div>
+    </article>
+    '''
+    relief = deskextra.parse_relief_disasters(html, "2026-11-12")
+    assert len(relief) == 1
+    assert relief[0]["title"] == "Haiti: Floods - Oct 2026"
+    assert relief[0]["severity"] == "ACTION" and relief[0]["date"] == "2026-10-24"
+    assert relief[0]["lat"] == 19.18
+    who = deskextra.parse_who_dons({"value": [
+        {"Title": "Ebola disease caused by Bundibugyo virus, Democratic Republic of the Congo", "ItemDefaultUrl": "/2026-DON625", "PublicationDate": "2026-11-06T17:27:28Z", "Summary": "<p>Cases are under follow-up.</p>"},
+        {"Title": "Weekly COVID data package", "ItemDefaultUrl": "/old", "PublicationDate": "2026-11-11T00:00:00Z"},
+        {"Title": "Middle East respiratory syndrome coronavirus - Kingdom of Saudi Arabia", "ItemDefaultUrl": "/mers", "PublicationDate": "2026-10-15T00:00:00Z"},
+    ]}, "2026-11-12")
+    assert len(who) == 1 and who[0]["severity"] == "ALERT"
+    assert who[0]["url"].endswith("/2026-DON625")
+    assert "Cases are under follow-up." in who[0]["note"]
+    rss = '''<?xml version="1.0"?><rss version="2.0"><channel>
+      <item><title>Health Alert: Rabies post-exposure prophylaxis</title><link>https://www.cdc.gov/han/2026/han00532.html</link><pubDate>Tue, 10 Nov 2026 15:00:00 GMT</pubDate><description>Clinicians should review exposure.</description></item>
+      <item><title>Health Advisory: Cyclosporiasis cases in multiple states</title><link>https://www.cdc.gov/han/2026/han00531.html</link><pubDate>Mon, 02 Nov 2026 15:00:00 GMT</pubDate></item>
+      <item><title>Health Update: Old influenza note</title><link>https://www.cdc.gov/han/2025/old.html</link><pubDate>Mon, 06 Oct 2025 15:00:00 GMT</pubDate></item>
+    </channel></rss>'''
+    han = deskextra.parse_cdc_han_rss(rss, "2026-11-12")
+    assert [row["severity"] for row in han] == ["ACTION", "ALERT"]
+    assert han[0]["date"] == "2026-11-10"
+    archive = deskextra.parse_cdc_archive('<html><a href="/han/php/notices/han00530.html">HAN-00530: Ebola Disease Outbreak</a></html>')
+    assert archive[0]["url"] == "https://www.cdc.gov/han/php/notices/han00530.html"
+    assert archive[0]["severity"] == "ACTION"
+    assert deskextra.parse_cdc_archive("<html><h1>Access Denied</h1></html>") == []
+
+
 if __name__ == "__main__":
     test_x_created_at_with_milliseconds()
     test_ct_conversion()
@@ -763,4 +823,5 @@ if __name__ == "__main__":
     test_material_updates_clusters_and_returning_items()
     test_tema_county_age_and_local_relevance()
     test_nov12_rules()
+    test_hazard_source_parsers()
     print("ok")

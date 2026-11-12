@@ -8,6 +8,7 @@ import csv
 import io
 import json
 import re
+import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 
@@ -773,3 +774,262 @@ def moex_level(payload: dict) -> dict | None:
                     "source": "https://iss.moex.com/iss/engines/stock/markets/index/securities/IMOEX.json",
                 }
     return None
+
+
+GDACS_GEOJSON = "https://www.gdacs.org/gdacsapi/api/events/geteventlist/events4app"
+RELIEF_DISASTERS = "https://reliefweb.int/disasters"
+WHO_DON = "https://www.who.int/api/news/diseaseoutbreaknews?$orderby=PublicationDate%20desc&$top=12"
+CDC_HAN_RSS = "https://tools.cdc.gov/api/v2/resources/media/413690.rss"
+CDC_HAN_ARCHIVE = "https://www.cdc.gov/han/php/notices/index.html"
+CDC_HAN_EMPTY = (
+    "CDC HAN: the official syndication feed answered with no notices, "
+    "and the archive page did not answer."
+)
+
+_MONTHS = {
+    "jan": 1, "feb": 2, "mar": 3, "apr": 4, "may": 5, "jun": 6,
+    "jul": 7, "aug": 8, "sep": 9, "oct": 10, "nov": 11, "dec": 12,
+}
+_SEV_RANK = {"STANDBY": 0, "ALERT": 1, "ACTION": 2, "CRITICAL": 3}
+
+
+def _day_shift(day: str, days: int) -> str:
+    return (datetime.fromisoformat(day[:10]) - timedelta(days=days)).strftime("%Y-%m-%d")
+
+
+def _plain(value: str) -> str:
+    text = re.sub(r"<[^>]+>", " ", value or "")
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def gdacs_severity(level: str) -> str:
+    name = (level or "").lower()
+    if "red" in name:
+        return "CRITICAL"
+    if "orange" in name:
+        return "ACTION"
+    return "ALERT"
+
+
+def parse_gdacs_events(payload: dict | None, today: str, limit: int = 8) -> list[dict]:
+    """Current GDACS events. Orange and red stay; a green event is kept only if it started within 14 days."""
+    cutoff = _day_shift(today, 14)
+    rows = []
+    seen = set()
+    for feature in (payload or {}).get("features") or []:
+        props = feature.get("properties") or {}
+        title = _plain(props.get("name") or props.get("description") or "")
+        link_field = props.get("url") or {}
+        link = link_field.get("report") if isinstance(link_field, dict) else str(link_field or "")
+        link = link.strip()
+        if not title or not link.startswith("http") or link in seen:
+            continue
+        level = props.get("episodealertlevel") or props.get("alertlevel") or ""
+        severity = gdacs_severity(level)
+        started = str(props.get("fromdate") or "")[:10]
+        # The desk only shows the current year, so a drought that began earlier stays off this board.
+        if started[:4] != today[:4]:
+            continue
+        if severity == "ALERT" and started < cutoff:
+            continue
+        seen.add(link)
+        point = ((feature.get("geometry") or {}).get("coordinates") or [None, None])
+        lat = lon = None
+        try:
+            if len(point) >= 2 and point[0] is not None and point[1] is not None:
+                lon, lat = float(point[0]), float(point[1])
+        except (TypeError, ValueError):
+            lat = lon = None
+        country = props.get("country") or ""
+        note = f"{level or 'Green'} alert. {country}".strip()
+        rows.append({
+            "title": title,
+            "url": link,
+            "date": started or str(props.get("datemodified") or "")[:10] or today,
+            "severity": severity,
+            "note": note[:500],
+            "lat": lat,
+            "lon": lon,
+        })
+    rows.sort(key=lambda row: (_SEV_RANK.get(row["severity"], 0), row.get("date") or ""), reverse=True)
+    return rows[:limit]
+
+
+def relief_severity(status: str) -> str:
+    name = (status or "").lower()
+    if name == "alert":
+        return "ACTION"
+    if name in {"past", "archive", "closed"}:
+        return "STANDBY"
+    return "ALERT"
+
+
+def _relief_day(title: str, blurb: str, today: str) -> str:
+    named = re.search(r"(\d{1,2})\s+([A-Za-z]{3,9})\s+(20\d{2})", f"{blurb} {title}")
+    if named and named.group(2).lower()[:3] in _MONTHS:
+        month = _MONTHS[named.group(2).lower()[:3]]
+        day = min(int(named.group(1)), 28)
+        return f"{int(named.group(3)):04d}-{month:02d}-{day:02d}"
+    month_only = re.search(r"-\s+([A-Za-z]{3,9})\s+(20\d{2})\s*$", title or "")
+    if month_only and month_only.group(1).lower()[:3] in _MONTHS:
+        month = _MONTHS[month_only.group(1).lower()[:3]]
+        return f"{int(month_only.group(2)):04d}-{month:02d}-01"
+    return today
+
+
+def parse_relief_disasters(html: str, today: str, limit: int = 8) -> list[dict]:
+    """Primary cards on the public disasters page. Related-disaster links inside a card are not separate rows."""
+    rows = []
+    seen = set()
+    for match in re.finditer(r'<article class="rw-disaster-map__article\b[^"]*"(.*?)</article>', html or "", re.S | re.I):
+        block = match.group(0)
+        opening = match.group(1)
+        href = re.search(r'<h3[^>]*>\s*<a href="(https://reliefweb\.int/disaster/[^"]+)"', block, re.S)
+        title_match = re.search(r'<h3[^>]*>\s*<a[^>]*>(.*?)</a>', block, re.S)
+        if not href or not title_match:
+            continue
+        url = href.group(1)
+        title = _plain(title_match.group(1))
+        if not title or url in seen:
+            continue
+        seen.add(url)
+        status = ""
+        status_match = re.search(r'data-disaster-status="([^"]+)"', opening)
+        if status_match:
+            status = status_match.group(1)
+        blurb_match = re.search(r"<p>(.*?)</p>", block, re.S)
+        blurb = _plain(blurb_match.group(1) if blurb_match else "")
+        lat = lon = None
+        lat_match = re.search(r'data-disaster-lat="([^"]+)"', opening)
+        lon_match = re.search(r'data-disaster-lon="([^"]+)"', opening)
+        try:
+            if lat_match and lon_match:
+                lat, lon = float(lat_match.group(1)), float(lon_match.group(1))
+        except ValueError:
+            lat = lon = None
+        rows.append({
+            "title": title,
+            "url": url,
+            "date": _relief_day(title, blurb, today),
+            "severity": relief_severity(status),
+            "note": blurb[:500],
+            "lat": lat,
+            "lon": lon,
+        })
+        if len(rows) >= limit:
+            break
+    return rows
+
+
+def who_severity(title: str) -> str:
+    if re.search(r"outbreak|cases|deaths|epidemic|disease|virus|fever", title or "", re.I):
+        return "ALERT"
+    return "STANDBY"
+
+
+def parse_who_dons(payload: dict | None, today: str, days: int = 14, limit: int = 6) -> list[dict]:
+    cutoff = _day_shift(today, days)
+    rows = []
+    seen = set()
+    for item in (payload or {}).get("value") or []:
+        title = item.get("OverrideTitle") if item.get("UseOverrideTitle") and item.get("OverrideTitle") else (item.get("Title") or "")
+        title = _plain(title)
+        if not title or re.search(r"covid|technical package|data for covid", title, re.I):
+            continue
+        slug = str(item.get("ItemDefaultUrl") or item.get("UrlName") or "").strip().strip("/")
+        if not slug:
+            continue
+        url = "https://www.who.int/emergencies/disease-outbreak-news/item/" + slug
+        day = str(item.get("PublicationDate") or item.get("PublicationDateAndTime") or "")[:10]
+        if not day or day < cutoff or url in seen:
+            continue
+        seen.add(url)
+        rows.append({
+            "title": title,
+            "url": url,
+            "date": day,
+            "severity": who_severity(title),
+            "note": _plain(item.get("Summary") or "")[:500],
+        })
+        if len(rows) >= limit:
+            break
+    return rows
+
+
+def cdc_han_severity(title: str) -> str:
+    blob = title or ""
+    if re.search(r"\bhealth alert\b", blob, re.I):
+        return "ACTION"
+    if re.search(r"\bhealth advisory\b", blob, re.I):
+        return "ALERT"
+    if re.search(r"\b(health update|info service)\b", blob, re.I):
+        return "STANDBY"
+    if re.search(r"health alert network|\bHAN\b|\bCDCHAN\b", blob, re.I):
+        return "ACTION"
+    return "ALERT"
+
+
+def _rfc_day(value: str) -> str:
+    match = re.search(r"(\d{1,2})\s+([A-Za-z]{3})\s+(\d{4})", value or "")
+    if not match or match.group(2).lower() not in _MONTHS:
+        return ""
+    return f"{int(match.group(3)):04d}-{_MONTHS[match.group(2).lower()]:02d}-{int(match.group(1)):02d}"
+
+
+def parse_cdc_han_rss(xml_text: str, today: str, days: int = 14, limit: int = 5) -> list[dict]:
+    try:
+        root = ET.fromstring(xml_text or "")
+    except ET.ParseError:
+        return []
+    cutoff = _day_shift(today, days)
+    rows = []
+    seen = set()
+    for node in root.iter("item"):
+        title = _plain(node.findtext("title") or "")
+        link = (node.findtext("link") or "").strip()
+        if not title or not link.startswith("http") or link in seen:
+            continue
+        day = _rfc_day(node.findtext("pubDate") or "")
+        if day and day < cutoff:
+            continue
+        seen.add(link)
+        desc = _plain(node.findtext("description") or "")
+        rows.append({
+            "title": title,
+            "url": link,
+            "date": day or today,
+            "severity": cdc_han_severity(title),
+            "note": desc[:500],
+        })
+        if len(rows) >= limit:
+            break
+    return rows
+
+
+def parse_cdc_archive(html: str, limit: int = 8) -> list[dict]:
+    """Notice links on the HAN archive page. An access-denied page has none."""
+    if re.search(r"access denied", (html or "")[:800], re.I):
+        return []
+    rows = []
+    seen = set()
+    for href, raw in re.findall(r'<a[^>]+href="([^"]+)"[^>]*>(.*?)</a>', html or "", re.S | re.I):
+        title = _plain(raw)
+        if not re.search(r"\b(?:HAN|CDCHAN)[-\s]?\d{3,}|Health Alert\b|Health Advisory\b", title, re.I):
+            continue
+        if not re.search(r"han", href, re.I):
+            continue
+        if href.startswith("/"):
+            href = "https://www.cdc.gov" + href
+        if not href.startswith("http") or href in seen:
+            continue
+        seen.add(href)
+        rows.append({
+            "title": title,
+            "url": href,
+            "date": "",
+            "severity": cdc_han_severity(title),
+            "note": "",
+        })
+        if len(rows) >= limit:
+            break
+    return rows
