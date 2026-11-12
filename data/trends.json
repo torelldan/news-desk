@@ -1,43 +1,89 @@
 {
-  "googleNote": "Google Trends US daily list answered (10 topics). Kept the ones that match a war, government, or threat topic.",
+  "googleNote": "Google Trends US daily list answered (10 topics). Kept the ones that match a war, government, or threat topic. None of today's search trends matched.",
   "items": [
+    {
+      "category": "ukraine-war",
+      "confidence": "reported",
+      "date": "2026-11-12",
+      "id": "velocity:efd2da34e68ca58f",
+      "kind": "trend",
+      "lane": "news",
+      "look": "news",
+      "name": "ukraine war",
+      "note": "The same topic showed up across several outlets.",
+      "published": "2026-11-12T15:00:04-06:00",
+      "rise": "3 outlets this window",
+      "samples": [
+        {
+          "date": "2026-11-12",
+          "published": "2026-11-12T13:39:09-06:00",
+          "source": "DW.com",
+          "text": "Ukraine peace talks: Jared Kushner and Steve Witkoff conclude meeting with Putin - DW.com",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOcmZNQXFjXzc5bXVzVzdFRG1LMHlRSW1ncmhpSGFSRExjZTlqZENUOXNILUxOM1lLV1RKYUFoRklTU09BamRoNno1YThCbUU3ejJOTmpKcEFTalBjWjJQM1lfN1ZvNjVNTVktNE9jTTU2N0V5a3hVZ2pKOTZ6OS1fdDZnM3Ywb05zTnF4ZzZ6UDA3dlhLV2JJ?oc=5"
+        },
+        {
+          "date": "2026-11-11",
+          "published": "2026-11-11T05:06:13-06:00",
+          "source": "AFP.com",
+          "text": "Ukraine's Zelensky welcomes 'changes' in US approach as talks restart - AFP.com",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQRmdWQkpBUWtub0M4ZkJIN3RiTC1xSVhtamlmQ3ktNmVoOWFLVHRvWW9RNjFmRUtmM05kTE9rQVVNZWhzd2Q3Q0lNeXVLYVptV29ZOFByeWFmVUY0d2pUTjRldWdHVEVkMkVDR1BCc05PdlZmRm1PX0laOEk5cDN3NjNoalROTFBEbjYw?oc=5"
+        },
+        {
+          "date": "2026-11-04",
+          "published": "2026-11-04T02:00:00-06:00",
+          "source": "Institute for the Study of War",
+          "text": "Oleshky Ceasefire Demonstrates That Russia Has the Capability, but Not the Will, to End Civilian Suffering in Ukraine - Institute for the Study of War",
+          "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxObUtrMGdpN1lUU0RqM2JlQm5KanJLeWtnNXFzZWFnWjdscHdNYzNwQmRaLUI1Q1F2dzQ4ZkNQT2pNWC03a2JuYlloZUlad29EVzU4U19hQkh2QVdTeUFvTzIxNFdSczZfdjZEWldaYVFtWGJESnNmYUx1RnREQUVHT0kza29qeVZLbGtrX2NhclhjeEFMQnlDaDdDS0Q5RE14cHBCeGZiYVVrd1RrbXRoZzJ0cXhsTjcxTndidHViNGhlZFFtbk5yaDdwSzZsV0JqbW1VYV9aSmQ5WFQzcHVUU2JaV0cxWi1hcWJnZy02cWw3WmNmZU5YYnpITnZRUQ?oc=5"
+        }
+      ],
+      "severity": "ALERT",
+      "soWhat": "no action needed",
+      "source": "News velocity",
+      "sourceCount": 3,
+      "title": "ukraine war",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOcmZNQXFjXzc5bXVzVzdFRG1LMHlRSW1ncmhpSGFSRExjZTlqZENUOXNILUxOM1lLV1RKYUFoRklTU09BamRoNno1YThCbUU3ejJOTmpKcEFTalBjWjJQM1lfN1ZvNjVNTVktNE9jTTU2N0V5a3hVZ2pKOTZ6OS1fdDZnM3Ywb05zTnF4ZzZ6UDA3dlhLV2JJ?oc=5"
+    },
     {
       "category": "us-gov",
       "confidence": "reported",
       "date": "2026-11-12",
-      "id": "gtrend:6528fc968a7aeedd",
+      "id": "velocity:bd817662251631b7",
       "kind": "trend",
       "lane": "news",
       "look": "news",
-      "name": "senate finance committee rfk jr inquiry",
-      "note": "US search trend. Traffic 2000+.",
-      "place": "US",
-      "published": "2026-11-12T11:40:00-06:00",
-      "rise": "US daily list 2000+",
+      "name": "us gov",
+      "note": "The same topic showed up across several outlets.",
+      "published": "2026-11-12T15:00:04-06:00",
+      "rise": "4 outlets this window",
       "samples": [
         {
-          "source": "The Guardian",
-          "text": "Senator opens investigation into evidence RFK Jr ‘unlawfully lied’ to Congress",
-          "url": "https://www.theguardian.com/us-news/2026/nov/12/senate-investigation-rfk-jr-measles-samoa"
+          "date": "2026-11-12",
+          "published": "2026-11-12T13:06:30-06:00",
+          "source": "Ash Center",
+          "text": "The historic firsts of the 2026 midterm elections - Ash Center",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQMWQ5VWd5bGxuNEU1c0MtdjAydjlzbjR1Z3hNa2M5Zlh5ZGlueEpkRE9GN1dRVjYtbXdsSTVVQzlMM1BhZ2VjcWtXSWNuQm5hdkFXa3o2SXU4a0NLWFZ2bjlzUlIxa2xtdlhUTlpJNEFpUGFVNm5RN3h5ZXQwZkNyZm1UZUNmdjFsZlZ3?oc=5"
         },
         {
-          "source": "AP News",
-          "text": "Senators probing RFK Jr.'s testimony on Samoa trip after AP and Guardian showed documents refute it",
-          "url": "https://apnews.com/article/samoa-rfk-jr-senate-investigation-measles-vaccines-e4b97becad6d2951d9e84ea584979c41"
+          "date": "2026-11-11",
+          "published": "2026-11-11T15:13:58-06:00",
+          "source": "Reuters",
+          "text": "White House tells Democrats that investigating Trump administration could be criminal - Reuters",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQQmtZZ2NGUE9lNXZHZTJySFhIbHJoemVJbks5bVNEV1l4WFJSWU5xaC1TV2lWR2lwSV9vUU9GRmZjTjJCdU51UzBGcWRiamFwcTVjWWNtUGpxR3ZORG1BUFFLTERUQlpvTlFrZ190MEZfMldGOUtZdFJkVHhudkRPS2ZMaUlWZy0tVWp2SlJCck1nRHFJdUtPbFpUbndiMlVuQkhKWDJocVNGVm42aVFZZFhOSUZSNDdqMXRPQVBjOXpNVUJORmNLVw?oc=5"
         },
         {
-          "source": "CNN",
-          "text": "Top Democrat will investigate whether RFK Jr. lied to Congress",
-          "url": "https://www.cnn.com/2026/11/12/politics/senate-democrate-rfk-investigation"
+          "date": "2026-11-10",
+          "published": "2026-11-10T15:26:18-06:00",
+          "source": "Stateline",
+          "text": "Young, diverse voters showed up for midterms as older, Trump voters stayed home - Stateline",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPWFRDeXNZTHhxNmJXV21kOEY4OWsxS1hPMTRRUE5FVG85c0Y4b3d1UFBxLWM5LWRCZ0FiQTBWMFhaNVdFR1o0c09nOTdCcHN3c0JvWXF6YnpMdDRqTldFRVJ1X1VCeHdnSVVyQzZKc3J0Uk5kTUtFX2hrYThueFpBSzRsV2lWRWVjcW9WNXZONzZ2MlJqVXJJamd1WWVUaUlUNzVxbnZjRUktMVNfYVFMTA?oc=5"
         }
       ],
-      "severity": "STANDBY",
+      "severity": "ALERT",
       "soWhat": "no action needed",
-      "source": "Google Trends",
-      "sourceCount": 3,
-      "title": "senate finance committee rfk jr inquiry",
-      "url": "https://www.theguardian.com/us-news/2026/nov/12/senate-investigation-rfk-jr-measles-samoa",
-      "volume": "2000+"
+      "source": "News velocity",
+      "sourceCount": 4,
+      "title": "us gov",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQMWQ5VWd5bGxuNEU1c0MtdjAydjlzbjR1Z3hNa2M5Zlh5ZGlueEpkRE9GN1dRVjYtbXdsSTVVQzlMM1BhZ2VjcWtXSWNuQm5hdkFXa3o2SXU4a0NLWFZ2bjlzUlIxa2xtdlhUTlpJNEFpUGFVNm5RN3h5ZXQwZkNyZm1UZUNmdjFsZlZ3?oc=5"
     },
     {
       "category": "iran-war",
@@ -49,7 +95,7 @@
       "look": "news",
       "name": "iran war",
       "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-12T12:12:00-06:00",
+      "published": "2026-11-12T15:00:04-06:00",
       "rise": "4 outlets this window",
       "samples": [
         {
@@ -80,90 +126,6 @@
       "sourceCount": 4,
       "title": "iran war",
       "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPYjQybVJpU3hCWGlNOUhQVHUzT00yQVNwX3RiOFlTdzhqUzRWYzhuaVV6cWUta1FReUVnSWJ0dzE5UXZ1Uk9mdnJKT3NYRGtHcHRhaS00eVAwT2I3YWpkQzVzeGlKMGhDVU5RSy1LdW9paWdlTzgyS3lGRkMxVGs1S0hzTnJpWVFVTFF6WUE4SDU5a25lNllTdXNRMjNKLWVtMVJubXV4aw?oc=5"
-    },
-    {
-      "category": "ukraine-war",
-      "confidence": "reported",
-      "date": "2026-11-12",
-      "id": "velocity:efd2da34e68ca58f",
-      "kind": "trend",
-      "lane": "news",
-      "look": "news",
-      "name": "ukraine war",
-      "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-12T12:12:00-06:00",
-      "rise": "3 outlets this window",
-      "samples": [
-        {
-          "date": "2026-11-12",
-          "published": "2026-11-12T10:31:12-06:00",
-          "source": "BBC",
-          "text": "Ukraine says military Starlink disrupted again as US envoys meet Putin in Moscow - BBC",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB2YUZtTEpkZ1E5YmYwVXlWYXFzTWc4S09mYnBkejB5Y3NHd0xKTjB3MlVGeFZKaHlUdTNJRVRvWkgzQ3hHWWpVZm1neElKcDZ3NWJqbnl4WGdLbDQ?oc=5"
-        },
-        {
-          "date": "2026-11-11",
-          "published": "2026-11-11T13:59:00-06:00",
-          "source": "Atlantic Council",
-          "text": "Where the Russia-Ukraine peace talks stand after Abu Dhabi - Atlantic Council",
-          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQXzRIQ2x3ZExSYkJzT3FOWllvR0ZwN1o4THZjdlFvb3ZaSE5GSmdsNU5LNHNTS3gyRXg0OEF2bEI2U1UxeE1vaGZaZFhXUE5NSGRqWW5NMDJuQzI0UE9PblJtNDAxSlRxMWlGU3FqU3FhbFdyNno4RUdVX0kwVmYwSEU2bEVoU1ozOTlUOFo3dE9YcVF2YnMwalhyQXE1UmprRkpVX0xoRGJxdjFVdm9qUE5PQXdUN1NMLXlB?oc=5"
-        },
-        {
-          "date": "2026-11-05",
-          "published": "2026-11-05T17:52:48-06:00",
-          "source": "NPR",
-          "text": "Melania Trump touts rare agreement she brokered between Russia and Ukraine - NPR",
-          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNbmNvckxNTEw5QzhKbVdmMkRXc0RISXppT28zVWVsOERmckNXNGR4blB4dE42NDNQLXRMdkhxS3JjdkNsMXlMcE5Vc0lEZGZEckg3S3Y2MXk5d1otSGh0RFNyeDZWOTVqSWNTY1AzTUQ3N24tY1lUREtEdmVlTUVCQkpNb3ltQlFRb1lUQzNxWXp5V244ZXdMYWs4QXVLN2pDTWhBNURBSE1zUjhCdC1qd0ZDbHI5aUYwUEY0?oc=5"
-        }
-      ],
-      "severity": "ALERT",
-      "soWhat": "no action needed",
-      "source": "News velocity",
-      "sourceCount": 3,
-      "title": "ukraine war",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB2YUZtTEpkZ1E5YmYwVXlWYXFzTWc4S09mYnBkejB5Y3NHd0xKTjB3MlVGeFZKaHlUdTNJRVRvWkgzQ3hHWWpVZm1neElKcDZ3NWJqbnl4WGdLbDQ?oc=5"
-    },
-    {
-      "category": "us-gov",
-      "confidence": "reported",
-      "date": "2026-11-12",
-      "id": "velocity:bd817662251631b7",
-      "kind": "trend",
-      "lane": "news",
-      "look": "news",
-      "name": "us gov",
-      "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-12T12:12:00-06:00",
-      "rise": "4 outlets this window",
-      "samples": [
-        {
-          "date": "2026-11-11",
-          "published": "2026-11-11T15:13:58-06:00",
-          "source": "Reuters",
-          "text": "White House tells Democrats that investigating Trump administration could be criminal - Reuters",
-          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQQmtZZ2NGUE9lNXZHZTJySFhIbHJoemVJbks5bVNEV1l4WFJSWU5xaC1TV2lWR2lwSV9vUU9GRmZjTjJCdU51UzBGcWRiamFwcTVjWWNtUGpxR3ZORG1BUFFLTERUQlpvTlFrZ190MEZfMldGOUtZdFJkVHhudkRPS2ZMaUlWZy0tVWp2SlJCck1nRHFJdUtPbFpUbndiMlVuQkhKWDJocVNGVm42aVFZZFhOSUZSNDdqMXRPQVBjOXpNVUJORmNLVw?oc=5"
-        },
-        {
-          "date": "2026-11-11",
-          "published": "2026-11-11T11:35:00-06:00",
-          "source": "Politico",
-          "text": "‘Draft Marco’ effort grows on Capitol Hill after midterms bloodbath - Politico",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQWGYxNFpyNDRuX09fa3NyeFR6cmlNNnVkOHFUZGpFeU11bTAwcUdjTHdpeXFCX1FjSlhuR3dVRkNQY1hlN2JlcG5xZjFDRlZlT2RGQ0JVY1BuckVzWDVyN3hsRFZKTG04SXpSdWZ5UVh1WGRxbml3NzVLTVluLVl3RWxpaVBpMGNHWVJn?oc=5"
-        },
-        {
-          "date": "2026-11-10",
-          "published": "2026-11-10T15:26:18-06:00",
-          "source": "Stateline",
-          "text": "Young, diverse voters showed up for midterms as older, Trump voters stayed home - Stateline",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPWFRDeXNZTHhxNmJXV21kOEY4OWsxS1hPMTRRUE5FVG85c0Y4b3d1UFBxLWM5LWRCZ0FiQTBWMFhaNVdFR1o0c09nOTdCcHN3c0JvWXF6YnpMdDRqTldFRVJ1X1VCeHdnSVVyQzZKc3J0Uk5kTUtFX2hrYThueFpBSzRsV2lWRWVjcW9WNXZONzZ2MlJqVXJJamd1WWVUaUlUNzVxbnZjRUktMVNfYVFMTA?oc=5"
-        }
-      ],
-      "severity": "ALERT",
-      "soWhat": "no action needed",
-      "source": "News velocity",
-      "sourceCount": 4,
-      "title": "us gov",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQQmtZZ2NGUE9lNXZHZTJySFhIbHJoemVJbks5bVNEV1l4WFJSWU5xaC1TV2lWR2lwSV9vUU9GRmZjTjJCdU51UzBGcWRiamFwcTVjWWNtUGpxR3ZORG1BUFFLTERUQlpvTlFrZ190MEZfMldGOUtZdFJkVHhudkRPS2ZMaUlWZy0tVWp2SlJCck1nRHFJdUtPbFpUbndiMlVuQkhKWDJocVNGVm42aVFZZFhOSUZSNDdqMXRPQVBjOXpNVUJORmNLVw?oc=5"
     }
   ],
   "mode": "trends",

@@ -28,14 +28,56 @@
             "2026-11-26",
             "2026-12-25"
           ],
-          "level": 7623.79,
-          "change": 4.41,
-          "changePct": 0.06,
+          "level": 7592.95,
+          "change": -26.43,
+          "changePct": -0.35,
           "asOf": "2026-11-12",
           "source": "https://finance.yahoo.com/quote/%5EGSPC"
         }
       ],
       "headlines": [
+        {
+          "id": "headline:a2ff05fdf98942ec",
+          "kind": "headline",
+          "lane": "news",
+          "source": "The New York Times",
+          "sourceId": "headline",
+          "title": "Fed Will Not Hold Policy Vote at October 2027 Meeting - The New York Times",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1iLW13Sl9rX0hEQTV1blpqUXpZU0NXNGo3b2k1M1FDeUQtOUhjaDE5M0laeVJXTEVabUg2RFllcWFnWXlqLVhWNjljTGtkY0FHaVJUUVZ1YjMzZWs4dXFlRWNzbWVDenBKTTJWeTVvM0hSbzZ1bklyY3JEV01QSWM?oc=5",
+          "published": "2026-11-12T12:51:05-06:00",
+          "date": "2026-11-12",
+          "label": "Nov 12, 2026 12:51 PM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:7e3ec4eb73e78800",
+          "kind": "headline",
+          "lane": "news",
+          "source": "National Review",
+          "sourceId": "headline",
+          "title": "2028 Isn’t Over: A Case Against Republican Defeatism - National Review",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5hbnJHSUZZTEptN213cEQwNUhaYVNqS0h5ajNIZWRVUEpUSlVCbS1vcC00M19jdmFzTXdfQXdtMUlYRFNlNTJxU0hDSGsyc2Y4R0JaZFl0Q0Z2T1F3RmlBZVpzNA?oc=5",
+          "published": "2026-11-12T11:04:15-06:00",
+          "date": "2026-11-12",
+          "label": "Nov 12, 2026 11:04 AM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
         {
           "id": "headline:399615fd22ba0c78",
           "kind": "headline",
@@ -833,48 +875,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:111575d4db248212",
-          "kind": "headline",
-          "lane": "news",
-          "source": "The New York Times",
-          "sourceId": "headline",
-          "title": "Stable Labor Market Keeps Fed on Track to Raise Rates Gradually - The New York Times",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQQ3ZZR3JMbllUMFZ5bWxkRGhDYmlCN244OENvcGxmWlB0M001TzdCZkpfZTRtU25XdU8zbm8wUGdfeW5NblZwSlJCVGN1V0dCY2ozakNMekJ2U3I0elZfTlUwSC1vYjhTaC1hNHI2dzdKdUt1aWhIU0FYS25EOF9aTXBTWnJNbzJuNWtLeHhUWUpCYkhGdmZLRDZMUno4SlZUd042QkN5M19IUVNqclNhOW1ZQl9INHFiUVpDZHFYVQ?oc=5",
-          "published": "2026-11-06T04:45:28-06:00",
-          "date": "2026-11-06",
-          "label": "Nov 6, 2026 4:45 AM CT",
-          "weekday": "Fri",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:57eaadbece66a9ae",
-          "kind": "headline",
-          "lane": "news",
-          "source": "www.tmgm.com",
-          "sourceId": "headline",
-          "title": "Fed's Williams: Appropriate time to accumulate more information - www.tmgm.com",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPOHRDNVhtNjRTdk95VlgtMmNFRVBYWkZxaU9UM0h6ZXg1TFMyT29nZ05aOGtrdDE3VmNoZ2l0ck0ydGh4ektPNkZxVVYzQjd0dUxCM0s1alFwWHBfd3ZicEIySUNud0lOTFhPU3JVRGVCaGZseTJFZmtvTnR0Y0JMQ0ltc3h4R1Z0d21SVEp4UjRPSm00Wi1ZNGpkaFZxY3pqUFRIOGZwZ3ltTl9iM05pd0hUU0d0ZUZhU2tieUJqWm5xaVRGa3c?oc=5",
-          "published": "2026-11-06T04:25:48-06:00",
-          "date": "2026-11-06",
-          "label": "Nov 6, 2026 4:25 AM CT",
-          "weekday": "Fri",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ]
     },
@@ -894,9 +894,9 @@
             }
           ],
           "holidays": [],
-          "level": 36216.04,
-          "change": -195.66,
-          "changePct": -0.54,
+          "level": 36137.19,
+          "change": -274.51,
+          "changePct": -0.75,
           "asOf": "2026-11-12",
           "source": "https://finance.yahoo.com/quote/%5EGSPTSE"
         },
@@ -912,14 +912,35 @@
             }
           ],
           "holidays": [],
-          "level": 71983.29,
-          "change": -22.76,
-          "changePct": -0.03,
+          "level": 71777.45,
+          "change": -228.59,
+          "changePct": -0.32,
           "asOf": "2026-11-12",
           "source": "https://finance.yahoo.com/quote/%5EMXX"
         }
       ],
       "headlines": [
+        {
+          "id": "headline:32f7eac7aa020eeb",
+          "kind": "headline",
+          "lane": "news",
+          "source": "RBC",
+          "sourceId": "headline",
+          "title": "Central banks remain focused on inflation risks - RBC",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOOW1WOEJ4NGRHc3FRWkQ5bm41Tkgxa2RzZlZmZ0ZJMzladWptUXo5MERjenUzaGtSS0lwY21wbUpha01ERHdXRnlsUXQzWFhPOU96REoxTTZPSDFUN05JMmpjd2ZvRW9WenB1alNVY3Vtd3R3YkpaaVFXdUlNZkI5SnBPd0ZWbWZaanppd1lScEpUS2lVOFpmbDB4ZERWTTZfVzJjY2FORHR5SGc?oc=5",
+          "published": "2026-11-12T12:45:29-06:00",
+          "date": "2026-11-12",
+          "label": "Nov 12, 2026 12:45 PM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
         {
           "id": "headline:2f56d4ec7be44663",
           "kind": "headline",
@@ -1738,27 +1759,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:b17dfcf5eb38a1db",
-          "kind": "headline",
-          "lane": "news",
-          "source": "WSJ",
-          "sourceId": "headline",
-          "title": "Bank of Canada Gov. Macklem Pledges to Proceed Carefully on Further Rate Increases - WSJ",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQOXFIN1hXNGpRRHBPc2pNQU5qNnZUQkdZQV95NzhCcTR2anNDcERhLVBXbU93REhqZHdfU1ZjSnB3dU5wRHBsVmhWNlBJaHN6Tms3ZnJQenBCS1FTX3Q2ZVE5U0RRb2lwRE95YU5CbWtzRE9SSWVZeWpKaDdCTWxGdU0zR1pRaWduZGFUUGxERUkzUW82dEd4Y3k0WE5PMUt1RzlmNlFzR0ZuT1Vtd2lYSmdRZVpyS0k1YWxwUDB1TXlHN00?oc=5",
-          "published": "2026-11-03T12:37:00-06:00",
-          "date": "2026-11-03",
-          "label": "Nov 3, 2026 12:37 PM CT",
-          "weekday": "Tue",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ]
     },
@@ -1778,9 +1778,9 @@
             }
           ],
           "holidays": [],
-          "level": 170982.19,
-          "change": -1077.81,
-          "changePct": -0.63,
+          "level": 170873.81,
+          "change": -1186.19,
+          "changePct": -0.69,
           "asOf": "2026-11-12",
           "source": "https://finance.yahoo.com/quote/%5EBVSP"
         }
@@ -2644,10 +2644,10 @@
             }
           ],
           "holidays": [],
-          "level": 2508.05,
-          "change": 10.67,
-          "changePct": 0.43,
-          "asOf": "2026-11-12",
+          "level": 2505.95,
+          "change": 8.57,
+          "changePct": 0.34,
+          "asOf": "2026-11-13",
           "source": "https://iss.moex.com/iss/engines/stock/markets/index/securities/IMOEX.json"
         }
       ],
@@ -3540,6 +3540,27 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:f790b27598d0fa67",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Alwihda Info",
+          "sourceId": "headline",
+          "title": "China International Import Expo Opens in Shanghai, Showcasing Global Openness and Win-Win Cooperation - Alwihda Info",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNNTBfWElpTWpwR24xRS1vWmV3RlM4RXpfREh4Tm1qcWFqcVBCOEY2YUF5M0VKZjBBeUxKNGpPV2lGTjhxZUpmdXJNWkpsSkYzN1BqdmdqbTl3NWR1Zmh0LS1LYVloZTBpS0I0Ml92aURVSnl4OUR6Nm55TTVQdW1mV1lVeHd4U1pMVVZWNTdiN1lTQ3FkNGVMRVgtVzI1WnFzZVNCd0k5bWdkNDZpb1dBUWo2TGdtYjVkeGJkdWhDUWY0MzFFcTN2UA?oc=5",
+          "published": "2026-11-11T15:06:33-06:00",
+          "date": "2026-11-11",
+          "label": "Nov 11, 2026 3:06 PM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:076906fd47099213",
           "kind": "headline",
           "lane": "news",
@@ -4224,27 +4245,6 @@
           "published": "2026-11-06T08:00:21-06:00",
           "date": "2026-11-06",
           "label": "Nov 6, 2026 8:00 AM CT",
-          "weekday": "Fri",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:3fad0fbf4819ecfe",
-          "kind": "headline",
-          "lane": "news",
-          "source": "South China Morning Post",
-          "sourceId": "headline",
-          "title": "Hong Kong firms must innovate to compete in mainland China, trade chief says - South China Morning Post",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOR2RpNmF3OGhfX3pvNmtqWmktZ0MzS2h6S2ZDUTBKMjNNN1FJaVVDQ1pHVzB6ekVYand3V0d0QXl4dklGZzJHS2JMNTFvS2loS0g1a0hrMi1jd0ZTRWx3SmItNXJsU01GcTVRcV82NVJXZFhxT3c4YmxRQnV3akNTa1JPczBTdTJpSDRpRnd0NGVUck9vUWgza3drNjFGZEVySDBaSEM4V3lyanRQOW92Y0RmODkyS0NQek1VZThaanVNeTZ6dC16ME5VaFp4VVVuS0V1cHVn?oc=5",
-          "published": "2026-11-06T06:24:23-06:00",
-          "date": "2026-11-06",
-          "label": "Nov 6, 2026 6:24 AM CT",
           "weekday": "Fri",
           "timeKnown": true,
           "tags": [
@@ -5150,6 +5150,27 @@
       ],
       "headlines": [
         {
+          "id": "headline:b1338283b2f7e65c",
+          "kind": "headline",
+          "lane": "news",
+          "source": "BBN Times",
+          "sourceId": "headline",
+          "title": "Hong Kong Stock Exchange: Hang Seng Index Drops 1.26% to 24,008.55 as Alibaba Leads Tech Retreat - BBN Times",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNY1Z1bTZ4TW40LUJsbmRVaWVvYzRBYlVad29zZ3QxUXJYR3Fib05oeE5SZE5WWlV6RVhweTMxS2kxb1lGMFZDY3ItZEQ3U0ZLSEo2bmhpSXl6NFZ1TUdQd01fMkNCcWNUOVdnbzlGSm41aWdqQWNMVXU1NzF6RUwxZlVKUWg2V2RLS0hHUFJVZ2VISjFxY3VDYW9iclg2U1J4MnEyV1pUeTk1a3loY3I1RE1uYXkzdDZBRkc4M0pJY1pMdE1xS04yRg?oc=5",
+          "published": "2026-11-12T13:10:44-06:00",
+          "date": "2026-11-12",
+          "label": "Nov 12, 2026 1:10 PM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:43816be98e11414f",
           "kind": "headline",
           "lane": "news",
@@ -5246,6 +5267,27 @@
           "published": "2026-11-12T05:19:46-06:00",
           "date": "2026-11-12",
           "label": "Nov 12, 2026 5:19 AM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:9bdb770b3ac0dffe",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Analytics Insight",
+          "sourceId": "headline",
+          "title": "FTSE 100 Index Opens Flat at 10,835 as UK Economic Figures Rise - Analytics Insight",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPTmRjTEl5R0d0dW9zdjJXekE5OWVvTGplaXp2VkI1M05lSjUtUHJudlBIbEtzR2lsODBKSENVNndaMEdWX1RqMWMwaVM1VGI3cVcxME5acW01bDVEYWFsRE1wUmUxWS1LX0luY2w0T0J5QjBqc3ZocnBGOU5uUGFhSWhPdkF2TVJncUxHZ1VERWdXQUtZOERuZ1VhNENraERRZWFUONIBsgFBVV95cUxOcHN0QkxHcXhiZF9EWkJZalJzZ3FRTHcwSnM1X1czbW5oRXdqV2tEbElENEFkN2pCeUZVdGJpbHNUWldCX29wRUhnS19fTk9SUVJnTjZYTFhtMUdmZTFtNEpqcHhOT0Z5RkdCSm13b2RnNDNWc2dvTGd0WGJCM2daek91LTJtT2p4dWswQms4Wk9ub3JfUDFjVXpUemlOUVo3X1RTWTc3UnZoUF94SVQ5NmZ3?oc=5",
+          "published": "2026-11-12T03:23:40-06:00",
+          "date": "2026-11-12",
+          "label": "Nov 12, 2026 3:23 AM CT",
           "weekday": "Thu",
           "timeKnown": true,
           "tags": [
@@ -5946,48 +5988,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:46b34a2d14ae5516",
-          "kind": "headline",
-          "lane": "news",
-          "source": "South China Morning Post",
-          "sourceId": "headline",
-          "title": "Opinion | To be Asia’s events capital, Hong Kong must offer ticketing that works - South China Morning Post",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQY2FJWEpiVVlYWGlXVnA0TWRrd1BOS2NHcThzWk1rRXg3cGJ3U21lM2hMX1pvcGpLRXhOQlR6bGo1V3JmQTlqVU9LOGpjUzRXeG5VTU1YWDE0NzZBSldEM0pnajllRndMMHlSckVRbTdNdm8wakNLWEVGaVZ6eVlOM1FYREVvWVJyYU14QlVkTmdRNmR6Q3l0eGhrdWtnSEdRaW9vRGxibXdDamNFMjNET0pGYkJYWWtOUWJvbmlrYlLSAcABQVVfeXFMUG1vcmhKN2RGUS0zeE50YjEzYWp1eVkwRHVBQ0dnbUdRY1dybFJpWjloUU5RcElnbTNvcjVPcVJ1TmYxSTZzVk9iMUQzVVlYTnFSelpUVGYyWDdIZDh3bEp3Q0tXcUxjYWdXUE5JNEhxUDN3cEdQTXFiTmZTd2gxN1hpaFp2Rlc0S0w2SXE4a2pRUzhvYjExTUNPWklhVUlBRTJOV2pFQzJZQ2Z2UUZLX0xrRHRsd3lPYS1nZ0VvbnNR?oc=5",
-          "published": "2026-11-08T19:30:17-06:00",
-          "date": "2026-11-08",
-          "label": "Nov 8, 2026 7:30 PM CT",
-          "weekday": "Sun",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:7d5fe9c218ac529c",
-          "kind": "headline",
-          "lane": "news",
-          "source": "South China Morning Post",
-          "sourceId": "headline",
-          "title": "Hong Kong makes further in-roads in AI, aviation at mainland Chinese expo - South China Morning Post",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQSkVWVEJoTU1oNmVoS0cyR2k1Sk44VTFXQm5mN1E2UjRENGRNQWtENWNiVzdVZmNocm5WSzk4SzFfWktfeW8xRldtSnRaamdNMlFOLU1sNlRhb0p6WkpBS3oyTjFMNWZqNDNsZUJNdDc2Nzdub0JzQ0dGZXM3S2NnSnpRVlFUY2ZsOHFWaUtSbWJ3MS10YTJyd0NPcnk5dEhoVko5RjlhaTJCZU00bVFvc3FFMUlvVWlnOGdrZmVjMFhuMXBad3JmTVB4cDZMZ9IBzgFBVV95cUxQSkVWVEJoTU1oNmVoS0cyR2k1Sk44VTFXQm5mN1E2UjRENGRNQWtENWNiVzdVZmNocm5WSzk4SzFfWktfeW8xRldtSnRaamdNMlFOLU1sNlRhb0p6WkpBS3oyTjFMNWZqNDNsZUJNdDc2Nzdub0JzQ0dGZXM3S2NnSnpRVlFUY2ZsOHFWaUtSbWJ3MS10YTJyd0NPcnk5dEhoVko5RjlhaTJCZU00bVFvc3FFMUlvVWlnOGdrZmVjMFhuMXBad3JmTVB4cDZMZw?oc=5",
-          "published": "2026-11-07T22:00:35-06:00",
-          "date": "2026-11-07",
-          "label": "Nov 7, 2026 10:00 PM CT",
-          "weekday": "Sat",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ]
     },
@@ -6019,6 +6019,27 @@
         }
       ],
       "headlines": [
+        {
+          "id": "headline:e018b98192e75867",
+          "kind": "headline",
+          "lane": "news",
+          "source": "TradingView",
+          "sourceId": "headline",
+          "title": "Asian markets retreat as Nvidia leadership turmoil rattles tech sector; Japan PPI beats forecasts - TradingView",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQVTN2eWlBY1U2eml4NUIyNEVxb0EtQU5vLVhzRVFxTFlldXBEX0tTd3NsQnFDTnpucGVLa0ljQlhCT1B6T0JiS2tsYzBTQ3lZTWZYVlk2QUNuT0VRODBJcWVNMV9JWTY0WXBiUU9Dd1ZyQ0o5VEpsUGJhbUFNZGJyaDcxTDBIMTNFZ0hGSUd0T1lnX3kxcmlDdmw5alBpc3RreVYzbmNLaWd4SVlKTTRoQWtSM2hoNlgwREN5NHR1bjFmV19jXzhBYl9haUlMMFgwRzk4alVaOUhmN3gwQmRWOVpkNDQ4b0ZSX3R1blgwVWlJcnJMTng1ZFhILWRQbGs?oc=5",
+          "published": "2026-11-12T00:26:21-06:00",
+          "date": "2026-11-12",
+          "label": "Nov 12, 2026 12:26 AM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
         {
           "id": "headline:ca9c35fcda9d0cda",
           "kind": "headline",
@@ -6438,6 +6459,27 @@
             "standby"
           ],
           "severity": "STANDBY"
+        },
+        {
+          "id": "headline:83c566cd0d94f633",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Invezz",
+          "sourceId": "headline",
+          "title": "Nikkei 225 plunges 3% despite Bank of Japan rate pause: Why? - Invezz",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPZmJaTUVVZGpfV256WXVqYVkxMzRxZGY2OHNGbVJsUHdOUEdEbjdnMHgzTVVGdU1OWWVsczlqS0tlRnRGVkxHdW9zbk53MElyUVVQSi1MbTFUZzB1M05NOUw0TVA2MEtsS054ZGhnd0ltNlY1T0ozNDN5el8ta2h5S0xZZEhxRldOMTAtMjBjdXJHdXdnRGVCY0VjSG9lemZnZjJnbWI1alB6Y01lSVVB?oc=5",
+          "published": "2026-10-30T02:00:00-05:00",
+          "date": "2026-10-30",
+          "label": "Oct 30, 2026 2:00 AM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
         }
       ]
     },
@@ -6457,9 +6499,9 @@
             }
           ],
           "holidays": [],
-          "level": 81911.01,
-          "change": 31.61,
-          "changePct": 0.04,
+          "level": 81879.4,
+          "change": 772.75,
+          "changePct": 0.95,
           "asOf": "2026-11-12",
           "source": "https://finance.yahoo.com/quote/%5EBSESN"
         },
@@ -6475,9 +6517,9 @@
             }
           ],
           "holidays": [],
-          "level": 25299.35,
-          "change": 44.3,
-          "changePct": 0.18,
+          "level": 25255.05,
+          "change": 210.4,
+          "changePct": 0.84,
           "asOf": "2026-11-12",
           "source": "https://finance.yahoo.com/quote/%5ENSEI"
         }
