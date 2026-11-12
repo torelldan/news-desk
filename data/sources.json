@@ -412,11 +412,11 @@
     "id": "threat-cdc",
     "lane": "threat",
     "lastDate": "",
-    "lastLabel": "",
+    "lastLabel": "no current alerts",
     "name": "CDC HAN",
-    "offline": true,
+    "offline": false,
     "short": "CDC",
-    "subtitle": "source down",
+    "subtitle": "no current alerts",
     "url": "https://www.cdc.gov/han/php/notices/index.html"
   },
   {

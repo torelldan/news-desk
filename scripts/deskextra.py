@@ -778,6 +778,16 @@ def moex_level(payload: dict) -> dict | None:
 
 GDACS_GEOJSON = "https://www.gdacs.org/gdacsapi/api/events/geteventlist/events4app"
 RELIEF_DISASTERS = "https://reliefweb.int/disasters"
+RELIEF_RSS = "https://reliefweb.int/disasters/rss.xml"
+RELIEF_API = (
+    "https://api.reliefweb.int/v2/disasters?appname=torelldan-news-desk"
+    "&limit=8&profile=list&preset=latest"
+)
+RELIEF_BLOCKED = (
+    "ReliefWeb: the disasters page returned no cards from this network. "
+    "The RSS feed is an AWS WAF challenge, and API v2 rejects "
+    "appname=torelldan-news-desk until ReliefWeb approves it."
+)
 WHO_DON = "https://www.who.int/api/news/diseaseoutbreaknews?$orderby=PublicationDate%20desc&$top=12"
 CDC_HAN_RSS = "https://tools.cdc.gov/api/v2/resources/media/413690.rss"
 CDC_HAN_ARCHIVE = "https://www.cdc.gov/han/php/notices/index.html"
@@ -875,6 +885,88 @@ def _relief_day(title: str, blurb: str, today: str) -> str:
         month = _MONTHS[month_only.group(1).lower()[:3]]
         return f"{int(month_only.group(2)):04d}-{month:02d}-01"
     return today
+
+
+def relief_body_usable(body: str) -> bool:
+    text = body or ""
+    if "rw-disaster-map__article" in text or "<item>" in text:
+        return True
+    return False
+
+
+def cdc_marks_offline(gaps: list | None) -> bool:
+    """An empty HAN feed is online. Only a failed read marks the source down."""
+    for gap in gaps or []:
+        text = (gap or "").lower()
+        if "cdc" not in text:
+            continue
+        if "no notices" in text or "no current" in text:
+            continue
+        return True
+    return False
+
+
+def parse_relief_api(payload: dict | None, today: str, limit: int = 8) -> list[dict]:
+    rows = []
+    seen = set()
+    for entry in (payload or {}).get("data") or []:
+        fields = entry.get("fields") or {}
+        title = _plain(fields.get("name") or "")
+        url = str(fields.get("url") or "")
+        if not title or not url.startswith("http") or url in seen:
+            continue
+        seen.add(url)
+        status = fields.get("status") or ""
+        if isinstance(status, dict):
+            status = status.get("name") or ""
+        created = ((fields.get("date") or {}).get("created")) or ""
+        country = fields.get("primary_country") or ""
+        if isinstance(country, dict):
+            country = country.get("name") or ""
+        kind = fields.get("primary_type") or ""
+        if isinstance(kind, dict):
+            kind = kind.get("name") or ""
+        note = " ".join(part for part in (str(kind), str(country)) if part).strip()
+        rows.append({
+            "title": title,
+            "url": url,
+            "date": str(created)[:10] or today,
+            "severity": relief_severity(str(status)),
+            "note": note[:500],
+            "lat": None,
+            "lon": None,
+        })
+        if len(rows) >= limit:
+            break
+    return rows
+
+
+def parse_relief_rss(xml_text: str, today: str, limit: int = 8) -> list[dict]:
+    try:
+        root = ET.fromstring(xml_text or "")
+    except ET.ParseError:
+        return []
+    rows = []
+    seen = set()
+    for node in root.iter("item"):
+        title = _plain(node.findtext("title") or "")
+        link = (node.findtext("link") or "").strip()
+        if not title or not link.startswith("http") or link in seen:
+            continue
+        seen.add(link)
+        day = _rfc_day(node.findtext("pubDate") or "") or today
+        rows.append({
+            "title": title,
+            "url": link,
+            "date": day,
+            "severity": "ALERT",
+            "note": _plain(node.findtext("description") or "")[:500],
+            "lat": None,
+            "lon": None,
+        })
+        if len(rows) >= limit:
+            break
+    return rows
 
 
 def parse_relief_disasters(html: str, today: str, limit: int = 8) -> list[dict]:
