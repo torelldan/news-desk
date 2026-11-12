@@ -1,7 +1,6 @@
 {
   "gaps": [
-    "Power_TN row hidden (2025-10-06, affected 0, served 0).",
-    "1 ended road projects hidden."
+    "Power_TN row hidden (2025-10-06, affected 0, served 0)."
   ],
   "items": [
     {
@@ -10,10 +9,10 @@
       "date": "2026-11-12",
       "id": "local-nws-none",
       "kind": "nws",
-      "label": "Nov 12, 2026 8:51 AM CT",
+      "label": "Nov 12, 2026 11:19 AM CT",
       "lane": "local",
       "note": "api.weather.gov answered for 35.802,-86.907 and returned no alerts.",
-      "published": "2026-11-12T08:51:40-06:00",
+      "published": "2026-11-12T11:19:17-06:00",
       "severity": "STANDBY",
       "soWhat": "",
       "source": "NWS",
@@ -24,6 +23,24 @@
       ],
       "title": "No active NWS alert for Thompson's Station (37179)",
       "url": "https://api.weather.gov/alerts/active?point=35.802,-86.907"
+    },
+    {
+      "confidence": "rumor",
+      "date": "",
+      "id": "local-na:ca1472070abfafdd",
+      "kind": "na",
+      "label": "n/a",
+      "lane": "local",
+      "note": "n/a — SmartWay returned no Williamson County events.",
+      "published": "",
+      "severity": "STANDBY",
+      "source": "n/a",
+      "sourceCount": 0,
+      "tags": [
+        "tennessee"
+      ],
+      "title": "TDOT Williamson roads",
+      "url": "https://smartway.tn.gov/"
     },
     {
       "action": "no action needed",

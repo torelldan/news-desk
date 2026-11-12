@@ -1,39 +1,39 @@
 {
   "checkedAt": "2026-11-12",
+  "gaps": [],
+  "note": "Slow figures refresh when older than 7 days. Last good value is kept when a source fails.",
   "regions": {
-    "usa": {
-      "policy": "3.875% as of 2026-10"
-    },
-    "japan": {
-      "policy": "1.25% as of 2026-10",
-      "yield10y": "2.84% as of 2026-11-11",
-      "fx": "159.95 (JPY=X)",
-    "cpi": "2.23% y/y as of 2026-09"
-    },
-    "india": {
-      "policy": "5.25% as of 2026-09",
-      "yield10y": "7.06% as of 2026-09-01",
-      "cpi": "5.57% y/y as of 2026-09",
-      "fx": "94.03 (INR=X)"
+    "china": {
+      "fx": "6.66 (CNY=X)",
+      "policy": "3.0% as of 2026-10"
     },
     "europe": {
-      "policy": "2.5% as of 2026-10",
-      "fx": "1.11 (EURUSD=X)"
+      "fx": "1.11 (EURUSD=X)",
+      "policy": "2.5% as of 2026-10"
     },
-    "china": {
-      "policy": "3.0% as of 2026-10",
-      "fx": "6.66 (CNY=X)"
+    "india": {
+      "cpi": "5.57% y/y as of 2026-09",
+      "fx": "94.03 (INR=X)",
+      "policy": "5.25% as of 2026-09",
+      "yield10y": "7.06% as of 2026-09-01"
+    },
+    "japan": {
+      "cpi": "2.23% y/y as of 2026-09",
+      "fx": "159.95 (JPY=X)",
+      "policy": "1.25% as of 2026-10",
+      "yield10y": "2.84% as of 2026-11-11"
     },
     "latin-america": {
       "policy": "13.75% as of 2026-10"
     },
+    "north-america": {
+      "policy": "Canada 2.5% as of 2026-10; Mexico 6.5% as of 2026-10"
+    },
     "russia": {
       "policy": "14.0% as of 2026-10"
     },
-    "north-america": {
-      "policy": "Canada 2.5% as of 2026-10; Mexico 6.5% as of 2026-10"
+    "usa": {
+      "policy": "3.875% as of 2026-10"
     }
-  },
-  "gaps": [],
-  "note": "Slow figures refresh when older than 7 days. Last good value is kept when a source fails."
+  }
 }

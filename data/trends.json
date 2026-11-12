@@ -11,22 +11,22 @@
       "look": "news",
       "name": "ukraine war",
       "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-12T08:51:40-06:00",
+      "published": "2026-11-12T11:19:17-06:00",
       "rise": "4 outlets this window",
       "samples": [
         {
           "date": "2026-11-12",
-          "published": "2026-11-12T01:24:32-06:00",
-          "source": "DW.com",
-          "text": "Ukraine peace talks: Jared Kushner and Steve Witkoff arrive in Russia for meeting with Putin - DW.com",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQNHg4ZG1SOVY2OEJGVzQzSDFfaDlFMGdzdXY3Rkl4ejZ4WkUwOERVbkIwVW9iaVZuUHlvS3NHX1RnUEdqQjlxd3ZFNDlYLUdrTGFVYWZMQmZQTmVnR292ejQ4N05mSjJ1U25VcFRoeUdfYmV3RVo0aFFGWXB3aVMyUm9YSHZNUlA1a3NjYkRQdXg3bWo4TzVqa1g0STE5enk3M2NF?oc=5"
+          "published": "2026-11-12T10:31:12-06:00",
+          "source": "BBC",
+          "text": "Ukraine says military Starlink disrupted again as US envoys meet Putin in Moscow - BBC",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB2YUZtTEpkZ1E5YmYwVXlWYXFzTWc4S09mYnBkejB5Y3NHd0xKTjB3MlVGeFZKaHlUdTNJRVRvWkgzQ3hHWWpVZm1neElKcDZ3NWJqbnl4WGdLbDQ?oc=5"
         },
         {
-          "date": "2026-11-11",
-          "published": "2026-11-11T05:06:13-06:00",
-          "source": "AFP.com",
-          "text": "Ukraine's Zelensky welcomes 'changes' in US approach as talks restart - AFP.com",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQRmdWQkpBUWtub0M4ZkJIN3RiTC1xSVhtamlmQ3ktNmVoOWFLVHRvWW9RNjFmRUtmM05kTE9rQVVNZWhzd2Q3Q0lNeXVLYVptV29ZOFByeWFmVUY0d2pUTjRldWdHVEVkMkVDR1BCc05PdlZmRm1PX0laOEk5cDN3NjNoalROTFBEbjYw?oc=5"
+          "date": "2026-11-09",
+          "published": "2026-11-09T23:00:00-06:00",
+          "source": "The Guardian",
+          "text": "US officials seek ‘final end’ to Russia-Ukraine war, as Abu Dhabi talks set to continue - The Guardian",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNd3pqanZMNlVOWHB0OGxZWFRSZERjUHhvV3VYc1drZUx4bUk0aDRadGdYUDd6Zy1uOHRlbTZ2MWFSWFpXdzJmakhydFo0STBMSjRESEU2X1Y0Y19jbldtNVFFdEZvajU0c3ZlOXljYjhuVFl5VUlZVlk3UmdqNDljeHNQYUJnUFl0MGlTTTZiMDRwNjVNYkc4ZA?oc=5"
         },
         {
           "date": "2026-11-09",
@@ -41,7 +41,49 @@
       "source": "News velocity",
       "sourceCount": 4,
       "title": "ukraine war",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQNHg4ZG1SOVY2OEJGVzQzSDFfaDlFMGdzdXY3Rkl4ejZ4WkUwOERVbkIwVW9iaVZuUHlvS3NHX1RnUEdqQjlxd3ZFNDlYLUdrTGFVYWZMQmZQTmVnR292ejQ4N05mSjJ1U25VcFRoeUdfYmV3RVo0aFFGWXB3aVMyUm9YSHZNUlA1a3NjYkRQdXg3bWo4TzVqa1g0STE5enk3M2NF?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB2YUZtTEpkZ1E5YmYwVXlWYXFzTWc4S09mYnBkejB5Y3NHd0xKTjB3MlVGeFZKaHlUdTNJRVRvWkgzQ3hHWWpVZm1neElKcDZ3NWJqbnl4WGdLbDQ?oc=5"
+    },
+    {
+      "category": "iran-war",
+      "confidence": "reported",
+      "date": "2026-11-12",
+      "id": "velocity:4ee4bc978244e41e",
+      "kind": "trend",
+      "lane": "news",
+      "look": "news",
+      "name": "iran war",
+      "note": "The same topic showed up across several outlets.",
+      "published": "2026-11-12T11:19:17-06:00",
+      "rise": "4 outlets this window",
+      "samples": [
+        {
+          "date": "2026-11-12",
+          "published": "2026-11-12T08:34:14-06:00",
+          "source": "Al Jazeera",
+          "text": "‘No war, no peace’: Can Iran break the deadlock with the US? - Al Jazeera",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNYXQ5Y3BkZ2ViQ1NSQ3MtWXRteVg3ZFNBTFRWWXJ0eHhWUWY0OThCNHl4c2VJaTQ3X05UTjU5WTBRYTZJUkVld1VrZTQ3TDFSUHYyOV9YckpyN2dDOFJfSF93M0g0RHJqV1MweUkwOHdCaWlSVHJvdm9jYm95d1pxM1lCUG5Ibk5lbDduclpmUUhWZ1JjUGlrVmdxSHNBUdIBowFBVV95cUxPa0dyY3drVndxNWVSczdJdmd5T1hCY19iNVViRmZVdlllMEdXUDZxbGtzRjF5T3lySXRYTjdmR01xOUFoNks2RXZtTi12YVBlOExkSWRsLTNLSlMxVWlHUnhyRnpYbEFUUnJOMHpzak9YVm44UGQ4THduVnFqbnF4c292bEF5OHdaSVhTb1Y5NmZXREN3NjBtWlhKUmRDQnpTVHB3?oc=5"
+        },
+        {
+          "date": "2026-11-11",
+          "published": "2026-11-11T13:25:00-06:00",
+          "source": "WSJ",
+          "text": "Vance Considers Direct Talks With Iran Hard-Liner in Push to End War - WSJ",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQRjRFTzFCWWlaNjZKMmYxR3FMcHc0V2FrUENBOHFCOUFISFZFSnhYcUctSkUwYXpUMXcwVmlrUEo2cEtRTWZCbVZNdC03SVhxTlo0N3ZseEZ6N1J4NUxFVVEwT0R0bzZFS01nRDRIMENrX19WemhZZUdEWW8tSGRGajNjRjhzdUNPckhGTVRQcEtwTTQ0aTdiVVZEMUNjbVBFekJ4RF9ZRWRBVEFJTmRYcGVSelI?oc=5"
+        },
+        {
+          "date": "2026-11-10",
+          "published": "2026-11-10T10:27:13-06:00",
+          "source": "Reuters",
+          "text": "Most Americans want new Democratic Congress to end Trump's Iran war, Reuters/Ipsos poll finds - Reuters",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNNzd5Z2JCbEZwZWtzVERIdVpCMHZSa1lZdW5OdXVwbHozbW1rM3ByUTRyZFNyTThTOXFLUnViZWtDbHllZWFUYVZXeXhUd1E2YWdSeTZVakNuV3ozbHJqdkJkN2RNeVhvRW5XRXRSWUhmdUx0RVFsLUNXdmFoMUtzOENaMS1UbzYtY1A3SXJmNFUtWHZQOVdDVC1DWENfbUVEaUF4ZGhBTVR1NEplSTBTRnU5bDBibDlnaWhjTERn?oc=5"
+        }
+      ],
+      "severity": "ALERT",
+      "soWhat": "no action needed",
+      "source": "News velocity",
+      "sourceCount": 4,
+      "title": "iran war",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNYXQ5Y3BkZ2ViQ1NSQ3MtWXRteVg3ZFNBTFRWWXJ0eHhWUWY0OThCNHl4c2VJaTQ3X05UTjU5WTBRYTZJUkVld1VrZTQ3TDFSUHYyOV9YckpyN2dDOFJfSF93M0g0RHJqV1MweUkwOHdCaWlSVHJvdm9jYm95d1pxM1lCUG5Ibk5lbDduclpmUUhWZ1JjUGlrVmdxSHNBUdIBowFBVV95cUxPa0dyY3drVndxNWVSczdJdmd5T1hCY19iNVViRmZVdlllMEdXUDZxbGtzRjF5T3lySXRYTjdmR01xOUFoNks2RXZtTi12YVBlOExkSWRsLTNLSlMxVWlHUnhyRnpYbEFUUnJOMHpzak9YVm44UGQ4THduVnFqbnF4c292bEF5OHdaSVhTb1Y5NmZXREN3NjBtWlhKUmRDQnpTVHB3?oc=5"
     },
     {
       "category": "us-gov",
@@ -53,7 +95,7 @@
       "look": "news",
       "name": "us gov",
       "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-12T08:51:40-06:00",
+      "published": "2026-11-12T11:19:17-06:00",
       "rise": "4 outlets this window",
       "samples": [
         {
@@ -65,10 +107,10 @@
         },
         {
           "date": "2026-11-11",
-          "published": "2026-11-11T13:27:31-06:00",
-          "source": "PBS",
-          "text": "Read the letter the White House's top lawyer sent Rep. Garcia over threats to investigate Trump - PBS",
-          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNRGNSekRGSnRPV25RMzRuQS1jYjJTY3lwZlhJSmoxZ3BOeGV0V2lGVFpfdUFlWVphMmtRNVJiUUxoZ251dEFPVUxrOWVXcXBPZ2s2cjZsdjB0dVAxSmNDMHhkcWpMeUJoX184U0hEQlphcGhicElqd3BYekh3S0xVUHJJRkxYWGF5UnBqdnBJeWMtYVBUM19rTV9jV1Q1TkRraDRLWW9IZEVFa1dpOGFjUHF4THhJQkVqdUFuS215cUxXeHkyV1lpUDdFQdIB0AFBVV95cUxNRW1GeG1aa0g1ZDhyVkxEV3BqRnRPVU9FUkphb2VkSzc0R0Q4aS1Lckt5SWtpd3ZhTHFOUzdWTkhwQXBwNVY2T001Tk54SEE1WnhGbFZ3NnNERnA1alBHWkMtU3h6U2cwazNnYjdBdFVtaU8zNTN3RjVWUDJiZ2V1MmE0a3BUSGRZclJiOWRNSk1TNXNqRk9lZUlBUjBJdTlnaDBZUTJMS3NNRjVQRkxibW8zMEo1VG55clY3dGEtNEE2Q3VPNjFCLVJIY2pvc1hi?oc=5"
+          "published": "2026-11-11T11:35:00-06:00",
+          "source": "Politico",
+          "text": "‘Draft Marco’ effort grows on Capitol Hill after midterms bloodbath - Politico",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQWGYxNFpyNDRuX09fa3NyeFR6cmlNNnVkOHFUZGpFeU11bTAwcUdjTHdpeXFCX1FjSlhuR3dVRkNQY1hlN2JlcG5xZjFDRlZlT2RGQ0JVY1BuckVzWDVyN3hsRFZKTG04SXpSdWZ5UVh1WGRxbml3NzVLTVluLVl3RWxpaVBpMGNHWVJn?oc=5"
         },
         {
           "date": "2026-11-10",
@@ -84,48 +126,6 @@
       "sourceCount": 4,
       "title": "us gov",
       "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQQmtZZ2NGUE9lNXZHZTJySFhIbHJoemVJbks5bVNEV1l4WFJSWU5xaC1TV2lWR2lwSV9vUU9GRmZjTjJCdU51UzBGcWRiamFwcTVjWWNtUGpxR3ZORG1BUFFLTERUQlpvTlFrZ190MEZfMldGOUtZdFJkVHhudkRPS2ZMaUlWZy0tVWp2SlJCck1nRHFJdUtPbFpUbndiMlVuQkhKWDJocVNGVm42aVFZZFhOSUZSNDdqMXRPQVBjOXpNVUJORmNLVw?oc=5"
-    },
-    {
-      "category": "iran-war",
-      "confidence": "reported",
-      "date": "2026-11-12",
-      "id": "velocity:4ee4bc978244e41e",
-      "kind": "trend",
-      "lane": "news",
-      "look": "news",
-      "name": "iran war",
-      "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-12T08:51:40-06:00",
-      "rise": "3 outlets this window",
-      "samples": [
-        {
-          "date": "2026-11-11",
-          "published": "2026-11-11T13:25:00-06:00",
-          "source": "WSJ",
-          "text": "Vance Considers Direct Talks With Iran Hard-Liner in Push to End War - WSJ",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQRjRFTzFCWWlaNjZKMmYxR3FMcHc0V2FrUENBOHFCOUFISFZFSnhYcUctSkUwYXpUMXcwVmlrUEo2cEtRTWZCbVZNdC03SVhxTlo0N3ZseEZ6N1J4NUxFVVEwT0R0bzZFS01nRDRIMENrX19WemhZZUdEWW8tSGRGajNjRjhzdUNPckhGTVRQcEtwTTQ0aTdiVVZEMUNjbVBFekJ4RF9ZRWRBVEFJTmRYcGVSelI?oc=5"
-        },
-        {
-          "date": "2026-11-11",
-          "published": "2026-11-11T04:02:53-06:00",
-          "source": "NPR",
-          "text": "Trump says US won Iran war, Iran responds - NPR",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNRi1JakU3TzJVd04yYXJFNWswV2NRSUxJaE1Ga2UzZGVhU3RyUzRGUEt2Yi0tMm9pMlVTM0t4QzFEQWx0YmlIbVlDa3JHTF9ZU2ZQTTY4eURMdUNSRXlyOGxrU2ZxLWpYYUtnS1lqblBoWHY1NkJ5MkViUVJuUTJELUEtYjFHU0d1dENZR3RB?oc=5"
-        },
-        {
-          "date": "2026-11-08",
-          "published": "2026-11-08T15:28:12-06:00",
-          "source": "CNBC",
-          "text": "Trump says renewed Iran strikes ‘highly unlikely’ if talks progress but warns he could still strike - CNBC",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNb0l6UllaNWstdHV3YXVHY3FsaTV6blctcjJ2aDl5dnNwZF9OOFdrRXM5RlN6bUYzU2ZnTGU1bndLek5kTDFTWG1LZUFuamZLbFUwUmJiMDF1a21pOFNhcjI2SzdLVHRtWWYzOHVJVl9qMk9CY3E3Y2lEY1VOZ2txYTRHOA?oc=5"
-        }
-      ],
-      "severity": "ALERT",
-      "soWhat": "no action needed",
-      "source": "News velocity",
-      "sourceCount": 3,
-      "title": "iran war",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQRjRFTzFCWWlaNjZKMmYxR3FMcHc0V2FrUENBOHFCOUFISFZFSnhYcUctSkUwYXpUMXcwVmlrUEo2cEtRTWZCbVZNdC03SVhxTlo0N3ZseEZ6N1J4NUxFVVEwT0R0bzZFS01nRDRIMENrX19WemhZZUdEWW8tSGRGajNjRjhzdUNPckhGTVRQcEtwTTQ0aTdiVVZEMUNjbVBFekJ4RF9ZRWRBVEFJTmRYcGVSelI?oc=5"
     }
   ],
   "mode": "trends",
