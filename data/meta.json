@@ -1,11 +1,11 @@
 {
   "baseline": false,
-  "brief": "No rare risk is on the board. A routine flyby or an empty storm outlook is not an emergency. Current war coverage is on the board: Ukraine says military Starlink disrupted again as US envoys meet Putin in Moscow - BBC; ‘No war, no peace’: Can Iran break the deadlock with the US? - Al Jazeera. Rising topic: ukraine war (4 outlets this window).",
-  "checkedAt": "2026-11-12T11:19:17-06:00",
-  "checkedLabel": "Nov 12, 2026 11:19 AM CT",
+  "brief": "No rare risk is on the board. A routine flyby or an empty storm outlook is not an emergency. Current war coverage is on the board: Ukraine peace talks: Jared Kushner and Steve Witkoff conclude talks with Putin - DW.com; Vance Considers Direct Talks With Iran Hard-Liner in Push to End War - WSJ. Rising topic: ukraine war (4 outlets this window).",
+  "checkedAt": "2026-11-12T11:53:15-06:00",
+  "checkedLabel": "Nov 12, 2026 11:53 AM CT",
   "errors": [
-    "GDACS: not well-formed (invalid token): line 14, column 87",
-    "ReliefWeb: disasters feed did not answer. curl: (22) The requested URL returned error: 410\n",
+    "GDACS: not well-formed (invalid token): line 13, column 461",
+    "ReliefWeb: disasters feed did not answer. fetch failed https://api.reliefweb.int/v1/disasters?appname=news-desk&profile=list&preset=latest&limit=8",
     "WHO: outbreak notices did not answer in the last 14 days.",
     "CDC HAN: RSS did not answer and no notice is newer than 14 days."
   ],

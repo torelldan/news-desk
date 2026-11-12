@@ -778,7 +778,7 @@
       "keywords": [],
       "outlets": 1,
       "score": 0,
-      "severity": "ALERT",
+      "severity": "STANDBY",
       "topic": "attack"
     },
     {
@@ -802,11 +802,11 @@
       "topic": "clock"
     },
     {
-      "count": 3,
+      "count": 1,
       "countries": 1,
       "date": "2026-11-12",
       "keywords": [],
-      "outlets": 3,
+      "outlets": 1,
       "score": 0,
       "severity": "ALERT",
       "topic": "diplomacy"
@@ -862,21 +862,21 @@
       "topic": "usgov"
     },
     {
-      "count": 4,
-      "countries": 1,
-      "date": "2026-11-12",
-      "keywords": [],
-      "outlets": 4,
-      "score": 0,
-      "severity": "ALERT",
-      "topic": "war-iran"
-    },
-    {
       "count": 3,
       "countries": 1,
       "date": "2026-11-12",
       "keywords": [],
       "outlets": 3,
+      "score": 0,
+      "severity": "ALERT",
+      "topic": "war-iran"
+    },
+    {
+      "count": 4,
+      "countries": 1,
+      "date": "2026-11-12",
+      "keywords": [],
+      "outlets": 4,
       "score": 0,
       "severity": "ALERT",
       "topic": "war-ukraine"
@@ -1671,7 +1671,7 @@
       "keywords": [],
       "outlets": 1,
       "score": 0,
-      "severity": "ALERT",
+      "severity": "STANDBY",
       "topic": "attack"
     },
     {
@@ -1695,11 +1695,11 @@
       "topic": "clock"
     },
     {
-      "count": 3,
+      "count": 1,
       "countries": 1,
       "date": "2026-11-12",
       "keywords": [],
-      "outlets": 3,
+      "outlets": 1,
       "score": 0,
       "severity": "ALERT",
       "topic": "diplomacy"
@@ -1755,21 +1755,21 @@
       "topic": "usgov"
     },
     {
-      "count": 4,
-      "countries": 1,
-      "date": "2026-11-12",
-      "keywords": [],
-      "outlets": 4,
-      "score": 0,
-      "severity": "ALERT",
-      "topic": "war-iran"
-    },
-    {
       "count": 3,
       "countries": 1,
       "date": "2026-11-12",
       "keywords": [],
       "outlets": 3,
+      "score": 0,
+      "severity": "ALERT",
+      "topic": "war-iran"
+    },
+    {
+      "count": 4,
+      "countries": 1,
+      "date": "2026-11-12",
+      "keywords": [],
+      "outlets": 4,
       "score": 0,
       "severity": "ALERT",
       "topic": "war-ukraine"

@@ -5,7 +5,7 @@
       "assetId": "dxy",
       "category": "attack",
       "days": 30,
-      "eventDays": 1,
+      "eventDays": 0,
       "r": null,
       "read": {
         "call": "n/a",
@@ -19,7 +19,7 @@
       "assetId": "dxy",
       "category": "climate",
       "days": 30,
-      "eventDays": 1,
+      "eventDays": 2,
       "r": null,
       "read": {
         "call": "n/a",
@@ -61,7 +61,7 @@
       "assetId": "dxy",
       "category": "election",
       "days": 30,
-      "eventDays": 2,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
@@ -89,7 +89,7 @@
       "assetId": "dxy",
       "category": "g7",
       "days": 30,
-      "eventDays": 2,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
@@ -117,7 +117,7 @@
       "assetId": "dxy",
       "category": "war",
       "days": 30,
-      "eventDays": 5,
+      "eventDays": 4,
       "r": null,
       "read": {
         "call": "n/a",
@@ -131,7 +131,7 @@
       "assetId": "dxy",
       "category": "attack",
       "days": 90,
-      "eventDays": 1,
+      "eventDays": 0,
       "r": null,
       "read": {
         "call": "n/a",
@@ -145,7 +145,7 @@
       "assetId": "dxy",
       "category": "climate",
       "days": 90,
-      "eventDays": 1,
+      "eventDays": 2,
       "r": null,
       "read": {
         "call": "n/a",
@@ -187,7 +187,7 @@
       "assetId": "dxy",
       "category": "election",
       "days": 90,
-      "eventDays": 2,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
@@ -215,7 +215,7 @@
       "assetId": "dxy",
       "category": "g7",
       "days": 90,
-      "eventDays": 2,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
@@ -243,7 +243,7 @@
       "assetId": "dxy",
       "category": "war",
       "days": 90,
-      "eventDays": 5,
+      "eventDays": 4,
       "r": null,
       "read": {
         "call": "n/a",
@@ -257,7 +257,7 @@
       "assetId": "gold",
       "category": "attack",
       "days": 30,
-      "eventDays": 1,
+      "eventDays": 0,
       "r": null,
       "read": {
         "call": "n/a",
@@ -271,7 +271,7 @@
       "assetId": "gold",
       "category": "climate",
       "days": 30,
-      "eventDays": 1,
+      "eventDays": 2,
       "r": null,
       "read": {
         "call": "n/a",
@@ -313,7 +313,7 @@
       "assetId": "gold",
       "category": "election",
       "days": 30,
-      "eventDays": 2,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
@@ -341,7 +341,7 @@
       "assetId": "gold",
       "category": "g7",
       "days": 30,
-      "eventDays": 2,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
@@ -369,7 +369,7 @@
       "assetId": "gold",
       "category": "war",
       "days": 30,
-      "eventDays": 5,
+      "eventDays": 4,
       "r": null,
       "read": {
         "call": "n/a",
@@ -383,7 +383,7 @@
       "assetId": "gold",
       "category": "attack",
       "days": 90,
-      "eventDays": 1,
+      "eventDays": 0,
       "r": null,
       "read": {
         "call": "n/a",
@@ -397,7 +397,7 @@
       "assetId": "gold",
       "category": "climate",
       "days": 90,
-      "eventDays": 1,
+      "eventDays": 2,
       "r": null,
       "read": {
         "call": "n/a",
@@ -439,7 +439,7 @@
       "assetId": "gold",
       "category": "election",
       "days": 90,
-      "eventDays": 2,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
@@ -467,7 +467,7 @@
       "assetId": "gold",
       "category": "g7",
       "days": 90,
-      "eventDays": 2,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
@@ -495,7 +495,7 @@
       "assetId": "gold",
       "category": "war",
       "days": 90,
-      "eventDays": 5,
+      "eventDays": 4,
       "r": null,
       "read": {
         "call": "n/a",
@@ -509,7 +509,7 @@
       "assetId": "silver",
       "category": "attack",
       "days": 30,
-      "eventDays": 1,
+      "eventDays": 0,
       "r": null,
       "read": {
         "call": "n/a",
@@ -523,7 +523,7 @@
       "assetId": "silver",
       "category": "climate",
       "days": 30,
-      "eventDays": 1,
+      "eventDays": 2,
       "r": null,
       "read": {
         "call": "n/a",
@@ -565,7 +565,7 @@
       "assetId": "silver",
       "category": "election",
       "days": 30,
-      "eventDays": 2,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
@@ -593,7 +593,7 @@
       "assetId": "silver",
       "category": "g7",
       "days": 30,
-      "eventDays": 2,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
@@ -621,7 +621,7 @@
       "assetId": "silver",
       "category": "war",
       "days": 30,
-      "eventDays": 5,
+      "eventDays": 4,
       "r": null,
       "read": {
         "call": "n/a",
@@ -635,7 +635,7 @@
       "assetId": "silver",
       "category": "attack",
       "days": 90,
-      "eventDays": 1,
+      "eventDays": 0,
       "r": null,
       "read": {
         "call": "n/a",
@@ -649,7 +649,7 @@
       "assetId": "silver",
       "category": "climate",
       "days": 90,
-      "eventDays": 1,
+      "eventDays": 2,
       "r": null,
       "read": {
         "call": "n/a",
@@ -691,7 +691,7 @@
       "assetId": "silver",
       "category": "election",
       "days": 90,
-      "eventDays": 2,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
@@ -719,7 +719,7 @@
       "assetId": "silver",
       "category": "g7",
       "days": 90,
-      "eventDays": 2,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
@@ -747,7 +747,7 @@
       "assetId": "silver",
       "category": "war",
       "days": 90,
-      "eventDays": 5,
+      "eventDays": 4,
       "r": null,
       "read": {
         "call": "n/a",
@@ -775,7 +775,7 @@
       "assetId": "btc",
       "category": "climate",
       "days": 30,
-      "eventDays": 1,
+      "eventDays": 2,
       "r": null,
       "read": {
         "call": "n/a",
@@ -817,7 +817,7 @@
       "assetId": "btc",
       "category": "election",
       "days": 30,
-      "eventDays": 2,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
@@ -845,7 +845,7 @@
       "assetId": "btc",
       "category": "g7",
       "days": 30,
-      "eventDays": 2,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
@@ -901,7 +901,7 @@
       "assetId": "btc",
       "category": "climate",
       "days": 90,
-      "eventDays": 1,
+      "eventDays": 2,
       "r": null,
       "read": {
         "call": "n/a",
@@ -943,7 +943,7 @@
       "assetId": "btc",
       "category": "election",
       "days": 90,
-      "eventDays": 2,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
@@ -971,7 +971,7 @@
       "assetId": "btc",
       "category": "g7",
       "days": 90,
-      "eventDays": 2,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
@@ -1027,7 +1027,7 @@
       "assetId": "eth",
       "category": "climate",
       "days": 30,
-      "eventDays": 1,
+      "eventDays": 2,
       "r": null,
       "read": {
         "call": "n/a",
@@ -1069,7 +1069,7 @@
       "assetId": "eth",
       "category": "election",
       "days": 30,
-      "eventDays": 2,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
@@ -1097,7 +1097,7 @@
       "assetId": "eth",
       "category": "g7",
       "days": 30,
-      "eventDays": 2,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
@@ -1153,7 +1153,7 @@
       "assetId": "eth",
       "category": "climate",
       "days": 90,
-      "eventDays": 1,
+      "eventDays": 2,
       "r": null,
       "read": {
         "call": "n/a",
@@ -1195,7 +1195,7 @@
       "assetId": "eth",
       "category": "election",
       "days": 90,
-      "eventDays": 2,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
@@ -1223,7 +1223,7 @@
       "assetId": "eth",
       "category": "g7",
       "days": 90,
-      "eventDays": 2,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
@@ -1261,19 +1261,304 @@
       "window": 90
     }
   ],
-  "events": [],
-  "note": "-1d is the move into the day before the event. +1d and +3d are moves from that same close to the stored close on or after those days. Correlation is Pearson between a category event-day (1/0) and that asset's daily percent change. Fewer than 5 paired days, or fewer than 3 event days, is n/a.",
   "drivers": {
+    "copperGold": {
+      "ratio": 0.001599,
+      "yield10": 5.103
+    },
+    "correlations": [
+      {
+        "d30": -0.42,
+        "d90": -0.48,
+        "driver": "DXY",
+        "metal": "Gold"
+      },
+      {
+        "d30": -0.24,
+        "d90": -0.26,
+        "driver": "10Y",
+        "metal": "Gold"
+      },
+      {
+        "d30": 0.11,
+        "d90": -0.19,
+        "driver": "Real 10Y",
+        "metal": "Gold"
+      },
+      {
+        "d30": 0.27,
+        "d90": 0.34,
+        "driver": "S&P",
+        "metal": "Gold"
+      },
+      {
+        "d30": -0.11,
+        "d90": -0.26,
+        "driver": "VIX",
+        "metal": "Gold"
+      },
+      {
+        "d30": 0.42,
+        "d90": 0.44,
+        "driver": "Copper",
+        "metal": "Gold"
+      },
+      {
+        "d30": -0.26,
+        "d90": -0.34,
+        "driver": "DXY",
+        "metal": "Silver"
+      },
+      {
+        "d30": -0.03,
+        "d90": -0.18,
+        "driver": "10Y",
+        "metal": "Silver"
+      },
+      {
+        "d30": 0.31,
+        "d90": -0.12,
+        "driver": "Real 10Y",
+        "metal": "Silver"
+      },
+      {
+        "d30": 0.44,
+        "d90": 0.42,
+        "driver": "S&P",
+        "metal": "Silver"
+      },
+      {
+        "d30": -0.25,
+        "d90": -0.3,
+        "driver": "VIX",
+        "metal": "Silver"
+      },
+      {
+        "d30": 0.57,
+        "d90": 0.59,
+        "driver": "Copper",
+        "metal": "Silver"
+      }
+    ],
+    "curve": [
+      {
+        "flag": "positive",
+        "inverted": false,
+        "name": "T10Y2Y",
+        "spark": [
+          {
+            "price": 0.37
+          },
+          {
+            "price": 0.41
+          },
+          {
+            "price": 0.46
+          },
+          {
+            "price": 0.45
+          },
+          {
+            "price": 0.47
+          },
+          {
+            "price": 0.48
+          },
+          {
+            "price": 0.51
+          },
+          {
+            "price": 0.47
+          },
+          {
+            "price": 0.44
+          },
+          {
+            "price": 0.42
+          },
+          {
+            "price": 0.37
+          },
+          {
+            "price": 0.33
+          },
+          {
+            "price": 0.35
+          },
+          {
+            "price": 0.38
+          },
+          {
+            "price": 0.33
+          },
+          {
+            "price": 0.32
+          },
+          {
+            "price": 0.31
+          },
+          {
+            "price": 0.31
+          },
+          {
+            "price": 0.32
+          },
+          {
+            "price": 0.29
+          },
+          {
+            "price": 0.38
+          },
+          {
+            "price": 0.37
+          },
+          {
+            "price": 0.38
+          },
+          {
+            "price": 0.32
+          },
+          {
+            "price": 0.34
+          },
+          {
+            "price": 0.32
+          },
+          {
+            "price": 0.38
+          },
+          {
+            "price": 0.35
+          },
+          {
+            "price": 0.32
+          },
+          {
+            "price": 0.25
+          }
+        ],
+        "value": 0.25
+      },
+      {
+        "flag": "positive",
+        "inverted": false,
+        "name": "T10Y3M",
+        "spark": [
+          {
+            "price": 1.01
+          },
+          {
+            "price": 1.09
+          },
+          {
+            "price": 1.07
+          },
+          {
+            "price": 1.09
+          },
+          {
+            "price": 1.09
+          },
+          {
+            "price": 1.06
+          },
+          {
+            "price": 1.06
+          },
+          {
+            "price": 0.99
+          },
+          {
+            "price": 0.99
+          },
+          {
+            "price": 0.95
+          },
+          {
+            "price": 0.91
+          },
+          {
+            "price": 0.82
+          },
+          {
+            "price": 0.83
+          },
+          {
+            "price": 0.88
+          },
+          {
+            "price": 0.86
+          },
+          {
+            "price": 0.88
+          },
+          {
+            "price": 0.74
+          },
+          {
+            "price": 0.78
+          },
+          {
+            "price": 0.78
+          },
+          {
+            "price": 0.77
+          },
+          {
+            "price": 0.87
+          },
+          {
+            "price": 0.8
+          },
+          {
+            "price": 0.78
+          },
+          {
+            "price": 0.7
+          },
+          {
+            "price": 0.74
+          },
+          {
+            "price": 0.69
+          },
+          {
+            "price": 0.67
+          },
+          {
+            "price": 0.67
+          },
+          {
+            "price": 0.64
+          },
+          {
+            "price": 0.68
+          }
+        ],
+        "value": 0.68
+      }
+    ],
+    "funds": {
+      "dff": 3.88,
+      "zqf": 4.185,
+      "zqh": 4.425
+    },
+    "gaps": [],
+    "oil": {
+      "brent": 94.4,
+      "energyStrikes": 0,
+      "wti": 87.53
+    },
     "rows": [
       {
-        "name": "Gold",
-        "level": 3875.8,
         "changes": {
-          "1W": -5.78,
-          "1M": -5.65,
-          "3M": -12.65,
-          "1Y": -5.84
+          "1M": -5.59,
+          "1W": -5.72,
+          "1Y": -5.78,
+          "3M": -12.6
         },
+        "level": 3878.2,
+        "name": "Gold",
         "spark": [
           {
             "price": 4162.2998
@@ -1363,20 +1648,20 @@
             "price": 4000.5
           },
           {
-            "price": 3875.8
+            "price": 3878.2
           }
         ],
         "unit": "%"
       },
       {
-        "name": "Silver",
-        "level": 49.925,
         "changes": {
-          "1W": -4.42,
-          "1M": -10.13,
-          "3M": -23.18,
-          "1Y": -1.37
+          "1M": -10.07,
+          "1W": -4.36,
+          "1Y": -1.31,
+          "3M": -23.13
         },
+        "level": 49.955,
+        "name": "Silver",
         "spark": [
           {
             "price": 59.977
@@ -1466,20 +1751,20 @@
             "price": 51.881
           },
           {
-            "price": 49.925
+            "price": 49.955
           }
         ],
         "unit": "%"
       },
       {
-        "name": "DXY",
-        "level": 103.172,
         "changes": {
-          "1W": 1.6,
-          "1M": 0.61,
-          "3M": 3.51,
-          "1Y": 3.73
+          "1M": 0.66,
+          "1W": 1.66,
+          "1Y": 3.79,
+          "3M": 3.57
         },
+        "level": 103.231,
+        "name": "DXY",
         "spark": [
           {
             "price": 101.93
@@ -1569,20 +1854,20 @@
             "price": 102.91
           },
           {
-            "price": 103.172
+            "price": 103.231
           }
         ],
         "unit": "%"
       },
       {
-        "name": "10Y",
-        "level": 5.107,
         "changes": {
-          "1W": 27.0,
-          "1M": -8.3,
-          "3M": 41.1,
-          "1Y": 98.7
+          "1M": -8.7,
+          "1W": 26.6,
+          "1Y": 98.3,
+          "3M": 40.7
         },
+        "level": 5.103,
+        "name": "10Y",
         "spark": [
           {
             "price": 5.277
@@ -1672,20 +1957,20 @@
             "price": 4.998
           },
           {
-            "price": 5.107
+            "price": 5.103
           }
         ],
         "unit": "bp"
       },
       {
-        "name": "Real 10Y",
-        "level": 2.66,
         "changes": {
-          "1W": 4.0,
           "1M": -21.0,
-          "3M": 23.0,
-          "1Y": 79.0
+          "1W": 4.0,
+          "1Y": 79.0,
+          "3M": 23.0
         },
+        "level": 2.66,
+        "name": "Real 10Y",
         "spark": [
           {
             "price": 2.9
@@ -1781,14 +2066,14 @@
         "unit": "bp"
       },
       {
-        "name": "S&P",
-        "level": 7633.7402,
         "changes": {
-          "1W": 3.81,
-          "1M": -1.1,
-          "3M": -1.95,
-          "1Y": 11.5
+          "1M": -1.05,
+          "1W": 3.86,
+          "1Y": 11.55,
+          "3M": -1.9
         },
+        "level": 7637.6401,
+        "name": "S&P",
         "spark": [
           {
             "price": 7722.7202
@@ -1878,20 +2163,20 @@
             "price": 7619.3799
           },
           {
-            "price": 7633.7402
+            "price": 7637.6401
           }
         ],
         "unit": "%"
       },
       {
-        "name": "VIX",
-        "level": 17.79,
         "changes": {
-          "1W": -36.87,
-          "1M": 5.45,
-          "3M": 17.12,
-          "1Y": -11.05
+          "1M": 4.03,
+          "1W": -37.72,
+          "1Y": -12.25,
+          "3M": 15.54
         },
+        "level": 17.55,
+        "name": "VIX",
         "spark": [
           {
             "price": 15.31
@@ -1981,20 +2266,20 @@
             "price": 17.49
           },
           {
-            "price": 17.79
+            "price": 17.55
           }
         ],
         "unit": "%"
       },
       {
-        "name": "Copper",
-        "level": 6.1925,
         "changes": {
-          "1W": -0.9,
-          "1M": -6.34,
-          "3M": -6.17,
-          "1Y": 22.66
+          "1M": -6.22,
+          "1W": -0.78,
+          "1Y": 22.81,
+          "3M": -6.05
         },
+        "level": 6.2,
+        "name": "Copper",
         "spark": [
           {
             "price": 6.492
@@ -2084,20 +2369,20 @@
             "price": 6.2745
           },
           {
-            "price": 6.1925
+            "price": 6.2
           }
         ],
         "unit": "%"
       },
       {
-        "name": "Gold/silver",
-        "level": 77.6324,
         "changes": {
-          "1W": -1.42,
           "1M": 4.98,
-          "3M": 13.7,
-          "1Y": -4.54
+          "1W": -1.42,
+          "1Y": -4.53,
+          "3M": 13.7
         },
+        "level": 77.6339,
+        "name": "Gold/silver",
         "spark": [
           {
             "price": 69.3983
@@ -2187,319 +2472,34 @@
             "price": 77.1092
           },
           {
-            "price": 77.6324
+            "price": 77.6339
           }
         ],
         "unit": "%"
       }
     ],
-    "correlations": [
-      {
-        "driver": "DXY",
-        "d30": -0.41,
-        "d90": -0.47,
-        "metal": "Gold"
-      },
-      {
-        "driver": "10Y",
-        "d30": -0.25,
-        "d90": -0.27,
-        "metal": "Gold"
-      },
-      {
-        "driver": "Real 10Y",
-        "d30": 0.11,
-        "d90": -0.19,
-        "metal": "Gold"
-      },
-      {
-        "driver": "S&P",
-        "d30": 0.28,
-        "d90": 0.34,
-        "metal": "Gold"
-      },
-      {
-        "driver": "VIX",
-        "d30": -0.11,
-        "d90": -0.26,
-        "metal": "Gold"
-      },
-      {
-        "driver": "Copper",
-        "d30": 0.42,
-        "d90": 0.44,
-        "metal": "Gold"
-      },
-      {
-        "driver": "DXY",
-        "d30": -0.25,
-        "d90": -0.34,
-        "metal": "Silver"
-      },
-      {
-        "driver": "10Y",
-        "d30": -0.04,
-        "d90": -0.18,
-        "metal": "Silver"
-      },
-      {
-        "driver": "Real 10Y",
-        "d30": 0.31,
-        "d90": -0.12,
-        "metal": "Silver"
-      },
-      {
-        "driver": "S&P",
-        "d30": 0.44,
-        "d90": 0.42,
-        "metal": "Silver"
-      },
-      {
-        "driver": "VIX",
-        "d30": -0.26,
-        "d90": -0.3,
-        "metal": "Silver"
-      },
-      {
-        "driver": "Copper",
-        "d30": 0.58,
-        "d90": 0.59,
-        "metal": "Silver"
-      }
-    ],
-    "funds": {
-      "dff": 3.88,
-      "zqf": 4.18,
-      "zqh": 4.42
-    },
-    "curve": [
-      {
-        "name": "T10Y2Y",
-        "value": 0.25,
-        "flag": "positive",
-        "inverted": false,
-        "spark": [
-          {
-            "price": 0.37
-          },
-          {
-            "price": 0.41
-          },
-          {
-            "price": 0.46
-          },
-          {
-            "price": 0.45
-          },
-          {
-            "price": 0.47
-          },
-          {
-            "price": 0.48
-          },
-          {
-            "price": 0.51
-          },
-          {
-            "price": 0.47
-          },
-          {
-            "price": 0.44
-          },
-          {
-            "price": 0.42
-          },
-          {
-            "price": 0.37
-          },
-          {
-            "price": 0.33
-          },
-          {
-            "price": 0.35
-          },
-          {
-            "price": 0.38
-          },
-          {
-            "price": 0.33
-          },
-          {
-            "price": 0.32
-          },
-          {
-            "price": 0.31
-          },
-          {
-            "price": 0.31
-          },
-          {
-            "price": 0.32
-          },
-          {
-            "price": 0.29
-          },
-          {
-            "price": 0.38
-          },
-          {
-            "price": 0.37
-          },
-          {
-            "price": 0.38
-          },
-          {
-            "price": 0.32
-          },
-          {
-            "price": 0.34
-          },
-          {
-            "price": 0.32
-          },
-          {
-            "price": 0.38
-          },
-          {
-            "price": 0.35
-          },
-          {
-            "price": 0.32
-          },
-          {
-            "price": 0.25
-          }
-        ]
-      },
-      {
-        "name": "T10Y3M",
-        "value": 0.68,
-        "flag": "positive",
-        "inverted": false,
-        "spark": [
-          {
-            "price": 1.01
-          },
-          {
-            "price": 1.09
-          },
-          {
-            "price": 1.07
-          },
-          {
-            "price": 1.09
-          },
-          {
-            "price": 1.09
-          },
-          {
-            "price": 1.06
-          },
-          {
-            "price": 1.06
-          },
-          {
-            "price": 0.99
-          },
-          {
-            "price": 0.99
-          },
-          {
-            "price": 0.95
-          },
-          {
-            "price": 0.91
-          },
-          {
-            "price": 0.82
-          },
-          {
-            "price": 0.83
-          },
-          {
-            "price": 0.88
-          },
-          {
-            "price": 0.86
-          },
-          {
-            "price": 0.88
-          },
-          {
-            "price": 0.74
-          },
-          {
-            "price": 0.78
-          },
-          {
-            "price": 0.78
-          },
-          {
-            "price": 0.77
-          },
-          {
-            "price": 0.87
-          },
-          {
-            "price": 0.8
-          },
-          {
-            "price": 0.78
-          },
-          {
-            "price": 0.7
-          },
-          {
-            "price": 0.74
-          },
-          {
-            "price": 0.69
-          },
-          {
-            "price": 0.67
-          },
-          {
-            "price": 0.67
-          },
-          {
-            "price": 0.64
-          },
-          {
-            "price": 0.68
-          }
-        ]
-      }
-    ],
-    "copperGold": {
-      "ratio": 0.001598,
-      "yield10": 5.107
-    },
     "volumes": [
       {
         "name": "GLD",
-        "price": 354.83,
-        "volume": 8242174
+        "price": 354.97,
+        "volume": 8655476
       },
       {
         "name": "SLV",
-        "price": 45.155,
-        "volume": 10723928
+        "price": 45.165,
+        "volume": 10929373
       },
       {
         "name": "GOLDBEES",
         "price": 112.71,
         "volume": 53972037
       }
-    ],
-    "oil": {
-      "brent": 94.58,
-      "wti": 87.67,
-      "energyStrikes": 0
-    },
-    "gaps": []
+    ]
   },
+  "events": [],
   "explainer": [
-    "Gold/silver ratio 77.6 (1-month change 4.98%) and copper -6.34%. Association, not proof: industrial worry is hitting silver harder."
+    "Gold/silver ratio 77.6 (1-month change 4.98%) and copper -6.22%. Association, not proof: industrial worry is hitting silver harder."
   ],
+  "note": "-1d is the move into the day before the event. +1d and +3d are moves from that same close to the stored close on or after those days. Correlation is Pearson between a category event-day (1/0) and that asset's daily percent change. Fewer than 5 paired days, or fewer than 3 event days, is n/a.",
   "vixZone": "15 to 25"
 }
