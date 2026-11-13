@@ -2,38 +2,80 @@
   "googleNote": "Google Trends US daily list answered (10 topics). Kept the ones that match a war, government, or threat topic. None of today's search trends matched.",
   "items": [
     {
+      "category": "ukraine-war",
+      "confidence": "reported",
+      "date": "2026-11-13",
+      "id": "velocity:efd2da34e68ca58f",
+      "kind": "trend",
+      "lane": "news",
+      "look": "news",
+      "name": "ukraine war",
+      "note": "The same topic showed up across several outlets.",
+      "published": "2026-11-13T11:07:51-06:00",
+      "rise": "4 outlets this window",
+      "samples": [
+        {
+          "date": "2026-11-13",
+          "published": "2026-11-13T08:58:55-06:00",
+          "source": "PBS",
+          "text": "Ukraine fires nearly 1,200 drones at Russia as U.S.-led talks consider wider European security - PBS",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPcklQeHY5RFN6VTVVS0s4dVRpb1lVemVlMjM5QUZZbGhQYVYwYzdST214SzhOYTBRNjdGTUJ3TjlqS1ctT3JtcHZhS0RmRVhXU1B5djJIbnJLMGhNMGpZMndVNkZja3pSRGpkT0hTemVUaVViMkROVExRazRvbWM5bGdQUTB5TkxXNUlVSllxRDdEeWJ6akxaRi1Eekk0cF9VMktoUXFUZ1NrTExEdnBhR1YzVHNMMTUta1VNZDQxTnhFN00teUHSAcsBQVVfeXFMTmJLVnJxbUNDaTBNMkwtLVp3Zkh3eUo1X0RlNTV1MDMwaXZTVGxxTlFhdkwxU21WRmx3QUg4U0g2b1pNdF9lVUpGREtkXzNfekhxWlNyQWYxNm5rVlZiV0NoRUZ5blhzV2ZRU2hMRmJoRkJjN1RjdTZvZzNkSnJtVXpQaWJtWm1fdy1UR3FJX3JyRWtjaXh5SEwxRUJIZUNkakx1am1NR2Y5Y0hWcTk3eXlEOEJ3QTZnbUdnR25maV9URGZBenppeFNTdUU?oc=5"
+        },
+        {
+          "date": "2026-11-13",
+          "published": "2026-11-13T08:22:04-06:00",
+          "source": "Al Jazeera",
+          "text": "Ukraine claims record 3,000 Russian casualties in one day as war drags on - Al Jazeera",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNTWk2V05hQVJ1VFBPdFFySGw4SU4tZGlNT3JYdDl4akdMQUJVQmhDeVZkR0VOSV9TN0tsaGZnZlJPYTJvZGRGc19KOU1aOFlHTlkzZG5qMFdjSjhXQk5xd1pLdkdlUHdkcFRTcnNSUVM5a2F1S0p6OTd0WjR6dUE4VGpqWHVLbVZYZHc5MkNESjhSdjN6bEh6TmZXYnY2a2EtN21SUXhRX1R2Tkw1QVRZ0gG0AUFVX3lxTE9OYXAyaC1NazBMTk5GdVYyeV9ZU1lmUTFGbFRkWTdHM1hEa3I0VDE5VXQtVkVjR2xuUkUxTWVMc0lLeEMxYW1fWFlSeE1aMnNoVkNjM2hBRE5OREE2QU93Z0JJeURrNHgxVVU1QmR1Vm5jRjVJbl9XQk9UY3dBTFUwdVIwZVRaMmFOaWdIUmhDUWR1aWtLcnpzcWdsaXlzS1V3THRRSWdpR2tPZDRkUmJ5UkUySg?oc=5"
+        },
+        {
+          "date": "2026-11-05",
+          "published": "2026-11-05T02:00:00-06:00",
+          "source": "NPR",
+          "text": "Melania Trump touts rare agreement she brokered between Russia and Ukraine - NPR",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNbmNvckxNTEw5QzhKbVdmMkRXc0RISXppT28zVWVsOERmckNXNGR4blB4dE42NDNQLXRMdkhxS3JjdkNsMXlMcE5Vc0lEZGZEckg3S3Y2MXk5d1otSGh0RFNyeDZWOTVqSWNTY1AzTUQ3N24tY1lUREtEdmVlTUVCQkpNb3ltQlFRb1lUQzNxWXp5V244ZXdMYWs4QXVLN2pDTWhBNURBSE1zUjhCdC1qd0ZDbHI5aUYwUEY0?oc=5"
+        }
+      ],
+      "severity": "ALERT",
+      "soWhat": "no action needed",
+      "source": "News velocity",
+      "sourceCount": 4,
+      "title": "ukraine war",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPcklQeHY5RFN6VTVVS0s4dVRpb1lVemVlMjM5QUZZbGhQYVYwYzdST214SzhOYTBRNjdGTUJ3TjlqS1ctT3JtcHZhS0RmRVhXU1B5djJIbnJLMGhNMGpZMndVNkZja3pSRGpkT0hTemVUaVViMkROVExRazRvbWM5bGdQUTB5TkxXNUlVSllxRDdEeWJ6akxaRi1Eekk0cF9VMktoUXFUZ1NrTExEdnBhR1YzVHNMMTUta1VNZDQxTnhFN00teUHSAcsBQVVfeXFMTmJLVnJxbUNDaTBNMkwtLVp3Zkh3eUo1X0RlNTV1MDMwaXZTVGxxTlFhdkwxU21WRmx3QUg4U0g2b1pNdF9lVUpGREtkXzNfekhxWlNyQWYxNm5rVlZiV0NoRUZ5blhzV2ZRU2hMRmJoRkJjN1RjdTZvZzNkSnJtVXpQaWJtWm1fdy1UR3FJX3JyRWtjaXh5SEwxRUJIZUNkakx1am1NR2Y5Y0hWcTk3eXlEOEJ3QTZnbUdnR25maV9URGZBenppeFNTdUU?oc=5"
+    },
+    {
       "category": "iran-war",
       "confidence": "reported",
-      "date": "2026-11-12",
+      "date": "2026-11-13",
       "id": "velocity:4ee4bc978244e41e",
       "kind": "trend",
       "lane": "news",
       "look": "news",
       "name": "iran war",
       "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-12T18:06:45-06:00",
+      "published": "2026-11-13T11:07:51-06:00",
       "rise": "4 outlets this window",
       "samples": [
         {
-          "date": "2026-11-12",
-          "published": "2026-11-12T17:09:14-06:00",
-          "source": "Center for International Policy",
-          "text": "Why Trump’s Iran war just got a lot more costly - Center for International Policy",
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPNlBBa1dEb3kxLTh3QjRJZEROVGltY2ZsRnBLYXNRUi1uQUI3cloyU0FiOGJtUFZiMlZxUS12d0oyVXZpdklxSUpCVmlsVjNqaWRXRmt3ZG5ZdVBqTTdaMVFqM1JkZUFNd0VvMjBCVkhkcEVCYmdYZ19IZ1p1Z3J5eUpLOXdsYWRkaXR0YnQ3Q3Rac0VqbUx3?oc=5"
+          "date": "2026-11-13",
+          "published": "2026-11-13T02:58:51-06:00",
+          "source": "Institute for the Study of War",
+          "text": "Iran Update, November 12, 2026 - Institute for the Study of War",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOdHcyZlo4SkRZcEItV1JzVnRmZDdSTGJTTkRLNzJ4WldhZFlKVUtzc0xOOVlnOE00QjVsR3hkRjZsOGlJemJqLUpJdjItRUFjc0tvbTVPdE10M3VqRXdxYVR2ck5vWHZZTVB6UkczZVR5bnBPdVgxZllUbUIzYWIxcVNZcTRBUQ?oc=5"
         },
         {
           "date": "2026-11-12",
-          "published": "2026-11-12T08:34:14-06:00",
-          "source": "Al Jazeera",
-          "text": "‘No war, no peace’: Can Iran break the deadlock with the US? - Al Jazeera",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNYXQ5Y3BkZ2ViQ1NSQ3MtWXRteVg3ZFNBTFRWWXJ0eHhWUWY0OThCNHl4c2VJaTQ3X05UTjU5WTBRYTZJUkVld1VrZTQ3TDFSUHYyOV9YckpyN2dDOFJfSF93M0g0RHJqV1MweUkwOHdCaWlSVHJvdm9jYm95d1pxM1lCUG5Ibk5lbDduclpmUUhWZ1JjUGlrVmdxSHNBUdIBowFBVV95cUxPa0dyY3drVndxNWVSczdJdmd5T1hCY19iNVViRmZVdlllMEdXUDZxbGtzRjF5T3lySXRYTjdmR01xOUFoNks2RXZtTi12YVBlOExkSWRsLTNLSlMxVWlHUnhyRnpYbEFUUnJOMHpzak9YVm44UGQ4THduVnFqbnF4c292bEF5OHdaSVhTb1Y5NmZXREN3NjBtWlhKUmRDQnpTVHB3?oc=5"
+          "published": "2026-11-12T16:46:00-06:00",
+          "source": "The Atlantic",
+          "text": "What the Iraq War Foretold About How the Iran War Will End - The Atlantic",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNdVhEdFFpY04yNVJwNkgtdGtWeTk1bjVHc0s0dU8xUmhybXFrblBLUjlSYkFNMUZHZ0J6U1Q1TUpQTWdleUNiME1tREY3Um1NV3N1T1ItczZnazJNX1RCX2NuTXY3ZjZ2ODRndVRZakpHcGp1NzRJZExjQkNhdXBSUVZNSTNnRTZQUTUzeE9ZUnE?oc=5"
         },
         {
           "date": "2026-11-11",
-          "published": "2026-11-11T17:55:44-06:00",
-          "source": "PBS",
-          "text": "Indictment sheds light on alleged Iran-backed plots across U.S. and Europe - PBS",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQS0stTGdjOGtJd1cyVXJZcG1sSkM0MUh6RzhncmRyZkU1OEs0azhxdGdsckZaVUZkQkY0d20wR0ZwUmVZODBwRWpoT1dZWk1YRElpNlNqRnc4cnUwWUM5amZybXlwTnFnMXdvUjdRMk9OUVg2eVFtR0VjWW0zZ1lmQjdaZEFWZU90SlJJYVNRYlZ6QmJKVkhTVkd1SzlHWkJZVC1tWXhjZEtmcWM?oc=5"
+          "published": "2026-11-11T04:02:53-06:00",
+          "source": "NPR",
+          "text": "Trump says US won Iran war, Iran responds - NPR",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNRi1JakU3TzJVd04yYXJFNWswV2NRSUxJaE1Ga2UzZGVhU3RyUzRGUEt2Yi0tMm9pMlVTM0t4QzFEQWx0YmlIbVlDa3JHTF9ZU2ZQTTY4eURMdUNSRXlyOGxrU2ZxLWpYYUtnS1lqblBoWHY1NkJ5MkViUVJuUTJELUEtYjFHU0d1dENZR3RB?oc=5"
         }
       ],
       "severity": "ALERT",
@@ -41,41 +83,41 @@
       "source": "News velocity",
       "sourceCount": 4,
       "title": "iran war",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPNlBBa1dEb3kxLTh3QjRJZEROVGltY2ZsRnBLYXNRUi1uQUI3cloyU0FiOGJtUFZiMlZxUS12d0oyVXZpdklxSUpCVmlsVjNqaWRXRmt3ZG5ZdVBqTTdaMVFqM1JkZUFNd0VvMjBCVkhkcEVCYmdYZ19IZ1p1Z3J5eUpLOXdsYWRkaXR0YnQ3Q3Rac0VqbUx3?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOdHcyZlo4SkRZcEItV1JzVnRmZDdSTGJTTkRLNzJ4WldhZFlKVUtzc0xOOVlnOE00QjVsR3hkRjZsOGlJemJqLUpJdjItRUFjc0tvbTVPdE10M3VqRXdxYVR2ck5vWHZZTVB6UkczZVR5bnBPdVgxZllUbUIzYWIxcVNZcTRBUQ?oc=5"
     },
     {
       "category": "us-gov",
       "confidence": "reported",
-      "date": "2026-11-12",
+      "date": "2026-11-13",
       "id": "velocity:bd817662251631b7",
       "kind": "trend",
       "lane": "news",
       "look": "news",
       "name": "us gov",
       "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-12T18:06:45-06:00",
+      "published": "2026-11-13T11:07:51-06:00",
       "rise": "4 outlets this window",
       "samples": [
         {
-          "date": "2026-11-12",
-          "published": "2026-11-12T13:16:26-06:00",
-          "source": "Ash Center",
-          "text": "The historic firsts of the 2026 midterm elections - Ash Center",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQMWQ5VWd5bGxuNEU1c0MtdjAydjlzbjR1Z3hNa2M5Zlh5ZGlueEpkRE9GN1dRVjYtbXdsSTVVQzlMM1BhZ2VjcWtXSWNuQm5hdkFXa3o2SXU4a0NLWFZ2bjlzUlIxa2xtdlhUTlpJNEFpUGFVNm5RN3h5ZXQwZkNyZm1UZUNmdjFsZlZ3?oc=5"
+          "date": "2026-11-10",
+          "published": "2026-11-10T04:00:00-06:00",
+          "source": "NPR",
+          "text": "The Democratic Party gained power across the country in the midterms. Now what? - NPR",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOcDF1ZVlXQkl2T1JYNVlzVlZmU2FObExhTEYtN0gtVndkcHloUnI2MzQ0bXA5TkJ5N3FQYU5OWWJKeW4yYkdacHluZm5Yd3docXBuSFFsc25OeW00VnlTRkhVV3RuMG53b3hBTlhEa2ZlSC1rUV9BM0ptWFgxZUlnR2trTFVEMldkTnJnQzYxajZUUQ?oc=5"
         },
         {
-          "date": "2026-11-11",
-          "published": "2026-11-11T15:13:58-06:00",
-          "source": "Reuters",
-          "text": "White House tells Democrats that investigating Trump administration could be criminal - Reuters",
-          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQQmtZZ2NGUE9lNXZHZTJySFhIbHJoemVJbks5bVNEV1l4WFJSWU5xaC1TV2lWR2lwSV9vUU9GRmZjTjJCdU51UzBGcWRiamFwcTVjWWNtUGpxR3ZORG1BUFFLTERUQlpvTlFrZ190MEZfMldGOUtZdFJkVHhudkRPS2ZMaUlWZy0tVWp2SlJCck1nRHFJdUtPbFpUbndiMlVuQkhKWDJocVNGVm42aVFZZFhOSUZSNDdqMXRPQVBjOXpNVUJORmNLVw?oc=5"
+          "date": "2026-11-10",
+          "published": "2026-11-10T02:00:00-06:00",
+          "source": "The New York Times",
+          "text": "Democrats Seize Control of Congress as Voters Rebuke Trump - The New York Times",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPdlZaYXc2NEh3eXJ0Ulc2cGtPeDF4OFZ0X2NvNFlOQzlVRDlIUFpmSTRRUld1VEFyS29nV2xjSHpzX2ZaV2RqVjBhckdxVVJ0R3luejNFN2VtazhQekVxYUM1aENBM2t4cGRGMUJHdVN0SDRZaWgyRE9mczFRenVRVg?oc=5"
         },
         {
-          "date": "2026-11-11",
-          "published": "2026-11-11T12:00:00-06:00",
-          "source": "The Washington Post",
-          "text": "Flying by pricey military jet, Rubio rarely misses a Florida football game - The Washington Post",
-          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQZ2JTVEpKNDJVTTlQN002YUJmdnY2UTBsbXJNQWxOcjh3SWFMZGpSRldnTlhEcGd3dldwMHFWSHk0U0c5Y3FwaWVTMmxMbmZJZjRZN0RuS3J1RVpxMW1yMTlXeHhybUo2blhtclVNZUZuZG5vU2ZzQ3k5eU0zYzQwdk96SVc2akZ4R21BQ0dwazUtUFRISldPNkZpZjVkSkUwY0YxeVpTX0l1SktJMkc3S2lyVmpxSk42X0Y4?oc=5"
+          "date": "2026-11-09",
+          "published": "2026-11-09T17:40:27-06:00",
+          "source": "U.S. Department of State (.gov)",
+          "text": "Secretary of State Marco Rubio Remarks to the Press - U.S. Department of State (.gov)",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPNWJLNzloUzc1d3lEbHhPMHI2OVd1aTVnRGJvaFc1SU9XYzFyWkZkajlkemkwUTlja1pkUVZneGJhWFdfMm9sbkdzSTdjOTdZM0dmT3FMM3RXeUNCVmd4bHAzMDhRdUF4V1IzVk1ZMHRPcmxVeEtFY0NVcFNtSlhkNlVmOW1lQVlIUmhsQTVJVTFrbzVrbUhuUTVSTU5FQzRVdjJaYnhHVmYzSk12b1hmX1RDbDEwVU1M?oc=5"
         }
       ],
       "severity": "ALERT",
@@ -83,49 +125,7 @@
       "source": "News velocity",
       "sourceCount": 4,
       "title": "us gov",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQMWQ5VWd5bGxuNEU1c0MtdjAydjlzbjR1Z3hNa2M5Zlh5ZGlueEpkRE9GN1dRVjYtbXdsSTVVQzlMM1BhZ2VjcWtXSWNuQm5hdkFXa3o2SXU4a0NLWFZ2bjlzUlIxa2xtdlhUTlpJNEFpUGFVNm5RN3h5ZXQwZkNyZm1UZUNmdjFsZlZ3?oc=5"
-    },
-    {
-      "category": "ukraine-war",
-      "confidence": "reported",
-      "date": "2026-11-12",
-      "id": "velocity:efd2da34e68ca58f",
-      "kind": "trend",
-      "lane": "news",
-      "look": "news",
-      "name": "ukraine war",
-      "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-12T18:06:45-06:00",
-      "rise": "3 outlets this window",
-      "samples": [
-        {
-          "date": "2026-11-12",
-          "published": "2026-11-12T09:26:34-06:00",
-          "source": "NPR",
-          "text": "U.S. envoys meet with Putin in the Kremlin after Ukraine talks in Abu Dhabi - NPR",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQR2VSWUphOTlfbGlEUW1pbk55c2FaU3FFN2lYNWx2RllwVlUzTm51TFBSQ1FpaHpBaGx6WDB1cEtxRlBtTC0xWVJrcmhBZ0NWc2o3VUZrdHNCUlBvQ2p1XzA4aWhqdV9KVS1rWjZUQl9zdWNrVWhOQ3N5Vi13c3RobU9sTHFKWG10WVZpX0pBcVQ5aXBO?oc=5"
-        },
-        {
-          "date": "2026-11-11",
-          "published": "2026-11-11T05:06:13-06:00",
-          "source": "AFP.com",
-          "text": "Ukraine's Zelensky welcomes 'changes' in US approach as talks restart - AFP.com",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQRmdWQkpBUWtub0M4ZkJIN3RiTC1xSVhtamlmQ3ktNmVoOWFLVHRvWW9RNjFmRUtmM05kTE9rQVVNZWhzd2Q3Q0lNeXVLYVptV29ZOFByeWFmVUY0d2pUTjRldWdHVEVkMkVDR1BCc05PdlZmRm1PX0laOEk5cDN3NjNoalROTFBEbjYw?oc=5"
-        },
-        {
-          "date": "2026-11-04",
-          "published": "2026-11-04T02:00:00-06:00",
-          "source": "Institute for the Study of War",
-          "text": "Oleshky Ceasefire Demonstrates That Russia Has the Capability, but Not the Will, to End Civilian Suffering in Ukraine - Institute for the Study of War",
-          "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxObUtrMGdpN1lUU0RqM2JlQm5KanJLeWtnNXFzZWFnWjdscHdNYzNwQmRaLUI1Q1F2dzQ4ZkNQT2pNWC03a2JuYlloZUlad29EVzU4U19hQkh2QVdTeUFvTzIxNFdSczZfdjZEWldaYVFtWGJESnNmYUx1RnREQUVHT0kza29qeVZLbGtrX2NhclhjeEFMQnlDaDdDS0Q5RE14cHBCeGZiYVVrd1RrbXRoZzJ0cXhsTjcxTndidHViNGhlZFFtbk5yaDdwSzZsV0JqbW1VYV9aSmQ5WFQzcHVUU2JaV0cxWi1hcWJnZy02cWw3WmNmZU5YYnpITnZRUQ?oc=5"
-        }
-      ],
-      "severity": "ALERT",
-      "soWhat": "no action needed",
-      "source": "News velocity",
-      "sourceCount": 3,
-      "title": "ukraine war",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQR2VSWUphOTlfbGlEUW1pbk55c2FaU3FFN2lYNWx2RllwVlUzTm51TFBSQ1FpaHpBaGx6WDB1cEtxRlBtTC0xWVJrcmhBZ0NWc2o3VUZrdHNCUlBvQ2p1XzA4aWhqdV9KVS1rWjZUQl9zdWNrVWhOQ3N5Vi13c3RobU9sTHFKWG10WVZpX0pBcVQ5aXBO?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOcDF1ZVlXQkl2T1JYNVlzVlZmU2FObExhTEYtN0gtVndkcHloUnI2MzQ0bXA5TkJ5N3FQYU5OWWJKeW4yYkdacHluZm5Yd3docXBuSFFsc25OeW00VnlTRkhVV3RuMG53b3hBTlhEa2ZlSC1rUV9BM0ptWFgxZUlnR2trTFVEMldkTnJnQzYxajZUUQ?oc=5"
     }
   ],
   "mode": "trends",
