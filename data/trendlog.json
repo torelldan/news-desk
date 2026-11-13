@@ -778,7 +778,7 @@
       "keywords": [],
       "outlets": 1,
       "score": 0,
-      "severity": "ALERT",
+      "severity": "STANDBY",
       "topic": "attack"
     },
     {
@@ -852,11 +852,11 @@
       "topic": "nws"
     },
     {
-      "count": 7,
+      "count": 6,
       "countries": 1,
       "date": "2026-11-12",
       "keywords": [],
-      "outlets": 7,
+      "outlets": 6,
       "score": 0,
       "severity": "STANDBY",
       "topic": "quake"
@@ -1693,7 +1693,7 @@
       "keywords": [],
       "outlets": 1,
       "score": 0,
-      "severity": "ALERT",
+      "severity": "STANDBY",
       "topic": "attack"
     },
     {
@@ -1767,11 +1767,11 @@
       "topic": "nws"
     },
     {
-      "count": 7,
+      "count": 6,
       "countries": 1,
       "date": "2026-11-12",
       "keywords": [],
-      "outlets": 7,
+      "outlets": 6,
       "score": 0,
       "severity": "STANDBY",
       "topic": "quake"

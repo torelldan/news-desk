@@ -921,6 +921,27 @@
       ],
       "headlines": [
         {
+          "id": "headline:fb69c2528e63c4b7",
+          "kind": "headline",
+          "lane": "news",
+          "source": "WSJ",
+          "sourceId": "headline",
+          "title": "Bank of Canada Raised Rates to Mitigate Inflation Risk, Minutes Say - WSJ",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNWkRteENhbmpUU1lDbFBRdzZ3dDhhM2FUd2JqTFk2S2l6S0x6MFU5VVFWWndIS19LV3QwSDVUamxDYkYtdW5rRmNjeENKMFNRRm9TdnVoLXlxQVJjeWVZVWxDR3VrOTk3andWOWZNNy1aSXNGazNQUWdQWlpSTmREVGVVQjlVemVnVldvLWdpYjdQSnd4NVdBNnVYbHNrdVVZOWlGZG15THN5bUZWRlFyRElMYkFFOEtKNXJJ?oc=5",
+          "published": "2026-11-12T16:43:39-06:00",
+          "date": "2026-11-12",
+          "label": "Nov 12, 2026 4:43 PM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:32f7eac7aa020eeb",
           "kind": "headline",
           "lane": "news",
@@ -1185,27 +1206,6 @@
           "published": "2026-11-10T14:34:39-06:00",
           "date": "2026-11-10",
           "label": "Nov 10, 2026 2:34 PM CT",
-          "weekday": "Tue",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:fb69c2528e63c4b7",
-          "kind": "headline",
-          "lane": "news",
-          "source": "WSJ",
-          "sourceId": "headline",
-          "title": "Bank of Canada Raised Rates to Mitigate Inflation Risk, Minutes Say - WSJ",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNWkRteENhbmpUU1lDbFBRdzZ3dDhhM2FUd2JqTFk2S2l6S0x6MFU5VVFWWndIS19LV3QwSDVUamxDYkYtdW5rRmNjeENKMFNRRm9TdnVoLXlxQVJjeWVZVWxDR3VrOTk3andWOWZNNy1aSXNGazNQUWdQWlpSTmREVGVVQjlVemVnVldvLWdpYjdQSnd4NVdBNnVYbHNrdVVZOWlGZG15THN5bUZWRlFyRElMYkFFOEtKNXJJ?oc=5",
-          "published": "2026-11-10T12:42:46-06:00",
-          "date": "2026-11-10",
-          "label": "Nov 10, 2026 12:42 PM CT",
           "weekday": "Tue",
           "timeKnown": true,
           "tags": [
@@ -4271,9 +4271,9 @@
             }
           ],
           "holidays": [],
-          "level": 6398.98,
-          "change": 5.59,
-          "changePct": 0.09,
+          "level": 6393.39,
+          "change": 65.52,
+          "changePct": 1.04,
           "asOf": "2026-11-12",
           "source": "https://finance.yahoo.com/quote/%5ESTOXX50E"
         }
@@ -5234,6 +5234,27 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:0d91db35860ba3ce",
+          "kind": "headline",
+          "lane": "news",
+          "source": "SuaraGarut.ID",
+          "sourceId": "headline",
+          "title": "Nvidia Turmoil Pressures Global Markets as Chip Rally Falters - SuaraGarut.ID",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFAtZzMzRUNCd2o0RHRpR2MtejdQMW16eGR1WlJpM2k4RzRkVWVnOWtndERMQTBmQVQ0eWFTSC1OaFVJUE1CazgyRWZIUERvNGx0RlB1S1VMZGFZLXZTck9zZjZEUW5zTHFl?oc=5",
+          "published": "2026-11-12T07:22:54-06:00",
+          "date": "2026-11-12",
+          "label": "Nov 12, 2026 7:22 AM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:95e7631a0be4e18c",
           "kind": "headline",
           "lane": "news",
@@ -5960,27 +5981,6 @@
           "published": "2026-11-08T22:20:42-06:00",
           "date": "2026-11-08",
           "label": "Nov 8, 2026 10:20 PM CT",
-          "weekday": "Sun",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:87a1e419485482b0",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Al Jazeera",
-          "sourceId": "headline",
-          "title": "Asian stock markets climb after earlier tech rout - Al Jazeera",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxORlBpVTZtXzJuQXB2UlpsSlhNbEJlLXF1TjFxbVJlVl9KbUhpN0JCS0JvWTN0bkJsb2lVVGtiMjgzNkZQaW1sOFYxamN3NXFDZHFVQXgxdGZXdUhid2p0elBlcldGNko5ejluSU1DWFZpWEUxREozTUVsdS0xZGdkY3FpUVNIWWVXbkE2NkFqS01VSnFYQzhhM3ZtNzE3Z9IBngFBVV95cUxORlBpVTZtXzJuQXB2UlpsSlhNbEJlLXF1TjFxbVJlVl9KbUhpN0JCS0JvWTN0bkJsb2lVVGtiMjgzNkZQaW1sOFYxamN3NXFDZHFVQXgxdGZXdUhid2p0elBlcldGNko5ejluSU1DWFZpWEUxREozTUVsdS0xZGdkY3FpUVNIWWVXbkE2NkFqS01VSnFYQzhhM3ZtNzE3Zw?oc=5",
-          "published": "2026-11-08T22:08:28-06:00",
-          "date": "2026-11-08",
-          "label": "Nov 8, 2026 10:08 PM CT",
           "weekday": "Sun",
           "timeKnown": true,
           "tags": [
@@ -7009,6 +7009,27 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:f424a3e49b9c4850",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Business Standard",
+          "sourceId": "headline",
+          "title": "Moody's raises India's FY27 growth forecast to 7% on broad-based momentum - Business Standard",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQWFpLVjRUOUkzMkZfaW1nLXVaMFd2bm9yYXVJZjhYa3R3SGVJUVFkLWxtS3lhRXM1R2RwMGpLN2x0NEhCTmwwRFotRDJrUFYzQ0ZjWkZkbUNMbWpFRHJUcnVka1lXRVNyNUJoeFJrRHVDdFAzaDR2bzU0MVJsLVNUTk1qS1M1VHljQUpxdzdVX09wZ2dDNWZWeTJ6WUJwem9lcnFKbFV5bldfMjVSSWM3UGFXcnl5WGt5Y1hBMl9EZTk5VE5XRVNMTjVTNGJDYk9xTGRLMnhMYVk4WjDSAdsBQVVfeXFMUFhaS1Y0VDlJMzJGX2ltZy11WjBXdm5vcmF1SWY4WGt0d0hlSVFRZC1sbUt5YUVzNUdkcDBqSzdsdDRIQk5sMERaLUQya1BWM0NGY1pGZG1DTG1qRURyVHJ1ZGtZV0VTcjVCaHhSa0R1Q3RQM2g0dm81NDFSbC1TVE5NaktTNVR5Y0FKcXc3VV9PcGdnQzVmVnkyellCcHpvZXJxSmxVeW5XXzI1UkljN1BhV3J5eVhreWNYQTJfRGU5OVROV0VTTE41UzRiQ2JPcUxkSzJ4TGFZOFow?oc=5",
+          "published": "2026-11-11T01:32:36-06:00",
+          "date": "2026-11-11",
+          "label": "Nov 11, 2026 1:32 AM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:2d275641e43eb570",
           "kind": "headline",
           "lane": "news",
@@ -7021,6 +7042,27 @@
           "published": "2026-11-09T20:02:12-06:00",
           "date": "2026-11-09",
           "label": "Nov 9, 2026 8:02 PM CT",
+          "weekday": "Mon",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:55b02e905fe302c8",
+          "kind": "headline",
+          "lane": "news",
+          "source": "The Economic Times",
+          "sourceId": "headline",
+          "title": "Rupee among Asia's top performing currency as AI trade cools - The Economic Times",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQTDFudlJGOVlxNXNaLWdWWEVXZUdqb2wzUmMyc2JyMmdjaFlqaWhRVTFFVVNPSGw5NTh5Q29yU0d6bFBKRFRURjd3d2dkck5ncTNiQ3U0cFozUXl6QUN1VHczVjZsLUpPMHNtQjhTOVlUSnlpUWtHb3VUSXhoSUVDZXRRaHVoUXd0bnNzVnlpZV9EMTNYMVVhOWlXRDk5aUNvQzVpMkpOckIzekNORUJSUGY0MHFBVWdZMjFIVUU3TzV6Z9IBuwFBVV95cUxOY2tBbHVaemtRSGJWdE5iMXdkbGlhSmFOOVNVcmg1STAxSkFzNFJQMjFsUXFxdlRDVElBLVpuX1ZiT3VkNzNObmEtbjVXckNhOVpxb21NNkFxMXc5em5lWnNLSkpnVXhoOVJUelpXbGk2THVDcEV6NFFxeFAxYWc0Vlk1MUZ6UkNjNS1mb0NCWXFLQ2dkTEczdmdXSTgteUgzaEpXM181RlNCRVBHdjVMaFpPb29La3JEN1Y0?oc=5",
+          "published": "2026-11-09T19:36:44-06:00",
+          "date": "2026-11-09",
+          "label": "Nov 9, 2026 7:36 PM CT",
           "weekday": "Mon",
           "timeKnown": true,
           "tags": [
@@ -7156,6 +7198,69 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:346a25de986d9197",
+          "kind": "headline",
+          "lane": "news",
+          "source": "www.nationpathindia.com",
+          "sourceId": "headline",
+          "title": "Sensex Surges 1,718 Points Past 81,000, Nifty Reclaims 25,000 Amid Foreign Fund Inflows - www.nationpathindia.com",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNWHpuVkVBakEySXJ1STU5YjBIV19BOGR4Q1NPRDNFaHpzempJM1JKQUhZRHRWMXY1aVc0SnJrQmR4djlWbDJzWVRScmhHOHNTUnpMZm5LNElxN3d4dHV2ZUNReW4zZzZHTU5JX29PVFlsM3h0dDhLcGJpeFJPejFSOEQ3aXJjMDhNRU1RNURJTVZiMXlmOHNsMHB3?oc=5",
+          "published": "2026-11-06T08:46:13-06:00",
+          "date": "2026-11-06",
+          "label": "Nov 6, 2026 8:46 AM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:be976acd93c0715d",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Business Standard",
+          "sourceId": "headline",
+          "title": "RBI proposes ₹100 crore limit on bank loans for agri infrastructure - Business Standard",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOLWVsRkhpUGNQV2xuV2hvdXdKZE1WZUdWbmxWS1NIZ1I1eFhJTDhQV0FJRjBEcC1NSWVKZGpvUGRsVnVoejhyOFBvaVlJR2p4bF9Tb1VGbFh5Q1FsWW5ObnVfRU1ic3Z3SEZNMWpXbjUtd3JQYy14bno4aGppRDJaYnpuYjJwZko5eXY0RUl2SDBqa0JCR3VHV3JNRDl4Ni0ybmIza2JsX1hJMGhjWExVTDV6VXBjRTJKSFVFWFhMcVdiQWkzRlBhN3FOZVJpYmJRcDVn0gHYAUFVX3lxTE45MjF6VWktU1Y3RHlKZUpUQktGTkZub0RxUHluSmhGVHNxaUdSWE0tUXNKQmdrNTFHMFpva2hiUlBKVVNhTF9kREU5bEQweHVqcU05U2ZVQllsaWs1SlkwQjI1SERaUnRoeE9rQ2pyTi1ZZXF6LUZpbGdOZkhucGdfTWczXzBubUJWa1pmQ2pXbU9PbEdNSDhLel9FVFNVVlhpWmV3VDM2Yzc0aU13N1ZJaGQ4dHZmVU1GTUhZaFdaX3c0ZnFyeVJiSFZvdzMyNDlJc2dZa200aQ?oc=5",
+          "published": "2026-11-05T11:45:03-06:00",
+          "date": "2026-11-05",
+          "label": "Nov 5, 2026 11:45 AM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:8a107ebedd153a6a",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Firstpost",
+          "sourceId": "headline",
+          "title": "From US midterms to cheaper oil: What's driving the rupee's five-day rally? - Firstpost",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNemloWE1kQmNFcG9mblBrY2haUmFYcjVyWkQxdTAtNU9yMHBEb0t3aXVWNHJ3ZGxyaUowRGRXOWd3TzMtbjhpQ0lyVmpmUjhXcF9BLTR1RGQwMjNJNlFQZUdyT05ZSE9vc1FZdEhrcUxVcmh1M2NkRHYwZVJFeVlJUzNTaks5LTBhTWdSRjBSaDJoNzF6Mlgwc0VJME85NktXSkNFSmh3NNIBrAFBVV95cUxOTlZFeHEzUHJUZ2ZhT3hKRHBqcm9mYXFSMEVsR0l6SXpZazZfUWtoUnkyQl8zQmtubEpLemxLWmFKQzNVODdxbmlEUXluOExiVUFVZDdGTmE1S1JyLTF2RkNHRl8tNGFaZlZpU010ekptNWJtS0dMSGdmQ05nQTBhSjRsUUprVzYwNzhzcVlmdDJGd21ObVUxVWhXSVlUejNSSnpMdWZEdXBzTEJE?oc=5",
+          "published": "2026-11-04T22:26:48-06:00",
+          "date": "2026-11-04",
+          "label": "Nov 4, 2026 10:26 PM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:be759ef0396b9b53",
           "kind": "headline",
           "lane": "news",
@@ -7253,90 +7358,6 @@
           "date": "2026-11-02",
           "label": "Nov 2, 2026 5:07 AM CT",
           "weekday": "Mon",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:bcfdbb3476a1a27c",
-          "kind": "headline",
-          "lane": "news",
-          "source": "The Indian Awaaz",
-          "sourceId": "headline",
-          "title": "Govt forms committee to recommend banking reforms - The Indian Awaaz",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOZ1prMEVIZXhwZFFnYXhMd3lSdnNDamxSV0N5U1hfd2toVkFjWVViQk9rLXh1VmxNaFVfNXN1TVZ1QTRnQVJVMlFwN1l5bXdIbVBBZkRVa0ZXNWhNSll4bUdaeURCeGFyaEFsZTQxbDV2dXdyVGVLQllNMWNxcS1nTVpMWQ?oc=5",
-          "published": "2026-10-31T02:00:00-05:00",
-          "date": "2026-10-31",
-          "label": "Oct 31, 2026 2:00 AM CT",
-          "weekday": "Sat",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:ca1dc50948856706",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Business News This Week",
-          "sourceId": "headline",
-          "title": "Indian Stock Market Weekly Update: Sensex, Nifty Witness Volatility as IT Selling and Rising Crude Oil Prices Weigh on Sentiment - Business News This Week",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOSkJ1REJoMmg2RGhlWmc0X3ZQWW1FUnVSZkdVYlh6Tko3ODFIdmZkQ01YRk5RUjBaWkNFUjRwam9RUVNYcDBwSEJWRWhZSDd3MVJkY244bko2SWU5TVJyU2lLQVlJNk9TOVd5Ul8yTmZoMk5wZUhwU1BXcVh0X3B6eUN6VjhYWGMtSlpQUmFVOVJMOXN4ajlWVnpvV0hlRlZuUWI3b2htU0Z6RHQzNktqTndYN0tWVzFsR3llamoyZV83SGFGbFRtZklQNF9wMHVScndUYUlQdmNQTS1uZFI3R1VCdWxTS3I0ZURVMUw4RWY5QUhxQjZRYWlpVmVNZw?oc=5",
-          "published": "2026-10-31T00:16:13-05:00",
-          "date": "2026-10-31",
-          "label": "Oct 31, 2026 12:16 AM CT",
-          "weekday": "Sat",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:9fbfe801b8f9a833",
-          "kind": "headline",
-          "lane": "news",
-          "source": "NiftyTrader",
-          "sourceId": "headline",
-          "title": "RBI Polymer Notes: Plastic Rs 10 and Rs 20 Likely From April 2027, Here’s What Changes - NiftyTrader",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPRU9TeFFrNlRqdUV4Smo1YnNsc1R6NHg4XzQzNVV6TTZHX3JZN0JzVGlzWHBsenpNVlRHLTBYVVZBQTdxdXJfZUF3cnZfcHR0SjZrbGFUckw4X2tKM3FrQlhGWVY2aHEyeExlcjR0Y253aTJ6aVRYQ3BVdGVKdDZqUl9tbw?oc=5",
-          "published": "2026-10-30T05:12:40-05:00",
-          "date": "2026-10-30",
-          "label": "Oct 30, 2026 5:12 AM CT",
-          "weekday": "Fri",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:1fd97e8d9f427687",
-          "kind": "headline",
-          "lane": "news",
-          "source": "The Times of India",
-          "sourceId": "headline",
-          "title": "Rupee gains 33 paise as dollar weakens, Sensex and Nifty end higher - The Times of India",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPbU9TVlhwU0RfZ2RaSWlHVzZ6aGIwa2RlSjR3OWpJOV9hNUdpQzh2R05ueGxaVVBMR1RtTlVqMU1Cd0Vwd0FJOVpDRGVZOWRlQzRtWEM5NUVOX2J6MjdlNTNfSUtzSnlQek1VQjRQZm1ocVVZVzdpTmJTb2tKajBzeWlSbjF1dzBwN0xMT2swckJfUlAwM3NqM21uN2ZSTU01bUl4S0M1YjZ6RFNTY0xPZDB5ZmxhRzVVTURZV1dmLWg1S1d4ZGRCQVF6RWV3MUh1a0lFd1VaMjdBMlk1aFdva1NnWHFLNE3SAewBQVVfeXFMUFpQa1Boc2xFMXp6VExQenhIdVBMb2poRHpCTk0xbWRuSmJxQWJIb0VGcFd4cHJuUDRUY0pTZTk0ZnBSOG1uNEhHRWM1a0lQek5RQ0RYVzR1WURocFg0eHJRQTdXOGpEWjJaSWczYnNVTlljUDZTYzVPakppc1g5azNhVmtRaGRrT29hcHFmczBVVE1BSzZiaVpocUppYmgyenJ5UnEyclBMN045ajFDQ1lkZ0dyNlRlLUo1UklSVHJIdEF6Qzg5Z21uS05DdVRIUmtFSFB1ajJkMHVaeWxMdUVCakdQTEFSU0toeUg?oc=5",
-          "published": "2026-10-30T02:00:00-05:00",
-          "date": "2026-10-30",
-          "label": "Oct 30, 2026 2:00 AM CT",
-          "weekday": "Fri",
           "timeKnown": true,
           "tags": [
             "headline",

@@ -3341,7 +3341,7 @@
     },
     {
       "date": "2026-11-12",
-      "label": "Nov 12, 2026 4:28 PM CT",
+      "label": "Nov 12, 2026 6:06 PM CT",
       "outlooks": [
         {
           "id": "quake:cb415447006964cd",
@@ -3374,11 +3374,6 @@
           "severity": "STANDBY"
         },
         {
-          "id": "quake:4aacdd22d8fcf171",
-          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
-          "severity": "STANDBY"
-        },
-        {
           "id": "nws:2fc5783e710080a1",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "STANDBY"
@@ -3399,6 +3394,16 @@
           "severity": "ALERT"
         },
         {
+          "id": "gdacs:a6e0a6f4d35b68a3",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "gdacs:5d61366c643739f0",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
           "id": "gdacs:a3e1430640985596",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
@@ -3410,16 +3415,6 @@
         },
         {
           "id": "gdacs:401d90594abcb064",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ALERT"
-        },
-        {
-          "id": "gdacs:1cb4ba0444f3c820",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ALERT"
-        },
-        {
-          "id": "gdacs:45c098a8501cd9f7",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
@@ -3439,7 +3434,7 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:e7417ffa8d19b5b9",
+          "id": "headline:6aa465891242a139",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
@@ -3449,7 +3444,12 @@
           "severity": "ALERT"
         },
         {
-          "id": "headline:b01fdf1c4fa354f1",
+          "id": "headline:03ac2474bf3c4e21",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:26fee94bd65c6b2c",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
@@ -3474,6 +3474,11 @@
           "severity": "ALERT"
         },
         {
+          "id": "headline:7232c103df244d96",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
           "id": "headline:d213d85c6339c6e8",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
@@ -3481,11 +3486,6 @@
         {
           "id": "headline:970c3406a8638313",
           "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
-          "severity": "ALERT"
-        },
-        {
-          "id": "headline:e9ba998324bc9f76",
-          "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
         {
@@ -3501,16 +3501,11 @@
         {
           "id": "headline:0c8468a26e4fd669",
           "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ALERT"
+          "severity": "STANDBY"
         },
         {
           "id": "headline:259cdffd8b7d23b6",
           "outlook": "Lower than yesterday. The 72-hour path is easing if it holds.",
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:8b20f7b283eed2bb",
-          "outlook": "First reading. Watch the next 72 hours.",
           "severity": "STANDBY"
         },
         {
@@ -3597,12 +3592,6 @@
           "title": "M4.6 11 km ENE of Yigo Village, Guam"
         },
         {
-          "id": "quake:4aacdd22d8fcf171",
-          "kind": "quake",
-          "severity": "STANDBY",
-          "title": "M4.6 147 km SSE of False Pass, Alaska"
-        },
-        {
           "id": "nws:2fc5783e710080a1",
           "kind": "nws",
           "severity": "STANDBY",
@@ -3627,6 +3616,18 @@
           "title": "Earthquake in Papua New Guinea"
         },
         {
+          "id": "gdacs:a6e0a6f4d35b68a3",
+          "kind": "gdacs",
+          "severity": "ALERT",
+          "title": "Earthquake in Iceland"
+        },
+        {
+          "id": "gdacs:5d61366c643739f0",
+          "kind": "gdacs",
+          "severity": "ALERT",
+          "title": "Earthquake in Western Indian-Antarctic Ridge"
+        },
+        {
           "id": "gdacs:a3e1430640985596",
           "kind": "gdacs",
           "severity": "ALERT",
@@ -3643,18 +3644,6 @@
           "kind": "gdacs",
           "severity": "ALERT",
           "title": "Earthquake in Japan"
-        },
-        {
-          "id": "gdacs:1cb4ba0444f3c820",
-          "kind": "gdacs",
-          "severity": "ALERT",
-          "title": "Earthquake in Off Coast Of Oregon"
-        },
-        {
-          "id": "gdacs:45c098a8501cd9f7",
-          "kind": "gdacs",
-          "severity": "ALERT",
-          "title": "Earthquake in Off East Coast Of Honshu, Japan"
         },
         {
           "id": "who:89e94b5faca21e80",
@@ -3675,10 +3664,10 @@
           "title": "Shamonda virus in human - France"
         },
         {
-          "id": "headline:e7417ffa8d19b5b9",
-          "kind": "war-ukraine",
+          "id": "headline:6aa465891242a139",
+          "kind": "war-iran",
           "severity": "ALERT",
-          "title": "Ukraine peace talks: Jared Kushner and Steve Witkoff conclude meeting with Putin - DW.com"
+          "title": "Why Trump’s Iran war just got a lot more costly - Center for International Policy"
         },
         {
           "id": "headline:7dabec8de0d12969",
@@ -3687,10 +3676,16 @@
           "title": "The historic firsts of the 2026 midterm elections - Ash Center"
         },
         {
-          "id": "headline:b01fdf1c4fa354f1",
+          "id": "headline:03ac2474bf3c4e21",
+          "kind": "war-ukraine",
+          "severity": "ALERT",
+          "title": "U.S. envoys meet with Putin in the Kremlin after Ukraine talks in Abu Dhabi - NPR"
+        },
+        {
+          "id": "headline:26fee94bd65c6b2c",
           "kind": "war-iran",
           "severity": "ALERT",
-          "title": "The US midterm results could have real consequences for the war in Iran. Could it end soon? - DW.com"
+          "title": "‘No war, no peace’: Can Iran break the deadlock with the US? - Al Jazeera"
         },
         {
           "id": "headline:6e50b890c95e3f8d",
@@ -3717,6 +3712,12 @@
           "title": "Vance Considers Direct Talks With Iran Hard-Liner in Push to End War - WSJ"
         },
         {
+          "id": "headline:7232c103df244d96",
+          "kind": "usgov",
+          "severity": "ALERT",
+          "title": "Flying by pricey military jet, Rubio rarely misses a Florida football game - The Washington Post"
+        },
+        {
           "id": "headline:d213d85c6339c6e8",
           "kind": "war-ukraine",
           "severity": "ALERT",
@@ -3727,12 +3728,6 @@
           "kind": "israel",
           "severity": "ALERT",
           "title": "How Israel Will Choose Its Next Prime Minister, Explained - Time Magazine"
-        },
-        {
-          "id": "headline:e9ba998324bc9f76",
-          "kind": "usgov",
-          "severity": "ALERT",
-          "title": "Young, diverse voters showed up for midterms as older, Trump voters stayed home - Stateline"
         },
         {
           "id": "headline:3dc5fcef91db1d13",
@@ -3749,7 +3744,7 @@
         {
           "id": "headline:0c8468a26e4fd669",
           "kind": "attack",
-          "severity": "ALERT",
+          "severity": "STANDBY",
           "title": "Poland plans silent march after Krakow mass shooting that shocked the nation - Reuters"
         },
         {
@@ -3757,12 +3752,6 @@
           "kind": "climate",
           "severity": "STANDBY",
           "title": "Climate Action from Geneva to Antalya | UN Climate Change Conference COP31 - Geneva Environment Network"
-        },
-        {
-          "id": "headline:8b20f7b283eed2bb",
-          "kind": "war-iran",
-          "severity": "STANDBY",
-          "title": "Iran downplays new U.S. task force aimed at disrupting ground transport routes - CBS News"
         },
         {
           "id": "headline:fba40c63243c8681",
@@ -3821,8 +3810,8 @@
       ],
       "trends": [
         {
-          "category": "ukraine-war",
-          "name": "ukraine war",
+          "category": "iran-war",
+          "name": "iran war",
           "volume": null
         },
         {
@@ -3831,8 +3820,8 @@
           "volume": null
         },
         {
-          "category": "iran-war",
-          "name": "iran war",
+          "category": "ukraine-war",
+          "name": "ukraine war",
           "volume": null
         }
       ],
