@@ -1015,16 +1015,16 @@
         {
           "date": "2026-11-13",
           "price": 3886.3,
-          "volume": 229442
+          "volume": 151010
         }
       ],
       "source": "https://finance.yahoo.com/quote/GC%3DF"
     },
     {
       "asOf": "2026-11-13",
-      "changePct": -1.88,
+      "changePct": -1.7,
       "id": "silver",
-      "level": 49.031,
+      "level": 49.121,
       "name": "Silver",
       "points": [
         {
@@ -1524,23 +1524,19 @@
         },
         {
           "date": "2026-11-13",
-          "price": 49.031,
-          "volume": 15
+          "price": 49.121,
+          "volume": 49657
         }
       ],
       "source": "https://finance.yahoo.com/quote/SI%3DF"
     },
     {
       "asOf": "2026-11-14",
-      "changePct": -2.32,
+      "changePct": -3.31,
       "id": "btc",
-      "level": 65497.67,
+      "level": 64834.24,
       "name": "BTC",
       "points": [
-        {
-          "date": "2026-08-16",
-          "price": 63396.47
-        },
         {
           "date": "2026-08-17",
           "price": 64121.61
@@ -1899,22 +1895,18 @@
         },
         {
           "date": "2026-11-14",
-          "price": 65497.67
+          "price": 64834.24
         }
       ],
       "source": "https://www.coingecko.com/en/coins/bitcoin"
     },
     {
       "asOf": "2026-11-14",
-      "changePct": -3.24,
+      "changePct": -4.91,
       "id": "eth",
-      "level": 1836.76,
+      "level": 1804.93,
       "name": "ETH",
       "points": [
-        {
-          "date": "2026-08-16",
-          "price": 1899.89
-        },
         {
           "date": "2026-08-17",
           "price": 1892.85
@@ -2273,7 +2265,7 @@
         },
         {
           "date": "2026-11-14",
-          "price": 1836.76
+          "price": 1804.93
         }
       ],
       "source": "https://www.coingecko.com/en/coins/ethereum"
