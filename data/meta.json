@@ -1,14 +1,13 @@
 {
   "baseline": false,
-  "brief": "No rare risk is on the board. A routine flyby or an empty storm outlook is not an emergency. Current war coverage is on the board: Iran Update, November 14, 2026 - Institute for the Study of War; With shifting Iran rhetoric following U.S. elections, Trump leaves Middle East in limbo about path ahead - PBS. Rising topic: iran war (4 outlets this window).",
-  "checkedAt": "2026-11-14T23:41:05-06:00",
-  "checkedLabel": "Nov 14, 2026 11:41 PM CT",
+  "brief": "No rare risk is on the board. A routine flyby or an empty storm outlook is not an emergency. Current war coverage is on the board: With shifting Iran rhetoric following U.S. elections, Trump leaves Middle East in limbo about path ahead - PBS; Ukraine is running out of options, and Russia knows it - Al Jazeera. Rising topic: us gov (4 outlets this window).",
+  "checkedAt": "2026-11-15T10:04:29-06:00",
+  "checkedLabel": "Nov 15, 2026 10:04 AM CT",
   "errors": [
-    "ReliefWeb: the disasters page returned no cards from this network. The RSS feed is an AWS WAF challenge, and API v2 rejects appname=torelldan-news-desk until ReliefWeb approves it.",
-    "Ukraine war: 0 headlines for this check."
+    "ReliefWeb: the disasters page returned no cards from this network. The RSS feed is an AWS WAF challenge, and API v2 rejects appname=torelldan-news-desk until ReliefWeb approves it."
   ],
   "retainDays": 120,
-  "today": "2026-11-14",
+  "today": "2026-11-15",
   "trends": {
     "google": "Google Trends US daily list answered (10 topics). Kept the ones that match a war, government, or threat topic. None of today's search trends matched.",
     "mode": "trends",

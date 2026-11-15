@@ -1531,10 +1531,10 @@
       "source": "https://finance.yahoo.com/quote/SI%3DF"
     },
     {
-      "asOf": "2026-11-14",
-      "changePct": -3.31,
+      "asOf": "2026-11-15",
+      "changePct": -0.5,
       "id": "btc",
-      "level": 64834.24,
+      "level": 64605.07,
       "name": "BTC",
       "points": [
         {
@@ -1895,16 +1895,20 @@
         },
         {
           "date": "2026-11-14",
-          "price": 64834.24
+          "price": 64929.41
+        },
+        {
+          "date": "2026-11-15",
+          "price": 64605.07
         }
       ],
       "source": "https://www.coingecko.com/en/coins/bitcoin"
     },
     {
-      "asOf": "2026-11-14",
-      "changePct": -4.91,
+      "asOf": "2026-11-15",
+      "changePct": -0.36,
       "id": "eth",
-      "level": 1804.93,
+      "level": 1806.75,
       "name": "ETH",
       "points": [
         {
@@ -2265,7 +2269,11 @@
         },
         {
           "date": "2026-11-14",
-          "price": 1804.93
+          "price": 1813.25
+        },
+        {
+          "date": "2026-11-15",
+          "price": 1806.75
         }
       ],
       "source": "https://www.coingecko.com/en/coins/ethereum"

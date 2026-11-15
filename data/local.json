@@ -1,19 +1,20 @@
 {
   "gaps": [
     "Power_TN row hidden (2025-10-06, affected 0, served 0).",
-    "1 ended road projects hidden."
+    "1 ended road projects hidden.",
+    "TEMA: curl: (22) The requested URL returned error: 403\n"
   ],
   "items": [
     {
       "action": "no action needed",
       "confidence": "reported",
-      "date": "2026-11-14",
+      "date": "2026-11-15",
       "id": "local-nws-none",
       "kind": "nws",
-      "label": "Nov 14, 2026 11:41 PM CT",
+      "label": "Nov 15, 2026 10:04 AM CT",
       "lane": "local",
       "note": "api.weather.gov answered for 35.802,-86.907 and returned no alerts.",
-      "published": "2026-11-14T23:41:05-06:00",
+      "published": "2026-11-15T10:04:29-06:00",
       "severity": "STANDBY",
       "soWhat": "",
       "source": "NWS",
@@ -29,12 +30,33 @@
       "action": "Read the source. No kit change unless you are in the named area.",
       "confidence": "reported",
       "date": "2026-11-14",
+      "id": "local-road:272d2c94902e961b",
+      "kind": "road",
+      "label": "2026-11-14",
+      "lane": "local",
+      "note": "Scheduled Road Work",
+      "published": "2026-11-15T10:04:29-06:00",
+      "severity": "ALERT",
+      "soWhat": "no action needed",
+      "source": "TDOT SmartWay",
+      "sourceCount": 1,
+      "tags": [
+        "tennessee",
+        "williamson"
+      ],
+      "title": "Interstate 840 WB in Williamson County - between MILE MARKER 38 and MILE MARKER 27 Scheduled Road Work reported at 11/14/2026 7:41 PM (CT). WB right lane (of 2 lanes) blocked, righ",
+      "url": "https://smartway.tn.gov/"
+    },
+    {
+      "action": "Read the source. No kit change unless you are in the named area.",
+      "confidence": "reported",
+      "date": "2026-11-14",
       "id": "local-road:3c29793ef0435bca",
       "kind": "road",
       "label": "2026-11-14",
       "lane": "local",
       "note": "Scheduled Road Work",
-      "published": "2026-11-14T23:41:05-06:00",
+      "published": "2026-11-15T10:04:29-06:00",
       "severity": "ALERT",
       "soWhat": "no action needed",
       "source": "TDOT SmartWay",
@@ -45,27 +67,6 @@
       ],
       "title": "Interstate 840 EB in Williamson County - near MILE MARKER 27 Scheduled Road Work reported at 11/14/2026 7:42 PM (CT). EB right lane (of 2 lanes) blocked, right shoulder blocked.",
       "url": "https://smartway.tn.gov/"
-    },
-    {
-      "action": "no action needed",
-      "confidence": "reported",
-      "date": "2026-11-11",
-      "id": "local-tema:6482c614b1185f4a",
-      "kind": "tema",
-      "label": "Nov 11, 2026",
-      "lane": "local",
-      "note": "TEMA news release, Nov 11, 2026. Polk County. Not a Williamson County / 37179 notice.",
-      "published": "2026-11-11T12:00:00-06:00",
-      "severity": "STANDBY",
-      "soWhat": "",
-      "source": "TEMA",
-      "sourceCount": 1,
-      "tags": [
-        "tennessee",
-        "polk"
-      ],
-      "title": "Tennessee Remains in State of Emergency in Response to Polk County Flooding",
-      "url": "https://www.tn.gov/tema/news/2026/11/11/tennessee-remains-in-state-of-emergency-in-response-to-polk-county-flooding.html"
     }
   ],
   "place": "Thompson's Station / Williamson County / Middle Tennessee (37179)"
