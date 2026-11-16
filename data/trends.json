@@ -2,6 +2,48 @@
   "googleNote": "Google Trends US daily list answered (10 topics). Kept the ones that match a war, government, or threat topic. None of today's search trends matched.",
   "items": [
     {
+      "category": "us-gov",
+      "confidence": "reported",
+      "date": "2026-11-16",
+      "id": "velocity:bd817662251631b7",
+      "kind": "trend",
+      "lane": "news",
+      "look": "news",
+      "name": "us gov",
+      "note": "The same topic showed up across several outlets.",
+      "published": "2026-11-16T09:16:09-06:00",
+      "rise": "4 outlets this window",
+      "samples": [
+        {
+          "date": "2026-11-16",
+          "published": "2026-11-16T09:01:44-06:00",
+          "source": "Library of Congress (.gov)",
+          "text": "Library of Congress to Unveil “Voices of the Early Americas,” Featuring Rare Artifacts, Maps and Indigenous Histories - Library of Congress (.gov)",
+          "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPcGxzZ0p0aklBUldUTFUwc0dyVm9aeXo3VVdybjM3OENubDFQdjVwLUNfVE9aeGFpWVpqSEJKTHp6MGJjRTZrN1hCanlGVkthX1B2YVZYaTdkOGF3T3dEbEI0aHRHeG5uek0yX243QzdQTm5UR3hYa3RIdzNHbmZZTEJvTi1sTUw2QTlsamxvTl9UXzBXOUczQVdwUl9RcGFoelYxZWNtZ013TjZDVE92MkZFRGkxcFNSaS1iSVhRSGlXY3JnWnliV3ViaEVmRTFHQnE2S1gwRUVVYmQxLTZ0VzBMbHNxSmU2S1JSRmNvSC1oOXo1MzJENUhWSG1TUQ?oc=5"
+        },
+        {
+          "date": "2026-11-10",
+          "published": "2026-11-10T10:26:00-06:00",
+          "source": "AP News",
+          "text": "Rubio urges nations to ‘step up’ on Strait of Hormuz security - AP News",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPLXl6Tnh3RFoxQXFwUm11YUVVdnZjbkNUVzc0aTVMc1lSZXBIa0RFdXV3cDduUHNMaWw2T3lHd0RhcHFyQU5kX1lEbTlFdDViNEFHNDNVRDdjM1BCb0ZMS2paZzNKeGh5WTV6V3psM1NhZ1BHMm9SUDBKWEtmVVNwZWI2SlpZeTdheV9jbkIzNA?oc=5"
+        },
+        {
+          "date": "2026-11-09",
+          "published": "2026-11-09T17:40:27-06:00",
+          "source": "U.S. Department of State (.gov)",
+          "text": "Secretary of State Marco Rubio Remarks to the Press - U.S. Department of State (.gov)",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPNWJLNzloUzc1d3lEbHhPMHI2OVd1aTVnRGJvaFc1SU9XYzFyWkZkajlkemkwUTlja1pkUVZneGJhWFdfMm9sbkdzSTdjOTdZM0dmT3FMM3RXeUNCVmd4bHAzMDhRdUF4V1IzVk1ZMHRPcmxVeEtFY0NVcFNtSlhkNlVmOW1lQVlIUmhsQTVJVTFrbzVrbUhuUTVSTU5FQzRVdjJaYnhHVmYzSk12b1hmX1RDbDEwVU1M?oc=5"
+        }
+      ],
+      "severity": "ALERT",
+      "soWhat": "no action needed",
+      "source": "News velocity",
+      "sourceCount": 4,
+      "title": "us gov",
+      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPcGxzZ0p0aklBUldUTFUwc0dyVm9aeXo3VVdybjM3OENubDFQdjVwLUNfVE9aeGFpWVpqSEJKTHp6MGJjRTZrN1hCanlGVkthX1B2YVZYaTdkOGF3T3dEbEI0aHRHeG5uek0yX243QzdQTm5UR3hYa3RIdzNHbmZZTEJvTi1sTUw2QTlsamxvTl9UXzBXOUczQVdwUl9RcGFoelYxZWNtZ013TjZDVE92MkZFRGkxcFNSaS1iSVhRSGlXY3JnWnliV3ViaEVmRTFHQnE2S1gwRUVVYmQxLTZ0VzBMbHNxSmU2S1JSRmNvSC1oOXo1MzJENUhWSG1TUQ?oc=5"
+    },
+    {
       "category": "ukraine-war",
       "confidence": "reported",
       "date": "2026-11-16",
@@ -11,15 +53,15 @@
       "look": "news",
       "name": "ukraine war",
       "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-16T08:35:43-06:00",
+      "published": "2026-11-16T09:16:09-06:00",
       "rise": "4 outlets this window",
       "samples": [
         {
           "date": "2026-11-16",
-          "published": "2026-11-16T07:44:43-06:00",
-          "source": "NBC News",
-          "text": "Ukraine launches biggest drone attack on Russia since war began - NBC News",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQU0xfMlFhd1lZcGlEb3k1TGJyUlJGdGJHZDZjbU0xeWRRZDVJeE4wVGJHVUNzTnZ5aFJVZEE2bW8tNjZuODZXS1RnMlFQTkQtQVZtQzF2NmhjNWlzZ1BpVGc1dFZ2QU1oMC0wekZFQnhtWlBJX1VTVXlFTlNtM1JrbDFJaFBKRGVaUnRHZG5UbHNwcDdlX2lWN3ozckVYNVNkc2xmYy1B?oc=5"
+          "published": "2026-11-16T07:43:00-06:00",
+          "source": "The Guardian",
+          "text": "Ukraine hits Kerch bridge between Russia and occupied Crimea - The Guardian",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQTEZvZ1pFSGNkdXh4bXdESEZXLVpHdHFIMWJnd0VLVDhrMHBaUVF3c2VHNVZEOU95cWk1UzE5RWFyQmJFLUFfTjlEbzRteXBOa0RVdFFtTzdQN183V2htYzBMSGprcEZQVHdWTDgzbnRpY1pSUjhpeW5adklHMU02VDFfZkhTQUNoZEhkSEZ3TXU3cWw5VExLdHRJRQ?oc=5"
         },
         {
           "date": "2026-11-16",
@@ -41,7 +83,7 @@
       "source": "News velocity",
       "sourceCount": 4,
       "title": "ukraine war",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQU0xfMlFhd1lZcGlEb3k1TGJyUlJGdGJHZDZjbU0xeWRRZDVJeE4wVGJHVUNzTnZ5aFJVZEE2bW8tNjZuODZXS1RnMlFQTkQtQVZtQzF2NmhjNWlzZ1BpVGc1dFZ2QU1oMC0wekZFQnhtWlBJX1VTVXlFTlNtM1JrbDFJaFBKRGVaUnRHZG5UbHNwcDdlX2lWN3ozckVYNVNkc2xmYy1B?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQTEZvZ1pFSGNkdXh4bXdESEZXLVpHdHFIMWJnd0VLVDhrMHBaUVF3c2VHNVZEOU95cWk1UzE5RWFyQmJFLUFfTjlEbzRteXBOa0RVdFFtTzdQN183V2htYzBMSGprcEZQVHdWTDgzbnRpY1pSUjhpeW5adklHMU02VDFfZkhTQUNoZEhkSEZ3TXU3cWw5VExLdHRJRQ?oc=5"
     },
     {
       "category": "iran-war",
@@ -53,7 +95,7 @@
       "look": "news",
       "name": "iran war",
       "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-16T08:35:43-06:00",
+      "published": "2026-11-16T09:16:09-06:00",
       "rise": "4 outlets this window",
       "samples": [
         {
@@ -84,48 +126,6 @@
       "sourceCount": 4,
       "title": "iran war",
       "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNYkpGTlg3ekg1dWVwU1BicDN1WWxTTFpxRENpaGxnQ0IzaFFaVEt4SHF1UjhXSE5aNk84UlF5TXZhQ2QxYjhVSFdLQnJyV2RJVFhsMXNJOVJMZmp3YXVDV2lsaXBoWnJfbEpQM0ZPTW0tUERzc2xRMGhCb3FYOTR0N2RqanhzUQ?oc=5"
-    },
-    {
-      "category": "us-gov",
-      "confidence": "reported",
-      "date": "2026-11-16",
-      "id": "velocity:bd817662251631b7",
-      "kind": "trend",
-      "lane": "news",
-      "look": "news",
-      "name": "us gov",
-      "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-16T08:35:43-06:00",
-      "rise": "4 outlets this window",
-      "samples": [
-        {
-          "date": "2026-11-15",
-          "published": "2026-11-15T04:00:00-06:00",
-          "source": "NPR",
-          "text": "Midterm voters ended the long-running GOP dominance in state legislatures - NPR",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNbkFrNlZlUFBVRC1VNGV5c0IxMmJmdFE3M1h2Z2RBcXVMaHlxTVdOVkdJdGNuZEk3ZTZhbExrMDJrTEZsN1lOay1oeWFDaFpCTjlRT1pSVUo1eVJzVmFNSjQ0RjctLW53M3d6WHh2Y2FBenQyUlBNdmYwR0g2UmpGckFNTVFVclFid1M2S2h6Sk0?oc=5"
-        },
-        {
-          "date": "2026-11-14",
-          "published": "2026-11-14T12:19:50-06:00",
-          "source": "PBS",
-          "text": "Democrats try out a strange new emotion at post-midterms What's Next conference: hope - PBS",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPT0tBZDBfQ3JlM3FTRXRGS1ViT1IxQ1hCZzRsaGwtMDJsZzVvRDJkQWJLYnY4TlB4WVFFTHg1bE4wMk9oRE5ySDRvSFJVWVlMSW5LS3BGQ25WZ1NmalF4ZmpKdGxhZGRncHBsRHlFa09uaVJSOF9sR0VQRTUwZ2tRaXNnTW5Rb0pydHdxX2xRR0NiOGpTWms4VWhiS0czS0N4RlE0ZGs1dFpyUTQ5OW11bUktSGMwX2otZWRyLVdB0gHDAUFVX3lxTE12VlpUeURMYmR1bWx3Mk5kZ3NCMWR5ck1NVFExTy10M2tUX2p0eVcybmpxcDBZdmEtVkJEdzVac0FpbF8wMmY1emZLckw2Z0t6bTNlOUgzQTZwQkg5SDVkV0xHYWxrUFNTTDRJaWEycm5TYjBMeVJzQjBtdl9QNUZmblJ4a21ydWRyejdTM2pUaGNuVkhDcVVabUNpN2FCRUszOXJHWTVCRUpVbWtRSlBOMWlieUR2ZVZybGZSdDJKU3VqVQ?oc=5"
-        },
-        {
-          "date": "2026-11-13",
-          "published": "2026-11-13T06:00:00-06:00",
-          "source": "Brennan Center for Justice",
-          "text": "Voter Anger at Corruption Shapes 2026 Midterms - Brennan Center for Justice",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPVU1kemxCcE1GamNkQi1TQmRXODY0a015N2lWRUN4alJmVVVzemtsYm00Ry14cDFEMXFrM3Rmc1p3S25NMV9XLXpFWkMtYUJHTHVKQ0RaZnFRY1plMk03RGhIOEpLNHhud18wZ19iQVBVaU5yQ0c3MlF0OWJ2VVFOTjZTNklhalZtNktHTms4b01UY3BZbG5nOFdyRFczb3hs?oc=5"
-        }
-      ],
-      "severity": "ALERT",
-      "soWhat": "no action needed",
-      "source": "News velocity",
-      "sourceCount": 4,
-      "title": "us gov",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNbkFrNlZlUFBVRC1VNGV5c0IxMmJmdFE3M1h2Z2RBcXVMaHlxTVdOVkdJdGNuZEk3ZTZhbExrMDJrTEZsN1lOay1oeWFDaFpCTjlRT1pSVUo1eVJzVmFNSjQ0RjctLW53M3d6WHh2Y2FBenQyUlBNdmYwR0g2UmpGckFNTVFVclFid1M2S2h6Sk0?oc=5"
     }
   ],
   "mode": "trends",

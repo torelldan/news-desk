@@ -59,14 +59,14 @@
     {
       "asset": "DXY",
       "assetId": "dxy",
-      "category": "election",
+      "category": "economic",
       "days": 30,
-      "eventDays": 1,
+      "eventDays": 2,
       "r": null,
       "read": {
         "call": "n/a",
         "confidence": "n/a",
-        "text": "Not enough stored DXY days beside election events in this 30-day window to separate a link from coincidence."
+        "text": "Not enough stored DXY days beside economic events in this 30-day window to separate a link from coincidence."
       },
       "window": 30
     },
@@ -199,14 +199,14 @@
     {
       "asset": "DXY",
       "assetId": "dxy",
-      "category": "election",
+      "category": "economic",
       "days": 90,
-      "eventDays": 1,
+      "eventDays": 2,
       "r": null,
       "read": {
         "call": "n/a",
         "confidence": "n/a",
-        "text": "Not enough stored DXY days beside election events in this 90-day window to separate a link from coincidence."
+        "text": "Not enough stored DXY days beside economic events in this 90-day window to separate a link from coincidence."
       },
       "window": 90
     },
@@ -339,14 +339,14 @@
     {
       "asset": "Gold",
       "assetId": "gold",
-      "category": "election",
+      "category": "economic",
       "days": 30,
-      "eventDays": 1,
+      "eventDays": 2,
       "r": null,
       "read": {
         "call": "n/a",
         "confidence": "n/a",
-        "text": "Not enough stored Gold days beside election events in this 30-day window to separate a link from coincidence."
+        "text": "Not enough stored Gold days beside economic events in this 30-day window to separate a link from coincidence."
       },
       "window": 30
     },
@@ -479,14 +479,14 @@
     {
       "asset": "Gold",
       "assetId": "gold",
-      "category": "election",
+      "category": "economic",
       "days": 90,
-      "eventDays": 1,
+      "eventDays": 2,
       "r": null,
       "read": {
         "call": "n/a",
         "confidence": "n/a",
-        "text": "Not enough stored Gold days beside election events in this 90-day window to separate a link from coincidence."
+        "text": "Not enough stored Gold days beside economic events in this 90-day window to separate a link from coincidence."
       },
       "window": 90
     },
@@ -619,14 +619,14 @@
     {
       "asset": "Silver",
       "assetId": "silver",
-      "category": "election",
+      "category": "economic",
       "days": 30,
-      "eventDays": 1,
+      "eventDays": 2,
       "r": null,
       "read": {
         "call": "n/a",
         "confidence": "n/a",
-        "text": "Not enough stored Silver days beside election events in this 30-day window to separate a link from coincidence."
+        "text": "Not enough stored Silver days beside economic events in this 30-day window to separate a link from coincidence."
       },
       "window": 30
     },
@@ -759,14 +759,14 @@
     {
       "asset": "Silver",
       "assetId": "silver",
-      "category": "election",
+      "category": "economic",
       "days": 90,
-      "eventDays": 1,
+      "eventDays": 2,
       "r": null,
       "read": {
         "call": "n/a",
         "confidence": "n/a",
-        "text": "Not enough stored Silver days beside election events in this 90-day window to separate a link from coincidence."
+        "text": "Not enough stored Silver days beside economic events in this 90-day window to separate a link from coincidence."
       },
       "window": 90
     },
@@ -899,14 +899,14 @@
     {
       "asset": "BTC",
       "assetId": "btc",
-      "category": "election",
+      "category": "economic",
       "days": 30,
-      "eventDays": 3,
+      "eventDays": 2,
       "r": null,
       "read": {
         "call": "n/a",
         "confidence": "n/a",
-        "text": "Not enough stored BTC days beside election events in this 30-day window to separate a link from coincidence."
+        "text": "Not enough stored BTC days beside economic events in this 30-day window to separate a link from coincidence."
       },
       "window": 30
     },
@@ -1039,14 +1039,14 @@
     {
       "asset": "BTC",
       "assetId": "btc",
-      "category": "election",
+      "category": "economic",
       "days": 90,
-      "eventDays": 3,
+      "eventDays": 2,
       "r": null,
       "read": {
         "call": "n/a",
         "confidence": "n/a",
-        "text": "Not enough stored BTC days beside election events in this 90-day window to separate a link from coincidence."
+        "text": "Not enough stored BTC days beside economic events in this 90-day window to separate a link from coincidence."
       },
       "window": 90
     },
@@ -1179,14 +1179,14 @@
     {
       "asset": "ETH",
       "assetId": "eth",
-      "category": "election",
+      "category": "economic",
       "days": 30,
-      "eventDays": 3,
+      "eventDays": 2,
       "r": null,
       "read": {
         "call": "n/a",
         "confidence": "n/a",
-        "text": "Not enough stored ETH days beside election events in this 30-day window to separate a link from coincidence."
+        "text": "Not enough stored ETH days beside economic events in this 30-day window to separate a link from coincidence."
       },
       "window": 30
     },
@@ -1319,14 +1319,14 @@
     {
       "asset": "ETH",
       "assetId": "eth",
-      "category": "election",
+      "category": "economic",
       "days": 90,
-      "eventDays": 3,
+      "eventDays": 2,
       "r": null,
       "read": {
         "call": "n/a",
         "confidence": "n/a",
-        "text": "Not enough stored ETH days beside election events in this 90-day window to separate a link from coincidence."
+        "text": "Not enough stored ETH days beside economic events in this 90-day window to separate a link from coincidence."
       },
       "window": 90
     },
@@ -1403,8 +1403,8 @@
   ],
   "drivers": {
     "copperGold": {
-      "ratio": 0.001565,
-      "yield10": 5.133
+      "ratio": 0.001556,
+      "yield10": 5.121
     },
     "correlations": [
       {
@@ -1426,7 +1426,7 @@
         "metal": "Gold"
       },
       {
-        "d30": 0.32,
+        "d30": 0.31,
         "d90": 0.35,
         "driver": "S&P",
         "metal": "Gold"
@@ -1450,8 +1450,8 @@
         "metal": "Silver"
       },
       {
-        "d30": -0.05,
-        "d90": -0.16,
+        "d30": -0.04,
+        "d90": -0.15,
         "driver": "10Y",
         "metal": "Silver"
       },
@@ -1462,19 +1462,19 @@
         "metal": "Silver"
       },
       {
-        "d30": 0.48,
-        "d90": 0.44,
+        "d30": 0.49,
+        "d90": 0.45,
         "driver": "S&P",
         "metal": "Silver"
       },
       {
-        "d30": -0.28,
-        "d90": -0.3,
+        "d30": -0.29,
+        "d90": -0.31,
         "driver": "VIX",
         "metal": "Silver"
       },
       {
-        "d30": 0.56,
+        "d30": 0.57,
         "d90": 0.58,
         "driver": "Copper",
         "metal": "Silver"
@@ -1681,23 +1681,23 @@
     "funds": {
       "dff": 3.88,
       "zqf": 4.17,
-      "zqh": 4.405
+      "zqh": 4.4
     },
     "gaps": [],
     "oil": {
-      "brent": 93.87,
+      "brent": 93.34,
       "energyStrikes": 0,
-      "wti": 87.13
+      "wti": 86.55
     },
     "rows": [
       {
         "changes": {
-          "1M": -7.49,
-          "1W": -5.99,
-          "1Y": -7.78,
-          "3M": -12.5
+          "1M": -7.15,
+          "1W": -5.65,
+          "1Y": -7.45,
+          "3M": -12.18
         },
-        "level": 3868.1001,
+        "level": 3882.2,
         "name": "Gold",
         "spark": [
           {
@@ -1788,19 +1788,19 @@
             "price": 3886.3
           },
           {
-            "price": 3868.1001
+            "price": 3882.2
           }
         ],
         "unit": "%"
       },
       {
         "changes": {
-          "1M": -17.3,
-          "1W": -10.33,
-          "1Y": -11.19,
-          "3M": -26.28
+          "1M": -17.67,
+          "1W": -10.73,
+          "1Y": -11.59,
+          "3M": -26.61
         },
-        "level": 47.135,
+        "level": 46.925,
         "name": "Silver",
         "spark": [
           {
@@ -1891,19 +1891,19 @@
             "price": 49.031
           },
           {
-            "price": 47.135
+            "price": 46.925
           }
         ],
         "unit": "%"
       },
       {
         "changes": {
-          "1M": 1.66,
-          "1W": 1.85,
-          "1Y": 4.38,
-          "3M": 3.89
+          "1M": 1.64,
+          "1W": 1.83,
+          "1Y": 4.37,
+          "3M": 3.88
         },
-        "level": 103.526,
+        "level": 103.512,
         "name": "DXY",
         "spark": [
           {
@@ -1994,19 +1994,19 @@
             "price": 103.41
           },
           {
-            "price": 103.526
+            "price": 103.512
           }
         ],
         "unit": "%"
       },
       {
         "changes": {
-          "1M": 3.5,
-          "1W": 26.9,
-          "1Y": 102.1,
-          "3M": 42.7
+          "1M": 2.3,
+          "1W": 25.7,
+          "1Y": 100.9,
+          "3M": 41.5
         },
-        "level": 5.133,
+        "level": 5.121,
         "name": "10Y",
         "spark": [
           {
@@ -2097,7 +2097,7 @@
             "price": 5.154
           },
           {
-            "price": 5.133
+            "price": 5.121
           }
         ],
         "unit": "bp"
@@ -2207,12 +2207,12 @@
       },
       {
         "changes": {
-          "1M": -2.18,
-          "1W": -0.76,
-          "1Y": 11.21,
-          "3M": -2.59
+          "1M": -2.58,
+          "1W": -1.17,
+          "1Y": 10.75,
+          "3M": -2.99
         },
-        "level": 7492.6699,
+        "level": 7461.5898,
         "name": "S&P",
         "spark": [
           {
@@ -2303,19 +2303,19 @@
             "price": 7561.6699
           },
           {
-            "price": 7492.6699
+            "price": 7461.5898
           }
         ],
         "unit": "%"
       },
       {
         "changes": {
-          "1M": 1.95,
-          "1W": 2.31,
-          "1Y": -8.94,
-          "3M": 36.87
+          "1M": 6.7,
+          "1W": 7.08,
+          "1Y": -4.69,
+          "3M": 43.25
         },
-        "level": 20.38,
+        "level": 21.33,
         "name": "VIX",
         "spark": [
           {
@@ -2406,19 +2406,19 @@
             "price": 19.3
           },
           {
-            "price": 20.38
+            "price": 21.33
           }
         ],
         "unit": "%"
       },
       {
         "changes": {
-          "1M": -7.33,
-          "1W": -4.37,
-          "1Y": 18.96,
-          "3M": -6.64
+          "1M": -7.5,
+          "1W": -4.54,
+          "1Y": 18.75,
+          "3M": -6.8
         },
-        "level": 6.052,
+        "level": 6.0415,
         "name": "Copper",
         "spark": [
           {
@@ -2509,19 +2509,19 @@
             "price": 6.0795
           },
           {
-            "price": 6.052
+            "price": 6.0415
           }
         ],
         "unit": "%"
       },
       {
         "changes": {
-          "1M": 11.87,
-          "1W": 4.84,
-          "1Y": 3.84,
-          "3M": 18.7
+          "1M": 12.78,
+          "1W": 5.69,
+          "1Y": 4.68,
+          "3M": 19.67
         },
-        "level": 82.0643,
+        "level": 82.732,
         "name": "Gold/silver",
         "spark": [
           {
@@ -2612,7 +2612,7 @@
             "price": 79.2621
           },
           {
-            "price": 82.0643
+            "price": 82.732
           }
         ],
         "unit": "%"
@@ -2621,13 +2621,13 @@
     "volumes": [
       {
         "name": "GLD",
-        "price": 355.77,
-        "volume": 722201
+        "price": 354.9755,
+        "volume": 3060279
       },
       {
         "name": "SLV",
-        "price": 42.86,
-        "volume": 3227730
+        "price": 42.28,
+        "volume": 7222228
       },
       {
         "name": "GOLDBEES",
@@ -2638,7 +2638,7 @@
   },
   "events": [],
   "explainer": [
-    "Gold/silver ratio 82.1 (1-month change 11.87%) and copper -7.33%. Association, not proof: industrial worry is hitting silver harder."
+    "Gold/silver ratio 82.7 (1-month change 12.78%) and copper -7.5%. Association, not proof: industrial worry is hitting silver harder."
   ],
   "note": "-1d is the move into the day before the event. +1d and +3d are moves from that same close to the stored close on or after those days. Correlation is Pearson between a category event-day (1/0) and that asset's daily percent change. Fewer than 5 paired days, or fewer than 3 event days, is n/a.",
   "vixZone": "15 to 25"

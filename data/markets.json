@@ -28,9 +28,9 @@
             "2026-11-26",
             "2026-12-25"
           ],
-          "level": 7497.23,
-          "change": -64.44,
-          "changePct": -0.85,
+          "level": 7463.93,
+          "change": -97.74,
+          "changePct": -1.29,
           "asOf": "2026-11-16",
           "source": "https://finance.yahoo.com/quote/%5EGSPC"
         }
@@ -894,9 +894,9 @@
             }
           ],
           "holidays": [],
-          "level": 35997.15,
-          "change": -108.75,
-          "changePct": -0.3,
+          "level": 35883.76,
+          "change": -222.14,
+          "changePct": -0.62,
           "asOf": "2026-11-16",
           "source": "https://finance.yahoo.com/quote/%5EGSPTSE"
         },
@@ -920,6 +920,48 @@
         }
       ],
       "headlines": [
+        {
+          "id": "headline:f92def85189741b4",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Bloomberg",
+          "sourceId": "headline",
+          "title": "Macklem to Leave as Bank of Canada Governor, Starting Succession Race - Bloomberg",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOek16LUJIUnRuUmo0UFdVeXprbWtVcUdONGc4NlVTUGZpdDdkUU1FYW1IazNrTURpelkyQ3VpTmk4WTNQcHBGLXE2ZGNVakdZQ3RCS2w0SzBIeGhSeGJheHhDaE9JcjFIOWJIRWFiR0lJT2ZfZV9DSGdtZG1kZU9VNldfbXdWVlE5eHhFM2xrckZNNHNEcS1mWlNsTFJ0V0t2RzdzUHJLNHkxaUxNNS1leGdTVFdSanVIZXR5V2JpU054UQ?oc=5",
+          "published": "2026-11-16T09:05:11-06:00",
+          "date": "2026-11-16",
+          "label": "Nov 16, 2026 9:05 AM CT",
+          "weekday": "Mon",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:36c967cf463c214c",
+          "kind": "headline",
+          "lane": "news",
+          "source": "richtv.io",
+          "sourceId": "headline",
+          "title": "Canada’s annual inflation rate held steady in October, StatsCan says - richtv.io",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQMXpuMk1YMnRZbHlRcGNmZEZCc29HXzBuTHpJTmQxVDBlRTR3TUEycVJ2cGNJS3o2amFkN0ZqdVhyckFxOVQzXzM2X2ZXUU4xVUxCT3V4bjAtVHh5RWxJZTZBVjNacENWR083Y0xtUW5aR0xSa1lhQXN5bVdkajF4S2xmT09ZcHBGMzNWcHFFQ0J4b0k?oc=5",
+          "published": "2026-11-16T09:00:00-06:00",
+          "date": "2026-11-16",
+          "label": "Nov 16, 2026 9:00 AM CT",
+          "weekday": "Mon",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
         {
           "id": "headline:8886e237dcb7bf9c",
           "kind": "headline",
@@ -1717,48 +1759,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:f6dd42c16846fc8a",
-          "kind": "headline",
-          "lane": "news",
-          "source": "nesto.ca",
-          "sourceId": "headline",
-          "title": "Mortgage Rates Forecast Canada 2026-2030 - nesto.ca",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE12LW9MRGhnV0thQk5NbFJibFFESWRpOTBSM3p3dGVXSWY3UGRiem1ZQzdwX2U0MVFTTDYwdWZ6Qm1rUmZITnFfNW92SDNad0pjT3RhOHNoYzRSSkhZM1F6Yi12TjNnb0gteXR2dFJOeWJJZXlVUndv?oc=5",
-          "published": "2026-11-06T02:00:00-06:00",
-          "date": "2026-11-06",
-          "label": "Nov 6, 2026 2:00 AM CT",
-          "weekday": "Fri",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:2bd1e15d5a8a72f6",
-          "kind": "headline",
-          "lane": "news",
-          "source": "The Real Economy Blog",
-          "sourceId": "headline",
-          "title": "Canada’s economy loses jobs for 3rd consecutive month - The Real Economy Blog",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxON09wdmhKNTBKOEhLblg4M21FQktyVW1ZZV9wcjVVdkYyazVLb2sxZjNTUy1TYlg2ak5vNmNjXzNnZ3lXN0I3RGdwb3IycEFZUTJXZUJkblNLREJvSHM1bDRLbDY0WUg4MS02aGVJSWVsMHhhcm9HbEpQaDNvRkZhYy1IdkpaMEpNYjJv?oc=5",
-          "published": "2026-11-06T02:00:00-06:00",
-          "date": "2026-11-06",
-          "label": "Nov 6, 2026 2:00 AM CT",
-          "weekday": "Fri",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ]
     },
@@ -1778,9 +1778,9 @@
             }
           ],
           "holidays": [],
-          "level": 170645.88,
-          "change": -1812.12,
-          "changePct": -1.05,
+          "level": 169919.98,
+          "change": -2538.02,
+          "changePct": -1.47,
           "asOf": "2026-11-16",
           "source": "https://finance.yahoo.com/quote/%5EBVSP"
         }
@@ -2644,9 +2644,9 @@
             }
           ],
           "holidays": [],
-          "level": 2485.03,
-          "change": -24.47,
-          "changePct": -0.98,
+          "level": 2482.73,
+          "change": -26.77,
+          "changePct": -1.07,
           "asOf": "2026-11-16",
           "source": "https://iss.moex.com/iss/engines/stock/markets/index/securities/IMOEX.json"
         }
@@ -4376,9 +4376,9 @@
             }
           ],
           "holidays": [],
-          "level": 6378.66,
-          "change": -8.2,
-          "changePct": -0.13,
+          "level": 6366.71,
+          "change": -20.15,
+          "changePct": -0.32,
           "asOf": "2026-11-16",
           "source": "https://finance.yahoo.com/quote/%5ESTOXX50E"
         }
@@ -5297,6 +5297,27 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:eaa007f090a091c1",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Anadolu Ajansı",
+          "sourceId": "headline",
+          "title": "Global markets start new week mixed amid Nvidia turmoil, hawkish Fed outlook - Anadolu Ajansı",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOMlYycmhyd2xaWWJ5LVlPUTk5VzFvRThPMmQtdE1kZ3ZKYjY2dnJCVkpyNk5NMmIxSlNrUGdPYV9ZTzE0Wjc1aEJHSHNjbG03Q2ZrQUwwOEZULUVDc0JrbmpFSVpsWm1MMl9PeEFEb1ZRMnNYOUo1ZDR4MTV1cVVyUDhUNTFRYk9jdWxMaDR3dU5WbTM4eTJTaURkT0MtdmtEZ09adTVUekRIbUFSR3lsTk1YakdNRFE?oc=5",
+          "published": "2026-11-16T04:26:54-06:00",
+          "date": "2026-11-16",
+          "label": "Nov 16, 2026 4:26 AM CT",
+          "weekday": "Mon",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:757b20a1ed7df32b",
           "kind": "headline",
           "lane": "news",
@@ -5393,6 +5414,27 @@
           "published": "2026-11-16T02:42:07-06:00",
           "date": "2026-11-16",
           "label": "Nov 16, 2026 2:42 AM CT",
+          "weekday": "Mon",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:527207702c676e6b",
+          "kind": "headline",
+          "lane": "news",
+          "source": "شبكة تواصل الإخبارية",
+          "sourceId": "headline",
+          "title": "Asian stocks stay mixed as KOSPI drops ahead of looming Nvidia results | FXStreet - شبكة تواصل الإخبارية",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBGWV91YmE5QXhaa0hXN3ZiU0Y0eVQwRzZ3S0s4bnNyLVhKU09rcGQwbmVuMU9aT2Y0LVJ0WE9nbWtLdTB5d2ZSS1dIdW00TWd6YnJv?oc=5",
+          "published": "2026-11-16T00:59:53-06:00",
+          "date": "2026-11-16",
+          "label": "Nov 16, 2026 12:59 AM CT",
           "weekday": "Mon",
           "timeKnown": true,
           "tags": [
@@ -6051,48 +6093,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:0d91db35860ba3ce",
-          "kind": "headline",
-          "lane": "news",
-          "source": "SuaraGarut.ID",
-          "sourceId": "headline",
-          "title": "Nvidia Turmoil Pressures Global Markets as Chip Rally Falters - SuaraGarut.ID",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFAtZzMzRUNCd2o0RHRpR2MtejdQMW16eGR1WlJpM2k4RzRkVWVnOWtndERMQTBmQVQ0eWFTSC1OaFVJUE1CazgyRWZIUERvNGx0RlB1S1VMZGFZLXZTck9zZjZEUW5zTHFl?oc=5",
-          "published": "2026-11-12T07:22:54-06:00",
-          "date": "2026-11-12",
-          "label": "Nov 12, 2026 7:22 AM CT",
-          "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:95e7631a0be4e18c",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Anadolu Ajansı",
-          "sourceId": "headline",
-          "title": "Global markets trade mixed amid tech volatility, surging US Treasury yields - Anadolu Ajansı",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQMzRLQ3R0cTMwdlpFTng4UkJEaXYyTDhlN0Y0bWJ3Z245X2JreUpGQU1adWYxM01GQ1B5Z0h2U0g5NEE1N1N6V1BGQmJRbG1TeDYwb2dnOXBybGpqTjd0TXQ5Q3ZxODFvdFJacGpYWG5DNVVxMU9LRHRuZ2h0VE1XNG1mdHRENFp3MFNZSVFxUUFPN3VfaVctVXNFTDBIU1hybzJTUVk0TFF6UW91NnlRbUlIUVV3UQ?oc=5",
-          "published": "2026-11-12T05:27:51-06:00",
-          "date": "2026-11-12",
-          "label": "Nov 12, 2026 5:27 AM CT",
-          "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ]
     },
@@ -6116,9 +6116,9 @@
             }
           ],
           "holidays": [],
-          "level": 59662.02,
-          "change": -1480.33,
-          "changePct": -2.42,
+          "level": 61142.35,
+          "change": 322.99,
+          "changePct": 0.53,
           "asOf": "2026-11-16",
           "source": "https://finance.yahoo.com/quote/%5EN225"
         }
@@ -7030,6 +7030,27 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:3f611c7294734f15",
+          "kind": "headline",
+          "lane": "news",
+          "source": "NiftyTrader",
+          "sourceId": "headline",
+          "title": "Yes Bank AT-1 Bond Case: RBI Challenges Rs 8,415 Crore Verdict and Wants a Stay. What Happens Next? - NiftyTrader",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9lUGNwOERZOC1mdTd5UFN3QjBidlNHTlRDQVlzVTBCWl9PTFhXb21TTTlGU3JQaDhDdHA5TkxRenh3WTFmOUJ0ZDh0N285TFpZVDh4LUtrSjF3dmVJd1pDeU44aGFibXI3bk1xdWpraGQ2QzB0aXFqVUlhWDdXczA?oc=5",
+          "published": "2026-11-16T07:07:32-06:00",
+          "date": "2026-11-16",
+          "label": "Nov 16, 2026 7:07 AM CT",
+          "weekday": "Mon",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:8067a91b054f65f3",
           "kind": "headline",
           "lane": "news",
@@ -7819,27 +7840,6 @@
           "published": "2026-11-12T02:10:49-06:00",
           "date": "2026-11-12",
           "label": "Nov 12, 2026 2:10 AM CT",
-          "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:cf7692c0703c76f5",
-          "kind": "headline",
-          "lane": "news",
-          "source": "CNBC TV18",
-          "sourceId": "headline",
-          "title": "CLSA turns positive on India, says TINA trade is making a comeback - CNBC TV18",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxNaThBX0pLMmpJXzkzenlLNUtka1FqQlVrczljMzl6LTBLcFRjX3pqaW9GTUV5Wm9BNlpieWpBbkJoVVpZeGt5Qk5wb3Jyd3k2anpKRzlyMlc3OHFQRzNzRUp4S0RFc1k2Y3VyVHhXQzl6dDVkeEJKYlFUZTVKVzI1VXh3Tm54S0lLRktyaGdwWUJYR1lKN2tnU1hVTHFHZEZvaDdJaVdvaVFEdDhPcTFtc0RZVlpUZnNOUkxUUDBMdXRDM1E1a0VNS3NxUGZmWi1QcWVuTjJjVDVIcEVRd2hmQ3NfUnRNZ05mUkVDa2Q5Ty1aT0xHaGx5VGF0RUluWUIzRGh4SDlZU0E0Y3NZU2fSAZMCQVVfeXFMTU9USW14XzZ6cVRqQ0t0MDBxQUREWVBkaTFWSmdETWJOWmRtOWllYXdhTkJNeWRvUEY3VFVIekE0aUxQam5SQ3YtVnd2bC1KOWVZamd4QmtTSy0xalZkTzhHSkZPWHUtakRjdlM4TXpUSkpOOFdqbWkwYnJ6UVp4aUw1ZzhROTV4a1ZNWTJiU0FkN3FJVTBPMXd5Qmk5T3dUYlhteWstSmtqdGt3cGE5UVFMcXVQajQ5YkdzR1lMb21Ma2lRNDd0TWUyblZOQkZaTVVnM05PNlRaVXE5d1lJYkNtLWlvYVYxbmhPWDBlcWo4czJnXzZyYllSQ21tNmg4YkM3a1lJMkhVMkpPdWE1a0ZSazQ?oc=5",
-          "published": "2026-11-12T00:21:36-06:00",
-          "date": "2026-11-12",
-          "label": "Nov 12, 2026 12:21 AM CT",
           "weekday": "Thu",
           "timeKnown": true,
           "tags": [
