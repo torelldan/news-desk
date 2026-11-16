@@ -28,14 +28,35 @@
             "2026-11-26",
             "2026-12-25"
           ],
-          "level": 7463.93,
-          "change": -97.74,
-          "changePct": -1.29,
+          "level": 7486.96,
+          "change": -74.71,
+          "changePct": -0.99,
           "asOf": "2026-11-16",
           "source": "https://finance.yahoo.com/quote/%5EGSPC"
         }
       ],
       "headlines": [
+        {
+          "id": "headline:b426040c12d723a8",
+          "kind": "headline",
+          "lane": "news",
+          "source": "UBS",
+          "sourceId": "headline",
+          "title": "Is the Federal Reserve becoming more hawkish? - UBS",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNTFRhSFZZVXVnb2RoYXhadjhFOHFQNWJEdF9RVEJ3YmZrRVY4S2Z6U1l0V2pmUnpPb3l4bXRNd1M3OVdTXzh2Q2RkdmVfU0w0S0doSGMxTEJjMjFwQ28zNjVCVGc2WWVfZm9jV2ZPQk13Rk05bHA1VlFFMXBrR2xDc0dMNUpNR3FBS0lSRm13?oc=5",
+          "published": "2026-11-16T07:33:11-06:00",
+          "date": "2026-11-16",
+          "label": "Nov 16, 2026 7:33 AM CT",
+          "weekday": "Mon",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
         {
           "id": "headline:f5420ec33e64f3aa",
           "kind": "headline",
@@ -854,27 +875,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:e10a8bedbb634bc1",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Reuters",
-          "sourceId": "headline",
-          "title": "Fed's Paulson calls for gradual rate hikes amid ongoing high inflation - Reuters",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOc1l4X293em5tbkV6SmFadllsbWlmU25jQmxZeWtMRHFDREhLcE5wVXZiM29uVnZ6eGRPUnAtWmVMcndFTmZkUVhERG1yQVpKQTFlNzlWNy1TalhycGcyb01xOFFzWnZwLWhYRWZ4UkZ0LU5hV3V0Z0UzbFV5RE5DOFdYVEdHN0liaktqTlNfdWxuekZ4Rk1tOGFIMUp1OVZlbGpIa3Mzamc2Y1NxRWZZ?oc=5",
-          "published": "2026-11-10T17:34:02-06:00",
-          "date": "2026-11-10",
-          "label": "Nov 10, 2026 5:34 PM CT",
-          "weekday": "Tue",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ]
     },
@@ -894,9 +894,9 @@
             }
           ],
           "holidays": [],
-          "level": 35883.76,
-          "change": -222.14,
-          "changePct": -0.62,
+          "level": 35981.43,
+          "change": -124.47,
+          "changePct": -0.34,
           "asOf": "2026-11-16",
           "source": "https://finance.yahoo.com/quote/%5EGSPTSE"
         },
@@ -920,6 +920,90 @@
         }
       ],
       "headlines": [
+        {
+          "id": "headline:0cc18fc4927368ea",
+          "kind": "headline",
+          "lane": "news",
+          "source": "BNN Bloomberg",
+          "sourceId": "headline",
+          "title": "Tiff Macklem to step down as Bank of Canada governor at end of his term - BNN Bloomberg",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQRl9tS1NLMlp0SUx6UzVoeW5sb3lqRUhzeDRQQzFwTE9wMmxyejlIdGJuV0NxN1d5c1BfRlF1bHp4blVWZXYyeTRqZnlQNjdTc0RLTFU0RHgwYU0tSnRLOERDZWN3X2xWNUVHc2V4eG8yT1NJdDdYYk5SS1Rscy14VnlmUmJpS0Fpd1o2OUEyWU01YjN6dHJXVnZPVXhxR1ZLRy1LdUxSOUxqOGRRb1lxZGt1dkpfTHluUGpydU40NHJTSGJrSzhqYnZn?oc=5",
+          "published": "2026-11-16T09:35:26-06:00",
+          "date": "2026-11-16",
+          "label": "Nov 16, 2026 9:35 AM CT",
+          "weekday": "Mon",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:614db28543d3f43a",
+          "kind": "headline",
+          "lane": "news",
+          "source": "The Real Economy Blog",
+          "sourceId": "headline",
+          "title": "Canada’s CPI flat at 3.1%, giving Bank of Canada room to pause - The Real Economy Blog",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQRURUYzdZaUFhbDdBZnNQX2tpc3N2bkVVdUpzOFV1MENRWlhxbGJKVlFLOE9LMExaWE5JaFIxVTZPalg0STFfc3dsRDVabXRqTmZKMnZoZ0dSa1VCeW80XzBnOEdQZGVDalBVY29qVWh3NGd4WG56Y3JJWG50TXdNNmZVeERwdG53UUJMR2piNnBvd0NC?oc=5",
+          "published": "2026-11-16T09:25:49-06:00",
+          "date": "2026-11-16",
+          "label": "Nov 16, 2026 9:25 AM CT",
+          "weekday": "Mon",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:897e8916c31577b6",
+          "kind": "headline",
+          "lane": "news",
+          "source": "WSJ",
+          "sourceId": "headline",
+          "title": "Bank of Canada Gov. Macklem to Leave in June, Kicking Off Search for New Leader - WSJ",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNdkdBRndsdFRRaHdWVE9qVnpsX2psX0RtQ2NldkVQVEV1UFl3TkcxSjJFUkhzaDBKM2p0c1ZKYkJpcDBsYS10VE9XVENnVkVUSVBaZUdOcFFndGswNk9KVUoyOWwtUE81TEFVV1hkY21VWnhnZTVjQ0NldFNoYW5GXy1aMjVOY0taUThLMlZJaG5IWXFhRENjRGdkdmhocGxDalFTeUpaLVVWVlZzX0JFRzV6YTBjRWpSSEVVWlZtLXNJMEltbE9NRE93?oc=5",
+          "published": "2026-11-16T09:22:00-06:00",
+          "date": "2026-11-16",
+          "label": "Nov 16, 2026 9:22 AM CT",
+          "weekday": "Mon",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:147cdf5b5ce552e6",
+          "kind": "headline",
+          "lane": "news",
+          "source": "The Logic",
+          "sourceId": "headline",
+          "title": "Carmichael: Macklem is stepping aside after a career of consummate public service - The Logic",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBZZkM2MnAxSGxQMDdVZlVma2h5bkZDdzBXVmw3NTB6TG5meHhRcFozcjlodFdfYThtWTViX2p1MzVhYzAxYlFkNFl2VHYtdFROOTBWLWtsS1BTQ3VYT1VEeGs1ckhPVzN3RHQ0?oc=5",
+          "published": "2026-11-16T09:09:00-06:00",
+          "date": "2026-11-16",
+          "label": "Nov 16, 2026 9:09 AM CT",
+          "weekday": "Mon",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
         {
           "id": "headline:f92def85189741b4",
           "kind": "headline",
@@ -1236,12 +1320,12 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:cccbb3223b700c22",
+          "id": "headline:21890b47ba7d87dc",
           "kind": "headline",
           "lane": "news",
-          "source": "Bloomberg.com",
+          "source": "Bloomberg",
           "sourceId": "headline",
-          "title": "Canada’s Next Central Bank Leader May Need to Play the Villain - Bloomberg.com",
+          "title": "Canada’s Next Central Bank Leader May Need to Play the Villain - Bloomberg",
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPNmtuRzJnYjV6aUVuODU5cXJMRm9ZTVJfNzYwV2NtYkIzYUNhdkRYSFdZLWI5WHRWbzZrdVZoSHpaSTdveGllZGJVcFdWSmFrX0oxSHNsZWF3MHRHUWQ2Y3N4aXdMZG04Sklnam5tZFBpaFVIQmdrQ0swY2t4MThiTW8zTHVxb3ZWLW1MVU4wWm5nOWc5a0tTRHFST09BZVExenN4VGtBbUxNN1Z6Rnl6QUFkbGhlMDZlQjdRY2Jfa1JEaDFaTWIyVFNR?oc=5",
@@ -1675,90 +1759,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:6cbce9058d6e54cc",
-          "kind": "headline",
-          "lane": "news",
-          "source": "kalkine.ca",
-          "sourceId": "headline",
-          "title": "Bank of Canada Rate Hike Leaves Investors Watching Jobs and Inflation - kalkine.ca",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOTWhZdW1TRXJkVmpQQnhEWUVaQVhnR2ZIUmFJdThTWVN2dWlSTDUwdzg5LXo2aC1yUVR2MWNUemotSHlodkJiU3BnYTJWZ3ZmelZ6aHp0T0xfanhlZExUcE1haGI3ZUdET2lXbWRqd3pTSmxGOGlhX09YNFZ1bjFTMWhpMGJncnhFc0J5SEJEbGxqQVVwLVE5TzYxNnc1REs2MUptRkd2TnpKLVU?oc=5",
-          "published": "2026-11-09T00:13:00-06:00",
-          "date": "2026-11-09",
-          "label": "Nov 9, 2026 12:13 AM CT",
-          "weekday": "Mon",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:2bddb5f9d8b568de",
-          "kind": "headline",
-          "lane": "news",
-          "source": "The Economic Times",
-          "sourceId": "headline",
-          "title": "Charting the global economy: Job growth in US tops all forecasts - The Economic Times",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNWmw1LXBza2VaeUVuZGtkNzF4a1ctbUstSmltYmJuaUxWZW9wR2RjblFPMXRhYWpONmR1cURrZjNrV280UjhXT2RDdEZXR09mSWhxTnYzS0k3OHl4WUpTUW5aQ2NydDc2ODEzZl9WbUxydVQwTzZFVG1CemZNMnVYOXNJYmFVczFRV2pzOG9yNUptLTRYbnlJdV9ieVRxWGlCSXc3VEc4c0V4M0FqSERDOHhEZFQ2ZXVZWDYxQ1oyVmxPUkVQYjVlRzV4NURoMVdxeXl6aVJzd09VejZyS0s0MzFHR0nSAeoBQVVfeXFMTWd4ajdKR1ZlQXV2Yk50bzc1NHhUNXczaTc5V1BydGVEeThBdElXWGxtcXdoTm1yOEV6VE14WkduVjQ3bWdvOGUzVThMQ2FpMk5TMXQydVhBX2taWDRNN2FTR3lOZjRCYXRhUW5VWVc1Zy14SjBrOVlOaWZPN0ZOVmpPb2NkaDBvQ1JJU2l2VjRaWURra25pSk02bFV5SVVMbmcxWU1tVEJXRHFnalZScTctRUtFWk80bllqOWFTdFJjeWJta1otTlV6VlU3MTAyOTZKUEhnOWNOZmFidzJEVFhNWkdSaVY3T3BR?oc=5",
-          "published": "2026-11-07T23:09:16-06:00",
-          "date": "2026-11-07",
-          "label": "Nov 7, 2026 11:09 PM CT",
-          "weekday": "Sat",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:41c48c95414fffb7",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Bloomberg.com",
-          "sourceId": "headline",
-          "title": "Charting the Global Economy: Job Growth in US Tops All Forecasts - Bloomberg.com",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxONmJTYmozcExtUWJtMkNhTF9PdV9NNEV6SE1wR2Y1THVLd1ZlXzRCWDdzQ0psNGh5YVJYY0IxcHZMOWFHMXRZYmNCcEVXeVBxaUVDRkdOZ0lNQlE4NDJfeDliaVZueTBiQTBrYmdHQkl3YXFoUTJuX2dEMWJfdkVtNkNqVjBfNzZqYWlSbV84UENfNUtHczBQQy1IQ19fcHM2NXZjcGE3NmpxWndLd3BDRDFnU0U?oc=5",
-          "published": "2026-11-07T04:00:00-06:00",
-          "date": "2026-11-07",
-          "label": "Nov 7, 2026 4:00 AM CT",
-          "weekday": "Sat",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:aa19c1af00632d58",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Mexico Solidarity Media",
-          "sourceId": "headline",
-          "title": "Bank of Mexico Surprises and Cuts Interest Rate to 6.25% - Mexico Solidarity Media",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBiWUhlZHNEejdlOVNxaHlsNDZ3MGZ0amFxQkZoMU9RU1R2aDExR2NWYVV1eWJaME1oVDk4ZU5aU2NYdHRxQ3pERFlpSjdIMXpWZS1IcTRaZEE4Zw?oc=5",
-          "published": "2026-11-06T08:13:15-06:00",
-          "date": "2026-11-06",
-          "label": "Nov 6, 2026 8:13 AM CT",
-          "weekday": "Fri",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ]
     },
@@ -1778,9 +1778,9 @@
             }
           ],
           "holidays": [],
-          "level": 169919.98,
-          "change": -2538.02,
-          "changePct": -1.47,
+          "level": 170024.59,
+          "change": -2433.41,
+          "changePct": -1.41,
           "asOf": "2026-11-16",
           "source": "https://finance.yahoo.com/quote/%5EBVSP"
         }
@@ -2644,9 +2644,9 @@
             }
           ],
           "holidays": [],
-          "level": 2482.73,
-          "change": -26.77,
-          "changePct": -1.07,
+          "level": 2476.75,
+          "change": -32.75,
+          "changePct": -1.31,
           "asOf": "2026-11-16",
           "source": "https://iss.moex.com/iss/engines/stock/markets/index/securities/IMOEX.json"
         }
@@ -3510,9 +3510,9 @@
             }
           ],
           "holidays": [],
-          "level": 3602.57,
-          "change": -31.78,
-          "changePct": -0.87,
+          "level": 3634.35,
+          "change": -21.48,
+          "changePct": -0.59,
           "asOf": "2026-11-16",
           "source": "https://finance.yahoo.com/quote/000001.SS"
         }
@@ -4278,9 +4278,9 @@
           "id": "headline:c99c56f8c5e1ed2a",
           "kind": "headline",
           "lane": "news",
-          "source": "Euronews",
+          "source": "Euronews.com",
           "sourceId": "headline",
-          "title": "China's trade surplus surpasses $1 trillion as AI boom powers exports - Euronews",
+          "title": "China's trade surplus surpasses $1 trillion as AI boom powers exports - Euronews.com",
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPaHpmQ004SnRvTzRmXzFseXp4THJEWWJFeXNlVUY3eEUxVDdfbVpTUTMxNTdZVm14VmJyQkZOaUh0QTRCb0Zjc3VwRzJkY0pseG5idk5BQ0hBME5STDBwTlJCZmpHb0xhVEUwd29FRHRyWm1yQXY3bFNWNDh3c2xiSFJzUFdRWlRQdWJzWVBGS3hSYm8tUl9GS1JNZ3pWdWJpdXoweTFn?oc=5",
@@ -4376,14 +4376,35 @@
             }
           ],
           "holidays": [],
-          "level": 6366.71,
-          "change": -20.15,
-          "changePct": -0.32,
+          "level": 6355.0,
+          "change": -31.86,
+          "changePct": -0.5,
           "asOf": "2026-11-16",
           "source": "https://finance.yahoo.com/quote/%5ESTOXX50E"
         }
       ],
       "headlines": [
+        {
+          "id": "headline:de02d0500b7947b5",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Euronews.com",
+          "sourceId": "headline",
+          "title": "ECB warns AI share boom could end in 'abrupt repricing' - Euronews.com",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOV0xTVnJGamRVeWVPbDZSZVVncmhFVGxneFRPWUdoS2Zhell3ZW4za0ZQSVpmWVRnTWh2YTg0bjJIUTJsUHVCMWw2SUNJaXJBQVkzbEt5d19ERkd1NldpNFZ6SE91LTFBd2wyZUFnTV9BbDEzaWpORTdXUTF0S0RZbnpySHk2b3ZuRVA1THZZNkFqYk0?oc=5",
+          "published": "2026-11-16T09:15:42-06:00",
+          "date": "2026-11-16",
+          "label": "Nov 16, 2026 9:15 AM CT",
+          "weekday": "Mon",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
         {
           "id": "headline:5a65fa8904cc3e08",
           "kind": "headline",
@@ -4397,6 +4418,27 @@
           "published": "2026-11-16T06:55:52-06:00",
           "date": "2026-11-16",
           "label": "Nov 16, 2026 6:55 AM CT",
+          "weekday": "Mon",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:b2d2948622566a0c",
+          "kind": "headline",
+          "lane": "news",
+          "source": "WSJ",
+          "sourceId": "headline",
+          "title": "ECB Urges Overhauls to Protect Financial System From AI, Government Debt - WSJ",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPTXBJVmZaTXVPNG94RVM2QXZXT1YtaDVlOWhsR2FyM1FCdFJlRmFKM25KQ3J2cWt3dm44dTlsT1hTNjhGZThJNlowQjFkSWxZVm1tOWZpQ0dFM0ZyMEhzQnVhc2I2UVF0WDFLTnczc1g5ZkpsNkZ3ZUZLZUpuQ1l1TGhwVlhXS1dWX1dTbERrdmY2ZGtZNmtwN1RXQU9tYVZmSFp5c293dTRvdnd3TDRRMWZmblo5QzRSZWsxZw?oc=5",
+          "published": "2026-11-16T06:01:27-06:00",
+          "date": "2026-11-16",
+          "label": "Nov 16, 2026 6:01 AM CT",
           "weekday": "Mon",
           "timeKnown": true,
           "tags": [
@@ -4481,6 +4523,27 @@
           "published": "2026-11-16T02:36:18-06:00",
           "date": "2026-11-16",
           "label": "Nov 16, 2026 2:36 AM CT",
+          "weekday": "Mon",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:affa9ef725a72d7a",
+          "kind": "headline",
+          "lane": "news",
+          "source": "European Central Bank",
+          "sourceId": "headline",
+          "title": "Risks and resilience in the euro area financial system - European Central Bank",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNQVY0ZFBPV2U5N2tWR3ZsRThLNnZzTG1rTVZmNkRWM2dVcXNxc0dxUF9XSE1wbTFSbGp0Y01JSVFWMTJKanJQT0Y2NG9QajhKVlN6Q3R1RElwQ0gxY09GN251LUdPcVNaczdKMF9QSkR1Vmt2aTJMNUVHTUQ5WGhUOUtpTHV4U1dOUWc?oc=5",
+          "published": "2026-11-16T02:33:36-06:00",
+          "date": "2026-11-16",
+          "label": "Nov 16, 2026 2:33 AM CT",
           "weekday": "Mon",
           "timeKnown": true,
           "tags": [
@@ -5160,69 +5223,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:bd13c3e15518360f",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Zprávy Kurzy.cz",
-          "sourceId": "headline",
-          "title": "Artificial intelligence and European firms: the cost of market-based financing - Zprávy Kurzy.cz",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNU3lzUWZXOFVNM3ROZHBXRG51VkRZZHVjMDFDSGhKRDFJNDdIbmdqUTV4MnhGd0RUUXRmMGhzOEN5VVh2ZjNVVmNLeWlXRTNRbnp5dTlWY2JrdGg4SnZodFV0azkwY19MSzBhZ0dhY2RxMGlya1otRmFOSm50NFRyUVRXdXpXaEhmMXNtRVdWOUFXcWN3Y3lQODlLT0dmVFczcGlCTl94dXhJWG0wYXc?oc=5",
-          "published": "2026-11-12T03:00:00-06:00",
-          "date": "2026-11-12",
-          "label": "Nov 12, 2026 3:00 AM CT",
-          "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:f588f7ec9d956951",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Zprávy Kurzy.cz",
-          "sourceId": "headline",
-          "title": "Narratives and risks: a quantitative toolkit to evaluate scenarios applied to the Middle East conflict - Zprávy Kurzy.cz",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNd3VuQjNmT3VsZUpETGY4bDdVTGlseThmVGxadHR5SnBkTEU1RzNSeVA1MXQteUtwRWxhMWdvdnN2cHRNVndLTWtqZ0FlbWo2eTlGSkRITXBuNnVtWlJ0amJiR2ktSm5hUFNFTGwtaHRvd1g2cXRYaC1QS2psUWxxdEFVUWFVYnhjUUFPdlNUVDJsSFdscTdYZTZWaHFTajJ3TkE5TWRzVGxNWU02Z3NqUkUwM01DcnFqZGtHczIzeEVGZw?oc=5",
-          "published": "2026-11-12T03:00:00-06:00",
-          "date": "2026-11-12",
-          "label": "Nov 12, 2026 3:00 AM CT",
-          "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:226106d6cad1fc52",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Zprávy Kurzy.cz",
-          "sourceId": "headline",
-          "title": "What share of public services employment is contributed by the private sector? - Zprávy Kurzy.cz",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPM3kxZENDWXZaUFB4RWI2RjJhWl9VbHl5ZVV0SDQzcW9wdUFjbDJmWUFuaHB4d0ZicmJVbTVSaDJDUXB0Y1NzMUR5aWxZQUxaNWlYdFo4WEtXYWtPY3ZTdDAzMmlaYmxYT3BZMGZvUS1MWk5EWW1ZeGxjVEozSlJzemxpc1NqQjRtbWpSTkhrUGVVWVNuWlBUMUdsN0ZybUJYVk1fY2NSQ2VZT09TZ1E?oc=5",
-          "published": "2026-11-12T03:00:00-06:00",
-          "date": "2026-11-12",
-          "label": "Nov 12, 2026 3:00 AM CT",
-          "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ]
     },
@@ -5246,9 +5246,9 @@
             }
           ],
           "holidays": [],
-          "level": 23753.84,
-          "change": 116.24,
-          "changePct": 0.49,
+          "level": 23637.6,
+          "change": -370.95,
+          "changePct": -1.55,
           "asOf": "2026-11-16",
           "source": "https://finance.yahoo.com/quote/%5EHSI"
         }
@@ -6125,6 +6125,27 @@
       ],
       "headlines": [
         {
+          "id": "headline:efd8f07034250a48",
+          "kind": "headline",
+          "lane": "news",
+          "source": "The Economic Times",
+          "sourceId": "headline",
+          "title": "BOJ's Takata calls for early rate hikes to curb inflation risks - The Economic Times",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOLUtrYWtENC00eXhwMEZ6bm5hTTVoTkNEU01Pck1vaFZhTGlfTWZkb3loTE9IcVgyeFFTYjR0V1htQ3Y3akJVbDRMN1lPWDZ2ZWxpMktGQ0o4NjBqZW5JNWtoYU5GRmJZeV83a2syY3F2N1dXVlcwVnc2SGlXWHpJTGdzb21qYjd0dk85cDhfcEdROWFJdTh5bl9hc0xkSTQwNEtvSk9uYllhNkNEeEpyZjM3S2J4M2VrZHdXTW8zdE5ZUXpaZTZPTHBNaHNXSGNmdGJlZXd5M0huMVVUYXhoSFFmSTFqcWttcHlhWtIB7AFBVV95cUxOLUtrYWtENC00eXhwMEZ6bm5hTTVoTkNEU01Pck1vaFZhTGlfTWZkb3loTE9IcVgyeFFTYjR0V1htQ3Y3akJVbDRMN1lPWDZ2ZWxpMktGQ0o4NjBqZW5JNWtoYU5GRmJZeV83a2syY3F2N1dXVlcwVnc2SGlXWHpJTGdzb21qYjd0dk85cDhfcEdROWFJdTh5bl9hc0xkSTQwNEtvSk9uYllhNkNEeEpyZjM3S2J4M2VrZHdXTW8zdE5ZUXpaZTZPTHBNaHNXSGNmdGJlZXd5M0huMVVUYXhoSFFmSTFqcWttcHlhWg?oc=5",
+          "published": "2026-11-16T01:16:00-06:00",
+          "date": "2026-11-16",
+          "label": "Nov 16, 2026 1:16 AM CT",
+          "weekday": "Mon",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:4f082da1800fe44e",
           "kind": "headline",
           "lane": "news",
@@ -6936,27 +6957,6 @@
           "date": "2026-11-02",
           "label": "Nov 2, 2026 2:00 AM CT",
           "weekday": "Mon",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:83daaf561d598c06",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Equiti Global",
-          "sourceId": "headline",
-          "title": "Nikkei 225 declines as Japan's industrial output and retail sales slow - Equiti Global",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOcTI5NnpCUFdQbmhObE11TkZyX052cl9DR3oybFMzRjBtQV9CRWk4ZlQtRFg2VjdGMEItS0xDYkVoS0lPMTR1cVBXMjZacF9VMzVkZEJhU3RsTHRNb1htaHdBVmRtZUN6RlFfckNJUW40Y1NpSkFQMXA1WXNZZzgxSDR6UnZCRlJJalJOLXdpQjN1S0dJQ0J3aTJKNFIxLXlybll6MlBGeGwxZ3Zla2xYY1hTV2xQZEVW?oc=5",
-          "published": "2026-11-01T01:07:42-06:00",
-          "date": "2026-11-01",
-          "label": "Nov 1, 2026 1:07 AM CT",
-          "weekday": "Sun",
           "timeKnown": true,
           "tags": [
             "headline",

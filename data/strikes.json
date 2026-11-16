@@ -1,5 +1,23 @@
 {
+  "counts": {
+    "energy": 0,
+    "total": 12
+  },
+  "gaps": [],
   "items": [
+    {
+      "country": "Iran",
+      "date": "2026-11-16",
+      "means": "drone",
+      "published": "2026-11-16T09:14:00-06:00",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "STANDBY",
+      "source": "The Hill",
+      "target_type": "military",
+      "title": "Iran veteran: Troops had ‘nothing’ to protect them from drone strikes - The Hill",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOS2MxbjRCeFNoM3F1NDlKbUNBYXBTalZBNm5QMjNjUTBuMHBGenN5dzVSQzZhNkFoNmVZOHJFdDgtUkpReUVfYjZqb0xFamhhZlA5ZmZLS18yekJEWkctYWpqUlBZa0VOemFDcUNQdHFjYlZBSUxqZ3ZZTm9rQUdicVU3Mko5eUVVaGdyM9IBkgFBVV95cUxOajJLM1BVeUYtVlVQSlI3TldGY3pwclRINWVmZHdWMEExS0pnVGFpMnRiRHh5LXJJRnJ6WGRzRWszUnVHME9KaDdCNWRZeHRpcm54Zy1zS1RPc3h1Q1l4QkNGTzFsTm9HalgxVXNkTUlseXhPSEFBdDM2eE9ETXJIdzA5WFFLaVNDOTFreTVZWUZXdw?oc=5"
+    },
     {
       "country": "Russia",
       "date": "2026-11-16",
@@ -116,11 +134,40 @@
       "target_type": "military",
       "title": "Mass drone attack on Moscow grounds flights at region's airports - The Kyiv Independent",
       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPRXoyWGM3b0JWX0xRaXdKUUhGQjJITDhrTDk5WDlBdmtZam9CZ09LNk53UkRXTE1QcDdZY2toVFdZeV8wZ2FhTjBpQU1uZ1dnc0hnSDVmaTJoX19vUEd2bkRVRjVQUUJVMno3S1d6YzdhaHJFcm5YdnU1NzZtZzFaZFhwTk54TTJXQmluclZmaUdwVlNGTEhV?oc=5"
+    },
+    {
+      "country": "Israel",
+      "date": "2026-11-12",
+      "means": "airstrike",
+      "published": "2026-11-12T15:35:54-06:00",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "STANDBY",
+      "source": "UN News",
+      "target_type": "civilian",
+      "title": "Six killed in Israeli airstrike on Gaza’s Nasser Hospital - UN News",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5sQ3c1WGhWTFdTXzE0Z3N3WXhteVh4NEFLTmcyXzA0UE84RklUQ05hNzEyaEtLd1hiS3lWNjgteHFGSnotUTNuTjB0THRyLWtkVU1xdVVPcw?oc=5"
+    },
+    {
+      "country": "",
+      "date": "2026-11-11",
+      "means": "",
+      "published": "2026-11-11T11:30:15-06:00",
+      "related": 7,
+      "relatedSources": [
+        "BBC",
+        "The New York Times",
+        "Notes From Poland",
+        "Reuters",
+        "DW.com",
+        "Security Today",
+        "Courthouse News Service"
+      ],
+      "severity": "STANDBY",
+      "source": "Facebook",
+      "target_type": "military",
+      "title": "DW News. . Fake and AI- manipulated images spread online after the Kraków attack, fueling false narratives about the massacre. DW Fact Check examines what's real and what isn't. #DWFactcheck #Krakow #Disinformation #FactCheck #Poland - Facebook",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxONm9JN05HclBVb3BicnJrLUlzb0dWMGktS1U1aDJyS1pmU2lINWlidlFZSFR2dFN2NVVKWTJ4RU93cjZqeEN4RVFQWkhOTWtmWXUzNFhzNU1YSVdoY3Jvdy1NNEtVWE5yUzl2OGdUdVdQXzYxT3luNWZlWEE4MUFQRnE2NWV2ZWJyVkd5MUNJdVdFSm03ZjJmeHlSNG01WUJRcUk2Yml3Mi1kS1d5YWVJaVpDNVNEY2xxVjFaYUNnUV9wdjNHaHJ1QXhQNU4tbW1PYmdtdWVDZWExOU52aGw4VElRUmZfcFlv?oc=5"
     }
-  ],
-  "counts": {
-    "total": 9,
-    "energy": 0
-  },
-  "gaps": []
+  ]
 }

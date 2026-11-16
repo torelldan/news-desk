@@ -5018,8 +5018,18 @@
     },
     {
       "date": "2026-11-16",
-      "label": "Nov 16, 2026 9:16 AM CT",
+      "label": "Nov 16, 2026 10:27 AM CT",
       "outlooks": [
+        {
+          "id": "quake:592915d1db10a3c1",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:77bf33d243577b8d",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
         {
           "id": "quake:e64ce0ab3d71bc6c",
           "outlook": "First reading. Watch the next 72 hours.",
@@ -5051,16 +5061,6 @@
           "severity": "STANDBY"
         },
         {
-          "id": "quake:db2f608283b1cc1b",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "STANDBY"
-        },
-        {
-          "id": "quake:12cac7fc001af2cc",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "STANDBY"
-        },
-        {
           "id": "quake:04e7abd363545af2",
           "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
           "severity": "STANDBY"
@@ -5076,6 +5076,16 @@
           "severity": "STANDBY"
         },
         {
+          "id": "gdacs:c2ca81e7c37394d3",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "gdacs:9473ba2e7fd2ab0b",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
           "id": "gdacs:af07f6c14fe7ceb7",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
@@ -5086,22 +5096,12 @@
           "severity": "ALERT"
         },
         {
-          "id": "gdacs:875edff05cad74ae",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ALERT"
-        },
-        {
           "id": "gdacs:076de263d1d65560",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
         {
-          "id": "gdacs:2224d1137594f553",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ALERT"
-        },
-        {
-          "id": "gdacs:c1bdfa5b589a56a2",
+          "id": "gdacs:bdf9e09cfbb7f8bd",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
@@ -5121,22 +5121,12 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:8bdf0f49d0cb2afd",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ALERT"
-        },
-        {
-          "id": "headline:a62b7ee7f847e374",
+          "id": "headline:0bc6c12a90c795ca",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
         {
           "id": "headline:63e77d9b0f930858",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ALERT"
-        },
-        {
-          "id": "headline:08cccecee1d41c65",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
@@ -5152,11 +5142,6 @@
         },
         {
           "id": "headline:93bb9cea5bbd5698",
-          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
-          "severity": "ALERT"
-        },
-        {
-          "id": "headline:38231eb9e50d09fd",
           "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
           "severity": "ALERT"
         },
@@ -5196,8 +5181,18 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:b8d3ea17f34f4b04",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:b2feb3364a002c8d",
           "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:90b337ad3de37707",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
           "severity": "STANDBY"
         },
         {
@@ -5212,6 +5207,18 @@
         }
       ],
       "threats": [
+        {
+          "id": "quake:592915d1db10a3c1",
+          "kind": "quake",
+          "severity": "STANDBY",
+          "title": "M4.6 113 km ESE of Wadomari, Japan"
+        },
+        {
+          "id": "quake:77bf33d243577b8d",
+          "kind": "quake",
+          "severity": "STANDBY",
+          "title": "M4.8 166 km N of Caluula, Somalia"
+        },
         {
           "id": "quake:e64ce0ab3d71bc6c",
           "kind": "quake",
@@ -5249,18 +5256,6 @@
           "title": "M5.0 256 km SSE of Ambon, Indonesia"
         },
         {
-          "id": "quake:db2f608283b1cc1b",
-          "kind": "quake",
-          "severity": "STANDBY",
-          "title": "M5.0 74 km N of Pārūn, Afghanistan"
-        },
-        {
-          "id": "quake:12cac7fc001af2cc",
-          "kind": "quake",
-          "severity": "STANDBY",
-          "title": "M5.1 169 km NW of Gorontalo, Indonesia"
-        },
-        {
           "id": "quake:04e7abd363545af2",
           "kind": "quake",
           "severity": "STANDBY",
@@ -5279,6 +5274,18 @@
           "title": "M4.7 103 km W of Attu Station, Alaska"
         },
         {
+          "id": "gdacs:c2ca81e7c37394d3",
+          "kind": "gdacs",
+          "severity": "ALERT",
+          "title": "Earthquake in Japan"
+        },
+        {
+          "id": "gdacs:9473ba2e7fd2ab0b",
+          "kind": "gdacs",
+          "severity": "ALERT",
+          "title": "Earthquake in Eastern Gulf Of Aden"
+        },
+        {
           "id": "gdacs:af07f6c14fe7ceb7",
           "kind": "gdacs",
           "severity": "ALERT",
@@ -5291,28 +5298,16 @@
           "title": "Earthquake in Indonesia"
         },
         {
-          "id": "gdacs:875edff05cad74ae",
-          "kind": "gdacs",
-          "severity": "ALERT",
-          "title": "Earthquake in Japan"
-        },
-        {
           "id": "gdacs:076de263d1d65560",
           "kind": "gdacs",
           "severity": "ALERT",
           "title": "Tropical Cyclone XAVIER-26"
         },
         {
-          "id": "gdacs:2224d1137594f553",
+          "id": "gdacs:bdf9e09cfbb7f8bd",
           "kind": "gdacs",
           "severity": "ALERT",
           "title": "Forest fires in Australia"
-        },
-        {
-          "id": "gdacs:c1bdfa5b589a56a2",
-          "kind": "gdacs",
-          "severity": "ALERT",
-          "title": "Earthquake in Afghanistan"
         },
         {
           "id": "who:10253c286a612334",
@@ -5333,28 +5328,16 @@
           "title": "Yellow fever - WHO African Region"
         },
         {
-          "id": "headline:8bdf0f49d0cb2afd",
-          "kind": "usgov",
-          "severity": "ALERT",
-          "title": "Library of Congress to Unveil “Voices of the Early Americas,” Featuring Rare Artifacts, Maps and Indigenous Histories - Library of Congress (.gov)"
-        },
-        {
-          "id": "headline:a62b7ee7f847e374",
+          "id": "headline:0bc6c12a90c795ca",
           "kind": "war-ukraine",
           "severity": "ALERT",
-          "title": "Ukraine hits Kerch bridge between Russia and occupied Crimea - The Guardian"
+          "title": "‘NATO will collapse’: Russia stalls Ukraine talks, seeks to divide Europe - Al Jazeera"
         },
         {
           "id": "headline:63e77d9b0f930858",
           "kind": "war-ukraine",
           "severity": "ALERT",
           "title": "Ukraine Facility: Council approves largest-ever payment of €8 billion to Kyiv - Council, European Union"
-        },
-        {
-          "id": "headline:08cccecee1d41c65",
-          "kind": "war-iran",
-          "severity": "ALERT",
-          "title": "Iran Update, November 15, 2026 - Institute for the Study of War"
         },
         {
           "id": "headline:85be09dd815b4e3a",
@@ -5373,12 +5356,6 @@
           "kind": "israel",
           "severity": "ALERT",
           "title": "Can Netanyahu and Eisenkot form a ‘unity’ government in Israel? - Al Jazeera"
-        },
-        {
-          "id": "headline:38231eb9e50d09fd",
-          "kind": "war-iran",
-          "severity": "ALERT",
-          "title": "Fatih Birol: The Energy World Will Never Be the Same As Before the Iran War - Time Magazine"
         },
         {
           "id": "headline:d4882d9e5f29cb7b",
@@ -5423,10 +5400,22 @@
           "title": "AFGE Urges Congress to Repair Damage Done to Federal Workers and Agencies by Trump Administration - AFGE"
         },
         {
+          "id": "headline:b8d3ea17f34f4b04",
+          "kind": "climate",
+          "severity": "STANDBY",
+          "title": "Down to Earth - COP31 climate summit: Can we electrify the world? - France 24"
+        },
+        {
           "id": "headline:b2feb3364a002c8d",
           "kind": "war-iran",
           "severity": "STANDBY",
           "title": "Trump says Iran war 'highly unlikely' to resume - AFP.com"
+        },
+        {
+          "id": "headline:90b337ad3de37707",
+          "kind": "war-iran",
+          "severity": "STANDBY",
+          "title": "Vance blames Iran war for GOP midterm losses - PBS"
         },
         {
           "id": "headline:2b25133f4668f891",
@@ -5443,11 +5432,6 @@
       ],
       "trends": [
         {
-          "category": "us-gov",
-          "name": "us gov",
-          "volume": null
-        },
-        {
           "category": "ukraine-war",
           "name": "ukraine war",
           "volume": null
@@ -5455,6 +5439,11 @@
         {
           "category": "iran-war",
           "name": "iran war",
+          "volume": null
+        },
+        {
+          "category": "us-gov",
+          "name": "us gov",
           "volume": null
         }
       ],
