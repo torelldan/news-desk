@@ -1195,8 +1195,9 @@ def main() -> int:
     save_json(DATA / "lookback.json", lookback)
     try:
         import deskextra
-        strike_doc = load_json(DATA / "strikes.json", {"items": []})
-        save_json(DATA / "strikes.json", deskextra.normalize_strikes(strike_doc))
+        import boards as strike_boards
+        strike_doc = strike_boards.fetch_strikes(now, load_json(DATA / "strikes.json", {"items": []}), threat_items)
+        save_json(DATA / "strikes.json", strike_doc)
     except Exception as err:
         errors.append(f"Strikes: {err}")
     try:
@@ -1212,7 +1213,7 @@ def main() -> int:
         prev_log = load_json(DATA / "trendlog.json", {})
         log, rising_items, rising_changes = deskextra.update_trendlog(prev_log, history, now.date().isoformat(), threat_items)
         save_json(DATA / "trendlog.json", {"topics": log["topics"], "clusters": log["clusters"], "states": log["states"], "checkedAt": log["checkedAt"]})
-        save_json(DATA / "rising.json", {"items": rising_items, "changes": rising_changes, "gaps": []})
+        save_json(DATA / "rising.json", {"items": deskextra.rising_from_trends(trends, rising_items), "changes": rising_changes, "gaps": []})
     except Exception as err:
         errors.append(f"Rising situations: {err}")
     print(

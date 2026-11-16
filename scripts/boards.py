@@ -200,6 +200,24 @@ def quake_severity(mag, place: str = "", tsunami: bool = False) -> str:
     return "STANDBY"
 
 
+def _cap_quakes(rows: list[dict], standby_cap: int = 8) -> list[dict]:
+    """Keep every notable quake, plus the newest smaller ones so the source date moves."""
+    notable = [row for row in rows if row.get("severity") != "STANDBY" or row.get("usImpact")]
+    spare = [row for row in rows if row not in notable]
+    spare.sort(key=lambda row: row.get("published") or "", reverse=True)
+    chosen = list(notable)
+    seen = {row.get("url") for row in chosen}
+    for row in spare:
+        if row.get("url") in seen:
+            continue
+        if sum(1 for item in chosen if item.get("severity") == "STANDBY" and not item.get("usImpact")) >= standby_cap:
+            break
+        chosen.append(row)
+        seen.add(row.get("url"))
+    chosen.sort(key=lambda row: row.get("published") or "", reverse=True)
+    return chosen[:30]
+
+
 def keep_quake(mag, place: str = "", tsunami: bool = False, alert: str = "", felt: int = 0) -> bool:
     """Distant quakes stay off the board unless they are M6+ with a reported impact."""
     try:
@@ -327,6 +345,30 @@ def _headlines(query: str, now: datetime, retain_days: int = 120, limit: int = 4
         if len(rows) >= limit:
             break
     return rows
+
+
+def fetch_strikes(now: datetime, previous: dict | None, board_items: list | None) -> dict:
+    """Google News plus strike headlines already on the threat board. The refresh used to only tidy the old file."""
+    from deskextra import merge_strikes, strike_from_row
+    fresh = []
+    gaps = []
+    query = '(drone OR missile OR airstrike OR bombardment OR shelling OR "drone attack") when:7d'
+    try:
+        for row in _headlines(query, now, retain_days=7, limit=20):
+            item = strike_from_row(row)
+            if item:
+                fresh.append(item)
+    except Exception as err:
+        gaps.append(f"Strikes: {err}")
+        print(f"  strikes: {err}")
+    for row in board_items or []:
+        item = strike_from_row(row)
+        if item:
+            fresh.append(item)
+    doc = merge_strikes(previous, fresh, now.strftime("%Y-%m-%d"))
+    doc["gaps"] = gaps
+    print(f"  strikes {len(doc.get('items') or [])}")
+    return doc
 
 
 def merge_rows(fresh, previous, cutoff: str, cap: int = 40) -> list[dict]:
@@ -493,8 +535,11 @@ def fetch_threats(now: datetime) -> dict:
             impact = alert.lower() in {"yellow", "orange", "red"} or felt >= 5
             if not is_us_place(place) and not tsunami and float(mag) >= 6 and impact and sev == "STANDBY":
                 sev = "ALERT"
-            if not keep_quake(mag, place, tsunami, alert, felt):
+            notable = keep_quake(mag, place, tsunami, alert, felt)
+            if not notable and float(mag) < 4.5:
                 continue
+            if not notable:
+                sev = "STANDBY"
             note = "USGS earthquake, magnitude 4.5 or greater, past 7 days."
             if impact and not is_us_place(place):
                 note += " Reported shaking or an alert color is on the USGS record."
@@ -509,9 +554,9 @@ def fetch_threats(now: datetime) -> dict:
                 url, when, ["quake", sev.lower()],
                 {"severity": sev, "lat": coords[1], "lon": coords[0], "mag": float(mag), "usImpact": is_us_place(place) or tsunami},
             ))
-        quakes.sort(key=lambda row: row.get("mag") or 0, reverse=True)
-        items.extend(quakes[:30])
-        print(f"  quakes {len(quakes[:30])}")
+        quakes = _cap_quakes(quakes)
+        items.extend(quakes)
+        print(f"  quakes {len(quakes)}")
     except Exception as err:
         gaps.append(f"USGS: {err}")
         print(f"  usgs FAILED: {err}")
@@ -1544,6 +1589,26 @@ def european_named_storm(title: str, note: str = "") -> bool:
     return bool(named and place)
 
 
+_POLITICS_ONLY = re.compile(
+    r"\b(midterms?|election|voters?|legislatur\w*|ballot|polls?|conference)\b",
+    re.I,
+)
+_THREAT_ELEMENT = re.compile(
+    r"\b(violen\w*|unrest|riot\w*|emergency|attacks?|war|strikes?|missile|kills?|killed|bombs?|"
+    r"explos\w*|invasion|terror\w*|assassin\w*|evacuat\w*|martial|coup|shoots?|shooting|"
+    r"dead|casualt\w*|drone|airstrike|shelling|hostage|siege)\b",
+    re.I,
+)
+
+
+def politics_without_threat(title: str, note: str = "") -> bool:
+    """Election color without violence, unrest, or an attack is not a threat-board alert."""
+    blob = f"{title or ''} {note or ''}"
+    if not _POLITICS_ONLY.search(blob):
+        return False
+    return _THREAT_ELEMENT.search(blob) is None
+
+
 def classify_desk(title: str, note: str, hinted: str) -> str:
     """Conflict kinds only when the headline itself names that conflict.
 
@@ -1629,7 +1694,7 @@ def _try_desks(now):
                 continue
             row = dict(row)
             assigned = classify_desk(row.get("title") or "", row.get("note") or "", kind)
-            if assigned == "news":
+            if assigned == "news" or politics_without_threat(row.get("title") or "", row.get("note") or ""):
                 continue
             row["kind"] = assigned
             row["lane"] = "news"

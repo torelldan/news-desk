@@ -1,91 +1,113 @@
 {
-  "counts": {
-    "energy": 3,
-    "total": 5
-  },
-  "gaps": [],
   "items": [
     {
-      "country": "Russia",
-      "date": "2026-11-11",
-      "means": "drone",
-      "published": "2026-11-11T02:00:00-06:00",
-      "related": 2,
-      "relatedSources": [
-        "The SOFX Report",
-        "Мілітарний"
-      ],
-      "severity": "ALERT",
-      "source": "https://theins.press/en",
-      "target_type": "transport",
-      "title": "Drone strike on key northern port of Ust-Luga sparks major fire as Russian military bloggers report three helicopter crews killed",
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5qNTFtMy1rV2ZPVElGbENaVW9MVzBzT2lFU1k1VnV4Zy1Wc0tETExIT0JwQkE2cDZLSGpuOVJqM0JjdkRRLWtudVZMTQ?oc=5"
-    },
-    {
-      "confirmed": true,
-      "country": "Egypt",
-      "date": "2026-11-11",
-      "means": "drone",
-      "published": "2026-11-11T08:48:36-06:00",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "STANDBY",
-      "source": "EnergyNow.com",
-      "tags": [
-        "confirmed"
-      ],
-      "target_type": "energy",
-      "title": "Drone Strike in Egypt Sparks Security Concerns About Suez Oil Exports - EnergyNow.com",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxORXl4NE9CYThNR3hEN296SGFXVS0xRmItUjFHSGV0OGEtdG9PMXlMQVpzZGJYVzFUX05HWFZva2pSakNiUWdSbzVFUzJ0Qjc0U0I3THVBbGVrU1Z1TV91d2FVYXp6Z25KYzRmbTJtdTlyNUl3TU82TGRZdFhuWk11UXJLUzRLYjNzTGY0Mkl4ZXhndkdxVTJ5bjNWdUF0VVplZ1E?oc=5"
-    },
-    {
-      "confirmed": true,
-      "country": "Ukraine",
-      "date": "2026-11-11",
-      "means": "drone",
-      "published": "2026-11-11T04:29:45-06:00",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "STANDBY",
-      "source": "TRT World",
-      "tags": [
-        "confirmed"
-      ],
-      "target_type": "military",
-      "title": "Ukraine drone strike kills two in Russia’s Smolensk as Leningrad region faces massive attack - TRT World",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBVMUViZVh0d2JUWE1VdjNFeklSdk5MU2thNUNXRVF1djZDZUs0WGY0MkNMeHEwMDZqMUsta1JSTlp0a2FZNnVoT1Y0TC1CSkpOSUxxYkRkNzI?oc=5"
-    },
-    {
-      "country": "Russia",
-      "date": "2026-11-10",
-      "means": "",
-      "published": "2026-11-10T06:19:36-06:00",
-      "related": 1,
-      "relatedSources": [
-        "Radio Free Europe/Radio Liberty"
-      ],
-      "severity": "STANDBY",
+      "title": "Ukraine launches biggest drone attack on Russia since war began, defence ministry data shows - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOTmhGNVhidkt3TlpMM3l5UmpTaGYyRnEyZ0pDQnhydG0wWm9sS3VGN0pndWVSODhUbFhYTW5EalBIMEljZEVsNndnbVVNd1dmVzNOMVNHYmtpOEZjVXBaOHNfQ0dzQjlva0QyNEU5OS1vMm50TmhuVEFaZDZ0THpwTDUtX3dpeV9HUEYwOEZaVkhBNzBrZXg1dXljcmVFRC1CT0hqclh2cU9uSklvSTRnSUxXVTlmQmNhNlI1Q1E0S2hSdzF3?oc=5",
       "source": "Reuters",
-      "target_type": "energy",
-      "title": "EXCLUSIVE: Recent Ukrainian attacks have reduced Russia's oil processing capacity by 30%, sources say - Reuters",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPTXJUZnFVTVJmR25VaW9YQkhwMTJEM0FzTWVHLXRZOFpXV09zN18zd1RIOThGTHdiVUVmbVFnbnJqRUhfQzdSQzBDTHFLUUxtSEI3YkZyNFQ0RzdlQ3oxMVRHb1d2YUNBa3hIbWQ3VWxmYTBNaWpiVmdjOXB4ZDlzMFhQQk10a1FZWkhWem81TGNaS0JFc25FNUV6eFVhd2RIYldEQTlCU051VUFlalpnSlBoYzdOVFFFNVN4cjNjRjVuX05jNGc?oc=5"
+      "date": "2026-11-16",
+      "published": "2026-11-16T07:53:57-06:00",
+      "country": "Ukraine",
+      "means": "drone",
+      "target_type": "military",
+      "severity": "STANDBY",
+      "related": 0,
+      "relatedSources": []
     },
     {
-      "confirmed": true,
-      "country": "Russia",
-      "date": "2026-11-06",
+      "title": "Black Sea drone strikes hit four ships near Romanian coast - Seatrade Maritime News",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPWDA5bUF1ZUlGSnZmWVFvN19Xb2RJSHlkcTJ3WmdyVlJyeXFIZmdGRnI0RTMydHZ4YV9CUEVFeHctWEY5U0xqS19aSGlkTGNHRUZrMV9QeG1BWWFiTTZJOGRqeU5xeTNZRWN1SzFWRDRNckxVQW5QOHFjcmNadWI0MmRNcE15d2dXYXhUbUdBbjlrRHJDQ1Bxb2p1Qm1zVzk4U200?oc=5",
+      "source": "Seatrade Maritime News",
+      "date": "2026-11-16",
+      "published": "2026-11-16T04:56:35-06:00",
+      "country": "",
       "means": "drone",
-      "published": "2026-11-06T03:55:40-06:00",
-      "related": 0,
-      "relatedSources": [],
+      "target_type": "military",
       "severity": "STANDBY",
-      "source": "UNITED24 Media",
-      "tags": [
-        "confirmed"
-      ],
-      "target_type": "energy",
-      "title": "Seven Strikes in One Year: Russia’s Afipsky Oil Refinery Faces Another Ukrainian Drone Attack - UNITED24 Media",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPUndQUXhXZ1VZeVJ0QVB3ZmhYekEyeUNVU3JEdlBNaDNqT0E2bWotN0txMno0VFJEUEhsY29ZSEtLUUJKZkVaZ2xlaGc4dEdyRmZsay1MQmM2b3JPdFo3TmtYeDQ3bExrVGk4UFlhQ2RzVGJ4ekc2MmpBVzRNMXVpeXl2cHczSE1USTRxci0wYzJMaHJUdnNQcE9LUXFHVFgxbUlSMHhlUmZDbzhCSXRHNUppS2Y4SGREMzhHakxHbWRQWnlDT01HN2VkLVRJM0psYkktMg?oc=5"
+      "related": 0,
+      "relatedSources": []
+    },
+    {
+      "title": "NATO member Estonia to close Russia border after attempted 'sabotage' of drone maker - CNBC",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQOF84RU1Bb01RbGlqNU00TzBhV3p0YzRHa2duaFd1Z19YRVJITzVRNUtxSHhZaEw3dl9UckdxSC1idU9OYlJ3Y3l2Wm5qSERvUzl2dFlFMW56NnBFUXI0TzVLakJYNDcxOE91SHYwejJLRVh2VFBFbEpMY1JlN09FYtIBhgFBVV95cUxNNXJkeHBhemJPNlhlS05hS2o5UE9VQVQ5NVdOR1BIenhDX3hMbUdvT29pMW1qUkVtUDdBcE1FVGxjbkM0SzhGQ3BKcUx4SzkzbG9BY25pWFptbUZRdUhZclN1UHBOMUh1aHIwVDl4NmMzaXAzanEwRk00by1sOXBsNnpxRFRRdw?oc=5",
+      "source": "CNBC",
+      "date": "2026-11-16",
+      "published": "2026-11-16T03:30:31-06:00",
+      "country": "Russia",
+      "means": "drone",
+      "target_type": "military",
+      "severity": "STANDBY",
+      "related": 0,
+      "relatedSources": []
+    },
+    {
+      "title": "Iran launches drone attacks against US military base in Bahrain - The Guardian",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPS0RnUlBTa1J0QTBzR0RHcldQd0twTEtaUWwzV2xlSzJOSURDRW9hcHVqaUNtUVp3YU9uMGZ1N2djRU1xeGdsTzlBLU9Jdm1iSTQ5RDlzc1VPb293V2xkNk1Ddms0VHZvMVJ3VklsXy1KUGtkTW03RnY1VUZ5VU1jaTFTNDlUYU9UVEw4MVlEVkdPNnNWX3hQejRueUotWmxEal9lTnJhaloyNTBCTFE?oc=5",
+      "source": "The Guardian",
+      "date": "2026-11-15",
+      "published": "2026-11-15T11:36:00-06:00",
+      "country": "Iran",
+      "means": "drone",
+      "target_type": "military",
+      "severity": "STANDBY",
+      "related": 0,
+      "relatedSources": []
+    },
+    {
+      "title": "Iran raises stakes with new drone attacks as Trump signals a waiting game - CNN",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE0wRnhRaVVocE9uVEN6Ml82aHNlaXc4di1fM1NJR29BMHp3SmdBNDRMcUt2UFZ6QnV6LU5WeDFNZjYwOTdXd1FoczdLOUVwb1VHQTRtVUN0VUpBMlM2U0c0cWxjMHRsMkI1S2dwcjZfMFdMQVZoS1oydlBiYUY4Zw?oc=5",
+      "source": "CNN",
+      "date": "2026-11-15",
+      "published": "2026-11-15T09:36:17-06:00",
+      "country": "Iran",
+      "means": "drone",
+      "target_type": "military",
+      "severity": "STANDBY",
+      "related": 0,
+      "relatedSources": []
+    },
+    {
+      "title": "The Pentagon Ignored a Warning About the Danger of Iran’s Drones - The Atlantic",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPVEJkb2FSNEU5NWtBVk5vX3RudElUMEFFWlVoZXhYMFItMC1FOXhtY0VyenN5VzdRNlh5c1RzZnQzUnZxMHR6Z3dSX2dySDg1dXVybWlXV0dLQU9CYnBCYmhwMWNrZjFNVUpSNE9DNkF5SmpaSHNyNkRIdHFoOTEtRXY3WUphM2hGWC1Wbi0zNUFhejhfLUtMVjBR?oc=5",
+      "source": "The Atlantic",
+      "date": "2026-11-15",
+      "published": "2026-11-15T08:52:46-06:00",
+      "country": "Iran",
+      "means": "drone",
+      "target_type": "military",
+      "severity": "STANDBY",
+      "related": 0,
+      "relatedSources": []
+    },
+    {
+      "title": "US intercepts two Iranian drones as IRGC claims strike on radar in Bahrain - The Jerusalem Post",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1uWFRmVVJGY3FWZXdNNF9LRFJMMGpIaUxsMWhIejF6MnN1QkJFVjRndHFGaEw5RXlrYWRWMWNTMkFIaHNkeURhM01ZcGRFUTlTOFlBVTA4b3Y1Y2dZX0Y1M0cxakxyM0RKbmc?oc=5",
+      "source": "The Jerusalem Post",
+      "date": "2026-11-15",
+      "published": "2026-11-15T01:50:41-06:00",
+      "country": "",
+      "means": "drone",
+      "target_type": "military",
+      "severity": "STANDBY",
+      "related": 0,
+      "relatedSources": []
+    },
+    {
+      "title": "U.S. investigates suspected ‘unauthorized drone activity’ at U.K. air base - The Washington Post",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNSko4NTBtd0dJSTRrQWlEWnBoZjM1a1ZWQ1JUNXJSaGF6UkNpVUN2b1pMMVJmcGZkSy1XQlFaR0JWcUdOSHFIOEhXZFNBeF9uR2xTSzdES1MxRURudUtNTVJFSTFSZW5fS29XSU4tZHZPem9ERzZGN1FObW9qQ3ZtY2l2RDZ1ZEZ2Wlk3T0tMek5oVUYxc2NqYTlCeDhTQ1VldWdOUmJKeWVtUDJDRUNfeVkzT2RKUkVfMVE?oc=5",
+      "source": "The Washington Post",
+      "date": "2026-11-14",
+      "published": "2026-11-14T21:00:00-06:00",
+      "country": "",
+      "means": "drone",
+      "target_type": "military",
+      "severity": "STANDBY",
+      "related": 0,
+      "relatedSources": []
     }
-  ]
+  ],
+  "counts": {
+    "total": 8,
+    "energy": 0
+  },
+  "gaps": []
 }
