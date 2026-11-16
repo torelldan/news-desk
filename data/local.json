@@ -2,7 +2,7 @@
   "gaps": [
     "Power_TN row hidden (2025-10-06, affected 0, served 0).",
     "1 ended road projects hidden.",
-    "TEMA: curl: (22) The requested URL returned error: 403\n"
+    "TEMA news page answered with no dated notices."
   ],
   "items": [
     {
@@ -11,10 +11,10 @@
       "date": "2026-11-15",
       "id": "local-nws-none",
       "kind": "nws",
-      "label": "Nov 15, 2026 10:04 AM CT",
+      "label": "Nov 15, 2026 10:26 PM CT",
       "lane": "local",
       "note": "api.weather.gov answered for 35.802,-86.907 and returned no alerts.",
-      "published": "2026-11-15T10:04:29-06:00",
+      "published": "2026-11-15T22:26:13-06:00",
       "severity": "STANDBY",
       "soWhat": "",
       "source": "NWS",
@@ -29,13 +29,13 @@
     {
       "action": "Read the source. No kit change unless you are in the named area.",
       "confidence": "reported",
-      "date": "2026-11-14",
-      "id": "local-road:272d2c94902e961b",
+      "date": "2026-11-15",
+      "id": "local-road:587975a9fcffaa8d",
       "kind": "road",
-      "label": "2026-11-14",
+      "label": "2026-11-15",
       "lane": "local",
       "note": "Scheduled Road Work",
-      "published": "2026-11-15T10:04:29-06:00",
+      "published": "2026-11-15T22:26:13-06:00",
       "severity": "ALERT",
       "soWhat": "no action needed",
       "source": "TDOT SmartWay",
@@ -44,19 +44,19 @@
         "tennessee",
         "williamson"
       ],
-      "title": "Interstate 840 WB in Williamson County - between MILE MARKER 38 and MILE MARKER 27 Scheduled Road Work reported at 11/14/2026 7:41 PM (CT). WB right lane (of 2 lanes) blocked, righ",
+      "title": "Interstate 65 NB in Williamson County - between MILE MARKER 69 and MILE MARKER 74.2 Scheduled Road Work reported at 11/15/2026 9:20 PM (CT). NB 3 left lanes (of 4 lanes) blocked, l",
       "url": "https://smartway.tn.gov/"
     },
     {
       "action": "Read the source. No kit change unless you are in the named area.",
       "confidence": "reported",
-      "date": "2026-11-14",
-      "id": "local-road:3c29793ef0435bca",
+      "date": "2026-11-15",
+      "id": "local-road:272d2c94902e961b",
       "kind": "road",
-      "label": "2026-11-14",
+      "label": "2026-11-15",
       "lane": "local",
       "note": "Scheduled Road Work",
-      "published": "2026-11-15T10:04:29-06:00",
+      "published": "2026-11-15T22:26:13-06:00",
       "severity": "ALERT",
       "soWhat": "no action needed",
       "source": "TDOT SmartWay",
@@ -65,7 +65,7 @@
         "tennessee",
         "williamson"
       ],
-      "title": "Interstate 840 EB in Williamson County - near MILE MARKER 27 Scheduled Road Work reported at 11/14/2026 7:42 PM (CT). EB right lane (of 2 lanes) blocked, right shoulder blocked.",
+      "title": "Interstate 840 WB in Williamson County - between MILE MARKER 38 and MILE MARKER 28 Scheduled Road Work reported at 11/15/2026 8:45 PM (CT). WB right lane (of 2 lanes) blocked, righ",
       "url": "https://smartway.tn.gov/"
     }
   ],

@@ -37,6 +37,27 @@
       ],
       "headlines": [
         {
+          "id": "headline:a53dbe89c66ad750",
+          "kind": "headline",
+          "lane": "news",
+          "source": "조선일보",
+          "sourceId": "headline",
+          "title": "Federal Reserve Warns of AI-Driven Financial Risks - 조선일보",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOSENGWlpId0p5YlRod0tMckM5aDRiR3lHSENXeEdVV3dlVHNmby1fel9oYjBSUm9IdzZHcHBoRGFYblBXU3lSeHdKQ3Z3Nm1kRXZjdDA2QlBqWnRVQk16MUNSUHZjeF90emdfejMyMjdhVWJwZm5tamFoeU5WWUZnWnVTbEhCb3BWOHkxOVFn?oc=5",
+          "published": "2026-11-15T17:11:14-06:00",
+          "date": "2026-11-15",
+          "label": "Nov 15, 2026 5:11 PM CT",
+          "weekday": "Sun",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:0ff8c0689324e207",
           "kind": "headline",
           "lane": "news",
@@ -91,6 +112,27 @@
           "published": "2026-11-14T16:59:18-06:00",
           "date": "2026-11-14",
           "label": "Nov 14, 2026 4:59 PM CT",
+          "weekday": "Sat",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:6775f4b87b5dc8f2",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Sada Elbalad English",
+          "sourceId": "headline",
+          "title": "Mohamed El-Erian: Global Markets Face Sharp Volatility as Investors Await Federal Reserve Signals - Sada Elbalad English",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQWjFSck5ITU9FeHZwS3BZejBxVkpEX2hBd0FqaF9IM1ZESnUxbEJSVnF1QzFIM2RTS0FXYi1CMHVuUGk0MF9pcXhwT1R2R2ZDV2RfRVZHcG84emR3Q25CSkxaSnZ4OGpnX1Q3WWpMXzlISElCS1dhRDYyZnRvVm5KdFk0ZC1HUkE1dzctTXJmZEFTZ2NvZThubWxMNzcxSkJCb3RtcGlrQ2VBT3ZFUFdqWGdINA?oc=5",
+          "published": "2026-11-14T15:45:06-06:00",
+          "date": "2026-11-14",
+          "label": "Nov 14, 2026 3:45 PM CT",
           "weekday": "Sat",
           "timeKnown": true,
           "tags": [
@@ -394,12 +436,12 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:ccc7f34a3e9c4f4b",
+          "id": "headline:e1fd6a15918f944f",
           "kind": "headline",
           "lane": "news",
-          "source": "Bloomberg.com",
+          "source": "Bloomberg",
           "sourceId": "headline",
-          "title": "Fed’s Williams Says Inflation ‘Far Too High,’ Work to Do - Bloomberg.com",
+          "title": "Fed’s Williams Says Inflation ‘Far Too High,’ Work to Do - Bloomberg",
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPWmwxOGI1cll5UUxfWkNqVEVhOEtfWGZaY1phLWdBdzBDVUhzMWJseXBPdTFsU3dQZW5HRlgzbWo2dEx1cWIxMnpjVjdFV1ZvTzJ5UXZDd1RRcFJyUEcyV2pqWndGc21aQ3JJMUtJeHFCM1JsNFg2eklQTkMtLXZacTFqZnhGaFdpTm1jc3p0cEF2aFNRTVJxckJCTy1MaFRnVGw0MUNiNm5qQ1lCRlRj?oc=5",
@@ -833,48 +875,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:34a6624de94b99d0",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Reuters",
-          "sourceId": "headline",
-          "title": "Fed's Logan calls for two more rate hikes, possibly rapidly - Reuters",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPZ0xfUlI5TmlGa3Z4Z0QtTF9FcVRjZ0hwNEFSOVNTX0otSERvdUdrZzBKazRheFd2Vlc3bWZhazZfY2haNFNKVi1WOWNnWWVfTmgyVk9iSXFqRTR3aHcwRV93UkF0ejRGVFdOdVR4N2NWalZkYkFhS3NTLWtsY1FjazJld1JBX0lBRmM4M1RhdHk3UDBjZFFWOUNQVm40bkU?oc=5",
-          "published": "2026-11-10T09:55:43-06:00",
-          "date": "2026-11-10",
-          "label": "Nov 10, 2026 9:55 AM CT",
-          "weekday": "Tue",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:dbd5cdd3e454a738",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Investopedia",
-          "sourceId": "headline",
-          "title": "October Inflation Comes in Hotter Than Expected - Investopedia",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNa0JhOWFodE9fMUh4WnFHaTNBbmFtaDNIallfMktpLVcwRGg5SkVHX0NQUlF1eUVPSUJ2RlZwM2NSZjBZa1JiLWJCc09RY0w5b2NSSWJvWXM0OWJWWVJ5WHZNa3ZVc3lodjAwR0tMc0UwVXNROGk0ZmpRamRER0M2ZFhWWVF4a0ZYZUMyT1YtalpMSF9FejB3TV9iX194dkV0d19GRnRhUTdsbUJWN3FGYw?oc=5",
-          "published": "2026-11-10T09:16:58-06:00",
-          "date": "2026-11-10",
-          "label": "Nov 10, 2026 9:16 AM CT",
-          "weekday": "Tue",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ]
     },
@@ -934,6 +934,48 @@
           "date": "2026-11-14",
           "label": "Nov 14, 2026 7:17 AM CT",
           "weekday": "Sat",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:be8e9bbdc4422ed4",
+          "kind": "headline",
+          "lane": "news",
+          "source": "WSJ",
+          "sourceId": "headline",
+          "title": "Canada Factory Activity Flatlines in September - WSJ",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOZE43elNfXy05WVRlX3dfZlVsb1BCejIySUJYR01sMHNwbk1tYXhvQUdhN0FuZTAxa053WElQeWU0dEd4OGp5WUpBOWhRN0pIVUIxZnVUZ2pBU2wwTVZVNjBKcERNYWxSNnpDTGxXbjNwOUpza29hRGFJSzFnM1FnTWNta1pnU2FTd293?oc=5",
+          "published": "2026-11-13T11:29:00-06:00",
+          "date": "2026-11-13",
+          "label": "Nov 13, 2026 11:29 AM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:93a245b980b2b9ef",
+          "kind": "headline",
+          "lane": "news",
+          "source": "TD Economics",
+          "sourceId": "headline",
+          "title": "The Weekly Bottom Line - TD Economics",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5iS3JheUxIbE9wdXkzWk1rUkxjT1p6VTJWeW1uMVpPY1hKYTMtNFF2Qzh1ck5JNTNKVGRSWXlBOWFta2xtZ2tVUTVhT0FlUmpqX1M2UngxLXRZZw?oc=5",
+          "published": "2026-11-13T02:00:00-06:00",
+          "date": "2026-11-13",
+          "label": "Nov 13, 2026 2:00 AM CT",
+          "weekday": "Fri",
           "timeKnown": true,
           "tags": [
             "headline",
@@ -1068,6 +1110,27 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:81bd56204c9cfb60",
+          "kind": "headline",
+          "lane": "news",
+          "source": "kalkine.ca",
+          "sourceId": "headline",
+          "title": "Canada’s Second-Quarter GDP Rebound Sets Up a Sharp Q4 Slowdown Risk - kalkine.ca",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOYzBCWnpCTFhSTGZ4XzFadjU1aUo5eXVvZU9NSDlTQUdib0xrQWhSTXVROTVFNFVJN2Z2Vk5VUnBGVDFRUENQTEw2MmtDSWtrSUVhYU13SjhmNDZsOVJBSWFiQTZNQ0ZnOV9OeklSOFV3ZUlSZHR3cTJvTm11Ry1OcE4wdUZkMFEydkFIczVOdHRvYjhEWkJkMW9maUZSYzhYWGZrTEYzc2c?oc=5",
+          "published": "2026-11-12T08:14:00-06:00",
+          "date": "2026-11-12",
+          "label": "Nov 12, 2026 8:14 AM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:3bdb915e257daad6",
           "kind": "headline",
           "lane": "news",
@@ -1110,12 +1173,12 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:cccbb3223b700c22",
+          "id": "headline:21890b47ba7d87dc",
           "kind": "headline",
           "lane": "news",
-          "source": "Bloomberg.com",
+          "source": "Bloomberg",
           "sourceId": "headline",
-          "title": "Canada’s Next Central Bank Leader May Need to Play the Villain - Bloomberg.com",
+          "title": "Canada’s Next Central Bank Leader May Need to Play the Villain - Bloomberg",
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPNmtuRzJnYjV6aUVuODU5cXJMRm9ZTVJfNzYwV2NtYkIzYUNhdkRYSFdZLWI5WHRWbzZrdVZoSHpaSTdveGllZGJVcFdWSmFrX0oxSHNsZWF3MHRHUWQ2Y3N4aXdMZG04Sklnam5tZFBpaFVIQmdrQ0swY2t4MThiTW8zTHVxb3ZWLW1MVU4wWm5nOWc5a0tTRHFST09BZVExenN4VGtBbUxNN1Z6Rnl6QUFkbGhlMDZlQjdRY2Jfa1JEaDFaTWIyVFNR?oc=5",
@@ -1164,6 +1227,27 @@
           "published": "2026-11-11T11:22:25-06:00",
           "date": "2026-11-11",
           "label": "Nov 11, 2026 11:22 AM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:27d87896c2ae7e15",
+          "kind": "headline",
+          "lane": "news",
+          "source": "KPMG International",
+          "sourceId": "headline",
+          "title": "Fall 2026 economic outlook - KPMG International",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNUzNLb1RiTkVMNUZjUm50R2xxYThpcUlLcHJXR045ZVBCZUdaUVZVd2xFTmFLdlNkMmpWeHIwY1N2SnNWRGpvOGlOeFJnUElXdUMxc1FKQk5QU3BGM2F0bW9LdjFkLU5vVi02ZC11azZnMi1pUzhFTHpJcVU4QkJGOS1NaXY?oc=5",
+          "published": "2026-11-11T07:30:46-06:00",
+          "date": "2026-11-11",
+          "label": "Nov 11, 2026 7:30 AM CT",
           "weekday": "Wed",
           "timeKnown": true,
           "tags": [
@@ -1675,90 +1759,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:6ff2d45436580fb3",
-          "kind": "headline",
-          "lane": "news",
-          "source": "kalkine.ca",
-          "sourceId": "headline",
-          "title": "Bank of Canada Rate Hike: Why the 2.5% Policy Rate Matters for Canada’s Economy - kalkine.ca",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQNTc1SGRYbldMaXI5NC05NVRRc3J3aHVVS0ZzUGdzbUF0SlRJekJSQi0yaXZUZ0FXZE1MblFrSG54WV9XT2lOT01vRzVfejB4MmVzczF4VGIzWUZLUUZkNDk5TEstaU81ZEJrTjNVemtEU0Y1QnY2eUQzRkMzQmtsRWFYcXFuTWNibDdUSTZ3aUtuanhxRHFOQ0hDMkM2NzQ2dXBNeXF2QzVXRFZhaFU4OTB5Yw?oc=5",
-          "published": "2026-11-06T02:00:00-06:00",
-          "date": "2026-11-06",
-          "label": "Nov 6, 2026 2:00 AM CT",
-          "weekday": "Fri",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:918c02b6ed8f1cdb",
-          "kind": "headline",
-          "lane": "news",
-          "source": "WSJ",
-          "sourceId": "headline",
-          "title": "Canada Unemployment Rate Climbs to Six-Month High of 6.7% - WSJ",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPVVBzZ0JvOGJQSG1VSUpXa2t3a3praFVISFpiaVJyLTdXVmV6NTQ2cFBHZl8xS2RudlF1WWd1aXVNUzNNUkp1Sk45a1pleEtvbTNidF9qRklrb1QyMGtxQVBtSkJTRGJHeGlqUkl4VHRUblZVSFR6Q3lybjRNSXlmQ05JS1lDNFltb3kyekJyZDhmekRlUHBZVldQSUVkbTQ?oc=5",
-          "published": "2026-11-06T02:00:00-06:00",
-          "date": "2026-11-06",
-          "label": "Nov 6, 2026 2:00 AM CT",
-          "weekday": "Fri",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:ee6230a2e633d32b",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Radio-Canada",
-          "sourceId": "headline",
-          "title": "Canadian economy lost 4,700 jobs in October as unemployment rate ticked up to 6.7% - Radio-Canada",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNQ1dwRHZTZXFuTXFMSkQ3QmRkcmFqOHpLcWtSSHo3MldhTG1jdTc5N0w1Y0NrbDRsOENKNUxLRWlIaG5YT2ExWm9pWkpxRm8zNnhEektsRHhzSlI4al9aY0VkSGdTTHJteEtJSWxOUmhCbTZxV0V4cUhUekpEdWdYVGI5ZDJxbjlsckZpTzAzVGFoY2VpV2xxaGR6U2MxaU5fc19vZ0NKM2V3QlNndHZhWnpqS3JZTWNmTWVSWk9RcEplYVNRZlBjVw?oc=5",
-          "published": "2026-11-06T02:00:00-06:00",
-          "date": "2026-11-06",
-          "label": "Nov 6, 2026 2:00 AM CT",
-          "weekday": "Fri",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:bfb7458e2c4d9350",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Canadian Mortgage Trends",
-          "sourceId": "headline",
-          "title": "Carney, Bank of Canada renew framework to focus on 2% inflation target - Canadian Mortgage Trends",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQejl3dzlPVGl4Q1NnVk54eE45TkN1WjVLaVlBUVhkejhMbDM1Rm5HQlR0d2E5R3d6dnczNGZ2bDNya2MzS0FZQ2l6M0ZvQjZsOXNvUmRHb0NUNHBGRjRfcmRQQ0tteDZDRlBBUjVDQ3RGcjBrN3hxY2hhbjBoTl9Hc3FZaXFBdEVqM1MteWNtQlFfTTJqNmx3RC0xNHJLcGpzY2VhNWdOWFZFX2FDRnYweURFVFRDeW8?oc=5",
-          "published": "2026-11-05T19:09:52-06:00",
-          "date": "2026-11-05",
-          "label": "Nov 5, 2026 7:09 PM CT",
-          "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ]
     },
@@ -1800,6 +1800,27 @@
           "date": "2026-11-14",
           "label": "Nov 14, 2026 6:16 PM CT",
           "weekday": "Sat",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:ba79bf866e8ff3a6",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Investing.com South Africa",
+          "sourceId": "headline",
+          "title": "B3 Q3 2026 slides: recurring revenue surges 16%, expenses rise faster By Investing.com - Investing.com South Africa",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPX0MtaFNjd0lCNzhKOTZnaUtKNGF1dHBYanNWSWRxOHc5VEZ6SHlDRFJwbm5uOTQxc0x6emhFZ3JTb0RxcnFrSHRKRVBHYWJHN0RQOUpaeEdzMUlmcTRfc29FQXIxOE5kdjRKYnNBS3haLXJzTDZXMVd0WHFQaXJzdm1LLUV0dHZuU0lKdXh2SkJFQ1ZqbDdhSkhaZWtJRjJURGNDRk1FSGhuS3hZMGR4Rm9NOFdHczg1WEJkMGFZY1dnTG15Wnc?oc=5",
+          "published": "2026-11-13T11:11:43-06:00",
+          "date": "2026-11-13",
+          "label": "Nov 13, 2026 11:11 AM CT",
+          "weekday": "Fri",
           "timeKnown": true,
           "tags": [
             "headline",
@@ -1904,6 +1925,27 @@
           "published": "2026-11-12T05:18:46-06:00",
           "date": "2026-11-12",
           "label": "Nov 12, 2026 5:18 AM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:9b5f8c11cbac9286",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Yahoo! Finance Canada",
+          "sourceId": "headline",
+          "title": "B3 S.A. - Brasil, Bolsa, Balcão (B3SA3.SA) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE4wN2xGdzc4VmhKYzZVamVHczdKWVhncnBTOEU5UlJoeXdpY3NTenNLZ3RxTm5CZFJZNG5rRHo0Rk1LOVNFQWlhOEdwTGgtU2cxczFlUFFFRQ?oc=5",
+          "published": "2026-11-12T02:00:00-06:00",
+          "date": "2026-11-12",
+          "label": "Nov 12, 2026 2:00 AM CT",
           "weekday": "Thu",
           "timeKnown": true,
           "tags": [
@@ -2583,48 +2625,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:ccdab8901f5e5dbe",
-          "kind": "headline",
-          "lane": "news",
-          "source": "조선일보",
-          "sourceId": "headline",
-          "title": "Brazil's Markets Collapse After Lula's Re-election - 조선일보",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQZ0lNbDJaeVdjN1ZuREE3MEI4ZkxwUG9CRUt5bC12OFlXUjdubzNLUWVZc3lDaVNDdDhwZ2RFMURWbXI5VHYtYm12WUpNV05qdmhaWmpkWjdWQVgtRURfMUVoaDdtQmpUMlJuT2sxVk40a2RMUDh4QkpYOVQ1dDVaRVdqejQ2Ujd5NUNTaER3?oc=5",
-          "published": "2026-10-27T02:00:00-05:00",
-          "date": "2026-10-27",
-          "label": "Oct 27, 2026 2:00 AM CT",
-          "weekday": "Tue",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:55e1b0de4daea0a9",
-          "kind": "headline",
-          "lane": "news",
-          "source": "매일경제",
-          "sourceId": "headline",
-          "title": "Citizens were enthusiastic about the re-election of Brazilian President Luiz Inácio Lula Dásiauba, b.. - 매일경제",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9OcmZpbFVNemJVZ1V5WW1DdTA1blpsUE9JUTVMazktTmg1UERfVzlQeHdxVFgzc1BXNDFnUmRJWDRadEVkcjk2QUJjeUxJWnBFTnc?oc=5",
-          "published": "2026-10-27T02:00:00-05:00",
-          "date": "2026-10-27",
-          "label": "Oct 27, 2026 2:00 AM CT",
-          "weekday": "Tue",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ]
     },
@@ -2644,14 +2644,35 @@
             }
           ],
           "holidays": [],
-          "level": 2509.67,
-          "change": -6.27,
-          "changePct": -0.25,
-          "asOf": "2026-11-15",
+          "level": 2508.79,
+          "change": -0.71,
+          "changePct": -0.03,
+          "asOf": "2026-11-16",
           "source": "https://iss.moex.com/iss/engines/stock/markets/index/securities/IMOEX.json"
         }
       ],
       "headlines": [
+        {
+          "id": "headline:f475f8a5bcf5b2d1",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Investing.com",
+          "sourceId": "headline",
+          "title": "Russia stocks lower at close of trade; MOEX Russia Index unchanged - Investing.com",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPajZwN1A2TWlNcE1uQU42S2tHV29xRS1HdUg2TkxYdkRGbEFrVGxKekVkNmhieHgyNzQ5aVFES2JxamRRM1R4Z2RLMEpPVkpIMVk0Y3VvYlhmNGRwaElHMURKVmN1RGMtaWQ5eHdEcWI4YUVSZWp2Z21UdUJkQmlXcmF6UHQtMWFhN1p5UmIydEtGeS1WVGdVLVBoRzcyTE4zZTdTc05hU3hOR3dSYnVkXzNYVHdfdzdGTTZZNDRtYw?oc=5",
+          "published": "2026-11-15T15:33:14-06:00",
+          "date": "2026-11-15",
+          "label": "Nov 15, 2026 3:33 PM CT",
+          "weekday": "Sun",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
         {
           "id": "headline:6f49adc4e58e0900",
           "kind": "headline",
@@ -3466,27 +3487,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:e840da2a8af54e10",
-          "kind": "headline",
-          "lane": "news",
-          "source": "The Moscow Times",
-          "sourceId": "headline",
-          "title": "Putin Praises Russia’s Stock Market as Shares Slide and Growth Target Slips Away - The Moscow Times",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNcFgwTDUwOEpLbzdtSk1CaDRUT1FvSzhSb0p3aEs1X2JfZ0dITDZ3YnR6SEcxeFlSZmVkYW8wREhaU3cteHRjRGNoU2podHpmM2xEU3FwVnB0Wk15V3lGWmxOU2FLQVZiZF95Yi0yZHhjYUdEQlZSRjJsTjJQd0diV0pVRzR5T0xnelJNY0lMQzAzbUl0V0oxOGhzSVRHTzlxdTMtN1BZMUh5cC1aMG0yd2JtSHFfbjVHTWdiMGlBZlZlbFV0eWFv?oc=5",
-          "published": "2026-10-16T02:00:00-05:00",
-          "date": "2026-10-16",
-          "label": "Oct 16, 2026 2:00 AM CT",
-          "weekday": "Fri",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ]
     },
@@ -3510,10 +3510,10 @@
             }
           ],
           "holidays": [],
-          "level": 3634.35,
-          "change": -21.48,
-          "changePct": -0.59,
-          "asOf": "2026-11-13",
+          "level": 3620.0,
+          "change": -14.35,
+          "changePct": -0.39,
+          "asOf": "2026-11-16",
           "source": "https://finance.yahoo.com/quote/000001.SS"
         }
       ],
@@ -3595,6 +3595,27 @@
           "date": "2026-11-14",
           "label": "Nov 14, 2026 2:21 AM CT",
           "weekday": "Sat",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:f1d920ff2c3f683c",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Reuters",
+          "sourceId": "headline",
+          "title": "What is APEC and who will be there? - Reuters",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOOGUtWDdCbkpKT0p0c2lwR3dQVG1Pa3E5eHUzb0g4MllEWXlnclA3SEpSV3BIY0hEQXRzN29qM3hxalB6MjZwWW5ub2NuRDZZLU9iaVJZZjlwT2lHWllHWVd6NURNRlFNY3BaeTlNOGhqby1ydjdRS3dEZTRUdGo2SGV2bkZtZnF3dFNUOFNURUtVc1JLVDByX2hkN25sdWFYNUF1ZVJVUW1tZGFj?oc=5",
+          "published": "2026-11-13T22:32:42-06:00",
+          "date": "2026-11-13",
+          "label": "Nov 13, 2026 10:32 PM CT",
+          "weekday": "Fri",
           "timeKnown": true,
           "tags": [
             "headline",
@@ -4131,9 +4152,9 @@
           "id": "headline:c99c56f8c5e1ed2a",
           "kind": "headline",
           "lane": "news",
-          "source": "Euronews.com",
+          "source": "Euronews",
           "sourceId": "headline",
-          "title": "China's trade surplus surpasses $1 trillion as AI boom powers exports - Euronews.com",
+          "title": "China's trade surplus surpasses $1 trillion as AI boom powers exports - Euronews",
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPaHpmQ004SnRvTzRmXzFseXp4THJEWWJFeXNlVUY3eEUxVDdfbVpTUTMxNTdZVm14VmJyQkZOaUh0QTRCb0Zjc3VwRzJkY0pseG5idk5BQ0hBME5STDBwTlJCZmpHb0xhVEUwd29FRHRyWm1yQXY3bFNWNDh3c2xiSFJzUFdRWlRQdWJzWVBGS3hSYm8tUl9GS1JNZ3pWdWJpdXoweTFn?oc=5",
@@ -4275,12 +4296,12 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:827f4ce80e82e164",
+          "id": "headline:742c6288834a9008",
           "kind": "headline",
           "lane": "news",
-          "source": "China Daily",
+          "source": "China Daily Global Edition",
           "sourceId": "headline",
-          "title": "US exhibitors bullish on China market - China Daily",
+          "title": "US exhibitors bullish on China market - China Daily Global Edition",
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNd0dtR0NEMHhKblVSUnJFcDZkcjJXSzhqX0xlV05mQnMtY3dKZWFWQ096NkYzSC16ZmZEYzUwOVlOUVMtbzNPbXprblczRmwzT09iZ205UEdDeFRDRWt2d3RhaVh2S0xCRDYxRlhNZ1VPUUo1dE5BZTNUWHdJbnVoMEl3?oc=5",
@@ -4336,27 +4357,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:b563efa5fc5905cd",
-          "kind": "headline",
-          "lane": "news",
-          "source": "The Economic Times",
-          "sourceId": "headline",
-          "title": "China, Hong Kong stocks edge higher as Beijing vows measures to stabilise markets - The Economic Times",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNbV9PV3RseUp6MllIaFhSNm1vdXBib3llbW1pRHNpQ01Wdng4U2ZaaHRNcng4eDFEeVdhdkUwNGdCS0VzQnplc2ZTMmdjTi04VUFSaUh0V1ZRNGdkYTNsYVVnamJoNWZGdGNqNDlYRTRQandVWkFKcVk1X1BlOFdKT2Voc2U5MjEtT2hzSDVscFVsd21TWktkVy1nYWVCb3dLMFFTa01iQzF3SG5aNVNOWkdzWkVfSXBOTVNoQTRMaTR2MERXRGs4V19oZU8yWERvclJ6dVBIY1ZoSUU5MDc4bmV1TElZUWZmdFNHc1Rn0gHzAUFVX3lxTE53UngzTlJCVTVHcThtRWJ6Z0Y3WmdBN1RTeFNQU3laSDM1aXZVaW5UMmJOVUk3T0daMmN6a3ppVTRBTlVwQ1FxcnlYcThKZXl5bUtFeTRLMXBxUS1ZdW83VEFvQl84ODdJU3pNandOdktTbzdPTnJFSUkxQndMbTk5OU50ZDR3ZUVjblVtZk5Md1dEd3ByaG1tRkItMEFoWTJhazBGaDNZT3U5Y3B3MFlPYXV5d1N4X2t6V3NTWUdmd19Jejg5U3l5RjVWZ0x6ZzlyWVc3c1hzZC04UnNDemJfZ0pYOGFUNEU3OHJPb1lxM2wyaw?oc=5",
-          "published": "2026-11-08T23:31:11-06:00",
-          "date": "2026-11-08",
-          "label": "Nov 8, 2026 11:31 PM CT",
-          "weekday": "Sun",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ]
     },
@@ -4385,18 +4385,81 @@
       ],
       "headlines": [
         {
-          "id": "headline:162fd6d54dbc35df",
+          "id": "headline:829ac24c71632acd",
           "kind": "headline",
           "lane": "news",
-          "source": "Bloomberg.com",
+          "source": "CEPR",
           "sourceId": "headline",
-          "title": "ECB Can’t Substitute Sound Fiscal Policy, Knot Tells Corriere - Bloomberg.com",
+          "title": "The effects of inflation on euro area public debt - CEPR",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE56Mk9OQlBMQlVkUnBUcVZ1UjIyX2NkV0Rsc2RMdFNWbG40c1N2YjJCYlMtVU5tdXpzeDgwRHJRU2VwbmRPeS04aWlId3Mta2tFTFljNmxqaXdjVGRMQldZNkRmM1RJUGtGS0QyRkZuVWxGMGhuQWlWNUhTWQ?oc=5",
+          "published": "2026-11-15T19:02:45-06:00",
+          "date": "2026-11-15",
+          "label": "Nov 15, 2026 7:02 PM CT",
+          "weekday": "Sun",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:3c3984f3dc18b989",
+          "kind": "headline",
+          "lane": "news",
+          "source": "investingLive",
+          "sourceId": "headline",
+          "title": "ECB bond market intervention warning from Governor Knot. Can’t replace sound fiscal policy, - investingLive",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQZDhKQ2hBamNGTW9OS190V0hzaTRwc2FfNDQtMjZ1aG5QZVJWNmc3MEVyZVJObEhwcmxyTlJwOTIzQkd4VTBtM2xfT1VkYmZvYjlnLTRfWmpKZXQ1dWRUejFPUWttLWx5dHAyMmFDMUtTSGxlaEZ0NGJFekpsa3VKMHRDSFJEeEJkaUlyaVk2UWNyVjRsQ0cwUjhwMmd5aVNOOGs4eGw5S2daaWZiaDB1MnEySnNwLUYyTXJPU0VQeVg1Wk5wbnFXR0Zn?oc=5",
+          "published": "2026-11-15T17:22:51-06:00",
+          "date": "2026-11-15",
+          "label": "Nov 15, 2026 5:22 PM CT",
+          "weekday": "Sun",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:04bb337c32310ad8",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Bloomberg",
+          "sourceId": "headline",
+          "title": "ECB Can’t Substitute Sound Fiscal Policy, Knot Tells Corriere - Bloomberg",
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOd2FxWTBkTFlBLUY2aVh2Q0tnVlg3cktmUTVPekhSWUtJWlU2YU1pc0dwUGh0UHNqM3NnZnlCRWFxNnpnZnFtRWw0TEZoTU1CeTNuTGhGX0RPWWlCaVJhcFpEMjRWTkVyNzE5dy1uT0R1UGxTb0tfbi1Xby1zZFdsQUxXMDlxRTVhVEZEcG1yS3FFN2paV3dFUmhQNHRKXzRmaFBCdFJaeW9NaXlDTlhpdw?oc=5",
-          "published": "2026-11-15T02:12:56-06:00",
+          "published": "2026-11-15T12:29:42-06:00",
           "date": "2026-11-15",
-          "label": "Nov 15, 2026 2:12 AM CT",
+          "label": "Nov 15, 2026 12:29 PM CT",
+          "weekday": "Sun",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:5a4227f67c3e1a25",
+          "kind": "headline",
+          "lane": "news",
+          "source": "www.tmgm.com",
+          "sourceId": "headline",
+          "title": "Hikes Backed by Fed Officials; Nagel Signals ECB Hike | 14 Nov 2026 - www.tmgm.com",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQSkVZcXk2MGxoOGJOdWJNSzZsNVFfZGstaVNfZlp4cmVsX1dxZUkwcmZaeXYtaTYwajdWMXhKZS1iV3RuMVVsd19ESE1zS2tzR3Y4VlJZYWtMdjZ6d05vZTRUU3FkVVp5YjFLTW9EYkxMcnJHUll6X2xzblA0WTRTQg?oc=5",
+          "published": "2026-11-15T03:11:04-06:00",
+          "date": "2026-11-15",
+          "label": "Nov 15, 2026 3:11 AM CT",
           "weekday": "Sun",
           "timeKnown": true,
           "tags": [
@@ -4637,12 +4700,12 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:9b666e5c2406ecb0",
+          "id": "headline:8dd7aaaf404453bf",
           "kind": "headline",
           "lane": "news",
-          "source": "Bloomberg.com",
+          "source": "Bloomberg",
           "sourceId": "headline",
-          "title": "Euro-Zone Shows Solid Growth as ECB Weighs Another Rate Hike - Bloomberg.com",
+          "title": "Euro-Zone Shows Solid Growth as ECB Weighs Another Rate Hike - Bloomberg",
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOYVZieW1jVWE1WGMzSlU1a2w5czJmbHJWaEMybDd3OUpRQUxELWJVbE1IcGVUcjF1eXMwNDVBUGduSk1MTVpnWWhuNFo4U0c5R3FWTVh0UFFtQVpTRmgyd1NpWC14bTBwTVM5Z01WSC1oWFJ2aWpYaXAxOUlrRUdVVk05dEo0UEZaeG82Zlg1UzBXazZjTmRLQ093a2x6eV96S3dET1NBeTY2RkZtV3FDSw?oc=5",
@@ -5160,69 +5223,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:ccef6265b70bfe80",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Bloomberg.com",
-          "sourceId": "headline",
-          "title": "ECB’s Escriva Sees Positives in Markets Pricing Fiscal Risks - Bloomberg.com",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNZHNxMi1JZVlBWEptOENJdTBwbW44SDhsOWtPaDBwOW41eXRVaXB4bnZBR09mR1Nyb3F5RGk4aEo4Ykk1RVlJcExTUktUVTB4M2hiekZJOU5NbEQ5SEVWLXFHOE9HdHZ3YWtrTlhqN1ZRTVpzUHdISzZnMDBYcEw2dDBJRl82WFM3ZkZPeHNNdVZocDRZeU1FSDdtRl9DZk91U0ZINGdsbzMxcVBTQ3ZPUA?oc=5",
-          "published": "2026-11-10T13:11:54-06:00",
-          "date": "2026-11-10",
-          "label": "Nov 10, 2026 1:11 PM CT",
-          "weekday": "Tue",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:b763d22424d3d6d3",
-          "kind": "headline",
-          "lane": "news",
-          "source": "European Central Bank",
-          "sourceId": "headline",
-          "title": "The science and practice of monetary policy communication: the ECB experience - European Central Bank",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPTHBZU1Y0T2dsN1NxZlFsY2EzMlZoVkJHdDVmT2tOQTVtYWNIakNQMUhZaUZCc3lSZTJNTDFOQXZGbEcxcW1UQnpEZDVLUmhUbE05bG9DeHdEbDFZN0tMVmQyeEN2aXRHRXlIRW1RZ042bnh0Y2ZIeTFWWUJSaGQ2VkdHNEx4QlUtckFMaQ?oc=5",
-          "published": "2026-11-10T10:49:52-06:00",
-          "date": "2026-11-10",
-          "label": "Nov 10, 2026 10:49 AM CT",
-          "weekday": "Tue",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:2c020105b843e72c",
-          "kind": "headline",
-          "lane": "news",
-          "source": "www.tmgm.com",
-          "sourceId": "headline",
-          "title": "ECB’s Lane: Another rate hike prudent as year-end inflation is expected to exceed 4% - www.tmgm.com",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNRVBFRlUyQlJ2RUYwNE1pb2t2WFlLMHlkNEhsakk0S1lzNFM5WVlKdDhqcjE0bTBnZmlxSzVvOUhxNU53LThGYzNGVF9acDExR0VtU1F0bG41a051YTAwMmtieG9LejhnOXA4TElfTzdnNXVCMFphVGtMUTdHRF9rdWFUaWYyblpfWnl6Zk5hMm1Ed3ZnYzhxbkFDNW1FWURoOEJ0R1JXRVB4SDJvNWJ4Zm84MjBELWJ5WXduaWRzVmVMU05qWmlxSUw4eHBJT0hjUTJB?oc=5",
-          "published": "2026-11-10T10:27:06-06:00",
-          "date": "2026-11-10",
-          "label": "Nov 10, 2026 10:27 AM CT",
-          "weekday": "Tue",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ]
     },
@@ -5246,14 +5246,119 @@
             }
           ],
           "holidays": [],
-          "level": 23637.6,
-          "change": -370.95,
-          "changePct": -1.55,
-          "asOf": "2026-11-13",
+          "level": 23835.44,
+          "change": 197.84,
+          "changePct": 0.84,
+          "asOf": "2026-11-16",
           "source": "https://finance.yahoo.com/quote/%5EHSI"
         }
       ],
       "headlines": [
+        {
+          "id": "headline:2673ac31622a2ccd",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Mettis Global",
+          "sourceId": "headline",
+          "title": "Asian markets slide, South Korea’s Kospi suffers sharpest loss - Mettis Global",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOcmdsc0hYRHk2UW03TENkNU9UaGotOG1tZHd6UGF1RS1aRV9ZV1h5VndzN3RndlhaOS1EU2FHallKV0RpajhfN0pxRi1LZmFJUXFLNTZPRFYtNW9aOVNpRV9tM20zZHhrYXpaWHZiclY5YmNVeW51c09MeUIwRTdjWEpOS3dvcFdvSGRHeUFjUTktNlBqbGFR?oc=5",
+          "published": "2026-11-15T22:15:00-06:00",
+          "date": "2026-11-15",
+          "label": "Nov 15, 2026 10:15 PM CT",
+          "weekday": "Sun",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:76562693126443a1",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Plataforma Media",
+          "sourceId": "headline",
+          "title": "Uniting Ecosystems to Shape the Future of AI+: 3rd Anniversary DALA Awards Spotlights Data Literacy and Responsible Governance - Plataforma Media",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNNHdRdEI5aEw1Uld6c2Zmenl3MzRGRVZsSV8tTlpPZzRoTlAwWXViVWpEaXNEcHVjbU96Z2pkVFB2S1U3c1lIUVBSVVowTHJzZzRyNTFpdW1aTTR3SHYzRXpQZ2RTNENjbTRVQnEyWmdJYjVUdHYzRDRGMUFMNUdnVWFjbllnZC1NU1I1TGxTcDJCeGpMSFVIckR4T2NkQVVTU1kydG9EUmxxVUdsajBOQ0FjeUNFMTZOVl83dXVvaHpCTlhFQ20tM1M4VUlOd0xzTzdJZnU1TFp6dkFrcDMzaDR4RmZOM2IzT21vX2I3cnZMQUdkT3cxT1c4Sjk3RS1Y?oc=5",
+          "published": "2026-11-15T21:48:00-06:00",
+          "date": "2026-11-15",
+          "label": "Nov 15, 2026 9:48 PM CT",
+          "weekday": "Sun",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:fe3c3169a8a51c44",
+          "kind": "headline",
+          "lane": "news",
+          "source": "巴士的報",
+          "sourceId": "headline",
+          "title": "Guangdong's trade ties with APEC: How strong are they? Who tops the list? - 巴士的報",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxORzZwZllFcWtiQXRsNmtFdE1WWmpZR1VKcXJFUkxLbUtpTmFDUUtsdHU4MFo0by1rV2JSWHVrVWJBY3FkQi1ySnY4bENfNEtsWGZialNfNWFKTEtsZEdxMTk4blZqWjZRYmpEamJvVlNiRzQwVU9lWWNDdWp0WVFBM3hjdk9veTV0R2VBNW1IeTNHMkdMRzZmTXgtNjJWVlpqak9WWkdDSEtDN3VtS2haZll1a05IQVAyd2t1Wm9R?oc=5",
+          "published": "2026-11-15T21:41:00-06:00",
+          "date": "2026-11-15",
+          "label": "Nov 15, 2026 9:41 PM CT",
+          "weekday": "Sun",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:8ddaa3701df730d1",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Mezha.net",
+          "sourceId": "headline",
+          "title": "Bharat Semi raises $24 million seed round to develop AI image sensors - Mezha.net",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQc2lPM2ZrUGZrVzF2V1cwU011OGhzbTFGNUdaRFB2cGNwUHhfZjZkWHpIbmxacE9mUHhhRE1HTXdyNVBpWGRwaWVmcXBMVGxlY25ZU2dWbE1LT2R1YlQwVVRMbEZvc05pT3FHbkJmbG1nbnBPYU5NdE1JNHJ0SGVmVjlJVQ?oc=5",
+          "published": "2026-11-15T17:45:12-06:00",
+          "date": "2026-11-15",
+          "label": "Nov 15, 2026 5:45 PM CT",
+          "weekday": "Sun",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:da83f9a8d0dcc120",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Mezha.net",
+          "sourceId": "headline",
+          "title": "Nikkei 225 and Hang Seng set for higher open as traders await economic data - Mezha.net",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE0wOGg0alVFNXpSOFlMM2REZkV0UUctVjVBcGFxWXJtLXpZRWNkMVpGendvVE9iT2JSa0MyemhjcmdBeXYyZVlSZDIxaDlQX2dNNl9Kb05FclJ2MmVlNXh6QkRVbWlFUF9mWkZnSDhuZGJ3S0FjZTRraU85M19KQQ?oc=5",
+          "published": "2026-11-15T17:43:12-06:00",
+          "date": "2026-11-15",
+          "label": "Nov 15, 2026 5:43 PM CT",
+          "weekday": "Sun",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
         {
           "id": "headline:46cc8b68978ecb99",
           "kind": "headline",
@@ -5988,111 +6093,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:b5136bf11640a4ad",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Japan Today",
-          "sourceId": "headline",
-          "title": "Asian markets mostly gain on AI chip demand despite Wall Street's retreat on inflation data - Japan Today",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQb0xVVllEdjdfNkdxcEh0Ujk0VURRV2ZLWkl3blRQRVI4VXpMTnM1SHhWbVZLSHk2b3RWQkVhSzJQZmszRUNGMUF5aWxHYlFJWDJsQng5TUVKUm14cVEyY0RMakt6V0NwbGt6SUhCZnJSTUFfZmZxZmdpb2lWZjhJSzNJUUdwUWdlcHVqanRZZU1yWFVqYWh4U1ZSN25VMzQyUkRmMTQzaUh0YVQyZThsaFFoaGlfLUFyVFExUmVIb1o0SEJyT3gweWRFYw?oc=5",
-          "published": "2026-11-11T01:00:00-06:00",
-          "date": "2026-11-11",
-          "label": "Nov 11, 2026 1:00 AM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:219023433f5260a6",
-          "kind": "headline",
-          "lane": "news",
-          "source": "The Economic Times",
-          "sourceId": "headline",
-          "title": "China stocks edge lower, Hong Kong shares fall as global rate concerns weigh - The Economic Times",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOMzBSd0lCYTJJYzB5ejNMeDZhV3BZdUpNQXlESDhVczJlOWxZQnFDb3ZyZzRTTkNwbGRnMjB0RktTdnNQeFRDeUdpOUFYQzMyc09LemZDbzk4M0dzVGxRS1FrTUd6TDJqRTJHZnhYTzQ4UFk3aW5xV1FQSFZyWTBNWDg2cmNoQ3ZNZkZheDdwUVpHWXZqeGc4YUIxQmsxTHdzOFJxMWFIQUF2NWpMTjc0NGZtdVpORHBRVnpZUlJBbi1FSDhiLW40QU5oN09PX2JHOVBXaUoyM1lZYUR0bkRKdXduQV9KbUHSAewBQVVfeXFMT0l4b0lLSzRxSzJIb21yZXdBN0wyVzlKWjFvZWpsRDk0QjFkLUhtTlM1d2xsU21FZkxPT1o1Rl9GcUtRRGlmUjMyVVdUZVJ1SV9FMU52MUttTF9iWGZ2WWdjN2Q1b0dyUmU3eDBpemJ1Nl9WWklpSEY4ZUZlOVdsaUExZ1hhYk0xWkZXTGl6R2dlLUVrYXV5WFJ2U0Z1aEVYX2Z6bkFwWHZ2c2NSeUZmZi1kd0VGTk00QXRaTXdfSUJVa1J3NmZ4MklhZmhTQmRrTGtxcVRUVkw5OFNtaUdpQ195WUx3Q251MWxoeGU?oc=5",
-          "published": "2026-11-11T00:03:34-06:00",
-          "date": "2026-11-11",
-          "label": "Nov 11, 2026 12:03 AM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:47b6c6671ae16d2c",
-          "kind": "headline",
-          "lane": "news",
-          "source": "The Economic Times",
-          "sourceId": "headline",
-          "title": "Sichuan Neautus shares surge 119% in Hong Kong IPO debut - The Economic Times",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQMERmeUtPazZ4Q2RocXVHWEY2c2V0WFdNNE9nQWgteUhucm9hUWlzSDBFY3pHV0thREdCNmxOd2g3czlQdWRnbklXWkdzZzc4M0tiRGM1VFc5U0RMWkxtZVVNdE1yV0VUZUtDc1dKcGxGUFF4NndMNE5ocDJrd1dNeVNoLTA2bFo0NjZqMUJkTlVwZm5fVnN4bmdLYTR6UGZQUVlucGpmb0dXbVFCbU82ODZsREVqOVF3YXpPUlVoYmR1TThUVUxlY3VmMm_SAdIBQVVfeXFMTmFpTjZKTllpM3VIMzlQTXZkLWZlUE0zeGlzRHhuQTZwbkpWblFmbkttVzYyY3pkU1QtcjJpZ1pWeG1PdnJ1dDVQWktKamFsbjUwUGUzaDhkcy1EUWdhOTlCLXBVNjBCcVdLQzk4MlZRbWlQUjRUbmNqUXhpTjIybHYwODlqc2lCYU96S3hUU2Q2MGpOeDRjNHlzWmVVVjZrbzJ4U0l5Q2tPWk1EQnlQZ2NJd0x0d19YUDRGNlMyZ0FqQWJKQlF4c2FtZFVsd0lISTh3?oc=5",
-          "published": "2026-11-10T22:52:13-06:00",
-          "date": "2026-11-10",
-          "label": "Nov 10, 2026 10:52 PM CT",
-          "weekday": "Tue",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:e5e1d7573a266769",
-          "kind": "headline",
-          "lane": "news",
-          "source": "OpenGov Asia",
-          "sourceId": "headline",
-          "title": "Hong Kong Expands Youth Employment Support for AI-Driven Economy - OpenGov Asia",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOeUtjQlQ0cExVSTUtWC1VbmstOHA3V3ZOSzE1MVF2SnVNNHl3bnk4V0tUOEdDQk9OR0hRS2NRNl9aU3dNaHBmU1JEX1FlMXNlMU5WVXpPMmlWQWFac3ppVUVUZndlMkYyNkEySk51b1dtVHJlN1NneXVDRTFJZWdSUFltR3NtcXRqeFRKSGtxdmhvb1U?oc=5",
-          "published": "2026-11-10T22:49:50-06:00",
-          "date": "2026-11-10",
-          "label": "Nov 10, 2026 10:49 PM CT",
-          "weekday": "Tue",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:43125483f7cbe251",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Bozeman Daily Chronicle",
-          "sourceId": "headline",
-          "title": "Asian shares mostly rise on AI chip demand despite Wall Street's retreat on inflation data - Bozeman Daily Chronicle",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxObC1VWjRJYm9XX2oteDRReDg1Z2FIMmZwS1hrXzhUelJpSjU3b1RqcXBPWmxFZUVHRWUtWnlYREN1UU4tNzVZbzFhX1E2R1cwWlhFYTVtTjNkcXJHNWd5aGoyd2o1M0xHVWtQbXdqaE1wMEZlVGRlTVlvNkNPZV8zazMwUkd0Qm5mR0xrcFJnTmJNdjhVdjZJTWYtckkxcEVNczJFaXhXUTYyTlJPdThWVUZCVXR4dzB4cnRhS0Q0U0lNZDRzV3Azc3NxMzluZmpERXd4cFZLbklhekxUbFgzLURrY3QzS2tWNzY4cFp3YVIyRHo0emJsNk5JTUMwekJYaEZDWEFSRmRhSmhkaWNFeTZTd1ppakx6cmNR?oc=5",
-          "published": "2026-11-10T22:46:21-06:00",
-          "date": "2026-11-10",
-          "label": "Nov 10, 2026 10:46 PM CT",
-          "weekday": "Tue",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ]
     },
@@ -6116,14 +6116,56 @@
             }
           ],
           "holidays": [],
-          "level": 61142.35,
-          "change": 322.99,
-          "changePct": 0.53,
-          "asOf": "2026-11-13",
+          "level": 59948.37,
+          "change": -1193.98,
+          "changePct": -1.95,
+          "asOf": "2026-11-16",
           "source": "https://finance.yahoo.com/quote/%5EN225"
         }
       ],
       "headlines": [
+        {
+          "id": "headline:b7e8b9a0e277fcef",
+          "kind": "headline",
+          "lane": "news",
+          "source": "BigGo Finance",
+          "sourceId": "headline",
+          "title": "Japan's Economy Stalls in Q3 as Weak Yen, Middle East Conflict Fuel Inflation; BOJ December Rate Hike Expected - BigGo Finance",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1OT3BHYXo0SzBmZkcwQlhHMjNfZG9yMWlRSG82U05iZTVQdHlvcFo2VWljaDhwbFViWWRwVVN4WGg3U0JZeUEtODVuVkt6dFE5RXdGQzNqZ2FNNTloZmdhbk14cUZySkViSHk0QzF4bGstS3d5a2c?oc=5",
+          "published": "2026-11-15T21:55:00-06:00",
+          "date": "2026-11-15",
+          "label": "Nov 15, 2026 9:55 PM CT",
+          "weekday": "Sun",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:6f51b1f39e550a92",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Nikkei Asia",
+          "sourceId": "headline",
+          "title": "Japan's Q3 GDP drops an annualized 0.1%, below market expectations - Nikkei Asia",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOd21XbkI2N1dSWUZGT2ZIcTVtZzRzdlBIdkM1bTloQnptdWxOOEoxdGM4QWJpWHQyVklKRXgya3hxQThXOTg0b3BCSmtZYlY0VmZMS0xrc050TlZmN2ZMNXRKZU9nT2dEakhmdnRoLWFsSUw3amxVcDY3Qkg0VUMyYWk1T1RLcDNnTGF6SlVSTXJVX2UtQTJadGxSUlk?oc=5",
+          "published": "2026-11-15T18:02:00-06:00",
+          "date": "2026-11-15",
+          "label": "Nov 15, 2026 6:02 PM CT",
+          "weekday": "Sun",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
         {
           "id": "headline:7c2d9aa7c8a10816",
           "kind": "headline",
@@ -6138,6 +6180,27 @@
           "date": "2026-11-14",
           "label": "Nov 14, 2026 2:05 PM CT",
           "weekday": "Sat",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:43e576b1d7c05642",
+          "kind": "headline",
+          "lane": "news",
+          "source": "BBN Times",
+          "sourceId": "headline",
+          "title": "Nikkei 225 Weekly Review: Nikkei Plunges 9.25% to 57,434.77 and Enters a Bear Market - BBN Times",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQdDQ2RHNVZ2E5ek9hZDhoZ0txVVJENjUyaVdsTzhOTThxVmdiRUZCclNxT1lURVBsWndJZUR1NDJ6SlNFQS1SQlRVTWVNbDM5WVo2cnJ0WXBNYWVmWEZpNzVQWXR2Nk1xMTVaaUtMRFNXQl9QRnVWdDBRRGx4dF9xUy1BLW1YcTBHc1plN216b0RDN1d0dUNsMkJWSk1sNjBTbnFaTjMweGNkaHJIN2tqOHNEM1pXbDk1cHB6RnZJRQ?oc=5",
+          "published": "2026-11-12T12:56:28-06:00",
+          "date": "2026-11-12",
+          "label": "Nov 12, 2026 12:56 PM CT",
+          "weekday": "Thu",
           "timeKnown": true,
           "tags": [
             "headline",
@@ -6398,27 +6461,6 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:43e576b1d7c05642",
-          "kind": "headline",
-          "lane": "news",
-          "source": "BBN Times",
-          "sourceId": "headline",
-          "title": "Nikkei 225 Weekly Review: Nikkei Plunges 9.25% to 57,434.77 and Enters a Bear Market - BBN Times",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQdDQ2RHNVZ2E5ek9hZDhoZ0txVVJENjUyaVdsTzhOTThxVmdiRUZCclNxT1lURVBsWndJZUR1NDJ6SlNFQS1SQlRVTWVNbDM5WVo2cnJ0WXBNYWVmWEZpNzVQWXR2Nk1xMTVaaUtMRFNXQl9QRnVWdDBRRGx4dF9xUy1BLW1YcTBHc1plN216b0RDN1d0dUNsMkJWSk1sNjBTbnFaTjMweGNkaHJIN2tqOHNEM1pXbDk1cHB6RnZJRQ?oc=5",
-          "published": "2026-11-08T13:53:57-06:00",
-          "date": "2026-11-08",
-          "label": "Nov 8, 2026 1:53 PM CT",
-          "weekday": "Sun",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
           "id": "headline:350572c2a87bd0b7",
           "kind": "headline",
           "lane": "news",
@@ -6512,9 +6554,9 @@
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPOUhfUlNIdW9OWV9Sek5DM0F3TGY2djNuWU80Sld5eFdqcFVaYmNTc0VzeE9ZYXozNE92aFlzcG5xMU10MHhyTEY5X3NGWGZ6OHV5V25KaFZhT0RWa2ZrYmpZc0ZtOUVKV2EzMnBVWmRlLURmWGlpanhWTEVNbVBHLVBDcmczRUFQdFc0WXlxX1YzV0poNlFIcW1LbUVXUVFPcUJ2ZDRTcWM5LXM1T01NOWJDQW1DNDk5Q1ByY3BrRU9GckJXNHBMcQ?oc=5",
-          "published": "2026-11-06T00:05:42-06:00",
+          "published": "2026-11-06T02:00:00-06:00",
           "date": "2026-11-06",
-          "label": "Nov 6, 2026 12:05 AM CT",
+          "label": "Nov 6, 2026 2:00 AM CT",
           "weekday": "Fri",
           "timeKnown": true,
           "tags": [
@@ -6921,48 +6963,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:d59e7c2d1e01d28b",
-          "kind": "headline",
-          "lane": "news",
-          "source": "NiftyTrader",
-          "sourceId": "headline",
-          "title": "Nikkei Slumps 3% as AI Payback Fears Hit Japan’s Chip Stocks - NiftyTrader",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNclZpMFowcHkwbTRZc1lfWVkzZV9uWHRHYy14VmJWV2ZvelZWWkdUMHo3WDl6Q0IwT1h5aXpMZlB5LVVKQjJtME9LNDFvM2ZMSTVoUmZySEsxMEllbDBsbXI1VTVsd1hoMkE5eTFrZEFwYmZOeHVFNHA5QVhVVWxFODJ3?oc=5",
-          "published": "2026-10-30T02:00:00-05:00",
-          "date": "2026-10-30",
-          "label": "Oct 30, 2026 2:00 AM CT",
-          "weekday": "Fri",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:0344f94e430db815",
-          "kind": "headline",
-          "lane": "news",
-          "source": "The Economic Times",
-          "sourceId": "headline",
-          "title": "Global Market: Japan's Nikkei falls 3% as AI spending concerns hit chip stocks; BOJ holds rates - The Economic Times",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOaXpfaDY0YnplSkRzRFR1MXVsWnJ0bnh5Y296SGZ0NzhXb05ocXQxTWZuSFY2aW9iLTZOeWpla3dXYTEteHlBa1Zxemt5UHZzM2lhdnJoY2MtS09wZW9XZ29hZ3F4VjVWNzdTR1B1d1AyV1J5NkpYYW00QXNFd3lQTjd3MzhTUS1hSG5hLXdUWDVBVmc3VThqV2VjVklvODVOSzVKbDJzYnVNQThjNHV2ajdzQWRIVVRROExaWXZVQnJPUWFicjkwZmxoZ3FnNkFXV1NRdU4zYjRZVnBSWkRUNTJtMTVHYTRPb0JCUkxIYUFtSzJGWVh3cXpUcnjSAYICQVVfeXFMTUl6S3RJNm1RWEEzQWZRT0ZyZlZYOEFUY0lkb1VQZkZraElXakd3MlIwZzktY3dVQURCNjhOdUFTa21PWkdjNjAxOUJlQjhqa25IcGw0alpMbmFLTG45c3hfcDdfMU10anNJUkUxZld2X1Z0M0ZRRmg1SHlGb2ZaeWE1MWp3aEM5a3hvZzRhbG5laldzbTdobjBDMzBaSVd0cUpZVk9BNUNsRkRzeXZzRVh1TDhCM0pTbGdDR2ZmR3hHWkFlTWVMT3M0Wm9UeHlvdUFYRkw0RHlSRHRocU1HYUVfWE9EUjBpRWlvemhwenN2X0FwelQ5VXJTQnhDZ0VGbFVR?oc=5",
-          "published": "2026-10-30T02:00:00-05:00",
-          "date": "2026-10-30",
-          "label": "Oct 30, 2026 2:00 AM CT",
-          "weekday": "Fri",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ]
     },
@@ -6982,10 +6982,10 @@
             }
           ],
           "holidays": [],
-          "level": 81592.45,
-          "change": -318.55,
-          "changePct": -0.39,
-          "asOf": "2026-11-13",
+          "level": 82166.47,
+          "change": 574.02,
+          "changePct": 0.7,
+          "asOf": "2026-11-16",
           "source": "https://finance.yahoo.com/quote/%5EBSESN"
         },
         {
@@ -7000,14 +7000,56 @@
             }
           ],
           "holidays": [],
-          "level": 25144.3,
-          "change": -155.05,
-          "changePct": -0.61,
-          "asOf": "2026-11-13",
+          "level": 25329.5,
+          "change": 185.2,
+          "changePct": 0.74,
+          "asOf": "2026-11-16",
           "source": "https://finance.yahoo.com/quote/%5ENSEI"
         }
       ],
       "headlines": [
+        {
+          "id": "headline:8067a91b054f65f3",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Business Standard",
+          "sourceId": "headline",
+          "title": "India braces for higher interest rates as inflation, oil prices rise - Business Standard",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNcHdlTURmX1ljel9JMk1kR3M1dHQzUWpfTXMyWVB3alhkTS1ZOXFJWWV5Q0hIcDVQbk5KMG1zWXJPMm43Wkp1dzZtQUxYcWVMa2o5V1hJY2d5NUk1dEVsUm4zTmZmeThQMmI4ZTlKZjUzSEVqZWQzelhxdVpoMjdtTGFwU1FaTVBSVHh0aUxCNG1yb2NlellkQU82VWtvSVlCdFVneEtTSVFqendMRk55bHRkaC1yemRJVzdFOHNCX1d6Y1oybVBmdGxDZHhJbzDSAdQBQVVfeXFMTTZhUU5LNFk0OG1TLVBtcEZmVnZrZUFSQlRSM05yRGhwOGlHal91aW5qdTdhLWFYT2NsVVVTVGNNaHVDemZFQzd3SVM1ZVI3Nm5vUnBkbERMS2Z1akF1blJhOG9PNnYxSnZwQjdma2JhYVR6NDZpUDhlVldLbEZURnhhTksycFZDVkFqVXpHZUxUWEwzUzJMb2htY0J0eXE0ckpVUVRYaV91SmIyVmVHQk9yWE1JdjZJQmsxNE5VTkdUNEFxQmJyaVF6azFNeDRMRjJOMzI?oc=5",
+          "published": "2026-11-15T20:22:28-06:00",
+          "date": "2026-11-15",
+          "label": "Nov 15, 2026 8:22 PM CT",
+          "weekday": "Sun",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:f89af9b2d14f95b7",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Livemint",
+          "sourceId": "headline",
+          "title": "Stock market outlook today,16 Nov: Sensex, Nifty prediction-DJIA, S&P, NASDAQ, GIFT Nifty, Kospi, Nikkei, Taiwan cues - Livemint",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQZ0k3c3lyNVA0N2VzMEtudWx4aHpVWXptWjZQT1B3VnAxN2xIMFlGS3h6d1p2TWVUNUtyNFUtVjJPYnVJQThQWjRQNHlMVkV0MkdNWHlqcnB6QWhia0JRdjFHRzFQd2hWTi1meWVLYlVzRWhrTTlld2pDd1RNTVpmbmZDN2l5bzU0VlN1Y2FmVjZIaE16SFllYW5yMF9yY3VFVC1NOWtfWUVGdUJjT1BxTjl2OGJjeEtLTGZkQndMc2ZNbDRvLUg4VWxUS0pmTUZ5VUxHM0NtbFV4UjF5WGlPMXRKTjdIZm1SVjJGdzdaakJrTl9paGE1OVNtS205dkw2eUdMd9IBigJBVV95cUxPeHROLTNJdWlVUUJPWEFrcVJHeDZTWUFibjVGZUZ0bmhxR09Kb2ZqZ1hZNWV1ay12UlgtTjdCczBybXpSRmEtVVl0TXpwWEhfSUkwQ1lfemZ5OHZKS011RmpjTFRyZlhYQjIyNkxCRU8yNUpOQ24teXRPQ0NuWHJ1S2RNY1Z3Mjl4VEZQZE9IT0JPZWZmWEc3cEdpZlpwY1NfaHlIMzlod1JRUWhvREhDeklBZHdPNkdLc1EyV2tCd1dhT1NJLXBUT2hVWVM0aEltVmkzRGd6UnlSUHZFM0JSekJaT25IRUJUaVR4Rk5VTHAwelhkWW8tZG5WYjlsdVotbnZWQXdETGlvQQ?oc=5",
+          "published": "2026-11-15T19:12:05-06:00",
+          "date": "2026-11-15",
+          "label": "Nov 15, 2026 7:12 PM CT",
+          "weekday": "Sun",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
         {
           "id": "headline:af33331acc98dfdb",
           "kind": "headline",
@@ -7105,6 +7147,27 @@
           "published": "2026-11-13T04:46:10-06:00",
           "date": "2026-11-13",
           "label": "Nov 13, 2026 4:46 AM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:762561af7625d3e8",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Moneycontrol.com",
+          "sourceId": "headline",
+          "title": "Taking Stock: Market snaps 3-day gains; Nifty below 25,150, Sensex slips 319 pts - Moneycontrol.com",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPUWxrSkhQVVZXNXFVUWEwS2xGMkx2R3FMX20td0hQc3hnaHdGX1hzT0hvSVBZY1Rad3ZCYmZBOXo4Tk9VcTJUVWFsN252bUotZk1Sckx5UndtdEFpLXlDVlJUeGhyX3JuNlJ2OEs4Y2t1ZkZmRXUyMDE4Q3l1Nldqai1acUNDb2d2NzhpSGxTRm5UTGxVS1MzWTBhTkRHbnJhcnZLTG5lUkxsa3dfeC1hcTREdENjOXZZQ0ptQ1FGZHpHMUk1U1VqX0F3cDhwS1Vwb3FaYmRaaVfSAd4BQVVfeXFMTnFWLTlGWlRrRkZlM0tQTm04MTNLdENWM2M1MFVIaDZySEhDYjFCeldoQmFfNzlReE1IMXZGeklzbmR5alc2anR5blZ1QUMxUUhWN0ZOUWRKbEhnWTNNM1g0Y0NHM3ROQWVRZWJnSmxYWVdxRVBqd3pkUW5OUWFELW02bTQwUVVkRWY4ek9pbTM3aFpHSFJaYVN3M3hhTkQwQURsU01DMDZoVTJtcUpFcW92dTFWaWJrTFlZVU1ZZDJEVDFwUm84MzlXb3FSVzVZTTh1QVFHa1pIbWxfUXdR?oc=5",
+          "published": "2026-11-13T04:35:18-06:00",
+          "date": "2026-11-13",
+          "label": "Nov 13, 2026 4:35 AM CT",
           "weekday": "Fri",
           "timeKnown": true,
           "tags": [
@@ -7777,69 +7840,6 @@
           "published": "2026-11-11T11:07:48-06:00",
           "date": "2026-11-11",
           "label": "Nov 11, 2026 11:07 AM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:0ec09b29384dd9f4",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Moneycontrol.com",
-          "sourceId": "headline",
-          "title": "India's Q2 GDP growth likely at 7.8%, above RBI estimate of 7.2%: SBI Research - Moneycontrol.com",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPa3Z4VzF5THlIMUlrWnBURmRpNWl6cmJERzNzbnZVUlhqUkUwQUJsMXJnamZOc1hkNXVtaGNfWU5qV09USmhFbTFsOGl0ZEZNTTFRS0VZTVpPMmZucGh2TGFZbWNOOE44OXVsTlQ4Um5Vd3FjRTN1TEhmSHM2MnQyOU5WRmZ4cmFjaXZOeGE4Wl9jT3RzTmJieEE2MGVjWWwzMk9MWkJmdUNsa0lfYi1TRzd4NWtJQ3hxNXFQRFNReVRRQXRIM2luU19mS1FvWWN1ek1Fb3FJd18yb0XSAdsBQVVfeXFMT2t2eFcxeUx5SDFJa1pwVEZkaTVpenJiREczc252VVJYalJFMEFCbDFyZ2pmTnNYZDV1bWhjX1lOaldPVEpoRW0xbDhpdGRGTU0xUUtFWU1aTzJmbnBodkxhWW1jTjhOODl1bE5UOFJuVXdxY0UzdUxIZkhzNjJ0MjlOVkZmeHJhY2l2TnhhOFpfY090c05iYnhBNjBlY1lsMzJPTFpCZnVDbGtJX2ItU0c3eDVrSUN4cTVxUERTUXlUUUF0SDNpblNfZktRb1ljdXpNRW9xSXdfMm9F?oc=5",
-          "published": "2026-11-11T09:12:56-06:00",
-          "date": "2026-11-11",
-          "label": "Nov 11, 2026 9:12 AM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:3b9b961373397e80",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Moneycontrol.com",
-          "sourceId": "headline",
-          "title": "India's Q2 GDP growth likely at 7.8%, above RBI estimate of 7.2%: SBI Research - Moneycontrol.com",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNZkYwMUF4WFYySEgyVUp1NXphandMQ1NYY1c1cEpmY2cyLWhzcVZCaXRZeGRoOU1sWnpHbGY0Ui1YWjJnXzR1UnpIQkxibHJlVG5PMTFxX0l4U1R2bEdFX3RKZi1YS09uSkk2ZE96SGFzYURZRWZHUTNweW5mdXhhWHVVN3lTbDJIbGVpaWxsdUd3aEJBNS1UOEQyQTdTR09GRWJVcGhRMWVGSDF5Z18zc3l0c1o4YVJyaG5kZjdlSjY5bk1rRGlVRlJVV010U2FnM1RUaU5R0gHbAUFVX3lxTE9rdnhXMXlMeUgxSWtacFRGZGk1aXpyYkRHM3NudlVSWGpSRTBBQmwxcmdqZk5zWGQ1dW1oY19ZTmpXT1RKaEVtMWw4aXRkRk1NMVFLRVlNWk8yZm5waHZMYVltY044Tjg5dWxOVDhSblV3cWNFM3VMSGZIczYydDI5TlZGZnhyYWNpdk54YThaX2NPdHNOYmJ4QTYwZWNZbDMyT0xaQmZ1Q2xrSV9iLVNHN3g1a0lDeHE1cVBEU1F5VFFBdEgzaW5TX2ZLUW9ZY3V6TUVvcUl3XzJvRQ?oc=5",
-          "published": "2026-11-11T09:12:56-06:00",
-          "date": "2026-11-11",
-          "label": "Nov 11, 2026 9:12 AM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:bf2fab1b697e930b",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Business Today",
-          "sourceId": "headline",
-          "title": "Sensex jumps 773 points, Nifty tops 25,250; profit booking trims gains - Business Today",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOX3ZpbUdCbjdPR1FKN3YyRDBLM1htajFqN2JZam5QQ25PZ0RCcTBTZUNNclJjb1d4a1FCbDB3SGtUNlFHMVVBb3RvQVNqZ1Ztc0E5UlV3V0dKN0VCWTBXT1FMU0pSQnRJWTQzb2NGemxOWHRoWExBaW9maFVPai1wa1FRRDUxS0tob0xBT0EzTjBueG9hQmZuZE9NTlA2ZUptdnE1b3ZzYktDQnpHUGtZRG1md3JRWmtUVHk0N2RicHRmVEpUanVHRmFXX2hBZEJ40gHWAUFVX3lxTFByWW1iWG9FdUNhaHJvWVhhUXBvSDBOYjdvN2FUNk5TSEtaY3R5amJjSzEtSC1INEFncWN3SExXaUEtWWR2eHJsNklvTXA3STVkcUlRTmZjMmlSNXpzYnVxb2dzTU1wS1hUdkhkbUYzVHhqR0Y4dTMzNFF1N3VYMkRjeF9kck1TY21kQ0pMSndBZnlkQ1Rfc29ZTlUyTWM4aFVkVDFYd1FFQUxUdW9oblNHTlJvUVFVbFhvTEJYeUZPSTNjSlU4bGduZENnRWVPS0syU0dTYUE?oc=5",
-          "published": "2026-11-11T08:46:00-06:00",
-          "date": "2026-11-11",
-          "label": "Nov 11, 2026 8:46 AM CT",
           "weekday": "Wed",
           "timeKnown": true,
           "tags": [

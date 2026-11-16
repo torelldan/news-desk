@@ -1208,18 +1208,8 @@
       "keywords": [],
       "outlets": 1,
       "score": 0,
-      "severity": "STANDBY",
-      "topic": "diplomacy"
-    },
-    {
-      "count": 7,
-      "countries": 1,
-      "date": "2026-11-15",
-      "keywords": [],
-      "outlets": 7,
-      "score": 0,
       "severity": "ALERT",
-      "topic": "gdacs"
+      "topic": "diplomacy"
     },
     {
       "count": 1,
@@ -1228,7 +1218,7 @@
       "keywords": [],
       "outlets": 1,
       "score": 0,
-      "severity": "STANDBY",
+      "severity": "ALERT",
       "topic": "israel"
     },
     {
@@ -1272,11 +1262,11 @@
       "topic": "war-iran"
     },
     {
-      "count": 4,
+      "count": 3,
       "countries": 1,
       "date": "2026-11-15",
       "keywords": [],
-      "outlets": 4,
+      "outlets": 3,
       "score": 0,
       "severity": "ALERT",
       "topic": "war-ukraine"
@@ -2513,18 +2503,8 @@
       "keywords": [],
       "outlets": 1,
       "score": 0,
-      "severity": "STANDBY",
-      "topic": "diplomacy"
-    },
-    {
-      "count": 7,
-      "countries": 1,
-      "date": "2026-11-15",
-      "keywords": [],
-      "outlets": 7,
-      "score": 0,
       "severity": "ALERT",
-      "topic": "gdacs"
+      "topic": "diplomacy"
     },
     {
       "count": 1,
@@ -2533,7 +2513,7 @@
       "keywords": [],
       "outlets": 1,
       "score": 0,
-      "severity": "STANDBY",
+      "severity": "ALERT",
       "topic": "israel"
     },
     {
@@ -2577,11 +2557,11 @@
       "topic": "war-iran"
     },
     {
-      "count": 4,
+      "count": 3,
       "countries": 1,
       "date": "2026-11-15",
       "keywords": [],
-      "outlets": 4,
+      "outlets": 3,
       "score": 0,
       "severity": "ALERT",
       "topic": "war-ukraine"
