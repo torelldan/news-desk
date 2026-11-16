@@ -1343,9 +1343,26 @@ function watchPool() {
   }).sort((a, b) => rankOf(b) - rankOf(a) || Date.parse(b.published || 0) - Date.parse(a.published || 0)).slice(0, 10);
 }
 function renderRising() {
-  const rows = (((DESK.rising || {}).items) || []).filter((item) => item.state).slice(0, 6);
+  const scored = (((DESK.rising || {}).items) || []).filter((item) => item.state);
+  const seen = new Set(scored.map((item) => String(item.topic || item.title || "").toLowerCase()));
+  const fromBrief = (((DESK.trends || {}).items) || []).filter((item) => item.rise && item.rise !== "flat" && !seen.has(String(item.name || item.title || "").toLowerCase())).map((item) => ({
+    topic: item.name || item.title,
+    state: "RISING",
+    score: item.sourceCount || ((item.samples || []).length),
+    reasons: item.rise,
+    links: (item.samples || []).slice(0, 3)
+  }));
+  const rows = scored.concat(fromBrief).slice(0, 6);
   if (!rows.length) return "";
-  return `<article class="card"><div class="head"><span class="sev sev-alert">RISING</span></div><h3>Rising situations</h3>${rows.map((item) => `<p class="meta"><span class="sev sev-alert">${esc(item.state)}</span> ${esc(item.topic || item.title || "")} · score ${esc(String(item.score || ""))} · ${esc(item.reasons || "")}</p>`).join("")}</article>`;
+  const lines = rows.map((item) => {
+    const links = (item.links || item.samples || []).slice(0, 3).map((sample) => {
+      const url = safeUrl(sample.url);
+      const label = sample.title || sample.text || sample.source || "source";
+      return url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(label)}</a>` : esc(label);
+    }).filter(Boolean).join(" · ");
+    return `<p class="meta"><span class="sev sev-alert">${esc(item.state)}</span> ${esc(item.topic || item.title || "")} · ${esc(item.reasons || "")}${links ? " · " + links : ""}</p>`;
+  }).join("");
+  return `<article class="card"><div class="head"><span class="sev sev-alert">RISING</span></div><h3>Rising situations</h3>${lines}</article>`;
 }
 function renderStrikes() {
   const doc = DESK.strikes || {};

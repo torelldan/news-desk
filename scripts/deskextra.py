@@ -189,6 +189,114 @@ def strike_fields(title: str) -> dict:
     return {"means": means, "target_type": target_type, "country": country}
 
 
+def strike_from_row(row: dict) -> dict | None:
+    """A strike card from a headline or a threat-board row. None when it is not a strike."""
+    title = clean_strike_title(row.get("title") or "")
+    if not keep_strike(title):
+        return None
+    fields = strike_fields(title)
+    severity = strike_severity(title)
+    return {
+        "title": title,
+        "url": row.get("url") or "",
+        "source": row.get("source") or "",
+        "date": str(row.get("date") or (row.get("published") or ""))[:10],
+        "published": row.get("published") or "",
+        "country": fields.get("country") or "",
+        "means": fields.get("means") or "",
+        "target_type": fields.get("target_type") or "",
+        "severity": severity,
+        "related": int(row.get("related") or 0),
+        "relatedSources": list(row.get("relatedSources") or []),
+    }
+
+
+def _strike_key(title: str) -> str:
+    text = re.sub(r"\s+[-–—|]\s+[^-–—|]{2,80}$", "", title or "")
+    return re.sub(r"[^a-z0-9]+", " ", text.lower()).strip()
+
+
+def _same_strike(left: str, right: str) -> bool:
+    a = set(_strike_key(left).split())
+    b = set(_strike_key(right).split())
+    if not a or not b:
+        return False
+    if a == b or a <= b or b <= a:
+        return True
+    shared = a & b
+    return len(shared) >= 5 and len(shared) / min(len(a), len(b)) >= 0.6
+
+
+def merge_strikes(previous: dict | None, fresh: list[dict], today: str, keep_days: int = 14) -> dict:
+    """Keep two weeks of strikes. A newer headline replaces an older copy of the same story."""
+    try:
+        cutoff = (datetime.fromisoformat(today) - timedelta(days=keep_days)).date().isoformat()
+    except ValueError:
+        cutoff = ""
+    chosen: dict[str, dict] = {}
+    for item in list((previous or {}).get("items") or []) + list(fresh or []):
+        title = clean_strike_title(item.get("title") or "")
+        day = str(item.get("date") or "")[:10]
+        if not title or (cutoff and day and day < cutoff):
+            continue
+        if not str(item.get("country") or "").strip():
+            item = dict(item)
+            item["country"] = strike_fields(title).get("country") or ""
+            item["title"] = title
+        key = next((name for name in chosen if _same_strike(title, chosen[name].get("title") or name)), None) or _strike_key(title)
+        prior = chosen.get(key)
+        if prior is None or (item.get("published") or item.get("date") or "") >= (prior.get("published") or prior.get("date") or ""):
+            saved = dict(item)
+            saved["title"] = title
+            if prior and prior.get("source") and prior.get("source") != saved.get("source"):
+                sources = list(saved.get("relatedSources") or [])
+                if prior["source"] not in sources:
+                    sources.append(prior["source"])
+                saved["relatedSources"] = sources
+                saved["related"] = len(sources)
+            chosen[key] = saved
+    rows = sorted(chosen.values(), key=lambda row: row.get("published") or row.get("date") or "", reverse=True)
+    return {
+        "items": rows[:12],
+        "counts": {
+            "total": len(rows[:12]),
+            "energy": sum(1 for row in rows[:12] if row.get("target_type") == "energy"),
+        },
+        "gaps": list((previous or {}).get("gaps") or []),
+    }
+
+
+def rising_from_trends(trends: dict | None, scored: list | None = None) -> list[dict]:
+    """Topics the morning brief calls rising, plus any scored trend-log states."""
+    rows = []
+    seen = set()
+    for item in scored or []:
+        topic = (item.get("topic") or "").strip()
+        if not topic or not item.get("state"):
+            continue
+        seen.add(topic.lower())
+        rows.append(dict(item))
+    for item in (trends or {}).get("items") or []:
+        rise = item.get("rise")
+        name = (item.get("name") or item.get("title") or "").strip()
+        if not name or rise in (None, "", "flat") or name.lower() in seen:
+            continue
+        seen.add(name.lower())
+        samples = item.get("samples") or []
+        rows.append({
+            "topic": name,
+            "state": "RISING",
+            "score": item.get("sourceCount") or len(samples),
+            "reasons": str(rise),
+            "links": [{
+                "title": sample.get("text") or sample.get("title") or "",
+                "url": sample.get("url") or "",
+                "source": sample.get("source") or "",
+            } for sample in samples[:3]],
+        })
+    return rows
+
+
 def normalize_strikes(doc: dict) -> dict:
     for item in (doc or {}).get("items") or []:
         title = clean_strike_title(item.get("title") or "")

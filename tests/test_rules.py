@@ -810,6 +810,27 @@ def test_hazard_source_parsers():
     assert "action" not in old_drought["tags"] and "standby" in old_drought["tags"]
     assert fresh_drought["severity"] == "ACTION"
     assert other["severity"] == "ACTION"
+    npr = "Midterm voters ended the long-running GOP dominance in state legislatures - NPR"
+    pbs = "Democrats try out a strange new emotion at post-midterms What's Next conference: hope - PBS"
+    assert boards.politics_without_threat(npr)
+    assert boards.politics_without_threat(pbs)
+    assert boards.politics_without_threat("Ukraine launches biggest drone attack on Russia since war began - NBC News") is False
+    assert boards.politics_without_threat("Iran raises stakes with new drone attacks as Trump signals a waiting game - CNN") is False
+    nbc = {"title": "Ukraine launches biggest drone attack on Russia since war began - NBC News", "url": "https://example.com/nbc", "source": "NBC News", "date": "2026-11-16", "published": "2026-11-16T07:44:43-06:00"}
+    old = {"title": "Drone strike on key northern port of Ust-Luga sparks major fire", "url": "https://example.com/old", "source": "The Insider", "date": "2026-11-11", "published": "2026-11-11T02:00:00-06:00", "country": "Russia", "severity": "ALERT", "target_type": "transport", "means": "drone"}
+    merged = deskextra.merge_strikes({"items": [old]}, [deskextra.strike_from_row(nbc)], "2026-11-16")
+    titles = [row["title"] for row in merged["items"]]
+    assert any("biggest drone attack" in title for title in titles)
+    assert any("Ust-Luga" in title for title in titles)
+    card = deskextra.rising_from_trends({"items": [{"name": "ukraine war", "rise": "4 outlets this window", "sourceCount": 4, "samples": [{"text": "Ukraine launches biggest drone attack", "url": "https://example.com/nbc", "source": "NBC"}]}]}, [])
+    assert card and card[0]["state"] == "RISING" and card[0]["topic"] == "ukraine war"
+    assert card[0]["links"][0]["url"] == "https://example.com/nbc"
+    rows = boards._cap_quakes([
+        {"severity": "STANDBY", "usImpact": True, "published": "2026-11-11T00:00:00-06:00", "url": "https://example.com/guam", "title": "Guam"},
+        {"severity": "STANDBY", "usImpact": False, "published": "2026-11-16T01:00:00Z", "url": "https://example.com/japan", "title": "Japan"},
+        {"severity": "STANDBY", "usImpact": False, "published": "2026-11-15T01:00:00Z", "url": "https://example.com/fiji", "title": "Fiji"},
+    ])
+    assert any(row["title"] == "Japan" for row in rows)
 
 
 if __name__ == "__main__":
