@@ -1589,24 +1589,32 @@ def european_named_storm(title: str, note: str = "") -> bool:
     return bool(named and place)
 
 
-_POLITICS_ONLY = re.compile(
-    r"\b(midterms?|election|voters?|legislatur\w*|ballot|polls?|conference)\b",
+_SOFT_COPY = re.compile(
+    r"\b(midterms?|election|voters?|legislatur\w*|ballot|polls?|conference|"
+    r"unveil\w*|exhibit\w*|artifact\w*|museum|librar\w*|gallery|concert|festival|"
+    r"histori(?:es|cal)|cultural)\b",
     re.I,
 )
 _THREAT_ELEMENT = re.compile(
-    r"\b(violen\w*|unrest|riot\w*|emergency|attacks?|war|strikes?|missile|kills?|killed|bombs?|"
+    r"\b(violen\w*|unrest|riot\w*|emergenc\w*|attacks?|wars?|strikes?|missile|kills?|killed|bombs?|"
     r"explos\w*|invasion|terror\w*|assassin\w*|evacuat\w*|martial|coup|shoots?|shooting|"
-    r"dead|casualt\w*|drone|airstrike|shelling|hostage|siege)\b",
+    r"dead|casualt\w*|drone|airstrike|shelling|hostage|siege|disaster|outbreak|"
+    r"quake|flood\w*|hurricane|wildfire)\b",
     re.I,
 )
 
 
-def politics_without_threat(title: str, note: str = "") -> bool:
-    """Election color without violence, unrest, or an attack is not a threat-board alert."""
+def nonthreat_copy(title: str, note: str = "") -> bool:
+    """Politics, exhibits, and other soft announcements are not threat-board alerts."""
     blob = f"{title or ''} {note or ''}"
-    if not _POLITICS_ONLY.search(blob):
+    if _THREAT_ELEMENT.search(blob):
         return False
-    return _THREAT_ELEMENT.search(blob) is None
+    return _SOFT_COPY.search(blob) is not None
+
+
+def politics_without_threat(title: str, note: str = "") -> bool:
+    """Election color without a threat element is not a threat-board alert."""
+    return nonthreat_copy(title, note)
 
 
 def classify_desk(title: str, note: str, hinted: str) -> str:
@@ -1694,7 +1702,7 @@ def _try_desks(now):
                 continue
             row = dict(row)
             assigned = classify_desk(row.get("title") or "", row.get("note") or "", kind)
-            if assigned == "news" or politics_without_threat(row.get("title") or "", row.get("note") or ""):
+            if assigned == "news" or nonthreat_copy(row.get("title") or "", row.get("note") or ""):
                 continue
             row["kind"] = assigned
             row["lane"] = "news"

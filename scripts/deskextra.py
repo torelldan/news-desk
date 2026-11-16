@@ -20,8 +20,19 @@ TN_COUNTY_FIPS = {
     "rutherford": "149", "maury": "119", "hickman": "081", "dickson": "043", "cheatham": "021",
 }
 STRIKE_PLACES = (
-    ("ust-luga", "Russia"), ("ust luga", "Russia"), ("suez", "Egypt"), ("egypt", "Egypt"),
+    ("black sea", "Black Sea"),
+    ("ust-luga", "Russia"), ("ust luga", "Russia"), ("suez", "Egypt"),
     ("smolensk", "Russia"), ("leningrad", "Russia"), ("kirishi", "Russia"), ("afipsky", "Russia"),
+    ("moscow", "Russia"),
+    ("bahrain", "Bahrain"),
+    ("romanian", "Romania"), ("romania", "Romania"),
+    ("u.k.", "United Kingdom"), ("united kingdom", "United Kingdom"),
+    ("britain", "United Kingdom"), ("uk air", "United Kingdom"),
+    ("estonia", "Estonia"),
+    ("egypt", "Egypt"),
+    ("ukraine", "Ukraine"), ("russia", "Russia"), ("iran", "Iran"), ("iranian", "Iran"),
+    ("israel", "Israel"), ("syria", "Syria"), ("yemen", "Yemen"), ("lebanon", "Lebanon"),
+    ("united states", "United States"), ("u.s.", "United States"),
 )
 
 CHOKEPOINTS = ("hormuz", "red sea", "ust-luga", "ust luga", "novorossiysk", "primorsk")
@@ -175,18 +186,41 @@ def strike_fields(title: str) -> dict:
         target_type = "assassination"
     elif re.search(r"\b(apartment|residential|civilian|hospital|school)\b", blob, re.I):
         target_type = "civilian"
-    country = ""
-    low = blob.lower()
+    return {"means": means, "target_type": target_type, "country": strike_country(blob)}
+
+
+def _match_place(fragment: str) -> str:
+    low = f" {fragment.lower()} "
     for needle, name in STRIKE_PLACES:
         if needle in low:
-            country = name
-            break
-    if not country:
-        for name in ("Ukraine", "Russia", "Iran", "Israel", "Syria", "Yemen", "Lebanon", "Egypt"):
-            if re.search(rf"\b{name}\b", blob, re.I):
-                country = name
-                break
-    return {"means": means, "target_type": target_type, "country": country}
+            return name
+    return ""
+
+
+def strike_country(title: str) -> str:
+    """Where the strike landed. 'Attack on Russia' is Russia, not the attacker."""
+    low = (title or "").lower()
+    aimed = re.search(
+        r"\b(?:attacks?|strikes?|hits?|hitting|bombard\w*|shell(?:ing|s)?)\s+(?:on|in|at|against|near)\s+([^.]{2,80})",
+        low,
+    )
+    if aimed:
+        fragment = aimed.group(1)
+        landed = re.search(r"\b(?:in|at|near|over)\s+(.{2,40})$", fragment.strip())
+        if landed:
+            label = _match_place(landed.group(1))
+            if label:
+                return label
+        label = _match_place(fragment)
+        if label:
+            return label
+    if "black sea" in low:
+        return "Black Sea"
+    for match in re.finditer(r"\b(?:in|at|near|over)\s+([^,.]{2,40})", low):
+        label = _match_place(match.group(1))
+        if label:
+            return label
+    return _match_place(low)
 
 
 def strike_from_row(row: dict) -> dict | None:
@@ -237,12 +271,11 @@ def merge_strikes(previous: dict | None, fresh: list[dict], today: str, keep_day
     for item in list((previous or {}).get("items") or []) + list(fresh or []):
         title = clean_strike_title(item.get("title") or "")
         day = str(item.get("date") or "")[:10]
-        if not title or (cutoff and day and day < cutoff):
+        if not title or (cutoff and day and day < cutoff) or not keep_strike(title):
             continue
-        if not str(item.get("country") or "").strip():
-            item = dict(item)
-            item["country"] = strike_fields(title).get("country") or ""
-            item["title"] = title
+        item = dict(item)
+        item["title"] = title
+        item["country"] = strike_fields(title).get("country") or ""
         key = next((name for name in chosen if _same_strike(title, chosen[name].get("title") or name)), None) or _strike_key(title)
         prior = chosen.get(key)
         if prior is None or (item.get("published") or item.get("date") or "") >= (prior.get("published") or prior.get("date") or ""):
@@ -301,16 +334,24 @@ def normalize_strikes(doc: dict) -> dict:
     for item in (doc or {}).get("items") or []:
         title = clean_strike_title(item.get("title") or "")
         item["title"] = title
-        if not str(item.get("country") or "").strip():
+        if keep_strike(title):
             item["country"] = strike_fields(title).get("country") or ""
     return doc
 
 
 def keep_strike(title: str) -> bool:
-    """Drop a domestic accident that is not a strike."""
-    if DOMESTIC_ACCIDENT.search(title or "") and not STRIKE_MEANS.search(title or ""):
+    """A strike, bombardment, or explosion. A border story about a drone factory is not one."""
+    blob = title or ""
+    if DOMESTIC_ACCIDENT.search(blob) and not STRIKE_MEANS.search(blob):
         return False
-    return bool(STRIKE_MEANS.search(title or "") or ENERGY_TARGET.search(title or ""))
+    struck = re.search(r"\b(strikes?|attacks?|bombard\w*|explos\w*|shelling|airstrikes?|air strikes?)\b", blob, re.I)
+    if re.search(r"\b(drone maker|drone factory)\b", blob, re.I) and not struck:
+        return False
+    if re.search(r"\b(close|closing)\b.+\bborder\b", blob, re.I) and not struck:
+        return False
+    if struck:
+        return True
+    return bool(re.search(r"\b(drone|missile)s?\b", blob, re.I) and re.search(r"\b(intercept\w*|activity|air ?base|airbase)\b", blob, re.I))
 
 
 def strike_severity(title: str, *, energy_hits_72h: int = 1, brent_move: float | None = None) -> str:

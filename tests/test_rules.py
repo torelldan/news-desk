@@ -831,6 +831,18 @@ def test_hazard_source_parsers():
         {"severity": "STANDBY", "usImpact": False, "published": "2026-11-15T01:00:00Z", "url": "https://example.com/fiji", "title": "Fiji"},
     ])
     assert any(row["title"] == "Japan" for row in rows)
+    library = 'Library of Congress to Unveil “Voices of the Early Americas,” Featuring Rare Artifacts, Maps and Indigenous Histories - Library of Congress (.gov)'
+    assert boards.nonthreat_copy(library)
+    assert boards.nonthreat_copy("Ukraine launches biggest drone attack on Russia since war began - NBC News") is False
+    assert deskextra.strike_country("Ukraine launches biggest drone attack on Russia since war began - NBC News") == "Russia"
+    assert deskextra.strike_country("Iran launches drone attacks against US military base in Bahrain - The Guardian") == "Bahrain"
+    assert deskextra.strike_country("Black Sea drone strikes hit four ships near Romanian coast - Seatrade Maritime News") == "Black Sea"
+    assert deskextra.strike_country("US intercepts two Iranian drones as IRGC claims strike on radar in Bahrain - The Jerusalem Post") == "Bahrain"
+    assert deskextra.strike_country("U.S. investigates suspected ‘unauthorized drone activity’ at U.K. air base - The Washington Post") == "United Kingdom"
+    assert deskextra.strike_country("Mass drone attack on Moscow grounds flights at region's airports") == "Russia"
+    estonia = "NATO member Estonia to close Russia border after attempted 'sabotage' of drone maker - CNBC"
+    assert deskextra.keep_strike(estonia) is False
+    assert deskextra.keep_strike("Drone strike hits Russian oil refinery in Kirishi") is True
 
 
 if __name__ == "__main__":
