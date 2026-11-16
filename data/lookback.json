@@ -2,6 +2,20 @@
   "calls": [],
   "escalated": [
     {
+      "note": "New since 2026-11-09 · now ACTION",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ACTION",
+      "title": "Tropical Cyclone AKVAN-26"
+    },
+    {
+      "note": "New since 2026-11-09 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "Earthquake in Peru"
+    },
+    {
       "note": "New since 2026-11-09 · now ALERT",
       "related": 0,
       "relatedSources": [],
@@ -34,14 +48,28 @@
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Tropical Cyclone XAVIER-26"
+      "title": "Winter Nightmare Looms Early in Ukraine as Russia Strikes Relentlessly - The New York Times"
     },
     {
       "note": "New since 2026-11-09 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Forest fires in Australia"
+      "title": "Third U.S. aircraft carrier in Middle East as Trump keeps options open in Iran war - PBS"
+    },
+    {
+      "note": "New since 2026-11-09 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "Washington Letter: Iran war looms over the upcoming Congress and potential 2028 contenders - OSV News"
+    },
+    {
+      "note": "New since 2026-11-09 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "Coalition to move away from fossil fuels presses ahead without Colombia, its original champion - PBS"
     },
     {
       "note": "New since 2026-11-09 · now ALERT",
@@ -55,23 +83,7 @@
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Iran raises stakes with new drone attacks as Trump signals a waiting game - CNN"
-    },
-    {
-      "note": "New since 2026-11-09 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "source": "",
-      "title": "EU HR/VP Kaja Kallas Attended the G7 Foreign Affairs Ministers’ Meeting in Paris - EEAS"
-    },
-    {
-      "note": "New since 2026-11-09 · now ALERT",
-      "related": 1,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "source": "",
-      "title": "White House sends warning to Democrats about investigating the Trump administration - PBS"
+      "title": "WATCH: Rubio delivers keynote address at Federalist Society National Lawyers Convention - PBS"
     }
   ],
   "fizzled": [
@@ -91,17 +103,17 @@
     },
     {
       "note": "ALERT → STANDBY since 2026-11-09",
-      "related": 0,
+      "related": 2,
       "relatedSources": [],
       "severity": "STANDBY",
-      "title": "Trump to meet Iran war mediator Qatar, no imminent deal seen to end the war - Reuters"
+      "title": "COP31 to take place 9-20 November 2026 in Antalya, Türkiye - Welcome to the United Nations"
     },
     {
       "note": "ALERT → STANDBY since 2026-11-09",
       "related": 0,
       "relatedSources": [],
       "severity": "STANDBY",
-      "title": "Trump reacts to Vance’s Iran war post, says he’d make the same call - Politico"
+      "title": "Europe to press US on Ukraine peace and Iran at Paris G7 talks - France 24"
     },
     {
       "note": "ALERT → STANDBY since 2026-11-09",
@@ -112,6 +124,20 @@
     }
   ],
   "newSince": [
+    {
+      "note": "New since 2026-11-09 · now ACTION",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ACTION",
+      "title": "Tropical Cyclone AKVAN-26"
+    },
+    {
+      "note": "New since 2026-11-09 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "Earthquake in Peru"
+    },
     {
       "note": "New since 2026-11-09 · now ALERT",
       "related": 0,
@@ -145,14 +171,28 @@
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Tropical Cyclone XAVIER-26"
+      "title": "Winter Nightmare Looms Early in Ukraine as Russia Strikes Relentlessly - The New York Times"
     },
     {
       "note": "New since 2026-11-09 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Forest fires in Australia"
+      "title": "Third U.S. aircraft carrier in Middle East as Trump keeps options open in Iran war - PBS"
+    },
+    {
+      "note": "New since 2026-11-09 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "Washington Letter: Iran war looms over the upcoming Congress and potential 2028 contenders - OSV News"
+    },
+    {
+      "note": "New since 2026-11-09 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "Coalition to move away from fossil fuels presses ahead without Colombia, its original champion - PBS"
     },
     {
       "note": "New since 2026-11-09 · now ALERT",
@@ -166,23 +206,7 @@
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Iran raises stakes with new drone attacks as Trump signals a waiting game - CNN"
-    },
-    {
-      "note": "New since 2026-11-09 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "source": "",
-      "title": "EU HR/VP Kaja Kallas Attended the G7 Foreign Affairs Ministers’ Meeting in Paris - EEAS"
-    },
-    {
-      "note": "New since 2026-11-09 · now ALERT",
-      "related": 1,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "source": "",
-      "title": "White House sends warning to Democrats about investigating the Trump administration - PBS"
+      "title": "WATCH: Rubio delivers keynote address at Federalist Society National Lawyers Convention - PBS"
     }
   ],
   "note": "Compared with the stored board on 2026-11-09.",

@@ -1,16 +1,15 @@
 {
   "baseline": false,
-  "brief": "No rare risk is on the board. A routine flyby or an empty storm outlook is not an emergency. Current war coverage is on the board: ‘NATO will collapse’: Russia stalls Ukraine talks, seeks to divide Europe - Al Jazeera; Ukraine Facility: Council approves largest-ever payment of €8 billion to Kyiv - Council, European Union. Rising topic: ukraine war (4 outlets this window).",
-  "checkedAt": "2026-11-16T10:27:31-06:00",
-  "checkedLabel": "Nov 16, 2026 10:27 AM CT",
+  "brief": "Open risk: ACTION Tropical Cyclone AKVAN-26. Current war coverage is on the board: Winter Nightmare Looms Early in Ukraine as Russia Strikes Relentlessly - The New York Times; Third U.S. aircraft carrier in Middle East as Trump keeps options open in Iran war - PBS. Rising topic: tornado warning santa cruz (US daily list 500+).",
+  "checkedAt": "2026-11-16T14:59:54-06:00",
+  "checkedLabel": "Nov 16, 2026 2:59 PM CT",
   "errors": [
-    "ReliefWeb: the disasters page returned no cards from this network. The RSS feed is an AWS WAF challenge, and API v2 rejects appname=torelldan-news-desk until ReliefWeb approves it.",
-    "CNEOS close approaches: curl: (22) The requested URL returned error: 502\n"
+    "ReliefWeb: the disasters page returned no cards from this network. The RSS feed is an AWS WAF challenge, and API v2 rejects appname=torelldan-news-desk until ReliefWeb approves it."
   ],
   "retainDays": 120,
   "today": "2026-11-16",
   "trends": {
-    "google": "Google Trends US daily list answered (10 topics). Kept the ones that match a war, government, or threat topic. None of today's search trends matched.",
+    "google": "Google Trends US daily list answered (10 topics). Kept the ones that match a war, government, or threat topic.",
     "mode": "trends",
     "note": "X trends by WOEID (US 23424977 and worldwide 1). Kept only when the name matches a threat or preparedness theme. The endpoint answered and none of the names matched."
   },
