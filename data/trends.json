@@ -1,55 +1,101 @@
 {
-  "googleNote": "Google Trends US daily list answered (10 topics). Kept the ones that match a war, government, or threat topic.",
+  "googleNote": "Google Trends US daily list answered (10 topics). Kept the ones that match a war, government, or threat topic. None of today's search trends matched.",
   "items": [
     {
-      "category": "iran-war",
+      "category": "ukraine-war",
       "confidence": "reported",
-      "date": "2026-11-15",
-      "id": "gtrend:141666198423ec55",
+      "date": "2026-11-16",
+      "id": "velocity:efd2da34e68ca58f",
       "kind": "trend",
       "lane": "news",
       "look": "news",
-      "name": "donald trump iran war",
-      "note": "US search trend. Traffic 5000+.",
-      "place": "US",
-      "published": "2026-11-15T21:40:00-06:00",
-      "rise": "US daily list 5000+",
+      "name": "ukraine war",
+      "note": "The same topic showed up across several outlets.",
+      "published": "2026-11-16T08:35:43-06:00",
+      "rise": "4 outlets this window",
       "samples": [
         {
-          "source": "The New York Times",
-          "text": "Trump Signals New Strategy on Iran: A Waiting Game",
-          "url": "https://www.nytimes.com/2026/11/13/us/politics/trump-iran-strategy.html"
+          "date": "2026-11-16",
+          "published": "2026-11-16T07:44:43-06:00",
+          "source": "NBC News",
+          "text": "Ukraine launches biggest drone attack on Russia since war began - NBC News",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQU0xfMlFhd1lZcGlEb3k1TGJyUlJGdGJHZDZjbU0xeWRRZDVJeE4wVGJHVUNzTnZ5aFJVZEE2bW8tNjZuODZXS1RnMlFQTkQtQVZtQzF2NmhjNWlzZ1BpVGc1dFZ2QU1oMC0wekZFQnhtWlBJX1VTVXlFTlNtM1JrbDFJaFBKRGVaUnRHZG5UbHNwcDdlX2lWN3ozckVYNVNkc2xmYy1B?oc=5"
         },
         {
-          "source": "The Hill",
-          "text": "Trump says the Iran war ‘effectively over.’ It’s still costing the US billions",
-          "url": "https://thehill.com/policy/defense/6214685-us-military-costs-iran-conflict/"
+          "date": "2026-11-16",
+          "published": "2026-11-16T03:43:31-06:00",
+          "source": "Council, European Union",
+          "text": "Ukraine Facility: Council approves largest-ever payment of €8 billion to Kyiv - Council, European Union",
+          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOWlk5VTVlN2xzVVl3TjkwQWw5eVdJUzVSeGtra1dJWkY0Y2M0Q1ByWUpPTVZWSHc0TlhmX1dGN2pJRHhHR2w3Vjh3R2NsOXlpMWFLT1dETnVBZ3ZOb01qZDBXRnJzcjJKTndKcXZhZWlIMnpSYlBMS0R1Q0R5ZHJKLXZoYUZ4dlNJcUN1azR5YjYtSGFrbnFyNHl6MUdreFZySU1zUVd3LTJpdnJsdmZfU1JXdW5wWWNTNWhaNTdyMFNRemJIT1p0RGNsOTdEekJtSDB2Y3c4cVRUcGM?oc=5"
         },
         {
-          "source": "Reuters",
-          "text": "Trump tells advisers he may hold off on Iran attacks barring new provocations, sources say",
-          "url": "https://www.reuters.com/world/middle-east/trump-tells-advisers-he-may-hold-off-iran-attacks-barring-new-provocations-2026-11-14/"
+          "date": "2026-11-13",
+          "published": "2026-11-13T14:02:20-06:00",
+          "source": "DW.com",
+          "text": "Ukraine updates: Europe to send united front to potential peace talks - DW.com",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNS1oteUxOelRYWG4zNzBaMHdiRjJTQ3hWaHd4UXZmam4wN2pQbEg1dzR3dUVWVkEzN1VnbE1tTUVlSmtkNWpVaFVaa08tdzNCTDNfNlZIWTEweDFTM01ud2g5Vml2TEJfOG1rZF9vOVdOZzE4THVFWTY4R3lzSS1WNFhzYkQ0Z3loZk0zcTlmNHBDS3J5eGRUWWZsNTd5N0ZmenliVXRoTQ?oc=5"
         }
       ],
       "severity": "ALERT",
       "soWhat": "no action needed",
-      "source": "Google Trends",
-      "sourceCount": 3,
-      "title": "donald trump iran war",
-      "url": "https://www.nytimes.com/2026/11/13/us/politics/trump-iran-strategy.html",
-      "volume": "5000+"
+      "source": "News velocity",
+      "sourceCount": 4,
+      "title": "ukraine war",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQU0xfMlFhd1lZcGlEb3k1TGJyUlJGdGJHZDZjbU0xeWRRZDVJeE4wVGJHVUNzTnZ5aFJVZEE2bW8tNjZuODZXS1RnMlFQTkQtQVZtQzF2NmhjNWlzZ1BpVGc1dFZ2QU1oMC0wekZFQnhtWlBJX1VTVXlFTlNtM1JrbDFJaFBKRGVaUnRHZG5UbHNwcDdlX2lWN3ozckVYNVNkc2xmYy1B?oc=5"
+    },
+    {
+      "category": "iran-war",
+      "confidence": "reported",
+      "date": "2026-11-16",
+      "id": "velocity:4ee4bc978244e41e",
+      "kind": "trend",
+      "lane": "news",
+      "look": "news",
+      "name": "iran war",
+      "note": "The same topic showed up across several outlets.",
+      "published": "2026-11-16T08:35:43-06:00",
+      "rise": "4 outlets this window",
+      "samples": [
+        {
+          "date": "2026-11-15",
+          "published": "2026-11-15T20:57:35-06:00",
+          "source": "Institute for the Study of War",
+          "text": "Iran Update, November 15, 2026 - Institute for the Study of War",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNYkpGTlg3ekg1dWVwU1BicDN1WWxTTFpxRENpaGxnQ0IzaFFaVEt4SHF1UjhXSE5aNk84UlF5TXZhQ2QxYjhVSFdLQnJyV2RJVFhsMXNJOVJMZmp3YXVDV2lsaXBoWnJfbEpQM0ZPTW0tUERzc2xRMGhCb3FYOTR0N2RqanhzUQ?oc=5"
+        },
+        {
+          "date": "2026-11-15",
+          "published": "2026-11-15T09:36:17-06:00",
+          "source": "CNN",
+          "text": "Iran raises stakes with new drone attacks as Trump signals a waiting game - CNN",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE0wRnhRaVVocE9uVEN6Ml82aHNlaXc4di1fM1NJR29BMHp3SmdBNDRMcUt2UFZ6QnV6LU5WeDFNZjYwOTdXd1FoczdLOUVwb1VHQTRtVUN0VUpBMlM2U0c0cWxjMHRsMkI1S2dwcjZfMFdMQVZoS1oydlBiYUY4Zw?oc=5"
+        },
+        {
+          "date": "2026-11-13",
+          "published": "2026-11-13T16:20:49-06:00",
+          "source": "Time Magazine",
+          "text": "Fatih Birol: The Energy World Will Never Be the Same As Before the Iran War - Time Magazine",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9GMU54SnZyRFRIa0JwNnM3SVNLUXRwX0ljUGp6UjQ2OXRLODZtd2JqQ3BablVqUHZJT1JCWWxSX0tYNHpxVE45c1BKRi00LUZCYUkza3VSQzlJVGhUZHhQM2w5eEE5TjZ1WUtPbm5sN3E0Z1hxcnFrQmN3?oc=5"
+        }
+      ],
+      "severity": "ALERT",
+      "soWhat": "no action needed",
+      "source": "News velocity",
+      "sourceCount": 4,
+      "title": "iran war",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNYkpGTlg3ekg1dWVwU1BicDN1WWxTTFpxRENpaGxnQ0IzaFFaVEt4SHF1UjhXSE5aNk84UlF5TXZhQ2QxYjhVSFdLQnJyV2RJVFhsMXNJOVJMZmp3YXVDV2lsaXBoWnJfbEpQM0ZPTW0tUERzc2xRMGhCb3FYOTR0N2RqanhzUQ?oc=5"
     },
     {
       "category": "us-gov",
       "confidence": "reported",
-      "date": "2026-11-15",
+      "date": "2026-11-16",
       "id": "velocity:bd817662251631b7",
       "kind": "trend",
       "lane": "news",
       "look": "news",
       "name": "us gov",
       "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-15T22:26:13-06:00",
+      "published": "2026-11-16T08:35:43-06:00",
       "rise": "4 outlets this window",
       "samples": [
         {
@@ -68,10 +114,10 @@
         },
         {
           "date": "2026-11-13",
-          "published": "2026-11-13T10:57:34-06:00",
-          "source": "Peterson Institute for International Economics",
-          "text": "How Congress might take back its trade powers and limit Trump's tariffs - Peterson Institute for International Economics",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNd3dkbjI5MjdTckFXd2lKQk5VWTJybnlhMzVIVWRNLTdjQXA5aEQ2U2g0SjdETDRTSEtiLXBQS2JpQWwzQXNPNVhKMXpfRm16ckJNYTdTUl9iRnBqTmFrRnptLW1NWmVVUzd6QUVPTl90QlR6MUdBVEVINDJ3VG9lWDBEbWMwQjZTcUhxTThDeXlOREFBcEc3QTk2Qlo1QUZkd29kT3FsMG8wNkhpRzVnZWVDTQ?oc=5"
+          "published": "2026-11-13T06:00:00-06:00",
+          "source": "Brennan Center for Justice",
+          "text": "Voter Anger at Corruption Shapes 2026 Midterms - Brennan Center for Justice",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPVU1kemxCcE1GamNkQi1TQmRXODY0a015N2lWRUN4alJmVVVzemtsYm00Ry14cDFEMXFrM3Rmc1p3S25NMV9XLXpFWkMtYUJHTHVKQ0RaZnFRY1plMk03RGhIOEpLNHhud18wZ19iQVBVaU5yQ0c3MlF0OWJ2VVFOTjZTNklhalZtNktHTms4b01UY3BZbG5nOFdyRFczb3hs?oc=5"
         }
       ],
       "severity": "ALERT",
@@ -80,90 +126,6 @@
       "sourceCount": 4,
       "title": "us gov",
       "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNbkFrNlZlUFBVRC1VNGV5c0IxMmJmdFE3M1h2Z2RBcXVMaHlxTVdOVkdJdGNuZEk3ZTZhbExrMDJrTEZsN1lOay1oeWFDaFpCTjlRT1pSVUo1eVJzVmFNSjQ0RjctLW53M3d6WHh2Y2FBenQyUlBNdmYwR0g2UmpGckFNTVFVclFid1M2S2h6Sk0?oc=5"
-    },
-    {
-      "category": "iran-war",
-      "confidence": "reported",
-      "date": "2026-11-15",
-      "id": "velocity:4ee4bc978244e41e",
-      "kind": "trend",
-      "lane": "news",
-      "look": "news",
-      "name": "iran war",
-      "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-15T22:26:13-06:00",
-      "rise": "4 outlets this window",
-      "samples": [
-        {
-          "date": "2026-11-14",
-          "published": "2026-11-14T18:37:12-06:00",
-          "source": "Institute for the Study of War",
-          "text": "Iran Update, November 14, 2026 - Institute for the Study of War",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNeHh0MDN0Uko2eHNzTS1lYnN6MUtXUE1pdTBGMll5RnZfd0FnNWI3UzBlM09NYzVrTzhLZ2xDQ3dUMHFGcTZaOUFENmoxQkl4ZWt4MWxjYW16SE16VTdpREFpWWF2ek85SnVOVVVDNUVVaVllZkZ0RWtoTFdnd3RoX25BYmNjQQ?oc=5"
-        },
-        {
-          "date": "2026-11-14",
-          "published": "2026-11-14T15:17:42-06:00",
-          "source": "PBS",
-          "text": "With shifting Iran rhetoric following U.S. elections, Trump leaves Middle East in limbo about path ahead - PBS",
-          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOWF95RFoyV2VsTFFrY2ttQ1BPSkZWek9BYklZNlRFUkJmYWJnUHZkbnFxb0dpQ1dyb3luSVBJMHloQUc5c2pvWnlCMlp4XzlBUTZzZ3Y1b0tOX3VhRHhCYkpLUzBsLTM3QWxXWEcxVDd0V09wc1JHd0Jlck8wTk0tcENkQldrcURzYUt4YnJ2YWVidnRmekN3UkVTdlRWY1ZzU2R2UGliOGJoNzJYc1pYM3FlMjRCdW1CdVlqUHVEZXBzLVluMkFIZlZUV0RnY25ET0pB0gHYAUFVX3lxTE4tMWlDdm45Z09EdmREdGlSelA0ZVhGOTVFTHZMV0hKekhXM2MxTm5tbmUxR01kaVBGNDgxNFhjazFEb1VEWkZiNWczM1ZORGdITm1XRDBTT2hxUXRtWEkyaG9jYmJOYkhHQVhSVGhVN2s1dGRYSklOTXFFb2I5M1ltX1k5a0IyalFUclNvNU5jZVFXOEhFMW0wemNFLUMyTEo1THBPX2dwY2NNZkloOV9NaWg4bkthZ0ZleHJvX0p0RjhIS0dVcGlTQ3M1LVFFbEFkMmFEUjAxaw?oc=5"
-        },
-        {
-          "date": "2026-11-13",
-          "published": "2026-11-13T16:20:49-06:00",
-          "source": "Time Magazine",
-          "text": "Fatih Birol: The Energy World Will Never Be the Same As Before the Iran War - Time Magazine",
-          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9GMU54SnZyRFRIa0JwNnM3SVNLUXRwX0ljUGp6UjQ2OXRLODZtd2JqQ3BablVqUHZJT1JCWWxSX0tYNHpxVE45c1BKRi00LUZCYUkza3VSQzlJVGhUZHhQM2w5eEE5TjZ1WUtPbm5sN3E0Z1hxcnFrQmN3?oc=5"
-        }
-      ],
-      "severity": "ALERT",
-      "soWhat": "no action needed",
-      "source": "News velocity",
-      "sourceCount": 4,
-      "title": "iran war",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNeHh0MDN0Uko2eHNzTS1lYnN6MUtXUE1pdTBGMll5RnZfd0FnNWI3UzBlM09NYzVrTzhLZ2xDQ3dUMHFGcTZaOUFENmoxQkl4ZWt4MWxjYW16SE16VTdpREFpWWF2ek85SnVOVVVDNUVVaVllZkZ0RWtoTFdnd3RoX25BYmNjQQ?oc=5"
-    },
-    {
-      "category": "ukraine-war",
-      "confidence": "reported",
-      "date": "2026-11-15",
-      "id": "velocity:efd2da34e68ca58f",
-      "kind": "trend",
-      "lane": "news",
-      "look": "news",
-      "name": "ukraine war",
-      "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-15T22:26:13-06:00",
-      "rise": "3 outlets this window",
-      "samples": [
-        {
-          "date": "2026-11-14",
-          "published": "2026-11-14T00:42:52-06:00",
-          "source": "Al Jazeera",
-          "text": "Ukraine is running out of options, and Russia knows it - Al Jazeera",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxObXRxQVc5M1hsZTdYOHFsaUxIeUxZODk2NUpDWkRKM2t2Q3J5SmpXSU9YZS1iSFZFYnFoOHcwMmpjQVJqanRnUHp3Z0VqNGk4YVpUSGVOU25IMndFcFViaUhCUl9MMTU5UkxYaFdQeUxXNmVPTG5FZkI4V1Zic3VZMWhzcUxINGVXUEZfN1lBS2RYLUhOZ1k1LTBGMWlHZTNy0gGmAUFVX3lxTFBKUkRFUVVhLVlydWplWENHRGZ5VlV4VGdaT3haVkowUjdiYzJBekgzYXBVbDVmYTBGSnpTRnJnU29Mdl9ZekxkVHBsNGZrRW9xaFdXTkQzLWU0TGJXNk1GN1ktNjMyUXVSQWFMdTUxYUhDblZMUWFXRDkxZ3k4bHU2ZVRpd2kzMW8xRzRTRDVUMVBKZDEtWGRYR0JaenNOVkQ2Mm04N0E?oc=5"
-        },
-        {
-          "date": "2026-11-13",
-          "published": "2026-11-13T14:02:20-06:00",
-          "source": "DW.com",
-          "text": "Ukraine updates: Europe to send united front to potential peace talks - DW.com",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNS1oteUxOelRYWG4zNzBaMHdiRjJTQ3hWaHd4UXZmam4wN2pQbEg1dzR3dUVWVkEzN1VnbE1tTUVlSmtkNWpVaFVaa08tdzNCTDNfNlZIWTEweDFTM01ud2g5Vml2TEJfOG1rZF9vOVdOZzE4THVFWTY4R3lzSS1WNFhzYkQ0Z3loZk0zcTlmNHBDS3J5eGRUWWZsNTd5N0ZmenliVXRoTQ?oc=5"
-        },
-        {
-          "date": "2026-11-03",
-          "published": "2026-11-03T02:00:00-06:00",
-          "source": "CNBC",
-          "text": "Russia confirms new Ukraine peace talks as Melania Trump prepares to host ceasefire meeting - CNBC",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPalFTQUJtQy1ORXE4SmxzX1hBNVVXWE1FNFhhZUFBMExLT1Z2emNib05OMXlHNlJ3aUk0aGtsU1ZYZ1pRb1oyMkNxZUFQY1AyRWZ5WGU1Y0JINVFZV1VqZUFLMjN0RXU2UXZWeUhseUdCODNyUGUtbHladVg0Q0dtNjUydFdXME1ocW9LLXRRekFad9IBlwFBVV95cUxNcnZ2QVdpVV8wZjNfT3N1M0t0cEt4Sy03dTJCbk1sMDVlTGktY1BOczdIN1E1WFhFdDVFY04wUHB1YnYtVjN4SExtRjZBU1VMRmxldml0VFRzdm4tUnZCQkhoSk9LWnlULWRnbUpxSS1iRVI3Q0NuTjNXeERZNnlZbU5wWktjR1V5SHk2aVdsMncteVNKOGFB?oc=5"
-        }
-      ],
-      "severity": "ALERT",
-      "soWhat": "no action needed",
-      "source": "News velocity",
-      "sourceCount": 3,
-      "title": "ukraine war",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxObXRxQVc5M1hsZTdYOHFsaUxIeUxZODk2NUpDWkRKM2t2Q3J5SmpXSU9YZS1iSFZFYnFoOHcwMmpjQVJqanRnUHp3Z0VqNGk4YVpUSGVOU25IMndFcFViaUhCUl9MMTU5UkxYaFdQeUxXNmVPTG5FZkI4V1Zic3VZMWhzcUxINGVXUEZfN1lBS2RYLUhOZ1k1LTBGMWlHZTNy0gGmAUFVX3lxTFBKUkRFUVVhLVlydWplWENHRGZ5VlV4VGdaT3haVkowUjdiYzJBekgzYXBVbDVmYTBGSnpTRnJnU29Mdl9ZekxkVHBsNGZrRW9xaFdXTkQzLWU0TGJXNk1GN1ktNjMyUXVSQWFMdTUxYUhDblZMUWFXRDkxZ3k4bHU2ZVRpd2kzMW8xRzRTRDVUMVBKZDEtWGRYR0JaenNOVkQ2Mm04N0E?oc=5"
     }
   ],
   "mode": "trends",

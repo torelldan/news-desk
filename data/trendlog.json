@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-15",
+  "checkedAt": "2026-11-16",
   "clusters": [
     {
       "count": 2,
@@ -1285,6 +1285,136 @@
       "count": 1,
       "countries": 1,
       "date": "2026-11-15",
+      "keywords": [],
+      "outlets": 1,
+      "score": 0,
+      "severity": "STANDBY",
+      "topic": "windstorm"
+    },
+    {
+      "count": 1,
+      "countries": 1,
+      "date": "2026-11-16",
+      "keywords": [],
+      "outlets": 1,
+      "score": 0,
+      "severity": "STANDBY",
+      "topic": "attack"
+    },
+    {
+      "count": 1,
+      "countries": 1,
+      "date": "2026-11-16",
+      "keywords": [],
+      "outlets": 1,
+      "score": 0,
+      "severity": "ALERT",
+      "topic": "climate"
+    },
+    {
+      "count": 1,
+      "countries": 1,
+      "date": "2026-11-16",
+      "keywords": [],
+      "outlets": 1,
+      "score": 0,
+      "severity": "STANDBY",
+      "topic": "clock"
+    },
+    {
+      "count": 1,
+      "countries": 1,
+      "date": "2026-11-16",
+      "keywords": [],
+      "outlets": 1,
+      "score": 0,
+      "severity": "ALERT",
+      "topic": "diplomacy"
+    },
+    {
+      "count": 6,
+      "countries": 1,
+      "date": "2026-11-16",
+      "keywords": [],
+      "outlets": 6,
+      "score": 0,
+      "severity": "ALERT",
+      "topic": "gdacs"
+    },
+    {
+      "count": 1,
+      "countries": 1,
+      "date": "2026-11-16",
+      "keywords": [],
+      "outlets": 1,
+      "score": 0,
+      "severity": "ALERT",
+      "topic": "israel"
+    },
+    {
+      "count": 4,
+      "countries": 1,
+      "date": "2026-11-16",
+      "keywords": [],
+      "outlets": 4,
+      "score": 0,
+      "severity": "STANDBY",
+      "topic": "neo"
+    },
+    {
+      "count": 3,
+      "countries": 1,
+      "date": "2026-11-16",
+      "keywords": [],
+      "outlets": 3,
+      "score": 0,
+      "severity": "STANDBY",
+      "topic": "quake"
+    },
+    {
+      "count": 4,
+      "countries": 1,
+      "date": "2026-11-16",
+      "keywords": [],
+      "outlets": 4,
+      "score": 0,
+      "severity": "ALERT",
+      "topic": "usgov"
+    },
+    {
+      "count": 4,
+      "countries": 1,
+      "date": "2026-11-16",
+      "keywords": [],
+      "outlets": 4,
+      "score": 0,
+      "severity": "ALERT",
+      "topic": "war-iran"
+    },
+    {
+      "count": 4,
+      "countries": 1,
+      "date": "2026-11-16",
+      "keywords": [],
+      "outlets": 4,
+      "score": 0,
+      "severity": "ALERT",
+      "topic": "war-ukraine"
+    },
+    {
+      "count": 3,
+      "countries": 1,
+      "date": "2026-11-16",
+      "keywords": [],
+      "outlets": 3,
+      "score": 0,
+      "severity": "STANDBY",
+      "topic": "who"
+    },
+    {
+      "count": 1,
+      "countries": 1,
+      "date": "2026-11-16",
       "keywords": [],
       "outlets": 1,
       "score": 0,
@@ -2580,6 +2710,136 @@
       "count": 1,
       "countries": 1,
       "date": "2026-11-15",
+      "keywords": [],
+      "outlets": 1,
+      "score": 0,
+      "severity": "STANDBY",
+      "topic": "windstorm"
+    },
+    {
+      "count": 1,
+      "countries": 1,
+      "date": "2026-11-16",
+      "keywords": [],
+      "outlets": 1,
+      "score": 0,
+      "severity": "STANDBY",
+      "topic": "attack"
+    },
+    {
+      "count": 1,
+      "countries": 1,
+      "date": "2026-11-16",
+      "keywords": [],
+      "outlets": 1,
+      "score": 0,
+      "severity": "ALERT",
+      "topic": "climate"
+    },
+    {
+      "count": 1,
+      "countries": 1,
+      "date": "2026-11-16",
+      "keywords": [],
+      "outlets": 1,
+      "score": 0,
+      "severity": "STANDBY",
+      "topic": "clock"
+    },
+    {
+      "count": 1,
+      "countries": 1,
+      "date": "2026-11-16",
+      "keywords": [],
+      "outlets": 1,
+      "score": 0,
+      "severity": "ALERT",
+      "topic": "diplomacy"
+    },
+    {
+      "count": 6,
+      "countries": 1,
+      "date": "2026-11-16",
+      "keywords": [],
+      "outlets": 6,
+      "score": 0,
+      "severity": "ALERT",
+      "topic": "gdacs"
+    },
+    {
+      "count": 1,
+      "countries": 1,
+      "date": "2026-11-16",
+      "keywords": [],
+      "outlets": 1,
+      "score": 0,
+      "severity": "ALERT",
+      "topic": "israel"
+    },
+    {
+      "count": 4,
+      "countries": 1,
+      "date": "2026-11-16",
+      "keywords": [],
+      "outlets": 4,
+      "score": 0,
+      "severity": "STANDBY",
+      "topic": "neo"
+    },
+    {
+      "count": 3,
+      "countries": 1,
+      "date": "2026-11-16",
+      "keywords": [],
+      "outlets": 3,
+      "score": 0,
+      "severity": "STANDBY",
+      "topic": "quake"
+    },
+    {
+      "count": 4,
+      "countries": 1,
+      "date": "2026-11-16",
+      "keywords": [],
+      "outlets": 4,
+      "score": 0,
+      "severity": "ALERT",
+      "topic": "usgov"
+    },
+    {
+      "count": 4,
+      "countries": 1,
+      "date": "2026-11-16",
+      "keywords": [],
+      "outlets": 4,
+      "score": 0,
+      "severity": "ALERT",
+      "topic": "war-iran"
+    },
+    {
+      "count": 4,
+      "countries": 1,
+      "date": "2026-11-16",
+      "keywords": [],
+      "outlets": 4,
+      "score": 0,
+      "severity": "ALERT",
+      "topic": "war-ukraine"
+    },
+    {
+      "count": 3,
+      "countries": 1,
+      "date": "2026-11-16",
+      "keywords": [],
+      "outlets": 3,
+      "score": 0,
+      "severity": "STANDBY",
+      "topic": "who"
+    },
+    {
+      "count": 1,
+      "countries": 1,
+      "date": "2026-11-16",
       "keywords": [],
       "outlets": 1,
       "score": 0,

@@ -3,7 +3,7 @@
     {
       "call": "real",
       "confidence": "confirmed",
-      "date": "2026-11-02",
+      "date": "2026-11-03",
       "drivers": [
         "officials",
         "social"
@@ -13,17 +13,12 @@
       ],
       "id": "radar:577df950f7803bec",
       "kind": "radar",
-      "label": "Nov 2, 2026 2:00 AM CT",
+      "label": "Nov 3, 2026 2:00 AM CT",
       "lane": "news",
-      "note": "You can go your own way: US diverges from world on emergency preparedness - The Guardian",
-      "published": "2026-11-02T02:00:00-06:00",
+      "note": "Commission takes new steps to prepare Europeans for growing crisis risks - European Civil Protection and Humanitarian Aid Operations",
+      "published": "2026-11-03T02:00:00-06:00",
       "read": "An official body acted or is named in the sources: an agency, a budget, a law, or a procurement step. That is follow-through.",
       "samples": [
-        {
-          "source": "The Guardian",
-          "title": "You can go your own way: US diverges from world on emergency preparedness - The Guardian",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPRzdzcXR0SkxnNkpMQ1hZcHJNY2FSakZ2cjNTZUN5Uzk2N1lLNW1aSWJxemJwMURiaG9XYU8tZjFlZEM1UXE3Q1JibjlxQVdSVWpPbUx3cFB5Q2hvRk9SNm4zWmlxU3FZMm92YXBCOFRPY2JnVGZSUW0zVEJWdTRLaC01R19QZFo2Q1E?oc=5"
-        },
         {
           "source": "European Civil Protection and Humanitarian Aid Operations",
           "title": "Commission takes new steps to prepare Europeans for growing crisis risks - European Civil Protection and Humanitarian Aid Operations",
@@ -38,15 +33,20 @@
           "source": "Homeland Security Today",
           "title": "COLUMN: Connecting the Dots: Are Governments Rethinking Preparedness? – HSToday - Homeland Security Today",
           "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPMl9KQW9RdWxQN01hWlVpTy1yUHpRSW9Qbjh1ZHppUXNld3d2WG1PRGVDSERzVVFvSmRWUU9sSE5oR1pGOURwa0ZuejRpQkR1XzdYcGJsLXNLSUNKZUkwcGRKOUVLN1o1VGxwM1JONUVsZ18taGVHQ0NPSC1RcWFLVExTeWxNMl95TERxV3JYRVkwTm1icks1QWg4VlBrclAyZEx3Vk1RcGRON0NGbWhoOXk0czQyS1JuT0tKVHNVc28tbFpoa1pKU1duRGhETGs?oc=5"
+        },
+        {
+          "source": "RAND",
+          "title": "Preparedness for the AI Era Requires a Reserve of Critical Workers - RAND",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOeU45ZEdUSXZMakdDX3JHRW1wQkJxZ1d0ZEJCMDk5Q2tpRUdGYS1tajRDTVZlMUdNOEtxb2hrMzlqZ1I0ZDNvSEVacl9penVYM05aanAwNW1tVUMwSENBYkdwcEQ3R2g3c0V4UWNXVVNKcWJHTG9GdTBsYzNrenJzWlJTLTJlZ2djNTBFX2NsQVNhSHlTeGtOXzdPT2tYSTZIbm83YmVSQ1BMbGFQ?oc=5"
         }
       ],
       "score": 88,
       "severity": "ALERT",
       "soWhat": "no action needed",
-      "source": "The Guardian",
+      "source": "European Civil Protection and Humanitarian Aid Operations",
       "sourceCount": 8,
       "title": "US and Europe preparedness surge",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPRzdzcXR0SkxnNkpMQ1hZcHJNY2FSakZ2cjNTZUN5Uzk2N1lLNW1aSWJxemJwMURiaG9XYU8tZjFlZEM1UXE3Q1JibjlxQVdSVWpPbUx3cFB5Q2hvRk9SNm4zWmlxU3FZMm92YXBCOFRPY2JnVGZSUW0zVEJWdTRLaC01R19QZFo2Q1E?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPUmI4aHpIYlpZNjdtOW1xXzlPaDFvbE1QWDMzUFpXQkRwTTR6TUFJNjdOU0owSkJPbFhLblkwbW1sbE9NbWxwV25uZ0RLWHY0SEVFVUxqd0JRdmM2SWdCVXE0REw1SzFYYjY0UHFaclNZdTF5YkYwMjB2WGh6RThWU1NtMEpnbkd5Z0xXa2l4blVQVWF0WDVjOUlqSVo0YkxlQTVoWjNpOVFldFVCX3Q4WDEzVENiTGppTHNUZjE5Zm9mTndaZFZvVGFISUhMdERSYk1vdEtNSVVpcDFITDYtbDU3eG0wYU0?oc=5",
       "velocity": "slow"
     },
     {
@@ -85,9 +85,9 @@
           "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNemloall4RTlGdkhKUjNBSHYzZWZad2E2NDNnMmlmeXZleWw0eWd3TkVBNjlrbklqVXNVUVZuVmhScGdManRSTzFNYWJ3TW1qQWtxUlZIMHkteVhfblMtZ2xRZmtDbGJpV0JYd0pDdFhLdzNRQW9adUNrSjFyU3FWTlRVVXVUNlBqbjRZT9IBkgFBVV95cUxPMWpyVzFpZlVFOG9VWDVtSEg4X3lhNlU5TGhtXzFhSmNTdUZDYkc1RjBCb2dlMHhlUzZlbkIzNVRKVm1kdEFpbG5EYV9NOGxIZmNwUEVrVVBaQ3E0SzdYRVBoampPa3dwaktVZkVBdk5CQUtCZWtvVG9jMm9MN1VQajdyaHZVT1FVUGdHU0JrM1RfQQ?oc=5"
         },
         {
-          "source": "Newsweek",
-          "title": "What Is FORTRESS? Pentagon’s 90-Day Plan to Keep US Military Bases Running - Newsweek",
-          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBmZkZwbHprRGItX2J6NG9GeUhhcFNYTkZ3VExjODZsMEJudTJYRmRxS0VLU2o0QndWQ3pkVWoyYU9jQU80eWxuY09SNVpCZnBnTEwzbDJPMUhyeW5mSTd1aFBuWFFYZV91V1AtRGxXQ21FOTVjZHI1a1RKbw?oc=5"
+          "source": "The Presidential Prayer Team",
+          "title": "Secretary Hegseth Orders U.S. Bases to Prep for 90-Day Off-Grid Operations Under FORTRESS Initiative - The Presidential Prayer Team",
+          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOMDRPWVE2U3FLblliWXk0ZGtuUDZHQ19NeTBCVngydFhITU9nWmEtcFBqeEFlbzlCaE5XcktlRk4yamprOGNjdE5ZTjNEYmFBa2JsV19zY0dwQ3llZF9ZeGdLSURIaTE0cWlLOWs1QmVKbl8tU0JEdGlidFlZRTJFc1dCREh0V2tRazRFUlJGRGY4bnBDSjVpNDljNXdmeV9nMEhMeDVoWlFDbWROc3NkcENBQk5qLV9FdVJsZ0dQbDRXeWZKOEJTRUdCWWVRR1NPckFKM1R4RmdUVEEtU1hBQVhfaWU?oc=5"
         }
       ],
       "score": 68,
@@ -108,7 +108,7 @@
         "social"
       ],
       "followThrough": [
-        "legislation"
+        "official step"
       ],
       "id": "radar:39da30b683ff4744",
       "kind": "radar",
@@ -139,7 +139,7 @@
           "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPWWZMOVJrRF8zb0xKcFQtVDdhZVVRT0wyZEkxMVJzSkdIQU0wUExhdzNqRHg5Z1Zlb2V4TThtSDgwZFB4cGdMZm42SlA4ZTg4WUNkZERBamc0QzFtblU3dU12N19FaTA5VU5EU1hrTl95eXQtOTRkS0FNSTFOMjUwY19KUFBuQ0Q4?oc=5"
         }
       ],
-      "score": 79,
+      "score": 64,
       "severity": "ALERT",
       "soWhat": "no action needed",
       "source": "Taxpayers for Common Sense",

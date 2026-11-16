@@ -1,16 +1,15 @@
 {
   "baseline": false,
-  "brief": "No rare risk is on the board. A routine flyby or an empty storm outlook is not an emergency. Current war coverage is on the board: Iran Update, November 14, 2026 - Institute for the Study of War; With shifting Iran rhetoric following U.S. elections, Trump leaves Middle East in limbo about path ahead - PBS. Rising topic: donald trump iran war (US daily list 5000+).",
-  "checkedAt": "2026-11-15T22:26:13-06:00",
-  "checkedLabel": "Nov 15, 2026 10:26 PM CT",
+  "brief": "No rare risk is on the board. A routine flyby or an empty storm outlook is not an emergency. Current war coverage is on the board: Ukraine launches biggest drone attack on Russia since war began - NBC News; Ukraine Facility: Council approves largest-ever payment of €8 billion to Kyiv - Council, European Union. Rising topic: ukraine war (4 outlets this window).",
+  "checkedAt": "2026-11-16T08:35:43-06:00",
+  "checkedLabel": "Nov 16, 2026 8:35 AM CT",
   "errors": [
-    "GDACS: curl: (28) Operation timed out after 40002 milliseconds with 0 bytes received\n",
     "ReliefWeb: the disasters page returned no cards from this network. The RSS feed is an AWS WAF challenge, and API v2 rejects appname=torelldan-news-desk until ReliefWeb approves it."
   ],
   "retainDays": 120,
-  "today": "2026-11-15",
+  "today": "2026-11-16",
   "trends": {
-    "google": "Google Trends US daily list answered (10 topics). Kept the ones that match a war, government, or threat topic.",
+    "google": "Google Trends US daily list answered (10 topics). Kept the ones that match a war, government, or threat topic. None of today's search trends matched.",
     "mode": "trends",
     "note": "X trends by WOEID (US 23424977 and worldwide 1). Kept only when the name matches a threat or preparedness theme. The endpoint answered and none of the names matched."
   },

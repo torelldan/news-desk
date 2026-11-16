@@ -19,7 +19,7 @@
       "assetId": "dxy",
       "category": "climate",
       "days": 30,
-      "eventDays": 2,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
@@ -31,14 +31,28 @@
     {
       "asset": "DXY",
       "assetId": "dxy",
-      "category": "economic",
+      "category": "disaster",
       "days": 30,
-      "eventDays": 1,
+      "eventDays": 0,
       "r": null,
       "read": {
         "call": "n/a",
         "confidence": "n/a",
-        "text": "Not enough stored DXY days beside economic events in this 30-day window to separate a link from coincidence."
+        "text": "Not enough stored DXY days beside disaster events in this 30-day window to separate a link from coincidence."
+      },
+      "window": 30
+    },
+    {
+      "asset": "DXY",
+      "assetId": "dxy",
+      "category": "earthquake",
+      "days": 30,
+      "eventDays": 0,
+      "r": null,
+      "read": {
+        "call": "n/a",
+        "confidence": "n/a",
+        "text": "Not enough stored DXY days beside earthquake events in this 30-day window to separate a link from coincidence."
       },
       "window": 30
     },
@@ -75,7 +89,7 @@
       "assetId": "dxy",
       "category": "g7",
       "days": 30,
-      "eventDays": 1,
+      "eventDays": 0,
       "r": null,
       "read": {
         "call": "n/a",
@@ -89,7 +103,7 @@
       "assetId": "dxy",
       "category": "israel",
       "days": 30,
-      "eventDays": 1,
+      "eventDays": 0,
       "r": null,
       "read": {
         "call": "n/a",
@@ -117,7 +131,7 @@
       "assetId": "dxy",
       "category": "war",
       "days": 30,
-      "eventDays": 2,
+      "eventDays": 4,
       "r": null,
       "read": {
         "call": "n/a",
@@ -145,7 +159,7 @@
       "assetId": "dxy",
       "category": "climate",
       "days": 90,
-      "eventDays": 2,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
@@ -157,14 +171,28 @@
     {
       "asset": "DXY",
       "assetId": "dxy",
-      "category": "economic",
+      "category": "disaster",
       "days": 90,
-      "eventDays": 1,
+      "eventDays": 0,
       "r": null,
       "read": {
         "call": "n/a",
         "confidence": "n/a",
-        "text": "Not enough stored DXY days beside economic events in this 90-day window to separate a link from coincidence."
+        "text": "Not enough stored DXY days beside disaster events in this 90-day window to separate a link from coincidence."
+      },
+      "window": 90
+    },
+    {
+      "asset": "DXY",
+      "assetId": "dxy",
+      "category": "earthquake",
+      "days": 90,
+      "eventDays": 0,
+      "r": null,
+      "read": {
+        "call": "n/a",
+        "confidence": "n/a",
+        "text": "Not enough stored DXY days beside earthquake events in this 90-day window to separate a link from coincidence."
       },
       "window": 90
     },
@@ -201,7 +229,7 @@
       "assetId": "dxy",
       "category": "g7",
       "days": 90,
-      "eventDays": 1,
+      "eventDays": 0,
       "r": null,
       "read": {
         "call": "n/a",
@@ -215,7 +243,7 @@
       "assetId": "dxy",
       "category": "israel",
       "days": 90,
-      "eventDays": 1,
+      "eventDays": 0,
       "r": null,
       "read": {
         "call": "n/a",
@@ -243,7 +271,7 @@
       "assetId": "dxy",
       "category": "war",
       "days": 90,
-      "eventDays": 2,
+      "eventDays": 4,
       "r": null,
       "read": {
         "call": "n/a",
@@ -271,7 +299,7 @@
       "assetId": "gold",
       "category": "climate",
       "days": 30,
-      "eventDays": 2,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
@@ -283,14 +311,28 @@
     {
       "asset": "Gold",
       "assetId": "gold",
-      "category": "economic",
+      "category": "disaster",
       "days": 30,
-      "eventDays": 1,
+      "eventDays": 0,
       "r": null,
       "read": {
         "call": "n/a",
         "confidence": "n/a",
-        "text": "Not enough stored Gold days beside economic events in this 30-day window to separate a link from coincidence."
+        "text": "Not enough stored Gold days beside disaster events in this 30-day window to separate a link from coincidence."
+      },
+      "window": 30
+    },
+    {
+      "asset": "Gold",
+      "assetId": "gold",
+      "category": "earthquake",
+      "days": 30,
+      "eventDays": 0,
+      "r": null,
+      "read": {
+        "call": "n/a",
+        "confidence": "n/a",
+        "text": "Not enough stored Gold days beside earthquake events in this 30-day window to separate a link from coincidence."
       },
       "window": 30
     },
@@ -327,7 +369,7 @@
       "assetId": "gold",
       "category": "g7",
       "days": 30,
-      "eventDays": 1,
+      "eventDays": 0,
       "r": null,
       "read": {
         "call": "n/a",
@@ -341,7 +383,7 @@
       "assetId": "gold",
       "category": "israel",
       "days": 30,
-      "eventDays": 1,
+      "eventDays": 0,
       "r": null,
       "read": {
         "call": "n/a",
@@ -369,7 +411,7 @@
       "assetId": "gold",
       "category": "war",
       "days": 30,
-      "eventDays": 2,
+      "eventDays": 4,
       "r": null,
       "read": {
         "call": "n/a",
@@ -397,7 +439,7 @@
       "assetId": "gold",
       "category": "climate",
       "days": 90,
-      "eventDays": 2,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
@@ -409,14 +451,28 @@
     {
       "asset": "Gold",
       "assetId": "gold",
-      "category": "economic",
+      "category": "disaster",
       "days": 90,
-      "eventDays": 1,
+      "eventDays": 0,
       "r": null,
       "read": {
         "call": "n/a",
         "confidence": "n/a",
-        "text": "Not enough stored Gold days beside economic events in this 90-day window to separate a link from coincidence."
+        "text": "Not enough stored Gold days beside disaster events in this 90-day window to separate a link from coincidence."
+      },
+      "window": 90
+    },
+    {
+      "asset": "Gold",
+      "assetId": "gold",
+      "category": "earthquake",
+      "days": 90,
+      "eventDays": 0,
+      "r": null,
+      "read": {
+        "call": "n/a",
+        "confidence": "n/a",
+        "text": "Not enough stored Gold days beside earthquake events in this 90-day window to separate a link from coincidence."
       },
       "window": 90
     },
@@ -453,7 +509,7 @@
       "assetId": "gold",
       "category": "g7",
       "days": 90,
-      "eventDays": 1,
+      "eventDays": 0,
       "r": null,
       "read": {
         "call": "n/a",
@@ -467,7 +523,7 @@
       "assetId": "gold",
       "category": "israel",
       "days": 90,
-      "eventDays": 1,
+      "eventDays": 0,
       "r": null,
       "read": {
         "call": "n/a",
@@ -495,7 +551,7 @@
       "assetId": "gold",
       "category": "war",
       "days": 90,
-      "eventDays": 2,
+      "eventDays": 4,
       "r": null,
       "read": {
         "call": "n/a",
@@ -523,7 +579,7 @@
       "assetId": "silver",
       "category": "climate",
       "days": 30,
-      "eventDays": 2,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
@@ -535,14 +591,28 @@
     {
       "asset": "Silver",
       "assetId": "silver",
-      "category": "economic",
+      "category": "disaster",
       "days": 30,
-      "eventDays": 1,
+      "eventDays": 0,
       "r": null,
       "read": {
         "call": "n/a",
         "confidence": "n/a",
-        "text": "Not enough stored Silver days beside economic events in this 30-day window to separate a link from coincidence."
+        "text": "Not enough stored Silver days beside disaster events in this 30-day window to separate a link from coincidence."
+      },
+      "window": 30
+    },
+    {
+      "asset": "Silver",
+      "assetId": "silver",
+      "category": "earthquake",
+      "days": 30,
+      "eventDays": 0,
+      "r": null,
+      "read": {
+        "call": "n/a",
+        "confidence": "n/a",
+        "text": "Not enough stored Silver days beside earthquake events in this 30-day window to separate a link from coincidence."
       },
       "window": 30
     },
@@ -579,7 +649,7 @@
       "assetId": "silver",
       "category": "g7",
       "days": 30,
-      "eventDays": 1,
+      "eventDays": 0,
       "r": null,
       "read": {
         "call": "n/a",
@@ -593,7 +663,7 @@
       "assetId": "silver",
       "category": "israel",
       "days": 30,
-      "eventDays": 1,
+      "eventDays": 0,
       "r": null,
       "read": {
         "call": "n/a",
@@ -621,7 +691,7 @@
       "assetId": "silver",
       "category": "war",
       "days": 30,
-      "eventDays": 2,
+      "eventDays": 4,
       "r": null,
       "read": {
         "call": "n/a",
@@ -649,7 +719,7 @@
       "assetId": "silver",
       "category": "climate",
       "days": 90,
-      "eventDays": 2,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
@@ -661,14 +731,28 @@
     {
       "asset": "Silver",
       "assetId": "silver",
-      "category": "economic",
+      "category": "disaster",
       "days": 90,
-      "eventDays": 1,
+      "eventDays": 0,
       "r": null,
       "read": {
         "call": "n/a",
         "confidence": "n/a",
-        "text": "Not enough stored Silver days beside economic events in this 90-day window to separate a link from coincidence."
+        "text": "Not enough stored Silver days beside disaster events in this 90-day window to separate a link from coincidence."
+      },
+      "window": 90
+    },
+    {
+      "asset": "Silver",
+      "assetId": "silver",
+      "category": "earthquake",
+      "days": 90,
+      "eventDays": 0,
+      "r": null,
+      "read": {
+        "call": "n/a",
+        "confidence": "n/a",
+        "text": "Not enough stored Silver days beside earthquake events in this 90-day window to separate a link from coincidence."
       },
       "window": 90
     },
@@ -705,7 +789,7 @@
       "assetId": "silver",
       "category": "g7",
       "days": 90,
-      "eventDays": 1,
+      "eventDays": 0,
       "r": null,
       "read": {
         "call": "n/a",
@@ -719,7 +803,7 @@
       "assetId": "silver",
       "category": "israel",
       "days": 90,
-      "eventDays": 1,
+      "eventDays": 0,
       "r": null,
       "read": {
         "call": "n/a",
@@ -747,7 +831,7 @@
       "assetId": "silver",
       "category": "war",
       "days": 90,
-      "eventDays": 2,
+      "eventDays": 4,
       "r": null,
       "read": {
         "call": "n/a",
@@ -775,7 +859,7 @@
       "assetId": "btc",
       "category": "climate",
       "days": 30,
-      "eventDays": 2,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
@@ -787,14 +871,28 @@
     {
       "asset": "BTC",
       "assetId": "btc",
-      "category": "economic",
+      "category": "disaster",
       "days": 30,
       "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
         "confidence": "n/a",
-        "text": "Not enough stored BTC days beside economic events in this 30-day window to separate a link from coincidence."
+        "text": "Not enough stored BTC days beside disaster events in this 30-day window to separate a link from coincidence."
+      },
+      "window": 30
+    },
+    {
+      "asset": "BTC",
+      "assetId": "btc",
+      "category": "earthquake",
+      "days": 30,
+      "eventDays": 2,
+      "r": null,
+      "read": {
+        "call": "n/a",
+        "confidence": "n/a",
+        "text": "Not enough stored BTC days beside earthquake events in this 30-day window to separate a link from coincidence."
       },
       "window": 30
     },
@@ -803,7 +901,7 @@
       "assetId": "btc",
       "category": "election",
       "days": 30,
-      "eventDays": 2,
+      "eventDays": 3,
       "r": null,
       "read": {
         "call": "n/a",
@@ -859,7 +957,7 @@
       "assetId": "btc",
       "category": "outbreak",
       "days": 30,
-      "eventDays": 3,
+      "eventDays": 2,
       "r": null,
       "read": {
         "call": "n/a",
@@ -873,7 +971,7 @@
       "assetId": "btc",
       "category": "war",
       "days": 30,
-      "eventDays": 3,
+      "eventDays": 5,
       "r": null,
       "read": {
         "call": "n/a",
@@ -886,13 +984,13 @@
       "asset": "BTC",
       "assetId": "btc",
       "category": "attack",
-      "days": 89,
+      "days": 90,
       "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
         "confidence": "n/a",
-        "text": "Not enough stored BTC days beside attack events in this 89-day window to separate a link from coincidence."
+        "text": "Not enough stored BTC days beside attack events in this 90-day window to separate a link from coincidence."
       },
       "window": 90
     },
@@ -900,27 +998,41 @@
       "asset": "BTC",
       "assetId": "btc",
       "category": "climate",
-      "days": 89,
-      "eventDays": 2,
+      "days": 90,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
         "confidence": "n/a",
-        "text": "Not enough stored BTC days beside climate events in this 89-day window to separate a link from coincidence."
+        "text": "Not enough stored BTC days beside climate events in this 90-day window to separate a link from coincidence."
       },
       "window": 90
     },
     {
       "asset": "BTC",
       "assetId": "btc",
-      "category": "economic",
-      "days": 89,
+      "category": "disaster",
+      "days": 90,
       "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
         "confidence": "n/a",
-        "text": "Not enough stored BTC days beside economic events in this 89-day window to separate a link from coincidence."
+        "text": "Not enough stored BTC days beside disaster events in this 90-day window to separate a link from coincidence."
+      },
+      "window": 90
+    },
+    {
+      "asset": "BTC",
+      "assetId": "btc",
+      "category": "earthquake",
+      "days": 90,
+      "eventDays": 2,
+      "r": null,
+      "read": {
+        "call": "n/a",
+        "confidence": "n/a",
+        "text": "Not enough stored BTC days beside earthquake events in this 90-day window to separate a link from coincidence."
       },
       "window": 90
     },
@@ -928,13 +1040,13 @@
       "asset": "BTC",
       "assetId": "btc",
       "category": "election",
-      "days": 89,
-      "eventDays": 2,
+      "days": 90,
+      "eventDays": 3,
       "r": null,
       "read": {
         "call": "n/a",
         "confidence": "n/a",
-        "text": "Not enough stored BTC days beside election events in this 89-day window to separate a link from coincidence."
+        "text": "Not enough stored BTC days beside election events in this 90-day window to separate a link from coincidence."
       },
       "window": 90
     },
@@ -942,13 +1054,13 @@
       "asset": "BTC",
       "assetId": "btc",
       "category": "existential",
-      "days": 89,
+      "days": 90,
       "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
         "confidence": "n/a",
-        "text": "Not enough stored BTC days beside existential events in this 89-day window to separate a link from coincidence."
+        "text": "Not enough stored BTC days beside existential events in this 90-day window to separate a link from coincidence."
       },
       "window": 90
     },
@@ -956,13 +1068,13 @@
       "asset": "BTC",
       "assetId": "btc",
       "category": "g7",
-      "days": 89,
+      "days": 90,
       "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
         "confidence": "n/a",
-        "text": "Not enough stored BTC days beside g7 events in this 89-day window to separate a link from coincidence."
+        "text": "Not enough stored BTC days beside g7 events in this 90-day window to separate a link from coincidence."
       },
       "window": 90
     },
@@ -970,13 +1082,13 @@
       "asset": "BTC",
       "assetId": "btc",
       "category": "israel",
-      "days": 89,
+      "days": 90,
       "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
         "confidence": "n/a",
-        "text": "Not enough stored BTC days beside israel events in this 89-day window to separate a link from coincidence."
+        "text": "Not enough stored BTC days beside israel events in this 90-day window to separate a link from coincidence."
       },
       "window": 90
     },
@@ -984,13 +1096,13 @@
       "asset": "BTC",
       "assetId": "btc",
       "category": "outbreak",
-      "days": 89,
-      "eventDays": 3,
+      "days": 90,
+      "eventDays": 2,
       "r": null,
       "read": {
         "call": "n/a",
         "confidence": "n/a",
-        "text": "Not enough stored BTC days beside outbreak events in this 89-day window to separate a link from coincidence."
+        "text": "Not enough stored BTC days beside outbreak events in this 90-day window to separate a link from coincidence."
       },
       "window": 90
     },
@@ -998,13 +1110,13 @@
       "asset": "BTC",
       "assetId": "btc",
       "category": "war",
-      "days": 89,
-      "eventDays": 3,
+      "days": 90,
+      "eventDays": 5,
       "r": null,
       "read": {
         "call": "n/a",
         "confidence": "n/a",
-        "text": "Not enough stored BTC days beside war events in this 89-day window to separate a link from coincidence."
+        "text": "Not enough stored BTC days beside war events in this 90-day window to separate a link from coincidence."
       },
       "window": 90
     },
@@ -1027,7 +1139,7 @@
       "assetId": "eth",
       "category": "climate",
       "days": 30,
-      "eventDays": 2,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
@@ -1039,14 +1151,28 @@
     {
       "asset": "ETH",
       "assetId": "eth",
-      "category": "economic",
+      "category": "disaster",
       "days": 30,
       "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
         "confidence": "n/a",
-        "text": "Not enough stored ETH days beside economic events in this 30-day window to separate a link from coincidence."
+        "text": "Not enough stored ETH days beside disaster events in this 30-day window to separate a link from coincidence."
+      },
+      "window": 30
+    },
+    {
+      "asset": "ETH",
+      "assetId": "eth",
+      "category": "earthquake",
+      "days": 30,
+      "eventDays": 2,
+      "r": null,
+      "read": {
+        "call": "n/a",
+        "confidence": "n/a",
+        "text": "Not enough stored ETH days beside earthquake events in this 30-day window to separate a link from coincidence."
       },
       "window": 30
     },
@@ -1055,7 +1181,7 @@
       "assetId": "eth",
       "category": "election",
       "days": 30,
-      "eventDays": 2,
+      "eventDays": 3,
       "r": null,
       "read": {
         "call": "n/a",
@@ -1111,7 +1237,7 @@
       "assetId": "eth",
       "category": "outbreak",
       "days": 30,
-      "eventDays": 3,
+      "eventDays": 2,
       "r": null,
       "read": {
         "call": "n/a",
@@ -1125,7 +1251,7 @@
       "assetId": "eth",
       "category": "war",
       "days": 30,
-      "eventDays": 3,
+      "eventDays": 5,
       "r": null,
       "read": {
         "call": "n/a",
@@ -1138,13 +1264,13 @@
       "asset": "ETH",
       "assetId": "eth",
       "category": "attack",
-      "days": 89,
+      "days": 90,
       "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
         "confidence": "n/a",
-        "text": "Not enough stored ETH days beside attack events in this 89-day window to separate a link from coincidence."
+        "text": "Not enough stored ETH days beside attack events in this 90-day window to separate a link from coincidence."
       },
       "window": 90
     },
@@ -1152,27 +1278,41 @@
       "asset": "ETH",
       "assetId": "eth",
       "category": "climate",
-      "days": 89,
-      "eventDays": 2,
+      "days": 90,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
         "confidence": "n/a",
-        "text": "Not enough stored ETH days beside climate events in this 89-day window to separate a link from coincidence."
+        "text": "Not enough stored ETH days beside climate events in this 90-day window to separate a link from coincidence."
       },
       "window": 90
     },
     {
       "asset": "ETH",
       "assetId": "eth",
-      "category": "economic",
-      "days": 89,
+      "category": "disaster",
+      "days": 90,
       "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
         "confidence": "n/a",
-        "text": "Not enough stored ETH days beside economic events in this 89-day window to separate a link from coincidence."
+        "text": "Not enough stored ETH days beside disaster events in this 90-day window to separate a link from coincidence."
+      },
+      "window": 90
+    },
+    {
+      "asset": "ETH",
+      "assetId": "eth",
+      "category": "earthquake",
+      "days": 90,
+      "eventDays": 2,
+      "r": null,
+      "read": {
+        "call": "n/a",
+        "confidence": "n/a",
+        "text": "Not enough stored ETH days beside earthquake events in this 90-day window to separate a link from coincidence."
       },
       "window": 90
     },
@@ -1180,13 +1320,13 @@
       "asset": "ETH",
       "assetId": "eth",
       "category": "election",
-      "days": 89,
-      "eventDays": 2,
+      "days": 90,
+      "eventDays": 3,
       "r": null,
       "read": {
         "call": "n/a",
         "confidence": "n/a",
-        "text": "Not enough stored ETH days beside election events in this 89-day window to separate a link from coincidence."
+        "text": "Not enough stored ETH days beside election events in this 90-day window to separate a link from coincidence."
       },
       "window": 90
     },
@@ -1194,13 +1334,13 @@
       "asset": "ETH",
       "assetId": "eth",
       "category": "existential",
-      "days": 89,
+      "days": 90,
       "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
         "confidence": "n/a",
-        "text": "Not enough stored ETH days beside existential events in this 89-day window to separate a link from coincidence."
+        "text": "Not enough stored ETH days beside existential events in this 90-day window to separate a link from coincidence."
       },
       "window": 90
     },
@@ -1208,13 +1348,13 @@
       "asset": "ETH",
       "assetId": "eth",
       "category": "g7",
-      "days": 89,
+      "days": 90,
       "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
         "confidence": "n/a",
-        "text": "Not enough stored ETH days beside g7 events in this 89-day window to separate a link from coincidence."
+        "text": "Not enough stored ETH days beside g7 events in this 90-day window to separate a link from coincidence."
       },
       "window": 90
     },
@@ -1222,13 +1362,13 @@
       "asset": "ETH",
       "assetId": "eth",
       "category": "israel",
-      "days": 89,
+      "days": 90,
       "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
         "confidence": "n/a",
-        "text": "Not enough stored ETH days beside israel events in this 89-day window to separate a link from coincidence."
+        "text": "Not enough stored ETH days beside israel events in this 90-day window to separate a link from coincidence."
       },
       "window": 90
     },
@@ -1236,13 +1376,13 @@
       "asset": "ETH",
       "assetId": "eth",
       "category": "outbreak",
-      "days": 89,
-      "eventDays": 3,
+      "days": 90,
+      "eventDays": 2,
       "r": null,
       "read": {
         "call": "n/a",
         "confidence": "n/a",
-        "text": "Not enough stored ETH days beside outbreak events in this 89-day window to separate a link from coincidence."
+        "text": "Not enough stored ETH days beside outbreak events in this 90-day window to separate a link from coincidence."
       },
       "window": 90
     },
@@ -1250,21 +1390,21 @@
       "asset": "ETH",
       "assetId": "eth",
       "category": "war",
-      "days": 89,
-      "eventDays": 3,
+      "days": 90,
+      "eventDays": 5,
       "r": null,
       "read": {
         "call": "n/a",
         "confidence": "n/a",
-        "text": "Not enough stored ETH days beside war events in this 89-day window to separate a link from coincidence."
+        "text": "Not enough stored ETH days beside war events in this 90-day window to separate a link from coincidence."
       },
       "window": 90
     }
   ],
   "drivers": {
     "copperGold": {
-      "ratio": 0.001551,
-      "yield10": 5.154
+      "ratio": 0.001565,
+      "yield10": 5.133
     },
     "correlations": [
       {
@@ -1293,7 +1433,7 @@
       },
       {
         "d30": -0.14,
-        "d90": -0.28,
+        "d90": -0.26,
         "driver": "VIX",
         "metal": "Gold"
       },
@@ -1304,14 +1444,14 @@
         "metal": "Gold"
       },
       {
-        "d30": -0.28,
+        "d30": -0.29,
         "d90": -0.34,
         "driver": "DXY",
         "metal": "Silver"
       },
       {
-        "d30": -0.06,
-        "d90": -0.17,
+        "d30": -0.05,
+        "d90": -0.16,
         "driver": "10Y",
         "metal": "Silver"
       },
@@ -1322,20 +1462,20 @@
         "metal": "Silver"
       },
       {
-        "d30": 0.46,
-        "d90": 0.43,
+        "d30": 0.48,
+        "d90": 0.44,
         "driver": "S&P",
         "metal": "Silver"
       },
       {
         "d30": -0.28,
-        "d90": -0.31,
+        "d90": -0.3,
         "driver": "VIX",
         "metal": "Silver"
       },
       {
-        "d30": 0.58,
-        "d90": 0.59,
+        "d30": 0.56,
+        "d90": 0.58,
         "driver": "Copper",
         "metal": "Silver"
       }
@@ -1540,24 +1680,24 @@
     ],
     "funds": {
       "dff": 3.88,
-      "zqf": 4.175,
-      "zqh": 4.42
+      "zqf": 4.17,
+      "zqh": 4.405
     },
     "gaps": [],
     "oil": {
-      "brent": 95.39,
+      "brent": 93.87,
       "energyStrikes": 0,
-      "wti": 88.45
+      "wti": 87.13
     },
     "rows": [
       {
         "changes": {
-          "1M": -7.33,
-          "1W": -5.83,
-          "1Y": -7.62,
-          "3M": -12.35
+          "1M": -7.49,
+          "1W": -5.99,
+          "1Y": -7.78,
+          "3M": -12.5
         },
-        "level": 3874.8,
+        "level": 3868.1001,
         "name": "Gold",
         "spark": [
           {
@@ -1648,19 +1788,19 @@
             "price": 3886.3
           },
           {
-            "price": 3874.8
+            "price": 3868.1001
           }
         ],
         "unit": "%"
       },
       {
         "changes": {
-          "1M": -16.78,
-          "1W": -9.77,
-          "1Y": -10.63,
-          "3M": -25.82
+          "1M": -17.3,
+          "1W": -10.33,
+          "1Y": -11.19,
+          "3M": -26.28
         },
-        "level": 47.43,
+        "level": 47.135,
         "name": "Silver",
         "spark": [
           {
@@ -1751,19 +1891,19 @@
             "price": 49.031
           },
           {
-            "price": 47.43
+            "price": 47.135
           }
         ],
         "unit": "%"
       },
       {
         "changes": {
-          "1M": 1.58,
-          "1W": 1.77,
-          "1Y": 4.31,
-          "3M": 3.82
+          "1M": 1.66,
+          "1W": 1.85,
+          "1Y": 4.38,
+          "3M": 3.89
         },
-        "level": 103.452,
+        "level": 103.526,
         "name": "DXY",
         "spark": [
           {
@@ -1854,24 +1994,21 @@
             "price": 103.41
           },
           {
-            "price": 103.452
+            "price": 103.526
           }
         ],
         "unit": "%"
       },
       {
         "changes": {
-          "1M": 6.5,
-          "1W": 29.5,
-          "1Y": 108.9,
-          "3M": 43.0
+          "1M": 3.5,
+          "1W": 26.9,
+          "1Y": 102.1,
+          "3M": 42.7
         },
-        "level": 5.154,
+        "level": 5.133,
         "name": "10Y",
         "spark": [
-          {
-            "price": 5.311
-          },
           {
             "price": 5.269
           },
@@ -1958,6 +2095,9 @@
           },
           {
             "price": 5.154
+          },
+          {
+            "price": 5.133
           }
         ],
         "unit": "bp"
@@ -2067,17 +2207,14 @@
       },
       {
         "changes": {
-          "1M": -2.36,
-          "1W": 2.51,
-          "1Y": 10.37,
-          "3M": -2.37
+          "1M": -2.18,
+          "1W": -0.76,
+          "1Y": 11.21,
+          "3M": -2.59
         },
-        "level": 7561.6699,
+        "level": 7492.6699,
         "name": "S&P",
         "spark": [
-          {
-            "price": 7773.9502
-          },
           {
             "price": 7818.9302
           },
@@ -2164,23 +2301,23 @@
           },
           {
             "price": 7561.6699
+          },
+          {
+            "price": 7492.6699
           }
         ],
         "unit": "%"
       },
       {
         "changes": {
-          "1M": 17.25,
-          "1W": -24.73,
-          "1Y": -2.67,
-          "3M": 21.84
+          "1M": 1.95,
+          "1W": 2.31,
+          "1Y": -8.94,
+          "3M": 36.87
         },
-        "level": 19.3,
+        "level": 20.38,
         "name": "VIX",
         "spark": [
-          {
-            "price": 15.52
-          },
           {
             "price": 15.01
           },
@@ -2267,18 +2404,21 @@
           },
           {
             "price": 19.3
+          },
+          {
+            "price": 20.38
           }
         ],
         "unit": "%"
       },
       {
         "changes": {
-          "1M": -7.95,
-          "1W": -5.01,
-          "1Y": 18.16,
-          "3M": -7.27
+          "1M": -7.33,
+          "1W": -4.37,
+          "1Y": 18.96,
+          "3M": -6.64
         },
-        "level": 6.0115,
+        "level": 6.052,
         "name": "Copper",
         "spark": [
           {
@@ -2369,19 +2509,19 @@
             "price": 6.0795
           },
           {
-            "price": 6.0115
+            "price": 6.052
           }
         ],
         "unit": "%"
       },
       {
         "changes": {
-          "1M": 11.36,
-          "1W": 4.37,
-          "1Y": 3.37,
-          "3M": 18.17
+          "1M": 11.87,
+          "1W": 4.84,
+          "1Y": 3.84,
+          "3M": 18.7
         },
-        "level": 81.6951,
+        "level": 82.0643,
         "name": "Gold/silver",
         "spark": [
           {
@@ -2472,7 +2612,7 @@
             "price": 79.2621
           },
           {
-            "price": 81.6951
+            "price": 82.0643
           }
         ],
         "unit": "%"
@@ -2481,24 +2621,24 @@
     "volumes": [
       {
         "name": "GLD",
-        "price": 355.45,
-        "volume": 11863900
+        "price": 355.77,
+        "volume": 722201
       },
       {
         "name": "SLV",
-        "price": 44.13,
-        "volume": 16640500
+        "price": 42.86,
+        "volume": 3227730
       },
       {
         "name": "GOLDBEES",
-        "price": 110.91,
-        "volume": 11239761
+        "price": 110.06,
+        "volume": 47202964
       }
     ]
   },
   "events": [],
   "explainer": [
-    "Gold/silver ratio 81.7 (1-month change 11.36%) and copper -7.95%. Association, not proof: industrial worry is hitting silver harder."
+    "Gold/silver ratio 82.1 (1-month change 11.87%) and copper -7.33%. Association, not proof: industrial worry is hitting silver harder."
   ],
   "note": "-1d is the move into the day before the event. +1d and +3d are moves from that same close to the stored close on or after those days. Correlation is Pearson between a category event-day (1/0) and that asset's daily percent change. Fewer than 5 paired days, or fewer than 3 event days, is n/a.",
   "vixZone": "15 to 25"
