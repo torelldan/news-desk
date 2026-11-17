@@ -102,6 +102,8 @@ def topic_of(text: str) -> str:
         return "earthquake"
     if re.search(r"\b(outbreak|bird flu|h5n1|measles|ebola|mpox)\b", blob, re.I):
         return "outbreak"
+    if re.search(r"\b(ransomware|cyberattack|cyber attack|data breach|zero-day|ddos)\b", blob, re.I):
+        return "cyber"
     if re.search(r"\b(inflation|recession|stockpile|blackout|preparedness)\b", blob, re.I):
         return "economic"
     if re.search(r"\b(gold|silver)\b", blob, re.I) and re.search(r"\b(inflation|price|surge|selloff|rally)\b", blob, re.I):
@@ -802,7 +804,7 @@ def fetch_google_trends(now: datetime) -> dict:
 def news_velocity(threats: list[dict], when: datetime | None = None) -> list[dict]:
     buckets: dict[str, list] = {}
     for item in threats or []:
-        topic = {"war-iran": "iran-war", "war-ukraine": "ukraine-war", "usgov": "us-gov"}.get(item.get("kind") or "")
+        topic = {"war-iran": "iran-war", "war-ukraine": "ukraine-war", "usgov": "us-gov", "cyber": "cyber"}.get(item.get("kind") or "")
         topic = topic or topic_of(item.get("title") or "")
         if topic not in {"iran-war", "ukraine-war", "us-gov"}:
             continue

@@ -299,6 +299,115 @@ def merge_strikes(previous: dict | None, fresh: list[dict], today: str, keep_day
     }
 
 
+_CYBER_NOISE = re.compile(
+    r"\b(webinar|product launch|funding round|series [a-d]\b|tips for|how to protect|"
+    r"top \d+ tips|conference|sponsored|newsletter|buy now|unveils|announces a)\b",
+    re.I,
+)
+_CYBER_HIT = re.compile(
+    r"\b(hospital|hospitals|power grid|water system|pipeline|airport|critical infrastructure|"
+    r"government|federal|pentagon|bank|telecom)\b",
+    re.I,
+)
+_CYBER_NATION = re.compile(
+    r"\b(nationwide|nation-scale|multiple countries|several countries|global outage|power grid)\b",
+    re.I,
+)
+
+
+def cyber_noise(title: str, note: str = "") -> bool:
+    """Vendor marketing, tips, and conference copy are not incidents."""
+    blob = f"{title or ''} {note or ''}"
+    if re.search(r"\b(webinar|funding round|product launch|tips to stay safe|top \d+ tips|sponsored)\b", blob, re.I):
+        return True
+    if _CYBER_NOISE.search(blob) and not re.search(r"\b(ransomware|zero-day|0-day|exploited|breach|outage|ddos|cyberattack|cyber attack)\b", blob, re.I):
+        return True
+    return False
+
+
+def cyber_severity(title: str, note: str = "", *, kev: bool = False) -> str:
+    """STANDBY routine, ALERT for exploited bugs and major hits, ACTION/CRITICAL only at nation scale."""
+    blob = f"{title or ''} {note or ''}"
+    if re.search(r"\brules out\b|\bnot a cyber|\bno cyberattack\b|\bare we entering\b|\bnew normal\b", blob, re.I):
+        return ""
+    if not kev and cyber_noise(title, note):
+        return ""
+    us = re.search(r"\b(united states|u\.s\.)", blob, re.I) is not None
+    wide = _CYBER_NATION.search(blob) is not None
+    infra = re.search(r"\b(critical infrastructure|power grid|hospitals nationwide)\b", blob, re.I) is not None
+    if wide and infra and us:
+        return "CRITICAL"
+    if wide and (infra or re.search(r"\b(outage|infrastructure)\b", blob, re.I)):
+        return "ACTION"
+    if kev or re.search(r"\b(zero-day|0-day|actively exploited|known exploited)\b", blob, re.I):
+        return "ALERT"
+    if re.search(r"\bransomware\b", blob, re.I) and _CYBER_HIT.search(blob):
+        return "ALERT"
+    if re.search(r"\b(outage|cyberattack|cyber attack|data breach|ddos)\b", blob, re.I) and _CYBER_HIT.search(blob):
+        return "ALERT"
+    if re.search(r"\b(cyberattack|cyber attack|ransomware|data breach|ddos|hacked|breach)\b", blob, re.I):
+        return "STANDBY"
+    if kev:
+        return "ALERT"
+    return ""
+
+
+def parse_kev(payload: dict | None, today: str, days: int = 7, limit: int = 6) -> list[dict]:
+    """CISA known-exploited catalog entries added in the last week. No exploit write-up."""
+    try:
+        cutoff = (datetime.fromisoformat(today) - timedelta(days=days)).date().isoformat()
+    except ValueError:
+        cutoff = ""
+    rows = []
+    for item in (payload or {}).get("vulnerabilities") or []:
+        added = str(item.get("dateAdded") or "")[:10]
+        cve = str(item.get("cveID") or "")
+        if not cve or (cutoff and added and added < cutoff):
+            continue
+        name = str(item.get("vulnerabilityName") or "known exploited vulnerability")
+        vendor = str(item.get("vendorProject") or "").strip()
+        title = f"{cve} {name}".strip() if vendor.lower() in name.lower() else f"{cve} {vendor} {name}".strip()
+        ransom = str(item.get("knownRansomwareCampaignUse") or "")
+        rows.append({
+            "title": re.sub(r"\s+", " ", title)[:180],
+            "url": f"https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext={cve}",
+            "date": added or today,
+            "source": "CISA",
+            "severity": "ALERT",
+            "note": f"Added to CISA's known-exploited catalog. Ransomware campaign use: {ransom or 'Unknown'}.",
+        })
+    rows.sort(key=lambda row: row.get("date") or "", reverse=True)
+    return rows[:limit]
+
+
+def cyber_dedupe(rows: list[dict]) -> list[dict]:
+    kept: list[dict] = []
+    for row in rows or []:
+        title = row.get("title") or ""
+        cve = re.search(r"CVE-\d{4}-\d+", title, re.I)
+        if cve and any(cve.group(0).lower() in (other.get("title") or "").lower() for other in kept):
+            continue
+        words = set(re.findall(r"[a-z0-9]{4,}", title.lower()))
+        numbers = set(re.findall(r"\b\d{3,}\b", title))
+        same = False
+        for other in kept:
+            other_numbers = set(re.findall(r"\b\d{3,}\b", other.get("title") or ""))
+            if numbers and numbers & other_numbers and re.search(r"cyber|ransomware|breach|ddos", title, re.I):
+                same = True
+                break
+            other_words = set(re.findall(r"[a-z0-9]{4,}", (other.get("title") or "").lower()))
+            if not words or not other_words:
+                continue
+            shared = words & other_words
+            if len(shared) >= 4 and len(shared) / min(len(words), len(other_words)) >= 0.55:
+                same = True
+                break
+        if same:
+            continue
+        kept.append(row)
+    return kept
+
+
 def rising_from_trends(trends: dict | None, scored: list | None = None) -> list[dict]:
     """Topics the morning brief calls rising, plus any scored trend-log states."""
     rows = []

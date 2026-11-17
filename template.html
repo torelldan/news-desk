@@ -574,7 +574,7 @@ function lookRows() {
 function deskRank(item) {
   const blob = `${item.title || ""} ${item.note || ""} ${(item.tags || []).join(" ")} ${item.kind || ""} ${item.source || ""}`.toLowerCase();
   let score = 0;
-  if (/war-iran|war-ukraine|usgov|israel|climate|diplomacy|attack|conflict|quake|storm|nws|gdacs|market|trend/.test(item.kind || "")) score += 60;
+  if (/war-iran|war-ukraine|usgov|israel|climate|diplomacy|attack|conflict|quake|storm|nws|gdacs|cyber|market|trend/.test(item.kind || "")) score += 60;
   if (/\b(iran|ukraine|israel|eisenkot|gaza|pentagon|congress|white house|midterm|election|cop31|antalya|g7|rubio|krakow|kraków|earthquake|hurricane|outbreak|preparedness)\b/.test(blob)) score += 40;
   if (/\b(addiction|obsession|wellness|meditation|comedy|fishing|fly-fishing|uap|ufo)\b/.test(blob) && !/\b(iran|ukraine|war|congress|election)\b/.test(blob)) score -= 45;
   const bare = String(item.title || "").replace(/https?:\/\/\S+/g, "").trim();
@@ -1774,6 +1774,7 @@ function renderThreats() {
     ["attack", "Attacks", (item) => item.kind === "attack"],
     ["natural", "Natural disasters", (item) => ["quake", "storm", "gdacs", "relief", "windstorm"].includes(item.kind) || (item.kind === "nws" && !local(item))],
     ["war", "Other conflict", (item) => item.kind === "conflict"],
+    ["cyber", "Cyber", (item) => item.kind === "cyber"],
     ["health", "Pandemics & outbreaks", (item) => item.kind === "who" || item.kind === "cdc"],
     ["space", "Space & existential", (item) => ["neo", "sentry", "clock"].includes(item.kind)],
     ["tn", "Local Tennessee alerts", local]
