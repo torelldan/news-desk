@@ -3,7 +3,7 @@
     {
       "call": "real",
       "confidence": "confirmed",
-      "date": "2026-11-03",
+      "date": "2026-11-10",
       "drivers": [
         "officials",
         "social"
@@ -13,17 +13,12 @@
       ],
       "id": "radar:577df950f7803bec",
       "kind": "radar",
-      "label": "Nov 3, 2026 2:00 AM CT",
+      "label": "Nov 10, 2026 12:13 PM CT",
       "lane": "news",
-      "note": "Commission takes new steps to prepare Europeans for growing crisis risks - European Civil Protection and Humanitarian Aid Operations",
-      "published": "2026-11-03T02:00:00-06:00",
+      "note": "Rising to the Challenge: DOE/NNSA Recognizes National Preparedness Month with the Phoenix Ascent Exercise - Department of Energy (.gov)",
+      "published": "2026-11-10T12:13:51-06:00",
       "read": "An official body acted or is named in the sources: an agency, a budget, a law, or a procurement step. That is follow-through.",
       "samples": [
-        {
-          "source": "European Civil Protection and Humanitarian Aid Operations",
-          "title": "Commission takes new steps to prepare Europeans for growing crisis risks - European Civil Protection and Humanitarian Aid Operations",
-          "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPUmI4aHpIYlpZNjdtOW1xXzlPaDFvbE1QWDMzUFpXQkRwTTR6TUFJNjdOU0owSkJPbFhLblkwbW1sbE9NbWxwV25uZ0RLWHY0SEVFVUxqd0JRdmM2SWdCVXE0REw1SzFYYjY0UHFaclNZdTF5YkYwMjB2WGh6RThWU1NtMEpnbkd5Z0xXa2l4blVQVWF0WDVjOUlqSVo0YkxlQTVoWjNpOVFldFVCX3Q4WDEzVENiTGppTHNUZjE5Zm9mTndaZFZvVGFISUhMdERSYk1vdEtNSVVpcDFITDYtbDU3eG0wYU0?oc=5"
-        },
         {
           "source": "Department of Energy (.gov)",
           "title": "Rising to the Challenge: DOE/NNSA Recognizes National Preparedness Month with the Phoenix Ascent Exercise - Department of Energy (.gov)",
@@ -38,15 +33,20 @@
           "source": "RAND",
           "title": "Preparedness for the AI Era Requires a Reserve of Critical Workers - RAND",
           "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOeU45ZEdUSXZMakdDX3JHRW1wQkJxZ1d0ZEJCMDk5Q2tpRUdGYS1tajRDTVZlMUdNOEtxb2hrMzlqZ1I0ZDNvSEVacl9penVYM05aanAwNW1tVUMwSENBYkdwcEQ3R2g3c0V4UWNXVVNKcWJHTG9GdTBsYzNrenJzWlJTLTJlZ2djNTBFX2NsQVNhSHlTeGtOXzdPT2tYSTZIbm83YmVSQ1BMbGFQ?oc=5"
+        },
+        {
+          "source": "Branson Tri-Lakes News",
+          "title": "90 Days Without Power? What Governments Are Really Saying About Emergency Preparedness - Branson Tri-Lakes News",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPYUlLa2IybXZWS2dMUm9nZHJrdlJVanNpN0t2Z3JjREgyaG9RbFROV3FORlAwWTk2LUFQWXRqQXJHYk9ESVBUZnNIVExoZFJPLTVsLWEwWnpuWkFOZkJOUGpMU21Ca1hkMkJ1QmFmSHg3N1ViRWJnWmdoQ3lIYUJXdUhjZjBNRGpac09NV0dnR2dwRXhz?oc=5"
         }
       ],
       "score": 88,
       "severity": "ALERT",
       "soWhat": "no action needed",
-      "source": "European Civil Protection and Humanitarian Aid Operations",
+      "source": "Department of Energy (.gov)",
       "sourceCount": 8,
       "title": "US and Europe preparedness surge",
-      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPUmI4aHpIYlpZNjdtOW1xXzlPaDFvbE1QWDMzUFpXQkRwTTR6TUFJNjdOU0owSkJPbFhLblkwbW1sbE9NbWxwV25uZ0RLWHY0SEVFVUxqd0JRdmM2SWdCVXE0REw1SzFYYjY0UHFaclNZdTF5YkYwMjB2WGh6RThWU1NtMEpnbkd5Z0xXa2l4blVQVWF0WDVjOUlqSVo0YkxlQTVoWjNpOVFldFVCX3Q4WDEzVENiTGppTHNUZjE5Zm9mTndaZFZvVGFISUhMdERSYk1vdEtNSVVpcDFITDYtbDU3eG0wYU0?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNdkFKTkg3N1pKMnJuamNMV09QNlNkT1pGcWwyZzZNT1NpaEs2QVhNYW5OdERnTkhTWnpaOXpiUXJVYVAyTE5MQ01LWWlTVWtXd1lDOE9BS0h1LXY2dGROb0F1TUVCZWFyLUtaNXAwLTB2OXNESnJLdUNKRFotei16b1lfcUpYaDVjODFnTkRrWE1GS01MVnk1OVNBeUdxWWQxWUswUkhaWGJLR1prMnotS1ZlSXQwZw?oc=5",
       "velocity": "slow"
     },
     {
@@ -90,7 +90,7 @@
           "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOMDRPWVE2U3FLblliWXk0ZGtuUDZHQ19NeTBCVngydFhITU9nWmEtcFBqeEFlbzlCaE5XcktlRk4yamprOGNjdE5ZTjNEYmFBa2JsV19zY0dwQ3llZF9ZeGdLSURIaTE0cWlLOWs1QmVKbl8tU0JEdGlidFlZRTJFc1dCREh0V2tRazRFUlJGRGY4bnBDSjVpNDljNXdmeV9nMEhMeDVoWlFDbWROc3NkcENBQk5qLV9FdVJsZ0dQbDRXeWZKOEJTRUdCWWVRR1NPckFKM1R4RmdUVEEtU1hBQVhfaWU?oc=5"
         }
       ],
-      "score": 68,
+      "score": 64,
       "severity": "ALERT",
       "soWhat": "no action needed",
       "source": "Fortune",
@@ -134,19 +134,19 @@
           "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNME9KRUtjdGxEbS1jRGhKUm1iS0U1VnNTOXdpWkVDRE1fVldQa3U1VDFFd1c0Nmx1N0tMUFpvbHQwWklCRnBlUTQzUDFMdXotRlhMVTgwUE5JbV92Qk5Md194N1Y2dmJYZmtjcGFzZTkzb2N0eUVDaVlJbDh4VXFjbDZ3TmJLdlEzN1U1ck55V2VSbzl0Z2xVLUsxd1ZrM1JR?oc=5"
         },
         {
-          "source": "Conduit Street Blog",
-          "title": "FEMA Tells States To Go It Alone - Conduit Street Blog",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPWWZMOVJrRF8zb0xKcFQtVDdhZVVRT0wyZEkxMVJzSkdIQU0wUExhdzNqRHg5Z1Zlb2V4TThtSDgwZFB4cGdMZm42SlA4ZTg4WUNkZERBamc0QzFtblU3dU12N19FaTA5VU5EU1hrTl95eXQtOTRkS0FNSTFOMjUwY19KUFBuQ0Q4?oc=5"
+          "source": "ABC News - Breaking News, Latest News and Videos",
+          "title": "FEMA says it's providing water trailers to Puerto Rico amid water crisis - ABC News - Breaking News, Latest News and Videos",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPQUoySU8zSkk2VGJ2SVpYWWZsSHZRVXdjcEd3V1dnamFFVWprdWFsSU90bWV3ODctdUVuZkVyWXRYTUloMWNteHhUNVF5UW53M2oyeHhyZ29pMjVpcTBSQnlhRzhxWEwxNkJEQ0NzZ2xHUzl1anFWcHFoMEd2ZGE1a2ZlbkZPUnI3dktIT3VKa0ZUamo5aDJZNFVOZThlUmJ5Q1HSAacBQVVfeXFMTmVWemJMNFJvVVRNWkNybDlwb3o5V0V3VU12ZFN1WkhKdmdtY3dnUDN6SFJ2RWFzSC1GRDNQNHVMbXFIdlFSUVJRVE9JYnFQV21WZHJnbTNIUkw4RVVvd3k4REZTU3hLZTdPa2hyYUttSENHZFZNMHpnbHhLU1ZWSUpFUm8zeHZINDZpSy1SdzBSWjV4dzVJZXZOUmxLQldqcFFmY09wLXc?oc=5"
         }
       ],
-      "score": 68,
+      "score": 72,
       "severity": "ALERT",
       "soWhat": "no action needed",
       "source": "Taxpayers for Common Sense",
       "sourceCount": 8,
       "title": "Official follow-through",
       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNVmt1cVNXWEFjME5BMGhkRDZ1cUJFWUJWWlVXQkEtelFhU0l3ZUxzcDcyQlN5NjYwcE8tWTNDU3JNUWtHZFpmeWpNcHZqaXlpNGxCWU9MRU9YLTFYTi13Nllia1ZpVXEzbFl5a3o5TXplUzJ1VGNZTXNZdlFPR3RBSGIyTFh3c1EwdnE4bHduNWVZREE3ZTIzbmR5Z3pKdWsydk5yNGpWMWZQZDg?oc=5",
-      "velocity": "slow"
+      "velocity": "building"
     }
   ],
   "note": "Public news search only. Spread velocity is how many of those headlines are from the last 3 days. Score is a desk count, not a prediction."

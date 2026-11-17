@@ -2,107 +2,95 @@
   "googleNote": "Google Trends US daily list answered (10 topics). Kept the ones that match a war, government, or threat topic.",
   "items": [
     {
-      "category": "tornado",
-      "confidence": "reported",
-      "date": "2026-11-16",
-      "id": "gtrend:8307f785531d4d4c",
+      "category": "hurricane",
+      "confidence": "rumor",
+      "date": "2026-11-17",
+      "id": "gtrend:bffc7ccad8dfc879",
       "kind": "trend",
       "lane": "news",
-      "look": "news",
-      "name": "tornado warning santa cruz",
-      "note": "US search trend. Traffic 500+.",
+      "look": "chatter",
+      "name": "tropical storm nolo",
+      "note": "US search trend. Traffic 1000+.",
       "place": "US",
-      "published": "2026-11-16T14:30:00-06:00",
-      "rise": "US daily list 500+",
-      "samples": [
-        {
-          "source": "ABC7 Bay Area",
-          "text": "Live storm updates: Tornado Warning issued for Santa Cruz Co., reports of waterspouts on SF Bay",
-          "url": "https://abc7news.com/live-updates/live-bay-area-storm-updates-tornado-warning-issued-santa-cruz-county-waterspouts-spotted-san-francisco/20045464/"
-        },
-        {
-          "source": "CBS News",
-          "text": "Part of Santa Cruz County under tornado warning as storms move through region",
-          "url": "https://www.cbsnews.com/sanfrancisco/news/santa-cruz-county-tornado-warning-sfo-water-spouts/"
-        },
-        {
-          "source": "KSBW",
-          "text": "Tornado warning issued for west central Santa Cruz County",
-          "url": "https://www.ksbw.com/article/tornado-warning-issued-for-west-central-santa-cruz-county/74443716"
-        }
-      ],
-      "severity": "STANDBY",
+      "published": "2026-11-17T11:00:00-06:00",
+      "rise": "US daily list 1000+",
+      "samples": [],
+      "severity": "ALERT",
       "soWhat": "no action needed",
       "source": "Google Trends",
-      "sourceCount": 3,
-      "title": "tornado warning santa cruz",
-      "url": "https://abc7news.com/live-updates/live-bay-area-storm-updates-tornado-warning-issued-santa-cruz-county-waterspouts-spotted-san-francisco/20045464/",
-      "volume": "500+"
+      "sourceCount": 1,
+      "title": "tropical storm nolo",
+      "url": "https://trends.google.com/trending?geo=US",
+      "volume": "1000+"
     },
     {
-      "category": "flood",
+      "category": "iran-war",
       "confidence": "reported",
-      "date": "2026-11-16",
-      "id": "gtrend:9dc8c70a743316a7",
+      "date": "2026-11-17",
+      "id": "velocity:4ee4bc978244e41e",
       "kind": "trend",
       "lane": "news",
       "look": "news",
-      "name": "flood watch",
-      "note": "US search trend. Traffic 50000+.",
-      "place": "US",
-      "published": "2026-11-16T14:20:00-06:00",
-      "rise": "US daily list 50000+",
+      "name": "iran war",
+      "note": "The same topic showed up across several outlets.",
+      "published": "2026-11-17T12:03:03-06:00",
+      "rise": "4 outlets this window",
       "samples": [
         {
-          "source": "The Washington Post",
-          "text": "Double-digit rainfall risk looms in Florida Peninsula, days after nearby flooding",
-          "url": "https://www.washingtonpost.com/weather/2026/11/16/double-digit-rainfall-risk-looms-florida-peninsula-days-after-nearby-flooding/"
+          "date": "2026-11-17",
+          "published": "2026-11-17T06:42:02-06:00",
+          "source": "Al Jazeera",
+          "text": "Is the US-Israel war on Iran turning into a ‘frozen conflict’? - Al Jazeera",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNTC1nTzQwVTdkS1paY05NZFNnd2w3RWFsRWl5Vm9wM1NteWdsVXJSVGpnd3JiZnNjSHFlVlJLVmE4aXdQZ0tXV2tTWm1INzVZYmJQRkR6cGlIVk43bkZ0bmUyR1IwVHQtemdwemI0Mm8yS1BSVXBDeVFiUlFhMmQzV2pmX0w0RU1uVW1ubjBQTW9ZaXJ1OFJnYm1lLXhBTWFsaWtR0gGoAUFVX3lxTE5VYjRLSi01Y2JUZHN3Q0kxNkZUaEROMTVBc3dIUkdzVjVaeDFEZk9EcTZnUDNpb2l0TE1VOVQ2dE02Tno3UXpPNWxlRExpTzZTZTJpWktWZTZkMEVPU24yT1VFYXpVSmxxSVo4VnBfSXRmNUV2eXJxWWlLbmVfWUpCZ0wzWDZoTms0WEpTdmlnQ0NHV3pSRk1GejRqM1lVc1FfbGJUNmJyXw?oc=5"
         },
         {
-          "source": "Tampa Bay Times",
-          "text": "How much rain can Florida take? Recent ‘rain bombs’ offer troubling preview",
-          "url": "https://www.tampabay.com/news/environment/2026/11/15/florida-rain-bombs-flooding/"
+          "date": "2026-11-17",
+          "published": "2026-11-17T05:33:52-06:00",
+          "source": "NBC News",
+          "text": "A 2-month lull ends with Iran’s third strike on U.S. targets in Bahrain - NBC News",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQOG1QMmRxQXdlZ2VBcTViV3VwM0NfT0stMUdpVUZnNFlteUFka2l2dXZSN1MzRkhCWmtHVjhUNUpiX3dfTGl6bVlBTmJiT281ZnlKendCaDlUejRxNHd3NkRxYndMQk1Vdmx4TzN6RXFMNHRYT1BLS3ZUTVRDUFBEdnBHTQ?oc=5"
         },
         {
-          "source": "FOX 35 Orlando",
-          "text": "Orlando weather: El Niño may bring heavy rainfall, flooding risk this week",
-          "url": "https://www.fox35orlando.com/news/orlando-weather-el-nino-may-bring-heavy-rainfall-flooding-risk-week"
+          "date": "2026-11-16",
+          "published": "2026-11-16T22:15:17-06:00",
+          "source": "Institute for the Study of War",
+          "text": "Iran Update, November 16, 2026 - Institute for the Study of War",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQTHh3eFA0UWpNekpxS3M1ZnFyTDJ3aUVUMExhZ281NmJnUHA0Q3hyZHJSZHcyNnZyVlhtdVcyXzhycEE3YWJYd0p0X2s5LXFmVVVKbFF0NHlnVml1ZUQxMFZOYjdMZDd6VmZ3OGNWY2dGRENqcjdvSjdCcGx5R2dkSTJFRXlfUQ?oc=5"
         }
       ],
-      "severity": "STANDBY",
+      "severity": "ALERT",
       "soWhat": "no action needed",
-      "source": "Google Trends",
-      "sourceCount": 3,
-      "title": "flood watch",
-      "url": "https://www.washingtonpost.com/weather/2026/11/16/double-digit-rainfall-risk-looms-florida-peninsula-days-after-nearby-flooding/",
-      "volume": "50000+"
+      "source": "News velocity",
+      "sourceCount": 4,
+      "title": "iran war",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNTC1nTzQwVTdkS1paY05NZFNnd2w3RWFsRWl5Vm9wM1NteWdsVXJSVGpnd3JiZnNjSHFlVlJLVmE4aXdQZ0tXV2tTWm1INzVZYmJQRkR6cGlIVk43bkZ0bmUyR1IwVHQtemdwemI0Mm8yS1BSVXBDeVFiUlFhMmQzV2pmX0w0RU1uVW1ubjBQTW9ZaXJ1OFJnYm1lLXhBTWFsaWtR0gGoAUFVX3lxTE5VYjRLSi01Y2JUZHN3Q0kxNkZUaEROMTVBc3dIUkdzVjVaeDFEZk9EcTZnUDNpb2l0TE1VOVQ2dE02Tno3UXpPNWxlRExpTzZTZTJpWktWZTZkMEVPU24yT1VFYXpVSmxxSVo4VnBfSXRmNUV2eXJxWWlLbmVfWUpCZ0wzWDZoTms0WEpTdmlnQ0NHV3pSRk1GejRqM1lVc1FfbGJUNmJyXw?oc=5"
     },
     {
       "category": "ukraine-war",
       "confidence": "reported",
-      "date": "2026-11-16",
+      "date": "2026-11-17",
       "id": "velocity:efd2da34e68ca58f",
       "kind": "trend",
       "lane": "news",
       "look": "news",
       "name": "ukraine war",
       "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-16T14:59:54-06:00",
+      "published": "2026-11-17T12:03:03-06:00",
       "rise": "4 outlets this window",
       "samples": [
         {
           "date": "2026-11-16",
-          "published": "2026-11-16T13:43:53-06:00",
-          "source": "The New York Times",
-          "text": "Winter Nightmare Looms Early in Ukraine as Russia Strikes Relentlessly - The New York Times",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOa0pLTFh0VFh3NEd3cS1VeHNNckxHUktEWUFDM2F5QWZvdFgyUDVCZHlVWmJVZGZNOXN4dDN5TzQ3aUpTU3d1U2VtM3ozNVJhMUs3aGpBU29XZkx5OUlodk5XLThqM2ZlSHpzdmhZU25MdlBETTNHOEVRNFQzSWZjSG5sQ0xSR3ZOcUdj?oc=5"
+          "published": "2026-11-16T17:43:00-06:00",
+          "source": "CBS News",
+          "text": "Kyiv under attack from Russian ballistic missiles after Ukraine's overnight attack on Russia - CBS News",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPUHVWYjRGSFlmUDY4clU3bml0OWVrTDBOV3E1c21Zc0UxZ19ZQzlwNnE3RkhJbFp2VnpaQ25jN1pvQm9uSUZWcEpzTW1LRVQ2Tm5mdHBxYXFaeUw2NFRsb3R6R0RRa0FnTnk4VktYRlNPcGR1ZHVrcDg3T0FGZDJOUm5CaVlrTnEwZkRUVmw0bGpzZ0kxQjA5T3VBeUxwa0wxQUl3SHNaRG5FZG5BTC1TV3JBenpVOGI1eFFmbw?oc=5"
         },
         {
-          "date": "2026-11-16",
-          "published": "2026-11-16T03:43:31-06:00",
-          "source": "Council, European Union",
-          "text": "Ukraine Facility: Council approves largest-ever payment of €8 billion to Kyiv - Council, European Union",
-          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOWlk5VTVlN2xzVVl3TjkwQWw5eVdJUzVSeGtra1dJWkY0Y2M0Q1ByWUpPTVZWSHc0TlhmX1dGN2pJRHhHR2w3Vjh3R2NsOXlpMWFLT1dETnVBZ3ZOb01qZDBXRnJzcjJKTndKcXZhZWlIMnpSYlBMS0R1Q0R5ZHJKLXZoYUZ4dlNJcUN1azR5YjYtSGFrbnFyNHl6MUdreFZySU1zUVd3LTJpdnJsdmZfU1JXdW5wWWNTNWhaNTdyMFNRemJIT1p0RGNsOTdEekJtSDB2Y3c4cVRUcGM?oc=5"
+          "date": "2026-11-13",
+          "published": "2026-11-13T20:06:00-06:00",
+          "source": "The Guardian",
+          "text": "Ukraine war briefing: Zelenskyy says Starshield restrictions continue on ‘entire front line’ - The Guardian",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPcVdEX2ZlWUE5cElsRnRQOWw4LWJHV3lJR1VJVmNGZXZCMGlJY0poV1JjM0FBZUYwclRucS1CRjIydUpMQ1prSXJTSkVHZkZOVFE2bU14bmpvWUNmZVdXanJWcUVVd2VNdVVvY3lrRDc4eTdvc2RFemRDMXd5c1Y1cGl4OXBYeEJOZU1pWWw5VkRCVVhLaUVKVGcwZm50WjM5cVl2QnhaZVdxTDBHOGZ6eEpFQnB0NTZVSUtfSXczYkNxRndpX25nb0ZzeGh4ekhC?oc=5"
         },
         {
           "date": "2026-11-13",
@@ -117,93 +105,9 @@
       "source": "News velocity",
       "sourceCount": 4,
       "title": "ukraine war",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOa0pLTFh0VFh3NEd3cS1VeHNNckxHUktEWUFDM2F5QWZvdFgyUDVCZHlVWmJVZGZNOXN4dDN5TzQ3aUpTU3d1U2VtM3ozNVJhMUs3aGpBU29XZkx5OUlodk5XLThqM2ZlSHpzdmhZU25MdlBETTNHOEVRNFQzSWZjSG5sQ0xSR3ZOcUdj?oc=5"
-    },
-    {
-      "category": "iran-war",
-      "confidence": "reported",
-      "date": "2026-11-16",
-      "id": "velocity:4ee4bc978244e41e",
-      "kind": "trend",
-      "lane": "news",
-      "look": "news",
-      "name": "iran war",
-      "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-16T14:59:54-06:00",
-      "rise": "4 outlets this window",
-      "samples": [
-        {
-          "date": "2026-11-16",
-          "published": "2026-11-16T13:02:29-06:00",
-          "source": "PBS",
-          "text": "Third U.S. aircraft carrier in Middle East as Trump keeps options open in Iran war - PBS",
-          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPWW9HX2VaaTlINnM4ZU5xejhVZVExQ2dBV0V1a3VFMGhNYU5taVpNRjM4WmdURExEalh5NUNsUmI4cklOSjNkR1Jpd24yVTMwcU0zWEFaSW1tazRxcm0tdEtLanlVWGM3VllTdVpDby1nWm40ajUzNTBZYXkzQXhxNThJY0NHcGdteFM4OGdNMWFHU19jVm84bFZnZGVHTl8ydVZjOFZOMVlrTXNGbFRzeDZCSFVOamfSAbwBQVVfeXFMTWx2X3ZJelUtdktlWld1bWVEa3ZaT29WMGFJLWFlMnpRV1hOU0gyRHp3RGF2MExJRHppOE10NWtaZGlrTU9YWGtWSXdwTElOX2M4ZF9idEEyelNaQXRKeFlsN0VFallpRmpWbGxLdVNIb2I0X0NjZ0RuMjRxZjV3OVRXMWV4Wmt3MjBqcDZ4eExQbUJ5LXVDOEJLUEtkZkFka2RjX0NRZElLWGpBbGxlb3I1Z3RXcThnaEVMbGE?oc=5"
-        },
-        {
-          "date": "2026-11-16",
-          "published": "2026-11-16T11:18:23-06:00",
-          "source": "OSV News",
-          "text": "Washington Letter: Iran war looms over the upcoming Congress and potential 2028 contenders - OSV News",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQbVVCRnl5SnFfTHByN3Z6WTFyOWRrd0xDbVVzbWdfYnZKZ3dhWURoR0tUMlBvQVVNMGFhbVo2eXpJU3QwdVRaOVhLVEpZQXMzSTljdk1QU1BfamwtbGxkd0NpdnpMaUt4UDRMSDR4WFBoU2c2UHJjOE50SmhQTUtJWGs1NTNQSFkwcjF5RkNkbG1kWmxNRmozWDZ2TmtDVlVwVDh2TDNBY3E4ZGhsT2pDeW9nWks?oc=5"
-        },
-        {
-          "date": "2026-11-08",
-          "published": "2026-11-08T02:00:00-06:00",
-          "source": "CNBC",
-          "text": "Trump says renewed Iran strikes ‘highly unlikely’ if talks progress but warns he could still strike - CNBC",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNb0l6UllaNWstdHV3YXVHY3FsaTV6blctcjJ2aDl5dnNwZF9OOFdrRXM5RlN6bUYzU2ZnTGU1bndLek5kTDFTWG1LZUFuamZLbFUwUmJiMDF1a21pOFNhcjI2SzdLVHRtWWYzOHVJVl9qMk9CY3E3Y2lEY1VOZ2txYTRHONIBiAFBVV95cUxQMjRuWnJDTHdNTU93RnRsN0IwanFIRTdWeGNEOTNxUkpHUC1GUG1sTGc1bWRmYUlJMWhabzg4ZkJhMjE5ZjdjdS0wT0RBZmVaZkV1Y0JWbHpRRDdVa1EzbEdsRXIwNzhqTXdUUlVsOVRkV1ZwYmlWTWtkcjE4emVja3JGUGVzck1o?oc=5"
-        }
-      ],
-      "severity": "ALERT",
-      "soWhat": "no action needed",
-      "source": "News velocity",
-      "sourceCount": 4,
-      "title": "iran war",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPWW9HX2VaaTlINnM4ZU5xejhVZVExQ2dBV0V1a3VFMGhNYU5taVpNRjM4WmdURExEalh5NUNsUmI4cklOSjNkR1Jpd24yVTMwcU0zWEFaSW1tazRxcm0tdEtLanlVWGM3VllTdVpDby1nWm40ajUzNTBZYXkzQXhxNThJY0NHcGdteFM4OGdNMWFHU19jVm84bFZnZGVHTl8ydVZjOFZOMVlrTXNGbFRzeDZCSFVOamfSAbwBQVVfeXFMTWx2X3ZJelUtdktlWld1bWVEa3ZaT29WMGFJLWFlMnpRV1hOU0gyRHp3RGF2MExJRHppOE10NWtaZGlrTU9YWGtWSXdwTElOX2M4ZF9idEEyelNaQXRKeFlsN0VFallpRmpWbGxLdVNIb2I0X0NjZ0RuMjRxZjV3OVRXMWV4Wmt3MjBqcDZ4eExQbUJ5LXVDOEJLUEtkZkFka2RjX0NRZElLWGpBbGxlb3I1Z3RXcThnaEVMbGE?oc=5"
-    },
-    {
-      "category": "us-gov",
-      "confidence": "reported",
-      "date": "2026-11-16",
-      "id": "velocity:bd817662251631b7",
-      "kind": "trend",
-      "lane": "news",
-      "look": "news",
-      "name": "us gov",
-      "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-16T14:59:54-06:00",
-      "rise": "4 outlets this window",
-      "samples": [
-        {
-          "date": "2026-11-14",
-          "published": "2026-11-14T10:56:08-06:00",
-          "source": "PBS",
-          "text": "WATCH: Rubio delivers keynote address at Federalist Society National Lawyers Convention - PBS",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQYmNTSlJGMFpkZFdCcUkxZUJ5a0pNQllWcjBCSTZiWU5vUlFWTDhHRlljUlVfSXM3MnpQdW85azJtLTFVUllVcU50NDlmYWV2Q0VCdU9HMzNoT25ocG5sTC1keVNfWlhOLXlndGt3TDAtYjRQMjV2MVFPWU9QWkQ2cl9fMHhfc2REZ01tVHhja0RLQ2I0eEk2Tk40bkhLSDhFYTFYejUxRDl0Y2tDYUo4aFg4X3V4dkR2NE1kajNob1M0Z9IBxwFBVV95cUxNMld6N01XUGpuUnluMFJJRlFRbnhhTWFvZUFTSkZ6aVR0U295LU93dUJLUnRtTW9hMm4tVGtIN0t2ODY5WEhydTlCVGNjeXh3OTBtZWR5V05pVml0ejNETlhIVUZXQ3J2aVEybS1vVXR4TzljaE5JbHFVQTM5LXZ5WmJvZHdYYXZWbTlyaFVjVnhLUjIyNFRwbG0ycUF2aG1HdkZLYl9GenhQMEJDOEE0S0djeFBRaEhhM0hnckdRYkNIbkhFZURZ?oc=5"
-        },
-        {
-          "date": "2026-11-10",
-          "published": "2026-11-10T23:13:32-06:00",
-          "source": "Wesleyan University",
-          "text": "AI, Inflation, and War: The Issues Driving the 2026 Midterms - Wesleyan University",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPTHMycmROcjRHR3RaQnl6RExCZ2xEZTlnVTJkYmZPbWZQWkc3SzdubVdqZlcyNGQxOVp4eWFzWFctTHhNTkNkdUR0SUo0Y2xEWnJJYm1Ib2pUMVdKSFV2dFA1LUNrSHNVV2ItR1hEb3ZhbDhETlVzX3RpNjVQM2cwcVRhSmxLeFMtaV9QQjh6MTJUTEtl?oc=5"
-        },
-        {
-          "date": "2026-11-10",
-          "published": "2026-11-10T12:13:51-06:00",
-          "source": "Department of Energy (.gov)",
-          "text": "The History of Electricity at the White House - Department of Energy (.gov)",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5HUWUyLXJ6bkMwcWVFd1ZHMHRFLTV2SVZYZWVOZHIwZnZ3MUNfb2Vxb3hPLW1iYVBGeWpBVWZJYURkV2xkRjVXU1dXZmlYTmNnLWlWOVFzblAtaGJLcFk3Z3RNT2pvZGNremFXc1dQRDI?oc=5"
-        }
-      ],
-      "severity": "ALERT",
-      "soWhat": "no action needed",
-      "source": "News velocity",
-      "sourceCount": 4,
-      "title": "us gov",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQYmNTSlJGMFpkZFdCcUkxZUJ5a0pNQllWcjBCSTZiWU5vUlFWTDhHRlljUlVfSXM3MnpQdW85azJtLTFVUllVcU50NDlmYWV2Q0VCdU9HMzNoT25ocG5sTC1keVNfWlhOLXlndGt3TDAtYjRQMjV2MVFPWU9QWkQ2cl9fMHhfc2REZ01tVHhja0RLQ2I0eEk2Tk40bkhLSDhFYTFYejUxRDl0Y2tDYUo4aFg4X3V4dkR2NE1kajNob1M0Z9IBxwFBVV95cUxNMld6N01XUGpuUnluMFJJRlFRbnhhTWFvZUFTSkZ6aVR0U295LU93dUJLUnRtTW9hMm4tVGtIN0t2ODY5WEhydTlCVGNjeXh3OTBtZWR5V05pVml0ejNETlhIVUZXQ3J2aVEybS1vVXR4TzljaE5JbHFVQTM5LXZ5WmJvZHdYYXZWbTlyaFVjVnhLUjIyNFRwbG0ycUF2aG1HdkZLYl9GenhQMEJDOEE0S0djeFBRaEhhM0hnckdRYkNIbkhFZURZ?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPUHVWYjRGSFlmUDY4clU3bml0OWVrTDBOV3E1c21Zc0UxZ19ZQzlwNnE3RkhJbFp2VnpaQ25jN1pvQm9uSUZWcEpzTW1LRVQ2Tm5mdHBxYXFaeUw2NFRsb3R6R0RRa0FnTnk4VktYRlNPcGR1ZHVrcDg3T0FGZDJOUm5CaVlrTnEwZkRUVmw0bGpzZ0kxQjA5T3VBeUxwa0wxQUl3SHNaRG5FZG5BTC1TV3JBenpVOGI1eFFmbw?oc=5"
     }
   ],
   "mode": "trends",
-  "note": "X trends by WOEID (US 23424977 and worldwide 1). Kept only when the name matches a threat or preparedness theme. The endpoint answered and none of the names matched."
+  "note": "X trends by WOEID (US 23424977 and worldwide 1). Kept only when the name matches a threat or preparedness theme. Dropped 1 X topics that were a name match or had no rise versus yesterday."
 }
