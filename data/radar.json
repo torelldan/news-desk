@@ -3,7 +3,7 @@
     {
       "call": "real",
       "confidence": "confirmed",
-      "date": "2026-11-10",
+      "date": "2026-11-13",
       "drivers": [
         "officials",
         "social"
@@ -13,21 +13,21 @@
       ],
       "id": "radar:577df950f7803bec",
       "kind": "radar",
-      "label": "Nov 10, 2026 12:13 PM CT",
+      "label": "Nov 13, 2026 7:50 AM CT",
       "lane": "news",
-      "note": "Rising to the Challenge: DOE/NNSA Recognizes National Preparedness Month with the Phoenix Ascent Exercise - Department of Energy (.gov)",
-      "published": "2026-11-10T12:13:51-06:00",
+      "note": "COLUMN: Connecting the Dots: Are Governments Rethinking Preparedness? – HSToday - Homeland Security Today",
+      "published": "2026-11-13T07:50:16-06:00",
       "read": "An official body acted or is named in the sources: an agency, a budget, a law, or a procurement step. That is follow-through.",
       "samples": [
-        {
-          "source": "Department of Energy (.gov)",
-          "title": "Rising to the Challenge: DOE/NNSA Recognizes National Preparedness Month with the Phoenix Ascent Exercise - Department of Energy (.gov)",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNdkFKTkg3N1pKMnJuamNMV09QNlNkT1pGcWwyZzZNT1NpaEs2QVhNYW5OdERnTkhTWnpaOXpiUXJVYVAyTE5MQ01LWWlTVWtXd1lDOE9BS0h1LXY2dGROb0F1TUVCZWFyLUtaNXAwLTB2OXNESnJLdUNKRFotei16b1lfcUpYaDVjODFnTkRrWE1GS01MVnk1OVNBeUdxWWQxWUswUkhaWGJLR1prMnotS1ZlSXQwZw?oc=5"
-        },
         {
           "source": "Homeland Security Today",
           "title": "COLUMN: Connecting the Dots: Are Governments Rethinking Preparedness? – HSToday - Homeland Security Today",
           "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPMl9KQW9RdWxQN01hWlVpTy1yUHpRSW9Qbjh1ZHppUXNld3d2WG1PRGVDSERzVVFvSmRWUU9sSE5oR1pGOURwa0ZuejRpQkR1XzdYcGJsLXNLSUNKZUkwcGRKOUVLN1o1VGxwM1JONUVsZ18taGVHQ0NPSC1RcWFLVExTeWxNMl95TERxV3JYRVkwTm1icks1QWg4VlBrclAyZEx3Vk1RcGRON0NGbWhoOXk0czQyS1JuT0tKVHNVc28tbFpoa1pKU1duRGhETGs?oc=5"
+        },
+        {
+          "source": "Department of Energy (.gov)",
+          "title": "Rising to the Challenge: DOE/NNSA Recognizes National Preparedness Month with the Phoenix Ascent Exercise - Department of Energy (.gov)",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNdkFKTkg3N1pKMnJuamNMV09QNlNkT1pGcWwyZzZNT1NpaEs2QVhNYW5OdERnTkhTWnpaOXpiUXJVYVAyTE5MQ01LWWlTVWtXd1lDOE9BS0h1LXY2dGROb0F1TUVCZWFyLUtaNXAwLTB2OXNESnJLdUNKRFotei16b1lfcUpYaDVjODFnTkRrWE1GS01MVnk1OVNBeUdxWWQxWUswUkhaWGJLR1prMnotS1ZlSXQwZw?oc=5"
         },
         {
           "source": "RAND",
@@ -40,14 +40,14 @@
           "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPYUlLa2IybXZWS2dMUm9nZHJrdlJVanNpN0t2Z3JjREgyaG9RbFROV3FORlAwWTk2LUFQWXRqQXJHYk9ESVBUZnNIVExoZFJPLTVsLWEwWnpuWkFOZkJOUGpMU21Ca1hkMkJ1QmFmSHg3N1ViRWJnWmdoQ3lIYUJXdUhjZjBNRGpac09NV0dnR2dwRXhz?oc=5"
         }
       ],
-      "score": 88,
+      "score": 92,
       "severity": "ALERT",
       "soWhat": "no action needed",
-      "source": "Department of Energy (.gov)",
+      "source": "Homeland Security Today",
       "sourceCount": 8,
       "title": "US and Europe preparedness surge",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNdkFKTkg3N1pKMnJuamNMV09QNlNkT1pGcWwyZzZNT1NpaEs2QVhNYW5OdERnTkhTWnpaOXpiUXJVYVAyTE5MQ01LWWlTVWtXd1lDOE9BS0h1LXY2dGROb0F1TUVCZWFyLUtaNXAwLTB2OXNESnJLdUNKRFotei16b1lfcUpYaDVjODFnTkRrWE1GS01MVnk1OVNBeUdxWWQxWUswUkhaWGJLR1prMnotS1ZlSXQwZw?oc=5",
-      "velocity": "slow"
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPMl9KQW9RdWxQN01hWlVpTy1yUHpRSW9Qbjh1ZHppUXNld3d2WG1PRGVDSERzVVFvSmRWUU9sSE5oR1pGOURwa0ZuejRpQkR1XzdYcGJsLXNLSUNKZUkwcGRKOUVLN1o1VGxwM1JONUVsZ18taGVHQ0NPSC1RcWFLVExTeWxNMl95TERxV3JYRVkwTm1icks1QWg4VlBrclAyZEx3Vk1RcGRON0NGbWhoOXk0czQyS1JuT0tKVHNVc28tbFpoa1pKU1duRGhETGs?oc=5",
+      "velocity": "building"
     },
     {
       "call": "real",
@@ -102,27 +102,23 @@
     {
       "call": "real",
       "confidence": "confirmed",
-      "date": "2026-10-30",
+      "date": "2026-10-27",
       "drivers": [
         "officials",
+        "press",
         "social"
       ],
       "followThrough": [
-        "official step"
+        "legislation"
       ],
       "id": "radar:39da30b683ff4744",
       "kind": "radar",
-      "label": "Oct 30, 2026 2:00 AM CT",
+      "label": "Oct 27, 2026 2:00 AM CT",
       "lane": "news",
-      "note": "Government Watchdog Dings FEMA for Staff Reductions and Lack of Planning - Taxpayers for Common Sense",
-      "published": "2026-10-30T02:00:00-05:00",
+      "note": "FEMA Memo Shifts Disaster Recovery Responsibility to States - GovTech",
+      "published": "2026-10-27T02:00:00-05:00",
       "read": "An official body acted or is named in the sources: an agency, a budget, a law, or a procurement step. That is follow-through.",
       "samples": [
-        {
-          "source": "Taxpayers for Common Sense",
-          "title": "Government Watchdog Dings FEMA for Staff Reductions and Lack of Planning - Taxpayers for Common Sense",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNVmt1cVNXWEFjME5BMGhkRDZ1cUJFWUJWWlVXQkEtelFhU0l3ZUxzcDcyQlN5NjYwcE8tWTNDU3JNUWtHZFpmeWpNcHZqaXlpNGxCWU9MRU9YLTFYTi13Nllia1ZpVXEzbFl5a3o5TXplUzJ1VGNZTXNZdlFPR3RBSGIyTFh3c1EwdnE4bHduNWVZREE3ZTIzbmR5Z3pKdWsydk5yNGpWMWZQZDg?oc=5"
-        },
         {
           "source": "GovTech",
           "title": "FEMA Memo Shifts Disaster Recovery Responsibility to States - GovTech",
@@ -137,16 +133,21 @@
           "source": "ABC News - Breaking News, Latest News and Videos",
           "title": "FEMA says it's providing water trailers to Puerto Rico amid water crisis - ABC News - Breaking News, Latest News and Videos",
           "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPQUoySU8zSkk2VGJ2SVpYWWZsSHZRVXdjcEd3V1dnamFFVWprdWFsSU90bWV3ODctdUVuZkVyWXRYTUloMWNteHhUNVF5UW53M2oyeHhyZ29pMjVpcTBSQnlhRzhxWEwxNkJEQ0NzZ2xHUzl1anFWcHFoMEd2ZGE1a2ZlbkZPUnI3dktIT3VKa0ZUamo5aDJZNFVOZThlUmJ5Q1HSAacBQVVfeXFMTmVWemJMNFJvVVRNWkNybDlwb3o5V0V3VU12ZFN1WkhKdmdtY3dnUDN6SFJ2RWFzSC1GRDNQNHVMbXFIdlFSUVJRVE9JYnFQV21WZHJnbTNIUkw4RVVvd3k4REZTU3hLZTdPa2hyYUttSENHZFZNMHpnbHhLU1ZWSUpFUm8zeHZINDZpSy1SdzBSWjV4dzVJZXZOUmxLQldqcFFmY09wLXc?oc=5"
+        },
+        {
+          "source": "Conduit Street Blog",
+          "title": "FEMA Tells States To Go It Alone - Conduit Street Blog",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPWWZMOVJrRF8zb0xKcFQtVDdhZVVRT0wyZEkxMVJzSkdIQU0wUExhdzNqRHg5Z1Zlb2V4TThtSDgwZFB4cGdMZm42SlA4ZTg4WUNkZERBamc0QzFtblU3dU12N19FaTA5VU5EU1hrTl95eXQtOTRkS0FNSTFOMjUwY19KUFBuQ0Q4?oc=5"
         }
       ],
-      "score": 72,
+      "score": 83,
       "severity": "ALERT",
       "soWhat": "no action needed",
-      "source": "Taxpayers for Common Sense",
+      "source": "GovTech",
       "sourceCount": 8,
       "title": "Official follow-through",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNVmt1cVNXWEFjME5BMGhkRDZ1cUJFWUJWWlVXQkEtelFhU0l3ZUxzcDcyQlN5NjYwcE8tWTNDU3JNUWtHZFpmeWpNcHZqaXlpNGxCWU9MRU9YLTFYTi13Nllia1ZpVXEzbFl5a3o5TXplUzJ1VGNZTXNZdlFPR3RBSGIyTFh3c1EwdnE4bHduNWVZREE3ZTIzbmR5Z3pKdWsydk5yNGpWMWZQZDg?oc=5",
-      "velocity": "building"
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQeUFnXzllUG9EbHVYNWpkdWF3a2s2UlpJbFF3YkFvakM2bFVVcTlyM2djcVdOOXFlVUN4NzBaaDdCN3JvY1djcVZSc1lBZHhXLVRxTlU0UEhFbFZjbDJfUkpvWWluQlRzUVZXN2hTM3BaM21ITU9Nd19HQlNVUUY4YVNsX0pHY1FWdXRGM0tVcDc3eVVpOUpJc3NiOA?oc=5",
+      "velocity": "slow"
     }
   ],
   "note": "Public news search only. Spread velocity is how many of those headlines are from the last 3 days. Score is a desk count, not a prediction."

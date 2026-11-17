@@ -5549,8 +5549,18 @@
     },
     {
       "date": "2026-11-17",
-      "label": "Nov 17, 2026 12:03 PM CT",
+      "label": "Nov 17, 2026 3:04 PM CT",
       "outlooks": [
+        {
+          "id": "quake:959f992a4b7e288f",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:3255fd4cda79e74f",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
         {
           "id": "quake:15a5c52feee2b592",
           "outlook": "First reading. Watch the next 72 hours.",
@@ -5587,16 +5597,6 @@
           "severity": "STANDBY"
         },
         {
-          "id": "quake:d04813295401fa75",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "STANDBY"
-        },
-        {
-          "id": "quake:541de795af425d0e",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "STANDBY"
-        },
-        {
           "id": "quake:4d6633cfae9de7b2",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
@@ -5612,7 +5612,7 @@
           "severity": "STANDBY"
         },
         {
-          "id": "gdacs:89d5327453b202de",
+          "id": "gdacs:6c0e3eb708598be1",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ACTION"
         },
@@ -5627,27 +5627,22 @@
           "severity": "STANDBY"
         },
         {
+          "id": "gdacs:3d066ab5f5d02787",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "gdacs:4d79ed3c94e01c07",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
           "id": "gdacs:7a76eb30a522a275",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
         {
           "id": "gdacs:bd14eb817240dbfd",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ALERT"
-        },
-        {
-          "id": "gdacs:54aedf7eb527bd7e",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ALERT"
-        },
-        {
-          "id": "gdacs:2019691e00f1c442",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ALERT"
-        },
-        {
-          "id": "gdacs:3c56b50790083fad",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
@@ -5667,12 +5662,97 @@
           "severity": "STANDBY"
         },
         {
+          "id": "cyber:43a8229490d1c36d",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "cyber:1ec4cea12d023096",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "cyber:6451ad2a52c6a52c",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "cyber:37be4ca9a24307fc",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "cyber:1e9d853a0b0379d2",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "cyber:95e7e928577c1e40",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "cyber:859ee884e83929fb",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:26d3cfbb3bf24670",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "cyber:71d83cedfba048fc",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:4c3d8f1921971f9b",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:e2b00f081fb43c3d",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:1f05b4a7696c9c29",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "cyber:71ac3df8a7b1ab49",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:19dcf945a054857d",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:5043c6b44796cf5d",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:94174e0b3fa335b9",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:eb7900e0c579fddb",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
           "id": "headline:af46b43e5d678f8a",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
         {
-          "id": "headline:250412ad7bc90a75",
+          "id": "headline:eaa2c705f43fa79c",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
@@ -5682,7 +5762,7 @@
           "severity": "ALERT"
         },
         {
-          "id": "headline:6b982996aa1e292f",
+          "id": "headline:aeb1c6c84381f30a",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
@@ -5702,12 +5782,12 @@
           "severity": "ALERT"
         },
         {
-          "id": "headline:c2c4d550ed76ab3d",
+          "id": "headline:a90af8550676b621",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
         {
-          "id": "headline:7953c0f62d8c7823",
+          "id": "headline:c2c4d550ed76ab3d",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
@@ -5742,12 +5822,7 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:d4882d9e5f29cb7b",
-          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:d6e6d03b7fdfd519",
+          "id": "headline:ba387395e6048c8b",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "STANDBY"
         },
@@ -5809,6 +5884,18 @@
       ],
       "threats": [
         {
+          "id": "quake:959f992a4b7e288f",
+          "kind": "quake",
+          "severity": "STANDBY",
+          "title": "M4.5 26 km NW of Port-Vila, Vanuatu"
+        },
+        {
+          "id": "quake:3255fd4cda79e74f",
+          "kind": "quake",
+          "severity": "STANDBY",
+          "title": "M4.8 141 km NW of Kavieng, Papua New Guinea"
+        },
+        {
           "id": "quake:15a5c52feee2b592",
           "kind": "quake",
           "severity": "STANDBY",
@@ -5851,18 +5938,6 @@
           "title": "M4.9 43 km NW of Oxford, New Zealand"
         },
         {
-          "id": "quake:d04813295401fa75",
-          "kind": "quake",
-          "severity": "STANDBY",
-          "title": "M4.9 26 km E of Port-Olry, Vanuatu"
-        },
-        {
-          "id": "quake:541de795af425d0e",
-          "kind": "quake",
-          "severity": "STANDBY",
-          "title": "M5.0 137 km SSE of Kirakira, Solomon Islands"
-        },
-        {
           "id": "quake:4d6633cfae9de7b2",
           "kind": "quake",
           "severity": "ALERT",
@@ -5881,7 +5956,7 @@
           "title": "M4.7 130 km W of Tofino, Canada"
         },
         {
-          "id": "gdacs:89d5327453b202de",
+          "id": "gdacs:6c0e3eb708598be1",
           "kind": "gdacs",
           "severity": "ACTION",
           "title": "Tropical Cyclone AKVAN-26"
@@ -5899,6 +5974,18 @@
           "title": "Drought in Belize, Costa Rica, Cuba, Dominican Republic, Guatemala, Honduras, Mexico, Nicaragua, El Salvador, United States"
         },
         {
+          "id": "gdacs:3d066ab5f5d02787",
+          "kind": "gdacs",
+          "severity": "ALERT",
+          "title": "Earthquake in Vanuatu"
+        },
+        {
+          "id": "gdacs:4d79ed3c94e01c07",
+          "kind": "gdacs",
+          "severity": "ALERT",
+          "title": "Earthquake in Papua New Guinea"
+        },
+        {
           "id": "gdacs:7a76eb30a522a275",
           "kind": "gdacs",
           "severity": "ALERT",
@@ -5909,24 +5996,6 @@
           "kind": "gdacs",
           "severity": "ALERT",
           "title": "Earthquake in South Of Kermadec Islands"
-        },
-        {
-          "id": "gdacs:54aedf7eb527bd7e",
-          "kind": "gdacs",
-          "severity": "ALERT",
-          "title": "Earthquake in Papua New Guinea"
-        },
-        {
-          "id": "gdacs:2019691e00f1c442",
-          "kind": "gdacs",
-          "severity": "ALERT",
-          "title": "Earthquake in Guam"
-        },
-        {
-          "id": "gdacs:3c56b50790083fad",
-          "kind": "gdacs",
-          "severity": "ALERT",
-          "title": "Earthquake in Off East Coast Of Honshu, Japan"
         },
         {
           "id": "who:10253c286a612334",
@@ -5947,16 +6016,118 @@
           "title": "Yellow fever - WHO African Region"
         },
         {
+          "id": "cyber:43a8229490d1c36d",
+          "kind": "cyber",
+          "severity": "ALERT",
+          "title": "CVE-2026-115731 Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability"
+        },
+        {
+          "id": "cyber:1ec4cea12d023096",
+          "kind": "cyber",
+          "severity": "STANDBY",
+          "title": "CVE-2026-114713 UnrealIRCd Improper Neutralization of Delimiters Vulnerability"
+        },
+        {
+          "id": "cyber:6451ad2a52c6a52c",
+          "kind": "cyber",
+          "severity": "STANDBY",
+          "title": "CVE-2026-123039 Check Point Multiple Products Incorrect Permission Assignment for Critical Resource Vulnerability"
+        },
+        {
+          "id": "cyber:37be4ca9a24307fc",
+          "kind": "cyber",
+          "severity": "STANDBY",
+          "title": "CVE-2026-124194 Microsoft Office Outlook Missing User Interaction for Potentially Unsafe Action Vulnerability"
+        },
+        {
+          "id": "cyber:1e9d853a0b0379d2",
+          "kind": "cyber",
+          "severity": "STANDBY",
+          "title": "CVE-2026-111793 Openwave Messaging Limited Webtop Media Transcoder Incorrect Resource Transfer Between Spheres Vulnerability"
+        },
+        {
+          "id": "cyber:95e7e928577c1e40",
+          "kind": "cyber",
+          "severity": "STANDBY",
+          "title": "CVE-2026-20320 Cisco BroadWorks Improper Restriction of XML External Entity Reference Vulnerability"
+        },
+        {
+          "id": "cyber:859ee884e83929fb",
+          "kind": "cyber",
+          "severity": "STANDBY",
+          "title": "Uber says nearly 150,000 impacted by third-party breach"
+        },
+        {
+          "id": "headline:26d3cfbb3bf24670",
+          "kind": "cyber",
+          "severity": "STANDBY",
+          "title": "How to Tell If It’s a Cyberattack or Just an Outage - WIRED"
+        },
+        {
+          "id": "cyber:71d83cedfba048fc",
+          "kind": "cyber",
+          "severity": "STANDBY",
+          "title": "Kazakh ransomware hacking suspect extradited from Italy"
+        },
+        {
+          "id": "headline:4c3d8f1921971f9b",
+          "kind": "cyber",
+          "severity": "STANDBY",
+          "title": "Equinor detects cyberattack against some IT systems - Reuters"
+        },
+        {
+          "id": "headline:e2b00f081fb43c3d",
+          "kind": "cyber",
+          "severity": "STANDBY",
+          "title": "Some of the world’s most-visited websites targeted by cyberattack - WBAL-TV"
+        },
+        {
+          "id": "headline:1f05b4a7696c9c29",
+          "kind": "cyber",
+          "severity": "STANDBY",
+          "title": "Cyberattack hits 178 organizations, targets website visitors - FOX5 Vegas"
+        },
+        {
+          "id": "cyber:71ac3df8a7b1ab49",
+          "kind": "cyber",
+          "severity": "STANDBY",
+          "title": "Market Research Giant Ipsos Investigating Breach of Internal System"
+        },
+        {
+          "id": "headline:19dcf945a054857d",
+          "kind": "cyber",
+          "severity": "STANDBY",
+          "title": "Google says Russian-speaking hackers ran the first fully automated AI cyberattack - CyberScoop"
+        },
+        {
+          "id": "headline:5043c6b44796cf5d",
+          "kind": "war-iran",
+          "severity": "ALERT",
+          "title": "Iran launches third round of strikes on Bahrain, host of U.S. Navy's 5th Fleet - NPR"
+        },
+        {
+          "id": "headline:94174e0b3fa335b9",
+          "kind": "war-ukraine",
+          "severity": "ALERT",
+          "title": "What Is the Kerch Bridge—and Why Does Ukraine Keep Attacking It? - Time Magazine"
+        },
+        {
+          "id": "headline:eb7900e0c579fddb",
+          "kind": "war-ukraine",
+          "severity": "ALERT",
+          "title": "Ukraine strikes Crimea bridge after Russian attacks on Kyiv - Vatican News"
+        },
+        {
           "id": "headline:af46b43e5d678f8a",
           "kind": "war-iran",
           "severity": "ALERT",
           "title": "Is the US-Israel war on Iran turning into a ‘frozen conflict’? - Al Jazeera"
         },
         {
-          "id": "headline:250412ad7bc90a75",
-          "kind": "war-iran",
+          "id": "headline:eaa2c705f43fa79c",
+          "kind": "climate",
           "severity": "ALERT",
-          "title": "A 2-month lull ends with Iran’s third strike on U.S. targets in Bahrain - NBC News"
+          "title": "A draft decision from the COP31 climate talks urges countries to give up coal, oil and gas immediately - DW.com"
         },
         {
           "id": "headline:a8b0d6434741e756",
@@ -5965,10 +6136,10 @@
           "title": "Iran Update, November 16, 2026 - Institute for the Study of War"
         },
         {
-          "id": "headline:6b982996aa1e292f",
-          "kind": "war-ukraine",
+          "id": "headline:aeb1c6c84381f30a",
+          "kind": "usgov",
           "severity": "ALERT",
-          "title": "Kyiv under attack from Russian ballistic missiles after Ukraine's overnight attack on Russia - CBS News"
+          "title": "Read the full White House memo requiring agencies to get approval before testifying in front of Congress - PBS"
         },
         {
           "id": "headline:7b2da7a239ffdc95",
@@ -5989,16 +6160,16 @@
           "title": "Israel’s Elections and the Future of the Middle East - CSIS | Center for Strategic and International Studies"
         },
         {
+          "id": "headline:a90af8550676b621",
+          "kind": "war-ukraine",
+          "severity": "ALERT",
+          "title": "Ukraine launches biggest drone attack on Russia since war began, defence ministry data shows - Reuters"
+        },
+        {
           "id": "headline:c2c4d550ed76ab3d",
           "kind": "attack",
           "severity": "ALERT",
           "title": "Kraków church holds mass for perpetrator of deadly attack just metres from where he shot victims - Notes From Poland"
-        },
-        {
-          "id": "headline:7953c0f62d8c7823",
-          "kind": "climate",
-          "severity": "ALERT",
-          "title": "EU at COP31 - European Commission"
         },
         {
           "id": "headline:59cd8f41c7885220",
@@ -6037,16 +6208,10 @@
           "title": "Ukraine war briefing: Zelenskyy says Starshield restrictions continue on ‘entire front line’ - The Guardian"
         },
         {
-          "id": "headline:d4882d9e5f29cb7b",
-          "kind": "war-ukraine",
+          "id": "headline:ba387395e6048c8b",
+          "kind": "diplomacy",
           "severity": "STANDBY",
-          "title": "Ukraine updates: Europe to send united front to potential peace talks - DW.com"
-        },
-        {
-          "id": "headline:d6e6d03b7fdfd519",
-          "kind": "war-ukraine",
-          "severity": "STANDBY",
-          "title": "Russia and Ukraine agree to a large prisoner exchange as talks end with no major breakthrough - AP News"
+          "title": "US says China agreed importance of leader-level talks to advance denuclearization - Reuters"
         },
         {
           "id": "headline:a48f1caf6a63a08c",
@@ -6117,11 +6282,6 @@
       ],
       "trends": [
         {
-          "category": "hurricane",
-          "name": "tropical storm nolo",
-          "volume": "1000+"
-        },
-        {
           "category": "iran-war",
           "name": "iran war",
           "volume": null
@@ -6129,6 +6289,11 @@
         {
           "category": "ukraine-war",
           "name": "ukraine war",
+          "volume": null
+        },
+        {
+          "category": "us-gov",
+          "name": "us gov",
           "volume": null
         }
       ],

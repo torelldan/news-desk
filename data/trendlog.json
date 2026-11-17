@@ -1452,21 +1452,33 @@
       "topic": "clock"
     },
     {
-      "count": 1,
+      "count": 14,
       "countries": 1,
       "date": "2026-11-17",
       "keywords": [],
-      "outlets": 1,
+      "outlets": 14,
+      "score": 0,
+      "severity": "ALERT",
+      "topic": "cyber"
+    },
+    {
+      "count": 2,
+      "countries": 1,
+      "date": "2026-11-17",
+      "keywords": [
+        "nuclear"
+      ],
+      "outlets": 2,
       "score": 0,
       "severity": "ALERT",
       "topic": "diplomacy"
     },
     {
-      "count": 8,
+      "count": 7,
       "countries": 1,
       "date": "2026-11-17",
       "keywords": [],
-      "outlets": 8,
+      "outlets": 7,
       "score": 0,
       "severity": "ALERT",
       "topic": "gdacs"
@@ -1502,13 +1514,13 @@
       "topic": "quake"
     },
     {
-      "count": 2,
+      "count": 3,
       "countries": 1,
       "date": "2026-11-17",
       "keywords": [],
-      "outlets": 2,
+      "outlets": 3,
       "score": 0,
-      "severity": "STANDBY",
+      "severity": "ALERT",
       "topic": "usgov"
     },
     {
@@ -1553,6 +1565,7 @@
     }
   ],
   "states": {
+    "cyber": "EMERGING",
     "gdacs": "EMERGING"
   },
   "topics": [
@@ -3007,21 +3020,33 @@
       "topic": "clock"
     },
     {
-      "count": 1,
+      "count": 14,
       "countries": 1,
       "date": "2026-11-17",
       "keywords": [],
-      "outlets": 1,
+      "outlets": 14,
+      "score": 0,
+      "severity": "ALERT",
+      "topic": "cyber"
+    },
+    {
+      "count": 2,
+      "countries": 1,
+      "date": "2026-11-17",
+      "keywords": [
+        "nuclear"
+      ],
+      "outlets": 2,
       "score": 0,
       "severity": "ALERT",
       "topic": "diplomacy"
     },
     {
-      "count": 8,
+      "count": 7,
       "countries": 1,
       "date": "2026-11-17",
       "keywords": [],
-      "outlets": 8,
+      "outlets": 7,
       "score": 0,
       "severity": "ALERT",
       "topic": "gdacs"
@@ -3057,13 +3082,13 @@
       "topic": "quake"
     },
     {
-      "count": 2,
+      "count": 3,
       "countries": 1,
       "date": "2026-11-17",
       "keywords": [],
-      "outlets": 2,
+      "outlets": 3,
       "score": 0,
-      "severity": "STANDBY",
+      "severity": "ALERT",
       "topic": "usgov"
     },
     {

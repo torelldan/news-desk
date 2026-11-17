@@ -6,6 +6,50 @@
   "gaps": [],
   "items": [
     {
+      "country": "Iran",
+      "date": "2026-11-17",
+      "means": "airstrike",
+      "published": "2026-11-17T12:44:00-06:00",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "STANDBY",
+      "source": "The New York Times",
+      "target_type": "military",
+      "title": "Airstrikes on Iran Missile Sites May Shed Light on Justification for Dams - The New York Times",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQM3RSb255WmtXVzRseHpHdk5tT1ZLTlYzRzJudFZKZHVaR2taQzdOcmQzWGF1b3hwTmZodTV6TWRvM1pyX2JtVVNlMVI3NUtyQlRVQXhQS3FJR2lhN1ZZcFZ4WU5fRHlsLXZEXzN2aDItSUppYmt0YzdVMXg4dHRHYUZrVzhRejZYcGZxRVlSMVJxN1paNGV6MzhfaS1sNTg?oc=5"
+    },
+    {
+      "country": "Bahrain",
+      "date": "2026-11-17",
+      "means": "",
+      "published": "2026-11-17T12:34:31-06:00",
+      "related": 1,
+      "relatedSources": [
+        "NBC News"
+      ],
+      "severity": "STANDBY",
+      "source": "NPR",
+      "target_type": "military",
+      "title": "Iran launches third round of strikes on Bahrain, host of U.S. Navy's 5th Fleet - NPR",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFA3RGxpNDRlLU9XRVNDenV4bWMzQU03QzRvRlc0eEN0aFF5aV9OYkg3VGZtT3M1UUNyRnpWVmFnbDdRbmRKazhsQnNmVjh2MFJUNk45dmVIaUtucWh5bW9haDR0Z2ZIZjBfMU1QVVhFc05BMlVIZnB4RUF0WQ?oc=5"
+    },
+    {
+      "country": "Ukraine",
+      "date": "2026-11-17",
+      "means": "",
+      "published": "2026-11-17T10:12:23-06:00",
+      "related": 2,
+      "relatedSources": [
+        "CBS News",
+        "Council, European Union"
+      ],
+      "severity": "STANDBY",
+      "source": "Vatican News",
+      "target_type": "transport",
+      "title": "Ukraine strikes Crimea bridge after Russian attacks on Kyiv - Vatican News",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNUFA3aGZaa0xmVi1SU2hPRTVRdkh3a0k5dzhIdUJtMHZYVnlfbHR5eTM1OExMY0g1dzYxSmVQUmZxOUgwRE1ldDZfQUh0RzVPX3dCRnNJRXNxdUJJWkZrWXZWdmdtTzJobVdMVWZNZVBPRzVZQWY5ekpmWW9OWE5KcmZSRlBiaXBXdlVMRHBnV3Z2Vms?oc=5"
+    },
+    {
       "country": "Bahrain",
       "date": "2026-11-17",
       "means": "drone",
@@ -106,19 +150,6 @@
     {
       "country": "Iran",
       "date": "2026-11-16",
-      "means": "airstrike",
-      "published": "2026-11-16T11:24:04-06:00",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "STANDBY",
-      "source": "The New York Times",
-      "target_type": "military",
-      "title": "Airstrikes on Iran Missile Sites May Shed Light on Justification for Dams - The New York Times",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQM3RSb255WmtXVzRseHpHdk5tT1ZLTlYzRzJudFZKZHVaR2taQzdOcmQzWGF1b3hwTmZodTV6TWRvM1pyX2JtVVNlMVI3NUtyQlRVQXhQS3FJR2lhN1ZZcFZ4WU5fRHlsLXZEXzN2aDItSUppYmt0YzdVMXg4dHRHYUZrVzhRejZYcGZxRVlSMVJxN1paNGV6MzhfaS1sNTg?oc=5"
-    },
-    {
-      "country": "Iran",
-      "date": "2026-11-16",
       "means": "drone",
       "published": "2026-11-16T09:14:00-06:00",
       "related": 0,
@@ -141,37 +172,6 @@
       "target_type": "military",
       "title": "Iran's Revolutionary Guard Sends 6 Drones at US Radar Site in Bahrain, Ending a Lull in Gulf Attacks - Military.com",
       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOVDdjRy1kMkZQRnROTUh5WFJnandoYXk1S2ZDdHdJdlBJaHQwTlJLNnlQaXVqSzBPQjdVRUVKeFpvS0R5bVVPb1YtR1J6S2w2eXkzdW1xUGdBZjVic0Juejl6ZkdsRTk5anNxTmx0UVhuX0xyNjF1V1FsMXEwS2FnVFZTQ29XNDMxb0xYY1gyY1pGUlF1Uk9r?oc=5"
-    },
-    {
-      "country": "Russia",
-      "date": "2026-11-16",
-      "means": "drone",
-      "published": "2026-11-16T07:53:57-06:00",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "STANDBY",
-      "source": "Reuters",
-      "target_type": "military",
-      "title": "Ukraine launches biggest drone attack on Russia since war began, defence ministry data shows - Reuters",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOTmhGNVhidkt3TlpMM3l5UmpTaGYyRnEyZ0pDQnhydG0wWm9sS3VGN0pndWVSODhUbFhYTW5EalBIMEljZEVsNndnbVVNd1dmVzNOMVNHYmtpOEZjVXBaOHNfQ0dzQjlva0QyNEU5OS1vMm50TmhuVEFaZDZ0THpwTDUtX3dpeV9HUEYwOEZaVkhBNzBrZXg1dXljcmVFRC1CT0hqclh2cU9uSklvSTRnSUxXVTlmQmNhNlI1Q1E0S2hSdzF3?oc=5"
-    },
-    {
-      "country": "",
-      "date": "2026-11-16",
-      "means": "",
-      "published": "2026-11-16T07:23:02-06:00",
-      "related": 4,
-      "relatedSources": [
-        "WKYC",
-        "TVP World",
-        "Facebook",
-        "BBC"
-      ],
-      "severity": "STANDBY",
-      "source": "Notes From Poland",
-      "target_type": "military",
-      "title": "Kraków church holds mass for perpetrator of deadly attack just metres from where he shot victims - Notes From Poland",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQT1N2QUtibUp1SjY4SVM2M2RERFVOTjRKYk1KVUJjMC0yT2x4RElxTGg0STBWMldWTU13RzA5Z2tWaVY5OUJBaV9nRTBmT3RGaVRjbnpYU0RHcHJBWHB0M1E1Q3VyQjZIMEV0NWxpVGZ6MHUxMUwzdEtYRE1zczRCa1FtbVR6cV9jR0U0TzcwbjRZUUZPYktqcHVuclFzTFllOXY1czQyampjY2J4U0tVSmFIZjczN3VxbXVSR1JKSXZrdTVJSTROY080SDRTZjhwZUE?oc=5"
     }
   ]
 }

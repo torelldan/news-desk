@@ -28,9 +28,9 @@
             "2026-11-26",
             "2026-12-25"
           ],
-          "level": 7331.13,
-          "change": -85.46,
-          "changePct": -1.15,
+          "level": 7340.53,
+          "change": -76.06,
+          "changePct": -1.03,
           "asOf": "2026-11-17",
           "source": "https://finance.yahoo.com/quote/%5EGSPC"
         }
@@ -226,6 +226,27 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:a5a52b1f4d2d5714",
+          "kind": "headline",
+          "lane": "news",
+          "source": "The New York Times",
+          "sourceId": "headline",
+          "title": "Fed Chairman Highlights Economic Uncertainty of A.I. Boom - The New York Times",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBBYTdqekVHWUZKSGtDNktJaDFJZTgxX3VmdW9qVUphVVl2SjdUSUtyd2kzUVhoUnhVVm5kOTgxY2h3MmlqdUplcmQ3WDNjVEYxRGN4aUVFUFBUcWdsZWVWTzJNX2ZoNV85MWxxMEJDZ213ZFlZTEpSWkFUR3ZGdw?oc=5",
+          "published": "2026-11-16T15:08:30-06:00",
+          "date": "2026-11-16",
+          "label": "Nov 16, 2026 3:08 PM CT",
+          "weekday": "Mon",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:338caa0f05dba779",
           "kind": "headline",
           "lane": "news",
@@ -301,27 +322,6 @@
           "published": "2026-11-16T13:24:46-06:00",
           "date": "2026-11-16",
           "label": "Nov 16, 2026 1:24 PM CT",
-          "weekday": "Mon",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:a5a52b1f4d2d5714",
-          "kind": "headline",
-          "lane": "news",
-          "source": "The New York Times",
-          "sourceId": "headline",
-          "title": "Fed Chairman Highlights Economic Uncertainty of A.I. Boom - The New York Times",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBBYTdqekVHWUZKSGtDNktJaDFJZTgxX3VmdW9qVUphVVl2SjdUSUtyd2kzUVhoUnhVVm5kOTgxY2h3MmlqdUplcmQ3WDNjVEYxRGN4aUVFUFBUcWdsZWVWTzJNX2ZoNV85MWxxMEJDZ213ZFlZTEpSWkFUR3ZGdw?oc=5",
-          "published": "2026-11-16T12:35:05-06:00",
-          "date": "2026-11-16",
-          "label": "Nov 16, 2026 12:35 PM CT",
           "weekday": "Mon",
           "timeKnown": true,
           "tags": [
@@ -894,9 +894,9 @@
             }
           ],
           "holidays": [],
-          "level": 35399.71,
-          "change": -322.39,
-          "changePct": -0.9,
+          "level": 35315.3,
+          "change": -406.8,
+          "changePct": -1.14,
           "asOf": "2026-11-17",
           "source": "https://finance.yahoo.com/quote/%5EGSPTSE"
         },
@@ -912,9 +912,9 @@
             }
           ],
           "holidays": [],
-          "level": 71089.92,
-          "change": -115.05,
-          "changePct": -0.16,
+          "level": 70436.4,
+          "change": -768.58,
+          "changePct": -1.08,
           "asOf": "2026-11-17",
           "source": "https://finance.yahoo.com/quote/%5EMXX"
         }
@@ -1778,14 +1778,35 @@
             }
           ],
           "holidays": [],
-          "level": 170464.19,
-          "change": 1169.19,
-          "changePct": 0.69,
+          "level": 169773.56,
+          "change": 478.56,
+          "changePct": 0.28,
           "asOf": "2026-11-17",
           "source": "https://finance.yahoo.com/quote/%5EBVSP"
         }
       ],
       "headlines": [
+        {
+          "id": "headline:297f4ce616485afa",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Bloomberg.com",
+          "sourceId": "headline",
+          "title": "B3 to Add Brazil Stocks Listed Abroad to Aid Ailing Local Market - Bloomberg.com",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQUG1rRURHNlg3dFRKb3VqSW5zeWo5blBTeU1qcjRnaW1wUmxSSmhKRW5VNE5lVXAtb21scEI5UDVoQ01BX3dkMGNtZVZRSi1yRERLUnJmdHBnWHZ6TW96Rk9VSVBNMWw5ckFkUHQ0RDBTdnN0dHI3VW5Odm9pNV9mcUMxU054d2cwLUN6UUJ6Q3RBdGRIMGRIdUNhRWdmR1gweExyLWhocjd3a2MxWVYxZ1A5bVM1UQ?oc=5",
+          "published": "2026-11-17T14:16:19-06:00",
+          "date": "2026-11-17",
+          "label": "Nov 17, 2026 2:16 PM CT",
+          "weekday": "Tue",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
         {
           "id": "headline:89aa75bc68c9cec0",
           "kind": "headline",
@@ -2604,27 +2625,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:dd577350a8e8fb8c",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Valor International",
-          "sourceId": "headline",
-          "title": "Investors look to Lula’s economic team after market rout - Valor International",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNXzVnLTRGWnJIZy1yeUM0azl3N2ozc1dGSExQaDJEdmZVWHlCbG5QUHhpNHpYTXptSjBVbDFDVzJmRVota256d21aeTk4Nkl6VGlFSWNqZlhYVkJtckM1TzhtT0l0bE1YNFlEbGROM0NBZ0NDUXk0RDdUazVfQW5ubkp2VlZZakdGODhHeXppLVRRQ2N2TkhfR1d4b2NnaDhvVUtSR1pfTTN0SjFqaDFYV2NZV3ZLVmJqOEFoZnhjb9IBzgFBVV95cUxQVzFCZi1QdXZLUDRyWWlObm50cnJpZ21VQnVtbWd5QjltVWtEeTRPcUJTZWVLRWRrcjcwdjBWRnZvRG5YTzJlaTljLUlSS3FyX01HUUk5LXlPOHUtVGF1M0ZoTXF3MF9IWXEwZy1fNW8xMmgwV3poZVhFd2lyZElzankzLTJ0YWZYakZHeGxPcXo2TGlrb1QyNUtIT0JJMFM2cTBPdkZrYlp1TlRkSjdRWEwtaFRnbXBVWV9CMGRBMEVUZ19UN2NjZmFxaW1pdw?oc=5",
-          "published": "2026-10-27T02:00:00-05:00",
-          "date": "2026-10-27",
-          "label": "Oct 27, 2026 2:00 AM CT",
-          "weekday": "Tue",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ]
     },
@@ -2644,10 +2644,10 @@
             }
           ],
           "holidays": [],
-          "level": 2495.41,
-          "change": 18.9,
-          "changePct": 0.76,
-          "asOf": "2026-11-17",
+          "level": 2495.86,
+          "change": 19.35,
+          "changePct": 0.78,
+          "asOf": "2026-11-18",
           "source": "https://iss.moex.com/iss/engines/stock/markets/index/securities/IMOEX.json"
         }
       ],
@@ -3603,6 +3603,27 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:0c56bf5fcdbabe15",
+          "kind": "headline",
+          "lane": "news",
+          "source": "www.tmgm.com",
+          "sourceId": "headline",
+          "title": "KOSPI falls as Asian stocks trade mixed ahead of Nvidia results - www.tmgm.com",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOclU2cWJWV2MtQ2poWDM2ZFRWR18weHhYcVg3WFUtT1dscUhMYzBfVGczdUtOOFR4VGVER2l6bk9RMVR6MUR3bkVvemJjVm44SDNNV253UjJSRldXSGgwLWJxam4xM0Q0cFJUMzZ3VmVwa016RG5NRjBoMjlvRWMtR2MzVDcyUFMzQ2FXTWZiZGdqQ0d2RF9pUXdxNUItR1hEOGQ4Qi0xY1lTNkF5aGFxakc3dFVleU1ScUVaYXlpWUp4bFFzS25ySlJzS1ZVamhCOWFNWmtR?oc=5",
+          "published": "2026-11-16T01:58:03-06:00",
+          "date": "2026-11-16",
+          "label": "Nov 16, 2026 1:58 AM CT",
+          "weekday": "Mon",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:0a494b0b68b8d210",
           "kind": "headline",
           "lane": "news",
@@ -4329,27 +4350,6 @@
           "published": "2026-11-10T17:00:00-06:00",
           "date": "2026-11-10",
           "label": "Nov 10, 2026 5:00 PM CT",
-          "weekday": "Tue",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:050267ed531b75f3",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Gulf Times",
-          "sourceId": "headline",
-          "title": "China's trade surplus soars past $1tn as AI boom powers exports | Gulf Times - Gulf Times",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOdGxtYWVsakp5VFMtd2ZnX0Uxc1pQNUZCdVYtanNRanZ4aktMYUdjZlVjdk1rT0l1TkU0cjJQT1JnVkh5VnVVQ1BrTWpNd0NSZlpJdkRLcFp5b1VpRGxPSFdOTHZCUi11cGItWjFzRFdFd245QWQzVGVtTEFib1JOX2dRbHFWVk10RjM3TG1Ia0IyNmtJN0dlTHFzbVh5TWpCUk43ZUwwT0xrWUwyc2pNRHR30gG3AUFVX3lxTE5MLW56OWNxUXE2cFlXWTdSLVdwS3U4VHI2T1dPSTB4YTQ0am9mcnBMNXBqaVRkd2tXbDJXbmxnSVJaS3JWZEkybmp3LTJMQy1XRG1uRkhSWXF5VFVKcWpyTjdRVWRVSlgwYXVMSWtPQ3FTZ2N3SjlqMVkxTlRoVGRVamFQSXN2d1JTYWd2VF92YkFNeElhb21EaHJEcWR5end3RGhMOG9rSTZodnBCaGJBTk5BWV9kMA?oc=5",
-          "published": "2026-11-10T10:40:00-06:00",
-          "date": "2026-11-10",
-          "label": "Nov 10, 2026 10:40 AM CT",
           "weekday": "Tue",
           "timeKnown": true,
           "tags": [
@@ -5255,12 +5255,12 @@
       ],
       "headlines": [
         {
-          "id": "headline:013f4fa95cff6738",
+          "id": "headline:6f72a0c7a229d37f",
           "kind": "headline",
           "lane": "news",
           "source": "Global Finance Magazine",
           "sourceId": "headline",
-          "title": "World’s Safest Banks 2026 | Global 100 - Global Finance Magazine",
+          "title": "World’s Safest Banks 2026 | Top 100 - Global Finance Magazine",
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQakp4aE9uQWx3Q1lvQ3V3T1FsY0VrYW1wY1JYMzdmZXRUVU5tbEVYN1hKMk00Ti1adDBpM3NTRGt4SW9fTnMxMnRHaEpKY0FQTlBBRk9lcFYyWkxGSFkzVzJGN004dEdENHZHMlZxTEhMR25lb2ROcE5LOG5seVp1b1NLcw?oc=5",
@@ -5288,6 +5288,27 @@
           "published": "2026-11-17T07:21:20-06:00",
           "date": "2026-11-17",
           "label": "Nov 17, 2026 7:21 AM CT",
+          "weekday": "Tue",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:92c4f2b42115303a",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Global Finance Magazine",
+          "sourceId": "headline",
+          "title": "World’s Safest Banks 2026 | Country Winners - Global Finance Magazine",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFA1YjZETFoxZ3liSUVINzN4a2luWFc3MzVvM1dhVnVVdFRBQXluelA1S3RxRktTVFdKWS10U2cxTlQtSTg1S1lmNUtzaTItcVRGTTFwenlXaXFuTkVRMW1BZ2w1bEpkZUF4cW13dFNtVlgxT1Ry?oc=5",
+          "published": "2026-11-17T04:44:51-06:00",
+          "date": "2026-11-17",
+          "label": "Nov 17, 2026 4:44 AM CT",
           "weekday": "Tue",
           "timeKnown": true,
           "tags": [
@@ -5759,6 +5780,27 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:f42315ec00dc8fae",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Daily Voice Of Asia",
+          "sourceId": "headline",
+          "title": "China Stocks Fall as AI Hardware Selloff and Weak Data Weigh - Daily Voice Of Asia",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPU29OaXFqd3AxS3JVNnpjM1NTS0kwazdPVmN3TWduS0RZb3RERWRvM0JKMWZRRFcyelBmc2tsTy1Ld3ZSZF9SZWs2OHgwY1daOS1FZEozMktWcktzX3hpZ2taTFFHQ01JWVVLM09icDVxU09RZFhkczdZNkUwallnbkVEZXBWQ0JBNFJXWDNxX3FBRXV6Q24wa1V3?oc=5",
+          "published": "2026-11-16T00:15:43-06:00",
+          "date": "2026-11-16",
+          "label": "Nov 16, 2026 12:15 AM CT",
+          "weekday": "Mon",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:e8a49d5dd4d7fe93",
           "kind": "headline",
           "lane": "news",
@@ -6051,48 +6093,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:d4dac14f376558b6",
-          "kind": "headline",
-          "lane": "news",
-          "source": "China Daily",
-          "sourceId": "headline",
-          "title": "HK raises 2026 full-year GDP forecast, citing stronger-than-expected growth - China Daily",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1LTEpDeVdfYzJNNDZHZUx2MmxsT2txQ05CSE50b1RQNGJ2Z2RhczdFSmoxbEJ1ZmF2MVJiZWM1MVV3SzJnQzlBSlhUZzJKalFiQWZQOG9hN08?oc=5",
-          "published": "2026-11-13T07:23:17-06:00",
-          "date": "2026-11-13",
-          "label": "Nov 13, 2026 7:23 AM CT",
-          "weekday": "Fri",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:3659822cb13984b5",
-          "kind": "headline",
-          "lane": "news",
-          "source": "24/7 Wall St.",
-          "sourceId": "headline",
-          "title": "Hang Seng Opens Lower as Hong Kong Bears the Tech Selloff's Weight - 24/7 Wall St.",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPZHZHS1VPbXFwdU5JQmFIOUhnSFluU3dOaTlqd1BYM1p2QVZXTjVsZEdyLTV1X2tNajNQeFhuMFNTbmYwQnlMZTFGUk8waXI2MzRaOVBiZGVySHZFZGhpZEVjcmxoU2R0clljOEtnaGFjUzJvRm1sdXdlTkUydkZ3TWRQek83aEVlM3BTV3dGQVdOdE5WSGZlYXhmQXpSejUzMXVVMlF6amtnQ19OY1E2NGxlMmF2QjVPUzRXNDRxcjJtTlROX1hHYVR3aw?oc=5",
-          "published": "2026-11-13T06:23:35-06:00",
-          "date": "2026-11-13",
-          "label": "Nov 13, 2026 6:23 AM CT",
-          "weekday": "Fri",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ]
     },
@@ -6124,6 +6124,27 @@
         }
       ],
       "headlines": [
+        {
+          "id": "headline:980541a7012161f5",
+          "kind": "headline",
+          "lane": "news",
+          "source": "BigGo Finance",
+          "sourceId": "headline",
+          "title": "Tokyo Forex: Dollar-Yen Struggles at 159 Level as Falling US Yields, Stock Selloff Spur Yen Buying - BigGo Finance",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBibU5HOE9YbzZfSHdFUU85aEdFZDhCZzZtdlJxaHRyQkk4NVBLdWtZOHB3bzJjVEhodjJlSGFZU3Vjd3plUlZpaGJDaVAycUpXTkRGSUNod1NpaUVzeDJaTjBlZk82SENtWlpZcVNtaGpuR2Fjdmc?oc=5",
+          "published": "2026-11-17T12:25:00-06:00",
+          "date": "2026-11-17",
+          "label": "Nov 17, 2026 12:25 PM CT",
+          "weekday": "Tue",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
         {
           "id": "headline:c254047e7c4ed770",
           "kind": "headline",
@@ -6942,27 +6963,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:5a6dd97e4252b869",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Nikkei Asia",
-          "sourceId": "headline",
-          "title": "New MUFG digital bank to forgo ATM cards in cybercrime safeguard - Nikkei Asia",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOeEhTc0hrNGJER0xhOTloVmd3c2tFdm1DdHdvNkUtaGI3VHZrbWdsVi01MXo0ZEk5UXRPZHNwTVl1UFNiRHVhOHREQjY4d19uQlBYMmVtUUFmQmRmX2lwMEVNTnZrSFY5bi1BVDJHcDRUVjVvZ0FBMUx1Sk51eU9uLTV6cGl4UlVDVjJobnFyMzFlVzE4U1pGdVZVMTJQSnRWT29DSTlVTGw?oc=5",
-          "published": "2026-11-04T02:00:00-06:00",
-          "date": "2026-11-04",
-          "label": "Nov 4, 2026 2:00 AM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ]
     },
@@ -6982,9 +6982,9 @@
             }
           ],
           "holidays": [],
-          "level": 82532.19,
-          "change": 427.4,
-          "changePct": 0.52,
+          "level": 82104.79,
+          "change": 512.34,
+          "changePct": 0.63,
           "asOf": "2026-11-17",
           "source": "https://finance.yahoo.com/quote/%5EBSESN"
         },
@@ -7000,9 +7000,9 @@
             }
           ],
           "holidays": [],
-          "level": 25387.4,
-          "change": 96.3,
-          "changePct": 0.38,
+          "level": 25291.1,
+          "change": 146.8,
+          "changePct": 0.58,
           "asOf": "2026-11-17",
           "source": "https://finance.yahoo.com/quote/%5ENSEI"
         }
@@ -7042,6 +7042,27 @@
           "published": "2026-11-17T08:12:17-06:00",
           "date": "2026-11-17",
           "label": "Nov 17, 2026 8:12 AM CT",
+          "weekday": "Tue",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:d0bc150f323a78b2",
+          "kind": "headline",
+          "lane": "news",
+          "source": "ET Now",
+          "sourceId": "headline",
+          "title": "ET Now Live TV: Business News Live TV Online, Finance & Market News Live Streaming - ET Now",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBvd2FadGE2UE41MGZPci1jSGJhcFNzbUhJd0FRblJGLTA0OEVRUE1sMW1LTlNxV2M1X0MxTTRXVVQwOGNURmpPadIBTkFVX3lxTE1Zb0xqWlh3RkdWaktyM3Njem8wZFB4VFAtd0tuQklxeGM0cXI4VWVmaWVDb2hma2NNVldvUW1FM29oUFZrcElNdjVZZDZTUQ?oc=5",
+          "published": "2026-11-17T06:13:17-06:00",
+          "date": "2026-11-17",
+          "label": "Nov 17, 2026 6:13 AM CT",
           "weekday": "Tue",
           "timeKnown": true,
           "tags": [
@@ -7819,27 +7840,6 @@
           "published": "2026-11-12T09:56:51-06:00",
           "date": "2026-11-12",
           "label": "Nov 12, 2026 9:56 AM CT",
-          "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:f53868c97909bce5",
-          "kind": "headline",
-          "lane": "news",
-          "source": "The Indian Awaaz",
-          "sourceId": "headline",
-          "title": "Nov. 12: Sensex, Nifty extend winning streak to third session; broader markets outperform - The Indian Awaaz",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQX05Kc3RhSUJtMWJVbGRfYWxmalJKdkc2YndtLWR0VHJ4UmhoQnJFUVFoVlloTzBUb21nQUw3MF9rTHR6aXlQSjV3Ny1hWlVoclR3N3lGU0xES0J4WmFiUnI1cmhDSVdxOW1qNXkwX0cxc2I3MXk0QTlmOEwycjVDUE50ZHRmZlZNT3ZZZ1duVk5zLXFvZlRSSlJoZzdwb1d6eG9YcDkteUZQZTNtN3M0bmRpRQ?oc=5",
-          "published": "2026-11-12T09:55:49-06:00",
-          "date": "2026-11-12",
-          "label": "Nov 12, 2026 9:55 AM CT",
           "weekday": "Thu",
           "timeKnown": true,
           "tags": [
