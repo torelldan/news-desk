@@ -550,5 +550,29 @@
     "short": "SPC",
     "subtitle": "threat",
     "url": "https://www.spc.noaa.gov/"
+  },
+  {
+    "id": "threat-cisa",
+    "name": "CISA exploited vulns",
+    "short": "CISA",
+    "lane": "threat",
+    "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
+    "subtitle": "threat",
+    "lastLabel": "Nov 17, 2026 12:00 PM CT",
+    "lastDate": "2026-11-17",
+    "count": 6,
+    "offline": false
+  },
+  {
+    "id": "threat-cybernews",
+    "name": "Cyber news",
+    "short": "CYBER",
+    "lane": "threat",
+    "url": "https://therecord.media/",
+    "subtitle": "threat",
+    "lastLabel": "Nov 17, 2026 7:20 PM CT",
+    "lastDate": "2026-11-17",
+    "count": 7,
+    "offline": false
   }
 ]

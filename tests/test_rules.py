@@ -843,6 +843,24 @@ def test_hazard_source_parsers():
     estonia = "NATO member Estonia to close Russia border after attempted 'sabotage' of drone maker - CNBC"
     assert deskextra.keep_strike(estonia) is False
     assert deskextra.keep_strike("Drone strike hits Russian oil refinery in Kirishi") is True
+    assert deskextra.cyber_noise("Vendor webinar: top 10 tips to stay safe online")
+    assert deskextra.cyber_noise("Startup announces a product launch and funding round")
+    assert deskextra.cyber_severity("Weekly tips for better passwords") == ""
+    assert deskextra.cyber_severity("Microsoft Rules Out Cyberattack in Outage") == ""
+    assert deskextra.cyber_severity("Google says Russian-speaking hackers ran an automated AI cyberattack") == "STANDBY"
+    assert deskextra.cyber_severity("City website hit by a DDoS attack") == "STANDBY"
+    assert deskextra.cyber_severity("Ransomware attack shuts a hospital network") == "ALERT"
+    assert deskextra.cyber_severity("Zero-day exploited in widely used email gateway") == "ALERT"
+    assert deskextra.cyber_severity("CVE-2026-1 example", kev=True) == "ALERT"
+    assert deskextra.cyber_severity("Global outage hits power grids in multiple countries") == "ACTION"
+    assert deskextra.cyber_severity("Nationwide power grid outage after a U.S. critical infrastructure cyberattack") == "CRITICAL"
+    kept = deskextra.cyber_dedupe([
+        {"title": "CVE-2026-10 Example vendor bug"},
+        {"title": "CVE-2026-10 same bug, other outlet"},
+        {"title": "Ransomware hits a hospital network today - The Record"},
+        {"title": "Ransomware hits a hospital network today - SecurityWeek"},
+    ])
+    assert len(kept) == 2
 
 
 if __name__ == "__main__":

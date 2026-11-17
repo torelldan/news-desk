@@ -561,7 +561,7 @@ def fetch_threats(now: datetime) -> dict:
         gaps.append(f"USGS: {err}")
         print(f"  usgs FAILED: {err}")
     extras = []
-    for producer in (_try_nhc, _try_nws, _try_gdacs, _try_relief, _try_who, _try_cdc, _try_desks, _try_neos):
+    for producer in (_try_nhc, _try_nws, _try_gdacs, _try_relief, _try_who, _try_cdc, _try_cyber, _try_desks, _try_neos):
         batch, batch_gaps = producer(now)
         extras.extend(batch)
         gaps.extend(batch_gaps)
@@ -1673,6 +1673,85 @@ def prior_item(item: dict, prev_items: list) -> dict | None:
     return None
 
 
+CISA_KEV = "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+CYBER_FEEDS = (
+    ("https://therecord.media/feed", "The Record"),
+    ("https://www.securityweek.com/feed/", "SecurityWeek"),
+    ("https://feeds.feedburner.com/TheHackersNews", "The Hacker News"),
+)
+CYBER_NEWS = '(cyberattack OR "ransomware attack" OR "data breach" OR "zero-day" OR "DDoS attack") when:7d'
+
+
+def _try_cyber(now):
+    """CISA's exploited-vuln catalog plus cyber news. Advisory HTML on cisa.gov is often blocked."""
+    from deskextra import cyber_dedupe, cyber_noise, cyber_severity, parse_kev
+    today = now.strftime("%Y-%m-%d")
+    rows = []
+    gaps = []
+    try:
+        payload = json.loads(_get(CISA_KEV, timeout=40, headers={"User-Agent": NWS_UA, "Accept": "application/json"}))
+        for item in parse_kev(payload, today):
+            rows.append(_item(
+                "cyber", "threat", "CISA", item["title"], item["note"], item["url"],
+                d.parse_pubdate(f"{item['date']}T12:00:00-06:00") or now, ["cyber", "alert"],
+                {"severity": item["severity"], "sourceId": "cisa"},
+            ))
+        print(f"  cisa kev {sum(1 for row in rows if row.get('source') == 'CISA')}")
+    except Exception as err:
+        gaps.append(f"CISA KEV: {err}")
+        print(f"  cisa kev: {err}")
+    for url, name in CYBER_FEEDS:
+        try:
+            nodes = _rss_items(url, 15)
+        except Exception as err:
+            gaps.append(f"{name}: {err}")
+            print(f"  {name}: {err}")
+            continue
+        kept = 0
+        for node in nodes:
+            title = re.sub(r"\s+", " ", (node.findtext("title") or "")).strip()
+            link = d.http_url(node.findtext("link") or "")
+            if not title or not link or cyber_noise(title):
+                continue
+            severity = cyber_severity(title)
+            if not severity:
+                continue
+            when = d.parse_pubdate(node.findtext("pubDate") or "") or now
+            if str(when.year) != str(now.year):
+                continue
+            rows.append(_item(
+                "cyber", "threat", name, title, "", link, when, ["cyber", severity.lower()],
+                {"severity": severity, "sourceId": "cyber-news"},
+            ))
+            kept += 1
+            if kept >= 6:
+                break
+        print(f"  {name} {kept}")
+    try:
+        for row in _headlines(CYBER_NEWS, now, retain_days=7, limit=12):
+            title = row.get("title") or ""
+            if cyber_noise(title):
+                continue
+            severity = cyber_severity(title)
+            if not severity:
+                continue
+            fresh = dict(row)
+            fresh["kind"] = "cyber"
+            fresh["lane"] = "threat"
+            fresh["severity"] = severity
+            fresh["sourceId"] = "cyber-news"
+            fresh["tags"] = list(dict.fromkeys((fresh.get("tags") or []) + ["cyber", severity.lower()]))
+            rows.append(fresh)
+    except Exception as err:
+        gaps.append(f"Cyber news: {err}")
+        print(f"  cyber news: {err}")
+    folded = cyber_dedupe(rows)
+    folded.sort(key=lambda row: row.get("published") or "", reverse=True)
+    folded.sort(key=lambda row: {"CRITICAL": 0, "ACTION": 1, "ALERT": 2, "STANDBY": 3}.get(row.get("severity") or "", 4))
+    print(f"  cyber {len(folded)}")
+    return folded[:14], gaps
+
+
 def _try_desks(now):
     """Current Iran war, Ukraine war, and U.S. government headlines. Not a generic 'war' keyword."""
     specs = (
@@ -2036,6 +2115,17 @@ def extra_sources(markets: dict, threats: dict, science: dict, gaps: list | None
             rows[-1]["subtitle"] = "no current alerts"
             if not rows[-1].get("lastLabel"):
                 rows[-1]["lastLabel"] = "no current alerts"
+    cyber = by_kind.get("cyber") or []
+    cisa_rows = [item for item in cyber if item.get("source") == "CISA" or item.get("sourceId") == "cisa"]
+    news_rows = [item for item in cyber if item not in cisa_rows]
+    add("threat-cisa", "CISA exploited vulns", "CISA", "threat", CISA_KEV, cisa_rows)
+    if any(str(gap).lower().startswith("cisa") for gap in (gaps or [])) and not cisa_rows:
+        rows[-1]["offline"] = True
+        rows[-1]["subtitle"] = "source down"
+    add("threat-cybernews", "Cyber news", "CYBER", "threat", "https://therecord.media/", news_rows)
+    if any(str(gap).lower().startswith("cyber news") for gap in (gaps or [])) and not news_rows:
+        rows[-1]["offline"] = True
+        rows[-1]["subtitle"] = "source down"
     by_field = {}
     for item in (science or {}).get("items") or []:
         by_field.setdefault(item.get("field") or "science", []).append(item)

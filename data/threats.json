@@ -1619,6 +1619,284 @@
       "title": "Doomsday Clock",
       "url": "https://thebulletin.org/doomsday-clock/",
       "weekday": "Tue"
+    },
+    {
+      "id": "cyber:43a8229490d1c36d",
+      "kind": "cyber",
+      "lane": "threat",
+      "source": "CISA",
+      "sourceId": "cisa",
+      "title": "CVE-2026-115731 Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability",
+      "guest": "",
+      "note": "Added to CISA's known-exploited catalog. Ransomware campaign use: Unknown.",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-115731",
+      "published": "2026-11-17T12:00:00-06:00",
+      "date": "2026-11-17",
+      "label": "Nov 17, 2026 12:00 PM CT",
+      "weekday": "Tue",
+      "timeKnown": true,
+      "tags": [
+        "cyber",
+        "alert"
+      ],
+      "severity": "ALERT"
+    },
+    {
+      "id": "cyber:1ec4cea12d023096",
+      "kind": "cyber",
+      "lane": "threat",
+      "source": "CISA",
+      "sourceId": "cisa",
+      "title": "CVE-2026-114713 UnrealIRCd Improper Neutralization of Delimiters Vulnerability",
+      "guest": "",
+      "note": "Added to CISA's known-exploited catalog. Ransomware campaign use: Unknown.",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-114713",
+      "published": "2026-11-13T12:00:00-06:00",
+      "date": "2026-11-13",
+      "label": "Nov 13, 2026 12:00 PM CT",
+      "weekday": "Fri",
+      "timeKnown": true,
+      "tags": [
+        "cyber",
+        "alert"
+      ],
+      "severity": "ALERT"
+    },
+    {
+      "id": "cyber:6451ad2a52c6a52c",
+      "kind": "cyber",
+      "lane": "threat",
+      "source": "CISA",
+      "sourceId": "cisa",
+      "title": "CVE-2026-123039 Check Point Multiple Products Incorrect Permission Assignment for Critical Resource Vulnerability",
+      "guest": "",
+      "note": "Added to CISA's known-exploited catalog. Ransomware campaign use: Unknown.",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-123039",
+      "published": "2026-11-13T12:00:00-06:00",
+      "date": "2026-11-13",
+      "label": "Nov 13, 2026 12:00 PM CT",
+      "weekday": "Fri",
+      "timeKnown": true,
+      "tags": [
+        "cyber",
+        "alert"
+      ],
+      "severity": "ALERT"
+    },
+    {
+      "id": "cyber:37be4ca9a24307fc",
+      "kind": "cyber",
+      "lane": "threat",
+      "source": "CISA",
+      "sourceId": "cisa",
+      "title": "CVE-2026-124194 Microsoft Office Outlook Missing User Interaction for Potentially Unsafe Action Vulnerability",
+      "guest": "",
+      "note": "Added to CISA's known-exploited catalog. Ransomware campaign use: Unknown.",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-124194",
+      "published": "2026-11-10T12:00:00-06:00",
+      "date": "2026-11-10",
+      "label": "Nov 10, 2026 12:00 PM CT",
+      "weekday": "Tue",
+      "timeKnown": true,
+      "tags": [
+        "cyber",
+        "alert"
+      ],
+      "severity": "ALERT"
+    },
+    {
+      "id": "cyber:1e9d853a0b0379d2",
+      "kind": "cyber",
+      "lane": "threat",
+      "source": "CISA",
+      "sourceId": "cisa",
+      "title": "CVE-2026-111793 Openwave Messaging Limited Webtop Media Transcoder Incorrect Resource Transfer Between Spheres Vulnerability",
+      "guest": "",
+      "note": "Added to CISA's known-exploited catalog. Ransomware campaign use: Unknown.",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-111793",
+      "published": "2026-11-10T12:00:00-06:00",
+      "date": "2026-11-10",
+      "label": "Nov 10, 2026 12:00 PM CT",
+      "weekday": "Tue",
+      "timeKnown": true,
+      "tags": [
+        "cyber",
+        "alert"
+      ],
+      "severity": "ALERT"
+    },
+    {
+      "id": "cyber:95e7e928577c1e40",
+      "kind": "cyber",
+      "lane": "threat",
+      "source": "CISA",
+      "sourceId": "cisa",
+      "title": "CVE-2026-20320 Cisco BroadWorks Improper Restriction of XML External Entity Reference Vulnerability",
+      "guest": "",
+      "note": "Added to CISA's known-exploited catalog. Ransomware campaign use: Unknown.",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-20320",
+      "published": "2026-11-10T12:00:00-06:00",
+      "date": "2026-11-10",
+      "label": "Nov 10, 2026 12:00 PM CT",
+      "weekday": "Tue",
+      "timeKnown": true,
+      "tags": [
+        "cyber",
+        "alert"
+      ],
+      "severity": "ALERT"
+    },
+    {
+      "id": "cyber:859ee884e83929fb",
+      "kind": "cyber",
+      "lane": "threat",
+      "source": "The Record",
+      "sourceId": "cyber-news",
+      "title": "Uber says nearly 150,000 impacted by third-party breach",
+      "guest": "",
+      "note": "",
+      "url": "https://therecord.media/uber-says-150000-impacted-third-party-breach",
+      "published": "2026-11-17T19:20:00-06:00",
+      "date": "2026-11-17",
+      "label": "Nov 17, 2026 7:20 PM CT",
+      "weekday": "Tue",
+      "timeKnown": true,
+      "tags": [
+        "cyber",
+        "standby"
+      ],
+      "severity": "STANDBY"
+    },
+    {
+      "id": "headline:237906780f0540ed",
+      "kind": "cyber",
+      "lane": "threat",
+      "source": "KCRA",
+      "sourceId": "cyber-news",
+      "title": "Some of the world’s most-visited websites targeted by cyberattack - KCRA",
+      "guest": "",
+      "note": "",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE00LVhkNmhjeFZ0SlVoSng0Nmc4UXk5Z0Zld1ZFTDdUYlczUzFwQVdFeFpKeUc5QWQ0Y3dMaDZfTUc3OG1FeWR6MVUyeE9NeEVWZm0yZjVEa3FpZS03aThmNHBWSXEtdmhqVlRLZTNCWlczR3BPWVVN?oc=5",
+      "published": "2026-11-17T11:46:00-06:00",
+      "date": "2026-11-17",
+      "label": "Nov 17, 2026 11:46 AM CT",
+      "weekday": "Tue",
+      "timeKnown": true,
+      "tags": [
+        "headline",
+        "standby",
+        "cyber"
+      ],
+      "severity": "STANDBY"
+    },
+    {
+      "id": "headline:53f878dbd68ccaaa",
+      "kind": "cyber",
+      "lane": "threat",
+      "source": "Syracuse.com",
+      "sourceId": "cyber-news",
+      "title": "Cyberattack hits 178 organizations: Credit cards, crypto, other data at risk - Syracuse.com",
+      "guest": "",
+      "note": "",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOZEk0NFhMYXFvSVRIemVuWTRsbURQMk82bWc3WW1aZGZVTVgzSk9QTFpCU1o3bkdRbFZjRkFSZXg5dk1QcUE0S2xnWDF2RWNtd3NsbEUtSVM0MXJCb3JTWGdtU3JOSWFxQmYtT0lTUnEwbE9Jd0dYUS1rcHp3cjJLcnp0LS1KMFdXN2p2NHh4ei0tS25BMXJQTGxoQnhZRV9KTVhVX2JROVBJanJPTDZTV05wV284SmZTSHZJ?oc=5",
+      "published": "2026-11-17T08:57:00-06:00",
+      "date": "2026-11-17",
+      "label": "Nov 17, 2026 8:57 AM CT",
+      "weekday": "Tue",
+      "timeKnown": true,
+      "tags": [
+        "headline",
+        "standby",
+        "cyber"
+      ],
+      "severity": "STANDBY"
+    },
+    {
+      "id": "cyber:71ac3df8a7b1ab49",
+      "kind": "cyber",
+      "lane": "threat",
+      "source": "SecurityWeek",
+      "sourceId": "cyber-news",
+      "title": "Market Research Giant Ipsos Investigating Breach of Internal System",
+      "guest": "",
+      "note": "",
+      "url": "https://www.securityweek.com/market-research-giant-ipsos-investigating-breach-of-internal-system/",
+      "published": "2026-11-17T08:55:30-06:00",
+      "date": "2026-11-17",
+      "label": "Nov 17, 2026 8:55 AM CT",
+      "weekday": "Tue",
+      "timeKnown": true,
+      "tags": [
+        "cyber",
+        "standby"
+      ],
+      "severity": "STANDBY"
+    },
+    {
+      "id": "headline:19dcf945a054857d",
+      "kind": "cyber",
+      "lane": "threat",
+      "source": "CyberScoop",
+      "sourceId": "cyber-news",
+      "title": "Google says Russian-speaking hackers ran the first fully automated AI cyberattack - CyberScoop",
+      "guest": "",
+      "note": "",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1ic0xuWHpoQXQwVWNldkJuc1Z1RXp6QWoxTWFrMGdLSUZSNHhjaTdockN0YkFhNW5KY190cTk3N2NOXzNUaW53Q0I1c2tabHlubDRlSlhPWWZMTVlBOW1zekdFN1hVbUJnYUlaRU5B?oc=5",
+      "published": "2026-11-16T16:51:54-06:00",
+      "date": "2026-11-16",
+      "label": "Nov 16, 2026 4:51 PM CT",
+      "weekday": "Mon",
+      "timeKnown": true,
+      "tags": [
+        "headline",
+        "standby",
+        "cyber"
+      ],
+      "severity": "STANDBY"
+    },
+    {
+      "id": "headline:ab50a31301ddda8b",
+      "kind": "cyber",
+      "lane": "threat",
+      "source": "Cleveland.com",
+      "sourceId": "cyber-news",
+      "title": "FAA ground stop sparks cyberattack questions. Here’s what officials are saying - Cleveland.com",
+      "guest": "",
+      "note": "",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNZVA3S1RzQnl3QjRCaW1MMlJ4ejh0bEY2ZjdjVTZYS244OFdSNUN5UmdFQ2hVUFFSU2Z5Q2ZSVUpPbDVISUdGekJ3d0FQUXR4QzI4a2RsVHdVVzR5TWxjODNRY1ctdnRWZWt2VHVYSG1WR1QtX09mSFA5VGpwN1BxbE1sVFJkblhJYWtTQzBpbWhaN3czWDZsUjlUNGhhaUpZSGRvWEZlcEdFdXVBXzZPUVZGYnlNaTh6MksxRNIB0AFBVV95cUxPTTdBbDFCOXFrNm9nbXFBR3loZzN5M2ZNVUY2b2ZjaUdFWlBuWVdnLTNKVmk0SkNKWWFFMXFxVTB5aHIyYXhGNnJyS0t2OHZWM1VvZC1VLVExOTN5Y2xyTldGcHFDLTlPQjFrV3pBUHlwWVlfVWZ4WHhOdjV3RkFHNmY2d050RzVpR0Z6TUZEbHlTSExrWTNtdzFsNVBvWDV0ZjBJekpBencwaWRzd256eDhVa0RyclRjejJMZTUyQUZDcjR0WmZOeko3cHVBZTlz?oc=5",
+      "published": "2026-11-13T16:07:00-06:00",
+      "date": "2026-11-13",
+      "label": "Nov 13, 2026 4:07 PM CT",
+      "weekday": "Fri",
+      "timeKnown": true,
+      "tags": [
+        "headline",
+        "standby",
+        "cyber"
+      ],
+      "severity": "STANDBY"
+    },
+    {
+      "id": "headline:d21dec6cca8848b8",
+      "kind": "cyber",
+      "lane": "threat",
+      "source": "The Record from Recorded Future News",
+      "sourceId": "cyber-news",
+      "title": "City of Osaka warns of data breach impacting 1 million as Japan reels from dozens of cyber incidents - The Record from Recorded Future News",
+      "guest": "",
+      "note": "",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1BOEdSb1lMbENldjJPVXlpbWZINFBuMFVfUDRMZlN1d0dYSUwzMjZiVzh0OGdUZktXSk5oYVVmajR2RGl0akVtQ2lHR05vcTczYXp0UjN3eW1wYnctWUp0SXpRSnpDZ3NsYmwyRjBR?oc=5",
+      "published": "2026-11-13T14:00:09-06:00",
+      "date": "2026-11-13",
+      "label": "Nov 13, 2026 2:00 PM CT",
+      "weekday": "Fri",
+      "timeKnown": true,
+      "tags": [
+        "headline",
+        "standby",
+        "cyber"
+      ],
+      "severity": "STANDBY"
     }
   ]
 }
