@@ -27,7 +27,21 @@
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Earthquake in West Chile Rise"
+      "title": "Earthquake in Pacific-Antarctic Ridge"
+    },
+    {
+      "note": "New since 2026-11-11 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "Earthquake in Chile"
+    },
+    {
+      "note": "New since 2026-11-11 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "Earthquake in Tanzania"
     },
     {
       "note": "New since 2026-11-11 · now ALERT",
@@ -41,21 +55,14 @@
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Earthquake in Peru"
+      "title": "Earthquake in South Of Mariana Islands"
     },
     {
       "note": "New since 2026-11-11 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Earthquake in Galapagos Triple Jungtion Region"
-    },
-    {
-      "note": "New since 2026-11-11 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "Earthquake in Indonesia"
+      "title": "Earthquake in West Chile Rise"
     },
     {
       "note": "New since 2026-11-11 · now ALERT",
@@ -69,21 +76,14 @@
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "CVE-2026-115731 Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability"
+      "title": "CVE-2024-10441 Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability"
     },
     {
       "note": "New since 2026-11-11 · now ALERT",
-      "related": 0,
+      "related": 1,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Ukraine allies reject U.S. criticism of deep strikes inside Russia ahead of Trump-Putin-Xi summit - CNBC"
-    },
-    {
-      "note": "New since 2026-11-11 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "Scoop: White House drops Heidi Overton's FDA nomination - Axios"
+      "title": "CVE-2026-40217 BerriAI LiteLLM Unprotected Alternate Channel Vulnerability"
     }
   ],
   "fizzled": [
@@ -178,7 +178,21 @@
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Earthquake in West Chile Rise"
+      "title": "Earthquake in Pacific-Antarctic Ridge"
+    },
+    {
+      "note": "New since 2026-11-11 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "Earthquake in Chile"
+    },
+    {
+      "note": "New since 2026-11-11 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "Earthquake in Tanzania"
     },
     {
       "note": "New since 2026-11-11 · now ALERT",
@@ -192,21 +206,14 @@
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Earthquake in Peru"
+      "title": "Earthquake in South Of Mariana Islands"
     },
     {
       "note": "New since 2026-11-11 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Earthquake in Galapagos Triple Jungtion Region"
-    },
-    {
-      "note": "New since 2026-11-11 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "Earthquake in Indonesia"
+      "title": "Earthquake in West Chile Rise"
     },
     {
       "note": "New since 2026-11-11 · now ALERT",
@@ -220,21 +227,14 @@
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "CVE-2026-115731 Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability"
+      "title": "CVE-2024-10441 Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability"
     },
     {
       "note": "New since 2026-11-11 · now ALERT",
-      "related": 0,
+      "related": 1,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Ukraine allies reject U.S. criticism of deep strikes inside Russia ahead of Trump-Putin-Xi summit - CNBC"
-    },
-    {
-      "note": "New since 2026-11-11 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "Scoop: White House drops Heidi Overton's FDA nomination - Axios"
+      "title": "CVE-2026-40217 BerriAI LiteLLM Unprotected Alternate Channel Vulnerability"
     }
   ],
   "note": "Compared with the stored board on 2026-11-11.",

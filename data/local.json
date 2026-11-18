@@ -2,7 +2,7 @@
   "gaps": [
     "Power_TN row hidden (2025-10-06, affected 0, served 0).",
     "1 ended road projects hidden.",
-    "TEMA news page answered with no dated notices."
+    "TEMA: curl: (35) Recv failure: Connection reset by peer\n"
   ],
   "items": [
     {
@@ -11,10 +11,10 @@
       "date": "2026-11-18",
       "id": "local-nws-none",
       "kind": "nws",
-      "label": "Nov 18, 2026 9:03 AM CT",
+      "label": "Nov 18, 2026 3:28 PM CT",
       "lane": "local",
       "note": "api.weather.gov answered for 35.802,-86.907 and returned no alerts.",
-      "published": "2026-11-18T09:03:28-06:00",
+      "published": "2026-11-18T15:28:12-06:00",
       "severity": "STANDBY",
       "soWhat": "",
       "source": "NWS",
@@ -27,48 +27,6 @@
       "url": "https://api.weather.gov/alerts/active?point=35.802,-86.907"
     },
     {
-      "action": "Read the source. No kit change unless you are in the named area.",
-      "confidence": "reported",
-      "date": "2026-11-18",
-      "id": "local-road:cce60d93bb7e53a2",
-      "kind": "road",
-      "label": "2026-11-18",
-      "lane": "local",
-      "note": "Single Vehicle Crash",
-      "published": "2026-11-18T09:03:28-06:00",
-      "severity": "ALERT",
-      "soWhat": "no action needed",
-      "source": "TDOT SmartWay",
-      "sourceCount": 1,
-      "tags": [
-        "tennessee",
-        "williamson"
-      ],
-      "title": "Interstate 65 NB in Williamson County - near MILE MARKER 74 Single Vehicle Crash reported at 11/18/2026 8:46 AM (CT). NB right lane (of 4 lanes) blocked, right shoulder blocked.",
-      "url": "https://smartway.tn.gov/"
-    },
-    {
-      "action": "Read the source. No kit change unless you are in the named area.",
-      "confidence": "reported",
-      "date": "2026-11-18",
-      "id": "local-road:aef39d09110b60f0",
-      "kind": "road",
-      "label": "2026-11-18",
-      "lane": "local",
-      "note": "Multi-Vehicle Crash",
-      "published": "2026-11-18T09:03:28-06:00",
-      "severity": "ALERT",
-      "soWhat": "no action needed",
-      "source": "TDOT SmartWay",
-      "sourceCount": 1,
-      "tags": [
-        "tennessee",
-        "williamson"
-      ],
-      "title": "Interstate 65 NB in Williamson County - near MILE MARKER 69 Multi-Vehicle Crash reported at 11/18/2026 8:32 AM (CT). NB 2 left lanes (of 4 lanes) blocked, left shoulder blocked.",
-      "url": "https://smartway.tn.gov/"
-    },
-    {
       "action": "no action needed",
       "confidence": "reported",
       "date": "2026-11-16",
@@ -77,7 +35,7 @@
       "label": "2026-11-16",
       "lane": "local",
       "note": "Other Construction",
-      "published": "2026-11-18T09:03:28-06:00",
+      "published": "2026-11-18T15:28:12-06:00",
       "severity": "STANDBY",
       "soWhat": "",
       "source": "TDOT SmartWay",
@@ -98,7 +56,7 @@
       "label": "2026-11-16",
       "lane": "local",
       "note": "Resurfacing",
-      "published": "2026-11-18T09:03:28-06:00",
+      "published": "2026-11-18T15:28:12-06:00",
       "severity": "STANDBY",
       "soWhat": "",
       "source": "TDOT SmartWay",
@@ -119,7 +77,7 @@
       "label": "2026-11-16",
       "lane": "local",
       "note": "Resurfacing",
-      "published": "2026-11-18T09:03:28-06:00",
+      "published": "2026-11-18T15:28:12-06:00",
       "severity": "STANDBY",
       "soWhat": "",
       "source": "TDOT SmartWay",

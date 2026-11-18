@@ -1,43 +1,47 @@
 {
-  "googleNote": "Google Trends US daily list answered (10 topics). Kept the ones that match a war, government, or threat topic.",
+  "googleNote": "Google Trends US daily list answered (10 topics). Kept the ones that match a war, government, or threat topic. None of today's search trends matched.",
   "items": [
     {
       "category": "iran-war",
       "confidence": "reported",
       "date": "2026-11-18",
-      "id": "gtrend:4c0d63a3636219b4",
+      "id": "velocity:4ee4bc978244e41e",
       "kind": "trend",
       "lane": "news",
       "look": "news",
-      "name": "iran war strikes",
-      "note": "US search trend. Traffic 20000+.",
-      "place": "US",
-      "published": "2026-11-18T08:30:00-06:00",
-      "rise": "US daily list 20000+",
+      "name": "iran war",
+      "note": "The same topic showed up across several outlets.",
+      "published": "2026-11-18T15:28:12-06:00",
+      "rise": "4 outlets this window",
       "samples": [
         {
+          "date": "2026-11-18",
+          "published": "2026-11-18T11:15:08-06:00",
+          "source": "The New York Times",
+          "text": "Trump Grows Frustrated With Vance Over Iran War Critique - The New York Times",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQV3B0SDctTm9DMGNCbXNLM2VOd2prWE1aZTZfT242MVNtUGRVeWRUemVHRWZMSVhGM0J0S2xxMC1XRWRvMVB6XzN3VGJfTDdDSGtGMTlSMFpVTlM2ZGotaW1JZjBaWWNQZmZseEFFUFBxa3hnRDQyYnB1bzVUWXdPcDJnZU5jLTUzVUZJYWRsX1d4Zw?oc=5"
+        },
+        {
+          "date": "2026-11-18",
+          "published": "2026-11-18T08:56:00-06:00",
           "source": "WSJ",
-          "text": "Iran Attacks Kuwait and Bahrain, Further Escalating Fight Over Strait",
-          "url": "https://www.wsj.com/world/middle-east/iran-attacks-kuwait-and-bahrain-further-escalating-fight-over-strait-08f3a436"
+          "text": "Iran Attacks Kuwait and Bahrain, Further Escalating Fight Over Strait - WSJ",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNcGVKcXlHY1EycS1qaFBrcVduLWwzS1B4RmhJeDg5eFlxR0FIeVNFclFqZVczdXFBVGVLa0xpcHZXZkVWa3JEeHJxVXA5YWxVa3YtejhlaHd1T1JmWDd1NHp3V1E1SEdsS0tkOEc2bVpZNER2elNveGdNTk9xanNjSDZZM2NwSXhULUVPSk84TW1JRFJUbkRRZVBYN2JHd0NnQkYxN0hhVDhVaVYzUEtlTGUwUUpuZw?oc=5"
         },
         {
-          "source": "Arab News",
-          "text": "Kuwait, Bahrain fend off Iranian aerial attacks",
-          "url": "https://www.arabnews.com/middle-east/kuwait-bahrain-fend-off-iranian-aerial-attacks-3012614"
-        },
-        {
-          "source": "CNN",
-          "text": "Iran widens Gulf attacks after US strikes missile launch site",
-          "url": "https://www.cnn.com/2026/11/17/politics/us-iran-self-defense-strikes"
+          "date": "2026-11-16",
+          "published": "2026-11-16T04:47:52-06:00",
+          "source": "Voice of America English News",
+          "text": "Rubio Says Economic Pressure on Iran is Working - Voice of America English News",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOX2tpYnc1ejdPQ0lpUUpMXzltbEJqcndLb3pmNG90RW1UTHZkcjdSLTdpelg4NzI0YVZzcm40UmFEa3U1WHNlRkNDZFlCMy11RjBLa3FLYll3aWM4TUVyNnlkVUlLV1hYWEUtM01FeWxfWDFfRjNuTEJTdXVMb2JYSVI1WUJPOEJXWDdYZ0s0MDNndDYyTVHSAZYBQVVfeXFMTl9raWJ3NXo3T0NJaVFKTF85bWxCanJ3S296ZjRvdEVtVEx2ZHI3Ui03aXpYODcyNGFWc3JuNFJhRGt1NVhzZUZDQ2RZQjMtdUYwS2txS2JZd2ljOE1FcjZ5ZFVJS1dYWFhFLTNNRXlsX1gxX0YzbkxCU3V1TG9iWElSNVlCTzhCV1g3WGdLNDAzZ3Q2Mk1R?oc=5"
         }
       ],
       "severity": "ALERT",
       "soWhat": "no action needed",
-      "source": "Google Trends",
-      "sourceCount": 3,
-      "title": "iran war strikes",
-      "url": "https://www.wsj.com/world/middle-east/iran-attacks-kuwait-and-bahrain-further-escalating-fight-over-strait-08f3a436",
-      "volume": "20000+"
+      "source": "News velocity",
+      "sourceCount": 4,
+      "title": "iran war",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQV3B0SDctTm9DMGNCbXNLM2VOd2prWE1aZTZfT242MVNtUGRVeWRUemVHRWZMSVhGM0J0S2xxMC1XRWRvMVB6XzN3VGJfTDdDSGtGMTlSMFpVTlM2ZGotaW1JZjBaWWNQZmZseEFFUFBxa3hnRDQyYnB1bzVUWXdPcDJnZU5jLTUzVUZJYWRsX1d4Zw?oc=5"
     },
     {
       "category": "ukraine-war",
@@ -49,7 +53,7 @@
       "look": "news",
       "name": "ukraine war",
       "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-18T09:03:28-06:00",
+      "published": "2026-11-18T15:28:12-06:00",
       "rise": "4 outlets this window",
       "samples": [
         {
@@ -68,10 +72,10 @@
         },
         {
           "date": "2026-11-17",
-          "published": "2026-11-17T10:47:04-06:00",
-          "source": "Time Magazine",
-          "text": "What Is the Kerch Bridge—and Why Does Ukraine Keep Attacking It? - Time Magazine",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPV0pYOTRBV1JRU1Y5YlA5M2o1R3Ixby12dkRHT0hteld0Qk9mUThSQkdNLV90WWxZMXZ4MFJLQWxfc1JtQlVvbkRTQkxIVV9oZWkzbTJzWVR4YzBYZ0JDdUdGbkNKLU1oVWdYUHVvNGpvTU1XWGxvaWJudW90RFdZbk5rLXNBWWpLVWVFSmtNemNJdllfdkwtb1hza0YycWVfN2p3?oc=5"
+          "published": "2026-11-17T15:16:21-06:00",
+          "source": "UN News",
+          "text": "Ukraine: Civilian casualties in 2026 already far exceed previous years’ tolls - UN News",
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFA2S212VmNSVjM3WHJzb3pwWDlFUjEyeEF5QTZRU3RBeV9GZjVOU2RoT1JBQjdZbzkyY0djTG4ybjFVMlFySnVYYjBWcjhPQXptMmtDTlVtdw?oc=5"
         }
       ],
       "severity": "ALERT",
@@ -80,48 +84,6 @@
       "sourceCount": 4,
       "title": "ukraine war",
       "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPcF9sZnpjTVZtQnpnUTlmcFJ5OFB4UGhFLVIwUUJFZ1F4MXVBem14ZzRXSkotTUp1S0tJZEZjY1oxbEt3S1NiaXlSbTJrUmZMQjEwWEZUN1dGZTlGSUxTZWl1bzhfT1N4SzhrcDN6X29TMTNadlEzdWFrZWxlalFTV0lUQmNKeGfSAYwBQVVfeXFMT3ByenVPUVlqSzkzRWJmWE13TGxRQjRZcmtBZVU2aFhtVUJiVlZGZGNydnNBOFNuMENZaWdDVHN4aVpUeUF1N2JZaGVwUi05eFNGSDB1c3V3WXlnbk9vczlsb29lVlF5Nll3ZlpPUV9QRUh0RG80VVI3bEtJX1VOQjBlS3BKcUdFXzVEa1U?oc=5"
-    },
-    {
-      "category": "iran-war",
-      "confidence": "reported",
-      "date": "2026-11-18",
-      "id": "velocity:4ee4bc978244e41e",
-      "kind": "trend",
-      "lane": "news",
-      "look": "news",
-      "name": "iran war",
-      "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-18T09:03:28-06:00",
-      "rise": "4 outlets this window",
-      "samples": [
-        {
-          "date": "2026-11-18",
-          "published": "2026-11-18T04:15:44-06:00",
-          "source": "Time Magazine",
-          "text": "U.S. Strikes Qeshm Island as Vance Says Iran Won’t Become ‘Forever War’ - Time Magazine",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOQ2ZfMmFJTUpGeWlETnhsTjZDY1NEeXlJdW5Hbkl2c3ZrRmtFcGtnaWVGTTVqejMwRGgtd3RyUWVmdkxmcHdoclB3anU2MjZVR3ZJYnNrSHR6ejZaQ0w1a043VVpiUllXV3AyYUdFQ3pXOW92S1A2THJfT3dmVFNqNU9vLXUwY3JYRENOaE42X1U?oc=5"
-        },
-        {
-          "date": "2026-11-17",
-          "published": "2026-11-17T12:53:00-06:00",
-          "source": "PBS",
-          "text": "Iran fires at U.S. facility in Bahrain as Tehran resumes strikes on Arab neighbors - PBS",
-          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPTlVZWjRCSVZZOTdxbEJHVlVJTjVyV2xWVXdaQ2tqUmVRNFJkaElDa2xhYWFqbEcwRDlaWnpNWF9OMy05OE5mM2N4VkhRQVZHdTFUTTlyd2JUSkwxR0Q3ZEh1UDZZNDB5cmVHa1lfMkM0ZldWT1pJRmVTTWVPMWEzQnloMWY2Zjh1TDdaeHRONmIwbERZLWtfMy12Z19JcDV2eUJxZElIWDdBWW5CU1NEYU5TVjJRRjjSAbwBQVVfeXFMTm93R19jS3VPR050YTJCYXBSQ25mYlo1RXNhZ1JSSXVZdEdiYUJJeloyZHlkUnJYTTc5dGVzbmlqZHY3Tlhscjc5cWxqT1JRTHMtVHlORE5TUVpKQVZ1d3FGUjhwcDlHbk5JSFVoeXZya1lTU1ZIUW9SRkUwZ2t0akZGa2t4VEpfdEZJRS0xcFFEZGVaVGtNcWFvOWdLTFFRUmFhTXBsQ1FydjA5X3dZUHdDVmE4WnduNXVUMTc?oc=5"
-        },
-        {
-          "date": "2026-11-16",
-          "published": "2026-11-16T22:15:17-06:00",
-          "source": "Institute for the Study of War",
-          "text": "Iran Update, November 16, 2026 - Institute for the Study of War",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQTHh3eFA0UWpNekpxS3M1ZnFyTDJ3aUVUMExhZ281NmJnUHA0Q3hyZHJSZHcyNnZyVlhtdVcyXzhycEE3YWJYd0p0X2s5LXFmVVVKbFF0NHlnVml1ZUQxMFZOYjdMZDd6VmZ3OGNWY2dGRENqcjdvSjdCcGx5R2dkSTJFRXlfUQ?oc=5"
-        }
-      ],
-      "severity": "ALERT",
-      "soWhat": "no action needed",
-      "source": "News velocity",
-      "sourceCount": 4,
-      "title": "iran war",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOQ2ZfMmFJTUpGeWlETnhsTjZDY1NEeXlJdW5Hbkl2c3ZrRmtFcGtnaWVGTTVqejMwRGgtd3RyUWVmdkxmcHdoclB3anU2MjZVR3ZJYnNrSHR6ejZaQ0w1a043VVpiUllXV3AyYUdFQ3pXOW92S1A2THJfT3dmVFNqNU9vLXUwY3JYRENOaE42X1U?oc=5"
     },
     {
       "category": "us-gov",
@@ -133,22 +95,22 @@
       "look": "news",
       "name": "us gov",
       "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-18T09:03:28-06:00",
+      "published": "2026-11-18T15:28:12-06:00",
       "rise": "4 outlets this window",
       "samples": [
         {
-          "date": "2026-11-17",
-          "published": "2026-11-17T19:21:04-06:00",
-          "source": "Axios",
-          "text": "Scoop: White House drops Heidi Overton's FDA nomination - Axios",
-          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1vYlhXQkpyNDVGZF9KaVAwMnFrR3BZaGFqR2VZbkF4X0ZTalNib0EzWFpIbmJsWUNaNTEwclRIU09qNDRpSkdsYlh0X0VCX2h0VnNnc2N4eHhUcmMwT3FjX3JCOXJIZmh5OEFtVThmUF9aVVVZeHdITA?oc=5"
+          "date": "2026-11-18",
+          "published": "2026-11-18T02:27:50-06:00",
+          "source": "NPR",
+          "text": "Rubio says there's 'zero' information that U.S. outages are caused by a malign actor - NPR",
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBwRW1oWnJqVUUyZjZfQnRib1JCemo2R3hyTWZ4d2dmaE96ZnNySXlaelo1MXhpNU1fRkFNSGRtek5ubXd5Ykl5Uk1zWlpNTlphSndsVVVHVjNfTFRieG05YmZnWkx4RElkSVptdmdVdFdvd0dzNkc3ME1MQQ?oc=5"
         },
         {
           "date": "2026-11-16",
-          "published": "2026-11-16T13:41:22-06:00",
-          "source": "Brennan Center for Justice",
-          "text": "The Supreme Court Tees Up Electoral College Reform - Brennan Center for Justice",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxONTg0VEdnLXMzWjQyYnNIQm84NWlyVHlGRkotT0xUbEtzdm0tV19YdjNSNkZWYy1LLVRrVkdBd0dMZnMwOXNXMUhnR1I3R1Z3OG9MTDI5dTZBeWhjVERId2tob25ZZGlsTzYzaU5zeU5NdWppSVBvTXpxc3cwUW93REFLZHBuNFJqN0dvb1VUckJ0Ni0xZ0hlcmpOdnZ2dFRT?oc=5"
+          "published": "2026-11-16T15:00:32-06:00",
+          "source": "PBS",
+          "text": "Read the full White House memo requiring agencies to get approval before testifying in front of Congress - PBS",
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPSGxlUmRaeVM4Sk5sRkxSOFpsYm1IT1R4d3ZBc3UwTTduNVc0SkFIYzh1NXA3WnhJRlRlX3NHRHJ2aWtHQjhqODhGQnpOb25ZR1hUdDNKR01oVDEzRFlMVjFPUjBzQndBVV9ucHFyTS1FTTdVbTNxak1TdEp4OXA0LU52alJRS2tGeEJ1VklZTTRWejFfd0RiSUhhcU1ESnAxMjFnWjVhTFVrVm9SRDRzbEFtNU5heHlqcXRkRzhNb0o3UTF4QW9EUlB5UWU2bXhRY3Z3ZGtwWTdCUdIB3wFBVV95cUxPYm5tXzVzQjJpREowZXBKeFljUjltN0NPMzEzWEN6Q3M1LTI3S2RaQjNtQjhwaWEzLUxXT19iWE1mTXExMERsUzA4R2Z6Nkx4X0cybzVLSnZqV1VLNU12R1pEQ1NJaE5iajVUSzBwdE1fOGY2WVpKeXVhOUJBYXVVZFVESmVPSTY3cnlSUWVkRUZnbGhWNGNvc09WUDRUZW1EYTVYRmk3ZVUxLVdBeGhJSHVqYzlPbkVETk5Fbm94Z3dua1dLMTJQcFpSMktVRl9qeWNSNU9XRkk1WklvTWZJ?oc=5"
         },
         {
           "date": "2026-11-14",
@@ -163,7 +125,7 @@
       "source": "News velocity",
       "sourceCount": 4,
       "title": "us gov",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1vYlhXQkpyNDVGZF9KaVAwMnFrR3BZaGFqR2VZbkF4X0ZTalNib0EzWFpIbmJsWUNaNTEwclRIU09qNDRpSkdsYlh0X0VCX2h0VnNnc2N4eHhUcmMwT3FjX3JCOXJIZmh5OEFtVThmUF9aVVVZeHdITA?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBwRW1oWnJqVUUyZjZfQnRib1JCemo2R3hyTWZ4d2dmaE96ZnNySXlaelo1MXhpNU1fRkFNSGRtek5ubXd5Ykl5Uk1zWlpNTlphSndsVVVHVjNfTFRieG05YmZnWkx4RElkSVptdmdVdFdvd0dzNkc3ME1MQQ?oc=5"
     }
   ],
   "mode": "trends",

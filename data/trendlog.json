@@ -1564,11 +1564,11 @@
       "topic": "windstorm"
     },
     {
-      "count": 3,
+      "count": 2,
       "countries": 1,
       "date": "2026-11-18",
       "keywords": [],
-      "outlets": 3,
+      "outlets": 2,
       "score": 0,
       "severity": "ALERT",
       "topic": "attack"
@@ -1580,7 +1580,7 @@
       "keywords": [],
       "outlets": 2,
       "score": 0,
-      "severity": "ALERT",
+      "severity": "STANDBY",
       "topic": "climate"
     },
     {
@@ -1616,11 +1616,11 @@
       "topic": "diplomacy"
     },
     {
-      "count": 6,
+      "count": 7,
       "countries": 1,
       "date": "2026-11-18",
       "keywords": [],
-      "outlets": 6,
+      "outlets": 7,
       "score": 0,
       "severity": "ALERT",
       "topic": "gdacs"
@@ -1646,11 +1646,11 @@
       "topic": "neo"
     },
     {
-      "count": 11,
+      "count": 12,
       "countries": 1,
       "date": "2026-11-18",
       "keywords": [],
-      "outlets": 11,
+      "outlets": 12,
       "score": 0,
       "severity": "ALERT",
       "topic": "quake"
@@ -1719,6 +1719,7 @@
   "states": {
     "cyber": "EMERGING",
     "gdacs": "EMERGING",
+    "quake": "RISING",
     "relief": "RISING"
   },
   "topics": [
@@ -3285,11 +3286,11 @@
       "topic": "windstorm"
     },
     {
-      "count": 3,
+      "count": 2,
       "countries": 1,
       "date": "2026-11-18",
       "keywords": [],
-      "outlets": 3,
+      "outlets": 2,
       "score": 0,
       "severity": "ALERT",
       "topic": "attack"
@@ -3301,7 +3302,7 @@
       "keywords": [],
       "outlets": 2,
       "score": 0,
-      "severity": "ALERT",
+      "severity": "STANDBY",
       "topic": "climate"
     },
     {
@@ -3337,11 +3338,11 @@
       "topic": "diplomacy"
     },
     {
-      "count": 6,
+      "count": 7,
       "countries": 1,
       "date": "2026-11-18",
       "keywords": [],
-      "outlets": 6,
+      "outlets": 7,
       "score": 0,
       "severity": "ALERT",
       "topic": "gdacs"
@@ -3367,11 +3368,11 @@
       "topic": "neo"
     },
     {
-      "count": 11,
+      "count": 12,
       "countries": 1,
       "date": "2026-11-18",
       "keywords": [],
-      "outlets": 11,
+      "outlets": 12,
       "score": 0,
       "severity": "ALERT",
       "topic": "quake"
