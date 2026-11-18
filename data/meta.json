@@ -1,17 +1,15 @@
 {
   "baseline": false,
-  "brief": "Open risk: ACTION Tropical Cyclone AKVAN-26. Current war coverage is on the board: Iran launches third round of strikes on Bahrain, host of U.S. Navy's 5th Fleet - NPR; What Is the Kerch Bridge—and Why Does Ukraine Keep Attacking It? - Time Magazine. Rising topic: iran war (4 outlets this window).",
-  "checkedAt": "2026-11-17T15:04:12-06:00",
-  "checkedLabel": "Nov 17, 2026 3:04 PM CT",
-  "errors": [
-    "ReliefWeb: the disasters page returned no cards from this network. The RSS feed is an AWS WAF challenge, and API v2 rejects appname=torelldan-news-desk until ReliefWeb approves it."
-  ],
+  "brief": "Open risk: ACTION Tropical Cyclone AKVAN-26. Current war coverage is on the board: Ukraine allies reject U.S. criticism of deep strikes inside Russia ahead of Trump-Putin-Xi summit - CNBC; U.S. Strikes Qeshm Island as Vance Says Iran Won’t Become ‘Forever War’ - Time Magazine. Rising topic: iran war strikes (US daily list 20000+).",
+  "checkedAt": "2026-11-18T09:03:28-06:00",
+  "checkedLabel": "Nov 18, 2026 9:03 AM CT",
+  "errors": [],
   "retainDays": 120,
-  "today": "2026-11-17",
+  "today": "2026-11-18",
   "trends": {
-    "google": "Google Trends US daily list answered (10 topics). Kept the ones that match a war, government, or threat topic. None of today's search trends matched.",
+    "google": "Google Trends US daily list answered (10 topics). Kept the ones that match a war, government, or threat topic.",
     "mode": "trends",
-    "note": "X trends by WOEID (US 23424977 and worldwide 1). Kept only when the name matches a threat or preparedness theme. Dropped 1 X topics that were a name match or had no rise versus yesterday."
+    "note": "X trends by WOEID (US 23424977 and worldwide 1). Kept only when the name matches a threat or preparedness theme. The endpoint answered and none of the names matched."
   },
   "x": {
     "detail": "",

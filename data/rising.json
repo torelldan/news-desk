@@ -2,37 +2,98 @@
   "changes": [
     {
       "change": "updated",
-      "date": "2026-11-17",
-      "note": "15.0x usual volume · 5 or more outlets",
+      "date": "2026-11-18",
+      "note": "4.5x usual volume · 5 or more outlets",
       "section": "Rising situations",
       "severity": "ALERT",
-      "title": "cyber is EMERGING"
+      "title": "relief is RISING"
     }
   ],
   "gaps": [],
   "items": [
     {
-      "reasons": "15.0x usual volume · 5 or more outlets",
+      "reasons": "4.5x usual volume · 5 or more outlets",
       "score": 4,
       "spark": [
         {
-          "price": 14
+          "price": 1
+        },
+        {
+          "price": 1
+        },
+        {
+          "price": 1
+        },
+        {
+          "price": 1
+        },
+        {
+          "price": 1
+        },
+        {
+          "price": 8
         }
       ],
-      "state": "EMERGING",
-      "topic": "cyber"
+      "state": "RISING",
+      "topic": "relief"
     },
     {
       "links": [
         {
-          "source": "NPR",
-          "title": "Iran launches third round of strikes on Bahrain, host of U.S. Navy's 5th Fleet - NPR",
-          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFA3RGxpNDRlLU9XRVNDenV4bWMzQU03QzRvRlc0eEN0aFF5aV9OYkg3VGZtT3M1UUNyRnpWVmFnbDdRbmRKazhsQnNmVjh2MFJUNk45dmVIaUtucWh5bW9haDR0Z2ZIZjBfMU1QVVhFc05BMlVIZnB4RUF0WQ?oc=5"
+          "source": "WSJ",
+          "title": "Iran Attacks Kuwait and Bahrain, Further Escalating Fight Over Strait",
+          "url": "https://www.wsj.com/world/middle-east/iran-attacks-kuwait-and-bahrain-further-escalating-fight-over-strait-08f3a436"
         },
         {
-          "source": "Al Jazeera",
-          "title": "Is the US-Israel war on Iran turning into a ‘frozen conflict’? - Al Jazeera",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNTC1nTzQwVTdkS1paY05NZFNnd2w3RWFsRWl5Vm9wM1NteWdsVXJSVGpnd3JiZnNjSHFlVlJLVmE4aXdQZ0tXV2tTWm1INzVZYmJQRkR6cGlIVk43bkZ0bmUyR1IwVHQtemdwemI0Mm8yS1BSVXBDeVFiUlFhMmQzV2pmX0w0RU1uVW1ubjBQTW9ZaXJ1OFJnYm1lLXhBTWFsaWtR0gGoAUFVX3lxTE5VYjRLSi01Y2JUZHN3Q0kxNkZUaEROMTVBc3dIUkdzVjVaeDFEZk9EcTZnUDNpb2l0TE1VOVQ2dE02Tno3UXpPNWxlRExpTzZTZTJpWktWZTZkMEVPU24yT1VFYXpVSmxxSVo4VnBfSXRmNUV2eXJxWWlLbmVfWUpCZ0wzWDZoTms0WEpTdmlnQ0NHV3pSRk1GejRqM1lVc1FfbGJUNmJyXw?oc=5"
+          "source": "Arab News",
+          "title": "Kuwait, Bahrain fend off Iranian aerial attacks",
+          "url": "https://www.arabnews.com/middle-east/kuwait-bahrain-fend-off-iranian-aerial-attacks-3012614"
+        },
+        {
+          "source": "CNN",
+          "title": "Iran widens Gulf attacks after US strikes missile launch site",
+          "url": "https://www.cnn.com/2026/11/17/politics/us-iran-self-defense-strikes"
+        }
+      ],
+      "reasons": "US daily list 20000+",
+      "score": 3,
+      "state": "RISING",
+      "topic": "iran war strikes"
+    },
+    {
+      "links": [
+        {
+          "source": "CNBC",
+          "title": "Ukraine allies reject U.S. criticism of deep strikes inside Russia ahead of Trump-Putin-Xi summit - CNBC",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPcF9sZnpjTVZtQnpnUTlmcFJ5OFB4UGhFLVIwUUJFZ1F4MXVBem14ZzRXSkotTUp1S0tJZEZjY1oxbEt3S1NiaXlSbTJrUmZMQjEwWEZUN1dGZTlGSUxTZWl1bzhfT1N4SzhrcDN6X29TMTNadlEzdWFrZWxlalFTV0lUQmNKeGfSAYwBQVVfeXFMT3ByenVPUVlqSzkzRWJmWE13TGxRQjRZcmtBZVU2aFhtVUJiVlZGZGNydnNBOFNuMENZaWdDVHN4aVpUeUF1N2JZaGVwUi05eFNGSDB1c3V3WXlnbk9vczlsb29lVlF5Nll3ZlpPUV9QRUh0RG80VVI3bEtJX1VOQjBlS3BKcUdFXzVEa1U?oc=5"
+        },
+        {
+          "source": "Radio Free Europe/Radio Liberty",
+          "title": "Pentagon Official Says Ukraine War Likely To Last Through Winter, Despite Mediation Efforts - Radio Free Europe/Radio Liberty",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPWDV6ZGR5YldWX2pWS0RmNUxCTlh2NTE4d2lDMUJVa05HbkVjYzRqN2J2d2Y5QU9UMWJ6U054bWJpYjU5WVZ6TUtfNDNTTERyN0JldGZmV21CcTZ5OVYtNFBVaDRDWmI0LVpRTjhMUk1kbkRCQkVSejZvQkR0ajZmRXdCVUlja3dfWmtjQzZ6OUZrbDdlN2ZkddIBmwFBVV95cUxQRjhCcTdwMnFSQWtTNHZ1c3JjS3F6MmhxMVpSOWRPUUxaWUVmcGZaWTEybzhYT2V2cTdHNGJNTkdNVW5mZ294enIxYTIxRFZIQTItQ0ZzT0UwTXA4RHpBU2s1OUE4c0dkeG9tcDZEbnFpamVEOFFkUnM5djlmcGRKbzdPSnU3V1UzVjZZN1BQbW5ZWDZUNVhacnZJNA?oc=5"
+        },
+        {
+          "source": "Time Magazine",
+          "title": "What Is the Kerch Bridge—and Why Does Ukraine Keep Attacking It? - Time Magazine",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPV0pYOTRBV1JRU1Y5YlA5M2o1R3Ixby12dkRHT0hteld0Qk9mUThSQkdNLV90WWxZMXZ4MFJLQWxfc1JtQlVvbkRTQkxIVV9oZWkzbTJzWVR4YzBYZ0JDdUdGbkNKLU1oVWdYUHVvNGpvTU1XWGxvaWJudW90RFdZbk5rLXNBWWpLVWVFSmtNemNJdllfdkwtb1hza0YycWVfN2p3?oc=5"
+        }
+      ],
+      "reasons": "4 outlets this window",
+      "score": 4,
+      "state": "RISING",
+      "topic": "ukraine war"
+    },
+    {
+      "links": [
+        {
+          "source": "Time Magazine",
+          "title": "U.S. Strikes Qeshm Island as Vance Says Iran Won’t Become ‘Forever War’ - Time Magazine",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOQ2ZfMmFJTUpGeWlETnhsTjZDY1NEeXlJdW5Hbkl2c3ZrRmtFcGtnaWVGTTVqejMwRGgtd3RyUWVmdkxmcHdoclB3anU2MjZVR3ZJYnNrSHR6ejZaQ0w1a043VVpiUllXV3AyYUdFQ3pXOW92S1A2THJfT3dmVFNqNU9vLXUwY3JYRENOaE42X1U?oc=5"
+        },
+        {
+          "source": "PBS",
+          "title": "Iran fires at U.S. facility in Bahrain as Tehran resumes strikes on Arab neighbors - PBS",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPTlVZWjRCSVZZOTdxbEJHVlVJTjVyV2xWVXdaQ2tqUmVRNFJkaElDa2xhYWFqbEcwRDlaWnpNWF9OMy05OE5mM2N4VkhRQVZHdTFUTTlyd2JUSkwxR0Q3ZEh1UDZZNDB5cmVHa1lfMkM0ZldWT1pJRmVTTWVPMWEzQnloMWY2Zjh1TDdaeHRONmIwbERZLWtfMy12Z19JcDV2eUJxZElIWDdBWW5CU1NEYU5TVjJRRjjSAbwBQVVfeXFMTm93R19jS3VPR050YTJCYXBSQ25mYlo1RXNhZ1JSSXVZdEdiYUJJeloyZHlkUnJYTTc5dGVzbmlqZHY3Tlhscjc5cWxqT1JRTHMtVHlORE5TUVpKQVZ1d3FGUjhwcDlHbk5JSFVoeXZya1lTU1ZIUW9SRkUwZ2t0akZGa2t4VEpfdEZJRS0xcFFEZGVaVGtNcWFvOWdLTFFRUmFhTXBsQ1FydjA5X3dZUHdDVmE4WnduNXVUMTc?oc=5"
         },
         {
           "source": "Institute for the Study of War",
@@ -48,46 +109,23 @@
     {
       "links": [
         {
-          "source": "Time Magazine",
-          "title": "What Is the Kerch Bridge—and Why Does Ukraine Keep Attacking It? - Time Magazine",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPV0pYOTRBV1JRU1Y5YlA5M2o1R3Ixby12dkRHT0hteld0Qk9mUThSQkdNLV90WWxZMXZ4MFJLQWxfc1JtQlVvbkRTQkxIVV9oZWkzbTJzWVR4YzBYZ0JDdUdGbkNKLU1oVWdYUHVvNGpvTU1XWGxvaWJudW90RFdZbk5rLXNBWWpLVWVFSmtNemNJdllfdkwtb1hza0YycWVfN2p3?oc=5"
+          "source": "Axios",
+          "title": "Scoop: White House drops Heidi Overton's FDA nomination - Axios",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1vYlhXQkpyNDVGZF9KaVAwMnFrR3BZaGFqR2VZbkF4X0ZTalNib0EzWFpIbmJsWUNaNTEwclRIU09qNDRpSkdsYlh0X0VCX2h0VnNnc2N4eHhUcmMwT3FjX3JCOXJIZmh5OEFtVThmUF9aVVVZeHdITA?oc=5"
         },
         {
-          "source": "Vatican News",
-          "title": "Ukraine strikes Crimea bridge after Russian attacks on Kyiv - Vatican News",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNUFA3aGZaa0xmVi1SU2hPRTVRdkh3a0k5dzhIdUJtMHZYVnlfbHR5eTM1OExMY0g1dzYxSmVQUmZxOUgwRE1ldDZfQUh0RzVPX3dCRnNJRXNxdUJJWkZrWXZWdmdtTzJobVdMVWZNZVBPRzVZQWY5ekpmWW9OWE5KcmZSRlBiaXBXdlVMRHBnV3Z2Vms?oc=5"
-        },
-        {
-          "source": "Reuters",
-          "title": "Ukraine launches biggest drone attack on Russia since war began, defence ministry data shows - Reuters",
-          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOTmhGNVhidkt3TlpMM3l5UmpTaGYyRnEyZ0pDQnhydG0wWm9sS3VGN0pndWVSODhUbFhYTW5EalBIMEljZEVsNndnbVVNd1dmVzNOMVNHYmtpOEZjVXBaOHNfQ0dzQjlva0QyNEU5OS1vMm50TmhuVEFaZDZ0THpwTDUtX3dpeV9HUEYwOEZaVkhBNzBrZXg1dXljcmVFRC1CT0hqclh2cU9uSklvSTRnSUxXVTlmQmNhNlI1Q1E0S2hSdzF3?oc=5"
-        }
-      ],
-      "reasons": "4 outlets this window",
-      "score": 4,
-      "state": "RISING",
-      "topic": "ukraine war"
-    },
-    {
-      "links": [
-        {
-          "source": "PBS",
-          "title": "Read the full White House memo requiring agencies to get approval before testifying in front of Congress - PBS",
-          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPSGxlUmRaeVM4Sk5sRkxSOFpsYm1IT1R4d3ZBc3UwTTduNVc0SkFIYzh1NXA3WnhJRlRlX3NHRHJ2aWtHQjhqODhGQnpOb25ZR1hUdDNKR01oVDEzRFlMVjFPUjBzQndBVV9ucHFyTS1FTTdVbTNxak1TdEp4OXA0LU52alJRS2tGeEJ1VklZTTRWejFfd0RiSUhhcU1ESnAxMjFnWjVhTFVrVm9SRDRzbEFtNU5heHlqcXRkRzhNb0o3UTF4QW9EUlB5UWU2bXhRY3Z3ZGtwWTdCUdIB3wFBVV95cUxPYm5tXzVzQjJpREowZXBKeFljUjltN0NPMzEzWEN6Q3M1LTI3S2RaQjNtQjhwaWEzLUxXT19iWE1mTXExMERsUzA4R2Z6Nkx4X0cybzVLSnZqV1VLNU12R1pEQ1NJaE5iajVUSzBwdE1fOGY2WVpKeXVhOUJBYXVVZFVESmVPSTY3cnlSUWVkRUZnbGhWNGNvc09WUDRUZW1EYTVYRmk3ZVUxLVdBeGhJSHVqYzlPbkVETk5Fbm94Z3dua1dLMTJQcFpSMktVRl9qeWNSNU9XRkk1WklvTWZJ?oc=5"
+          "source": "Brennan Center for Justice",
+          "title": "The Supreme Court Tees Up Electoral College Reform - Brennan Center for Justice",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxONTg0VEdnLXMzWjQyYnNIQm84NWlyVHlGRkotT0xUbEtzdm0tV19YdjNSNkZWYy1LLVRrVkdBd0dMZnMwOXNXMUhnR1I3R1Z3OG9MTDI5dTZBeWhjVERId2tob25ZZGlsTzYzaU5zeU5NdWppSVBvTXpxc3cwUW93REFLZHBuNFJqN0dvb1VUckJ0Ni0xZ0hlcmpOdnZ2dFRT?oc=5"
         },
         {
           "source": "U.S. Department of State (.gov)",
           "title": "Secretary of State Marco Rubio at the Federalist Society’s 2026 National Lawyers Convention - U.S. Department of State (.gov)",
           "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQWG5veW8zTHc0MU85aHIyTnJiR1RlVkZTZ2cwSEFNYi1IVUVsck1hM2QtOVZYVUNzVlduSEpPU1VXRTh6ZHNCTEd4NjlsZUdqZlZOQnNlYmltUVh5YU54VUNtWlNxWVhlVFgxTktZNWNRVnBtNmh1WVhuQll3bHRid3VybGROUk9fS1Q0ODRDOFROZ2JWa2oyM1J3bWxvNHlJWUs3S1BqSGI0dVM2ZGxRSWVpamJhRFJfbFkyRW1lRTFJd1NzN1ZkSXVHUGx5c0laWlBrVXg5eGZQaXFEWmpMLWRid3lIbDBn?oc=5"
-        },
-        {
-          "source": "Wesleyan University",
-          "title": "AI, Inflation, and War: The Issues Driving the 2026 Midterms - Wesleyan University",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPTHMycmROcjRHR3RaQnl6RExCZ2xEZTlnVTJkYmZPbWZQWkc3SzdubVdqZlcyNGQxOVp4eWFzWFctTHhNTkNkdUR0SUo0Y2xEWnJJYm1Ib2pUMVdKSFV2dFA1LUNrSHNVV2ItR1hEb3ZhbDhETlVzX3RpNjVQM2cwcVRhSmxLeFMtaV9QQjh6MTJUTEtl?oc=5"
         }
       ],
-      "reasons": "3 outlets this window",
-      "score": 3,
+      "reasons": "4 outlets this window",
+      "score": 4,
       "state": "RISING",
       "topic": "us gov"
     }
