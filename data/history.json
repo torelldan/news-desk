@@ -7092,7 +7092,7 @@
     },
     {
       "date": "2026-11-19",
-      "label": "Nov 19, 2026 11:42 AM CT",
+      "label": "Nov 19, 2026 12:01 PM CT",
       "outlooks": [
         {
           "id": "quake:1eb36ed394438d89",
@@ -7345,7 +7345,17 @@
           "severity": "ALERT"
         },
         {
+          "id": "headline:01599cbbedd6956c",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:8adab819b6c248d7",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:f0557ad9aae0e8b3",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "STANDBY"
         },
@@ -7355,12 +7365,12 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:f975d6dbbccc6de8",
-          "outlook": "First reading. Watch the next 72 hours.",
+          "id": "headline:f902bff0eeecd5d8",
+          "outlook": "Lower than yesterday. The 72-hour path is easing if it holds.",
           "severity": "STANDBY"
         },
         {
-          "id": "headline:02cda10245e2a547",
+          "id": "headline:f975d6dbbccc6de8",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "STANDBY"
         },
@@ -7381,16 +7391,6 @@
         },
         {
           "id": "headline:d21942f36dbb7b97",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:d65188e3b9eeabb1",
-          "outlook": "Lower than yesterday. The 72-hour path is easing if it holds.",
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:c94b9849d1024953",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "STANDBY"
         },
@@ -7792,10 +7792,22 @@
           "title": "Iran fires at U.S. facility in Bahrain as Tehran resumes strikes on Arab neighbors - PBS"
         },
         {
+          "id": "headline:01599cbbedd6956c",
+          "kind": "usgov",
+          "severity": "STANDBY",
+          "title": "The midterms were the largest win for either party in 50 years - NPR"
+        },
+        {
           "id": "headline:8adab819b6c248d7",
           "kind": "attack",
           "severity": "STANDBY",
           "title": "The Kraków Attack and the Alleged End of Poland’s “Innocence” - International Centre for Counter-Terrorism - ICCT"
+        },
+        {
+          "id": "headline:f0557ad9aae0e8b3",
+          "kind": "usgov",
+          "severity": "STANDBY",
+          "title": "What the Midterms Mean for Immigration Enforcement - State Court Report"
         },
         {
           "id": "headline:071be1d8e25eccda",
@@ -7804,16 +7816,16 @@
           "title": "Iran Update, November 18, 2026 - Institute for the Study of War"
         },
         {
+          "id": "headline:f902bff0eeecd5d8",
+          "kind": "war-iran",
+          "severity": "STANDBY",
+          "title": "Trump Grows Frustrated With Vance Over Iran War Critique - The New York Times"
+        },
+        {
           "id": "headline:f975d6dbbccc6de8",
           "kind": "diplomacy",
           "severity": "STANDBY",
           "title": "G7 Foreign Ministers' meeting: Press remarks by the High Representative/Vice-President Kaja Kallas upon arrival - European External Action Service (EEAS)"
-        },
-        {
-          "id": "headline:02cda10245e2a547",
-          "kind": "war-iran",
-          "severity": "STANDBY",
-          "title": "Trump Weighs New Strikes on Iran as Israel Presses for Action, Officials Say - The New York Times"
         },
         {
           "id": "headline:314f9dd5d0dad6b6",
@@ -7838,18 +7850,6 @@
           "kind": "windstorm",
           "severity": "STANDBY",
           "title": "Storm Charles damages banana and avocado plantations in the Canary Islands - FreshPlaza"
-        },
-        {
-          "id": "headline:d65188e3b9eeabb1",
-          "kind": "usgov",
-          "severity": "STANDBY",
-          "title": "Rubio says there's 'zero' information that U.S. outages are caused by a malign actor - NPR"
-        },
-        {
-          "id": "headline:c94b9849d1024953",
-          "kind": "usgov",
-          "severity": "STANDBY",
-          "title": "Secretary of State Marco Rubio on Major Technical Failures & Outage Incidents - C-SPAN"
         },
         {
           "id": "headline:68f0ef50dbbd795e",
@@ -7945,7 +7945,7 @@
           "id": "headline:75600b4c91d7542c",
           "kind": "global",
           "severity": "ALERT",
-          "title": "Live Updates: Trump, Xi and Putin Seek to Project Power at Their First Summit - The New York Times"
+          "title": "Trump, Xi and Putin Seek to Project Power at Their First Summit - The New York Times"
         },
         {
           "id": "headline:ff870ec6c413c4cd",

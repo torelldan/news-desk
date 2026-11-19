@@ -28,9 +28,9 @@
             "2026-11-26",
             "2026-12-25"
           ],
-          "level": 7259.65,
-          "change": -63.98,
-          "changePct": -0.87,
+          "level": 7236.99,
+          "change": -86.64,
+          "changePct": -1.18,
           "asOf": "2026-11-19",
           "source": "https://finance.yahoo.com/quote/%5EGSPC"
         }
@@ -980,9 +980,9 @@
             }
           ],
           "holidays": [],
-          "level": 34183.52,
-          "change": -394.58,
-          "changePct": -1.14,
+          "level": 34144.21,
+          "change": -433.89,
+          "changePct": -1.25,
           "asOf": "2026-11-19",
           "source": "https://finance.yahoo.com/quote/%5EGSPTSE"
         },
@@ -998,9 +998,9 @@
             }
           ],
           "holidays": [],
-          "level": 69020.14,
-          "change": -134.03,
-          "changePct": -0.19,
+          "level": 69125.69,
+          "change": -28.48,
+          "changePct": -0.04,
           "asOf": "2026-11-19",
           "source": "https://finance.yahoo.com/quote/%5EMXX"
         }
@@ -1894,9 +1894,9 @@
             }
           ],
           "holidays": [],
-          "level": 166434.23,
-          "change": -1103.77,
-          "changePct": -0.66,
+          "level": 166542.69,
+          "change": -995.31,
+          "changePct": -0.59,
           "asOf": "2026-11-19",
           "source": "https://finance.yahoo.com/quote/%5EBVSP"
         }
@@ -2761,8 +2761,8 @@
             }
           ],
           "holidays": [],
-          "level": 2415.07,
-          "change": -55.78,
+          "level": 2415.13,
+          "change": -55.72,
           "changePct": -2.26,
           "asOf": "2026-11-19",
           "source": "https://iss.moex.com/iss/engines/stock/markets/index/securities/IMOEX.json"
@@ -4074,7 +4074,7 @@
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPdDJHS2lJX1lSYkZKTVdzN0JXQ1l2YkxKRHNReTNKX3B5dGJKR19fUEdHOGZiMHFsaFpDNlJiY2tLUXhsYmFvZ25uVzV1TnZaeXY0dzRtWTZZdGhiSUZURHBGVjdhZUFzMzVfVWZHZXdFNjNUQWkzTm1wOFZNSGZtQ3VfT0sxb2VHWGtoZmJ1RGFfRVNGRzFGeWFRV3FZbFd4eWVKRlZDM0VyR0lXS3lZMDhRTU42cE81b0J4WEgtbnBmQndQSlh0c1VYc1lqNEpwVXlqbF96R0JzZFdoZ3VUdmZ3?oc=5",
-          "published": "2026-11-16T00:24:43-06:00",
+          "published": "2026-11-16T00:24:00-06:00",
           "date": "2026-11-16",
           "label": "Nov 16, 2026 12:24 AM CT",
           "weekday": "Mon",
@@ -7441,6 +7441,27 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:182054a584badc06",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Business Standard",
+          "sourceId": "headline",
+          "title": "Goldman Sachs sees RBI repo rate rising by 75 bps to 6.25% by mid-2027 - Business Standard",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOeFNoTmpTUVFnNmlpUVFTdnVSNFNNTnFKNXcyeXc2a3dyWm41S29pN3hackw2d3hsRVhSZ2ExQ1FLWmJkVE5nMGx1aktaTTRIZ01qRmxLME9WSjNFdmpNSjhuME1faU5DaTFCTTczbEdScV81XzM3VEcxeGhWSTV4Y0JEUFlBT0VaQkdGLXcycGFVNUR1aVczNEdQQUt6ZnlTSjBkYW41dGJGQWNUTWVnSFc5dEF4Y3ptZVRxYVA1QktwNEp2WE81NmlwZlpwYjhqRUHSAdcBQVVfeXFMTnRQMnN0LVZ2TUthVFJuckE5cEJkYXJzSklTMHlidWl0dDJaTVl0Znc1aVR5bkNQOVVzcmlxTEx4d01qYnNlN08xLWpEVGlobEdYUlY3RDd2WVRlcUhDWkRBNnQ3VjB5TWppX1F0VXEtUlFNamhGRHgwNG5CTDdCdy1fUm1sUjlqX1VCV0xKUU51UHlxUjlkdWh5a1VkU1VPTGJFQnRObzA1TkpPbG1FZmhxSjhGQi04Qlhsc3ZQZXhLcG9XdzhQMFR2RlViZ0pwOFNwMjEtYzQ?oc=5",
+          "published": "2026-11-18T08:35:47-06:00",
+          "date": "2026-11-18",
+          "label": "Nov 18, 2026 8:35 AM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:2844f2260f18f31b",
           "kind": "headline",
           "lane": "news",
@@ -8104,27 +8125,6 @@
           "published": "2026-11-13T20:30:42-06:00",
           "date": "2026-11-13",
           "label": "Nov 13, 2026 8:30 PM CT",
-          "weekday": "Fri",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:92caea6de5fec2c5",
-          "kind": "headline",
-          "lane": "news",
-          "source": "The Hindu",
-          "sourceId": "headline",
-          "title": "Stock markets snap three-day rally on rate hike fears; Sensex drops 318 points - The Hindu",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNTEtqSzFvbEFnZFNqQWx2VkE0QmtMbktHMFdNRmlmcWpKMjk0NXl3cUdNUjdfUkN1R09lRW9YOFJBb3dFUEt2M3ZHTWgtQWJPRlh0eHM4UFpkYzNaaGpzMEVCR2lzbHFYd0RzT2pFUERyT3pIWUFNQU5SMkliYzlUN1hEUHlweHRlUnJMR084VWxRelJLZUVSYktaZ0hDNWE2YkxmOF9GX2MxQ3FuelFKNEhxX0FMUkZvZF9SSjFRX3o3MWFnMHhpckt4ZF9tSUVyTEHSAdIBQVVfeXFMTUxLaksxb2xBZ2RTakFsdlZBNEJrTG5LRzBXTUZpZnFqSjI5NDV5d3FHTVI3X1JDdUdPZUVvWDhSQW93RVBLdjN2R01oLUFiT0ZYdHhzOFBaZGMzWmhqczBFQkdpc2xxWHdEc09qRVBEck96SFlBTUFOUjJJYmM5VDdYRFB5cHh0ZVJyTEdPOFVsUXpSS2VFUmJLWmdIQzVhNmJMZjhfRl9jMUNxbnpRSjRIcV9BTFJGb2RfUkoxUV96NzFhZzB4aXJLeGRfbUlFckxB?oc=5",
-          "published": "2026-11-13T11:24:42-06:00",
-          "date": "2026-11-13",
-          "label": "Nov 13, 2026 11:24 AM CT",
           "weekday": "Fri",
           "timeKnown": true,
           "tags": [

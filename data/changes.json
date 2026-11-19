@@ -1,7 +1,7 @@
 {
   "baseline": false,
   "counts": {
-    "new": 15,
+    "new": 6,
     "pages": 0,
     "prices": 5,
     "severity": 0
@@ -10,198 +10,81 @@
     "new": [
       {
         "date": "2026-11-19",
-        "id": "shawnryanshow:5deea2c20df0ec36",
-        "kind": "x",
-        "label": "Nov 19, 2026 11:15 AM CT",
-        "note": "How Do You Find a 30,000-Year-Old Turd?! 🤯 Continue watching the FULL episode at 12:30PM CST.",
-        "published": "2026-11-19T11:15:00-06:00",
-        "section": "x",
+        "id": "jre:05239cce475ca636",
+        "kind": "episode",
+        "label": "Nov 19, 2026 12:00 PM CT",
+        "note": "See Universal Pictures Violent Night 2 in theaters December 4.",
+        "published": "2026-11-19T12:00:00-06:00",
+        "section": "podcast",
         "severity": "",
-        "source": "Shawn Ryan Show",
-        "title": "How Do You Find a 30,000-Year-Old Turd?! 🤯 Continue watching the FULL episode at 12:30PM C…",
-        "url": "https://x.com/ShawnRyanShow/status/2123465073339359680"
+        "source": "Joe Rogan Experience",
+        "title": "#2583 - Bob Gymlan",
+        "url": "https://traffic.megaphone.fm/GLT1211480054.mp3"
       },
       {
         "date": "2026-11-19",
-        "id": "headline:15898cc7cdf8953e",
-        "kind": "cyber",
-        "label": "Nov 19, 2026 11:14 AM CT",
+        "id": "headline:01599cbbedd6956c",
+        "kind": "usgov",
+        "label": "Nov 19, 2026 9:55 AM CT",
         "note": "",
-        "published": "2026-11-19T11:14:36-06:00",
+        "published": "2026-11-19T09:55:05-06:00",
         "section": "World threat board",
         "severity": "STANDBY",
-        "source": "Reuters",
-        "title": "JPMorgan, Visa, Mastercard say third-party vendors targeted in cyberattack - Reuters",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQV1VHOTlUSTlCVmhEY0dIdi11T2tlc2xPMG16MHhDWkl0SnlBVFl0cHNiZlVPaEtNRERzYXJGa28yUG9DSVZobFBicGFwcXBUWG1icU1RSzYtRUpNV3V4YU1uNkVkNGtQN0tJOVpTMExic1VCMWIxMzhUZm5ISjN4eWJoRFBmSzhZM0x0YlJIRjBJYWJsNlF5WUMxN3NsUE9pWndFLVhTcG1saUE?oc=5"
+        "source": "NPR",
+        "title": "The midterms were the largest win for either party in 50 years - NPR",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQa2Jya1pVMGdtYW5PcWk4Z3ZGV29SUkR2RE5ranJBNlJYU1IxS05rQmd1M01jRjZyYnJaMUUzb2hCeDh0OUFHNlg3aU1lRUw1c0hXb0NlRnhSQmctSkpURTBlTnVlZ2dINmREaTFOYkxYWEV0dWpnZnRhbi1HbXNCb3p2aw?oc=5"
+      },
+      {
+        "date": "2026-11-19",
+        "id": "headline:f0557ad9aae0e8b3",
+        "kind": "usgov",
+        "label": "Nov 19, 2026 6:00 AM CT",
+        "note": "",
+        "published": "2026-11-19T06:00:00-06:00",
+        "section": "World threat board",
+        "severity": "STANDBY",
+        "source": "State Court Report",
+        "title": "What the Midterms Mean for Immigration Enforcement - State Court Report",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNZnJQNk9fTVVoWWpXUmtYTkJhSmpUcjZpeE5MUlgxTUlZTjNxMV9HT29IZWQwWXdjWkVld3lFS1NLemZNaW1Bb0FxNGl2VDZwR1pkeGR2MFh2Q3c3SVhuS1JiS3plbUZVQkpGaERONFh6TVlRcV9RN0R3aldrUTRDQU1OM0U1Zzd1RDJiYzhtR3doekMyU01LTDVIMTFVQQ?oc=5"
+      },
+      {
+        "date": "2026-11-18",
+        "id": "headline:f902bff0eeecd5d8",
+        "kind": "war-iran",
+        "label": "Nov 18, 2026 7:23 PM CT",
+        "note": "",
+        "published": "2026-11-18T19:23:01-06:00",
+        "section": "World threat board",
+        "severity": "STANDBY",
+        "source": "The New York Times",
+        "title": "Trump Grows Frustrated With Vance Over Iran War Critique - The New York Times",
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQV3B0SDctTm9DMGNCbXNLM2VOd2prWE1aZTZfT242MVNtUGRVeWRUemVHRWZMSVhGM0J0S2xxMC1XRWRvMVB6XzN3VGJfTDdDSGtGMTlSMFpVTlM2ZGotaW1JZjBaWWNQZmZseEFFUFBxa3hnRDQyYnB1bzVUWXdPcDJnZU5jLTUzVUZJYWRsX1d4Zw?oc=5"
       },
       {
         "date": "2026-11-17",
-        "id": "headline:e2b00f081fb43c3d",
-        "kind": "cyber",
-        "label": "Nov 17, 2026 12:45 PM CT",
+        "id": "headline:bf34880e82169a3f",
+        "kind": "paper",
+        "label": "Nov 17, 2026 12:31 PM CT",
         "note": "",
-        "published": "2026-11-17T12:45:00-06:00",
-        "section": "World threat board",
+        "published": "2026-11-17T12:31:08-06:00",
+        "section": "Frontier lab",
         "severity": "STANDBY",
-        "source": "WBAL-TV",
-        "title": "Some of the world’s most-visited websites targeted by cyberattack - WBAL-TV",
-        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBEQTM5aEhLeUozcmY0Z1ZWdmk2Rl9oYWtrelhXblZPRXZfYVk5b0h5V1VVWlBTamZVZ2g5MEo0T2FPamZ1aHFNaTVOMGpvVTlkeHBkUU1GZUY0bzVWZ0xwRTROdVR5Wk40QnpjYUhZR2l3bEFyOTRmS3Rn?oc=5"
+        "source": "Oncology Nursing News",
+        "title": "FDA Grants Accelerated Approval to Neladalkib in Pretreated ALK+ NSCLC - Oncology Nursing News",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNQ1ViN19DTXhBSVJWb01NWS0yUmJySl9EU0hyeFp5THNpaXg3WXV0Mks0ZDYzSGs2MDJtNG56UE1WYi1iQlY2bThZTEx6R1hSSjZyeG5yYW9FeVg5bUFtcDNwTzZIM3BNU2xhS1JvZ2ZhdVJGdVF6aHlFTDNDXzlPbVcwOWhLQnNkNTk5VzVtNXFKdWo0U005bzk0N0cwZDJkbVZuMHdlWXc?oc=5"
       },
       {
         "date": "2026-11-18",
-        "id": "headline:02cda10245e2a547",
-        "kind": "war-iran",
-        "label": "Nov 18, 2026 5:13 PM CT",
-        "note": "",
-        "published": "2026-11-18T17:13:05-06:00",
-        "section": "World threat board",
-        "severity": "STANDBY",
-        "source": "The New York Times",
-        "title": "Trump Weighs New Strikes on Iran as Israel Presses for Action, Officials Say - The New York Times",
-        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1TOTFWdU93OVF0V1d3QTZ4elZ2SHRiV0RzRmxjM3J2aTZuR3RyNlRWVmN2akRqUTcxVGpRM1dOZmFrelB4cGw3eWRha2F5TmI5SXpRdDFUZEwta3VSTUxQOTd3NGhGVnY1VUlnaWdVazFLVGhpUmlBck9xSmVzdw?oc=5"
-      },
-      {
-        "date": "2026-11-18",
-        "id": "headline:266df09b66953b11",
-        "kind": "war-ukraine",
-        "label": "Nov 18, 2026 3:12 PM CT",
-        "note": "",
-        "published": "2026-11-18T15:12:04-06:00",
-        "section": "World threat board",
-        "severity": "STANDBY",
-        "source": "Atlantic Council",
-        "title": "Dispatch from Kyiv: Let Ukraine strike Russia’s missile launchers at the source - Atlantic Council",
-        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPNTgtX08zaGpfcXJJU2h1eFRFT1VLd2M3RjlHMkZqN3FfMzlJdWZIZnhoZWtvTEZKTktEc2VCRE1mcHJ6UmxyYVV3WEZBZERIZ3R3X0gtZlBXaF9IUDQyWWZrUi1INXQxRVRoUHJJcjN2UjNIY1FCSFphNGJXU1M5ZlJhdGxfV3o5bzdDbTAxN09aVUFTblV0VHNkN09rOG1hV2ZuZnV5cVgxTFRCcHJ4MUhfV0s4UVI1eDdkS21B?oc=5"
-      },
-      {
-        "date": "2026-11-16",
-        "id": "headline:0bba411e87e17a19",
-        "kind": "war-iran",
-        "label": "Nov 16, 2026 4:47 AM CT",
-        "note": "",
-        "published": "2026-11-16T04:47:52-06:00",
-        "section": "World threat board",
-        "severity": "STANDBY",
-        "source": "Voice of America English News",
-        "title": "Rubio Says Economic Pressure on Iran is Working - Voice of America English News",
-        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOX2tpYnc1ejdPQ0lpUUpMXzltbEJqcndLb3pmNG90RW1UTHZkcjdSLTdpelg4NzI0YVZzcm40UmFEa3U1WHNlRkNDZFlCMy11RjBLa3FLYll3aWM4TUVyNnlkVUlLV1hYWEUtM01FeWxfWDFfRjNuTEJTdXVMb2JYSVI1WUJPOEJXWDdYZ0s0MDNndDYyTVHSAZYBQVVfeXFMTl9raWJ3NXo3T0NJaVFKTF85bWxCanJ3S296ZjRvdEVtVEx2ZHI3Ui03aXpYODcyNGFWc3JuNFJhRGt1NVhzZUZDQ2RZQjMtdUYwS2txS2JZd2ljOE1FcjZ5ZFVJS1dYWFhFLTNNRXlsX1gxX0YzbkxCU3V1TG9iWElSNVlCTzhCV1g3WGdLNDAzZ3Q2Mk1R?oc=5"
-      },
-      {
-        "date": "2026-11-19",
-        "id": "headline:75600b4c91d7542c",
-        "kind": "global",
-        "label": "Nov 19, 2026 11:25 AM CT",
-        "note": "",
-        "published": "2026-11-19T11:25:17-06:00",
-        "section": "World threat board",
-        "severity": "ALERT",
-        "source": "The New York Times",
-        "title": "Live Updates: Trump, Xi and Putin Seek to Project Power at Their First Summit - The New York Times",
-        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1MQWU3M21LcmgtNFU4MmVaaEw2cnIyUGJVclVsc2JIWGZhcFVFMXE0SmJqaG5MQnpWN3BRLWZuWmh6cTRudTl0Nzc1SlJ4WVdQamZlR0hFMlRtTy04SEhhVVVsREp2RktrY0ZwUDFkcmpnaXM?oc=5"
-      },
-      {
-        "date": "2026-11-19",
-        "id": "headline:ff870ec6c413c4cd",
-        "kind": "global",
-        "label": "Nov 19, 2026 4:32 AM CT",
-        "note": "",
-        "published": "2026-11-19T04:32:36-06:00",
-        "section": "World threat board",
-        "severity": "STANDBY",
-        "source": "Reuters",
-        "title": "From tarmac to APEC summit table, Japan's PM cuts a lonely figure - Reuters",
-        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQV2lFRzhLTFFzUDAyQlFERWhQTjQwbzExSnlMaEVMYnhnOEdTRm9yNTJxWWgwRjluUHkxZVFWUnJYTXVOaVhoRGtGRE5PRXhiRF9WX3RtVVJGTkVIV3BLRDZPWVJQUFN0RjY3UXBpUktQSlNHQzlmS1N5Q0lCQkpLSjU4c29PQTM3bXI1cDlzSjAwTG95Vkt1Sk90NGlid0ptUG1v?oc=5"
-      },
-      {
-        "date": "2026-11-19",
-        "id": "paper:7700f0c7bfc50c00",
-        "kind": "paper",
-        "label": "Nov 19, 2026 11:00 AM CT",
-        "note": "Walter Isaacson joins Google to discuss how history’s greatest innovators inspire creativity and human judgment in the AI age.",
-        "published": "2026-11-19T11:00:00-06:00",
-        "section": "Frontier lab",
-        "severity": "",
-        "source": "Google AI blog",
-        "title": "Walter Isaacson on curiosity and creativity in the AI age.",
-        "url": "https://blog.google/innovation-and-ai/technology/ai/dialogues-walter-isaacson/"
-      },
-      {
-        "date": "2026-11-19",
-        "id": "paper:f86b76b3c863b8b7",
-        "kind": "paper",
-        "label": "Nov 19, 2026 2:00 AM CT",
-        "note": "",
-        "published": "2026-11-19T02:00:00-06:00",
-        "section": "Frontier lab",
-        "severity": "",
-        "source": "OpenAI",
-        "title": "How OpenAI’s Performance Factory keeps ChatGPT fast",
-        "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast"
-      },
-      {
-        "date": "2026-11-15",
-        "id": "headline:fcf3953bf59b2ea4",
-        "kind": "paper",
-        "label": "Nov 15, 2026 1:49 PM CT",
-        "note": "",
-        "published": "2026-11-15T13:49:20-06:00",
-        "section": "Frontier lab",
-        "severity": "STANDBY",
-        "source": "The Economist",
-        "title": "Anthropic’s giant IPO puts the heat on OpenAI - The Economist",
-        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNRTd6eHRac3JHWEQ5TElWUXZZUWRsMHdXckRQbjJ6X3ZvOFUtVHZDcjFBVWVqOE9LVnNPS3NWeDROZUtsRFdEdklzRzctYlpWbWszbElsMU94VWxtUm5OZ1ozdUxWWnVGRlpGM3ozYWxISG5fS1Y5QlB1bVQ0Z09sVGphWmgzMlpKMWduNkZYX0N1b1Br?oc=5"
-      },
-      {
-        "date": "2026-11-19",
-        "id": "headline:7d796334e6f63971",
+        "id": "headline:182054a584badc06",
         "kind": "headline",
-        "label": "Nov 19, 2026 5:11 AM CT",
+        "label": "Nov 18, 2026 8:35 AM CT",
         "note": "",
-        "published": "2026-11-19T05:11:15-06:00",
-        "section": "USA headlines",
+        "published": "2026-11-18T08:35:47-06:00",
+        "section": "India headlines",
         "severity": "STANDBY",
-        "source": "Modern Diplomacy",
-        "title": "AI Boom Is Reshaping the US Dollar, but Markets Remain Divided Over Its Future - Modern Diplomacy",
-        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPbHFiUjh5ejJ5VTl0Y0FFM2hHNEFPU0RvV2VYMEdYdmFodFZ0SzlTaGl1eTROTnhHNVVhU3FuMS00Rm5kMVMwaFpyTjBzeU5JX0hNaEVCUGVEaUZ0X2NrVDR6OVk2OUFNN2VHaVlIMFNRdGd3bEZMVk9ZZEJZY1AxQlUyaHpqUktvdzlYMUJzb2duY041bVEwZFZPbmNCdzkwWFBxLXd4MXlxWGR6WERaQ3ZlcGZjcVk?oc=5"
-      },
-      {
-        "date": "2026-11-16",
-        "id": "headline:ea9a42308765a0e8",
-        "kind": "headline",
-        "label": "Nov 16, 2026 10:47 AM CT",
-        "note": "",
-        "published": "2026-11-16T10:47:55-06:00",
-        "section": "USA headlines",
-        "severity": "STANDBY",
-        "source": "National News Desk",
-        "title": "Warsh outlines 3 possible SI futures for US economy, from growth boom to job losses - National News Desk",
-        "url": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxNOXZxOU9fVlotSDNISm85NlZlNG95a0RGdXNsOW9oNms5RDkwSmY1MEdoWGJoTkQzb2EyMXJYOEE5NVlCUFlyZnU1MmRPdi10RTRoR09CdkVOZXBoa2VfQ0VrT0RrWS1RblVuR0cyUk1ZVzNrNDRfRERQZlphemJOdDh3OGVTRHNyM0U1ZXZfd3VBaEtVc2tzQ1RmMWNYUUlKLWZWaEh4RFJrWnRyWjQ4czdEMkNTcmJLa1I1bmxPMk53QzVwSG5EYUZmZlFKYWhxVkEwdHpUaVN5anFhampteDFOWDhvTkxDWTA1djNoSXo0OEQtQ0xRb05yQU4xMWxQbWFvT2stdHI3OVVDRGtUc3JLRUVvbnRWbVFGWDVnRjdBNzRJcl96Vw?oc=5"
-      },
-      {
-        "date": "2026-11-19",
-        "id": "headline:e597408cf332715b",
-        "kind": "headline",
-        "label": "Nov 19, 2026 11:00 AM CT",
-        "note": "",
-        "published": "2026-11-19T11:00:36-06:00",
-        "section": "Latin America headlines",
-        "severity": "STANDBY",
-        "source": "Bloomberg.com",
-        "title": "Brazil Central Bank Steps Into Markets as Fiscal Woes Hit Real - Bloomberg.com",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNOW56T2ZLNFFsVkQ0ZnVCMV9GMlhrMUhnQ0lzbUhxVHllRm5hanl6enc4VkxIbU9UUWhlbFBvYm5ORVN2bTVUZGhQYjVYZEhFQlJrcXJaaVczZTdQckdHS0taTjFKM193dlZ6S3RnZEt0ZEdVVjdNaV9xUWVKRlY2aWNZWlR1YlRJNGFHSXEyUkhQd3VVM204UGVvNjVHUm1KTDJ2cGQxV0FsUmdXbGViY2VWUQ?oc=5"
-      },
-      {
-        "date": "2026-11-13",
-        "id": "headline:0cb5acb07e47b4db",
-        "kind": "headline",
-        "label": "Nov 13, 2026 10:38 AM CT",
-        "note": "",
-        "published": "2026-11-13T10:38:27-06:00",
-        "section": "China headlines",
-        "severity": "STANDBY",
-        "source": "Atlantic Council",
-        "title": "Same metric, still a mess: The geoeconomics of youth unemployment in China - Atlantic Council",
-        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQN2lVM0xtZmZBcU9xZUZRWWxoZzJod0phQVIyVHlYdFpLYmFnY0JGNFUtLUJVVGduMlRGNEw5ZDNYbE92amlqRmFVZExYcGdPSWRZVGRxaGNKSzhrQ0ZTQ0h3ZWZpQ3MtbVlHRWVpLVJxWlZlUGhOMGdTUURKMnJYZHVreUJVUk5pb0x0N1RFUl80eWdWRElWSk9ZcElCRloyNlE5VWdqVWtiT0dheFFibThCVDh6V0JuOUN3cG9FaDBXaGM?oc=5"
+        "source": "Business Standard",
+        "title": "Goldman Sachs sees RBI repo rate rising by 75 bps to 6.25% by mid-2027 - Business Standard",
+        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOeFNoTmpTUVFnNmlpUVFTdnVSNFNNTnFKNXcyeXc2a3dyWm41S29pN3hackw2d3hsRVhSZ2ExQ1FLWmJkVE5nMGx1aktaTTRIZ01qRmxLME9WSjNFdmpNSjhuME1faU5DaTFCTTczbEdScV81XzM3VEcxeGhWSTV4Y0JEUFlBT0VaQkdGLXcycGFVNUR1aVczNEdQQUt6ZnlTSjBkYW41dGJGQWNUTWVnSFc5dEF4Y3ptZVRxYVA1QktwNEp2WE81NmlwZlpwYjhqRUHSAdcBQVVfeXFMTnRQMnN0LVZ2TUthVFJuckE5cEJkYXJzSklTMHlidWl0dDJaTVl0Znc1aVR5bkNQOVVzcmlxTEx4d01qYnNlN08xLWpEVGlobEdYUlY3RDd2WVRlcUhDWkRBNnQ3VjB5TWppX1F0VXEtUlFNamhGRHgwNG5CTDdCdy1fUm1sUjlqX1VCV0xKUU51UHlxUjlkdWh5a1VkU1VPTGJFQnRObzA1TkpPbG1FZmhxSjhGQi04Qlhsc3ZQZXhLcG9XdzhQMFR2RlViZ0pwOFNwMjEtYzQ?oc=5"
       }
     ],
     "pages": [],
@@ -216,7 +99,7 @@
         "section": "Economic watch",
         "severity": "",
         "source": "USA",
-        "title": "S&P 500 7219.21 → 7259.65",
+        "title": "S&P 500 7259.65 → 7236.99",
         "url": "https://finance.yahoo.com/quote/%5EGSPC"
       },
       {
@@ -229,7 +112,7 @@
         "section": "Economic watch",
         "severity": "",
         "source": "North America",
-        "title": "S&P/TSX 34009.19 → 34183.52",
+        "title": "S&P/TSX 34183.52 → 34144.21",
         "url": "https://finance.yahoo.com/quote/%5EGSPTSE"
       },
       {
@@ -242,7 +125,7 @@
         "section": "Economic watch",
         "severity": "",
         "source": "North America",
-        "title": "IPC Mexico 69110.2 → 69020.14",
+        "title": "IPC Mexico 69020.14 → 69125.69",
         "url": "https://finance.yahoo.com/quote/%5EMXX"
       },
       {
@@ -255,7 +138,7 @@
         "section": "Economic watch",
         "severity": "",
         "source": "Latin America",
-        "title": "Ibovespa 166409.05 → 166434.23",
+        "title": "Ibovespa 166434.23 → 166542.69",
         "url": "https://finance.yahoo.com/quote/%5EBVSP"
       },
       {
@@ -268,70 +151,46 @@
         "section": "Economic watch",
         "severity": "",
         "source": "Russia",
-        "title": "IMOEX 2414.79 → 2415.07",
+        "title": "IMOEX 2415.07 → 2415.13",
         "url": "https://iss.moex.com/iss/engines/stock/markets/index/securities/IMOEX.json"
       }
     ],
     "severity": []
   },
-  "since": "2026-11-19T11:08:09-06:00",
-  "sinceLabel": "Nov 19, 2026 11:08 AM CT",
+  "since": "2026-11-19T11:42:52-06:00",
+  "sinceLabel": "Nov 19, 2026 11:42 AM CT",
   "sinceRefresh": {
-    "label": "Nov 19, 2026 11:08 AM CT",
+    "label": "Nov 19, 2026 11:42 AM CT",
     "threats": {
       "deescalated": [],
       "escalated": [],
       "new": [
         {
-          "id": "headline:266df09b66953b11",
-          "kind": "war-ukraine",
-          "label": "Nov 18, 2026 3:12 PM CT",
+          "id": "headline:01599cbbedd6956c",
+          "kind": "usgov",
+          "label": "Nov 19, 2026 9:55 AM CT",
           "note": "",
-          "published": "2026-11-18T15:12:04-06:00",
+          "published": "2026-11-19T09:55:05-06:00",
           "section": "World threat board",
           "severity": "STANDBY",
           "source": "World threat board",
-          "title": "Dispatch from Kyiv: Let Ukraine strike Russia’s missile launchers at the source - Atlantic Council",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPNTgtX08zaGpfcXJJU2h1eFRFT1VLd2M3RjlHMkZqN3FfMzlJdWZIZnhoZWtvTEZKTktEc2VCRE1mcHJ6UmxyYVV3WEZBZERIZ3R3X0gtZlBXaF9IUDQyWWZrUi1INXQxRVRoUHJJcjN2UjNIY1FCSFphNGJXU1M5ZlJhdGxfV3o5bzdDbTAxN09aVUFTblV0VHNkN09rOG1hV2ZuZnV5cVgxTFRCcHJ4MUhfV0s4UVI1eDdkS21B?oc=5"
+          "title": "The midterms were the largest win for either party in 50 years - NPR",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQa2Jya1pVMGdtYW5PcWk4Z3ZGV29SUkR2RE5ranJBNlJYU1IxS05rQmd1M01jRjZyYnJaMUUzb2hCeDh0OUFHNlg3aU1lRUw1c0hXb0NlRnhSQmctSkpURTBlTnVlZ2dINmREaTFOYkxYWEV0dWpnZnRhbi1HbXNCb3p2aw?oc=5"
         },
         {
-          "id": "headline:ff870ec6c413c4cd",
-          "kind": "global",
-          "label": "Nov 19, 2026 4:32 AM CT",
+          "id": "headline:f0557ad9aae0e8b3",
+          "kind": "usgov",
+          "label": "Nov 19, 2026 6:00 AM CT",
           "note": "",
-          "published": "2026-11-19T04:32:36-06:00",
+          "published": "2026-11-19T06:00:00-06:00",
           "section": "World threat board",
           "severity": "STANDBY",
           "source": "World threat board",
-          "title": "From tarmac to APEC summit table, Japan's PM cuts a lonely figure - Reuters",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQV2lFRzhLTFFzUDAyQlFERWhQTjQwbzExSnlMaEVMYnhnOEdTRm9yNTJxWWgwRjluUHkxZVFWUnJYTXVOaVhoRGtGRE5PRXhiRF9WX3RtVVJGTkVIV3BLRDZPWVJQUFN0RjY3UXBpUktQSlNHQzlmS1N5Q0lCQkpLSjU4c29PQTM3bXI1cDlzSjAwTG95Vkt1Sk90NGlid0ptUG1v?oc=5"
+          "title": "What the Midterms Mean for Immigration Enforcement - State Court Report",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNZnJQNk9fTVVoWWpXUmtYTkJhSmpUcjZpeE5MUlgxTUlZTjNxMV9HT29IZWQwWXdjWkVld3lFS1NLemZNaW1Bb0FxNGl2VDZwR1pkeGR2MFh2Q3c3SVhuS1JiS3plbUZVQkpGaERONFh6TVlRcV9RN0R3aldrUTRDQU1OM0U1Zzd1RDJiYzhtR3doekMyU01LTDVIMTFVQQ?oc=5"
         }
       ],
       "resolved": [
-        {
-          "id": "headline:b9f5ee0528f8cd37",
-          "kind": "",
-          "label": "",
-          "note": "No longer on the board.",
-          "published": "",
-          "section": "World threat board",
-          "severity": "ALERT",
-          "source": "World threat board",
-          "title": "Norway's Equinor detects ongoing cyberattack, oil and gas output unaffected - Reuters",
-          "url": ""
-        },
-        {
-          "id": "headline:6b927575ffcb2e9b",
-          "kind": "",
-          "label": "",
-          "note": "No longer on the board.",
-          "published": "",
-          "section": "World threat board",
-          "severity": "ALERT",
-          "source": "World threat board",
-          "title": "Europe tightens sanctions on Russia. America loosens them - The Economist",
-          "url": ""
-        },
         {
           "id": "attack:07069810c75109bd",
           "kind": "",
@@ -370,6 +229,18 @@
           "url": "https://www.gdacs.org/report.aspx?eventid=1578162&episodeid=1747511&eventtype=EQ"
         },
         {
+          "id": "headline:f902bff0eeecd5d8",
+          "kind": "war-iran",
+          "label": "Nov 18, 2026 7:23 PM CT",
+          "note": "ALERT → STANDBY",
+          "published": "2026-11-18T19:23:01-06:00",
+          "section": "World threat board",
+          "severity": "STANDBY",
+          "source": "World threat board",
+          "title": "Trump Grows Frustrated With Vance Over Iran War Critique - The New York Times",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQV3B0SDctTm9DMGNCbXNLM2VOd2prWE1aZTZfT242MVNtUGRVeWRUemVHRWZMSVhGM0J0S2xxMC1XRWRvMVB6XzN3VGJfTDdDSGtGMTlSMFpVTlM2ZGotaW1JZjBaWWNQZmZseEFFUFBxa3hnRDQyYnB1bzVUWXdPcDJnZU5jLTUzVUZJYWRsX1d4Zw?oc=5"
+        },
+        {
           "id": "headline:f975d6dbbccc6de8",
           "kind": "diplomacy",
           "label": "Nov 18, 2026 5:21 PM CT",
@@ -380,18 +251,6 @@
           "source": "World threat board",
           "title": "G7 Foreign Ministers' meeting: Press remarks by the High Representative/Vice-President Kaja Kallas upon arrival - European External Action Service (EEAS)",
           "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOdmNqWjZZMXdFVnIySS1RUEQtb2dUNGxseDNRVVRxYXctMi1TeWNjVnlyUnAzS2hBTG1aTUJKcU1yMFVDZXJnN3h2RDNYNU8wZFVsMjlzUVJJUWhYSXlrbDFIV2pUSWYxRmVzeHNxM0JHRE1Xd3B3OF9HZm5vZEp0aGduM2E3VzhGeGozMFRrNWp5eUMwS2dHcjBHQ3MxSG9fMmNFaWxhYXZwbHR4RHVSeEdiLXVtNUl6SWxObW5YelRDMWNzeWpj?oc=5"
-        },
-        {
-          "id": "headline:d65188e3b9eeabb1",
-          "kind": "usgov",
-          "label": "Nov 18, 2026 2:27 AM CT",
-          "note": "ALERT → STANDBY",
-          "published": "2026-11-18T02:27:50-06:00",
-          "section": "World threat board",
-          "severity": "STANDBY",
-          "source": "World threat board",
-          "title": "Rubio says there's 'zero' information that U.S. outages are caused by a malign actor - NPR",
-          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBwRW1oWnJqVUUyZjZfQnRib1JCemo2R3hyTWZ4d2dmaE96ZnNySXlaelo1MXhpNU1fRkFNSGRtek5ubXd5Ykl5Uk1zWlpNTlphSndsVVVHVjNfTFRieG05YmZnWkx4RElkSVptdmdVdFdvd0dzNkc3ME1MQQ?oc=5"
         },
         {
           "id": "headline:68f0ef50dbbd795e",
@@ -637,6 +496,18 @@
           "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOb1pFNDZDUm5SZkhOYWNkVS0waDU0bXBlXzJZVHlKTW5BVkdCWVFKYUVUTXZ2TnZMdExJM2FfcWF2MUVmVm5MNnBjeW9fVmpWaDZpeDhaTUE2LWdOQ1BVRDMwNFFsbTExaVhXS2dnd3gybmljTE9pRGowck5ER2xpQnp1eVBhVTkwdU92cl9uZi1iMV9kYXBFQTJDVEJGZWFqakZWMWlpQkxCSUdkYTBubVJuSThQZ9IBuwFBVV95cUxPM2I3U25ZNVUwdUlUbGVEN1lrRDlwcWFQb2VsVnMzZWMyY2RDaUYyelRqejVOX3BaMC1CQU8wbFh1RU1EdEFhWUdUR1dLT1RNMWtESWVLdE13QUxJRWlWZ3E5YVA5OGZscmFMbnB5XzNaRlpwelk4U2pUWTY0ZXFBMjJxdHIwU3FpWFRSVmJyQ25fTzdFa2l5SGl1MTRaTGNjaW1hbm9ReERvaXFvUmtvTU9jazB6WENsUllV?oc=5"
         },
         {
+          "id": "headline:01599cbbedd6956c",
+          "kind": "usgov",
+          "label": "Nov 19, 2026 9:55 AM CT",
+          "note": "",
+          "published": "2026-11-19T09:55:05-06:00",
+          "section": "World threat board",
+          "severity": "STANDBY",
+          "source": "World threat board",
+          "title": "The midterms were the largest win for either party in 50 years - NPR",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQa2Jya1pVMGdtYW5PcWk4Z3ZGV29SUkR2RE5ranJBNlJYU1IxS05rQmd1M01jRjZyYnJaMUUzb2hCeDh0OUFHNlg3aU1lRUw1c0hXb0NlRnhSQmctSkpURTBlTnVlZ2dINmREaTFOYkxYWEV0dWpnZnRhbi1HbXNCb3p2aw?oc=5"
+        },
+        {
           "id": "headline:8adab819b6c248d7",
           "kind": "attack",
           "label": "Nov 19, 2026 7:17 AM CT",
@@ -649,6 +520,18 @@
           "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNdHNfZFFOUkNPLXlHYS1URjBLUDZqc3dJcW53eEtoMjJXemRtdy12akduR3p3d0pNaEJ5ZWlXSm5YYXItZ09YOERHVEJqT0VaaXFrakp4X09KTkR3a1lVWEMyUVQ2YUx6RDJHb1pCNTdmNWZVVTdBS01WNnhaTk5fbw?oc=5"
         },
         {
+          "id": "headline:f0557ad9aae0e8b3",
+          "kind": "usgov",
+          "label": "Nov 19, 2026 6:00 AM CT",
+          "note": "",
+          "published": "2026-11-19T06:00:00-06:00",
+          "section": "World threat board",
+          "severity": "STANDBY",
+          "source": "World threat board",
+          "title": "What the Midterms Mean for Immigration Enforcement - State Court Report",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNZnJQNk9fTVVoWWpXUmtYTkJhSmpUcjZpeE5MUlgxTUlZTjNxMV9HT29IZWQwWXdjWkVld3lFS1NLemZNaW1Bb0FxNGl2VDZwR1pkeGR2MFh2Q3c3SVhuS1JiS3plbUZVQkpGaERONFh6TVlRcV9RN0R3aldrUTRDQU1OM0U1Zzd1RDJiYzhtR3doekMyU01LTDVIMTFVQQ?oc=5"
+        },
+        {
           "id": "headline:314f9dd5d0dad6b6",
           "kind": "usgov",
           "label": "Nov 18, 2026 4:11 PM CT",
@@ -659,30 +542,6 @@
           "source": "World threat board",
           "title": "Democrats flipped 9 U.S. Senate seats — the most in almost 70 years - PBS",
           "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPdmV2SmVvV1YzVTZpQW5ZbHNhZjQ1blUwWUJQamJsRDVFcmh4aDkxd1RIVmtnZ2FvNzZHdXpqMGFTX09fcTExcVg4LU1KckNvaUJsWGZWLW9ybnJEUzI0ejZCYzlNbVdJaXcwOERoRDRoNUFSdHpMeDQ4Wkl1WURzUk9wRlJkQ09jQm9KSVRSQURYMkVFYUpWY1FUMFBsbUNkM0VN0gGoAUFVX3lxTFB3VURjSDZpYzlUZ2JUUldDb1ZFQWV1MzJtUkM3YkdKRDFhTy1yUDg2RjBhUWR6bU96Z3ZzZFFKT3RLdDVpRW84RGtaeEJWclE3b19LVE9kUUpveENNMHk2VGxUdkF1a0lXUWJEeUhUN0dMUXJ5al8tTnpnTTNVTVpIVGlKaVpJMV8zNXN5Yk5rTDV2SGtKT19QNFhyNVdtU1FSbEJqWHV5eA?oc=5"
-        },
-        {
-          "id": "headline:266df09b66953b11",
-          "kind": "war-ukraine",
-          "label": "Nov 18, 2026 3:12 PM CT",
-          "note": "",
-          "published": "2026-11-18T15:12:04-06:00",
-          "section": "World threat board",
-          "severity": "STANDBY",
-          "source": "World threat board",
-          "title": "Dispatch from Kyiv: Let Ukraine strike Russia’s missile launchers at the source - Atlantic Council",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPNTgtX08zaGpfcXJJU2h1eFRFT1VLd2M3RjlHMkZqN3FfMzlJdWZIZnhoZWtvTEZKTktEc2VCRE1mcHJ6UmxyYVV3WEZBZERIZ3R3X0gtZlBXaF9IUDQyWWZrUi1INXQxRVRoUHJJcjN2UjNIY1FCSFphNGJXU1M5ZlJhdGxfV3o5bzdDbTAxN09aVUFTblV0VHNkN09rOG1hV2ZuZnV5cVgxTFRCcHJ4MUhfV0s4UVI1eDdkS21B?oc=5"
-        },
-        {
-          "id": "headline:367c6f0596cf799e",
-          "kind": "usgov",
-          "label": "Nov 18, 2026 9:01 AM CT",
-          "note": "",
-          "published": "2026-11-18T09:01:28-06:00",
-          "section": "World threat board",
-          "severity": "STANDBY",
-          "source": "World threat board",
-          "title": "The Supreme Court before it stood apart - SCOTUSblog",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNUk5UbmV6RE9XTlRaLUhKbTZjVXQwby13bVhvcjVRY3VCTXdQNTgxUGxwTEI1UzVyZ3A5LUoxZzhrZE0weFFsTWFXcE9xNHlBVFpoNGFVcWVKcnV0c0x4Z3I5OFNqb1ZGOGx6cDlvWTRLSjRlbFZMY3Y0XzN3S1lRbA?oc=5"
         }
       ],
       "resolved": [
@@ -759,6 +618,18 @@
           "url": ""
         },
         {
+          "id": "headline:d65188e3b9eeabb1",
+          "kind": "",
+          "label": "",
+          "note": "No longer on the board.",
+          "published": "",
+          "section": "World threat board",
+          "severity": "ALERT",
+          "source": "World threat board",
+          "title": "Rubio says there's 'zero' information that U.S. outages are caused by a malign actor - NPR",
+          "url": ""
+        },
+        {
           "id": "headline:aeb1c6c84381f30a",
           "kind": "",
           "label": "",
@@ -781,7 +652,7 @@
           "kind": "trend",
           "label": "",
           "note": "The same topic showed up across several outlets.",
-          "published": "2026-11-19T11:42:52-06:00",
+          "published": "2026-11-19T12:01:55-06:00",
           "section": "Today",
           "severity": "ALERT",
           "source": "Today",
@@ -793,7 +664,7 @@
           "kind": "trend",
           "label": "",
           "note": "The same topic showed up across several outlets.",
-          "published": "2026-11-19T11:42:52-06:00",
+          "published": "2026-11-19T12:01:55-06:00",
           "section": "Today",
           "severity": "ALERT",
           "source": "Today",
