@@ -1,14 +1,380 @@
 {
   "baseline": false,
   "brief": "No rare risk is on the board. A routine flyby or an empty storm outlook is not an emergency. Current war coverage is on the board: Ukraine: Civilian casualties in 2026 already far exceed previous years’ tolls - UN News; Iran fires at U.S. facility in Bahrain as Tehran resumes strikes on Arab neighbors - PBS. Global: ‘New page in history?’ Xi, Trump and Putin summit was more of a footnote - The Guardian. Rising topic: ukraine war (4 outlets this window).",
-  "checkedAt": "2026-11-19T09:50:34-06:00",
-  "checkedLabel": "Nov 19, 2026 9:50 AM CT",
+  "checkedAt": "2026-11-19T10:18:48-06:00",
+  "checkedLabel": "Nov 19, 2026 10:18 AM CT",
   "errors": [
     "AP World: curl: (22) The requested URL returned error: 403\n",
     "Reuters World: curl: (22) The requested URL returned error: 401\n"
   ],
   "retainDays": 120,
   "spikes": {
+    "labs": [
+      {
+        "field": "ai",
+        "links": [
+          {
+            "source": "The GitHub Blog",
+            "title": "Gemini 4 Neon in GitHub Copilot - The GitHub Blog",
+            "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBMS1FJZ2psbEdtam53b1NNNV90Y1NvZUNOcDVnYkxvUkxSY0JKOXpWVFktdUNMMTA4eUVMT3phdVRDRzJtcHM5N0JxMEZVYjZfdTNERE9uaXNGdm0wTkRNYm96b2pEZFd6NzRTSGdabVlVbGE3V211UzI3YnFqQQ?oc=5"
+          },
+          {
+            "source": "DeepMind",
+            "title": "Introducing Gemini 4 Neon",
+            "url": "https://deepmind.google/blog/introducing-gemini-4-neon/"
+          },
+          {
+            "source": "Google AI blog",
+            "title": "The Gemini app is now available on lower-memory Android devices.",
+            "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/"
+          },
+          {
+            "source": "Google AI blog",
+            "title": "Put Gemini to work for you",
+            "url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/"
+          }
+        ],
+        "outlets": 3,
+        "state": "RISING",
+        "title": "Gemini 4 Neon in GitHub Copilot - The GitHub Blog",
+        "topic": "Gemini"
+      },
+      {
+        "field": "ai",
+        "links": [
+          {
+            "source": "NPR",
+            "title": "California sues OpenAI over hacking risks - NPR",
+            "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPVENfR2JteXlPbExMQ0pZTFlwaldLRTRhbTR4ZEQ1bzZXSHZjQmhQb3hjMS1ITGxuSVlSaE1qQWNvamJsNDNPZTU4RlBZdlZaNXoyVXdDWTVzTjJFaDZ1SjdHSzhJaXFDUG41NGFKN0FDWTVRQjVpQUtxbGV5X1dwRzN0Y2MtY2ZpVmVEZTB6UUFjRzNGTEZZWU5zMngwdw?oc=5"
+          },
+          {
+            "source": "OpenAI",
+            "title": "Introducing ChatGPT Wallet - OpenAI",
+            "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5ab0pjcFNKdWdXUVFfbEMyNnBKUm56eDlpLXRjWktkSWtKNFBpQml6US05eHBPWnhCajF4V1lnZUhrZHY5U0dJb29BYldsRjlhWUxjVkFPdlhibmRYNkFMb1dn?oc=5"
+          }
+        ],
+        "outlets": 2,
+        "state": "EVENT",
+        "title": "California sues OpenAI over hacking risks - NPR",
+        "topic": "OpenAI"
+      }
+    ],
+    "markets": [
+      {
+        "links": [
+          {
+            "source": "Jagran Josh",
+            "title": "US Federal Reserve Meeting: List Of Things To Know Ahead Of The December Interest Rate Decision - Jagran Josh",
+            "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNQjRKTGF0Um80RU1uYV9UaHFqYTdWblVLU0NTeUkwSFZyR0tQcjBtX3lzQkFmT1JXWkJLbVk5WWg5UFRueGpRSU1xYndQci15bHhuVXhvb29DRUN0cGVCX2k2T3YwZ081cjlzaVlFX1pmYm9POEdaa0c2S3FNSl9GUGo1Y3RoSnNtN0g0RF85NG1wbmZBOHBzRlhWYUNyODVyRW5UUUhqUzl1dzlaVW5sNHpiT0ZKd2NjZGI1VHAta08tdlZ0RmpRVXVtUnZXTnBncG1hU0drYTE0azVMRk95UDlvYmpoX1XSAe4BQVVfeXFMTTFnSWs3Q2pWNkVWdkpIMnVFanE1Z2FjV3FIQVE0cEgwc3VyVFZORU1mVFJOd19XWDNhR3FhVzJhQmxfSUctR0ZrUGxXN2t6X0lBTmxyTGU1bFBYaGV1dGE1dmxjbWpubHAwaFllOXJ6Rks4RWM4NG1XX29PMmNaNzdTeGJjWWdidmZCV0ExcFdKM21PcUdHVWZBZDFhSUh6eDdnRXM4Ym94Qi1RQzZycmxjbk83SzVXOVduX3c0aXhteUdySFFwRjBScGlxcGN0Ujd4X0JUYktYck42M2RZejNCc1o3eW5pcXo5bFhEdw?oc=5"
+          },
+          {
+            "source": "ABC News - Breaking News, Latest News and Videos",
+            "title": "Federal Reserve raises interest rates for the 1st time since 2023 - ABC News - Breaking News, Latest News and Videos",
+            "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOYktxZlJxRVNrdUZFRWViQjVMLUh3OGJwNGhrVFpJY2E5QTAyajNfcnFSb09rZUVkSnVMUHd4WkpsYktvZGczX05nRzVhSTdKNWtfU2hWb09IYnNQQ01tTlMwMV95YzJkbWVDMklwZ19XMC1RNmVsckpGS3FpNUpiRlUxZkVtNXk5NE5YRnpBSTI4eEhVOWxaUlBzZDlxb3p1ZVBFeHFR0gGrAUFVX3lxTFBrZzU3UXhjRlBBblFYNzJZZ3dINVFwMnpIOFQwRlJ1NmRTa3JNUGlkamJyS08wRjM5UlFuMkRJcHAtUEQxYjF3b2Yyc2E2V1hOOEhQRHRPckpidllEOHpLRG9VUTFxSUwyaE95SzNNZ0pkemQwQkNBYkZPbTBpN0ZMYTBWU25nT3FrUVNNal9Eb0lCNnJwZTVFUVVhM0dDRlMzQ1pQTF8xRTV6bw?oc=5"
+          },
+          {
+            "source": "The Business Times",
+            "title": "Federal Reserve's Warsh says emerging technologies like AI to have 'significant impact', but there are risks - The Business Times",
+            "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPMzBvU0JEMWtkY3JDTllBUlpyd0xabFB5MmZTc3dhcVBwWEZLWDhmTTZhbTducGo1ZXBsVWN1ek9CV19peVdHVkZjS2ZGZWxwcW52ZC1GbU10aWxLRFFHVzFDYTQtY29KOHJ0Mzk0VmlCNDNEeWh3aEpPSHhaQjJaMFNvaHpnZ2J4aWx0ZUdSNGV4S2pWaXhVZzNqWHBFSThTNHMxSnVCOUljSWpkOE5kTUV6czJ4T1cyem1EU0JTcW5yRUhMNHJ5OUZqa1V3US1LY2VxVVN3?oc=5"
+          },
+          {
+            "source": "American Enterprise Institute - AEI",
+            "title": "What the Federal Reserve Is Saying About the State of the AI Revolution - American Enterprise Institute - AEI",
+            "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQNEVDMGpYU2dJSWdjb3pTMXVLeGR6amRpbnM0RWtfS3FwYVh4cmV2Z2pQSFBBa3drR0YwcVhvN3F6T2FPbDJ4ZDJqU2Z2ZEV0R0dHdjRGMnpFUlFqcWVFMGZWMFJ3M2dOaTY2QW9Id3pVYlJXLVNZUGkzeWZPUnJTV1RkMDRMeWlNejJrcHFLN0FYcGlKX2F1cHdhWGpva0xIS0F4Rg?oc=5"
+          }
+        ],
+        "outlets": 9,
+        "region": "USA",
+        "state": "RISING",
+        "title": "US Federal Reserve Meeting: List Of Things To Know Ahead Of The December Interest Rate Decision - Jagran Josh",
+        "topic": "Federal Reserve"
+      },
+      {
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "title": "US Treasury yields rise as Fed minutes flag AI inflation risks, Waller backs bigger December rate hike | Hindustan Times - Hindustan Times",
+            "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPOU1qMGxDcnlJbjg4eEJzbU82Z1pWSndxeUJSMXlPR1pRVmVMRlZUSUFfSFNlRU42RUxna3RPTUtuM1RURURWZlVaZHBmOFJPTVJDdU1KeWJYZUdhb0dLMmE5U2w1NzlPRWx1QjNNNUNvMUdnQ3JkblRhTXVuNnJEdnJZcWpZLUtJY3RPbWlZWURFNm5SV29QbkFQbTVqMTZTcWdOaVE4Wl9Rck9tYXIzOFQ2ZnlMZm5BY2d4YmtsZTBneXY3a3lGMHZTLU9kbjFKRC1ySlJtTkxqX2pSVnJfc29odEd0czVvRlJmNXVJcjJ6RjMtSHl5NGJJYnFfOGlwdUHSAYcCQVVfeXFMTXRtYTJOalJZLWhaaDFhUFJGdFh6d0xTV1VCcDV3amU0eUNYV0RFVWpjT01jTXZZOUxQbk91Y1MzanhvUmxQeVI5blN2LU9XVzU3UXRTS1VObjdJZ2xpNHlHMG03UlY2U1hwZGphbmREQlBsWm0tSnlDczZESU1GX3ZfaW5aSG1XU3FOWVk5c0F4U0hIQ3J3S3pVSmZra2ZSNk1FbTdZaGs3a3FGa2NlTmMydms4aTVlZE1IUEhXMEtMYm5jUDhYTVBnUmhDLW9QdGp4S19yNUt6NnZGdkhWeXJnUnFLV3NkTExINllKcWxZX2hMVzVfeDI5bUQ3ejRyMTFYWjNhSWM?oc=5"
+          },
+          {
+            "source": "Reuters",
+            "title": "Fed's Musalem: US likely needs several rate hikes by spring to control inflation - Reuters",
+            "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNSmh3bk9iaG5YQ2V2dzZUMkQ1aGQ2LWNfdHFCWkVaOUtyWFdHS3lFTzZJTDhsQnItcnN4N2NibjRLNXZIbHVvSllBY0Jyc201azJtbUNnWkRndWlPN05sZUVaWkJBZFlTTGJzYWFFLWRqN2R6X25jRllRT1hHekZ2aFRweE5rbHM3Z3p1SHoxR2UwR1VnMWVnbWZ3ZmRHSTkyR2lhU3p1NzNFZFBjMEtRQ25iZnpwVEhBZTd3bw?oc=5"
+          },
+          {
+            "source": "BNN Bloomberg",
+            "title": "U.S. Fed chairman Warsh grapples with AI’s potential economic impact, steers clear of its inflation risk - BNN Bloomberg",
+            "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPblFpQVlnN3ZadDFlTFFKcVNkQjhqVHh1TW1VRGxzSkloSUZFNU94OFRKcU1DdHVJQ3BmSFE0ZTJzWFVmcWx0OTN1cnMzdmpIYlJGN25lUXotYi1nV2JPY09TM01pSkZUb2h3SENEY2UzMkozUFhCdTk5UnljMmRSeng5MVFEOFUtWFhDMlpVVjhBRVNkTnNwVFVnLW1LRmkwcklhZ1R2TUk3UFpuSVRZZllFWEt3TnB2djFnaUhoMGFGdVFkTGNTVnZQUFNJSXg1bEZzY1ZoYnJVbC1leEpuWUZrTTBuM1JmOHR1dHFuSGZtTENPRlE?oc=5"
+          },
+          {
+            "source": "The Tribune-Democrat",
+            "title": "Warsh grapples with AI’s potential economic impact, steers clear of its inflation risk - The Tribune-Democrat",
+            "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQWDBvc2FVVGUyc1QwajR3M1FJWEJJWkgzYmRKZTNvRnJKaEh6ZGROVTFCQlpxakNrWWJWMTJHTFlMRDRNcjRDTk5uX3ZlRzBaSDNTYlhORm9IUktUb2s5T0MwSHZJRjZwc2J1cG5rc3JhZ00yUDRBeXhHd2JKbklVZmY5X2xuS2RpdzlTd3c3SDRRTFF1NGlDV0pzLV9JeHZXMUNtam1XN2puV1hwakZ2VE16OWhLUTl0MDA0VldfZVM5NDk2VUl4aDQ1QWJBUngyMjhGOHlDX1daZ3MyOVVnN2F4OXo3SW5Jak9MN28yT3FINzdNc3JmcE9OZVRseXU1N3Jn?oc=5"
+          }
+        ],
+        "outlets": 4,
+        "region": "USA",
+        "state": "RISING",
+        "title": "US Treasury yields rise as Fed minutes flag AI inflation risks, Waller backs bigger December rate hike | Hindustan Times - Hindustan Times",
+        "topic": "inflation"
+      },
+      {
+        "links": [
+          {
+            "source": "The New York Times",
+            "title": "Fed Saw Need to Keep Raising Interest Rates Despite Holding Steady in October - The New York Times",
+            "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQZWNVYnFNZV9nd0xLQW9EenZFTEJZS1A0VF9jcXgydHdZMlNUY21sTndVYzZXTThLS19UOThYOF9oZS1hbURtSlBhcUYyTVB1XzB2QUk5dlZva3RlNzlyWmtweDNhUUdyNVJGV290RzNLYTBEU1RXMlpiNEtHZ09HTVFyZ09ldVdKUXNiMHFLSk45Y3RiOWEzWDFB?oc=5"
+          },
+          {
+            "source": "The Straits Times",
+            "title": "‘Almost all’ US Fed policymakers saw further interest rate hikes as likely, minutes show - The Straits Times",
+            "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNWFRsZFFyeGhlY3RacTRWN0JjOFNkaEZzcU9PUnktNUxJdzk2aExvRE5hSm42TEFnNEZOelRKRTZYYmZ6UEZZbzc5QVRuZnlWRERnUlVjT0tVaGQza0lMU0lndExsd1lDaXFNTnlkdG1yWVIwckhpbk1KQVBidFo1QzFKUFIxLVVmYU8yNjI0d1NPbEhMWTRsNTJvR0VWY2UzUGhYN0ozZ0Y5UTlHekpEZ0FndmdyaktMU2c?oc=5"
+          },
+          {
+            "source": "The Straits Times",
+            "title": "‘Almost all’ US Fed policymakers saw further interest rate hikes as likely - The Straits Times",
+            "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNRnFLLTNVZU9LT250RTNRRS1LNkRaTTdJcTF1RlkzQVVVcHF5cmE2bm4xVHpYV0pBS2l3RWVpeFhKaVFxR2t5QnZ0M0V4d1FxR0JqT0tPTU53UExfMnllTkpkS0lkNTJiMjNTVk5GODBqb3kyWWZlOUFqeFZRalJHTzd6WHRSbmVHTGtBNnNFNVNQOTlmYmMyNzZCVGhibzZvSVZtdEtVWlhHUUJWUVBMZWdFdHV4bk1EM2dEaExHU2xHNDFSU3ZtYg?oc=5"
+          },
+          {
+            "source": "The Tribune-Democrat",
+            "title": "Fed minutes: Higher interest rates needed in December as inflation worries mount - The Tribune-Democrat",
+            "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPWDhfeHU2NVc3N3hUMlNmZlphdW5zS1RvT3FEczEyN0NrTkQzclV3dFl1VUIzMlpYa2R3UFgxcGZ4UFJJQTdhWFVkSTBMb0lhNkI3aGk2N2xjV2t3WlFjN0JubkxIWHNpazZGamxWWldYSk44ZERySnVWejVRNE1uMks2UC0xV2F6bzFhVDZpenVaTndpRTJubTdBZFhPQ3MxZ3doZmR1UjM4Y3lIUEVlQUpEZVU2TmIxRk1CR2tibnVBekQ2WDVwZ3pIeFpJNlMzMExSYWxBQUpEVlhySEJ3RkdHd0JCcmJhcFpRcmNiVEhaU3VaYW1LWW5tUQ?oc=5"
+          }
+        ],
+        "outlets": 4,
+        "region": "USA",
+        "state": "RISING",
+        "title": "Fed Saw Need to Keep Raising Interest Rates Despite Holding Steady in October - The New York Times",
+        "topic": "interest rates"
+      },
+      {
+        "links": [
+          {
+            "source": "Investing.com Canada",
+            "title": "Bank of Canada says public trust in 2% inflation target helps anchor expectations - Investing.com Canada",
+            "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxObGg0cFpHbjYtclU0Zm81dE0zREY1MTNzNDYzYmU5cW0yVUVmM0dPQ0gyRVVKeS1Pa1c5aGVpM2JpMVVfa2psR3FLSEFkX0VheG5WR3JDMHhDdk1zOTdJa2lwX2U3VTRTVnpnbXR0VzMyZG9UQ0hzaXFmU2tqOHJqT1RCbzVLQXRnT0ZPVC1ySUs0TUg2ekZCaGVsT2lJSzRWNWlBT2JlV2dTX3ZHOTRubzFuWE5yRmZMSG1tSmxVdHNPQ2JGV0cyVERkUQ?oc=5"
+          },
+          {
+            "source": "Benefits Canada.com",
+            "title": "Inflationary pressures from energy market pushing central bank policy: expert - Benefits Canada.com",
+            "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOYjRNN09Zd2ZXaUhQT0NFVl9DMFJDay1HdTlTakI2NVc0eVY5Y0sybXAwbFgtb0FXRDVjRjl3bnl6NVpfWGluemJwbjFpQU9xT0U0UjJRakNGQUd4Y0RxcXBGUnZzQlBxMGFXNFZIYTNZMXZLcG5pMUtYUXU4eGJuckFieFZpdW1fUFVrY2RQWEtLNkhuRkU4bGdxVzVKRVRnWkREdHdqVEFXeEVTTnJKNFFqZUZPSHpaOVc2Z2h6X05fY0ZueFJDN2k3eFhUSnFTczdFSjhjSlJjZ0QyMWg4dHV3?oc=5"
+          },
+          {
+            "source": "WSJ",
+            "title": "Canada Inflation Holds Steady at 3.1% in October - WSJ",
+            "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOZUh2di02WldwU0Q2eVluc0Y4cktuNXNFYXc2M0ZIajJtY3ZoOUZFTHRxUTJUUl9uMkJUcnkyeFdvb1FMcDMzRy1YOXRVaHI3QmMteU9IRS1pOEVmMjhjVE44TVJfRkloclZKaXJ5M29WTmRuOXk1REQ4c0JWTk5vSU9tdGRCVkEtbjRSY3lXVXVNSmQ2T2dqMkdFVUxRNVhWbmc?oc=5"
+          },
+          {
+            "source": "richtv.io",
+            "title": "Canada’s annual inflation rate held steady in October, StatsCan says - richtv.io",
+            "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQMXpuMk1YMnRZbHlRcGNmZEZCc29HXzBuTHpJTmQxVDBlRTR3TUEycVJ2cGNJS3o2amFkN0ZqdVhyckFxOVQzXzM2X2ZXUU4xVUxCT3V4bjAtVHh5RWxJZTZBVjNacENWR083Y0xtUW5aR0xSa1lhQXN5bVdkajF4S2xmT09ZcHBGMzNWcHFFQ0J4b0k?oc=5"
+          }
+        ],
+        "outlets": 6,
+        "region": "North America",
+        "state": "RISING",
+        "title": "Bank of Canada says public trust in 2% inflation target helps anchor expectations - Investing.com Canada",
+        "topic": "inflation"
+      },
+      {
+        "links": [
+          {
+            "source": "TradingView",
+            "title": "Sanctions fears loom over Russia’s regulated crypto trading launch - TradingView",
+            "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNdHZZQklYMWEzaTcwelNfS1dKYWpORkVrbG1hYzVuQjFwZ3plWVoxakNsWUNNalBGeUcxdjBkWFdXWllrQWlPd1VMSjBSTUF6bHRlTUVxVWtJMGdrQzY5aEJlNzg3bGVTWFo2SE4ydTBhRFdWX296aVZicGxnOWdYRzVodzU5VEM5V2dIbGpTX1NEREp4b0JPSE1yU2F6cUJicHlYSnRJXzFfd1FtMU1LYlB0dG56eTN0R3hyZjlrUjRfeUl0cFFVQ0V3?oc=5"
+          },
+          {
+            "source": "Menafn",
+            "title": "Sanctions Risk Casts A Shadow Over Russia's Regulated Crypto Launch - Menafn",
+            "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNU1E4Y3J0M2o5ekNVM1BJNFBzN0Y0ZWhnNURZU2w3elMwMkViTE45ekJIaG4zb3A2NGltV25Gd2x3TlpybXhoOEM1cnB3ZjRjWnFzMnliV1pjLTJKbHlXaTN0Y3h0RW5iMGkyYUFtSTlQYnBxeUZuZjc5eVYtY1pCczJHTDJ5TF9wQVNyd01VSXNaUEpLUVpiTnVPYU8?oc=5"
+          },
+          {
+            "source": "Fieldfisher",
+            "title": "UK, EU and US sanctions on Russia - Fieldfisher",
+            "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQRkR0OE4zakg3ajgzTUI1UTg0cnk5LUlWU3VfcmdYb3VwSWJYVE43U3lXWHBGb0Vza0huN2xZN1BOM1dtZFg5YWFSYUU4T3p2TlRuUUl4RlB2cDV1QjdNVGJ3SDRTOWZkUUFpMVByc1F5TV9GWHFNV2REempsczhtRlFzNUJKZ093WTJVX0I2bDlDRl9IbGJ2NjhPbXZHV3JZRWQ5cXpJakpWYlRSVnpOSGlJbw?oc=5"
+          },
+          {
+            "source": "ad-hoc-news.de",
+            "title": "MOEX Russia closes up 38 points as Trump delays sanctions - ad-hoc-news.de",
+            "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxON1pvNkpnU3B4TlRtRHFpWHk4WW1VM2x5U0dnQzZabTFZSWJwbTBTY0hWckkyUVh1YzNVMUlVVWI1cmZ4RVFhUGNtY1piam9UUE1mOGtGYWhPOHZUMGJqckVQYXllcm5yMjNKUmppdGVwMXc0SUJlMkl2MFVNeG1abDBxQ2pYTkZxd2lzX1g4QTJvTlZ3dXJyaFBRY2lidU56SmNvVkJkUEFjdmIybmxVLVJ0UURVTXpGX0Ew?oc=5"
+          }
+        ],
+        "outlets": 4,
+        "region": "Russia",
+        "state": "RISING",
+        "title": "Sanctions fears loom over Russia’s regulated crypto trading launch - TradingView",
+        "topic": "sanctions"
+      },
+      {
+        "links": [
+          {
+            "source": "www.tmgm.com",
+            "title": "KOSPI falls as Asian stocks trade mixed ahead of Nvidia results - www.tmgm.com",
+            "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOclU2cWJWV2MtQ2poWDM2ZFRWR18weHhYcVg3WFUtT1dscUhMYzBfVGczdUtOOFR4VGVER2l6bk9RMVR6MUR3bkVvemJjVm44SDNNV253UjJSRldXSGgwLWJxam4xM0Q0cFJUMzZ3VmVwa016RG5NRjBoMjlvRWMtR2MzVDcyUFMzQ2FXTWZiZGdqQ0d2RF9pUXdxNUItR1hEOGQ4Qi0xY1lTNkF5aGFxakc3dFVleU1ScUVaYXlpWUp4bFFzS25ySlJzS1ZVamhCOWFNWmtR?oc=5"
+          },
+          {
+            "source": "www.tmgm.com",
+            "title": "Asian stocks stay mixed as KOSPI drops ahead of looming Nvidia results - www.tmgm.com",
+            "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNbGVjU2R1anpLZnpQMFJ1WElwVWRmVEp4N1lVZW9pUF9fTThnX0tJRHgxdlU1em5hSUowb2hpa1dYa0tycGU1eHVST3NSMTBLTjM0TzNVcmd6Y2UzaEliZjBQX1dZLXBlQy04UDdmSG1JVkNkWnMyZ3pkbEJ3dGZod1VMNUVFRWpEZ3YzcnA0clY5WHkzeGE0MERKaktRbE1BTnc2cUk2OTFCakgxYzVpME93OHF2ZXNwbnlrOWJ4UW5MX281blRwYkZrQlNlSUw3ZFhlRGdn?oc=5"
+          },
+          {
+            "source": "Seeking Alpha",
+            "title": "Asian markets mostly lower as weak Japan GDP, soft China data, and Nvidia caution weigh - Seeking Alpha",
+            "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNZk9HUm5mTmR3YnRiWElibWt0NjJ4RmVfckl2aTJrSUVwRVEwdzNlVm9aOVNLcUNxSW53blZSNklpb3RKQnN0bVJUMjZHYTRhelB4NXh3aDlrRFF2Z2hka3IwRDMtQWdabUN6YkgzMlFWamg1VGVwZm5fckRYb0tFY2t5TDZ5RHRvbnRJeFY1QURJREpzYng3U0xQY0x4OUNCMlFJWnQ4ZV85LXdDMXp6ZFlORS1fVXFkdzdkLVNFa0M?oc=5"
+          },
+          {
+            "source": "TradingView",
+            "title": "Asian markets mostly lower as weak Japan GDP, soft China data, and Nvidia caution weigh - TradingView",
+            "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPdDJHS2lJX1lSYkZKTVdzN0JXQ1l2YkxKRHNReTNKX3B5dGJKR19fUEdHOGZiMHFsaFpDNlJiY2tLUXhsYmFvZ25uVzV1TnZaeXY0dzRtWTZZdGhiSUZURHBGVjdhZUFzMzVfVWZHZXdFNjNUQWkzTm1wOFZNSGZtQ3VfT0sxb2VHWGtoZmJ1RGFfRVNGRzFGeWFRV3FZbFd4eWVKRlZDM0VyR0lXS3lZMDhRTU42cE81b0J4WEgtbnBmQndQSlh0c1VYc1lqNEpwVXlqbF96R0JzZFdoZ3VUdmZ3?oc=5"
+          }
+        ],
+        "outlets": 3,
+        "region": "China",
+        "state": "RISING",
+        "title": "KOSPI falls as Asian stocks trade mixed ahead of Nvidia results - www.tmgm.com",
+        "topic": "Nvidia"
+      },
+      {
+        "links": [
+          {
+            "source": "kalkine.ca",
+            "title": "Eurozone Inflation Jumps to 4%: Why Energy Costs Are Reshaping the ECB Outlook - kalkine.ca",
+            "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNWGYyZXFyaEsxWDRrLXBpaTlDWEFoNURqTE90VHNQQ201aHprOUh5NU9JQ29lTUg5R2FhemxWSm1aY2ZOQ09OVEl4OVh6dFNTOHEtUFJDMzVKRFlBWVl0VzI3ZTJoOHJMUEx6aXlfRGo2QjN1M3ZOV3ZPYU5ZMkQzeDhTZ2UzZ2pUbkJHQl9RY1RsVVFsLVdqSi1xLWNTSkZsT2tZVEh2QktvUWp0SGRSSHRsOVg?oc=5"
+          },
+          {
+            "source": "MLQ.ai",
+            "title": "European Commission raises its euro zone growth forecast and sees inflation above 3% through 2027 - MLQ.ai",
+            "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOTnJsMWNEM0s2S1VRQnRiV0FEUnpSbG95VmVORERWa0hoUXp2X2ktdmUyNlEwTzNmXzA2WmNMaTdxN2FnU09IYTlQS2RkMlFyQkllYWh0eTBZZk01T2UzaFdfUGVSQkM1bVJjSEdhTXM0dWRwZEQ5ZU03OUlnMnp4LVo0WmdzYUYzUHdiYW5XdVJuZVcxcmFuVExZVUlOMTRhdm10WWNRclJjWkFXYk8wRnZfV2l5NkJM?oc=5"
+          },
+          {
+            "source": "Bloomberg.com",
+            "title": "Euro Zone to Grow Robustly as It Shrugs Off Inflation, EU Says - Bloomberg.com",
+            "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPTndkVXgwNDhmZzRXa1U3bWZMd243eU5GTEhfS0x3TmdMejktRklDeTMwb3JHZ0VLbGlBdFR6SVJ1Rmh3bkVJZEcySFBwWkxHRlpZclNFS0VZMV9XT0VDLWJrdk1xSUl5LVNrM0Y3bVloMmNReDI0V3dMLUh6Ri1WLXlQWjhfa0IzQUtRRTlwdmxoUHBVN1k4XzBRNU9NdEUzdXFBRTBIQUxySHRPeUpYajBn?oc=5"
+          }
+        ],
+        "outlets": 3,
+        "region": "Europe",
+        "state": "RISING",
+        "title": "Eurozone Inflation Jumps to 4%: Why Energy Costs Are Reshaping the ECB Outlook - kalkine.ca",
+        "topic": "inflation"
+      },
+      {
+        "links": [
+          {
+            "source": "BBN Times",
+            "title": "Hong Kong Stock Exchange Today: Hang Seng Index Drops 1.55% to 23,637.60 as Tech Index Sinks 3% on Nvidia Fallout - BBN Times",
+            "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQZW9mUGVJZlB3djNoNmZ4a1FIdmdMWlR1TnhTMFZsazI4dV9ySGtjYmFLbENOSXNTN1VSdjAtWEo1b2FHdUN2TXV0X1ZudVFQVFBLa1JOQ2syUmtmV3UzblNRZFQxbFVUbi1QWUVEQUhqeGVhTWJaZ0hZRlJxeEJYcW1fM2ZpYXp3c2hCVU01VXh5TWtSdVBvNWJVeUxoUDdpdVZfWVBJTmZmeVVYYXd1RGtxNk9WWkkzclo2RzRtcWtjV3REd3c2Q2I3eERUejNPRjloX2o0MU5RaW0xX0E?oc=5"
+          },
+          {
+            "source": "Anadolu Ajansı",
+            "title": "Asian chip stocks rebound after Nvidia earnings beat expectations - Anadolu Ajansı",
+            "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQQ0owS25hU04td1o0dzU4X0ZKZk1xa3VtVWhjT2xBMjZ5aUlVbzJYbklXSXhPTzlZTkp0eURpdVd0Wkd3OUpmbEdCNExUTXNTb1VHbkEydVNkTkNMZlNuNDhJTF92UHY0R19VVXpILWFISTZkdW9QSTNiZ01NS0pNQzc0MzZpdm42U1BNUWV4VU9nVHFaTVBmSVhubFB2cE9UWVFkME5lcmdjZw?oc=5"
+          },
+          {
+            "source": "Anadolu Ajansı",
+            "title": "Global markets show signs of recovery after Nvidia's stronger-than-expected Q3 earnings - Anadolu Ajansı",
+            "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxObUJleGJ6SGh0RWkzTXdyd1J6WlpOaHNUakhuMm80SVNGSEpVQTRmQ2haQUtaR2h3dlpJOEFIcjI5Y3ZTX3ludk9vVUlxS1ZRUDRvMEFNNnd1S1FhOWhoNUtjWF9IMUFLcGlxeVkyLXp0WlE1RUZaSW1ZeGp3bnZrWURBVmprNE11MUtBRjkzck43TmsySU5seFlqTkhEV3JDZE5ScGZlYWhHYzkwYmpGN1l1T3k1WkpwUHdLNk93b1E?oc=5"
+          },
+          {
+            "source": "www.tmgm.com",
+            "title": "US tech curbs dent sentiment and drag Asian stocks lower ahead of Nvidia earnings - www.tmgm.com",
+            "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPdlBOekNSenZWVGxwRWhpdXFxbTFkUnpxdHpLdkt3MTJVMnVDTmtmYUh0QWJHUmdkM19GNmtyY21XaFRqWDljbGdfRkZubDg0b2NXSXNud3JZQXRvZTZwcExpTzg1NERoQ2lWSmVhS3NhZ0xMQnJSc2NuMjdDZHFyelJKbzBOTWJXVm9JaU8wS3EwSW9uMFJIYkNPWjlnM2E5RkFlWXJrRnJPSUJlM3BaaVdFMnlPOEYtQ2g0LTVPdWVjem5qSm93WXJSWnNRdUdVRG4xUWE5eWFEbG5hUlRFTA?oc=5"
+          }
+        ],
+        "outlets": 7,
+        "region": "Asia",
+        "state": "RISING",
+        "title": "Hong Kong Stock Exchange Today: Hang Seng Index Drops 1.55% to 23,637.60 as Tech Index Sinks 3% on Nvidia Fallout - BBN Times",
+        "topic": "Nvidia"
+      },
+      {
+        "links": [
+          {
+            "source": "The Economic Times",
+            "title": "BOJ's Takata calls for early rate hikes to curb inflation risks - The Economic Times",
+            "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOLUtrYWtENC00eXhwMEZ6bm5hTTVoTkNEU01Pck1vaFZhTGlfTWZkb3loTE9IcVgyeFFTYjR0V1htQ3Y3akJVbDRMN1lPWDZ2ZWxpMktGQ0o4NjBqZW5JNWtoYU5GRmJZeV83a2syY3F2N1dXVlcwVnc2SGlXWHpJTGdzb21qYjd0dk85cDhfcEdROWFJdTh5bl9hc0xkSTQwNEtvSk9uYllhNkNEeEpyZjM3S2J4M2VrZHdXTW8zdE5ZUXpaZTZPTHBNaHNXSGNmdGJlZXd5M0huMVVUYXhoSFFmSTFqcWttcHlhWtIB7AFBVV95cUxOLUtrYWtENC00eXhwMEZ6bm5hTTVoTkNEU01Pck1vaFZhTGlfTWZkb3loTE9IcVgyeFFTYjR0V1htQ3Y3akJVbDRMN1lPWDZ2ZWxpMktGQ0o4NjBqZW5JNWtoYU5GRmJZeV83a2syY3F2N1dXVlcwVnc2SGlXWHpJTGdzb21qYjd0dk85cDhfcEdROWFJdTh5bl9hc0xkSTQwNEtvSk9uYllhNkNEeEpyZjM3S2J4M2VrZHdXTW8zdE5ZUXpaZTZPTHBNaHNXSGNmdGJlZXd5M0huMVVUYXhoSFFmSTFqcWttcHlhWg?oc=5"
+          },
+          {
+            "source": "BigGo Finance",
+            "title": "Japan's Economy Stalls in Q3 as Weak Yen, Middle East Conflict Fuel Inflation; BOJ December Rate Hike Expected - BigGo Finance",
+            "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1OT3BHYXo0SzBmZkcwQlhHMjNfZG9yMWlRSG82U05iZTVQdHlvcFo2VWljaDhwbFViWWRwVVN4WGg3U0JZeUEtODVuVkt6dFE5RXdGQzNqZ2FNNTloZmdhbk14cUZySkViSHk0QzF4bGstS3d5a2c?oc=5"
+          },
+          {
+            "source": "investingLive",
+            "title": "Japan economy shrinks 0.1% in Q3, first fall in 4 quarters as inflation hits households - investingLive",
+            "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQdU9sMjNub1pTd01xZUptNDZRNUc1S1R2ZFZVeENBTmNWUnh5SXB2eVRPOEVqZ1RXZzU2XzRtaEE0RDI4dHc0TTNJVWhOWmFrZGlJaEVRTnpROWI0SnBzcUF4OE1GaHJFYVozMklyUUY1TE5xNUo0cWdnaHRWY21vWDU1TUhUckVjWW83UTZ3N0ZGc1U0czA4QU5ZYUpMNkcxTGRYTjc2Y1ZfOVlZMEJzc3NyWEZPUGxz?oc=5"
+          },
+          {
+            "source": "TradingView",
+            "title": "Japan's producer inflation accelerates to 7.1% in October; BoJ urges caution on rate hikes - TradingView",
+            "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPQ0dyZmZ1bjdHX0hFUE9aUE5sMkw2dnN0U1JHaGlUR2d0SmgtbkJfOEdfWVoyYUV6UEhMN3NIa2pqVjNybXZNVUdBNkNEN2stQ1NuVE94MUhHZ0xnbUNBQm4tSTFrbm1yRHJ4ejF2SkE4NldUczExNU84UHFKcXR5VXVITXRrZkRHc3dqeVhfOEsyWFVtdVF0dVl4eHR0WDVlX1QyOUVyYUFXTDJHcEFzaE5ES0RPZ20ycnlQd0gzRmtuRTkzTUZmem51LXpJcktYTkp2UzVsZlZ2c2x0N1RlMDZQYzRZZw?oc=5"
+          }
+        ],
+        "outlets": 4,
+        "region": "Japan",
+        "state": "RISING",
+        "title": "BOJ's Takata calls for early rate hikes to curb inflation risks - The Economic Times",
+        "topic": "inflation"
+      },
+      {
+        "links": [
+          {
+            "source": "FXStreet",
+            "title": "Asian stocks trade mixed after Nvidia earnings, KOSPI leads gains - FXStreet",
+            "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQMWZhN0FfLWRQRkZyOFBVd09SVUNOMnFKWkQtVzB6S2dWRDdiQWtfMGlwNGJPaHlRWWNudUVyZU9kdGxGemRmVG93N1FlSm0zY3ZaT29wNVNPd1M0Uk1fVlRvamhNTm5NdXdOMFEyMGtjS25yWUNYVGpVeTM2SzRVM1J6bmRabzMyNm1QYlFOVDNLbUE0VWhRRV9PX0FhOVVOVVRsMGVwV2QyRXc?oc=5"
+          },
+          {
+            "source": "TradingView",
+            "title": "Nikkei leads Asian sell-off after reports of Nvidia shake-up weigh on U.S. futures; Japan PPI beats forecasts - TradingView",
+            "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxQclRWd2hRVDNrWHdxcklyLXdWYWdMNFJlLVZFRnhoNHlxWlJSLWRSVzBPUmNlQ3Z6UXBhTmY5akpnVThpcDJDcTAtSmZHcmxxR1g5WWZrVXQ4NGtMeHVfVHllb2o0Q0Jjam1zT0VCUWtfQzVfYzlvM3pQZjA3MFgxYkFqcmNXOWxseFBxaEFYdThGMkVVNlpCemR1c2l2Q3VVSVVOR2IteG1NVGpGTlNHZi0yNVM4blRLVzNwZlNON0liM29JZ0t4dmt5QXFPdWtzLU5GQ1p1SEdBaThGcHczNHJVNkFiSmFQN3o4UkxJM3AxbE12WXFMQzlHdFc4S1VqSVRha0xyNjFfXzdFbE15OXV0ZlZxQWk2?oc=5"
+          },
+          {
+            "source": "Seeking Alpha",
+            "title": "Nikkei leads Asian sell-off after reports of Nvidia shake-up weigh on U.S. futures; Japan PPI beats forecasts - Seeking Alpha",
+            "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPRE5kY2NtMXdqcWVOMDRBVXFBNEtMRVRpbi05RGV5VUpSMExBbF9aVzZUTGxzQ2VrWjl3RkljWENfMlRmeVdEZEFMZGNnX1M1dUk4Z1EyTy1UTXpDYVBpeUFPVExFZENINndVVlY4TUFJMGlrLS1PazdQc3VOVlBjZjN1aTNjM01jUkw5VTFINTNKNWo0OG5QNWtJX3h5OUpUcEd5N1NGbkZZSVV0YXhSX2txTWV0bEdGV3QzeTdwV1lwT1hXblVqSEZTUFZhRk0?oc=5"
+          },
+          {
+            "source": "TradingView",
+            "title": "Nikkei leads Asian sell-off after reports of Nvidia shake-up weigh on U.S. futures; Japan PPI beats forecasts - TradingView",
+            "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQVTN2eWlBY1U2eml4NUIyNEVxb0EtQU5vLVhzRVFxTFlldXBEX0tTd3NsQnFDTnpucGVLa0ljQlhCT1B6T0JiS2tsYzBTQ3lZTWZYVlk2QUNuT0VRODBJcWVNMV9JWTY0WXBiUU9Dd1ZyQ0o5VEpsUGJhbUFNZGJyaDcxTDBIMTNFZ0hGSUd0T1lnX3kxcmlDdmw5alBpc3RreVYzbmNLaWd4SVlKTTRoQWtSM2hoNlgwREN5NHR1bjFmV19jXzhBYl9haUlMMFgwRzk4alVaOUhmN3gwQmRWOVpkNDQ4b0ZSX3R1blgwVWlJcnJMTng1ZFhILWRQbGs?oc=5"
+          }
+        ],
+        "outlets": 3,
+        "region": "Japan",
+        "state": "RISING",
+        "title": "Asian stocks trade mixed after Nvidia earnings, KOSPI leads gains - FXStreet",
+        "topic": "Nvidia"
+      },
+      {
+        "links": [
+          {
+            "source": "Free Press Journal",
+            "title": "Indias GDP Growth To Slow To 7.2% In 2027, Goldman Sachs Sees Inflation At 5.7% And More RBI Rate Hikes - Free Press Journal",
+            "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQNEQwaWwxVG54cjVzS3Z4SVR2UGluZkdBZVBLVlUyR2dpTVhCRVNOVzVmaFdsZmlwM2QzR3J0TXBoUXV5ZWJad18yNlRReDVHQTJPdG1jRFhNMDl4MlpRTm9zWjYxdUNJWEs0ZXFKcHBBdWRUWjhJNVFtaWF6YkZWWEtnSWh2dnYxT1Rkem55SkFVeEFFQ05aWEZ1dUltamFWdlZTTDNJMWotbzNiVFdJN01oQUZHVEpGV3lkeDJNUUNoRnZBakdod09XNW5Ba3Zua1dBV3Zn0gHbAUFVX3lxTE1jTEIyWnFVWFhrdmdkdEFvZ1pWOWczTEI0UlQ0c01faG1YZ2V2anFoa2UtX1lUakw5aHNJU01SNHlBRDNfUnFQSjg0N1hNUzZIV2NBRlh2LUpzQklOcGp0OEhDV1M2d2x1ak5fbnN1UlFHU1cwcURUSDU2N1YwRjlxbFRzd290c0RjVXBaeFRUNTcyYV9qZWdMMkhXUHVsTVZtNmNjRUJNV25JcWotZm9IY2xUUy0telMtREV2R2MtanZIQ2RvcnU1WDF6UC1xdHBxRmhZNnpYWjJGbw?oc=5"
+          },
+          {
+            "source": "The Economic Times",
+            "title": "RBI may hike repo rate by 25-50 bps in December as inflation breaches 6%: Experts - The Economic Times",
+            "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOdVFxbVpsWmxfSWp5YWEzRHZGT0duN1JDUE5VUHZKb1huakY1U2xpN2h3cHdQaWJxUHJzRkxVcmc4U1ZXWnFhQWlUbHFtMm5yN2wzSlQtal9NWUM0WVFNNGJPTkFxSkRLSDJuLXN3cGYxMTdZa05SbWNyTnZ5eHFaWk5POWVlZVRoNDZGa25hQklvWFJWaVFnWVktUkxzeENIZVI3NUViYUI4bGVUYUpRNUU4Y0NVUmJLTUR4eVg5TjdJOWtUQzhYelZNMjY0elp6WFMxWEJEcm1QaVYtcWUzTDlyVVUzWUc00gHuAUFVX3lxTE9CMGsybEZITUFMX1Fuei02NE5yajdGSXpKNmtCMEFndGFza1ZmNkhxWUowQ3VQUEZlZWhvSlZ4cEhJU3FfaTN5YWtyOHYxeDlKWERoaEVVUWRxWC1kX1h5d3dKUkkzNE5HVVNkd0tQTC1GdUQ0cy1iYmFxSXloRzhJUHotRk0xVnBoSjJCbUZ3ZzhKQVMxVVkxV2VyWUM2YmRMOWtWM1FwaHFzbEh0Wm45ODBvS2FWTUM1Vl9rMVdoSWsxeEpITURmQ1RpS2lYQnFDS3J3SkRIX19LOGEwOExBSzRjbWtRQTBPMHJLd0E?oc=5"
+          },
+          {
+            "source": "Business Standard",
+            "title": "RBI may need tighter monetary policy to contain persistent inflation - Business Standard",
+            "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQQWRnUUdBOHpNX1JzeXlXdlQ4aVJzZlhzcElINWxfWU8zX2N4TlRmMG1CMmItakc0VDk2TEIyQ3luOWlBeGdGZzcxVE5sMjlrR3o3Q1FCQkxkdnAxS0xKOEZlQWx0dGNaTUJqRE5lNGRXWmVrZHNicS10VkVrVUZpRk81ZGhOaWpZWHJFX05NdVZfQk56NlNUWUJNcVlJc0hnTFBCYmRzcU9EWVN0MnRoRmZNeVlZVlJMU19lVThvSFFsU2FpRTJrc25qSkhwNUNqNUxQcVhGOUdRUdIB2gFBVV95cUxQQWRnUUdBOHpNX1JzeXlXdlQ4aVJzZlhzcElINWxfWU8zX2N4TlRmMG1CMmItakc0VDk2TEIyQ3luOWlBeGdGZzcxVE5sMjlrR3o3Q1FCQkxkdnAxS0xKOEZlQWx0dGNaTUJqRE5lNGRXWmVrZHNicS10VkVrVUZpRk81ZGhOaWpZWHJFX05NdVZfQk56NlNUWUJNcVlJc0hnTFBCYmRzcU9EWVN0MnRoRmZNeVlZVlJMU19lVThvSFFsU2FpRTJrc25qSkhwNUNqNUxQcVhGOUdRUQ?oc=5"
+          },
+          {
+            "source": "WION",
+            "title": "Indian economy watch: WPI inflation rises, unemployment eases, foreign inflows lift stock markets - What do the numbers tell us? - WION",
+            "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPUkFaT3BRYXFVYTJILVVyaE82OUh0cU83T0syMENsWFRYQ0Q0ODJ1VkJBZ2lOWW5IRnFiSWh2c0FhMFFzMnFzdm5VYWNUSnozMVMwRUFXUkJqODhaN1BiN05zTVFlbFVmWWg4QzlqZ1ZSaE4xRGkxd28yTzlGYTVDYmVXU2FSSHlfc0FrZU9UME5yb1d6aDM1WjVKSmdVWDF3aHVvRGhNY0ZhRXNwTGhIa1pNd0ZUX1lEeUJ6aVpTRmtuLTY4ZEh4UTZLbTFMSU40YWRmTmdGby1HODNhLVBRYVJEbk9oMmU3d0dTZml2Ml90RWRjckNKeUJQVkIwTTJ2OXBQR3dQYnfSAY4CQVVfeXFMT0JQVGZkSjVPemNLeWNJLWFqMmE4d3dJeHJVaEJUejFLN2RxY08yeDVZZ3Qwajh6YjJyQUFNcDVCYzZrRHNuWURhMnpJRExlNkxlTGVwTnpidlNKNTEzeU9Mcmh0aFFvY3dQN3NYaTBUQUI0b2JVeUhsTFdpVkZPNXhMRVBDbFpIRi01SDZqeUQzU3I3azh5a2hmU1RXYkFRck0zZ0x5YzE2UjB1bDFEMFcwS1FCazE3Wm1rS01lek93LUhVekdvNXY2YWstQVg0LVR1ZmgyaXYyVzZCcFA0ZVQyNzZPT3FhR2NvaVVUeHhkcW5KaTRtWlNiWjFIR2hrMVQ2S3E3QlNiRHgxSjNn?oc=5"
+          }
+        ],
+        "outlets": 5,
+        "region": "India",
+        "state": "RISING",
+        "title": "Indias GDP Growth To Slow To 7.2% In 2027, Goldman Sachs Sees Inflation At 5.7% And More RBI Rate Hikes - Free Press Journal",
+        "topic": "inflation"
+      }
+    ],
     "podcasts": [
       {
         "links": [

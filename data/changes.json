@@ -1,402 +1,181 @@
 {
   "baseline": false,
   "counts": {
-    "new": 31,
+    "new": 13,
     "pages": 0,
-    "prices": 7,
+    "prices": 8,
     "severity": 0
   },
   "groups": {
     "new": [
       {
         "date": "2026-11-19",
-        "id": "hubermanlab:1ba0d90767561bf7",
+        "id": "juliandorey:ed333db2158810d3",
         "kind": "x",
-        "label": "Nov 19, 2026 9:00 AM CT",
-        "note": "New Huberman Lab Essentials episode out now: 30 minutes, key takeaways only.",
-        "published": "2026-11-19T09:00:01-06:00",
+        "label": "Nov 19, 2026 10:00 AM CT",
+        "note": "Why The 1972 Treaty Called Bioweapons “Odious To The Conscience Of Mankind” Annie traces the start of her book through Doctor Blum, revisiting the 1972 Biological Weapons Treaty that banned weapons “odious to the conscience of mankind.",
+        "published": "2026-11-19T10:00:01-06:00",
         "section": "x",
         "severity": "",
-        "source": "Huberman Lab",
-        "title": "New Huberman Lab Essentials episode out now: 30 minutes, key takeaways only. https://t.co/…",
-        "url": "https://x.com/hubermanlab/status/2123431105701216341"
+        "source": "Julian Dorey",
+        "title": "Why The 1972 Treaty Called Bioweapons “Odious To The Conscience Of Mankind” Annie traces t…",
+        "url": "https://x.com/juliandorey/status/2123446203333710151"
       },
       {
         "date": "2026-11-19",
-        "id": "cyber:b1a579d6fecac6ff",
+        "id": "headline:f7c2e9967d3d2c12",
         "kind": "cyber",
-        "label": "Nov 19, 2026 9:15 AM CT",
+        "label": "Nov 19, 2026 8:47 AM CT",
         "note": "",
-        "published": "2026-11-19T09:15:00-06:00",
+        "published": "2026-11-19T08:47:05-06:00",
         "section": "World threat board",
         "severity": "STANDBY",
-        "source": "The Record",
-        "title": "European Commission confirms cyberattack, says hackers used AI tool",
-        "url": "https://therecord.media/european-commission-confirms-cyberattack-using-ai"
-      },
-      {
-        "date": "2026-11-17",
-        "id": "headline:f55e641b827b32c0",
-        "kind": "cyber",
-        "label": "Nov 17, 2026 2:54 PM CT",
-        "note": "",
-        "published": "2026-11-17T14:54:27-06:00",
-        "section": "World threat board",
-        "severity": "STANDBY",
-        "source": "Nevada County (.gov)",
-        "title": "Important Notice of Data Breach for ECM/HOME Team Clients - Nevada County (.gov)",
-        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5vVkhVTUs2c0lmRDlLTVY2bXZ5SWFsOGNBckxEbkpJUlYxVGlRN3ZWcGJKbXBTY3JZVnoxazNTbmRkYUIyVm1ISTdJazZwWVNrWWdyaDU5YmZOLXotVXhlX0FRTGYwRk12dHpJ?oc=5"
-      },
-      {
-        "date": "2026-11-17",
-        "id": "headline:e2b00f081fb43c3d",
-        "kind": "cyber",
-        "label": "Nov 17, 2026 12:45 PM CT",
-        "note": "",
-        "published": "2026-11-17T12:45:00-06:00",
-        "section": "World threat board",
-        "severity": "STANDBY",
-        "source": "WBAL-TV",
-        "title": "Some of the world’s most-visited websites targeted by cyberattack - WBAL-TV",
-        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBEQTM5aEhLeUozcmY0Z1ZWdmk2Rl9oYWtrelhXblZPRXZfYVk5b0h5V1VVWlBTamZVZ2g5MEo0T2FPamZ1aHFNaTVOMGpvVTlkeHBkUU1GZUY0bzVWZ0xwRTROdVR5Wk40QnpjYUhZR2l3bEFyOTRmS3Rn?oc=5"
-      },
-      {
-        "date": "2026-11-19",
-        "id": "headline:40b44044197c7796",
-        "kind": "attack",
-        "label": "Nov 19, 2026 1:37 AM CT",
-        "note": "",
-        "published": "2026-11-19T01:37:39-06:00",
-        "section": "World threat board",
-        "severity": "ALERT",
-        "source": "EDMO",
-        "title": "How disinformation exploited the Kraków tragedy to attack the usual targets, and how Elon Musk made things worse - EDMO",
-        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQbzdqaWVtOXA5UDdVU0V6WmVtQXBmSlM3aWtnUGN5dkM1VW1FenUtV0VERGtlRWF2cmt4S19PNExMN05WM2lJcGl1QUJaNnBrRmpJVE9jUF9fX3BJVE9QeEFjNVVGaXdCWW4tdXFac2FsNC1iT1R2ZlVJWXZvYV8yYWVwRUtiNkRqYVVZZG1Pam1Pa1pTdWhTVUhFM1hZaFhhNHBLaXJ1N29QNkVTNDZYWVk0MVBnYTVVbi13X1pybHdxU2d5SGVvSWk1NTVDOFlSUEM0REZyZlQ?oc=5"
-      },
-      {
-        "date": "2026-11-18",
-        "id": "headline:516bd6dfbeafd855",
-        "kind": "attack",
-        "label": "Nov 18, 2026 6:16 AM CT",
-        "note": "",
-        "published": "2026-11-18T06:16:05-06:00",
-        "section": "World threat board",
-        "severity": "ALERT",
         "source": "ABC News - Breaking News, Latest News and Videos",
-        "title": "Deadly mass shooting in Poland investigated as terror act, prosecutor says - ABC News - Breaking News, Latest News and Videos",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOb1pFNDZDUm5SZkhOYWNkVS0waDU0bXBlXzJZVHlKTW5BVkdCWVFKYUVUTXZ2TnZMdExJM2FfcWF2MUVmVm5MNnBjeW9fVmpWaDZpeDhaTUE2LWdOQ1BVRDMwNFFsbTExaVhXS2dnd3gybmljTE9pRGowck5ER2xpQnp1eVBhVTkwdU92cl9uZi1iMV9kYXBFQTJDVEJGZWFqakZWMWlpQkxCSUdkYTBubVJuSThQZ9IBuwFBVV95cUxPM2I3U25ZNVUwdUlUbGVEN1lrRDlwcWFQb2VsVnMzZWMyY2RDaUYyelRqejVOX3BaMC1CQU8wbFh1RU1EdEFhWUdUR1dLT1RNMWtESWVLdE13QUxJRWlWZ3E5YVA5OGZscmFMbnB5XzNaRlpwelk4U2pUWTY0ZXFBMjJxdHIwU3FpWFRSVmJyQ25fTzdFa2l5SGl1MTRaTGNjaW1hbm9ReERvaXFvUmtvTU9jazB6WENsUllV?oc=5"
+        "title": "JPMorganChase reports cyberattack on third-party service providers - ABC News - Breaking News, Latest News and Videos",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPRkNYSE1qZGh4bC11N295LXBVNkxQQ1Y4bDFxdVdUV1FyN3VSd3BzRlV2bmZfcjVYNmk3N1VmejBwT21PT180Yk92SlFXclhWalFibk9BaXpEMmg1V2lGUXl5LWtvWUlvM0JMMzlsM1VQNnFBTVlCVUhhZzVvaDVVN3ozcUFVcHdkNlpxWjhqSVhoY1h3eWx1M2NiempWS3lVSGfSAacBQVVfeXFMTmUtbUhGRHFLZUphcVYzUjB0bHVjWDlrRFVROTdvWlpEeUZ0a2hCd2U3YUNTRF9wZ2p1eHVDWllmNGRITE54dkN6MEpyYks3NlRTblA4SUVPMGtNNEtVZF9lX3YwM3h2NUZ1ZVJlaWtpV1lQaXhZcXdnaVR0Y1h4LVFpeTFoRm9obWVORVVidEZ0WTJFcUpIeW51S0JJSXVTSUJ6ZGpnNlk?oc=5"
       },
       {
-        "date": "2026-11-08",
-        "id": "headline:ab64c62e75f10c05",
+        "date": "2026-11-19",
+        "id": "headline:b11f14b4fd88486f",
+        "kind": "attack",
+        "label": "Nov 19, 2026 4:39 AM CT",
+        "note": "",
+        "published": "2026-11-19T04:39:27-06:00",
+        "section": "World threat board",
+        "severity": "STANDBY",
+        "source": "BBC",
+        "title": "York victim of Krakow attack on his way home, family confirms - BBC",
+        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1xbjlnTDFIZl8xNlFDcjMyZ0dINXdmMWZUOWkzeU1oZUlVd09QQ2hsTVJBcDloQTdLUnJZQWFsVWs5cXF0TU1kUTZIanBXNXZjYk9vRjBSQWlabkE?oc=5"
+      },
+      {
+        "date": "2026-11-18",
+        "id": "headline:d4348496413bda52",
         "kind": "war-iran",
-        "label": "Nov 8, 2026 2:00 AM CT",
+        "label": "Nov 18, 2026 7:16 PM CT",
         "note": "",
-        "published": "2026-11-08T02:00:00-06:00",
+        "published": "2026-11-18T19:16:00-06:00",
         "section": "World threat board",
         "severity": "STANDBY",
-        "source": "CNBC",
-        "title": "Trump says renewed Iran strikes ‘highly unlikely’ if talks progress but warns he could still strike - CNBC",
-        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNb0l6UllaNWstdHV3YXVHY3FsaTV6blctcjJ2aDl5dnNwZF9OOFdrRXM5RlN6bUYzU2ZnTGU1bndLek5kTDFTWG1LZUFuamZLbFUwUmJiMDF1a21pOFNhcjI2SzdLVHRtWWYzOHVJVl9qMk9CY3E3Y2lEY1VOZ2txYTRHONIBiAFBVV95cUxQMjRuWnJDTHdNTU93RnRsN0IwanFIRTdWeGNEOTNxUkpHUC1GUG1sTGc1bWRmYUlJMWhabzg4ZkJhMjE5ZjdjdS0wT0RBZmVaZkV1Y0JWbHpRRDdVa1EzbEdsRXIwNzhqTXdUUlVsOVRkV1ZwYmlWTWtkcjE4emVja3JGUGVzck1o?oc=5"
-      },
-      {
-        "date": "2026-11-18",
-        "id": "headline:f902bff0eeecd5d8",
-        "kind": "war-iran",
-        "label": "Nov 18, 2026 7:23 PM CT",
-        "note": "",
-        "published": "2026-11-18T19:23:01-06:00",
-        "section": "World threat board",
-        "severity": "STANDBY",
-        "source": "The New York Times",
-        "title": "Trump Grows Frustrated With Vance Over Iran War Critique - The New York Times",
-        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQV3B0SDctTm9DMGNCbXNLM2VOd2prWE1aZTZfT242MVNtUGRVeWRUemVHRWZMSVhGM0J0S2xxMC1XRWRvMVB6XzN3VGJfTDdDSGtGMTlSMFpVTlM2ZGotaW1JZjBaWWNQZmZseEFFUFBxa3hnRDQyYnB1bzVUWXdPcDJnZU5jLTUzVUZJYWRsX1d4Zw?oc=5"
-      },
-      {
-        "date": "2026-11-18",
-        "id": "headline:0817dedfcb4b6267",
-        "kind": "climate",
-        "label": "Nov 18, 2026 10:59 AM CT",
-        "note": "",
-        "published": "2026-11-18T10:59:30-06:00",
-        "section": "World threat board",
-        "severity": "STANDBY",
-        "source": "Reuters",
-        "title": "OPEC speaks up for fossil fuels at COP31 climate talks - Reuters",
-        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPZVVjZjNMU1llNktlY290Ny1WLXp6ZEplN3Ryc29tSHlOQVRNOFk0MVp4LU5tZDBSNFQ3Ym9PR2NFU242UWE0a2lYNE5hamxfcFE0SHlwQS1iZ2o4U3Vma3NpQm5aV2hQMjNjMkptd2Y2N2R0MUR1aEF3eGRnSzg4dG9EUU12QWVqMl9hOTRpZWF4ZExac0dMeHVzeTRBUENx?oc=5"
-      },
-      {
-        "date": "2026-11-18",
-        "id": "headline:d65188e3b9eeabb1",
-        "kind": "usgov",
-        "label": "Nov 18, 2026 2:27 AM CT",
-        "note": "",
-        "published": "2026-11-18T02:27:50-06:00",
-        "section": "World threat board",
-        "severity": "STANDBY",
-        "source": "NPR",
-        "title": "Rubio says there's 'zero' information that U.S. outages are caused by a malign actor - NPR",
-        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBwRW1oWnJqVUUyZjZfQnRib1JCemo2R3hyTWZ4d2dmaE96ZnNySXlaelo1MXhpNU1fRkFNSGRtek5ubXd5Ykl5Uk1zWlpNTlphSndsVVVHVjNfTFRieG05YmZnWkx4RElkSVptdmdVdFdvd0dzNkc3ME1MQQ?oc=5"
-      },
-      {
-        "date": "2026-11-17",
-        "id": "headline:68f0ef50dbbd795e",
-        "kind": "israel",
-        "label": "Nov 17, 2026 4:53 PM CT",
-        "note": "",
-        "published": "2026-11-17T16:53:00-06:00",
-        "section": "World threat board",
-        "severity": "STANDBY",
-        "source": "The Guardian",
-        "title": "Israeli parliament elects new speaker backed by Netanyahu’s opponents - The Guardian",
-        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPb0gtc1RrcjVhMTcxa1VzWDZna1ZTRUZLWGlNcXVpaEVyT285QzFaS3RtX1VjOVVSX3V4VFlUMHRIaHBIOUtfcUNKSE43M0JMbnJKSmFVRzRPQ2pmanNsc0dZYlZ6cVNzOHcwM3ZOVmUxLUx6N3VmeV8wLTFJbVhMaUFxR2hEd1lTTUx3WFNCQWhvV25VLXdXQ3F6TGgtbWlkQk5uZmV4LU1oTE50cHlFNVVNTFgzUl9WS3lZ?oc=5"
-      },
-      {
-        "date": "2026-11-17",
-        "id": "headline:07e6cc23a7b8e036",
-        "kind": "war-ukraine",
-        "label": "Nov 17, 2026 2:03 PM CT",
-        "note": "",
-        "published": "2026-11-17T14:03:43-06:00",
-        "section": "World threat board",
-        "severity": "STANDBY",
-        "source": "Reuters",
-        "title": "France is not 'co-belligerent' in Ukraine, French minister says - Reuters",
-        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQTWFlZkhscEw5dks5TlJXenZqOWNDa3d1SUlkWFMwd2dMSUVHakg3b082Z1piQXNUbmttN1pFTkdKT0JiOWowQ0VPLV9MTTN2UnloOVFYOTI3dTg4eGFmSjNSX0pubHk1R05rLS01R241NUd3Qjh4UkUwQUF4QTFwbWJIRDhPTWdmaTB1ZkdLanV3eDY4Rm1xMEMzTWlxbXJh?oc=5"
-      },
-      {
-        "date": "2026-11-13",
-        "id": "headline:d4882d9e5f29cb7b",
-        "kind": "global",
-        "label": "Nov 13, 2026 4:05 AM CT",
-        "note": "",
-        "published": "2026-11-13T04:05:10-06:00",
-        "section": "World threat board",
-        "severity": "STANDBY",
-        "source": "DW.com",
-        "title": "Ukraine updates: Europe to send united front to potential peace talks - DW.com",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNS1oteUxOelRYWG4zNzBaMHdiRjJTQ3hWaHd4UXZmam4wN2pQbEg1dzR3dUVWVkEzN1VnbE1tTUVlSmtkNWpVaFVaa08tdzNCTDNfNlZIWTEweDFTM01ud2g5Vml2TEJfOG1rZF9vOVdOZzE4THVFWTY4R3lzSS1WNFhzYkQ0Z3loZk0zcTlmNHBDS3J5eGRUWWZsNTd5N0ZmenliVXRoTQ?oc=5"
-      },
-      {
-        "date": "2026-11-12",
-        "id": "headline:d15541953ee71bcb",
-        "kind": "israel",
-        "label": "Nov 12, 2026 2:07 PM CT",
-        "note": "",
-        "published": "2026-11-12T14:07:06-06:00",
-        "section": "World threat board",
-        "severity": "STANDBY",
-        "source": "Royal United Services Institute (RUSI)",
-        "title": "Israel's Arab Parties After the Election: Unprecedented Representation - Royal United Services Institute (RUSI)",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPYk5uUFByWlZLM2pYd1BsYkxHUGJudTBkVkZodW5IX04wdnVhb1ZKSURSUl9CY0EzQV9UbWFCcGVQYlBQM0dPLTB1U2lrMmRrUGJYTGZXd2dMMjdCZmZzOEhySVU3dHRLVHdnak45VnpTZFVEdEt2V2VGNWNFOTV4X2p2M1RrX01HbGlUVTVJeU51ZXVhWm1iWExTY2tsV2R5el9CcA?oc=5"
-      },
-      {
-        "date": "2026-11-19",
-        "id": "paper:1c07eca25a7f5f00",
-        "kind": "paper",
-        "label": "Nov 19, 2026 9:33 AM CT",
-        "note": "Open data from NASA’s Fermi mission helped an international team of scientists develop a method for finding pulsars about a million times faster than before.",
-        "published": "2026-11-19T09:33:55-06:00",
-        "section": "Frontier lab",
-        "severity": "",
-        "source": "NASA",
-        "title": "NASA Science Data Powers New Method to Discover Hard-to-Find Pulsars",
-        "url": "https://science.nasa.gov/open-science/fermi-data-pulsar-discovery/"
-      },
-      {
-        "date": "2026-11-19",
-        "id": "paper:a7a5e8385d804ed4",
-        "kind": "paper",
-        "label": "Nov 19, 2026 9:32 AM CT",
-        "note": "An astronaut on the International Space Station captured this photograph of Lake Pelku (near center) as the station orbited above Asia. The International Space Station serves as a unique platform for observing Earth with both hands-on and automated equipment.",
-        "published": "2026-11-19T09:32:39-06:00",
-        "section": "Frontier lab",
-        "severity": "",
-        "source": "NASA",
-        "title": "Lake Pelku",
-        "url": "https://www.nasa.gov/image-article/lake-pelku/"
-      },
-      {
-        "date": "2026-11-19",
-        "id": "paper:831547fbee302fe3",
-        "kind": "paper",
-        "label": "Nov 19, 2026 9:00 AM CT",
-        "note": "In living cells, tiny molecules can generate coordinated motion across distances thousands of times larger than the molecules themselves. How such small movements give rise to coordinated motion over much larger distances is still not fully understood.",
-        "published": "2026-11-19T09:00:10-06:00",
-        "section": "Frontier lab",
-        "severity": "",
-        "source": "Phys.org physics",
-        "title": "Long DNA strands turn chaotic fluid motion into a steady rhythm",
-        "url": "https://phys.org/news/2026-11-dna-strands-chaotic-fluid-motion.html"
-      },
-      {
-        "date": "2026-11-19",
-        "id": "paper:3872c486a2ae8830",
-        "kind": "paper",
-        "label": "Nov 19, 2026 6:00 AM CT",
-        "note": "Many people were caught off guard this past summer when employees of one of the world’s leading AI companies began casually debating whether their products would lead to human extinction. It started when Anthropic researcher Jacob Coxon announced his resignation, warning that his employer and OpenAI were “racing straight to self-improving superintelligence and gambling with our lives.” Evan Hubinger, Anthropic’s head of alignment science, replied , “Jacob is correct here—we really do earnestly b",
-        "published": "2026-11-19T06:00:03-06:00",
-        "section": "Frontier lab",
-        "severity": "",
-        "source": "IEEE Spectrum",
-        "title": "Why a Computer Scientist Thinks Superintelligence Won’t Happen",
-        "url": "https://spectrum.ieee.org/ai-superintelligence-debate"
-      },
-      {
-        "date": "2026-11-18",
-        "id": "paper:6904138f127d73bc",
-        "kind": "paper",
-        "label": "Nov 18, 2026 3:35 PM CT",
-        "note": "",
-        "published": "2026-11-18T15:35:43-06:00",
-        "section": "Frontier lab",
-        "severity": "",
-        "source": "DeepMind",
-        "title": "Introducing Gemini 4 Neon",
-        "url": "https://deepmind.google/blog/introducing-gemini-4-neon/"
-      },
-      {
-        "date": "2026-11-18",
-        "id": "paper:3d3b70fbdce8a4b7",
-        "kind": "paper",
-        "label": "Nov 18, 2026 12:13 PM CT",
-        "note": "",
-        "published": "2026-11-18T12:13:42-06:00",
-        "section": "Frontier lab",
-        "severity": "",
-        "source": "DeepMind",
-        "title": "Genie 4 is now available",
-        "url": "https://deepmind.google/blog/genie-4-is-now-available/"
-      },
-      {
-        "date": "2026-11-18",
-        "id": "paper:33a0201d2afbe010",
-        "kind": "paper",
-        "label": "Nov 18, 2026 4:00 AM CT",
-        "note": "",
-        "published": "2026-11-18T04:00:00-06:00",
-        "section": "Frontier lab",
-        "severity": "",
-        "source": "OpenAI",
-        "title": "The Silent Consensus",
-        "url": "https://openai.com/index/the-silent-consensus"
-      },
-      {
-        "date": "2026-11-18",
-        "id": "paper:6092f8be8f0b5c4b",
-        "kind": "paper",
-        "label": "Nov 18, 2026 2:00 AM CT",
-        "note": "",
-        "published": "2026-11-18T02:00:00-06:00",
-        "section": "Frontier lab",
-        "severity": "",
-        "source": "OpenAI",
-        "title": "Research acceleration: The jagged frontier",
-        "url": "https://openai.com/index/research-acceleration-jagged-frontier"
-      },
-      {
-        "date": "2026-11-18",
-        "id": "paper:890052863649be53",
-        "kind": "paper",
-        "label": "Nov 18, 2026 2:00 AM CT",
-        "note": "",
-        "published": "2026-11-18T02:00:00-06:00",
-        "section": "Frontier lab",
-        "severity": "",
-        "source": "OpenAI",
-        "title": "How Sumitomo Life’s leaders helped teams adopt ChatGPT Enterprise",
-        "url": "https://openai.com/business/customer-stories/sumitomo-life"
-      },
-      {
-        "date": "2026-11-18",
-        "id": "paper:f6f3a5c121add453",
-        "kind": "paper",
-        "label": "Nov 18, 2026 2:00 AM CT",
-        "note": "",
-        "published": "2026-11-18T02:00:00-06:00",
-        "section": "Frontier lab",
-        "severity": "",
-        "source": "OpenAI",
-        "title": "Inside the Codex sandbox",
-        "url": "https://openai.com/index/inside-the-codex-sandbox"
-      },
-      {
-        "date": "2026-11-17",
-        "id": "headline:e287f6358c0758e1",
-        "kind": "paper",
-        "label": "Nov 17, 2026 7:35 AM CT",
-        "note": "",
-        "published": "2026-11-17T07:35:00-06:00",
-        "section": "Frontier lab",
-        "severity": "STANDBY",
-        "source": "CBS News",
-        "title": "Nvidia's board forms export oversight panel after scrutiny over China chip sales - CBS News",
-        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBlSVR3MU1nbW1JTGJaX2NIUDlIRVVnZl9TZVpvVl9TT2ZHYk50dGk0clVueTVnVlBncmo1SmdWbTlsZTZSVTlXQ1B6Qm9Ya1k4UVZYLV94UGFPaWhpYllxOGpvVmhXTXIzbGNJQW1iZ3FYQzZwSDJKbGM5eDJpUQ?oc=5"
-      },
-      {
-        "date": "2026-11-12",
-        "id": "paper:8021ddbb9b3e5137",
-        "kind": "paper",
-        "label": "Nov 12, 2026 12:00 PM CT",
-        "note": "",
-        "published": "2026-11-12T12:00:50-06:00",
-        "section": "Frontier lab",
-        "severity": "",
-        "source": "DeepMind",
-        "title": "Introducing Gemini 4 Hydrogen",
-        "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/"
-      },
-      {
-        "date": "2026-11-11",
-        "id": "paper:0ae5b2542704a684",
-        "kind": "paper",
-        "label": "Nov 11, 2026 9:00 AM CT",
-        "note": "",
-        "published": "2026-11-11T09:00:15-06:00",
-        "section": "Frontier lab",
-        "severity": "",
-        "source": "DeepMind",
-        "title": "AlphaGenome 2: Deciphering how cells read DNA to better understand disease",
-        "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/"
+        "source": "AP News",
+        "title": "Mideast nations ramp up efforts to avert all-out war as Israel urges Iran strikes, officials say - AP News",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQVkpMQk5Ha1FZNG45Vmt6WWxWeUtMS3lSU0hON0F0b0ItSHlWY0NnUHFyQ1JTWFBPSWViZTFVZHpKNWI3V3R1TjM0b25HWTNEZGZ2Q1ItZG5hdXNGcG03M3FjZlJKNmE5SC1lYTJERmRETERvdGJOUGlsMG9pQjVVU2dEWkJxOEY2eXJYd1RtVmNlN2pIcGlLcHJlaw?oc=5"
       },
       {
         "date": "2026-11-16",
-        "id": "headline:82dc2ee4bd7a69f6",
-        "kind": "headline",
-        "label": "Nov 16, 2026 10:23 AM CT",
+        "id": "headline:63e77d9b0f930858",
+        "kind": "war-ukraine",
+        "label": "Nov 16, 2026 3:43 AM CT",
         "note": "",
-        "published": "2026-11-16T10:23:07-06:00",
-        "section": "North America headlines",
+        "published": "2026-11-16T03:43:31-06:00",
+        "section": "World threat board",
         "severity": "STANDBY",
-        "source": "Canadian Mortgage Trends",
-        "title": "Macklem to leave as Bank of Canada governor, starting succession race - Canadian Mortgage Trends",
-        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNOFc4bTV1QWQ3b2JVaXltR2JERXpVbkl2aURRdTNWZmNSMUI0ck0xeEVsdEhuNXRyMlRtWVdCbGRLazF4Y2hVZjVmd3hlVDhFWExJUW5mNHZIazlCdlZSRHNIMS1xcTRIblpYRjA2VDZaRkJsb3IwYUd0VXFqSmhhM2RpbzZVNGFhcjVqdGl0bHQybDEzUnZFVl9ySW9Welg0RkJYbDNtd29INGRtMnlzeEpGVkF0TWM?oc=5"
+        "source": "Council, European Union",
+        "title": "Ukraine Facility: Council approves largest-ever payment of €8 billion to Kyiv - Council, European Union",
+        "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOWlk5VTVlN2xzVVl3TjkwQWw5eVdJUzVSeGtra1dJWkY0Y2M0Q1ByWUpPTVZWSHc0TlhmX1dGN2pJRHhHR2w3Vjh3R2NsOXlpMWFLT1dETnVBZ3ZOb01qZDBXRnJzcjJKTndKcXZhZWlIMnpSYlBMS0R1Q0R5ZHJKLXZoYUZ4dlNJcUN1azR5YjYtSGFrbnFyNHl6MUdreFZySU1zUVd3LTJpdnJsdmZfU1JXdW5wWWNTNWhaNTdyMFNRemJIT1p0RGNsOTdEekJtSDB2Y3c4cVRUcGM?oc=5"
+      },
+      {
+        "date": "2026-11-12",
+        "id": "headline:259cdffd8b7d23b6",
+        "kind": "climate",
+        "label": "Nov 12, 2026 2:00 AM CT",
+        "note": "",
+        "published": "2026-11-12T02:00:00-06:00",
+        "section": "World threat board",
+        "severity": "STANDBY",
+        "source": "Geneva Environment Network",
+        "title": "Climate Action from Geneva to Antalya | UN Climate Change Conference COP31 - Geneva Environment Network",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPN2ZQbU16eDVFTGpGdmJwZkFmWnhiR1NnZWpXVkItQWJIeG1lZlVuQXFhUUI0QmctZTFOdFRtM0hnUks2TVRYYmk4ZGwtaHFCbUljckNnTTY3MUxQc29IZUo3VkhLUGo3eXRIQjA5N2pSeG1DM2VNZmw0WV90REl2SW53dHdXTjl4c3FrR3VuTTgtcDE1dE5zczN4RUFOa2k4alpxNjVKSzFJdE5iSm5TR0p5dXNia25kd3pibFk3RWdRRW1yRXVQZ0NBd08?oc=5"
+      },
+      {
+        "date": "2026-11-19",
+        "id": "headline:f521c812228b4d38",
+        "kind": "global",
+        "label": "Nov 19, 2026 9:35 AM CT",
+        "note": "",
+        "published": "2026-11-19T09:35:00-06:00",
+        "section": "World threat board",
+        "severity": "ALERT",
+        "source": "The Guardian",
+        "title": "‘New page in history?’ Xi, Trump and Putin summit was more of a footnote - The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPZmxlM0syUnVsd3Rid2dfLVBOekZMT3pNMHF3eVQwYndQNmpYaDh5MHdYZFZCanhibW9kZVJ0Q3N3bGtuVFdvUlY5M1BDZzVoekdKWXVESWV5NDBzdFhiX0twbmNBNUl4YkpMX3NUYmdLSEF6bDR1YTUtMnJUb0g1TF8yb0hiUHFmOGltVk9LT25DckNfUHFBaW92MUJUa1RQUGx2SmhFRWN1Z1NVVTlOYmZPdUQ?oc=5"
+      },
+      {
+        "date": "2026-11-19",
+        "id": "paper:c4af67fca96259ea",
+        "kind": "paper",
+        "label": "Nov 19, 2026 10:18 AM CT",
+        "note": "",
+        "published": "2026-11-19T10:18:48-06:00",
+        "section": "Frontier lab",
+        "severity": "",
+        "source": "Nature",
+        "title": "More tropical cyclones hit peak fury at the worst possible time",
+        "url": "https://www.nature.com/articles/d41586-026-03748-y"
       },
       {
         "date": "2026-11-17",
-        "id": "headline:297f4ce616485afa",
+        "id": "headline:8ab310aaff84326e",
+        "kind": "paper",
+        "label": "Nov 17, 2026 6:16 AM CT",
+        "note": "",
+        "published": "2026-11-17T06:16:27-06:00",
+        "section": "Frontier lab",
+        "severity": "STANDBY",
+        "source": "ScienceDaily",
+        "title": "A mysterious twist in the universe’s oldest light could reveal new physics - ScienceDaily",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBSeElnbV9nZEhBY2QxOGVIZEVQa21SQ3FMTTItUmlnWm5UOEljUC1tbDVZYm04TlZrYUxuckttR1NnM3lRQ1pjWld6SERnSEY1bFl3RzVOYnlzXzNZczE1X012OGdkU2dIcENXd0V5Yw?oc=5"
+      },
+      {
+        "date": "2026-11-19",
+        "id": "headline:030a29da363ed5bb",
+        "kind": "headline",
+        "label": "Nov 19, 2026 5:59 AM CT",
+        "note": "",
+        "published": "2026-11-19T05:59:15-06:00",
+        "section": "USA headlines",
+        "severity": "STANDBY",
+        "source": "Hindustan Times",
+        "title": "US Treasury yields rise as Fed minutes flag AI inflation risks, Waller backs bigger December rate hike | Hindustan Times - Hindustan Times",
+        "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPOU1qMGxDcnlJbjg4eEJzbU82Z1pWSndxeUJSMXlPR1pRVmVMRlZUSUFfSFNlRU42RUxna3RPTUtuM1RURURWZlVaZHBmOFJPTVJDdU1KeWJYZUdhb0dLMmE5U2w1NzlPRWx1QjNNNUNvMUdnQ3JkblRhTXVuNnJEdnJZcWpZLUtJY3RPbWlZWURFNm5SV29QbkFQbTVqMTZTcWdOaVE4Wl9Rck9tYXIzOFQ2ZnlMZm5BY2d4YmtsZTBneXY3a3lGMHZTLU9kbjFKRC1ySlJtTkxqX2pSVnJfc29odEd0czVvRlJmNXVJcjJ6RjMtSHl5NGJJYnFfOGlwdUHSAYcCQVVfeXFMTXRtYTJOalJZLWhaaDFhUFJGdFh6d0xTV1VCcDV3amU0eUNYV0RFVWpjT01jTXZZOUxQbk91Y1MzanhvUmxQeVI5blN2LU9XVzU3UXRTS1VObjdJZ2xpNHlHMG03UlY2U1hwZGphbmREQlBsWm0tSnlDczZESU1GX3ZfaW5aSG1XU3FOWVk5c0F4U0hIQ3J3S3pVSmZra2ZSNk1FbTdZaGs3a3FGa2NlTmMydms4aTVlZE1IUEhXMEtMYm5jUDhYTVBnUmhDLW9QdGp4S19yNUt6NnZGdkhWeXJnUnFLV3NkTExINllKcWxZX2hMVzVfeDI5bUQ3ejRyMTFYWjNhSWM?oc=5"
+      },
+      {
+        "date": "2026-11-18",
+        "id": "headline:5681cf67a5f63955",
+        "kind": "headline",
+        "label": "Nov 18, 2026 2:35 PM CT",
+        "note": "",
+        "published": "2026-11-18T14:35:01-06:00",
+        "section": "USA headlines",
+        "severity": "STANDBY",
+        "source": "The New York Times",
+        "title": "Fed Saw Need to Keep Raising Interest Rates Despite Holding Steady in October - The New York Times",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQZWNVYnFNZV9nd0xLQW9EenZFTEJZS1A0VF9jcXgydHdZMlNUY21sTndVYzZXTThLS19UOThYOF9oZS1hbURtSlBhcUYyTVB1XzB2QUk5dlZva3RlNzlyWmtweDNhUUdyNVJGV290RzNLYTBEU1RXMlpiNEtHZ09HTVFyZ09ldVdKUXNiMHFLSk45Y3RiOWEzWDFB?oc=5"
+      },
+      {
+        "date": "2026-11-17",
+        "id": "headline:38539e29677491eb",
         "kind": "headline",
         "label": "Nov 17, 2026 2:16 PM CT",
         "note": "",
         "published": "2026-11-17T14:16:19-06:00",
         "section": "Latin America headlines",
         "severity": "STANDBY",
-        "source": "Bloomberg.com",
-        "title": "B3 to Add Brazil Stocks Listed Abroad to Aid Ailing Local Market - Bloomberg.com",
+        "source": "Bloomberg",
+        "title": "B3 to Add Brazil Stocks Listed Abroad to Aid Ailing Local Market - Bloomberg",
         "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQUG1rRURHNlg3dFRKb3VqSW5zeWo5blBTeU1qcjRnaW1wUmxSSmhKRW5VNE5lVXAtb21scEI5UDVoQ01BX3dkMGNtZVZRSi1yRERLUnJmdHBnWHZ6TW96Rk9VSVBNMWw5ckFkUHQ0RDBTdnN0dHI3VW5Odm9pNV9mcUMxU054d2cwLUN6UUJ6Q3RBdGRIMGRIdUNhRWdmR1gweExyLWhocjd3a2MxWVYxZ1A5bVM1UQ?oc=5"
       },
       {
-        "date": "2026-11-19",
-        "id": "headline:cd74689c4d4af870",
+        "date": "2026-11-17",
+        "id": "headline:e7ca61773726e327",
         "kind": "headline",
-        "label": "Nov 19, 2026 4:14 AM CT",
+        "label": "Nov 17, 2026 1:50 AM CT",
         "note": "",
-        "published": "2026-11-19T04:14:57-06:00",
-        "section": "Europe headlines",
+        "published": "2026-11-17T01:50:00-06:00",
+        "section": "Asia headlines",
         "severity": "STANDBY",
-        "source": "Bloomberg.com",
-        "title": "ECB’s Kocher Warns Changing Climate Is Impacting Monetary Policy - Bloomberg.com",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQRVVRbFFvU3ZPNWlmTHFvU1JzSm9FMW5yRXlqRkk0eWMyTkNORHBuN24wSXI4VTlpR0pqRzh1SWllb1gxXzFyU05WOUh6SWl1Skdvell5dFl3NVBZczJETUhLckpORGhPS3RiWVpfRjdha3psMG00Yy03QTBEMHl4NlNPclRCT21kMXN1YWFnV2RNVXVDTWxoYk5TNWxjOFp1NFJ6YmhBaUthbkltbG14eVJSUVpVQQ?oc=5"
+        "source": "朝日新聞",
+        "title": "Asian markets mostly drop as AI stocks remain under pressure - 朝日新聞",
+        "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9DaDk4em11b2NyZ1MwWS1uWkhHdF9lUjJTd21xdndZc1lQZkRyRXZrT1JSb1NQOG1CMG1nY1JveS12QjVlelc2OFkwTnRNQU5Yb2dOLWZR?oc=5"
       }
     ],
     "pages": [],
@@ -411,7 +190,7 @@
         "section": "Economic watch",
         "severity": "",
         "source": "USA",
-        "title": "S&P 500 7382.4 → 7287.07",
+        "title": "S&P 500 7287.07 → 7304.54",
         "url": "https://finance.yahoo.com/quote/%5EGSPC"
       },
       {
@@ -424,7 +203,7 @@
         "section": "Economic watch",
         "severity": "",
         "source": "North America",
-        "title": "S&P/TSX 34489.61 → 34231.62",
+        "title": "S&P/TSX 34231.62 → 34309.09",
         "url": "https://finance.yahoo.com/quote/%5EGSPTSE"
       },
       {
@@ -437,7 +216,7 @@
         "section": "Economic watch",
         "severity": "",
         "source": "North America",
-        "title": "IPC Mexico 69092.99 → 69159.5",
+        "title": "IPC Mexico 69159.5 → 68962.58",
         "url": "https://finance.yahoo.com/quote/%5EMXX"
       },
       {
@@ -450,7 +229,7 @@
         "section": "Economic watch",
         "severity": "",
         "source": "Latin America",
-        "title": "Ibovespa 168287.94 → 167238.7",
+        "title": "Ibovespa 167238.7 → 166617.8",
         "url": "https://finance.yahoo.com/quote/%5EBVSP"
       },
       {
@@ -463,8 +242,21 @@
         "section": "Economic watch",
         "severity": "",
         "source": "Russia",
-        "title": "IMOEX 2417.27 → 2417.98",
+        "title": "IMOEX 2417.98 → 2415.55",
         "url": "https://iss.moex.com/iss/engines/stock/markets/index/securities/IMOEX.json"
+      },
+      {
+        "date": "",
+        "id": "px-000001.SS",
+        "kind": "price",
+        "label": "",
+        "note": "Level moved since the last refresh.",
+        "published": "",
+        "section": "Economic watch",
+        "severity": "",
+        "source": "China",
+        "title": "SSE Composite 3577.62 → 3587.83",
+        "url": "https://finance.yahoo.com/quote/000001.SS"
       },
       {
         "date": "",
@@ -476,98 +268,73 @@
         "section": "Economic watch",
         "severity": "",
         "source": "Europe",
-        "title": "EURO STOXX 50 6165.46 → 6137.73",
+        "title": "EURO STOXX 50 6137.73 → 6133.37",
         "url": "https://finance.yahoo.com/quote/%5ESTOXX50E"
       },
       {
         "date": "",
-        "id": "px-^N225",
+        "id": "px-^HSI",
         "kind": "price",
         "label": "",
         "note": "Level moved since the last refresh.",
         "published": "",
         "section": "Economic watch",
         "severity": "",
-        "source": "Japan",
-        "title": "Nikkei 225 59444.21 → 59024.28",
-        "url": "https://finance.yahoo.com/quote/%5EN225"
+        "source": "Asia",
+        "title": "Hang Seng 22841.62 → 23294.75",
+        "url": "https://finance.yahoo.com/quote/%5EHSI"
       }
     ],
     "severity": []
   },
-  "since": "2026-11-19T08:58:50-06:00",
-  "sinceLabel": "Nov 19, 2026 8:58 AM CT",
+  "since": "2026-11-19T09:50:34-06:00",
+  "sinceLabel": "Nov 19, 2026 9:50 AM CT",
   "sinceRefresh": {
-    "label": "Nov 19, 2026 8:58 AM CT",
+    "label": "Nov 19, 2026 9:50 AM CT",
     "threats": {
       "deescalated": [],
-      "escalated": [
-        {
-          "id": "headline:40b44044197c7796",
-          "kind": "attack",
-          "label": "Nov 19, 2026 1:37 AM CT",
-          "note": "STANDBY → ALERT",
-          "published": "2026-11-19T01:37:39-06:00",
-          "section": "World threat board",
-          "severity": "ALERT",
-          "source": "World threat board",
-          "title": "How disinformation exploited the Kraków tragedy to attack the usual targets, and how Elon Musk made things worse - EDMO",
-          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQbzdqaWVtOXA5UDdVU0V6WmVtQXBmSlM3aWtnUGN5dkM1VW1FenUtV0VERGtlRWF2cmt4S19PNExMN05WM2lJcGl1QUJaNnBrRmpJVE9jUF9fX3BJVE9QeEFjNVVGaXdCWW4tdXFac2FsNC1iT1R2ZlVJWXZvYV8yYWVwRUtiNkRqYVVZZG1Pam1Pa1pTdWhTVUhFM1hZaFhhNHBLaXJ1N29QNkVTNDZYWVk0MVBnYTVVbi13X1pybHdxU2d5SGVvSWk1NTVDOFlSUEM0REZyZlQ?oc=5"
-        }
-      ],
+      "escalated": [],
       "new": [
         {
-          "id": "cyber:b1a579d6fecac6ff",
-          "kind": "cyber",
-          "label": "Nov 19, 2026 9:15 AM CT",
-          "note": "",
-          "published": "2026-11-19T09:15:00-06:00",
-          "section": "World threat board",
-          "severity": "STANDBY",
-          "source": "World threat board",
-          "title": "European Commission confirms cyberattack, says hackers used AI tool",
-          "url": "https://therecord.media/european-commission-confirms-cyberattack-using-ai"
-        },
-        {
-          "id": "headline:516bd6dfbeafd855",
+          "id": "headline:b11f14b4fd88486f",
           "kind": "attack",
-          "label": "Nov 18, 2026 6:16 AM CT",
-          "note": "Update to that story. Was: At least 6 killed, several injured in shooting at Polish market square: Police - ABC News - Breaking News, Latest News and Videos",
-          "published": "2026-11-18T06:16:05-06:00",
+          "label": "Nov 19, 2026 4:39 AM CT",
+          "note": "Update to that story. Was: How disinformation exploited the Kraków tragedy to attack the usual targets, and how Elon Musk made things worse - EDMO",
+          "published": "2026-11-19T04:39:27-06:00",
           "section": "World threat board",
-          "severity": "ALERT",
+          "severity": "STANDBY",
           "source": "World threat board",
-          "title": "Deadly mass shooting in Poland investigated as terror act, prosecutor says - ABC News - Breaking News, Latest News and Videos",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOb1pFNDZDUm5SZkhOYWNkVS0waDU0bXBlXzJZVHlKTW5BVkdCWVFKYUVUTXZ2TnZMdExJM2FfcWF2MUVmVm5MNnBjeW9fVmpWaDZpeDhaTUE2LWdOQ1BVRDMwNFFsbTExaVhXS2dnd3gybmljTE9pRGowck5ER2xpQnp1eVBhVTkwdU92cl9uZi1iMV9kYXBFQTJDVEJGZWFqakZWMWlpQkxCSUdkYTBubVJuSThQZ9IBuwFBVV95cUxPM2I3U25ZNVUwdUlUbGVEN1lrRDlwcWFQb2VsVnMzZWMyY2RDaUYyelRqejVOX3BaMC1CQU8wbFh1RU1EdEFhWUdUR1dLT1RNMWtESWVLdE13QUxJRWlWZ3E5YVA5OGZscmFMbnB5XzNaRlpwelk4U2pUWTY0ZXFBMjJxdHIwU3FpWFRSVmJyQ25fTzdFa2l5SGl1MTRaTGNjaW1hbm9ReERvaXFvUmtvTU9jazB6WENsUllV?oc=5"
+          "title": "York victim of Krakow attack on his way home, family confirms - BBC",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1xbjlnTDFIZl8xNlFDcjMyZ0dINXdmMWZUOWkzeU1oZUlVd09QQ2hsTVJBcDloQTdLUnJZQWFsVWs5cXF0TU1kUTZIanBXNXZjYk9vRjBSQWlabkE?oc=5"
         },
         {
-          "id": "headline:0817dedfcb4b6267",
+          "id": "headline:d4348496413bda52",
+          "kind": "war-iran",
+          "label": "Nov 18, 2026 7:16 PM CT",
+          "note": "Update to that story. Was: Is the US-Israel war on Iran turning into a ‘frozen conflict’? - Al Jazeera",
+          "published": "2026-11-18T19:16:00-06:00",
+          "section": "World threat board",
+          "severity": "STANDBY",
+          "source": "World threat board",
+          "title": "Mideast nations ramp up efforts to avert all-out war as Israel urges Iran strikes, officials say - AP News",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQVkpMQk5Ha1FZNG45Vmt6WWxWeUtMS3lSU0hON0F0b0ItSHlWY0NnUHFyQ1JTWFBPSWViZTFVZHpKNWI3V3R1TjM0b25HWTNEZGZ2Q1ItZG5hdXNGcG03M3FjZlJKNmE5SC1lYTJERmRETERvdGJOUGlsMG9pQjVVU2dEWkJxOEY2eXJYd1RtVmNlN2pIcGlLcHJlaw?oc=5"
+        },
+        {
+          "id": "headline:259cdffd8b7d23b6",
           "kind": "climate",
-          "label": "Nov 18, 2026 10:59 AM CT",
+          "label": "Nov 12, 2026 2:00 AM CT",
           "note": "Update to that story. Was: COP31 to take place 9-20 November 2026 in Antalya, Türkiye - Welcome to the United Nations",
-          "published": "2026-11-18T10:59:30-06:00",
+          "published": "2026-11-12T02:00:00-06:00",
           "section": "World threat board",
           "severity": "STANDBY",
           "source": "World threat board",
-          "title": "OPEC speaks up for fossil fuels at COP31 climate talks - Reuters",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPZVVjZjNMU1llNktlY290Ny1WLXp6ZEplN3Ryc29tSHlOQVRNOFk0MVp4LU5tZDBSNFQ3Ym9PR2NFU242UWE0a2lYNE5hamxfcFE0SHlwQS1iZ2o4U3Vma3NpQm5aV2hQMjNjMkptd2Y2N2R0MUR1aEF3eGRnSzg4dG9EUU12QWVqMl9hOTRpZWF4ZExac0dMeHVzeTRBUENx?oc=5"
-        },
-        {
-          "id": "headline:68f0ef50dbbd795e",
-          "kind": "israel",
-          "label": "Nov 17, 2026 4:53 PM CT",
-          "note": "Update to that story. Was: Can Netanyahu and Eisenkot form a ‘unity’ government in Israel? - Al Jazeera",
-          "published": "2026-11-17T16:53:00-06:00",
-          "section": "World threat board",
-          "severity": "STANDBY",
-          "source": "World threat board",
-          "title": "Israeli parliament elects new speaker backed by Netanyahu’s opponents - The Guardian",
-          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPb0gtc1RrcjVhMTcxa1VzWDZna1ZTRUZLWGlNcXVpaEVyT285QzFaS3RtX1VjOVVSX3V4VFlUMHRIaHBIOUtfcUNKSE43M0JMbnJKSmFVRzRPQ2pmanNsc0dZYlZ6cVNzOHcwM3ZOVmUxLUx6N3VmeV8wLTFJbVhMaUFxR2hEd1lTTUx3WFNCQWhvV25VLXdXQ3F6TGgtbWlkQk5uZmV4LU1oTE50cHlFNVVNTFgzUl9WS3lZ?oc=5"
+          "title": "Climate Action from Geneva to Antalya | UN Climate Change Conference COP31 - Geneva Environment Network",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPN2ZQbU16eDVFTGpGdmJwZkFmWnhiR1NnZWpXVkItQWJIeG1lZlVuQXFhUUI0QmctZTFOdFRtM0hnUks2TVRYYmk4ZGwtaHFCbUljckNnTTY3MUxQc29IZUo3VkhLUGo3eXRIQjA5N2pSeG1DM2VNZmw0WV90REl2SW53dHdXTjl4c3FrR3VuTTgtcDE1dE5zczN4RUFOa2k4alpxNjVKSzFJdE5iSm5TR0p5dXNia25kd3pibFk3RWdRRW1yRXVQZ0NBd08?oc=5"
         }
       ],
       "resolved": [
         {
-          "id": "headline:6b927575ffcb2e9b",
+          "id": "headline:riyadh-missile",
           "kind": "",
           "label": "",
           "note": "No longer on the board.",
@@ -575,7 +342,7 @@
           "section": "World threat board",
           "severity": "ALERT",
           "source": "World threat board",
-          "title": "Europe tightens sanctions on Russia. America loosens them - The Economist",
+          "title": "Damage from missile attack reported in Riyadh’s financial district, and other Mideast news - AP News",
           "url": ""
         }
       ]
@@ -583,20 +350,7 @@
     "trends": {
       "deescalated": [],
       "escalated": [],
-      "new": [
-        {
-          "id": "velocity:8001c27439650c5c",
-          "kind": "trend",
-          "label": "",
-          "note": "The same topic showed up across several outlets.",
-          "published": "2026-11-19T09:50:34-06:00",
-          "section": "Today",
-          "severity": "ALERT",
-          "source": "Today",
-          "title": "global",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNS1oteUxOelRYWG4zNzBaMHdiRjJTQ3hWaHd4UXZmam4wN2pQbEg1dzR3dUVWVkEzN1VnbE1tTUVlSmtkNWpVaFVaa08tdzNCTDNfNlZIWTEweDFTM01ud2g5Vml2TEJfOG1rZF9vOVdOZzE4THVFWTY4R3lzSS1WNFhzYkQ0Z3loZk0zcTlmNHBDS3J5eGRUWWZsNTd5N0ZmenliVXRoTQ?oc=5"
-        }
-      ],
+      "new": [],
       "resolved": []
     }
   },
@@ -615,18 +369,6 @@
           "source": "World threat board",
           "title": "Earthquake in Papua New Guinea",
           "url": "https://www.gdacs.org/report.aspx?eventid=1578162&episodeid=1747511&eventtype=EQ"
-        },
-        {
-          "id": "headline:f902bff0eeecd5d8",
-          "kind": "war-iran",
-          "label": "Nov 18, 2026 7:23 PM CT",
-          "note": "ALERT → STANDBY",
-          "published": "2026-11-18T19:23:01-06:00",
-          "section": "World threat board",
-          "severity": "STANDBY",
-          "source": "World threat board",
-          "title": "Trump Grows Frustrated With Vance Over Iran War Critique - The New York Times",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQV3B0SDctTm9DMGNCbXNLM2VOd2prWE1aZTZfT242MVNtUGRVeWRUemVHRWZMSVhGM0J0S2xxMC1XRWRvMVB6XzN3VGJfTDdDSGtGMTlSMFpVTlM2ZGotaW1JZjBaWWNQZmZseEFFUFBxa3hnRDQyYnB1bzVUWXdPcDJnZU5jLTUzVUZJYWRsX1d4Zw?oc=5"
         },
         {
           "id": "headline:f975d6dbbccc6de8",
@@ -651,6 +393,18 @@
           "source": "World threat board",
           "title": "OPEC speaks up for fossil fuels at COP31 climate talks - Reuters",
           "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPZVVjZjNMU1llNktlY290Ny1WLXp6ZEplN3Ryc29tSHlOQVRNOFk0MVp4LU5tZDBSNFQ3Ym9PR2NFU242UWE0a2lYNE5hamxfcFE0SHlwQS1iZ2o4U3Vma3NpQm5aV2hQMjNjMkptd2Y2N2R0MUR1aEF3eGRnSzg4dG9EUU12QWVqMl9hOTRpZWF4ZExac0dMeHVzeTRBUENx?oc=5"
+        },
+        {
+          "id": "headline:f902bff0eeecd5d8",
+          "kind": "war-iran",
+          "label": "Nov 18, 2026 10:54 AM CT",
+          "note": "ALERT → STANDBY",
+          "published": "2026-11-18T10:54:29-06:00",
+          "section": "World threat board",
+          "severity": "STANDBY",
+          "source": "World threat board",
+          "title": "Trump Grows Frustrated With Vance Over Iran War Critique - The New York Times",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQV3B0SDctTm9DMGNCbXNLM2VOd2prWE1aZTZfT242MVNtUGRVeWRUemVHRWZMSVhGM0J0S2xxMC1XRWRvMVB6XzN3VGJfTDdDSGtGMTlSMFpVTlM2ZGotaW1JZjBaWWNQZmZseEFFUFBxa3hnRDQyYnB1bzVUWXdPcDJnZU5jLTUzVUZJYWRsX1d4Zw?oc=5"
         },
         {
           "id": "headline:d65188e3b9eeabb1",
@@ -897,18 +651,6 @@
           "url": "https://thehackernews.com/2026/11/cisa-warns-of-4-exploited-flaws-linked.html"
         },
         {
-          "id": "headline:40b44044197c7796",
-          "kind": "attack",
-          "label": "Nov 19, 2026 1:37 AM CT",
-          "note": "Update to that story. Was: Sviatlana Tsikhanouskaya paid tribute to victims of the attack in Kraków - Святлана Ціханоўская",
-          "published": "2026-11-19T01:37:39-06:00",
-          "section": "World threat board",
-          "severity": "ALERT",
-          "source": "World threat board",
-          "title": "How disinformation exploited the Kraków tragedy to attack the usual targets, and how Elon Musk made things worse - EDMO",
-          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQbzdqaWVtOXA5UDdVU0V6WmVtQXBmSlM3aWtnUGN5dkM1VW1FenUtV0VERGtlRWF2cmt4S19PNExMN05WM2lJcGl1QUJaNnBrRmpJVE9jUF9fX3BJVE9QeEFjNVVGaXdCWW4tdXFac2FsNC1iT1R2ZlVJWXZvYV8yYWVwRUtiNkRqYVVZZG1Pam1Pa1pTdWhTVUhFM1hZaFhhNHBLaXJ1N29QNkVTNDZYWVk0MVBnYTVVbi13X1pybHdxU2d5SGVvSWk1NTVDOFlSUEM0REZyZlQ?oc=5"
-        },
-        {
           "id": "headline:516bd6dfbeafd855",
           "kind": "attack",
           "label": "Nov 18, 2026 6:16 AM CT",
@@ -921,6 +663,30 @@
           "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOb1pFNDZDUm5SZkhOYWNkVS0waDU0bXBlXzJZVHlKTW5BVkdCWVFKYUVUTXZ2TnZMdExJM2FfcWF2MUVmVm5MNnBjeW9fVmpWaDZpeDhaTUE2LWdOQ1BVRDMwNFFsbTExaVhXS2dnd3gybmljTE9pRGowck5ER2xpQnp1eVBhVTkwdU92cl9uZi1iMV9kYXBFQTJDVEJGZWFqakZWMWlpQkxCSUdkYTBubVJuSThQZ9IBuwFBVV95cUxPM2I3U25ZNVUwdUlUbGVEN1lrRDlwcWFQb2VsVnMzZWMyY2RDaUYyelRqejVOX3BaMC1CQU8wbFh1RU1EdEFhWUdUR1dLT1RNMWtESWVLdE13QUxJRWlWZ3E5YVA5OGZscmFMbnB5XzNaRlpwelk4U2pUWTY0ZXFBMjJxdHIwU3FpWFRSVmJyQ25fTzdFa2l5SGl1MTRaTGNjaW1hbm9ReERvaXFvUmtvTU9jazB6WENsUllV?oc=5"
         },
         {
+          "id": "headline:b11f14b4fd88486f",
+          "kind": "attack",
+          "label": "Nov 19, 2026 4:39 AM CT",
+          "note": "Update to that story. Was: Sviatlana Tsikhanouskaya paid tribute to victims of the attack in Kraków - Святлана Ціханоўская",
+          "published": "2026-11-19T04:39:27-06:00",
+          "section": "World threat board",
+          "severity": "STANDBY",
+          "source": "World threat board",
+          "title": "York victim of Krakow attack on his way home, family confirms - BBC",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1xbjlnTDFIZl8xNlFDcjMyZ0dINXdmMWZUOWkzeU1oZUlVd09QQ2hsTVJBcDloQTdLUnJZQWFsVWs5cXF0TU1kUTZIanBXNXZjYk9vRjBSQWlabkE?oc=5"
+        },
+        {
+          "id": "headline:d4348496413bda52",
+          "kind": "war-iran",
+          "label": "Nov 18, 2026 7:16 PM CT",
+          "note": "Update to that story. Was: Is the US-Israel war on Iran turning into a ‘frozen conflict’? - Al Jazeera",
+          "published": "2026-11-18T19:16:00-06:00",
+          "section": "World threat board",
+          "severity": "STANDBY",
+          "source": "World threat board",
+          "title": "Mideast nations ramp up efforts to avert all-out war as Israel urges Iran strikes, officials say - AP News",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQVkpMQk5Ha1FZNG45Vmt6WWxWeUtMS3lSU0hON0F0b0ItSHlWY0NnUHFyQ1JTWFBPSWViZTFVZHpKNWI3V3R1TjM0b25HWTNEZGZ2Q1ItZG5hdXNGcG03M3FjZlJKNmE5SC1lYTJERmRETERvdGJOUGlsMG9pQjVVU2dEWkJxOEY2eXJYd1RtVmNlN2pIcGlLcHJlaw?oc=5"
+        },
+        {
           "id": "headline:314f9dd5d0dad6b6",
           "kind": "usgov",
           "label": "Nov 18, 2026 4:11 PM CT",
@@ -931,18 +697,6 @@
           "source": "World threat board",
           "title": "Democrats flipped 9 U.S. Senate seats — the most in almost 70 years - PBS",
           "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPdmV2SmVvV1YzVTZpQW5ZbHNhZjQ1blUwWUJQamJsRDVFcmh4aDkxd1RIVmtnZ2FvNzZHdXpqMGFTX09fcTExcVg4LU1KckNvaUJsWGZWLW9ybnJEUzI0ejZCYzlNbVdJaXcwOERoRDRoNUFSdHpMeDQ4Wkl1WURzUk9wRlJkQ09jQm9KSVRSQURYMkVFYUpWY1FUMFBsbUNkM0VN0gGoAUFVX3lxTFB3VURjSDZpYzlUZ2JUUldDb1ZFQWV1MzJtUkM3YkdKRDFhTy1yUDg2RjBhUWR6bU96Z3ZzZFFKT3RLdDVpRW84RGtaeEJWclE3b19LVE9kUUpveENNMHk2VGxUdkF1a0lXUWJEeUhUN0dMUXJ5al8tTnpnTTNVTVpIVGlKaVpJMV8zNXN5Yk5rTDV2SGtKT19QNFhyNVdtU1FSbEJqWHV5eA?oc=5"
-        },
-        {
-          "id": "headline:266df09b66953b11",
-          "kind": "war-ukraine",
-          "label": "Nov 18, 2026 3:12 PM CT",
-          "note": "",
-          "published": "2026-11-18T15:12:04-06:00",
-          "section": "World threat board",
-          "severity": "STANDBY",
-          "source": "World threat board",
-          "title": "Dispatch from Kyiv: Let Ukraine strike Russia’s missile launchers at the source - Atlantic Council",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPNTgtX08zaGpfcXJJU2h1eFRFT1VLd2M3RjlHMkZqN3FfMzlJdWZIZnhoZWtvTEZKTktEc2VCRE1mcHJ6UmxyYVV3WEZBZERIZ3R3X0gtZlBXaF9IUDQyWWZrUi1INXQxRVRoUHJJcjN2UjNIY1FCSFphNGJXU1M5ZlJhdGxfV3o5bzdDbTAxN09aVUFTblV0VHNkN09rOG1hV2ZuZnV5cVgxTFRCcHJ4MUhfV0s4UVI1eDdkS21B?oc=5"
         },
         {
           "id": "headline:367c6f0596cf799e",
@@ -1065,7 +819,7 @@
           "kind": "trend",
           "label": "",
           "note": "The same topic showed up across several outlets.",
-          "published": "2026-11-19T09:50:34-06:00",
+          "published": "2026-11-19T10:18:48-06:00",
           "section": "Today",
           "severity": "ALERT",
           "source": "Today",
@@ -1077,12 +831,12 @@
           "kind": "trend",
           "label": "",
           "note": "The same topic showed up across several outlets.",
-          "published": "2026-11-19T09:50:34-06:00",
+          "published": "2026-11-19T10:18:48-06:00",
           "section": "Today",
           "severity": "ALERT",
           "source": "Today",
           "title": "global",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNS1oteUxOelRYWG4zNzBaMHdiRjJTQ3hWaHd4UXZmam4wN2pQbEg1dzR3dUVWVkEzN1VnbE1tTUVlSmtkNWpVaFVaa08tdzNCTDNfNlZIWTEweDFTM01ud2g5Vml2TEJfOG1rZF9vOVdOZzE4THVFWTY4R3lzSS1WNFhzYkQ0Z3loZk0zcTlmNHBDS3J5eGRUWWZsNTd5N0ZmenliVXRoTQ?oc=5"
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPZmxlM0syUnVsd3Rid2dfLVBOekZMT3pNMHF3eVQwYndQNmpYaDh5MHdYZFZCanhibW9kZVJ0Q3N3bGtuVFdvUlY5M1BDZzVoekdKWXVESWV5NDBzdFhiX0twbmNBNUl4YkpMX3NUYmdLSEF6bDR1YTUtMnJUb0g1TF8yb0hiUHFmOGltVk9LT25DckNfUHFBaW92MUJUa1RQUGx2SmhFRWN1Z1NVVTlOYmZPdUQ?oc=5"
         }
       ],
       "resolved": []

@@ -28,14 +28,35 @@
             "2026-11-26",
             "2026-12-25"
           ],
-          "level": 7287.07,
-          "change": -36.56,
-          "changePct": -0.5,
+          "level": 7304.54,
+          "change": -19.09,
+          "changePct": -0.26,
           "asOf": "2026-11-19",
           "source": "https://finance.yahoo.com/quote/%5EGSPC"
         }
       ],
       "headlines": [
+        {
+          "id": "headline:030a29da363ed5bb",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Hindustan Times",
+          "sourceId": "headline",
+          "title": "US Treasury yields rise as Fed minutes flag AI inflation risks, Waller backs bigger December rate hike | Hindustan Times - Hindustan Times",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPOU1qMGxDcnlJbjg4eEJzbU82Z1pWSndxeUJSMXlPR1pRVmVMRlZUSUFfSFNlRU42RUxna3RPTUtuM1RURURWZlVaZHBmOFJPTVJDdU1KeWJYZUdhb0dLMmE5U2w1NzlPRWx1QjNNNUNvMUdnQ3JkblRhTXVuNnJEdnJZcWpZLUtJY3RPbWlZWURFNm5SV29QbkFQbTVqMTZTcWdOaVE4Wl9Rck9tYXIzOFQ2ZnlMZm5BY2d4YmtsZTBneXY3a3lGMHZTLU9kbjFKRC1ySlJtTkxqX2pSVnJfc29odEd0czVvRlJmNXVJcjJ6RjMtSHl5NGJJYnFfOGlwdUHSAYcCQVVfeXFMTXRtYTJOalJZLWhaaDFhUFJGdFh6d0xTV1VCcDV3amU0eUNYV0RFVWpjT01jTXZZOUxQbk91Y1MzanhvUmxQeVI5blN2LU9XVzU3UXRTS1VObjdJZ2xpNHlHMG03UlY2U1hwZGphbmREQlBsWm0tSnlDczZESU1GX3ZfaW5aSG1XU3FOWVk5c0F4U0hIQ3J3S3pVSmZra2ZSNk1FbTdZaGs3a3FGa2NlTmMydms4aTVlZE1IUEhXMEtMYm5jUDhYTVBnUmhDLW9QdGp4S19yNUt6NnZGdkhWeXJnUnFLV3NkTExINllKcWxZX2hMVzVfeDI5bUQ3ejRyMTFYWjNhSWM?oc=5",
+          "published": "2026-11-19T05:59:15-06:00",
+          "date": "2026-11-19",
+          "label": "Nov 19, 2026 5:59 AM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
         {
           "id": "headline:388123a69c743c1f",
           "kind": "headline",
@@ -58,12 +79,12 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:42c2e2b8545b4662",
+          "id": "headline:5681cf67a5f63955",
           "kind": "headline",
           "lane": "news",
           "source": "The New York Times",
           "sourceId": "headline",
-          "title": "Fed Saw Need to Keep Raising Rates Despite Holding Steady in October - The New York Times",
+          "title": "Fed Saw Need to Keep Raising Interest Rates Despite Holding Steady in October - The New York Times",
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQZWNVYnFNZV9nd0xLQW9EenZFTEJZS1A0VF9jcXgydHdZMlNUY21sTndVYzZXTThLS19UOThYOF9oZS1hbURtSlBhcUYyTVB1XzB2QUk5dlZva3RlNzlyWmtweDNhUUdyNVJGV290RzNLYTBEU1RXMlpiNEtHZ09HTVFyZ09ldVdKUXNiMHFLSk45Y3RiOWEzWDFB?oc=5",
@@ -854,27 +875,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:46cc8b68978ecb99",
-          "kind": "headline",
-          "lane": "news",
-          "source": "富途牛牛",
-          "sourceId": "headline",
-          "title": "Weekly Outlook | The APEC Summit kicks off; Anthropic lists on the U.S. stock market; Super Week for Q3 earnings reports is upon us, with NVIDIA facing a major earnings test and Tencent, Alibaba, PDD Holdings, and others releasing results密集ly; the Federa - 富途牛牛",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPV2ljU0ltbXQwcDN1S0dPSVNsR2dvTGpPMFJSLUUwUTVBVkM2Rnhlb1NmNnlLQUYwMUJlSHduc1JkODItVFJwTXNjUU84TU5NZ1Bwb0diRF9zNmwzcW5sMlNRbFZFUERVSGJWeUtMNFJjM0s2dkFwZ0NhZ1lOSXdYX2VqNHV4YzNjNHFYanBNVTV1UzNqREVlekt1aGFLdGJyV0V0bg?oc=5",
-          "published": "2026-11-15T02:49:13-06:00",
-          "date": "2026-11-15",
-          "label": "Nov 15, 2026 2:49 AM CT",
-          "weekday": "Sun",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ],
       "spikes": [
@@ -907,38 +907,15 @@
           "title": "US Federal Reserve Meeting: List Of Things To Know Ahead Of The December Interest Rate Decision - Jagran Josh"
         },
         {
-          "topic": "interest rates",
-          "outlets": 3,
-          "state": "RISING",
-          "links": [
-            {
-              "title": "‘Almost all’ US Fed policymakers saw further interest rate hikes as likely, minutes show - The Straits Times",
-              "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNWFRsZFFyeGhlY3RacTRWN0JjOFNkaEZzcU9PUnktNUxJdzk2aExvRE5hSm42TEFnNEZOelRKRTZYYmZ6UEZZbzc5QVRuZnlWRERnUlVjT0tVaGQza0lMU0lndExsd1lDaXFNTnlkdG1yWVIwckhpbk1KQVBidFo1QzFKUFIxLVVmYU8yNjI0d1NPbEhMWTRsNTJvR0VWY2UzUGhYN0ozZ0Y5UTlHekpEZ0FndmdyaktMU2c?oc=5",
-              "source": "The Straits Times"
-            },
-            {
-              "title": "‘Almost all’ US Fed policymakers saw further interest rate hikes as likely - The Straits Times",
-              "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNRnFLLTNVZU9LT250RTNRRS1LNkRaTTdJcTF1RlkzQVVVcHF5cmE2bm4xVHpYV0pBS2l3RWVpeFhKaVFxR2t5QnZ0M0V4d1FxR0JqT0tPTU53UExfMnllTkpkS0lkNTJiMjNTVk5GODBqb3kyWWZlOUFqeFZRalJHTzd6WHRSbmVHTGtBNnNFNVNQOTlmYmMyNzZCVGhibzZvSVZtdEtVWlhHUUJWUVBMZWdFdHV4bk1EM2dEaExHU2xHNDFSU3ZtYg?oc=5",
-              "source": "The Straits Times"
-            },
-            {
-              "title": "Fed minutes: Higher interest rates needed in December as inflation worries mount - The Tribune-Democrat",
-              "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPWDhfeHU2NVc3N3hUMlNmZlphdW5zS1RvT3FEczEyN0NrTkQzclV3dFl1VUIzMlpYa2R3UFgxcGZ4UFJJQTdhWFVkSTBMb0lhNkI3aGk2N2xjV2t3WlFjN0JubkxIWHNpazZGamxWWldYSk44ZERySnVWejVRNE1uMks2UC0xV2F6bzFhVDZpenVaTndpRTJubTdBZFhPQ3MxZ3doZmR1UjM4Y3lIUEVlQUpEZVU2TmIxRk1CR2tibnVBekQ2WDVwZ3pIeFpJNlMzMExSYWxBQUpEVlhySEJ3RkdHd0JCcmJhcFpRcmNiVEhaU3VaYW1LWW5tUQ?oc=5",
-              "source": "The Tribune-Democrat"
-            },
-            {
-              "title": "Fed holds interest rates steady in 1st move since Iran war spiked oil prices - ABC News - Breaking News, Latest News and Videos",
-              "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOWVgwU0l2bjYwREJ2NE9WVC1ObnpJa3Qxa2syS0lmUXphVm8zTWpnYVJ5NXpFZmxWYUZlVXpmc3ZFQzk2ZnZlYjNSUHRPb3F1emZhVDdPNEMxak1mM2wzOEZtYnA5dklfUFlfOUdVRU5lSXNmTlhqMy1pUElaMjNBTEFJbV9IRHNkRGt1NHJKVDVFd1Za0gGaAUFVX3lxTE9IOWFDX2MzMVhjUXl2VE1oTGNTTlowMmxkMUZnNEQ1TzhKemJ3TmlSTElmdzVPQ3VmR2E3OGdNLXN2dVBHQ2xiLXl0WWJfdjBUQktuSnNwbTNQV3puQzBJTUVZS295S2lHYU9iQVpFd05FQkw4WmhmZ2EyU3dCUWt0bHNCUy1xX0pHME5ZbVBlZ1RXSkxnSVZ1TWc?oc=5",
-              "source": "ABC News - Breaking News, Latest News and Videos"
-            }
-          ],
-          "title": "‘Almost all’ US Fed policymakers saw further interest rate hikes as likely, minutes show - The Straits Times"
-        },
-        {
           "topic": "inflation",
-          "outlets": 3,
+          "outlets": 4,
           "state": "RISING",
           "links": [
+            {
+              "title": "US Treasury yields rise as Fed minutes flag AI inflation risks, Waller backs bigger December rate hike | Hindustan Times - Hindustan Times",
+              "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPOU1qMGxDcnlJbjg4eEJzbU82Z1pWSndxeUJSMXlPR1pRVmVMRlZUSUFfSFNlRU42RUxna3RPTUtuM1RURURWZlVaZHBmOFJPTVJDdU1KeWJYZUdhb0dLMmE5U2w1NzlPRWx1QjNNNUNvMUdnQ3JkblRhTXVuNnJEdnJZcWpZLUtJY3RPbWlZWURFNm5SV29QbkFQbTVqMTZTcWdOaVE4Wl9Rck9tYXIzOFQ2ZnlMZm5BY2d4YmtsZTBneXY3a3lGMHZTLU9kbjFKRC1ySlJtTkxqX2pSVnJfc29odEd0czVvRlJmNXVJcjJ6RjMtSHl5NGJJYnFfOGlwdUHSAYcCQVVfeXFMTXRtYTJOalJZLWhaaDFhUFJGdFh6d0xTV1VCcDV3amU0eUNYV0RFVWpjT01jTXZZOUxQbk91Y1MzanhvUmxQeVI5blN2LU9XVzU3UXRTS1VObjdJZ2xpNHlHMG03UlY2U1hwZGphbmREQlBsWm0tSnlDczZESU1GX3ZfaW5aSG1XU3FOWVk5c0F4U0hIQ3J3S3pVSmZra2ZSNk1FbTdZaGs3a3FGa2NlTmMydms4aTVlZE1IUEhXMEtMYm5jUDhYTVBnUmhDLW9QdGp4S19yNUt6NnZGdkhWeXJnUnFLV3NkTExINllKcWxZX2hMVzVfeDI5bUQ3ejRyMTFYWjNhSWM?oc=5",
+              "source": "Hindustan Times"
+            },
             {
               "title": "Fed's Musalem: US likely needs several rate hikes by spring to control inflation - Reuters",
               "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNSmh3bk9iaG5YQ2V2dzZUMkQ1aGQ2LWNfdHFCWkVaOUtyWFdHS3lFTzZJTDhsQnItcnN4N2NibjRLNXZIbHVvSllBY0Jyc201azJtbUNnWkRndWlPN05sZUVaWkJBZFlTTGJzYWFFLWRqN2R6X25jRllRT1hHekZ2aFRweE5rbHM3Z3p1SHoxR2UwR1VnMWVnbWZ3ZmRHSTkyR2lhU3p1NzNFZFBjMEtRQ25iZnpwVEhBZTd3bw?oc=5",
@@ -955,7 +932,35 @@
               "source": "The Tribune-Democrat"
             }
           ],
-          "title": "Fed's Musalem: US likely needs several rate hikes by spring to control inflation - Reuters"
+          "title": "US Treasury yields rise as Fed minutes flag AI inflation risks, Waller backs bigger December rate hike | Hindustan Times - Hindustan Times"
+        },
+        {
+          "topic": "interest rates",
+          "outlets": 4,
+          "state": "RISING",
+          "links": [
+            {
+              "title": "Fed Saw Need to Keep Raising Interest Rates Despite Holding Steady in October - The New York Times",
+              "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQZWNVYnFNZV9nd0xLQW9EenZFTEJZS1A0VF9jcXgydHdZMlNUY21sTndVYzZXTThLS19UOThYOF9oZS1hbURtSlBhcUYyTVB1XzB2QUk5dlZva3RlNzlyWmtweDNhUUdyNVJGV290RzNLYTBEU1RXMlpiNEtHZ09HTVFyZ09ldVdKUXNiMHFLSk45Y3RiOWEzWDFB?oc=5",
+              "source": "The New York Times"
+            },
+            {
+              "title": "‘Almost all’ US Fed policymakers saw further interest rate hikes as likely, minutes show - The Straits Times",
+              "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNWFRsZFFyeGhlY3RacTRWN0JjOFNkaEZzcU9PUnktNUxJdzk2aExvRE5hSm42TEFnNEZOelRKRTZYYmZ6UEZZbzc5QVRuZnlWRERnUlVjT0tVaGQza0lMU0lndExsd1lDaXFNTnlkdG1yWVIwckhpbk1KQVBidFo1QzFKUFIxLVVmYU8yNjI0d1NPbEhMWTRsNTJvR0VWY2UzUGhYN0ozZ0Y5UTlHekpEZ0FndmdyaktMU2c?oc=5",
+              "source": "The Straits Times"
+            },
+            {
+              "title": "‘Almost all’ US Fed policymakers saw further interest rate hikes as likely - The Straits Times",
+              "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNRnFLLTNVZU9LT250RTNRRS1LNkRaTTdJcTF1RlkzQVVVcHF5cmE2bm4xVHpYV0pBS2l3RWVpeFhKaVFxR2t5QnZ0M0V4d1FxR0JqT0tPTU53UExfMnllTkpkS0lkNTJiMjNTVk5GODBqb3kyWWZlOUFqeFZRalJHTzd6WHRSbmVHTGtBNnNFNVNQOTlmYmMyNzZCVGhibzZvSVZtdEtVWlhHUUJWUVBMZWdFdHV4bk1EM2dEaExHU2xHNDFSU3ZtYg?oc=5",
+              "source": "The Straits Times"
+            },
+            {
+              "title": "Fed minutes: Higher interest rates needed in December as inflation worries mount - The Tribune-Democrat",
+              "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPWDhfeHU2NVc3N3hUMlNmZlphdW5zS1RvT3FEczEyN0NrTkQzclV3dFl1VUIzMlpYa2R3UFgxcGZ4UFJJQTdhWFVkSTBMb0lhNkI3aGk2N2xjV2t3WlFjN0JubkxIWHNpazZGamxWWldYSk44ZERySnVWejVRNE1uMks2UC0xV2F6bzFhVDZpenVaTndpRTJubTdBZFhPQ3MxZ3doZmR1UjM4Y3lIUEVlQUpEZVU2TmIxRk1CR2tibnVBekQ2WDVwZ3pIeFpJNlMzMExSYWxBQUpEVlhySEJ3RkdHd0JCcmJhcFpRcmNiVEhaU3VaYW1LWW5tUQ?oc=5",
+              "source": "The Tribune-Democrat"
+            }
+          ],
+          "title": "Fed Saw Need to Keep Raising Interest Rates Despite Holding Steady in October - The New York Times"
         }
       ]
     },
@@ -975,9 +980,9 @@
             }
           ],
           "holidays": [],
-          "level": 34231.62,
-          "change": -346.48,
-          "changePct": -1.0,
+          "level": 34309.09,
+          "change": -269.01,
+          "changePct": -0.78,
           "asOf": "2026-11-19",
           "source": "https://finance.yahoo.com/quote/%5EGSPTSE"
         },
@@ -993,35 +998,14 @@
             }
           ],
           "holidays": [],
-          "level": 69159.5,
-          "change": 5.33,
-          "changePct": 0.01,
+          "level": 68962.58,
+          "change": -191.59,
+          "changePct": -0.28,
           "asOf": "2026-11-19",
           "source": "https://finance.yahoo.com/quote/%5EMXX"
         }
       ],
       "headlines": [
-        {
-          "id": "headline:897e8916c31577b6",
-          "kind": "headline",
-          "lane": "news",
-          "source": "WSJ",
-          "sourceId": "headline",
-          "title": "Bank of Canada Gov. Macklem to Leave in June, Kicking Off Search for New Leader - WSJ",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNdkdBRndsdFRRaHdWVE9qVnpsX2psX0RtQ2NldkVQVEV1UFl3TkcxSjJFUkhzaDBKM2p0c1ZKYkJpcDBsYS10VE9XVENnVkVUSVBaZUdOcFFndGswNk9KVUoyOWwtUE81TEFVV1hkY21VWnhnZTVjQ0NldFNoYW5GXy1aMjVOY0taUThLMlZJaG5IWXFhRENjRGdkdmhocGxDalFTeUpaLVVWVlZzX0JFRzV6YTBjRWpSSEVVWlZtLXNJMEltbE9NRE93?oc=5",
-          "published": "2026-11-19T08:46:26-06:00",
-          "date": "2026-11-19",
-          "label": "Nov 19, 2026 8:46 AM CT",
-          "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
         {
           "id": "headline:6abadf3aec7a4441",
           "kind": "headline",
@@ -1266,6 +1250,27 @@
           "published": "2026-11-16T12:06:04-06:00",
           "date": "2026-11-16",
           "label": "Nov 16, 2026 12:06 PM CT",
+          "weekday": "Mon",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:897e8916c31577b6",
+          "kind": "headline",
+          "lane": "news",
+          "source": "WSJ",
+          "sourceId": "headline",
+          "title": "Bank of Canada Gov. Macklem to Leave in June, Kicking Off Search for New Leader - WSJ",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNdkdBRndsdFRRaHdWVE9qVnpsX2psX0RtQ2NldkVQVEV1UFl3TkcxSjJFUkhzaDBKM2p0c1ZKYkJpcDBsYS10VE9XVENnVkVUSVBaZUdOcFFndGswNk9KVUoyOWwtUE81TEFVV1hkY21VWnhnZTVjQ0NldFNoYW5GXy1aMjVOY0taUThLMlZJaG5IWXFhRENjRGdkdmhocGxDalFTeUpaLVVWVlZzX0JFRzV6YTBjRWpSSEVVWlZtLXNJMEltbE9NRE93?oc=5",
+          "published": "2026-11-16T11:10:00-06:00",
+          "date": "2026-11-16",
+          "label": "Nov 16, 2026 11:10 AM CT",
           "weekday": "Mon",
           "timeKnown": true,
           "tags": [
@@ -1889,21 +1894,21 @@
             }
           ],
           "holidays": [],
-          "level": 167238.7,
-          "change": -299.3,
-          "changePct": -0.18,
+          "level": 166617.8,
+          "change": -920.2,
+          "changePct": -0.55,
           "asOf": "2026-11-19",
           "source": "https://finance.yahoo.com/quote/%5EBVSP"
         }
       ],
       "headlines": [
         {
-          "id": "headline:297f4ce616485afa",
+          "id": "headline:38539e29677491eb",
           "kind": "headline",
           "lane": "news",
-          "source": "Bloomberg.com",
+          "source": "Bloomberg",
           "sourceId": "headline",
-          "title": "B3 to Add Brazil Stocks Listed Abroad to Aid Ailing Local Market - Bloomberg.com",
+          "title": "B3 to Add Brazil Stocks Listed Abroad to Aid Ailing Local Market - Bloomberg",
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQUG1rRURHNlg3dFRKb3VqSW5zeWo5blBTeU1qcjRnaW1wUmxSSmhKRW5VNE5lVXAtb21scEI5UDVoQ01BX3dkMGNtZVZRSi1yRERLUnJmdHBnWHZ6TW96Rk9VSVBNMWw5ckFkUHQ0RDBTdnN0dHI3VW5Odm9pNV9mcUMxU054d2cwLUN6UUJ6Q3RBdGRIMGRIdUNhRWdmR1gweExyLWhocjd3a2MxWVYxZ1A5bVM1UQ?oc=5",
@@ -2756,9 +2761,9 @@
             }
           ],
           "holidays": [],
-          "level": 2417.98,
-          "change": -52.87,
-          "changePct": -2.14,
+          "level": 2415.55,
+          "change": -55.3,
+          "changePct": -2.24,
           "asOf": "2026-11-19",
           "source": "https://iss.moex.com/iss/engines/stock/markets/index/securities/IMOEX.json"
         }
@@ -3652,9 +3657,9 @@
             }
           ],
           "holidays": [],
-          "level": 3577.62,
-          "change": -10.21,
-          "changePct": -0.28,
+          "level": 3587.83,
+          "change": 3.25,
+          "changePct": 0.09,
           "asOf": "2026-11-19",
           "source": "https://finance.yahoo.com/quote/000001.SS"
         }
@@ -4548,9 +4553,9 @@
             }
           ],
           "holidays": [],
-          "level": 6137.73,
-          "change": -16.66,
-          "changePct": -0.27,
+          "level": 6133.37,
+          "change": -21.02,
+          "changePct": -0.34,
           "asOf": "2026-11-19",
           "source": "https://finance.yahoo.com/quote/%5ESTOXX50E"
         }
@@ -5443,9 +5448,9 @@
             }
           ],
           "holidays": [],
-          "level": 22841.62,
-          "change": -453.13,
-          "changePct": -1.95,
+          "level": 23294.75,
+          "change": -213.42,
+          "changePct": -0.91,
           "asOf": "2026-11-19",
           "source": "https://finance.yahoo.com/quote/%5EHSI"
         }
@@ -6103,6 +6108,27 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:e7ca61773726e327",
+          "kind": "headline",
+          "lane": "news",
+          "source": "朝日新聞",
+          "sourceId": "headline",
+          "title": "Asian markets mostly drop as AI stocks remain under pressure - 朝日新聞",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9DaDk4em11b2NyZ1MwWS1uWkhHdF9lUjJTd21xdndZc1lQZkRyRXZrT1JSb1NQOG1CMG1nY1JveS12QjVlelc2OFkwTnRNQU5Yb2dOLWZR?oc=5",
+          "published": "2026-11-17T01:50:00-06:00",
+          "date": "2026-11-17",
+          "label": "Nov 17, 2026 1:50 AM CT",
+          "weekday": "Tue",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:7020c053a9898708",
           "kind": "headline",
           "lane": "news",
@@ -6262,27 +6288,6 @@
           "published": "2026-11-16T16:46:49-06:00",
           "date": "2026-11-16",
           "label": "Nov 16, 2026 4:46 PM CT",
-          "weekday": "Mon",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:6c101ec93ee74c47",
-          "kind": "headline",
-          "lane": "news",
-          "source": "ad-hoc-news.de",
-          "sourceId": "headline",
-          "title": "Hang Seng rises 0.49% to 23,753.84 after three-day slide - ad-hoc-news.de",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNU1A3Ump3bkR5d3h2V2g5NG51NGNSV1ktcEVoVFp2bjNwWXRJSTd5ajZZaW5sbGd0TjliOVJpN1ExaFExbXVHRjBwTUJBWndwZ0VheHlzdktjNVZDN3Uya1RDWmVCaThya1drUTdnNzhOSkl1eWNBLTVaZklhQkdBOWxyQm1PM3JIeExsWkVBWjlyblZvdnkzSXowTmJKOG1IcTBfNjFlTTh0QlAzU2w1SE1ORVhKdWI4?oc=5",
-          "published": "2026-11-16T11:46:34-06:00",
-          "date": "2026-11-16",
-          "label": "Nov 16, 2026 11:46 AM CT",
           "weekday": "Mon",
           "timeKnown": true,
           "tags": [

@@ -4,7 +4,7 @@
       "asOf": "2026-11-19",
       "changePct": -0.05,
       "id": "dxy",
-      "level": 103.813,
+      "level": 103.807,
       "name": "DXY",
       "points": [
         {
@@ -504,7 +504,7 @@
         },
         {
           "date": "2026-11-19",
-          "price": 103.813,
+          "price": 103.807,
           "volume": 0
         }
       ],
@@ -512,9 +512,9 @@
     },
     {
       "asOf": "2026-11-19",
-      "changePct": -1.34,
+      "changePct": -1.65,
       "id": "gold",
-      "level": 3691.6001,
+      "level": 3680.2,
       "name": "Gold",
       "points": [
         {
@@ -1014,17 +1014,17 @@
         },
         {
           "date": "2026-11-19",
-          "price": 3691.6001,
-          "volume": 127044
+          "price": 3680.2,
+          "volume": 137105
         }
       ],
       "source": "https://finance.yahoo.com/quote/GC%3DF"
     },
     {
       "asOf": "2026-11-19",
-      "changePct": -0.89,
+      "changePct": -1.22,
       "id": "silver",
-      "level": 44.6,
+      "level": 44.45,
       "name": "Silver",
       "points": [
         {
@@ -1524,17 +1524,17 @@
         },
         {
           "date": "2026-11-19",
-          "price": 44.6,
-          "volume": 44530
+          "price": 44.45,
+          "volume": 47432
         }
       ],
       "source": "https://finance.yahoo.com/quote/SI%3DF"
     },
     {
       "asOf": "2026-11-19",
-      "changePct": -1.07,
+      "changePct": -0.76,
       "id": "btc",
-      "level": 62844.75,
+      "level": 63042.1,
       "name": "BTC",
       "points": [
         {
@@ -1899,16 +1899,16 @@
         },
         {
           "date": "2026-11-19",
-          "price": 62844.75
+          "price": 63042.1
         }
       ],
       "source": "https://www.coingecko.com/en/coins/bitcoin"
     },
     {
       "asOf": "2026-11-19",
-      "changePct": -1.32,
+      "changePct": -1.29,
       "id": "eth",
-      "level": 1775.12,
+      "level": 1775.77,
       "name": "ETH",
       "points": [
         {
@@ -2273,7 +2273,7 @@
         },
         {
           "date": "2026-11-19",
-          "price": 1775.12
+          "price": 1775.77
         }
       ],
       "source": "https://www.coingecko.com/en/coins/ethereum"

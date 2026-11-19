@@ -1624,11 +1624,11 @@
       "topic": "attack"
     },
     {
-      "count": 1,
+      "count": 2,
       "countries": 1,
       "date": "2026-11-19",
       "keywords": [],
-      "outlets": 1,
+      "outlets": 2,
       "score": 0,
       "severity": "STANDBY",
       "topic": "climate"
@@ -1674,13 +1674,11 @@
       "topic": "gdacs"
     },
     {
-      "count": 3,
+      "count": 4,
       "countries": 1,
       "date": "2026-11-19",
-      "keywords": [
-        "nuclear"
-      ],
-      "outlets": 3,
+      "keywords": [],
+      "outlets": 4,
       "score": 0,
       "severity": "ALERT",
       "topic": "global"
@@ -3507,11 +3505,11 @@
       "topic": "attack"
     },
     {
-      "count": 1,
+      "count": 2,
       "countries": 1,
       "date": "2026-11-19",
       "keywords": [],
-      "outlets": 1,
+      "outlets": 2,
       "score": 0,
       "severity": "STANDBY",
       "topic": "climate"
@@ -3557,13 +3555,11 @@
       "topic": "gdacs"
     },
     {
-      "count": 3,
+      "count": 4,
       "countries": 1,
       "date": "2026-11-19",
-      "keywords": [
-        "nuclear"
-      ],
-      "outlets": 3,
+      "keywords": [],
+      "outlets": 4,
       "score": 0,
       "severity": "ALERT",
       "topic": "global"

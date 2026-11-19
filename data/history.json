@@ -7092,7 +7092,7 @@
     },
     {
       "date": "2026-11-19",
-      "label": "Nov 19, 2026 9:50 AM CT",
+      "label": "Nov 19, 2026 10:18 AM CT",
       "outlooks": [
         {
           "id": "quake:1eb36ed394438d89",
@@ -7305,6 +7305,11 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:f7c2e9967d3d2c12",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
           "id": "cyber:155f1de6b4673b95",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "STANDBY"
@@ -7325,16 +7330,6 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:e2b00f081fb43c3d",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:40b44044197c7796",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ALERT"
-        },
-        {
           "id": "headline:516bd6dfbeafd855",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
@@ -7350,7 +7345,7 @@
           "severity": "ALERT"
         },
         {
-          "id": "headline:ab64c62e75f10c05",
+          "id": "headline:b11f14b4fd88486f",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "STANDBY"
         },
@@ -7360,8 +7355,8 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:f902bff0eeecd5d8",
-          "outlook": "Lower than yesterday. The 72-hour path is easing if it holds.",
+          "id": "headline:d4348496413bda52",
+          "outlook": "First reading. Watch the next 72 hours.",
           "severity": "STANDBY"
         },
         {
@@ -7375,12 +7370,12 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:266df09b66953b11",
-          "outlook": "First reading. Watch the next 72 hours.",
+          "id": "headline:0817dedfcb4b6267",
+          "outlook": "Lower than yesterday. The 72-hour path is easing if it holds.",
           "severity": "STANDBY"
         },
         {
-          "id": "headline:0817dedfcb4b6267",
+          "id": "headline:f902bff0eeecd5d8",
           "outlook": "Lower than yesterday. The 72-hour path is easing if it holds.",
           "severity": "STANDBY"
         },
@@ -7425,7 +7420,7 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:d4882d9e5f29cb7b",
+          "id": "headline:63e77d9b0f930858",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "STANDBY"
         },
@@ -7435,13 +7430,8 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:75600b4c91d7542c",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ALERT"
-        },
-        {
-          "id": "headline:ff870ec6c413c4cd",
-          "outlook": "First reading. Watch the next 72 hours.",
+          "id": "headline:259cdffd8b7d23b6",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
           "severity": "STANDBY"
         },
         {
@@ -7477,6 +7467,26 @@
         {
           "id": "clock:bulletin",
           "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:f521c812228b4d38",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:ff870ec6c413c4cd",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:6b927575ffcb2e9b",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:9606bf6c0bd35acc",
+          "outlook": "First reading. Watch the next 72 hours.",
           "severity": "STANDBY"
         }
       ],
@@ -7734,6 +7744,12 @@
           "title": "European Commission confirms cyberattack, says hackers used AI tool"
         },
         {
+          "id": "headline:f7c2e9967d3d2c12",
+          "kind": "cyber",
+          "severity": "STANDBY",
+          "title": "JPMorganChase reports cyberattack on third-party service providers - ABC News - Breaking News, Latest News and Videos"
+        },
+        {
           "id": "cyber:155f1de6b4673b95",
           "kind": "cyber",
           "severity": "STANDBY",
@@ -7758,18 +7774,6 @@
           "title": "Important Notice of Data Breach for ECM/HOME Team Clients - Nevada County (.gov)"
         },
         {
-          "id": "headline:e2b00f081fb43c3d",
-          "kind": "cyber",
-          "severity": "STANDBY",
-          "title": "Some of the world’s most-visited websites targeted by cyberattack - WBAL-TV"
-        },
-        {
-          "id": "headline:40b44044197c7796",
-          "kind": "attack",
-          "severity": "ALERT",
-          "title": "How disinformation exploited the Kraków tragedy to attack the usual targets, and how Elon Musk made things worse - EDMO"
-        },
-        {
           "id": "headline:516bd6dfbeafd855",
           "kind": "attack",
           "severity": "ALERT",
@@ -7788,10 +7792,10 @@
           "title": "Iran fires at U.S. facility in Bahrain as Tehran resumes strikes on Arab neighbors - PBS"
         },
         {
-          "id": "headline:ab64c62e75f10c05",
-          "kind": "war-iran",
+          "id": "headline:b11f14b4fd88486f",
+          "kind": "attack",
           "severity": "STANDBY",
-          "title": "Trump says renewed Iran strikes ‘highly unlikely’ if talks progress but warns he could still strike - CNBC"
+          "title": "York victim of Krakow attack on his way home, family confirms - BBC"
         },
         {
           "id": "headline:071be1d8e25eccda",
@@ -7800,10 +7804,10 @@
           "title": "Iran Update, November 18, 2026 - Institute for the Study of War"
         },
         {
-          "id": "headline:f902bff0eeecd5d8",
+          "id": "headline:d4348496413bda52",
           "kind": "war-iran",
           "severity": "STANDBY",
-          "title": "Trump Grows Frustrated With Vance Over Iran War Critique - The New York Times"
+          "title": "Mideast nations ramp up efforts to avert all-out war as Israel urges Iran strikes, officials say - AP News"
         },
         {
           "id": "headline:f975d6dbbccc6de8",
@@ -7818,16 +7822,16 @@
           "title": "Democrats flipped 9 U.S. Senate seats — the most in almost 70 years - PBS"
         },
         {
-          "id": "headline:266df09b66953b11",
-          "kind": "war-ukraine",
-          "severity": "STANDBY",
-          "title": "Dispatch from Kyiv: Let Ukraine strike Russia’s missile launchers at the source - Atlantic Council"
-        },
-        {
           "id": "headline:0817dedfcb4b6267",
           "kind": "climate",
           "severity": "STANDBY",
           "title": "OPEC speaks up for fossil fuels at COP31 climate talks - Reuters"
+        },
+        {
+          "id": "headline:f902bff0eeecd5d8",
+          "kind": "war-iran",
+          "severity": "STANDBY",
+          "title": "Trump Grows Frustrated With Vance Over Iran War Critique - The New York Times"
         },
         {
           "id": "headline:367c6f0596cf799e",
@@ -7878,10 +7882,10 @@
           "title": "Polish police arrest 3 teens over suspected neo-Nazi terror plot - DW.com"
         },
         {
-          "id": "headline:d4882d9e5f29cb7b",
-          "kind": "global",
+          "id": "headline:63e77d9b0f930858",
+          "kind": "war-ukraine",
           "severity": "STANDBY",
-          "title": "Ukraine updates: Europe to send united front to potential peace talks - DW.com"
+          "title": "Ukraine Facility: Council approves largest-ever payment of €8 billion to Kyiv - Council, European Union"
         },
         {
           "id": "headline:d15541953ee71bcb",
@@ -7890,16 +7894,10 @@
           "title": "Israel's Arab Parties After the Election: Unprecedented Representation - Royal United Services Institute (RUSI)"
         },
         {
-          "id": "headline:75600b4c91d7542c",
-          "kind": "global",
-          "severity": "ALERT",
-          "title": "First three-way summit between China, Russia and the US opens possible avenue to nuclear disarmament talks - ICAN - International Campaign to Abolish Nuclear Weapons"
-        },
-        {
-          "id": "headline:ff870ec6c413c4cd",
-          "kind": "global",
+          "id": "headline:259cdffd8b7d23b6",
+          "kind": "climate",
           "severity": "STANDBY",
-          "title": "From tarmac to APEC summit table, Japan's PM cuts a lonely figure - Reuters"
+          "title": "Climate Action from Geneva to Antalya | UN Climate Change Conference COP31 - Geneva Environment Network"
         },
         {
           "id": "neo:3d3ddf5e49ea000e",
@@ -7942,6 +7940,30 @@
           "kind": "clock",
           "severity": "STANDBY",
           "title": "Doomsday Clock"
+        },
+        {
+          "id": "headline:f521c812228b4d38",
+          "kind": "global",
+          "severity": "ALERT",
+          "title": "‘New page in history?’ Xi, Trump and Putin summit was more of a footnote - The Guardian"
+        },
+        {
+          "id": "headline:ff870ec6c413c4cd",
+          "kind": "global",
+          "severity": "STANDBY",
+          "title": "From tarmac to APEC summit table, Japan's PM cuts a lonely figure - Reuters"
+        },
+        {
+          "id": "headline:6b927575ffcb2e9b",
+          "kind": "global",
+          "severity": "ALERT",
+          "title": "Europe tightens sanctions on Russia. America loosens them - The Economist"
+        },
+        {
+          "id": "headline:9606bf6c0bd35acc",
+          "kind": "global",
+          "severity": "STANDBY",
+          "title": "Plenary session of the APEC Summit - Президент России"
         }
       ],
       "trends": [
