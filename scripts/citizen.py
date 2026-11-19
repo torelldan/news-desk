@@ -804,9 +804,9 @@ def fetch_google_trends(now: datetime) -> dict:
 def news_velocity(threats: list[dict], when: datetime | None = None) -> list[dict]:
     buckets: dict[str, list] = {}
     for item in threats or []:
-        topic = {"war-iran": "iran-war", "war-ukraine": "ukraine-war", "usgov": "us-gov", "cyber": "cyber"}.get(item.get("kind") or "")
+        topic = {"war-iran": "iran-war", "war-ukraine": "ukraine-war", "usgov": "us-gov", "cyber": "cyber", "global": "global"}.get(item.get("kind") or "")
         topic = topic or topic_of(item.get("title") or "")
-        if topic not in {"iran-war", "ukraine-war", "us-gov"}:
+        if topic not in {"iran-war", "ukraine-war", "us-gov", "global"}:
             continue
         buckets.setdefault(topic, []).append(item)
     out = []
@@ -1270,9 +1270,12 @@ def morning_brief(threats, trends, triggers, assets, local, markets=None) -> str
         lines.append(f"Open risk: {top.get('severity')} {top.get('title')}.")
     elif sp is None or abs(sp) < 3:
         lines.append("No rare risk is on the board. A routine flyby or an empty storm outlook is not an emergency.")
-    wars = [item.get("title") for item in threats or [] if item.get("kind") in {"war-iran", "war-ukraine"}][:2]
+    wars = [item.get("title") for item in threats or [] if item.get("kind") in {"war-iran", "war-ukraine"} and item.get("severity") == "ALERT"][:2]
     if wars:
         lines.append("Current war coverage is on the board: " + "; ".join(wars) + ".")
+    globe = [item.get("title") for item in threats or [] if item.get("kind") == "global" and item.get("severity") == "ALERT"][:1]
+    if globe:
+        lines.append("Global: " + globe[0] + ".")
     trend_items = [item for item in (trends or {}).get("items") or [] if item.get("rise") not in (None, "", "flat")]
     if trend_items:
         lead = trend_items[0]

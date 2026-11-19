@@ -886,6 +886,51 @@ def test_hazard_source_parsers():
         [{"kind": "quake", "title": "M5.0 Philippines", "url": "https://example.com/q", "source": "USGS"}],
     )
     assert linked[0]["links"][0]["url"] == "https://example.com/q"
+    standby_heads = (
+        "G7 Foreign Ministers' meeting: Press remarks by the High Representative/Vice-President Kaja Kallas upon arrival",
+        "Democrats flipped 9 U.S. Senate seats — the most in almost 70 years - PBS",
+        "The Supreme Court before it stood apart - SCOTUSblog",
+        "Secretary of State Marco Rubio on Major Technical Failures & Outage Incidents - C-SPAN",
+        "Remarks by Under Secretary of War for Policy Elbridge Colby at the Ukraine Defense Contact Group (As Delivered)",
+        "Dispatch from Kyiv: Let Ukraine strike Russia’s missile launchers at the source - Atlantic Council",
+        "Iran Update, November 18, 2026 - Institute for the Study of War",
+        "Mideast nations ramp up efforts to avert all-out war as Israel urges Iran strikes, officials say - AP News",
+        "York victim of Krakow attack on his way home, family confirms - BBC",
+    )
+    for headline in standby_heads:
+        assert boards.news_event_severity(headline) == "STANDBY", headline
+    assert boards.news_event_severity("Iran fires at U.S. facility in Bahrain as Tehran resumes strikes on Arab neighbors - PBS") == "ALERT"
+    assert boards.news_event_severity("Ukraine: Civilian casualties in 2026 already far exceed previous years’ tolls - UN News") == "ALERT"
+    assert boards.quake_severity(6.2, "Ridgecrest, California") == "ACTION"
+    assert boards.global_event_type("G7 Foreign Ministers' meeting: Press remarks by Kaja Kallas upon arrival") == ""
+    assert boards.global_event_type("Takeaways from the Trump-Xi-Putin summit and GTA VI launches: Morning Rundown") == ""
+    assert "US" in boards.major_powers("First three-way summit between China, Russia and the US")
+    assert boards.global_event_type("Trump, Putin and Xi to hold a trilateral summit") == "summit"
+    assert boards.global_severity("Trump, Putin and Xi to hold a trilateral summit", outlets=1) == "ALERT"
+    assert boards.global_severity("NATO summit opens in The Hague", outlets=1) == "STANDBY"
+    assert boards.global_severity("NATO summit opens in The Hague", outlets=3) == "ALERT"
+    merged_global = boards.global_dedupe([
+        {"title": "Trump and Putin plan a summit", "source": "Reuters", "severity": "ALERT", "date": "2026-11-19"},
+        {"title": "Trump and Putin plan a summit", "source": "BBC", "severity": "STANDBY", "date": "2026-11-19"},
+    ])
+    assert len(merged_global) == 1 and merged_global[0]["sourceCount"] == 2
+    campaign = deskextra.cyber_dedupe([
+        {"title": "Optimizely confirms massive cyberattack on customer websites injected stealer malware", "source": "CSO Online", "severity": "STANDBY", "date": "2026-11-17"},
+        {"title": "Cyberattack hits 178 organizations: Credit cards, crypto, other data at risk", "source": "Syracuse.com", "severity": "STANDBY", "date": "2026-11-17"},
+        {"title": "Some of the world's most-visited websites targeted by cyberattack", "source": "WBAL-TV", "severity": "STANDBY", "date": "2026-11-18"},
+    ])
+    assert len(campaign) == 1 and campaign[0]["sourceCount"] == 3
+    assert deskextra.keep_strike("York victim of Krakow attack on his way home, family confirms - BBC") is False
+    assert deskextra.keep_strike("CISA Warns of 4 Exploited Flaws Linked to Ransomware, Cryptomining, and LLMjacking Attacks") is False
+    assert deskextra.keep_strike("Mideast nations ramp up efforts to avert all-out war as Israel urges Iran strikes") is False
+    assert deskextra.keep_strike("Dispatch from Kyiv: Let Ukraine strike Russia’s missile launchers at the source") is False
+    assert deskextra.strike_from_row({"kind": "cyber", "title": "Ransomware attack shuts a hospital", "url": "https://example.com/c"}) is None
+    spikes = deskextra.section_spikes([
+        {"title": "OpenAI releases a new frontier model", "source": "The Verge", "url": "https://example.com/a"},
+        {"title": "OpenAI releases a new frontier model", "source": "Reuters", "url": "https://example.com/b"},
+        {"title": "How to use OpenAI for a webinar", "source": "Blog", "url": "https://example.com/c"},
+    ])
+    assert spikes and spikes[0]["topic"] == "OpenAI" and spikes[0]["links"]
     assert deskextra.cyber_severity("Zero-day exploited in widely used email gateway") == "ALERT"
     assert deskextra.cyber_severity("CVE-2026-1 example", kev=True) == "ALERT"
     assert deskextra.cyber_severity("Global outage hits power grids in multiple countries") == "ACTION"
