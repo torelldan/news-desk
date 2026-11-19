@@ -1057,6 +1057,7 @@ def main() -> int:
             errors.append(gap)
     impact["infra"] = infra_rows
     impact["infraGaps"] = infra_gaps
+    boards.apply_infra_source(catalog_rows, infra_rows)
     seen_infra = {row.get("url") or "" for row in threat_items}
     for row in infra_rows:
         if row.get("url") and row["url"] in seen_infra:
@@ -1078,14 +1079,19 @@ def main() -> int:
         impact["drivers"] = drivers
         impact["explainer"] = deskextra.gold_driver_lines(deskextra.driver_moves(drivers))
         impact["vixZone"] = deskextra.vix_zone((((drivers.get("rows") or []) and next((row.get("level") for row in drivers["rows"] if row.get("name") == "VIX"), None)) or None))
-        brent = (deskextra.driver_moves(drivers).get("brent"))
-        if brent is not None and abs(float(brent)) >= 1:
-            note = f"Brent {brent}% over 1 month"
-            for row in impact.get("infra") or []:
-                row["market"] = note
-            for row in threat_items:
-                if row.get("kind") == "infra":
-                    row["market"] = note
+        brent_row = next((row for row in (drivers.get("rows") or []) if row.get("name") == "Brent"), None)
+        brent_5d = ((brent_row or {}).get("changes") or {}).get("1W")
+        ttf_5d = None
+        ttf = boards._yahoo("TTF=F", "1mo", "Europe/Amsterdam")
+        if ttf:
+            ttf_5d = deskextra.window_change(ttf.get("points") or [], 5)
+        if brent_5d is None:
+            brent = boards._yahoo("BZ=F", "1mo", "America/New_York")
+            if brent:
+                brent_5d = deskextra.window_change(brent.get("points") or [], 5)
+        note = deskextra.infra_market_note(brent_5d, ttf_5d)
+        deskextra.stamp_infra_notes(impact.get("infra") or [], note)
+        deskextra.stamp_infra_notes([row for row in threat_items if row.get("kind") == "infra"], note)
     except Exception as err:
         errors.append(f"Drivers: {err}")
     brief = citizen.morning_brief(threat_items, trends, triggers, boards_out.get("assets") or {}, local, boards_out.get("markets") or {})
