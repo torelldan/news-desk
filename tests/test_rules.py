@@ -900,6 +900,31 @@ def test_hazard_source_parsers():
     for headline in standby_heads:
         assert boards.news_event_severity(headline) == "STANDBY", headline
     assert boards.news_event_severity("Iran fires at U.S. facility in Bahrain as Tehran resumes strikes on Arab neighbors - PBS") == "ALERT"
+    riyadh = "Damage from missile attack reported in Riyadh's financial district, and other Mideast news - AP News"
+    assert boards.news_event_severity(riyadh) == "ALERT"
+    assert boards.event_lead(riyadh).lower().startswith("damage from missile attack")
+    assert deskextra.strike_country(riyadh) == "Saudi Arabia"
+    assert deskextra.strike_country("Drone strike near Doha") == "Qatar"
+    assert deskextra.strike_country("Explosion in Dubai") == "United Arab Emirates"
+    assert deskextra.strike_country("Missile hits Muscat") == "Oman"
+    assert deskextra.strike_severity(riyadh) == "ALERT"
+    disinfo = "How disinformation exploited the Krakow tragedy to attack the usual targets, and how Elon Musk made things worse - EDMO"
+    assert boards.news_event_severity(disinfo) == "STANDBY"
+    assert deskextra.keep_strike(disinfo) is False
+    assert boards.news_event_severity("Critics attack the president's reputation in a new essay") == "STANDBY"
+    icans = {"title": "First three-way summit between China, Russia and the US - ICAN", "source": "ICAN", "url": "https://example.com/ican", "date": "2026-11-19", "published": "2026-11-19T06:00:00-06:00"}
+    reuters = {"title": "Trump, Putin and Xi hold a summit - Reuters", "source": "Reuters", "url": "https://example.com/reuters", "date": "2026-11-19", "published": "2026-11-19T05:00:00-06:00"}
+    clustered = boards.global_dedupe([icans, reuters])
+    assert len(clustered) == 1
+    assert clustered[0]["source"] == "Reuters"
+    assert clustered[0]["sourceCount"] == 2
+    assert any(link["source"] == "ICAN" for link in clustered[0]["links"])
+    stale = boards.finish_global([
+        {"kind": "global", "title": "Europe to send united front to potential peace talks - DW", "source": "DW", "date": "2026-11-13", "url": "https://example.com/dw"},
+        {"kind": "global", "title": "Trump, Putin and Xi hold a summit - Reuters", "source": "Reuters", "date": "2026-11-19", "url": "https://example.com/reuters"},
+    ], "2026-11-19")
+    assert all("peace talks" not in (row.get("title") or "") for row in stale)
+    assert any(row.get("source") == "Reuters" for row in stale)
     assert boards.news_event_severity("Ukraine: Civilian casualties in 2026 already far exceed previous years’ tolls - UN News") == "ALERT"
     assert boards.quake_severity(6.2, "Ridgecrest, California") == "ACTION"
     assert boards.global_event_type("G7 Foreign Ministers' meeting: Press remarks by Kaja Kallas upon arrival") == ""

@@ -21,6 +21,21 @@ def js(obj) -> str:
     return text.replace("</", "<\\/").replace("<!--", "<\\!--")
 
 
+def collect_spikes(meta, science, markets) -> dict:
+    """The page reads one spikes object. Labs and markets live on their own files too."""
+    saved = dict((meta or {}).get("spikes") or {})
+    labs = (science or {}).get("spikes") or saved.get("labs") or []
+    market_rows = []
+    for region in (markets or {}).get("regions") or []:
+        for spike in region.get("spikes") or []:
+            row = dict(spike)
+            row["region"] = region.get("name") or region.get("id") or ""
+            market_rows.append(row)
+    if not market_rows:
+        market_rows = list(saved.get("markets") or [])
+    return {"labs": labs, "markets": market_rows, "podcasts": list(saved.get("podcasts") or [])}
+
+
 def main() -> None:
     meta = load("meta.json", {})
     pages = load("pages.json", {})
@@ -55,7 +70,7 @@ def main() -> None:
         "history": load("history.json", {"days": []}),
         "lookback": load("lookback.json", {"note": "No stored history yet.", "escalated": [], "fizzled": [], "calls": []}),
         "brief": meta.get("brief") or "",
-        "spikes": meta.get("spikes") or {},
+        "spikes": collect_spikes(meta, load("science.json", {"items": []}), load("markets.json", {"regions": []})),
     }
     template = (ROOT / "template.html").read_text()
     if "/*__DATA__*/" not in template:

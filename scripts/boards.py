@@ -592,6 +592,7 @@ def fetch_threats(now: datetime) -> dict:
         "severity": "STANDBY",
     })
     kept = [row for row in items + extras if _in_year(row, now.year) or row.get("kind") == "clock"]
+    kept = finish_global(kept, now.strftime("%Y-%m-%d"))
     kept = _drop_old_health(kept, now)
     return {"items": demote_stale_alerts(_dedupe_titles(kept), now), "gaps": gaps}
 
@@ -1661,16 +1662,55 @@ _PHYSICAL_EVENT = re.compile(
 )
 
 
+_ROUNDUP_TAIL = re.compile(r",?\s+and other\b.*$", re.I)
+_NOT_AN_EVENT = re.compile(
+    r"\b(disinformation|misinformation|fact-check|fact check|analysis)\b|\bhow\b.{0,60}\bexploited\b",
+    re.I,
+)
+_FIGURATIVE_ATTACK = re.compile(
+    r"\battacks?\b.{0,50}\b(usual targets|critics|reputation|narrative|opponents)\b",
+    re.I,
+)
+_PHYSICAL_CONTEXT = re.compile(
+    r"\b(killed|kills|dead|death|casualt\w*|damage|damaged|destroyed|wounded|injured|"
+    r"missile|drone|airstrike|air strike|explosion|explodes|shooting|shots? fired|"
+    r"bomb(?:ed|ing)?|shelling|wildfire|earthquake|flood(?:ing)?|hurricane|"
+    r"evacuat\w*|hospital|civilians|district|air ?base|facility|refinery|"
+    r"riyadh|jeddah|dammam|doha|dubai|abu dhabi|muscat|manama|bahrain|kuwait)\b",
+    re.I,
+)
+
+
+def event_lead(title: str) -> str:
+    """Drop a roundup tail such as ', and other Mideast news' so the lead event still counts."""
+    return _ROUNDUP_TAIL.sub("", title or "").strip(" ,")
+
+
 def news_event_severity(title: str, note: str = "", source: str = "") -> str:
     """News starts at STANDBY. Only a reported physical or cyber event is an alert.
 
-    Opinion, speeches, daily summaries, election write-ups, and court essays stay at standby
-    even when they mention a strike or an outage. Structured feeds do not use this function.
+    Opinion, speeches, daily summaries, election write-ups, and court essays stay at standby.
+    A figurative 'attack' (the usual targets, critics, reputation) and a disinformation
+    or media-analysis piece stay at standby. A roundup that leads with a real event still counts.
+    Structured feeds do not use this function.
     """
-    blob = f"{title or ''} {note or ''} {source or ''}"
-    if _SOFT_NEWS.search(blob):
+    lead = event_lead(title)
+    blob = f"{lead} {note or ''} {source or ''}"
+    body = f"{lead} {note or ''}"
+    if _SOFT_NEWS.search(blob) or _NOT_AN_EVENT.search(body):
         return "STANDBY"
-    if _PHYSICAL_EVENT.search(f"{title or ''} {note or ''}"):
+    if _FIGURATIVE_ATTACK.search(body) and not _PHYSICAL_CONTEXT.search(body):
+        return "STANDBY"
+    if re.search(r"\b(attacks?|strikes?)\b", body, re.I):
+        if _PHYSICAL_CONTEXT.search(body) or re.search(r"\b(missile attack|drone strike|airstrike|air strike)\b", body, re.I):
+            return "ALERT"
+    if re.search(
+        r"\b(explosion|explodes|shooting|shots? fired|ransomware|cyberattack|cyber attack|data breach|"
+        r"outage|breach|evacuat\w*|killed|kills|casualt\w*|earthquake|flood(?:ing)?|hurricane|wildfire|"
+        r"missile attack|drone strike)\b",
+        body,
+        re.I,
+    ):
         return "ALERT"
     return "STANDBY"
 
@@ -1727,38 +1767,115 @@ def global_severity(title: str, note: str = "", outlets: int = 1) -> str:
     return "STANDBY"
 
 
+_MAJOR_OUTLETS = (
+    "reuters", "associated press", "ap news", "bbc", "new york times", "wall street journal",
+    "wsj", "bloomberg", "the guardian", "guardian", "al jazeera", "cnn", "npr", "deutsche welle", "dw.com",
+)
+_ADVOCACY = ("ican", "campaign to abolish", "advocacy", "activist", "ngo")
+
+
+def outlet_rank(row: dict) -> int:
+    """Major news desks outrank a wire mention, which outranks an advocacy page."""
+    blob = f"{row.get('source') or ''} {row.get('title') or ''}".lower()
+    if any(name in blob for name in _ADVOCACY):
+        return 0
+    if any(name in blob for name in _MAJOR_OUTLETS):
+        return 2
+    return 1
+
+
+def _same_global_event(left: dict, right: dict) -> bool:
+    left_type = global_event_type(left.get("title") or "", left.get("note") or "")
+    right_type = global_event_type(right.get("title") or "", right.get("note") or "")
+    if not left_type or left_type != right_type:
+        return False
+    left_powers = set(major_powers(f"{left.get('title') or ''} {left.get('note') or ''}"))
+    right_powers = set(major_powers(f"{right.get('title') or ''} {right.get('note') or ''}"))
+    if left_powers == right_powers and left_powers:
+        return True
+    if not left_powers and not right_powers:
+        return same_story(left.get("title") or "", right.get("title") or "")
+    shared = left_powers & right_powers
+    if len(shared) >= 2:
+        return True
+    return bool(shared and (left_powers <= right_powers or right_powers <= left_powers))
+
+
+def _global_links(row: dict) -> list[dict]:
+    links = []
+    seen = set()
+    for item in [row] + list(row.get("links") or []):
+        url = item.get("url") or ""
+        if not url or url in seen:
+            continue
+        seen.add(url)
+        links.append({"title": item.get("title") or "", "url": url, "source": item.get("source") or ""})
+    return links
+
+
+def _prefer_global_face(lead: dict, extra: dict) -> None:
+    """Keep the major-outlet headline, and count every outlet on the event."""
+    if outlet_rank(extra) > outlet_rank(lead) or (
+        outlet_rank(extra) == outlet_rank(lead)
+        and outlet_rank(extra) > 0
+        and (extra.get("published") or "") > (lead.get("published") or "")
+    ):
+        for key in ("title", "url", "source", "published", "date", "label"):
+            if extra.get(key):
+                lead[key] = extra[key]
+    links = _global_links(lead)
+    for item in _global_links(extra):
+        if item["url"] not in {link["url"] for link in links}:
+            links.append(item)
+    lead["links"] = links[:8]
+    sources = []
+    for src in [lead.get("source") or "", extra.get("source") or ""] + [item.get("source") or "" for item in links]:
+        if src and src not in sources:
+            sources.append(src)
+    for src in list(lead.get("relatedSources") or []) + list(extra.get("relatedSources") or []):
+        if src and src not in sources:
+            sources.append(src)
+    face = lead.get("source") or ""
+    related = [src for src in sources if src != face]
+    lead["relatedSources"] = related
+    lead["related"] = len(related)
+    lead["sourceCount"] = len(sources) or 1
+    lead["severity"] = global_severity(lead.get("title") or "", lead.get("note") or "", lead["sourceCount"])
+
+
 def global_dedupe(rows: list[dict]) -> list[dict]:
-    """One row per event type and the powers named in it."""
+    """One row per event. Every outlet is counted, and a news desk leads an advocacy page."""
     kept: list[dict] = []
     for row in rows or []:
-        kind = global_event_type(row.get("title") or "", row.get("note") or "")
-        powers = tuple(major_powers(f"{row.get('title') or ''} {row.get('note') or ''}"))
-        match = None
-        for other in kept:
-            other_powers = tuple(major_powers(f"{other.get('title') or ''} {other.get('note') or ''}"))
-            if kind and kind == global_event_type(other.get("title") or "", other.get("note") or "") and powers == other_powers:
-                match = other
-                break
+        match = next((other for other in kept if _same_global_event(row, other)), None)
         if match is None:
             fresh = dict(row)
-            fresh["sourceCount"] = int(fresh.get("sourceCount") or 1)
+            fresh["links"] = _global_links(fresh)
+            fresh["sourceCount"] = max(int(fresh.get("sourceCount") or 1), len({item.get("source") for item in fresh["links"] if item.get("source")}) or 1)
             kept.append(fresh)
             continue
-        src = row.get("source") or ""
-        if src and src != match.get("source"):
-            related = list(match.get("relatedSources") or [])
-            if src not in related:
-                related.append(src)
-            match["relatedSources"] = related
-            match["related"] = len(related)
-            match["sourceCount"] = 1 + len(related)
-        outlets = int(match.get("sourceCount") or 1)
-        match["severity"] = global_severity(match.get("title") or "", match.get("note") or "", outlets)
-        if (row.get("published") or "") > (match.get("published") or "") and row.get("title"):
-            match["title"] = row["title"]
-            if row.get("url"):
-                match["url"] = row["url"]
+        _prefer_global_face(match, row)
     return kept
+
+
+def finish_global(rows: list[dict], today: str, days: int = 5) -> list[dict]:
+    """Drop a Global item older than about five days unless a fresher copy of that event is still in the window."""
+    try:
+        cutoff = (datetime.fromisoformat(today) - timedelta(days=days)).date().isoformat()
+    except ValueError:
+        cutoff = ""
+    globe = [row for row in rows or [] if row.get("kind") == "global"]
+    rest = [row for row in rows or [] if row.get("kind") != "global"]
+    if cutoff:
+        fresh = [row for row in globe if (row.get("date") or "") >= cutoff]
+        stale = [row for row in globe if (row.get("date") or "") < cutoff]
+        globe = fresh + [row for row in stale if any(_same_global_event(row, item) for item in fresh)]
+    folded = global_dedupe(globe)
+    for row in folded:
+        row["kind"] = "global"
+        row["severity"] = global_severity(row.get("title") or "", row.get("note") or "", int(row.get("sourceCount") or 1))
+        row["tags"] = ["global", (row.get("severity") or "standby").lower()]
+    return rest + folded
 
 
 def classify_desk(title: str, note: str, hinted: str) -> str:
@@ -1965,7 +2082,7 @@ def _try_global(now):
     rows = []
     gaps = []
     try:
-        for row in _headlines(GLOBAL_NEWS, now, retain_days=7, limit=12):
+        for row in _headlines(GLOBAL_NEWS, now, retain_days=7, limit=20):
             title = row.get("title") or ""
             if not global_event_type(title, row.get("note") or ""):
                 continue

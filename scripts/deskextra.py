@@ -24,7 +24,12 @@ STRIKE_PLACES = (
     ("ust-luga", "Russia"), ("ust luga", "Russia"), ("suez", "Egypt"),
     ("smolensk", "Russia"), ("leningrad", "Russia"), ("kirishi", "Russia"), ("afipsky", "Russia"),
     ("moscow", "Russia"),
-    ("bahrain", "Bahrain"),
+    ("riyadh", "Saudi Arabia"), ("jeddah", "Saudi Arabia"), ("dammam", "Saudi Arabia"), ("saudi", "Saudi Arabia"),
+    ("doha", "Qatar"), ("qatar", "Qatar"),
+    ("abu dhabi", "United Arab Emirates"), ("dubai", "United Arab Emirates"),
+    ("u.a.e.", "United Arab Emirates"), ("uae", "United Arab Emirates"),
+    ("muscat", "Oman"), ("oman", "Oman"),
+    ("manama", "Bahrain"), ("bahrain", "Bahrain"),
     ("romanian", "Romania"), ("romania", "Romania"),
     ("u.k.", "United Kingdom"), ("united kingdom", "United Kingdom"),
     ("britain", "United Kingdom"), ("uk air", "United Kingdom"),
@@ -648,6 +653,10 @@ def keep_strike(title: str) -> bool:
         return False
     if re.search(r"\b(dispatch from|on (?:his|her|their) way home|family confirms|avert|efforts to avert|ramp up efforts)\b", blob, re.I):
         return False
+    if re.search(r"\b(disinformation|misinformation|fact-check|fact check)\b|\bhow\b.{0,60}\bexploited\b", blob, re.I):
+        return False
+    if re.search(r"\battacks?\b.{0,50}\b(usual targets|critics|reputation|narrative)\b", blob, re.I):
+        return False
     struck = re.search(r"\b(strikes?|attacks?|bombard\w*|explos\w*|shelling|airstrikes?|air strikes?)\b", blob, re.I)
     if re.search(r"\b(drone maker|drone factory)\b", blob, re.I) and not struck:
         return False
@@ -663,6 +672,8 @@ def strike_severity(title: str, *, energy_hits_72h: int = 1, brent_move: float |
     blob = (title or "").lower()
     if re.search(r"\b(united states|u\.s\. homeland|us forces|american base|us energy)\b", blob):
         return "ACTION"
+    if re.search(r"\b(missile|drone|airstrike|air strike|strike|attack)\b", blob) and re.search(r"\b(damage|damaged|casualt\w*|killed|dead|wounded|destroyed)\b", blob):
+        return "ALERT"
     fields = strike_fields(title)
     energy = fields["target_type"] == "energy"
     chokepoint = any(name in blob for name in CHOKEPOINTS)
