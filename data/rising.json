@@ -19,8 +19,8 @@
       "links": [
         {
           "source": "ABC News - Breaking News, Latest News and Videos",
-          "title": "Deadly mass shooting in Poland investigated as terror act, prosecutor says - ABC News - Breaking News, Latest News and Videos",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOb1pFNDZDUm5SZkhOYWNkVS0waDU0bXBlXzJZVHlKTW5BVkdCWVFKYUVUTXZ2TnZMdExJM2FfcWF2MUVmVm5MNnBjeW9fVmpWaDZpeDhaTUE2LWdOQ1BVRDMwNFFsbTExaVhXS2dnd3gybmljTE9pRGowck5ER2xpQnp1eVBhVTkwdU92cl9uZi1iMV9kYXBFQTJDVEJGZWFqakZWMWlpQkxCSUdkYTBubVJuSThQZ9IBuwFBVV95cUxPM2I3U25ZNVUwdUlUbGVEN1lrRDlwcWFQb2VsVnMzZWMyY2RDaUYyelRqejVOX3BaMC1CQU8wbFh1RU1EdEFhWUdUR1dLT1RNMWtESWVLdE13QUxJRWlWZ3E5YVA5OGZscmFMbnB5XzNaRlpwelk4U2pUWTY0ZXFBMjJxdHIwU3FpWFRSVmJyQ25fTzdFa2l5SGl1MTRaTGNjaW1hbm9ReERvaXFvUmtvTU9jazB6WENsUllV?oc=5"
+          "title": "At least 6 killed, several injured in shooting at Polish market square: Police - ABC News - Breaking News, Latest News and Videos",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNNTRKanQ2WnJGUDc4cWc3bjM5TU9CX1AybDFYNHVQMUhIV1dOamIxZ3pwc3k0aWt6MW5LWll6dmJRWUdNalFob19CWkJhLUpOejhyQnQxWmZfaFpubGVJOWh5RnlXLTVDbmVqOXhRZmNKcGVza096OWs3MmpabTRfMWdQN2RIcTM4eU4wMnVJMVRQVkl5SVZzODg2cXc5YkY40gGmAUFVX3lxTE5SckpHX3FqLVpRSFBUeU56SFFGbm00aG1pbXltRExOaHhyWHo4Y3BScHJsQ0ZsMU9WLW5PQmdmVElva1dvRnJmblY4bFZmbUIycVBNWFFoS0VRSUlCdTVsU1hJZVE3S2xoQ3dsM1hMWC1pckJCb0pRYTRhUFFQb2tOX0Q5WjZkMTB1TTd5NVROcTdudkFYdXlCX2twM2FjNE5sVENXVlE?oc=5"
         },
         {
           "source": "International Centre for Counter-Terrorism - ICCT",
@@ -83,23 +83,23 @@
       "links": [
         {
           "source": "USGS",
+          "title": "M5.3 South Georgia Island region",
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000uc2q"
+        },
+        {
+          "source": "USGS",
+          "title": "M5.0 central East Pacific Rise",
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000uc2t"
+        },
+        {
+          "source": "USGS",
+          "title": "M4.9 13 km WNW of Xichang, China",
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000uc26"
+        },
+        {
+          "source": "USGS",
           "title": "M5.1 99 km WSW of Illapel, Chile",
           "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000uc1x"
-        },
-        {
-          "source": "USGS",
-          "title": "M4.9 65 km SSW of Atka, Alaska",
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ubzm"
-        },
-        {
-          "source": "USGS",
-          "title": "M5.0 31 km WSW of Rabaul, Papua New Guinea",
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ubz1"
-        },
-        {
-          "source": "USGS",
-          "title": "M4.7 92 km W of San Juan, Peru",
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ubyt"
         }
       ],
       "reasons": "1.8x usual volume · 5 or more outlets",
@@ -155,14 +155,89 @@
     {
       "links": [
         {
+          "source": "ReliefWeb",
+          "title": "Haiti: Floods - Oct 2026",
+          "url": "https://reliefweb.int/disaster/fl-2026-000201-hti"
+        },
+        {
+          "source": "ReliefWeb",
+          "title": "Congo: Floods - Oct 2026",
+          "url": "https://reliefweb.int/disaster/fl-2026-000196-cog"
+        },
+        {
+          "source": "ReliefWeb",
+          "title": "Panama: Earthquake - Oct 2026",
+          "url": "https://reliefweb.int/disaster/eq-2026-000188-pan"
+        },
+        {
+          "source": "ReliefWeb",
+          "title": "Indonesia: Drought - Sep 2026",
+          "url": "https://reliefweb.int/disaster/dr-2026-000178-idn"
+        }
+      ],
+      "reasons": "2.8x usual volume · 5 or more outlets",
+      "score": 3,
+      "sourceCount": 4,
+      "spark": [
+        {
+          "price": 1
+        },
+        {
+          "price": 1
+        },
+        {
+          "price": 1
+        },
+        {
+          "price": 1
+        },
+        {
+          "price": 1
+        },
+        {
+          "price": 8
+        },
+        {
+          "price": 8
+        }
+      ],
+      "state": "RISING",
+      "topic": "relief"
+    },
+    {
+      "links": [
+        {
+          "source": "PBS",
+          "title": "Iran widens Gulf attacks by targeting U.S. air base in Kuwait and sites in Bahrain - PBS",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNaW9yLUs5SFJFWmk1NUp3aUpBc0lfYl95MEJsUl83dUs2ck9rT1ctbllHMFU0bWpseVFKSG01MV9ueV9LNW9EazJ2M2xla19qSzBPWklsM0F6ZHhDd3h1TzRxTFhSMm5aamtzN3AtZnFORWlNVk1yM0tTY0phUXRORmJwUmFIbU1BZ3ZyanlTVkg0TDMzekV3V0ZkVEl2MTNENkQyOTNSWjVsZGhVNWhZZHpFdjNDTUnSAbwBQVVfeXFMT2g5NGpZdnN5R1R2QXVsV2txeXQzYWhVdllQa1NrY2RSM2JsSHNvNmNWRnNzSGk2UlpoRnlJVFdGbGNQZnJwd0M2S2FDdEdRWmRDTEJ6UFdMUXp0d040UjlHdWFLLVROcjdmRHhCNzdySDNvWFdfWWRsS1BNVkNVYUYybnFmX2RaTFh3TmQxeFFqb2VvUnVxbWlpM3E5Y1Q0dWRPNVBJMzFGSDZZQnltTlQyYTlNUllQa09WZWw?oc=5"
+        },
+        {
+          "source": "Reuters",
+          "title": "Backing Trump, US Senate Republicans block Iran war resolution - Reuters",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOcmstcFNFWmdlWE9OT3pCd2JxN1RvaDZMZ2dlZC01YU9hUVFDdFdETmRJLWYtRWI5bkpNVHgyQUFTRVNncW9kUUZkdGhFRkl1RUx6MGs2eVhNNXhZbzROalJGQnRSSUdqdVBhQ1NuLTRONXEyQWpYemhwenhCd2VlNlY4VUZJT3NRdjBmdzBTZGxreUlHNmgyX0p4TzVxX1FvaXZR?oc=5"
+        },
+        {
+          "source": "Voice of America English News",
+          "title": "Rubio Says Economic Pressure on Iran is Working - Voice of America English News",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOX2tpYnc1ejdPQ0lpUUpMXzltbEJqcndLb3pmNG90RW1UTHZkcjdSLTdpelg4NzI0YVZzcm40UmFEa3U1WHNlRkNDZFlCMy11RjBLa3FLYll3aWM4TUVyNnlkVUlLV1hYWEUtM01FeWxfWDFfRjNuTEJTdXVMb2JYSVI1WUJPOEJXWDdYZ0s0MDNndDYyTVHSAZYBQVVfeXFMTl9raWJ3NXo3T0NJaVFKTF85bWxCanJ3S296ZjRvdEVtVEx2ZHI3Ui03aXpYODcyNGFWc3JuNFJhRGt1NVhzZUZDQ2RZQjMtdUYwS2txS2JZd2ljOE1FcjZ5ZFVJS1dYWFhFLTNNRXlsX1gxX0YzbkxCU3V1TG9iWElSNVlCTzhCV1g3WGdLNDAzZ3Q2Mk1R?oc=5"
+        }
+      ],
+      "reasons": "4 outlets this window",
+      "score": 4,
+      "state": "RISING",
+      "topic": "iran war"
+    },
+    {
+      "links": [
+        {
           "source": "UN News",
           "title": "Ukraine: Civilian casualties in 2026 already far exceed previous years’ tolls - UN News",
           "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFA2S212VmNSVjM3WHJzb3pwWDlFUjEyeEF5QTZRU3RBeV9GZjVOU2RoT1JBQjdZbzkyY0djTG4ybjFVMlFySnVYYjBWcjhPQXptMmtDTlVtdw?oc=5"
         },
         {
-          "source": "Atlantic Council",
-          "title": "Dispatch from Kyiv: Let Ukraine strike Russia’s missile launchers at the source - Atlantic Council",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPNTgtX08zaGpfcXJJU2h1eFRFT1VLd2M3RjlHMkZqN3FfMzlJdWZIZnhoZWtvTEZKTktEc2VCRE1mcHJ6UmxyYVV3WEZBZERIZ3R3X0gtZlBXaF9IUDQyWWZrUi1INXQxRVRoUHJJcjN2UjNIY1FCSFphNGJXU1M5ZlJhdGxfV3o5bzdDbTAxN09aVUFTblV0VHNkN09rOG1hV2ZuZnV5cVgxTFRCcHJ4MUhfV0s4UVI1eDdkS21B?oc=5"
+          "source": "PBS",
+          "title": "Kushner says Russia is 'comfortable' with NATO-like security guarantees for Ukraine to end war after Trump talks with Putin - PBS",
+          "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNZGtncEo5UWFCS09PLVJ5Rlk0RDJiQkpHSUJTQmVoeTVyX3F4N3gyTk4xeXA4NWE4ck15X0htT0FxRkc5dGp6b0pvRDVqWURRSldmSXEzaGJSZDV2dHd0ZnZaYzJSZUxxZUhqbHJNNUhLTnV1MHZjV0NFUVBMVURvdU15TDhOMm05NFhnU29pd3cwSmtGNThSYVlBQ2JqM001bUdsdE04N2VTOUYyekw1d3EySHR4U2RTNnFmeXBGYnlRMDdvc1hqSmJBb0NGVkluNzhGUFVXWnlOV01uRWc4Y3I2MWNhTmRyNlhKbNIB8gFBVV95cUxOR3dkTWZRMzdtWk1FMFpZdXNlckQzMk90RUhGaGF6SzFmRjJXNXozRmQ3bWMwUWlHSzk5alRMZFQ3RXNTeTJzT21HWXZNX2VMSGlUdDVJMF81Mk1PZEJab2h1YXpwRFAyR3RVOGpXVHVRVk1rNkhKdEVVZHZRT2pXZl85UlhkSzN2Zmx1WFNyclAzaGw3dXZmck80THZpdHNuRnJpWkM2LXFUak5qU3JoS29UNUozUnFLcGR4ckx1eWUxbzNXbWl4MkQ1UFB1Ui1Oa09WcUlkVXhmcHhVMGlQeVBvdXlKbGxrMDBvX0lPeURzZw?oc=5"
         },
         {
           "source": "U.S. Department of War (.gov)",
@@ -178,48 +253,48 @@
     {
       "links": [
         {
-          "source": "PBS",
-          "title": "Iran fires at U.S. facility in Bahrain as Tehran resumes strikes on Arab neighbors - PBS",
-          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPTlVZWjRCSVZZOTdxbEJHVlVJTjVyV2xWVXdaQ2tqUmVRNFJkaElDa2xhYWFqbEcwRDlaWnpNWF9OMy05OE5mM2N4VkhRQVZHdTFUTTlyd2JUSkwxR0Q3ZEh1UDZZNDB5cmVHa1lfMkM0ZldWT1pJRmVTTWVPMWEzQnloMWY2Zjh1TDdaeHRONmIwbERZLWtfMy12Z19JcDV2eUJxZElIWDdBWW5CU1NEYU5TVjJRRjjSAbwBQVVfeXFMTm93R19jS3VPR050YTJCYXBSQ25mYlo1RXNhZ1JSSXVZdEdiYUJJeloyZHlkUnJYTTc5dGVzbmlqZHY3Tlhscjc5cWxqT1JRTHMtVHlORE5TUVpKQVZ1d3FGUjhwcDlHbk5JSFVoeXZya1lTU1ZIUW9SRkUwZ2t0akZGa2t4VEpfdEZJRS0xcFFEZGVaVGtNcWFvOWdLTFFRUmFhTXBsQ1FydjA5X3dZUHdDVmE4WnduNXVUMTc?oc=5"
-        },
-        {
-          "source": "Institute for the Study of War",
-          "title": "Iran Update, November 18, 2026 - Institute for the Study of War",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNMWlDdWU0eVJ5ZHV5VVh6cUJyRVE4ZXBEYVctSkFDd3FMZVM3aHdkM3ZNVjJwQ3ZxWnhEWFJqTVJuRXpSMXVBbzJjc0lVVWh0MURPdEZVMDhqUGZzSGtiRGt3NFdqVW1zSE0weUlJQ2VWMHRlcnBRbHl5YWFhd3lLZnUtR20tQQ?oc=5"
-        },
-        {
-          "source": "The New York Times",
-          "title": "Trump Weighs New Strikes on Iran as Israel Presses for Action, Officials Say - The New York Times",
-          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1TOTFWdU93OVF0V1d3QTZ4elZ2SHRiV0RzRmxjM3J2aTZuR3RyNlRWVmN2akRqUTcxVGpRM1dOZmFrelB4cGw3eWRha2F5TmI5SXpRdDFUZEwta3VSTUxQOTd3NGhGVnY1VUlnaWdVazFLVGhpUmlBck9xSmVzdw?oc=5"
-        }
-      ],
-      "reasons": "4 outlets this window",
-      "score": 4,
-      "state": "RISING",
-      "topic": "iran war"
-    },
-    {
-      "links": [
-        {
           "source": "NPR",
           "title": "The midterms were the largest win for either party in 50 years - NPR",
           "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQa2Jya1pVMGdtYW5PcWk4Z3ZGV29SUkR2RE5ranJBNlJYU1IxS05rQmd1M01jRjZyYnJaMUUzb2hCeDh0OUFHNlg3aU1lRUw1c0hXb0NlRnhSQmctSkpURTBlTnVlZ2dINmREaTFOYkxYWEV0dWpnZnRhbi1HbXNCb3p2aw?oc=5"
         },
         {
-          "source": "PBS",
-          "title": "Democrats flipped 9 U.S. Senate seats — the most in almost 70 years - PBS",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPdmV2SmVvV1YzVTZpQW5ZbHNhZjQ1blUwWUJQamJsRDVFcmh4aDkxd1RIVmtnZ2FvNzZHdXpqMGFTX09fcTExcVg4LU1KckNvaUJsWGZWLW9ybnJEUzI0ejZCYzlNbVdJaXcwOERoRDRoNUFSdHpMeDQ4Wkl1WURzUk9wRlJkQ09jQm9KSVRSQURYMkVFYUpWY1FUMFBsbUNkM0VN0gGoAUFVX3lxTFB3VURjSDZpYzlUZ2JUUldDb1ZFQWV1MzJtUkM3YkdKRDFhTy1yUDg2RjBhUWR6bU96Z3ZzZFFKT3RLdDVpRW84RGtaeEJWclE3b19LVE9kUUpveENNMHk2VGxUdkF1a0lXUWJEeUhUN0dMUXJ5al8tTnpnTTNVTVpIVGlKaVpJMV8zNXN5Yk5rTDV2SGtKT19QNFhyNVdtU1FSbEJqWHV5eA?oc=5"
+          "source": "- Emerson Polling",
+          "title": "National Poll: Rubio Leads 2028 GOP Nomination Contest, Ossoff Rises Among Democrats - - Emerson Polling",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQeVEweVpGVHhhenR3TDljYVh2YklqcldyUGRMNDl0UDJWR0xYR3ptMFpIMXZBMHRXY252akhsRGFFdExkMHpzMUpGWDcxVjVxMFB5UG9OMHVlbUlFYmprUTg4VGQxbHBfUTUtSkw3LS1rR0VCZ0ltcUpOYTRZeUtqS1FOT1FTVGR0d3ZaZHMxU2I3VUtJVVp0VEoteU1sMDlIb2owVm1rZFhidjVRVkdlMzRGYkFXN3hq?oc=5"
         },
         {
-          "source": "SCOTUSblog",
-          "title": "The Supreme Court before it stood apart - SCOTUSblog",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNUk5UbmV6RE9XTlRaLUhKbTZjVXQwby13bVhvcjVRY3VCTXdQNTgxUGxwTEI1UzVyZ3A5LUoxZzhrZE0weFFsTWFXcE9xNHlBVFpoNGFVcWVKcnV0c0x4Z3I5OFNqb1ZGOGx6cDlvWTRLSjRlbFZMY3Y0XzN3S1lRbA?oc=5"
+          "source": "CAWP",
+          "title": "Results for Women Congressional and Statewide Executive Candidates in Election 2026 - CAWP",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNOFpsRmJGX3dfQkQyNThKTVdjUlo2VFRpaFRUNk9nX3ZlbTFvcGgzRUYwNFFKNEp4bXZPUnphZ1Z5bEhsWl9zcF83OGJINFZZVXNONkZFWmFiWl9GemJyQjh2WFpjaV9ZOHUwZ3BiUDdwXzlYMnlRbFdZYWxTVDU2MUlFREs4SVVIelRKY2l2NFVFczFWV3o3ZXJYMVJSQmxPSHVzS1VHd2pRdw?oc=5"
         }
       ],
       "reasons": "4 outlets this window",
       "score": 4,
       "state": "RISING",
       "topic": "us gov"
+    },
+    {
+      "links": [
+        {
+          "source": "NPR",
+          "title": "For Trump, the meeting was the whole point after trilateral summit with Xi and Putin - NPR",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOQnJkakJpTUllcVhnckYzc1ZzbG40V0pBeWxhRlNveml2QU1hcnVuZlZ6QmFZX3c1NjV4bUNEQ003V0QxT3hEeTFXd3JLS0dad0phTGQ5OFl6amVkUnUydFluekNzMkhFYTVxR2JwMXcxRDNQeTdzbW1nVTAtYkxieTAzNVZVOXhTS3hTUzE5SE0xYjBFLVVWWUN2dVowd2FlQmhsbFRzdjVtVDNRdmxNQ0drZDhEdFRhZTJWS1VYcFFvUFlUQVNN?oc=5"
+        },
+        {
+          "source": "Reuters",
+          "title": "From tarmac to APEC summit table, Japan's PM cuts a lonely figure - Reuters",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQV2lFRzhLTFFzUDAyQlFERWhQTjQwbzExSnlMaEVMYnhnOEdTRm9yNTJxWWgwRjluUHkxZVFWUnJYTXVOaVhoRGtGRE5PRXhiRF9WX3RtVVJGTkVIV3BLRDZPWVJQUFN0RjY3UXBpUktQSlNHQzlmS1N5Q0lCQkpLSjU4c29PQTM3bXI1cDlzSjAwTG95Vkt1Sk90NGlid0ptUG1v?oc=5"
+        },
+        {
+          "source": "CBS News",
+          "title": "Putin says Russia won't negotiate limited ceasefire with Ukraine after bridge strike - CBS News",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE0yNHJ2ekFIeGFSWktPUmVMSF85amtLLV9kQ1RRSXRBUVNVZDFndHRFcUd1aDByY0VQeG91TzFlMDVJdU85aWJ6V2g5cDBQaGg3Q0JUTjhlMkt3a2c0S1Q3UHZURkZWcHFZZGVGM1NoLURSQQ?oc=5"
+        }
+      ],
+      "reasons": "4 outlets this window",
+      "score": 4,
+      "state": "RISING",
+      "topic": "global"
     }
   ]
 }

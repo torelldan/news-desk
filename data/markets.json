@@ -28,14 +28,56 @@
             "2026-11-26",
             "2026-12-25"
           ],
-          "level": 7218.77,
-          "change": -104.86,
-          "changePct": -1.43,
+          "level": 7175.83,
+          "change": -147.8,
+          "changePct": -2.02,
           "asOf": "2026-11-19",
           "source": "https://finance.yahoo.com/quote/%5EGSPC"
         }
       ],
       "headlines": [
+        {
+          "id": "headline:8aba9aa6be321c84",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Reuters",
+          "sourceId": "headline",
+          "title": "AI surge could strain US capacity and overheat economy, Fed's Goolsbee says - Reuters",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQZ2V1TTUwaFZ4T1pYN3VBVDlqZThZVHBvQ0VhNnRNNlpWVlZXLUYtVWh5T096NmxYbEsxdjF6T0JmZmZCM0lHQ01CT2NUcTdrUzJ0djdFbWRteWlNTWF4enhqajdoY2ZWcjBmc0lMYkpYczV1RDJVdmxZWFctNDI3bHFxOTBySmZvbHNDRXM5QmxqWUtieXFJYjZnUmNONVUzUnBTYTlMdlNqaDdzdkYweVRHZ2w?oc=5",
+          "published": "2026-11-19T15:35:29-06:00",
+          "date": "2026-11-19",
+          "label": "Nov 19, 2026 3:35 PM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:b10a58da24901533",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Yahoo",
+          "sourceId": "headline",
+          "title": "Fed's Goolsbee says AI surge could strain US capacity, overheat economy - Yahoo",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5NWlBRbmxMcHVVZWsteVhpbWcyRncwX21MVjZLREpFZHhJU0RxVWx0eG1UMS1odm5GRHdqNm9GMDl5T3A4Ykl3WmYtSEdZUnJiYXppMHZVWlRDY1Y0TlJxTXJaYnB5SzdCcUVaMEtRaXdpMXljeGlVWmtRQ3JfajA?oc=5",
+          "published": "2026-11-19T14:33:45-06:00",
+          "date": "2026-11-19",
+          "label": "Nov 19, 2026 2:33 PM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
         {
           "id": "headline:030a29da363ed5bb",
           "kind": "headline",
@@ -79,12 +121,12 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:388123a69c743c1f",
+          "id": "headline:99fa95868e8f3dcb",
           "kind": "headline",
           "lane": "news",
           "source": "CNBC",
           "sourceId": "headline",
-          "title": "Treasury yields inch higher as investors weigh the state of the U.S. economy - CNBC",
+          "title": "Treasury yields tick lower as investors weigh the state of the U.S. economy - CNBC",
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQNkZZT1lIeU1WR19KR0NSTzF2YzA4dnQwalkwYTZKRUpJOW9DWldwNHdfZ1d1eXFmcHU0WHNlTXVocTNaQks3Tm9UalRQUFFGOXp3VkNNdDRHV1Y5czJQZ29fblFmcENfSnZUQWJsU3FjeWNfVTFVM1kxZzlUUWhuOTBB0gGHAUFVX3lxTE0ydXg2dUZCNEs4WnNRc2ZhUmFxR19LRkRzREFLOFc0aWxWSDJFTFJXaEQxdTJtQkg5Smo4azh3bXdRc1VveW9aYk5Rbzc0bGRxZng5dVhQWXhCV0syX09tVHRxclg1b2hiMnJjSzZjSm9LUWh1azA2bjZVbkNkY3cwRmpYT2ZiSQ?oc=5",
@@ -92,27 +134,6 @@
           "date": "2026-11-19",
           "label": "Nov 19, 2026 3:52 AM CT",
           "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:5681cf67a5f63955",
-          "kind": "headline",
-          "lane": "news",
-          "source": "The New York Times",
-          "sourceId": "headline",
-          "title": "Fed Saw Need to Keep Raising Interest Rates Despite Holding Steady in October - The New York Times",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQZWNVYnFNZV9nd0xLQW9EenZFTEJZS1A0VF9jcXgydHdZMlNUY21sTndVYzZXTThLS19UOThYOF9oZS1hbURtSlBhcUYyTVB1XzB2QUk5dlZva3RlNzlyWmtweDNhUUdyNVJGV290RzNLYTBEU1RXMlpiNEtHZ09HTVFyZ09ldVdKUXNiMHFLSk45Y3RiOWEzWDFB?oc=5",
-          "published": "2026-11-18T14:35:01-06:00",
-          "date": "2026-11-18",
-          "label": "Nov 18, 2026 2:35 PM CT",
-          "weekday": "Wed",
           "timeKnown": true,
           "tags": [
             "headline",
@@ -154,6 +175,27 @@
           "published": "2026-11-18T14:32:00-06:00",
           "date": "2026-11-18",
           "label": "Nov 18, 2026 2:32 PM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:5681cf67a5f63955",
+          "kind": "headline",
+          "lane": "news",
+          "source": "The New York Times",
+          "sourceId": "headline",
+          "title": "Fed Saw Need to Keep Raising Interest Rates Despite Holding Steady in October - The New York Times",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQZWNVYnFNZV9nd0xLQW9EenZFTEJZS1A0VF9jcXgydHdZMlNUY21sTndVYzZXTThLS19UOThYOF9oZS1hbURtSlBhcUYyTVB1XzB2QUk5dlZva3RlNzlyWmtweDNhUUdyNVJGV290RzNLYTBEU1RXMlpiNEtHZ09HTVFyZ09ldVdKUXNiMHFLSk45Y3RiOWEzWDFB?oc=5",
+          "published": "2026-11-18T13:09:22-06:00",
+          "date": "2026-11-18",
+          "label": "Nov 18, 2026 1:09 PM CT",
           "weekday": "Wed",
           "timeKnown": true,
           "tags": [
@@ -833,54 +875,12 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:f5420ec33e64f3aa",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Livemint",
-          "sourceId": "headline",
-          "title": "Federal Reserve's Susan Collins sees ‘gradual’ hikes in interest rate to curb inflation, manage economy - Livemint",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOaFZIQmhjLXdrcDBDdVkwVzRfMHJLSFhCc3czUjI1andRTjlxWXp6aTNBaTREOGc3dFNwUFF4WFdmaDlsV0U1MHJqRlRmYzV3aHNDUW1RVEZLeWZwZVI0eW1qUzE5SWlFZmNKSy04RVluLVhnMjBtSjdvZmItZGJ5c0RRakhNbjhTZkpPY3JyNFozUVV5ODAwYjUwZUZmd292SVR3SFRxRkdBVHFfRHNEbGdLYTljNlQ1QVEyVG83b29Mck1pMUQxWTdaRWNtVlc4WGt2X3JWcDJmenk2VzNUQk5fTFdhcTFsdVZRcDg3dHBlb01NNmliZy1DTdIBgAJBVV95cUxPeTJWM25CelhDSjlieTEydGpRVVE4TUdoWVlvR3pHWG40bGNIOXdmdEpEdnBkRUdSdFowOW0wSHhNVzJPR2Z4Ny0wVVF6RmpwUWZfb1FsVmQyWloxTmdZNi1MTEdXeWtJcnAtSkJzZkNISE5pX2xtdmhnVkJLeUg5N3FJZ2drQ0ZYMmx1ZkdzN0o4VXdfTlJVOU0tTmdwYlZXdW9PMU9VZFhKOVpCQ3RUbnJzalJPb25HT243Tk1HRTg5enJ6NEd0cGtOdWxseEQ5M3pUY2Y2UzN0SXEwTFlrMElUMlFJOFVZano2ZUZwc0F6eGI4c2sxVFZUU3d5Qmtr?oc=5",
-          "published": "2026-11-16T02:19:48-06:00",
-          "date": "2026-11-16",
-          "label": "Nov 16, 2026 2:19 AM CT",
-          "weekday": "Mon",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:dbeaa0cfa0cbc989",
-          "kind": "headline",
-          "lane": "news",
-          "source": "The American Action Forum",
-          "sourceId": "headline",
-          "title": "Tracker: The Federal Reserve’s Balance Sheet Assets - The American Action Forum",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNR2NrRDdoQ1MwS0paZFliV01BelV0MS1tQkNMSEdJYmYweWctanpzZU5hMllmVUtjQWR2cXBPSVhFeFluSFlMbi1ZVTg1ZS1TYzRMam81MFlRbWxockRRN2RpeEk2OGhpYWVXUVpsX3lvcUx4QUFERERGQVdkeVRndHJNeExJTU9DLS1GRW9GTW0?oc=5",
-          "published": "2026-11-16T02:00:00-06:00",
-          "date": "2026-11-16",
-          "label": "Nov 16, 2026 2:00 AM CT",
-          "weekday": "Mon",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ],
       "spikes": [
         {
           "topic": "Federal Reserve",
-          "outlets": 8,
+          "outlets": 6,
           "state": "RISING",
           "links": [
             {
@@ -940,11 +940,6 @@
           "state": "RISING",
           "links": [
             {
-              "title": "Fed Saw Need to Keep Raising Interest Rates Despite Holding Steady in October - The New York Times",
-              "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQZWNVYnFNZV9nd0xLQW9EenZFTEJZS1A0VF9jcXgydHdZMlNUY21sTndVYzZXTThLS19UOThYOF9oZS1hbURtSlBhcUYyTVB1XzB2QUk5dlZva3RlNzlyWmtweDNhUUdyNVJGV290RzNLYTBEU1RXMlpiNEtHZ09HTVFyZ09ldVdKUXNiMHFLSk45Y3RiOWEzWDFB?oc=5",
-              "source": "The New York Times"
-            },
-            {
               "title": "‘Almost all’ US Fed policymakers saw further interest rate hikes as likely, minutes show - The Straits Times",
               "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNWFRsZFFyeGhlY3RacTRWN0JjOFNkaEZzcU9PUnktNUxJdzk2aExvRE5hSm42TEFnNEZOelRKRTZYYmZ6UEZZbzc5QVRuZnlWRERnUlVjT0tVaGQza0lMU0lndExsd1lDaXFNTnlkdG1yWVIwckhpbk1KQVBidFo1QzFKUFIxLVVmYU8yNjI0d1NPbEhMWTRsNTJvR0VWY2UzUGhYN0ozZ0Y5UTlHekpEZ0FndmdyaktMU2c?oc=5",
               "source": "The Straits Times"
@@ -955,12 +950,17 @@
               "source": "The Straits Times"
             },
             {
+              "title": "Fed Saw Need to Keep Raising Interest Rates Despite Holding Steady in October - The New York Times",
+              "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQZWNVYnFNZV9nd0xLQW9EenZFTEJZS1A0VF9jcXgydHdZMlNUY21sTndVYzZXTThLS19UOThYOF9oZS1hbURtSlBhcUYyTVB1XzB2QUk5dlZva3RlNzlyWmtweDNhUUdyNVJGV290RzNLYTBEU1RXMlpiNEtHZ09HTVFyZ09ldVdKUXNiMHFLSk45Y3RiOWEzWDFB?oc=5",
+              "source": "The New York Times"
+            },
+            {
               "title": "Fed minutes: Higher interest rates needed in December as inflation worries mount - The Tribune-Democrat",
               "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPWDhfeHU2NVc3N3hUMlNmZlphdW5zS1RvT3FEczEyN0NrTkQzclV3dFl1VUIzMlpYa2R3UFgxcGZ4UFJJQTdhWFVkSTBMb0lhNkI3aGk2N2xjV2t3WlFjN0JubkxIWHNpazZGamxWWldYSk44ZERySnVWejVRNE1uMks2UC0xV2F6bzFhVDZpenVaTndpRTJubTdBZFhPQ3MxZ3doZmR1UjM4Y3lIUEVlQUpEZVU2TmIxRk1CR2tibnVBekQ2WDVwZ3pIeFpJNlMzMExSYWxBQUpEVlhySEJ3RkdHd0JCcmJhcFpRcmNiVEhaU3VaYW1LWW5tUQ?oc=5",
               "source": "The Tribune-Democrat"
             }
           ],
-          "title": "Fed Saw Need to Keep Raising Interest Rates Despite Holding Steady in October - The New York Times"
+          "title": "‘Almost all’ US Fed policymakers saw further interest rate hikes as likely, minutes show - The Straits Times"
         }
       ]
     },
@@ -980,9 +980,9 @@
             }
           ],
           "holidays": [],
-          "level": 34123.25,
-          "change": -454.85,
-          "changePct": -1.32,
+          "level": 34028.73,
+          "change": -549.37,
+          "changePct": -1.59,
           "asOf": "2026-11-19",
           "source": "https://finance.yahoo.com/quote/%5EGSPTSE"
         },
@@ -998,14 +998,35 @@
             }
           ],
           "holidays": [],
-          "level": 69126.61,
-          "change": -27.56,
-          "changePct": -0.04,
+          "level": 68713.6,
+          "change": -440.57,
+          "changePct": -0.64,
           "asOf": "2026-11-19",
           "source": "https://finance.yahoo.com/quote/%5EMXX"
         }
       ],
       "headlines": [
+        {
+          "id": "headline:ec2f28e2b93a40a8",
+          "kind": "headline",
+          "lane": "news",
+          "source": "The Globe and Mail",
+          "sourceId": "headline",
+          "title": "Memo to Tiff Macklem: Stop hiking interest rates or risk ruining this economy and stock market - The Globe and Mail",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQTXpablhlZmt5LXVITlhkVkEzTWJPOTBHcXNfckVjNW9sclpzRDVNdDJLbUVWclJPZDM2aHI2bzZYLUJ2dXBGY1FUQ1VMU3lwRTR4Y0FWV1EyMWN4S0xHWDlPLUFqMDhlTFhkMlluVEZoLTVad205QVo1SFktcG4yWnZXQXZibG4xS1pmdVBRWVFpRDdnQXJDcy1kMGZNMUFpYTE2cWxpZ1JNNkc2VXd0N3RfNGJJTE9ESldSWUFxc2pOLXM?oc=5",
+          "published": "2026-11-18T17:43:30-06:00",
+          "date": "2026-11-18",
+          "label": "Nov 18, 2026 5:43 PM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
         {
           "id": "headline:6abadf3aec7a4441",
           "kind": "headline",
@@ -1304,9 +1325,9 @@
           "id": "headline:f92def85189741b4",
           "kind": "headline",
           "lane": "news",
-          "source": "Bloomberg",
+          "source": "Bloomberg.com",
           "sourceId": "headline",
-          "title": "Macklem to Leave as Bank of Canada Governor, Starting Succession Race - Bloomberg",
+          "title": "Macklem to Leave as Bank of Canada Governor, Starting Succession Race - Bloomberg.com",
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOek16LUJIUnRuUmo0UFdVeXprbWtVcUdONGc4NlVTUGZpdDdkUU1FYW1IazNrTURpelkyQ3VpTmk4WTNQcHBGLXE2ZGNVakdZQ3RCS2w0SzBIeGhSeGJheHhDaE9JcjFIOWJIRWFiR0lJT2ZfZV9DSGdtZG1kZU9VNldfbXdWVlE5eHhFM2xrckZNNHNEcS1mWlNsTFJ0V0t2RzdzUHJLNHkxaUxNNS1leGdTVFdSanVIZXR5V2JpU054UQ?oc=5",
@@ -1824,27 +1845,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:cccbb3223b700c22",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Bloomberg.com",
-          "sourceId": "headline",
-          "title": "Canada’s Next Central Bank Leader May Need to Play the Villain - Bloomberg.com",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPNmtuRzJnYjV6aUVuODU5cXJMRm9ZTVJfNzYwV2NtYkIzYUNhdkRYSFdZLWI5WHRWbzZrdVZoSHpaSTdveGllZGJVcFdWSmFrX0oxSHNsZWF3MHRHUWQ2Y3N4aXdMZG04Sklnam5tZFBpaFVIQmdrQ0swY2t4MThiTW8zTHVxb3ZWLW1MVU4wWm5nOWc5a0tTRHFST09BZVExenN4VGtBbUxNN1Z6Rnl6QUFkbGhlMDZlQjdRY2Jfa1JEaDFaTWIyVFNR?oc=5",
-          "published": "2026-11-11T02:00:00-06:00",
-          "date": "2026-11-11",
-          "label": "Nov 11, 2026 2:00 AM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ],
       "spikes": [
@@ -1875,6 +1875,29 @@
             }
           ],
           "title": "Bank of Canada says public trust in 2% inflation target helps anchor expectations - Investing.com Canada"
+        },
+        {
+          "topic": "interest rates",
+          "outlets": 3,
+          "state": "RISING",
+          "links": [
+            {
+              "title": "Memo to Tiff Macklem: Stop hiking interest rates or risk ruining this economy and stock market - The Globe and Mail",
+              "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQTXpablhlZmt5LXVITlhkVkEzTWJPOTBHcXNfckVjNW9sclpzRDVNdDJLbUVWclJPZDM2aHI2bzZYLUJ2dXBGY1FUQ1VMU3lwRTR4Y0FWV1EyMWN4S0xHWDlPLUFqMDhlTFhkMlluVEZoLTVad205QVo1SFktcG4yWnZXQXZibG4xS1pmdVBRWVFpRDdnQXJDcy1kMGZNMUFpYTE2cWxpZ1JNNkc2VXd0N3RfNGJJTE9ESldSWUFxc2pOLXM?oc=5",
+              "source": "The Globe and Mail"
+            },
+            {
+              "title": "Bank of Canada official discusses guidance on interest rate path - BNN Bloomberg",
+              "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOZmZkUERGNWRKeGdTX3BqTnVTaW1vMmRfVTk0RDRfR0hmQ3lpcWNkSTZWYjgxVWxVOEVablQ2a0dsY1daUVZhX2VaRnFmT0FSV0RlN2Nxd2lySzVEVm1tSU50X1FXZFhJSGhwVFBzbVY5VnZtNGZrMVlyWWw0dVRBd3o5cGltWUU5a2E0YjJFandFLWNQNDZUVml2OHRtdUtHaHlJQ2xMYXNHcUtIdDV4bUNsekdSYkQ3ZmZtYjh6MGZielNVclI2SXA0dVdsWDdXZnc?oc=5",
+              "source": "BNN Bloomberg"
+            },
+            {
+              "title": "Why Australia hiked interest rates faster and harder than any other advanced economy this year - Switzer Daily",
+              "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQdnpBTlZucFpwWkJxMDB3UHFnazNlUTJ4a2FIQUROZnpibGtxMGZrYmZhY0FLenRZUmdOQUVac3NjZFQ3U0hGaXR6WERQRUk4MEtPR2VIWDA3YmhUU1VfRWFvbnV0YnpZTkFlNWE4RjNDajRGc3hjUlZlelF1aEtDNWU0UXVHaFY0bURGMHMwY3ctOXFMczRpdTlGZmpMNGhhdlVCdjdRNUFGenoxaURpNEhYbXc1c1phVHc?oc=5",
+              "source": "Switzer Daily"
+            }
+          ],
+          "title": "Memo to Tiff Macklem: Stop hiking interest rates or risk ruining this economy and stock market - The Globe and Mail"
         }
       ]
     },
@@ -1894,9 +1917,9 @@
             }
           ],
           "holidays": [],
-          "level": 166459.45,
-          "change": -1078.55,
-          "changePct": -0.64,
+          "level": 166376.44,
+          "change": -1161.56,
+          "changePct": -0.69,
           "asOf": "2026-11-19",
           "source": "https://finance.yahoo.com/quote/%5EBVSP"
         }
@@ -1912,9 +1935,30 @@
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNOW56T2ZLNFFsVkQ0ZnVCMV9GMlhrMUhnQ0lzbUhxVHllRm5hanl6enc4VkxIbU9UUWhlbFBvYm5ORVN2bTVUZGhQYjVYZEhFQlJrcXJaaVczZTdQckdHS0taTjFKM193dlZ6S3RnZEt0ZEdVVjdNaV9xUWVKRlY2aWNZWlR1YlRJNGFHSXEyUkhQd3VVM204UGVvNjVHUm1KTDJ2cGQxV0FsUmdXbGViY2VWUQ?oc=5",
-          "published": "2026-11-19T11:00:36-06:00",
+          "published": "2026-11-19T15:11:09-06:00",
           "date": "2026-11-19",
-          "label": "Nov 19, 2026 11:00 AM CT",
+          "label": "Nov 19, 2026 3:11 PM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:cdc2d17bb2f101f4",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Demócrata",
+          "sourceId": "headline",
+          "title": "The Brazilian company Prática Produtos debuts on BME Growth with almost 100 million in capitalization - Demócrata",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOY01HTHBhOS1sSi1sWHJWTi1zRnBSVFdVVk1qcnAxNFVQMzk0YXhpeEZ0MGtMN3k4ZkV2MU5tNVVpYUtGbWZkaUV6UW5WcHF1NmZUNmd6aWNuajJpbk9BMVpkYkpFSmZWRWJyNnJpZFVpaGQyNHpDenpRRnZhUnJLaF9QWEpxOTduVi1RYXJ0TEQ4dXVkbkZsb01qRjRjVFJaaGtXZjBWWmJ1MkxMY3RjOWhaSWVoQVd4aDFtOEhDMDNqLWp1VFJtSGtOM0E0V0x5RVBYdkhGekdUUdIB2gFBVV95cUxOY01HTHBhOS1sSi1sWHJWTi1zRnBSVFdVVk1qcnAxNFVQMzk0YXhpeEZ0MGtMN3k4ZkV2MU5tNVVpYUtGbWZkaUV6UW5WcHF1NmZUNmd6aWNuajJpbk9BMVpkYkpFSmZWRWJyNnJpZFVpaGQyNHpDenpRRnZhUnJLaF9QWEpxOTduVi1RYXJ0TEQ4dXVkbkZsb01qRjRjVFJaaGtXZjBWWmJ1MkxMY3RjOWhaSWVoQVd4aDFtOEhDMDNqLWp1VFJtSGtOM0E0V0x5RVBYdkhGekdUUQ?oc=5",
+          "published": "2026-11-19T06:32:45-06:00",
+          "date": "2026-11-19",
+          "label": "Nov 19, 2026 6:32 AM CT",
           "weekday": "Thu",
           "timeKnown": true,
           "tags": [
@@ -2720,27 +2764,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:50f94279756317d7",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Valor International",
-          "sourceId": "headline",
-          "title": "Lula’s reelection prompts investors to rethink stock market bets - Valor International",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNdl9JMUdyUWJlZ1Rjd2pvMnNxN1RPTGlTd3JvOVVsMlFMbHVCdjJOX180dFJYWVZMWnIzQy1hOUdxaFpSTTVhdFBUZUV5YmhnVENkVGd6YWlRcGRZa3paaWhnbGJURjVDdklvdGl3MmxDem9LdjNmSGE0TWk0dVVXd3kxVkE5WDNGdzNObkd6aVdtZEFIWDBJd2RYUURkYk5kcFNaM01QRmxoRVdNa05ZTy1rZTNHMFM3WlVHZ2JQd0t5VnZGWDkwbXhlRdIB2gFBVV95cUxPTUtmZkNBSXB0TUVlMnpIZmZGM1o2MEE5ek1oWkdwc1BYUjJ6MHpFTkFwUG5xVUVvSExIVkJRajlCTHJ0bHE1NXdtR2RyR2RXaHB0cUM1UWx3OUh1emk0VTllN1ZoZ2dDRERmb3c0cmZYOU1ZcWVPcTFkZ0JUT19xRkxmVERCZkFuTUlUNTFPTC1GbHVFc2hVQ0lLeUtSNE9KVkpCMzNES1lHUkZ3N1NzdkxFcUJxU0hWMWxsVTRCdG9fc2s0QXQ0bUdTWVJldWtmdXhFS1NyVFZHdw?oc=5",
-          "published": "2026-10-27T11:54:59-05:00",
-          "date": "2026-10-27",
-          "label": "Oct 27, 2026 11:54 AM CT",
-          "weekday": "Tue",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ],
       "spikes": []
@@ -2761,10 +2784,10 @@
             }
           ],
           "holidays": [],
-          "level": 2425.42,
-          "change": -45.43,
-          "changePct": -1.84,
-          "asOf": "2026-11-19",
+          "level": 2419.43,
+          "change": -51.42,
+          "changePct": -2.08,
+          "asOf": "2026-11-20",
           "source": "https://iss.moex.com/iss/engines/stock/markets/index/securities/IMOEX.json"
         }
       ],
@@ -3981,6 +4004,27 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:ffa865dd4884a45a",
+          "kind": "headline",
+          "lane": "news",
+          "source": "联合早报",
+          "sourceId": "headline",
+          "title": "AI hardware sell-off drags Chinese stocks towards 16-month low - 联合早报",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOSENCZUtrb0RCMmRxb19HZ3d2T1JCdDlsXzhTUy1BN3NSU3dNWjJyTFFzZGJsdDBYZ185MktlMXhYZ05TUXh6d0dWbWpTSEl4TjZ1M3Rvd0tORTEtSG1qZ2t6UWVaWHJrOFZsckw1UlJwdzNRUnd1SDI4X1lOOGh2RWh3VkVBQVZ0Wi05TGpjRzQxdVlqdnJDdDJGQUlZeFU?oc=5",
+          "published": "2026-11-16T04:05:40-06:00",
+          "date": "2026-11-16",
+          "label": "Nov 16, 2026 4:05 AM CT",
+          "weekday": "Mon",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:37f48a92d2fd6dd2",
           "kind": "headline",
           "lane": "news",
@@ -4074,7 +4118,7 @@
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPdDJHS2lJX1lSYkZKTVdzN0JXQ1l2YkxKRHNReTNKX3B5dGJKR19fUEdHOGZiMHFsaFpDNlJiY2tLUXhsYmFvZ25uVzV1TnZaeXY0dzRtWTZZdGhiSUZURHBGVjdhZUFzMzVfVWZHZXdFNjNUQWkzTm1wOFZNSGZtQ3VfT0sxb2VHWGtoZmJ1RGFfRVNGRzFGeWFRV3FZbFd4eWVKRlZDM0VyR0lXS3lZMDhRTU42cE81b0J4WEgtbnBmQndQSlh0c1VYc1lqNEpwVXlqbF96R0JzZFdoZ3VUdmZ3?oc=5",
-          "published": "2026-11-16T00:24:00-06:00",
+          "published": "2026-11-16T00:24:43-06:00",
           "date": "2026-11-16",
           "label": "Nov 16, 2026 12:24 AM CT",
           "weekday": "Mon",
@@ -4359,6 +4403,27 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:7a7570af69c5ff78",
+          "kind": "headline",
+          "lane": "news",
+          "source": "South China Morning Post",
+          "sourceId": "headline",
+          "title": "Opinion | America’s AI bubble is a Ponzi scheme - South China Morning Post",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOVUQtUWgwd2cwc3FzNGFxQWxBdm8wVVJTMlNLN1FNTGFwTUNXZFJLS2VSMjNta1AzMjY1LTFCaS1hM1BpVTVpX25RTFFfa01QbDFlR0FrV2pPcjR4eTJOUjR6X0s5REVFYnVrdDUzNlFNaHdJdkx1cFVNRWYwX1BTeU5oSFpKZ29kRmh3M2pHWTcteW4w0gGUAUFVX3lxTE1zbG5Hd00yYlUyLVJrbms2MXBlSkVzdjJCaXBUY3JiSU5vOFh3SFBuMTc4NW5WQlpNRTNQaEt5Z3JYaUREcHpaVC1iQlhpSlpXdG5CWVlKRHlZUFdZT0QyV25henh5NnljVG1sT1M4ajNSR2txNVpUMWtXbXdRQXFZZUFTTWlpZGNFbElUb2g4elVfREY?oc=5",
+          "published": "2026-11-13T06:30:07-06:00",
+          "date": "2026-11-13",
+          "label": "Nov 13, 2026 6:30 AM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:3c7c191b1bbd56dc",
           "kind": "headline",
           "lane": "news",
@@ -4462,48 +4527,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:5c3875562b7a8946",
-          "kind": "headline",
-          "lane": "news",
-          "source": "South China Morning Post",
-          "sourceId": "headline",
-          "title": "State giant Huafa drops domestic AAA shield as China bond jitters deepen - South China Morning Post",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxONnNqS2xrUE9SM18xS2tYRTg0N2xoTXFfdkNsRVlIejBYUkZYbTU1Qmo5TVcybkEyVlNQb1hSdkFLZlBsVVpBWXZnbnhqQ2ZCVGdJVVdLSk5vTVhaNzhLcy1XQ3NQb3dmUDhaeXFoUzc2M3lIbG5DYlJYSlJ3cEM0akdmUTJoX2ZpdTNDcjA2WG51NlhUQzdSU2JocjVOUnVyT2NvQndld1BVYVV5Sk5pRmFYenNMT1ZsWEFoSmhjckhtMVhJOEE?oc=5",
-          "published": "2026-11-12T02:00:08-06:00",
-          "date": "2026-11-12",
-          "label": "Nov 12, 2026 2:00 AM CT",
-          "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:f94e9a3b4fb09204",
-          "kind": "headline",
-          "lane": "news",
-          "source": "China Briefing",
-          "sourceId": "headline",
-          "title": "Minimum Wages in China: A Complete Guide - China Briefing",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBPaDVQb2NYUkFYeUZ1aUhCOEFtOG9YUVB3R1IwUFMySWEzenNXalhVOHVrbUpVN0JtVXZiQXpEMHhWVzV0VHVCRHFhUnRwWFkzY0ZXMU1fVkhTN3Btb0lubFZraDFJVGs?oc=5",
-          "published": "2026-11-12T02:00:00-06:00",
-          "date": "2026-11-12",
-          "label": "Nov 12, 2026 2:00 AM CT",
-          "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ],
       "spikes": [
@@ -4561,6 +4584,27 @@
         }
       ],
       "headlines": [
+        {
+          "id": "headline:ca643c40f5a19bc6",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Fibre2Fashion",
+          "sourceId": "headline",
+          "title": "Europe's financial stability outlook clouded by AI & trade risks: ECB - Fibre2Fashion",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNVnI3RzVlMzJsTnpBVl85a0c3QzducDh1MFZlNEJFeWp1VlpUSzVLYVBXN1ZwLVhKdU1WdUNUaVUycjVUbXRGc3MzM3hGTmRKdHVoZUMzX0xncnYxS0tGbzBtdy1FeFdvUWFFaTN4Qkt4S1FjOXg1d2JvQV9XSGJlWmVFOTFCYVFHdGZUQ2doaVdfTDJMUGNsangxdFdzSjlBcXI4aWRobGJ2cXFGMFR1YjFxeGM5ZHpRRzFVMkxqYnlGM3Rxa01aVDhSU2ZRSG9DREw3dkJpV25DT2tfNVJSekoyZ3M?oc=5",
+          "published": "2026-11-19T04:48:53-06:00",
+          "date": "2026-11-19",
+          "label": "Nov 19, 2026 4:48 AM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
         {
           "id": "headline:cd74689c4d4af870",
           "kind": "headline",
@@ -5171,6 +5215,27 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:7abed2966d549946",
+          "kind": "headline",
+          "lane": "news",
+          "source": "www.tmgm.com",
+          "sourceId": "headline",
+          "title": "Euro trades at a 19-month low as ECB's Lagarde speaks three times - www.tmgm.com",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOdC1STEV6TlZJYS00NmY4eFFmWVhYcFYxcHpVd05iTlNCNUxnTmVFN0xTbHozVjVqYjJxczRfR2RxUDRYa2lvZDZhanItLWpKZjFmY1dnRWZ2VVU3YzctZmFrdXF2QW91MUVLaHJZM0ZvVmVzbmtoVUZsNGpnM1VZUm1TU1UwOTc4MVk4NXlDX2dMR01PSmx6UkgzLW5LZWM1R3VUeWFnVzRnME5yOG9ZckVPWFRfcjE2TDhweURHMm83ZFdmcC1WaFpadGk?oc=5",
+          "published": "2026-11-16T18:02:59-06:00",
+          "date": "2026-11-16",
+          "label": "Nov 16, 2026 6:02 PM CT",
+          "weekday": "Mon",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:bd7a6db57a2acd67",
           "kind": "headline",
           "lane": "news",
@@ -5358,48 +5423,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:c2f6e20979a7b912",
-          "kind": "headline",
-          "lane": "news",
-          "source": "MLQ.ai",
-          "sourceId": "headline",
-          "title": "ECB's Vujcic says AI and high government debt have become leading risks to euro zone financial stability - MLQ.ai",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOaUdjTUc2WHdzMzlaNFMxMUl6a2w3dDJUVjhucC05dERtOWQ1a3hoZnVGUTU4ZjZ0SjRrd2ZtZkFIMzdZb2JZSDRaVGJWVEVYbmM2cmI2bjg4ODVZYW5nZ3c4Qy10a2V1MDhwb0l5WUVrbmZ2R0p5cFhGQ0JrUzdtUmItaU5pa2pGbTl1Wnl3MkJkd1FMYTJTdnVfSW9CMmlfY1ZWVXFFb1dFdFUybXowNnFOT0hPc1d2eWRkc2swSVhNdw?oc=5",
-          "published": "2026-11-16T04:06:44-06:00",
-          "date": "2026-11-16",
-          "label": "Nov 16, 2026 4:06 AM CT",
-          "weekday": "Mon",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:b2d2948622566a0c",
-          "kind": "headline",
-          "lane": "news",
-          "source": "WSJ",
-          "sourceId": "headline",
-          "title": "ECB Urges Overhauls to Protect Financial System From AI, Government Debt - WSJ",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPTXBJVmZaTXVPNG94RVM2QXZXT1YtaDVlOWhsR2FyM1FCdFJlRmFKM25KQ3J2cWt3dm44dTlsT1hTNjhGZThJNlowQjFkSWxZVm1tOWZpQ0dFM0ZyMEhzQnVhc2I2UVF0WDFLTnczc1g5ZkpsNkZ3ZUZLZUpuQ1l1TGhwVlhXS1dWX1dTbERrdmY2ZGtZNmtwN1RXQU9tYVZmSFp5c293dTRvdnd3TDRRMWZmblo5QzRSZWsxZw?oc=5",
-          "published": "2026-11-16T03:08:00-06:00",
-          "date": "2026-11-16",
-          "label": "Nov 16, 2026 3:08 AM CT",
-          "weekday": "Mon",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ],
       "spikes": [
@@ -5469,6 +5492,27 @@
           "published": "2026-11-19T08:09:03-06:00",
           "date": "2026-11-19",
           "label": "Nov 19, 2026 8:09 AM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:672a98f0ee7fa3c6",
+          "kind": "headline",
+          "lane": "news",
+          "source": "24/7 Wall St.",
+          "sourceId": "headline",
+          "title": "Hang Seng Opens Down 1% While Mainland Shares Hold Steady - 24/7 Wall St.",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPd2swUVVPRzRPcXRpR1NMemdselBjZ1g5TkZFeWo5bS1LakhJN096LUZ2VXo3RnhrX2R2aTJ0M0pSaVJ5NWFiM0E5LXYxdUNHLTZLdHV3TzB3cnNFRDNwcTBONFZuV1dQM1VQMkFxbHI0UUxEOEdSdjlVUU9LRmg3aU4xOEg2RTRabHRLOHZpVGdEb3dRUUprcjdBYnp5VVQ4VzhqdVM4d2w2X0Nobk5hQWRTbk0tTnZ0SlhnSEd0dk1McVljNVZzTA?oc=5",
+          "published": "2026-11-19T07:16:33-06:00",
+          "date": "2026-11-19",
+          "label": "Nov 19, 2026 7:16 AM CT",
           "weekday": "Thu",
           "timeKnown": true,
           "tags": [
@@ -5625,27 +5669,6 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:672a98f0ee7fa3c6",
-          "kind": "headline",
-          "lane": "news",
-          "source": "24/7 Wall St.",
-          "sourceId": "headline",
-          "title": "Hang Seng Opens Down 1% While Mainland Shares Hold Steady - 24/7 Wall St.",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPd2swUVVPRzRPcXRpR1NMemdselBjZ1g5TkZFeWo5bS1LakhJN096LUZ2VXo3RnhrX2R2aTJ0M0pSaVJ5NWFiM0E5LXYxdUNHLTZLdHV3TzB3cnNFRDNwcTBONFZuV1dQM1VQMkFxbHI0UUxEOEdSdjlVUU9LRmg3aU4xOEg2RTRabHRLOHZpVGdEb3dRUUprcjdBYnp5VVQ4VzhqdVM4d2w2X0Nobk5hQWRTbk0tTnZ0SlhnSEd0dk1McVljNVZzTA?oc=5",
-          "published": "2026-11-18T21:33:46-06:00",
-          "date": "2026-11-18",
-          "label": "Nov 18, 2026 9:33 PM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
           "id": "headline:01a164f0917de9c7",
           "kind": "headline",
           "lane": "news",
@@ -5655,6 +5678,27 @@
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNbFVBdl96WEwwSHJqTEZhU3hPUWlLUlhWS0dqSHk5V3B1dHVUN1pqNk8xUDM3bGc0WV9PelNCVFdsdnlqUmxzQzNUbFZVZzRfTmUxRV93dXYzRWtacWhlcDg2WEo0V0h3NnRLa085MkZUSDdUS0NKd0dGR19pdlJIZVJpYWpEZGxkQnJNOWVwNjBVZFk4dUNxSXc4Y9IBoAFBVV95cUxQYzlVdURKQXVHRjRwXzFJV3hxcWlRWnR4VVhCa3I4N3U1WHpoYW1QRnAyaWVPX0VHcGIwNjJIbFc0V01yV0o4Y3owMWlQNzBiUHRPMXpkT1c1ZF94Ymk2ZmhUMnl0ZlBZZEhfNlpNeUFfS1lpVnd2OXJYbmdaSW0xam1VT3RDMmtUNnZfUnM3bXc1S2lnVWRkTDdRZGE3bllz?oc=5",
+          "published": "2026-11-18T21:09:26-06:00",
+          "date": "2026-11-18",
+          "label": "Nov 18, 2026 9:09 PM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:a0780a69658c31fe",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Al Jazeera",
+          "sourceId": "headline",
+          "title": "Anthropic raises $81.3bn in biggest IPO of all time - Al Jazeera",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNbFVBdl96WEwwSHJqTEZhU3hPUWlLUlhWS0dqSHk5V3B1dHVUN1pqNk8xUDM3bGc0WV9PelNCVFdsdnlqUmxzQzNUbFZVZzRfTmUxRV93dXYzRWtacWhlcDg2WEo0V0h3NnRLa085MkZUSDdUS0NKd0dGR19pdlJIZVJpYWpEZGxkQnJNOWVwNjBVZFk4dUNxSXc4Yw?oc=5",
           "published": "2026-11-18T21:09:26-06:00",
           "date": "2026-11-18",
           "label": "Nov 18, 2026 9:09 PM CT",
@@ -6274,33 +6318,12 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:50c1765b36df0da2",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Ahram Online",
-          "sourceId": "headline",
-          "title": "Tech shares slide ahead of Nvidia results, Anthropic IPO - Economy - Business - Ahram Online",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBTbk1jbzNOYl9nMTV1LURpTlFXcXlvd0VlZkR6S29lZmk1YmZNUDUyMUVpN0FRSzVEbzVRa0VrWHdFRHFONFpxZlpmUUxVYXpyZWZGMEhkUXI?oc=5",
-          "published": "2026-11-16T16:46:49-06:00",
-          "date": "2026-11-16",
-          "label": "Nov 16, 2026 4:46 PM CT",
-          "weekday": "Mon",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ],
       "spikes": [
         {
           "topic": "Nvidia",
-          "outlets": 7,
+          "outlets": 6,
           "state": "RISING",
           "links": [
             {
@@ -6726,6 +6749,27 @@
           "published": "2026-11-16T02:10:59-06:00",
           "date": "2026-11-16",
           "label": "Nov 16, 2026 2:10 AM CT",
+          "weekday": "Mon",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:b23782b099adf08f",
+          "kind": "headline",
+          "lane": "news",
+          "source": "The Economic Times",
+          "sourceId": "headline",
+          "title": "BOJ's Takata calls for early rate hikes to curb inflation risks - The Economic Times",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPdExVV255cjRzVExMalZvUkJYTTI4Z0ZlWTJTN1FOdjRvVFV5Z2RkdWJ5RS1YUENENnhBTHJ1bmFkLW9yTGFjMUtkX1R3SlpHOGFPdG5pNmI3X0ZPMm02VGdPaFRNenhTVkpBR1l3eDFPOGE5YjZYVG95QnM5T0FYc1ZLRzR5WE4xdFctemFLcHF1NjhyQ2dfYnZnM1JJdDMzOHRrR1FTV0ppYWhlWFVra284Z1VWREpUQ01aT3lBaHpDTXZQRHJrN3NpY0x3TW94Z21USDg5OWhRdFpNbzl4cUR5ZE1wcEHSAewBQVVfeXFMTi1La2FrRDQtNHl4cDBGem5uYU01aE5DRFNNT3JNb2hWYUxpX01mZG95aExPSHFYMnhRU2I0dFdYbUN2N2pCVWw0TDdZT1g2dmVsaTJLRkNKODYwamVuSTVraGFORkZiWXlfN2trMmNxdjdXV1ZXMFZ3NkhpV1h6SUxnc29tamI3dHZPOXA4X3BHUTlhSXU4eW5fYXNMZEk0MDRLb0pPbmJZYTZDRHhKcmYzN0tieDNla2R3V01vM3ROWVF6WmU2T0xwTWhzV0hjZnRiZWV3eTNIbjFVVGF4aEhRZkkxanFrbXB5YVo?oc=5",
+          "published": "2026-11-16T01:16:27-06:00",
+          "date": "2026-11-16",
+          "label": "Nov 16, 2026 1:16 AM CT",
           "weekday": "Mon",
           "timeKnown": true,
           "tags": [
@@ -7174,27 +7218,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:929a72bbd22c91e5",
-          "kind": "headline",
-          "lane": "news",
-          "source": "The Japan Times",
-          "sourceId": "headline",
-          "title": "AI slump not seen affecting Bank of Japan’s rate-rise plan - The Japan Times",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxONDVVX0MwaHh1RUowVmNUcHE5eEZRTXB5ZlE4XzhOa1dZUTYtaXlBT29ZdEgxVzVCemNZckQ2cVg3MlRnRVhLcFBYUHV4UUdibmtMTlZtWWtIaDFZdHotXzZwTl9yRnFLTTFDOUxXQWJyd2l4N3p2RmVYbnkwZ1dQUGxVZGtldUNa?oc=5",
-          "published": "2026-11-11T23:39:00-06:00",
-          "date": "2026-11-11",
-          "label": "Nov 11, 2026 11:39 PM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ],
       "spikes": [
@@ -7231,6 +7254,11 @@
           "outlets": 3,
           "state": "RISING",
           "links": [
+            {
+              "title": "BOJ's Takata calls for early rate hikes to curb inflation risks - The Economic Times",
+              "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPdExVV255cjRzVExMalZvUkJYTTI4Z0ZlWTJTN1FOdjRvVFV5Z2RkdWJ5RS1YUENENnhBTHJ1bmFkLW9yTGFjMUtkX1R3SlpHOGFPdG5pNmI3X0ZPMm02VGdPaFRNenhTVkpBR1l3eDFPOGE5YjZYVG95QnM5T0FYc1ZLRzR5WE4xdFctemFLcHF1NjhyQ2dfYnZnM1JJdDMzOHRrR1FTV0ppYWhlWFVra284Z1VWREpUQ01aT3lBaHpDTXZQRHJrN3NpY0x3TW94Z21USDg5OWhRdFpNbzl4cUR5ZE1wcEHSAewBQVVfeXFMTi1La2FrRDQtNHl4cDBGem5uYU01aE5DRFNNT3JNb2hWYUxpX01mZG95aExPSHFYMnhRU2I0dFdYbUN2N2pCVWw0TDdZT1g2dmVsaTJLRkNKODYwamVuSTVraGFORkZiWXlfN2trMmNxdjdXV1ZXMFZ3NkhpV1h6SUxnc29tamI3dHZPOXA4X3BHUTlhSXU4eW5fYXNMZEk0MDRLb0pPbmJZYTZDRHhKcmYzN0tieDNla2R3V01vM3ROWVF6WmU2T0xwTWhzV0hjZnRiZWV3eTNIbjFVVGF4aEhRZkkxanFrbXB5YVo?oc=5",
+              "source": "The Economic Times"
+            },
             {
               "title": "BOJ's Takata calls for early rate hikes to curb inflation risks - The Economic Times",
               "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOLUtrYWtENC00eXhwMEZ6bm5hTTVoTkNEU01Pck1vaFZhTGlfTWZkb3loTE9IcVgyeFFTYjR0V1htQ3Y3akJVbDRMN1lPWDZ2ZWxpMktGQ0o4NjBqZW5JNWtoYU5GRmJZeV83a2syY3F2N1dXVlcwVnc2SGlXWHpJTGdzb21qYjd0dk85cDhfcEdROWFJdTh5bl9hc0xkSTQwNEtvSk9uYllhNkNEeEpyZjM3S2J4M2VrZHdXTW8zdE5ZUXpaZTZPTHBNaHNXSGNmdGJlZXd5M0huMVVUYXhoSFFmSTFqcWttcHlhWtIB7AFBVV95cUxOLUtrYWtENC00eXhwMEZ6bm5hTTVoTkNEU01Pck1vaFZhTGlfTWZkb3loTE9IcVgyeFFTYjR0V1htQ3Y3akJVbDRMN1lPWDZ2ZWxpMktGQ0o4NjBqZW5JNWtoYU5GRmJZeV83a2syY3F2N1dXVlcwVnc2SGlXWHpJTGdzb21qYjd0dk85cDhfcEdROWFJdTh5bl9hc0xkSTQwNEtvSk9uYllhNkNEeEpyZjM3S2J4M2VrZHdXTW8zdE5ZUXpaZTZPTHBNaHNXSGNmdGJlZXd5M0huMVVUYXhoSFFmSTFqcWttcHlhWg?oc=5",

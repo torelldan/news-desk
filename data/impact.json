@@ -45,23 +45,9 @@
     {
       "asset": "DXY",
       "assetId": "dxy",
-      "category": "disaster",
-      "days": 30,
-      "eventDays": 0,
-      "r": null,
-      "read": {
-        "call": "n/a",
-        "confidence": "n/a",
-        "text": "Not enough stored DXY days beside disaster events in this 30-day window to separate a link from coincidence."
-      },
-      "window": 30
-    },
-    {
-      "asset": "DXY",
-      "assetId": "dxy",
       "category": "earthquake",
       "days": 30,
-      "eventDays": 3,
+      "eventDays": 2,
       "r": null,
       "read": {
         "call": "n/a",
@@ -199,20 +185,6 @@
     {
       "asset": "DXY",
       "assetId": "dxy",
-      "category": "disaster",
-      "days": 90,
-      "eventDays": 0,
-      "r": null,
-      "read": {
-        "call": "n/a",
-        "confidence": "n/a",
-        "text": "Not enough stored DXY days beside disaster events in this 90-day window to separate a link from coincidence."
-      },
-      "window": 90
-    },
-    {
-      "asset": "DXY",
-      "assetId": "dxy",
       "category": "earthquake",
       "days": 90,
       "eventDays": 3,
@@ -285,7 +257,7 @@
       "assetId": "dxy",
       "category": "outbreak",
       "days": 90,
-      "eventDays": 3,
+      "eventDays": 4,
       "r": null,
       "read": {
         "call": "n/a",
@@ -353,23 +325,9 @@
     {
       "asset": "Gold",
       "assetId": "gold",
-      "category": "disaster",
-      "days": 30,
-      "eventDays": 0,
-      "r": null,
-      "read": {
-        "call": "n/a",
-        "confidence": "n/a",
-        "text": "Not enough stored Gold days beside disaster events in this 30-day window to separate a link from coincidence."
-      },
-      "window": 30
-    },
-    {
-      "asset": "Gold",
-      "assetId": "gold",
       "category": "earthquake",
       "days": 30,
-      "eventDays": 3,
+      "eventDays": 2,
       "r": null,
       "read": {
         "call": "n/a",
@@ -507,20 +465,6 @@
     {
       "asset": "Gold",
       "assetId": "gold",
-      "category": "disaster",
-      "days": 90,
-      "eventDays": 0,
-      "r": null,
-      "read": {
-        "call": "n/a",
-        "confidence": "n/a",
-        "text": "Not enough stored Gold days beside disaster events in this 90-day window to separate a link from coincidence."
-      },
-      "window": 90
-    },
-    {
-      "asset": "Gold",
-      "assetId": "gold",
       "category": "earthquake",
       "days": 90,
       "eventDays": 3,
@@ -593,7 +537,7 @@
       "assetId": "gold",
       "category": "outbreak",
       "days": 90,
-      "eventDays": 3,
+      "eventDays": 4,
       "r": null,
       "read": {
         "call": "n/a",
@@ -661,23 +605,9 @@
     {
       "asset": "Silver",
       "assetId": "silver",
-      "category": "disaster",
-      "days": 30,
-      "eventDays": 0,
-      "r": null,
-      "read": {
-        "call": "n/a",
-        "confidence": "n/a",
-        "text": "Not enough stored Silver days beside disaster events in this 30-day window to separate a link from coincidence."
-      },
-      "window": 30
-    },
-    {
-      "asset": "Silver",
-      "assetId": "silver",
       "category": "earthquake",
       "days": 30,
-      "eventDays": 3,
+      "eventDays": 2,
       "r": null,
       "read": {
         "call": "n/a",
@@ -815,20 +745,6 @@
     {
       "asset": "Silver",
       "assetId": "silver",
-      "category": "disaster",
-      "days": 90,
-      "eventDays": 0,
-      "r": null,
-      "read": {
-        "call": "n/a",
-        "confidence": "n/a",
-        "text": "Not enough stored Silver days beside disaster events in this 90-day window to separate a link from coincidence."
-      },
-      "window": 90
-    },
-    {
-      "asset": "Silver",
-      "assetId": "silver",
       "category": "earthquake",
       "days": 90,
       "eventDays": 3,
@@ -901,7 +817,7 @@
       "assetId": "silver",
       "category": "outbreak",
       "days": 90,
-      "eventDays": 3,
+      "eventDays": 4,
       "r": null,
       "read": {
         "call": "n/a",
@@ -969,23 +885,9 @@
     {
       "asset": "BTC",
       "assetId": "btc",
-      "category": "disaster",
-      "days": 30,
-      "eventDays": 1,
-      "r": null,
-      "read": {
-        "call": "n/a",
-        "confidence": "n/a",
-        "text": "Not enough stored BTC days beside disaster events in this 30-day window to separate a link from coincidence."
-      },
-      "window": 30
-    },
-    {
-      "asset": "BTC",
-      "assetId": "btc",
       "category": "earthquake",
       "days": 30,
-      "eventDays": 3,
+      "eventDays": 2,
       "r": null,
       "read": {
         "call": "n/a",
@@ -1123,20 +1025,6 @@
     {
       "asset": "BTC",
       "assetId": "btc",
-      "category": "disaster",
-      "days": 90,
-      "eventDays": 1,
-      "r": null,
-      "read": {
-        "call": "n/a",
-        "confidence": "n/a",
-        "text": "Not enough stored BTC days beside disaster events in this 90-day window to separate a link from coincidence."
-      },
-      "window": 90
-    },
-    {
-      "asset": "BTC",
-      "assetId": "btc",
       "category": "earthquake",
       "days": 90,
       "eventDays": 3,
@@ -1209,7 +1097,7 @@
       "assetId": "btc",
       "category": "outbreak",
       "days": 90,
-      "eventDays": 3,
+      "eventDays": 4,
       "r": null,
       "read": {
         "call": "n/a",
@@ -1277,23 +1165,9 @@
     {
       "asset": "ETH",
       "assetId": "eth",
-      "category": "disaster",
-      "days": 30,
-      "eventDays": 1,
-      "r": null,
-      "read": {
-        "call": "n/a",
-        "confidence": "n/a",
-        "text": "Not enough stored ETH days beside disaster events in this 30-day window to separate a link from coincidence."
-      },
-      "window": 30
-    },
-    {
-      "asset": "ETH",
-      "assetId": "eth",
       "category": "earthquake",
       "days": 30,
-      "eventDays": 3,
+      "eventDays": 2,
       "r": null,
       "read": {
         "call": "n/a",
@@ -1431,20 +1305,6 @@
     {
       "asset": "ETH",
       "assetId": "eth",
-      "category": "disaster",
-      "days": 90,
-      "eventDays": 1,
-      "r": null,
-      "read": {
-        "call": "n/a",
-        "confidence": "n/a",
-        "text": "Not enough stored ETH days beside disaster events in this 90-day window to separate a link from coincidence."
-      },
-      "window": 90
-    },
-    {
-      "asset": "ETH",
-      "assetId": "eth",
       "category": "earthquake",
       "days": 90,
       "eventDays": 3,
@@ -1517,7 +1377,7 @@
       "assetId": "eth",
       "category": "outbreak",
       "days": 90,
-      "eventDays": 3,
+      "eventDays": 4,
       "r": null,
       "read": {
         "call": "n/a",
@@ -1543,73 +1403,73 @@
   ],
   "drivers": {
     "copperGold": {
-      "ratio": 0.00153,
-      "yield10": 5.056
+      "ratio": 0.001541,
+      "yield10": 5.052
     },
     "correlations": [
       {
-        "d30": -0.41,
+        "d30": -0.4,
         "d90": -0.47,
         "driver": "DXY",
         "metal": "Gold"
       },
       {
-        "d30": -0.14,
-        "d90": -0.2,
+        "d30": -0.13,
+        "d90": -0.19,
         "driver": "10Y",
         "metal": "Gold"
       },
       {
-        "d30": -0.12,
-        "d90": -0.23,
+        "d30": -0.1,
+        "d90": -0.21,
         "driver": "Real 10Y",
         "metal": "Gold"
       },
       {
-        "d30": 0.32,
-        "d90": 0.35,
+        "d30": 0.35,
+        "d90": 0.37,
         "driver": "S&P",
         "metal": "Gold"
       },
       {
-        "d30": -0.12,
-        "d90": -0.24,
+        "d30": -0.15,
+        "d90": -0.26,
         "driver": "VIX",
         "metal": "Gold"
       },
       {
-        "d30": 0.54,
+        "d30": 0.55,
         "d90": 0.48,
         "driver": "Copper",
         "metal": "Gold"
       },
       {
-        "d30": -0.31,
+        "d30": -0.3,
         "d90": -0.36,
         "driver": "DXY",
         "metal": "Silver"
       },
       {
-        "d30": -0.0,
-        "d90": -0.13,
+        "d30": 0.0,
+        "d90": -0.12,
         "driver": "10Y",
         "metal": "Silver"
       },
       {
-        "d30": 0.04,
-        "d90": -0.16,
+        "d30": 0.05,
+        "d90": -0.15,
         "driver": "Real 10Y",
         "metal": "Silver"
       },
       {
-        "d30": 0.45,
-        "d90": 0.44,
+        "d30": 0.49,
+        "d90": 0.46,
         "driver": "S&P",
         "metal": "Silver"
       },
       {
-        "d30": -0.27,
-        "d90": -0.3,
+        "d30": -0.29,
+        "d90": -0.32,
         "driver": "VIX",
         "metal": "Silver"
       },
@@ -1626,9 +1486,6 @@
         "inverted": false,
         "name": "T10Y2Y",
         "spark": [
-          {
-            "price": 0.48
-          },
           {
             "price": 0.51
           },
@@ -1715,18 +1572,18 @@
           },
           {
             "price": 0.27
+          },
+          {
+            "price": 0.28
           }
         ],
-        "value": 0.27
+        "value": 0.28
       },
       {
         "flag": "positive",
         "inverted": false,
         "name": "T10Y3M",
         "spark": [
-          {
-            "price": 1.06
-          },
           {
             "price": 1.06
           },
@@ -1813,31 +1670,34 @@
           },
           {
             "price": 0.73
+          },
+          {
+            "price": 0.7
           }
         ],
-        "value": 0.73
+        "value": 0.7
       }
     ],
     "funds": {
       "dff": 3.88,
-      "zqf": 4.165,
-      "zqh": 4.39
+      "zqf": 4.16,
+      "zqh": 4.385
     },
     "gaps": [],
     "oil": {
-      "brent": 89.73,
+      "brent": 90.05,
       "energyStrikes": 0,
-      "wti": 82.82
+      "wti": 83.16
     },
     "rows": [
       {
         "changes": {
-          "1M": -11.32,
-          "1W": -5.27,
-          "1Y": -9.49,
-          "3M": -21.37
+          "1M": -12.58,
+          "1W": -6.62,
+          "1Y": -10.79,
+          "3M": -22.49
         },
-        "level": 3680.3999,
+        "level": 3627.8999,
         "name": "Gold",
         "spark": [
           {
@@ -1928,19 +1788,19 @@
             "price": 3741.8999
           },
           {
-            "price": 3680.3999
+            "price": 3627.8999
           }
         ],
         "unit": "%"
       },
       {
         "changes": {
-          "1M": -22.75,
-          "1W": -11.23,
-          "1Y": -12.07,
-          "3M": -36.14
+          "1M": -25.4,
+          "1W": -14.28,
+          "1Y": -15.09,
+          "3M": -38.34
         },
-        "level": 44.36,
+        "level": 42.835,
         "name": "Silver",
         "spark": [
           {
@@ -2031,19 +1891,19 @@
             "price": 44.999
           },
           {
-            "price": 44.36
+            "price": 42.835
           }
         ],
         "unit": "%"
       },
       {
         "changes": {
-          "1M": 2.03,
-          "1W": 0.66,
-          "1Y": 4.32,
-          "3M": 5.11
+          "1M": 2.11,
+          "1W": 0.74,
+          "1Y": 4.4,
+          "3M": 5.19
         },
-        "level": 103.85,
+        "level": 103.93,
         "name": "DXY",
         "spark": [
           {
@@ -2134,19 +1994,19 @@
             "price": 103.86
           },
           {
-            "price": 103.85
+            "price": 103.93
           }
         ],
         "unit": "%"
       },
       {
         "changes": {
-          "1M": -9.0,
-          "1W": -4.7,
-          "1Y": 93.3,
-          "3M": 31.8
+          "1M": -9.4,
+          "1W": -5.1,
+          "1Y": 92.9,
+          "3M": 31.4
         },
-        "level": 5.056,
+        "level": 5.052,
         "name": "10Y",
         "spark": [
           {
@@ -2237,24 +2097,21 @@
             "price": 5.066
           },
           {
-            "price": 5.056
+            "price": 5.052
           }
         ],
         "unit": "bp"
       },
       {
         "changes": {
-          "1M": 15.0,
-          "1W": 23.0,
-          "1Y": 106.0,
-          "3M": 45.0
+          "1M": 8.0,
+          "1W": 10.0,
+          "1Y": 102.0,
+          "3M": 47.0
         },
-        "level": 2.89,
+        "level": 2.88,
         "name": "Real 10Y",
         "spark": [
-          {
-            "price": 2.95
-          },
           {
             "price": 2.91
           },
@@ -2341,18 +2198,21 @@
           },
           {
             "price": 2.89
+          },
+          {
+            "price": 2.88
           }
         ],
         "unit": "bp"
       },
       {
         "changes": {
-          "1M": -6.95,
-          "1W": -4.93,
-          "1Y": 9.07,
-          "3M": -5.95
+          "1M": -7.49,
+          "1W": -5.49,
+          "1Y": 8.44,
+          "3M": -6.5
         },
-        "level": 7217.8398,
+        "level": 7175.8301,
         "name": "S&P",
         "spark": [
           {
@@ -2443,19 +2303,19 @@
             "price": 7323.6299
           },
           {
-            "price": 7217.8398
+            "price": 7175.8301
           }
         ],
         "unit": "%"
       },
       {
         "changes": {
-          "1M": 58.75,
-          "1W": 41.6,
-          "1Y": 0.23,
-          "3M": 67.07
+          "1M": 70.5,
+          "1W": 52.09,
+          "1Y": 7.65,
+          "3M": 79.43
         },
-        "level": 26.48,
+        "level": 28.44,
         "name": "VIX",
         "spark": [
           {
@@ -2546,19 +2406,19 @@
             "price": 24.56
           },
           {
-            "price": 26.48
+            "price": 28.44
           }
         ],
         "unit": "%"
       },
       {
         "changes": {
-          "1M": -13.92,
-          "1W": -8.9,
-          "1Y": 13.5,
-          "3M": -14.39
+          "1M": -14.53,
+          "1W": -9.55,
+          "1Y": 12.69,
+          "3M": -15.01
         },
-        "level": 5.6325,
+        "level": 5.592,
         "name": "Copper",
         "spark": [
           {
@@ -2649,19 +2509,19 @@
             "price": 5.6595
           },
           {
-            "price": 5.6325
+            "price": 5.592
           }
         ],
         "unit": "%"
       },
       {
         "changes": {
-          "1M": 14.8,
-          "1W": 6.71,
-          "1Y": 2.93,
-          "3M": 23.13
+          "1M": 17.19,
+          "1W": 8.93,
+          "1Y": 5.07,
+          "3M": 25.7
         },
-        "level": 82.9666,
+        "level": 84.6948,
         "name": "Gold/silver",
         "spark": [
           {
@@ -2752,7 +2612,7 @@
             "price": 83.1552
           },
           {
-            "price": 82.9666
+            "price": 84.6948
           }
         ],
         "unit": "%"
@@ -2761,13 +2621,13 @@
     "volumes": [
       {
         "name": "GLD",
-        "price": 337.1099,
-        "volume": 7012306
+        "price": 335.18,
+        "volume": 10717846
       },
       {
         "name": "SLV",
-        "price": 40.095,
-        "volume": 19971811
+        "price": 39.64,
+        "volume": 28590503
       },
       {
         "name": "GOLDBEES",
@@ -2778,8 +2638,7 @@
   },
   "events": [],
   "explainer": [
-    "Gold -11.32% with DXY 2.03% and yields up. Association, not proof: stronger dollar / higher rates.",
-    "Gold/silver ratio 83.0 (1-month change 14.8%) and copper -13.92%. Association, not proof: industrial worry is hitting silver harder."
+    "Gold/silver ratio 84.7 (1-month change 17.19%) and copper -14.53%. Association, not proof: industrial worry is hitting silver harder."
   ],
   "infra": [
     {
@@ -2798,8 +2657,8 @@
           "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQY25MT1kwVXhudUk1UlNybEpEa0lmNERtMFRkLXVOOGFqUjJ3VWVpb2hNakMxZmFUVVdGSGRvYUZvWnA0RVZkMWk0d19FRk1pUVNzQTN0cE5ET2hnRkNYYzdkQThxbWN1R05DdEpncFBkNzlEMnlRZHNMaUVjSUdNdFZmRTNEMkRFLThpdXF1cFlVYlJ5Q3NIYjdiRkNMN09EanBfa1h4SHlmd0HSAbABQVVfeXFMUFU0ZDJkZjE0YlNKREs1Y0pvUWQ1ZVVhZjUydERkNVFTTERPLWVucDRObFFBRGdScEh1UWtsSFBhX3BoRjhmck9YRko0azlQNDhMRkc0YXdQSzBoakEwa0lMRU1ZeGJ3Yl9Qc1gzVHFGeTJBbU9RUVZlVGVOYm9uWFI5VHRMTkZMVFZFUmFJZzNDVER0cUU1d2JEOXpUS3E5TV9kaERYUWVfRFNXbE0tXzc?oc=5"
         }
       ],
-      "market": "Brent -6.36% over 5 days · TTF -8.46% over 5 days",
-      "note": "Brent -6.36% over 5 days · TTF -8.46% over 5 days",
+      "market": "Brent -6.02% over 5 days · TTF -8.46% over 5 days",
+      "note": "Brent -6.02% over 5 days · TTF -8.46% over 5 days",
       "open": true,
       "published": "2026-11-19T03:59:26-06:00",
       "region": "",
@@ -2821,24 +2680,24 @@
       "cause": "unconfirmed",
       "date": "2026-11-18",
       "guest": "",
-      "id": "infra:66b23ff5a74490b7",
+      "id": "infra:b116c07a44b8420a",
       "kind": "infra",
-      "label": "Nov 18, 2026 7:17 AM CT",
+      "label": "Nov 18, 2026 8:00 PM CT",
       "lane": "threat",
       "links": [
         {
-          "source": "The Manila Times",
-          "title": "Hong Kong drops charge against captain over Baltic pipeline damage - The Manila Times",
-          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQaXNWQ09feWZ5dnNrQlF3WGVGTzdiekcxWEIyck41LW13UlI5dWw4R0prRzJKUzBLX3M0U0Y5S244UDVDUW9rUXhnYTkzdFVtTU51dkJZUmFEWmttd0c1MjIzSHBpNEw3ZW5WWUhlQmdnNVhEWFR3Q3JwSXRBV245TEU3LXBhQnFRMGQxQ0tPc0x6OXRMX3ZyaDdJOUduX05VVjU5LTEtcFI5TURERXlrRy1MN0doTGFLS2RhRVVDNXU2a3JWTVlna2gtc2jSAdIBQVVfeXFMUHNqSHNFMkZlbktDV2hac0wwZDRZdWdTRk1UX0JRLUh6N3ZzN2NHVGRoc1VKUGQ4cFJGQ2dTbVlaRGo2Y1ZsNnZqbkdPQnV1ejFKU0gza0ZzQThoNkRkNjdSM1A5OHVNajNnbmZ4MWJBYjFBUzZZR1RFNG84ZEpQQ01ybFE1NU9fZV9NcVpxQjB0SDNlLVZYdHprME4zTUREMGJ5cDFYMW9HYlFZcDR4YWNFUms2VjEtT0tEWk0yZkozWERNSVl1MEp2OXVONkhDdGh3?oc=5"
+          "source": "Indiatimes",
+          "title": "Hong Kong drops charge against captain over Baltic pipeline damage - Indiatimes",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPN240TnpuWGk3TzNsekdZTW1YRDBWM3FIZzNiZ1NpZWxoR3IyUkctZzByeC14YS1PQTlDUzVTY2ZNM3dKc0dtMU1JM1d1YWp1ekR2cmpTNWx0UmdTSDB0V280RlhwbnZqeG9pY2kzdHJMcHVZd3drcUVScUZyZV8zWmNId21yVXczWHhqSEhGRDJsTndLTUJLQ2ttTlU0NFhoMnlfSXRQRXVGSkhCSDFicVJkZVZ6T2swUXozUktsYWJtOXdHLWVjX3BISTFFRnhh0gHWAUFVX3lxTE54RElteDF0bEFSd0hEczAzSnh4a2VHNjdkejlfTGJldTdZVS1GNXlQWHFreWFHY1Zfb0xDZTNPSmluLVRsaGhiNUF4VHJXWUJFcS1NaHNWU2VLUzZmejRtaW5zWUdJNk5QTndlUi0wbjZtYVVCUlBPblRaUGM5OElicjJLQzFYbjFNaHlzREIwNnNsSG11THYteUZNRUhVZTYyVFZsWnBPTkZRYXRRckthalgtdFFPSTU2ZFBnWkJRYjFnVkpyc1J4QnhNTjdYemE5V1drREE?oc=5"
         }
       ],
-      "market": "Brent -6.36% over 5 days · TTF -8.46% over 5 days",
-      "note": "Brent -6.36% over 5 days · TTF -8.46% over 5 days",
+      "market": "Brent -6.02% over 5 days · TTF -8.46% over 5 days",
+      "note": "Brent -6.02% over 5 days · TTF -8.46% over 5 days",
       "open": true,
-      "published": "2026-11-18T07:17:00-06:00",
+      "published": "2026-11-18T20:00:29-06:00",
       "region": "Baltic Sea",
       "severity": "STANDBY",
-      "source": "The Manila Times",
+      "source": "Indiatimes",
       "sourceCount": 1,
       "sourceId": "infra",
       "tags": [
@@ -2846,8 +2705,8 @@
         "standby"
       ],
       "timeKnown": true,
-      "title": "Hong Kong drops charge against captain over Baltic pipeline damage - The Manila Times",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQaXNWQ09feWZ5dnNrQlF3WGVGTzdiekcxWEIyck41LW13UlI5dWw4R0prRzJKUzBLX3M0U0Y5S244UDVDUW9rUXhnYTkzdFVtTU51dkJZUmFEWmttd0c1MjIzSHBpNEw3ZW5WWUhlQmdnNVhEWFR3Q3JwSXRBV245TEU3LXBhQnFRMGQxQ0tPc0x6OXRMX3ZyaDdJOUduX05VVjU5LTEtcFI5TURERXlrRy1MN0doTGFLS2RhRVVDNXU2a3JWTVlna2gtc2jSAdIBQVVfeXFMUHNqSHNFMkZlbktDV2hac0wwZDRZdWdTRk1UX0JRLUh6N3ZzN2NHVGRoc1VKUGQ4cFJGQ2dTbVlaRGo2Y1ZsNnZqbkdPQnV1ejFKU0gza0ZzQThoNkRkNjdSM1A5OHVNajNnbmZ4MWJBYjFBUzZZR1RFNG84ZEpQQ01ybFE1NU9fZV9NcVpxQjB0SDNlLVZYdHprME4zTUREMGJ5cDFYMW9HYlFZcDR4YWNFUms2VjEtT0tEWk0yZkozWERNSVl1MEp2OXVONkhDdGh3?oc=5",
+      "title": "Hong Kong drops charge against captain over Baltic pipeline damage - Indiatimes",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPN240TnpuWGk3TzNsekdZTW1YRDBWM3FIZzNiZ1NpZWxoR3IyUkctZzByeC14YS1PQTlDUzVTY2ZNM3dKc0dtMU1JM1d1YWp1ekR2cmpTNWx0UmdTSDB0V280RlhwbnZqeG9pY2kzdHJMcHVZd3drcUVScUZyZV8zWmNId21yVXczWHhqSEhGRDJsTndLTUJLQ2ttTlU0NFhoMnlfSXRQRXVGSkhCSDFicVJkZVZ6T2swUXozUktsYWJtOXdHLWVjX3BISTFFRnhh0gHWAUFVX3lxTE54RElteDF0bEFSd0hEczAzSnh4a2VHNjdkejlfTGJldTdZVS1GNXlQWHFreWFHY1Zfb0xDZTNPSmluLVRsaGhiNUF4VHJXWUJFcS1NaHNWU2VLUzZmejRtaW5zWUdJNk5QTndlUi0wbjZtYVVCUlBPblRaUGM5OElicjJLQzFYbjFNaHlzREIwNnNsSG11THYteUZNRUhVZTYyVFZsWnBPTkZRYXRRckthalgtdFFPSTU2ZFBnWkJRYjFnVkpyc1J4QnhNTjdYemE5V1drREE?oc=5",
       "weekday": "Wed"
     }
   ],

@@ -1,11 +1,9 @@
 {
   "baseline": false,
-  "brief": "No rare risk is on the board. A routine flyby or an empty storm outlook is not an emergency. Current war coverage is on the board: Ukraine: Civilian casualties in 2026 already far exceed previous years’ tolls - UN News; Iran fires at U.S. facility in Bahrain as Tehran resumes strikes on Arab neighbors - PBS. Global: Live Updates: Trump, Xi and Putin Seek to Project Power at Their First Summit - The New York Times. Infrastructure: Internet services disrupted across Pakistan due to undersea cable fault - Daily Ausaf (unconfirmed). Rising topic: ukraine war (4 outlets this window).",
-  "checkedAt": "2026-11-19T12:52:57-06:00",
-  "checkedLabel": "Nov 19, 2026 12:52 PM CT",
+  "brief": "No rare risk is on the board. A routine flyby or an empty storm outlook is not an emergency. Current war coverage is on the board: Iran widens Gulf attacks by targeting U.S. air base in Kuwait and sites in Bahrain - PBS; Ukraine: Civilian casualties in 2026 already far exceed previous years’ tolls - UN News. Global: For Trump, the meeting was the whole point after trilateral summit with Xi and Putin - NPR. Infrastructure: Internet services disrupted across Pakistan due to undersea cable fault - Daily Ausaf (unconfirmed). Rising topic: iran war (4 outlets this window).",
+  "checkedAt": "2026-11-19T16:28:22-06:00",
+  "checkedLabel": "Nov 19, 2026 4:28 PM CT",
   "errors": [
-    "Joe Rogan Experience: unclosed CDATA section: line 5059, column 9",
-    "ReliefWeb: the disasters page returned no cards from this network. The RSS feed is an AWS WAF challenge, and API v2 rejects appname=torelldan-news-desk until ReliefWeb approves it.",
     "AP World: curl: (22) The requested URL returned error: 403\n",
     "Reuters World: curl: (22) The requested URL returned error: 401\n",
     "Gassco UMM: curl: (22) The requested URL returned error: 404\n",
@@ -23,11 +21,6 @@
             "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/"
           },
           {
-            "source": "The GitHub Blog",
-            "title": "Gemini 4 Neon in GitHub Copilot - The GitHub Blog",
-            "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBMS1FJZ2psbEdtam53b1NNNV90Y1NvZUNOcDVnYkxvUkxSY0JKOXpWVFktdUNMMTA4eUVMT3phdVRDRzJtcHM5N0JxMEZVYjZfdTNERE9uaXNGdm0wTkRNYm96b2pEZFd6NzRTSGdabVlVbGE3V211UzI3YnFqQQ?oc=5"
-          },
-          {
             "source": "DeepMind",
             "title": "Introducing Gemini 4 Neon",
             "url": "https://deepmind.google/blog/introducing-gemini-4-neon/"
@@ -36,10 +29,15 @@
             "source": "Google AI blog",
             "title": "The Gemini app is now available on lower-memory Android devices.",
             "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/"
+          },
+          {
+            "source": "Google AI blog",
+            "title": "Put Gemini to work for you",
+            "url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/"
           }
         ],
-        "outlets": 3,
-        "state": "RISING",
+        "outlets": 2,
+        "state": "EVENT",
         "title": "Introducing Tool Retrieval in the Gemini API",
         "topic": "Gemini"
       },
@@ -92,7 +90,7 @@
             "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQNEVDMGpYU2dJSWdjb3pTMXVLeGR6amRpbnM0RWtfS3FwYVh4cmV2Z2pQSFBBa3drR0YwcVhvN3F6T2FPbDJ4ZDJqU2Z2ZEV0R0dHdjRGMnpFUlFqcWVFMGZWMFJ3M2dOaTY2QW9Id3pVYlJXLVNZUGkzeWZPUnJTV1RkMDRMeWlNejJrcHFLN0FYcGlKX2F1cHdhWGpva0xIS0F4Rg?oc=5"
           }
         ],
-        "outlets": 8,
+        "outlets": 6,
         "region": "USA",
         "state": "RISING",
         "title": "US Federal Reserve Meeting: List Of Things To Know Ahead Of The December Interest Rate Decision - Jagran Josh",
@@ -130,11 +128,6 @@
       {
         "links": [
           {
-            "source": "The New York Times",
-            "title": "Fed Saw Need to Keep Raising Interest Rates Despite Holding Steady in October - The New York Times",
-            "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQZWNVYnFNZV9nd0xLQW9EenZFTEJZS1A0VF9jcXgydHdZMlNUY21sTndVYzZXTThLS19UOThYOF9oZS1hbURtSlBhcUYyTVB1XzB2QUk5dlZva3RlNzlyWmtweDNhUUdyNVJGV290RzNLYTBEU1RXMlpiNEtHZ09HTVFyZ09ldVdKUXNiMHFLSk45Y3RiOWEzWDFB?oc=5"
-          },
-          {
             "source": "The Straits Times",
             "title": "‘Almost all’ US Fed policymakers saw further interest rate hikes as likely, minutes show - The Straits Times",
             "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNWFRsZFFyeGhlY3RacTRWN0JjOFNkaEZzcU9PUnktNUxJdzk2aExvRE5hSm42TEFnNEZOelRKRTZYYmZ6UEZZbzc5QVRuZnlWRERnUlVjT0tVaGQza0lMU0lndExsd1lDaXFNTnlkdG1yWVIwckhpbk1KQVBidFo1QzFKUFIxLVVmYU8yNjI0d1NPbEhMWTRsNTJvR0VWY2UzUGhYN0ozZ0Y5UTlHekpEZ0FndmdyaktMU2c?oc=5"
@@ -145,6 +138,11 @@
             "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNRnFLLTNVZU9LT250RTNRRS1LNkRaTTdJcTF1RlkzQVVVcHF5cmE2bm4xVHpYV0pBS2l3RWVpeFhKaVFxR2t5QnZ0M0V4d1FxR0JqT0tPTU53UExfMnllTkpkS0lkNTJiMjNTVk5GODBqb3kyWWZlOUFqeFZRalJHTzd6WHRSbmVHTGtBNnNFNVNQOTlmYmMyNzZCVGhibzZvSVZtdEtVWlhHUUJWUVBMZWdFdHV4bk1EM2dEaExHU2xHNDFSU3ZtYg?oc=5"
           },
           {
+            "source": "The New York Times",
+            "title": "Fed Saw Need to Keep Raising Interest Rates Despite Holding Steady in October - The New York Times",
+            "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQZWNVYnFNZV9nd0xLQW9EenZFTEJZS1A0VF9jcXgydHdZMlNUY21sTndVYzZXTThLS19UOThYOF9oZS1hbURtSlBhcUYyTVB1XzB2QUk5dlZva3RlNzlyWmtweDNhUUdyNVJGV290RzNLYTBEU1RXMlpiNEtHZ09HTVFyZ09ldVdKUXNiMHFLSk45Y3RiOWEzWDFB?oc=5"
+          },
+          {
             "source": "The Tribune-Democrat",
             "title": "Fed minutes: Higher interest rates needed in December as inflation worries mount - The Tribune-Democrat",
             "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPWDhfeHU2NVc3N3hUMlNmZlphdW5zS1RvT3FEczEyN0NrTkQzclV3dFl1VUIzMlpYa2R3UFgxcGZ4UFJJQTdhWFVkSTBMb0lhNkI3aGk2N2xjV2t3WlFjN0JubkxIWHNpazZGamxWWldYSk44ZERySnVWejVRNE1uMks2UC0xV2F6bzFhVDZpenVaTndpRTJubTdBZFhPQ3MxZ3doZmR1UjM4Y3lIUEVlQUpEZVU2TmIxRk1CR2tibnVBekQ2WDVwZ3pIeFpJNlMzMExSYWxBQUpEVlhySEJ3RkdHd0JCcmJhcFpRcmNiVEhaU3VaYW1LWW5tUQ?oc=5"
@@ -153,7 +151,7 @@
         "outlets": 4,
         "region": "USA",
         "state": "RISING",
-        "title": "Fed Saw Need to Keep Raising Interest Rates Despite Holding Steady in October - The New York Times",
+        "title": "‘Almost all’ US Fed policymakers saw further interest rate hikes as likely, minutes show - The Straits Times",
         "topic": "interest rates"
       },
       {
@@ -184,6 +182,30 @@
         "state": "RISING",
         "title": "Bank of Canada says public trust in 2% inflation target helps anchor expectations - Investing.com Canada",
         "topic": "inflation"
+      },
+      {
+        "links": [
+          {
+            "source": "The Globe and Mail",
+            "title": "Memo to Tiff Macklem: Stop hiking interest rates or risk ruining this economy and stock market - The Globe and Mail",
+            "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQTXpablhlZmt5LXVITlhkVkEzTWJPOTBHcXNfckVjNW9sclpzRDVNdDJLbUVWclJPZDM2aHI2bzZYLUJ2dXBGY1FUQ1VMU3lwRTR4Y0FWV1EyMWN4S0xHWDlPLUFqMDhlTFhkMlluVEZoLTVad205QVo1SFktcG4yWnZXQXZibG4xS1pmdVBRWVFpRDdnQXJDcy1kMGZNMUFpYTE2cWxpZ1JNNkc2VXd0N3RfNGJJTE9ESldSWUFxc2pOLXM?oc=5"
+          },
+          {
+            "source": "BNN Bloomberg",
+            "title": "Bank of Canada official discusses guidance on interest rate path - BNN Bloomberg",
+            "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOZmZkUERGNWRKeGdTX3BqTnVTaW1vMmRfVTk0RDRfR0hmQ3lpcWNkSTZWYjgxVWxVOEVablQ2a0dsY1daUVZhX2VaRnFmT0FSV0RlN2Nxd2lySzVEVm1tSU50X1FXZFhJSGhwVFBzbVY5VnZtNGZrMVlyWWw0dVRBd3o5cGltWUU5a2E0YjJFandFLWNQNDZUVml2OHRtdUtHaHlJQ2xMYXNHcUtIdDV4bUNsekdSYkQ3ZmZtYjh6MGZielNVclI2SXA0dVdsWDdXZnc?oc=5"
+          },
+          {
+            "source": "Switzer Daily",
+            "title": "Why Australia hiked interest rates faster and harder than any other advanced economy this year - Switzer Daily",
+            "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQdnpBTlZucFpwWkJxMDB3UHFnazNlUTJ4a2FIQUROZnpibGtxMGZrYmZhY0FLenRZUmdOQUVac3NjZFQ3U0hGaXR6WERQRUk4MEtPR2VIWDA3YmhUU1VfRWFvbnV0YnpZTkFlNWE4RjNDajRGc3hjUlZlelF1aEtDNWU0UXVHaFY0bURGMHMwY3ctOXFMczRpdTlGZmpMNGhhdlVCdjdRNUFGenoxaURpNEhYbXc1c1phVHc?oc=5"
+          }
+        ],
+        "outlets": 3,
+        "region": "North America",
+        "state": "RISING",
+        "title": "Memo to Tiff Macklem: Stop hiking interest rates or risk ruining this economy and stock market - The Globe and Mail",
+        "topic": "interest rates"
       },
       {
         "links": [
@@ -290,7 +312,7 @@
             "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPdlBOekNSenZWVGxwRWhpdXFxbTFkUnpxdHpLdkt3MTJVMnVDTmtmYUh0QWJHUmdkM19GNmtyY21XaFRqWDljbGdfRkZubDg0b2NXSXNud3JZQXRvZTZwcExpTzg1NERoQ2lWSmVhS3NhZ0xMQnJSc2NuMjdDZHFyelJKbzBOTWJXVm9JaU8wS3EwSW9uMFJIYkNPWjlnM2E5RkFlWXJrRnJPSUJlM3BaaVdFMnlPOEYtQ2g0LTVPdWVjem5qSm93WXJSWnNRdUdVRG4xUWE5eWFEbG5hUlRFTA?oc=5"
           }
         ],
-        "outlets": 7,
+        "outlets": 6,
         "region": "Asia",
         "state": "RISING",
         "title": "Hong Kong Stock Exchange Today: Hang Seng Index Drops 1.55% to 23,637.60 as Tech Index Sinks 3% on Nvidia Fallout - BBN Times",
@@ -327,6 +349,11 @@
       },
       {
         "links": [
+          {
+            "source": "The Economic Times",
+            "title": "BOJ's Takata calls for early rate hikes to curb inflation risks - The Economic Times",
+            "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPdExVV255cjRzVExMalZvUkJYTTI4Z0ZlWTJTN1FOdjRvVFV5Z2RkdWJ5RS1YUENENnhBTHJ1bmFkLW9yTGFjMUtkX1R3SlpHOGFPdG5pNmI3X0ZPMm02VGdPaFRNenhTVkpBR1l3eDFPOGE5YjZYVG95QnM5T0FYc1ZLRzR5WE4xdFctemFLcHF1NjhyQ2dfYnZnM1JJdDMzOHRrR1FTV0ppYWhlWFVra284Z1VWREpUQ01aT3lBaHpDTXZQRHJrN3NpY0x3TW94Z21USDg5OWhRdFpNbzl4cUR5ZE1wcEHSAewBQVVfeXFMTi1La2FrRDQtNHl4cDBGem5uYU01aE5DRFNNT3JNb2hWYUxpX01mZG95aExPSHFYMnhRU2I0dFdYbUN2N2pCVWw0TDdZT1g2dmVsaTJLRkNKODYwamVuSTVraGFORkZiWXlfN2trMmNxdjdXV1ZXMFZ3NkhpV1h6SUxnc29tamI3dHZPOXA4X3BHUTlhSXU4eW5fYXNMZEk0MDRLb0pPbmJZYTZDRHhKcmYzN0tieDNla2R3V01vM3ROWVF6WmU2T0xwTWhzV0hjZnRiZWV3eTNIbjFVVGF4aEhRZkkxanFrbXB5YVo?oc=5"
+          },
           {
             "source": "The Economic Times",
             "title": "BOJ's Takata calls for early rate hikes to curb inflation risks - The Economic Times",

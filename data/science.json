@@ -10,9 +10,9 @@
       "guest": "",
       "note": "",
       "url": "https://www.nature.com/articles/s41586-026-11388-5",
-      "published": "2026-11-19T12:52:57-06:00",
+      "published": "2026-11-19T16:28:22-06:00",
       "date": "2026-11-19",
-      "label": "Nov 19, 2026 12:52 PM CT",
+      "label": "Nov 19, 2026 4:28 PM CT",
       "weekday": "Thu",
       "timeKnown": true,
       "tags": [
@@ -34,9 +34,9 @@
       "guest": "",
       "note": "",
       "url": "https://www.nature.com/articles/s41586-026-11445-z",
-      "published": "2026-11-19T12:52:57-06:00",
+      "published": "2026-11-19T16:28:22-06:00",
       "date": "2026-11-19",
-      "label": "Nov 19, 2026 12:52 PM CT",
+      "label": "Nov 19, 2026 4:28 PM CT",
       "weekday": "Thu",
       "timeKnown": true,
       "tags": [
@@ -58,9 +58,9 @@
       "guest": "",
       "note": "",
       "url": "https://www.nature.com/articles/d41586-026-03748-y",
-      "published": "2026-11-19T12:52:57-06:00",
+      "published": "2026-11-19T16:28:22-06:00",
       "date": "2026-11-19",
-      "label": "Nov 19, 2026 12:52 PM CT",
+      "label": "Nov 19, 2026 4:28 PM CT",
       "weekday": "Thu",
       "timeKnown": true,
       "tags": [
@@ -82,9 +82,9 @@
       "guest": "",
       "note": "",
       "url": "https://www.nature.com/articles/d41586-026-03783-9",
-      "published": "2026-11-19T12:52:57-06:00",
+      "published": "2026-11-19T16:28:22-06:00",
       "date": "2026-11-19",
-      "label": "Nov 19, 2026 12:52 PM CT",
+      "label": "Nov 19, 2026 4:28 PM CT",
       "weekday": "Thu",
       "timeKnown": true,
       "tags": [
@@ -94,6 +94,104 @@
       ],
       "field": "biomedical",
       "review": "PEER-REVIEWED",
+      "severity": ""
+    },
+    {
+      "id": "headline:ba600476b6a9b62b",
+      "kind": "paper",
+      "lane": "science",
+      "source": "The Quantum Insider",
+      "sourceId": "headline",
+      "title": "Google’s Quantum Chip Beats Classical Limits in Tests of Teamwork - The Quantum Insider",
+      "guest": "",
+      "note": "",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOWFk5V0Z3NE9EMkxXZlNHQnk0bndFLVo5dGs2ZGZkOUIyWjZHM3BWZ29Wc2p0Wl9MSnMtVFFzT3Rrc2JSZk9EenpESmZVdjVmbHp3RXIxaVlHUFpoai1iN0dzd0ZtNENEOGhXRDlCTXQteU1RMlFXaERiZWh6ZThkNnl3R2l6YnJQRWdlZloyOVZWejlsX3JoQXJISGlvTFo2UWFYTkNVXzZydw?oc=5",
+      "published": "2026-11-19T14:34:27-06:00",
+      "date": "2026-11-19",
+      "label": "Nov 19, 2026 2:34 PM CT",
+      "weekday": "Thu",
+      "timeKnown": true,
+      "tags": [
+        "headline",
+        "standby",
+        "science",
+        "quantum",
+        "news"
+      ],
+      "severity": "STANDBY",
+      "field": "quantum",
+      "review": "NEWS"
+    },
+    {
+      "id": "paper:cdfcd9c013904ecd",
+      "kind": "paper",
+      "lane": "science",
+      "source": "Phys.org physics",
+      "sourceId": "paper",
+      "title": "Unusual magnetism revealed in a simple metal's electron spins",
+      "guest": "",
+      "note": "Magnets are usually associated with a familiar property: they produce a magnetic field because the magnetic moments of their electrons align. But nature allows much more unusual forms of magnetic order.",
+      "url": "https://phys.org/news/2026-11-unusual-magnetism-revealed-simple-metal.html",
+      "published": "2026-11-19T14:00:04-06:00",
+      "date": "2026-11-19",
+      "label": "Nov 19, 2026 2:00 PM CT",
+      "weekday": "Thu",
+      "timeKnown": true,
+      "tags": [
+        "science",
+        "physics",
+        "news"
+      ],
+      "field": "physics",
+      "review": "NEWS",
+      "severity": ""
+    },
+    {
+      "id": "paper:a6ae9c5aa0a8abe2",
+      "kind": "paper",
+      "lane": "science",
+      "source": "NASA",
+      "sourceId": "paper",
+      "title": "Challenge: Public Input on Life and the World in 2075",
+      "guest": "",
+      "note": "NASA’s Transformational Tools and Technologies (TTT) is gathering public perspectives on life today and how the world may change by 2075. This challenge asks for conceptual ideas about life in 2075 across four challenge topics.",
+      "url": "https://www.nasa.gov/directorates/stmd/prizes-challenges-crowdsourcing-program/center-of-excellence-for-collaborative-innovation-coeci/challenge-public-input-on-life-and-the-world-in-2075/",
+      "published": "2026-11-19T13:34:20-06:00",
+      "date": "2026-11-19",
+      "label": "Nov 19, 2026 1:34 PM CT",
+      "weekday": "Thu",
+      "timeKnown": true,
+      "tags": [
+        "science",
+        "propulsion",
+        "news"
+      ],
+      "field": "propulsion",
+      "review": "NEWS",
+      "severity": ""
+    },
+    {
+      "id": "paper:0600a3971f5ed717",
+      "kind": "paper",
+      "lane": "science",
+      "source": "IEEE Spectrum",
+      "sourceId": "paper",
+      "title": "Community-Focused Academic Brings AI Tools to Colorado Farmers",
+      "guest": "",
+      "note": "Many farmers and ranchers in eastern Colorado are curious about artificial intelligence, but they don’t have a local tech-savvy person to show them how to use it. Dong, an IEEE senior member, is an extension regional specialist with the Colorado State University Extension , CSU’s outreach arm.",
+      "url": "https://spectrum.ieee.org/ai-tools-for-rural-communities",
+      "published": "2026-11-19T13:00:02-06:00",
+      "date": "2026-11-19",
+      "label": "Nov 19, 2026 1:00 PM CT",
+      "weekday": "Thu",
+      "timeKnown": true,
+      "tags": [
+        "science",
+        "technology",
+        "news"
+      ],
+      "field": "technology",
+      "review": "NEWS",
       "severity": ""
     },
     {
@@ -291,30 +389,6 @@
       "severity": ""
     },
     {
-      "id": "paper:0295914f6a5ac371",
-      "kind": "paper",
-      "lane": "science",
-      "source": "NASA",
-      "sourceId": "paper",
-      "title": "NASA’s Voyager 1 Makes History Reaching One Light-Day From Earth",
-      "guest": "",
-      "note": "NASA’s Voyager 1 probe, humanity’s farthest-flying spacecraft, has reached one light-day from Earth, after more than 49 years of constant travel. A light-day is the distance light travels in 24 hours, equaling about 16.1 billion miles (25.9 billion kilometers).",
-      "url": "https://www.nasa.gov/news-release/nasas-voyager-1-makes-history-reaching-one-light-day-from-earth/",
-      "published": "2026-11-19T08:31:15-06:00",
-      "date": "2026-11-19",
-      "label": "Nov 19, 2026 8:31 AM CT",
-      "weekday": "Thu",
-      "timeKnown": true,
-      "tags": [
-        "science",
-        "propulsion",
-        "news"
-      ],
-      "field": "propulsion",
-      "review": "NEWS",
-      "severity": ""
-    },
-    {
       "id": "paper:090bfec2acb8c1b1",
       "kind": "paper",
       "lane": "science",
@@ -337,6 +411,32 @@
       "field": "technology",
       "review": "NEWS",
       "severity": ""
+    },
+    {
+      "id": "headline:59a6947721ce0d8d",
+      "kind": "paper",
+      "lane": "science",
+      "source": "CNBC",
+      "sourceId": "headline",
+      "title": "Anthropic IPO will create thousands of multimillionaire employees - CNBC",
+      "guest": "",
+      "note": "",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNc2lPZDEwREFZVFFuTGdUQTVST3dfVzBMV284THIwQjQwbFVPVVU5cWY2bWttcnZwNU1fSVkzX20tM2lvWENNOFJsS2E5emQzem1OQXVCUTd2am01Uld6ZHpONkxYV0tpbkxDMXNkWVhoTXF1V0NOS1BRVkVXV2JZOGM5YjVGOEwzZlIwNHp2cThQc20yWEF6VzNvWTNfVXlLemxHQktn0gGrAUFVX3lxTFBpM2NWMk9LRVNJRUt1T1BQRmtscllDR3ltT2MtTUdzLW82dG1Zei1sRERxMFpNR1pVODNsbkpyVFZvM2JWcXRrREhySmVBMlNDMzl3VXVfdDhveUtsVEdhLU9EV09jQ1ZNb25yaG9nLU5QSjB5dFItTTUwWHpfY3VwV0VCQmZVTW4yQWRtaE1rUGJlWmF4cVczQWdpZkJEb2NZc1Fnd2FWMldaUQ?oc=5",
+      "published": "2026-11-19T06:30:01-06:00",
+      "date": "2026-11-19",
+      "label": "Nov 19, 2026 6:30 AM CT",
+      "weekday": "Thu",
+      "timeKnown": true,
+      "tags": [
+        "headline",
+        "standby",
+        "science",
+        "ai",
+        "news"
+      ],
+      "severity": "STANDBY",
+      "field": "ai",
+      "review": "NEWS"
     },
     {
       "id": "paper:3872c486a2ae8830",
@@ -507,30 +607,6 @@
       "severity": ""
     },
     {
-      "id": "paper:622d59470e0b9562",
-      "kind": "paper",
-      "lane": "science",
-      "source": "Phys.org physics",
-      "sourceId": "paper",
-      "title": "Exquisite X-rays and dynamic compression initiate a new era of physics experiments on plutonium",
-      "guest": "",
-      "note": "Scientists at Lawrence Livermore National Laboratory (LLNL), Argonne National Laboratory (ANL) and Washington State University (WSU) have conducted the first dynamic compression experiments on plutonium at a national light source facility, the Dynamic Compression Sector (DCS).",
-      "url": "https://phys.org/news/2026-11-exquisite-rays-dynamic-compression-era.html",
-      "published": "2026-11-18T20:40:01-06:00",
-      "date": "2026-11-18",
-      "label": "Nov 18, 2026 8:40 PM CT",
-      "weekday": "Wed",
-      "timeKnown": true,
-      "tags": [
-        "science",
-        "physics",
-        "news"
-      ],
-      "field": "physics",
-      "review": "NEWS",
-      "severity": ""
-    },
-    {
       "id": "paper:db300ce00cf9d3e1",
       "kind": "paper",
       "lane": "science",
@@ -581,29 +657,29 @@
       "review": "NEWS"
     },
     {
-      "id": "headline:8e825fde2c52c04c",
+      "id": "headline:5f7bc28a4a9f0a64",
       "kind": "paper",
       "lane": "science",
-      "source": "The GitHub Blog",
+      "source": "NASA (.gov)",
       "sourceId": "headline",
-      "title": "Gemini 4 Neon in GitHub Copilot - The GitHub Blog",
+      "title": "NASA Sets Coverage for Northrop Grumman CRS-25 Launch, Prelaunch - NASA (.gov)",
       "guest": "",
       "note": "",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBMS1FJZ2psbEdtam53b1NNNV90Y1NvZUNOcDVnYkxvUkxSY0JKOXpWVFktdUNMMTA4eUVMT3phdVRDRzJtcHM5N0JxMEZVYjZfdTNERE9uaXNGdm0wTkRNYm96b2pEZFd6NzRTSGdabVlVbGE3V211UzI3YnFqQQ?oc=5",
-      "published": "2026-11-18T15:49:21-06:00",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNUmY5czRnVVAyek5iUm0xU0dTa3c3NG1jU2wxWUdMcDdpSWtFVVlHS3lIS0hSN0J0S1Z6NHhjLTdpZklkcG80em5ES0c0UVlpZi1wR1RFSTQxWnZmQW8wUkZpa1ZkZmZ4QTB2RVcwemFENHI5ajloWmlmeVZzeU5jVnY3QTZUcFdmNmlkNjBGZklQMkdpSWNWZVRJajFJQlk?oc=5",
+      "published": "2026-11-18T16:22:08-06:00",
       "date": "2026-11-18",
-      "label": "Nov 18, 2026 3:49 PM CT",
+      "label": "Nov 18, 2026 4:22 PM CT",
       "weekday": "Wed",
       "timeKnown": true,
       "tags": [
         "headline",
         "standby",
         "science",
-        "ai",
+        "propulsion",
         "news"
       ],
       "severity": "STANDBY",
-      "field": "ai",
+      "field": "propulsion",
       "review": "NEWS"
     },
     {
@@ -1015,32 +1091,6 @@
       "severity": ""
     },
     {
-      "id": "headline:8cbd5b7d70f641bc",
-      "kind": "paper",
-      "lane": "science",
-      "source": "SiliconANGLE",
-      "sourceId": "headline",
-      "title": "Quantum error correction ushers quantum into the data center - SiliconANGLE",
-      "guest": "",
-      "note": "",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNazFPYWFQeDRKbkowMTcyOFZRNVpXWEx5bFQ3WU4wWWpFWVktMzZfRUU2ck5qbjZsVUZFSEpZZ3pyZjVIbGxCanhzaFI1X29kOVdnU0FIQWJlRXBMcndHNE5CZWJzcGxNb0VCdnVRZ0dFeS1fRHc3YzE4ZmFjeFFFMW1YNE9lWHowWnJXQlhB?oc=5",
-      "published": "2026-11-18T08:28:00-06:00",
-      "date": "2026-11-18",
-      "label": "Nov 18, 2026 8:28 AM CT",
-      "weekday": "Wed",
-      "timeKnown": true,
-      "tags": [
-        "headline",
-        "standby",
-        "science",
-        "quantum",
-        "news"
-      ],
-      "severity": "STANDBY",
-      "field": "quantum",
-      "review": "NEWS"
-    },
-    {
       "id": "paper:9ba371c3adf7a5e6",
       "kind": "paper",
       "lane": "science",
@@ -1259,30 +1309,6 @@
         "news"
       ],
       "field": "ai",
-      "review": "NEWS",
-      "severity": ""
-    },
-    {
-      "id": "paper:d19fb07db5a5296c",
-      "kind": "paper",
-      "lane": "science",
-      "source": "IEEE Spectrum",
-      "sourceId": "paper",
-      "title": "AI Is Giving Optical Computing Another Shot",
-      "guest": "",
-      "note": "The idea of computing with light has been around for over 70 years, but until recently it’s remained largely in the realm of research. Over the past few years, though, optical computing has emerged as a fast-growing industry: Market valuation of companies in this sector now totals US $2.22 billion, up from $0.4 billion in 2022.",
-      "url": "https://spectrum.ieee.org/optical-computing-ai",
-      "published": "2026-11-17T08:00:03-06:00",
-      "date": "2026-11-17",
-      "label": "Nov 17, 2026 8:00 AM CT",
-      "weekday": "Tue",
-      "timeKnown": true,
-      "tags": [
-        "science",
-        "technology",
-        "news"
-      ],
-      "field": "technology",
       "review": "NEWS",
       "severity": ""
     },
@@ -1835,32 +1861,6 @@
       "severity": ""
     },
     {
-      "id": "headline:5091975358685c47",
-      "kind": "paper",
-      "lane": "science",
-      "source": "Space",
-      "sourceId": "headline",
-      "title": "SpaceX launches Starship on ambitious 22-hour Flight 15 test, but aborts booster 'chopsticks' catch (video) - Space",
-      "guest": "",
-      "note": "",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNcEhQWFJRdTk2a2oxdnBsNm1ZUHdjSUdDNUtuQnloQjlTdHZIdXpVeFlQeTNNMk8xeE9uXzhpamdiTnZHaFY2ZFZZbmViSEhBYUxGTENfNXVtZ3RHY2Z2SGlqSXU3cEZNRmtZdDFUc3VHbERUbWFiTEFNUk4wTHF2TVBJblIxUFc1UnBSY1lJRnM5VnFLM3hfYVU3VEpvWW44NmxNSmtUa3pUUXdxUEFHWV8tcnpkUE52MWFOX1pLZjNldlN1?oc=5",
-      "published": "2026-11-13T17:20:03-06:00",
-      "date": "2026-11-13",
-      "label": "Nov 13, 2026 5:20 PM CT",
-      "weekday": "Fri",
-      "timeKnown": true,
-      "tags": [
-        "headline",
-        "standby",
-        "science",
-        "propulsion",
-        "news"
-      ],
-      "severity": "STANDBY",
-      "field": "propulsion",
-      "review": "NEWS"
-    },
-    {
       "id": "headline:a43c48fbc5920a5e",
       "kind": "paper",
       "lane": "science",
@@ -1991,6 +1991,32 @@
       "review": "NEWS"
     },
     {
+      "id": "headline:6c69f4014f28930d",
+      "kind": "paper",
+      "lane": "science",
+      "source": "Purdue University",
+      "sourceId": "headline",
+      "title": "Research advances quantum computing that harnesses speed of light - Purdue University",
+      "guest": "",
+      "note": "",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNd0sza2RobHFPM0tma1AyeENqS2tuSVMzdzVMS2VpbHl1MTRIZnRfM3JBRldQV09VTmhodVFFeHY3RVlnQ0htNkhsZTFranNCcXI4cE9waDNBUmlrZS13Zl9yRjhtLVlUY2tCSHVGWnhwaU9qV2x4Z0FJcVYxSFNpRDBrY0Z4UDhHajY2eUtvcEdicHpYMTdyOGk3M0NhOE5iNHUzbjdzbDU?oc=5",
+      "published": "2026-11-12T14:22:45-06:00",
+      "date": "2026-11-12",
+      "label": "Nov 12, 2026 2:22 PM CT",
+      "weekday": "Thu",
+      "timeKnown": true,
+      "tags": [
+        "headline",
+        "standby",
+        "science",
+        "quantum",
+        "news"
+      ],
+      "severity": "STANDBY",
+      "field": "quantum",
+      "review": "NEWS"
+    },
+    {
       "id": "paper:8021ddbb9b3e5137",
       "kind": "paper",
       "lane": "science",
@@ -2013,32 +2039,6 @@
       "field": "ai",
       "review": "NEWS",
       "severity": ""
-    },
-    {
-      "id": "headline:be6ee54067fb357d",
-      "kind": "paper",
-      "lane": "science",
-      "source": "Newcastle University",
-      "sourceId": "headline",
-      "title": "How do you measure magic in a quantum computer? - Newcastle University",
-      "guest": "",
-      "note": "",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFA5YUliMkdYSTdBS3pOU2kxcDA3SHRJd3JHZ05VclNKQ2dyNTM5empDM3FlOGtYR0NoWFZYaV96ZG85Y2M5a2lUa3hXV3diSUh3Vzd2TXFCMjRXaWJkME13dU8wclEtNUVkaGVEYk9iNm1sU1B2UWVsQg?oc=5",
-      "published": "2026-11-12T07:56:40-06:00",
-      "date": "2026-11-12",
-      "label": "Nov 12, 2026 7:56 AM CT",
-      "weekday": "Thu",
-      "timeKnown": true,
-      "tags": [
-        "headline",
-        "standby",
-        "science",
-        "quantum",
-        "news"
-      ],
-      "severity": "STANDBY",
-      "field": "quantum",
-      "review": "NEWS"
     },
     {
       "id": "paper:0ae5b2542704a684",
@@ -2068,18 +2068,13 @@
   "spikes": [
     {
       "topic": "Gemini",
-      "outlets": 3,
-      "state": "RISING",
+      "outlets": 2,
+      "state": "EVENT",
       "links": [
         {
           "title": "Introducing Tool Retrieval in the Gemini API",
           "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
           "source": "Google AI blog"
-        },
-        {
-          "title": "Gemini 4 Neon in GitHub Copilot - The GitHub Blog",
-          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBMS1FJZ2psbEdtam53b1NNNV90Y1NvZUNOcDVnYkxvUkxSY0JKOXpWVFktdUNMMTA4eUVMT3phdVRDRzJtcHM5N0JxMEZVYjZfdTNERE9uaXNGdm0wTkRNYm96b2pEZFd6NzRTSGdabVlVbGE3V211UzI3YnFqQQ?oc=5",
-          "source": "The GitHub Blog"
         },
         {
           "title": "Introducing Gemini 4 Neon",
@@ -2089,6 +2084,11 @@
         {
           "title": "The Gemini app is now available on lower-memory Android devices.",
           "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/",
+          "source": "Google AI blog"
+        },
+        {
+          "title": "Put Gemini to work for you",
+          "url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
           "source": "Google AI blog"
         }
       ],
