@@ -6301,8 +6301,18 @@
     },
     {
       "date": "2026-11-18",
-      "label": "Nov 18, 2026 3:28 PM CT",
+      "label": "Nov 18, 2026 6:05 PM CT",
       "outlooks": [
+        {
+          "id": "quake:84b3fa887cbadf63",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:096bbf5ec7fd861b",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
         {
           "id": "quake:ce0af673ab9a0a21",
           "outlook": "First reading. Watch the next 72 hours.",
@@ -6344,11 +6354,6 @@
           "severity": "STANDBY"
         },
         {
-          "id": "quake:1f3b390f8690c511",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "STANDBY"
-        },
-        {
           "id": "quake:585da7572357a260",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
@@ -6366,7 +6371,17 @@
         {
           "id": "gdacs:6dbdf1011ba3aa93",
           "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ACTION"
+          "severity": "STANDBY"
+        },
+        {
+          "id": "gdacs:1cf5eeea72a373d2",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "gdacs:0ade1512db453d6a",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
         },
         {
           "id": "gdacs:f612caa3359fa8dc",
@@ -6390,11 +6405,6 @@
         },
         {
           "id": "gdacs:a1a60aaf69c7cf92",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ALERT"
-        },
-        {
-          "id": "gdacs:5a89b3c40fc3fef7",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
@@ -6534,17 +6544,12 @@
           "severity": "ALERT"
         },
         {
+          "id": "headline:0817dedfcb4b6267",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
           "id": "headline:f05c0d4e64c67df2",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ALERT"
-        },
-        {
-          "id": "headline:76a3eee26772208c",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ALERT"
-        },
-        {
-          "id": "headline:f521c812228b4d38",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
@@ -6559,18 +6564,13 @@
           "severity": "ALERT"
         },
         {
-          "id": "headline:3848ed67dcc33b6a",
+          "id": "headline:07e6cc23a7b8e036",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
         {
-          "id": "headline:e9bea024fcae8468",
+          "id": "headline:8cb96b3b99d6a26c",
           "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ALERT"
-        },
-        {
-          "id": "headline:94174e0b3fa335b9",
-          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
           "severity": "ALERT"
         },
         {
@@ -6605,21 +6605,6 @@
         },
         {
           "id": "headline:098a45597723d25a",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:ba387395e6048c8b",
-          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:42774c269809659e",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:b53c8968104ac706",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "STANDBY"
         },
@@ -6671,6 +6656,18 @@
       ],
       "threats": [
         {
+          "id": "quake:84b3fa887cbadf63",
+          "kind": "quake",
+          "severity": "STANDBY",
+          "title": "M5.1 157 km S of Attu Station, Alaska"
+        },
+        {
+          "id": "quake:096bbf5ec7fd861b",
+          "kind": "quake",
+          "severity": "STANDBY",
+          "title": "M4.7 134 km SW of Lorengau, Papua New Guinea"
+        },
+        {
           "id": "quake:ce0af673ab9a0a21",
           "kind": "quake",
           "severity": "STANDBY",
@@ -6719,12 +6716,6 @@
           "title": "M5.9 85 km WNW of San Juan, Peru"
         },
         {
-          "id": "quake:1f3b390f8690c511",
-          "kind": "quake",
-          "severity": "STANDBY",
-          "title": "M5.2 Galapagos Triple Junction region"
-        },
-        {
           "id": "quake:585da7572357a260",
           "kind": "quake",
           "severity": "ALERT",
@@ -6745,8 +6736,20 @@
         {
           "id": "gdacs:6dbdf1011ba3aa93",
           "kind": "gdacs",
-          "severity": "ACTION",
+          "severity": "STANDBY",
           "title": "Tropical Cyclone AKVAN-26"
+        },
+        {
+          "id": "gdacs:1cf5eeea72a373d2",
+          "kind": "gdacs",
+          "severity": "ALERT",
+          "title": "Earthquake in Near Islands, Aleutian Islands"
+        },
+        {
+          "id": "gdacs:0ade1512db453d6a",
+          "kind": "gdacs",
+          "severity": "ALERT",
+          "title": "Earthquake in Papua New Guinea"
         },
         {
           "id": "gdacs:f612caa3359fa8dc",
@@ -6777,12 +6780,6 @@
           "kind": "gdacs",
           "severity": "ALERT",
           "title": "Earthquake in South Of Mariana Islands"
-        },
-        {
-          "id": "gdacs:5a89b3c40fc3fef7",
-          "kind": "gdacs",
-          "severity": "ALERT",
-          "title": "Earthquake in West Chile Rise"
         },
         {
           "id": "relief:fa932de6abdd893c",
@@ -6947,22 +6944,16 @@
           "title": "Trump Grows Frustrated With Vance Over Iran War Critique - The New York Times"
         },
         {
+          "id": "headline:0817dedfcb4b6267",
+          "kind": "climate",
+          "severity": "ALERT",
+          "title": "OPEC speaks up for fossil fuels at COP31 climate talks - Reuters"
+        },
+        {
           "id": "headline:f05c0d4e64c67df2",
           "kind": "attack",
           "severity": "ALERT",
           "title": "Sviatlana Tsikhanouskaya paid tribute to victims of the attack in Kraków - Святлана Ціханоўская"
-        },
-        {
-          "id": "headline:76a3eee26772208c",
-          "kind": "war-iran",
-          "severity": "ALERT",
-          "title": "Iran Attacks Kuwait and Bahrain, Further Escalating Fight Over Strait - WSJ"
-        },
-        {
-          "id": "headline:f521c812228b4d38",
-          "kind": "war-ukraine",
-          "severity": "ALERT",
-          "title": "Ukraine allies reject U.S. criticism of deep strikes inside Russia ahead of Trump-Putin-Xi summit - CNBC"
         },
         {
           "id": "headline:d65188e3b9eeabb1",
@@ -6977,22 +6968,16 @@
           "title": "Israeli parliament elects new speaker backed by Netanyahu’s opponents - The Guardian"
         },
         {
-          "id": "headline:3848ed67dcc33b6a",
+          "id": "headline:07e6cc23a7b8e036",
           "kind": "war-ukraine",
           "severity": "ALERT",
-          "title": "Pentagon Official Says Ukraine War Likely To Last Through Winter, Despite Mediation Efforts - Radio Free Europe/Radio Liberty"
+          "title": "France is not 'co-belligerent' in Ukraine, French minister says - Reuters"
         },
         {
-          "id": "headline:e9bea024fcae8468",
-          "kind": "war-ukraine",
+          "id": "headline:8cb96b3b99d6a26c",
+          "kind": "war-iran",
           "severity": "ALERT",
-          "title": "Ukraine: Civilian casualties in 2026 already far exceed previous years’ tolls - UN News"
-        },
-        {
-          "id": "headline:94174e0b3fa335b9",
-          "kind": "war-ukraine",
-          "severity": "ALERT",
-          "title": "What Is the Kerch Bridge—and Why Does Ukraine Keep Attacking It? - Time Magazine"
+          "title": "Iran fires at U.S. facility in Bahrain as Tehran resumes strikes on Arab neighbors - PBS"
         },
         {
           "id": "headline:85be09dd815b4e3a",
@@ -7035,24 +7020,6 @@
           "kind": "war-iran",
           "severity": "STANDBY",
           "title": "Qatar PM warns of major US-Iran disagreements despite reprieve from post - The Jerusalem Post"
-        },
-        {
-          "id": "headline:ba387395e6048c8b",
-          "kind": "diplomacy",
-          "severity": "STANDBY",
-          "title": "US says China agreed importance of leader-level talks to advance denuclearization - Reuters"
-        },
-        {
-          "id": "headline:42774c269809659e",
-          "kind": "climate",
-          "severity": "STANDBY",
-          "title": "COP31 to take place 9-20 November 2026 in Antalya, Türkiye - Welcome to the United Nations"
-        },
-        {
-          "id": "headline:b53c8968104ac706",
-          "kind": "climate",
-          "severity": "STANDBY",
-          "title": "UN climate summit kicks off in Turkey after a disastrous year of extreme weather - AP News"
         },
         {
           "id": "headline:2b25133f4668f891",
@@ -7113,11 +7080,6 @@
         {
           "category": "iran-war",
           "name": "iran war",
-          "volume": null
-        },
-        {
-          "category": "ukraine-war",
-          "name": "ukraine war",
           "volume": null
         },
         {

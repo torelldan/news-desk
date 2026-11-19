@@ -1,18 +1,9 @@
 {
-  "changes": [
-    {
-      "change": "updated",
-      "date": "2026-11-18",
-      "note": "1.7x usual volume · 5 or more outlets",
-      "section": "Rising situations",
-      "severity": "ALERT",
-      "title": "quake is RISING"
-    }
-  ],
+  "changes": [],
   "gaps": [],
   "items": [
     {
-      "reasons": "1.7x usual volume · 5 or more outlets",
+      "reasons": "1.8x usual volume · 5 or more outlets",
       "score": 2,
       "spark": [
         {
@@ -55,7 +46,7 @@
           "price": 12
         },
         {
-          "price": 12
+          "price": 13
         }
       ],
       "state": "RISING",
@@ -95,9 +86,9 @@
           "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQV3B0SDctTm9DMGNCbXNLM2VOd2prWE1aZTZfT242MVNtUGRVeWRUemVHRWZMSVhGM0J0S2xxMC1XRWRvMVB6XzN3VGJfTDdDSGtGMTlSMFpVTlM2ZGotaW1JZjBaWWNQZmZseEFFUFBxa3hnRDQyYnB1bzVUWXdPcDJnZU5jLTUzVUZJYWRsX1d4Zw?oc=5"
         },
         {
-          "source": "WSJ",
-          "title": "Iran Attacks Kuwait and Bahrain, Further Escalating Fight Over Strait - WSJ",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNcGVKcXlHY1EycS1qaFBrcVduLWwzS1B4RmhJeDg5eFlxR0FIeVNFclFqZVczdXFBVGVLa0xpcHZXZkVWa3JEeHJxVXA5YWxVa3YtejhlaHd1T1JmWDd1NHp3V1E1SEdsS0tkOEc2bVpZNER2elNveGdNTk9xanNjSDZZM2NwSXhULUVPSk84TW1JRFJUbkRRZVBYN2JHd0NnQkYxN0hhVDhVaVYzUEtlTGUwUUpuZw?oc=5"
+          "source": "PBS",
+          "title": "Iran fires at U.S. facility in Bahrain as Tehran resumes strikes on Arab neighbors - PBS",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPTlVZWjRCSVZZOTdxbEJHVlVJTjVyV2xWVXdaQ2tqUmVRNFJkaElDa2xhYWFqbEcwRDlaWnpNWF9OMy05OE5mM2N4VkhRQVZHdTFUTTlyd2JUSkwxR0Q3ZEh1UDZZNDB5cmVHa1lfMkM0ZldWT1pJRmVTTWVPMWEzQnloMWY2Zjh1TDdaeHRONmIwbERZLWtfMy12Z19JcDV2eUJxZElIWDdBWW5CU1NEYU5TVjJRRjjSAbwBQVVfeXFMTm93R19jS3VPR050YTJCYXBSQ25mYlo1RXNhZ1JSSXVZdEdiYUJJeloyZHlkUnJYTTc5dGVzbmlqZHY3Tlhscjc5cWxqT1JRTHMtVHlORE5TUVpKQVZ1d3FGUjhwcDlHbk5JSFVoeXZya1lTU1ZIUW9SRkUwZ2t0akZGa2t4VEpfdEZJRS0xcFFEZGVaVGtNcWFvOWdLTFFRUmFhTXBsQ1FydjA5X3dZUHdDVmE4WnduNXVUMTc?oc=5"
         },
         {
           "source": "Voice of America English News",
@@ -109,29 +100,6 @@
       "score": 4,
       "state": "RISING",
       "topic": "iran war"
-    },
-    {
-      "links": [
-        {
-          "source": "CNBC",
-          "title": "Ukraine allies reject U.S. criticism of deep strikes inside Russia ahead of Trump-Putin-Xi summit - CNBC",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPcF9sZnpjTVZtQnpnUTlmcFJ5OFB4UGhFLVIwUUJFZ1F4MXVBem14ZzRXSkotTUp1S0tJZEZjY1oxbEt3S1NiaXlSbTJrUmZMQjEwWEZUN1dGZTlGSUxTZWl1bzhfT1N4SzhrcDN6X29TMTNadlEzdWFrZWxlalFTV0lUQmNKeGfSAYwBQVVfeXFMT3ByenVPUVlqSzkzRWJmWE13TGxRQjRZcmtBZVU2aFhtVUJiVlZGZGNydnNBOFNuMENZaWdDVHN4aVpUeUF1N2JZaGVwUi05eFNGSDB1c3V3WXlnbk9vczlsb29lVlF5Nll3ZlpPUV9QRUh0RG80VVI3bEtJX1VOQjBlS3BKcUdFXzVEa1U?oc=5"
-        },
-        {
-          "source": "Radio Free Europe/Radio Liberty",
-          "title": "Pentagon Official Says Ukraine War Likely To Last Through Winter, Despite Mediation Efforts - Radio Free Europe/Radio Liberty",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPWDV6ZGR5YldWX2pWS0RmNUxCTlh2NTE4d2lDMUJVa05HbkVjYzRqN2J2d2Y5QU9UMWJ6U054bWJpYjU5WVZ6TUtfNDNTTERyN0JldGZmV21CcTZ5OVYtNFBVaDRDWmI0LVpRTjhMUk1kbkRCQkVSejZvQkR0ajZmRXdCVUlja3dfWmtjQzZ6OUZrbDdlN2ZkddIBmwFBVV95cUxQRjhCcTdwMnFSQWtTNHZ1c3JjS3F6MmhxMVpSOWRPUUxaWUVmcGZaWTEybzhYT2V2cTdHNGJNTkdNVW5mZ294enIxYTIxRFZIQTItQ0ZzT0UwTXA4RHpBU2s1OUE4c0dkeG9tcDZEbnFpamVEOFFkUnM5djlmcGRKbzdPSnU3V1UzVjZZN1BQbW5ZWDZUNVhacnZJNA?oc=5"
-        },
-        {
-          "source": "UN News",
-          "title": "Ukraine: Civilian casualties in 2026 already far exceed previous years’ tolls - UN News",
-          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFA2S212VmNSVjM3WHJzb3pwWDlFUjEyeEF5QTZRU3RBeV9GZjVOU2RoT1JBQjdZbzkyY0djTG4ybjFVMlFySnVYYjBWcjhPQXptMmtDTlVtdw?oc=5"
-        }
-      ],
-      "reasons": "4 outlets this window",
-      "score": 4,
-      "state": "RISING",
-      "topic": "ukraine war"
     },
     {
       "links": [

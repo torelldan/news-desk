@@ -2,13 +2,6 @@
   "calls": [],
   "escalated": [
     {
-      "note": "New since 2026-11-11 · now ACTION",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ACTION",
-      "title": "Tropical Cyclone AKVAN-26"
-    },
-    {
       "note": "STANDBY → ALERT since 2026-11-11",
       "related": 0,
       "relatedSources": [],
@@ -21,6 +14,20 @@
       "relatedSources": [],
       "severity": "ALERT",
       "title": "M6.6 148 km WSW of Tual, Indonesia"
+    },
+    {
+      "note": "New since 2026-11-11 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "Earthquake in Near Islands, Aleutian Islands"
+    },
+    {
+      "note": "New since 2026-11-11 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "Earthquake in Papua New Guinea"
     },
     {
       "note": "New since 2026-11-11 · now ALERT",
@@ -56,13 +63,6 @@
       "relatedSources": [],
       "severity": "ALERT",
       "title": "Earthquake in South Of Mariana Islands"
-    },
-    {
-      "note": "New since 2026-11-11 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "Earthquake in West Chile Rise"
     },
     {
       "note": "New since 2026-11-11 · now ALERT",
@@ -130,11 +130,11 @@
       "title": "Ukraine peace talks restart after 9 months. What makes them different this time? - CNN"
     },
     {
-      "note": "ALERT → STANDBY since 2026-11-11",
+      "note": "On the board 2026-11-11 at ALERT, absent now.",
       "related": 0,
       "relatedSources": [],
-      "severity": "STANDBY",
-      "title": "Conflict must not distract from climate action, leaders warn COP31 - Reuters"
+      "severity": "ALERT",
+      "title": "Climate Action from Geneva to Antalya | UN Climate Change Conference COP31 - Geneva Environment Network"
     },
     {
       "note": "ALERT → STANDBY since 2026-11-11",
@@ -142,23 +142,9 @@
       "relatedSources": [],
       "severity": "STANDBY",
       "title": "Secretary of State Marco Rubio Speaks to Reporters at G7 Meeting - C-SPAN"
-    },
-    {
-      "note": "ALERT → STANDBY since 2026-11-11",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "STANDBY",
-      "title": "Climate Action from Geneva to Antalya | UN Climate Change Conference COP31 - Geneva Environment Network"
     }
   ],
   "newSince": [
-    {
-      "note": "New since 2026-11-11 · now ACTION",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ACTION",
-      "title": "Tropical Cyclone AKVAN-26"
-    },
     {
       "note": "STANDBY → ALERT since 2026-11-11",
       "related": 0,
@@ -172,6 +158,20 @@
       "relatedSources": [],
       "severity": "ALERT",
       "title": "M6.6 148 km WSW of Tual, Indonesia"
+    },
+    {
+      "note": "New since 2026-11-11 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "Earthquake in Near Islands, Aleutian Islands"
+    },
+    {
+      "note": "New since 2026-11-11 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "Earthquake in Papua New Guinea"
     },
     {
       "note": "New since 2026-11-11 · now ALERT",
@@ -207,13 +207,6 @@
       "relatedSources": [],
       "severity": "ALERT",
       "title": "Earthquake in South Of Mariana Islands"
-    },
-    {
-      "note": "New since 2026-11-11 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "Earthquake in West Chile Rise"
     },
     {
       "note": "New since 2026-11-11 · now ALERT",

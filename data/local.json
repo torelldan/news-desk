@@ -2,7 +2,7 @@
   "gaps": [
     "Power_TN row hidden (2025-10-06, affected 0, served 0).",
     "1 ended road projects hidden.",
-    "TEMA: curl: (35) Recv failure: Connection reset by peer\n"
+    "TEMA: curl: (35) Send failure: Connection reset by peer\n"
   ],
   "items": [
     {
@@ -11,10 +11,10 @@
       "date": "2026-11-18",
       "id": "local-nws-none",
       "kind": "nws",
-      "label": "Nov 18, 2026 3:28 PM CT",
+      "label": "Nov 18, 2026 6:05 PM CT",
       "lane": "local",
       "note": "api.weather.gov answered for 35.802,-86.907 and returned no alerts.",
-      "published": "2026-11-18T15:28:12-06:00",
+      "published": "2026-11-18T18:05:44-06:00",
       "severity": "STANDBY",
       "soWhat": "",
       "source": "NWS",
@@ -35,7 +35,7 @@
       "label": "2026-11-16",
       "lane": "local",
       "note": "Other Construction",
-      "published": "2026-11-18T15:28:12-06:00",
+      "published": "2026-11-18T18:05:44-06:00",
       "severity": "STANDBY",
       "soWhat": "",
       "source": "TDOT SmartWay",
@@ -56,7 +56,7 @@
       "label": "2026-11-16",
       "lane": "local",
       "note": "Resurfacing",
-      "published": "2026-11-18T15:28:12-06:00",
+      "published": "2026-11-18T18:05:44-06:00",
       "severity": "STANDBY",
       "soWhat": "",
       "source": "TDOT SmartWay",
@@ -77,7 +77,7 @@
       "label": "2026-11-16",
       "lane": "local",
       "note": "Resurfacing",
-      "published": "2026-11-18T15:28:12-06:00",
+      "published": "2026-11-18T18:05:44-06:00",
       "severity": "STANDBY",
       "soWhat": "",
       "source": "TDOT SmartWay",

@@ -1,9 +1,11 @@
 {
   "baseline": false,
-  "brief": "Open risk: ACTION Tropical Cyclone AKVAN-26. Current war coverage is on the board: Trump Grows Frustrated With Vance Over Iran War Critique - The New York Times; Iran Attacks Kuwait and Bahrain, Further Escalating Fight Over Strait - WSJ. Rising topic: iran war (4 outlets this window).",
-  "checkedAt": "2026-11-18T15:28:12-06:00",
-  "checkedLabel": "Nov 18, 2026 3:28 PM CT",
-  "errors": [],
+  "brief": "No rare risk is on the board. A routine flyby or an empty storm outlook is not an emergency. Current war coverage is on the board: Trump Grows Frustrated With Vance Over Iran War Critique - The New York Times; France is not 'co-belligerent' in Ukraine, French minister says - Reuters. Rising topic: iran war (4 outlets this window).",
+  "checkedAt": "2026-11-18T18:05:44-06:00",
+  "checkedLabel": "Nov 18, 2026 6:05 PM CT",
+  "errors": [
+    "Ukraine war: curl: (22) The requested URL returned error: 429\n"
+  ],
   "retainDays": 120,
   "today": "2026-11-18",
   "trends": {

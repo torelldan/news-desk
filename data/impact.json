@@ -1403,7 +1403,7 @@
   ],
   "drivers": {
     "copperGold": {
-      "ratio": 0.001522,
+      "ratio": 0.001519,
       "yield10": 5.066
     },
     "correlations": [
@@ -1414,7 +1414,7 @@
         "metal": "Gold"
       },
       {
-        "d30": -0.15,
+        "d30": -0.16,
         "d90": -0.2,
         "driver": "10Y",
         "metal": "Gold"
@@ -1427,18 +1427,18 @@
       },
       {
         "d30": 0.29,
-        "d90": 0.33,
+        "d90": 0.34,
         "driver": "S&P",
         "metal": "Gold"
       },
       {
-        "d30": -0.1,
+        "d30": -0.11,
         "d90": -0.24,
         "driver": "VIX",
         "metal": "Gold"
       },
       {
-        "d30": 0.55,
+        "d30": 0.54,
         "d90": 0.48,
         "driver": "Copper",
         "metal": "Gold"
@@ -1450,7 +1450,7 @@
         "metal": "Silver"
       },
       {
-        "d30": -0.0,
+        "d30": -0.01,
         "d90": -0.12,
         "driver": "10Y",
         "metal": "Silver"
@@ -1474,8 +1474,8 @@
         "metal": "Silver"
       },
       {
-        "d30": 0.62,
-        "d90": 0.61,
+        "d30": 0.6,
+        "d90": 0.6,
         "driver": "Copper",
         "metal": "Silver"
       }
@@ -1486,9 +1486,6 @@
         "inverted": false,
         "name": "T10Y2Y",
         "spark": [
-          {
-            "price": 0.47
-          },
           {
             "price": 0.48
           },
@@ -1575,18 +1572,18 @@
           },
           {
             "price": 0.3
+          },
+          {
+            "price": 0.27
           }
         ],
-        "value": 0.3
+        "value": 0.27
       },
       {
         "flag": "positive",
         "inverted": false,
         "name": "T10Y3M",
         "spark": [
-          {
-            "price": 1.09
-          },
           {
             "price": 1.06
           },
@@ -1673,31 +1670,34 @@
           },
           {
             "price": 0.77
+          },
+          {
+            "price": 0.73
           }
         ],
-        "value": 0.77
+        "value": 0.73
       }
     ],
     "funds": {
       "dff": 3.88,
-      "zqf": 4.175,
-      "zqh": 4.405
+      "zqf": 4.18,
+      "zqh": 4.415
     },
     "gaps": [],
     "oil": {
-      "brent": 88.97,
+      "brent": 88.73,
       "energyStrikes": 0,
-      "wti": 82.17
+      "wti": 82.0
     },
     "rows": [
       {
         "changes": {
-          "1M": -10.0,
-          "1W": -6.8,
-          "1Y": -8.49,
-          "3M": -18.44
+          "1M": -9.68,
+          "1W": -6.48,
+          "1Y": -8.18,
+          "3M": -18.16
         },
-        "level": 3728.3999,
+        "level": 3741.3999,
         "name": "Gold",
         "spark": [
           {
@@ -1788,19 +1788,19 @@
             "price": 3864.2
           },
           {
-            "price": 3728.3999
+            "price": 3741.3999
           }
         ],
         "unit": "%"
       },
       {
         "changes": {
-          "1M": -22.01,
-          "1W": -13.25,
-          "1Y": -11.1,
-          "3M": -33.84
+          "1M": -21.39,
+          "1W": -12.57,
+          "1Y": -10.4,
+          "3M": -33.32
         },
-        "level": 45.005,
+        "level": 45.36,
         "name": "Silver",
         "spark": [
           {
@@ -1891,19 +1891,19 @@
             "price": 47.288
           },
           {
-            "price": 45.005
+            "price": 45.36
           }
         ],
         "unit": "%"
       },
       {
         "changes": {
-          "1M": 2.03,
-          "1W": 0.86,
-          "1Y": 4.22,
-          "3M": 4.95
+          "1M": 2.05,
+          "1W": 0.88,
+          "1Y": 4.24,
+          "3M": 4.97
         },
-        "level": 103.797,
+        "level": 103.813,
         "name": "DXY",
         "spark": [
           {
@@ -1994,7 +1994,7 @@
             "price": 103.49
           },
           {
-            "price": 103.797
+            "price": 103.813
           }
         ],
         "unit": "%"
@@ -2310,12 +2310,12 @@
       },
       {
         "changes": {
-          "1M": 41.94,
-          "1W": 40.48,
-          "1Y": 3.85,
-          "3M": 62.39
+          "1M": 41.88,
+          "1W": 40.42,
+          "1Y": 3.8,
+          "3M": 62.33
         },
-        "level": 24.57,
+        "level": 24.56,
         "name": "VIX",
         "spark": [
           {
@@ -2406,19 +2406,19 @@
             "price": 25.46
           },
           {
-            "price": 24.57
+            "price": 24.56
           }
         ],
         "unit": "%"
       },
       {
         "changes": {
-          "1M": -13.61,
-          "1W": -9.59,
-          "1Y": 13.46,
-          "3M": -12.18
+          "1M": -13.42,
+          "1W": -9.4,
+          "1Y": 13.7,
+          "3M": -12.0
         },
-        "level": 5.673,
+        "level": 5.685,
         "name": "Copper",
         "spark": [
           {
@@ -2509,19 +2509,19 @@
             "price": 5.976
           },
           {
-            "price": 5.673
+            "price": 5.685
           }
         ],
         "unit": "%"
       },
       {
         "changes": {
-          "1M": 15.4,
-          "1W": 7.44,
-          "1Y": 2.93,
-          "3M": 23.28
+          "1M": 14.9,
+          "1W": 6.97,
+          "1Y": 2.48,
+          "3M": 22.74
         },
-        "level": 82.8441,
+        "level": 82.4824,
         "name": "Gold/silver",
         "spark": [
           {
@@ -2612,7 +2612,7 @@
             "price": 81.7163
           },
           {
-            "price": 82.8441
+            "price": 82.4824
           }
         ],
         "unit": "%"
@@ -2622,12 +2622,12 @@
       {
         "name": "GLD",
         "price": 341.19,
-        "volume": 12723476
+        "volume": 12829627
       },
       {
         "name": "SLV",
         "price": 40.7,
-        "volume": 28454976
+        "volume": 28557023
       },
       {
         "name": "GOLDBEES",
@@ -2636,61 +2636,10 @@
       }
     ]
   },
-  "events": [
-    {
-      "category": "disaster",
-      "date": "2026-11-15",
-      "id": "gdacs:6dbdf1011ba3aa93",
-      "moves": [
-        {
-          "id": "dxy",
-          "m1": 0.0,
-          "name": "DXY",
-          "p1": 0.14,
-          "p3": 0.37,
-          "source": "https://finance.yahoo.com/quote/DX-Y.NYB"
-        },
-        {
-          "id": "gold",
-          "m1": 0.0,
-          "name": "Gold",
-          "p1": -0.86,
-          "p3": -4.04,
-          "source": "https://finance.yahoo.com/quote/GC%3DF"
-        },
-        {
-          "id": "silver",
-          "m1": 0.0,
-          "name": "Silver",
-          "p1": -4.58,
-          "p3": -8.19,
-          "source": "https://finance.yahoo.com/quote/SI%3DF"
-        },
-        {
-          "id": "btc",
-          "m1": -3.17,
-          "name": "BTC",
-          "p1": 0.12,
-          "p3": -3.84,
-          "source": "https://www.coingecko.com/en/coins/bitcoin"
-        },
-        {
-          "id": "eth",
-          "m1": -4.47,
-          "name": "ETH",
-          "p1": 1.13,
-          "p3": -2.93,
-          "source": "https://www.coingecko.com/en/coins/ethereum"
-        }
-      ],
-      "severity": "ACTION",
-      "title": "Tropical Cyclone AKVAN-26",
-      "url": "https://www.gdacs.org/report.aspx?eventid=1001351&episodeid=9&eventtype=TC"
-    }
-  ],
+  "events": [],
   "explainer": [
-    "Gold -10.0% with DXY 2.03% and yields up. Association, not proof: stronger dollar / higher rates.",
-    "Gold/silver ratio 82.8 (1-month change 15.4%) and copper -13.61%. Association, not proof: industrial worry is hitting silver harder."
+    "Gold -9.68% with DXY 2.05% and yields up. Association, not proof: stronger dollar / higher rates.",
+    "Gold/silver ratio 82.5 (1-month change 14.9%) and copper -13.42%. Association, not proof: industrial worry is hitting silver harder."
   ],
   "note": "-1d is the move into the day before the event. +1d and +3d are moves from that same close to the stored close on or after those days. Correlation is Pearson between a category event-day (1/0) and that asset's daily percent change. Fewer than 5 paired days, or fewer than 3 event days, is n/a.",
   "vixZone": "15 to 25"

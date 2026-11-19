@@ -1574,13 +1574,13 @@
       "topic": "attack"
     },
     {
-      "count": 2,
+      "count": 1,
       "countries": 1,
       "date": "2026-11-18",
       "keywords": [],
-      "outlets": 2,
+      "outlets": 1,
       "score": 0,
-      "severity": "STANDBY",
+      "severity": "ALERT",
       "topic": "climate"
     },
     {
@@ -1604,23 +1604,21 @@
       "topic": "cyber"
     },
     {
-      "count": 2,
+      "count": 1,
       "countries": 1,
       "date": "2026-11-18",
-      "keywords": [
-        "nuclear"
-      ],
-      "outlets": 2,
+      "keywords": [],
+      "outlets": 1,
       "score": 0,
       "severity": "ALERT",
       "topic": "diplomacy"
     },
     {
-      "count": 7,
+      "count": 8,
       "countries": 1,
       "date": "2026-11-18",
       "keywords": [],
-      "outlets": 7,
+      "outlets": 8,
       "score": 0,
       "severity": "ALERT",
       "topic": "gdacs"
@@ -1646,11 +1644,11 @@
       "topic": "neo"
     },
     {
-      "count": 12,
+      "count": 13,
       "countries": 1,
       "date": "2026-11-18",
       "keywords": [],
-      "outlets": 12,
+      "outlets": 13,
       "score": 0,
       "severity": "ALERT",
       "topic": "quake"
@@ -1686,11 +1684,11 @@
       "topic": "war-iran"
     },
     {
-      "count": 4,
+      "count": 1,
       "countries": 1,
       "date": "2026-11-18",
       "keywords": [],
-      "outlets": 4,
+      "outlets": 1,
       "score": 0,
       "severity": "ALERT",
       "topic": "war-ukraine"
@@ -3296,13 +3294,13 @@
       "topic": "attack"
     },
     {
-      "count": 2,
+      "count": 1,
       "countries": 1,
       "date": "2026-11-18",
       "keywords": [],
-      "outlets": 2,
+      "outlets": 1,
       "score": 0,
-      "severity": "STANDBY",
+      "severity": "ALERT",
       "topic": "climate"
     },
     {
@@ -3326,23 +3324,21 @@
       "topic": "cyber"
     },
     {
-      "count": 2,
+      "count": 1,
       "countries": 1,
       "date": "2026-11-18",
-      "keywords": [
-        "nuclear"
-      ],
-      "outlets": 2,
+      "keywords": [],
+      "outlets": 1,
       "score": 0,
       "severity": "ALERT",
       "topic": "diplomacy"
     },
     {
-      "count": 7,
+      "count": 8,
       "countries": 1,
       "date": "2026-11-18",
       "keywords": [],
-      "outlets": 7,
+      "outlets": 8,
       "score": 0,
       "severity": "ALERT",
       "topic": "gdacs"
@@ -3368,11 +3364,11 @@
       "topic": "neo"
     },
     {
-      "count": 12,
+      "count": 13,
       "countries": 1,
       "date": "2026-11-18",
       "keywords": [],
-      "outlets": 12,
+      "outlets": 13,
       "score": 0,
       "severity": "ALERT",
       "topic": "quake"
@@ -3408,11 +3404,11 @@
       "topic": "war-iran"
     },
     {
-      "count": 4,
+      "count": 1,
       "countries": 1,
       "date": "2026-11-18",
       "keywords": [],
-      "outlets": 4,
+      "outlets": 1,
       "score": 0,
       "severity": "ALERT",
       "topic": "war-ukraine"
