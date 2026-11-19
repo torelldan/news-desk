@@ -692,6 +692,10 @@ def infra_severity(title: str, note: str = "", cause: str = "unconfirmed", same_
     blob = f"{title or ''} {note or ''}"
     if re.search(r"routine maintenance|planned maintenance|scheduled maintenance", blob, re.I):
         return "STANDBY"
+    # A court follow-up names the old damage. It is not a new outage.
+    if re.search(r"\b(drops? charges?|dropped the charge|acquitt\w*|sentenc\w*|pleads?|indict\w*|prosecutor)\b", blob, re.I):
+        if not re.search(r"\b(explosion|rupture|leak|outage)\b", blob, re.I):
+            return "STANDBY"
     multi = re.search(r"several countries|multiple countries|multi-country|european gas supply|supply (?:cut|halt|shock)", blob, re.I)
     if (infra_us(title, note) or multi) and re.search(r"outage|damage|damaged|shut|halt|interruption|supply|rupture|leak", blob, re.I):
         return "CRITICAL"

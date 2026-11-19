@@ -817,6 +817,20 @@ def fetch_trends(token: str, now: datetime) -> dict:
     return doc
 
 
+def collect_infra(now):
+    """Run the infrastructure fetch. The module is imported here, before any use.
+
+    main() also imports boards later, inside a try. Using the name before that
+    import makes Python treat it as an unbound local, and the refresh records
+    'cannot access local variable boards'.
+    """
+    import boards
+    try:
+        return boards.fetch_infra(now)
+    except Exception as err:
+        return [], [f"Infrastructure: {err}"]
+
+
 def main() -> int:
     now = datetime.now(d.CT)
     catalog = json.loads(SOURCES_PATH.read_text())
@@ -909,6 +923,7 @@ def main() -> int:
         elif x_status.get("reason") and x_status.get("reason") != "missing X_BEARER_TOKEN":
             errors.append("X feed offline: " + x_status.get("reason"))
 
+    import boards
     from boards import apply_storm_sources, extra_sources, fetch_assets, fetch_markets, fetch_science, fetch_storm_watch, fetch_threats, refresh_file
     prev_markets = load_json(DATA / "markets.json", {})
     prev_threats = load_json(DATA / "threats.json", {})
@@ -1036,11 +1051,10 @@ def main() -> int:
         errors.append(f"Narrative radar: {err}")
         radar = {"items": [], "note": f"n/a — {err}"}
     impact = citizen.impact_report(threat_items, boards_out.get("assets") or {})
-    try:
-        infra_rows, infra_gaps = boards.fetch_infra(now)
-    except Exception as err:
-        infra_rows, infra_gaps = [], [f"Infrastructure: {err}"]
-        errors.append(f"Infrastructure: {err}")
+    infra_rows, infra_gaps = collect_infra(now)
+    for gap in infra_gaps:
+        if gap and gap not in errors:
+            errors.append(gap)
     impact["infra"] = infra_rows
     impact["infraGaps"] = infra_gaps
     seen_infra = {row.get("url") or "" for row in threat_items}

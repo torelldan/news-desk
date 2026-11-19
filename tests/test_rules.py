@@ -932,6 +932,8 @@ def test_hazard_source_parsers():
     assert deskextra.infra_severity("Undersea cable cut in the Red Sea", cause="unconfirmed") == "ALERT"
     assert deskextra.infra_severity("Anchor dragged across a Baltic cable", cause="suspected sabotage") == "ACTION"
     assert deskextra.infra_severity("Routine maintenance on Langeled", cause="unconfirmed") == "STANDBY"
+    assert deskextra.infra_severity("Hong Kong drops charge against captain over Baltic pipeline damage") == "STANDBY"
+    assert deskextra.infra_severity("Internet services disrupted across Pakistan due to undersea cable fault") == "ALERT"
     assert deskextra.infra_severity("Gulf of Mexico pipeline rupture cuts US supply", cause="unconfirmed") == "CRITICAL"
     assert deskextra.infra_noise("How to understand an undersea cable explainer") is True
     paired = deskextra.infra_dedupe([
@@ -987,6 +989,30 @@ def test_hazard_source_parsers():
     assert len(kept) == 2
 
 
+def test_infra_collector_when_feeds_fail():
+    """The live refresh hit this with no cached rows and feeds that fail.
+
+    collect_infra must return a gap instead of raising UnboundLocalError on boards.
+    """
+    import boards
+    import fetch
+    saved_head, saved_rss = boards._headlines, boards._rss_items
+
+    def down(*_args, **_kwargs):
+        raise RuntimeError("feed down")
+
+    boards._headlines = down
+    boards._rss_items = down
+    try:
+        rows, gaps = fetch.collect_infra(datetime(2026, 11, 19, 11, 8))
+    finally:
+        boards._headlines, boards._rss_items = saved_head, saved_rss
+    assert rows == []
+    assert gaps
+    assert all("boards" not in gap for gap in gaps)
+    assert any("feed down" in gap for gap in gaps)
+
+
 if __name__ == "__main__":
     test_x_created_at_with_milliseconds()
     test_ct_conversion()
@@ -1014,4 +1040,5 @@ if __name__ == "__main__":
     test_tema_county_age_and_local_relevance()
     test_nov12_rules()
     test_hazard_source_parsers()
+    test_infra_collector_when_feeds_fail()
     print("ok")
