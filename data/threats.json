@@ -1259,6 +1259,35 @@
       "confidence": "reported",
       "date": "2026-11-19",
       "guest": "",
+      "id": "headline:f7c2e9967d3d2c12",
+      "kind": "cyber",
+      "label": "Nov 19, 2026 9:43 AM CT",
+      "lane": "threat",
+      "note": "",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "published": "2026-11-19T09:43:11-06:00",
+      "severity": "STANDBY",
+      "soWhat": "",
+      "source": "ABC News - Breaking News, Latest News and Videos",
+      "sourceCount": 1,
+      "sourceId": "cyber-news",
+      "tags": [
+        "headline",
+        "standby",
+        "cyber"
+      ],
+      "timeKnown": true,
+      "title": "JPMorganChase reports cyberattack on third-party service providers - ABC News - Breaking News, Latest News and Videos",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPRkNYSE1qZGh4bC11N295LXBVNkxQQ1Y4bDFxdVdUV1FyN3VSd3BzRlV2bmZfcjVYNmk3N1VmejBwT21PT180Yk92SlFXclhWalFibk9BaXpEMmg1V2lGUXl5LWtvWUlvM0JMMzlsM1VQNnFBTVlCVUhhZzVvaDVVN3ozcUFVcHdkNlpxWjhqSVhoY1h3eWx1M2NiempWS3lVSGfSAacBQVVfeXFMTmUtbUhGRHFLZUphcVYzUjB0bHVjWDlrRFVROTdvWlpEeUZ0a2hCd2U3YUNTRF9wZ2p1eHVDWllmNGRITE54dkN6MEpyYks3NlRTblA4SUVPMGtNNEtVZF9lX3YwM3h2NUZ1ZVJlaWtpV1lQaXhZcXdnaVR0Y1h4LVFpeTFoRm9obWVORVVidEZ0WTJFcUpIeW51S0JJSXVTSUJ6ZGpnNlk?oc=5",
+      "weekday": "Thu"
+    },
+    {
+      "action": "no action needed",
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "confidence": "reported",
+      "date": "2026-11-19",
+      "guest": "",
       "id": "cyber:b1a579d6fecac6ff",
       "kind": "cyber",
       "label": "Nov 19, 2026 9:15 AM CT",
@@ -1278,35 +1307,6 @@
       "timeKnown": true,
       "title": "European Commission confirms cyberattack, says hackers used AI tool",
       "url": "https://therecord.media/european-commission-confirms-cyberattack-using-ai",
-      "weekday": "Thu"
-    },
-    {
-      "action": "no action needed",
-      "arrowDay": "→",
-      "arrowWeek": "→",
-      "confidence": "reported",
-      "date": "2026-11-19",
-      "guest": "",
-      "id": "headline:f7c2e9967d3d2c12",
-      "kind": "cyber",
-      "label": "Nov 19, 2026 8:47 AM CT",
-      "lane": "threat",
-      "note": "",
-      "outlook": "First reading. Watch the next 72 hours.",
-      "published": "2026-11-19T08:47:05-06:00",
-      "severity": "STANDBY",
-      "soWhat": "",
-      "source": "ABC News - Breaking News, Latest News and Videos",
-      "sourceCount": 1,
-      "sourceId": "cyber-news",
-      "tags": [
-        "headline",
-        "standby",
-        "cyber"
-      ],
-      "timeKnown": true,
-      "title": "JPMorganChase reports cyberattack on third-party service providers - ABC News - Breaking News, Latest News and Videos",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPRkNYSE1qZGh4bC11N295LXBVNkxQQ1Y4bDFxdVdUV1FyN3VSd3BzRlV2bmZfcjVYNmk3N1VmejBwT21PT180Yk92SlFXclhWalFibk9BaXpEMmg1V2lGUXl5LWtvWUlvM0JMMzlsM1VQNnFBTVlCVUhhZzVvaDVVN3ozcUFVcHdkNlpxWjhqSVhoY1h3eWx1M2NiempWS3lVSGfSAacBQVVfeXFMTmUtbUhGRHFLZUphcVYzUjB0bHVjWDlrRFVROTdvWlpEeUZ0a2hCd2U3YUNTRF9wZ2p1eHVDWllmNGRITE54dkN6MEpyYks3NlRTblA4SUVPMGtNNEtVZF9lX3YwM3h2NUZ1ZVJlaWtpV1lQaXhZcXdnaVR0Y1h4LVFpeTFoRm9obWVORVVidEZ0WTJFcUpIeW51S0JJSXVTSUJ6ZGpnNlk?oc=5",
       "weekday": "Thu"
     },
     {
@@ -1529,23 +1529,23 @@
       "confidence": "reported",
       "date": "2026-11-19",
       "guest": "",
-      "id": "headline:b11f14b4fd88486f",
+      "id": "headline:8adab819b6c248d7",
       "kind": "attack",
-      "label": "Nov 19, 2026 4:39 AM CT",
+      "label": "Nov 19, 2026 7:17 AM CT",
       "lane": "news",
       "note": "",
       "outlook": "First reading. Watch the next 72 hours.",
-      "published": "2026-11-19T04:39:27-06:00",
+      "published": "2026-11-19T07:17:05-06:00",
       "related": 4,
       "relatedSources": [
+        "BBC",
         "EDMO",
         "Святлана Ціханоўская",
-        "Notes From Poland",
-        "WKYC"
+        "Notes From Poland"
       ],
       "severity": "STANDBY",
       "soWhat": "",
-      "source": "BBC",
+      "source": "International Centre for Counter-Terrorism - ICCT",
       "sourceCount": 5,
       "sourceId": "headline",
       "tags": [
@@ -1554,8 +1554,8 @@
         "attack"
       ],
       "timeKnown": true,
-      "title": "York victim of Krakow attack on his way home, family confirms - BBC",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1xbjlnTDFIZl8xNlFDcjMyZ0dINXdmMWZUOWkzeU1oZUlVd09QQ2hsTVJBcDloQTdLUnJZQWFsVWs5cXF0TU1kUTZIanBXNXZjYk9vRjBSQWlabkE?oc=5",
+      "title": "The Kraków Attack and the Alleged End of Poland’s “Innocence” - International Centre for Counter-Terrorism - ICCT",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNdHNfZFFOUkNPLXlHYS1URjBLUDZqc3dJcW53eEtoMjJXemRtdy12akduR3p3d0pNaEJ5ZWlXSm5YYXItZ09YOERHVEJqT0VaaXFrakp4X09KTkR3a1lVWEMyUVQ2YUx6RDJHb1pCNTdmNWZVVTdBS01WNnhaTk5fbw?oc=5",
       "weekday": "Thu"
     },
     {
@@ -1686,43 +1686,6 @@
       "weekday": "Wed"
     },
     {
-      "action": "no action needed",
-      "arrowDay": "↓",
-      "arrowWeek": "→",
-      "confidence": "reported",
-      "date": "2026-11-18",
-      "guest": "",
-      "id": "headline:0817dedfcb4b6267",
-      "kind": "climate",
-      "label": "Nov 18, 2026 10:59 AM CT",
-      "lane": "news",
-      "note": "",
-      "outlook": "Lower than yesterday. The 72-hour path is easing if it holds.",
-      "published": "2026-11-18T10:59:30-06:00",
-      "related": 5,
-      "relatedSources": [
-        "CREAF",
-        "Welcome to the United Nations",
-        "World Health Organization (WHO)",
-        "Energy",
-        "The New York Times"
-      ],
-      "severity": "STANDBY",
-      "soWhat": "",
-      "source": "Reuters",
-      "sourceCount": 6,
-      "sourceId": "headline",
-      "tags": [
-        "headline",
-        "standby",
-        "climate"
-      ],
-      "timeKnown": true,
-      "title": "OPEC speaks up for fossil fuels at COP31 climate talks - Reuters",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPZVVjZjNMU1llNktlY290Ny1WLXp6ZEplN3Ryc29tSHlOQVRNOFk0MVp4LU5tZDBSNFQ3Ym9PR2NFU242UWE0a2lYNE5hamxfcFE0SHlwQS1iZ2o4U3Vma3NpQm5aV2hQMjNjMkptd2Y2N2R0MUR1aEF3eGRnSzg4dG9EUU12QWVqMl9hOTRpZWF4ZExac0dMeHVzeTRBUENx?oc=5",
-      "weekday": "Wed"
-    },
-    {
       "action": "What to do: no action at home. Skip travel into the named fighting if a trip was planned.",
       "arrowDay": "↓",
       "arrowWeek": "→",
@@ -1806,8 +1769,8 @@
         "Teneriffa News",
         "The Portugal News",
         "deeparrival.com",
-        "AccuWeather",
-        "Nacionale"
+        "Essential Business",
+        "AccuWeather"
       ],
       "severity": "STANDBY",
       "soWhat": "No action for 37179. This is a European named storm, not an Atlantic hurricane.",
@@ -2123,12 +2086,12 @@
       "guest": "",
       "id": "neo:3d3ddf5e49ea000e",
       "kind": "neo",
-      "label": "Nov 19, 2026 10:18 AM CT",
+      "label": "Nov 19, 2026 11:08 AM CT",
       "lane": "threat",
       "lunar": 1.68,
       "note": "Miss distance about 400,952 miles (1.7 lunar distances). No Torino or Palermo impact risk on this flyby.",
       "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
-      "published": "2026-11-19T10:18:48-06:00",
+      "published": "2026-11-19T11:08:09-06:00",
       "severity": "STANDBY",
       "soWhat": "no action needed",
       "source": "NASA/JPL CNEOS",
@@ -2152,12 +2115,12 @@
       "guest": "",
       "id": "neo:9934e838c1539fdc",
       "kind": "neo",
-      "label": "Nov 19, 2026 10:18 AM CT",
+      "label": "Nov 19, 2026 11:08 AM CT",
       "lane": "threat",
       "lunar": 3.1,
       "note": "Miss distance about 739,358 miles (3.1 lunar distances). No Torino or Palermo impact risk on this flyby.",
       "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
-      "published": "2026-11-19T10:18:48-06:00",
+      "published": "2026-11-19T11:08:09-06:00",
       "severity": "STANDBY",
       "soWhat": "no action needed",
       "source": "NASA/JPL CNEOS",
@@ -2181,12 +2144,12 @@
       "guest": "",
       "id": "neo:1095427f35282423",
       "kind": "neo",
-      "label": "Nov 19, 2026 10:18 AM CT",
+      "label": "Nov 19, 2026 11:08 AM CT",
       "lane": "threat",
       "lunar": 3.52,
       "note": "Miss distance about 840,033 miles (3.5 lunar distances). No Torino or Palermo impact risk on this flyby.",
       "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
-      "published": "2026-11-19T10:18:48-06:00",
+      "published": "2026-11-19T11:08:09-06:00",
       "severity": "STANDBY",
       "soWhat": "no action needed",
       "source": "NASA/JPL CNEOS",
@@ -2210,12 +2173,12 @@
       "guest": "",
       "id": "neo:e57f65e56f659e8f",
       "kind": "neo",
-      "label": "Nov 19, 2026 10:18 AM CT",
+      "label": "Nov 19, 2026 11:08 AM CT",
       "lane": "threat",
       "lunar": 3.93,
       "note": "Miss distance about 939,376 miles (3.9 lunar distances). No Torino or Palermo impact risk on this flyby.",
       "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
-      "published": "2026-11-19T10:18:48-06:00",
+      "published": "2026-11-19T11:08:09-06:00",
       "severity": "STANDBY",
       "soWhat": "no action needed",
       "source": "NASA/JPL CNEOS",
@@ -2239,12 +2202,12 @@
       "guest": "",
       "id": "neo:b4c728eb10316037",
       "kind": "neo",
-      "label": "Nov 19, 2026 10:18 AM CT",
+      "label": "Nov 19, 2026 11:08 AM CT",
       "lane": "threat",
       "lunar": 4.44,
       "note": "Miss distance about 1,060,475 miles (4.4 lunar distances). No Torino or Palermo impact risk on this flyby.",
       "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
-      "published": "2026-11-19T10:18:48-06:00",
+      "published": "2026-11-19T11:08:09-06:00",
       "severity": "STANDBY",
       "soWhat": "no action needed",
       "source": "NASA/JPL CNEOS",
@@ -2268,12 +2231,12 @@
       "guest": "",
       "id": "neo:d545dfda650a0803",
       "kind": "neo",
-      "label": "Nov 19, 2026 10:18 AM CT",
+      "label": "Nov 19, 2026 11:08 AM CT",
       "lane": "threat",
       "lunar": 4.56,
       "note": "Miss distance about 1,088,995 miles (4.6 lunar distances). No Torino or Palermo impact risk on this flyby.",
       "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
-      "published": "2026-11-19T10:18:48-06:00",
+      "published": "2026-11-19T11:08:09-06:00",
       "severity": "STANDBY",
       "soWhat": "no action needed",
       "source": "NASA/JPL CNEOS",
@@ -2297,11 +2260,11 @@
       "guest": "",
       "id": "clock:bulletin",
       "kind": "clock",
-      "label": "Nov 19, 2026 10:18 AM CT",
+      "label": "Nov 19, 2026 11:08 AM CT",
       "lane": "threat",
       "note": "The official setting is published by the Bulletin. This row is only the link.",
       "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
-      "published": "2026-11-19T10:18:48-06:00",
+      "published": "2026-11-19T11:08:09-06:00",
       "severity": "STANDBY",
       "soWhat": "",
       "source": "Bulletin of the Atomic Scientists",
@@ -2325,23 +2288,18 @@
       "guest": "",
       "id": "headline:f521c812228b4d38",
       "kind": "global",
-      "label": "Nov 19, 2026 9:35 AM CT",
+      "label": "Nov 19, 2026 10:46 AM CT",
       "lane": "news",
       "links": [
         {
-          "source": "The Guardian",
-          "title": "‘New page in history?’ Xi, Trump and Putin summit was more of a footnote - The Guardian",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPZmxlM0syUnVsd3Rid2dfLVBOekZMT3pNMHF3eVQwYndQNmpYaDh5MHdYZFZCanhibW9kZVJ0Q3N3bGtuVFdvUlY5M1BDZzVoekdKWXVESWV5NDBzdFhiX0twbmNBNUl4YkpMX3NUYmdLSEF6bDR1YTUtMnJUb0g1TF8yb0hiUHFmOGltVk9LT25DckNfUHFBaW92MUJUa1RQUGx2SmhFRWN1Z1NVVTlOYmZPdUQ?oc=5"
+          "source": "The New York Times",
+          "title": "Trump, Xi and Putin Seek to Project Power at Their First Summit - The New York Times",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1MQWU3M21LcmgtNFU4MmVaaEw2cnIyUGJVclVsc2JIWGZhcFVFMXE0SmJqaG5MQnpWN3BRLWZuWmh6cTRudTl0Nzc1SlJ4WVdQamZlR0hFMlRtTy04SEhhVVVsREp2RktrY0ZwUDFkcmpnaXM?oc=5"
         },
         {
           "source": "CNBC",
           "title": "Ukraine allies reject U.S. criticism of deep strikes inside Russia ahead of Trump-Putin-Xi summit - CNBC",
           "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPcF9sZnpjTVZtQnpnUTlmcFJ5OFB4UGhFLVIwUUJFZ1F4MXVBem14ZzRXSkotTUp1S0tJZEZjY1oxbEt3S1NiaXlSbTJrUmZMQjEwWEZUN1dGZTlGSUxTZWl1bzhfT1N4SzhrcDN6X29TMTNadlEzdWFrZWxlalFTV0lUQmNKeGfSAYwBQVVfeXFMT3ByenVPUVlqSzkzRWJmWE13TGxRQjRZcmtBZVU2aFhtVUJiVlZGZGNydnNBOFNuMENZaWdDVHN4aVpUeUF1N2JZaGVwUi05eFNGSDB1c3V3WXlnbk9vczlsb29lVlF5Nll3ZlpPUV9QRUh0RG80VVI3bEtJX1VOQjBlS3BKcUdFXzVEa1U?oc=5"
-        },
-        {
-          "source": "The New York Times",
-          "title": "China Bars Bloomberg Reporter From Trilateral Talks for Asking a Question - The New York Times",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNbGY4THdreUVOVzVyTXVtQzBmQ1hhUldzQjAzODJneWg4U0M1aU1IYmJ0X1NJTUVmMnFCUzkyRUFIamVCYmtMUGNDakhWU0hacnIzVTBMYmRaTkF2anBrVmVLNWUzemdONklIVFVmMDE0SDVUQzluRFpYQUxOaGlEQjhTR0lCbTV6RVYxYmtoVWJ2NFgxMWJRcGJDa0JKYTBPSF9Z?oc=5"
         },
         {
           "source": "The Hill",
@@ -2359,9 +2317,14 @@
           "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQNnlJOUFvTGl2bnVSamFiRGZXdzVTQmxNZjc1VnVrNWp0MEE0UEhfc1kxYTlDSnNTdld2N01KLXpFLTIzb0JwNGx4Qld3eXFDSTFmTnI2SElEZGNnOWp3aEdCOG8wNzR0SFFLRUFwb1JRcnJPMFVfcVpuV3dJcWNkTWlLWldPVTBCSHo3bFNHb1RodzFVS1hzaEUzcVlJdlVBM1k2bkFBWU1kTFB2ZnUzb2pXLWVfR19Fb1lhWNIBwgFBVV95cUxQUGdpNUtZVUt5azg3QTNUVkRuZUltYVpOYkp3R1Y5RC1JQVV6N0s3QXo3a0RiVzhsQzB1VGVlUks4VzBvRENGTjRmaW93WDhQUGxHLS1fMUtmWktmQldFU2Y4S3JnNFlIcnVGSll1bWMtT0pnZWtXU3pOX1F5LV9CSWFDN0VYVFpxMHU1LVBGVzg2OUthVGp1SWQ0cWpkYWtOZVdCRWxYLXdEVzV1RVp4M1hvS3BrUGJTSGllRUhZU3Ntdw?oc=5"
         },
         {
-          "source": "ICAN - International Campaign to Abolish Nuclear Weapons",
-          "title": "First three-way summit between China, Russia and the US opens possible avenue to nuclear disarmament talks - ICAN - International Campaign to Abolish Nuclear Weapons",
-          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOanBETFltUE5USWZvREhlN0lvMXlMUmVXS0pjb2d4blpicTdZUnlOU3JmcEQyYmxUTVZHRVFES25tOTVtQVFNQUo0Sk10NlpfRWFuUUFwNjR0MjZodXZCd2tsOWNBeGJyOFpjZk9yZ2dIWVNGNW1fM3I4MnRjSlpPaV9YMjI1UDdXOGdJQl9RVWNka0tXLTM4LW5JZXdoanFlLWRRZFFmVTFkY1JZV1ZESW1fOHRrWk55RUdYZFF2UE81bC1iMGc?oc=5"
+          "source": "Los Angeles Times",
+          "title": "‘Making history’: Trump, Putin and Xi meet in unprecedented China summit - Los Angeles Times",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxORTdjcE9vWnMzeXhSZ1BIdVR0YUdyTDdJNm1yc2QwbkNjZlE4Y1licnlrOENIU3pkWml0YVpUbDlCV1FBR3o5bzM1aEhYaTd1dGtPMFE0R2thdHZDVXltZVhaVWVMeVA0RFJtdkdsNG45Q3RQWEp5LW1jeUVuVkg2YWZHY2Z1UlI2RUt3elpXOGp5UXFiSGtVcEF0Vm1QUTRJUnJ1MUlfNXhNOEhyZi1HVXhVSTM?oc=5"
+        },
+        {
+          "source": "The Atlantic",
+          "title": "Trump’s Embarrassing, Inconsequential Summit - The Atlantic",
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE4ybEhTTUxzVHYweTN1UXVYNjdHdTliMVZfbEFla041U2NYeVNLelRzdDBxLW11N05lZFotbm01eTV3SzdpODdSeFYtdG5RN1E2ZWZ6VWRVSENmeVBVUHF3bENwdmlpRzI1ZlZ2OEhWdzNmZVhvNnpGRUNBdw?oc=5"
         },
         {
           "source": "Al Jazeera",
@@ -2371,24 +2334,24 @@
       ],
       "note": "",
       "outlook": "First reading. Watch the next 72 hours.",
-      "published": "2026-11-19T09:35:00-06:00",
+      "published": "2026-11-19T10:46:00-06:00",
       "related": 11,
       "relatedSources": [
         "CNBC",
-        "The New York Times",
         "The Hill",
         "PBS",
         "Fox News",
-        "ICAN - International Campaign to Abolish Nuclear Weapons",
+        "Los Angeles Times",
+        "The Atlantic",
         "Al Jazeera",
         "Atlantic Council",
         "Pew Research Center",
-        "Reuters",
-        "Bloomberg.com"
+        "The Guardian",
+        "ICAN - International Campaign to Abolish Nuclear Weapons"
       ],
       "severity": "ALERT",
       "soWhat": "no action needed",
-      "source": "The Guardian",
+      "source": "The New York Times",
       "sourceCount": 12,
       "sourceId": "headline",
       "tags": [
@@ -2396,8 +2359,8 @@
         "alert"
       ],
       "timeKnown": true,
-      "title": "‘New page in history?’ Xi, Trump and Putin summit was more of a footnote - The Guardian",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPZmxlM0syUnVsd3Rid2dfLVBOekZMT3pNMHF3eVQwYndQNmpYaDh5MHdYZFZCanhibW9kZVJ0Q3N3bGtuVFdvUlY5M1BDZzVoekdKWXVESWV5NDBzdFhiX0twbmNBNUl4YkpMX3NUYmdLSEF6bDR1YTUtMnJUb0g1TF8yb0hiUHFmOGltVk9LT25DckNfUHFBaW92MUJUa1RQUGx2SmhFRWN1Z1NVVTlOYmZPdUQ?oc=5",
+      "title": "Trump, Xi and Putin Seek to Project Power at Their First Summit - The New York Times",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1MQWU3M21LcmgtNFU4MmVaaEw2cnIyUGJVclVsc2JIWGZhcFVFMXE0SmJqaG5MQnpWN3BRLWZuWmh6cTRudTl0Nzc1SlJ4WVdQamZlR0hFMlRtTy04SEhhVVVsREp2RktrY0ZwUDFkcmpnaXM?oc=5",
       "weekday": "Wed"
     },
     {
@@ -2405,35 +2368,44 @@
       "arrowDay": "→",
       "arrowWeek": "→",
       "confidence": "reported",
-      "date": "2026-11-19",
+      "date": "2026-11-14",
+      "demoted": "older than 72h",
       "guest": "",
-      "id": "headline:ff870ec6c413c4cd",
+      "id": "headline:f0cec99943636a93",
       "kind": "global",
-      "label": "Nov 19, 2026 4:32 AM CT",
+      "label": "Nov 14, 2026 2:00 AM CT",
       "lane": "news",
       "links": [
         {
-          "source": "Reuters",
-          "title": "From tarmac to APEC summit table, Japan's PM cuts a lonely figure - Reuters",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQV2lFRzhLTFFzUDAyQlFERWhQTjQwbzExSnlMaEVMYnhnOEdTRm9yNTJxWWgwRjluUHkxZVFWUnJYTXVOaVhoRGtGRE5PRXhiRF9WX3RtVVJGTkVIV3BLRDZPWVJQUFN0RjY3UXBpUktQSlNHQzlmS1N5Q0lCQkpLSjU4c29PQTM3bXI1cDlzSjAwTG95Vkt1Sk90NGlid0ptUG1v?oc=5"
+          "source": "UNEP Finance Initiative",
+          "title": "COP 31 Global Sustainable Insurance Summit 2026 - UNEP Finance Initiative",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1Jc1pRSFMteVF3RXRfOGhaYk1tY1hfaG10bk9ZVEN6RFlyVUFncVZVYUIyUkZGdS1ISDZzNWVfTXRtTFBjMGdtTV80REJaZ1Zzd0p0MmJGdU16clJEdE9j?oc=5"
         }
       ],
       "note": "",
       "outlook": "First reading. Watch the next 72 hours.",
-      "published": "2026-11-19T04:32:36-06:00",
+      "published": "2026-11-14T02:00:00-06:00",
+      "related": 5,
+      "relatedSources": [
+        "CREAF",
+        "Welcome to the United Nations",
+        "World Health Organization (WHO)",
+        "Energy",
+        "The New York Times"
+      ],
       "severity": "STANDBY",
       "soWhat": "",
-      "source": "Reuters",
-      "sourceCount": 1,
-      "sourceId": "global",
+      "source": "UNEP Finance Initiative",
+      "sourceCount": 6,
+      "sourceId": "headline",
       "tags": [
         "global",
         "standby"
       ],
       "timeKnown": true,
-      "title": "From tarmac to APEC summit table, Japan's PM cuts a lonely figure - Reuters",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQV2lFRzhLTFFzUDAyQlFERWhQTjQwbzExSnlMaEVMYnhnOEdTRm9yNTJxWWgwRjluUHkxZVFWUnJYTXVOaVhoRGtGRE5PRXhiRF9WX3RtVVJGTkVIV3BLRDZPWVJQUFN0RjY3UXBpUktQSlNHQzlmS1N5Q0lCQkpLSjU4c29PQTM3bXI1cDlzSjAwTG95Vkt1Sk90NGlid0ptUG1v?oc=5",
-      "weekday": "Thu"
+      "title": "COP 31 Global Sustainable Insurance Summit 2026 - UNEP Finance Initiative",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1Jc1pRSFMteVF3RXRfOGhaYk1tY1hfaG10bk9ZVEN6RFlyVUFncVZVYUIyUkZGdS1ISDZzNWVfTXRtTFBjMGdtTV80REJaZ1Zzd0p0MmJGdU16clJEdE9j?oc=5",
+      "weekday": "Sat"
     },
     {
       "action": "no action needed",
@@ -2471,129 +2443,26 @@
       "weekday": "Thu"
     },
     {
-      "action": "no action needed",
-      "arrowDay": "→",
-      "arrowWeek": "→",
-      "confidence": "reported",
       "date": "2026-11-19",
       "guest": "",
-      "id": "headline:9606bf6c0bd35acc",
-      "kind": "global",
-      "label": "Nov 19, 2026 7:04 AM CT",
-      "lane": "news",
-      "links": [
-        {
-          "source": "Президент России",
-          "title": "Plenary session of the APEC Summit - Президент России",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5hYUFaUzgwNU5lRURRWEl0eW5PdUNQdm5mNzZwTHFEampjZ2h4dTUtRGFSb1Z4QjBtTWFteHhTT3dnaFFnVUR0MmtDZVVwUlJXZ0JoWnNPczE0MjVQ?oc=5"
-        }
-      ],
-      "note": "",
-      "outlook": "First reading. Watch the next 72 hours.",
-      "published": "2026-11-19T07:04:59-06:00",
-      "severity": "STANDBY",
-      "soWhat": "",
-      "source": "Президент России",
-      "sourceCount": 1,
-      "sourceId": "global",
-      "tags": [
-        "global",
-        "standby"
-      ],
-      "timeKnown": true,
-      "title": "Plenary session of the APEC Summit - Президент России",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5hYUFaUzgwNU5lRURRWEl0eW5PdUNQdm5mNzZwTHFEampjZ2h4dTUtRGFSb1Z4QjBtTWFteHhTT3dnaFFnVUR0MmtDZVVwUlJXZ0JoWnNPczE0MjVQ?oc=5",
-      "weekday": "Thu"
-    },
-    {
       "id": "attack:07069810c75109bd",
       "kind": "attack",
-      "lane": "news",
-      "source": "AP News",
-      "sourceId": "headline",
-      "title": "Damage from missile attack reported in Riyadh’s financial district, and other Mideast news - AP News",
-      "guest": "",
-      "note": "Saudi Arabia",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPWGRFYnRQN1pwV2JiVkRBSGdIY2RDN3hoVnJvTDg3YVpzV2JjNjVMRkVOLVdfNU9yeVZxR0tpV3ZhUU1OSXVMemxUOXBvWVNUMDJGb2Rxa0VRTGxWU0hsSVNvNEdYUVpydDlpNFh2NzVpWXhCWVNSQVJ4OUxoR0ZGS0Q0WTFWNFE0Si11U1FqRnFWZkRlN1haWC1vaHR6Zw?oc=5",
-      "published": "2026-11-19T08:39:00-06:00",
-      "date": "2026-11-19",
       "label": "Nov 19, 2026 8:39 AM CT",
-      "weekday": "Thu",
-      "timeKnown": true,
+      "lane": "news",
+      "note": "Saudi Arabia",
+      "published": "2026-11-19T08:39:00-06:00",
+      "severity": "ALERT",
+      "source": "AP News",
+      "sourceCount": 1,
+      "sourceId": "headline",
       "tags": [
         "attack",
         "alert"
       ],
-      "severity": "ALERT",
-      "sourceCount": 1
-    },
-    {
-      "id": "infra:6c825e5580dd4286",
-      "kind": "infra",
-      "lane": "threat",
-      "source": "Daily Ausaf",
-      "sourceId": "infra",
-      "title": "Internet services disrupted across Pakistan due to undersea cable fault - Daily Ausaf",
-      "guest": "",
-      "note": "",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQY25MT1kwVXhudUk1UlNybEpEa0lmNERtMFRkLXVOOGFqUjJ3VWVpb2hNakMxZmFUVVdGSGRvYUZvWnA0RVZkMWk0d19FRk1pUVNzQTN0cE5ET2hnRkNYYzdkQThxbWN1R05DdEpncFBkNzlEMnlRZHNMaUVjSUdNdFZmRTNEMkRFLThpdXF1cFlVYlJ5Q3NIYjdiRkNMN09EanBfa1h4SHlmd0HSAbABQVVfeXFMUFU0ZDJkZjE0YlNKREs1Y0pvUWQ1ZVVhZjUydERkNVFTTERPLWVucDRObFFBRGdScEh1UWtsSFBhX3BoRjhmck9YRko0azlQNDhMRkc0YXdQSzBoakEwa0lMRU1ZeGJ3Yl9Qc1gzVHFGeTJBbU9RUVZlVGVOYm9uWFI5VHRMTkZMVFZFUmFJZzNDVER0cUU1d2JEOXpUS3E5TV9kaERYUWVfRFNXbE0tXzc?oc=5",
-      "published": "2026-11-19T03:59:26-06:00",
-      "date": "2026-11-19",
-      "label": "Nov 19, 2026 3:59 AM CT",
-      "weekday": "Thu",
       "timeKnown": true,
-      "tags": [
-        "infra",
-        "alert"
-      ],
-      "severity": "ALERT",
-      "cause": "unconfirmed",
-      "region": "",
-      "asset": "cable",
-      "open": true,
-      "links": [
-        {
-          "title": "Internet services disrupted across Pakistan due to undersea cable fault - Daily Ausaf",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQY25MT1kwVXhudUk1UlNybEpEa0lmNERtMFRkLXVOOGFqUjJ3VWVpb2hNakMxZmFUVVdGSGRvYUZvWnA0RVZkMWk0d19FRk1pUVNzQTN0cE5ET2hnRkNYYzdkQThxbWN1R05DdEpncFBkNzlEMnlRZHNMaUVjSUdNdFZmRTNEMkRFLThpdXF1cFlVYlJ5Q3NIYjdiRkNMN09EanBfa1h4SHlmd0HSAbABQVVfeXFMUFU0ZDJkZjE0YlNKREs1Y0pvUWQ1ZVVhZjUydERkNVFTTERPLWVucDRObFFBRGdScEh1UWtsSFBhX3BoRjhmck9YRko0azlQNDhMRkc0YXdQSzBoakEwa0lMRU1ZeGJ3Yl9Qc1gzVHFGeTJBbU9RUVZlVGVOYm9uWFI5VHRMTkZMVFZFUmFJZzNDVER0cUU1d2JEOXpUS3E5TV9kaERYUWVfRFNXbE0tXzc?oc=5",
-          "source": "Daily Ausaf"
-        }
-      ],
-      "sourceCount": 1,
-      "market": "Brent -2.04% over 5 days · TTF +4.45% over 5 days"
-    },
-    {
-      "id": "infra:66b23ff5a74490b7",
-      "kind": "infra",
-      "lane": "threat",
-      "source": "The Manila Times",
-      "sourceId": "infra",
-      "title": "Hong Kong drops charge against captain over Baltic pipeline damage - The Manila Times",
-      "guest": "",
-      "note": "",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQaXNWQ09feWZ5dnNrQlF3WGVGTzdiekcxWEIyck41LW13UlI5dWw4R0prRzJKUzBLX3M0U0Y5S244UDVDUW9rUXhnYTkzdFVtTU51dkJZUmFEWmttd0c1MjIzSHBpNEw3ZW5WWUhlQmdnNVhEWFR3Q3JwSXRBV245TEU3LXBhQnFRMGQxQ0tPc0x6OXRMX3ZyaDdJOUduX05VVjU5LTEtcFI5TURERXlrRy1MN0doTGFLS2RhRVVDNXU2a3JWTVlna2gtc2jSAdIBQVVfeXFMUHNqSHNFMkZlbktDV2hac0wwZDRZdWdTRk1UX0JRLUh6N3ZzN2NHVGRoc1VKUGQ4cFJGQ2dTbVlaRGo2Y1ZsNnZqbkdPQnV1ejFKU0gza0ZzQThoNkRkNjdSM1A5OHVNajNnbmZ4MWJBYjFBUzZZR1RFNG84ZEpQQ01ybFE1NU9fZV9NcVpxQjB0SDNlLVZYdHprME4zTUREMGJ5cDFYMW9HYlFZcDR4YWNFUms2VjEtT0tEWk0yZkozWERNSVl1MEp2OXVONkhDdGh3?oc=5",
-      "published": "2026-11-18T07:17:00-06:00",
-      "date": "2026-11-18",
-      "label": "Nov 18, 2026 7:17 AM CT",
-      "weekday": "Wed",
-      "timeKnown": true,
-      "tags": [
-        "infra",
-        "alert"
-      ],
-      "severity": "ALERT",
-      "cause": "unconfirmed",
-      "region": "Baltic Sea",
-      "asset": "pipeline",
-      "open": true,
-      "links": [
-        {
-          "title": "Hong Kong drops charge against captain over Baltic pipeline damage - The Manila Times",
-          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQaXNWQ09feWZ5dnNrQlF3WGVGTzdiekcxWEIyck41LW13UlI5dWw4R0prRzJKUzBLX3M0U0Y5S244UDVDUW9rUXhnYTkzdFVtTU51dkJZUmFEWmttd0c1MjIzSHBpNEw3ZW5WWUhlQmdnNVhEWFR3Q3JwSXRBV245TEU3LXBhQnFRMGQxQ0tPc0x6OXRMX3ZyaDdJOUduX05VVjU5LTEtcFI5TURERXlrRy1MN0doTGFLS2RhRVVDNXU2a3JWTVlna2gtc2jSAdIBQVVfeXFMUHNqSHNFMkZlbktDV2hac0wwZDRZdWdTRk1UX0JRLUh6N3ZzN2NHVGRoc1VKUGQ4cFJGQ2dTbVlaRGo2Y1ZsNnZqbkdPQnV1ejFKU0gza0ZzQThoNkRkNjdSM1A5OHVNajNnbmZ4MWJBYjFBUzZZR1RFNG84ZEpQQ01ybFE1NU9fZV9NcVpxQjB0SDNlLVZYdHprME4zTUREMGJ5cDFYMW9HYlFZcDR4YWNFUms2VjEtT0tEWk0yZkozWERNSVl1MEp2OXVONkhDdGh3?oc=5",
-          "source": "The Manila Times"
-        }
-      ],
-      "sourceCount": 1,
-      "market": "Brent -2.04% over 5 days · TTF +4.45% over 5 days"
+      "title": "Damage from missile attack reported in Riyadh’s financial district, and other Mideast news - AP News",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPWGRFYnRQN1pwV2JiVkRBSGdIY2RDN3hoVnJvTDg3YVpzV2JjNjVMRkVOLVdfNU9yeVZxR0tpV3ZhUU1OSXVMemxUOXBvWVNUMDJGb2Rxa0VRTGxWU0hsSVNvNEdYUVpydDlpNFh2NzVpWXhCWVNSQVJ4OUxoR0ZGS0Q0WTFWNFE0Si11U1FqRnFWZkRlN1haWC1vaHR6Zw?oc=5",
+      "weekday": "Thu"
     }
   ]
 }

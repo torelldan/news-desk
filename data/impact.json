@@ -19,7 +19,7 @@
       "assetId": "dxy",
       "category": "climate",
       "days": 30,
-      "eventDays": 2,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
@@ -159,7 +159,7 @@
       "assetId": "dxy",
       "category": "climate",
       "days": 90,
-      "eventDays": 2,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
@@ -299,7 +299,7 @@
       "assetId": "gold",
       "category": "climate",
       "days": 30,
-      "eventDays": 2,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
@@ -439,7 +439,7 @@
       "assetId": "gold",
       "category": "climate",
       "days": 90,
-      "eventDays": 2,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
@@ -579,7 +579,7 @@
       "assetId": "silver",
       "category": "climate",
       "days": 30,
-      "eventDays": 2,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
@@ -719,7 +719,7 @@
       "assetId": "silver",
       "category": "climate",
       "days": 90,
-      "eventDays": 2,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
@@ -859,7 +859,7 @@
       "assetId": "btc",
       "category": "climate",
       "days": 30,
-      "eventDays": 2,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
@@ -999,7 +999,7 @@
       "assetId": "btc",
       "category": "climate",
       "days": 90,
-      "eventDays": 2,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
@@ -1139,7 +1139,7 @@
       "assetId": "eth",
       "category": "climate",
       "days": 30,
-      "eventDays": 2,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
@@ -1279,7 +1279,7 @@
       "assetId": "eth",
       "category": "climate",
       "days": 90,
-      "eventDays": 2,
+      "eventDays": 1,
       "r": null,
       "read": {
         "call": "n/a",
@@ -1403,8 +1403,8 @@
   ],
   "drivers": {
     "copperGold": {
-      "ratio": 0.001532,
-      "yield10": 5.072
+      "ratio": 0.00153,
+      "yield10": 5.064
     },
     "correlations": [
       {
@@ -1415,7 +1415,7 @@
       },
       {
         "d30": -0.15,
-        "d90": -0.21,
+        "d90": -0.2,
         "driver": "10Y",
         "metal": "Gold"
       },
@@ -1426,14 +1426,14 @@
         "metal": "Gold"
       },
       {
-        "d30": 0.29,
-        "d90": 0.34,
+        "d30": 0.32,
+        "d90": 0.35,
         "driver": "S&P",
         "metal": "Gold"
       },
       {
-        "d30": -0.11,
-        "d90": -0.23,
+        "d30": -0.12,
+        "d90": -0.24,
         "driver": "VIX",
         "metal": "Gold"
       },
@@ -1462,7 +1462,7 @@
         "metal": "Silver"
       },
       {
-        "d30": 0.46,
+        "d30": 0.45,
         "d90": 0.44,
         "driver": "S&P",
         "metal": "Silver"
@@ -1680,24 +1680,24 @@
     ],
     "funds": {
       "dff": 3.88,
-      "zqf": 4.175,
-      "zqh": 4.41
+      "zqf": 4.17,
+      "zqh": 4.405
     },
     "gaps": [],
     "oil": {
-      "brent": 90.01,
+      "brent": 89.96,
       "energyStrikes": 0,
-      "wti": 83.34
+      "wti": 83.29
     },
     "rows": [
       {
         "changes": {
-          "1M": -11.32,
-          "1W": -5.28,
-          "1Y": -9.5,
-          "3M": -21.37
+          "1M": -11.17,
+          "1W": -5.12,
+          "1Y": -9.34,
+          "3M": -21.24
         },
-        "level": 3680.2,
+        "level": 3686.5,
         "name": "Gold",
         "spark": [
           {
@@ -1788,19 +1788,19 @@
             "price": 3741.8999
           },
           {
-            "price": 3680.2
+            "price": 3686.5
           }
         ],
         "unit": "%"
       },
       {
         "changes": {
-          "1M": -22.59,
-          "1W": -11.05,
-          "1Y": -11.89,
-          "3M": -36.01
+          "1M": -22.52,
+          "1W": -10.97,
+          "1Y": -11.81,
+          "3M": -35.95
         },
-        "level": 44.45,
+        "level": 44.49,
         "name": "Silver",
         "spark": [
           {
@@ -1891,19 +1891,19 @@
             "price": 44.999
           },
           {
-            "price": 44.45
+            "price": 44.49
           }
         ],
         "unit": "%"
       },
       {
         "changes": {
-          "1M": 1.99,
-          "1W": 0.62,
-          "1Y": 4.28,
-          "3M": 5.07
+          "1M": 2.01,
+          "1W": 0.64,
+          "1Y": 4.3,
+          "3M": 5.09
         },
-        "level": 103.807,
+        "level": 103.827,
         "name": "DXY",
         "spark": [
           {
@@ -1994,19 +1994,19 @@
             "price": 103.86
           },
           {
-            "price": 103.807
+            "price": 103.827
           }
         ],
         "unit": "%"
       },
       {
         "changes": {
-          "1M": -7.4,
-          "1W": -3.1,
-          "1Y": 94.9,
-          "3M": 33.4
+          "1M": -8.2,
+          "1W": -3.9,
+          "1Y": 94.1,
+          "3M": 32.6
         },
-        "level": 5.072,
+        "level": 5.064,
         "name": "10Y",
         "spark": [
           {
@@ -2097,7 +2097,7 @@
             "price": 5.066
           },
           {
-            "price": 5.072
+            "price": 5.064
           }
         ],
         "unit": "bp"
@@ -2207,12 +2207,12 @@
       },
       {
         "changes": {
-          "1M": -5.81,
-          "1W": -3.77,
-          "1Y": 10.41,
-          "3M": -4.79
+          "1M": -7.0,
+          "1W": -4.99,
+          "1Y": 9.01,
+          "3M": -6.0
         },
-        "level": 7306.4102,
+        "level": 7213.8701,
         "name": "S&P",
         "spark": [
           {
@@ -2303,19 +2303,19 @@
             "price": 7323.6299
           },
           {
-            "price": 7306.4102
+            "price": 7213.8701
           }
         ],
         "unit": "%"
       },
       {
         "changes": {
-          "1M": 49.7,
-          "1W": 33.53,
-          "1Y": -5.49,
-          "3M": 57.54
+          "1M": 60.31,
+          "1W": 42.99,
+          "1Y": 1.21,
+          "3M": 68.71
         },
-        "level": 24.97,
+        "level": 26.74,
         "name": "VIX",
         "spark": [
           {
@@ -2406,19 +2406,19 @@
             "price": 24.56
           },
           {
-            "price": 24.97
+            "price": 26.74
           }
         ],
         "unit": "%"
       },
       {
         "changes": {
-          "1M": -13.85,
-          "1W": -8.82,
-          "1Y": 13.59,
-          "3M": -14.32
+          "1M": -13.82,
+          "1W": -8.79,
+          "1Y": 13.63,
+          "3M": -14.29
         },
-        "level": 5.637,
+        "level": 5.639,
         "name": "Copper",
         "spark": [
           {
@@ -2509,19 +2509,19 @@
             "price": 5.6595
           },
           {
-            "price": 5.637
+            "price": 5.639
           }
         ],
         "unit": "%"
       },
       {
         "changes": {
-          "1M": 14.56,
-          "1W": 6.49,
-          "1Y": 2.72,
-          "3M": 22.88
+          "1M": 14.65,
+          "1W": 6.57,
+          "1Y": 2.8,
+          "3M": 22.98
         },
-        "level": 82.7942,
+        "level": 82.8613,
         "name": "Gold/silver",
         "spark": [
           {
@@ -2612,7 +2612,7 @@
             "price": 83.1552
           },
           {
-            "price": 82.7942
+            "price": 82.8613
           }
         ],
         "unit": "%"
@@ -2621,13 +2621,13 @@
     "volumes": [
       {
         "name": "GLD",
-        "price": 337.02,
-        "volume": 3748334
+        "price": 336.3999,
+        "volume": 4570518
       },
       {
         "name": "SLV",
-        "price": 40.32,
-        "volume": 12318966
+        "price": 39.91,
+        "volume": 16190046
       },
       {
         "name": "GOLDBEES",
@@ -2638,83 +2638,13 @@
   },
   "events": [],
   "explainer": [
-    "Gold -11.32% with DXY 1.99% and yields up. Association, not proof: stronger dollar / higher rates.",
-    "Gold/silver ratio 82.8 (1-month change 14.56%) and copper -13.85%. Association, not proof: industrial worry is hitting silver harder."
+    "Gold -11.17% with DXY 2.01% and yields up. Association, not proof: stronger dollar / higher rates.",
+    "Gold/silver ratio 82.9 (1-month change 14.65%) and copper -13.82%. Association, not proof: industrial worry is hitting silver harder."
+  ],
+  "infra": [],
+  "infraGaps": [
+    "Infrastructure: cannot access local variable 'boards' where it is not associated with a value"
   ],
   "note": "-1d is the move into the day before the event. +1d and +3d are moves from that same close to the stored close on or after those days. Correlation is Pearson between a category event-day (1/0) and that asset's daily percent change. Fewer than 5 paired days, or fewer than 3 event days, is n/a.",
-  "vixZone": "15 to 25",
-  "infra": [
-    {
-      "id": "infra:6c825e5580dd4286",
-      "kind": "infra",
-      "lane": "threat",
-      "source": "Daily Ausaf",
-      "sourceId": "infra",
-      "title": "Internet services disrupted across Pakistan due to undersea cable fault - Daily Ausaf",
-      "guest": "",
-      "note": "",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQY25MT1kwVXhudUk1UlNybEpEa0lmNERtMFRkLXVOOGFqUjJ3VWVpb2hNakMxZmFUVVdGSGRvYUZvWnA0RVZkMWk0d19FRk1pUVNzQTN0cE5ET2hnRkNYYzdkQThxbWN1R05DdEpncFBkNzlEMnlRZHNMaUVjSUdNdFZmRTNEMkRFLThpdXF1cFlVYlJ5Q3NIYjdiRkNMN09EanBfa1h4SHlmd0HSAbABQVVfeXFMUFU0ZDJkZjE0YlNKREs1Y0pvUWQ1ZVVhZjUydERkNVFTTERPLWVucDRObFFBRGdScEh1UWtsSFBhX3BoRjhmck9YRko0azlQNDhMRkc0YXdQSzBoakEwa0lMRU1ZeGJ3Yl9Qc1gzVHFGeTJBbU9RUVZlVGVOYm9uWFI5VHRMTkZMVFZFUmFJZzNDVER0cUU1d2JEOXpUS3E5TV9kaERYUWVfRFNXbE0tXzc?oc=5",
-      "published": "2026-11-19T03:59:26-06:00",
-      "date": "2026-11-19",
-      "label": "Nov 19, 2026 3:59 AM CT",
-      "weekday": "Thu",
-      "timeKnown": true,
-      "tags": [
-        "infra",
-        "alert"
-      ],
-      "severity": "ALERT",
-      "cause": "unconfirmed",
-      "region": "",
-      "asset": "cable",
-      "open": true,
-      "links": [
-        {
-          "title": "Internet services disrupted across Pakistan due to undersea cable fault - Daily Ausaf",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQY25MT1kwVXhudUk1UlNybEpEa0lmNERtMFRkLXVOOGFqUjJ3VWVpb2hNakMxZmFUVVdGSGRvYUZvWnA0RVZkMWk0d19FRk1pUVNzQTN0cE5ET2hnRkNYYzdkQThxbWN1R05DdEpncFBkNzlEMnlRZHNMaUVjSUdNdFZmRTNEMkRFLThpdXF1cFlVYlJ5Q3NIYjdiRkNMN09EanBfa1h4SHlmd0HSAbABQVVfeXFMUFU0ZDJkZjE0YlNKREs1Y0pvUWQ1ZVVhZjUydERkNVFTTERPLWVucDRObFFBRGdScEh1UWtsSFBhX3BoRjhmck9YRko0azlQNDhMRkc0YXdQSzBoakEwa0lMRU1ZeGJ3Yl9Qc1gzVHFGeTJBbU9RUVZlVGVOYm9uWFI5VHRMTkZMVFZFUmFJZzNDVER0cUU1d2JEOXpUS3E5TV9kaERYUWVfRFNXbE0tXzc?oc=5",
-          "source": "Daily Ausaf"
-        }
-      ],
-      "sourceCount": 1,
-      "market": "Brent -2.04% over 5 days · TTF +4.45% over 5 days"
-    },
-    {
-      "id": "infra:66b23ff5a74490b7",
-      "kind": "infra",
-      "lane": "threat",
-      "source": "The Manila Times",
-      "sourceId": "infra",
-      "title": "Hong Kong drops charge against captain over Baltic pipeline damage - The Manila Times",
-      "guest": "",
-      "note": "",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQaXNWQ09feWZ5dnNrQlF3WGVGTzdiekcxWEIyck41LW13UlI5dWw4R0prRzJKUzBLX3M0U0Y5S244UDVDUW9rUXhnYTkzdFVtTU51dkJZUmFEWmttd0c1MjIzSHBpNEw3ZW5WWUhlQmdnNVhEWFR3Q3JwSXRBV245TEU3LXBhQnFRMGQxQ0tPc0x6OXRMX3ZyaDdJOUduX05VVjU5LTEtcFI5TURERXlrRy1MN0doTGFLS2RhRVVDNXU2a3JWTVlna2gtc2jSAdIBQVVfeXFMUHNqSHNFMkZlbktDV2hac0wwZDRZdWdTRk1UX0JRLUh6N3ZzN2NHVGRoc1VKUGQ4cFJGQ2dTbVlaRGo2Y1ZsNnZqbkdPQnV1ejFKU0gza0ZzQThoNkRkNjdSM1A5OHVNajNnbmZ4MWJBYjFBUzZZR1RFNG84ZEpQQ01ybFE1NU9fZV9NcVpxQjB0SDNlLVZYdHprME4zTUREMGJ5cDFYMW9HYlFZcDR4YWNFUms2VjEtT0tEWk0yZkozWERNSVl1MEp2OXVONkhDdGh3?oc=5",
-      "published": "2026-11-18T07:17:00-06:00",
-      "date": "2026-11-18",
-      "label": "Nov 18, 2026 7:17 AM CT",
-      "weekday": "Wed",
-      "timeKnown": true,
-      "tags": [
-        "infra",
-        "alert"
-      ],
-      "severity": "ALERT",
-      "cause": "unconfirmed",
-      "region": "Baltic Sea",
-      "asset": "pipeline",
-      "open": true,
-      "links": [
-        {
-          "title": "Hong Kong drops charge against captain over Baltic pipeline damage - The Manila Times",
-          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQaXNWQ09feWZ5dnNrQlF3WGVGTzdiekcxWEIyck41LW13UlI5dWw4R0prRzJKUzBLX3M0U0Y5S244UDVDUW9rUXhnYTkzdFVtTU51dkJZUmFEWmttd0c1MjIzSHBpNEw3ZW5WWUhlQmdnNVhEWFR3Q3JwSXRBV245TEU3LXBhQnFRMGQxQ0tPc0x6OXRMX3ZyaDdJOUduX05VVjU5LTEtcFI5TURERXlrRy1MN0doTGFLS2RhRVVDNXU2a3JWTVlna2gtc2jSAdIBQVVfeXFMUHNqSHNFMkZlbktDV2hac0wwZDRZdWdTRk1UX0JRLUh6N3ZzN2NHVGRoc1VKUGQ4cFJGQ2dTbVlaRGo2Y1ZsNnZqbkdPQnV1ejFKU0gza0ZzQThoNkRkNjdSM1A5OHVNajNnbmZ4MWJBYjFBUzZZR1RFNG84ZEpQQ01ybFE1NU9fZV9NcVpxQjB0SDNlLVZYdHprME4zTUREMGJ5cDFYMW9HYlFZcDR4YWNFUms2VjEtT0tEWk0yZkozWERNSVl1MEp2OXVONkhDdGh3?oc=5",
-          "source": "The Manila Times"
-        }
-      ],
-      "sourceCount": 1,
-      "market": "Brent -2.04% over 5 days · TTF +4.45% over 5 days"
-    }
-  ],
-  "infraGaps": [
-    "Gassco UMM: curl: (22) The requested URL returned error: 404\n",
-    "BSEE: curl: (22) The requested URL returned error: 404\n"
-  ]
+  "vixZone": "above 25"
 }

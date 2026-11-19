@@ -7092,7 +7092,7 @@
     },
     {
       "date": "2026-11-19",
-      "label": "Nov 19, 2026 10:18 AM CT",
+      "label": "Nov 19, 2026 11:08 AM CT",
       "outlooks": [
         {
           "id": "quake:1eb36ed394438d89",
@@ -7300,12 +7300,12 @@
           "severity": "STANDBY"
         },
         {
-          "id": "cyber:b1a579d6fecac6ff",
+          "id": "headline:f7c2e9967d3d2c12",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "STANDBY"
         },
         {
-          "id": "headline:f7c2e9967d3d2c12",
+          "id": "cyber:b1a579d6fecac6ff",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "STANDBY"
         },
@@ -7345,7 +7345,7 @@
           "severity": "ALERT"
         },
         {
-          "id": "headline:b11f14b4fd88486f",
+          "id": "headline:8adab819b6c248d7",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "STANDBY"
         },
@@ -7367,11 +7367,6 @@
         {
           "id": "headline:314f9dd5d0dad6b6",
           "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:0817dedfcb4b6267",
-          "outlook": "Lower than yesterday. The 72-hour path is easing if it holds.",
           "severity": "STANDBY"
         },
         {
@@ -7475,7 +7470,7 @@
           "severity": "ALERT"
         },
         {
-          "id": "headline:ff870ec6c413c4cd",
+          "id": "headline:f0cec99943636a93",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "STANDBY"
         },
@@ -7483,11 +7478,6 @@
           "id": "headline:6b927575ffcb2e9b",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
-        },
-        {
-          "id": "headline:9606bf6c0bd35acc",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "STANDBY"
         }
       ],
       "threats": [
@@ -7738,16 +7728,16 @@
           "title": "CVE-2026-114713 UnrealIRCd Improper Neutralization of Delimiters Vulnerability"
         },
         {
-          "id": "cyber:b1a579d6fecac6ff",
-          "kind": "cyber",
-          "severity": "STANDBY",
-          "title": "European Commission confirms cyberattack, says hackers used AI tool"
-        },
-        {
           "id": "headline:f7c2e9967d3d2c12",
           "kind": "cyber",
           "severity": "STANDBY",
           "title": "JPMorganChase reports cyberattack on third-party service providers - ABC News - Breaking News, Latest News and Videos"
+        },
+        {
+          "id": "cyber:b1a579d6fecac6ff",
+          "kind": "cyber",
+          "severity": "STANDBY",
+          "title": "European Commission confirms cyberattack, says hackers used AI tool"
         },
         {
           "id": "cyber:155f1de6b4673b95",
@@ -7792,10 +7782,10 @@
           "title": "Iran fires at U.S. facility in Bahrain as Tehran resumes strikes on Arab neighbors - PBS"
         },
         {
-          "id": "headline:b11f14b4fd88486f",
+          "id": "headline:8adab819b6c248d7",
           "kind": "attack",
           "severity": "STANDBY",
-          "title": "York victim of Krakow attack on his way home, family confirms - BBC"
+          "title": "The Kraków Attack and the Alleged End of Poland’s “Innocence” - International Centre for Counter-Terrorism - ICCT"
         },
         {
           "id": "headline:071be1d8e25eccda",
@@ -7820,12 +7810,6 @@
           "kind": "usgov",
           "severity": "STANDBY",
           "title": "Democrats flipped 9 U.S. Senate seats — the most in almost 70 years - PBS"
-        },
-        {
-          "id": "headline:0817dedfcb4b6267",
-          "kind": "climate",
-          "severity": "STANDBY",
-          "title": "OPEC speaks up for fossil fuels at COP31 climate talks - Reuters"
         },
         {
           "id": "headline:f902bff0eeecd5d8",
@@ -7945,25 +7929,19 @@
           "id": "headline:f521c812228b4d38",
           "kind": "global",
           "severity": "ALERT",
-          "title": "‘New page in history?’ Xi, Trump and Putin summit was more of a footnote - The Guardian"
+          "title": "Trump, Xi and Putin Seek to Project Power at Their First Summit - The New York Times"
         },
         {
-          "id": "headline:ff870ec6c413c4cd",
+          "id": "headline:f0cec99943636a93",
           "kind": "global",
           "severity": "STANDBY",
-          "title": "From tarmac to APEC summit table, Japan's PM cuts a lonely figure - Reuters"
+          "title": "COP 31 Global Sustainable Insurance Summit 2026 - UNEP Finance Initiative"
         },
         {
           "id": "headline:6b927575ffcb2e9b",
           "kind": "global",
           "severity": "ALERT",
           "title": "Europe tightens sanctions on Russia. America loosens them - The Economist"
-        },
-        {
-          "id": "headline:9606bf6c0bd35acc",
-          "kind": "global",
-          "severity": "STANDBY",
-          "title": "Plenary session of the APEC Summit - Президент России"
         }
       ],
       "trends": [

@@ -41,6 +41,7 @@
       "related": 1,
       "relatedSources": [],
       "severity": "ALERT",
+      "sourceCount": 1,
       "title": "CVE-2026-40217 BerriAI LiteLLM Unprotected Alternate Channel Vulnerability"
     },
     {
@@ -48,6 +49,7 @@
       "related": 1,
       "relatedSources": [],
       "severity": "ALERT",
+      "sourceCount": 1,
       "title": "CVE-2026-90817 Vanderbilt University Research Electronic Data Capture (REDCap) Code Injection Vulnerability"
     },
     {
@@ -83,7 +85,7 @@
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "‘New page in history?’ Xi, Trump and Putin summit was more of a footnote - The Guardian"
+      "title": "Trump, Xi and Putin Seek to Project Power at Their First Summit - The New York Times"
     }
   ],
   "fizzled": [
@@ -213,6 +215,7 @@
       "related": 1,
       "relatedSources": [],
       "severity": "ALERT",
+      "sourceCount": 1,
       "title": "CVE-2026-40217 BerriAI LiteLLM Unprotected Alternate Channel Vulnerability"
     },
     {
@@ -220,6 +223,7 @@
       "related": 1,
       "relatedSources": [],
       "severity": "ALERT",
+      "sourceCount": 1,
       "title": "CVE-2026-90817 Vanderbilt University Research Electronic Data Capture (REDCap) Code Injection Vulnerability"
     },
     {
@@ -255,7 +259,7 @@
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "‘New page in history?’ Xi, Trump and Putin summit was more of a footnote - The Guardian"
+      "title": "Trump, Xi and Putin Seek to Project Power at Their First Summit - The New York Times"
     }
   ],
   "note": "Compared with the stored board on 2026-11-12.",

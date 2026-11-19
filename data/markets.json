@@ -28,9 +28,9 @@
             "2026-11-26",
             "2026-12-25"
           ],
-          "level": 7304.54,
-          "change": -19.09,
-          "changePct": -0.26,
+          "level": 7219.21,
+          "change": -104.42,
+          "changePct": -1.43,
           "asOf": "2026-11-19",
           "source": "https://finance.yahoo.com/quote/%5EGSPC"
         }
@@ -79,27 +79,6 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:5681cf67a5f63955",
-          "kind": "headline",
-          "lane": "news",
-          "source": "The New York Times",
-          "sourceId": "headline",
-          "title": "Fed Saw Need to Keep Raising Interest Rates Despite Holding Steady in October - The New York Times",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQZWNVYnFNZV9nd0xLQW9EenZFTEJZS1A0VF9jcXgydHdZMlNUY21sTndVYzZXTThLS19UOThYOF9oZS1hbURtSlBhcUYyTVB1XzB2QUk5dlZva3RlNzlyWmtweDNhUUdyNVJGV290RzNLYTBEU1RXMlpiNEtHZ09HTVFyZ09ldVdKUXNiMHFLSk45Y3RiOWEzWDFB?oc=5",
-          "published": "2026-11-18T14:35:01-06:00",
-          "date": "2026-11-18",
-          "label": "Nov 18, 2026 2:35 PM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
           "id": "headline:db921db05383741c",
           "kind": "headline",
           "lane": "news",
@@ -133,6 +112,27 @@
           "published": "2026-11-18T14:32:00-06:00",
           "date": "2026-11-18",
           "label": "Nov 18, 2026 2:32 PM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:5681cf67a5f63955",
+          "kind": "headline",
+          "lane": "news",
+          "source": "The New York Times",
+          "sourceId": "headline",
+          "title": "Fed Saw Need to Keep Raising Interest Rates Despite Holding Steady in October - The New York Times",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQZWNVYnFNZV9nd0xLQW9EenZFTEJZS1A0VF9jcXgydHdZMlNUY21sTndVYzZXTThLS19UOThYOF9oZS1hbURtSlBhcUYyTVB1XzB2QUk5dlZva3RlNzlyWmtweDNhUUdyNVJGV290RzNLYTBEU1RXMlpiNEtHZ09HTVFyZ09ldVdKUXNiMHFLSk45Y3RiOWEzWDFB?oc=5",
+          "published": "2026-11-18T13:09:22-06:00",
+          "date": "2026-11-18",
+          "label": "Nov 18, 2026 1:09 PM CT",
           "weekday": "Wed",
           "timeKnown": true,
           "tags": [
@@ -940,11 +940,6 @@
           "state": "RISING",
           "links": [
             {
-              "title": "Fed Saw Need to Keep Raising Interest Rates Despite Holding Steady in October - The New York Times",
-              "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQZWNVYnFNZV9nd0xLQW9EenZFTEJZS1A0VF9jcXgydHdZMlNUY21sTndVYzZXTThLS19UOThYOF9oZS1hbURtSlBhcUYyTVB1XzB2QUk5dlZva3RlNzlyWmtweDNhUUdyNVJGV290RzNLYTBEU1RXMlpiNEtHZ09HTVFyZ09ldVdKUXNiMHFLSk45Y3RiOWEzWDFB?oc=5",
-              "source": "The New York Times"
-            },
-            {
               "title": "‘Almost all’ US Fed policymakers saw further interest rate hikes as likely, minutes show - The Straits Times",
               "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNWFRsZFFyeGhlY3RacTRWN0JjOFNkaEZzcU9PUnktNUxJdzk2aExvRE5hSm42TEFnNEZOelRKRTZYYmZ6UEZZbzc5QVRuZnlWRERnUlVjT0tVaGQza0lMU0lndExsd1lDaXFNTnlkdG1yWVIwckhpbk1KQVBidFo1QzFKUFIxLVVmYU8yNjI0d1NPbEhMWTRsNTJvR0VWY2UzUGhYN0ozZ0Y5UTlHekpEZ0FndmdyaktMU2c?oc=5",
               "source": "The Straits Times"
@@ -955,12 +950,17 @@
               "source": "The Straits Times"
             },
             {
+              "title": "Fed Saw Need to Keep Raising Interest Rates Despite Holding Steady in October - The New York Times",
+              "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQZWNVYnFNZV9nd0xLQW9EenZFTEJZS1A0VF9jcXgydHdZMlNUY21sTndVYzZXTThLS19UOThYOF9oZS1hbURtSlBhcUYyTVB1XzB2QUk5dlZva3RlNzlyWmtweDNhUUdyNVJGV290RzNLYTBEU1RXMlpiNEtHZ09HTVFyZ09ldVdKUXNiMHFLSk45Y3RiOWEzWDFB?oc=5",
+              "source": "The New York Times"
+            },
+            {
               "title": "Fed minutes: Higher interest rates needed in December as inflation worries mount - The Tribune-Democrat",
               "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPWDhfeHU2NVc3N3hUMlNmZlphdW5zS1RvT3FEczEyN0NrTkQzclV3dFl1VUIzMlpYa2R3UFgxcGZ4UFJJQTdhWFVkSTBMb0lhNkI3aGk2N2xjV2t3WlFjN0JubkxIWHNpazZGamxWWldYSk44ZERySnVWejVRNE1uMks2UC0xV2F6bzFhVDZpenVaTndpRTJubTdBZFhPQ3MxZ3doZmR1UjM4Y3lIUEVlQUpEZVU2TmIxRk1CR2tibnVBekQ2WDVwZ3pIeFpJNlMzMExSYWxBQUpEVlhySEJ3RkdHd0JCcmJhcFpRcmNiVEhaU3VaYW1LWW5tUQ?oc=5",
               "source": "The Tribune-Democrat"
             }
           ],
-          "title": "Fed Saw Need to Keep Raising Interest Rates Despite Holding Steady in October - The New York Times"
+          "title": "‘Almost all’ US Fed policymakers saw further interest rate hikes as likely, minutes show - The Straits Times"
         }
       ]
     },
@@ -980,9 +980,9 @@
             }
           ],
           "holidays": [],
-          "level": 34309.09,
-          "change": -269.01,
-          "changePct": -0.78,
+          "level": 34009.19,
+          "change": -568.91,
+          "changePct": -1.65,
           "asOf": "2026-11-19",
           "source": "https://finance.yahoo.com/quote/%5EGSPTSE"
         },
@@ -998,9 +998,9 @@
             }
           ],
           "holidays": [],
-          "level": 68962.58,
-          "change": -191.59,
-          "changePct": -0.28,
+          "level": 69110.2,
+          "change": -43.97,
+          "changePct": -0.06,
           "asOf": "2026-11-19",
           "source": "https://finance.yahoo.com/quote/%5EMXX"
         }
@@ -1894,21 +1894,21 @@
             }
           ],
           "holidays": [],
-          "level": 166617.8,
-          "change": -920.2,
-          "changePct": -0.55,
+          "level": 166409.05,
+          "change": -1128.95,
+          "changePct": -0.67,
           "asOf": "2026-11-19",
           "source": "https://finance.yahoo.com/quote/%5EBVSP"
         }
       ],
       "headlines": [
         {
-          "id": "headline:38539e29677491eb",
+          "id": "headline:297f4ce616485afa",
           "kind": "headline",
           "lane": "news",
-          "source": "Bloomberg",
+          "source": "Bloomberg.com",
           "sourceId": "headline",
-          "title": "B3 to Add Brazil Stocks Listed Abroad to Aid Ailing Local Market - Bloomberg",
+          "title": "B3 to Add Brazil Stocks Listed Abroad to Aid Ailing Local Market - Bloomberg.com",
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQUG1rRURHNlg3dFRKb3VqSW5zeWo5blBTeU1qcjRnaW1wUmxSSmhKRW5VNE5lVXAtb21scEI5UDVoQ01BX3dkMGNtZVZRSi1yRERLUnJmdHBnWHZ6TW96Rk9VSVBNMWw5ckFkUHQ0RDBTdnN0dHI3VW5Odm9pNV9mcUMxU054d2cwLUN6UUJ6Q3RBdGRIMGRIdUNhRWdmR1gweExyLWhocjd3a2MxWVYxZ1A5bVM1UQ?oc=5",
@@ -2761,9 +2761,9 @@
             }
           ],
           "holidays": [],
-          "level": 2415.55,
-          "change": -55.3,
-          "changePct": -2.24,
+          "level": 2414.79,
+          "change": -56.06,
+          "changePct": -2.27,
           "asOf": "2026-11-19",
           "source": "https://iss.moex.com/iss/engines/stock/markets/index/securities/IMOEX.json"
         }
@@ -3708,6 +3708,27 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:958eb3d321200019",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Borneo Post",
+          "sourceId": "headline",
+          "title": "China proving a place where ideas can take shape - Borneo Post",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQb1lMbkxWN2tvQ3M5d3RwcmxoLWpEeG1XZHlmZGtqc3JKRnlKX3UzZXNiME1jM1IwQm1PNk56am1sbU5JV0p0TEtHMlV1LVJZQjd2V2JRV0VMUzhBRmc1SVZLUjhVN3Rmb1dCNmJHeUk3Zmt2TlpyczYwRTB0amxTeUVVd3NqbndhQVRmemp0OHl4cVlr?oc=5",
+          "published": "2026-11-18T16:01:34-06:00",
+          "date": "2026-11-18",
+          "label": "Nov 18, 2026 4:01 PM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:3abe90313038cabd",
           "kind": "headline",
           "lane": "news",
@@ -4483,27 +4504,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:be3364861b721c29",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Vogue",
-          "sourceId": "headline",
-          "title": "At Shanghai’s International Import Festival, Global Brands Rethink China’s Role - Vogue",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPeGJVRExxS0FDRlZlUDJHbGljSEd5QlFla0ZPa1JDakJ2b1k0SW9MVm1CcmlyaEp1eDZWZENRMGlvUnJQYzc3YW4tR1pQendqcFJ6aXhQWlZsd0FvWHNsVkVmeEFBQWd2OW1VVmhoeVBsaWFidmxjZjZ6bDZVSkpQcUtTRW5LZ3hKbS05Ri1FX09ObmMxZUhMQ29LOTZ3OFRrM3Q4dXN3NFo5dw?oc=5",
-          "published": "2026-11-11T23:30:00-06:00",
-          "date": "2026-11-11",
-          "label": "Nov 11, 2026 11:30 PM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ],
       "spikes": [
@@ -4553,9 +4553,9 @@
             }
           ],
           "holidays": [],
-          "level": 6133.37,
-          "change": -21.02,
-          "changePct": -0.34,
+          "level": 6113.86,
+          "change": -40.53,
+          "changePct": -0.66,
           "asOf": "2026-11-19",
           "source": "https://finance.yahoo.com/quote/%5ESTOXX50E"
         }
@@ -4574,6 +4574,27 @@
           "published": "2026-11-19T04:14:57-06:00",
           "date": "2026-11-19",
           "label": "Nov 19, 2026 4:14 AM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:2ca5f2707ccc6de8",
+          "kind": "headline",
+          "lane": "news",
+          "source": "ECB Banking Supervision",
+          "sourceId": "headline",
+          "title": "Supervisory priorities 2027-29 - ECB Banking Supervision",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQSnVkdy1WcXh6NnRyOGJEcm9oOENtXzNMM0pjOGlHUVE5UFN2bnRMVi1YdHhDSnYzQl9qbVRiZVVsbXJpdVFtMUIyYTRLNDZJZVBLTm5aMThGTDRhdTg4SWk1SG82a1dlVXJLWDdfT2VxT0pjLUNLNDhKOWYtcHl4NjFGaTJHb2FZbVBuSzIzR2JFOTNIdV8yQmE3RTcydlF6LW1od0o5VXJ0Z3FBcWRtWVZSd3lKZw?oc=5",
+          "published": "2026-11-19T03:46:36-06:00",
+          "date": "2026-11-19",
+          "label": "Nov 19, 2026 3:46 AM CT",
           "weekday": "Thu",
           "timeKnown": true,
           "tags": [
@@ -5372,27 +5393,6 @@
           "published": "2026-11-16T02:36:18-06:00",
           "date": "2026-11-16",
           "label": "Nov 16, 2026 2:36 AM CT",
-          "weekday": "Mon",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:affa9ef725a72d7a",
-          "kind": "headline",
-          "lane": "news",
-          "source": "European Central Bank",
-          "sourceId": "headline",
-          "title": "Risks and resilience in the euro area financial system - European Central Bank",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNQVY0ZFBPV2U5N2tWR3ZsRThLNnZzTG1rTVZmNkRWM2dVcXNxc0dxUF9XSE1wbTFSbGp0Y01JSVFWMTJKanJQT0Y2NG9QajhKVlN6Q3R1RElwQ0gxY09GN251LUdPcVNaczdKMF9QSkR1Vmt2aTJMNUVHTUQ5WGhUOUtpTHV4U1dOUWc?oc=5",
-          "published": "2026-11-16T02:33:36-06:00",
-          "date": "2026-11-16",
-          "label": "Nov 16, 2026 2:33 AM CT",
           "weekday": "Mon",
           "timeKnown": true,
           "tags": [
@@ -6357,6 +6357,27 @@
       ],
       "headlines": [
         {
+          "id": "headline:f0704549c43400db",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Admirals",
+          "sourceId": "headline",
+          "title": "Japan Machinery Orders Sept 2026: -0.3% vs -0.5% Forecast - Admirals",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNZGV2SUVDT241UHk1bkZCNG1rbTBELUE2UkZfZ0dsQUZwM2s3VFNhczVuYVNaWGZkNzlWNnBoT2hEWnpjRWFxbkJqeW03cUxndGVUUzBEeDRoVW5oRS1HQU4tYkU5YnYteEFNTXoxbkRSN3BuUjhHX1hOeE9NYmNxVlR3TU1sYXhRczlqRHNWN3o?oc=5",
+          "published": "2026-11-19T08:50:57-06:00",
+          "date": "2026-11-19",
+          "label": "Nov 19, 2026 8:50 AM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:4ffa7e4b4404921b",
           "kind": "headline",
           "lane": "news",
@@ -6849,9 +6870,9 @@
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQdU9sMjNub1pTd01xZUptNDZRNUc1S1R2ZFZVeENBTmNWUnh5SXB2eVRPOEVqZ1RXZzU2XzRtaEE0RDI4dHc0TTNJVWhOWmFrZGlJaEVRTnpROWI0SnBzcUF4OE1GaHJFYVozMklyUUY1TE5xNUo0cWdnaHRWY21vWDU1TUhUckVjWW83UTZ3N0ZGc1U0czA4QU5ZYUpMNkcxTGRYTjc2Y1ZfOVlZMEJzc3NyWEZPUGxz?oc=5",
-          "published": "2026-11-15T20:46:48-06:00",
+          "published": "2026-11-15T20:44:00-06:00",
           "date": "2026-11-15",
-          "label": "Nov 15, 2026 8:46 PM CT",
+          "label": "Nov 15, 2026 8:44 PM CT",
           "weekday": "Sun",
           "timeKnown": true,
           "tags": [
@@ -7174,58 +7195,9 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:ca9c35fcda9d0cda",
-          "kind": "headline",
-          "lane": "news",
-          "source": "TradingView",
-          "sourceId": "headline",
-          "title": "Japan's producer inflation accelerates to 7.1% in October; BoJ urges caution on rate hikes - TradingView",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPQ0dyZmZ1bjdHX0hFUE9aUE5sMkw2dnN0U1JHaGlUR2d0SmgtbkJfOEdfWVoyYUV6UEhMN3NIa2pqVjNybXZNVUdBNkNEN2stQ1NuVE94MUhHZ0xnbUNBQm4tSTFrbm1yRHJ4ejF2SkE4NldUczExNU84UHFKcXR5VXVITXRrZkRHc3dqeVhfOEsyWFVtdVF0dVl4eHR0WDVlX1QyOUVyYUFXTDJHcEFzaE5ES0RPZ20ycnlQd0gzRmtuRTkzTUZmem51LXpJcktYTkp2UzVsZlZ2c2x0N1RlMDZQYzRZZw?oc=5",
-          "published": "2026-11-11T23:37:22-06:00",
-          "date": "2026-11-11",
-          "label": "Nov 11, 2026 11:37 PM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ],
       "spikes": [
-        {
-          "topic": "inflation",
-          "outlets": 4,
-          "state": "RISING",
-          "links": [
-            {
-              "title": "BOJ's Takata calls for early rate hikes to curb inflation risks - The Economic Times",
-              "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOLUtrYWtENC00eXhwMEZ6bm5hTTVoTkNEU01Pck1vaFZhTGlfTWZkb3loTE9IcVgyeFFTYjR0V1htQ3Y3akJVbDRMN1lPWDZ2ZWxpMktGQ0o4NjBqZW5JNWtoYU5GRmJZeV83a2syY3F2N1dXVlcwVnc2SGlXWHpJTGdzb21qYjd0dk85cDhfcEdROWFJdTh5bl9hc0xkSTQwNEtvSk9uYllhNkNEeEpyZjM3S2J4M2VrZHdXTW8zdE5ZUXpaZTZPTHBNaHNXSGNmdGJlZXd5M0huMVVUYXhoSFFmSTFqcWttcHlhWtIB7AFBVV95cUxOLUtrYWtENC00eXhwMEZ6bm5hTTVoTkNEU01Pck1vaFZhTGlfTWZkb3loTE9IcVgyeFFTYjR0V1htQ3Y3akJVbDRMN1lPWDZ2ZWxpMktGQ0o4NjBqZW5JNWtoYU5GRmJZeV83a2syY3F2N1dXVlcwVnc2SGlXWHpJTGdzb21qYjd0dk85cDhfcEdROWFJdTh5bl9hc0xkSTQwNEtvSk9uYllhNkNEeEpyZjM3S2J4M2VrZHdXTW8zdE5ZUXpaZTZPTHBNaHNXSGNmdGJlZXd5M0huMVVUYXhoSFFmSTFqcWttcHlhWg?oc=5",
-              "source": "The Economic Times"
-            },
-            {
-              "title": "Japan's Economy Stalls in Q3 as Weak Yen, Middle East Conflict Fuel Inflation; BOJ December Rate Hike Expected - BigGo Finance",
-              "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1OT3BHYXo0SzBmZkcwQlhHMjNfZG9yMWlRSG82U05iZTVQdHlvcFo2VWljaDhwbFViWWRwVVN4WGg3U0JZeUEtODVuVkt6dFE5RXdGQzNqZ2FNNTloZmdhbk14cUZySkViSHk0QzF4bGstS3d5a2c?oc=5",
-              "source": "BigGo Finance"
-            },
-            {
-              "title": "Japan economy shrinks 0.1% in Q3, first fall in 4 quarters as inflation hits households - investingLive",
-              "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQdU9sMjNub1pTd01xZUptNDZRNUc1S1R2ZFZVeENBTmNWUnh5SXB2eVRPOEVqZ1RXZzU2XzRtaEE0RDI4dHc0TTNJVWhOWmFrZGlJaEVRTnpROWI0SnBzcUF4OE1GaHJFYVozMklyUUY1TE5xNUo0cWdnaHRWY21vWDU1TUhUckVjWW83UTZ3N0ZGc1U0czA4QU5ZYUpMNkcxTGRYTjc2Y1ZfOVlZMEJzc3NyWEZPUGxz?oc=5",
-              "source": "investingLive"
-            },
-            {
-              "title": "Japan's producer inflation accelerates to 7.1% in October; BoJ urges caution on rate hikes - TradingView",
-              "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPQ0dyZmZ1bjdHX0hFUE9aUE5sMkw2dnN0U1JHaGlUR2d0SmgtbkJfOEdfWVoyYUV6UEhMN3NIa2pqVjNybXZNVUdBNkNEN2stQ1NuVE94MUhHZ0xnbUNBQm4tSTFrbm1yRHJ4ejF2SkE4NldUczExNU84UHFKcXR5VXVITXRrZkRHc3dqeVhfOEsyWFVtdVF0dVl4eHR0WDVlX1QyOUVyYUFXTDJHcEFzaE5ES0RPZ20ycnlQd0gzRmtuRTkzTUZmem51LXpJcktYTkp2UzVsZlZ2c2x0N1RlMDZQYzRZZw?oc=5",
-              "source": "TradingView"
-            }
-          ],
-          "title": "BOJ's Takata calls for early rate hikes to curb inflation risks - The Economic Times"
-        },
         {
           "topic": "Nvidia",
           "outlets": 3,
@@ -7253,6 +7225,29 @@
             }
           ],
           "title": "Asian stocks trade mixed after Nvidia earnings, KOSPI leads gains - FXStreet"
+        },
+        {
+          "topic": "inflation",
+          "outlets": 3,
+          "state": "RISING",
+          "links": [
+            {
+              "title": "BOJ's Takata calls for early rate hikes to curb inflation risks - The Economic Times",
+              "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOLUtrYWtENC00eXhwMEZ6bm5hTTVoTkNEU01Pck1vaFZhTGlfTWZkb3loTE9IcVgyeFFTYjR0V1htQ3Y3akJVbDRMN1lPWDZ2ZWxpMktGQ0o4NjBqZW5JNWtoYU5GRmJZeV83a2syY3F2N1dXVlcwVnc2SGlXWHpJTGdzb21qYjd0dk85cDhfcEdROWFJdTh5bl9hc0xkSTQwNEtvSk9uYllhNkNEeEpyZjM3S2J4M2VrZHdXTW8zdE5ZUXpaZTZPTHBNaHNXSGNmdGJlZXd5M0huMVVUYXhoSFFmSTFqcWttcHlhWtIB7AFBVV95cUxOLUtrYWtENC00eXhwMEZ6bm5hTTVoTkNEU01Pck1vaFZhTGlfTWZkb3loTE9IcVgyeFFTYjR0V1htQ3Y3akJVbDRMN1lPWDZ2ZWxpMktGQ0o4NjBqZW5JNWtoYU5GRmJZeV83a2syY3F2N1dXVlcwVnc2SGlXWHpJTGdzb21qYjd0dk85cDhfcEdROWFJdTh5bl9hc0xkSTQwNEtvSk9uYllhNkNEeEpyZjM3S2J4M2VrZHdXTW8zdE5ZUXpaZTZPTHBNaHNXSGNmdGJlZXd5M0huMVVUYXhoSFFmSTFqcWttcHlhWg?oc=5",
+              "source": "The Economic Times"
+            },
+            {
+              "title": "Japan's Economy Stalls in Q3 as Weak Yen, Middle East Conflict Fuel Inflation; BOJ December Rate Hike Expected - BigGo Finance",
+              "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1OT3BHYXo0SzBmZkcwQlhHMjNfZG9yMWlRSG82U05iZTVQdHlvcFo2VWljaDhwbFViWWRwVVN4WGg3U0JZeUEtODVuVkt6dFE5RXdGQzNqZ2FNNTloZmdhbk14cUZySkViSHk0QzF4bGstS3d5a2c?oc=5",
+              "source": "BigGo Finance"
+            },
+            {
+              "title": "Japan economy shrinks 0.1% in Q3, first fall in 4 quarters as inflation hits households - investingLive",
+              "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQdU9sMjNub1pTd01xZUptNDZRNUc1S1R2ZFZVeENBTmNWUnh5SXB2eVRPOEVqZ1RXZzU2XzRtaEE0RDI4dHc0TTNJVWhOWmFrZGlJaEVRTnpROWI0SnBzcUF4OE1GaHJFYVozMklyUUY1TE5xNUo0cWdnaHRWY21vWDU1TUhUckVjWW83UTZ3N0ZGc1U0czA4QU5ZYUpMNkcxTGRYTjc2Y1ZfOVlZMEJzc3NyWEZPUGxz?oc=5",
+              "source": "investingLive"
+            }
+          ],
+          "title": "BOJ's Takata calls for early rate hikes to curb inflation risks - The Economic Times"
         }
       ]
     },

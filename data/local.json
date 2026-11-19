@@ -2,7 +2,7 @@
   "gaps": [
     "Power_TN row hidden (2025-10-06, affected 0, served 0).",
     "1 ended road projects hidden.",
-    "TEMA news page answered with no dated notices."
+    "TEMA: curl: (22) The requested URL returned error: 403\n"
   ],
   "items": [
     {
@@ -11,10 +11,10 @@
       "date": "2026-11-19",
       "id": "local-nws-none",
       "kind": "nws",
-      "label": "Nov 19, 2026 10:18 AM CT",
+      "label": "Nov 19, 2026 11:08 AM CT",
       "lane": "local",
       "note": "api.weather.gov answered for 35.802,-86.907 and returned no alerts.",
-      "published": "2026-11-19T10:18:48-06:00",
+      "published": "2026-11-19T11:08:09-06:00",
       "severity": "STANDBY",
       "soWhat": "",
       "source": "NWS",
@@ -27,6 +27,27 @@
       "url": "https://api.weather.gov/alerts/active?point=35.802,-86.907"
     },
     {
+      "action": "Read the source. No kit change unless you are in the named area.",
+      "confidence": "reported",
+      "date": "2026-11-19",
+      "id": "local-road:b2617dabcce4ccb1",
+      "kind": "road",
+      "label": "2026-11-19",
+      "lane": "local",
+      "note": "Pothole Repair",
+      "published": "2026-11-19T11:08:09-06:00",
+      "severity": "ALERT",
+      "soWhat": "no action needed",
+      "source": "TDOT SmartWay",
+      "sourceCount": 1,
+      "tags": [
+        "tennessee",
+        "williamson"
+      ],
+      "title": "Interstate 65 NB in Williamson County - near MILE MARKER 68.8 Pothole Repair reported at 11/19/2026 10:50 AM (CT). NB 3 right lanes (of 5 lanes) blocked, right shoulder blocked.",
+      "url": "https://smartway.tn.gov/"
+    },
+    {
       "action": "no action needed",
       "confidence": "reported",
       "date": "2026-11-16",
@@ -35,7 +56,7 @@
       "label": "2026-11-16",
       "lane": "local",
       "note": "Other Construction",
-      "published": "2026-11-19T10:18:48-06:00",
+      "published": "2026-11-19T11:08:09-06:00",
       "severity": "STANDBY",
       "soWhat": "",
       "source": "TDOT SmartWay",
@@ -56,7 +77,7 @@
       "label": "2026-11-16",
       "lane": "local",
       "note": "Resurfacing",
-      "published": "2026-11-19T10:18:48-06:00",
+      "published": "2026-11-19T11:08:09-06:00",
       "severity": "STANDBY",
       "soWhat": "",
       "source": "TDOT SmartWay",
@@ -77,7 +98,7 @@
       "label": "2026-11-16",
       "lane": "local",
       "note": "Resurfacing",
-      "published": "2026-11-19T10:18:48-06:00",
+      "published": "2026-11-19T11:08:09-06:00",
       "severity": "STANDBY",
       "soWhat": "",
       "source": "TDOT SmartWay",

@@ -1,24 +1,79 @@
 {
-  "changes": [],
+  "changes": [
+    {
+      "change": "updated",
+      "date": "2026-11-19",
+      "note": "1.9x usual volume",
+      "section": "Rising situations",
+      "severity": "ALERT",
+      "title": "attack is RISING"
+    }
+  ],
   "gaps": [],
   "items": [
     {
-      "topic": "infra",
-      "state": "RISING",
-      "score": 2,
-      "reasons": "2 open infrastructure incidents",
       "links": [
         {
-          "title": "Internet services disrupted across Pakistan due to undersea cable fault - Daily Ausaf",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQY25MT1kwVXhudUk1UlNybEpEa0lmNERtMFRkLXVOOGFqUjJ3VWVpb2hNakMxZmFUVVdGSGRvYUZvWnA0RVZkMWk0d19FRk1pUVNzQTN0cE5ET2hnRkNYYzdkQThxbWN1R05DdEpncFBkNzlEMnlRZHNMaUVjSUdNdFZmRTNEMkRFLThpdXF1cFlVYlJ5Q3NIYjdiRkNMN09EanBfa1h4SHlmd0HSAbABQVVfeXFMUFU0ZDJkZjE0YlNKREs1Y0pvUWQ1ZVVhZjUydERkNVFTTERPLWVucDRObFFBRGdScEh1UWtsSFBhX3BoRjhmck9YRko0azlQNDhMRkc0YXdQSzBoakEwa0lMRU1ZeGJ3Yl9Qc1gzVHFGeTJBbU9RUVZlVGVOYm9uWFI5VHRMTkZMVFZFUmFJZzNDVER0cUU1d2JEOXpUS3E5TV9kaERYUWVfRFNXbE0tXzc?oc=5",
-          "source": "Daily Ausaf"
+          "source": "ABC News - Breaking News, Latest News and Videos",
+          "title": "Deadly mass shooting in Poland investigated as terror act, prosecutor says - ABC News - Breaking News, Latest News and Videos",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOb1pFNDZDUm5SZkhOYWNkVS0waDU0bXBlXzJZVHlKTW5BVkdCWVFKYUVUTXZ2TnZMdExJM2FfcWF2MUVmVm5MNnBjeW9fVmpWaDZpeDhaTUE2LWdOQ1BVRDMwNFFsbTExaVhXS2dnd3gybmljTE9pRGowck5ER2xpQnp1eVBhVTkwdU92cl9uZi1iMV9kYXBFQTJDVEJGZWFqakZWMWlpQkxCSUdkYTBubVJuSThQZ9IBuwFBVV95cUxPM2I3U25ZNVUwdUlUbGVEN1lrRDlwcWFQb2VsVnMzZWMyY2RDaUYyelRqejVOX3BaMC1CQU8wbFh1RU1EdEFhWUdUR1dLT1RNMWtESWVLdE13QUxJRWlWZ3E5YVA5OGZscmFMbnB5XzNaRlpwelk4U2pUWTY0ZXFBMjJxdHIwU3FpWFRSVmJyQ25fTzdFa2l5SGl1MTRaTGNjaW1hbm9ReERvaXFvUmtvTU9jazB6WENsUllV?oc=5"
         },
         {
-          "title": "Hong Kong drops charge against captain over Baltic pipeline damage - The Manila Times",
-          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQaXNWQ09feWZ5dnNrQlF3WGVGTzdiekcxWEIyck41LW13UlI5dWw4R0prRzJKUzBLX3M0U0Y5S244UDVDUW9rUXhnYTkzdFVtTU51dkJZUmFEWmttd0c1MjIzSHBpNEw3ZW5WWUhlQmdnNVhEWFR3Q3JwSXRBV245TEU3LXBhQnFRMGQxQ0tPc0x6OXRMX3ZyaDdJOUduX05VVjU5LTEtcFI5TURERXlrRy1MN0doTGFLS2RhRVVDNXU2a3JWTVlna2gtc2jSAdIBQVVfeXFMUHNqSHNFMkZlbktDV2hac0wwZDRZdWdTRk1UX0JRLUh6N3ZzN2NHVGRoc1VKUGQ4cFJGQ2dTbVlaRGo2Y1ZsNnZqbkdPQnV1ejFKU0gza0ZzQThoNkRkNjdSM1A5OHVNajNnbmZ4MWJBYjFBUzZZR1RFNG84ZEpQQ01ybFE1NU9fZV9NcVpxQjB0SDNlLVZYdHprME4zTUREMGJ5cDFYMW9HYlFZcDR4YWNFUms2VjEtT0tEWk0yZkozWERNSVl1MEp2OXVONkhDdGh3?oc=5",
-          "source": "The Manila Times"
+          "source": "International Centre for Counter-Terrorism - ICCT",
+          "title": "The Kraków Attack and the Alleged End of Poland’s “Innocence” - International Centre for Counter-Terrorism - ICCT",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNdHNfZFFOUkNPLXlHYS1URjBLUDZqc3dJcW53eEtoMjJXemRtdy12akduR3p3d0pNaEJ5ZWlXSm5YYXItZ09YOERHVEJqT0VaaXFrakp4X09KTkR3a1lVWEMyUVQ2YUx6RDJHb1pCNTdmNWZVVTdBS01WNnhaTk5fbw?oc=5"
+        },
+        {
+          "source": "DW.com",
+          "title": "Polish police arrest 3 teens over suspected neo-Nazi terror plot - DW.com",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNODVPYW1MMmREbDlxZDRSRDI4SXlIWmd4X2tzbkdIZzZqYTFWZ3ZmSEZaZWhPbXE2NUhLNHVBLW9HSmxKWF9BeUxKQ2xrMVJNcEN4TUd3cTBBTzRFMFJMOC1WUC1jM2haTF9xbEctcmNSd1FydWpRLXUwalFrcXhoOHp6ZFZVLW02ZlZCV0dPMFhXVFdJS01fVWRUcEhoQdIBngFBVV95cUxQWVNEMXdGUXg5ZjZTZGVLYmFxNjU1SjN2Zm5udThqNFFUNjRoVzJ6WFVKanZJd3Z2NlA5NC1qa2N2VTZhT1NVU2N0ck9YN0lsWTJ3UWdadzRtQW5kaVB4NDBZcGFvSnl5Nkp0dUExTHdoLXBvbUJ1b1FGVlVTUDFDU085blJNRHNXRWIzclZ2MHpsU1p4TnJVUm9RbnN0dw?oc=5"
+        },
+        {
+          "source": "AP News",
+          "title": "Damage from missile attack reported in Riyadh’s financial district, and other Mideast news - AP News",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPWGRFYnRQN1pwV2JiVkRBSGdIY2RDN3hoVnJvTDg3YVpzV2JjNjVMRkVOLVdfNU9yeVZxR0tpV3ZhUU1OSXVMemxUOXBvWVNUMDJGb2Rxa0VRTGxWU0hsSVNvNEdYUVpydDlpNFh2NzVpWXhCWVNSQVJ4OUxoR0ZGS0Q0WTFWNFE0Si11U1FqRnFWZkRlN1haWC1vaHR6Zw?oc=5"
         }
-      ]
+      ],
+      "reasons": "1.9x usual volume",
+      "score": 1,
+      "sourceCount": 4,
+      "spark": [
+        {
+          "price": 4
+        },
+        {
+          "price": 4
+        },
+        {
+          "price": 1
+        },
+        {
+          "price": 1
+        },
+        {
+          "price": 1
+        },
+        {
+          "price": 1
+        },
+        {
+          "price": 1
+        },
+        {
+          "price": 1
+        },
+        {
+          "price": 4
+        },
+        {
+          "price": 2
+        },
+        {
+          "price": 4
+        }
+      ],
+      "state": "RISING",
+      "topic": "attack"
     },
     {
       "links": [
@@ -217,14 +272,14 @@
     {
       "links": [
         {
-          "source": "The Guardian",
-          "title": "‘New page in history?’ Xi, Trump and Putin summit was more of a footnote - The Guardian",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPZmxlM0syUnVsd3Rid2dfLVBOekZMT3pNMHF3eVQwYndQNmpYaDh5MHdYZFZCanhibW9kZVJ0Q3N3bGtuVFdvUlY5M1BDZzVoekdKWXVESWV5NDBzdFhiX0twbmNBNUl4YkpMX3NUYmdLSEF6bDR1YTUtMnJUb0g1TF8yb0hiUHFmOGltVk9LT25DckNfUHFBaW92MUJUa1RQUGx2SmhFRWN1Z1NVVTlOYmZPdUQ?oc=5"
+          "source": "The New York Times",
+          "title": "Trump, Xi and Putin Seek to Project Power at Their First Summit - The New York Times",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1MQWU3M21LcmgtNFU4MmVaaEw2cnIyUGJVclVsc2JIWGZhcFVFMXE0SmJqaG5MQnpWN3BRLWZuWmh6cTRudTl0Nzc1SlJ4WVdQamZlR0hFMlRtTy04SEhhVVVsREp2RktrY0ZwUDFkcmpnaXM?oc=5"
         },
         {
-          "source": "Reuters",
-          "title": "From tarmac to APEC summit table, Japan's PM cuts a lonely figure - Reuters",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQV2lFRzhLTFFzUDAyQlFERWhQTjQwbzExSnlMaEVMYnhnOEdTRm9yNTJxWWgwRjluUHkxZVFWUnJYTXVOaVhoRGtGRE5PRXhiRF9WX3RtVVJGTkVIV3BLRDZPWVJQUFN0RjY3UXBpUktQSlNHQzlmS1N5Q0lCQkpLSjU4c29PQTM3bXI1cDlzSjAwTG95Vkt1Sk90NGlid0ptUG1v?oc=5"
+          "source": "UNEP Finance Initiative",
+          "title": "COP 31 Global Sustainable Insurance Summit 2026 - UNEP Finance Initiative",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1Jc1pRSFMteVF3RXRfOGhaYk1tY1hfaG10bk9ZVEN6RFlyVUFncVZVYUIyUkZGdS1ISDZzNWVfTXRtTFBjMGdtTV80REJaZ1Zzd0p0MmJGdU16clJEdE9j?oc=5"
         },
         {
           "source": "The Economist",
@@ -232,8 +287,8 @@
           "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPQkxzUWdBcFpHVy01Y3hvOURnd0drNUZuWW9rWC1QQk5GQVV0blFhU0ZnZVFpY2JWaVZrUlVhZ0pOV2hkVmNtUUZ0ODIyVGtxUWx6RU9LNWhJcDJNTjhCYVlvODk2eWYwRHRnbnE0NFAwOGdaQ1BsTFdSWUVFSFBzaHJaVWxDc3NSRF9ZRFVqTk1TdzZTWmNCUDhqLUJsN19YUTl1YUNPMEY0MTNnenN2aHNUeklwdw?oc=5"
         }
       ],
-      "reasons": "4 outlets this window",
-      "score": 4,
+      "reasons": "3 outlets this window",
+      "score": 3,
       "state": "RISING",
       "topic": "global"
     }
