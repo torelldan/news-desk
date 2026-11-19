@@ -1617,6 +1617,30 @@ def politics_without_threat(title: str, note: str = "") -> bool:
     return nonthreat_copy(title, note)
 
 
+_STATEMENT = re.compile(
+    r"\b(says|said|speaks|speaking|attended|elects|elected|memo|frustrated|critique|"
+    r"tribute|commemorat\w*|holds mass|memorial|co-belligerent|pressure is working)\b",
+    re.I,
+)
+_FRESH_EVENT = re.compile(
+    r"\b(launches|launched|struck|strikes|strike on|hits|killed|kills|explodes|explosion|"
+    r"bombed|bombing|drone strike|targets|cyberattack|ransomware|breach|outage)\b",
+    re.I,
+)
+
+
+def statement_not_event(title: str, note: str = "") -> bool:
+    """A quote, a meeting, or a memorial is not a new physical event."""
+    blob = f"{title or ''} {note or ''}"
+    if re.search(r"\b(tribute|memorial|holds mass|commemorat\w*|paid tribute)\b", blob, re.I):
+        return True
+    if _FRESH_EVENT.search(blob) and not re.search(r"\b(critique|frustrated|reject|criticism)\b", blob, re.I):
+        return False
+    if _STATEMENT.search(blob):
+        return True
+    return nonthreat_copy(title, note)
+
+
 def classify_desk(title: str, note: str, hinted: str) -> str:
     """Conflict kinds only when the headline itself names that conflict.
 
@@ -1781,7 +1805,7 @@ def _try_desks(now):
                 continue
             row = dict(row)
             assigned = classify_desk(row.get("title") or "", row.get("note") or "", kind)
-            if assigned == "news" or nonthreat_copy(row.get("title") or "", row.get("note") or ""):
+            if assigned == "news" or statement_not_event(row.get("title") or "", row.get("note") or ""):
                 continue
             row["kind"] = assigned
             row["lane"] = "news"

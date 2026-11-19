@@ -50,7 +50,30 @@
         }
       ],
       "state": "RISING",
-      "topic": "quake"
+      "topic": "quake",
+      "links": [
+        {
+          "title": "M5.1 157 km S of Attu Station, Alaska",
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ubw3",
+          "source": "USGS"
+        },
+        {
+          "title": "M4.7 134 km SW of Lorengau, Papua New Guinea",
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ubvu",
+          "source": "USGS"
+        },
+        {
+          "title": "M6.1 Pacific-Antarctic Ridge",
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tz37",
+          "source": "USGS"
+        },
+        {
+          "title": "M4.5 23 km SSW of Ollagüe, Chile",
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tz33",
+          "source": "USGS"
+        }
+      ],
+      "sourceCount": 4
     },
     {
       "reasons": "4.5x usual volume · 5 or more outlets",
@@ -76,7 +99,30 @@
         }
       ],
       "state": "RISING",
-      "topic": "relief"
+      "topic": "relief",
+      "links": [
+        {
+          "title": "Haiti: Floods - Oct 2026",
+          "url": "https://reliefweb.int/disaster/fl-2026-000201-hti",
+          "source": "ReliefWeb"
+        },
+        {
+          "title": "Congo: Floods - Oct 2026",
+          "url": "https://reliefweb.int/disaster/fl-2026-000196-cog",
+          "source": "ReliefWeb"
+        },
+        {
+          "title": "Panama: Earthquake - Oct 2026",
+          "url": "https://reliefweb.int/disaster/eq-2026-000188-pan",
+          "source": "ReliefWeb"
+        },
+        {
+          "title": "Indonesia: Drought - Sep 2026",
+          "url": "https://reliefweb.int/disaster/dr-2026-000178-idn",
+          "source": "ReliefWeb"
+        }
+      ],
+      "sourceCount": 4
     },
     {
       "links": [
