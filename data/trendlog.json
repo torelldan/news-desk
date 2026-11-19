@@ -1614,11 +1614,11 @@
       "topic": "windstorm"
     },
     {
-      "count": 3,
+      "count": 2,
       "countries": 1,
       "date": "2026-11-19",
       "keywords": [],
-      "outlets": 3,
+      "outlets": 2,
       "score": 0,
       "severity": "ALERT",
       "topic": "attack"
@@ -1652,6 +1652,16 @@
       "score": 0,
       "severity": "ALERT",
       "topic": "cyber"
+    },
+    {
+      "count": 1,
+      "countries": 1,
+      "date": "2026-11-19",
+      "keywords": [],
+      "outlets": 1,
+      "score": 0,
+      "severity": "ALERT",
+      "topic": "diplomacy"
     },
     {
       "count": 7,
@@ -1704,14 +1714,44 @@
       "topic": "relief"
     },
     {
-      "count": 3,
+      "count": 4,
       "countries": 1,
       "date": "2026-11-19",
       "keywords": [],
-      "outlets": 3,
+      "outlets": 4,
+      "score": 0,
+      "severity": "ALERT",
+      "topic": "usgov"
+    },
+    {
+      "count": 4,
+      "countries": 1,
+      "date": "2026-11-19",
+      "keywords": [],
+      "outlets": 4,
+      "score": 0,
+      "severity": "ALERT",
+      "topic": "war-iran"
+    },
+    {
+      "count": 4,
+      "countries": 1,
+      "date": "2026-11-19",
+      "keywords": [],
+      "outlets": 4,
       "score": 0,
       "severity": "ALERT",
       "topic": "war-ukraine"
+    },
+    {
+      "count": 4,
+      "countries": 1,
+      "date": "2026-11-19",
+      "keywords": [],
+      "outlets": 4,
+      "score": 0,
+      "severity": "ALERT",
+      "topic": "who"
     },
     {
       "count": 1,
@@ -3444,11 +3484,11 @@
       "topic": "windstorm"
     },
     {
-      "count": 3,
+      "count": 2,
       "countries": 1,
       "date": "2026-11-19",
       "keywords": [],
-      "outlets": 3,
+      "outlets": 2,
       "score": 0,
       "severity": "ALERT",
       "topic": "attack"
@@ -3482,6 +3522,16 @@
       "score": 0,
       "severity": "ALERT",
       "topic": "cyber"
+    },
+    {
+      "count": 1,
+      "countries": 1,
+      "date": "2026-11-19",
+      "keywords": [],
+      "outlets": 1,
+      "score": 0,
+      "severity": "ALERT",
+      "topic": "diplomacy"
     },
     {
       "count": 7,
@@ -3534,14 +3584,44 @@
       "topic": "relief"
     },
     {
-      "count": 3,
+      "count": 4,
       "countries": 1,
       "date": "2026-11-19",
       "keywords": [],
-      "outlets": 3,
+      "outlets": 4,
+      "score": 0,
+      "severity": "ALERT",
+      "topic": "usgov"
+    },
+    {
+      "count": 4,
+      "countries": 1,
+      "date": "2026-11-19",
+      "keywords": [],
+      "outlets": 4,
+      "score": 0,
+      "severity": "ALERT",
+      "topic": "war-iran"
+    },
+    {
+      "count": 4,
+      "countries": 1,
+      "date": "2026-11-19",
+      "keywords": [],
+      "outlets": 4,
       "score": 0,
       "severity": "ALERT",
       "topic": "war-ukraine"
+    },
+    {
+      "count": 4,
+      "countries": 1,
+      "date": "2026-11-19",
+      "keywords": [],
+      "outlets": 4,
+      "score": 0,
+      "severity": "ALERT",
+      "topic": "who"
     },
     {
       "count": 1,

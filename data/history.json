@@ -7092,7 +7092,7 @@
     },
     {
       "date": "2026-11-19",
-      "label": "Nov 19, 2026 7:29 AM CT",
+      "label": "Nov 19, 2026 8:58 AM CT",
       "outlooks": [
         {
           "id": "quake:1eb36ed394438d89",
@@ -7165,7 +7165,7 @@
           "severity": "ALERT"
         },
         {
-          "id": "gdacs:e6539726ab6933f3",
+          "id": "gdacs:1eac886864d7a581",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "STANDBY"
         },
@@ -7240,6 +7240,31 @@
           "severity": "STANDBY"
         },
         {
+          "id": "who:0347bc994bb6a179",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "who:10253c286a612334",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "who:89e94b5faca21e80",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "who:117e252933977e80",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "cyber:6219ff51ce170fc1",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
           "id": "cyber:029d7923afce9ede",
           "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
           "severity": "ALERT"
@@ -7275,6 +7300,11 @@
           "severity": "STANDBY"
         },
         {
+          "id": "cyber:155f1de6b4673b95",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
           "id": "cyber:33abd4fd69af7eb4",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "STANDBY"
@@ -7290,11 +7320,6 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:da5e61b9215c4bb3",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "STANDBY"
-        },
-        {
           "id": "headline:53f878dbd68ccaaa",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "STANDBY"
@@ -7305,28 +7330,58 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:19dcf945a054857d",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "STANDBY"
-        },
-        {
           "id": "headline:b11f14b4fd88486f",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
         {
-          "id": "headline:aee0775d994972a4",
+          "id": "headline:071be1d8e25eccda",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
         {
-          "id": "headline:634711115a2d23fa",
+          "id": "headline:d4348496413bda52",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:f975d6dbbccc6de8",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:314f9dd5d0dad6b6",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:266df09b66953b11",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:367c6f0596cf799e",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:c94b9849d1024953",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
         {
           "id": "headline:e9bea024fcae8468",
           "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:e52983d467198ea1",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:8cb96b3b99d6a26c",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
           "severity": "ALERT"
         },
         {
@@ -7341,6 +7396,16 @@
         },
         {
           "id": "headline:93bb9cea5bbd5698",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:64f0432cb0c132de",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:01c3a0ebe0cee24f",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "STANDBY"
         },
@@ -7476,7 +7541,7 @@
           "title": "M6.6 148 km WSW of Tual, Indonesia"
         },
         {
-          "id": "gdacs:e6539726ab6933f3",
+          "id": "gdacs:1eac886864d7a581",
           "kind": "gdacs",
           "severity": "STANDBY",
           "title": "Tropical Cyclone AKVAN-26"
@@ -7566,6 +7631,36 @@
           "title": "Philippines: Floods - Aug 2026"
         },
         {
+          "id": "who:0347bc994bb6a179",
+          "kind": "who",
+          "severity": "ALERT",
+          "title": "Chikungunya virus disease - Switzerland"
+        },
+        {
+          "id": "who:10253c286a612334",
+          "kind": "who",
+          "severity": "STANDBY",
+          "title": "Middle East respiratory syndrome (MERS) – Qatar"
+        },
+        {
+          "id": "who:89e94b5faca21e80",
+          "kind": "who",
+          "severity": "STANDBY",
+          "title": "Ebola disease caused by Bundibugyo virus - Democratic Republic of the Congo, Kenya and Nigeria"
+        },
+        {
+          "id": "who:117e252933977e80",
+          "kind": "who",
+          "severity": "STANDBY",
+          "title": "Yellow fever - WHO African Region"
+        },
+        {
+          "id": "cyber:6219ff51ce170fc1",
+          "kind": "cyber",
+          "severity": "ALERT",
+          "title": "Ukraine exposes ransomware network extorting US oil, healthcare firms"
+        },
+        {
           "id": "cyber:029d7923afce9ede",
           "kind": "cyber",
           "severity": "ALERT",
@@ -7608,6 +7703,12 @@
           "title": "CVE-2026-114713 UnrealIRCd Improper Neutralization of Delimiters Vulnerability"
         },
         {
+          "id": "cyber:155f1de6b4673b95",
+          "kind": "cyber",
+          "severity": "STANDBY",
+          "title": "Nvidia Responds to Gentlemen Ransomware Claim"
+        },
+        {
           "id": "cyber:33abd4fd69af7eb4",
           "kind": "cyber",
           "severity": "STANDBY",
@@ -7626,12 +7727,6 @@
           "title": "Optimizely confirms massive cyberattack on customer websites injected stealer malware - CSO Online"
         },
         {
-          "id": "headline:da5e61b9215c4bb3",
-          "kind": "cyber",
-          "severity": "STANDBY",
-          "title": "Charleston Co. investigating potential cyberattack after data removed from systems - Live 5 News"
-        },
-        {
           "id": "headline:53f878dbd68ccaaa",
           "kind": "cyber",
           "severity": "STANDBY",
@@ -7644,34 +7739,70 @@
           "title": "Some of the world’s most-visited websites targeted by cyberattack - WBAL-TV"
         },
         {
-          "id": "headline:19dcf945a054857d",
-          "kind": "cyber",
-          "severity": "STANDBY",
-          "title": "Google says Russian-speaking hackers ran the first fully automated AI cyberattack - CyberScoop"
-        },
-        {
           "id": "headline:b11f14b4fd88486f",
           "kind": "attack",
           "severity": "ALERT",
           "title": "York victim of Krakow attack on his way home, family confirms - BBC"
         },
         {
-          "id": "headline:aee0775d994972a4",
-          "kind": "war-ukraine",
+          "id": "headline:071be1d8e25eccda",
+          "kind": "war-iran",
           "severity": "ALERT",
-          "title": "Two-Thirds of Americans Disapprove of Trump’s Handling of the Russia-Ukraine War - Pew Research Center"
+          "title": "Iran Update, November 18, 2026 - Institute for the Study of War"
         },
         {
-          "id": "headline:634711115a2d23fa",
-          "kind": "attack",
+          "id": "headline:d4348496413bda52",
+          "kind": "war-iran",
           "severity": "ALERT",
-          "title": "At least 6 killed, several injured in shooting at Polish market square: Police - ABC News - Breaking News, Latest News and Videos"
+          "title": "Mideast nations ramp up efforts to avert all-out war as Israel urges Iran strikes, officials say - AP News"
+        },
+        {
+          "id": "headline:f975d6dbbccc6de8",
+          "kind": "diplomacy",
+          "severity": "ALERT",
+          "title": "G7 Foreign Ministers' meeting: Press remarks by the High Representative/Vice-President Kaja Kallas upon arrival - European External Action Service (EEAS)"
+        },
+        {
+          "id": "headline:314f9dd5d0dad6b6",
+          "kind": "usgov",
+          "severity": "ALERT",
+          "title": "Democrats flipped 9 U.S. Senate seats — the most in almost 70 years - PBS"
+        },
+        {
+          "id": "headline:266df09b66953b11",
+          "kind": "war-ukraine",
+          "severity": "ALERT",
+          "title": "Dispatch from Kyiv: Let Ukraine strike Russia’s missile launchers at the source - Atlantic Council"
+        },
+        {
+          "id": "headline:367c6f0596cf799e",
+          "kind": "usgov",
+          "severity": "ALERT",
+          "title": "The Supreme Court before it stood apart - SCOTUSblog"
+        },
+        {
+          "id": "headline:c94b9849d1024953",
+          "kind": "usgov",
+          "severity": "ALERT",
+          "title": "Secretary of State Marco Rubio on Major Technical Failures & Outage Incidents - C-SPAN"
         },
         {
           "id": "headline:e9bea024fcae8468",
           "kind": "war-ukraine",
           "severity": "ALERT",
           "title": "Ukraine: Civilian casualties in 2026 already far exceed previous years’ tolls - UN News"
+        },
+        {
+          "id": "headline:e52983d467198ea1",
+          "kind": "war-ukraine",
+          "severity": "ALERT",
+          "title": "Remarks by Under Secretary of War for Policy Elbridge Colby at the Ukraine Defense Contact Group (As Delivered) - U.S. Department of War (.gov)"
+        },
+        {
+          "id": "headline:8cb96b3b99d6a26c",
+          "kind": "war-iran",
+          "severity": "ALERT",
+          "title": "Iran fires at U.S. facility in Bahrain as Tehran resumes strikes on Arab neighbors - PBS"
         },
         {
           "id": "headline:59cd8f41c7885220",
@@ -7690,6 +7821,18 @@
           "kind": "israel",
           "severity": "STANDBY",
           "title": "Can Netanyahu and Eisenkot form a ‘unity’ government in Israel? - Al Jazeera"
+        },
+        {
+          "id": "headline:64f0432cb0c132de",
+          "kind": "usgov",
+          "severity": "STANDBY",
+          "title": "The History of Electricity at the White House - Department of Energy (.gov)"
+        },
+        {
+          "id": "headline:01c3a0ebe0cee24f",
+          "kind": "war-iran",
+          "severity": "STANDBY",
+          "title": "Democrats mulling Iran war funding cutoff strategy - Roll Call"
         },
         {
           "id": "headline:42774c269809659e",
@@ -7747,6 +7890,16 @@
         }
       ],
       "trends": [
+        {
+          "category": "iran-war",
+          "name": "iran war",
+          "volume": null
+        },
+        {
+          "category": "us-gov",
+          "name": "us gov",
+          "volume": null
+        },
         {
           "category": "ukraine-war",
           "name": "ukraine war",
