@@ -1370,7 +1370,15 @@ function renderStrikes() {
   if (!items.length && !(doc.gaps || []).length) return "";
   const counts = doc.counts || {};
   const summary = `7-day strikes · ${esc(String(counts.total || items.length))} · energy ${esc(String(counts.energy || 0))}`;
-  const lines = items.map((item) => `<p class="meta"><span class="sev sev-${esc(String(item.severity || "standby").toLowerCase())}">${esc(item.severity || "STANDBY")}</span> ${esc(item.date || "")} · ${esc(item.country || "")} · ${esc(item.target_type || "")} · ${esc(item.title || "")}${item.confirmed ? " · confirmed" : ""}${item.related ? " · +" + esc(String(item.related)) + " related" : ""}</p>`).join("");
+  const lines = items.map((item) => {
+    const links = (item.links || []).slice(0, 3).map((sample) => {
+      const url = safeUrl(sample.url);
+      const label = sample.source || sample.title || "source";
+      return url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(label)}</a>` : esc(label);
+    }).filter(Boolean).join(" · ");
+    const count = item.sourceCount ? ` · ${esc(String(item.sourceCount))} sources` : "";
+    return `<p class="meta"><span class="sev sev-${esc(String(item.severity || "standby").toLowerCase())}">${esc(item.severity || "STANDBY")}</span> ${esc(item.date || "")} · ${esc(item.country || "")} · ${esc(item.target_type || "")} · ${esc(item.title || "")}${count}${links ? " · " + links : ""}</p>`;
+  }).join("");
   const gaps = (doc.gaps || []).map((gap) => `<p class="meta">Source down: ${esc(gap)}</p>`).join("");
   return `<article class="card"><div class="head"><span class="sev sev-standby">STANDBY</span></div><h3>Strikes and explosions</h3><p>${summary}</p>${lines}${gaps}</article>`;
 }
