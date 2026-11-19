@@ -1,50 +1,62 @@
 {
+  "counts": {
+    "energy": 1,
+    "total": 8
+  },
+  "gaps": [],
   "items": [
     {
       "country": "Saudi Arabia",
       "date": "2026-11-19",
+      "links": [
+        {
+          "source": "AP News",
+          "title": "Damage from missile attack reported in Riyadh’s financial district, and other Mideast news - AP News",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPWGRFYnRQN1pwV2JiVkRBSGdIY2RDN3hoVnJvTDg3YVpzV2JjNjVMRkVOLVdfNU9yeVZxR0tpV3ZhUU1OSXVMemxUOXBvWVNUMDJGb2Rxa0VRTGxWU0hsSVNvNEdYUVpydDlpNFh2NzVpWXhCWVNSQVJ4OUxoR0ZGS0Q0WTFWNFE0Si11U1FqRnFWZkRlN1haWC1vaHR6Zw?oc=5"
+        }
+      ],
       "means": "missile",
       "published": "2026-11-19T08:39:00-06:00",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
       "source": "AP News",
+      "sourceCount": 1,
       "target_type": "military",
       "title": "Damage from missile attack reported in Riyadh’s financial district, and other Mideast news - AP News",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPWGRFYnRQN1pwV2JiVkRBSGdIY2RDN3hoVnJvTDg3YVpzV2JjNjVMRkVOLVdfNU9yeVZxR0tpV3ZhUU1OSXVMemxUOXBvWVNUMDJGb2Rxa0VRTGxWU0hsSVNvNEdYUVpydDlpNFh2NzVpWXhCWVNSQVJ4OUxoR0ZGS0Q0WTFWNFE0Si11U1FqRnFWZkRlN1haWC1vaHR6Zw?oc=5",
-      "links": [
-        {
-          "title": "Damage from missile attack reported in Riyadh’s financial district, and other Mideast news - AP News",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPWGRFYnRQN1pwV2JiVkRBSGdIY2RDN3hoVnJvTDg3YVpzV2JjNjVMRkVOLVdfNU9yeVZxR0tpV3ZhUU1OSXVMemxUOXBvWVNUMDJGb2Rxa0VRTGxWU0hsSVNvNEdYUVpydDlpNFh2NzVpWXhCWVNSQVJ4OUxoR0ZGS0Q0WTFWNFE0Si11U1FqRnFWZkRlN1haWC1vaHR6Zw?oc=5",
-          "source": "AP News"
-        }
-      ],
-      "sourceCount": 1
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPWGRFYnRQN1pwV2JiVkRBSGdIY2RDN3hoVnJvTDg3YVpzV2JjNjVMRkVOLVdfNU9yeVZxR0tpV3ZhUU1OSXVMemxUOXBvWVNUMDJGb2Rxa0VRTGxWU0hsSVNvNEdYUVpydDlpNFh2NzVpWXhCWVNSQVJ4OUxoR0ZGS0Q0WTFWNFE0Si11U1FqRnFWZkRlN1haWC1vaHR6Zw?oc=5"
     },
     {
       "country": "Russia",
       "date": "2026-11-18",
+      "links": [
+        {
+          "source": "Reuters",
+          "title": "EXCLUSIVE: Drone attacks nearly halve Russia's November oil refining, sources say - Reuters",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQOWZxREZPaThlNEtsN1Z2V2s3bVpMbkpiOEYyV19nS2paZndRczh0SG5pcURzTmFSMzYyNDlPbDJFRTIwZTBScFpSLUVrMDNtWm9xMndPT1JHdk00WTFNVlZOdGE1LS1TdHJJX0hsMXI4eEV2cEhEVTkzWVp6ZkNxWVdMbl9lS2FqRnl3TWlEbnRDb1NqLU1iYmtvSkxDa19GWEJpckk1bEI3U09TcDdvQ1ViS25jRXZTZ1U5RA?oc=5"
+        }
+      ],
       "means": "drone",
       "published": "2026-11-18T09:10:58-06:00",
       "related": 0,
       "relatedSources": [],
       "severity": "STANDBY",
       "source": "Reuters",
+      "sourceCount": 1,
       "target_type": "energy",
       "title": "EXCLUSIVE: Drone attacks nearly halve Russia's November oil refining, sources say - Reuters",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQOWZxREZPaThlNEtsN1Z2V2s3bVpMbkpiOEYyV19nS2paZndRczh0SG5pcURzTmFSMzYyNDlPbDJFRTIwZTBScFpSLUVrMDNtWm9xMndPT1JHdk00WTFNVlZOdGE1LS1TdHJJX0hsMXI4eEV2cEhEVTkzWVp6ZkNxWVdMbl9lS2FqRnl3TWlEbnRDb1NqLU1iYmtvSkxDa19GWEJpckk1bEI3U09TcDdvQ1ViS25jRXZTZ1U5RA?oc=5",
-      "links": [
-        {
-          "title": "EXCLUSIVE: Drone attacks nearly halve Russia's November oil refining, sources say - Reuters",
-          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQOWZxREZPaThlNEtsN1Z2V2s3bVpMbkpiOEYyV19nS2paZndRczh0SG5pcURzTmFSMzYyNDlPbDJFRTIwZTBScFpSLUVrMDNtWm9xMndPT1JHdk00WTFNVlZOdGE1LS1TdHJJX0hsMXI4eEV2cEhEVTkzWVp6ZkNxWVdMbl9lS2FqRnl3TWlEbnRDb1NqLU1iYmtvSkxDa19GWEJpckk1bEI3U09TcDdvQ1ViS25jRXZTZ1U5RA?oc=5",
-          "source": "Reuters"
-        }
-      ],
-      "sourceCount": 1
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQOWZxREZPaThlNEtsN1Z2V2s3bVpMbkpiOEYyV19nS2paZndRczh0SG5pcURzTmFSMzYyNDlPbDJFRTIwZTBScFpSLUVrMDNtWm9xMndPT1JHdk00WTFNVlZOdGE1LS1TdHJJX0hsMXI4eEV2cEhEVTkzWVp6ZkNxWVdMbl9lS2FqRnl3TWlEbnRDb1NqLU1iYmtvSkxDa19GWEJpckk1bEI3U09TcDdvQ1ViS25jRXZTZ1U5RA?oc=5"
     },
     {
       "country": "Bahrain",
       "date": "2026-11-18",
+      "links": [
+        {
+          "source": "WSJ",
+          "title": "Iran Attacks Kuwait and Bahrain, Further Escalating Fight Over Strait - WSJ",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNcGVKcXlHY1EycS1qaFBrcVduLWwzS1B4RmhJeDg5eFlxR0FIeVNFclFqZVczdXFBVGVLa0xpcHZXZkVWa3JEeHJxVXA5YWxVa3YtejhlaHd1T1JmWDd1NHp3V1E1SEdsS0tkOEc2bVpZNER2elNveGdNTk9xanNjSDZZM2NwSXhULUVPSk84TW1JRFJUbkRRZVBYN2JHd0NnQkYxN0hhVDhVaVYzUEtlTGUwUUpuZw?oc=5"
+        }
+      ],
       "means": "",
       "published": "2026-11-18T08:56:00-06:00",
       "related": 1,
@@ -53,21 +65,21 @@
       ],
       "severity": "STANDBY",
       "source": "WSJ",
+      "sourceCount": 2,
       "target_type": "military",
       "title": "Iran Attacks Kuwait and Bahrain, Further Escalating Fight Over Strait - WSJ",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNcGVKcXlHY1EycS1qaFBrcVduLWwzS1B4RmhJeDg5eFlxR0FIeVNFclFqZVczdXFBVGVLa0xpcHZXZkVWa3JEeHJxVXA5YWxVa3YtejhlaHd1T1JmWDd1NHp3V1E1SEdsS0tkOEc2bVpZNER2elNveGdNTk9xanNjSDZZM2NwSXhULUVPSk84TW1JRFJUbkRRZVBYN2JHd0NnQkYxN0hhVDhVaVYzUEtlTGUwUUpuZw?oc=5",
-      "links": [
-        {
-          "title": "Iran Attacks Kuwait and Bahrain, Further Escalating Fight Over Strait - WSJ",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNcGVKcXlHY1EycS1qaFBrcVduLWwzS1B4RmhJeDg5eFlxR0FIeVNFclFqZVczdXFBVGVLa0xpcHZXZkVWa3JEeHJxVXA5YWxVa3YtejhlaHd1T1JmWDd1NHp3V1E1SEdsS0tkOEc2bVpZNER2elNveGdNTk9xanNjSDZZM2NwSXhULUVPSk84TW1JRFJUbkRRZVBYN2JHd0NnQkYxN0hhVDhVaVYzUEtlTGUwUUpuZw?oc=5",
-          "source": "WSJ"
-        }
-      ],
-      "sourceCount": 2
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNcGVKcXlHY1EycS1qaFBrcVduLWwzS1B4RmhJeDg5eFlxR0FIeVNFclFqZVczdXFBVGVLa0xpcHZXZkVWa3JEeHJxVXA5YWxVa3YtejhlaHd1T1JmWDd1NHp3V1E1SEdsS0tkOEc2bVpZNER2elNveGdNTk9xanNjSDZZM2NwSXhULUVPSk84TW1JRFJUbkRRZVBYN2JHd0NnQkYxN0hhVDhVaVYzUEtlTGUwUUpuZw?oc=5"
     },
     {
       "country": "Iran",
       "date": "2026-11-18",
+      "links": [
+        {
+          "source": "Time Magazine",
+          "title": "U.S. Strikes Qeshm Island as Vance Says Iran Won’t Become ‘Forever War’ - Time Magazine",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOQ2ZfMmFJTUpGeWlETnhsTjZDY1NEeXlJdW5Hbkl2c3ZrRmtFcGtnaWVGTTVqejMwRGgtd3RyUWVmdkxmcHdoclB3anU2MjZVR3ZJYnNrSHR6ejZaQ0w1a043VVpiUllXV3AyYUdFQ3pXOW92S1A2THJfT3dmVFNqNU9vLXUwY3JYRENOaE42X1U?oc=5"
+        }
+      ],
       "means": "",
       "published": "2026-11-18T04:15:44-06:00",
       "related": 1,
@@ -76,120 +88,133 @@
       ],
       "severity": "STANDBY",
       "source": "Time Magazine",
+      "sourceCount": 2,
       "target_type": "military",
       "title": "U.S. Strikes Qeshm Island as Vance Says Iran Won’t Become ‘Forever War’ - Time Magazine",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOQ2ZfMmFJTUpGeWlETnhsTjZDY1NEeXlJdW5Hbkl2c3ZrRmtFcGtnaWVGTTVqejMwRGgtd3RyUWVmdkxmcHdoclB3anU2MjZVR3ZJYnNrSHR6ejZaQ0w1a043VVpiUllXV3AyYUdFQ3pXOW92S1A2THJfT3dmVFNqNU9vLXUwY3JYRENOaE42X1U?oc=5",
-      "links": [
-        {
-          "title": "U.S. Strikes Qeshm Island as Vance Says Iran Won’t Become ‘Forever War’ - Time Magazine",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOQ2ZfMmFJTUpGeWlETnhsTjZDY1NEeXlJdW5Hbkl2c3ZrRmtFcGtnaWVGTTVqejMwRGgtd3RyUWVmdkxmcHdoclB3anU2MjZVR3ZJYnNrSHR6ejZaQ0w1a043VVpiUllXV3AyYUdFQ3pXOW92S1A2THJfT3dmVFNqNU9vLXUwY3JYRENOaE42X1U?oc=5",
-          "source": "Time Magazine"
-        }
-      ],
-      "sourceCount": 2
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOQ2ZfMmFJTUpGeWlETnhsTjZDY1NEeXlJdW5Hbkl2c3ZrRmtFcGtnaWVGTTVqejMwRGgtd3RyUWVmdkxmcHdoclB3anU2MjZVR3ZJYnNrSHR6ejZaQ0w1a043VVpiUllXV3AyYUdFQ3pXOW92S1A2THJfT3dmVFNqNU9vLXUwY3JYRENOaE42X1U?oc=5"
     },
     {
       "country": "Kuwait",
       "date": "2026-11-17",
+      "links": [
+        {
+          "source": "CNBC",
+          "title": "Iran says army targets U.S. drone and missile sites in Kuwait as Gulf attacks mount - CNBC",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE0zaVp2b1pwY2FLSDN0b0VfZGRjQk1LSjJuSVE5QjduTXU4c2REYS1YeGJDM05lYkNtTGM3LVkwRDVSaFNLWEVNR2VwUnFUUTh5eUJFYnI4T2QzMzZYRjlZV1kxdWJBUW5FODk0R0ZsaG_SAXZBVV95cUxQN3lsMm1BeEpJNlRTYWloUEYwT1hiWFp5T0x4SXRUc2lkeER0VzFLUDFBS2YzN3IzMEFabHVJaTNmWHBSWTdqOXdDZXFzLWptSHA3bVlsTV9fU2xtNXB6a0lHd0xNa2JTVnJVNDV6eTh2c1kyUWJ3?oc=5"
+        },
+        {
+          "source": "Anadolu Ajansı",
+          "title": "Iranian army says drone strikes targeted US installations at Kuwait air base - Anadolu Ajansı",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQUmMydHlnY3lrT0toOWpGbWVzNjRXWTRVaDNsMFZSNDA3X05MUnF3MElyWGIxb0xOZmJBaUdzU2U3R05HSEtxQ3pVaDNhdFFiSlIxeTBDcS1oZ3p5Q0dlMW42c2RONFZQc2FTMWluR0pBZnR3UDJ6ZVFKZmdOMzJFUm4weUhJdTRDaE00NzZIZFk0SDVCZGlWQXhhSTZoSFBfMFBfbGhDLVJsTlNHMk1qVTRvQThZdzRHeHQ4c2Jn?oc=5"
+        },
+        {
+          "source": "Al Jazeera",
+          "title": "Whistleblower: Deadly drone strike in Kuwait could’ve been avoided - Al Jazeera",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQVUdMNjI4Y2tNSGdkSWM2TkstSWlYclBHUElUUEYzb2h5LWV3aUFQME9lenFyOXVIS1ZFd0RrdGpKMTNfZ1FWaUREQ2ZkUlBxSGFJa1dwTjNYVzluclpySXl6ejFmOFZPNl9GU2U2RXEwd2VaeHBiTHBtRHJxa1NWMlA1dkdOWUxyMTZicUVOR1pCLW1TSk5oQ1d4MTdSZThKd01vb3dQN21SUdIBrwFBVV95cUxOSVI4NXBIckowYlo2VzZDY0V5aEpoR2RqMm1lVUlSbnNTeFpmb1ZCOGh5SFNwcWJtRzhJbHM2aG9FLTZvV2s3UVNoXzRNREtnRUdTbUJaaWlObzRMOWdSSFlmVjBrRDN2WVdPNHJmTldWTVNmMjVvOGl4VlVnV19tQi1QWDB2eGdwUVdfZVZlQ2MxbVFPQkdoRGVsLU0wLUN5UlYxWUtaVU1XNjRqb0pN?oc=5"
+        }
+      ],
       "means": "drone",
       "published": "2026-11-17T23:24:54-06:00",
-      "related": 1,
+      "related": 2,
       "relatedSources": [
-        "Anadolu Ajansı"
+        "Anadolu Ajansı",
+        "Al Jazeera"
       ],
       "severity": "STANDBY",
       "source": "CNBC",
+      "sourceCount": 3,
       "target_type": "military",
       "title": "Iran says army targets U.S. drone and missile sites in Kuwait as Gulf attacks mount - CNBC",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE0zaVp2b1pwY2FLSDN0b0VfZGRjQk1LSjJuSVE5QjduTXU4c2REYS1YeGJDM05lYkNtTGM3LVkwRDVSaFNLWEVNR2VwUnFUUTh5eUJFYnI4T2QzMzZYRjlZV1kxdWJBUW5FODk0R0ZsaG_SAXZBVV95cUxQN3lsMm1BeEpJNlRTYWloUEYwT1hiWFp5T0x4SXRUc2lkeER0VzFLUDFBS2YzN3IzMEFabHVJaTNmWHBSWTdqOXdDZXFzLWptSHA3bVlsTV9fU2xtNXB6a0lHd0xNa2JTVnJVNDV6eTh2c1kyUWJ3?oc=5",
-      "links": [
-        {
-          "title": "Iran says army targets U.S. drone and missile sites in Kuwait as Gulf attacks mount - CNBC",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE0zaVp2b1pwY2FLSDN0b0VfZGRjQk1LSjJuSVE5QjduTXU4c2REYS1YeGJDM05lYkNtTGM3LVkwRDVSaFNLWEVNR2VwUnFUUTh5eUJFYnI4T2QzMzZYRjlZV1kxdWJBUW5FODk0R0ZsaG_SAXZBVV95cUxQN3lsMm1BeEpJNlRTYWloUEYwT1hiWFp5T0x4SXRUc2lkeER0VzFLUDFBS2YzN3IzMEFabHVJaTNmWHBSWTdqOXdDZXFzLWptSHA3bVlsTV9fU2xtNXB6a0lHd0xNa2JTVnJVNDV6eTh2c1kyUWJ3?oc=5",
-          "source": "CNBC"
-        },
-        {
-          "title": "Iranian army says drone strikes targeted US installations at Kuwait air base - Anadolu Ajansı",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQUmMydHlnY3lrT0toOWpGbWVzNjRXWTRVaDNsMFZSNDA3X05MUnF3MElyWGIxb0xOZmJBaUdzU2U3R05HSEtxQ3pVaDNhdFFiSlIxeTBDcS1oZ3p5Q0dlMW42c2RONFZQc2FTMWluR0pBZnR3UDJ6ZVFKZmdOMzJFUm4weUhJdTRDaE00NzZIZFk0SDVCZGlWQXhhSTZoSFBfMFBfbGhDLVJsTlNHMk1qVTRvQThZdzRHeHQ4c2Jn?oc=5",
-          "source": "Anadolu Ajansı"
-        }
-      ],
-      "sourceCount": 2
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE0zaVp2b1pwY2FLSDN0b0VfZGRjQk1LSjJuSVE5QjduTXU4c2REYS1YeGJDM05lYkNtTGM3LVkwRDVSaFNLWEVNR2VwUnFUUTh5eUJFYnI4T2QzMzZYRjlZV1kxdWJBUW5FODk0R0ZsaG_SAXZBVV95cUxQN3lsMm1BeEpJNlRTYWloUEYwT1hiWFp5T0x4SXRUc2lkeER0VzFLUDFBS2YzN3IzMEFabHVJaTNmWHBSWTdqOXdDZXFzLWptSHA3bVlsTV9fU2xtNXB6a0lHd0xNa2JTVnJVNDV6eTh2c1kyUWJ3?oc=5"
     },
     {
       "country": "Sudan",
       "date": "2026-11-17",
-      "means": "drone",
-      "published": "2026-11-17T22:23:13-06:00",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "STANDBY",
-      "source": "Amnesty International",
-      "target_type": "military",
-      "title": "Sudan: Devastating RSF drone strikes on civilians in El Obeid should be investigated as war crimes - Amnesty International",
-      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNUFpid0xiQWpmdzhSc3VaZzhlWTlzLVo4dDVrUWU3RFpNcU9mSm93b1o1ZU1CWTBWLWRnNkhMTFl5VFRNUnlmRjZkV0w1ZFM2QkFxLXgzMl9wcTJycVJrNXIwZmpxdWJsSnoxSWFJXzBJQlNURE9GNm5hV2FIa3RFZm9mc3luUmtfMWV2TlowdzFyWW04OGNWQkVlYVRIei1TaU83RnJ0M2lXNzZCLW5hXzJPY1F0QzZiU2lZeWdJX1IyLUxDTkxQdVl2a2wzcllNSWZ4UHNaQUNvSzhUVXc?oc=5",
       "links": [
         {
+          "source": "Amnesty International",
           "title": "Sudan: Devastating RSF drone strikes on civilians in El Obeid should be investigated as war crimes - Amnesty International",
-          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNUFpid0xiQWpmdzhSc3VaZzhlWTlzLVo4dDVrUWU3RFpNcU9mSm93b1o1ZU1CWTBWLWRnNkhMTFl5VFRNUnlmRjZkV0w1ZFM2QkFxLXgzMl9wcTJycVJrNXIwZmpxdWJsSnoxSWFJXzBJQlNURE9GNm5hV2FIa3RFZm9mc3luUmtfMWV2TlowdzFyWW04OGNWQkVlYVRIei1TaU83RnJ0M2lXNzZCLW5hXzJPY1F0QzZiU2lZeWdJX1IyLUxDTkxQdVl2a2wzcllNSWZ4UHNaQUNvSzhUVXc?oc=5",
-          "source": "Amnesty International"
+          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNUFpid0xiQWpmdzhSc3VaZzhlWTlzLVo4dDVrUWU3RFpNcU9mSm93b1o1ZU1CWTBWLWRnNkhMTFl5VFRNUnlmRjZkV0w1ZFM2QkFxLXgzMl9wcTJycVJrNXIwZmpxdWJsSnoxSWFJXzBJQlNURE9GNm5hV2FIa3RFZm9mc3luUmtfMWV2TlowdzFyWW04OGNWQkVlYVRIei1TaU83RnJ0M2lXNzZCLW5hXzJPY1F0QzZiU2lZeWdJX1IyLUxDTkxQdVl2a2wzcllNSWZ4UHNaQUNvSzhUVXc?oc=5"
+        },
+        {
+          "source": "ohchr",
+          "title": "Sudan: UN report details deadly civilian impact of surge in drone strikes - ohchr",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNaGd3azRqVktOWnE5eEg5U1A5c01ZT25ORXNQRmVHRFZUR3N4Nmh4OXUxSmgzRnNHeU1uQXdHREpGdlEwNW1oNXVqc1lzcHNNU2FrWU5zQm9oMUxtYVQ1NHNjcFp3UFR6STAzMHV1eGR6OFVSd2wtZG1YbmZ6SUVTWU9aLUJoVWFNeTAxSGVESVBnMUpqR0hjZnhncXcwLS1FUElQU09yRDBvNmhEckdlZF9TZHU?oc=5"
         }
       ],
-      "sourceCount": 1
+      "means": "drone",
+      "published": "2026-11-17T22:23:13-06:00",
+      "related": 1,
+      "relatedSources": [
+        "ohchr"
+      ],
+      "severity": "STANDBY",
+      "source": "Amnesty International",
+      "sourceCount": 2,
+      "target_type": "military",
+      "title": "Sudan: Devastating RSF drone strikes on civilians in El Obeid should be investigated as war crimes - Amnesty International",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNUFpid0xiQWpmdzhSc3VaZzhlWTlzLVo4dDVrUWU3RFpNcU9mSm93b1o1ZU1CWTBWLWRnNkhMTFl5VFRNUnlmRjZkV0w1ZFM2QkFxLXgzMl9wcTJycVJrNXIwZmpxdWJsSnoxSWFJXzBJQlNURE9GNm5hV2FIa3RFZm9mc3luUmtfMWV2TlowdzFyWW04OGNWQkVlYVRIei1TaU83RnJ0M2lXNzZCLW5hXzJPY1F0QzZiU2lZeWdJX1IyLUxDTkxQdVl2a2wzcllNSWZ4UHNaQUNvSzhUVXc?oc=5"
     },
     {
       "country": "Bahrain",
       "date": "2026-11-17",
+      "links": [
+        {
+          "source": "Al Jazeera",
+          "title": "Kuwait reports drone attacks as Iran, US trade attacks on Qeshm and Bahrain - Al Jazeera",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPU3NxaFU3RUpkTklaRUU5NkxhTjZ6aHhYOWl4WG9PQUh1dWp6ck9qdkJhc3FHMjN5cUhWSzF6OWFmZnE5MXQ3U0RKd2RmeXdvZUZ3Qjk4VzFEM0tka3dOai1IVWZFY0VaVlVHS3d2NkdyeDU3UHZEY2tMbV85ZEVldUhRSG1SS2VwZ1c1ck4wNE1HbU81WXluYU5KRUN0NmRFdVJRNWI5MFpreDR4eGNaQkgtMVg3SjjSAbwBQVVfeXFMUDFvNkpucUdWODBUZW5kV01tbDNjaGVlYWp6a2NtdktFQVJpVW9mTjJFWEhWWm1LQlIwcW5tVVozb0FpUWl5TEd1VkstTFh2S2VXRi1YLWdxcl9TaF9XcjFhLUNHb291ZkxHY210TENUclk4WjNlZml0Y1hDbnBBRURzTm1ORjl4a0hWUFVGWUVJbFNwUksyUDJ0ZmtBZWRiZV9pNTJ4QndvRGVMNzVtVW5VQ3J6azQ3c3lJcVc?oc=5"
+        },
+        {
+          "source": "Air & Space Forces Magazine",
+          "title": "US Fighters Strike Iranian Missile Site After Base in Bahrain Targeted - Air & Space Forces Magazine",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5QSGpPTC1WS2x6NVVQZXJ6aWFhdHd3OThSbU5WSmlORzh1U0lBUHdtQ3A1dldHVncyT0tERDdxRGpLTUVfWGhTRk1ua2hKYzdqSUlIVjFLYURxVGctSHBsYUxXOElLQkJxbk1DaHVWQlJrcmFQTV9WemZERGFoVjA?oc=5"
+        },
+        {
+          "source": "Al Jazeera",
+          "title": "Bahrain thwarts drone attack; Iran claims targeting US radar - Al Jazeera",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPbGZCQzBNWXlsNkJNTHdKVzdUSG5PdWR4eFkwZ0VGQ2pGN3BYUVE1Qm55YWg2ZTVMRTZvWjFqRUluUzB6NGUtTWZDX2R4bThna3RQTVN4OUJPSW93WHhlZDRVcVhnenJLd0s0clp2aEh6NEtkQmJ3bG9JcWVHT3picVZzN0dYaWZrSlZwUi1USmttQm5RTHp4MkZydzl6RU04NUl1bzdEd0p1X084eFpJ0gG0AUFVX3lxTFBtSmI2V1R4aXp4WUx2TTNSU3BsXzQ5VnI0M2NiZnVleUNQOEdidnFXOEJ1emxyZ0pGWDVmYS1mX3htRF9kRElQOWZZMTRqdEk5WHBhUkNRN3BGV2F2U3Frd3l5LVFqY19vbmFXNkExb2JPYnNQTjF6Ry00cE5MTjQxYkY1YXM1WUF5UGtHN1hLNVhYUjRkSlFuajlGcFNQelItbDdoV3dyOWptQ09XOGx6Mm9FUg?oc=5"
+        },
+        {
+          "source": "PBS",
+          "title": "Iran fires at U.S. facility in Bahrain as Tehran resumes strikes on Arab neighbors - PBS",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPTlVZWjRCSVZZOTdxbEJHVlVJTjVyV2xWVXdaQ2tqUmVRNFJkaElDa2xhYWFqbEcwRDlaWnpNWF9OMy05OE5mM2N4VkhRQVZHdTFUTTlyd2JUSkwxR0Q3ZEh1UDZZNDB5cmVHa1lfMkM0ZldWT1pJRmVTTWVPMWEzQnloMWY2Zjh1TDdaeHRONmIwbERZLWtfMy12Z19JcDV2eUJxZElIWDdBWW5CU1NEYU5TVjJRRjjSAbwBQVVfeXFMTm93R19jS3VPR050YTJCYXBSQ25mYlo1RXNhZ1JSSXVZdEdiYUJJeloyZHlkUnJYTTc5dGVzbmlqZHY3Tlhscjc5cWxqT1JRTHMtVHlORE5TUVpKQVZ1d3FGUjhwcDlHbk5JSFVoeXZya1lTU1ZIUW9SRkUwZ2t0akZGa2t4VEpfdEZJRS0xcFFEZGVaVGtNcWFvOWdLTFFRUmFhTXBsQ1FydjA5X3dZUHdDVmE4WnduNXVUMTc?oc=5"
+        }
+      ],
       "means": "drone",
       "published": "2026-11-17T17:41:52-06:00",
-      "related": 1,
+      "related": 3,
       "relatedSources": [
-        "Air & Space Forces Magazine"
+        "Air & Space Forces Magazine",
+        "PBS",
+        "NPR"
       ],
       "severity": "STANDBY",
       "source": "Al Jazeera",
+      "sourceCount": 4,
       "target_type": "military",
       "title": "Kuwait reports drone attacks as Iran, US trade attacks on Qeshm and Bahrain - Al Jazeera",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPU3NxaFU3RUpkTklaRUU5NkxhTjZ6aHhYOWl4WG9PQUh1dWp6ck9qdkJhc3FHMjN5cUhWSzF6OWFmZnE5MXQ3U0RKd2RmeXdvZUZ3Qjk4VzFEM0tka3dOai1IVWZFY0VaVlVHS3d2NkdyeDU3UHZEY2tMbV85ZEVldUhRSG1SS2VwZ1c1ck4wNE1HbU81WXluYU5KRUN0NmRFdVJRNWI5MFpreDR4eGNaQkgtMVg3SjjSAbwBQVVfeXFMUDFvNkpucUdWODBUZW5kV01tbDNjaGVlYWp6a2NtdktFQVJpVW9mTjJFWEhWWm1LQlIwcW5tVVozb0FpUWl5TEd1VkstTFh2S2VXRi1YLWdxcl9TaF9XcjFhLUNHb291ZkxHY210TENUclk4WjNlZml0Y1hDbnBBRURzTm1ORjl4a0hWUFVGWUVJbFNwUksyUDJ0ZmtBZWRiZV9pNTJ4QndvRGVMNzVtVW5VQ3J6azQ3c3lJcVc?oc=5",
-      "links": [
-        {
-          "title": "Kuwait reports drone attacks as Iran, US trade attacks on Qeshm and Bahrain - Al Jazeera",
-          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPU3NxaFU3RUpkTklaRUU5NkxhTjZ6aHhYOWl4WG9PQUh1dWp6ck9qdkJhc3FHMjN5cUhWSzF6OWFmZnE5MXQ3U0RKd2RmeXdvZUZ3Qjk4VzFEM0tka3dOai1IVWZFY0VaVlVHS3d2NkdyeDU3UHZEY2tMbV85ZEVldUhRSG1SS2VwZ1c1ck4wNE1HbU81WXluYU5KRUN0NmRFdVJRNWI5MFpreDR4eGNaQkgtMVg3SjjSAbwBQVVfeXFMUDFvNkpucUdWODBUZW5kV01tbDNjaGVlYWp6a2NtdktFQVJpVW9mTjJFWEhWWm1LQlIwcW5tVVozb0FpUWl5TEd1VkstTFh2S2VXRi1YLWdxcl9TaF9XcjFhLUNHb291ZkxHY210TENUclk4WjNlZml0Y1hDbnBBRURzTm1ORjl4a0hWUFVGWUVJbFNwUksyUDJ0ZmtBZWRiZV9pNTJ4QndvRGVMNzVtVW5VQ3J6azQ3c3lJcVc?oc=5",
-          "source": "Al Jazeera"
-        },
-        {
-          "title": "US Fighters Strike Iranian Missile Site After Base in Bahrain Targeted - Air & Space Forces Magazine",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5QSGpPTC1WS2x6NVVQZXJ6aWFhdHd3OThSbU5WSmlORzh1U0lBUHdtQ3A1dldHVncyT0tERDdxRGpLTUVfWGhTRk1ua2hKYzdqSUlIVjFLYURxVGctSHBsYUxXOElLQkJxbk1DaHVWQlJrcmFQTV9WemZERGFoVjA?oc=5",
-          "source": "Air & Space Forces Magazine"
-        }
-      ],
-      "sourceCount": 2
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPU3NxaFU3RUpkTklaRUU5NkxhTjZ6aHhYOWl4WG9PQUh1dWp6ck9qdkJhc3FHMjN5cUhWSzF6OWFmZnE5MXQ3U0RKd2RmeXdvZUZ3Qjk4VzFEM0tka3dOai1IVWZFY0VaVlVHS3d2NkdyeDU3UHZEY2tMbV85ZEVldUhRSG1SS2VwZ1c1ck4wNE1HbU81WXluYU5KRUN0NmRFdVJRNWI5MFpreDR4eGNaQkgtMVg3SjjSAbwBQVVfeXFMUDFvNkpucUdWODBUZW5kV01tbDNjaGVlYWp6a2NtdktFQVJpVW9mTjJFWEhWWm1LQlIwcW5tVVozb0FpUWl5TEd1VkstTFh2S2VXRi1YLWdxcl9TaF9XcjFhLUNHb291ZkxHY210TENUclk4WjNlZml0Y1hDbnBBRURzTm1ORjl4a0hWUFVGWUVJbFNwUksyUDJ0ZmtBZWRiZV9pNTJ4QndvRGVMNzVtVW5VQ3J6azQ3c3lJcVc?oc=5"
     },
     {
       "country": "Iran",
       "date": "2026-11-17",
+      "links": [
+        {
+          "source": "CNN",
+          "title": "Iran widens Gulf attacks after US strikes missile launch site - CNN",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1Vb0RmWXNaMXVnWXAxb0ZrSUlJWU8wOU9TMXJ4NFljc3FiVzBhWm1CcHRMMWRvN1haNkk3OXU3TWsycUtyQnA4MEVqSkpYNk1JWVJ2U2w0LWg1cjVaLXFuV0NnQm9GenJyUDRONGF3c3VYMG9qM0dz?oc=5"
+        }
+      ],
       "means": "missile",
       "published": "2026-11-17T15:26:06-06:00",
       "related": 0,
       "relatedSources": [],
       "severity": "STANDBY",
       "source": "CNN",
+      "sourceCount": 1,
       "target_type": "military",
       "title": "Iran widens Gulf attacks after US strikes missile launch site - CNN",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1Vb0RmWXNaMXVnWXAxb0ZrSUlJWU8wOU9TMXJ4NFljc3FiVzBhWm1CcHRMMWRvN1haNkk3OXU3TWsycUtyQnA4MEVqSkpYNk1JWVJ2U2w0LWg1cjVaLXFuV0NnQm9GenJyUDRONGF3c3VYMG9qM0dz?oc=5",
-      "links": [
-        {
-          "title": "Iran widens Gulf attacks after US strikes missile launch site - CNN",
-          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1Vb0RmWXNaMXVnWXAxb0ZrSUlJWU8wOU9TMXJ4NFljc3FiVzBhWm1CcHRMMWRvN1haNkk3OXU3TWsycUtyQnA4MEVqSkpYNk1JWVJ2U2w0LWg1cjVaLXFuV0NnQm9GenJyUDRONGF3c3VYMG9qM0dz?oc=5",
-          "source": "CNN"
-        }
-      ],
-      "sourceCount": 1
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1Vb0RmWXNaMXVnWXAxb0ZrSUlJWU8wOU9TMXJ4NFljc3FiVzBhWm1CcHRMMWRvN1haNkk3OXU3TWsycUtyQnA4MEVqSkpYNk1JWVJ2U2w0LWg1cjVaLXFuV0NnQm9GenJyUDRONGF3c3VYMG9qM0dz?oc=5"
     }
-  ],
-  "counts": {
-    "total": 8,
-    "energy": 1
-  },
-  "gaps": []
+  ]
 }

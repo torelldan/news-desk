@@ -10,9 +10,9 @@
       "guest": "",
       "note": "",
       "url": "https://www.nature.com/articles/s41586-026-11388-5",
-      "published": "2026-11-19T12:01:55-06:00",
+      "published": "2026-11-19T12:52:57-06:00",
       "date": "2026-11-19",
-      "label": "Nov 19, 2026 12:01 PM CT",
+      "label": "Nov 19, 2026 12:52 PM CT",
       "weekday": "Thu",
       "timeKnown": true,
       "tags": [
@@ -34,9 +34,9 @@
       "guest": "",
       "note": "",
       "url": "https://www.nature.com/articles/s41586-026-11445-z",
-      "published": "2026-11-19T12:01:55-06:00",
+      "published": "2026-11-19T12:52:57-06:00",
       "date": "2026-11-19",
-      "label": "Nov 19, 2026 12:01 PM CT",
+      "label": "Nov 19, 2026 12:52 PM CT",
       "weekday": "Thu",
       "timeKnown": true,
       "tags": [
@@ -58,9 +58,9 @@
       "guest": "",
       "note": "",
       "url": "https://www.nature.com/articles/d41586-026-03748-y",
-      "published": "2026-11-19T12:01:55-06:00",
+      "published": "2026-11-19T12:52:57-06:00",
       "date": "2026-11-19",
-      "label": "Nov 19, 2026 12:01 PM CT",
+      "label": "Nov 19, 2026 12:52 PM CT",
       "weekday": "Thu",
       "timeKnown": true,
       "tags": [
@@ -82,9 +82,9 @@
       "guest": "",
       "note": "",
       "url": "https://www.nature.com/articles/d41586-026-03783-9",
-      "published": "2026-11-19T12:01:55-06:00",
+      "published": "2026-11-19T12:52:57-06:00",
       "date": "2026-11-19",
-      "label": "Nov 19, 2026 12:01 PM CT",
+      "label": "Nov 19, 2026 12:52 PM CT",
       "weekday": "Thu",
       "timeKnown": true,
       "tags": [
@@ -95,6 +95,56 @@
       "field": "biomedical",
       "review": "PEER-REVIEWED",
       "severity": ""
+    },
+    {
+      "id": "paper:3594138fef2d34aa",
+      "kind": "paper",
+      "lane": "science",
+      "source": "Google AI blog",
+      "sourceId": "paper",
+      "title": "Introducing Tool Retrieval in the Gemini API",
+      "guest": "",
+      "note": "Give your agents access to hundreds of tools while using fewer tokens with Tool Retrieval, now in preview in the Gemini API.",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+      "published": "2026-11-19T12:00:00-06:00",
+      "date": "2026-11-19",
+      "label": "Nov 19, 2026 12:00 PM CT",
+      "weekday": "Thu",
+      "timeKnown": true,
+      "tags": [
+        "science",
+        "ai",
+        "news"
+      ],
+      "field": "ai",
+      "review": "NEWS",
+      "severity": ""
+    },
+    {
+      "id": "headline:6b6adaf41759feba",
+      "kind": "paper",
+      "lane": "science",
+      "source": "American Physical Society",
+      "sourceId": "headline",
+      "title": "Efficient Algorithm Slashes Pulsar Discovery Time - American Physical Society",
+      "guest": "",
+      "note": "",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBsbmI2LV9CU09oT2huX2R5b09NVUs4RWM1VXRKaDdOdl9UM3JCQnc3WXo5UkluSmZNcDdnZzU2NGRLZDFkUHpkSnJYTHFRQlk5dU9z?oc=5",
+      "published": "2026-11-19T11:39:22-06:00",
+      "date": "2026-11-19",
+      "label": "Nov 19, 2026 11:39 AM CT",
+      "weekday": "Thu",
+      "timeKnown": true,
+      "tags": [
+        "headline",
+        "standby",
+        "science",
+        "physics",
+        "news"
+      ],
+      "severity": "STANDBY",
+      "field": "physics",
+      "review": "NEWS"
     },
     {
       "id": "paper:7700f0c7bfc50c00",
@@ -503,6 +553,58 @@
       "field": "biomedical",
       "review": "NEWS",
       "severity": ""
+    },
+    {
+      "id": "headline:c5b1e8da73b022db",
+      "kind": "paper",
+      "lane": "science",
+      "source": "Muscular Dystrophy Association",
+      "sourceId": "headline",
+      "title": "FDA Approves Livsayis™ (cemdisiran) for Adults Living with Generalized Myasthenia Gravis - Muscular Dystrophy Association",
+      "guest": "",
+      "note": "",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNV2poRlFrVURUN3owV3gzbDY2d3Nnc1JrR05YLWFzVUdYb1pyRjU1QVN0bVcxUnk5cmJEckROMzJfNXVWVGpGS0NyWUNyWmJ5WU5RbEljNnRab0dtdDlXc1BET3B1eTRrdHBkakFRczVQN2VYWGt2QVYwYVFTVDI1dHNpTlo0NmNrc3JERGFlVy13Y0RDVDdkLVFtZUFJZy1TNmdLNE5yMUEzd3A5b1BodWtRUVNQd3pxVENiWQ?oc=5",
+      "published": "2026-11-18T18:16:47-06:00",
+      "date": "2026-11-18",
+      "label": "Nov 18, 2026 6:16 PM CT",
+      "weekday": "Wed",
+      "timeKnown": true,
+      "tags": [
+        "headline",
+        "standby",
+        "science",
+        "biomedical",
+        "news"
+      ],
+      "severity": "STANDBY",
+      "field": "biomedical",
+      "review": "NEWS"
+    },
+    {
+      "id": "headline:8e825fde2c52c04c",
+      "kind": "paper",
+      "lane": "science",
+      "source": "The GitHub Blog",
+      "sourceId": "headline",
+      "title": "Gemini 4 Neon in GitHub Copilot - The GitHub Blog",
+      "guest": "",
+      "note": "",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBMS1FJZ2psbEdtam53b1NNNV90Y1NvZUNOcDVnYkxvUkxSY0JKOXpWVFktdUNMMTA4eUVMT3phdVRDRzJtcHM5N0JxMEZVYjZfdTNERE9uaXNGdm0wTkRNYm96b2pEZFd6NzRTSGdabVlVbGE3V211UzI3YnFqQQ?oc=5",
+      "published": "2026-11-18T15:49:21-06:00",
+      "date": "2026-11-18",
+      "label": "Nov 18, 2026 3:49 PM CT",
+      "weekday": "Wed",
+      "timeKnown": true,
+      "tags": [
+        "headline",
+        "standby",
+        "science",
+        "ai",
+        "news"
+      ],
+      "severity": "STANDBY",
+      "field": "ai",
+      "review": "NEWS"
     },
     {
       "id": "paper:6904138f127d73bc",
@@ -1111,32 +1213,6 @@
       "severity": ""
     },
     {
-      "id": "headline:bf34880e82169a3f",
-      "kind": "paper",
-      "lane": "science",
-      "source": "Oncology Nursing News",
-      "sourceId": "headline",
-      "title": "FDA Grants Accelerated Approval to Neladalkib in Pretreated ALK+ NSCLC - Oncology Nursing News",
-      "guest": "",
-      "note": "",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNQ1ViN19DTXhBSVJWb01NWS0yUmJySl9EU0hyeFp5THNpaXg3WXV0Mks0ZDYzSGs2MDJtNG56UE1WYi1iQlY2bThZTEx6R1hSSjZyeG5yYW9FeVg5bUFtcDNwTzZIM3BNU2xhS1JvZ2ZhdVJGdVF6aHlFTDNDXzlPbVcwOWhLQnNkNTk5VzVtNXFKdWo0U005bzk0N0cwZDJkbVZuMHdlWXc?oc=5",
-      "published": "2026-11-17T12:31:08-06:00",
-      "date": "2026-11-17",
-      "label": "Nov 17, 2026 12:31 PM CT",
-      "weekday": "Tue",
-      "timeKnown": true,
-      "tags": [
-        "headline",
-        "standby",
-        "science",
-        "biomedical",
-        "news"
-      ],
-      "severity": "STANDBY",
-      "field": "biomedical",
-      "review": "NEWS"
-    },
-    {
       "id": "headline:df71a35c28b8411e",
       "kind": "paper",
       "lane": "science",
@@ -1209,32 +1285,6 @@
       "field": "technology",
       "review": "NEWS",
       "severity": ""
-    },
-    {
-      "id": "headline:8ab310aaff84326e",
-      "kind": "paper",
-      "lane": "science",
-      "source": "ScienceDaily",
-      "sourceId": "headline",
-      "title": "A mysterious twist in the universe’s oldest light could reveal new physics - ScienceDaily",
-      "guest": "",
-      "note": "",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBSeElnbV9nZEhBY2QxOGVIZEVQa21SQ3FMTTItUmlnWm5UOEljUC1tbDVZYm04TlZrYUxuckttR1NnM3lRQ1pjWld6SERnSEY1bFl3RzVOYnlzXzNZczE1X012OGdkU2dIcENXd0V5Yw?oc=5",
-      "published": "2026-11-17T06:16:27-06:00",
-      "date": "2026-11-17",
-      "label": "Nov 17, 2026 6:16 AM CT",
-      "weekday": "Tue",
-      "timeKnown": true,
-      "tags": [
-        "headline",
-        "standby",
-        "science",
-        "physics",
-        "news"
-      ],
-      "severity": "STANDBY",
-      "field": "physics",
-      "review": "NEWS"
     },
     {
       "id": "headline:4c2687779a5e8de1",
@@ -1391,30 +1441,6 @@
       "review": "NEWS"
     },
     {
-      "id": "paper:27450f2596a6c5c1",
-      "kind": "paper",
-      "lane": "science",
-      "source": "Google AI blog",
-      "sourceId": "paper",
-      "title": "New Ask Maps features to help with holiday travel and prep",
-      "guest": "",
-      "note": "Plan holiday road trips, get route tips, find local appointments, and search your saved lists with new Ask Maps features.",
-      "url": "https://blog.google/products-and-platforms/products/maps/ask-maps-holiday-travel-features-2026/",
-      "published": "2026-11-16T08:00:00-06:00",
-      "date": "2026-11-16",
-      "label": "Nov 16, 2026 8:00 AM CT",
-      "weekday": "Mon",
-      "timeKnown": true,
-      "tags": [
-        "science",
-        "ai",
-        "news"
-      ],
-      "field": "ai",
-      "review": "NEWS",
-      "severity": ""
-    },
-    {
       "id": "paper:76a6969216ab8cba",
       "kind": "paper",
       "lane": "science",
@@ -1485,32 +1511,6 @@
       "field": "propulsion",
       "review": "PREPRINT",
       "severity": ""
-    },
-    {
-      "id": "headline:fcf3953bf59b2ea4",
-      "kind": "paper",
-      "lane": "science",
-      "source": "The Economist",
-      "sourceId": "headline",
-      "title": "Anthropic’s giant IPO puts the heat on OpenAI - The Economist",
-      "guest": "",
-      "note": "",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNRTd6eHRac3JHWEQ5TElWUXZZUWRsMHdXckRQbjJ6X3ZvOFUtVHZDcjFBVWVqOE9LVnNPS3NWeDROZUtsRFdEdklzRzctYlpWbWszbElsMU94VWxtUm5OZ1ozdUxWWnVGRlpGM3ozYWxISG5fS1Y5QlB1bVQ0Z09sVGphWmgzMlpKMWduNkZYX0N1b1Br?oc=5",
-      "published": "2026-11-15T13:49:20-06:00",
-      "date": "2026-11-15",
-      "label": "Nov 15, 2026 1:49 PM CT",
-      "weekday": "Sun",
-      "timeKnown": true,
-      "tags": [
-        "headline",
-        "standby",
-        "science",
-        "ai",
-        "news"
-      ],
-      "severity": "STANDBY",
-      "field": "ai",
-      "review": "NEWS"
     },
     {
       "id": "headline:57f33a29d7bc4ab6",
@@ -1640,32 +1640,6 @@
       ],
       "severity": "STANDBY",
       "field": "ai",
-      "review": "NEWS"
-    },
-    {
-      "id": "headline:220fe961aee1e42c",
-      "kind": "paper",
-      "lane": "science",
-      "source": "PBS",
-      "sourceId": "headline",
-      "title": "SpaceX's Starship soars into orbit after booster malfunction thwarts double catch attempt - PBS",
-      "guest": "",
-      "note": "",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOZXZLZklkUHg0MjhYb3dYUEVxWVVRNUZST0oyTWcxaFktYmRPb2NNTS1aX0k2ckJKdm1yODZXOVI0cUdONXRDVkhEeHhBcjZCY2h4MTB6Q1laN3g4eHFPN0lyOGpRZF9CSVhiYndJVFRJeHh3YUJnbG9aUmoyRHRTalg1aDJqMXNEelRRN1o2NGpOczdYWTVkaEtxOGgwWll1cXh5ZGRhVmRQUE82dXl3YnFiTkQ4b1lvbGNESnZOdl9id2PSAcgBQVVfeXFMT0VLamhXUF9BczFDN1RpZEdJTGJiNVNqZThJQmk3QUFoMzNkaVZqWGhYZ3NtQ0gyQ1psN0UxUDg2QXFjNnJjSHljaHo1WmF4bnVLS3czVjdxWWpNeUNLVUxILUptSHNraWpBNlBZbDYySDZBTUR1bk5DMm11bnNfcmhTTW84RnhXSkp4ZjJrdnJNOE9adzF4SDBlZWRaeWNQektJc0prbFBjOG9MamIwVGJkelNTVGRwZFdsaUg0RlhVYjliSjdETlk?oc=5",
-      "published": "2026-11-13T18:20:20-06:00",
-      "date": "2026-11-13",
-      "label": "Nov 13, 2026 6:20 PM CT",
-      "weekday": "Fri",
-      "timeKnown": true,
-      "tags": [
-        "headline",
-        "standby",
-        "science",
-        "propulsion",
-        "news"
-      ],
-      "severity": "STANDBY",
-      "field": "propulsion",
       "review": "NEWS"
     },
     {
@@ -1859,6 +1833,32 @@
       "field": "biomedical",
       "review": "PREPRINT",
       "severity": ""
+    },
+    {
+      "id": "headline:5091975358685c47",
+      "kind": "paper",
+      "lane": "science",
+      "source": "Space",
+      "sourceId": "headline",
+      "title": "SpaceX launches Starship on ambitious 22-hour Flight 15 test, but aborts booster 'chopsticks' catch (video) - Space",
+      "guest": "",
+      "note": "",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNcEhQWFJRdTk2a2oxdnBsNm1ZUHdjSUdDNUtuQnloQjlTdHZIdXpVeFlQeTNNMk8xeE9uXzhpamdiTnZHaFY2ZFZZbmViSEhBYUxGTENfNXVtZ3RHY2Z2SGlqSXU3cEZNRmtZdDFUc3VHbERUbWFiTEFNUk4wTHF2TVBJblIxUFc1UnBSY1lJRnM5VnFLM3hfYVU3VEpvWW44NmxNSmtUa3pUUXdxUEFHWV8tcnpkUE52MWFOX1pLZjNldlN1?oc=5",
+      "published": "2026-11-13T17:20:03-06:00",
+      "date": "2026-11-13",
+      "label": "Nov 13, 2026 5:20 PM CT",
+      "weekday": "Fri",
+      "timeKnown": true,
+      "tags": [
+        "headline",
+        "standby",
+        "science",
+        "propulsion",
+        "news"
+      ],
+      "severity": "STANDBY",
+      "field": "propulsion",
+      "review": "NEWS"
     },
     {
       "id": "headline:a43c48fbc5920a5e",
@@ -2067,9 +2067,38 @@
   ],
   "spikes": [
     {
-      "topic": "OpenAI",
+      "topic": "Gemini",
       "outlets": 3,
       "state": "RISING",
+      "links": [
+        {
+          "title": "Introducing Tool Retrieval in the Gemini API",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+          "source": "Google AI blog"
+        },
+        {
+          "title": "Gemini 4 Neon in GitHub Copilot - The GitHub Blog",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBMS1FJZ2psbEdtam53b1NNNV90Y1NvZUNOcDVnYkxvUkxSY0JKOXpWVFktdUNMMTA4eUVMT3phdVRDRzJtcHM5N0JxMEZVYjZfdTNERE9uaXNGdm0wTkRNYm96b2pEZFd6NzRTSGdabVlVbGE3V211UzI3YnFqQQ?oc=5",
+          "source": "The GitHub Blog"
+        },
+        {
+          "title": "Introducing Gemini 4 Neon",
+          "url": "https://deepmind.google/blog/introducing-gemini-4-neon/",
+          "source": "DeepMind"
+        },
+        {
+          "title": "The Gemini app is now available on lower-memory Android devices.",
+          "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/",
+          "source": "Google AI blog"
+        }
+      ],
+      "title": "Introducing Tool Retrieval in the Gemini API",
+      "field": "ai"
+    },
+    {
+      "topic": "OpenAI",
+      "outlets": 2,
+      "state": "EVENT",
       "links": [
         {
           "title": "How OpenAI’s Performance Factory keeps ChatGPT fast",
@@ -2082,46 +2111,12 @@
           "source": "NPR"
         },
         {
-          "title": "Anthropic’s giant IPO puts the heat on OpenAI - The Economist",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNRTd6eHRac3JHWEQ5TElWUXZZUWRsMHdXckRQbjJ6X3ZvOFUtVHZDcjFBVWVqOE9LVnNPS3NWeDROZUtsRFdEdklzRzctYlpWbWszbElsMU94VWxtUm5OZ1ozdUxWWnVGRlpGM3ozYWxISG5fS1Y5QlB1bVQ0Z09sVGphWmgzMlpKMWduNkZYX0N1b1Br?oc=5",
-          "source": "The Economist"
-        },
-        {
           "title": "Introducing ChatGPT Wallet - OpenAI",
           "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5ab0pjcFNKdWdXUVFfbEMyNnBKUm56eDlpLXRjWktkSWtKNFBpQml6US05eHBPWnhCajF4V1lnZUhrZHY5U0dJb29BYldsRjlhWUxjVkFPdlhibmRYNkFMb1dn?oc=5",
           "source": "OpenAI"
         }
       ],
       "title": "How OpenAI’s Performance Factory keeps ChatGPT fast",
-      "field": "ai"
-    },
-    {
-      "topic": "Gemini",
-      "outlets": 2,
-      "state": "EVENT",
-      "links": [
-        {
-          "title": "Introducing Gemini 4 Neon",
-          "url": "https://deepmind.google/blog/introducing-gemini-4-neon/",
-          "source": "DeepMind"
-        },
-        {
-          "title": "The Gemini app is now available on lower-memory Android devices.",
-          "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/",
-          "source": "Google AI blog"
-        },
-        {
-          "title": "Put Gemini to work for you",
-          "url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
-          "source": "Google AI blog"
-        },
-        {
-          "title": "Introducing Gemini 4 Hydrogen",
-          "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
-          "source": "DeepMind"
-        }
-      ],
-      "title": "Introducing Gemini 4 Neon",
       "field": "ai"
     }
   ]

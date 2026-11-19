@@ -28,9 +28,9 @@
             "2026-11-26",
             "2026-12-25"
           ],
-          "level": 7236.99,
-          "change": -86.64,
-          "changePct": -1.18,
+          "level": 7218.77,
+          "change": -104.86,
+          "changePct": -1.43,
           "asOf": "2026-11-19",
           "source": "https://finance.yahoo.com/quote/%5EGSPC"
         }
@@ -175,6 +175,27 @@
           "published": "2026-11-18T13:09:00-06:00",
           "date": "2026-11-18",
           "label": "Nov 18, 2026 1:09 PM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:b47fa89d5db23dcf",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Reuters",
+          "sourceId": "headline",
+          "title": "Fed's Barr says rate rises likely lie ahead for economy - Reuters",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPSm12UHZCU3VxTVdaUEZkTFVrcllfdGw3ejc3STVZM3U0cXByUWR5Y1R3ZDRhZmxQVjNiWXI0Qm9hTURNNlE4YTAxU2hYZVNNSm1JNENPd0tPYlE4VWtNNHZTQTZ5Q1JJMVE2SzYyNTE1UFVjSWRHUlpEZVB0dmhYbzlEdkNzc1dFUmJyaFEtNE42djVKTU5sN1RvZw?oc=5",
+          "published": "2026-11-18T12:38:00-06:00",
+          "date": "2026-11-18",
+          "label": "Nov 18, 2026 12:38 PM CT",
           "weekday": "Wed",
           "timeKnown": true,
           "tags": [
@@ -854,27 +875,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:b946342dd31477f9",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Substack",
-          "sourceId": "headline",
-          "title": "The Tariff Debate: Who Is Really Paying the Bill? - Substack",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPZ0RJNnRRZ1RoaFhBNDFuWmVkUnNOVVdTMVljMExXemhuZm05bnp3TW9iQnRDejdSNUNFcjRkU29xUUZJU2pGY2hIMUVxbU9pa0NKa1daUGprNVVCVnE3eFhSUGR4c0x6UVNlZE5xU3lvMURkWWVoSXZtdl8yWHVvTXJpbFFoYjBD?oc=5",
-          "published": "2026-11-15T23:44:27-06:00",
-          "date": "2026-11-15",
-          "label": "Nov 15, 2026 11:44 PM CT",
-          "weekday": "Sun",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ],
       "spikes": [
@@ -980,9 +980,9 @@
             }
           ],
           "holidays": [],
-          "level": 34144.21,
-          "change": -433.89,
-          "changePct": -1.25,
+          "level": 34123.25,
+          "change": -454.85,
+          "changePct": -1.32,
           "asOf": "2026-11-19",
           "source": "https://finance.yahoo.com/quote/%5EGSPTSE"
         },
@@ -998,8 +998,8 @@
             }
           ],
           "holidays": [],
-          "level": 69125.69,
-          "change": -28.48,
+          "level": 69126.61,
+          "change": -27.56,
           "changePct": -0.04,
           "asOf": "2026-11-19",
           "source": "https://finance.yahoo.com/quote/%5EMXX"
@@ -1742,27 +1742,6 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:27d87896c2ae7e15",
-          "kind": "headline",
-          "lane": "news",
-          "source": "KPMG International",
-          "sourceId": "headline",
-          "title": "Fall 2026 economic outlook - KPMG International",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNUzNLb1RiTkVMNUZjUm50R2xxYThpcUlLcHJXR045ZVBCZUdaUVZVd2xFTmFLdlNkMmpWeHIwY1N2SnNWRGpvOGlOeFJnUElXdUMxc1FKQk5QU3BGM2F0bW9LdjFkLU5vVi02ZC11azZnMi1pUzhFTHpJcVU4QkJGOS1NaXY?oc=5",
-          "published": "2026-11-11T07:30:46-06:00",
-          "date": "2026-11-11",
-          "label": "Nov 11, 2026 7:30 AM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
           "id": "headline:3da906fad2fc4882",
           "kind": "headline",
           "lane": "news",
@@ -1817,6 +1796,27 @@
           "published": "2026-11-11T04:30:14-06:00",
           "date": "2026-11-11",
           "label": "Nov 11, 2026 4:30 AM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:27d87896c2ae7e15",
+          "kind": "headline",
+          "lane": "news",
+          "source": "KPMG International",
+          "sourceId": "headline",
+          "title": "Fall 2026 economic outlook - KPMG International",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNUzNLb1RiTkVMNUZjUm50R2xxYThpcUlLcHJXR045ZVBCZUdaUVZVd2xFTmFLdlNkMmpWeHIwY1N2SnNWRGpvOGlOeFJnUElXdUMxc1FKQk5QU3BGM2F0bW9LdjFkLU5vVi02ZC11azZnMi1pUzhFTHpJcVU4QkJGOS1NaXY?oc=5",
+          "published": "2026-11-11T02:00:00-06:00",
+          "date": "2026-11-11",
+          "label": "Nov 11, 2026 2:00 AM CT",
           "weekday": "Wed",
           "timeKnown": true,
           "tags": [
@@ -1894,9 +1894,9 @@
             }
           ],
           "holidays": [],
-          "level": 166542.69,
-          "change": -995.31,
-          "changePct": -0.59,
+          "level": 166459.45,
+          "change": -1078.55,
+          "changePct": -0.64,
           "asOf": "2026-11-19",
           "source": "https://finance.yahoo.com/quote/%5EBVSP"
         }
@@ -2761,9 +2761,9 @@
             }
           ],
           "holidays": [],
-          "level": 2415.13,
-          "change": -55.72,
-          "changePct": -2.26,
+          "level": 2425.42,
+          "change": -45.43,
+          "changePct": -1.84,
           "asOf": "2026-11-19",
           "source": "https://iss.moex.com/iss/engines/stock/markets/index/securities/IMOEX.json"
         }
@@ -5003,6 +5003,27 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:d1f7cbfe4b83db5e",
+          "kind": "headline",
+          "lane": "news",
+          "source": "www.tmgm.com",
+          "sourceId": "headline",
+          "title": "Euro weakens below 1.1000 as December Fed hike odds increase; focus turns to FOMC Minutes - www.tmgm.com",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQU0FxS0habXAzRWYwY244V2R3X0pxa3VHcXdFcl9KaG9scTc2Z0M1RDdxQUNsX3NSZVNPSTkybkRaMEhwTEc4VFZsVk5pUGdSR0FqQXhkbGktTmZVQVl1T0RzeVk1SUhYQzZLZE04WUFKd1oxdnVhcFdnWjl4OXA1b05wQWlCbDdvUGo2UDlZbDExU3NuZ3N0ZWNSZnRvOFFpU0h1NkFwMlRoSUNQMUxTWDF2elNyNEY0cERrc2lkMDFlNUNXSmRTS2dSdWFZU3ZtajlnZFM0OFNxZ29OeHk3RVhyWl8?oc=5",
+          "published": "2026-11-18T00:53:10-06:00",
+          "date": "2026-11-18",
+          "label": "Nov 18, 2026 12:53 AM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:3126d5d927d4fff8",
           "kind": "headline",
           "lane": "news",
@@ -5379,27 +5400,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:5d70519b01865c40",
-          "kind": "headline",
-          "lane": "news",
-          "source": "The Economic Times",
-          "sourceId": "headline",
-          "title": "ECB VP says AI, debt have become prominent stability risks - The Economic Times",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNUFpVVFBhNUpDd2FIQWVGZklHV2dldWlNZFpiVWxCVl9zUkVCZ0M0alh5aDdQT0JTMFBmOTRVOHkwenVDNFVHbWRpRnR5WU9xZnVJOGlTN2kzOGVoQ3BYY0s2QW1wX0lwY3hlem5TdnI4amEtWWExa1NYVmp5YlN0eHY1eUZYcmgwRVg2eF9jenU1T0lhNDBtWGxHSTRJMDVrYy1sb21aY1M1LXVEeFRNZkF1MXV6aXdlN3dTbjNyOUdKdERVbHJwYkFKWXQtMVFpYmtyV3FIc9IB3AFBVV95cUxPcG55UFlVYUx4UmZSZE05S2Ryd09xQU82V0ZMS1RscDF2MkNXRk1SYnZ6NDlxLUtSZDhXZXE1TEZTRVJNWk9kNFNYeEZyNElrN0xMbzJMakxDNEtRLUxiQ20tbjlpMjFfVmxzd1oxMHNYam5JendyMzlpNC1VaGEyY0E4ZDVkQTNXZmJsUW5lSE1jUkZGQW01ellBOFE5N2dwY2ZqMVBuRFhBenBRbjFGaU1PeGNmV0pvRUVkZm1PdzEtVUpDVUprYXhpemszMl9IdEVBdlJDeGFYcEd6?oc=5",
-          "published": "2026-11-16T02:36:18-06:00",
-          "date": "2026-11-16",
-          "label": "Nov 16, 2026 2:36 AM CT",
-          "weekday": "Mon",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ],
       "spikes": [
@@ -5487,9 +5487,9 @@
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQcW9TMTUwTjdOZHBvYzl2dDl2QlJfT05CckNXN2xMaW9MRlU4LXpQcTk4b28wMkoyRTVBSWRsQ0oyU1c3SFFqTTRpRC1aeXRzSkJQV0JQRkx5NG1nOE8zdnJ1bi1CZ0VTYzMtLTY3UlpjLS1ZYThLREp5YXdzLW11Q1ZyaHl2bEF4SG8wRGg2Mm5wZ0VTSWdIaG55VmVwbVJPaG9RajFBcU5QeFdoeWJZVUtIWVFaZ01pNmVETklCWDlrb1k?oc=5",
-          "published": "2026-11-19T06:25:51-06:00",
+          "published": "2026-11-19T06:29:07-06:00",
           "date": "2026-11-19",
-          "label": "Nov 19, 2026 6:25 AM CT",
+          "label": "Nov 19, 2026 6:29 AM CT",
           "weekday": "Thu",
           "timeKnown": true,
           "tags": [
@@ -7267,9 +7267,9 @@
             }
           ],
           "holidays": [],
-          "level": 83021.75,
-          "change": 989.94,
-          "changePct": 1.21,
+          "level": 82031.81,
+          "change": -500.38,
+          "changePct": -0.61,
           "asOf": "2026-11-19",
           "source": "https://finance.yahoo.com/quote/%5EBSESN"
         },
@@ -7285,9 +7285,9 @@
             }
           ],
           "holidays": [],
-          "level": 25514.3,
-          "change": 286.35,
-          "changePct": 1.14,
+          "level": 25227.95,
+          "change": -159.45,
+          "changePct": -0.63,
           "asOf": "2026-11-19",
           "source": "https://finance.yahoo.com/quote/%5ENSEI"
         }

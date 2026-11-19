@@ -1,9 +1,11 @@
 {
   "baseline": false,
-  "brief": "No rare risk is on the board. A routine flyby or an empty storm outlook is not an emergency. Current war coverage is on the board: Ukraine: Civilian casualties in 2026 already far exceed previous years’ tolls - UN News; Iran fires at U.S. facility in Bahrain as Tehran resumes strikes on Arab neighbors - PBS. Global: Trump, Xi and Putin Seek to Project Power at Their First Summit - The New York Times. Infrastructure: Internet services disrupted across Pakistan due to undersea cable fault - Daily Ausaf (unconfirmed). Rising topic: ukraine war (4 outlets this window).",
-  "checkedAt": "2026-11-19T12:01:55-06:00",
-  "checkedLabel": "Nov 19, 2026 12:01 PM CT",
+  "brief": "No rare risk is on the board. A routine flyby or an empty storm outlook is not an emergency. Current war coverage is on the board: Ukraine: Civilian casualties in 2026 already far exceed previous years’ tolls - UN News; Iran fires at U.S. facility in Bahrain as Tehran resumes strikes on Arab neighbors - PBS. Global: Live Updates: Trump, Xi and Putin Seek to Project Power at Their First Summit - The New York Times. Infrastructure: Internet services disrupted across Pakistan due to undersea cable fault - Daily Ausaf (unconfirmed). Rising topic: ukraine war (4 outlets this window).",
+  "checkedAt": "2026-11-19T12:52:57-06:00",
+  "checkedLabel": "Nov 19, 2026 12:52 PM CT",
   "errors": [
+    "Joe Rogan Experience: unclosed CDATA section: line 5059, column 9",
+    "ReliefWeb: the disasters page returned no cards from this network. The RSS feed is an AWS WAF challenge, and API v2 rejects appname=torelldan-news-desk until ReliefWeb approves it.",
     "AP World: curl: (22) The requested URL returned error: 403\n",
     "Reuters World: curl: (22) The requested URL returned error: 401\n",
     "Gassco UMM: curl: (22) The requested URL returned error: 404\n",
@@ -12,6 +14,35 @@
   "retainDays": 120,
   "spikes": {
     "labs": [
+      {
+        "field": "ai",
+        "links": [
+          {
+            "source": "Google AI blog",
+            "title": "Introducing Tool Retrieval in the Gemini API",
+            "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/"
+          },
+          {
+            "source": "The GitHub Blog",
+            "title": "Gemini 4 Neon in GitHub Copilot - The GitHub Blog",
+            "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBMS1FJZ2psbEdtam53b1NNNV90Y1NvZUNOcDVnYkxvUkxSY0JKOXpWVFktdUNMMTA4eUVMT3phdVRDRzJtcHM5N0JxMEZVYjZfdTNERE9uaXNGdm0wTkRNYm96b2pEZFd6NzRTSGdabVlVbGE3V211UzI3YnFqQQ?oc=5"
+          },
+          {
+            "source": "DeepMind",
+            "title": "Introducing Gemini 4 Neon",
+            "url": "https://deepmind.google/blog/introducing-gemini-4-neon/"
+          },
+          {
+            "source": "Google AI blog",
+            "title": "The Gemini app is now available on lower-memory Android devices.",
+            "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/"
+          }
+        ],
+        "outlets": 3,
+        "state": "RISING",
+        "title": "Introducing Tool Retrieval in the Gemini API",
+        "topic": "Gemini"
+      },
       {
         "field": "ai",
         "links": [
@@ -26,49 +57,15 @@
             "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPVENfR2JteXlPbExMQ0pZTFlwaldLRTRhbTR4ZEQ1bzZXSHZjQmhQb3hjMS1ITGxuSVlSaE1qQWNvamJsNDNPZTU4RlBZdlZaNXoyVXdDWTVzTjJFaDZ1SjdHSzhJaXFDUG41NGFKN0FDWTVRQjVpQUtxbGV5X1dwRzN0Y2MtY2ZpVmVEZTB6UUFjRzNGTEZZWU5zMngwdw?oc=5"
           },
           {
-            "source": "The Economist",
-            "title": "Anthropic’s giant IPO puts the heat on OpenAI - The Economist",
-            "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNRTd6eHRac3JHWEQ5TElWUXZZUWRsMHdXckRQbjJ6X3ZvOFUtVHZDcjFBVWVqOE9LVnNPS3NWeDROZUtsRFdEdklzRzctYlpWbWszbElsMU94VWxtUm5OZ1ozdUxWWnVGRlpGM3ozYWxISG5fS1Y5QlB1bVQ0Z09sVGphWmgzMlpKMWduNkZYX0N1b1Br?oc=5"
-          },
-          {
             "source": "OpenAI",
             "title": "Introducing ChatGPT Wallet - OpenAI",
             "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5ab0pjcFNKdWdXUVFfbEMyNnBKUm56eDlpLXRjWktkSWtKNFBpQml6US05eHBPWnhCajF4V1lnZUhrZHY5U0dJb29BYldsRjlhWUxjVkFPdlhibmRYNkFMb1dn?oc=5"
           }
         ],
-        "outlets": 3,
-        "state": "RISING",
-        "title": "How OpenAI’s Performance Factory keeps ChatGPT fast",
-        "topic": "OpenAI"
-      },
-      {
-        "field": "ai",
-        "links": [
-          {
-            "source": "DeepMind",
-            "title": "Introducing Gemini 4 Neon",
-            "url": "https://deepmind.google/blog/introducing-gemini-4-neon/"
-          },
-          {
-            "source": "Google AI blog",
-            "title": "The Gemini app is now available on lower-memory Android devices.",
-            "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/"
-          },
-          {
-            "source": "Google AI blog",
-            "title": "Put Gemini to work for you",
-            "url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/"
-          },
-          {
-            "source": "DeepMind",
-            "title": "Introducing Gemini 4 Hydrogen",
-            "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/"
-          }
-        ],
         "outlets": 2,
         "state": "EVENT",
-        "title": "Introducing Gemini 4 Neon",
-        "topic": "Gemini"
+        "title": "How OpenAI’s Performance Factory keeps ChatGPT fast",
+        "topic": "OpenAI"
       }
     ],
     "markets": [
