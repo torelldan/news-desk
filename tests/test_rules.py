@@ -761,8 +761,8 @@ def test_hazard_source_parsers():
         ]
     }, "2026-11-12")
     assert [row["title"] for row in gdacs] == ["Drought in Burundi", "Flood in the Philippines"]
-    assert gdacs[0]["severity"] == "ACTION"
-    assert gdacs[1]["severity"] == "ALERT" and gdacs[1]["lat"] == 14.0
+    assert gdacs[0]["severity"] == "ALERT"
+    assert gdacs[1]["severity"] == "STANDBY" and gdacs[1]["lat"] == 14.0
     html = '''
     <article class="rw-disaster-map__article rw-river-article" data-disaster-lon="-72.43" data-disaster-lat="19.18" data-disaster-status="alert">
       <h3 class="rw-river-article__title"><a href="https://reliefweb.int/disaster/fl-2026-000201-hti">Haiti: Floods - Oct 2026</a></h3>
@@ -850,6 +850,42 @@ def test_hazard_source_parsers():
     assert deskextra.cyber_severity("Google says Russian-speaking hackers ran an automated AI cyberattack") == "STANDBY"
     assert deskextra.cyber_severity("City website hit by a DDoS attack") == "STANDBY"
     assert deskextra.cyber_severity("Ransomware attack shuts a hospital network") == "ALERT"
+    assert deskextra.cyber_severity("Norway's Equinor detects ongoing cyberattack, oil and gas output unaffected - Reuters") == "ALERT"
+    assert deskextra.cyber_severity("How to Tell If It's a Cyberattack or Just an Outage - WIRED") == ""
+    equinor = deskextra.cyber_dedupe([
+        {"title": "Norway's Equinor detects ongoing cyberattack - Reuters", "source": "Reuters", "severity": "ALERT", "url": "https://example.com/r"},
+        {"title": "Energy giant Equinor investigates cyberattack - Cybersecurity Dive", "source": "Cybersecurity Dive", "severity": "STANDBY", "url": "https://example.com/d"},
+    ])
+    assert len(equinor) == 1 and equinor[0]["severity"] == "ALERT" and equinor[0]["sourceCount"] == 2
+    optimizely = deskextra.cyber_dedupe([
+        {"title": "Optimizely confirms massive cyberattack - CSO Online", "source": "CSO Online", "severity": "STANDBY"},
+        {"title": "Cyberattack targets Optimizely - ClickOnDetroit", "source": "ClickOnDetroit", "severity": "STANDBY"},
+    ])
+    assert len(optimizely) == 1 and optimizely[0]["sourceCount"] == 2
+    for headline in (
+        "Trump Grows Frustrated With Vance Over Iran War Critique",
+        "OPEC speaks up for fossil fuels at COP31 climate talks",
+        "Israeli parliament elects new speaker",
+        "France is not co-belligerent in Ukraine, French minister says",
+        "Kaja Kallas Attended the G7 Foreign Affairs Ministers Meeting",
+        "White House memo requiring agencies to get approval before testifying",
+        "Rubio Says Economic Pressure on Iran is Working",
+        "Sviatlana Tsikhanouskaya paid tribute to victims of the attack in Krakow",
+    ):
+        assert boards.statement_not_event(headline), headline
+    assert boards.statement_not_event("Ukraine launches biggest drone attack on Russia since war began") is False
+    assert deskextra.strike_country("Sudan: Devastating RSF drone strikes on civilians in El Obeid") == "Sudan"
+    assert deskextra.strike_country("Whistleblower: Deadly drone strike in Kuwait could have been avoided") == "Kuwait"
+    assert deskextra.strike_country("Iran says army targets U.S. drone and missile sites in Kuwait") == "Kuwait"
+    assert deskextra.strike_country("Iranian army says drone strikes targeted US installations at Kuwait air base") == "Kuwait"
+    assert deskextra.keep_strike("Sviatlana Tsikhanouskaya paid tribute to victims of the attack in Krakow") is False
+    assert deskextra.keep_strike("Krakow basilica holds mass for man who committed deadly terror attack") is False
+    assert deskextra.keep_strike("Ukraine allies reject U.S. criticism of deep strikes inside Russia") is False
+    linked = deskextra.attach_rising_links(
+        [{"topic": "quake", "state": "RISING", "reasons": "1.8x usual volume"}],
+        [{"kind": "quake", "title": "M5.0 Philippines", "url": "https://example.com/q", "source": "USGS"}],
+    )
+    assert linked[0]["links"][0]["url"] == "https://example.com/q"
     assert deskextra.cyber_severity("Zero-day exploited in widely used email gateway") == "ALERT"
     assert deskextra.cyber_severity("CVE-2026-1 example", kev=True) == "ALERT"
     assert deskextra.cyber_severity("Global outage hits power grids in multiple countries") == "ACTION"

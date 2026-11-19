@@ -33,6 +33,9 @@ STRIKE_PLACES = (
     ("ukraine", "Ukraine"), ("russia", "Russia"), ("iran", "Iran"), ("iranian", "Iran"),
     ("israel", "Israel"), ("syria", "Syria"), ("yemen", "Yemen"), ("lebanon", "Lebanon"),
     ("united states", "United States"), ("u.s.", "United States"),
+    ("el obeid", "Sudan"), ("el-obeid", "Sudan"), ("darfur", "Sudan"), ("khartoum", "Sudan"), ("sudan", "Sudan"),
+    ("kuwait", "Kuwait"),
+    ("nasser", "Gaza"), ("gaza", "Gaza"),
 )
 
 CHOKEPOINTS = ("hormuz", "red sea", "ust-luga", "ust luga", "novorossiysk", "primorsk")
@@ -305,8 +308,9 @@ _CYBER_NOISE = re.compile(
     re.I,
 )
 _CYBER_HIT = re.compile(
-    r"\b(hospital|hospitals|power grid|water system|pipeline|airport|critical infrastructure|"
-    r"government|federal|pentagon|bank|telecom)\b",
+    r"\b(hospital|hospitals|health system|power grid|water(?: system)?|pipeline|oil|gas|energy|utility|utilities|"
+    r"airline|airport|seaport|port|telecom|critical infrastructure|government|federal|pentagon|bank|"
+    r"equinor|shell|exxon|chevron|totalenergies|aramco|bp\b|national grid)\b",
     re.I,
 )
 _CYBER_NATION = re.compile(
@@ -318,7 +322,7 @@ _CYBER_NATION = re.compile(
 def cyber_noise(title: str, note: str = "") -> bool:
     """Vendor marketing, tips, and conference copy are not incidents."""
     blob = f"{title or ''} {note or ''}"
-    if re.search(r"\b(webinar|funding round|product launch|tips to stay safe|top \d+ tips|sponsored)\b", blob, re.I):
+    if re.search(r"\b(webinar|funding round|product launch|tips to stay safe|top \d+ tips|sponsored|how to|what is|what’s|explainer|guide to)\b", blob, re.I):
         return True
     if _CYBER_NOISE.search(blob) and not re.search(r"\b(ransomware|zero-day|0-day|exploited|breach|outage|ddos|cyberattack|cyber attack)\b", blob, re.I):
         return True
@@ -380,6 +384,40 @@ def parse_kev(payload: dict | None, today: str, days: int = 7, limit: int = 6) -
     return rows[:limit]
 
 
+_CYBER_ORGS = (
+    "equinor", "optimizely", "uber", "ipsos", "microsoft", "cloudflare", "salesforce",
+    "zoom", "checkpoint", "check point", "cisco", "perforce",
+)
+
+
+def _cyber_entity(title: str) -> str:
+    """The company in a news incident. Catalog CVEs stay separate even when the vendor matches."""
+    if re.search(r"CVE-\d{4}-\d+", title or "", re.I):
+        return ""
+    low = (title or "").lower()
+    for name in _CYBER_ORGS:
+        if name in low:
+            return name
+    return ""
+
+
+def _merge_cyber(lead: dict, extra: dict) -> None:
+    rank = {"STANDBY": 0, "ALERT": 1, "ACTION": 2, "CRITICAL": 3}
+    if rank.get((extra.get("severity") or "").upper(), 0) > rank.get((lead.get("severity") or "").upper(), 0):
+        lead["severity"] = extra.get("severity")
+        lead["title"] = extra.get("title") or lead.get("title")
+        if extra.get("url"):
+            lead["url"] = extra["url"]
+    src = extra.get("source") or ""
+    if src and src != lead.get("source"):
+        related = list(lead.get("relatedSources") or [])
+        if src not in related:
+            related.append(src)
+        lead["relatedSources"] = related
+        lead["related"] = len(related)
+    lead["sourceCount"] = 1 + len(lead.get("relatedSources") or [])
+
+
 def cyber_dedupe(rows: list[dict]) -> list[dict]:
     kept: list[dict] = []
     for row in rows or []:
@@ -389,8 +427,13 @@ def cyber_dedupe(rows: list[dict]) -> list[dict]:
             continue
         words = set(re.findall(r"[a-z0-9]{4,}", title.lower()))
         numbers = set(re.findall(r"\b\d{3,}\b", title))
+        entity = _cyber_entity(title)
         same = False
         for other in kept:
+            if entity and _cyber_entity(other.get("title") or "") == entity:
+                _merge_cyber(other, row)
+                same = True
+                break
             other_numbers = set(re.findall(r"\b\d{3,}\b", other.get("title") or ""))
             if numbers and numbers & other_numbers and re.search(r"cyber|ransomware|breach|ddos", title, re.I):
                 same = True
@@ -439,6 +482,35 @@ def rising_from_trends(trends: dict | None, scored: list | None = None) -> list[
     return rows
 
 
+def attach_rising_links(items: list | None, threats: list | None) -> list:
+    """Volume rows such as quake or relief get the threat-board items behind them."""
+    aliases = {
+        "quake": "quake", "relief": "relief", "cyber": "cyber",
+        "ukraine war": "war-ukraine", "iran war": "war-iran", "us gov": "usgov",
+    }
+    by_kind: dict[str, list] = {}
+    for row in threats or []:
+        by_kind.setdefault(row.get("kind") or "", []).append(row)
+    for item in items or []:
+        if item.get("links"):
+            continue
+        topic = (item.get("topic") or "").lower()
+        matches = list(by_kind.get(aliases.get(topic, topic)) or [])
+        if not matches and topic:
+            matches = [row for row in threats or [] if topic in (row.get("title") or "").lower()]
+        links = []
+        for row in matches:
+            if not row.get("url"):
+                continue
+            links.append({"title": row.get("title") or "", "url": row.get("url") or "", "source": row.get("source") or ""})
+            if len(links) >= 4:
+                break
+        if links:
+            item["links"] = links
+            item["sourceCount"] = max(int(item.get("sourceCount") or 0), len(links))
+    return items or []
+
+
 def normalize_strikes(doc: dict) -> dict:
     for item in (doc or {}).get("items") or []:
         title = clean_strike_title(item.get("title") or "")
@@ -452,6 +524,10 @@ def keep_strike(title: str) -> bool:
     """A strike, bombardment, or explosion. A border story about a drone factory is not one."""
     blob = title or ""
     if DOMESTIC_ACCIDENT.search(blob) and not STRIKE_MEANS.search(blob):
+        return False
+    if re.search(r"\b(tribute|memorial|holds mass|commemorat\w*|fake images|photo hoax)\b", blob, re.I):
+        return False
+    if re.search(r"\b(reject|criticism of)\b", blob, re.I):
         return False
     struck = re.search(r"\b(strikes?|attacks?|bombard\w*|explos\w*|shelling|airstrikes?|air strikes?)\b", blob, re.I)
     if re.search(r"\b(drone maker|drone factory)\b", blob, re.I) and not struck:
@@ -888,6 +964,7 @@ def update_trendlog(previous: dict | None, history: dict | None, today: str, thr
         if states.get(topic) != state:
             changes.append({"title": f"{topic} is {state}", "section": "Rising situations", "change": "updated", "severity": "ALERT", "note": " · ".join(reasons), "date": today})
         states[topic] = state
+    items = attach_rising_links(items, threats)
     return {"topics": topics, "clusters": clusters, "states": states, "checkedAt": today}, items, changes
 
 
@@ -1071,12 +1148,13 @@ def _plain(value: str) -> str:
 
 
 def gdacs_severity(level: str) -> str:
+    """Green is GDACS's lowest level. Orange is an alert. Red is critical."""
     name = (level or "").lower()
     if "red" in name:
         return "CRITICAL"
     if "orange" in name:
-        return "ACTION"
-    return "ALERT"
+        return "ALERT"
+    return "STANDBY"
 
 
 def parse_gdacs_events(payload: dict | None, today: str, limit: int = 8) -> list[dict]:
@@ -1098,7 +1176,7 @@ def parse_gdacs_events(payload: dict | None, today: str, limit: int = 8) -> list
         # The desk only shows the current year, so a drought that began earlier stays off this board.
         if started[:4] != today[:4]:
             continue
-        if severity == "ALERT" and started < cutoff:
+        if severity == "STANDBY" and started < cutoff:
             continue
         seen.add(link)
         point = ((feature.get("geometry") or {}).get("coordinates") or [None, None])
