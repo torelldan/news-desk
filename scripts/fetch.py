@@ -1037,6 +1037,19 @@ def main() -> int:
         radar = {"items": [], "note": f"n/a — {err}"}
     impact = citizen.impact_report(threat_items, boards_out.get("assets") or {})
     try:
+        infra_rows, infra_gaps = boards.fetch_infra(now)
+    except Exception as err:
+        infra_rows, infra_gaps = [], [f"Infrastructure: {err}"]
+        errors.append(f"Infrastructure: {err}")
+    impact["infra"] = infra_rows
+    impact["infraGaps"] = infra_gaps
+    seen_infra = {row.get("url") or "" for row in threat_items}
+    for row in infra_rows:
+        if row.get("url") and row["url"] in seen_infra:
+            continue
+        threat_items.append(row)
+        seen_infra.add(row.get("url") or "")
+    try:
         import boards
         import deskextra
         energy = 0
@@ -1051,6 +1064,14 @@ def main() -> int:
         impact["drivers"] = drivers
         impact["explainer"] = deskextra.gold_driver_lines(deskextra.driver_moves(drivers))
         impact["vixZone"] = deskextra.vix_zone((((drivers.get("rows") or []) and next((row.get("level") for row in drivers["rows"] if row.get("name") == "VIX"), None)) or None))
+        brent = (deskextra.driver_moves(drivers).get("brent"))
+        if brent is not None and abs(float(brent)) >= 1:
+            note = f"Brent {brent}% over 1 month"
+            for row in impact.get("infra") or []:
+                row["market"] = note
+            for row in threat_items:
+                if row.get("kind") == "infra":
+                    row["market"] = note
     except Exception as err:
         errors.append(f"Drivers: {err}")
     brief = citizen.morning_brief(threat_items, trends, triggers, boards_out.get("assets") or {}, local, boards_out.get("markets") or {})
@@ -1208,6 +1229,10 @@ def main() -> int:
         import boards as strike_boards
         strike_doc = strike_boards.fetch_strikes(now, load_json(DATA / "strikes.json", {"items": []}), threat_items)
         save_json(DATA / "strikes.json", strike_doc)
+        threat_items = strike_boards.promote_alert_strikes(threat_items, strike_doc)
+        if boards_out.get("threats"):
+            boards_out["threats"]["items"] = threat_items
+            save_json(DATA / "threats.json", boards_out["threats"])
     except Exception as err:
         errors.append(f"Strikes: {err}")
     try:
@@ -1224,6 +1249,15 @@ def main() -> int:
         log, rising_items, rising_changes = deskextra.update_trendlog(prev_log, history, now.date().isoformat(), threat_items)
         save_json(DATA / "trendlog.json", {"topics": log["topics"], "clusters": log["clusters"], "states": log["states"], "checkedAt": log["checkedAt"]})
         rising_rows = deskextra.attach_rising_links(deskextra.rising_from_trends(trends, rising_items), threat_items)
+        infra_alerts = [row for row in threat_items if row.get("kind") == "infra" and row.get("severity") in {"ALERT", "ACTION", "CRITICAL"}]
+        if infra_alerts and not any((item.get("topic") or "").lower() == "infra" for item in rising_rows):
+            rising_rows.insert(0, {
+                "topic": "infra",
+                "state": "RISING",
+                "score": len(infra_alerts),
+                "reasons": f"{len(infra_alerts)} open infrastructure incident{'s' if len(infra_alerts) != 1 else ''}",
+                "links": [{"title": row.get("title") or "", "url": row.get("url") or "", "source": row.get("source") or ""} for row in infra_alerts[:4]],
+            })
         save_json(DATA / "rising.json", {"items": rising_rows, "changes": rising_changes, "gaps": []})
     except Exception as err:
         errors.append(f"Rising situations: {err}")

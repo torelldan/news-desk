@@ -1780,6 +1780,7 @@ function renderThreats() {
     ["climate", "Climate summits", (item) => item.kind === "climate"],
     ["diplomacy", "G7 and diplomacy", (item) => item.kind === "diplomacy"],
     ["global", "Global", (item) => item.kind === "global"],
+    ["infra", "Infrastructure", (item) => item.kind === "infra"],
     ["attack", "Attacks", (item) => item.kind === "attack"],
     ["natural", "Natural disasters", (item) => ["quake", "storm", "gdacs", "relief", "windstorm"].includes(item.kind) || (item.kind === "nws" && !local(item))],
     ["war", "Other conflict", (item) => item.kind === "conflict"],
@@ -1967,7 +1968,18 @@ function renderImpact() {
     return `<a href="${esc(url)}" target="_blank" rel="noopener"><circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${radius}" fill="#39ff14"><title>${title}</title></circle></a>`;
   }).join("");
   const path = (DESK.world || {}).path || "";
-  document.getElementById("impact").innerHTML = fold("show-map", `Map · ${threats.length} located events`, `<svg class="plot" viewBox="0 0 800 400" role="img" aria-label="World plot of located events"><path class="land" d="${path}"></path>${dots}</svg><p class="note-plain">Marker size follows the status: standby, alert, action, critical.</p>`, false);
+  const infra = ((DESK.impact || {}).infra) || [];
+  const infraHtml = infra.length ? `<h3 class="group">Undersea and underground · ${infra.length}</h3>` + infra.map((item) => {
+    const url = safeUrl(item.url);
+    const title = url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(item.title || "")}</a>` : esc(item.title || "");
+    const links = (item.links || []).slice(0, 3).map((sample) => {
+      const href = safeUrl(sample.url);
+      const label = sample.source || "source";
+      return href ? `<a href="${esc(href)}" target="_blank" rel="noopener">${esc(label)}</a>` : "";
+    }).filter(Boolean).join(" · ");
+    return `<p class="meta"><span class="sev sev-${esc(String(item.severity || "standby").toLowerCase())}">${esc(item.severity || "STANDBY")}</span> ${esc(item.region || "region unknown")} · ${esc(item.asset || "infrastructure")} · ${esc(item.cause || "unconfirmed")}${item.open ? " · open" : ""} · ${title}${item.market ? " · " + esc(item.market) : ""}${links ? " · " + links : ""}</p>`;
+  }).join("") + ((DESK.impact || {}).infraGaps || []).map((gap) => `<p class="meta">Source down: ${esc(String(gap).slice(0, 160))}</p>`).join("") : "";
+  document.getElementById("impact").innerHTML = infraHtml + fold("show-map", `Map · ${threats.length} located events`, `<svg class="plot" viewBox="0 0 800 400" role="img" aria-label="World plot of located events"><path class="land" d="${path}"></path>${dots}</svg><p class="note-plain">Marker size follows the status: standby, alert, action, critical.</p>`, false);
   const cards = ((DESK.assets || {}).series || []).map((asset) => {
     const src = safeUrl(asset.source);
     const name = src ? `<a href="${esc(src)}" target="_blank" rel="noopener">${esc(asset.name)}</a>` : esc(asset.name);

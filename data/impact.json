@@ -2642,5 +2642,79 @@
     "Gold/silver ratio 82.8 (1-month change 14.56%) and copper -13.85%. Association, not proof: industrial worry is hitting silver harder."
   ],
   "note": "-1d is the move into the day before the event. +1d and +3d are moves from that same close to the stored close on or after those days. Correlation is Pearson between a category event-day (1/0) and that asset's daily percent change. Fewer than 5 paired days, or fewer than 3 event days, is n/a.",
-  "vixZone": "15 to 25"
+  "vixZone": "15 to 25",
+  "infra": [
+    {
+      "id": "infra:6c825e5580dd4286",
+      "kind": "infra",
+      "lane": "threat",
+      "source": "Daily Ausaf",
+      "sourceId": "infra",
+      "title": "Internet services disrupted across Pakistan due to undersea cable fault - Daily Ausaf",
+      "guest": "",
+      "note": "",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQY25MT1kwVXhudUk1UlNybEpEa0lmNERtMFRkLXVOOGFqUjJ3VWVpb2hNakMxZmFUVVdGSGRvYUZvWnA0RVZkMWk0d19FRk1pUVNzQTN0cE5ET2hnRkNYYzdkQThxbWN1R05DdEpncFBkNzlEMnlRZHNMaUVjSUdNdFZmRTNEMkRFLThpdXF1cFlVYlJ5Q3NIYjdiRkNMN09EanBfa1h4SHlmd0HSAbABQVVfeXFMUFU0ZDJkZjE0YlNKREs1Y0pvUWQ1ZVVhZjUydERkNVFTTERPLWVucDRObFFBRGdScEh1UWtsSFBhX3BoRjhmck9YRko0azlQNDhMRkc0YXdQSzBoakEwa0lMRU1ZeGJ3Yl9Qc1gzVHFGeTJBbU9RUVZlVGVOYm9uWFI5VHRMTkZMVFZFUmFJZzNDVER0cUU1d2JEOXpUS3E5TV9kaERYUWVfRFNXbE0tXzc?oc=5",
+      "published": "2026-11-19T03:59:26-06:00",
+      "date": "2026-11-19",
+      "label": "Nov 19, 2026 3:59 AM CT",
+      "weekday": "Thu",
+      "timeKnown": true,
+      "tags": [
+        "infra",
+        "alert"
+      ],
+      "severity": "ALERT",
+      "cause": "unconfirmed",
+      "region": "",
+      "asset": "cable",
+      "open": true,
+      "links": [
+        {
+          "title": "Internet services disrupted across Pakistan due to undersea cable fault - Daily Ausaf",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQY25MT1kwVXhudUk1UlNybEpEa0lmNERtMFRkLXVOOGFqUjJ3VWVpb2hNakMxZmFUVVdGSGRvYUZvWnA0RVZkMWk0d19FRk1pUVNzQTN0cE5ET2hnRkNYYzdkQThxbWN1R05DdEpncFBkNzlEMnlRZHNMaUVjSUdNdFZmRTNEMkRFLThpdXF1cFlVYlJ5Q3NIYjdiRkNMN09EanBfa1h4SHlmd0HSAbABQVVfeXFMUFU0ZDJkZjE0YlNKREs1Y0pvUWQ1ZVVhZjUydERkNVFTTERPLWVucDRObFFBRGdScEh1UWtsSFBhX3BoRjhmck9YRko0azlQNDhMRkc0YXdQSzBoakEwa0lMRU1ZeGJ3Yl9Qc1gzVHFGeTJBbU9RUVZlVGVOYm9uWFI5VHRMTkZMVFZFUmFJZzNDVER0cUU1d2JEOXpUS3E5TV9kaERYUWVfRFNXbE0tXzc?oc=5",
+          "source": "Daily Ausaf"
+        }
+      ],
+      "sourceCount": 1,
+      "market": "Brent -2.04% over 5 days · TTF +4.45% over 5 days"
+    },
+    {
+      "id": "infra:66b23ff5a74490b7",
+      "kind": "infra",
+      "lane": "threat",
+      "source": "The Manila Times",
+      "sourceId": "infra",
+      "title": "Hong Kong drops charge against captain over Baltic pipeline damage - The Manila Times",
+      "guest": "",
+      "note": "",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQaXNWQ09feWZ5dnNrQlF3WGVGTzdiekcxWEIyck41LW13UlI5dWw4R0prRzJKUzBLX3M0U0Y5S244UDVDUW9rUXhnYTkzdFVtTU51dkJZUmFEWmttd0c1MjIzSHBpNEw3ZW5WWUhlQmdnNVhEWFR3Q3JwSXRBV245TEU3LXBhQnFRMGQxQ0tPc0x6OXRMX3ZyaDdJOUduX05VVjU5LTEtcFI5TURERXlrRy1MN0doTGFLS2RhRVVDNXU2a3JWTVlna2gtc2jSAdIBQVVfeXFMUHNqSHNFMkZlbktDV2hac0wwZDRZdWdTRk1UX0JRLUh6N3ZzN2NHVGRoc1VKUGQ4cFJGQ2dTbVlaRGo2Y1ZsNnZqbkdPQnV1ejFKU0gza0ZzQThoNkRkNjdSM1A5OHVNajNnbmZ4MWJBYjFBUzZZR1RFNG84ZEpQQ01ybFE1NU9fZV9NcVpxQjB0SDNlLVZYdHprME4zTUREMGJ5cDFYMW9HYlFZcDR4YWNFUms2VjEtT0tEWk0yZkozWERNSVl1MEp2OXVONkhDdGh3?oc=5",
+      "published": "2026-11-18T07:17:00-06:00",
+      "date": "2026-11-18",
+      "label": "Nov 18, 2026 7:17 AM CT",
+      "weekday": "Wed",
+      "timeKnown": true,
+      "tags": [
+        "infra",
+        "alert"
+      ],
+      "severity": "ALERT",
+      "cause": "unconfirmed",
+      "region": "Baltic Sea",
+      "asset": "pipeline",
+      "open": true,
+      "links": [
+        {
+          "title": "Hong Kong drops charge against captain over Baltic pipeline damage - The Manila Times",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQaXNWQ09feWZ5dnNrQlF3WGVGTzdiekcxWEIyck41LW13UlI5dWw4R0prRzJKUzBLX3M0U0Y5S244UDVDUW9rUXhnYTkzdFVtTU51dkJZUmFEWmttd0c1MjIzSHBpNEw3ZW5WWUhlQmdnNVhEWFR3Q3JwSXRBV245TEU3LXBhQnFRMGQxQ0tPc0x6OXRMX3ZyaDdJOUduX05VVjU5LTEtcFI5TURERXlrRy1MN0doTGFLS2RhRVVDNXU2a3JWTVlna2gtc2jSAdIBQVVfeXFMUHNqSHNFMkZlbktDV2hac0wwZDRZdWdTRk1UX0JRLUh6N3ZzN2NHVGRoc1VKUGQ4cFJGQ2dTbVlaRGo2Y1ZsNnZqbkdPQnV1ejFKU0gza0ZzQThoNkRkNjdSM1A5OHVNajNnbmZ4MWJBYjFBUzZZR1RFNG84ZEpQQ01ybFE1NU9fZV9NcVpxQjB0SDNlLVZYdHprME4zTUREMGJ5cDFYMW9HYlFZcDR4YWNFUms2VjEtT0tEWk0yZkozWERNSVl1MEp2OXVONkhDdGh3?oc=5",
+          "source": "The Manila Times"
+        }
+      ],
+      "sourceCount": 1,
+      "market": "Brent -2.04% over 5 days · TTF +4.45% over 5 days"
+    }
+  ],
+  "infraGaps": [
+    "Gassco UMM: curl: (22) The requested URL returned error: 404\n",
+    "BSEE: curl: (22) The requested URL returned error: 404\n"
+  ]
 }

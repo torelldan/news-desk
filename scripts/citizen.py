@@ -395,8 +395,10 @@ def apply_outlook(items: list[dict], history: dict, today: str) -> None:
             item["outlook"] = "Steady versus yesterday. No 72-hour escalation in the stored record."
         item["soWhat"] = so_what(item)
         item["action"] = "no action needed" if item["soWhat"] in {"", "no action needed"} else item["soWhat"]
+        counted = max(int(item.get("sourceCount") or 1), 1 + len(item.get("relatedSources") or []))
         conf = confidence_for(item, extra_domains=int(item.get("extraDomains") or 0))
         item.update(conf)
+        item["sourceCount"] = max(counted, int(item.get("sourceCount") or 1))
 
 
 def _gulf_bound(blob: str) -> bool:
@@ -1276,6 +1278,9 @@ def morning_brief(threats, trends, triggers, assets, local, markets=None) -> str
     globe = [item.get("title") for item in threats or [] if item.get("kind") == "global" and item.get("severity") == "ALERT"][:1]
     if globe:
         lines.append("Global: " + globe[0] + ".")
+    pipes = [item for item in threats or [] if item.get("kind") == "infra" and item.get("severity") in {"ALERT", "ACTION", "CRITICAL"}][:1]
+    if pipes:
+        lines.append(f"Infrastructure: {pipes[0].get('title')} ({pipes[0].get('cause') or 'unconfirmed'}).")
     trend_items = [item for item in (trends or {}).get("items") or [] if item.get("rise") not in (None, "", "flat")]
     if trend_items:
         lead = trend_items[0]

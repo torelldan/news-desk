@@ -586,5 +586,17 @@
     "short": "SPC",
     "subtitle": "threat",
     "url": "https://www.spc.noaa.gov/"
+  },
+  {
+    "id": "threat-infra",
+    "name": "Undersea infrastructure",
+    "short": "INFRA",
+    "lane": "threat",
+    "url": "https://subtelforum.com/",
+    "subtitle": "threat",
+    "lastLabel": "Nov 19, 2026 3:59 AM CT",
+    "lastDate": "2026-11-19",
+    "count": 2,
+    "offline": false
   }
 ]

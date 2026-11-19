@@ -602,6 +602,161 @@ def section_spikes(items: list | None, lexicon: tuple | None = None, min_outlets
     return spikes[:4]
 
 
+_INFRA_REGIONS = (
+    ("gulf of finland", "Gulf of Finland"),
+    ("gulf of mexico", "Gulf of Mexico"),
+    ("baltic", "Baltic Sea"),
+    ("north sea", "North Sea"),
+    ("red sea", "Red Sea"),
+    ("black sea", "Black Sea"),
+    ("taiwan strait", "Taiwan Strait"),
+    ("mediterranean", "Mediterranean"),
+)
+_INFRA_ASSETS = (
+    ("nord stream", "Nord Stream"),
+    ("balticconnector", "Balticconnector"),
+    ("c-lion", "C-Lion"),
+    ("langeled", "Langeled"),
+    ("europipe", "Europipe"),
+    ("zeepipe", "Zeepipe"),
+    ("franpipe", "Franpipe"),
+    ("sea-me-we", "SEA-ME-WE"),
+    ("seamewe", "SEA-ME-WE"),
+)
+_CAUSE_RANK = {"unconfirmed": 0, "accident": 1, "suspected sabotage": 2, "confirmed sabotage": 3}
+
+
+def infra_region(title: str, note: str = "") -> str:
+    blob = f"{title or ''} {note or ''}".lower()
+    for needle, label in _INFRA_REGIONS:
+        if needle in blob:
+            return label
+    return ""
+
+
+def infra_asset(title: str, note: str = "") -> str:
+    blob = f"{title or ''} {note or ''}".lower()
+    for needle, label in _INFRA_ASSETS:
+        if needle in blob:
+            return label
+    if "cable" in blob:
+        return "cable"
+    if "pipeline" in blob or "gas line" in blob:
+        return "pipeline"
+    if re.search(r"\bmine\b", blob):
+        return "mine"
+    if "tunnel" in blob:
+        return "tunnel"
+    return "infrastructure"
+
+
+def infra_cause(title: str, note: str = "") -> str:
+    """Unconfirmed until a later headline says accident, suspected, or confirmed."""
+    blob = f"{title or ''} {note or ''}"
+    if re.search(r"confirmed sabotage|sabotage confirmed", blob, re.I):
+        return "confirmed sabotage"
+    if re.search(r"sabotage suspected|suspected sabotage|sabotage is suspected|investigating sabotage|\bdeliberate\b|anchor dragged|anchor drag", blob, re.I):
+        return "suspected sabotage"
+    if re.search(r"\baccident\b|technical failure|accidentally", blob, re.I):
+        return "accident"
+    return "unconfirmed"
+
+
+def infra_noise(title: str, note: str = "") -> bool:
+    blob = f"{title or ''} {note or ''}"
+    if section_noise(title):
+        return True
+    return re.search(r"\b(op-ed|oped|essay|explainer|what is|how to)\b", blob, re.I) is not None
+
+
+def infra_incident(title: str, note: str = "") -> bool:
+    """A reported cut, leak, rupture, explosion, or outage. Maintenance still counts, at standby."""
+    if infra_noise(title, note):
+        return False
+    blob = f"{title or ''} {note or ''}"
+    return re.search(
+        r"\b(damage|damaged|cut|leak|rupture|explosion|outage|interruption|sabotage|anchor drag|anchor dragged|"
+        r"fault|disrupt\w*|maintenance)\b",
+        blob,
+        re.I,
+    ) is not None
+
+
+def infra_us(title: str, note: str = "") -> bool:
+    blob = f"{title or ''} {note or ''}"
+    return re.search(r"\b(united states|u\.s\.|gulf of mexico|texas|louisiana)\b", blob, re.I) is not None
+
+
+def infra_severity(title: str, note: str = "", cause: str = "unconfirmed", same_region: int = 1) -> str:
+    """Outage or damage is an alert. Suspected sabotage, or a second hit in the region, is action."""
+    blob = f"{title or ''} {note or ''}"
+    if re.search(r"routine maintenance|planned maintenance|scheduled maintenance", blob, re.I):
+        return "STANDBY"
+    multi = re.search(r"several countries|multiple countries|multi-country|european gas supply|supply (?:cut|halt|shock)", blob, re.I)
+    if (infra_us(title, note) or multi) and re.search(r"outage|damage|damaged|shut|halt|interruption|supply|rupture|leak", blob, re.I):
+        return "CRITICAL"
+    if cause in {"suspected sabotage", "confirmed sabotage"} or int(same_region or 1) >= 2:
+        return "ACTION"
+    if re.search(r"outage|damage|damaged|cut|leak|rupture|interruption|explosion|fault|disrupt", blob, re.I):
+        return "ALERT"
+    return "STANDBY"
+
+
+def infra_dedupe(rows: list[dict]) -> list[dict]:
+    """One open incident per asset and region. A later headline can raise the cause."""
+    kept: list[dict] = []
+    for row in rows or []:
+        key = ((row.get("asset") or "").lower(), (row.get("region") or "").lower())
+        match = next((other for other in kept if ((other.get("asset") or "").lower(), (other.get("region") or "").lower()) == key), None)
+        if match is None:
+            fresh = dict(row)
+            fresh["links"] = list(fresh.get("links") or [])
+            if fresh.get("url") and fresh["url"] not in {item.get("url") for item in fresh["links"]}:
+                fresh["links"].insert(0, {"title": fresh.get("title") or "", "url": fresh.get("url") or "", "source": fresh.get("source") or ""})
+            fresh["sourceCount"] = len({item.get("source") for item in fresh["links"] if item.get("source")}) or 1
+            kept.append(fresh)
+            continue
+        cause = row.get("cause") or "unconfirmed"
+        if _CAUSE_RANK.get(cause, 0) > _CAUSE_RANK.get(match.get("cause") or "", 0):
+            match["cause"] = cause
+            if row.get("title"):
+                match["title"] = row["title"]
+            if row.get("url"):
+                match["url"] = row["url"]
+        src = row.get("source") or ""
+        links = list(match.get("links") or [])
+        if row.get("url") and row["url"] not in {item.get("url") for item in links}:
+            links.append({"title": row.get("title") or "", "url": row.get("url") or "", "source": src})
+        match["links"] = links[:6]
+        sources = []
+        for item in links:
+            if item.get("source") and item["source"] not in sources:
+                sources.append(item["source"])
+        match["relatedSources"] = [name for name in sources if name != match.get("source")]
+        match["related"] = len(match["relatedSources"])
+        match["sourceCount"] = len(sources) or 1
+        if (row.get("date") or "") > (match.get("date") or ""):
+            match["date"] = row.get("date")
+            match["published"] = row.get("published") or match.get("published")
+    for row in kept:
+        row["severity"] = infra_severity(row.get("title") or "", row.get("note") or "", row.get("cause") or "unconfirmed", 1)
+    by_region: dict[str, list] = {}
+    for row in kept:
+        by_region.setdefault(row.get("region") or "", []).append(row)
+    for region, group in by_region.items():
+        if not region or len(group) < 2:
+            continue
+        for row in group:
+            if (row.get("severity") or "") == "CRITICAL":
+                continue
+            if (row.get("severity") or "") != "STANDBY":
+                row["severity"] = "ACTION"
+                row["regionCount"] = len(group)
+    for row in kept:
+        row["open"] = (row.get("cause") or "unconfirmed") == "unconfirmed"
+    return kept
+
+
 def attach_rising_links(items: list | None, threats: list | None) -> list:
     """Volume rows such as quake or relief get the threat-board items behind them."""
     aliases = {
