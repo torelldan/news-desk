@@ -1170,6 +1170,12 @@ def main() -> int:
             "google": trends.get("googleNote") or "",
         },
         "spikes": {
+            "labs": list((boards_out.get("science") or {}).get("spikes") or []),
+            "markets": [
+                dict(spike, region=(region.get("name") or region.get("id") or ""))
+                for region in (boards_out.get("markets") or {}).get("regions") or []
+                for spike in (region.get("spikes") or [])
+            ],
             "podcasts": deskextra.section_spikes(episodes, lexicon=(), min_outlets=2),
         },
         "x": {

@@ -1745,7 +1745,8 @@ function renderMarkets() {
     const anyOpen = (region.venues || []).some((venue) => venueStatus(venue, now).open);
     const primary = (region.venues || []).slice().sort((a, b) => Math.abs(Number(b.changePct) || 0) - Math.abs(Number(a.changePct) || 0))[0] || {};
     const move = primary.changePct == null ? "no quote" : `${primary.changePct > 0 ? "+" : ""}${primary.changePct}%`;
-    const top = headlines[0] ? clip(headlines[0].title, 72) : "No headline";
+    const spike = (region.spikes || [])[0];
+    const top = spike ? `spike ${spike.topic} (${spike.outlets || ""})` : (headlines[0] ? clip(headlines[0].title, 72) : "No headline");
     const slug = String(region.name || "region").toLowerCase().replace(/[^a-z0-9]+/g, "-");
     const macro = ((DESK.macro || {}).regions || {})[region.id] || null;
     const macroLine = macro ? `<p class="meta">FX ${esc(macro.fx || "n/a")} · policy ${esc(macro.policy || "n/a")} · 10Y ${esc(macro.yield10y || "n/a")} · CPI ${esc(macro.cpi || "n/a")}</p>` : "";
@@ -1759,8 +1760,14 @@ function threatCard(item) {
   const html = row(item);
   if (!html) return `<p class="meta">${esc(item.title || "Untitled")}</p>`;
   const extra = relatedNote(item);
+  const links = (item.links || []).slice(0, 4).map((sample) => {
+    const url = safeUrl(sample.url);
+    const label = sample.source || sample.title || "source";
+    return url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(label)}</a>` : esc(label);
+  }).filter(Boolean).join(" · ");
   const withSev = html.replace("<article class=\"row\">", `<article class="row"><span class="sev sev-${sev.toLowerCase()}">${esc(sev)}</span> `);
-  return extra ? withSev.replace("</article>", `<p class="meta">${esc(extra)}</p></article>`) : withSev;
+  const tail = `${extra ? `<p class="meta">${esc(extra)}</p>` : ""}${links ? `<p class="meta">${links}</p>` : ""}`;
+  return tail ? withSev.replace("</article>", `${tail}</article>`) : withSev;
 }
 function renderThreats() {
   const rows = boardRows();
@@ -2041,10 +2048,11 @@ function renderLabs() {
   const html = Object.keys(names).map((field) => {
     const mine = items.filter((item) => item.field === field).sort((a, b) => ((b.heat || 0) - (a.heat || 0)) || (Date.parse(b.published || 0) - Date.parse(a.published || 0)));
     const spikes = (((DESK.science || {}).spikes) || []).filter((spike) => spike.field === field);
+    const spikeName = spikes[0] ? ` · spike ${esc(spikes[0].topic)} (${esc(String(spikes[0].outlets || ""))})` : "";
     const top = mine.slice(0, 3).map((item) => esc(item.title)).join(" · ");
     const body = (spikeLine(spikes) || "") + (mine.length ? mine.map(labCard).filter(Boolean).join("") : `<p class="meta">None in this window.</p>`);
     const count = mine.filter((item) => labCard(item)).length;
-    return fold("lab-" + field, `${esc(names[field])} · ${count}<span class="meta">${top ? " · " + top : ""}</span>`, body || `<p class="meta">None in this window.</p>`, false);
+    return fold("lab-" + field, `${esc(names[field])} · ${count}${spikeName}<span class="meta">${top ? " · " + top : ""}</span>`, body || `<p class="meta">None in this window.</p>`, false);
   }).join("");
   document.getElementById("labs").innerHTML = html || empty("No lab items in that window.");
 }
