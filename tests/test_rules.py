@@ -933,6 +933,16 @@ def test_hazard_source_parsers():
     assert deskextra.infra_severity("Anchor dragged across a Baltic cable", cause="suspected sabotage") == "ACTION"
     assert deskextra.infra_severity("Routine maintenance on Langeled", cause="unconfirmed") == "STANDBY"
     assert deskextra.infra_severity("Hong Kong drops charge against captain over Baltic pipeline damage") == "STANDBY"
+    assert deskextra.infra_market_note(-2.5, 4.5) == "Brent -2.5% over 5 days · TTF 4.5% over 5 days"
+    stamped = deskextra.stamp_infra_notes([{"note": "", "kind": "infra"}], deskextra.infra_market_note(-2.54, 4.45))
+    assert "Brent" in stamped[0]["note"] and "TTF" in stamped[0]["note"]
+    tile_rows = [{"id": "threat-infra", "count": 0, "lastDate": "", "lastLabel": ""}]
+    incidents = [
+        {"title": "Baltic", "published": "2026-11-18T07:17:00-06:00", "date": "2026-11-18", "label": "Nov 18, 2026 7:17 AM CT"},
+        {"title": "Pakistan", "published": "2026-11-19T03:59:26-06:00", "date": "2026-11-19", "label": "Nov 19, 2026 3:59 AM CT"},
+    ]
+    tile = boards.apply_infra_source(tile_rows, incidents)
+    assert tile["count"] == 2 and tile["lastDate"] == "2026-11-19" and tile["lastLabel"] == "Nov 19, 2026 3:59 AM CT"
     assert deskextra.infra_severity("Internet services disrupted across Pakistan due to undersea cable fault") == "ALERT"
     assert deskextra.infra_severity("Gulf of Mexico pipeline rupture cuts US supply", cause="unconfirmed") == "CRITICAL"
     assert deskextra.infra_noise("How to understand an undersea cable explainer") is True

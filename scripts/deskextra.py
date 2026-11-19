@@ -687,6 +687,29 @@ def infra_us(title: str, note: str = "") -> bool:
     return re.search(r"\b(united states|u\.s\.|gulf of mexico|texas|louisiana)\b", blob, re.I) is not None
 
 
+def infra_market_note(brent_5d=None, ttf_5d=None) -> str:
+    """A one-line Brent and TTF move, included only when a leg moved at least 1%."""
+    bits = []
+    for label, value in (("Brent", brent_5d), ("TTF", ttf_5d)):
+        try:
+            number = float(value)
+        except (TypeError, ValueError):
+            continue
+        if abs(number) < 1:
+            continue
+        bits.append(f"{label} {number}% over 5 days")
+    return " · ".join(bits)
+
+
+def stamp_infra_notes(rows: list | None, note: str) -> list:
+    """Write the market line onto note, which is the field the desk stores."""
+    for row in rows or []:
+        if note:
+            row["note"] = note
+            row["market"] = note
+    return rows or []
+
+
 def infra_severity(title: str, note: str = "", cause: str = "unconfirmed", same_region: int = 1) -> str:
     """Outage or damage is an alert. Suspected sabotage, or a second hit in the region, is action."""
     blob = f"{title or ''} {note or ''}"

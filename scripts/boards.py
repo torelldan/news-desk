@@ -2554,6 +2554,32 @@ def _science_feed(spec: dict, now: datetime, cutoff: str) -> list[dict]:
     return rows
 
 
+def apply_infra_source(rows: list | None, items: list | None) -> dict:
+    """The INFRA tile is built before the incidents are fetched. Fill it from those rows."""
+    latest = None
+    for item in items or []:
+        if latest is None or (item.get("published") or "") > (latest.get("published") or ""):
+            latest = item
+    tile = next((row for row in rows or [] if row.get("id") == "threat-infra"), None)
+    if tile is None:
+        tile = {
+            "id": "threat-infra",
+            "name": "Undersea infrastructure",
+            "short": "INFRA",
+            "lane": "threat",
+            "url": "https://subtelforum.com/",
+            "subtitle": "threat",
+            "offline": False,
+        }
+        if rows is not None:
+            rows.append(tile)
+    tile["count"] = len(items or [])
+    tile["lastDate"] = (latest or {}).get("date") or ""
+    tile["lastLabel"] = (latest or {}).get("label") or ""
+    tile["offline"] = False
+    return tile
+
+
 def extra_sources(markets: dict, threats: dict, science: dict, gaps: list | None = None) -> list[dict]:
     """World-desk rows for the boards, not only the podcast and X list."""
     rows = []
