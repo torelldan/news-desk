@@ -7092,7 +7092,7 @@
     },
     {
       "date": "2026-11-19",
-      "label": "Nov 19, 2026 8:58 AM CT",
+      "label": "Nov 19, 2026 9:50 AM CT",
       "outlooks": [
         {
           "id": "quake:1eb36ed394438d89",
@@ -7300,6 +7300,11 @@
           "severity": "STANDBY"
         },
         {
+          "id": "cyber:b1a579d6fecac6ff",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
           "id": "cyber:155f1de6b4673b95",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "STANDBY"
@@ -7315,12 +7320,7 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:756a72380aee0a78",
-          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:53f878dbd68ccaaa",
+          "id": "headline:f55e641b827b32c0",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "STANDBY"
         },
@@ -7330,42 +7330,12 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:b11f14b4fd88486f",
+          "id": "headline:40b44044197c7796",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
         {
-          "id": "headline:071be1d8e25eccda",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ALERT"
-        },
-        {
-          "id": "headline:d4348496413bda52",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ALERT"
-        },
-        {
-          "id": "headline:f975d6dbbccc6de8",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ALERT"
-        },
-        {
-          "id": "headline:314f9dd5d0dad6b6",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ALERT"
-        },
-        {
-          "id": "headline:266df09b66953b11",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ALERT"
-        },
-        {
-          "id": "headline:367c6f0596cf799e",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ALERT"
-        },
-        {
-          "id": "headline:c94b9849d1024953",
+          "id": "headline:516bd6dfbeafd855",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
         },
@@ -7375,14 +7345,79 @@
           "severity": "ALERT"
         },
         {
-          "id": "headline:e52983d467198ea1",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ALERT"
-        },
-        {
           "id": "headline:8cb96b3b99d6a26c",
           "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
           "severity": "ALERT"
+        },
+        {
+          "id": "headline:ab64c62e75f10c05",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:071be1d8e25eccda",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:f902bff0eeecd5d8",
+          "outlook": "Lower than yesterday. The 72-hour path is easing if it holds.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:f975d6dbbccc6de8",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:314f9dd5d0dad6b6",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:266df09b66953b11",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:0817dedfcb4b6267",
+          "outlook": "Lower than yesterday. The 72-hour path is easing if it holds.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:367c6f0596cf799e",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:d21942f36dbb7b97",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:d65188e3b9eeabb1",
+          "outlook": "Lower than yesterday. The 72-hour path is easing if it holds.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:c94b9849d1024953",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:68f0ef50dbbd795e",
+          "outlook": "Lower than yesterday. The 72-hour path is easing if it holds.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:e52983d467198ea1",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:07e6cc23a7b8e036",
+          "outlook": "Lower than yesterday. The 72-hour path is easing if it holds.",
+          "severity": "STANDBY"
         },
         {
           "id": "headline:59cd8f41c7885220",
@@ -7390,32 +7425,22 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:63e77d9b0f930858",
+          "id": "headline:d4882d9e5f29cb7b",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "STANDBY"
         },
         {
-          "id": "headline:93bb9cea5bbd5698",
+          "id": "headline:d15541953ee71bcb",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "STANDBY"
         },
         {
-          "id": "headline:64f0432cb0c132de",
-          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:01c3a0ebe0cee24f",
+          "id": "headline:75600b4c91d7542c",
           "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "STANDBY"
+          "severity": "ALERT"
         },
         {
-          "id": "headline:42774c269809659e",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:d21942f36dbb7b97",
+          "id": "headline:ff870ec6c413c4cd",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "STANDBY"
         },
@@ -7703,6 +7728,12 @@
           "title": "CVE-2026-114713 UnrealIRCd Improper Neutralization of Delimiters Vulnerability"
         },
         {
+          "id": "cyber:b1a579d6fecac6ff",
+          "kind": "cyber",
+          "severity": "STANDBY",
+          "title": "European Commission confirms cyberattack, says hackers used AI tool"
+        },
+        {
           "id": "cyber:155f1de6b4673b95",
           "kind": "cyber",
           "severity": "STANDBY",
@@ -7721,16 +7752,10 @@
           "title": "CISA Warns of 4 Exploited Flaws Linked to Ransomware, Cryptomining, and LLMjacking Attacks"
         },
         {
-          "id": "headline:756a72380aee0a78",
+          "id": "headline:f55e641b827b32c0",
           "kind": "cyber",
           "severity": "STANDBY",
-          "title": "Optimizely confirms massive cyberattack on customer websites injected stealer malware - CSO Online"
-        },
-        {
-          "id": "headline:53f878dbd68ccaaa",
-          "kind": "cyber",
-          "severity": "STANDBY",
-          "title": "Cyberattack hits 178 organizations: Credit cards, crypto, other data at risk - Syracuse.com"
+          "title": "Important Notice of Data Breach for ECM/HOME Team Clients - Nevada County (.gov)"
         },
         {
           "id": "headline:e2b00f081fb43c3d",
@@ -7739,52 +7764,16 @@
           "title": "Some of the world’s most-visited websites targeted by cyberattack - WBAL-TV"
         },
         {
-          "id": "headline:b11f14b4fd88486f",
+          "id": "headline:40b44044197c7796",
           "kind": "attack",
           "severity": "ALERT",
-          "title": "York victim of Krakow attack on his way home, family confirms - BBC"
+          "title": "How disinformation exploited the Kraków tragedy to attack the usual targets, and how Elon Musk made things worse - EDMO"
         },
         {
-          "id": "headline:071be1d8e25eccda",
-          "kind": "war-iran",
+          "id": "headline:516bd6dfbeafd855",
+          "kind": "attack",
           "severity": "ALERT",
-          "title": "Iran Update, November 18, 2026 - Institute for the Study of War"
-        },
-        {
-          "id": "headline:d4348496413bda52",
-          "kind": "war-iran",
-          "severity": "ALERT",
-          "title": "Mideast nations ramp up efforts to avert all-out war as Israel urges Iran strikes, officials say - AP News"
-        },
-        {
-          "id": "headline:f975d6dbbccc6de8",
-          "kind": "diplomacy",
-          "severity": "ALERT",
-          "title": "G7 Foreign Ministers' meeting: Press remarks by the High Representative/Vice-President Kaja Kallas upon arrival - European External Action Service (EEAS)"
-        },
-        {
-          "id": "headline:314f9dd5d0dad6b6",
-          "kind": "usgov",
-          "severity": "ALERT",
-          "title": "Democrats flipped 9 U.S. Senate seats — the most in almost 70 years - PBS"
-        },
-        {
-          "id": "headline:266df09b66953b11",
-          "kind": "war-ukraine",
-          "severity": "ALERT",
-          "title": "Dispatch from Kyiv: Let Ukraine strike Russia’s missile launchers at the source - Atlantic Council"
-        },
-        {
-          "id": "headline:367c6f0596cf799e",
-          "kind": "usgov",
-          "severity": "ALERT",
-          "title": "The Supreme Court before it stood apart - SCOTUSblog"
-        },
-        {
-          "id": "headline:c94b9849d1024953",
-          "kind": "usgov",
-          "severity": "ALERT",
-          "title": "Secretary of State Marco Rubio on Major Technical Failures & Outage Incidents - C-SPAN"
+          "title": "Deadly mass shooting in Poland investigated as terror act, prosecutor says - ABC News - Breaking News, Latest News and Videos"
         },
         {
           "id": "headline:e9bea024fcae8468",
@@ -7793,16 +7782,94 @@
           "title": "Ukraine: Civilian casualties in 2026 already far exceed previous years’ tolls - UN News"
         },
         {
-          "id": "headline:e52983d467198ea1",
-          "kind": "war-ukraine",
-          "severity": "ALERT",
-          "title": "Remarks by Under Secretary of War for Policy Elbridge Colby at the Ukraine Defense Contact Group (As Delivered) - U.S. Department of War (.gov)"
-        },
-        {
           "id": "headline:8cb96b3b99d6a26c",
           "kind": "war-iran",
           "severity": "ALERT",
           "title": "Iran fires at U.S. facility in Bahrain as Tehran resumes strikes on Arab neighbors - PBS"
+        },
+        {
+          "id": "headline:ab64c62e75f10c05",
+          "kind": "war-iran",
+          "severity": "STANDBY",
+          "title": "Trump says renewed Iran strikes ‘highly unlikely’ if talks progress but warns he could still strike - CNBC"
+        },
+        {
+          "id": "headline:071be1d8e25eccda",
+          "kind": "war-iran",
+          "severity": "STANDBY",
+          "title": "Iran Update, November 18, 2026 - Institute for the Study of War"
+        },
+        {
+          "id": "headline:f902bff0eeecd5d8",
+          "kind": "war-iran",
+          "severity": "STANDBY",
+          "title": "Trump Grows Frustrated With Vance Over Iran War Critique - The New York Times"
+        },
+        {
+          "id": "headline:f975d6dbbccc6de8",
+          "kind": "diplomacy",
+          "severity": "STANDBY",
+          "title": "G7 Foreign Ministers' meeting: Press remarks by the High Representative/Vice-President Kaja Kallas upon arrival - European External Action Service (EEAS)"
+        },
+        {
+          "id": "headline:314f9dd5d0dad6b6",
+          "kind": "usgov",
+          "severity": "STANDBY",
+          "title": "Democrats flipped 9 U.S. Senate seats — the most in almost 70 years - PBS"
+        },
+        {
+          "id": "headline:266df09b66953b11",
+          "kind": "war-ukraine",
+          "severity": "STANDBY",
+          "title": "Dispatch from Kyiv: Let Ukraine strike Russia’s missile launchers at the source - Atlantic Council"
+        },
+        {
+          "id": "headline:0817dedfcb4b6267",
+          "kind": "climate",
+          "severity": "STANDBY",
+          "title": "OPEC speaks up for fossil fuels at COP31 climate talks - Reuters"
+        },
+        {
+          "id": "headline:367c6f0596cf799e",
+          "kind": "usgov",
+          "severity": "STANDBY",
+          "title": "The Supreme Court before it stood apart - SCOTUSblog"
+        },
+        {
+          "id": "headline:d21942f36dbb7b97",
+          "kind": "windstorm",
+          "severity": "STANDBY",
+          "title": "Storm Charles damages banana and avocado plantations in the Canary Islands - FreshPlaza"
+        },
+        {
+          "id": "headline:d65188e3b9eeabb1",
+          "kind": "usgov",
+          "severity": "STANDBY",
+          "title": "Rubio says there's 'zero' information that U.S. outages are caused by a malign actor - NPR"
+        },
+        {
+          "id": "headline:c94b9849d1024953",
+          "kind": "usgov",
+          "severity": "STANDBY",
+          "title": "Secretary of State Marco Rubio on Major Technical Failures & Outage Incidents - C-SPAN"
+        },
+        {
+          "id": "headline:68f0ef50dbbd795e",
+          "kind": "israel",
+          "severity": "STANDBY",
+          "title": "Israeli parliament elects new speaker backed by Netanyahu’s opponents - The Guardian"
+        },
+        {
+          "id": "headline:e52983d467198ea1",
+          "kind": "war-ukraine",
+          "severity": "STANDBY",
+          "title": "Remarks by Under Secretary of War for Policy Elbridge Colby at the Ukraine Defense Contact Group (As Delivered) - U.S. Department of War (.gov)"
+        },
+        {
+          "id": "headline:07e6cc23a7b8e036",
+          "kind": "war-ukraine",
+          "severity": "STANDBY",
+          "title": "France is not 'co-belligerent' in Ukraine, French minister says - Reuters"
         },
         {
           "id": "headline:59cd8f41c7885220",
@@ -7811,40 +7878,28 @@
           "title": "Polish police arrest 3 teens over suspected neo-Nazi terror plot - DW.com"
         },
         {
-          "id": "headline:63e77d9b0f930858",
-          "kind": "war-ukraine",
+          "id": "headline:d4882d9e5f29cb7b",
+          "kind": "global",
           "severity": "STANDBY",
-          "title": "Ukraine Facility: Council approves largest-ever payment of €8 billion to Kyiv - Council, European Union"
+          "title": "Ukraine updates: Europe to send united front to potential peace talks - DW.com"
         },
         {
-          "id": "headline:93bb9cea5bbd5698",
+          "id": "headline:d15541953ee71bcb",
           "kind": "israel",
           "severity": "STANDBY",
-          "title": "Can Netanyahu and Eisenkot form a ‘unity’ government in Israel? - Al Jazeera"
+          "title": "Israel's Arab Parties After the Election: Unprecedented Representation - Royal United Services Institute (RUSI)"
         },
         {
-          "id": "headline:64f0432cb0c132de",
-          "kind": "usgov",
-          "severity": "STANDBY",
-          "title": "The History of Electricity at the White House - Department of Energy (.gov)"
+          "id": "headline:75600b4c91d7542c",
+          "kind": "global",
+          "severity": "ALERT",
+          "title": "First three-way summit between China, Russia and the US opens possible avenue to nuclear disarmament talks - ICAN - International Campaign to Abolish Nuclear Weapons"
         },
         {
-          "id": "headline:01c3a0ebe0cee24f",
-          "kind": "war-iran",
+          "id": "headline:ff870ec6c413c4cd",
+          "kind": "global",
           "severity": "STANDBY",
-          "title": "Democrats mulling Iran war funding cutoff strategy - Roll Call"
-        },
-        {
-          "id": "headline:42774c269809659e",
-          "kind": "climate",
-          "severity": "STANDBY",
-          "title": "COP31 to take place 9-20 November 2026 in Antalya, Türkiye - Welcome to the United Nations"
-        },
-        {
-          "id": "headline:d21942f36dbb7b97",
-          "kind": "windstorm",
-          "severity": "STANDBY",
-          "title": "Storm Charles damages banana and avocado plantations in the Canary Islands - FreshPlaza"
+          "title": "From tarmac to APEC summit table, Japan's PM cuts a lonely figure - Reuters"
         },
         {
           "id": "neo:3d3ddf5e49ea000e",
@@ -7891,6 +7946,11 @@
       ],
       "trends": [
         {
+          "category": "ukraine-war",
+          "name": "ukraine war",
+          "volume": null
+        },
+        {
           "category": "iran-war",
           "name": "iran war",
           "volume": null
@@ -7901,8 +7961,8 @@
           "volume": null
         },
         {
-          "category": "ukraine-war",
-          "name": "ukraine war",
+          "category": "global",
+          "name": "global",
           "volume": null
         }
       ],

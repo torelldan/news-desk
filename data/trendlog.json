@@ -1614,11 +1614,11 @@
       "topic": "windstorm"
     },
     {
-      "count": 2,
+      "count": 3,
       "countries": 1,
       "date": "2026-11-19",
       "keywords": [],
-      "outlets": 2,
+      "outlets": 3,
       "score": 0,
       "severity": "ALERT",
       "topic": "attack"
@@ -1660,7 +1660,7 @@
       "keywords": [],
       "outlets": 1,
       "score": 0,
-      "severity": "ALERT",
+      "severity": "STANDBY",
       "topic": "diplomacy"
     },
     {
@@ -1674,11 +1674,23 @@
       "topic": "gdacs"
     },
     {
-      "count": 1,
+      "count": 3,
+      "countries": 1,
+      "date": "2026-11-19",
+      "keywords": [
+        "nuclear"
+      ],
+      "outlets": 3,
+      "score": 0,
+      "severity": "ALERT",
+      "topic": "global"
+    },
+    {
+      "count": 2,
       "countries": 1,
       "date": "2026-11-19",
       "keywords": [],
-      "outlets": 1,
+      "outlets": 2,
       "score": 0,
       "severity": "STANDBY",
       "topic": "israel"
@@ -1720,7 +1732,7 @@
       "keywords": [],
       "outlets": 4,
       "score": 0,
-      "severity": "ALERT",
+      "severity": "STANDBY",
       "topic": "usgov"
     },
     {
@@ -1767,6 +1779,7 @@
   "states": {
     "cyber": "EMERGING",
     "gdacs": "EMERGING",
+    "global": "EMERGING",
     "quake": "RISING",
     "relief": "RISING"
   },
@@ -3484,11 +3497,11 @@
       "topic": "windstorm"
     },
     {
-      "count": 2,
+      "count": 3,
       "countries": 1,
       "date": "2026-11-19",
       "keywords": [],
-      "outlets": 2,
+      "outlets": 3,
       "score": 0,
       "severity": "ALERT",
       "topic": "attack"
@@ -3530,7 +3543,7 @@
       "keywords": [],
       "outlets": 1,
       "score": 0,
-      "severity": "ALERT",
+      "severity": "STANDBY",
       "topic": "diplomacy"
     },
     {
@@ -3544,11 +3557,23 @@
       "topic": "gdacs"
     },
     {
-      "count": 1,
+      "count": 3,
+      "countries": 1,
+      "date": "2026-11-19",
+      "keywords": [
+        "nuclear"
+      ],
+      "outlets": 3,
+      "score": 0,
+      "severity": "ALERT",
+      "topic": "global"
+    },
+    {
+      "count": 2,
       "countries": 1,
       "date": "2026-11-19",
       "keywords": [],
-      "outlets": 1,
+      "outlets": 2,
       "score": 0,
       "severity": "STANDBY",
       "topic": "israel"
@@ -3590,7 +3615,7 @@
       "keywords": [],
       "outlets": 4,
       "score": 0,
-      "severity": "ALERT",
+      "severity": "STANDBY",
       "topic": "usgov"
     },
     {

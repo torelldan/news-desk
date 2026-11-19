@@ -1,10 +1,89 @@
 {
   "baseline": false,
-  "brief": "No rare risk is on the board. A routine flyby or an empty storm outlook is not an emergency. Current war coverage is on the board: Ukraine: Civilian casualties in 2026 already far exceed previous years’ tolls - UN News; Iran fires at U.S. facility in Bahrain as Tehran resumes strikes on Arab neighbors - PBS. Global: First three-way summit between China, Russia and the US opens possible avenue to nuclear disarmament talks - ICAN - International Campaign to Abolish Nuclear Weapons. Rising topic: iran war (4 outlets this window).",
-  "checkedAt": "2026-11-19T08:58:50-06:00",
-  "checkedLabel": "Nov 19, 2026 8:58 AM CT",
-  "errors": [],
+  "brief": "No rare risk is on the board. A routine flyby or an empty storm outlook is not an emergency. Current war coverage is on the board: Ukraine: Civilian casualties in 2026 already far exceed previous years’ tolls - UN News; Iran fires at U.S. facility in Bahrain as Tehran resumes strikes on Arab neighbors - PBS. Global: First three-way summit between China, Russia and the US opens possible avenue to nuclear disarmament talks - ICAN - International Campaign to Abolish Nuclear Weapons. Rising topic: ukraine war (4 outlets this window).",
+  "checkedAt": "2026-11-19T09:50:34-06:00",
+  "checkedLabel": "Nov 19, 2026 9:50 AM CT",
+  "errors": [
+    "AP World: curl: (22) The requested URL returned error: 403\n",
+    "Reuters World: curl: (22) The requested URL returned error: 401\n"
+  ],
   "retainDays": 120,
+  "spikes": {
+    "podcasts": [
+      {
+        "links": [
+          {
+            "source": "Danny Jones",
+            "title": "#449 - \"They Broke Reality\" NASA Physicist WARNS of 100-Year Cover-Up | Thomas Campbell",
+            "url": "https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/traffic.megaphone.fm/QCD4993240466.mp3"
+          },
+          {
+            "source": "Joe Rogan Experience",
+            "title": "#2541 - Thomas Campbell",
+            "url": "https://traffic.megaphone.fm/GLT7603949559.mp3"
+          }
+        ],
+        "outlets": 2,
+        "state": "RISING",
+        "title": "#449 - \"They Broke Reality\" NASA Physicist WARNS of 100-Year Cover-Up | Thomas Campbell",
+        "topic": "Thomas Campbell"
+      },
+      {
+        "links": [
+          {
+            "source": "Huberman Lab",
+            "title": "Unlocking Persistent Motivation & Extreme Resilience | Ross Edgley",
+            "url": "https://www.hubermanlab.com/episode/unlocking-persistent-motivation-and-extreme-resilience-ross-edgley"
+          },
+          {
+            "source": "Joe Rogan Experience",
+            "title": "#2568 - Ross Edgley",
+            "url": "https://traffic.megaphone.fm/GLT2760842155.mp3"
+          }
+        ],
+        "outlets": 2,
+        "state": "RISING",
+        "title": "Unlocking Persistent Motivation & Extreme Resilience | Ross Edgley",
+        "topic": "Ross Edgley"
+      },
+      {
+        "links": [
+          {
+            "source": "Joe Rogan Experience",
+            "title": "#2567 - Mariana van Zeller",
+            "url": "https://traffic.megaphone.fm/GLT2143664668.mp3"
+          },
+          {
+            "source": "Julian Dorey",
+            "title": "Inside Black Markets, 9/11 & Cartel TAKEOVER | Mariana van Zeller",
+            "url": "https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/QCD3739495891.mp3"
+          }
+        ],
+        "outlets": 2,
+        "state": "RISING",
+        "title": "#2567 - Mariana van Zeller",
+        "topic": "Mariana van Zeller"
+      },
+      {
+        "links": [
+          {
+            "source": "Julian Dorey",
+            "title": "“Final WARNING Before…” - AI Extinction Event, Superintelligence & Population Control | Connor Leahy",
+            "url": "https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/QCD5166988294.mp3"
+          },
+          {
+            "source": "Danny Jones",
+            "title": "#432 - \"Terrifying New Behavior\" Real Reason AI CEOs Are Building Bunkers | Connor Leahy",
+            "url": "https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/traffic.megaphone.fm/QCD7124180443.mp3"
+          }
+        ],
+        "outlets": 2,
+        "state": "RISING",
+        "title": "“Final WARNING Before…” - AI Extinction Event, Superintelligence & Population Control | Connor Leahy",
+        "topic": "Connor Leahy"
+      }
+    ]
+  },
   "today": "2026-11-19",
   "trends": {
     "google": "Google Trends US daily list answered (10 topics). Kept the ones that match a war, government, or threat topic. None of today's search trends matched.",
@@ -18,81 +97,5 @@
     "reason": "",
     "status": null,
     "title": ""
-  },
-  "spikes": {
-    "podcasts": [
-      {
-        "topic": "Thomas Campbell",
-        "outlets": 2,
-        "state": "RISING",
-        "links": [
-          {
-            "title": "#449 - \"They Broke Reality\" NASA Physicist WARNS of 100-Year Cover-Up | Thomas Campbell",
-            "url": "https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/traffic.megaphone.fm/QCD4993240466.mp3",
-            "source": "Danny Jones"
-          },
-          {
-            "title": "#2541 - Thomas Campbell",
-            "url": "https://traffic.megaphone.fm/GLT7603949559.mp3",
-            "source": "Joe Rogan Experience"
-          }
-        ],
-        "title": "#449 - \"They Broke Reality\" NASA Physicist WARNS of 100-Year Cover-Up | Thomas Campbell"
-      },
-      {
-        "topic": "Ross Edgley",
-        "outlets": 2,
-        "state": "RISING",
-        "links": [
-          {
-            "title": "Unlocking Persistent Motivation & Extreme Resilience | Ross Edgley",
-            "url": "https://www.hubermanlab.com/episode/unlocking-persistent-motivation-and-extreme-resilience-ross-edgley",
-            "source": "Huberman Lab"
-          },
-          {
-            "title": "#2568 - Ross Edgley",
-            "url": "https://traffic.megaphone.fm/GLT2760842155.mp3",
-            "source": "Joe Rogan Experience"
-          }
-        ],
-        "title": "Unlocking Persistent Motivation & Extreme Resilience | Ross Edgley"
-      },
-      {
-        "topic": "Mariana van Zeller",
-        "outlets": 2,
-        "state": "RISING",
-        "links": [
-          {
-            "title": "#2567 - Mariana van Zeller",
-            "url": "https://traffic.megaphone.fm/GLT2143664668.mp3",
-            "source": "Joe Rogan Experience"
-          },
-          {
-            "title": "Inside Black Markets, 9/11 & Cartel TAKEOVER | Mariana van Zeller",
-            "url": "https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/QCD3739495891.mp3",
-            "source": "Julian Dorey"
-          }
-        ],
-        "title": "#2567 - Mariana van Zeller"
-      },
-      {
-        "topic": "Connor Leahy",
-        "outlets": 2,
-        "state": "RISING",
-        "links": [
-          {
-            "title": "“Final WARNING Before…” - AI Extinction Event, Superintelligence & Population Control | Connor Leahy",
-            "url": "https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/QCD5166988294.mp3",
-            "source": "Julian Dorey"
-          },
-          {
-            "title": "#432 - \"Terrifying New Behavior\" Real Reason AI CEOs Are Building Bunkers | Connor Leahy",
-            "url": "https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/traffic.megaphone.fm/QCD7124180443.mp3",
-            "source": "Danny Jones"
-          }
-        ],
-        "title": "“Final WARNING Before…” - AI Extinction Event, Superintelligence & Population Control | Connor Leahy"
-      }
-    ]
   }
 }
