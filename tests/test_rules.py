@@ -979,6 +979,20 @@ def test_hazard_source_parsers():
     assert deskextra.keep_strike("CISA Warns of 4 Exploited Flaws Linked to Ransomware, Cryptomining, and LLMjacking Attacks") is False
     assert deskextra.keep_strike("Mideast nations ramp up efforts to avert all-out war as Israel urges Iran strikes") is False
     assert deskextra.keep_strike("Dispatch from Kyiv: Let Ukraine strike Russia’s missile launchers at the source") is False
+    assert deskextra.keep_strike('The Kraków Attack and the Alleged End of Poland\'s "Innocence" - ICCT') is False
+    assert deskextra.keep_strike("Trump Weighs New Strikes on Iran as Israel Presses for Action") is False
+    assert deskextra.keep_strike("Iran says army targets U.S. drone and missile sites in Kuwait") is True
+    kuwait = deskextra.merge_strikes({}, [
+        {"title": "Iran says army targets U.S. drone and missile sites in Kuwait", "url": "https://example.com/cnbc", "source": "CNBC", "date": "2026-11-17", "published": "2026-11-17T10:00:00-06:00", "country": "Kuwait", "severity": "STANDBY"},
+        {"title": "Iranian army says drone strikes targeted US installations at Kuwait air base", "url": "https://example.com/aa", "source": "Anadolu", "date": "2026-11-17", "published": "2026-11-17T12:00:00-06:00", "country": "Kuwait", "severity": "STANDBY"},
+        {"title": "The Krakow Attack and the Alleged End of Poland's Innocence", "url": "https://example.com/icct", "source": "ICCT", "date": "2026-11-19", "country": ""},
+    ], "2026-11-19")
+    assert len(kuwait["items"]) == 1 and kuwait["items"][0]["country"] == "Kuwait" and kuwait["items"][0]["sourceCount"] == 2
+    spikes = deskextra.dedupe_spikes([
+        {"topic": "inflation", "outlets": 4, "links": [{"url": "https://example.com/a", "source": "Reuters"}]},
+        {"topic": "Inflation", "outlets": 6, "links": [{"url": "https://example.com/b", "source": "BBC"}]},
+    ])
+    assert len(spikes) == 1 and spikes[0]["topic"] == "Inflation" and spikes[0]["outlets"] == 6
     assert deskextra.strike_from_row({"kind": "cyber", "title": "Ransomware attack shuts a hospital", "url": "https://example.com/c"}) is None
     spikes = deskextra.section_spikes([
         {"title": "OpenAI releases a new frontier model", "source": "The Verge", "url": "https://example.com/a"},

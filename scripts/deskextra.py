@@ -271,8 +271,40 @@ def _same_strike(left: str, right: str) -> bool:
     return len(shared) >= 5 and len(shared) / min(len(a), len(b)) >= 0.6
 
 
+STRIKE_CAP = 8
+
+
+def _fold_strike(saved: dict, prior: dict | None) -> dict:
+    """One row for the event. Other outlets stay on as links and a source count."""
+    links = list(saved.get("links") or [])
+    seen = {item.get("url") or "" for item in links}
+    sources = []
+    for item in [saved] + ([prior] if prior else []):
+        if not item:
+            continue
+        url = item.get("url") or ""
+        if url and url not in seen:
+            links.append({"title": item.get("title") or "", "url": url, "source": item.get("source") or ""})
+            seen.add(url)
+        for extra in item.get("links") or []:
+            if extra.get("url") and extra["url"] not in seen:
+                links.append(extra)
+                seen.add(extra["url"])
+        for src in [item.get("source") or ""] + list(item.get("relatedSources") or []):
+            if src and src not in sources:
+                sources.append(src)
+    face = saved.get("source") or ""
+    saved["links"] = links[:6]
+    saved["relatedSources"] = [src for src in sources if src != face]
+    saved["related"] = len(saved["relatedSources"])
+    saved["sourceCount"] = len(sources) or 1
+    if prior and {"STANDBY": 0, "ALERT": 1, "ACTION": 2, "CRITICAL": 3}.get((prior.get("severity") or "").upper(), 0) > {"STANDBY": 0, "ALERT": 1, "ACTION": 2, "CRITICAL": 3}.get((saved.get("severity") or "").upper(), 0):
+        saved["severity"] = prior.get("severity")
+    return saved
+
+
 def merge_strikes(previous: dict | None, fresh: list[dict], today: str, keep_days: int = 14) -> dict:
-    """Keep two weeks of strikes. A newer headline replaces an older copy of the same story."""
+    """Keep two weeks of strikes, capped. Same country on the same day is one event."""
     try:
         cutoff = (datetime.fromisoformat(today) - timedelta(days=keep_days)).date().isoformat()
     except ValueError:
@@ -285,25 +317,25 @@ def merge_strikes(previous: dict | None, fresh: list[dict], today: str, keep_day
             continue
         item = dict(item)
         item["title"] = title
-        item["country"] = strike_fields(title).get("country") or ""
-        key = next((name for name in chosen if _same_strike(title, chosen[name].get("title") or name)), None) or _strike_key(title)
+        item["country"] = strike_fields(title).get("country") or item.get("country") or ""
+        if not item["country"]:
+            continue
+        country_day = f"{item['country'].lower()}|{day}"
+        title_key = next((name for name in chosen if _same_strike(title, chosen[name].get("title") or name)), None)
+        key = title_key or country_day
         prior = chosen.get(key)
         if prior is None or (item.get("published") or item.get("date") or "") >= (prior.get("published") or prior.get("date") or ""):
-            saved = dict(item)
+            saved = _fold_strike(dict(item), prior)
             saved["title"] = title
-            if prior and prior.get("source") and prior.get("source") != saved.get("source"):
-                sources = list(saved.get("relatedSources") or [])
-                if prior["source"] not in sources:
-                    sources.append(prior["source"])
-                saved["relatedSources"] = sources
-                saved["related"] = len(sources)
             chosen[key] = saved
-    rows = sorted(chosen.values(), key=lambda row: row.get("published") or row.get("date") or "", reverse=True)
+        else:
+            chosen[key] = _fold_strike(prior, item)
+    rows = sorted(chosen.values(), key=lambda row: row.get("published") or row.get("date") or "", reverse=True)[:STRIKE_CAP]
     return {
-        "items": rows[:12],
+        "items": rows,
         "counts": {
-            "total": len(rows[:12]),
-            "energy": sum(1 for row in rows[:12] if row.get("target_type") == "energy"),
+            "total": len(rows),
+            "energy": sum(1 for row in rows if row.get("target_type") == "energy"),
         },
         "gaps": list((previous or {}).get("gaps") or []),
     }
@@ -599,7 +631,36 @@ def section_spikes(items: list | None, lexicon: tuple | None = None, min_outlets
             "title": (rows[0].get("title") or topic),
         })
     spikes.sort(key=lambda row: row["outlets"], reverse=True)
-    return spikes[:4]
+    return dedupe_spikes(spikes)[:4]
+
+
+def dedupe_spikes(rows: list | None) -> list:
+    """One row per topic. 'Inflation' and 'inflation' are the same spike."""
+    best: dict[str, dict] = {}
+    order: list[str] = []
+    for row in rows or []:
+        key = (row.get("topic") or "").strip().lower()
+        if not key:
+            continue
+        current = dict(row)
+        prior = best.get(key)
+        if prior is None:
+            best[key] = current
+            order.append(key)
+            continue
+        links = list(prior.get("links") or [])
+        seen = {item.get("url") or "" for item in links}
+        for item in current.get("links") or []:
+            if item.get("url") and item["url"] not in seen:
+                links.append(item)
+                seen.add(item["url"])
+        if int(current.get("outlets") or 0) > int(prior.get("outlets") or 0):
+            current["links"] = links[:6]
+            best[key] = current
+        else:
+            prior["links"] = links[:6]
+            prior["outlets"] = max(int(prior.get("outlets") or 0), int(current.get("outlets") or 0))
+    return [best[key] for key in order]
 
 
 _INFRA_REGIONS = (
@@ -837,9 +898,14 @@ def keep_strike(title: str) -> bool:
         return False
     if re.search(r"\b(disinformation|misinformation|fact-check|fact check)\b|\bhow\b.{0,60}\bexploited\b", blob, re.I):
         return False
+    if re.search(r"\b(analysis|explainer|essay|op-ed|oped|commentary)\b|\balleged end\b", blob, re.I):
+        return False
     if re.search(r"\battacks?\b.{0,50}\b(usual targets|critics|reputation|narrative)\b", blob, re.I):
         return False
-    struck = re.search(r"\b(strikes?|attacks?|bombard\w*|explos\w*|shelling|airstrikes?|air strikes?)\b", blob, re.I)
+    if re.search(r"\b(weighs|weighing|considers|considering|threatens to|threatening to|may strike|plans to strike|mulls|mulling)\b", blob, re.I):
+        if not re.search(r"\b(struck|targeted|launched|carried out|killed|damage|damaged)\b", blob, re.I):
+            return False
+    struck = re.search(r"\b(strikes?|attacks?|bombard\w*|explos\w*|shelling|airstrikes?|air strikes?|targets?)\b", blob, re.I)
     if re.search(r"\b(drone maker|drone factory)\b", blob, re.I) and not struck:
         return False
     if re.search(r"\b(close|closing)\b.+\bborder\b", blob, re.I) and not struck:

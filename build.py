@@ -33,7 +33,10 @@ def collect_spikes(meta, science, markets) -> dict:
             market_rows.append(row)
     if not market_rows:
         market_rows = list(saved.get("markets") or [])
-    return {"labs": labs, "markets": market_rows, "podcasts": list(saved.get("podcasts") or [])}
+    import sys
+    sys.path.insert(0, str(ROOT / "scripts"))
+    from deskextra import dedupe_spikes
+    return {"labs": dedupe_spikes(labs), "markets": dedupe_spikes(market_rows), "podcasts": dedupe_spikes(list(saved.get("podcasts") or []))}
 
 
 def main() -> None:
