@@ -1542,6 +1542,7 @@ def cluster_rows(rows: list[dict]) -> list[dict]:
         for src in [row.get("source") or ""] + list(row.get("relatedSources") or []):
             if src and src != lead.get("source") and src not in sources:
                 sources.append(src)
+        lead["sourceCount"] = 1 + len(sources)
     return kept
 
 
@@ -2126,6 +2127,108 @@ def _try_global(now):
     return folded[:8], gaps
 
 
+INFRA_QUERIES = (
+    '("undersea pipeline" OR "subsea pipeline" OR "undersea cable" OR "subsea cable" OR "gas pipeline leak" OR "pipeline rupture" OR "anchor drag" OR "seabed explosion" OR "underwater explosion" OR "underground explosion" OR "mine explosion" OR "tunnel explosion" OR "gas line") (damage OR damaged OR cut OR leak OR rupture OR interruption OR explosion OR outage OR sabotage) when:7d',
+    '("Baltic Sea" OR "North Sea" OR "Red Sea" OR "Black Sea" OR "Taiwan Strait" OR Mediterranean OR "Gulf of Finland") (pipeline OR cable) (damage OR cut OR leak OR rupture OR explosion OR outage OR sabotage) when:7d',
+)
+INFRA_FEEDS = (
+    ("https://subtelforum.com/feed/", "SubTel Forum"),
+    ("https://umm.gassco.no/rss", "Gassco UMM"),
+    ("https://www.bsee.gov/newsroom/latest-news/feed", "BSEE"),
+)
+
+
+def _infra_row(title: str, source: str, url: str, when, note: str = "") -> dict | None:
+    from deskextra import infra_asset, infra_cause, infra_incident, infra_region, infra_severity
+    if not infra_incident(title, note):
+        return None
+    cause = infra_cause(title, note)
+    region = infra_region(title, note)
+    asset = infra_asset(title, note)
+    severity = infra_severity(title, note, cause, 1)
+    row = _item(
+        "infra", "threat", source, title, note, url, when, ["infra", severity.lower()],
+        {
+            "severity": severity,
+            "cause": cause,
+            "region": region,
+            "asset": asset,
+            "open": cause == "unconfirmed",
+            "sourceId": "infra",
+        },
+    )
+    return row
+
+
+def fetch_infra(now: datetime) -> tuple[list[dict], list[str]]:
+    """Undersea and underground incidents. Two news searches plus specialist feeds that answer."""
+    from deskextra import infra_dedupe
+    rows = []
+    gaps = []
+    for query in INFRA_QUERIES:
+        try:
+            found = _headlines(query, now, retain_days=7, limit=12)
+        except Exception as err:
+            gaps.append(f"Infrastructure news: {err}")
+            print(f"  infra news: {err}")
+            continue
+        for row in found:
+            built = _infra_row(row.get("title") or "", row.get("source") or "Google News", row.get("url") or "", d.parse_pubdate(row.get("published") or "") or now, row.get("note") or "")
+            if built:
+                rows.append(built)
+    for url, name in INFRA_FEEDS:
+        try:
+            nodes = _rss_items(url, 8, timeout=8)
+        except Exception as err:
+            gaps.append(f"{name}: {err}")
+            print(f"  {name}: {err}")
+            continue
+        kept = 0
+        for node in nodes:
+            title = re.sub(r"\s+", " ", (node.findtext("title") or "")).strip()
+            link = d.http_url(node.findtext("link") or "")
+            if not title or not link:
+                continue
+            when = d.parse_pubdate(node.findtext("pubDate") or "") or now
+            built = _infra_row(title, name, link, when, d.clean_note(node.findtext("description") or ""))
+            if not built:
+                continue
+            rows.append(built)
+            kept += 1
+        print(f"  {name} {kept}")
+    folded = infra_dedupe(rows)
+    print(f"  infra {len(folded)}")
+    return folded[:12], gaps
+
+
+def promote_alert_strikes(threats: list[dict], strikes: dict | None) -> list[dict]:
+    """A strike-tracker alert is also a threat-board alert."""
+    rows = list(threats or [])
+    seen_urls = {row.get("url") or "" for row in rows}
+    seen_titles = {(row.get("title") or "").lower() for row in rows}
+    for item in (strikes or {}).get("items") or []:
+        if (item.get("severity") or "").upper() != "ALERT":
+            continue
+        title = item.get("title") or ""
+        url = item.get("url") or ""
+        if url and url in seen_urls:
+            for row in rows:
+                if row.get("url") == url and (row.get("severity") or "").upper() == "STANDBY":
+                    row["severity"] = "ALERT"
+            continue
+        if title.lower() in seen_titles:
+            continue
+        when = d.parse_pubdate(item.get("published") or "") or datetime.now(d.CT)
+        rows.append(_item(
+            "attack", "news", item.get("source") or "", title, item.get("country") or "", url, when,
+            ["attack", "alert"],
+            {"severity": "ALERT", "sourceId": "headline", "sourceCount": 1},
+        ))
+        seen_urls.add(url)
+        seen_titles.add(title.lower())
+    return rows
+
+
 def _sentry_soon(rec: dict, year: int) -> bool:
     years = [int(n) for n in re.findall(r"2\d{3}", str(rec.get("range") or ""))]
     if not years:
@@ -2511,6 +2614,7 @@ def extra_sources(markets: dict, threats: dict, science: dict, gaps: list | None
             if not rows[-1].get("lastLabel"):
                 rows[-1]["lastLabel"] = "no current alerts"
     add("threat-global", "Global events", "GLOBAL", "threat", "https://news.google.com/", by_kind.get("global") or [])
+    add("threat-infra", "Undersea infrastructure", "INFRA", "threat", "https://subtelforum.com/", by_kind.get("infra") or [])
     cyber = by_kind.get("cyber") or []
     cisa_rows = [item for item in cyber if item.get("source") == "CISA" or item.get("sourceId") == "cisa"]
     news_rows = [item for item in cyber if item not in cisa_rows]

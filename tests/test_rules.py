@@ -925,6 +925,24 @@ def test_hazard_source_parsers():
     ], "2026-11-19")
     assert all("peace talks" not in (row.get("title") or "") for row in stale)
     assert any(row.get("source") == "Reuters" for row in stale)
+    assert deskextra.infra_cause("Investigators say sabotage is suspected on the Balticconnector") == "suspected sabotage"
+    assert deskextra.infra_cause("Nord Stream damage, cause still unknown") == "unconfirmed"
+    assert deskextra.infra_cause("Operator calls the leak a technical failure") == "accident"
+    assert deskextra.infra_cause("Police say the cable cut was confirmed sabotage") == "confirmed sabotage"
+    assert deskextra.infra_severity("Undersea cable cut in the Red Sea", cause="unconfirmed") == "ALERT"
+    assert deskextra.infra_severity("Anchor dragged across a Baltic cable", cause="suspected sabotage") == "ACTION"
+    assert deskextra.infra_severity("Routine maintenance on Langeled", cause="unconfirmed") == "STANDBY"
+    assert deskextra.infra_severity("Gulf of Mexico pipeline rupture cuts US supply", cause="unconfirmed") == "CRITICAL"
+    assert deskextra.infra_noise("How to understand an undersea cable explainer") is True
+    paired = deskextra.infra_dedupe([
+        {"title": "Baltic Sea cable damaged", "source": "Reuters", "url": "https://example.com/a", "asset": "cable", "region": "Baltic Sea", "cause": "unconfirmed", "date": "2026-11-18", "severity": "ALERT"},
+        {"title": "Second Baltic Sea cable cut", "source": "BBC", "url": "https://example.com/b", "asset": "cable", "region": "Baltic Sea", "cause": "unconfirmed", "date": "2026-11-19", "severity": "ALERT"},
+        {"title": "Nord Stream leak, sabotage suspected", "source": "AP", "url": "https://example.com/c", "asset": "Nord Stream", "region": "Baltic Sea", "cause": "suspected sabotage", "date": "2026-11-19", "severity": "ACTION"},
+    ])
+    assert len(paired) == 2
+    cable = next(row for row in paired if row["asset"] == "cable")
+    assert cable["severity"] == "ACTION" and cable["sourceCount"] == 2 and cable["open"] is True
+    assert boards.promote_alert_strikes([], {"items": [{"title": "Damage from missile attack reported in Riyadh", "url": "https://example.com/r", "source": "AP", "severity": "ALERT", "published": "2026-11-19T08:00:00-06:00", "country": "Saudi Arabia"}]})[0]["severity"] == "ALERT"
     assert boards.news_event_severity("Ukraine: Civilian casualties in 2026 already far exceed previous years’ tolls - UN News") == "ALERT"
     assert boards.quake_severity(6.2, "Ridgecrest, California") == "ACTION"
     assert boards.global_event_type("G7 Foreign Ministers' meeting: Press remarks by Kaja Kallas upon arrival") == ""
