@@ -3,12 +3,32 @@
   "gaps": [],
   "items": [
     {
+      "links": [
+        {
+          "source": "USGS",
+          "title": "M4.9 65 km SSW of Atka, Alaska",
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ubzm"
+        },
+        {
+          "source": "USGS",
+          "title": "M5.0 31 km WSW of Rabaul, Papua New Guinea",
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ubz1"
+        },
+        {
+          "source": "USGS",
+          "title": "M4.7 92 km W of San Juan, Peru",
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ubyt"
+        },
+        {
+          "source": "USGS",
+          "title": "M4.8 23 km SSE of Guayaquil, Ecuador",
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000uby4"
+        }
+      ],
       "reasons": "1.8x usual volume · 5 or more outlets",
       "score": 2,
+      "sourceCount": 4,
       "spark": [
-        {
-          "price": 3
-        },
         {
           "price": 4
         },
@@ -47,37 +67,40 @@
         },
         {
           "price": 13
+        },
+        {
+          "price": 14
         }
       ],
       "state": "RISING",
-      "topic": "quake",
-      "links": [
-        {
-          "title": "M5.1 157 km S of Attu Station, Alaska",
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ubw3",
-          "source": "USGS"
-        },
-        {
-          "title": "M4.7 134 km SW of Lorengau, Papua New Guinea",
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ubvu",
-          "source": "USGS"
-        },
-        {
-          "title": "M6.1 Pacific-Antarctic Ridge",
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tz37",
-          "source": "USGS"
-        },
-        {
-          "title": "M4.5 23 km SSW of Ollagüe, Chile",
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tz33",
-          "source": "USGS"
-        }
-      ],
-      "sourceCount": 4
+      "topic": "quake"
     },
     {
-      "reasons": "4.5x usual volume · 5 or more outlets",
-      "score": 4,
+      "links": [
+        {
+          "source": "ReliefWeb",
+          "title": "Haiti: Floods - Oct 2026",
+          "url": "https://reliefweb.int/disaster/fl-2026-000201-hti"
+        },
+        {
+          "source": "ReliefWeb",
+          "title": "Congo: Floods - Oct 2026",
+          "url": "https://reliefweb.int/disaster/fl-2026-000196-cog"
+        },
+        {
+          "source": "ReliefWeb",
+          "title": "Panama: Earthquake - Oct 2026",
+          "url": "https://reliefweb.int/disaster/eq-2026-000188-pan"
+        },
+        {
+          "source": "ReliefWeb",
+          "title": "Indonesia: Drought - Sep 2026",
+          "url": "https://reliefweb.int/disaster/dr-2026-000178-idn"
+        }
+      ],
+      "reasons": "2.8x usual volume · 5 or more outlets",
+      "score": 3,
+      "sourceCount": 4,
       "spark": [
         {
           "price": 1
@@ -96,79 +119,36 @@
         },
         {
           "price": 8
+        },
+        {
+          "price": 8
         }
       ],
       "state": "RISING",
-      "topic": "relief",
-      "links": [
-        {
-          "title": "Haiti: Floods - Oct 2026",
-          "url": "https://reliefweb.int/disaster/fl-2026-000201-hti",
-          "source": "ReliefWeb"
-        },
-        {
-          "title": "Congo: Floods - Oct 2026",
-          "url": "https://reliefweb.int/disaster/fl-2026-000196-cog",
-          "source": "ReliefWeb"
-        },
-        {
-          "title": "Panama: Earthquake - Oct 2026",
-          "url": "https://reliefweb.int/disaster/eq-2026-000188-pan",
-          "source": "ReliefWeb"
-        },
-        {
-          "title": "Indonesia: Drought - Sep 2026",
-          "url": "https://reliefweb.int/disaster/dr-2026-000178-idn",
-          "source": "ReliefWeb"
-        }
-      ],
-      "sourceCount": 4
+      "topic": "relief"
     },
     {
       "links": [
         {
-          "source": "The New York Times",
-          "title": "Trump Grows Frustrated With Vance Over Iran War Critique - The New York Times",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQV3B0SDctTm9DMGNCbXNLM2VOd2prWE1aZTZfT242MVNtUGRVeWRUemVHRWZMSVhGM0J0S2xxMC1XRWRvMVB6XzN3VGJfTDdDSGtGMTlSMFpVTlM2ZGotaW1JZjBaWWNQZmZseEFFUFBxa3hnRDQyYnB1bzVUWXdPcDJnZU5jLTUzVUZJYWRsX1d4Zw?oc=5"
+          "source": "Pew Research Center",
+          "title": "Two-Thirds of Americans Disapprove of Trump’s Handling of the Russia-Ukraine War - Pew Research Center",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOOG1hX1hlajBaV2FvOXpqN0V4ZlI5anNUbGdmOXhWUmNIcy1aUy1uV0dJY1lOUkxKcnFGLTFIYV9YVTA2d3VtMDB3d2xnd0Q4YUEtYlRlVWVPbWZ4elZjb0N4enFpS3BEdTJPLTJseEpINFRVSldjdkFYQ2tkMUFGQVJCMzdMSE56OGhqTEM4ckNON21ZWlg3cVg3VTJIT2Y2cjlhMXc1MGFKVjBKLVR0WDEyLWhyd3dKVGNwNURKb21KbDZ2UzFkU2lxbw?oc=5"
         },
         {
-          "source": "PBS",
-          "title": "Iran fires at U.S. facility in Bahrain as Tehran resumes strikes on Arab neighbors - PBS",
-          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPTlVZWjRCSVZZOTdxbEJHVlVJTjVyV2xWVXdaQ2tqUmVRNFJkaElDa2xhYWFqbEcwRDlaWnpNWF9OMy05OE5mM2N4VkhRQVZHdTFUTTlyd2JUSkwxR0Q3ZEh1UDZZNDB5cmVHa1lfMkM0ZldWT1pJRmVTTWVPMWEzQnloMWY2Zjh1TDdaeHRONmIwbERZLWtfMy12Z19JcDV2eUJxZElIWDdBWW5CU1NEYU5TVjJRRjjSAbwBQVVfeXFMTm93R19jS3VPR050YTJCYXBSQ25mYlo1RXNhZ1JSSXVZdEdiYUJJeloyZHlkUnJYTTc5dGVzbmlqZHY3Tlhscjc5cWxqT1JRTHMtVHlORE5TUVpKQVZ1d3FGUjhwcDlHbk5JSFVoeXZya1lTU1ZIUW9SRkUwZ2t0akZGa2t4VEpfdEZJRS0xcFFEZGVaVGtNcWFvOWdLTFFRUmFhTXBsQ1FydjA5X3dZUHdDVmE4WnduNXVUMTc?oc=5"
+          "source": "UN News",
+          "title": "Ukraine: Civilian casualties in 2026 already far exceed previous years’ tolls - UN News",
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFA2S212VmNSVjM3WHJzb3pwWDlFUjEyeEF5QTZRU3RBeV9GZjVOU2RoT1JBQjdZbzkyY0djTG4ybjFVMlFySnVYYjBWcjhPQXptMmtDTlVtdw?oc=5"
         },
         {
-          "source": "Voice of America English News",
-          "title": "Rubio Says Economic Pressure on Iran is Working - Voice of America English News",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOX2tpYnc1ejdPQ0lpUUpMXzltbEJqcndLb3pmNG90RW1UTHZkcjdSLTdpelg4NzI0YVZzcm40UmFEa3U1WHNlRkNDZFlCMy11RjBLa3FLYll3aWM4TUVyNnlkVUlLV1hYWEUtM01FeWxfWDFfRjNuTEJTdXVMb2JYSVI1WUJPOEJXWDdYZ0s0MDNndDYyTVHSAZYBQVVfeXFMTl9raWJ3NXo3T0NJaVFKTF85bWxCanJ3S296ZjRvdEVtVEx2ZHI3Ui03aXpYODcyNGFWc3JuNFJhRGt1NVhzZUZDQ2RZQjMtdUYwS2txS2JZd2ljOE1FcjZ5ZFVJS1dYWFhFLTNNRXlsX1gxX0YzbkxCU3V1TG9iWElSNVlCTzhCV1g3WGdLNDAzZ3Q2Mk1R?oc=5"
+          "source": "Council, European Union",
+          "title": "Ukraine Facility: Council approves largest-ever payment of €8 billion to Kyiv - Council, European Union",
+          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOWlk5VTVlN2xzVVl3TjkwQWw5eVdJUzVSeGtra1dJWkY0Y2M0Q1ByWUpPTVZWSHc0TlhmX1dGN2pJRHhHR2w3Vjh3R2NsOXlpMWFLT1dETnVBZ3ZOb01qZDBXRnJzcjJKTndKcXZhZWlIMnpSYlBMS0R1Q0R5ZHJKLXZoYUZ4dlNJcUN1azR5YjYtSGFrbnFyNHl6MUdreFZySU1zUVd3LTJpdnJsdmZfU1JXdW5wWWNTNWhaNTdyMFNRemJIT1p0RGNsOTdEekJtSDB2Y3c4cVRUcGM?oc=5"
         }
       ],
-      "reasons": "4 outlets this window",
-      "score": 4,
+      "reasons": "3 outlets this window",
+      "score": 3,
       "state": "RISING",
-      "topic": "iran war"
-    },
-    {
-      "links": [
-        {
-          "source": "NPR",
-          "title": "Rubio says there's 'zero' information that U.S. outages are caused by a malign actor - NPR",
-          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBwRW1oWnJqVUUyZjZfQnRib1JCemo2R3hyTWZ4d2dmaE96ZnNySXlaelo1MXhpNU1fRkFNSGRtek5ubXd5Ykl5Uk1zWlpNTlphSndsVVVHVjNfTFRieG05YmZnWkx4RElkSVptdmdVdFdvd0dzNkc3ME1MQQ?oc=5"
-        },
-        {
-          "source": "PBS",
-          "title": "Read the full White House memo requiring agencies to get approval before testifying in front of Congress - PBS",
-          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPSGxlUmRaeVM4Sk5sRkxSOFpsYm1IT1R4d3ZBc3UwTTduNVc0SkFIYzh1NXA3WnhJRlRlX3NHRHJ2aWtHQjhqODhGQnpOb25ZR1hUdDNKR01oVDEzRFlMVjFPUjBzQndBVV9ucHFyTS1FTTdVbTNxak1TdEp4OXA0LU52alJRS2tGeEJ1VklZTTRWejFfd0RiSUhhcU1ESnAxMjFnWjVhTFVrVm9SRDRzbEFtNU5heHlqcXRkRzhNb0o3UTF4QW9EUlB5UWU2bXhRY3Z3ZGtwWTdCUdIB3wFBVV95cUxPYm5tXzVzQjJpREowZXBKeFljUjltN0NPMzEzWEN6Q3M1LTI3S2RaQjNtQjhwaWEzLUxXT19iWE1mTXExMERsUzA4R2Z6Nkx4X0cybzVLSnZqV1VLNU12R1pEQ1NJaE5iajVUSzBwdE1fOGY2WVpKeXVhOUJBYXVVZFVESmVPSTY3cnlSUWVkRUZnbGhWNGNvc09WUDRUZW1EYTVYRmk3ZVUxLVdBeGhJSHVqYzlPbkVETk5Fbm94Z3dua1dLMTJQcFpSMktVRl9qeWNSNU9XRkk1WklvTWZJ?oc=5"
-        },
-        {
-          "source": "U.S. Department of State (.gov)",
-          "title": "Secretary of State Marco Rubio at the Federalist Society’s 2026 National Lawyers Convention - U.S. Department of State (.gov)",
-          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQWG5veW8zTHc0MU85aHIyTnJiR1RlVkZTZ2cwSEFNYi1IVUVsck1hM2QtOVZYVUNzVlduSEpPU1VXRTh6ZHNCTEd4NjlsZUdqZlZOQnNlYmltUVh5YU54VUNtWlNxWVhlVFgxTktZNWNRVnBtNmh1WVhuQll3bHRid3VybGROUk9fS1Q0ODRDOFROZ2JWa2oyM1J3bWxvNHlJWUs3S1BqSGI0dVM2ZGxRSWVpamJhRFJfbFkyRW1lRTFJd1NzN1ZkSXVHUGx5c0laWlBrVXg5eGZQaXFEWmpMLWRid3lIbDBn?oc=5"
-        }
-      ],
-      "reasons": "4 outlets this window",
-      "score": 4,
-      "state": "RISING",
-      "topic": "us gov"
+      "topic": "ukraine war"
     }
   ]
 }

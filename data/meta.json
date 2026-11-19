@@ -1,13 +1,16 @@
 {
   "baseline": false,
-  "brief": "No rare risk is on the board. A routine flyby or an empty storm outlook is not an emergency. Current war coverage is on the board: Iran fires at U.S. facility in Bahrain as Tehran resumes strikes on Arab neighbors - PBS; Qatar PM warns of major US-Iran disagreements despite reprieve from post - The Jerusalem Post. Rising topic: iran war (4 outlets this window).",
-  "checkedAt": "2026-11-18T18:05:44-06:00",
-  "checkedLabel": "Nov 18, 2026 6:05 PM CT",
+  "brief": "No rare risk is on the board. A routine flyby or an empty storm outlook is not an emergency. Current war coverage is on the board: Two-Thirds of Americans Disapprove of Trump’s Handling of the Russia-Ukraine War - Pew Research Center; Ukraine: Civilian casualties in 2026 already far exceed previous years’ tolls - UN News. Rising topic: ukraine war (3 outlets this window).",
+  "checkedAt": "2026-11-19T07:29:58-06:00",
+  "checkedLabel": "Nov 19, 2026 7:29 AM CT",
   "errors": [
-    "Ukraine war: curl: (22) The requested URL returned error: 429\n"
+    "WHO: curl: (28) Operation timed out after 30001 milliseconds with 0 bytes received\n",
+    "Iran war: curl: (22) The requested URL returned error: 429\n",
+    "US government: curl: (22) The requested URL returned error: 429\n",
+    "G7: curl: (22) The requested URL returned error: 429\n"
   ],
   "retainDays": 120,
-  "today": "2026-11-18",
+  "today": "2026-11-19",
   "trends": {
     "google": "Google Trends US daily list answered (10 topics). Kept the ones that match a war, government, or threat topic. None of today's search trends matched.",
     "mode": "trends",

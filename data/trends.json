@@ -2,88 +2,46 @@
   "googleNote": "Google Trends US daily list answered (10 topics). Kept the ones that match a war, government, or threat topic. None of today's search trends matched.",
   "items": [
     {
-      "category": "iran-war",
+      "category": "ukraine-war",
       "confidence": "reported",
-      "date": "2026-11-18",
-      "id": "velocity:4ee4bc978244e41e",
+      "date": "2026-11-19",
+      "id": "velocity:efd2da34e68ca58f",
       "kind": "trend",
       "lane": "news",
       "look": "news",
-      "name": "iran war",
+      "name": "ukraine war",
       "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-18T18:05:44-06:00",
-      "rise": "4 outlets this window",
+      "published": "2026-11-19T07:29:58-06:00",
+      "rise": "3 outlets this window",
       "samples": [
         {
           "date": "2026-11-18",
-          "published": "2026-11-18T11:15:08-06:00",
-          "source": "The New York Times",
-          "text": "Trump Grows Frustrated With Vance Over Iran War Critique - The New York Times",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQV3B0SDctTm9DMGNCbXNLM2VOd2prWE1aZTZfT242MVNtUGRVeWRUemVHRWZMSVhGM0J0S2xxMC1XRWRvMVB6XzN3VGJfTDdDSGtGMTlSMFpVTlM2ZGotaW1JZjBaWWNQZmZseEFFUFBxa3hnRDQyYnB1bzVUWXdPcDJnZU5jLTUzVUZJYWRsX1d4Zw?oc=5"
+          "published": "2026-11-18T10:56:09-06:00",
+          "source": "Pew Research Center",
+          "text": "Two-Thirds of Americans Disapprove of Trump’s Handling of the Russia-Ukraine War - Pew Research Center",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOOG1hX1hlajBaV2FvOXpqN0V4ZlI5anNUbGdmOXhWUmNIcy1aUy1uV0dJY1lOUkxKcnFGLTFIYV9YVTA2d3VtMDB3d2xnd0Q4YUEtYlRlVWVPbWZ4elZjb0N4enFpS3BEdTJPLTJseEpINFRVSldjdkFYQ2tkMUFGQVJCMzdMSE56OGhqTEM4ckNON21ZWlg3cVg3VTJIT2Y2cjlhMXc1MGFKVjBKLVR0WDEyLWhyd3dKVGNwNURKb21KbDZ2UzFkU2lxbw?oc=5"
         },
         {
           "date": "2026-11-17",
-          "published": "2026-11-17T12:53:00-06:00",
-          "source": "PBS",
-          "text": "Iran fires at U.S. facility in Bahrain as Tehran resumes strikes on Arab neighbors - PBS",
-          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPTlVZWjRCSVZZOTdxbEJHVlVJTjVyV2xWVXdaQ2tqUmVRNFJkaElDa2xhYWFqbEcwRDlaWnpNWF9OMy05OE5mM2N4VkhRQVZHdTFUTTlyd2JUSkwxR0Q3ZEh1UDZZNDB5cmVHa1lfMkM0ZldWT1pJRmVTTWVPMWEzQnloMWY2Zjh1TDdaeHRONmIwbERZLWtfMy12Z19JcDV2eUJxZElIWDdBWW5CU1NEYU5TVjJRRjjSAbwBQVVfeXFMTm93R19jS3VPR050YTJCYXBSQ25mYlo1RXNhZ1JSSXVZdEdiYUJJeloyZHlkUnJYTTc5dGVzbmlqZHY3Tlhscjc5cWxqT1JRTHMtVHlORE5TUVpKQVZ1d3FGUjhwcDlHbk5JSFVoeXZya1lTU1ZIUW9SRkUwZ2t0akZGa2t4VEpfdEZJRS0xcFFEZGVaVGtNcWFvOWdLTFFRUmFhTXBsQ1FydjA5X3dZUHdDVmE4WnduNXVUMTc?oc=5"
+          "published": "2026-11-17T15:16:21-06:00",
+          "source": "UN News",
+          "text": "Ukraine: Civilian casualties in 2026 already far exceed previous years’ tolls - UN News",
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFA2S212VmNSVjM3WHJzb3pwWDlFUjEyeEF5QTZRU3RBeV9GZjVOU2RoT1JBQjdZbzkyY0djTG4ybjFVMlFySnVYYjBWcjhPQXptMmtDTlVtdw?oc=5"
         },
         {
           "date": "2026-11-16",
-          "published": "2026-11-16T04:47:52-06:00",
-          "source": "Voice of America English News",
-          "text": "Rubio Says Economic Pressure on Iran is Working - Voice of America English News",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOX2tpYnc1ejdPQ0lpUUpMXzltbEJqcndLb3pmNG90RW1UTHZkcjdSLTdpelg4NzI0YVZzcm40UmFEa3U1WHNlRkNDZFlCMy11RjBLa3FLYll3aWM4TUVyNnlkVUlLV1hYWEUtM01FeWxfWDFfRjNuTEJTdXVMb2JYSVI1WUJPOEJXWDdYZ0s0MDNndDYyTVHSAZYBQVVfeXFMTl9raWJ3NXo3T0NJaVFKTF85bWxCanJ3S296ZjRvdEVtVEx2ZHI3Ui03aXpYODcyNGFWc3JuNFJhRGt1NVhzZUZDQ2RZQjMtdUYwS2txS2JZd2ljOE1FcjZ5ZFVJS1dYWFhFLTNNRXlsX1gxX0YzbkxCU3V1TG9iWElSNVlCTzhCV1g3WGdLNDAzZ3Q2Mk1R?oc=5"
+          "published": "2026-11-16T03:43:31-06:00",
+          "source": "Council, European Union",
+          "text": "Ukraine Facility: Council approves largest-ever payment of €8 billion to Kyiv - Council, European Union",
+          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOWlk5VTVlN2xzVVl3TjkwQWw5eVdJUzVSeGtra1dJWkY0Y2M0Q1ByWUpPTVZWSHc0TlhmX1dGN2pJRHhHR2w3Vjh3R2NsOXlpMWFLT1dETnVBZ3ZOb01qZDBXRnJzcjJKTndKcXZhZWlIMnpSYlBMS0R1Q0R5ZHJKLXZoYUZ4dlNJcUN1azR5YjYtSGFrbnFyNHl6MUdreFZySU1zUVd3LTJpdnJsdmZfU1JXdW5wWWNTNWhaNTdyMFNRemJIT1p0RGNsOTdEekJtSDB2Y3c4cVRUcGM?oc=5"
         }
       ],
       "severity": "ALERT",
       "soWhat": "no action needed",
       "source": "News velocity",
-      "sourceCount": 4,
-      "title": "iran war",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQV3B0SDctTm9DMGNCbXNLM2VOd2prWE1aZTZfT242MVNtUGRVeWRUemVHRWZMSVhGM0J0S2xxMC1XRWRvMVB6XzN3VGJfTDdDSGtGMTlSMFpVTlM2ZGotaW1JZjBaWWNQZmZseEFFUFBxa3hnRDQyYnB1bzVUWXdPcDJnZU5jLTUzVUZJYWRsX1d4Zw?oc=5"
-    },
-    {
-      "category": "us-gov",
-      "confidence": "reported",
-      "date": "2026-11-18",
-      "id": "velocity:bd817662251631b7",
-      "kind": "trend",
-      "lane": "news",
-      "look": "news",
-      "name": "us gov",
-      "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-18T18:05:44-06:00",
-      "rise": "4 outlets this window",
-      "samples": [
-        {
-          "date": "2026-11-18",
-          "published": "2026-11-18T02:27:50-06:00",
-          "source": "NPR",
-          "text": "Rubio says there's 'zero' information that U.S. outages are caused by a malign actor - NPR",
-          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBwRW1oWnJqVUUyZjZfQnRib1JCemo2R3hyTWZ4d2dmaE96ZnNySXlaelo1MXhpNU1fRkFNSGRtek5ubXd5Ykl5Uk1zWlpNTlphSndsVVVHVjNfTFRieG05YmZnWkx4RElkSVptdmdVdFdvd0dzNkc3ME1MQQ?oc=5"
-        },
-        {
-          "date": "2026-11-16",
-          "published": "2026-11-16T15:00:32-06:00",
-          "source": "PBS",
-          "text": "Read the full White House memo requiring agencies to get approval before testifying in front of Congress - PBS",
-          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPSGxlUmRaeVM4Sk5sRkxSOFpsYm1IT1R4d3ZBc3UwTTduNVc0SkFIYzh1NXA3WnhJRlRlX3NHRHJ2aWtHQjhqODhGQnpOb25ZR1hUdDNKR01oVDEzRFlMVjFPUjBzQndBVV9ucHFyTS1FTTdVbTNxak1TdEp4OXA0LU52alJRS2tGeEJ1VklZTTRWejFfd0RiSUhhcU1ESnAxMjFnWjVhTFVrVm9SRDRzbEFtNU5heHlqcXRkRzhNb0o3UTF4QW9EUlB5UWU2bXhRY3Z3ZGtwWTdCUdIB3wFBVV95cUxPYm5tXzVzQjJpREowZXBKeFljUjltN0NPMzEzWEN6Q3M1LTI3S2RaQjNtQjhwaWEzLUxXT19iWE1mTXExMERsUzA4R2Z6Nkx4X0cybzVLSnZqV1VLNU12R1pEQ1NJaE5iajVUSzBwdE1fOGY2WVpKeXVhOUJBYXVVZFVESmVPSTY3cnlSUWVkRUZnbGhWNGNvc09WUDRUZW1EYTVYRmk3ZVUxLVdBeGhJSHVqYzlPbkVETk5Fbm94Z3dua1dLMTJQcFpSMktVRl9qeWNSNU9XRkk1WklvTWZJ?oc=5"
-        },
-        {
-          "date": "2026-11-14",
-          "published": "2026-11-14T00:57:38-06:00",
-          "source": "U.S. Department of State (.gov)",
-          "text": "Secretary of State Marco Rubio at the Federalist Society’s 2026 National Lawyers Convention - U.S. Department of State (.gov)",
-          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQWG5veW8zTHc0MU85aHIyTnJiR1RlVkZTZ2cwSEFNYi1IVUVsck1hM2QtOVZYVUNzVlduSEpPU1VXRTh6ZHNCTEd4NjlsZUdqZlZOQnNlYmltUVh5YU54VUNtWlNxWVhlVFgxTktZNWNRVnBtNmh1WVhuQll3bHRid3VybGROUk9fS1Q0ODRDOFROZ2JWa2oyM1J3bWxvNHlJWUs3S1BqSGI0dVM2ZGxRSWVpamJhRFJfbFkyRW1lRTFJd1NzN1ZkSXVHUGx5c0laWlBrVXg5eGZQaXFEWmpMLWRid3lIbDBn?oc=5"
-        }
-      ],
-      "severity": "ALERT",
-      "soWhat": "no action needed",
-      "source": "News velocity",
-      "sourceCount": 4,
-      "title": "us gov",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBwRW1oWnJqVUUyZjZfQnRib1JCemo2R3hyTWZ4d2dmaE96ZnNySXlaelo1MXhpNU1fRkFNSGRtek5ubXd5Ykl5Uk1zWlpNTlphSndsVVVHVjNfTFRieG05YmZnWkx4RElkSVptdmdVdFdvd0dzNkc3ME1MQQ?oc=5"
+      "sourceCount": 3,
+      "title": "ukraine war",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOOG1hX1hlajBaV2FvOXpqN0V4ZlI5anNUbGdmOXhWUmNIcy1aUy1uV0dJY1lOUkxKcnFGLTFIYV9YVTA2d3VtMDB3d2xnd0Q4YUEtYlRlVWVPbWZ4elZjb0N4enFpS3BEdTJPLTJseEpINFRVSldjdkFYQ2tkMUFGQVJCMzdMSE56OGhqTEM4ckNON21ZWlg3cVg3VTJIT2Y2cjlhMXc1MGFKVjBKLVR0WDEyLWhyd3dKVGNwNURKb21KbDZ2UzFkU2lxbw?oc=5"
     }
   ],
   "mode": "trends",
