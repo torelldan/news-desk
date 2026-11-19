@@ -471,15 +471,19 @@ def fetch_markets(now: datetime, previous: dict | None = None, retain_days: int 
             print(f"  headlines {spec['id']}: {err}; keeping {len(old_heads)} cached")
             headlines = merge_rows([], old_heads, cutoff, 40)
         print(f"  headlines {spec['id']}: {len(headlines)}")
-        regions.append({"id": spec["id"], "name": spec["name"], "venues": venues, "headlines": headlines})
+        from deskextra import _ECON_TOPICS, section_spikes
+        regions.append({
+            "id": spec["id"], "name": spec["name"], "venues": venues, "headlines": headlines,
+            "spikes": section_spikes(headlines, _ECON_TOPICS),
+        })
     return {
         "holidayNote": "OPEN/CLOSED uses weekday sessions in each exchange's zone, converted to America/Chicago. Only the NYSE holiday list is included; other venues may be open on a local holiday.",
         "regions": regions,
     }
 
 
-def _rss_items(url: str, limit: int = 8) -> list[ET.Element]:
-    root = ET.fromstring(_get(url, timeout=30))
+def _rss_items(url: str, limit: int = 8, timeout: int = 30) -> list[ET.Element]:
+    root = ET.fromstring(_get(url, timeout=timeout))
     channel = root.find("channel")
     if channel is None:
         channel = root.find(f"{ATOM}feed")
@@ -561,7 +565,7 @@ def fetch_threats(now: datetime) -> dict:
         gaps.append(f"USGS: {err}")
         print(f"  usgs FAILED: {err}")
     extras = []
-    for producer in (_try_nhc, _try_nws, _try_gdacs, _try_relief, _try_who, _try_cdc, _try_cyber, _try_desks, _try_neos):
+    for producer in (_try_nhc, _try_nws, _try_gdacs, _try_relief, _try_who, _try_cdc, _try_cyber, _try_desks, _try_global, _try_neos):
         batch, batch_gaps = producer(now)
         extras.extend(batch)
         gaps.extend(batch_gaps)
@@ -1641,6 +1645,122 @@ def statement_not_event(title: str, note: str = "") -> bool:
     return nonthreat_copy(title, note)
 
 
+_SOFT_NEWS = re.compile(
+    r"\b(op-ed|oped|opinion|essay|dispatch from|as delivered|press remarks|remarks by|"
+    r"interview|c-span|scotusblog|commentary)\b|"
+    r"\bupdate,\s+(?:january|february|march|april|may|june|july|august|september|october|november|december)\b|"
+    r"\b(flipped \d+|senate seats|election results)\b|"
+    r"\b(urges|efforts to avert|on (?:his|her|their) way home|family confirms)\b",
+    re.I,
+)
+_PHYSICAL_EVENT = re.compile(
+    r"\b(strikes?|attacks?|explosion|explodes|shooting|shots? fired|disaster|outage|breach|"
+    r"ransomware|cyberattack|cyber attack|data breach|casualt\w*|evacuat\w*|killed|kills|"
+    r"bomb(?:ed|ing)?|airstrike|air strike|shelling|wildfire|earthquake|flood(?:ing)?|hurricane)\b",
+    re.I,
+)
+
+
+def news_event_severity(title: str, note: str = "", source: str = "") -> str:
+    """News starts at STANDBY. Only a reported physical or cyber event is an alert.
+
+    Opinion, speeches, daily summaries, election write-ups, and court essays stay at standby
+    even when they mention a strike or an outage. Structured feeds do not use this function.
+    """
+    blob = f"{title or ''} {note or ''} {source or ''}"
+    if _SOFT_NEWS.search(blob):
+        return "STANDBY"
+    if _PHYSICAL_EVENT.search(f"{title or ''} {note or ''}"):
+        return "ALERT"
+    return "STANDBY"
+
+
+_POWER = (
+    (re.compile(r"\b(united states|u\.s\.?|trump|white house)\b", re.I), "US"),
+    (re.compile(r"\b(russia|putin|kremlin)\b", re.I), "RU"),
+    (re.compile(r"\b(china|beijing|xi jinping|xi)\b", re.I), "CN"),
+    (re.compile(r"\b(european union|\beu\b|brussels)\b", re.I), "EU"),
+    (re.compile(r"\b(india|modi)\b", re.I), "IN"),
+)
+_GLOBAL_TYPE = (
+    ("summit", re.compile(r"\b(trilateral|summit)\b", re.I)),
+    ("peace", re.compile(r"\b(ceasefire|peace talks|peace deal)\b", re.I)),
+    ("treaty", re.compile(r"\btreat(?:y|ies)\b", re.I)),
+    ("sanctions", re.compile(r"\bsanctions\b", re.I)),
+    ("unsc", re.compile(r"\bsecurity council\b", re.I)),
+    ("coup", re.compile(r"\bcoup\b", re.I)),
+    ("succession", re.compile(r"\b(has died|dies\b|death of|resigns|resignation|steps down)\b", re.I)),
+)
+
+
+def major_powers(text: str) -> list[str]:
+    found = []
+    blob = text or ""
+    if re.search(r"\bUS\b", blob) and "US" not in found:
+        found.append("US")
+    if re.search(r"\bamerica\b", blob, re.I) and not re.search(r"\blatin america\b", blob, re.I) and "US" not in found:
+        found.append("US")
+    for pattern, code in _POWER:
+        if pattern.search(blob) and code not in found:
+            found.append(code)
+    return found
+
+
+def global_event_type(title: str, note: str = "") -> str:
+    """The summit, treaty, or resignation itself. A minister's remarks are not the summit."""
+    blob = f"{title or ''} {note or ''}"
+    if re.search(r"\b(press remarks|remarks by|as delivered|upon arrival|dispatch from|op-ed|opinion|essay|morning rundown|takeaways|what to know)\b", blob, re.I):
+        return ""
+    if re.search(r"\b(ministers'? meeting|foreign minister)\b", blob, re.I) and not re.search(r"\bsummit\b", blob, re.I):
+        return ""
+    for name, pattern in _GLOBAL_TYPE:
+        if pattern.search(blob):
+            return name
+    return ""
+
+
+def global_severity(title: str, note: str = "", outlets: int = 1) -> str:
+    if not global_event_type(title, note):
+        return ""
+    if int(outlets or 1) >= 3 or len(major_powers(f"{title} {note}")) >= 2:
+        return "ALERT"
+    return "STANDBY"
+
+
+def global_dedupe(rows: list[dict]) -> list[dict]:
+    """One row per event type and the powers named in it."""
+    kept: list[dict] = []
+    for row in rows or []:
+        kind = global_event_type(row.get("title") or "", row.get("note") or "")
+        powers = tuple(major_powers(f"{row.get('title') or ''} {row.get('note') or ''}"))
+        match = None
+        for other in kept:
+            other_powers = tuple(major_powers(f"{other.get('title') or ''} {other.get('note') or ''}"))
+            if kind and kind == global_event_type(other.get("title") or "", other.get("note") or "") and powers == other_powers:
+                match = other
+                break
+        if match is None:
+            fresh = dict(row)
+            fresh["sourceCount"] = int(fresh.get("sourceCount") or 1)
+            kept.append(fresh)
+            continue
+        src = row.get("source") or ""
+        if src and src != match.get("source"):
+            related = list(match.get("relatedSources") or [])
+            if src not in related:
+                related.append(src)
+            match["relatedSources"] = related
+            match["related"] = len(related)
+            match["sourceCount"] = 1 + len(related)
+        outlets = int(match.get("sourceCount") or 1)
+        match["severity"] = global_severity(match.get("title") or "", match.get("note") or "", outlets)
+        if (row.get("published") or "") > (match.get("published") or "") and row.get("title"):
+            match["title"] = row["title"]
+            if row.get("url"):
+                match["url"] = row["url"]
+    return kept
+
+
 def classify_desk(title: str, note: str, hinted: str) -> str:
     """Conflict kinds only when the headline itself names that conflict.
 
@@ -1804,23 +1924,89 @@ def _try_desks(now):
             if re.search(r"\b(essay|analysis|implications under)\b", row.get("title") or "", re.I):
                 continue
             row = dict(row)
-            assigned = classify_desk(row.get("title") or "", row.get("note") or "", kind)
-            if assigned == "news" or statement_not_event(row.get("title") or "", row.get("note") or ""):
-                continue
+            title = row.get("title") or ""
+            note = row.get("note") or ""
+            if global_event_type(title, note):
+                assigned = "global"
+                severity = global_severity(title, note, 1)
+            else:
+                assigned = classify_desk(title, note, kind)
+                if assigned == "news":
+                    continue
+                severity = "STANDBY" if assigned == "windstorm" else news_event_severity(title, note, row.get("source") or "")
             row["kind"] = assigned
             row["lane"] = "news"
-            row["severity"] = "STANDBY" if assigned == "windstorm" else "ALERT"
+            row["severity"] = severity
             row["confidence"] = "reported"
             row["sourceCount"] = 1
-            row["tags"] = list(dict.fromkeys((row.get("tags") or []) + [assigned, "standby" if assigned == "windstorm" else "alert"]))
+            row["tags"] = list(dict.fromkeys((row.get("tags") or []) + [assigned, severity.lower()]))
             rows.append(row)
             kept += 1
         print(f"  {kind} {kept}")
         if kept == 0:
             gaps.append(f"{source}: 0 headlines for this check.")
+    rows.sort(key=lambda row: row.get("published") or "", reverse=True)
+    rows.sort(key=lambda row: {"CRITICAL": 0, "ACTION": 1, "ALERT": 2, "STANDBY": 3}.get(row.get("severity") or "", 4))
     folded = fold_desk_rows(rows)
     print(f"  desks {len(rows)} headlines, {len(folded)} after story dedupe")
     return folded, gaps
+
+
+GLOBAL_NEWS = '(Trump OR Putin OR "Xi Jinping" OR "United States" OR Russia OR China OR "European Union" OR India) (summit OR ceasefire OR "peace talks" OR treaty OR sanctions OR "Security Council" OR "NATO summit" OR "G7 summit" OR "G20 summit" OR coup OR resigns) when:7d'
+WORLD_FEEDS = (
+    ("https://feeds.bbci.co.uk/news/world/rss.xml", "BBC World"),
+    ("https://apnews.com/world-news/rss", "AP World"),
+    ("https://www.reuters.com/world/rss", "Reuters World"),
+)
+
+
+def _try_global(now):
+    """Major geopolitical moments. One news search plus world-desk RSS when it answers."""
+    rows = []
+    gaps = []
+    try:
+        for row in _headlines(GLOBAL_NEWS, now, retain_days=7, limit=12):
+            title = row.get("title") or ""
+            if not global_event_type(title, row.get("note") or ""):
+                continue
+            fresh = dict(row)
+            fresh["kind"] = "global"
+            fresh["lane"] = "news"
+            fresh["severity"] = global_severity(title, fresh.get("note") or "", 1)
+            fresh["tags"] = ["global", fresh["severity"].lower()]
+            fresh["sourceId"] = "global"
+            rows.append(fresh)
+    except Exception as err:
+        gaps.append(f"Global news: {err}")
+        print(f"  global news: {err}")
+    for url, name in WORLD_FEEDS:
+        try:
+            nodes = _rss_items(url, 8, timeout=12)
+        except Exception as err:
+            gaps.append(f"{name}: {err}")
+            print(f"  {name}: {err}")
+            continue
+        kept = 0
+        for node in nodes:
+            title = re.sub(r"\s+", " ", (node.findtext("title") or "")).strip()
+            link = d.http_url(node.findtext("link") or node.findtext("{http://www.w3.org/2005/Atom}link") or "")
+            if not title or not global_event_type(title):
+                continue
+            when = d.parse_pubdate(node.findtext("pubDate") or "") or now
+            rows.append(_item(
+                "global", "news", name, title, "", link or url, when, ["global", "standby"],
+                {"severity": global_severity(title, "", 1), "sourceId": "global"},
+            ))
+            kept += 1
+            if kept >= 4:
+                break
+        print(f"  {name} {kept}")
+    folded = global_dedupe(rows)
+    for row in folded:
+        row["severity"] = global_severity(row.get("title") or "", row.get("note") or "", int(row.get("sourceCount") or 1))
+        row["tags"] = ["global", (row.get("severity") or "standby").lower()]
+    print(f"  global {len(folded)}")
+    return folded[:8], gaps
 
 
 def _sentry_soon(rec: dict, year: int) -> bool:
@@ -1975,10 +2161,26 @@ def _coin(coin: str) -> dict | None:
     }
 
 
+FIELD_QUERIES = (
+    ("physics", "physics (discovery OR CERN OR telescope OR breakthrough) when:7d"),
+    ("biomedical", '(FDA OR vaccine OR "clinical trial") (approval OR results OR outbreak) when:7d'),
+    ("quantum", '"quantum computer" (chip OR breakthrough OR error) when:14d'),
+    ("propulsion", "(NASA OR SpaceX) (launch OR rocket OR test) when:7d"),
+    ("technology", "(semiconductor OR chip) (export OR shortage OR fab) when:7d"),
+    ("ai", '(OpenAI OR Anthropic OR "Google DeepMind" OR Gemini OR xAI OR Grok OR "Meta AI" OR Mistral OR DeepSeek OR Qwen OR "frontier model" OR "AI safety") when:7d'),
+)
+LAB_FEEDS = (
+    ("https://openai.com/news/rss.xml", "OpenAI", "ai"),
+    ("https://www.anthropic.com/rss.xml", "Anthropic", "ai"),
+    ("https://deepmind.google/blog/rss.xml", "DeepMind", "ai"),
+)
+
+
 def fetch_science(now: datetime) -> dict:
     items = []
     failures = 0
     cutoff = (now - timedelta(days=21)).date().isoformat()
+    from deskextra import section_noise, section_spikes
     for spec in SCIENCE:
         if "export.arxiv.org" in spec["url"]:
             time.sleep(3)
@@ -2002,8 +2204,60 @@ def fetch_science(now: datetime) -> dict:
         counts[field] = counts.get(field, 0) + 1
         if counts[field] <= 16:
             kept.append(row)
+    for field, query in FIELD_QUERIES:
+        try:
+            found = _headlines(query, now, retain_days=7, limit=6)
+        except Exception as err:
+            print(f"  science topic {field}: {err}")
+            continue
+        added = 0
+        for row in found:
+            title = row.get("title") or ""
+            if section_noise(title):
+                continue
+            fresh = dict(row)
+            fresh["kind"] = "paper"
+            fresh["lane"] = "science"
+            fresh["field"] = field
+            fresh["review"] = "NEWS"
+            fresh["tags"] = list(dict.fromkeys((fresh.get("tags") or []) + ["science", field, "news"]))
+            kept.append(fresh)
+            added += 1
+            if added >= 4:
+                break
+        print(f"  science topic {field}: {added}")
+    for url, name, field in LAB_FEEDS:
+        try:
+            nodes = _rss_items(url, 4, timeout=12)
+        except Exception as err:
+            print(f"  lab {name}: {err}")
+            continue
+        added = 0
+        for node in nodes:
+            title = re.sub(r"\s+", " ", (node.findtext("title") or "")).strip()
+            link = ""
+            for child in list(node):
+                if child.tag in {f"{ATOM}link", "link"}:
+                    link = d.http_url(child.attrib.get("href") or child.text or "")
+                    if link:
+                        break
+            if not title or not link or section_noise(title):
+                continue
+            when = d.parse_pubdate(node.findtext("pubDate") or node.findtext(f"{ATOM}updated") or "") or now
+            kept.append(_item(
+                "paper", "science", name, title, "", link, when,
+                ["science", field, "news"],
+                {"field": field, "review": "NEWS", "severity": ""},
+            ))
+            added += 1
+        print(f"  lab {name}: {added}")
     kept.sort(key=lambda row: row.get("published") or "", reverse=True)
-    return {"items": kept}
+    spikes = []
+    for field in {row.get("field") or "" for row in kept}:
+        for spike in section_spikes([row for row in kept if row.get("field") == field]):
+            spike["field"] = field
+            spikes.append(spike)
+    return {"items": kept, "spikes": spikes}
 
 
 def _preprint_api(spec: dict, now: datetime, cutoff: str) -> list[dict]:
@@ -2139,6 +2393,7 @@ def extra_sources(markets: dict, threats: dict, science: dict, gaps: list | None
             rows[-1]["subtitle"] = "no current alerts"
             if not rows[-1].get("lastLabel"):
                 rows[-1]["lastLabel"] = "no current alerts"
+    add("threat-global", "Global events", "GLOBAL", "threat", "https://news.google.com/", by_kind.get("global") or [])
     cyber = by_kind.get("cyber") or []
     cisa_rows = [item for item in cyber if item.get("source") == "CISA" or item.get("sourceId") == "cisa"]
     news_rows = [item for item in cyber if item not in cisa_rows]

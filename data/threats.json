@@ -1354,7 +1354,7 @@
       "severity": "STANDBY",
       "soWhat": "",
       "source": "CSO Online",
-      "sourceCount": 1,
+      "sourceCount": 3,
       "sourceId": "cyber-news",
       "tags": [
         "headline",
@@ -1364,65 +1364,12 @@
       "timeKnown": true,
       "title": "Optimizely confirms massive cyberattack on customer websites injected stealer malware - CSO Online",
       "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPR0R0ODQ0eDFUYUtjODExbWZrd3hfYjlXN1dxVHBzeTlTUnc3ODI5bXVvOE93SXEzZ3RMY2ZYNGpNWjhRZWpsWkRReW5vVVp0V0N5Q3J2RS1xWW01VExhNm55TUZOeURYYVdqNXhBYXJmOUhvT05OU0JwVnAtaHl4YzdsUUVnQ0FTV2hlVEFBclhNZkZQc09KdURPbTJHZHVRX1RsTnR0RU00WFV4dm56TmM0OVFNVkxLU3g3bjJCcEVlRTVlT2hOQy1GbEw?oc=5",
-      "weekday": "Tue"
-    },
-    {
-      "action": "no action needed",
-      "arrowDay": "→",
-      "arrowWeek": "→",
-      "confidence": "reported",
-      "date": "2026-11-17",
-      "guest": "",
-      "id": "headline:53f878dbd68ccaaa",
-      "kind": "cyber",
-      "label": "Nov 17, 2026 3:51 PM CT",
-      "lane": "threat",
-      "note": "",
-      "outlook": "First reading. Watch the next 72 hours.",
-      "published": "2026-11-17T15:51:00-06:00",
-      "severity": "STANDBY",
-      "soWhat": "",
-      "source": "Syracuse.com",
-      "sourceCount": 1,
-      "sourceId": "cyber-news",
-      "tags": [
-        "headline",
-        "standby",
-        "cyber"
+      "weekday": "Tue",
+      "relatedSources": [
+        "Syracuse.com",
+        "WBAL-TV"
       ],
-      "timeKnown": true,
-      "title": "Cyberattack hits 178 organizations: Credit cards, crypto, other data at risk - Syracuse.com",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOZEk0NFhMYXFvSVRIemVuWTRsbURQMk82bWc3WW1aZGZVTVgzSk9QTFpCU1o3bkdRbFZjRkFSZXg5dk1QcUE0S2xnWDF2RWNtd3NsbEUtSVM0MXJCb3JTWGdtU3JOSWFxQmYtT0lTUnEwbE9Jd0dYUS1rcHp3cjJLcnp0LS1KMFdXN2p2NHh4ei0tS25BMXJQTGxoQnhZRV9KTVhVX2JROVBJanJPTDZTV05wV284SmZTSHZJ?oc=5",
-      "weekday": "Tue"
-    },
-    {
-      "action": "no action needed",
-      "arrowDay": "→",
-      "arrowWeek": "→",
-      "confidence": "reported",
-      "date": "2026-11-17",
-      "guest": "",
-      "id": "headline:e2b00f081fb43c3d",
-      "kind": "cyber",
-      "label": "Nov 17, 2026 12:45 PM CT",
-      "lane": "threat",
-      "note": "",
-      "outlook": "First reading. Watch the next 72 hours.",
-      "published": "2026-11-17T12:45:00-06:00",
-      "severity": "STANDBY",
-      "soWhat": "",
-      "source": "WBAL-TV",
-      "sourceCount": 1,
-      "sourceId": "cyber-news",
-      "tags": [
-        "headline",
-        "standby",
-        "cyber"
-      ],
-      "timeKnown": true,
-      "title": "Some of the world’s most-visited websites targeted by cyberattack - WBAL-TV",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBEQTM5aEhLeUozcmY0Z1ZWdmk2Rl9oYWtrelhXblZPRXZfYVk5b0h5V1VVWlBTamZVZ2g5MEo0T2FPamZ1aHFNaTVOMGpvVTlkeHBkUU1GZUY0bzVWZ0xwRTROdVR5Wk40QnpjYUhZR2l3bEFyOTRmS3Rn?oc=5",
-      "weekday": "Tue"
+      "related": 2
     },
     {
       "action": "no action needed",
@@ -1443,16 +1390,15 @@
         "EDMO",
         "WKYC"
       ],
-      "severity": "ALERT",
+      "severity": "STANDBY",
       "soWhat": "no action needed",
       "source": "BBC",
       "sourceCount": 1,
       "sourceId": "headline",
       "tags": [
         "headline",
-        "standby",
         "attack",
-        "alert"
+        "standby"
       ],
       "timeKnown": true,
       "title": "York victim of Krakow attack on his way home, family confirms - BBC",
@@ -1475,16 +1421,15 @@
       "published": "2026-11-18T23:42:33-06:00",
       "related": 0,
       "relatedSources": [],
-      "severity": "ALERT",
+      "severity": "STANDBY",
       "soWhat": "What to do: no action at home. Skip travel into the named fighting if a trip was planned.",
       "source": "Institute for the Study of War",
       "sourceCount": 1,
       "sourceId": "headline",
       "tags": [
         "headline",
-        "standby",
         "war-iran",
-        "alert"
+        "standby"
       ],
       "timeKnown": true,
       "title": "Iran Update, November 18, 2026 - Institute for the Study of War",
@@ -1507,16 +1452,15 @@
       "published": "2026-11-18T19:16:00-06:00",
       "related": 0,
       "relatedSources": [],
-      "severity": "ALERT",
+      "severity": "STANDBY",
       "soWhat": "What to do: no action at home. Skip travel into the named fighting if a trip was planned.",
       "source": "AP News",
       "sourceCount": 1,
       "sourceId": "headline",
       "tags": [
         "headline",
-        "standby",
         "war-iran",
-        "alert"
+        "standby"
       ],
       "timeKnown": true,
       "title": "Mideast nations ramp up efforts to avert all-out war as Israel urges Iran strikes, officials say - AP News",
@@ -1542,16 +1486,15 @@
         "U.S. Department of State (.gov)",
         "Taipei Times"
       ],
-      "severity": "ALERT",
+      "severity": "STANDBY",
       "soWhat": "no action needed",
       "source": "European External Action Service (EEAS)",
       "sourceCount": 1,
       "sourceId": "headline",
       "tags": [
         "headline",
-        "standby",
         "diplomacy",
-        "alert"
+        "standby"
       ],
       "timeKnown": true,
       "title": "G7 Foreign Ministers' meeting: Press remarks by the High Representative/Vice-President Kaja Kallas upon arrival - European External Action Service (EEAS)",
@@ -1574,16 +1517,15 @@
       "published": "2026-11-18T16:11:08-06:00",
       "related": 0,
       "relatedSources": [],
-      "severity": "ALERT",
+      "severity": "STANDBY",
       "soWhat": "",
       "source": "PBS",
       "sourceCount": 1,
       "sourceId": "headline",
       "tags": [
         "headline",
-        "standby",
         "usgov",
-        "alert"
+        "standby"
       ],
       "timeKnown": true,
       "title": "Democrats flipped 9 U.S. Senate seats — the most in almost 70 years - PBS",
@@ -1609,16 +1551,15 @@
         "Pew Research Center",
         "CNBC"
       ],
-      "severity": "ALERT",
+      "severity": "STANDBY",
       "soWhat": "What to do: no action at home. Skip travel into the named fighting if a trip was planned.",
       "source": "Atlantic Council",
       "sourceCount": 1,
       "sourceId": "headline",
       "tags": [
         "headline",
-        "standby",
         "war-ukraine",
-        "alert"
+        "standby"
       ],
       "timeKnown": true,
       "title": "Dispatch from Kyiv: Let Ukraine strike Russia’s missile launchers at the source - Atlantic Council",
@@ -1641,16 +1582,15 @@
       "published": "2026-11-18T09:01:28-06:00",
       "related": 0,
       "relatedSources": [],
-      "severity": "ALERT",
+      "severity": "STANDBY",
       "soWhat": "",
       "source": "SCOTUSblog",
       "sourceCount": 1,
       "sourceId": "headline",
       "tags": [
         "headline",
-        "standby",
         "usgov",
-        "alert"
+        "standby"
       ],
       "timeKnown": true,
       "title": "The Supreme Court before it stood apart - SCOTUSblog",
@@ -1675,16 +1615,15 @@
       "relatedSources": [
         "U.S. Department of State (.gov)"
       ],
-      "severity": "ALERT",
+      "severity": "STANDBY",
       "soWhat": "",
       "source": "C-SPAN",
       "sourceCount": 1,
       "sourceId": "headline",
       "tags": [
         "headline",
-        "standby",
         "usgov",
-        "alert"
+        "standby"
       ],
       "timeKnown": true,
       "title": "Secretary of State Marco Rubio on Major Technical Failures & Outage Incidents - C-SPAN",
@@ -1714,7 +1653,6 @@
       "sourceId": "headline",
       "tags": [
         "headline",
-        "standby",
         "war-ukraine",
         "alert"
       ],
@@ -1739,16 +1677,15 @@
       "published": "2026-11-17T14:16:47-06:00",
       "related": 0,
       "relatedSources": [],
-      "severity": "ALERT",
+      "severity": "STANDBY",
       "soWhat": "What to do: no action at home. Skip travel into the named fighting if a trip was planned.",
       "source": "U.S. Department of War (.gov)",
       "sourceCount": 1,
       "sourceId": "headline",
       "tags": [
         "headline",
-        "standby",
         "war-ukraine",
-        "alert"
+        "standby"
       ],
       "timeKnown": true,
       "title": "Remarks by Under Secretary of War for Policy Elbridge Colby at the Ukraine Defense Contact Group (As Delivered) - U.S. Department of War (.gov)",
@@ -1780,7 +1717,6 @@
       "sourceId": "headline",
       "tags": [
         "headline",
-        "standby",
         "war-iran",
         "alert"
       ],
@@ -1813,8 +1749,8 @@
       "sourceId": "headline",
       "tags": [
         "headline",
-        "standby",
-        "attack"
+        "attack",
+        "standby"
       ],
       "timeKnown": true,
       "title": "Polish police arrest 3 teens over suspected neo-Nazi terror plot - DW.com",
@@ -1845,8 +1781,8 @@
       "sourceId": "headline",
       "tags": [
         "headline",
-        "standby",
-        "war-ukraine"
+        "war-ukraine",
+        "standby"
       ],
       "timeKnown": true,
       "title": "Ukraine Facility: Council approves largest-ever payment of €8 billion to Kyiv - Council, European Union",
@@ -1879,8 +1815,8 @@
       "sourceId": "headline",
       "tags": [
         "headline",
-        "standby",
-        "israel"
+        "israel",
+        "standby"
       ],
       "timeKnown": true,
       "title": "Can Netanyahu and Eisenkot form a ‘unity’ government in Israel? - Al Jazeera",
@@ -1911,8 +1847,8 @@
       "sourceId": "headline",
       "tags": [
         "headline",
-        "standby",
-        "usgov"
+        "usgov",
+        "standby"
       ],
       "timeKnown": true,
       "title": "The History of Electricity at the White House - Department of Energy (.gov)",
@@ -1943,8 +1879,8 @@
       "sourceId": "headline",
       "tags": [
         "headline",
-        "standby",
-        "war-iran"
+        "war-iran",
+        "standby"
       ],
       "timeKnown": true,
       "title": "Democrats mulling Iran war funding cutoff strategy - Roll Call",
@@ -1981,8 +1917,8 @@
       "sourceId": "headline",
       "tags": [
         "headline",
-        "standby",
-        "climate"
+        "climate",
+        "standby"
       ],
       "timeKnown": true,
       "title": "COP31 to take place 9-20 November 2026 in Antalya, Türkiye - Welcome to the United Nations",
@@ -2019,8 +1955,8 @@
       "sourceId": "headline",
       "tags": [
         "headline",
-        "standby",
-        "windstorm"
+        "windstorm",
+        "standby"
       ],
       "timeKnown": true,
       "title": "Storm Charles damages banana and avocado plantations in the Canary Islands - FreshPlaza",
@@ -2228,6 +2164,80 @@
       "title": "Doomsday Clock",
       "url": "https://thebulletin.org/doomsday-clock/",
       "weekday": "Thu"
+    },
+    {
+      "id": "headline:75600b4c91d7542c",
+      "kind": "global",
+      "lane": "news",
+      "source": "The Hill",
+      "sourceId": "global",
+      "title": "First three-way summit between China, Russia and the US opens possible avenue to nuclear disarmament talks - ICAN - International Campaign to Abolish Nuclear Weapons",
+      "guest": "",
+      "note": "",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOanBETFltUE5USWZvREhlN0lvMXlMUmVXS0pjb2d4blpicTdZUnlOU3JmcEQyYmxUTVZHRVFES25tOTVtQVFNQUo0Sk10NlpfRWFuUUFwNjR0MjZodXZCd2tsOWNBeGJyOFpjZk9yZ2dIWVNGNW1fM3I4MnRjSlpPaV9YMjI1UDdXOGdJQl9RVWNka0tXLTM4LW5JZXdoanFlLWRRZFFmVTFkY1JZV1ZESW1fOHRrWk55RUdYZFF2UE81bC1iMGc?oc=5",
+      "published": "2026-11-19T06:31:00-06:00",
+      "date": "2026-11-19",
+      "label": "Nov 19, 2026 6:31 AM CT",
+      "weekday": "Thu",
+      "timeKnown": true,
+      "tags": [
+        "global",
+        "alert"
+      ],
+      "severity": "ALERT",
+      "sourceCount": 6,
+      "relatedSources": [
+        "Politico",
+        "PBS",
+        "Fox News",
+        "Los Angeles Times",
+        "ICAN - International Campaign to Abolish Nuclear Weapons"
+      ],
+      "related": 5
+    },
+    {
+      "id": "headline:ff870ec6c413c4cd",
+      "kind": "global",
+      "lane": "news",
+      "source": "Reuters",
+      "sourceId": "global",
+      "title": "From tarmac to APEC summit table, Japan's PM cuts a lonely figure - Reuters",
+      "guest": "",
+      "note": "",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQV2lFRzhLTFFzUDAyQlFERWhQTjQwbzExSnlMaEVMYnhnOEdTRm9yNTJxWWgwRjluUHkxZVFWUnJYTXVOaVhoRGtGRE5PRXhiRF9WX3RtVVJGTkVIV3BLRDZPWVJQUFN0RjY3UXBpUktQSlNHQzlmS1N5Q0lCQkpLSjU4c29PQTM3bXI1cDlzSjAwTG95Vkt1Sk90NGlid0ptUG1v?oc=5",
+      "published": "2026-11-19T04:32:36-06:00",
+      "date": "2026-11-19",
+      "label": "Nov 19, 2026 4:32 AM CT",
+      "weekday": "Thu",
+      "timeKnown": true,
+      "tags": [
+        "global",
+        "standby"
+      ],
+      "severity": "STANDBY",
+      "sourceCount": 1
+    },
+    {
+      "id": "headline:6b927575ffcb2e9b",
+      "kind": "global",
+      "lane": "news",
+      "source": "The Economist",
+      "sourceId": "global",
+      "title": "Europe tightens sanctions on Russia. America loosens them - The Economist",
+      "guest": "",
+      "note": "",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPQkxzUWdBcFpHVy01Y3hvOURnd0drNUZuWW9rWC1QQk5GQVV0blFhU0ZnZVFpY2JWaVZrUlVhZ0pOV2hkVmNtUUZ0ODIyVGtxUWx6RU9LNWhJcDJNTjhCYVlvODk2eWYwRHRnbnE0NFAwOGdaQ1BsTFdSWUVFSFBzaHJaVWxDc3NSRF9ZRFVqTk1TdzZTWmNCUDhqLUJsN19YUTl1YUNPMEY0MTNnenN2aHNUeklwdw?oc=5",
+      "published": "2026-11-19T04:03:23-06:00",
+      "date": "2026-11-19",
+      "label": "Nov 19, 2026 4:03 AM CT",
+      "weekday": "Thu",
+      "timeKnown": true,
+      "tags": [
+        "global",
+        "standby"
+      ],
+      "severity": "ALERT",
+      "sourceCount": 1
     }
   ]
 }

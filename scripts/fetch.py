@@ -1155,6 +1155,7 @@ def main() -> int:
         }
     change_groups["trendsMode"] = trends.get("mode") or ""
 
+    import deskextra
     meta = {
         "baseline": baseline,
         "checkedAt": now.isoformat(timespec="seconds"),
@@ -1167,6 +1168,9 @@ def main() -> int:
             "mode": trends.get("mode") or "",
             "note": trends.get("note") or "",
             "google": trends.get("googleNote") or "",
+        },
+        "spikes": {
+            "podcasts": deskextra.section_spikes(episodes, lexicon=(), min_outlets=2),
         },
         "x": {
             "online": bool(x_status.get("online")),

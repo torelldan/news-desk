@@ -55,6 +55,7 @@ def main() -> None:
         "history": load("history.json", {"days": []}),
         "lookback": load("lookback.json", {"note": "No stored history yet.", "escalated": [], "fizzled": [], "calls": []}),
         "brief": meta.get("brief") or "",
+        "spikes": meta.get("spikes") or {},
     }
     template = (ROOT / "template.html").read_text()
     if "/*__DATA__*/" not in template:

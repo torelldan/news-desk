@@ -9,7 +9,7 @@ import io
 import json
 import re
 import xml.etree.ElementTree as ET
-from datetime import datetime, timedelta, timezone
+from datetime import date, datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 
 TN_WILLIAMSON = {"187"}
@@ -228,6 +228,8 @@ def strike_country(title: str) -> str:
 
 def strike_from_row(row: dict) -> dict | None:
     """A strike card from a headline or a threat-board row. None when it is not a strike."""
+    if (row.get("kind") or "") == "cyber" or (row.get("sourceId") or "") in {"cisa", "cyber-news"}:
+        return None
     title = clean_strike_title(row.get("title") or "")
     if not keep_strike(title):
         return None
@@ -390,6 +392,35 @@ _CYBER_ORGS = (
 )
 
 
+_CAMPAIGN_FAMILY = (
+    ("optimizely-web", re.compile(
+        r"optimizely|stealer malware|most[- ]visited websites|\b178\b.{0,48}organi[sz]ations|organi[sz]ations.{0,24}\b178\b",
+        re.I,
+    )),
+)
+
+
+def cyber_signature(title: str) -> set[str]:
+    """Shared campaign marks, such as 178 organizations and the Optimizely website attack."""
+    found = set()
+    blob = title or ""
+    for name, pattern in _CAMPAIGN_FAMILY:
+        if pattern.search(blob):
+            found.add(name)
+    return found
+
+
+def _cyber_near(left: dict, right: dict, days: int = 7) -> bool:
+    a = str(left.get("date") or left.get("published") or "")[:10]
+    b = str(right.get("date") or right.get("published") or "")[:10]
+    if len(a) < 10 or len(b) < 10:
+        return True
+    try:
+        return abs((date.fromisoformat(a) - date.fromisoformat(b)).days) <= days
+    except ValueError:
+        return True
+
+
 def _cyber_entity(title: str) -> str:
     """The company in a news incident. Catalog CVEs stay separate even when the vendor matches."""
     if re.search(r"CVE-\d{4}-\d+", title or "", re.I):
@@ -431,6 +462,10 @@ def cyber_dedupe(rows: list[dict]) -> list[dict]:
         same = False
         for other in kept:
             if entity and _cyber_entity(other.get("title") or "") == entity:
+                _merge_cyber(other, row)
+                same = True
+                break
+            if cyber_signature(title) & cyber_signature(other.get("title") or "") and _cyber_near(row, other):
                 _merge_cyber(other, row)
                 same = True
                 break
@@ -482,6 +517,86 @@ def rising_from_trends(trends: dict | None, scored: list | None = None) -> list[
     return rows
 
 
+_SECTION_NOISE = re.compile(
+    r"\b(how to|what is|what’s|listicle|opinion|op-ed|oped|webinar|funding round|sponsored|"
+    r"tips for|guide to|explainer|top \d+|dispatch from)\b",
+    re.I,
+)
+_SECTION_EVENT = re.compile(
+    r"\b(releases?|released|launches?|launched|deal|filing|outage|incident|acquires?|"
+    r"unveils?|open-sources?|ships|shipped|approves?|approved|breakthrough|introducing|sues|lawsuit)\b",
+    re.I,
+)
+_LAB_TOPICS = (
+    ("openai", "OpenAI"), ("anthropic", "Anthropic"), ("deepmind", "DeepMind"), ("gemini", "Gemini"),
+    ("xai", "xAI"), ("grok", "Grok"), ("meta ai", "Meta AI"), ("mistral", "Mistral"),
+    ("deepseek", "DeepSeek"), ("qwen", "Qwen"), ("frontier model", "frontier model"),
+    ("ai safety", "AI safety"),
+)
+_ECON_TOPICS = (
+    ("federal reserve", "Federal Reserve"), ("interest rate", "interest rates"), ("tariff", "tariffs"),
+    ("inflation", "inflation"), ("opec", "OPEC"), ("oil", "oil"), ("nvidia", "Nvidia"),
+    ("recession", "recession"), ("sanctions", "sanctions"),
+)
+
+
+def section_noise(title: str) -> bool:
+    return _SECTION_NOISE.search(title or "") is not None
+
+
+def section_event(title: str) -> bool:
+    return _SECTION_EVENT.search(title or "") is not None and not section_noise(title)
+
+
+def section_topic(title: str, lexicon: tuple | None = None) -> str:
+    blob = (title or "").lower()
+    for needle, label in lexicon or _LAB_TOPICS:
+        if needle in blob:
+            return label
+    return ""
+
+
+def section_spikes(items: list | None, lexicon: tuple | None = None, min_outlets: int = 3) -> list[dict]:
+    """A topic floats when several outlets cover it, or a real release/incident has more than one."""
+    groups: dict[str, list] = {}
+    for item in items or []:
+        title = item.get("title") or item.get("guest") or ""
+        if section_noise(title):
+            continue
+        topic = section_topic(title, lexicon)
+        if not topic and item.get("guest"):
+            topic = item.get("guest")
+        if not topic:
+            continue
+        groups.setdefault(topic, []).append(item)
+    spikes = []
+    for topic, rows in groups.items():
+        sources = []
+        for row in rows:
+            src = row.get("source") or ""
+            if src and src not in sources:
+                sources.append(src)
+        event = any(section_event(row.get("title") or "") for row in rows)
+        if len(sources) < min_outlets and not (event and len(sources) >= 2):
+            continue
+        links = []
+        for row in rows:
+            if not row.get("url"):
+                continue
+            links.append({"title": row.get("title") or "", "url": row.get("url") or "", "source": row.get("source") or ""})
+            if len(links) >= 4:
+                break
+        spikes.append({
+            "topic": topic,
+            "outlets": len(sources),
+            "state": "RISING" if len(sources) >= min_outlets else "EVENT",
+            "links": links,
+            "title": (rows[0].get("title") or topic),
+        })
+    spikes.sort(key=lambda row: row["outlets"], reverse=True)
+    return spikes[:4]
+
+
 def attach_rising_links(items: list | None, threats: list | None) -> list:
     """Volume rows such as quake or relief get the threat-board items behind them."""
     aliases = {
@@ -528,6 +643,10 @@ def keep_strike(title: str) -> bool:
     if re.search(r"\b(tribute|memorial|holds mass|commemorat\w*|fake images|photo hoax)\b", blob, re.I):
         return False
     if re.search(r"\b(reject|criticism of)\b", blob, re.I):
+        return False
+    if re.search(r"\b(cisa|exploited flaws?|cryptomining|llmjacking|cyberattack|cyber attack|ransomware)\b", blob, re.I):
+        return False
+    if re.search(r"\b(dispatch from|on (?:his|her|their) way home|family confirms|avert|efforts to avert|ramp up efforts)\b", blob, re.I):
         return False
     struck = re.search(r"\b(strikes?|attacks?|bombard\w*|explos\w*|shelling|airstrikes?|air strikes?)\b", blob, re.I)
     if re.search(r"\b(drone maker|drone factory)\b", blob, re.I) and not struck:

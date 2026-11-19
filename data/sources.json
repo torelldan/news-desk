@@ -574,5 +574,17 @@
     "short": "SPC",
     "subtitle": "threat",
     "url": "https://www.spc.noaa.gov/"
+  },
+  {
+    "id": "threat-global",
+    "name": "Global events",
+    "short": "GLOBAL",
+    "lane": "threat",
+    "url": "https://news.google.com/",
+    "subtitle": "threat",
+    "lastLabel": "Nov 19, 2026 6:31 AM CT",
+    "lastDate": "2026-11-19",
+    "count": 3,
+    "offline": false
   }
 ]
