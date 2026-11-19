@@ -28,9 +28,9 @@
             "2026-11-26",
             "2026-12-25"
           ],
-          "level": 7219.21,
-          "change": -104.42,
-          "changePct": -1.43,
+          "level": 7259.65,
+          "change": -63.98,
+          "changePct": -0.87,
           "asOf": "2026-11-19",
           "source": "https://finance.yahoo.com/quote/%5EGSPC"
         }
@@ -58,6 +58,27 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:7d796334e6f63971",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Modern Diplomacy",
+          "sourceId": "headline",
+          "title": "AI Boom Is Reshaping the US Dollar, but Markets Remain Divided Over Its Future - Modern Diplomacy",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPbHFiUjh5ejJ5VTl0Y0FFM2hHNEFPU0RvV2VYMEdYdmFodFZ0SzlTaGl1eTROTnhHNVVhU3FuMS00Rm5kMVMwaFpyTjBzeU5JX0hNaEVCUGVEaUZ0X2NrVDR6OVk2OUFNN2VHaVlIMFNRdGd3bEZMVk9ZZEJZY1AxQlUyaHpqUktvdzlYMUJzb2duY041bVEwZFZPbmNCdzkwWFBxLXd4MXlxWGR6WERaQ3ZlcGZjcVk?oc=5",
+          "published": "2026-11-19T05:11:15-06:00",
+          "date": "2026-11-19",
+          "label": "Nov 19, 2026 5:11 AM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:388123a69c743c1f",
           "kind": "headline",
           "lane": "news",
@@ -71,6 +92,27 @@
           "date": "2026-11-19",
           "label": "Nov 19, 2026 3:52 AM CT",
           "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:5681cf67a5f63955",
+          "kind": "headline",
+          "lane": "news",
+          "source": "The New York Times",
+          "sourceId": "headline",
+          "title": "Fed Saw Need to Keep Raising Interest Rates Despite Holding Steady in October - The New York Times",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQZWNVYnFNZV9nd0xLQW9EenZFTEJZS1A0VF9jcXgydHdZMlNUY21sTndVYzZXTThLS19UOThYOF9oZS1hbURtSlBhcUYyTVB1XzB2QUk5dlZva3RlNzlyWmtweDNhUUdyNVJGV290RzNLYTBEU1RXMlpiNEtHZ09HTVFyZ09ldVdKUXNiMHFLSk45Y3RiOWEzWDFB?oc=5",
+          "published": "2026-11-18T14:35:01-06:00",
+          "date": "2026-11-18",
+          "label": "Nov 18, 2026 2:35 PM CT",
+          "weekday": "Wed",
           "timeKnown": true,
           "tags": [
             "headline",
@@ -112,27 +154,6 @@
           "published": "2026-11-18T14:32:00-06:00",
           "date": "2026-11-18",
           "label": "Nov 18, 2026 2:32 PM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:5681cf67a5f63955",
-          "kind": "headline",
-          "lane": "news",
-          "source": "The New York Times",
-          "sourceId": "headline",
-          "title": "Fed Saw Need to Keep Raising Interest Rates Despite Holding Steady in October - The New York Times",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQZWNVYnFNZV9nd0xLQW9EenZFTEJZS1A0VF9jcXgydHdZMlNUY21sTndVYzZXTThLS19UOThYOF9oZS1hbURtSlBhcUYyTVB1XzB2QUk5dlZva3RlNzlyWmtweDNhUUdyNVJGV290RzNLYTBEU1RXMlpiNEtHZ09HTVFyZ09ldVdKUXNiMHFLSk45Y3RiOWEzWDFB?oc=5",
-          "published": "2026-11-18T13:09:22-06:00",
-          "date": "2026-11-18",
-          "label": "Nov 18, 2026 1:09 PM CT",
           "weekday": "Wed",
           "timeKnown": true,
           "tags": [
@@ -730,6 +751,27 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:ea9a42308765a0e8",
+          "kind": "headline",
+          "lane": "news",
+          "source": "National News Desk",
+          "sourceId": "headline",
+          "title": "Warsh outlines 3 possible SI futures for US economy, from growth boom to job losses - National News Desk",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxNOXZxOU9fVlotSDNISm85NlZlNG95a0RGdXNsOW9oNms5RDkwSmY1MEdoWGJoTkQzb2EyMXJYOEE5NVlCUFlyZnU1MmRPdi10RTRoR09CdkVOZXBoa2VfQ0VrT0RrWS1RblVuR0cyUk1ZVzNrNDRfRERQZlphemJOdDh3OGVTRHNyM0U1ZXZfd3VBaEtVc2tzQ1RmMWNYUUlKLWZWaEh4RFJrWnRyWjQ4czdEMkNTcmJLa1I1bmxPMk53QzVwSG5EYUZmZlFKYWhxVkEwdHpUaVN5anFhampteDFOWDhvTkxDWTA1djNoSXo0OEQtQ0xRb05yQU4xMWxQbWFvT2stdHI3OVVDRGtUc3JLRUVvbnRWbVFGWDVnRjdBNzRJcl96Vw?oc=5",
+          "published": "2026-11-16T10:47:55-06:00",
+          "date": "2026-11-16",
+          "label": "Nov 16, 2026 10:47 AM CT",
+          "weekday": "Mon",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:c13d988be038539d",
           "kind": "headline",
           "lane": "news",
@@ -833,54 +875,12 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:9f0096a9dae272dd",
-          "kind": "headline",
-          "lane": "news",
-          "source": "UBS",
-          "sourceId": "headline",
-          "title": "How will Fed rate hikes impact markets? - UBS",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPLVdJOWhtSmxHR0hiU0RHSDhZbkQ2ZlVrZ3NSdnpXdndocnp1V2o1dmp3TWhVWTZTYXlIdE1wXzdoNmJNQkFYS05TRkQwd2x5eVRxclc1Si1wQjNSU01vOGVzT0xqbXNyTnNoR0piUlRSM192MWxFc1V2aWFXS3JHR2EyUnc5dVRYWWM0enNB?oc=5",
-          "published": "2026-11-15T23:42:35-06:00",
-          "date": "2026-11-15",
-          "label": "Nov 15, 2026 11:42 PM CT",
-          "weekday": "Sun",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:a53dbe89c66ad750",
-          "kind": "headline",
-          "lane": "news",
-          "source": "조선일보",
-          "sourceId": "headline",
-          "title": "Federal Reserve Warns of AI-Driven Financial Risks - 조선일보",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOSENGWlpId0p5YlRod0tMckM5aDRiR3lHSENXeEdVV3dlVHNmby1fel9oYjBSUm9IdzZHcHBoRGFYblBXU3lSeHdKQ3Z3Nm1kRXZjdDA2QlBqWnRVQk16MUNSUHZjeF90emdfejMyMjdhVWJwZm5tamFoeU5WWUZnWnVTbEhCb3BWOHkxOVFn?oc=5",
-          "published": "2026-11-15T17:11:14-06:00",
-          "date": "2026-11-15",
-          "label": "Nov 15, 2026 5:11 PM CT",
-          "weekday": "Sun",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ],
       "spikes": [
         {
           "topic": "Federal Reserve",
-          "outlets": 9,
+          "outlets": 8,
           "state": "RISING",
           "links": [
             {
@@ -940,6 +940,11 @@
           "state": "RISING",
           "links": [
             {
+              "title": "Fed Saw Need to Keep Raising Interest Rates Despite Holding Steady in October - The New York Times",
+              "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQZWNVYnFNZV9nd0xLQW9EenZFTEJZS1A0VF9jcXgydHdZMlNUY21sTndVYzZXTThLS19UOThYOF9oZS1hbURtSlBhcUYyTVB1XzB2QUk5dlZva3RlNzlyWmtweDNhUUdyNVJGV290RzNLYTBEU1RXMlpiNEtHZ09HTVFyZ09ldVdKUXNiMHFLSk45Y3RiOWEzWDFB?oc=5",
+              "source": "The New York Times"
+            },
+            {
               "title": "‘Almost all’ US Fed policymakers saw further interest rate hikes as likely, minutes show - The Straits Times",
               "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNWFRsZFFyeGhlY3RacTRWN0JjOFNkaEZzcU9PUnktNUxJdzk2aExvRE5hSm42TEFnNEZOelRKRTZYYmZ6UEZZbzc5QVRuZnlWRERnUlVjT0tVaGQza0lMU0lndExsd1lDaXFNTnlkdG1yWVIwckhpbk1KQVBidFo1QzFKUFIxLVVmYU8yNjI0d1NPbEhMWTRsNTJvR0VWY2UzUGhYN0ozZ0Y5UTlHekpEZ0FndmdyaktMU2c?oc=5",
               "source": "The Straits Times"
@@ -950,17 +955,12 @@
               "source": "The Straits Times"
             },
             {
-              "title": "Fed Saw Need to Keep Raising Interest Rates Despite Holding Steady in October - The New York Times",
-              "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQZWNVYnFNZV9nd0xLQW9EenZFTEJZS1A0VF9jcXgydHdZMlNUY21sTndVYzZXTThLS19UOThYOF9oZS1hbURtSlBhcUYyTVB1XzB2QUk5dlZva3RlNzlyWmtweDNhUUdyNVJGV290RzNLYTBEU1RXMlpiNEtHZ09HTVFyZ09ldVdKUXNiMHFLSk45Y3RiOWEzWDFB?oc=5",
-              "source": "The New York Times"
-            },
-            {
               "title": "Fed minutes: Higher interest rates needed in December as inflation worries mount - The Tribune-Democrat",
               "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPWDhfeHU2NVc3N3hUMlNmZlphdW5zS1RvT3FEczEyN0NrTkQzclV3dFl1VUIzMlpYa2R3UFgxcGZ4UFJJQTdhWFVkSTBMb0lhNkI3aGk2N2xjV2t3WlFjN0JubkxIWHNpazZGamxWWldYSk44ZERySnVWejVRNE1uMks2UC0xV2F6bzFhVDZpenVaTndpRTJubTdBZFhPQ3MxZ3doZmR1UjM4Y3lIUEVlQUpEZVU2TmIxRk1CR2tibnVBekQ2WDVwZ3pIeFpJNlMzMExSYWxBQUpEVlhySEJ3RkdHd0JCcmJhcFpRcmNiVEhaU3VaYW1LWW5tUQ?oc=5",
               "source": "The Tribune-Democrat"
             }
           ],
-          "title": "‘Almost all’ US Fed policymakers saw further interest rate hikes as likely, minutes show - The Straits Times"
+          "title": "Fed Saw Need to Keep Raising Interest Rates Despite Holding Steady in October - The New York Times"
         }
       ]
     },
@@ -980,9 +980,9 @@
             }
           ],
           "holidays": [],
-          "level": 34009.19,
-          "change": -568.91,
-          "changePct": -1.65,
+          "level": 34183.52,
+          "change": -394.58,
+          "changePct": -1.14,
           "asOf": "2026-11-19",
           "source": "https://finance.yahoo.com/quote/%5EGSPTSE"
         },
@@ -998,9 +998,9 @@
             }
           ],
           "holidays": [],
-          "level": 69110.2,
-          "change": -43.97,
-          "changePct": -0.06,
+          "level": 69020.14,
+          "change": -134.03,
+          "changePct": -0.19,
           "asOf": "2026-11-19",
           "source": "https://finance.yahoo.com/quote/%5EMXX"
         }
@@ -1894,14 +1894,35 @@
             }
           ],
           "holidays": [],
-          "level": 166409.05,
-          "change": -1128.95,
-          "changePct": -0.67,
+          "level": 166434.23,
+          "change": -1103.77,
+          "changePct": -0.66,
           "asOf": "2026-11-19",
           "source": "https://finance.yahoo.com/quote/%5EBVSP"
         }
       ],
       "headlines": [
+        {
+          "id": "headline:e597408cf332715b",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Bloomberg.com",
+          "sourceId": "headline",
+          "title": "Brazil Central Bank Steps Into Markets as Fiscal Woes Hit Real - Bloomberg.com",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNOW56T2ZLNFFsVkQ0ZnVCMV9GMlhrMUhnQ0lzbUhxVHllRm5hanl6enc4VkxIbU9UUWhlbFBvYm5ORVN2bTVUZGhQYjVYZEhFQlJrcXJaaVczZTdQckdHS0taTjFKM193dlZ6S3RnZEt0ZEdVVjdNaV9xUWVKRlY2aWNZWlR1YlRJNGFHSXEyUkhQd3VVM204UGVvNjVHUm1KTDJ2cGQxV0FsUmdXbGViY2VWUQ?oc=5",
+          "published": "2026-11-19T11:00:36-06:00",
+          "date": "2026-11-19",
+          "label": "Nov 19, 2026 11:00 AM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
         {
           "id": "headline:297f4ce616485afa",
           "kind": "headline",
@@ -2720,27 +2741,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:92b69a49e979d43d",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Valor International",
-          "sourceId": "headline",
-          "title": "Market stress prompts Treasury to intervene with R$14bn bond buyback - Valor International",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOWjRrZ3JZTGRpYjhudFh5bXRTd0M4d1hjTTllNFU2djB1c012RnE1UTlaV29reDlmbnBFTzg3cG5ORHlRdUpDUGJrUXhpWXYzVHBNZjZQc2xhdjlDZ3RqVlNvTS1MeVpGVDdBU25vbC1BTUU5d1hIaWdLSnFXRkpGQlNyUFZlaTFOUXd6ekNUYlNHTkJwelp1ZFVJenpreVVWcVp3aHVfWm9URFRmNzdFcjQ3SGJkNUkxeFYwXzNscFZfdHA4eWZfZGNRV3Z6V080RWl0VC0zYTFSN2R6R0HSAd4BQVVfeXFMTlo0a2dyWUxkaWI4bnRYeW10U3dDOHdYY005ZTRVNnYwdXNNdkZxNVE5Wldva3g5Zm5wRU84N3BuTkR5UXVKQ1Bia1F4aVl2M1RwTWY2UHNsYXY5Q2d0alZTb00tTHlaRlQ3QVNub2wtQU1FOXdYSGlnS0pxV0ZKRkJTclBWZWkxTlF3enpDVGJTR05CcHpadWRVSXp6a3lVVnFad2h1X1pvVERUZjc3RXI0N0hiZDVJMXhWMF8zbHBWX3RwOHlmX2RjUVd2eldPNEVpdFQtM2ExUjdkekdB?oc=5",
-          "published": "2026-10-27T08:35:24-05:00",
-          "date": "2026-10-27",
-          "label": "Oct 27, 2026 8:35 AM CT",
-          "weekday": "Tue",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ],
       "spikes": []
@@ -2761,9 +2761,9 @@
             }
           ],
           "holidays": [],
-          "level": 2414.79,
-          "change": -56.06,
-          "changePct": -2.27,
+          "level": 2415.07,
+          "change": -55.78,
+          "changePct": -2.26,
           "asOf": "2026-11-19",
           "source": "https://iss.moex.com/iss/engines/stock/markets/index/securities/IMOEX.json"
         }
@@ -4317,6 +4317,27 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:0cb5acb07e47b4db",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Atlantic Council",
+          "sourceId": "headline",
+          "title": "Same metric, still a mess: The geoeconomics of youth unemployment in China - Atlantic Council",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQN2lVM0xtZmZBcU9xZUZRWWxoZzJod0phQVIyVHlYdFpLYmFnY0JGNFUtLUJVVGduMlRGNEw5ZDNYbE92amlqRmFVZExYcGdPSWRZVGRxaGNKSzhrQ0ZTQ0h3ZWZpQ3MtbVlHRWVpLVJxWlZlUGhOMGdTUURKMnJYZHVreUJVUk5pb0x0N1RFUl80eWdWRElWSk9ZcElCRloyNlE5VWdqVWtiT0dheFFibThCVDh6V0JuOUN3cG9FaDBXaGM?oc=5",
+          "published": "2026-11-13T10:38:27-06:00",
+          "date": "2026-11-13",
+          "label": "Nov 13, 2026 10:38 AM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:9ce6a0c8299d76dc",
           "kind": "headline",
           "lane": "news",
@@ -4476,27 +4497,6 @@
           "published": "2026-11-12T02:00:00-06:00",
           "date": "2026-11-12",
           "label": "Nov 12, 2026 2:00 AM CT",
-          "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:244b2951338ffe6f",
-          "kind": "headline",
-          "lane": "news",
-          "source": "People's Daily Online",
-          "sourceId": "headline",
-          "title": "Sharing the benefits of openness to promote common prosperity - People's Daily Online",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5TUDA1LWZ6ZFQza3hjWjhjSkZ6UjNtRTlaSXpYVWRrYzl6UUlfd0FlU1NiU3h3a29vVUFMQ1huTDFNVmQtMG5ITWpuV0tCOU1YRjJDdFZLa3lkNzFzVWs4dTlkbzQ?oc=5",
-          "published": "2026-11-12T00:12:00-06:00",
-          "date": "2026-11-12",
-          "label": "Nov 12, 2026 12:12 AM CT",
           "weekday": "Thu",
           "timeKnown": true,
           "tags": [

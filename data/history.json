@@ -7092,7 +7092,7 @@
     },
     {
       "date": "2026-11-19",
-      "label": "Nov 19, 2026 11:08 AM CT",
+      "label": "Nov 19, 2026 11:42 AM CT",
       "outlooks": [
         {
           "id": "quake:1eb36ed394438d89",
@@ -7285,11 +7285,6 @@
           "severity": "ALERT"
         },
         {
-          "id": "headline:b9f5ee0528f8cd37",
-          "outlook": "Higher than yesterday. Treat the next 72 hours as rising.",
-          "severity": "ALERT"
-        },
-        {
           "id": "cyber:43a8229490d1c36d",
           "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
           "severity": "ALERT"
@@ -7297,6 +7292,11 @@
         {
           "id": "cyber:1ec4cea12d023096",
           "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:15898cc7cdf8953e",
+          "outlook": "First reading. Watch the next 72 hours.",
           "severity": "STANDBY"
         },
         {
@@ -7325,7 +7325,7 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:f55e641b827b32c0",
+          "id": "headline:e2b00f081fb43c3d",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "STANDBY"
         },
@@ -7355,12 +7355,12 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:d4348496413bda52",
+          "id": "headline:f975d6dbbccc6de8",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "STANDBY"
         },
         {
-          "id": "headline:f975d6dbbccc6de8",
+          "id": "headline:02cda10245e2a547",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "STANDBY"
         },
@@ -7370,8 +7370,8 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:f902bff0eeecd5d8",
-          "outlook": "Lower than yesterday. The 72-hour path is easing if it holds.",
+          "id": "headline:266df09b66953b11",
+          "outlook": "First reading. Watch the next 72 hours.",
           "severity": "STANDBY"
         },
         {
@@ -7415,8 +7415,8 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:63e77d9b0f930858",
-          "outlook": "First reading. Watch the next 72 hours.",
+          "id": "headline:0bba411e87e17a19",
+          "outlook": "Lower than yesterday. The 72-hour path is easing if it holds.",
           "severity": "STANDBY"
         },
         {
@@ -7465,19 +7465,29 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:f521c812228b4d38",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ALERT"
-        },
-        {
           "id": "headline:f0cec99943636a93",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "STANDBY"
         },
         {
-          "id": "headline:6b927575ffcb2e9b",
+          "id": "headline:75600b4c91d7542c",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "ALERT"
+        },
+        {
+          "id": "headline:ff870ec6c413c4cd",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "infra:6c825e5580dd4286",
+          "outlook": null,
+          "severity": "ALERT"
+        },
+        {
+          "id": "infra:66b23ff5a74490b7",
+          "outlook": null,
+          "severity": "STANDBY"
         }
       ],
       "threats": [
@@ -7710,12 +7720,6 @@
           "title": "CVE-2026-90436 Apache Axis Unsafe Reflection Vulnerability"
         },
         {
-          "id": "headline:b9f5ee0528f8cd37",
-          "kind": "cyber",
-          "severity": "ALERT",
-          "title": "Norway's Equinor detects ongoing cyberattack, oil and gas output unaffected - Reuters"
-        },
-        {
           "id": "cyber:43a8229490d1c36d",
           "kind": "cyber",
           "severity": "ALERT",
@@ -7726,6 +7730,12 @@
           "kind": "cyber",
           "severity": "STANDBY",
           "title": "CVE-2026-114713 UnrealIRCd Improper Neutralization of Delimiters Vulnerability"
+        },
+        {
+          "id": "headline:15898cc7cdf8953e",
+          "kind": "cyber",
+          "severity": "STANDBY",
+          "title": "JPMorgan, Visa, Mastercard say third-party vendors targeted in cyberattack - Reuters"
         },
         {
           "id": "headline:f7c2e9967d3d2c12",
@@ -7758,10 +7768,10 @@
           "title": "CISA Warns of 4 Exploited Flaws Linked to Ransomware, Cryptomining, and LLMjacking Attacks"
         },
         {
-          "id": "headline:f55e641b827b32c0",
+          "id": "headline:e2b00f081fb43c3d",
           "kind": "cyber",
           "severity": "STANDBY",
-          "title": "Important Notice of Data Breach for ECM/HOME Team Clients - Nevada County (.gov)"
+          "title": "Some of the world’s most-visited websites targeted by cyberattack - WBAL-TV"
         },
         {
           "id": "headline:516bd6dfbeafd855",
@@ -7794,16 +7804,16 @@
           "title": "Iran Update, November 18, 2026 - Institute for the Study of War"
         },
         {
-          "id": "headline:d4348496413bda52",
-          "kind": "war-iran",
-          "severity": "STANDBY",
-          "title": "Mideast nations ramp up efforts to avert all-out war as Israel urges Iran strikes, officials say - AP News"
-        },
-        {
           "id": "headline:f975d6dbbccc6de8",
           "kind": "diplomacy",
           "severity": "STANDBY",
           "title": "G7 Foreign Ministers' meeting: Press remarks by the High Representative/Vice-President Kaja Kallas upon arrival - European External Action Service (EEAS)"
+        },
+        {
+          "id": "headline:02cda10245e2a547",
+          "kind": "war-iran",
+          "severity": "STANDBY",
+          "title": "Trump Weighs New Strikes on Iran as Israel Presses for Action, Officials Say - The New York Times"
         },
         {
           "id": "headline:314f9dd5d0dad6b6",
@@ -7812,10 +7822,10 @@
           "title": "Democrats flipped 9 U.S. Senate seats — the most in almost 70 years - PBS"
         },
         {
-          "id": "headline:f902bff0eeecd5d8",
-          "kind": "war-iran",
+          "id": "headline:266df09b66953b11",
+          "kind": "war-ukraine",
           "severity": "STANDBY",
-          "title": "Trump Grows Frustrated With Vance Over Iran War Critique - The New York Times"
+          "title": "Dispatch from Kyiv: Let Ukraine strike Russia’s missile launchers at the source - Atlantic Council"
         },
         {
           "id": "headline:367c6f0596cf799e",
@@ -7866,10 +7876,10 @@
           "title": "Polish police arrest 3 teens over suspected neo-Nazi terror plot - DW.com"
         },
         {
-          "id": "headline:63e77d9b0f930858",
-          "kind": "war-ukraine",
+          "id": "headline:0bba411e87e17a19",
+          "kind": "war-iran",
           "severity": "STANDBY",
-          "title": "Ukraine Facility: Council approves largest-ever payment of €8 billion to Kyiv - Council, European Union"
+          "title": "Rubio Says Economic Pressure on Iran is Working - Voice of America English News"
         },
         {
           "id": "headline:d15541953ee71bcb",
@@ -7926,22 +7936,34 @@
           "title": "Doomsday Clock"
         },
         {
-          "id": "headline:f521c812228b4d38",
-          "kind": "global",
-          "severity": "ALERT",
-          "title": "Trump, Xi and Putin Seek to Project Power at Their First Summit - The New York Times"
-        },
-        {
           "id": "headline:f0cec99943636a93",
           "kind": "global",
           "severity": "STANDBY",
           "title": "COP 31 Global Sustainable Insurance Summit 2026 - UNEP Finance Initiative"
         },
         {
-          "id": "headline:6b927575ffcb2e9b",
+          "id": "headline:75600b4c91d7542c",
           "kind": "global",
           "severity": "ALERT",
-          "title": "Europe tightens sanctions on Russia. America loosens them - The Economist"
+          "title": "Live Updates: Trump, Xi and Putin Seek to Project Power at Their First Summit - The New York Times"
+        },
+        {
+          "id": "headline:ff870ec6c413c4cd",
+          "kind": "global",
+          "severity": "STANDBY",
+          "title": "From tarmac to APEC summit table, Japan's PM cuts a lonely figure - Reuters"
+        },
+        {
+          "id": "infra:6c825e5580dd4286",
+          "kind": "infra",
+          "severity": "ALERT",
+          "title": "Internet services disrupted across Pakistan due to undersea cable fault - Daily Ausaf"
+        },
+        {
+          "id": "infra:66b23ff5a74490b7",
+          "kind": "infra",
+          "severity": "STANDBY",
+          "title": "Hong Kong drops charge against captain over Baltic pipeline damage - The Manila Times"
         }
       ],
       "trends": [
