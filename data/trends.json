@@ -2,122 +2,80 @@
   "googleNote": "Google Trends US daily list answered (10 topics). Kept the ones that match a war, government, or threat topic. None of today's search trends matched.",
   "items": [
     {
-      "category": "iran-war",
-      "confidence": "reported",
-      "date": "2026-11-19",
-      "id": "velocity:4ee4bc978244e41e",
-      "kind": "trend",
-      "lane": "news",
-      "look": "news",
-      "name": "iran war",
-      "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-19T16:28:22-06:00",
-      "rise": "4 outlets this window",
-      "samples": [
-        {
-          "date": "2026-11-18",
-          "published": "2026-11-18T18:36:03-06:00",
-          "source": "PBS",
-          "text": "Iran widens Gulf attacks by targeting U.S. air base in Kuwait and sites in Bahrain - PBS",
-          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNaW9yLUs5SFJFWmk1NUp3aUpBc0lfYl95MEJsUl83dUs2ck9rT1ctbllHMFU0bWpseVFKSG01MV9ueV9LNW9EazJ2M2xla19qSzBPWklsM0F6ZHhDd3h1TzRxTFhSMm5aamtzN3AtZnFORWlNVk1yM0tTY0phUXRORmJwUmFIbU1BZ3ZyanlTVkg0TDMzekV3V0ZkVEl2MTNENkQyOTNSWjVsZGhVNWhZZHpFdjNDTUnSAbwBQVVfeXFMT2g5NGpZdnN5R1R2QXVsV2txeXQzYWhVdllQa1NrY2RSM2JsSHNvNmNWRnNzSGk2UlpoRnlJVFdGbGNQZnJwd0M2S2FDdEdRWmRDTEJ6UFdMUXp0d040UjlHdWFLLVROcjdmRHhCNzdySDNvWFdfWWRsS1BNVkNVYUYybnFmX2RaTFh3TmQxeFFqb2VvUnVxbWlpM3E5Y1Q0dWRPNVBJMzFGSDZZQnltTlQyYTlNUllQa09WZWw?oc=5"
-        },
-        {
-          "date": "2026-11-19",
-          "published": "2026-11-19T15:28:39-06:00",
-          "source": "Reuters",
-          "text": "Backing Trump, US Senate Republicans block Iran war resolution - Reuters",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOcmstcFNFWmdlWE9OT3pCd2JxN1RvaDZMZ2dlZC01YU9hUVFDdFdETmRJLWYtRWI5bkpNVHgyQUFTRVNncW9kUUZkdGhFRkl1RUx6MGs2eVhNNXhZbzROalJGQnRSSUdqdVBhQ1NuLTRONXEyQWpYemhwenhCd2VlNlY4VUZJT3NRdjBmdzBTZGxreUlHNmgyX0p4TzVxX1FvaXZR?oc=5"
-        },
-        {
-          "date": "2026-11-16",
-          "published": "2026-11-16T04:47:52-06:00",
-          "source": "Voice of America English News",
-          "text": "Rubio Says Economic Pressure on Iran is Working - Voice of America English News",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOX2tpYnc1ejdPQ0lpUUpMXzltbEJqcndLb3pmNG90RW1UTHZkcjdSLTdpelg4NzI0YVZzcm40UmFEa3U1WHNlRkNDZFlCMy11RjBLa3FLYll3aWM4TUVyNnlkVUlLV1hYWEUtM01FeWxfWDFfRjNuTEJTdXVMb2JYSVI1WUJPOEJXWDdYZ0s0MDNndDYyTVHSAZYBQVVfeXFMTl9raWJ3NXo3T0NJaVFKTF85bWxCanJ3S296ZjRvdEVtVEx2ZHI3Ui03aXpYODcyNGFWc3JuNFJhRGt1NVhzZUZDQ2RZQjMtdUYwS2txS2JZd2ljOE1FcjZ5ZFVJS1dYWFhFLTNNRXlsX1gxX0YzbkxCU3V1TG9iWElSNVlCTzhCV1g3WGdLNDAzZ3Q2Mk1R?oc=5"
-        }
-      ],
-      "severity": "ALERT",
-      "soWhat": "no action needed",
-      "source": "News velocity",
-      "sourceCount": 4,
-      "title": "iran war",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNaW9yLUs5SFJFWmk1NUp3aUpBc0lfYl95MEJsUl83dUs2ck9rT1ctbllHMFU0bWpseVFKSG01MV9ueV9LNW9EazJ2M2xla19qSzBPWklsM0F6ZHhDd3h1TzRxTFhSMm5aamtzN3AtZnFORWlNVk1yM0tTY0phUXRORmJwUmFIbU1BZ3ZyanlTVkg0TDMzekV3V0ZkVEl2MTNENkQyOTNSWjVsZGhVNWhZZHpFdjNDTUnSAbwBQVVfeXFMT2g5NGpZdnN5R1R2QXVsV2txeXQzYWhVdllQa1NrY2RSM2JsSHNvNmNWRnNzSGk2UlpoRnlJVFdGbGNQZnJwd0M2S2FDdEdRWmRDTEJ6UFdMUXp0d040UjlHdWFLLVROcjdmRHhCNzdySDNvWFdfWWRsS1BNVkNVYUYybnFmX2RaTFh3TmQxeFFqb2VvUnVxbWlpM3E5Y1Q0dWRPNVBJMzFGSDZZQnltTlQyYTlNUllQa09WZWw?oc=5"
-    },
-    {
       "category": "ukraine-war",
       "confidence": "reported",
-      "date": "2026-11-19",
+      "date": "2026-11-20",
       "id": "velocity:efd2da34e68ca58f",
       "kind": "trend",
       "lane": "news",
       "look": "news",
       "name": "ukraine war",
       "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-19T16:28:22-06:00",
-      "rise": "4 outlets this window",
+      "published": "2026-11-20T11:41:40-06:00",
+      "rise": "3 outlets this window",
       "samples": [
         {
-          "date": "2026-11-17",
-          "published": "2026-11-17T15:16:21-06:00",
-          "source": "UN News",
-          "text": "Ukraine: Civilian casualties in 2026 already far exceed previous years’ tolls - UN News",
-          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFA2S212VmNSVjM3WHJzb3pwWDlFUjEyeEF5QTZRU3RBeV9GZjVOU2RoT1JBQjdZbzkyY0djTG4ybjFVMlFySnVYYjBWcjhPQXptMmtDTlVtdw?oc=5"
-        },
-        {
           "date": "2026-11-19",
-          "published": "2026-11-19T12:32:34-06:00",
-          "source": "PBS",
-          "text": "Kushner says Russia is 'comfortable' with NATO-like security guarantees for Ukraine to end war after Trump talks with Putin - PBS",
-          "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNZGtncEo5UWFCS09PLVJ5Rlk0RDJiQkpHSUJTQmVoeTVyX3F4N3gyTk4xeXA4NWE4ck15X0htT0FxRkc5dGp6b0pvRDVqWURRSldmSXEzaGJSZDV2dHd0ZnZaYzJSZUxxZUhqbHJNNUhLTnV1MHZjV0NFUVBMVURvdU15TDhOMm05NFhnU29pd3cwSmtGNThSYVlBQ2JqM001bUdsdE04N2VTOUYyekw1d3EySHR4U2RTNnFmeXBGYnlRMDdvc1hqSmJBb0NGVkluNzhGUFVXWnlOV01uRWc4Y3I2MWNhTmRyNlhKbNIB8gFBVV95cUxOR3dkTWZRMzdtWk1FMFpZdXNlckQzMk90RUhGaGF6SzFmRjJXNXozRmQ3bWMwUWlHSzk5alRMZFQ3RXNTeTJzT21HWXZNX2VMSGlUdDVJMF81Mk1PZEJab2h1YXpwRFAyR3RVOGpXVHVRVk1rNkhKdEVVZHZRT2pXZl85UlhkSzN2Zmx1WFNyclAzaGw3dXZmck80THZpdHNuRnJpWkM2LXFUak5qU3JoS29UNUozUnFLcGR4ckx1eWUxbzNXbWl4MkQ1UFB1Ui1Oa09WcUlkVXhmcHhVMGlQeVBvdXlKbGxrMDBvX0lPeURzZw?oc=5"
+          "published": "2026-11-19T18:41:00-06:00",
+          "source": "Reuters",
+          "text": "Eight killed in Ukraine as Russia hits back after Crimea bridge attacks - Reuters",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOaW5ZVDlLVDZMeWxSUU5VRnVsbVZja1A5bmhtTVd4OFBZWEZFSzFENVFIQUdaLV9JOHZVQjhGcGhqUHJtZ2JrTk5NX3FEV0NScmVwUWtrUmRqbkhGcThkMmp1bWw1SkRneVkzb2pVNzZqTmU0VnA2T1pCVlA3aGoyUEExU2xOSU1TcnpfaFRUa3hBRzNDZzlWOWxFR0RyeTZkeGRyMmtsbEJId3lMRUE?oc=5"
         },
         {
-          "date": "2026-11-17",
-          "published": "2026-11-17T14:16:47-06:00",
-          "source": "U.S. Department of War (.gov)",
-          "text": "Remarks by Under Secretary of War for Policy Elbridge Colby at the Ukraine Defense Contact Group (As Delivered) - U.S. Department of War (.gov)",
-          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNaWJPeFZBbGhNWFNjRXVGajkzMHBYTlVkQXVvcUY3d2lGRHRRMWJ5YVd2TUZEWnZyV0xzQTEzcDJBRUtiMTh6UklwYTdSWS1DMkc4Y2szMkh3X0E4dkVXdExyUmZPbVdwY0hWeEdHNXZ5YmlQS2NBWHhvakNtbkRrbld6Y3huQ0RjYU5oV0p2emhISjlBR0RUcDVXX2ZLSmQyUkJEdVFFVFgwTVNmNnVWd0c0aE5tdFZLMWxLZGtjcksyNFcxbmJ4cDkxTHJGRGE4bXlv?oc=5"
+          "date": "2026-11-20",
+          "published": "2026-11-20T05:42:16-06:00",
+          "source": "NBC News",
+          "text": "Deadly Russian strikes hit 3 Kyiv bridges after Putin vows revenge for Crimea attacks - NBC News",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPc2ZMT1N0Qk5yUzFfNEdMR3RYcFdxbG03VlBfeWtKOGhHM1ZkV0lXT3pVRjFNOGNjY2w1c3JtWVhMcFRoUXdZd2hKc0hlanVET0VoczdqNWlMbnFXSXROTlVUNnJsWjFtWGZjMEdqVEt0RDhpUk91SzBXY2RhQy1INHZhRzJRbnRHbVVBanVwTVphRUVvaC1jcTIxLXZ3MGt0OWZUMDJkRUprQ3E1bjJWYXl1eFZJQmhTY1E?oc=5"
+        },
+        {
+          "date": "2026-11-16",
+          "published": "2026-11-16T03:43:31-06:00",
+          "source": "Council, European Union",
+          "text": "Ukraine Facility: Council approves largest-ever payment of €8 billion to Kyiv - Council, European Union",
+          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOWlk5VTVlN2xzVVl3TjkwQWw5eVdJUzVSeGtra1dJWkY0Y2M0Q1ByWUpPTVZWSHc0TlhmX1dGN2pJRHhHR2w3Vjh3R2NsOXlpMWFLT1dETnVBZ3ZOb01qZDBXRnJzcjJKTndKcXZhZWlIMnpSYlBMS0R1Q0R5ZHJKLXZoYUZ4dlNJcUN1azR5YjYtSGFrbnFyNHl6MUdreFZySU1zUVd3LTJpdnJsdmZfU1JXdW5wWWNTNWhaNTdyMFNRemJIT1p0RGNsOTdEekJtSDB2Y3c4cVRUcGM?oc=5"
         }
       ],
       "severity": "ALERT",
       "soWhat": "no action needed",
       "source": "News velocity",
-      "sourceCount": 4,
+      "sourceCount": 3,
       "title": "ukraine war",
-      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFA2S212VmNSVjM3WHJzb3pwWDlFUjEyeEF5QTZRU3RBeV9GZjVOU2RoT1JBQjdZbzkyY0djTG4ybjFVMlFySnVYYjBWcjhPQXptMmtDTlVtdw?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOaW5ZVDlLVDZMeWxSUU5VRnVsbVZja1A5bmhtTVd4OFBZWEZFSzFENVFIQUdaLV9JOHZVQjhGcGhqUHJtZ2JrTk5NX3FEV0NScmVwUWtrUmRqbkhGcThkMmp1bWw1SkRneVkzb2pVNzZqTmU0VnA2T1pCVlA3aGoyUEExU2xOSU1TcnpfaFRUa3hBRzNDZzlWOWxFR0RyeTZkeGRyMmtsbEJId3lMRUE?oc=5"
     },
     {
       "category": "us-gov",
       "confidence": "reported",
-      "date": "2026-11-19",
+      "date": "2026-11-20",
       "id": "velocity:bd817662251631b7",
       "kind": "trend",
       "lane": "news",
       "look": "news",
       "name": "us gov",
       "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-19T16:28:22-06:00",
+      "published": "2026-11-20T11:41:40-06:00",
       "rise": "4 outlets this window",
       "samples": [
         {
-          "date": "2026-11-19",
-          "published": "2026-11-19T09:55:05-06:00",
-          "source": "NPR",
-          "text": "The midterms were the largest win for either party in 50 years - NPR",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQa2Jya1pVMGdtYW5PcWk4Z3ZGV29SUkR2RE5ranJBNlJYU1IxS05rQmd1M01jRjZyYnJaMUUzb2hCeDh0OUFHNlg3aU1lRUw1c0hXb0NlRnhSQmctSkpURTBlTnVlZ2dINmREaTFOYkxYWEV0dWpnZnRhbi1HbXNCb3p2aw?oc=5"
+          "date": "2026-11-20",
+          "published": "2026-11-20T05:00:00-06:00",
+          "source": "The Hill",
+          "text": "Rubio gains buzz while Vance’s fortunes falter in GOP race - The Hill",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOb3hzNHlpUEdDU2pncEJuNU1XWW5DelBHRGg3eF9CaTdjQjB6LTZuUENLVmpibzFVWGJqeFc5YU1ZdDhJTzlaNWJSdlV1dXJ4UG12czVtUXBKbV9EYVZ4ZjZFTlN1U0VXRHBOSkRfYl9WNW9USUl0YjRERTJ5bmFnRHV5cEFjZ9IBiwFBVV95cUxPU2RPNHdVSUpQTlpQSHpYdHoxT3pScUFwTDZOT1Q3bjd1bEJFTjFUeWtMQzQzVnV6MFMzaFIyUjQ5ZkVoQVQxZlJPbExMYlhXV3NzZ2Y1NUx5X2diUzBlQktMQjFveTczZU9ZenVuN1ZyZTF1eUxEZkZ0MFJRMndGZERkUXdabUVMLU9N?oc=5"
         },
         {
           "date": "2026-11-19",
-          "published": "2026-11-19T05:05:58-06:00",
-          "source": "- Emerson Polling",
-          "text": "National Poll: Rubio Leads 2028 GOP Nomination Contest, Ossoff Rises Among Democrats - - Emerson Polling",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQeVEweVpGVHhhenR3TDljYVh2YklqcldyUGRMNDl0UDJWR0xYR3ptMFpIMXZBMHRXY252akhsRGFFdExkMHpzMUpGWDcxVjVxMFB5UG9OMHVlbUlFYmprUTg4VGQxbHBfUTUtSkw3LS1rR0VCZ0ltcUpOYTRZeUtqS1FOT1FTVGR0d3ZaZHMxU2I3VUtJVVp0VEoteU1sMDlIb2owVm1rZFhidjVRVkdlMzRGYkFXN3hq?oc=5"
+          "published": "2026-11-19T16:41:25-06:00",
+          "source": "Axios",
+          "text": "Scoop: Trump names Kirsten Davies as new national cyber director - Axios",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQV1RnMkhJdHcxSE1lMS1EbGJnZHg0a2pmN3VTUTZDRU9CU0pHeHM0SV9hTEcwV0FxS05tT01HdkVyY0hOMVdIWklvNm54WmticGw0Z3dJU2tkZXZJU1dyalMwblBGcGw4ZG9OakZmX0dBUEJ3VW9vLTZmUE00RHU1MHgtbUtPWEo3TTZQdWI4Zw?oc=5"
         },
         {
-          "date": "2026-11-17",
-          "published": "2026-11-17T22:00:00-06:00",
-          "source": "CAWP",
-          "text": "Results for Women Congressional and Statewide Executive Candidates in Election 2026 - CAWP",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNOFpsRmJGX3dfQkQyNThKTVdjUlo2VFRpaFRUNk9nX3ZlbTFvcGgzRUYwNFFKNEp4bXZPUnphZ1Z5bEhsWl9zcF83OGJINFZZVXNONkZFWmFiWl9GemJyQjh2WFpjaV9ZOHUwZ3BiUDdwXzlYMnlRbFdZYWxTVDU2MUlFREs4SVVIelRKY2l2NFVFczFWV3o3ZXJYMVJSQmxPSHVzS1VHd2pRdw?oc=5"
+          "date": "2026-11-19",
+          "published": "2026-11-19T13:07:14-06:00",
+          "source": "PBS",
+          "text": "Mississippi saw a spike in 'inactive' voters for the midterms. Democratic lawmakers want answers - PBS",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOYU5LRHplTi1UVm9ZdmQ5cnhwN1RMNzUzOExhQjMyRFo3MF9PQ21wSzZMRTY3Sno2b25Db3hDY184TUJDWHNVLVhoNHJjMUlfM2pGZ0hjWHUyR0hJeUUyX3p3SDNFNXZDVGNDclRUSEFZRlJtazA2SUVGNktPMVF4Q0gybWdUVTZQdWNaVVVMRVFLcmV4czMwNVhQS2N0NDFhNGk1c1JhS255d29kYW1NOXUwcjFHRDVUNG5HcWlWT2JsV2xEc0o5MWRWONIB0AFBVV95cUxNM1VWWDAyeC1WLTlBbmJROGdoTkVUd0FsSHl6N0RGTlJMZlMzUzBYYmlhcUk3UjQ4T055Q0FOMExLTHBNTzBDTWVNVUw4U3V1YnZSMWlEeVVadGlzSVZfRlprQ3QwdFd2YTNueEkzUWVXUy1rNnNscXJDSnJ6MU5fVVZhQXdNRFFJSXJwMU8xV3NkbnE2MFBzLUh4aURHeVFDSUJTUldLeEJGM2w4ODNvSXdwNDZ2YW10eWhUcEdnV3BpbTFqQWJHSHdUX2pjS2tE?oc=5"
         }
       ],
       "severity": "ALERT",
@@ -125,41 +83,83 @@
       "source": "News velocity",
       "sourceCount": 4,
       "title": "us gov",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQa2Jya1pVMGdtYW5PcWk4Z3ZGV29SUkR2RE5ranJBNlJYU1IxS05rQmd1M01jRjZyYnJaMUUzb2hCeDh0OUFHNlg3aU1lRUw1c0hXb0NlRnhSQmctSkpURTBlTnVlZ2dINmREaTFOYkxYWEV0dWpnZnRhbi1HbXNCb3p2aw?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOb3hzNHlpUEdDU2pncEJuNU1XWW5DelBHRGg3eF9CaTdjQjB6LTZuUENLVmpibzFVWGJqeFc5YU1ZdDhJTzlaNWJSdlV1dXJ4UG12czVtUXBKbV9EYVZ4ZjZFTlN1U0VXRHBOSkRfYl9WNW9USUl0YjRERTJ5bmFnRHV5cEFjZ9IBiwFBVV95cUxPU2RPNHdVSUpQTlpQSHpYdHoxT3pScUFwTDZOT1Q3bjd1bEJFTjFUeWtMQzQzVnV6MFMzaFIyUjQ5ZkVoQVQxZlJPbExMYlhXV3NzZ2Y1NUx5X2diUzBlQktMQjFveTczZU9ZenVuN1ZyZTF1eUxEZkZ0MFJRMndGZERkUXdabUVMLU9N?oc=5"
+    },
+    {
+      "category": "iran-war",
+      "confidence": "reported",
+      "date": "2026-11-20",
+      "id": "velocity:4ee4bc978244e41e",
+      "kind": "trend",
+      "lane": "news",
+      "look": "news",
+      "name": "iran war",
+      "note": "The same topic showed up across several outlets.",
+      "published": "2026-11-20T11:41:40-06:00",
+      "rise": "4 outlets this window",
+      "samples": [
+        {
+          "date": "2026-11-20",
+          "published": "2026-11-20T03:30:09-06:00",
+          "source": "Time Magazine",
+          "text": "‘We’ve Got Time’: Trump Suggests Iran War Will Continue Into 2027 - Time Magazine",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOQjZGUzREbXRjRmtjM2dNZXc5eXVvVEJJOUdFdkpRNnZXVngwcDItZE9JYnJQc0diN3dRU1p3OGMzY0RQRkw4Q244ckR3UWVFWVc3ZkJHeThzU09aWnE4SHhxcVJqdld4bUtrdmdaVjA0QUdWT3dySkwzc0VVZXRDcWlHaTBZNERRWTUxbG1ZMzk?oc=5"
+        },
+        {
+          "date": "2026-11-20",
+          "published": "2026-11-20T00:43:22-06:00",
+          "source": "The Washington Post",
+          "text": "Iran war has worsened U.S. munitions shortage, government watchdog finds - The Washington Post",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQWGt1RnZzaXdlLTJyN2pic1Y0QWdfRXhSYkw0aVhaX28wb1ZGeFFuQ0RqTGR6TXMxdVZmYmhkQVJJUGJ3djhYaWYxSTZDZVF4SF80aFFBQnJWVm5mbEpFNnJ1alJJUWhFcy1ZQmU4WXI3OEJCTkZOOUhNbjVBemFiSHAwZ1ZfQ3poV19Kd3FoQngybTQ4N2p5bG9Ocm1INFJ3Ylp3N0JCdDNwci0ybGtHcFFXUjlGVmJqWUhaQ2Zn?oc=5"
+        },
+        {
+          "date": "2026-11-19",
+          "published": "2026-11-19T09:00:50-06:00",
+          "source": "PBS",
+          "text": "WATCH: Senate Republicans block latest Democratic effort to end war in Iran - PBS",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQcUhzT1QtZUVQVTVHaGFKbVBKb0lxZVhYN2g2Q19qR2lzMVlEVnVZYVRYV1RWMUxVNGpqM1cwZGpfTGhrb1JXeW9xWFlCdzRoMmwtbVF6TUZERWVRcC1lUnI3V3ppQko3akt1VmVUai1VdEEzWG5FT3l2VDl0YUxlQ0FaWUNpUWZPbHpPNUE2bklUMjNGMUo0Y2FUZFhReWNLMkNNQlMzdzl3aUdWMzFQR0lKZ2VOTF9JU2dKSWtUMDJablkwdTFFRUJCT3HSAdIBQVVfeXFMTlhNN19IS01zdGtRU3BWaEZjVF94SDFtWU55Z0ZhdDVCQnBjWnE4dS14Uy0yVHVORUwtd2VqS0NjbDZmQ0lWUUFzeHd2Z1phZ3VSZmlseC1uVGN0Y28zNHFISEZRTHE0V2RGUzRCdmtyM1VKdmtvMHZjV3lJMk55Z254WUFPaVpCRVRPeTZ5T185MVJMRjdKNmQ4MmV4SVpCVFBpczJPMzlCVkl5NWFiYWEwU0tpSlEtYlJiUElwNDB3NTk4aXVrTDVyU29ZZmR1eWd3?oc=5"
+        }
+      ],
+      "severity": "ALERT",
+      "soWhat": "no action needed",
+      "source": "News velocity",
+      "sourceCount": 4,
+      "title": "iran war",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOQjZGUzREbXRjRmtjM2dNZXc5eXVvVEJJOUdFdkpRNnZXVngwcDItZE9JYnJQc0diN3dRU1p3OGMzY0RQRkw4Q244ckR3UWVFWVc3ZkJHeThzU09aWnE4SHhxcVJqdld4bUtrdmdaVjA0QUdWT3dySkwzc0VVZXRDcWlHaTBZNERRWTUxbG1ZMzk?oc=5"
     },
     {
       "category": "global",
       "confidence": "reported",
-      "date": "2026-11-19",
+      "date": "2026-11-20",
       "id": "velocity:8001c27439650c5c",
       "kind": "trend",
       "lane": "news",
       "look": "news",
       "name": "global",
       "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-19T16:28:22-06:00",
+      "published": "2026-11-20T11:41:40-06:00",
       "rise": "4 outlets this window",
       "samples": [
         {
-          "date": "2026-11-19",
-          "published": "2026-11-19T15:16:42-06:00",
-          "source": "NPR",
-          "text": "For Trump, the meeting was the whole point after trilateral summit with Xi and Putin - NPR",
-          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOQnJkakJpTUllcVhnckYzc1ZzbG40V0pBeWxhRlNveml2QU1hcnVuZlZ6QmFZX3c1NjV4bUNEQ003V0QxT3hEeTFXd3JLS0dad0phTGQ5OFl6amVkUnUydFluekNzMkhFYTVxR2JwMXcxRDNQeTdzbW1nVTAtYkxieTAzNVZVOXhTS3hTUzE5SE0xYjBFLVVWWUN2dVowd2FlQmhsbFRzdjVtVDNRdmxNQ0drZDhEdFRhZTJWS1VYcFFvUFlUQVNN?oc=5"
-        },
-        {
-          "date": "2026-11-19",
-          "published": "2026-11-19T12:37:42-06:00",
+          "date": "2026-11-20",
+          "published": "2026-11-20T06:12:48-06:00",
           "source": "Reuters",
-          "text": "From tarmac to APEC summit table, Japan's PM cuts a lonely figure - Reuters",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQV2lFRzhLTFFzUDAyQlFERWhQTjQwbzExSnlMaEVMYnhnOEdTRm9yNTJxWWgwRjluUHkxZVFWUnJYTXVOaVhoRGtGRE5PRXhiRF9WX3RtVVJGTkVIV3BLRDZPWVJQUFN0RjY3UXBpUktQSlNHQzlmS1N5Q0lCQkpLSjU4c29PQTM3bXI1cDlzSjAwTG95Vkt1Sk90NGlid0ptUG1v?oc=5"
+          "text": "France seeks UN Security Council meeting after strikes in Kyiv - Reuters",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNWWJIUFcybUZJREdUQkhJTlJkUWdyTFpxVWdBbzE0U0VOSGZjaldNYmk1YXU1MnhrLXBBeEhWYUVBcTlZc2NLRHRfQ2NaSms3RW5WMXV0MXdRbV9nQ0VJVU5qR3hlQmY3VXZyTDcyTWw5VHpmUm8yMEgzQkdYcE56OXo4cHd2ZnVLLWE2bXVpdlVvSHJUQXJWc0JoX1UwdE5rX1Nn?oc=5"
         },
         {
-          "date": "2026-11-19",
-          "published": "2026-11-19T11:22:00-06:00",
-          "source": "CBS News",
-          "text": "Putin says Russia won't negotiate limited ceasefire with Ukraine after bridge strike - CBS News",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE0yNHJ2ekFIeGFSWktPUmVMSF85amtLLV9kQ1RRSXRBUVNVZDFndHRFcUd1aDByY0VQeG91TzFlMDVJdU85aWJ6V2g5cDBQaGg3Q0JUTjhlMkt3a2c0S1Q3UHZURkZWcHFZZGVGM1NoLURSQQ?oc=5"
+          "date": "2026-11-20",
+          "published": "2026-11-20T04:32:25-06:00",
+          "source": "DW.com",
+          "text": "COP31: UN Climate summit enters final phase with no deal in sight after fossil fuels omitted from draft - DW.com",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNU21zT2s3eWkwNFNHZG83eWt0Vl9lMnlZMDdpMEFDUDl0aGhCWmJYY3BwZnZsWkJvdHF6dmdFdmNFUW1YcGRQV3I0NmZzOExTNkVSTC1wWG04YlNCaFRFTDA4VGp5bEJINnF5bl9yd09yZ3EzVHBfbDliZThBMTFzQUprNzRXMkFILThvMV92MWVadXRJZTRWRGlTemhxVkkxN2c?oc=5"
+        },
+        {
+          "date": "2026-11-20",
+          "published": "2026-11-20T07:56:56-06:00",
+          "source": "The New York Times",
+          "text": "Putin Exits Summit With Symbolic Win, Saying He and Trump Share ‘Values’ - The New York Times",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOTm1ZZ1ZIdkpVNDBIVlJ1ekhTWGNFQXl0SERIZ3lfcWhrb2gxdUlqRHpTN3NCbjNlazIwMEFfa2VtWW5rcXRWUl9OY3BPMmRZZ3lsR3NPTDJxTXhaeE1Ja3VsWFltMjhsWl9DaUF0aGtqa1luaG5vLTFxZlpSREt2UjZmcjFMdw?oc=5"
         }
       ],
       "severity": "ALERT",
@@ -167,7 +167,7 @@
       "source": "News velocity",
       "sourceCount": 4,
       "title": "global",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOQnJkakJpTUllcVhnckYzc1ZzbG40V0pBeWxhRlNveml2QU1hcnVuZlZ6QmFZX3c1NjV4bUNEQ003V0QxT3hEeTFXd3JLS0dad0phTGQ5OFl6amVkUnUydFluekNzMkhFYTVxR2JwMXcxRDNQeTdzbW1nVTAtYkxieTAzNVZVOXhTS3hTUzE5SE0xYjBFLVVWWUN2dVowd2FlQmhsbFRzdjVtVDNRdmxNQ0drZDhEdFRhZTJWS1VYcFFvUFlUQVNN?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNWWJIUFcybUZJREdUQkhJTlJkUWdyTFpxVWdBbzE0U0VOSGZjaldNYmk1YXU1MnhrLXBBeEhWYUVBcTlZc2NLRHRfQ2NaSms3RW5WMXV0MXdRbV9nQ0VJVU5qR3hlQmY3VXZyTDcyTWw5VHpmUm8yMEgzQkdYcE56OXo4cHd2ZnVLLWE2bXVpdlVvSHJUQXJWc0JoX1UwdE5rX1Nn?oc=5"
     }
   ],
   "mode": "trends",

@@ -2,42 +2,50 @@
   "calls": [],
   "escalated": [
     {
-      "note": "STANDBY → ALERT since 2026-11-12",
+      "note": "STANDBY → ALERT since 2026-11-13",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
       "title": "M5.8 150 km SW of Merizo Village, Guam"
     },
     {
-      "note": "New since 2026-11-12 · now ALERT",
+      "note": "New since 2026-11-13 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Chikungunya virus disease - Switzerland"
+      "title": "Amazon says Chinese hackers used Cairn AI tool to discover apparent zero-day during attack on university"
     },
     {
-      "note": "New since 2026-11-12 · now ALERT",
+      "note": "New since 2026-11-13 · now ALERT",
+      "related": 2,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "sourceCount": 1,
+      "title": "China-Linked Hackers Exploit Critical VMware vCenter Zero-Day to Gain Admin Access and Steal Data"
+    },
+    {
+      "note": "New since 2026-11-13 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Cyberattack may have exposed Chase Bank and Mastercard customer data - The Washington Post"
+      "title": "New Unpatched Windows 0-Day FastUnlock Lets Someone Holding a Locked PC Run Programs on It"
     },
     {
-      "note": "New since 2026-11-12 · now ALERT",
+      "note": "New since 2026-11-13 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Newly Patched VMware vCenter Flaw Exploited as Zero-Day by Chinese APT"
+      "title": "Chase bank issues warning to customers of cyberattack, data breach - NewsNation"
     },
     {
-      "note": "New since 2026-11-12 · now ALERT",
+      "note": "New since 2026-11-13 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
       "title": "CVE-2024-10441 Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability"
     },
     {
-      "note": "New since 2026-11-12 · now ALERT",
+      "note": "New since 2026-11-13 · now ALERT",
       "related": 1,
       "relatedSources": [],
       "severity": "ALERT",
@@ -45,7 +53,7 @@
       "title": "CVE-2026-40217 BerriAI LiteLLM Unprotected Alternate Channel Vulnerability"
     },
     {
-      "note": "New since 2026-11-12 · now ALERT",
+      "note": "New since 2026-11-13 · now ALERT",
       "related": 1,
       "relatedSources": [],
       "severity": "ALERT",
@@ -53,35 +61,28 @@
       "title": "CVE-2026-90817 Vanderbilt University Research Electronic Data Capture (REDCap) Code Injection Vulnerability"
     },
     {
-      "note": "STANDBY → ALERT since 2026-11-12",
+      "note": "STANDBY → ALERT since 2026-11-13",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "At least 6 killed, several injured in shooting at Polish market square: Police - ABC News - Breaking News, Latest News and Videos"
+      "title": "Deadly mass shooting in Poland investigated as terror act, prosecutor says - ABC News - Breaking News, Latest News and Videos"
     },
     {
-      "note": "New since 2026-11-12 · now ALERT",
+      "note": "STANDBY → ALERT since 2026-11-13",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Iran widens Gulf attacks by targeting U.S. air base in Kuwait and sites in Bahrain - PBS"
+      "title": "Eight killed in Ukraine as Russia hits back after Crimea bridge attacks - Reuters"
     },
     {
-      "note": "New since 2026-11-12 · now ALERT",
+      "note": "New since 2026-11-13 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Ukraine: Civilian casualties in 2026 already far exceed previous years’ tolls - UN News"
+      "title": "Putin Exits Summit With Symbolic Win, Saying He and Trump Share ‘Values’ - The New York Times"
     },
     {
-      "note": "New since 2026-11-12 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "For Trump, the meeting was the whole point after trilateral summit with Xi and Putin - NPR"
-    },
-    {
-      "note": "New since 2026-11-12 · now ALERT",
+      "note": "New since 2026-11-13 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
@@ -90,128 +91,136 @@
   ],
   "fizzled": [
     {
-      "note": "On the board 2026-11-12 at ALERT, absent now.",
+      "note": "On the board 2026-11-13 at ALERT, absent now.",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Earthquake in Iceland"
+      "title": "Earthquake in Peru"
     },
     {
-      "note": "On the board 2026-11-12 at ALERT, absent now.",
+      "note": "On the board 2026-11-13 at ALERT, absent now.",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Earthquake in Western Indian-Antarctic Ridge"
+      "title": "Earthquake in Dominican Republic"
     },
     {
-      "note": "On the board 2026-11-12 at ALERT, absent now.",
+      "note": "On the board 2026-11-13 at ALERT, absent now.",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
       "title": "Earthquake in China"
     },
     {
-      "note": "On the board 2026-11-12 at ALERT, absent now.",
+      "note": "On the board 2026-11-13 at ALERT, absent now.",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Earthquake in Indonesia"
+      "title": "Earthquake in West Chile Rise"
     },
     {
-      "note": "On the board 2026-11-12 at ALERT, absent now.",
+      "note": "On the board 2026-11-13 at ALERT, absent now.",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Earthquake in Japan"
+      "title": "Earthquake in Tonga"
     },
     {
-      "note": "On the board 2026-11-12 at ALERT, absent now.",
+      "note": "On the board 2026-11-13 at ALERT, absent now.",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Indictment sheds light on alleged Iran-backed plots across U.S. and Europe - PBS"
+      "title": "Earthquake in Philippines"
     },
     {
-      "note": "On the board 2026-11-12 at ALERT, absent now.",
+      "note": "On the board 2026-11-13 at ALERT, absent now.",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "White House tells Democrats that investigating Trump administration could be criminal - Reuters"
+      "title": "Earthquake in Panama"
     },
     {
-      "note": "On the board 2026-11-12 at ALERT, absent now.",
+      "note": "On the board 2026-11-13 at ALERT, absent now.",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Flying by pricey military jet, Rubio rarely misses a Florida football game - The Washington Post"
+      "title": "Ukraine fires nearly 1,200 drones at Russia as U.S.-led talks consider wider European security - PBS"
     },
     {
-      "note": "On the board 2026-11-12 at ALERT, absent now.",
+      "note": "On the board 2026-11-13 at ALERT, absent now.",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Rubio urges nations to ‘step up’ on Strait of Hormuz security - AP News"
+      "title": "Ukraine claims record 3,000 Russian casualties in one day as war drags on - Al Jazeera"
     },
     {
-      "note": "ALERT → STANDBY since 2026-11-12",
+      "note": "On the board 2026-11-13 at ALERT, absent now.",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "Rubio Says ‘Major Combat Operations’ in Iran Are No Longer Needed - The New York Times"
+    },
+    {
+      "note": "ALERT → STANDBY since 2026-11-13",
       "related": 0,
       "relatedSources": [],
       "severity": "STANDBY",
-      "title": "Earthquake in Papua New Guinea"
+      "title": "Earthquake in Southeast Of Loyalty Islands"
     },
     {
-      "note": "ALERT → STANDBY since 2026-11-12",
+      "note": "ALERT → STANDBY since 2026-11-13",
       "related": 0,
       "relatedSources": [],
       "severity": "STANDBY",
-      "title": "Why Trump’s Iran war just got a lot more costly - Center for International Policy"
-    },
-    {
-      "note": "ALERT → STANDBY since 2026-11-12",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "STANDBY",
-      "title": "U.S. envoys meet with Putin in the Kremlin after Ukraine talks in Abu Dhabi - NPR"
+      "title": "EU HR/VP Kaja Kallas Attended the G7 Foreign Affairs Ministers’ Meeting in Paris - European External Action Service (EEAS)"
     }
   ],
   "newSince": [
     {
-      "note": "STANDBY → ALERT since 2026-11-12",
+      "note": "STANDBY → ALERT since 2026-11-13",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
       "title": "M5.8 150 km SW of Merizo Village, Guam"
     },
     {
-      "note": "New since 2026-11-12 · now ALERT",
+      "note": "New since 2026-11-13 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Chikungunya virus disease - Switzerland"
+      "title": "Amazon says Chinese hackers used Cairn AI tool to discover apparent zero-day during attack on university"
     },
     {
-      "note": "New since 2026-11-12 · now ALERT",
+      "note": "New since 2026-11-13 · now ALERT",
+      "related": 2,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "sourceCount": 1,
+      "title": "China-Linked Hackers Exploit Critical VMware vCenter Zero-Day to Gain Admin Access and Steal Data"
+    },
+    {
+      "note": "New since 2026-11-13 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Cyberattack may have exposed Chase Bank and Mastercard customer data - The Washington Post"
+      "title": "New Unpatched Windows 0-Day FastUnlock Lets Someone Holding a Locked PC Run Programs on It"
     },
     {
-      "note": "New since 2026-11-12 · now ALERT",
+      "note": "New since 2026-11-13 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Newly Patched VMware vCenter Flaw Exploited as Zero-Day by Chinese APT"
+      "title": "Chase bank issues warning to customers of cyberattack, data breach - NewsNation"
     },
     {
-      "note": "New since 2026-11-12 · now ALERT",
+      "note": "New since 2026-11-13 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
       "title": "CVE-2024-10441 Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability"
     },
     {
-      "note": "New since 2026-11-12 · now ALERT",
+      "note": "New since 2026-11-13 · now ALERT",
       "related": 1,
       "relatedSources": [],
       "severity": "ALERT",
@@ -219,7 +228,7 @@
       "title": "CVE-2026-40217 BerriAI LiteLLM Unprotected Alternate Channel Vulnerability"
     },
     {
-      "note": "New since 2026-11-12 · now ALERT",
+      "note": "New since 2026-11-13 · now ALERT",
       "related": 1,
       "relatedSources": [],
       "severity": "ALERT",
@@ -227,41 +236,34 @@
       "title": "CVE-2026-90817 Vanderbilt University Research Electronic Data Capture (REDCap) Code Injection Vulnerability"
     },
     {
-      "note": "STANDBY → ALERT since 2026-11-12",
+      "note": "STANDBY → ALERT since 2026-11-13",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "At least 6 killed, several injured in shooting at Polish market square: Police - ABC News - Breaking News, Latest News and Videos"
+      "title": "Deadly mass shooting in Poland investigated as terror act, prosecutor says - ABC News - Breaking News, Latest News and Videos"
     },
     {
-      "note": "New since 2026-11-12 · now ALERT",
+      "note": "STANDBY → ALERT since 2026-11-13",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Iran widens Gulf attacks by targeting U.S. air base in Kuwait and sites in Bahrain - PBS"
+      "title": "Eight killed in Ukraine as Russia hits back after Crimea bridge attacks - Reuters"
     },
     {
-      "note": "New since 2026-11-12 · now ALERT",
+      "note": "New since 2026-11-13 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Ukraine: Civilian casualties in 2026 already far exceed previous years’ tolls - UN News"
+      "title": "Putin Exits Summit With Symbolic Win, Saying He and Trump Share ‘Values’ - The New York Times"
     },
     {
-      "note": "New since 2026-11-12 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "For Trump, the meeting was the whole point after trilateral summit with Xi and Putin - NPR"
-    },
-    {
-      "note": "New since 2026-11-12 · now ALERT",
+      "note": "New since 2026-11-13 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
       "title": "Internet services disrupted across Pakistan due to undersea cable fault - Daily Ausaf"
     }
   ],
-  "note": "Compared with the stored board on 2026-11-12.",
-  "since": "2026-11-12"
+  "note": "Compared with the stored board on 2026-11-13.",
+  "since": "2026-11-13"
 }
