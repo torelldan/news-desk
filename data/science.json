@@ -10,9 +10,9 @@
       "guest": "",
       "note": "",
       "url": "https://www.nature.com/articles/d41586-026-03680-1",
-      "published": "2026-11-20T11:41:40-06:00",
+      "published": "2026-11-20T14:02:00-06:00",
       "date": "2026-11-20",
-      "label": "Nov 20, 2026 11:41 AM CT",
+      "label": "Nov 20, 2026 2:02 PM CT",
       "weekday": "Fri",
       "timeKnown": true,
       "tags": [
@@ -34,9 +34,9 @@
       "guest": "",
       "note": "",
       "url": "https://www.nature.com/articles/d41586-026-03751-3",
-      "published": "2026-11-20T11:41:40-06:00",
+      "published": "2026-11-20T14:02:00-06:00",
       "date": "2026-11-20",
-      "label": "Nov 20, 2026 11:41 AM CT",
+      "label": "Nov 20, 2026 2:02 PM CT",
       "weekday": "Fri",
       "timeKnown": true,
       "tags": [
@@ -58,9 +58,9 @@
       "guest": "",
       "note": "",
       "url": "https://www.nature.com/articles/d41586-026-03806-5",
-      "published": "2026-11-20T11:41:40-06:00",
+      "published": "2026-11-20T14:02:00-06:00",
       "date": "2026-11-20",
-      "label": "Nov 20, 2026 11:41 AM CT",
+      "label": "Nov 20, 2026 2:02 PM CT",
       "weekday": "Fri",
       "timeKnown": true,
       "tags": [
@@ -82,9 +82,9 @@
       "guest": "",
       "note": "",
       "url": "https://www.nature.com/articles/d41586-026-03776-8",
-      "published": "2026-11-20T11:41:40-06:00",
+      "published": "2026-11-20T14:02:00-06:00",
       "date": "2026-11-20",
-      "label": "Nov 20, 2026 11:41 AM CT",
+      "label": "Nov 20, 2026 2:02 PM CT",
       "weekday": "Fri",
       "timeKnown": true,
       "tags": [
@@ -94,6 +94,54 @@
       ],
       "field": "biomedical",
       "review": "PEER-REVIEWED",
+      "severity": ""
+    },
+    {
+      "id": "paper:a8dd7c4461ca6d7d",
+      "kind": "paper",
+      "lane": "science",
+      "source": "Phys.org physics",
+      "sourceId": "paper",
+      "title": "X-ray technique advances temperature measurements under extreme pressure",
+      "guest": "",
+      "note": "Scientists at Lawrence Livermore National Laboratory (LLNL) have advanced the ability to measure temperatures in materials subjected to extreme pressures at the National Ignition Facility (NIF), providing new insights into how materials behave under conditions relevant to national security and high-energy-density physics.",
+      "url": "https://phys.org/news/2026-11-ray-technique-advances-temperature-extreme.html",
+      "published": "2026-11-20T13:20:06-06:00",
+      "date": "2026-11-20",
+      "label": "Nov 20, 2026 1:20 PM CT",
+      "weekday": "Fri",
+      "timeKnown": true,
+      "tags": [
+        "science",
+        "physics",
+        "news"
+      ],
+      "field": "physics",
+      "review": "NEWS",
+      "severity": ""
+    },
+    {
+      "id": "paper:db418ce47ddfc6bb",
+      "kind": "paper",
+      "lane": "science",
+      "source": "MIT Technology Review",
+      "sourceId": "paper",
+      "title": "The most misunderstood graph in AI just got a major update",
+      "guest": "",
+      "note": "A new report from the AI evaluation nonprofit METR finds that some AI capabilities are continuing to improve along an exponential trajectory—but it also indicates that models aren’t quite as good at tasks that require judgment as they are at coding.",
+      "url": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/",
+      "published": "2026-11-20T12:15:15-06:00",
+      "date": "2026-11-20",
+      "label": "Nov 20, 2026 12:15 PM CT",
+      "weekday": "Fri",
+      "timeKnown": true,
+      "tags": [
+        "science",
+        "technology",
+        "news"
+      ],
+      "field": "technology",
+      "review": "NEWS",
       "severity": ""
     },
     {
@@ -217,6 +265,32 @@
       "severity": ""
     },
     {
+      "id": "headline:276bc716a5e15ffb",
+      "kind": "paper",
+      "lane": "science",
+      "source": "Reuters",
+      "sourceId": "headline",
+      "title": "FDA to miss deadline on Savara's rare lung disease drug approval - Reuters",
+      "guest": "",
+      "note": "",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQeHRjRzhscVBqZmg2dDN2UEd2ckVTaGZiVElQQXNhbklKVzE3REJyWGNXNWV0SldWQWstNnBCbDdyYWFOeDloRmNLWmxOMENjazhjcUo1WFBzdXVnTUxLdW5nYnVwZXpJTG9tV0hVTHNONUxCYXhKMEJzN1hCTGJUMEJKVU9tYVpseGJxVmNGcXFqMDZDVjR3VVJGakQ2bGV5bEJqRFZ1VFA0Nm1XMFVF?oc=5",
+      "published": "2026-11-20T08:28:12-06:00",
+      "date": "2026-11-20",
+      "label": "Nov 20, 2026 8:28 AM CT",
+      "weekday": "Fri",
+      "timeKnown": true,
+      "tags": [
+        "headline",
+        "standby",
+        "science",
+        "biomedical",
+        "news"
+      ],
+      "severity": "STANDBY",
+      "field": "biomedical",
+      "review": "NEWS"
+    },
+    {
       "id": "paper:075993dbf4f773fa",
       "kind": "paper",
       "lane": "science",
@@ -241,6 +315,32 @@
       "severity": ""
     },
     {
+      "id": "headline:74360be12295057e",
+      "kind": "paper",
+      "lane": "science",
+      "source": "Scientific American",
+      "sourceId": "headline",
+      "title": "Anthropic mathematician claims to prove Riemann hypothesis, most famous problem in all of math - Scientific American",
+      "guest": "",
+      "note": "",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNcl9DRERIZlViX1BNaFBRYU1WbjI4ejNhb2x6b2d1aXJRenVWQ3NtUUttb1VvTnRYUWNvUE5pQy1vbkpvcEpXeHU4bldwVXpfM3pwdzVtMjJyT3BvcTdyU0lZQUdtdzJEN2xoa1AtR1prQkd3Q1FDakxiZi1XRWVnSmt5aHNYTzlvRDhWcXl3emNNd2NNTTNESWF5bnFiWk5kYWZVQkdiSHFtX2RVYjlrNElMOV9lQ1c5R0dLQnN5RlRqemlIR0huTGhzMjZMb1ZRNU5r?oc=5",
+      "published": "2026-11-20T08:00:00-06:00",
+      "date": "2026-11-20",
+      "label": "Nov 20, 2026 8:00 AM CT",
+      "weekday": "Fri",
+      "timeKnown": true,
+      "tags": [
+        "headline",
+        "standby",
+        "science",
+        "ai",
+        "news"
+      ],
+      "severity": "STANDBY",
+      "field": "ai",
+      "review": "NEWS"
+    },
+    {
       "id": "paper:85ae5b00a3569db6",
       "kind": "paper",
       "lane": "science",
@@ -261,30 +361,6 @@
         "news"
       ],
       "field": "technology",
-      "review": "NEWS",
-      "severity": ""
-    },
-    {
-      "id": "paper:94b231f56a32c1ef",
-      "kind": "paper",
-      "lane": "science",
-      "source": "Phys.org physics",
-      "sourceId": "paper",
-      "title": "Spiraling spins bring coordinated quantum motion to diamond sensors",
-      "guest": "",
-      "note": "Trapped within diamond's crystal lattice are tiny defects called nitrogen-vacancy (NV) centers, where a nitrogen atom sits beside an empty gap where a carbon atom should be. Because of their quantum spins, electrons trapped at these defects behave like tiny magnets, turning diamond into a highly sensitive detector for magnetic fields.",
-      "url": "https://phys.org/news/2026-11-spiraling-quantum-motion-diamond-sensors.html",
-      "published": "2026-11-20T07:00:04-06:00",
-      "date": "2026-11-20",
-      "label": "Nov 20, 2026 7:00 AM CT",
-      "weekday": "Fri",
-      "timeKnown": true,
-      "tags": [
-        "science",
-        "physics",
-        "news"
-      ],
-      "field": "physics",
       "review": "NEWS",
       "severity": ""
     },
@@ -313,6 +389,30 @@
       "severity": "STANDBY",
       "field": "quantum",
       "review": "NEWS"
+    },
+    {
+      "id": "paper:f927139d9de6de38",
+      "kind": "paper",
+      "lane": "science",
+      "source": "OpenAI",
+      "sourceId": "paper",
+      "title": "Combatting adversarial distillation",
+      "guest": "",
+      "note": "",
+      "url": "https://openai.com/index/combatting-adversarial-distillation",
+      "published": "2026-11-20T04:00:00-06:00",
+      "date": "2026-11-20",
+      "label": "Nov 20, 2026 4:00 AM CT",
+      "weekday": "Fri",
+      "timeKnown": true,
+      "tags": [
+        "science",
+        "ai",
+        "news"
+      ],
+      "field": "ai",
+      "review": "NEWS",
+      "severity": ""
     },
     {
       "id": "paper:1a27a73c4615fcef",
@@ -359,6 +459,30 @@
         "news"
       ],
       "field": "propulsion",
+      "review": "NEWS",
+      "severity": ""
+    },
+    {
+      "id": "paper:cb47cf726d975ecf",
+      "kind": "paper",
+      "lane": "science",
+      "source": "OpenAI",
+      "sourceId": "paper",
+      "title": "Can AI help scientists identify promising drug candidates?",
+      "guest": "",
+      "note": "",
+      "url": "https://openai.com/index/introducing-medchembench",
+      "published": "2026-11-19T18:00:00-06:00",
+      "date": "2026-11-19",
+      "label": "Nov 19, 2026 6:00 PM CT",
+      "weekday": "Thu",
+      "timeKnown": true,
+      "tags": [
+        "science",
+        "ai",
+        "news"
+      ],
+      "field": "ai",
       "review": "NEWS",
       "severity": ""
     },
@@ -873,30 +997,6 @@
       "review": "NEWS"
     },
     {
-      "id": "paper:212c68681c2b6a16",
-      "kind": "paper",
-      "lane": "science",
-      "source": "MIT Technology Review",
-      "sourceId": "paper",
-      "title": "What a billion-dollar deal says about the US battery market",
-      "guest": "",
-      "note": "After a tough few years littered with some high-profile failures, there’s some positive news for next-generation batteries in the US. Sila just signed an agreement with Panasonic Energy, a global battery manufacturer, to supply silicon-carbon anode material, a possible key to smaller, lighter batteries.",
-      "url": "https://www.technologyreview.com/2026/11/19/1148922/sila-panasonic-battery-deal/",
-      "published": "2026-11-19T05:00:00-06:00",
-      "date": "2026-11-19",
-      "label": "Nov 19, 2026 5:00 AM CT",
-      "weekday": "Thu",
-      "timeKnown": true,
-      "tags": [
-        "science",
-        "technology",
-        "news"
-      ],
-      "field": "technology",
-      "review": "NEWS",
-      "severity": ""
-    },
-    {
       "id": "paper:e8842893618f361a",
       "kind": "paper",
       "lane": "science",
@@ -995,54 +1095,6 @@
       "review": "NEWS"
     },
     {
-      "id": "paper:e3f6dae780c5a8a7",
-      "kind": "paper",
-      "lane": "science",
-      "source": "OpenAI",
-      "sourceId": "paper",
-      "title": "Deploying Daybreak Red",
-      "guest": "",
-      "note": "",
-      "url": "https://openai.com/business/learn/deploying-daybreak-red",
-      "published": "2026-11-18T18:00:00-06:00",
-      "date": "2026-11-18",
-      "label": "Nov 18, 2026 6:00 PM CT",
-      "weekday": "Wed",
-      "timeKnown": true,
-      "tags": [
-        "science",
-        "ai",
-        "news"
-      ],
-      "field": "ai",
-      "review": "NEWS",
-      "severity": ""
-    },
-    {
-      "id": "paper:16af40845a325f07",
-      "kind": "paper",
-      "lane": "science",
-      "source": "OpenAI",
-      "sourceId": "paper",
-      "title": "See PR scans in action",
-      "guest": "",
-      "note": "",
-      "url": "https://openai.com/business/learn/pr-scans-demo",
-      "published": "2026-11-18T18:00:00-06:00",
-      "date": "2026-11-18",
-      "label": "Nov 18, 2026 6:00 PM CT",
-      "weekday": "Wed",
-      "timeKnown": true,
-      "tags": [
-        "science",
-        "ai",
-        "news"
-      ],
-      "field": "ai",
-      "review": "NEWS",
-      "severity": ""
-    },
-    {
       "id": "paper:777ef9aa734050c0",
       "kind": "paper",
       "lane": "science",
@@ -1093,54 +1145,6 @@
       "review": "NEWS"
     },
     {
-      "id": "paper:6904138f127d73bc",
-      "kind": "paper",
-      "lane": "science",
-      "source": "DeepMind",
-      "sourceId": "paper",
-      "title": "Introducing Gemini 4 Neon",
-      "guest": "",
-      "note": "",
-      "url": "https://deepmind.google/blog/introducing-gemini-4-neon/",
-      "published": "2026-11-18T15:35:43-06:00",
-      "date": "2026-11-18",
-      "label": "Nov 18, 2026 3:35 PM CT",
-      "weekday": "Wed",
-      "timeKnown": true,
-      "tags": [
-        "science",
-        "ai",
-        "news"
-      ],
-      "field": "ai",
-      "review": "NEWS",
-      "severity": ""
-    },
-    {
-      "id": "paper:3d3b70fbdce8a4b7",
-      "kind": "paper",
-      "lane": "science",
-      "source": "DeepMind",
-      "sourceId": "paper",
-      "title": "Genie 4 is now available",
-      "guest": "",
-      "note": "",
-      "url": "https://deepmind.google/blog/genie-4-is-now-available/",
-      "published": "2026-11-18T12:13:42-06:00",
-      "date": "2026-11-18",
-      "label": "Nov 18, 2026 12:13 PM CT",
-      "weekday": "Wed",
-      "timeKnown": true,
-      "tags": [
-        "science",
-        "ai",
-        "news"
-      ],
-      "field": "ai",
-      "review": "NEWS",
-      "severity": ""
-    },
-    {
       "id": "paper:e8656d911968d75a",
       "kind": "paper",
       "lane": "science",
@@ -1163,32 +1167,6 @@
       "field": "technology",
       "review": "NEWS",
       "severity": ""
-    },
-    {
-      "id": "headline:55617cc74a2533da",
-      "kind": "paper",
-      "lane": "science",
-      "source": "OpenAI",
-      "sourceId": "headline",
-      "title": "Advancing chip design with OpenAI models - OpenAI",
-      "guest": "",
-      "note": "",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1RejBWQml3ekRqeU9ieU5OdmN6ZGNMNHd6UkZhcWMzYlRfbEV1Uk1fRlVNZ2pkNXhlR2dJZTVfUEdoSzVaV2ZNQ2JZX05PRnppRm9BY3lYOG1YSTVBYll2bWNLdlNMbFkxRkxHaHh6QjE?oc=5",
-      "published": "2026-11-18T11:06:03-06:00",
-      "date": "2026-11-18",
-      "label": "Nov 18, 2026 11:06 AM CT",
-      "weekday": "Wed",
-      "timeKnown": true,
-      "tags": [
-        "headline",
-        "standby",
-        "science",
-        "ai",
-        "news"
-      ],
-      "severity": "STANDBY",
-      "field": "ai",
-      "review": "NEWS"
     },
     {
       "id": "paper:18647589d79fee57",
@@ -1215,19 +1193,19 @@
       "severity": ""
     },
     {
-      "id": "headline:fb428fc2fbb6a3b3",
+      "id": "headline:2d123fd32bc99364",
       "kind": "paper",
       "lane": "science",
-      "source": "Reuters",
+      "source": "Johns Hopkins Bloomberg School of Public Health",
       "sourceId": "headline",
-      "title": "US FDA approves GSK's second lung cancer drug from historic Nuvalent deal - Reuters",
+      "title": "U.S. Officially Loses Measles Elimination Status as Outbreaks Continue - Johns Hopkins Bloomberg School of Public Health",
       "guest": "",
       "note": "",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQWVhEaDZHcy1VazlpRl9vTmtGYk4wN25BRkZmY0RVNE81UTZOOHJ3TjFRcXJTZ1YtZkR0UzBDU0NhTHZ1LVk1WWFYUWNMeml2TlJjUVhEV1FoQnlac1FGQ3RzQW5DcDh3eWpsR0hyU0d4djBybzVqX0h1bm9DeWJoUkV0NzVSTmxLWmRVRmFtU1ZfS1FsN2c1SlVwQlNvMmIxUjVFSGRuTXFSZHZ5d0c2UDBVWVZhVk1jSUUwa2RmanZzdVU?oc=5",
-      "published": "2026-11-17T17:07:33-06:00",
-      "date": "2026-11-17",
-      "label": "Nov 17, 2026 5:07 PM CT",
-      "weekday": "Tue",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQSlNmMnhaUjB3NnR3QmdDVDZvZktvZWNIU19aQ2VzQ01UZHFhWUduZ29XZWM3Q09kY2Y1bGlQb3EwRzBmS1I5NkkwNmdYVmN6TUY0Y0tQWjgtaUNBTWhmeDE1eGRoNE9QM1pfRUt4bV9tdWpackg3WUVLVGtPRXlzWmd4aEEyOUNpQXBzSDVR?oc=5",
+      "published": "2026-11-18T10:33:36-06:00",
+      "date": "2026-11-18",
+      "label": "Nov 18, 2026 10:33 AM CT",
+      "weekday": "Wed",
       "timeKnown": true,
       "tags": [
         "headline",
@@ -1264,32 +1242,6 @@
       ],
       "severity": "STANDBY",
       "field": "technology",
-      "review": "NEWS"
-    },
-    {
-      "id": "headline:bf34880e82169a3f",
-      "kind": "paper",
-      "lane": "science",
-      "source": "Oncology Nursing News",
-      "sourceId": "headline",
-      "title": "FDA Grants Accelerated Approval to Neladalkib in Pretreated ALK+ NSCLC - Oncology Nursing News",
-      "guest": "",
-      "note": "",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNQ1ViN19DTXhBSVJWb01NWS0yUmJySl9EU0hyeFp5THNpaXg3WXV0Mks0ZDYzSGs2MDJtNG56UE1WYi1iQlY2bThZTEx6R1hSSjZyeG5yYW9FeVg5bUFtcDNwTzZIM3BNU2xhS1JvZ2ZhdVJGdVF6aHlFTDNDXzlPbVcwOWhLQnNkNTk5VzVtNXFKdWo0U005bzk0N0cwZDJkbVZuMHdlWXc?oc=5",
-      "published": "2026-11-17T12:31:08-06:00",
-      "date": "2026-11-17",
-      "label": "Nov 17, 2026 12:31 PM CT",
-      "weekday": "Tue",
-      "timeKnown": true,
-      "tags": [
-        "headline",
-        "standby",
-        "science",
-        "biomedical",
-        "news"
-      ],
-      "severity": "STANDBY",
-      "field": "biomedical",
       "review": "NEWS"
     },
     {
@@ -1369,45 +1321,19 @@
       "review": "NEWS"
     },
     {
-      "id": "headline:4c2687779a5e8de1",
+      "id": "headline:7d6d71d5baaedfb9",
       "kind": "paper",
       "lane": "science",
-      "source": "WSJ",
+      "source": "OpenAI",
       "sourceId": "headline",
-      "title": "Commerce Department Moves to Crack Down on Chip Exports - WSJ",
+      "title": "Strengthening NATO and allied cyber defenses with AI - OpenAI",
       "guest": "",
       "note": "",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZHhHbVgwWkNtZ0tBYzR5aHltZExNQ2N3bVZCQkNYdU5DSklOenZQTTlaZWdFV3gydC1JQlBQMHdRVHdla1QtYWg3bTNIZEVuVnpfTFpBbENtMXdWaHVjZEJ1RWNZM3RvWHAxc2hFRGdScG1BdzFYNEJIRjk1ZWNtZjZIelZmQVUyazR4Mjcyd1RmQ1Q2b3R6Z1ZIMXhyblVuNjFEcjRZeVFEcEdEa2x2bw?oc=5",
-      "published": "2026-11-16T16:11:00-06:00",
-      "date": "2026-11-16",
-      "label": "Nov 16, 2026 4:11 PM CT",
-      "weekday": "Mon",
-      "timeKnown": true,
-      "tags": [
-        "headline",
-        "standby",
-        "science",
-        "technology",
-        "news"
-      ],
-      "severity": "STANDBY",
-      "field": "technology",
-      "review": "NEWS"
-    },
-    {
-      "id": "headline:ad80a94f401b1856",
-      "kind": "paper",
-      "lane": "science",
-      "source": "NPR",
-      "sourceId": "headline",
-      "title": "California sues OpenAI over hacking risks - NPR",
-      "guest": "",
-      "note": "",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPVENfR2JteXlPbExMQ0pZTFlwaldLRTRhbTR4ZEQ1bzZXSHZjQmhQb3hjMS1ITGxuSVlSaE1qQWNvamJsNDNPZTU4RlBZdlZaNXoyVXdDWTVzTjJFaDZ1SjdHSzhJaXFDUG41NGFKN0FDWTVRQjVpQUtxbGV5X1dwRzN0Y2MtY2ZpVmVEZTB6UUFjRzNGTEZZWU5zMngwdw?oc=5",
-      "published": "2026-11-16T16:06:22-06:00",
-      "date": "2026-11-16",
-      "label": "Nov 16, 2026 4:06 PM CT",
-      "weekday": "Mon",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE8zYnJ5UUFIVHE4X1N0SS1sMXcxVVIwSEQyWlE3N1ZTb1RleV9MQmZzdnN1Sy1jQXpWd2w4dHJXbEtUMjlDZ1k1RDRMcUlodHZ5alluX3ZIVjZRU3lQZU9OVzBqOXlxeEhQWGt5U0V5T2pOcVZSdTdfQg?oc=5",
+      "published": "2026-11-17T01:50:38-06:00",
+      "date": "2026-11-17",
+      "label": "Nov 17, 2026 1:50 AM CT",
+      "weekday": "Tue",
       "timeKnown": true,
       "tags": [
         "headline",
@@ -1418,6 +1344,32 @@
       ],
       "severity": "STANDBY",
       "field": "ai",
+      "review": "NEWS"
+    },
+    {
+      "id": "headline:a3d4bdaf303d8716",
+      "kind": "paper",
+      "lane": "science",
+      "source": "ScienceDaily",
+      "sourceId": "headline",
+      "title": "Quantum computers are getting too powerful to check. Scientists have a solution - ScienceDaily",
+      "guest": "",
+      "note": "",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9OQ05FZ1NzWHJQd0xldExtMmZVamt3NTd1R1pTRzRFeTRjZVVvdHVobGZCYWZCU1dDREhzYnZ0dFI4ZXdaWnpFa1BoSmdITm5aTktma3p4anFQbHZwbXJ1WmZROHhTckV5Z05jemE0VQ?oc=5",
+      "published": "2026-11-16T18:25:36-06:00",
+      "date": "2026-11-16",
+      "label": "Nov 16, 2026 6:25 PM CT",
+      "weekday": "Mon",
+      "timeKnown": true,
+      "tags": [
+        "headline",
+        "standby",
+        "science",
+        "quantum",
+        "news"
+      ],
+      "severity": "STANDBY",
+      "field": "quantum",
       "review": "NEWS"
     },
     {
@@ -1443,6 +1395,32 @@
       "field": "propulsion",
       "review": "PREPRINT",
       "severity": ""
+    },
+    {
+      "id": "headline:4c2687779a5e8de1",
+      "kind": "paper",
+      "lane": "science",
+      "source": "WSJ",
+      "sourceId": "headline",
+      "title": "Commerce Department Moves to Crack Down on Chip Exports - WSJ",
+      "guest": "",
+      "note": "",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZHhHbVgwWkNtZ0tBYzR5aHltZExNQ2N3bVZCQkNYdU5DSklOenZQTTlaZWdFV3gydC1JQlBQMHdRVHdla1QtYWg3bTNIZEVuVnpfTFpBbENtMXdWaHVjZEJ1RWNZM3RvWHAxc2hFRGdScG1BdzFYNEJIRjk1ZWNtZjZIelZmQVUyazR4Mjcyd1RmQ1Q2b3R6Z1ZIMXhyblVuNjFEcjRZeVFEcEdEa2x2bw?oc=5",
+      "published": "2026-11-16T13:06:27-06:00",
+      "date": "2026-11-16",
+      "label": "Nov 16, 2026 1:06 PM CT",
+      "weekday": "Mon",
+      "timeKnown": true,
+      "tags": [
+        "headline",
+        "standby",
+        "science",
+        "technology",
+        "news"
+      ],
+      "severity": "STANDBY",
+      "field": "technology",
+      "review": "NEWS"
     },
     {
       "id": "headline:c3d771df7e556a1d",
@@ -1596,32 +1574,6 @@
       ],
       "severity": "STANDBY",
       "field": "technology",
-      "review": "NEWS"
-    },
-    {
-      "id": "headline:ced710ff478010f4",
-      "kind": "paper",
-      "lane": "science",
-      "source": "Quantinuum",
-      "sourceId": "headline",
-      "title": "Quantinuum extends its significant lead in quantum computing, achieving historic milestones for hardware fidelity and Quantum Volume - Quantinuum",
-      "guest": "",
-      "note": "",
-      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPazdGRTZGYmVZb1dxc3VNblMweGVqNHE3bEtsdGdjS2ROamJOM2JmUU1WbkFvYUQyNWstTU10YjJsaHEyVnJkbWhJU0RoOXduczBESDE4SDRMLUh5OTdCOUdibl9Ma3ZHUGRIZW5NRDZxZkpMYV9ZVTIwSjRXQk1JaGtnV3NkY0Q3aTVqVnhUc1dBTEtZeWR6UFl3d2RCdENTNWZVWDhtTXczcTVGUjdhekxmUW4yQzJudlB3R3c3RWdKZ2tHdjVjZHNFb2JaajNsSU9qVDUtdzVMMWxwYVlWNUJnc3QwN0tTckw1WnlfUGVvbHRFSlE?oc=5",
-      "published": "2026-11-15T02:00:00-06:00",
-      "date": "2026-11-15",
-      "label": "Nov 15, 2026 2:00 AM CT",
-      "weekday": "Sun",
-      "timeKnown": true,
-      "tags": [
-        "headline",
-        "standby",
-        "science",
-        "quantum",
-        "news"
-      ],
-      "severity": "STANDBY",
-      "field": "quantum",
       "review": "NEWS"
     },
     {
@@ -1800,7 +1752,7 @@
       "sourceId": "paper",
       "title": "Expert-level localization of fine-grained cardiac structures across the transthoracic echocardiogram",
       "guest": "",
-      "note": "Artificial intelligence models for echocardiography interpret studies without identifying the structures that support their outputs. We show that this spatial grounding does not emerge from the pretraining of current vision-language models. General-purpose and medical vision-language models and an open- vocabulary detector recalled 3% or fewer of cardiac structures and scored below a box that never sees the image. EchoLens, a detector trained on 5,912 expert-annotated structures and 4,219 Dopple",
+      "note": "1.Artificial intelligence models for echocardiography interpret studies without identifying the structures that support their outputs. We show that this spatial grounding does not emerge from the pretraining of current vision-language models. General-purpose and medical vision-language models and an open-vocabulary detector recalled 3% or fewer of cardiac structures and scored below a box that never sees the image. EchoLens, a detector trained on 5,912 expert-annotated structures and 4,219 Doppl",
       "url": "https://www.medrxiv.org/content/10.64898/2026.11.10.26367643",
       "published": "2026-11-14T18:00:00-06:00",
       "date": "2026-11-14",
@@ -1919,108 +1871,31 @@
       "severity": "STANDBY",
       "field": "propulsion",
       "review": "NEWS"
-    },
-    {
-      "id": "paper:8021ddbb9b3e5137",
-      "kind": "paper",
-      "lane": "science",
-      "source": "DeepMind",
-      "sourceId": "paper",
-      "title": "Introducing Gemini 4 Hydrogen",
-      "guest": "",
-      "note": "",
-      "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
-      "published": "2026-11-12T12:00:50-06:00",
-      "date": "2026-11-12",
-      "label": "Nov 12, 2026 12:00 PM CT",
-      "weekday": "Thu",
-      "timeKnown": true,
-      "tags": [
-        "science",
-        "ai",
-        "news"
-      ],
-      "field": "ai",
-      "review": "NEWS",
-      "severity": ""
-    },
-    {
-      "id": "paper:0ae5b2542704a684",
-      "kind": "paper",
-      "lane": "science",
-      "source": "DeepMind",
-      "sourceId": "paper",
-      "title": "AlphaGenome 2: Deciphering how cells read DNA to better understand disease",
-      "guest": "",
-      "note": "",
-      "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
-      "published": "2026-11-11T09:00:15-06:00",
-      "date": "2026-11-11",
-      "label": "Nov 11, 2026 9:00 AM CT",
-      "weekday": "Wed",
-      "timeKnown": true,
-      "tags": [
-        "science",
-        "ai",
-        "news"
-      ],
-      "field": "ai",
-      "review": "NEWS",
-      "severity": ""
     }
   ],
   "spikes": [
     {
-      "topic": "Gemini",
-      "outlets": 2,
-      "state": "EVENT",
+      "topic": "Anthropic",
+      "outlets": 3,
+      "state": "RISING",
       "links": [
         {
-          "title": "Introducing Tool Retrieval in the Gemini API",
-          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
-          "source": "Google AI blog"
+          "title": "Anthropic mathematician claims to prove Riemann hypothesis, most famous problem in all of math - Scientific American",
+          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNcl9DRERIZlViX1BNaFBRYU1WbjI4ejNhb2x6b2d1aXJRenVWQ3NtUUttb1VvTnRYUWNvUE5pQy1vbkpvcEpXeHU4bldwVXpfM3pwdzVtMjJyT3BvcTdyU0lZQUdtdzJEN2xoa1AtR1prQkd3Q1FDakxiZi1XRWVnSmt5aHNYTzlvRDhWcXl3emNNd2NNTTNESWF5bnFiWk5kYWZVQkdiSHFtX2RVYjlrNElMOV9lQ1c5R0dLQnN5RlRqemlIR0huTGhzMjZMb1ZRNU5r?oc=5",
+          "source": "Scientific American"
         },
         {
-          "title": "Introducing Gemini 4 Neon",
-          "url": "https://deepmind.google/blog/introducing-gemini-4-neon/",
-          "source": "DeepMind"
+          "title": "Anthropic's blockbuster debut tests Wall Street's faith in AI boom - Reuters",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPVmU0cXVPRUhwcDZpRkRudEI3bjNfMllQVEN3M09VWFNmQUJTck1UUE9mVERRbmFicElZMWxKVnd3UWpTNGY3R1JiZ0NnRnNBRHhLMkxkVC1vUWVOVzQ3NzcwMkoycTR0MC1LUnBfdUIyWl9OZE5xYnlVVmQ5bzdVZmdnVHFjUjh6dHZrbVVQdEFPaDNCUC1KSkZEMUlhcU9OeWFiWi10SGwxNTBpNE16aTd1MA?oc=5",
+          "source": "Reuters"
         },
         {
-          "title": "The Gemini app is now available on lower-memory Android devices.",
-          "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/",
-          "source": "Google AI blog"
-        },
-        {
-          "title": "Put Gemini to work for you",
-          "url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
-          "source": "Google AI blog"
+          "title": "Updating our coordinated vulnerability disclosure policy timelines - Anthropic",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPVmdyVmc1MjVDcWtuV0NsWG44R3ZzQU5rX1BkVHNkR1NlN2w4cFRselR2dTVLOS1EcjlRbU1idlVSMW11bGFWaFZjN2tydks4VkJUR1dlcXY3b2dZX1k5aE5NMUxFck5kQWZtcXlKNHF3bC1ZZXJTa0xjMDNIN1l3TlF6ZzlwMF8z?oc=5",
+          "source": "Anthropic"
         }
       ],
-      "title": "Introducing Tool Retrieval in the Gemini API",
-      "field": "ai"
-    },
-    {
-      "topic": "OpenAI",
-      "outlets": 2,
-      "state": "EVENT",
-      "links": [
-        {
-          "title": "How OpenAI’s Performance Factory keeps ChatGPT fast",
-          "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
-          "source": "OpenAI"
-        },
-        {
-          "title": "Advancing chip design with OpenAI models - OpenAI",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1RejBWQml3ekRqeU9ieU5OdmN6ZGNMNHd6UkZhcWMzYlRfbEV1Uk1fRlVNZ2pkNXhlR2dJZTVfUEdoSzVaV2ZNQ2JZX05PRnppRm9BY3lYOG1YSTVBYll2bWNLdlNMbFkxRkxHaHh6QjE?oc=5",
-          "source": "OpenAI"
-        },
-        {
-          "title": "California sues OpenAI over hacking risks - NPR",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPVENfR2JteXlPbExMQ0pZTFlwaldLRTRhbTR4ZEQ1bzZXSHZjQmhQb3hjMS1ITGxuSVlSaE1qQWNvamJsNDNPZTU4RlBZdlZaNXoyVXdDWTVzTjJFaDZ1SjdHSzhJaXFDUG41NGFKN0FDWTVRQjVpQUtxbGV5X1dwRzN0Y2MtY2ZpVmVEZTB6UUFjRzNGTEZZWU5zMngwdw?oc=5",
-          "source": "NPR"
-        }
-      ],
-      "title": "How OpenAI’s Performance Factory keeps ChatGPT fast",
+      "title": "Anthropic mathematician claims to prove Riemann hypothesis, most famous problem in all of math - Scientific American",
       "field": "ai"
     }
   ]

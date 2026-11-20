@@ -13,11 +13,40 @@
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Amazon says Chinese hackers used Cairn AI tool to discover apparent zero-day during attack on university"
+      "title": "CVE-2026-129448 Apache Roller Deserialization of Untrusted Data Vulnerability"
     },
     {
       "note": "New since 2026-11-13 · now ALERT",
       "related": 2,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "sourceCount": 1,
+      "title": "CVE-2026-123890 Broadcom VMWare vCenter Authentication Bypass Using an Alternate Path or Channel Vulnerability"
+    },
+    {
+      "note": "New since 2026-11-13 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "CVE-2025-42884 SAP NetWeaver Improper Neutralization of Special Elements in Data Query Logic Vulnerability"
+    },
+    {
+      "note": "New since 2026-11-13 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "CVE-2026-76466 Cisco Expressway Series Use of Hard-coded Credentials Vulnerability"
+    },
+    {
+      "note": "New since 2026-11-13 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "Amazon says Chinese hackers used Cairn AI tool to discover apparent zero-day during attack on university"
+    },
+    {
+      "note": "New since 2026-11-13 · now ALERT",
+      "related": 1,
       "relatedSources": [],
       "severity": "ALERT",
       "sourceCount": 1,
@@ -35,30 +64,7 @@
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Chase bank issues warning to customers of cyberattack, data breach - NewsNation"
-    },
-    {
-      "note": "New since 2026-11-13 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
       "title": "CVE-2024-10441 Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability"
-    },
-    {
-      "note": "New since 2026-11-13 · now ALERT",
-      "related": 1,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "sourceCount": 1,
-      "title": "CVE-2026-40217 BerriAI LiteLLM Unprotected Alternate Channel Vulnerability"
-    },
-    {
-      "note": "New since 2026-11-13 · now ALERT",
-      "related": 1,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "sourceCount": 1,
-      "title": "CVE-2026-90817 Vanderbilt University Research Electronic Data Capture (REDCap) Code Injection Vulnerability"
     },
     {
       "note": "STANDBY → ALERT since 2026-11-13",
@@ -68,18 +74,11 @@
       "title": "Deadly mass shooting in Poland investigated as terror act, prosecutor says - ABC News - Breaking News, Latest News and Videos"
     },
     {
-      "note": "STANDBY → ALERT since 2026-11-13",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "Eight killed in Ukraine as Russia hits back after Crimea bridge attacks - Reuters"
-    },
-    {
       "note": "New since 2026-11-13 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Putin Exits Summit With Symbolic Win, Saying He and Trump Share ‘Values’ - The New York Times"
+      "title": "Trump, Xi and Putin Seek to Project Power at Their First Summit - The New York Times"
     },
     {
       "note": "New since 2026-11-13 · now ALERT",
@@ -151,13 +150,6 @@
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Ukraine claims record 3,000 Russian casualties in one day as war drags on - Al Jazeera"
-    },
-    {
-      "note": "On the board 2026-11-13 at ALERT, absent now.",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
       "title": "Rubio Says ‘Major Combat Operations’ in Iran Are No Longer Needed - The New York Times"
     },
     {
@@ -166,6 +158,13 @@
       "relatedSources": [],
       "severity": "STANDBY",
       "title": "Earthquake in Southeast Of Loyalty Islands"
+    },
+    {
+      "note": "ALERT → STANDBY since 2026-11-13",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "STANDBY",
+      "title": "Ukraine claims record 3,000 Russian casualties in one day as war drags on - Al Jazeera"
     },
     {
       "note": "ALERT → STANDBY since 2026-11-13",
@@ -188,11 +187,40 @@
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Amazon says Chinese hackers used Cairn AI tool to discover apparent zero-day during attack on university"
+      "title": "CVE-2026-129448 Apache Roller Deserialization of Untrusted Data Vulnerability"
     },
     {
       "note": "New since 2026-11-13 · now ALERT",
       "related": 2,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "sourceCount": 1,
+      "title": "CVE-2026-123890 Broadcom VMWare vCenter Authentication Bypass Using an Alternate Path or Channel Vulnerability"
+    },
+    {
+      "note": "New since 2026-11-13 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "CVE-2025-42884 SAP NetWeaver Improper Neutralization of Special Elements in Data Query Logic Vulnerability"
+    },
+    {
+      "note": "New since 2026-11-13 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "CVE-2026-76466 Cisco Expressway Series Use of Hard-coded Credentials Vulnerability"
+    },
+    {
+      "note": "New since 2026-11-13 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "Amazon says Chinese hackers used Cairn AI tool to discover apparent zero-day during attack on university"
+    },
+    {
+      "note": "New since 2026-11-13 · now ALERT",
+      "related": 1,
       "relatedSources": [],
       "severity": "ALERT",
       "sourceCount": 1,
@@ -210,30 +238,7 @@
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Chase bank issues warning to customers of cyberattack, data breach - NewsNation"
-    },
-    {
-      "note": "New since 2026-11-13 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
       "title": "CVE-2024-10441 Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability"
-    },
-    {
-      "note": "New since 2026-11-13 · now ALERT",
-      "related": 1,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "sourceCount": 1,
-      "title": "CVE-2026-40217 BerriAI LiteLLM Unprotected Alternate Channel Vulnerability"
-    },
-    {
-      "note": "New since 2026-11-13 · now ALERT",
-      "related": 1,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "sourceCount": 1,
-      "title": "CVE-2026-90817 Vanderbilt University Research Electronic Data Capture (REDCap) Code Injection Vulnerability"
     },
     {
       "note": "STANDBY → ALERT since 2026-11-13",
@@ -243,18 +248,11 @@
       "title": "Deadly mass shooting in Poland investigated as terror act, prosecutor says - ABC News - Breaking News, Latest News and Videos"
     },
     {
-      "note": "STANDBY → ALERT since 2026-11-13",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "Eight killed in Ukraine as Russia hits back after Crimea bridge attacks - Reuters"
-    },
-    {
       "note": "New since 2026-11-13 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Putin Exits Summit With Symbolic Win, Saying He and Trump Share ‘Values’ - The New York Times"
+      "title": "Trump, Xi and Putin Seek to Project Power at Their First Summit - The New York Times"
     },
     {
       "note": "New since 2026-11-13 · now ALERT",

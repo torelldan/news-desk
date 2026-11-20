@@ -1,7 +1,8 @@
 {
   "gaps": [
     "Power_TN row hidden (2025-10-06, affected 0, served 0).",
-    "1 ended road projects hidden."
+    "1 ended road projects hidden.",
+    "TEMA: curl: (22) The requested URL returned error: 403\n"
   ],
   "items": [
     {
@@ -10,10 +11,10 @@
       "date": "2026-11-20",
       "id": "local-nws-none",
       "kind": "nws",
-      "label": "Nov 20, 2026 11:41 AM CT",
+      "label": "Nov 20, 2026 2:02 PM CT",
       "lane": "local",
       "note": "api.weather.gov answered for 35.802,-86.907 and returned no alerts.",
-      "published": "2026-11-20T11:41:40-06:00",
+      "published": "2026-11-20T14:02:00-06:00",
       "severity": "STANDBY",
       "soWhat": "",
       "source": "NWS",
@@ -26,27 +27,6 @@
       "url": "https://api.weather.gov/alerts/active?point=35.802,-86.907"
     },
     {
-      "action": "Read the source. No kit change unless you are in the named area.",
-      "confidence": "reported",
-      "date": "2026-11-20",
-      "id": "local-road:d3cdeffeed3a053f",
-      "kind": "road",
-      "label": "2026-11-20",
-      "lane": "local",
-      "note": "Multi-Vehicle Crash",
-      "published": "2026-11-20T11:41:40-06:00",
-      "severity": "ALERT",
-      "soWhat": "no action needed",
-      "source": "TDOT SmartWay",
-      "sourceCount": 1,
-      "tags": [
-        "tennessee",
-        "williamson"
-      ],
-      "title": "Interstate 40 WB in Williamson County - near MILE MARKER 181.2 Multi-Vehicle Crash reported at 11/20/2026 11:25 AM (CT). WB left lane (of 2 lanes) blocked, left shoulder blocked. T",
-      "url": "https://smartway.tn.gov/"
-    },
-    {
       "action": "no action needed",
       "confidence": "reported",
       "date": "2026-11-16",
@@ -55,7 +35,7 @@
       "label": "2026-11-16",
       "lane": "local",
       "note": "Other Construction",
-      "published": "2026-11-20T11:41:40-06:00",
+      "published": "2026-11-20T14:02:00-06:00",
       "severity": "STANDBY",
       "soWhat": "",
       "source": "TDOT SmartWay",
@@ -76,7 +56,7 @@
       "label": "2026-11-16",
       "lane": "local",
       "note": "Resurfacing",
-      "published": "2026-11-20T11:41:40-06:00",
+      "published": "2026-11-20T14:02:00-06:00",
       "severity": "STANDBY",
       "soWhat": "",
       "source": "TDOT SmartWay",
@@ -97,7 +77,7 @@
       "label": "2026-11-16",
       "lane": "local",
       "note": "Resurfacing",
-      "published": "2026-11-20T11:41:40-06:00",
+      "published": "2026-11-20T14:02:00-06:00",
       "severity": "STANDBY",
       "soWhat": "",
       "source": "TDOT SmartWay",
@@ -108,27 +88,6 @@
       ],
       "title": "Interstate 65 NB in Williamson County - between MILE MARKER 59.8 and MILE MARKER 66.2 Resurfacing may cause delays Sun 11/15/2026 through Sun 11/22/2026 from 8:00 PM to 5:00 AM (CT",
       "url": "https://smartway.tn.gov/"
-    },
-    {
-      "action": "no action needed",
-      "confidence": "reported",
-      "date": "2026-11-20",
-      "id": "local-tema:d04439d9c3f503fc",
-      "kind": "tema",
-      "label": "Nov 20, 2026",
-      "lane": "local",
-      "note": "TEMA news release, Nov 20, 2026. Polk County. Not a Williamson County / 37179 notice.",
-      "published": "2026-11-20T12:00:00-06:00",
-      "severity": "STANDBY",
-      "soWhat": "",
-      "source": "TEMA",
-      "sourceCount": 1,
-      "tags": [
-        "tennessee",
-        "polk"
-      ],
-      "title": "Tennessee Opens Polk County Flood Recovery Assistance Applications",
-      "url": "https://www.tn.gov/tema/news/2026/11/20/tennessee-opens-polk-county-flood-recovery-assistance-applications.html"
     }
   ],
   "place": "Thompson's Station / Williamson County / Middle Tennessee (37179)"
