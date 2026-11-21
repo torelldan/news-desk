@@ -103,7 +103,7 @@
       "assetId": "dxy",
       "category": "g7",
       "days": 30,
-      "eventDays": 1,
+      "eventDays": 0,
       "r": null,
       "read": {
         "call": "n/a",
@@ -257,7 +257,7 @@
       "assetId": "dxy",
       "category": "g7",
       "days": 90,
-      "eventDays": 1,
+      "eventDays": 0,
       "r": null,
       "read": {
         "call": "n/a",
@@ -411,7 +411,7 @@
       "assetId": "gold",
       "category": "g7",
       "days": 30,
-      "eventDays": 1,
+      "eventDays": 0,
       "r": null,
       "read": {
         "call": "n/a",
@@ -565,7 +565,7 @@
       "assetId": "gold",
       "category": "g7",
       "days": 90,
-      "eventDays": 1,
+      "eventDays": 0,
       "r": null,
       "read": {
         "call": "n/a",
@@ -719,7 +719,7 @@
       "assetId": "silver",
       "category": "g7",
       "days": 30,
-      "eventDays": 1,
+      "eventDays": 0,
       "r": null,
       "read": {
         "call": "n/a",
@@ -873,7 +873,7 @@
       "assetId": "silver",
       "category": "g7",
       "days": 90,
-      "eventDays": 1,
+      "eventDays": 0,
       "r": null,
       "read": {
         "call": "n/a",
@@ -2810,7 +2810,7 @@
           "id": "btc",
           "m1": -3.25,
           "name": "BTC",
-          "p1": -1.6,
+          "p1": -2.05,
           "p3": null,
           "source": "https://www.coingecko.com/en/coins/bitcoin"
         },
@@ -2818,7 +2818,7 @@
           "id": "eth",
           "m1": -4.08,
           "name": "ETH",
-          "p1": -1.41,
+          "p1": -2.51,
           "p3": null,
           "source": "https://www.coingecko.com/en/coins/ethereum"
         }
@@ -2865,6 +2865,40 @@
       "title": "Internet services disrupted across Pakistan due to undersea cable fault - Daily Ausaf",
       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQY25MT1kwVXhudUk1UlNybEpEa0lmNERtMFRkLXVOOGFqUjJ3VWVpb2hNakMxZmFUVVdGSGRvYUZvWnA0RVZkMWk0d19FRk1pUVNzQTN0cE5ET2hnRkNYYzdkQThxbWN1R05DdEpncFBkNzlEMnlRZHNMaUVjSUdNdFZmRTNEMkRFLThpdXF1cFlVYlJ5Q3NIYjdiRkNMN09EanBfa1h4SHlmd0HSAbABQVVfeXFMUFU0ZDJkZjE0YlNKREs1Y0pvUWQ1ZVVhZjUydERkNVFTTERPLWVucDRObFFBRGdScEh1UWtsSFBhX3BoRjhmck9YRko0azlQNDhMRkc0YXdQSzBoakEwa0lMRU1ZeGJ3Yl9Qc1gzVHFGeTJBbU9RUVZlVGVOYm9uWFI5VHRMTkZMVFZFUmFJZzNDVER0cUU1d2JEOXpUS3E5TV9kaERYUWVfRFNXbE0tXzc?oc=5",
       "weekday": "Thu"
+    },
+    {
+      "asset": "pipeline",
+      "cause": "unconfirmed",
+      "date": "2026-11-18",
+      "guest": "",
+      "id": "infra:c6296b28f4391883",
+      "kind": "infra",
+      "label": "Nov 18, 2026 8:00 PM CT",
+      "lane": "threat",
+      "links": [
+        {
+          "source": "ET Telecom",
+          "title": "Hong Kong drops charge against captain over Baltic pipeline damage - ET Telecom",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPN240TnpuWGk3TzNsekdZTW1YRDBWM3FIZzNiZ1NpZWxoR3IyUkctZzByeC14YS1PQTlDUzVTY2ZNM3dKc0dtMU1JM1d1YWp1ekR2cmpTNWx0UmdTSDB0V280RlhwbnZqeG9pY2kzdHJMcHVZd3drcUVScUZyZV8zWmNId21yVXczWHhqSEhGRDJsTndLTUJLQ2ttTlU0NFhoMnlfSXRQRXVGSkhCSDFicVJkZVZ6T2swUXozUktsYWJtOXdHLWVjX3BISTFFRnhh0gHWAUFVX3lxTE54RElteDF0bEFSd0hEczAzSnh4a2VHNjdkejlfTGJldTdZVS1GNXlQWHFreWFHY1Zfb0xDZTNPSmluLVRsaGhiNUF4VHJXWUJFcS1NaHNWU2VLUzZmejRtaW5zWUdJNk5QTndlUi0wbjZtYVVCUlBPblRaUGM5OElicjJLQzFYbjFNaHlzREIwNnNsSG11THYteUZNRUhVZTYyVFZsWnBPTkZRYXRRckthalgtdFFPSTU2ZFBnWkJRYjFnVkpyc1J4QnhNTjdYemE5V1drREE?oc=5"
+        }
+      ],
+      "market": "Brent -3.41% over 5 days · TTF -2.75% over 5 days",
+      "note": "Brent -3.41% over 5 days · TTF -2.75% over 5 days",
+      "open": true,
+      "published": "2026-11-18T20:00:29-06:00",
+      "region": "Baltic Sea",
+      "severity": "STANDBY",
+      "source": "ET Telecom",
+      "sourceCount": 1,
+      "sourceId": "infra",
+      "tags": [
+        "infra",
+        "standby"
+      ],
+      "timeKnown": true,
+      "title": "Hong Kong drops charge against captain over Baltic pipeline damage - ET Telecom",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPN240TnpuWGk3TzNsekdZTW1YRDBWM3FIZzNiZ1NpZWxoR3IyUkctZzByeC14YS1PQTlDUzVTY2ZNM3dKc0dtMU1JM1d1YWp1ekR2cmpTNWx0UmdTSDB0V280RlhwbnZqeG9pY2kzdHJMcHVZd3drcUVScUZyZV8zWmNId21yVXczWHhqSEhGRDJsTndLTUJLQ2ttTlU0NFhoMnlfSXRQRXVGSkhCSDFicVJkZVZ6T2swUXozUktsYWJtOXdHLWVjX3BISTFFRnhh0gHWAUFVX3lxTE54RElteDF0bEFSd0hEczAzSnh4a2VHNjdkejlfTGJldTdZVS1GNXlQWHFreWFHY1Zfb0xDZTNPSmluLVRsaGhiNUF4VHJXWUJFcS1NaHNWU2VLUzZmejRtaW5zWUdJNk5QTndlUi0wbjZtYVVCUlBPblRaUGM5OElicjJLQzFYbjFNaHlzREIwNnNsSG11THYteUZNRUhVZTYyVFZsWnBPTkZRYXRRckthalgtdFFPSTU2ZFBnWkJRYjFnVkpyc1J4QnhNTjdYemE5V1drREE?oc=5",
+      "weekday": "Wed"
     }
   ],
   "infraGaps": [

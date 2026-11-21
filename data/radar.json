@@ -6,7 +6,6 @@
       "date": "2026-11-18",
       "drivers": [
         "officials",
-        "press",
         "social"
       ],
       "followThrough": [
@@ -41,14 +40,14 @@
           "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNeXVycmt5MEZ1eHdId2FOTjdKR2UxQUlRaEc1b3RESWI2WFpjQjBhaV9EVkFPQXpRVDFGaE40TzQxS21mMDdaWTFnUHRsTFVVY3o5UVZrOWFxMUdSdURhLXBRZDM1MUJKYk5xSlFzbXBqTVRYb1o0TTJoM3F0dFFrSUJuQkEtc3RKa1BpbThmWmlnTDRzbWlOQQ?oc=5"
         }
       ],
-      "score": 100,
+      "score": 96,
       "severity": "ALERT",
       "soWhat": "no action needed",
       "source": "International Atomic Energy Agency",
       "sourceCount": 8,
       "title": "US and Europe preparedness surge",
       "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQd1NiOHpJRW8wOThvTnZFM0pOYXRJSnJpVWhfY1pBOXpLUm5PVUhvbHBrek51c3BZUmdxa093NGQxZEpIZnlyb0dwdE8waU5DbXZKN2RPYXFRbE96Nzdtb1BYU2ZmZWg5OUtnVG9iOGpaWGFnbGhibTNhN29rYmdmU2g1WjFwZFZHR2FNZ2JURkxMNDY0Z3JDWl9WVDAxbV8ydy0tQ2tkcFcxSm5paVIwaWQ3MU92dzVXTnlwRE5WMDloMS02SFItT3lB?oc=5",
-      "velocity": "fast"
+      "velocity": "building"
     },
     {
       "call": "real",
@@ -103,31 +102,31 @@
     {
       "call": "real",
       "confidence": "confirmed",
-      "date": "2026-11-17",
+      "date": "2026-10-27",
       "drivers": [
         "officials",
         "social"
       ],
       "followThrough": [
-        "legislation"
+        "official step"
       ],
       "id": "radar:39da30b683ff4744",
       "kind": "radar",
-      "label": "Nov 17, 2026 4:05 PM CT",
+      "label": "Oct 27, 2026 2:00 AM CT",
       "lane": "news",
-      "note": "TCS Letter on FEMA Mission Readiness Ahead of November 19 Hearing - Taxpayers for Common Sense",
-      "published": "2026-11-17T16:05:31-06:00",
+      "note": "FEMA Memo Shifts Disaster Recovery Responsibility to States - GovTech",
+      "published": "2026-10-27T02:00:00-05:00",
       "read": "An official body acted or is named in the sources: an agency, a budget, a law, or a procurement step. That is follow-through.",
       "samples": [
-        {
-          "source": "Taxpayers for Common Sense",
-          "title": "TCS Letter on FEMA Mission Readiness Ahead of November 19 Hearing - Taxpayers for Common Sense",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPSWl0dmlubnRZcjZZZ05yWWhrQWVOMjR5SzNQWndKYW1NV2djOW5iel9nV1lfODQ0OE9UbVJyZEp3ZkU5b1c5LUk1ZGYtWmZ5YW90bXhqMzVSQjZtN2ZjSndyT0tyaE5nQnRFcmtFakVWT0J5Wm9RU3llVzNhOENhYTdWREptWURTOGZucjBIUl9fd3FncUhOQ2gwYjJ3QkFjZjVqS3ltbU9BZXpCaFZmN0JZeFRVbkdM?oc=5"
-        },
         {
           "source": "GovTech",
           "title": "FEMA Memo Shifts Disaster Recovery Responsibility to States - GovTech",
           "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQeUFnXzllUG9EbHVYNWpkdWF3a2s2UlpJbFF3YkFvakM2bFVVcTlyM2djcVdOOXFlVUN4NzBaaDdCN3JvY1djcVZSc1lBZHhXLVRxTlU0UEhFbFZjbDJfUkpvWWluQlRzUVZXN2hTM3BaM21ITU9Nd19HQlNVUUY4YVNsX0pHY1FWdXRGM0tVcDc3eVVpOUpJc3NiOA?oc=5"
+        },
+        {
+          "source": "Taxpayers for Common Sense",
+          "title": "TCS Letter on FEMA Mission Readiness Ahead of November 19 Hearing - Taxpayers for Common Sense",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPSWl0dmlubnRZcjZZZ05yWWhrQWVOMjR5SzNQWndKYW1NV2djOW5iel9nV1lfODQ0OE9UbVJyZEp3ZkU5b1c5LUk1ZGYtWmZ5YW90bXhqMzVSQjZtN2ZjSndyT0tyaE5nQnRFcmtFakVWT0J5Wm9RU3llVzNhOENhYTdWREptWURTOGZucjBIUl9fd3FncUhOQ2gwYjJ3QkFjZjVqS3ltbU9BZXpCaFZmN0JZeFRVbkdM?oc=5"
         },
         {
           "source": "Time Magazine",
@@ -135,18 +134,18 @@
           "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPRTZpZHM4MXNod2N6WTNlSlA5bXJBMm9oNEw2VjVnRlVMRmhPNjhXOHpqWWhYNU1KRkNQV2l2Y3M1WTJWVnIyaE5ZdEVfek9xWE9LQ29QQWIxcmpKcDNSNXJvM2MzVkY3bnNWdXNLT1ZHT1o2Vk5jX25CbjdlRnlvd192OHBicll6RGsyQmZjUm9TM2tjS2tVWnc0X041VFYyQVE?oc=5"
         },
         {
-          "source": "American Press",
-          "title": "Editorial: FEMA’s future role is still undecided - American Press",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQc09yTWNvUFB3S0xMZmlCQzl1MFJDcWozcWxLeFNWSUFTcXVGMXdndEtFdEQxZXlubV9nVkM5cFh5M1VJWndCS1ZZLUh5clZPMkZIMzhJejFYV3dvMGV5Sjc1b2Y2V21oYWszTmthMHJGMUtQcjdhVkZwbUozcHp0ZThISUlwaDhVUERDUA?oc=5"
+          "source": "Hogan Lovells Cadwalader",
+          "title": "Counter-UAS funding goes nationwide: Key takeaways from FEMA’s FY 2027 C-UAS Grant Program - Hogan Lovells Cadwalader",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOUHFTSmVBN181UDc5RHI2RnREYy1hdmhNN1p5SFFMNjVYME5KLTZWMGEyb1pMQTZuSVNBLXBMc2l0Q1dUTXRSVWh1OXBFQW92RXM3SWJXWnhiaThPc051OGF2TG9taGNhYmQ2VmRubGZZZzItcUdoZnkySmVYelF0MllYaHdWNjhMdjdKZjQ4aTdUQ3dlbzZkcmgyUG9FNTZ1VjZicUF6ZjhGOFVibXMtSllfbDRxSXNrYUIwWHF0bw?oc=5"
         }
       ],
-      "score": 83,
+      "score": 88,
       "severity": "ALERT",
       "soWhat": "no action needed",
-      "source": "Taxpayers for Common Sense",
+      "source": "GovTech",
       "sourceCount": 8,
       "title": "Official follow-through",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPSWl0dmlubnRZcjZZZ05yWWhrQWVOMjR5SzNQWndKYW1NV2djOW5iel9nV1lfODQ0OE9UbVJyZEp3ZkU5b1c5LUk1ZGYtWmZ5YW90bXhqMzVSQjZtN2ZjSndyT0tyaE5nQnRFcmtFakVWT0J5Wm9RU3llVzNhOENhYTdWREptWURTOGZucjBIUl9fd3FncUhOQ2gwYjJ3QkFjZjVqS3ltbU9BZXpCaFZmN0JZeFRVbkdM?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQeUFnXzllUG9EbHVYNWpkdWF3a2s2UlpJbFF3YkFvakM2bFVVcTlyM2djcVdOOXFlVUN4NzBaaDdCN3JvY1djcVZSc1lBZHhXLVRxTlU0UEhFbFZjbDJfUkpvWWluQlRzUVZXN2hTM3BaM21ITU9Nd19HQlNVUUY4YVNsX0pHY1FWdXRGM0tVcDc3eVVpOUpJc3NiOA?oc=5",
       "velocity": "slow"
     }
   ],

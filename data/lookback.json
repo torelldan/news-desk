@@ -39,10 +39,9 @@
     },
     {
       "note": "New since 2026-11-14 · now ALERT",
-      "related": 1,
+      "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "sourceCount": 1,
       "title": "CVE-2026-123890 Broadcom VMWare vCenter Authentication Bypass Using an Alternate Path or Channel Vulnerability"
     },
     {
@@ -78,14 +77,14 @@
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "CVE-2024-10441 Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability"
+      "title": "Eight killed in Ukraine as Russia hits back after Crimea bridge attacks - Reuters"
     },
     {
-      "note": "STANDBY → ALERT since 2026-11-14",
+      "note": "New since 2026-11-14 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Deadly mass shooting in Poland investigated as terror act, prosecutor says - ABC News - Breaking News, Latest News and Videos"
+      "title": "As Trump basks in summit pomp, China's Xi strengthens his hand - Reuters"
     }
   ],
   "fizzled": [
@@ -130,13 +129,6 @@
       "relatedSources": [],
       "severity": "ALERT",
       "title": "With shifting Iran rhetoric following U.S. elections, Trump leaves Middle East in limbo about path ahead - PBS"
-    },
-    {
-      "note": "ALERT → STANDBY since 2026-11-14",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "STANDBY",
-      "title": "UN chief urges drastic emissions cuts as COP31 wrestles with fossil fuels - Reuters"
     }
   ],
   "newSince": [
@@ -178,10 +170,9 @@
     },
     {
       "note": "New since 2026-11-14 · now ALERT",
-      "related": 1,
+      "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "sourceCount": 1,
       "title": "CVE-2026-123890 Broadcom VMWare vCenter Authentication Bypass Using an Alternate Path or Channel Vulnerability"
     },
     {
@@ -217,14 +208,14 @@
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "CVE-2024-10441 Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability"
+      "title": "Eight killed in Ukraine as Russia hits back after Crimea bridge attacks - Reuters"
     },
     {
-      "note": "STANDBY → ALERT since 2026-11-14",
+      "note": "New since 2026-11-14 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Deadly mass shooting in Poland investigated as terror act, prosecutor says - ABC News - Breaking News, Latest News and Videos"
+      "title": "As Trump basks in summit pomp, China's Xi strengthens his hand - Reuters"
     }
   ],
   "note": "Compared with the stored board on 2026-11-14.",

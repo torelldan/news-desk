@@ -1764,24 +1764,14 @@
       "topic": "windstorm"
     },
     {
-      "count": 4,
+      "count": 3,
       "countries": 1,
       "date": "2026-11-21",
       "keywords": [],
-      "outlets": 4,
+      "outlets": 3,
       "score": 0,
       "severity": "ALERT",
       "topic": "attack"
-    },
-    {
-      "count": 1,
-      "countries": 1,
-      "date": "2026-11-21",
-      "keywords": [],
-      "outlets": 1,
-      "score": 0,
-      "severity": "STANDBY",
-      "topic": "climate"
     },
     {
       "count": 1,
@@ -1824,21 +1814,21 @@
       "topic": "gdacs"
     },
     {
-      "count": 2,
+      "count": 5,
       "countries": 1,
       "date": "2026-11-21",
       "keywords": [],
-      "outlets": 2,
+      "outlets": 5,
       "score": 0,
       "severity": "ALERT",
       "topic": "global"
     },
     {
-      "count": 1,
+      "count": 2,
       "countries": 1,
       "date": "2026-11-21",
       "keywords": [],
-      "outlets": 1,
+      "outlets": 2,
       "score": 0,
       "severity": "ALERT",
       "topic": "infra"
@@ -1864,11 +1854,11 @@
       "topic": "neo"
     },
     {
-      "count": 16,
+      "count": 17,
       "countries": 1,
       "date": "2026-11-21",
       "keywords": [],
-      "outlets": 16,
+      "outlets": 17,
       "score": 0,
       "severity": "ACTION",
       "topic": "quake"
@@ -1910,7 +1900,7 @@
       "keywords": [],
       "outlets": 4,
       "score": 0,
-      "severity": "STANDBY",
+      "severity": "ALERT",
       "topic": "war-ukraine"
     },
     {
@@ -3986,24 +3976,14 @@
       "topic": "windstorm"
     },
     {
-      "count": 4,
+      "count": 3,
       "countries": 1,
       "date": "2026-11-21",
       "keywords": [],
-      "outlets": 4,
+      "outlets": 3,
       "score": 0,
       "severity": "ALERT",
       "topic": "attack"
-    },
-    {
-      "count": 1,
-      "countries": 1,
-      "date": "2026-11-21",
-      "keywords": [],
-      "outlets": 1,
-      "score": 0,
-      "severity": "STANDBY",
-      "topic": "climate"
     },
     {
       "count": 1,
@@ -4046,21 +4026,21 @@
       "topic": "gdacs"
     },
     {
-      "count": 2,
+      "count": 5,
       "countries": 1,
       "date": "2026-11-21",
       "keywords": [],
-      "outlets": 2,
+      "outlets": 5,
       "score": 0,
       "severity": "ALERT",
       "topic": "global"
     },
     {
-      "count": 1,
+      "count": 2,
       "countries": 1,
       "date": "2026-11-21",
       "keywords": [],
-      "outlets": 1,
+      "outlets": 2,
       "score": 0,
       "severity": "ALERT",
       "topic": "infra"
@@ -4086,11 +4066,11 @@
       "topic": "neo"
     },
     {
-      "count": 16,
+      "count": 17,
       "countries": 1,
       "date": "2026-11-21",
       "keywords": [],
-      "outlets": 16,
+      "outlets": 17,
       "score": 0,
       "severity": "ACTION",
       "topic": "quake"
@@ -4132,7 +4112,7 @@
       "keywords": [],
       "outlets": 4,
       "score": 0,
-      "severity": "STANDBY",
+      "severity": "ALERT",
       "topic": "war-ukraine"
     },
     {

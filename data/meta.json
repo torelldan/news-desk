@@ -1,8 +1,8 @@
 {
   "baseline": false,
-  "brief": "The stock tape is the story: the S&P 500 is -3.7% today. What to do: no action unless you need cash this week. Open risk: ACTION M6.7 9 km NE of Carhuamayo, Peru. Global: Xi, Putin blast Western 'protectionism' and sanctions as Trump lands in China - Reuters. Infrastructure: Internet services disrupted across Pakistan due to undersea cable fault - Daily Ausaf (unconfirmed). Rising topic: ukraine war (4 outlets this window).",
-  "checkedAt": "2026-11-21T07:49:07-06:00",
-  "checkedLabel": "Nov 21, 2026 7:49 AM CT",
+  "brief": "The stock tape is the story: the S&P 500 is -3.7% today. What to do: no action unless you need cash this week. Open risk: ACTION M6.7 9 km NE of Carhuamayo, Peru. Current war coverage is on the board: Eight killed in Ukraine as Russia hits back after Crimea bridge attacks - Reuters. Global: Fossil fuel talks deadlock pushes COP31 climate summit into overtime - Al Jazeera. Infrastructure: Internet services disrupted across Pakistan due to undersea cable fault - Daily Ausaf (unconfirmed).",
+  "checkedAt": "2026-11-21T13:33:42-06:00",
+  "checkedLabel": "Nov 21, 2026 1:33 PM CT",
   "errors": [
     "AP World: curl: (22) The requested URL returned error: 403\n",
     "Reuters World: curl: (22) The requested URL returned error: 401\n",
@@ -35,38 +35,38 @@
         "state": "EVENT",
         "title": "Combatting adversarial distillation - OpenAI",
         "topic": "OpenAI"
-      },
-      {
-        "field": "ai",
-        "links": [
-          {
-            "source": "Google AI blog",
-            "title": "Introducing Tool Retrieval in the Gemini API",
-            "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/"
-          },
-          {
-            "source": "DeepMind",
-            "title": "Introducing Gemini 4 Neon",
-            "url": "https://deepmind.google/blog/introducing-gemini-4-neon/"
-          },
-          {
-            "source": "Google AI blog",
-            "title": "The Gemini app is now available on lower-memory Android devices.",
-            "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/"
-          },
-          {
-            "source": "Google AI blog",
-            "title": "Put Gemini to work for you",
-            "url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/"
-          }
-        ],
-        "outlets": 2,
-        "state": "EVENT",
-        "title": "Introducing Tool Retrieval in the Gemini API",
-        "topic": "Gemini"
       }
     ],
     "markets": [
+      {
+        "links": [
+          {
+            "source": "Oherald",
+            "title": "Trump Accuses the Federal Reserve of Political Bias Over High Interest Rates - Oherald",
+            "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOQzczUEd4RGRUMGpVbVNIeEZLb0NMUWN1UXd2dGVOY3VIX1ZsdW9xLU9IV2g4S0I2SEs2TmJJYmp1Znl3cWZJV0tYZW8ydUtEejhZTUtCR0I0NUxLa1Jia2tOWE00NE1zQS1xdUJHdnFnMElkcHlET01Vc2QtcS1qM2k5dUVrcU9zR0hWV3hyRjRacmtxa0oteENlcnRQYy1NdjN6NHltT3VFY0dCR21EQVQtWQ?oc=5"
+          },
+          {
+            "source": "NKTV",
+            "title": "Trump Praises India’s Economic Growth, Targets Federal Reserve Over Interest Rate Policy - NKTV",
+            "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNLU14OXoxX3hzUUk3LV8wRE95VTc0MllEY2RjNG5NTjVBWXJDeEtldWdweTE3STBhUDhBbU5fMGxza2R0RUI2TEN2VVFaWUduSmR2NHR5aUVlSjdZRnRWMU1pMzd6OG9CajFiSzZ2VFExM2hBQVlabFR2c3lRRmNabzVxM2xqV1hJZDdHbGNFbGREYVEzSVU2M2dwQ2oyczM5bFVTRUg5enRvT0E?oc=5"
+          },
+          {
+            "source": "NewsBytes",
+            "title": "'India has low-interest rates, 7% GDP': Trump slams Federal Reserve - NewsBytes",
+            "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOeHVqNk5DQXZQQThOMU9nc0M2bTFMOXhFdVA5UkphZmI4LWdkUFRnVWRNVlVTREQydmRTdkFhZTdJNDdzOFpZUHR1U3JKUFhkV0p3M0l0NlR0REtFNm1pV1ZEcjhMQW95Tzl0T3VZdUhHVFEyWHZET2FFdVBUeVJETVAxZFhPSmRTVWl4eS1icDQzY3hqcnc?oc=5"
+          },
+          {
+            "source": "India Today",
+            "title": "Comparing India and US economic growth amid Federal Reserve interest rate concerns - India Today - India Today",
+            "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOQjQ4ZmRNdVZMM1IxYmk5enV5aGwyem9MWm9mb1pqSi1Ud1loWnMydHRENjVreUxtd3hKOUNBSVotOXRaUGVCQVd1OEkyNV9uYUxGUGlVdmxudGZnaGItNU0tcndPWUkwYjVuMnZXbGxtVW9tZnNDN0VIUFZ0ZE5OZF8zZE9uem1PblhTakplOVg0NzIyM0tLWlNQQnota0FkaWpWR2ZiSzJKQmE5R3dWWDRXZFhST2xOR0E0blZXR2tJY2NvU2fSAcsBQVVfeXFMUElpX0xzUmhOc3VVd3FoN0NyZzNhZ1FoekFJWlM3YWVLb0ZTanhtQUo1LXZTaGRSa095OUdfVWNEbEw3Y3Zvd3dfNDZXSUtHQng5NWxESVFNaFhGTDA5WEtzdDRVMmJuak9HQkdtSkl5UFRYc3lfVl9yV21mOVM2NHNzZWxTU2s1YVZIdXVTcWhEM1pySkk1ZWZPOHAxMDAtdUlFMzZCbndHc1lMeExfcHJfaDhRWWhpMVQ5U2tjUzl5cmZESjVXenJxaUU?oc=5"
+          }
+        ],
+        "outlets": 10,
+        "region": "USA",
+        "state": "RISING",
+        "title": "Trump Accuses the Federal Reserve of Political Bias Over High Interest Rates - Oherald",
+        "topic": "Federal Reserve"
+      },
       {
         "links": [
           {
@@ -90,40 +90,11 @@
             "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOcnJPRmxjeGVyOWs5VXhKNHVyVk55Skt5RHFfR2tqbEVOMlNEelpPVlBhX1NoTFV0NlZEaV9iQXFnRkR1NFNUQmFzbno2b1lJX2xUcTJOQTQ3VWFMYnZmVm9LSFJTTnl6SkpSclJXelc4SG94RDVscDVYTnRJVm92Z0hvTXZnWHNLNlE2Q1F1Q2xnS1MwNWRYdWZmb1Q1eXdsLVl3OHJoMi1sN3hLeWFQRGpySlM4bU1OQ1FNZkdWYVI2eG1zX1Z0REhvVzVOdVJZREwyNXl1TdIB3AFBVV95cUxNLWpGT3RjRzZQdDJ1RExEczBWVHpCaGE3SmZFWTNmSzgwVkgtMFpaSFNhOXYxSFpkdngyY3otWGpkVU9ObEJId054UkpnZW8zdkQyNmd2Ym5IZVJJcS1POWFnNVJhc2hmUU9HOWV4OWlfNVhqXzdJWlJORXU5RjRac3psV2JVbnhxbmNVN2dwVGhMVGxQd05yVEdCYXhIMmxRU2tPRmdJZkMxLUdvUVo2VkhJaUZUeDVGTVhoeF9iS1R6RUxlZk1vaW54SU54dmJodGRZVWpCTkptNkh4?oc=5"
           }
         ],
-        "outlets": 10,
+        "outlets": 9,
         "region": "USA",
         "state": "RISING",
         "title": "‘Look at India’: Trump says US could achieve 20% GDP growth with lower interest rates - Livemint",
         "topic": "interest rates"
-      },
-      {
-        "links": [
-          {
-            "source": "NKTV",
-            "title": "Trump Praises India’s Economic Growth, Targets Federal Reserve Over Interest Rate Policy - NKTV",
-            "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNLU14OXoxX3hzUUk3LV8wRE95VTc0MllEY2RjNG5NTjVBWXJDeEtldWdweTE3STBhUDhBbU5fMGxza2R0RUI2TEN2VVFaWUduSmR2NHR5aUVlSjdZRnRWMU1pMzd6OG9CajFiSzZ2VFExM2hBQVlabFR2c3lRRmNabzVxM2xqV1hJZDdHbGNFbGREYVEzSVU2M2dwQ2oyczM5bFVTRUg5enRvT0E?oc=5"
-          },
-          {
-            "source": "NewsBytes",
-            "title": "'India has low-interest rates, 7% GDP': Trump slams Federal Reserve - NewsBytes",
-            "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOeHVqNk5DQXZQQThOMU9nc0M2bTFMOXhFdVA5UkphZmI4LWdkUFRnVWRNVlVTREQydmRTdkFhZTdJNDdzOFpZUHR1U3JKUFhkV0p3M0l0NlR0REtFNm1pV1ZEcjhMQW95Tzl0T3VZdUhHVFEyWHZET2FFdVBUeVJETVAxZFhPSmRTVWl4eS1icDQzY3hqcnc?oc=5"
-          },
-          {
-            "source": "India Today",
-            "title": "Comparing India and US economic growth amid Federal Reserve interest rate concerns - India Today - India Today",
-            "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOQjQ4ZmRNdVZMM1IxYmk5enV5aGwyem9MWm9mb1pqSi1Ud1loWnMydHRENjVreUxtd3hKOUNBSVotOXRaUGVCQVd1OEkyNV9uYUxGUGlVdmxudGZnaGItNU0tcndPWUkwYjVuMnZXbGxtVW9tZnNDN0VIUFZ0ZE5OZF8zZE9uem1PblhTakplOVg0NzIyM0tLWlNQQnota0FkaWpWR2ZiSzJKQmE5R3dWWDRXZFhST2xOR0E0blZXR2tJY2NvU2fSAcsBQVVfeXFMUElpX0xzUmhOc3VVd3FoN0NyZzNhZ1FoekFJWlM3YWVLb0ZTanhtQUo1LXZTaGRSa095OUdfVWNEbEw3Y3Zvd3dfNDZXSUtHQng5NWxESVFNaFhGTDA5WEtzdDRVMmJuak9HQkdtSkl5UFRYc3lfVl9yV21mOVM2NHNzZWxTU2s1YVZIdXVTcWhEM1pySkk1ZWZPOHAxMDAtdUlFMzZCbndHc1lMeExfcHJfaDhRWWhpMVQ5U2tjUzl5cmZESjVXenJxaUU?oc=5"
-          },
-          {
-            "source": "ABP Live English",
-            "title": "Trump Cites Indias 7% GDP Growth To Slam Political US Federal Reserve Over High Interest Rates - ABP Live English",
-            "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOendvVTVrXzR3NE40T29iWEdIb3VKUnpNdkFuc2FxQUhYWHVqSlplR2hET295NlBYRVh6U2FxYVQwMXcxWUsxV0Z5Y1ZQMFVoeFAzRlhaSDV5NXJQeV9lRGI4RmtSSlEyTHl5M3lrVjZ5MkJJTmdzU1VUcWpsUmw3QTBmbGhpQVNRa2JZVHBQYmRRT0o1c005X2hjdnpnOXo0TjJtTjRSSUxxaUhOYWtKakFBaXp2SDJLanc2RnhJVFFWNEhXVFJkamN2RzVWelZQeWfSAdcBQVVfeXFMTWZMRXFXV00tWmgwVnpZbEN4ZmRISkFpamdzYmtoMVFqQXhBTU1PRFB1QU91NDhSN0RibktQQmZKcnlqYjktMFVpbGNxenNkajREQjhsZk9IZUVUd2RwWkV3aklOYzZFbnZLX1ZkYXFnYUwyRHBORnViOVpLTTQybTdGNHhxQzFiOHY1X3lySmFCYTZHNTFfWG9GOURYRG1aamNPck9fQXFyY201MVVqRzByUXcza0M0U21jamdQbGdxaDRucW9xQ2ZuR05xMHF3YjYzd0NqWFk?oc=5"
-          }
-        ],
-        "outlets": 9,
-        "region": "USA",
-        "state": "RISING",
-        "title": "Trump Praises India’s Economic Growth, Targets Federal Reserve Over Interest Rate Policy - NKTV",
-        "topic": "Federal Reserve"
       },
       {
         "links": [
@@ -141,14 +112,9 @@
             "source": "Hindustan Times",
             "title": "US Treasury yields rise as Fed minutes flag AI inflation risks, Waller backs bigger December rate hike | Hindustan Times - Hindustan Times",
             "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPOU1qMGxDcnlJbjg4eEJzbU82Z1pWSndxeUJSMXlPR1pRVmVMRlZUSUFfSFNlRU42RUxna3RPTUtuM1RURURWZlVaZHBmOFJPTVJDdU1KeWJYZUdhb0dLMmE5U2w1NzlPRWx1QjNNNUNvMUdnQ3JkblRhTXVuNnJEdnJZcWpZLUtJY3RPbWlZWURFNm5SV29QbkFQbTVqMTZTcWdOaVE4Wl9Rck9tYXIzOFQ2ZnlMZm5BY2d4YmtsZTBneXY3a3lGMHZTLU9kbjFKRC1ySlJtTkxqX2pSVnJfc29odEd0czVvRlJmNXVJcjJ6RjMtSHl5NGJJYnFfOGlwdUHSAYcCQVVfeXFMTXRtYTJOalJZLWhaaDFhUFJGdFh6d0xTV1VCcDV3amU0eUNYV0RFVWpjT01jTXZZOUxQbk91Y1MzanhvUmxQeVI5blN2LU9XVzU3UXRTS1VObjdJZ2xpNHlHMG03UlY2U1hwZGphbmREQlBsWm0tSnlDczZESU1GX3ZfaW5aSG1XU3FOWVk5c0F4U0hIQ3J3S3pVSmZra2ZSNk1FbTdZaGs3a3FGa2NlTmMydms4aTVlZE1IUEhXMEtMYm5jUDhYTVBnUmhDLW9QdGp4S19yNUt6NnZGdkhWeXJnUnFLV3NkTExINllKcWxZX2hMVzVfeDI5bUQ3ejRyMTFYWjNhSWM?oc=5"
-          },
-          {
-            "source": "Reuters",
-            "title": "Fed's Musalem: US likely needs several rate hikes by spring to control inflation - Reuters",
-            "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNSmh3bk9iaG5YQ2V2dzZUMkQ1aGQ2LWNfdHFCWkVaOUtyWFdHS3lFTzZJTDhsQnItcnN4N2NibjRLNXZIbHVvSllBY0Jyc201azJtbUNnWkRndWlPN05sZUVaWkJBZFlTTGJzYWFFLWRqN2R6X25jRllRT1hHekZ2aFRweE5rbHM3Z3p1SHoxR2UwR1VnMWVnbWZ3ZmRHSTkyR2lhU3p1NzNFZFBjMEtRQ25iZnpwVEhBZTd3bw?oc=5"
           }
         ],
-        "outlets": 4,
+        "outlets": 3,
         "region": "USA",
         "state": "RISING",
         "title": "Inflation Climbs to 4%, Fed Eyes Rate Hike - Wisevoter",

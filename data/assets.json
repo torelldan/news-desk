@@ -1532,9 +1532,9 @@
     },
     {
       "asOf": "2026-11-21",
-      "changePct": 7.56,
+      "changePct": 7.06,
       "id": "btc",
-      "level": 60479.87,
+      "level": 60201.54,
       "name": "BTC",
       "points": [
         {
@@ -1899,16 +1899,16 @@
         },
         {
           "date": "2026-11-21",
-          "price": 60479.87
+          "price": 60201.54
         }
       ],
       "source": "https://www.coingecko.com/en/coins/bitcoin"
     },
     {
       "asOf": "2026-11-21",
-      "changePct": 9.09,
+      "changePct": 7.88,
       "id": "eth",
-      "level": 1701.06,
+      "level": 1682.17,
       "name": "ETH",
       "points": [
         {
@@ -2273,7 +2273,7 @@
         },
         {
           "date": "2026-11-21",
-          "price": 1701.06
+          "price": 1682.17
         }
       ],
       "source": "https://www.coingecko.com/en/coins/ethereum"

@@ -1,6 +1,30 @@
 {
   "items": [
     {
+      "id": "paper:eca76c2d38bbac96",
+      "kind": "paper",
+      "lane": "science",
+      "source": "Nature",
+      "sourceId": "paper",
+      "title": "BepiColombo finally reaches Mercury after eight-year odyssey",
+      "guest": "",
+      "note": "",
+      "url": "https://www.nature.com/articles/d41586-026-03803-8",
+      "published": "2026-11-21T13:33:42-06:00",
+      "date": "2026-11-21",
+      "label": "Nov 21, 2026 1:33 PM CT",
+      "weekday": "Sat",
+      "timeKnown": true,
+      "tags": [
+        "science",
+        "biomedical",
+        "peer-reviewed"
+      ],
+      "field": "biomedical",
+      "review": "PEER-REVIEWED",
+      "severity": ""
+    },
+    {
       "id": "paper:c0e660f728a2b17f",
       "kind": "paper",
       "lane": "science",
@@ -10,9 +34,9 @@
       "guest": "",
       "note": "",
       "url": "https://www.nature.com/articles/d41586-026-03680-1",
-      "published": "2026-11-21T07:49:07-06:00",
+      "published": "2026-11-21T13:33:42-06:00",
       "date": "2026-11-21",
-      "label": "Nov 21, 2026 7:49 AM CT",
+      "label": "Nov 21, 2026 1:33 PM CT",
       "weekday": "Sat",
       "timeKnown": true,
       "tags": [
@@ -34,9 +58,9 @@
       "guest": "",
       "note": "",
       "url": "https://www.nature.com/articles/d41586-026-03751-3",
-      "published": "2026-11-21T07:49:07-06:00",
+      "published": "2026-11-21T13:33:42-06:00",
       "date": "2026-11-21",
-      "label": "Nov 21, 2026 7:49 AM CT",
+      "label": "Nov 21, 2026 1:33 PM CT",
       "weekday": "Sat",
       "timeKnown": true,
       "tags": [
@@ -58,33 +82,9 @@
       "guest": "",
       "note": "",
       "url": "https://www.nature.com/articles/d41586-026-03806-5",
-      "published": "2026-11-21T07:49:07-06:00",
+      "published": "2026-11-21T13:33:42-06:00",
       "date": "2026-11-21",
-      "label": "Nov 21, 2026 7:49 AM CT",
-      "weekday": "Sat",
-      "timeKnown": true,
-      "tags": [
-        "science",
-        "biomedical",
-        "peer-reviewed"
-      ],
-      "field": "biomedical",
-      "review": "PEER-REVIEWED",
-      "severity": ""
-    },
-    {
-      "id": "paper:1f50053329ab18bf",
-      "kind": "paper",
-      "lane": "science",
-      "source": "Nature",
-      "sourceId": "paper",
-      "title": "Fraud helps little fire ants to survive and conquer",
-      "guest": "",
-      "note": "",
-      "url": "https://www.nature.com/articles/d41586-026-03776-8",
-      "published": "2026-11-21T07:49:07-06:00",
-      "date": "2026-11-21",
-      "label": "Nov 21, 2026 7:49 AM CT",
+      "label": "Nov 21, 2026 1:33 PM CT",
       "weekday": "Sat",
       "timeKnown": true,
       "tags": [
@@ -193,6 +193,32 @@
       "field": "propulsion",
       "review": "NEWS",
       "severity": ""
+    },
+    {
+      "id": "headline:eae979deb06b81b3",
+      "kind": "paper",
+      "lane": "science",
+      "source": "The New York Times",
+      "sourceId": "headline",
+      "title": "The Race to Build a Quantum Computer Has Become a Sprint - The New York Times",
+      "guest": "",
+      "note": "",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOa2xfWXgtNGw0dFpfa2FQMjZjdkdCandTUWItUmRtSEE3Y19Ta2x2RktlbWFRRE1fd1NHWGtGZVFjbkJpeVdpQ0FhdHhVRDBEZWN5SVQyMUxuZXV5TnF4NUpNbGwtalZtTnZ4NGQxN2dkcWZvTnlwZGluRFdsNkJVWWt1d0Q?oc=5",
+      "published": "2026-11-20T15:46:06-06:00",
+      "date": "2026-11-20",
+      "label": "Nov 20, 2026 3:46 PM CT",
+      "weekday": "Fri",
+      "timeKnown": true,
+      "tags": [
+        "headline",
+        "standby",
+        "science",
+        "quantum",
+        "news"
+      ],
+      "severity": "STANDBY",
+      "field": "quantum",
+      "review": "NEWS"
     },
     {
       "id": "paper:9810dffaa48f2e27",
@@ -413,30 +439,6 @@
       "severity": ""
     },
     {
-      "id": "paper:7540cdf8fd8f2693",
-      "kind": "paper",
-      "lane": "science",
-      "source": "ScienceDaily health",
-      "sourceId": "paper",
-      "title": "Keto diet slashes liver fat by 67% in just 4 months",
-      "guest": "",
-      "note": "A new clinical trial found that the ketogenic diet dramatically outperformed Mediterranean and low-fat diets in reducing liver fat and improving metabolic health, even when participants lost similar amounts of weight. After just four to five months, about half of those following keto no longer met the criteria for prediabetes, while their liver fat dropped by an average of 67%.",
-      "url": "https://www.sciencedaily.com/releases/2026/11/261120070904.htm",
-      "published": "2026-11-20T06:44:39-06:00",
-      "date": "2026-11-20",
-      "label": "Nov 20, 2026 6:44 AM CT",
-      "weekday": "Fri",
-      "timeKnown": true,
-      "tags": [
-        "science",
-        "biomedical",
-        "news"
-      ],
-      "field": "biomedical",
-      "review": "NEWS",
-      "severity": ""
-    },
-    {
       "id": "headline:0631e8a8a792d9de",
       "kind": "paper",
       "lane": "science",
@@ -463,32 +465,6 @@
       "review": "NEWS"
     },
     {
-      "id": "headline:eae979deb06b81b3",
-      "kind": "paper",
-      "lane": "science",
-      "source": "The New York Times",
-      "sourceId": "headline",
-      "title": "The Race to Build a Quantum Computer Has Become a Sprint - The New York Times",
-      "guest": "",
-      "note": "",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOa2xfWXgtNGw0dFpfa2FQMjZjdkdCandTUWItUmRtSEE3Y19Ta2x2RktlbWFRRE1fd1NHWGtGZVFjbkJpeVdpQ0FhdHhVRDBEZWN5SVQyMUxuZXV5TnF4NUpNbGwtalZtTnZ4NGQxN2dkcWZvTnlwZGluRFdsNkJVWWt1d0Q?oc=5",
-      "published": "2026-11-20T04:01:58-06:00",
-      "date": "2026-11-20",
-      "label": "Nov 20, 2026 4:01 AM CT",
-      "weekday": "Fri",
-      "timeKnown": true,
-      "tags": [
-        "headline",
-        "standby",
-        "science",
-        "quantum",
-        "news"
-      ],
-      "severity": "STANDBY",
-      "field": "quantum",
-      "review": "NEWS"
-    },
-    {
       "id": "paper:f927139d9de6de38",
       "kind": "paper",
       "lane": "science",
@@ -509,54 +485,6 @@
         "news"
       ],
       "field": "ai",
-      "review": "NEWS",
-      "severity": ""
-    },
-    {
-      "id": "paper:162d90d0d60cffc1",
-      "kind": "paper",
-      "lane": "science",
-      "source": "ScienceDaily health",
-      "sourceId": "paper",
-      "title": "For better mental health, how often you exercise may matter more than how hard",
-      "guest": "",
-      "note": "A study of more than 10,000 college students found that exercising regularly may be more important for mental health than pushing yourself through intense or lengthy workouts. Students who exercised less frequently were more likely to experience depression and anxiety a year later, suggesting that consistency could be a key ingredient in protecting mental well-being.",
-      "url": "https://www.sciencedaily.com/releases/2026/11/261119194601.htm",
-      "published": "2026-11-20T03:09:17-06:00",
-      "date": "2026-11-20",
-      "label": "Nov 20, 2026 3:09 AM CT",
-      "weekday": "Fri",
-      "timeKnown": true,
-      "tags": [
-        "science",
-        "biomedical",
-        "news"
-      ],
-      "field": "biomedical",
-      "review": "NEWS",
-      "severity": ""
-    },
-    {
-      "id": "paper:cbb52832ef9aa690",
-      "kind": "paper",
-      "lane": "science",
-      "source": "ScienceDaily health",
-      "sourceId": "paper",
-      "title": "Experimental compound burns fat without sacrificing muscle",
-      "guest": "",
-      "note": "Researchers at UC Berkeley have identified a compound that could transform weight-loss treatment by helping the body burn more energy instead of suppressing appetite like Ozempic and Wegovy. In mice, the compound boosted energy expenditure by up to 18%, improved blood sugar control, reduced liver fat, and promoted weight loss without significant muscle loss.",
-      "url": "https://www.sciencedaily.com/releases/2026/11/261118073918.htm",
-      "published": "2026-11-19T18:19:49-06:00",
-      "date": "2026-11-19",
-      "label": "Nov 19, 2026 6:19 PM CT",
-      "weekday": "Thu",
-      "timeKnown": true,
-      "tags": [
-        "science",
-        "biomedical",
-        "news"
-      ],
-      "field": "biomedical",
       "review": "NEWS",
       "severity": ""
     },
@@ -1119,30 +1047,6 @@
       "severity": ""
     },
     {
-      "id": "paper:99f5b8e3620b1ac2",
-      "kind": "paper",
-      "lane": "science",
-      "source": "ScienceDaily health",
-      "sourceId": "paper",
-      "title": "Scientists tested 212 plant-based foods. Every single one contained fungal toxins",
-      "guest": "",
-      "note": "A new study has uncovered a surprising concern hiding in popular plant-based foods and drinks. Researchers tested 212 vegan and vegetarian products sold in the UK, including meat alternatives, oat milk, almond milk, and soy milk, and found that every single one contained at least one potentially harmful fungal toxin.",
-      "url": "https://www.sciencedaily.com/releases/2026/11/261118073749.htm",
-      "published": "2026-11-19T05:13:29-06:00",
-      "date": "2026-11-19",
-      "label": "Nov 19, 2026 5:13 AM CT",
-      "weekday": "Thu",
-      "timeKnown": true,
-      "tags": [
-        "science",
-        "biomedical",
-        "news"
-      ],
-      "field": "biomedical",
-      "review": "NEWS",
-      "severity": ""
-    },
-    {
       "id": "headline:83d69fa122b599dc",
       "kind": "paper",
       "lane": "science",
@@ -1291,54 +1195,6 @@
       "severity": "STANDBY",
       "field": "propulsion",
       "review": "NEWS"
-    },
-    {
-      "id": "paper:6904138f127d73bc",
-      "kind": "paper",
-      "lane": "science",
-      "source": "DeepMind",
-      "sourceId": "paper",
-      "title": "Introducing Gemini 4 Neon",
-      "guest": "",
-      "note": "",
-      "url": "https://deepmind.google/blog/introducing-gemini-4-neon/",
-      "published": "2026-11-18T15:35:43-06:00",
-      "date": "2026-11-18",
-      "label": "Nov 18, 2026 3:35 PM CT",
-      "weekday": "Wed",
-      "timeKnown": true,
-      "tags": [
-        "science",
-        "ai",
-        "news"
-      ],
-      "field": "ai",
-      "review": "NEWS",
-      "severity": ""
-    },
-    {
-      "id": "paper:3d3b70fbdce8a4b7",
-      "kind": "paper",
-      "lane": "science",
-      "source": "DeepMind",
-      "sourceId": "paper",
-      "title": "Genie 4 is now available",
-      "guest": "",
-      "note": "",
-      "url": "https://deepmind.google/blog/genie-4-is-now-available/",
-      "published": "2026-11-18T12:13:42-06:00",
-      "date": "2026-11-18",
-      "label": "Nov 18, 2026 12:13 PM CT",
-      "weekday": "Wed",
-      "timeKnown": true,
-      "tags": [
-        "science",
-        "ai",
-        "news"
-      ],
-      "field": "ai",
-      "review": "NEWS",
-      "severity": ""
     },
     {
       "id": "paper:e8656d911968d75a",
@@ -2015,54 +1871,6 @@
       "severity": "STANDBY",
       "field": "propulsion",
       "review": "NEWS"
-    },
-    {
-      "id": "paper:8021ddbb9b3e5137",
-      "kind": "paper",
-      "lane": "science",
-      "source": "DeepMind",
-      "sourceId": "paper",
-      "title": "Introducing Gemini 4 Hydrogen",
-      "guest": "",
-      "note": "",
-      "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
-      "published": "2026-11-12T12:00:50-06:00",
-      "date": "2026-11-12",
-      "label": "Nov 12, 2026 12:00 PM CT",
-      "weekday": "Thu",
-      "timeKnown": true,
-      "tags": [
-        "science",
-        "ai",
-        "news"
-      ],
-      "field": "ai",
-      "review": "NEWS",
-      "severity": ""
-    },
-    {
-      "id": "paper:0ae5b2542704a684",
-      "kind": "paper",
-      "lane": "science",
-      "source": "DeepMind",
-      "sourceId": "paper",
-      "title": "AlphaGenome 2: Deciphering how cells read DNA to better understand disease",
-      "guest": "",
-      "note": "",
-      "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
-      "published": "2026-11-11T09:00:15-06:00",
-      "date": "2026-11-11",
-      "label": "Nov 11, 2026 9:00 AM CT",
-      "weekday": "Wed",
-      "timeKnown": true,
-      "tags": [
-        "science",
-        "ai",
-        "news"
-      ],
-      "field": "ai",
-      "review": "NEWS",
-      "severity": ""
     }
   ],
   "spikes": [
@@ -2088,35 +1896,6 @@
         }
       ],
       "title": "Combatting adversarial distillation - OpenAI",
-      "field": "ai"
-    },
-    {
-      "topic": "Gemini",
-      "outlets": 2,
-      "state": "EVENT",
-      "links": [
-        {
-          "title": "Introducing Tool Retrieval in the Gemini API",
-          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
-          "source": "Google AI blog"
-        },
-        {
-          "title": "Introducing Gemini 4 Neon",
-          "url": "https://deepmind.google/blog/introducing-gemini-4-neon/",
-          "source": "DeepMind"
-        },
-        {
-          "title": "The Gemini app is now available on lower-memory Android devices.",
-          "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/",
-          "source": "Google AI blog"
-        },
-        {
-          "title": "Put Gemini to work for you",
-          "url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
-          "source": "Google AI blog"
-        }
-      ],
-      "title": "Introducing Tool Retrieval in the Gemini API",
       "field": "ai"
     }
   ]
