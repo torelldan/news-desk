@@ -28,14 +28,413 @@
             "2026-11-26",
             "2026-12-25"
           ],
-          "level": 6968.93,
-          "change": -206.9,
-          "changePct": -2.88,
+          "level": 6910.39,
+          "change": -265.44,
+          "changePct": -3.7,
           "asOf": "2026-11-20",
           "source": "https://finance.yahoo.com/quote/%5EGSPC"
         }
       ],
       "headlines": [
+        {
+          "id": "headline:083c85d9db7875c0",
+          "kind": "headline",
+          "lane": "news",
+          "source": "inkl",
+          "sourceId": "headline",
+          "title": "'Turns a blind eye': BJP takes swipe at Rahul as Trump hails India's 7% GDP growth - inkl",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNaXZLMUJGRXRZY2Rjd1dPV0ZqdTl6UVR2a3M4eVlKUlFEWXo0X05FQmNaNkFSTFdlaHhrVkFsaDAyTWVzUndnVVBPak5Pck1DYU43ck1SclkyOXRZcEMwLURJYkttQ3NNSlB4V2k3cmRBa0ZxakUtU0ZiQUctNnotdjAteTVGOVcxelFSYnZIdWQzalAyVU5yNm4tMXlyVmVzcWg4akRR?oc=5",
+          "published": "2026-11-21T05:37:00-06:00",
+          "date": "2026-11-21",
+          "label": "Nov 21, 2026 5:37 AM CT",
+          "weekday": "Sat",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:d2d335e933559d5e",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Livemint",
+          "sourceId": "headline",
+          "title": "‘Look at India’: Trump says US could achieve 20% GDP growth with lower interest rates - Livemint",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQbEdyaUFEV09FcXZ2TTFOa0pPem93UHNXNkV3NFdoOFZ6bk9ENXd6V1p1OFN5eklkZm5nenMta2xhQjZtZ2diX3R0YzNTSlZ5ZW5DRUJpV0NWTjhUVnhXbFUyckwxeWw2RGF0WGx3Z3dFLV9SZWVoSEtLd0NwNS04VzE1SzlMRDZ1X3I4bmVSbkMyLWZXWnFrdXNxLXhwdGtJSVF3YnpHREFJWWNxTmZwdmhhbVZiUUJLb3hCdEtXZnlGcGIzaFlUeE5PSFJXVnVkU1N30gHYAUFVX3lxTE9HV1M1cHV6UDVpRTViUktPQktOeE5ETl9RNy1ERFVrVmh6c1hDTmJDQ25DZHpVRlFzeVBPbXBMaS1sb2FFRWExV3h0ME9fa3kwc3UzUW9NTmJMNnBYS3Q2ZHpoeFFLYThmTjdvaWpYVml5M1NyZDczYXNHQ3VDSlgtcjlTdkZ5V3BTSmVpRjhKNjZmSlVZRUdpanRfNGpXbUxSX3FRd29TNF9yNi1tTFp3LXl0VWM4dFVOYUVEcmV2QmtMQ0FKMWhpX2pabVhFNE1zbkgxNWZPWA?oc=5",
+          "published": "2026-11-21T04:38:40-06:00",
+          "date": "2026-11-21",
+          "label": "Nov 21, 2026 4:38 AM CT",
+          "weekday": "Sat",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:47d0986a464ef59c",
+          "kind": "headline",
+          "lane": "news",
+          "source": "NKTV",
+          "sourceId": "headline",
+          "title": "Trump Praises India’s Economic Growth, Targets Federal Reserve Over Interest Rate Policy - NKTV",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNLU14OXoxX3hzUUk3LV8wRE95VTc0MllEY2RjNG5NTjVBWXJDeEtldWdweTE3STBhUDhBbU5fMGxza2R0RUI2TEN2VVFaWUduSmR2NHR5aUVlSjdZRnRWMU1pMzd6OG9CajFiSzZ2VFExM2hBQVlabFR2c3lRRmNabzVxM2xqV1hJZDdHbGNFbGREYVEzSVU2M2dwQ2oyczM5bFVTRUg5enRvT0E?oc=5",
+          "published": "2026-11-21T02:54:07-06:00",
+          "date": "2026-11-21",
+          "label": "Nov 21, 2026 2:54 AM CT",
+          "weekday": "Sat",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:0109c56cd89dcf40",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Wisevoter",
+          "sourceId": "headline",
+          "title": "Inflation Climbs to 4%, Fed Eyes Rate Hike - Wisevoter",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPUm9PbVpUdUhsMVZ4ME1SX1haajdPY3Z1QUl5Y0ZyVXhwMlI1ejVZQ1JjcU0xZ2p6aWx3VkF2Qk5yTGdNbGFHMThBUjV4dFl5RDVoX2RlQ3hPd0R2Y2JkSVRCYWJnNkdhcHMxY2VsVXZ1dWctZ3F3MnN2c29vZTNQdDdCUXJpNE9JZFc4aDBxYzdzSjA?oc=5",
+          "published": "2026-11-21T01:38:43-06:00",
+          "date": "2026-11-21",
+          "label": "Nov 21, 2026 1:38 AM CT",
+          "weekday": "Sat",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:db1f4e00f4820d64",
+          "kind": "headline",
+          "lane": "news",
+          "source": "inkl",
+          "sourceId": "headline",
+          "title": "'Economy on brink of ruin': Congress slams Modi govt after Trump remarks on India's GDP - inkl",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQdkhudEtld191Q19XekthdDhIdjBKZ0w3STBwOWluS2QxRno4b3Zqa1M4U3lsM1JIdldOdTVGMHFPX0ZRS0I0bWNHVXhSVFJJUXdBRkhiVC1wNFBXOWlOdThpSXY3eHRlZEtJMU11ZHJ4S3pMUVppWkdhdXZzWnA0aWtnb0pRSnpUd2dTOEJ6Y0JWRVd4S29YRFlTR2ZhM211cDRDQjRtd3pBVnFkd1E?oc=5",
+          "published": "2026-11-21T00:33:13-06:00",
+          "date": "2026-11-21",
+          "label": "Nov 21, 2026 12:33 AM CT",
+          "weekday": "Sat",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:7f0ee1d9b84a7253",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Firstpost",
+          "sourceId": "headline",
+          "title": "Trump hails India's 7% GDP growth, low interest rates as he lambasts US Fed Reserve - Firstpost",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOb1FTc1k1NEJMOGRVdUZsaHB6b1ZqSF9sclM3Z2VZaHlpR1NUV3k1VFAwUmw4LU1sbVJ5NHg3UnZTTnpGLVJlLXlVcmdxR1JzWGN1WXAxN3gtbGR1OXI1UVliSlpkaGJtTTVDQm9vZXJXdllTR0hQMnFNMnRIbnFhcjJoNjd0SGVMUlRqMU01TEIzUTFROXlNMnVDUTNZMGJwVE9SenVPdWtwVURFdmcydDJrdV9oOXliQUdBaTl2d2FaOGF2ajR3ZmJYNlhlUFFheGVn0gHYAUFVX3lxTFBzZWpsMm9MQVR0RW9oOVNVSXNKS2FxbWp4eldCdGlJTmxyR2k0QlVJaTFVeGs4TE1SME41dHdJWkZQNXdZX0M3UHJ4Y19yYlRsV3AtRi00T25pVWJFb0JiZmFWR0hITTNyQWJkMVJnbjhJQXFRV1VPcmFBUm5DQUhBWnYwU21sYkhWeHhiV0dfOFZ1cENkREowN0VWWmFDLXRMNTBfNnUtaWs0c2tDblFaV1pOVzlhVmphR1F1cjRrY2UtRm5OOUZTcTk5QXhNSVpuVUE3SjhQbg?oc=5",
+          "published": "2026-11-20T22:14:18-06:00",
+          "date": "2026-11-20",
+          "label": "Nov 20, 2026 10:14 PM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:4958be695c845010",
+          "kind": "headline",
+          "lane": "news",
+          "source": "NewsBytes",
+          "sourceId": "headline",
+          "title": "'India has low-interest rates, 7% GDP': Trump slams Federal Reserve - NewsBytes",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOeHVqNk5DQXZQQThOMU9nc0M2bTFMOXhFdVA5UkphZmI4LWdkUFRnVWRNVlVTREQydmRTdkFhZTdJNDdzOFpZUHR1U3JKUFhkV0p3M0l0NlR0REtFNm1pV1ZEcjhMQW95Tzl0T3VZdUhHVFEyWHZET2FFdVBUeVJETVAxZFhPSmRTVWl4eS1icDQzY3hqcnc?oc=5",
+          "published": "2026-11-20T21:49:06-06:00",
+          "date": "2026-11-20",
+          "label": "Nov 20, 2026 9:49 PM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:d877b0e2abbffe16",
+          "kind": "headline",
+          "lane": "news",
+          "source": "News On AIR",
+          "sourceId": "headline",
+          "title": "US President praises India’s economic growth & low interest rates - News On AIR",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxORmFLSkZkaUdadk5zT0t0NkhqSDZPTXM3a1Q4UGpCb1RrLTlIZEdCVEVXcXNkVWxLeHRuYm9FS2NNb1JUSzNXcGJjMERkRUVHZzQwXy1BanUySUd5VTBxZFF3YWsyUGt3WDByT1RYYTBLTm9vVVVjM1FwQm5jOXNhSU1NaTBYQVE3ZkpmLXJGY25wUQ?oc=5",
+          "published": "2026-11-20T21:46:49-06:00",
+          "date": "2026-11-20",
+          "label": "Nov 20, 2026 9:46 PM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:c98f01ad2ca61cec",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Malay Mail",
+          "sourceId": "headline",
+          "title": "Ringgit expected to trade with slight positive bias next week ahead of US data - Malay Mail",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPbEczaUNFSlhsX1Y3WnVtVUFBVmRVaWhaSHVHZVhhZ0dKWjdzci1WYWdEaTV6SXNrTTlvTGZtSW84TldqTDhKSGc5cHVHWXFoMkhfdTdtaW80amlOaTdQcGNfWllmSkxKQ2wxVElLNktlUjN4MkMtQmRYYTZGRkI2U3J3eDVGTnVUYUZHVHBsYXM3aTYxdU84QWJ6dlJ4NEFZOWRHcWhCdTB4eVNEX2dxUU0wSkFNZ1c1WWNqV3d4QXJCank4SUxKOGpwaTRnd9IB0wFBVV95cUxQTDZWblNleUpFYlFwUTdiZ1J3VzJ3NHJzZGg5TXQ2VmFIMHA2TWRQa0J1RldMclktY1AtUUNrMmdGNTg5aVZfbHk0RHN1b3lHQUUycXlZMDVzWWMwc0kxcmw1djRSRHVlQTBOTTlpeFFjTXQxNUV1N3JVM2s2VHY4VzdEVXV2Y2JwdnVIbWFZNTFDTmtrQzRVRHZRd3dXZDRCRzhuSlVsVW9lOWlVY2RxNjFZeERxX2U4dHZTOVVnczlqdkw2UjhST2RqeElFUWwzcktv?oc=5",
+          "published": "2026-11-20T21:01:15-06:00",
+          "date": "2026-11-20",
+          "label": "Nov 20, 2026 9:01 PM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:1ec4fc38fe68ffe0",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Livemint",
+          "sourceId": "headline",
+          "title": "'India is growing at 7%’: Trump uses India’s growth, RBI rates to slam Fed | Key takeaways from press briefing - Livemint",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOOTAwUUJURi1jSURWbFVQLXltWnR6OFBBZEJPQmQ5djU3Y085OUlUOXMtQUdiS3F2Q2RNR1lkWmN5Q1FXZ0NoRmItc0paWDA4SnViNWRRSjlaNzVNVUZqU01YX0d0bk1KY2ZyVmN1WVhfQ2dhTlV3MFpUSkx2dGw4YkpFQ2JuWEZHS2xvVHFtV2w4Zno3NUZBNENwXzJTZlJ1emVUOUZxd2FnOUVYX05Ob0tuNmxzdFJPbFdRRmE5SVF6RnZVcnBYdzZHQ09PaWZzWlRzVWhTWWdGQ2VzVGYxZjlnVzdOb0UtUFFYYlBKaGjSAfYBQVVfeXFMT01jVHNnM0w5VjdWZy1CUHVnRUdtYXgzcWNMNHhQR1pzVHdrRWJ5R0ZMT3ZfMWdDZkk2Wmh6Uy1zY3d3ZzlLaUJrS0Zmdkl4Vjg4WGNBZHpDaXhncEZGWDY3X0hNOXVZaUpNemc3bU9TY1Fyc1IwT1FxOTJ2RHU1eEozZzhKZ1JtdEZwYzZwS2F1VHZvaEhkZzdWajVsTmxVLWYwWEQwc2d5ejM0Vm5xZDJrMm9odUI3bV9UZFZoOFlWRkpTekZtQW9zRVV5c0V4Z1lVaDFFYXJzRUJNdEdJRzVBRVUtYnVHSHhmVnc0RG41QmFnOVpn?oc=5",
+          "published": "2026-11-20T20:57:58-06:00",
+          "date": "2026-11-20",
+          "label": "Nov 20, 2026 8:57 PM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:42016c0876aa7ce3",
+          "kind": "headline",
+          "lane": "news",
+          "source": "The Malaysian Reserve",
+          "sourceId": "headline",
+          "title": "Bursa Malaysia expected to trade cautiously ahead of US economic data - The Malaysian Reserve",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNMHlaVjNsWGs3WmdoTTJYNkoxamlKU21KaXcwaXBFWjVHS0xyS3NyU2Y2VHpHcWtlT3lfaVptZ01VRkdrWUFxVHFJOFVpYkNZYVp6cjM0ODBoYjFIRHF4U09CTGtwSmR0LWJ4Ykdma2psVGY2WjFHSVJKNDVnWlBBcVA2cWE4aFhsQ1hPbGlFTXJydGI4MlRfNFFLTndNYmtERHBpajVOTGpJb1gzazFTZTBGaw?oc=5",
+          "published": "2026-11-20T20:37:51-06:00",
+          "date": "2026-11-20",
+          "label": "Nov 20, 2026 8:37 PM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:e2f381009fc54dd4",
+          "kind": "headline",
+          "lane": "news",
+          "source": "India Today",
+          "sourceId": "headline",
+          "title": "Comparing India and US economic growth amid Federal Reserve interest rate concerns - India Today - India Today",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOQjQ4ZmRNdVZMM1IxYmk5enV5aGwyem9MWm9mb1pqSi1Ud1loWnMydHRENjVreUxtd3hKOUNBSVotOXRaUGVCQVd1OEkyNV9uYUxGUGlVdmxudGZnaGItNU0tcndPWUkwYjVuMnZXbGxtVW9tZnNDN0VIUFZ0ZE5OZF8zZE9uem1PblhTakplOVg0NzIyM0tLWlNQQnota0FkaWpWR2ZiSzJKQmE5R3dWWDRXZFhST2xOR0E0blZXR2tJY2NvU2fSAcsBQVVfeXFMUElpX0xzUmhOc3VVd3FoN0NyZzNhZ1FoekFJWlM3YWVLb0ZTanhtQUo1LXZTaGRSa095OUdfVWNEbEw3Y3Zvd3dfNDZXSUtHQng5NWxESVFNaFhGTDA5WEtzdDRVMmJuak9HQkdtSkl5UFRYc3lfVl9yV21mOVM2NHNzZWxTU2s1YVZIdXVTcWhEM1pySkk1ZWZPOHAxMDAtdUlFMzZCbndHc1lMeExfcHJfaDhRWWhpMVQ5U2tjUzl5cmZESjVXenJxaUU?oc=5",
+          "published": "2026-11-20T20:18:16-06:00",
+          "date": "2026-11-20",
+          "label": "Nov 20, 2026 8:18 PM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:d87d0d5f3ada1a2e",
+          "kind": "headline",
+          "lane": "news",
+          "source": "ABP Live English",
+          "sourceId": "headline",
+          "title": "Trump Cites Indias 7% GDP Growth To Slam Political US Federal Reserve Over High Interest Rates - ABP Live English",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOendvVTVrXzR3NE40T29iWEdIb3VKUnpNdkFuc2FxQUhYWHVqSlplR2hET295NlBYRVh6U2FxYVQwMXcxWUsxV0Z5Y1ZQMFVoeFAzRlhaSDV5NXJQeV9lRGI4RmtSSlEyTHl5M3lrVjZ5MkJJTmdzU1VUcWpsUmw3QTBmbGhpQVNRa2JZVHBQYmRRT0o1c005X2hjdnpnOXo0TjJtTjRSSUxxaUhOYWtKakFBaXp2SDJLanc2RnhJVFFWNEhXVFJkamN2RzVWelZQeWfSAdcBQVVfeXFMTWZMRXFXV00tWmgwVnpZbEN4ZmRISkFpamdzYmtoMVFqQXhBTU1PRFB1QU91NDhSN0RibktQQmZKcnlqYjktMFVpbGNxenNkajREQjhsZk9IZUVUd2RwWkV3aklOYzZFbnZLX1ZkYXFnYUwyRHBORnViOVpLTTQybTdGNHhxQzFiOHY1X3lySmFCYTZHNTFfWG9GOURYRG1aamNPck9fQXFyY201MVVqRzByUXcza0M0U21jamdQbGdxaDRucW9xQ2ZuR05xMHF3YjYzd0NqWFk?oc=5",
+          "published": "2026-11-20T19:52:46-06:00",
+          "date": "2026-11-20",
+          "label": "Nov 20, 2026 7:52 PM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:0f2d447e7f9593e0",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Deccan Chronicle",
+          "sourceId": "headline",
+          "title": "Look at India: Trump Cites India's 7% GDP Growth to Slam US Fed over High Interest Rates - Deccan Chronicle",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOcnJPRmxjeGVyOWs5VXhKNHVyVk55Skt5RHFfR2tqbEVOMlNEelpPVlBhX1NoTFV0NlZEaV9iQXFnRkR1NFNUQmFzbno2b1lJX2xUcTJOQTQ3VWFMYnZmVm9LSFJTTnl6SkpSclJXelc4SG94RDVscDVYTnRJVm92Z0hvTXZnWHNLNlE2Q1F1Q2xnS1MwNWRYdWZmb1Q1eXdsLVl3OHJoMi1sN3hLeWFQRGpySlM4bU1OQ1FNZkdWYVI2eG1zX1Z0REhvVzVOdVJZREwyNXl1TdIB3AFBVV95cUxNLWpGT3RjRzZQdDJ1RExEczBWVHpCaGE3SmZFWTNmSzgwVkgtMFpaSFNhOXYxSFpkdngyY3otWGpkVU9ObEJId054UkpnZW8zdkQyNmd2Ym5IZVJJcS1POWFnNVJhc2hmUU9HOWV4OWlfNVhqXzdJWlJORXU5RjRac3psV2JVbnhxbmNVN2dwVGhMVGxQd05yVEdCYXhIMmxRU2tPRmdJZkMxLUdvUVo2VkhJaUZUeDVGTVhoeF9iS1R6RUxlZk1vaW54SU54dmJodGRZVWpCTkptNkh4?oc=5",
+          "published": "2026-11-20T19:49:24-06:00",
+          "date": "2026-11-20",
+          "label": "Nov 20, 2026 7:49 PM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:faf7acf5799c2e60",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Bhaskar English",
+          "sourceId": "headline",
+          "title": "Trump praises India's interest rates: Criticises US Federal Reserve; says rate cuts could boost America's G... - Bhaskar English",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOb3o0RFZ0bHVXZ1QtdWU2Y0hCejBVaXFMRzJLbXo3S2pDekQ3dF9NWXpuRG1mWllNc0FMdXVGNHZPVnQwZnZlYXpqUlpMTXdPRkRDUi1FNXkyMUk1UjA3ZERSanpyN1RkNEJyWE03TE5jaU40czNHM3dCMVo3bmlvcFc2MHA4a3VaUVNXUEZ0N2xpaklaUmJHVUwzeTc1UVRUTHpiZDJTbGc0eHA4RkZLSHZTX09kMThBTE5CQ2JhUEdrU3FGTTVfbkhXd9IB0AFBVV95cUxPejNYVDdTaG9nSm9SbUhYS1FnbFNQNDNmT3VyOVJRcnZfMVRkWDZwSmtlcHlEbjlWZURVMGJweno2SjVVcGJoUVVSM1JUaEJlblFNUE95N3VOWVl2cXRGR0VJeHRMdTdzeWItcjBsbG1NeEFaWFc3MFVTaXM4eldDMGFDblhMeDBuMXNfaXFRYjM3V1pCVXJEZFJSUGlCNjhaM0VBcVhXd1JBS0pFdV95aHZwUHVtRkxreEw1OW5DSXlOZDhwYl8yZ3ptT04yellt?oc=5",
+          "published": "2026-11-20T19:42:44-06:00",
+          "date": "2026-11-20",
+          "label": "Nov 20, 2026 7:42 PM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:1388cc21d9e14d3a",
+          "kind": "headline",
+          "lane": "news",
+          "source": "The Statesman",
+          "sourceId": "headline",
+          "title": "‘Look at India’: Trump cites 7% GDP growth, claims US could grow 20% if Fed cut interest rates - The Statesman",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNbXpCZmtGa0wtUHloZVBXT3JDTTMzY0FmeFZ4SmtycFpnc2dlRUpMQV9YQV9JTmRsdzRIZmxMQUdSNnZjMlFYRmRrVk0zY3k0ZlpDVHVidEJwcEtSSFVJMXpxanp5OTVUNnY1SDhQM0VFcHdiMEh2a3BaYjlFS2MxaTkyNkNpTXBHU2t3a2RxZnlSTV9UekhZaWdOdTJOMnFIMWl1aUQ0dzlWWDJuYnRCdTg4eUJQWkJRX2fSAb8BQVVfeXFMTWFoUXhuMDFERmFpQjBZeWdzZ1ZYQy1qd3p3dDdMdEw5ajdCU3VuSWhNRWdRYUREemZSZTdyY3UxWkRSUF8tekJrS3NiXzIwY0F0aXhTQU1yckl4ZjltNENnMU03QUN1T3NqZVc2M0RoM0xBbmlxMU55S1VSc2ZVUGdNclFqUWxmdHlmdVJwT3d4TFdYRFZYSnJKQkszdWdPTkxWSnBETWItUURLbFNmSGdDejJjcVBmRmtHQV9ZX3c?oc=5",
+          "published": "2026-11-20T19:33:00-06:00",
+          "date": "2026-11-20",
+          "label": "Nov 20, 2026 7:33 PM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:6153e907849f9ccc",
+          "kind": "headline",
+          "lane": "news",
+          "source": "inkl",
+          "sourceId": "headline",
+          "title": "'India is growing at 7%': Trump takes aim at US Fed over high interest rates, pushes for rate cuts - inkl",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQVC13WWZldG5lOFJJSlFuVDNxX21fZ1BOdExVaWZyWkhHaGJtYkVncXJOV3c1QnQ1R2c2ZXEyTnpiZ3J5QmhRUFJyUnlfMWVqaTM2ZjJZV0pQZV9WOEJfZ3JmQjctbi04NjNsR042SktSeXFnM1dlYXpidGFIamVqUXRlSFd1b1JTODdYUzZrTE5UdTk1Q05qS01rZDQtTm5nVjNEVFQweFVrbkxfeEdQcw?oc=5",
+          "published": "2026-11-20T19:18:13-06:00",
+          "date": "2026-11-20",
+          "label": "Nov 20, 2026 7:18 PM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:526856b50b56282d",
+          "kind": "headline",
+          "lane": "news",
+          "source": "News18",
+          "sourceId": "headline",
+          "title": "'Look At India': Trump Slams US Federal Reserve Over High Interest Rates, Makes Stunning '20% GDP Growth' C - News18",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNNjNqN2NHd1A3S29UemVvUVFWQkRwZkpFSHVQY0FUQUxEanA5U3NGZll4ODZhWDdzVFMzalJibWxBdG9DWUxQNWVVTVRScjc0Rmg0YVdyY21XdGhJYjk1R2FnM3lTOFZlaTFocWRQZllPRGptNjUtbHJvRWkwa2MySHpWUU9sR2l4cThPRFMzbDBmdFFNWEM3NWFFWlRoM2RKVkhxM1FXQzhtb3A4anlSUTNmcnl4TEtpYzJrSW5IUm43RThKRDMtaEhTT0xPSklFSmtha0Y4MkN2WVpwQkVBUDBJRktyanFLR1HSAe8BQVVfeXFMTWE2SE5DOXdGRDJGQkMwTWZQLTNlTUQtdExPWE1WVEJxbWh3UnZjQzZjcnhRenhIVWY1Zk8xZkhkcmxoMUVOWHh1Ymh1SV83YUhvZFFIV0I3ZjFUWTlsYmJpVnR1Nm95dGJvTkZJeWdfbmJRbkh4ZTI0NXJRd0dHa0hqREtRcUwzMnBEbjZ6c19kclpmU0ttNHFPUEZrTFduNXhEWlpHMkdaTnREdEttaVZjb2VsekFlZWFaU0xNRXI2X3hCaFRCakFMblU5bG15ZmhMZFMzaVF3MTYzby1PckFiVWtxaWdwbWhZTGRRTUE?oc=5",
+          "published": "2026-11-20T17:48:48-06:00",
+          "date": "2026-11-20",
+          "label": "Nov 20, 2026 5:48 PM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:5d920781cad2ac96",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Federal Reserve (.gov)",
+          "sourceId": "headline",
+          "title": "Federal Reserve announces College Fed Challenge winners - Federal Reserve (.gov)",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1kV2NKWWs2SzJXWUEtUklqbk95UXFqU1E4Zm84OWpoOWNzUmhrYW9XaHZKRUtib29CbldsT2tQWWQzNTRvOXpxMkZ5WkdDeGVVVy1sQk8wSWQtMGZZNXFqYy1FMWl4SVNNTXBfeWlOWTFHZ1dab05FR0tXRUYxdTA?oc=5",
+          "published": "2026-11-20T15:16:36-06:00",
+          "date": "2026-11-20",
+          "label": "Nov 20, 2026 3:16 PM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
         {
           "id": "headline:96d2ea9b5961dd4b",
           "kind": "headline",
@@ -67,9 +466,9 @@
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNb2FMMktEOUpoLWZRWUx3ZWM3US05LUNRU1NiMkI2ZXUxTWVLNkhQX3JYRUc4eUFJZV9jNWQtSXU5d3BtSzhUQ3I0aldTMG9CNWszUVFRSEFMQWt2aHNoODdOUUU4VVJ3Z2JtRGxocVRMTnNwb2c5VEJiYWtpelRad1p0TFRvUdIBiwFBVV95cUxPMmNWNFZBS1N0M2RheGpVRGRUeXJVeHhPeFVxTWpVWnVZQlhqLVRsVVFFY09qRHJUNWpnUGpYckRxNVNrWnlMS1h5UktrckVWWUpkaVZmUDhpcmtqeEdDbWc5RTJMR0FnRklZN0RqT3I4TFluczJHNTB1NHNaME5YbTd3QVpQVGRfMkZJ?oc=5",
-          "published": "2026-11-20T10:04:40-06:00",
+          "published": "2026-11-20T11:32:16-06:00",
           "date": "2026-11-20",
-          "label": "Nov 20, 2026 10:04 AM CT",
+          "label": "Nov 20, 2026 11:32 AM CT",
           "weekday": "Fri",
           "timeKnown": true,
           "tags": [
@@ -476,441 +875,75 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:05f1a1c77d9167e5",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Livemint",
-          "sourceId": "headline",
-          "title": "Could AI boom trigger a jobs crisis? The risks Fed Chair Kevin Warsh sees beyond productivity gains - Livemint",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOck5RRE1CbVlOOTNwQmRnTUc3WXVZc1V6NE9VRFp4NGhNWEs0V0hVaHFMbXdGMFBFSEkydk51WVFzMUw3b1pCSWZQMjFIWjdUd2tzSVFVR0R4THhzVEQxYVYweUFJZDJVeV9ncWVnbkFmVDQyUjV1cnpRNXZ3cW1JNTYySlpOb2ZpNUJKQVNSMVh4QTdMLWdaQWRoa1Z2RHV4YVhNeU9OSDdZU2tCcXFWTVczOWFaZWtJUkJBbFRPNklWQmx1MTBLempxOVdzeDJwNTBCZUJTdERwa0QzRE9aYjdkRk9QZ9IB6wFBVV95cUxOYm9feWVqdjlGanp5bWxMczlWREd1REU1ZDNfel9RQXE3RVozV3dIRzZLSE9ORTQ4WndpblpLSjhzbENRYk1VTGRzSDk4Mkk2VlR5RDJ6RUY5bkZQTlVTdFoxRFYwTEk2a2hoTU1OMU9td3Z2dmFuTlc2N3dqZ2pkd2FXS3FyVkF5MXR3R3NuWldyU0ZJMmhTbEJSOWZHX1FpRENvbVd5ckVWRzlEZU1WN2dhRGRqWjRaZXhGRVkxd3BHUEtxM2p3OTVjeDVkbzEwY2h2RFI5ME1UcGtoWXJSVVgwc3BMS1pWd3dR?oc=5",
-          "published": "2026-11-17T05:59:17-06:00",
-          "date": "2026-11-17",
-          "label": "Nov 17, 2026 5:59 AM CT",
-          "weekday": "Tue",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:0fedd919b18a1b3a",
-          "kind": "headline",
-          "lane": "news",
-          "source": "WZTV",
-          "sourceId": "headline",
-          "title": "Warsh outlines 3 possible SI futures for US economy, from growth boom to job losses - WZTV",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxQQVY0dUNYb0RTOUtLUHdBSjh5cjhXT3BnR1RDclJFV2NjTkc4QlJpeXNZNjNvVzRnaGttRmtZcHdhMDVHWEkzVml5YzRkV3psUTUzTW1OSE1LVG1IeThyblR2bnZRMEhlRDRDSnFmT3FwUXJtLS15aGVxeElaSkN0azgwY2gzVHJoTlN2SllCS21USmQxSU5RLTlQUjVjR0NEcjE1VHVUUUJQRUNwMnAwNG9MMHlQR3pXMldLNjNsajR0SHFpby1vTDk0cTVfc2dWeHdPLUpRb1BXTEFCNEduQzlIUm1RSWtNcjhLOUwwX3A4NThVanoybjQwVVllSXZWVDlKaHNsV3lHcUFXcVdqdkR6OVQ?oc=5",
-          "published": "2026-11-17T01:09:46-06:00",
-          "date": "2026-11-17",
-          "label": "Nov 17, 2026 1:09 AM CT",
-          "weekday": "Tue",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:b8b0eff4cc59c854",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Jagran Josh",
-          "sourceId": "headline",
-          "title": "US Federal Reserve Meeting: List Of Things To Know Ahead Of The December Interest Rate Decision - Jagran Josh",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNQjRKTGF0Um80RU1uYV9UaHFqYTdWblVLU0NTeUkwSFZyR0tQcjBtX3lzQkFmT1JXWkJLbVk5WWg5UFRueGpRSU1xYndQci15bHhuVXhvb29DRUN0cGVCX2k2T3YwZ081cjlzaVlFX1pmYm9POEdaa0c2S3FNSl9GUGo1Y3RoSnNtN0g0RF85NG1wbmZBOHBzRlhWYUNyODVyRW5UUUhqUzl1dzlaVW5sNHpiT0ZKd2NjZGI1VHAta08tdlZ0RmpRVXVtUnZXTnBncG1hU0drYTE0azVMRk95UDlvYmpoX1XSAe4BQVVfeXFMTTFnSWs3Q2pWNkVWdkpIMnVFanE1Z2FjV3FIQVE0cEgwc3VyVFZORU1mVFJOd19XWDNhR3FhVzJhQmxfSUctR0ZrUGxXN2t6X0lBTmxyTGU1bFBYaGV1dGE1dmxjbWpubHAwaFllOXJ6Rks4RWM4NG1XX29PMmNaNzdTeGJjWWdidmZCV0ExcFdKM21PcUdHVWZBZDFhSUh6eDdnRXM4Ym94Qi1RQzZycmxjbk83SzVXOVduX3c0aXhteUdySFFwRjBScGlxcGN0Ujd4X0JUYktYck42M2RZejNCc1o3eW5pcXo5bFhEdw?oc=5",
-          "published": "2026-11-16T23:29:08-06:00",
-          "date": "2026-11-16",
-          "label": "Nov 16, 2026 11:29 PM CT",
-          "weekday": "Mon",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:0de3dde39de80f9e",
-          "kind": "headline",
-          "lane": "news",
-          "source": "ABC News - Breaking News, Latest News and Videos",
-          "sourceId": "headline",
-          "title": "Federal Reserve raises interest rates for the 1st time since 2023 - ABC News - Breaking News, Latest News and Videos",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOYktxZlJxRVNrdUZFRWViQjVMLUh3OGJwNGhrVFpJY2E5QTAyajNfcnFSb09rZUVkSnVMUHd4WkpsYktvZGczX05nRzVhSTdKNWtfU2hWb09IYnNQQ01tTlMwMV95YzJkbWVDMklwZ19XMC1RNmVsckpGS3FpNUpiRlUxZkVtNXk5NE5YRnpBSTI4eEhVOWxaUlBzZDlxb3p1ZVBFeHFR0gGrAUFVX3lxTFBrZzU3UXhjRlBBblFYNzJZZ3dINVFwMnpIOFQwRlJ1NmRTa3JNUGlkamJyS08wRjM5UlFuMkRJcHAtUEQxYjF3b2Yyc2E2V1hOOEhQRHRPckpidllEOHpLRG9VUTFxSUwyaE95SzNNZ0pkemQwQkNBYkZPbTBpN0ZMYTBWU25nT3FrUVNNal9Eb0lCNnJwZTVFUVVhM0dDRlMzQ1pQTF8xRTV6bw?oc=5",
-          "published": "2026-11-16T23:01:01-06:00",
-          "date": "2026-11-16",
-          "label": "Nov 16, 2026 11:01 PM CT",
-          "weekday": "Mon",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:3a7ce1e3b3c09016",
-          "kind": "headline",
-          "lane": "news",
-          "source": "CNBC",
-          "sourceId": "headline",
-          "title": "Analysis: The Fed's chairman sees an AI revolution coming. Now he has to figure out what it means - CNBC",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQNFNqUm9CTHJXWWFqem0xbVVJUXA0UjQ4MmprNk1YbWdKNl80dGR5ejdlV01lem03SkRQdi1YRVdPcmdld3FVSnl4VU1EaUNxOHFWQTZIY0ZNLWszR3E3cFpqMmVldk9KdnlMd09RVWZQWWRqZm56Y3luVk5CTTE2VDhFald6YWRHUkdzWVEyOUd4RTZRMnRv0gGcAUFVX3lxTFBzZE9SVGEzeVVBNTBWWjM4SmVtVFk0N1Z3R0hvLUxEcDJKTVF4OGFrVm1CNTJCSGlVdXNwMllWbzNqTWpSTEZMXzIxUUctMVJvWUVINXVjQWkyemtCY2JKZ1NJeGdXVThvc2QzNy10Zy1xX0o1SllaLTExM19ubzVKVC01eDJqSW1aWmZWQS1oRF9SQUNDMmNUeXJJaQ?oc=5",
-          "published": "2026-11-16T18:42:00-06:00",
-          "date": "2026-11-16",
-          "label": "Nov 16, 2026 6:42 PM CT",
-          "weekday": "Mon",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:4713a6b179183736",
-          "kind": "headline",
-          "lane": "news",
-          "source": "CNBC",
-          "sourceId": "headline",
-          "title": "Analysis: The Fed's chairman sees an AI revolution coming. Now he has to figure out what it means - CNBC",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQc2RPUlRhM3lVQTUwVlozOEplbVRZNDdWd0dIby1MRHAySk1ReDhha1ZtQjUyQkhpVXVzcDJZVm8zak1qUkxGTF8yMVFHLTFSb1lFSDV1Y0FpMnprQmNiSmdTSXhnV1U4b3NkMzctdGctcV9KNUpZWi0xMTNfbm81SlQtNXgyakltWlpmVkEtaERfUkFDQzJjVHlySWnSAZwBQVVfeXFMUHNkT1JUYTN5VUE1MFZaMzhKZW1UWTQ3VndHSG8tTERwMkpNUXg4YWtWbUI1MkJIaVV1c3AyWVZvM2pNalJMRkxfMjFRRy0xUm9ZRUg1dWNBaTJ6a0JjYkpnU0l4Z1dVOG9zZDM3LXRnLXFfSjVKWVotMTEzX25vNUpULTV4MmpJbVpaZlZBLWhEX1JBQ0MyY1R5cklp?oc=5",
-          "published": "2026-11-16T18:42:00-06:00",
-          "date": "2026-11-16",
-          "label": "Nov 16, 2026 6:42 PM CT",
-          "weekday": "Mon",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:b6fc7a389836b24d",
-          "kind": "headline",
-          "lane": "news",
-          "source": "The Business Times",
-          "sourceId": "headline",
-          "title": "Federal Reserve's Warsh says emerging technologies like AI to have 'significant impact', but there are risks - The Business Times",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPMzBvU0JEMWtkY3JDTllBUlpyd0xabFB5MmZTc3dhcVBwWEZLWDhmTTZhbTducGo1ZXBsVWN1ek9CV19peVdHVkZjS2ZGZWxwcW52ZC1GbU10aWxLRFFHVzFDYTQtY29KOHJ0Mzk0VmlCNDNEeWh3aEpPSHhaQjJaMFNvaHpnZ2J4aWx0ZUdSNGV4S2pWaXhVZzNqWHBFSThTNHMxSnVCOUljSWpkOE5kTUV6czJ4T1cyem1EU0JTcW5yRUhMNHJ5OUZqa1V3US1LY2VxVVN3?oc=5",
-          "published": "2026-11-16T16:23:00-06:00",
-          "date": "2026-11-16",
-          "label": "Nov 16, 2026 4:23 PM CT",
-          "weekday": "Mon",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:8101e779a1695972",
-          "kind": "headline",
-          "lane": "news",
-          "source": "CFO Dive",
-          "sourceId": "headline",
-          "title": "Warsh says Fed examining whether AI will boost or jolt US economy - CFO Dive",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNb1IxWERCQnUxYUVCbXB5NUs1WnREUkxraFR4UHZ4cnp4ODVEdFdmelEzejNMNkdaa1k0TkF2UWtrN0ZwaFFyTS1GME5veEY3N2FNbzFWZ2tkTlVWUTV3MWhweWdNVTNKb1BZSnI1S05PQjJDNmJQcEJhSmgzN0tLUnZUNE5uTHNuR0xxa2trMU9rTk9DcGtTY1hOT1JWUjg?oc=5",
-          "published": "2026-11-16T15:38:07-06:00",
-          "date": "2026-11-16",
-          "label": "Nov 16, 2026 3:38 PM CT",
-          "weekday": "Mon",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:d51aa668e9441588",
-          "kind": "headline",
-          "lane": "news",
-          "source": "아시아경제",
-          "sourceId": "headline",
-          "title": "U.S. Fed's Warsh: \"Can't Be a Superpower Without AI\"... Analyzes 3 Economic Scenarios - 아시아경제",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9XZGJYb04yYmZ1blhBZVcyanpYR0c4N21OWW91dXM4bERKNlJKUGhpOExGeGd0bmZGV1ppZWl5QnJHQ0VrNUN4YkhEMzhVMlZDQ0JXWE5VSVNnOGtKZXpLQ0xFSFk?oc=5",
-          "published": "2026-11-16T15:32:27-06:00",
-          "date": "2026-11-16",
-          "label": "Nov 16, 2026 3:32 PM CT",
-          "weekday": "Mon",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:5a702577a053d24f",
-          "kind": "headline",
-          "lane": "news",
-          "source": "WPDE",
-          "sourceId": "headline",
-          "title": "Warsh outlines 3 possible SI futures for US economy, from growth boom to job losses - WPDE",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxPMzFFemJEb2dRclhNMWs4ZzlUaEJGR2E0TTR2bk1DYm9nLXJYSFlZMUdtcUJfazRwb3JsQkUwemRqVHZ5TW9ZTWdrLWFOdGd2dHJwOFF3Smx4eHR1aVU4eFZrZ0xlQjdQNWM5djF6N2JuU2F5MkoyVTdLazZnNjRBTjl6RVU2cUtkc2pJQ1hsNUppZVNWWmFOdEE2UDJXMFoyeWRXNElveWhqTkc1Y0JzRWdueDJWcVNRSGdhNzQ1eGRwLWM5Z0s0X1FydHMyb1J0WUFpaXpuaFQ2RHlacDJXWVBEc1dHN25WQ1ZGcks5VVlQUzhRdDROczJJU2pCbnNiVEVHekNMcDJsUDE1amtCd01KQQ?oc=5",
-          "published": "2026-11-16T15:25:44-06:00",
-          "date": "2026-11-16",
-          "label": "Nov 16, 2026 3:25 PM CT",
-          "weekday": "Mon",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:338caa0f05dba779",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Reuters",
-          "sourceId": "headline",
-          "title": "Fed's Warsh says emerging technologies to have 'significant impact,' but there are risks - Reuters",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNQjBEWTRZekl4NlZXbUFpUW93VUNEU3JOUkVnZFk5VDAyRFBNRXYyTGNCREVZRFNEd2JEdWY4VmxsUGtxdnAwQnhZSlFiX3p2WWRHVU1iS1dIbXpDel8waEpsT25wdjFhTHlPNG8xMnJWdHdtc09aMnBDa2I5MGN3SkVjendsRWFOTUxvdnZrMmFKdDN6RmV3OXRISEdERjhuSEpDYmQ4dkVldmx2dENTcGRZR0NuVk9xYk85OTJCVmRteEk?oc=5",
-          "published": "2026-11-16T14:57:43-06:00",
-          "date": "2026-11-16",
-          "label": "Nov 16, 2026 2:57 PM CT",
-          "weekday": "Mon",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:10e65367925f9579",
-          "kind": "headline",
-          "lane": "news",
-          "source": "American Enterprise Institute - AEI",
-          "sourceId": "headline",
-          "title": "What the Federal Reserve Is Saying About the State of the AI Revolution - American Enterprise Institute - AEI",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQNEVDMGpYU2dJSWdjb3pTMXVLeGR6amRpbnM0RWtfS3FwYVh4cmV2Z2pQSFBBa3drR0YwcVhvN3F6T2FPbDJ4ZDJqU2Z2ZEV0R0dHdjRGMnpFUlFqcWVFMGZWMFJ3M2dOaTY2QW9Id3pVYlJXLVNZUGkzeWZPUnJTV1RkMDRMeWlNejJrcHFLN0FYcGlKX2F1cHdhWGpva0xIS0F4Rg?oc=5",
-          "published": "2026-11-16T14:32:01-06:00",
-          "date": "2026-11-16",
-          "label": "Nov 16, 2026 2:32 PM CT",
-          "weekday": "Mon",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:38972fd082816841",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Forbes Middle East",
-          "sourceId": "headline",
-          "title": "Fed Chair Warsh Warns Of Super Intelligence Risks To US Economy - Forbes Middle East",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPT2ZENVQ1NG4zalM0SVh5YzktN2dtVEttMFE2Q0tXckk3eE5QUkN0YksySWZ5OGxMQkc4Tzl2TVl0YXpNMnpGODNxekR2ektBQmFOUldZQWFCNE5PUmxLRnJ5RmcyRWtqNl9uNUdidlhqU0lmaUlfeG02VGZtU1ZwVW55djhJckpheThWaFp0eUVVeEk1NUJ6N0hPSEpULVNMSDY0Z2pWOS1iVVctVHlVTnV2SXlGRzcxczMyenVnWkNyQWV1Mk8wMjhiZWxmOXRfXzNwTnlYS0tmenpDMTJFVHd5WDg?oc=5",
-          "published": "2026-11-16T14:13:43-06:00",
-          "date": "2026-11-16",
-          "label": "Nov 16, 2026 2:13 PM CT",
-          "weekday": "Mon",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:97cbe145cc216cf8",
-          "kind": "headline",
-          "lane": "news",
-          "source": "TradingKey",
-          "sourceId": "headline",
-          "title": "Fed Chair Kevin Warsh: Three Scenarios Show How Superintelligence Impacts US Economy and Employment - TradingKey",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOdEZKbXlMdWFwZ2hsU2RPYm1mWEJqaHZjdTFMbnBkbHRrLXJ4bE80eFJ2aElSaHNhZE9Mbk1vWnlySFAwelpmZ1RxQ3R6ODROMFo0ZDQ2ekRSSkFKLXBJdlllNi0zSDhXbTZmakh4MmZOQW1NRnZzTHdMUVdhTmxrOVpGMjM3WWxvSGFzcGNySXBybWNXaFVROFRnUlpBQkoxZTNxaWk4YThwcjNKV2xZWGZGYWFvbFZBLVh5RVd3WWc4Ukl0TDdzSl9Fc3IwMXpyam53clNFQmg?oc=5",
-          "published": "2026-11-16T13:24:46-06:00",
-          "date": "2026-11-16",
-          "label": "Nov 16, 2026 1:24 PM CT",
-          "weekday": "Mon",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:a5a52b1f4d2d5714",
-          "kind": "headline",
-          "lane": "news",
-          "source": "The New York Times",
-          "sourceId": "headline",
-          "title": "Fed Chairman Highlights Economic Uncertainty of A.I. Boom - The New York Times",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBBYTdqekVHWUZKSGtDNktJaDFJZTgxX3VmdW9qVUphVVl2SjdUSUtyd2kzUVhoUnhVVm5kOTgxY2h3MmlqdUplcmQ3WDNjVEYxRGN4aUVFUFBUcWdsZWVWTzJNX2ZoNV85MWxxMEJDZ213ZFlZTEpSWkFUR3ZGdw?oc=5",
-          "published": "2026-11-16T12:35:05-06:00",
-          "date": "2026-11-16",
-          "label": "Nov 16, 2026 12:35 PM CT",
-          "weekday": "Mon",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:872f03c2c94d0de2",
-          "kind": "headline",
-          "lane": "news",
-          "source": "www.tokenpost.com",
-          "sourceId": "headline",
-          "title": "U.S. Retail Sales and Fed Minutes Are Scheduled for Nov. 17-18 - www.tokenpost.com",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBQOXQyb0UzalZ5N2FQZGdnbXR0TTkxd093cEltT1o4c0VqNmR1YVNqY1g5UnIybjhmaGFoYXhfd1V5WDRYRWI3eFE5NXZEb1FON2wyRGVkWGZhZw?oc=5",
-          "published": "2026-11-16T12:34:52-06:00",
-          "date": "2026-11-16",
-          "label": "Nov 16, 2026 12:34 PM CT",
-          "weekday": "Mon",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:6ab590cadc7f2e5c",
-          "kind": "headline",
-          "lane": "news",
-          "source": "WCIV",
-          "sourceId": "headline",
-          "title": "Warsh outlines 3 possible SI futures for US economy, from growth boom to job losses - WCIV",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxQLW50UVp5ZFExbjktOXpFUl8zM3dFTmRydzdCM0pfeXhUaklKbUNCQTF2bldLLUpoazYxbnVhZlNndkowamF4a1NDOHZCY01CLU5FenlHWEpzWV84UGJUYl81MG44dnJqQlI5V29xdGJ6eFJmdDJQX0ZBZ0c4MkJuWVFaSlZxSjlxRHU4UHF0WFdQb3A1eWV4UUVJQTFmdW95ZVV1V2cwTkVpbnQtQWhxbXNfZmZLdEV4ZC1uTEQxTG5HUVFOdnZuZFFzdTRlMUVlczNmajE0dHFFWVVKaDIxbnlXdzF0c2F5dDF6Yi1pd3Y1NzdOdGRaQW5ia3ZMa3FrOFVyTjJsbkhPdXJSRkVVYzFBSHdCcnMy?oc=5",
-          "published": "2026-11-16T12:33:45-06:00",
-          "date": "2026-11-16",
-          "label": "Nov 16, 2026 12:33 PM CT",
-          "weekday": "Mon",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:c11df21ea5413209",
-          "kind": "headline",
-          "lane": "news",
-          "source": "BNN Bloomberg",
-          "sourceId": "headline",
-          "title": "U.S. Fed chairman Warsh grapples with AI’s potential economic impact, steers clear of its inflation risk - BNN Bloomberg",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPblFpQVlnN3ZadDFlTFFKcVNkQjhqVHh1TW1VRGxzSkloSUZFNU94OFRKcU1DdHVJQ3BmSFE0ZTJzWFVmcWx0OTN1cnMzdmpIYlJGN25lUXotYi1nV2JPY09TM01pSkZUb2h3SENEY2UzMkozUFhCdTk5UnljMmRSeng5MVFEOFUtWFhDMlpVVjhBRVNkTnNwVFVnLW1LRmkwcklhZ1R2TUk3UFpuSVRZZllFWEt3TnB2djFnaUhoMGFGdVFkTGNTVnZQUFNJSXg1bEZzY1ZoYnJVbC1leEpuWUZrTTBuM1JmOHR1dHFuSGZtTENPRlE?oc=5",
-          "published": "2026-11-16T12:30:04-06:00",
-          "date": "2026-11-16",
-          "label": "Nov 16, 2026 12:30 PM CT",
-          "weekday": "Mon",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:d72a93b0101ca9c8",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Baltimore Sun",
-          "sourceId": "headline",
-          "title": "Warsh outlines three possible super intelligence scenarios for US economy - Baltimore Sun",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQQW1YSFo0c2pSX284eUJBcDVLdTBGcExnYVZNMWh6NmNwTVY5ZlpUV0hLdmVKeG1hMXB4UlFhN3Y4RzVYampGemhXNEVxbV9ZVUNzYWp0QXdYQkp5V01mZ3RtQTlrMlJydnVKQW5salM2OFgzaVNTS0lPLTNrR2YzaXhfcnFJc1ctTk0wN2xIOFJraGZaYS1Hc3ZuSUNjWG9ia2pwTVJEUUpRRHBDXy1UX01MUVA?oc=5",
-          "published": "2026-11-16T12:12:54-06:00",
-          "date": "2026-11-16",
-          "label": "Nov 16, 2026 12:12 PM CT",
-          "weekday": "Mon",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ],
       "spikes": [
         {
-          "topic": "Federal Reserve",
-          "outlets": 7,
+          "topic": "interest rates",
+          "outlets": 10,
           "state": "RISING",
           "links": [
             {
-              "title": "Trump accuses the Federal Reserve of being very politicized and attacks high interest rates - Demócrata",
-              "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNeVlsYk9UY3g4RUNPdzlHREU5ZUJ4bDFpeVJvODU5MXhyVUd1TURxNjJna2s2NVZsQ0EyUC1iMHhyNTlfZUVJVUJPdEdXMHdmc0V0YUlnemRnQmsyanRmc0hpSTVpUWgwbXp1ei1NaXplNFVaSVFwOXVZeHkxck8tNXVWbHRXSGNFWkJ2U2ZfbjAtS0kyNGdkNXQ2aFBkcE5pZVpDalhvZHkxeGFaME5MaGgxd3dVa3B5Ti1NVGFOS2hPeVlKRDRN0gHMAUFVX3lxTE03QVcwLVZsaEtDT200Tm5fMkI4aVFySGpsZTVCOWFuRGZGX3NXaEg1T0IxeUUyU1JZbm1Wb2pwbE1SQm5yb29vSXZSRDRaendndHdjSEdZRl9UZy1YQVJ5My1LZUl2b1RJZ0JaVlJ1UUFDQlpZNkdYZnBMaHBfbDdYZl8xcEhMaXN3bHNJRF80aFFPU0U1OE5MSjN4dGpNU09fTlZnMGVBYlgzVFNTZTZFdGdLYlhRZ216ZnFWWHZ5VjBJSjBab0tRVy1vTQ?oc=5",
-              "source": "Demócrata"
+              "title": "‘Look at India’: Trump says US could achieve 20% GDP growth with lower interest rates - Livemint",
+              "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQbEdyaUFEV09FcXZ2TTFOa0pPem93UHNXNkV3NFdoOFZ6bk9ENXd6V1p1OFN5eklkZm5nenMta2xhQjZtZ2diX3R0YzNTSlZ5ZW5DRUJpV0NWTjhUVnhXbFUyckwxeWw2RGF0WGx3Z3dFLV9SZWVoSEtLd0NwNS04VzE1SzlMRDZ1X3I4bmVSbkMyLWZXWnFrdXNxLXhwdGtJSVF3YnpHREFJWWNxTmZwdmhhbVZiUUJLb3hCdEtXZnlGcGIzaFlUeE5PSFJXVnVkU1N30gHYAUFVX3lxTE9HV1M1cHV6UDVpRTViUktPQktOeE5ETl9RNy1ERFVrVmh6c1hDTmJDQ25DZHpVRlFzeVBPbXBMaS1sb2FFRWExV3h0ME9fa3kwc3UzUW9NTmJMNnBYS3Q2ZHpoeFFLYThmTjdvaWpYVml5M1NyZDczYXNHQ3VDSlgtcjlTdkZ5V3BTSmVpRjhKNjZmSlVZRUdpanRfNGpXbUxSX3FRd29TNF9yNi1tTFp3LXl0VWM4dFVOYUVEcmV2QmtMQ0FKMWhpX2pabVhFNE1zbkgxNWZPWA?oc=5",
+              "source": "Livemint"
             },
             {
-              "title": "Federal Reserve flags AI-driven demand as overheating risk for U.S. economy - Traders Union",
-              "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOMXBMUkpfNV9HLVBVazVKY3R1dmZET2xpX3dOazJLcXV0aFp4Z2J1UV9ibVEzYUdXcThOOEJkaXZLeGo0eUZHZ3d5cVFsRnloUUlHbEUxX00wWHdPZkk5RnZPLVE1eGp2LTdydWxVOTZVZ0p3TGZrd1RXVVQ3bHR0ZG5XWjBpRmJ1UTBNLWRR?oc=5",
-              "source": "Traders Union"
+              "title": "Trump hails India's 7% GDP growth, low interest rates as he lambasts US Fed Reserve - Firstpost",
+              "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOb1FTc1k1NEJMOGRVdUZsaHB6b1ZqSF9sclM3Z2VZaHlpR1NUV3k1VFAwUmw4LU1sbVJ5NHg3UnZTTnpGLVJlLXlVcmdxR1JzWGN1WXAxN3gtbGR1OXI1UVliSlpkaGJtTTVDQm9vZXJXdllTR0hQMnFNMnRIbnFhcjJoNjd0SGVMUlRqMU01TEIzUTFROXlNMnVDUTNZMGJwVE9SenVPdWtwVURFdmcydDJrdV9oOXliQUdBaTl2d2FaOGF2ajR3ZmJYNlhlUFFheGVn0gHYAUFVX3lxTFBzZWpsMm9MQVR0RW9oOVNVSXNKS2FxbWp4eldCdGlJTmxyR2k0QlVJaTFVeGs4TE1SME41dHdJWkZQNXdZX0M3UHJ4Y19yYlRsV3AtRi00T25pVWJFb0JiZmFWR0hITTNyQWJkMVJnbjhJQXFRV1VPcmFBUm5DQUhBWnYwU21sYkhWeHhiV0dfOFZ1cENkREowN0VWWmFDLXRMNTBfNnUtaWs0c2tDblFaV1pOVzlhVmphR1F1cjRrY2UtRm5OOUZTcTk5QXhNSVpuVUE3SjhQbg?oc=5",
+              "source": "Firstpost"
             },
             {
-              "title": "Monetary Policy - Federal Reserve (.gov)",
-              "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE92VDNIRjQ1Wk9RMzBEV3dQS1FTcnh4X0dtTXhXaEZTTGc5S01NY0lWX0hIaFNyNTAyeVpqdnNVYVZ2Tnl5MFRvdURiWlFaOEVEcFhtTlBYbjJaV3o3S3c?oc=5",
-              "source": "Federal Reserve (.gov)"
+              "title": "US President praises India’s economic growth & low interest rates - News On AIR",
+              "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxORmFLSkZkaUdadk5zT0t0NkhqSDZPTXM3a1Q4UGpCb1RrLTlIZEdCVEVXcXNkVWxLeHRuYm9FS2NNb1JUSzNXcGJjMERkRUVHZzQwXy1BanUySUd5VTBxZFF3YWsyUGt3WDByT1RYYTBLTm9vVVVjM1FwQm5jOXNhSU1NaTBYQVE3ZkpmLXJGY25wUQ?oc=5",
+              "source": "News On AIR"
             },
             {
-              "title": "US Federal Reserve Meeting: List Of Things To Know Ahead Of The December Interest Rate Decision - Jagran Josh",
-              "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNQjRKTGF0Um80RU1uYV9UaHFqYTdWblVLU0NTeUkwSFZyR0tQcjBtX3lzQkFmT1JXWkJLbVk5WWg5UFRueGpRSU1xYndQci15bHhuVXhvb29DRUN0cGVCX2k2T3YwZ081cjlzaVlFX1pmYm9POEdaa0c2S3FNSl9GUGo1Y3RoSnNtN0g0RF85NG1wbmZBOHBzRlhWYUNyODVyRW5UUUhqUzl1dzlaVW5sNHpiT0ZKd2NjZGI1VHAta08tdlZ0RmpRVXVtUnZXTnBncG1hU0drYTE0azVMRk95UDlvYmpoX1XSAe4BQVVfeXFMTTFnSWs3Q2pWNkVWdkpIMnVFanE1Z2FjV3FIQVE0cEgwc3VyVFZORU1mVFJOd19XWDNhR3FhVzJhQmxfSUctR0ZrUGxXN2t6X0lBTmxyTGU1bFBYaGV1dGE1dmxjbWpubHAwaFllOXJ6Rks4RWM4NG1XX29PMmNaNzdTeGJjWWdidmZCV0ExcFdKM21PcUdHVWZBZDFhSUh6eDdnRXM4Ym94Qi1RQzZycmxjbk83SzVXOVduX3c0aXhteUdySFFwRjBScGlxcGN0Ujd4X0JUYktYck42M2RZejNCc1o3eW5pcXo5bFhEdw?oc=5",
-              "source": "Jagran Josh"
+              "title": "Look at India: Trump Cites India's 7% GDP Growth to Slam US Fed over High Interest Rates - Deccan Chronicle",
+              "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOcnJPRmxjeGVyOWs5VXhKNHVyVk55Skt5RHFfR2tqbEVOMlNEelpPVlBhX1NoTFV0NlZEaV9iQXFnRkR1NFNUQmFzbno2b1lJX2xUcTJOQTQ3VWFMYnZmVm9LSFJTTnl6SkpSclJXelc4SG94RDVscDVYTnRJVm92Z0hvTXZnWHNLNlE2Q1F1Q2xnS1MwNWRYdWZmb1Q1eXdsLVl3OHJoMi1sN3hLeWFQRGpySlM4bU1OQ1FNZkdWYVI2eG1zX1Z0REhvVzVOdVJZREwyNXl1TdIB3AFBVV95cUxNLWpGT3RjRzZQdDJ1RExEczBWVHpCaGE3SmZFWTNmSzgwVkgtMFpaSFNhOXYxSFpkdngyY3otWGpkVU9ObEJId054UkpnZW8zdkQyNmd2Ym5IZVJJcS1POWFnNVJhc2hmUU9HOWV4OWlfNVhqXzdJWlJORXU5RjRac3psV2JVbnhxbmNVN2dwVGhMVGxQd05yVEdCYXhIMmxRU2tPRmdJZkMxLUdvUVo2VkhJaUZUeDVGTVhoeF9iS1R6RUxlZk1vaW54SU54dmJodGRZVWpCTkptNkh4?oc=5",
+              "source": "Deccan Chronicle"
             }
           ],
-          "title": "Trump accuses the Federal Reserve of being very politicized and attacks high interest rates - Demócrata"
+          "title": "‘Look at India’: Trump says US could achieve 20% GDP growth with lower interest rates - Livemint"
+        },
+        {
+          "topic": "Federal Reserve",
+          "outlets": 9,
+          "state": "RISING",
+          "links": [
+            {
+              "title": "Trump Praises India’s Economic Growth, Targets Federal Reserve Over Interest Rate Policy - NKTV",
+              "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNLU14OXoxX3hzUUk3LV8wRE95VTc0MllEY2RjNG5NTjVBWXJDeEtldWdweTE3STBhUDhBbU5fMGxza2R0RUI2TEN2VVFaWUduSmR2NHR5aUVlSjdZRnRWMU1pMzd6OG9CajFiSzZ2VFExM2hBQVlabFR2c3lRRmNabzVxM2xqV1hJZDdHbGNFbGREYVEzSVU2M2dwQ2oyczM5bFVTRUg5enRvT0E?oc=5",
+              "source": "NKTV"
+            },
+            {
+              "title": "'India has low-interest rates, 7% GDP': Trump slams Federal Reserve - NewsBytes",
+              "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOeHVqNk5DQXZQQThOMU9nc0M2bTFMOXhFdVA5UkphZmI4LWdkUFRnVWRNVlVTREQydmRTdkFhZTdJNDdzOFpZUHR1U3JKUFhkV0p3M0l0NlR0REtFNm1pV1ZEcjhMQW95Tzl0T3VZdUhHVFEyWHZET2FFdVBUeVJETVAxZFhPSmRTVWl4eS1icDQzY3hqcnc?oc=5",
+              "source": "NewsBytes"
+            },
+            {
+              "title": "Comparing India and US economic growth amid Federal Reserve interest rate concerns - India Today - India Today",
+              "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOQjQ4ZmRNdVZMM1IxYmk5enV5aGwyem9MWm9mb1pqSi1Ud1loWnMydHRENjVreUxtd3hKOUNBSVotOXRaUGVCQVd1OEkyNV9uYUxGUGlVdmxudGZnaGItNU0tcndPWUkwYjVuMnZXbGxtVW9tZnNDN0VIUFZ0ZE5OZF8zZE9uem1PblhTakplOVg0NzIyM0tLWlNQQnota0FkaWpWR2ZiSzJKQmE5R3dWWDRXZFhST2xOR0E0blZXR2tJY2NvU2fSAcsBQVVfeXFMUElpX0xzUmhOc3VVd3FoN0NyZzNhZ1FoekFJWlM3YWVLb0ZTanhtQUo1LXZTaGRSa095OUdfVWNEbEw3Y3Zvd3dfNDZXSUtHQng5NWxESVFNaFhGTDA5WEtzdDRVMmJuak9HQkdtSkl5UFRYc3lfVl9yV21mOVM2NHNzZWxTU2s1YVZIdXVTcWhEM1pySkk1ZWZPOHAxMDAtdUlFMzZCbndHc1lMeExfcHJfaDhRWWhpMVQ5U2tjUzl5cmZESjVXenJxaUU?oc=5",
+              "source": "India Today"
+            },
+            {
+              "title": "Trump Cites Indias 7% GDP Growth To Slam Political US Federal Reserve Over High Interest Rates - ABP Live English",
+              "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOendvVTVrXzR3NE40T29iWEdIb3VKUnpNdkFuc2FxQUhYWHVqSlplR2hET295NlBYRVh6U2FxYVQwMXcxWUsxV0Z5Y1ZQMFVoeFAzRlhaSDV5NXJQeV9lRGI4RmtSSlEyTHl5M3lrVjZ5MkJJTmdzU1VUcWpsUmw3QTBmbGhpQVNRa2JZVHBQYmRRT0o1c005X2hjdnpnOXo0TjJtTjRSSUxxaUhOYWtKakFBaXp2SDJLanc2RnhJVFFWNEhXVFJkamN2RzVWelZQeWfSAdcBQVVfeXFMTWZMRXFXV00tWmgwVnpZbEN4ZmRISkFpamdzYmtoMVFqQXhBTU1PRFB1QU91NDhSN0RibktQQmZKcnlqYjktMFVpbGNxenNkajREQjhsZk9IZUVUd2RwWkV3aklOYzZFbnZLX1ZkYXFnYUwyRHBORnViOVpLTTQybTdGNHhxQzFiOHY1X3lySmFCYTZHNTFfWG9GOURYRG1aamNPck9fQXFyY201MVVqRzByUXcza0M0U21jamdQbGdxaDRucW9xQ2ZuR05xMHF3YjYzd0NqWFk?oc=5",
+              "source": "ABP Live English"
+            }
+          ],
+          "title": "Trump Praises India’s Economic Growth, Targets Federal Reserve Over Interest Rate Policy - NKTV"
         },
         {
           "topic": "inflation",
           "outlets": 4,
           "state": "RISING",
           "links": [
+            {
+              "title": "Inflation Climbs to 4%, Fed Eyes Rate Hike - Wisevoter",
+              "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPUm9PbVpUdUhsMVZ4ME1SX1haajdPY3Z1QUl5Y0ZyVXhwMlI1ejVZQ1JjcU0xZ2p6aWx3VkF2Qk5yTGdNbGFHMThBUjV4dFl5RDVoX2RlQ3hPd0R2Y2JkSVRCYWJnNkdhcHMxY2VsVXZ1dWctZ3F3MnN2c29vZTNQdDdCUXJpNE9JZFc4aDBxYzdzSjA?oc=5",
+              "source": "Wisevoter"
+            },
             {
               "title": "Watch US Economy: Fed’s Cook Sees Growing Urgency to Tackle Inflation - Bloomberg.com",
               "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPcks5WThYRmV4cjRBcWZTMXhpYVU0MjZJSjZrLTM4bGJlOTFoNjBfcXlrTnpkNXhuTWJxVFQ0N0Qwd1gzWjBiem84OUtmNzRCdEk3em94dE1pbV9POHBYWTZldXdxc2ZqNnpUZDZZdHlqd2VlSlZORUw1YkdKRHRwTnZDRlFZRUw3MmxpYU9wS3lRc1RiSVZCemJiTkFWVFAzZWJHcWVkVkZmUQ?oc=5",
@@ -925,42 +958,9 @@
               "title": "Fed's Musalem: US likely needs several rate hikes by spring to control inflation - Reuters",
               "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNSmh3bk9iaG5YQ2V2dzZUMkQ1aGQ2LWNfdHFCWkVaOUtyWFdHS3lFTzZJTDhsQnItcnN4N2NibjRLNXZIbHVvSllBY0Jyc201azJtbUNnWkRndWlPN05sZUVaWkJBZFlTTGJzYWFFLWRqN2R6X25jRllRT1hHekZ2aFRweE5rbHM3Z3p1SHoxR2UwR1VnMWVnbWZ3ZmRHSTkyR2lhU3p1NzNFZFBjMEtRQ25iZnpwVEhBZTd3bw?oc=5",
               "source": "Reuters"
-            },
-            {
-              "title": "U.S. Fed chairman Warsh grapples with AI’s potential economic impact, steers clear of its inflation risk - BNN Bloomberg",
-              "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPblFpQVlnN3ZadDFlTFFKcVNkQjhqVHh1TW1VRGxzSkloSUZFNU94OFRKcU1DdHVJQ3BmSFE0ZTJzWFVmcWx0OTN1cnMzdmpIYlJGN25lUXotYi1nV2JPY09TM01pSkZUb2h3SENEY2UzMkozUFhCdTk5UnljMmRSeng5MVFEOFUtWFhDMlpVVjhBRVNkTnNwVFVnLW1LRmkwcklhZ1R2TUk3UFpuSVRZZllFWEt3TnB2djFnaUhoMGFGdVFkTGNTVnZQUFNJSXg1bEZzY1ZoYnJVbC1leEpuWUZrTTBuM1JmOHR1dHFuSGZtTENPRlE?oc=5",
-              "source": "BNN Bloomberg"
             }
           ],
-          "title": "Watch US Economy: Fed’s Cook Sees Growing Urgency to Tackle Inflation - Bloomberg.com"
-        },
-        {
-          "topic": "interest rates",
-          "outlets": 4,
-          "state": "RISING",
-          "links": [
-            {
-              "title": "‘Almost all’ US Fed policymakers saw further interest rate hikes as likely, minutes show - The Straits Times",
-              "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNWFRsZFFyeGhlY3RacTRWN0JjOFNkaEZzcU9PUnktNUxJdzk2aExvRE5hSm42TEFnNEZOelRKRTZYYmZ6UEZZbzc5QVRuZnlWRERnUlVjT0tVaGQza0lMU0lndExsd1lDaXFNTnlkdG1yWVIwckhpbk1KQVBidFo1QzFKUFIxLVVmYU8yNjI0d1NPbEhMWTRsNTJvR0VWY2UzUGhYN0ozZ0Y5UTlHekpEZ0FndmdyaktMU2c?oc=5",
-              "source": "The Straits Times"
-            },
-            {
-              "title": "‘Almost all’ US Fed policymakers saw further interest rate hikes as likely - The Straits Times",
-              "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNRnFLLTNVZU9LT250RTNRRS1LNkRaTTdJcTF1RlkzQVVVcHF5cmE2bm4xVHpYV0pBS2l3RWVpeFhKaVFxR2t5QnZ0M0V4d1FxR0JqT0tPTU53UExfMnllTkpkS0lkNTJiMjNTVk5GODBqb3kyWWZlOUFqeFZRalJHTzd6WHRSbmVHTGtBNnNFNVNQOTlmYmMyNzZCVGhibzZvSVZtdEtVWlhHUUJWUVBMZWdFdHV4bk1EM2dEaExHU2xHNDFSU3ZtYg?oc=5",
-              "source": "The Straits Times"
-            },
-            {
-              "title": "Fed Saw Need to Keep Raising Interest Rates Despite Holding Steady in October - The New York Times",
-              "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQZWNVYnFNZV9nd0xLQW9EenZFTEJZS1A0VF9jcXgydHdZMlNUY21sTndVYzZXTThLS19UOThYOF9oZS1hbURtSlBhcUYyTVB1XzB2QUk5dlZva3RlNzlyWmtweDNhUUdyNVJGV290RzNLYTBEU1RXMlpiNEtHZ09HTVFyZ09ldVdKUXNiMHFLSk45Y3RiOWEzWDFB?oc=5",
-              "source": "The New York Times"
-            },
-            {
-              "title": "Fed minutes: Higher interest rates needed in December as inflation worries mount - The Tribune-Democrat",
-              "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPWDhfeHU2NVc3N3hUMlNmZlphdW5zS1RvT3FEczEyN0NrTkQzclV3dFl1VUIzMlpYa2R3UFgxcGZ4UFJJQTdhWFVkSTBMb0lhNkI3aGk2N2xjV2t3WlFjN0JubkxIWHNpazZGamxWWldYSk44ZERySnVWejVRNE1uMks2UC0xV2F6bzFhVDZpenVaTndpRTJubTdBZFhPQ3MxZ3doZmR1UjM4Y3lIUEVlQUpEZVU2TmIxRk1CR2tibnVBekQ2WDVwZ3pIeFpJNlMzMExSYWxBQUpEVlhySEJ3RkdHd0JCcmJhcFpRcmNiVEhaU3VaYW1LWW5tUQ?oc=5",
-              "source": "The Tribune-Democrat"
-            }
-          ],
-          "title": "‘Almost all’ US Fed policymakers saw further interest rate hikes as likely, minutes show - The Straits Times"
+          "title": "Inflation Climbs to 4%, Fed Eyes Rate Hike - Wisevoter"
         }
       ]
     },
@@ -980,9 +980,9 @@
             }
           ],
           "holidays": [],
-          "level": 33355.29,
-          "change": -673.41,
-          "changePct": -1.98,
+          "level": 33189.9,
+          "change": -838.8,
+          "changePct": -2.46,
           "asOf": "2026-11-20",
           "source": "https://finance.yahoo.com/quote/%5EGSPTSE"
         },
@@ -998,14 +998,35 @@
             }
           ],
           "holidays": [],
-          "level": 69061.07,
-          "change": 347.47,
-          "changePct": 0.51,
+          "level": 68629.46,
+          "change": -84.14,
+          "changePct": -0.12,
           "asOf": "2026-11-20",
           "source": "https://finance.yahoo.com/quote/%5EMXX"
         }
       ],
       "headlines": [
+        {
+          "id": "headline:f10030f9a0df1be3",
+          "kind": "headline",
+          "lane": "news",
+          "source": "C.D. Howe Institute",
+          "sourceId": "headline",
+          "title": "The Bank of Canada Got Its Framework Renewal Right. But Questions Remain - C.D. Howe Institute",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQbk14ZWhXNVo2bV9ONkUyRG5ieEkzaDRZcHV2RUFBT2loUDhNaW03bGFna3RUSU1RSlpfaUN4Mkg1dkhRRWowaUpBaGxuT2R4TVk3UkN1YXE3NFNTLU4zejdPMklXWjR2RmVPS253ME8xZG55bDA4ekFfS0NqaXVzX3RtcGVDSnVncTlIZXdKZzBpelJQRi1LREN4SGVaN0t2MENOeHJn?oc=5",
+          "published": "2026-11-20T14:00:12-06:00",
+          "date": "2026-11-20",
+          "label": "Nov 20, 2026 2:00 PM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
         {
           "id": "headline:4e40ff4838e23089",
           "kind": "headline",
@@ -1824,33 +1845,12 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:08ffccb8c926a503",
-          "kind": "headline",
-          "lane": "news",
-          "source": "The Globe and Mail",
-          "sourceId": "headline",
-          "title": "Canadian Stock Market Outlook: Rising Job Losses, Inflation and Economic Pressures- 3 Stocks Positioned to Outperform - The Globe and Mail",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMipwJBVV95cUxOTkt1aFZ1QTh0ZVotX29KaWJURG4xTWF3STdjeVZQbHZHTEV5eUNYajNZTzFXbzhISWxHQlNLUEZ3SXhvVi1fYWY3dGVWUGNtN3MzU1lUeXBuY2lwZk1xa3FxUEduckZQRWdoYUlMSzJIMHNoLVo3SjI4NERVbmIzRmpLSHlvcjlhWi00ZjFTWnByejZKVUEzV2pObDY4T3h1bU40RUpMNGh0WXliaEVtSTR2ZDVCRXRfRTZibXEzWm51TnRwQUlJeGtJeVVSYnNObzA2eE42a1ZxQ0tmUUg0djZDTGtTVS1lSnF4Q0xqb29mSnVBTEtZaWt6Qjd6dHlvcXk5WERab0xtZWQxWTA3UENmeUhFQmxDbllJOXVVS0tpWWxMZ2V3?oc=5",
-          "published": "2026-11-11T11:22:25-06:00",
-          "date": "2026-11-11",
-          "label": "Nov 11, 2026 11:22 AM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ],
       "spikes": [
         {
           "topic": "inflation",
-          "outlets": 7,
+          "outlets": 6,
           "state": "RISING",
           "links": [
             {
@@ -2127,6 +2127,27 @@
           "published": "2026-11-13T09:52:45-06:00",
           "date": "2026-11-13",
           "label": "Nov 13, 2026 9:52 AM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:7b72c2ce2f12c02a",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Investing.com UK",
+          "sourceId": "headline",
+          "title": "B3 Q3 2026 slides: recurring revenue surges 16%, expenses rise faster - Investing.com UK",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQYkphT1FIVlJmVHZPN0c2RnM0aGtGeVJWb0Rzd1o5YzFlRDBHLThIcDFyY3ZQdTVWVlFfZlFFa0dLN19qMEpXd2NIZGxhTlJGMWMzeWI1TWJXX2xMZ3BibjQ4UU95RUxlUExoUngwcGxGTWx5VHJkSDJPbm1TMHJrenpaUzlwX25hcUxiNXplQm9pdjExNUhmT2JhdlVpVTZlU0l1aHk5LUl4SFVTcWpaVmNYY29jWFNNODI4M0MwOVN0NXdVX2c?oc=5",
+          "published": "2026-11-13T09:50:00-06:00",
+          "date": "2026-11-13",
+          "label": "Nov 13, 2026 9:50 AM CT",
           "weekday": "Fri",
           "timeKnown": true,
           "tags": [
@@ -2743,27 +2764,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:d654a4715ac9b2c2",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Valor International",
-          "sourceId": "headline",
-          "title": "Lula’s reelection prompts investors to rethink stock market bets - Valor International",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPTUtmZkNBSXB0TUVlMnpIZmZGM1o2MEE5ek1oWkdwc1BYUjJ6MHpFTkFwUG5xVUVvSExIVkJRajlCTHJ0bHE1NXdtR2RyR2RXaHB0cUM1UWx3OUh1emk0VTllN1ZoZ2dDRERmb3c0cmZYOU1ZcWVPcTFkZ0JUT19xRkxmVERCZkFuTUlUNTFPTC1GbHVFc2hVQ0lLeUtSNE9KVkpCMzNES1lHUkZ3N1NzdkxFcUJxU0hWMWxsVTRCdG9fc2s0QXQ0bUdTWVJldWtmdXhFS1NyVFZHd9IB2gFBVV95cUxPTUtmZkNBSXB0TUVlMnpIZmZGM1o2MEE5ek1oWkdwc1BYUjJ6MHpFTkFwUG5xVUVvSExIVkJRajlCTHJ0bHE1NXdtR2RyR2RXaHB0cUM1UWx3OUh1emk0VTllN1ZoZ2dDRERmb3c0cmZYOU1ZcWVPcTFkZ0JUT19xRkxmVERCZkFuTUlUNTFPTC1GbHVFc2hVQ0lLeUtSNE9KVkpCMzNES1lHUkZ3N1NzdkxFcUJxU0hWMWxsVTRCdG9fc2s0QXQ0bUdTWVJldWtmdXhFS1NyVFZHdw?oc=5",
-          "published": "2026-10-27T11:54:59-05:00",
-          "date": "2026-10-27",
-          "label": "Oct 27, 2026 11:54 AM CT",
-          "weekday": "Tue",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ],
       "spikes": []
@@ -2784,14 +2784,35 @@
             }
           ],
           "holidays": [],
-          "level": 2350.24,
-          "change": -68.3,
-          "changePct": -2.82,
-          "asOf": "2026-11-20",
+          "level": 2328.22,
+          "change": -27.29,
+          "changePct": -1.16,
+          "asOf": "2026-11-21",
           "source": "https://iss.moex.com/iss/engines/stock/markets/index/securities/IMOEX.json"
         }
       ],
       "headlines": [
+        {
+          "id": "headline:7eb1e19dba82323e",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Investing.com",
+          "sourceId": "headline",
+          "title": "Russia stocks lower at close of trade; MOEX Russia Index down 2.69% - Investing.com",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOb1EwUkZoX1IzZkhkQUtIemtfNGx1WWVTZEkxbkFmb0t2ai1sdVJZMi1wRm43aGhiNWF1OHIxTjFrakk2ZUgxVDR5d05TUGxScEpQT3pJbURXMGFLWGNJTnJFSjNXUl9Db193WWlyR0pxR21qQzBqUmFYdGpvZHhCd0k1UndDdVg1aTFsZ3pDclhxd0g0NV9tMjZTT0pucnRlTGdTVV9MampvakNYaUxwV3NhUm5kX3ROLUVBM2V3?oc=5",
+          "published": "2026-11-20T15:54:59-06:00",
+          "date": "2026-11-20",
+          "label": "Nov 20, 2026 3:54 PM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
         {
           "id": "headline:a309103e57e680ce",
           "kind": "headline",
@@ -3606,33 +3627,12 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:156e6d917b6d4f8e",
-          "kind": "headline",
-          "lane": "news",
-          "source": "ad-hoc-news.de",
-          "sourceId": "headline",
-          "title": "MOEX Russia closes up 38 points as Trump delays sanctions - ad-hoc-news.de",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxON1pvNkpnU3B4TlRtRHFpWHk4WW1VM2x5U0dnQzZabTFZSWJwbTBTY0hWckkyUVh1YzNVMUlVVWI1cmZ4RVFhUGNtY1piam9UUE1mOGtGYWhPOHZUMGJqckVQYXllcm5yMjNKUmppdGVwMXc0SUJlMkl2MFVNeG1abDBxQ2pYTkZxd2lzX1g4QTJvTlZ3dXJyaFBRY2lidU56SmNvVkJkUEFjdmIybmxVLVJ0UURVTXpGX0Ew?oc=5",
-          "published": "2026-10-20T11:55:34-05:00",
-          "date": "2026-10-20",
-          "label": "Oct 20, 2026 11:55 AM CT",
-          "weekday": "Tue",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ],
       "spikes": [
         {
           "topic": "sanctions",
-          "outlets": 4,
+          "outlets": 3,
           "state": "RISING",
           "links": [
             {
@@ -3649,11 +3649,6 @@
               "title": "UK, EU and US sanctions on Russia - Fieldfisher",
               "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQRkR0OE4zakg3ajgzTUI1UTg0cnk5LUlWU3VfcmdYb3VwSWJYVE43U3lXWHBGb0Vza0huN2xZN1BOM1dtZFg5YWFSYUU4T3p2TlRuUUl4RlB2cDV1QjdNVGJ3SDRTOWZkUUFpMVByc1F5TV9GWHFNV2REempsczhtRlFzNUJKZ093WTJVX0I2bDlDRl9IbGJ2NjhPbXZHV3JZRWQ5cXpJakpWYlRSVnpOSGlJbw?oc=5",
               "source": "Fieldfisher"
-            },
-            {
-              "title": "MOEX Russia closes up 38 points as Trump delays sanctions - ad-hoc-news.de",
-              "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxON1pvNkpnU3B4TlRtRHFpWHk4WW1VM2x5U0dnQzZabTFZSWJwbTBTY0hWckkyUVh1YzNVMUlVVWI1cmZ4RVFhUGNtY1piam9UUE1mOGtGYWhPOHZUMGJqckVQYXllcm5yMjNKUmppdGVwMXc0SUJlMkl2MFVNeG1abDBxQ2pYTkZxd2lzX1g4QTJvTlZ3dXJyaFBRY2lidU56SmNvVkJkUEFjdmIybmxVLVJ0UURVTXpGX0Ew?oc=5",
-              "source": "ad-hoc-news.de"
             }
           ],
           "title": "Sanctions fears loom over Russia’s regulated crypto trading launch - TradingView"
@@ -3680,14 +3675,77 @@
             }
           ],
           "holidays": [],
-          "level": 3577.62,
-          "change": -10.22,
-          "changePct": -0.28,
+          "level": 3533.79,
+          "change": -43.82,
+          "changePct": -1.22,
           "asOf": "2026-11-20",
           "source": "https://finance.yahoo.com/quote/000001.SS"
         }
       ],
       "headlines": [
+        {
+          "id": "headline:6e71a92a05dd3ae6",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Bioengineer.org",
+          "sourceId": "headline",
+          "title": "China Carbon and Financial Markets Display Asymmetric Bidirectional Risk Spillovers - Bioengineer.org",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPRjlZbVR3U202MEY5NW41b2JWN0Z6T0FBeU5oaUdIOThGRTdqem9QMXJ6MU1FR1YtanNIX1prNDNVdGluQnRxNU1mbFRJQmw3ZTN6R0JYaW9qZXZxUVdLdm95LVlRUkVpal8tel9ZUmJnX3pabUlmdnlLamFpc09iTm5GTTU1NDFqSk1XV1g0b01NQVRacGJ4U0Iza0lHUG9qeVBnQXlzX2lwcE5r?oc=5",
+          "published": "2026-11-20T22:22:02-06:00",
+          "date": "2026-11-20",
+          "label": "Nov 20, 2026 10:22 PM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:2ca1767c0ba68bcd",
+          "kind": "headline",
+          "lane": "news",
+          "source": "BigGo Finance",
+          "sourceId": "headline",
+          "title": "Taiwan Stocks Plunge 22% in a Month as U.S.-Based Scholar Lin Huan-qiang Says Taiwan Has Become a \"High-Beta Economy\" - BigGo Finance",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9RVlp5TkJ2dWkwT1BDYVBMX2FlaUJlQ2x6SkdFNmlvLTdkSktXaU42aXVKd0xIYTZ2dERHdzU0RjN4NDRZNFlKQzhMaGpudnFjb1BuZDdmWmtvYjA4ZGJqWV9wUzlzUkZsTWZXekEyem01bkQ1ZHc?oc=5",
+          "published": "2026-11-20T19:05:00-06:00",
+          "date": "2026-11-20",
+          "label": "Nov 20, 2026 7:05 PM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:ed3b95f5ea3fa9f8",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Vision Times",
+          "sourceId": "headline",
+          "title": "China Punishes Internet Users for Spreading Stock Market Rumors - Vision Times",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOVVhUekFCN1lUeWpiYUE3WE9ybE5jZUNWZm5Uc2lNMV80OVBnQWJYYTYzam1mandkWXJMZnVFQ0Rja3ZiQnZyZnpPVF90X0xRd1UtMU1nNmhUeUpkanlqeFBKanp5MzZpc2thb1JXbHNwNjFQamtxbV92R2VzcGVUWGJwQzVNc2hhS2Z5dkNNVjlqUTcycDA3OHBYaWtyQkdvOVlYSlFOdTREUE0?oc=5",
+          "published": "2026-11-20T10:33:00-06:00",
+          "date": "2026-11-20",
+          "label": "Nov 20, 2026 10:33 AM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
         {
           "id": "headline:f0d76bb94a7a3c88",
           "kind": "headline",
@@ -3701,6 +3759,27 @@
           "published": "2026-11-20T07:05:00-06:00",
           "date": "2026-11-20",
           "label": "Nov 20, 2026 7:05 AM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:d0b2ca8a3a6a9306",
+          "kind": "headline",
+          "lane": "news",
+          "source": "BigGo Finance",
+          "sourceId": "headline",
+          "title": "Global Stocks Hit 'Black Friday' as China A-Shares Show Relative Resilience; Institutions Say Policy Support Is Creating Conditions for Stabilization - BigGo Finance",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9DdFNPRDI2OFVaUktxaEJoa0pXVlRIUVBUc3hfdFVSRk9ROF9rekh5QzNYT1hYbUJ1QmF6TGc5UFdqX2FveTBFWkdCWUFTeTdwNWRHcFZfZ2VPWFZYWHdVNU9kZlkxX0tvamI4TGJvcm9NTWdRc3c?oc=5",
+          "published": "2026-11-20T03:55:00-06:00",
+          "date": "2026-11-20",
+          "label": "Nov 20, 2026 3:55 AM CT",
           "weekday": "Fri",
           "timeKnown": true,
           "tags": [
@@ -4202,7 +4281,7 @@
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPdDJHS2lJX1lSYkZKTVdzN0JXQ1l2YkxKRHNReTNKX3B5dGJKR19fUEdHOGZiMHFsaFpDNlJiY2tLUXhsYmFvZ25uVzV1TnZaeXY0dzRtWTZZdGhiSUZURHBGVjdhZUFzMzVfVWZHZXdFNjNUQWkzTm1wOFZNSGZtQ3VfT0sxb2VHWGtoZmJ1RGFfRVNGRzFGeWFRV3FZbFd4eWVKRlZDM0VyR0lXS3lZMDhRTU42cE81b0J4WEgtbnBmQndQSlh0c1VYc1lqNEpwVXlqbF96R0JzZFdoZ3VUdmZ3?oc=5",
-          "published": "2026-11-16T00:24:43-06:00",
+          "published": "2026-11-16T00:24:00-06:00",
           "date": "2026-11-16",
           "label": "Nov 16, 2026 12:24 AM CT",
           "weekday": "Mon",
@@ -4443,90 +4522,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:0cb5acb07e47b4db",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Atlantic Council",
-          "sourceId": "headline",
-          "title": "Same metric, still a mess: The geoeconomics of youth unemployment in China - Atlantic Council",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQN2lVM0xtZmZBcU9xZUZRWWxoZzJod0phQVIyVHlYdFpLYmFnY0JGNFUtLUJVVGduMlRGNEw5ZDNYbE92amlqRmFVZExYcGdPSWRZVGRxaGNKSzhrQ0ZTQ0h3ZWZpQ3MtbVlHRWVpLVJxWlZlUGhOMGdTUURKMnJYZHVreUJVUk5pb0x0N1RFUl80eWdWRElWSk9ZcElCRloyNlE5VWdqVWtiT0dheFFibThCVDh6V0JuOUN3cG9FaDBXaGM?oc=5",
-          "published": "2026-11-13T10:38:27-06:00",
-          "date": "2026-11-13",
-          "label": "Nov 13, 2026 10:38 AM CT",
-          "weekday": "Fri",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:9ce6a0c8299d76dc",
-          "kind": "headline",
-          "lane": "news",
-          "source": "The Art Newspaper",
-          "sourceId": "headline",
-          "title": "Shanghai’s art week finds buyers in a selective market - The Art Newspaper",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNQlBuN0xZdDFHdkh0Qm5xdVE2RGVIdER3Z28tczRmSXpaM1NHMGtDZE1RdC1ybHRHR243QU15UTFxaTJ0NjhOenNFUjFOTEVyTFFYVWpOM1VOZ2tNYzhxSkpsbUZ0RS02cVpQcGRycmp3UXpLdEo5MzNoQ3h6TlQzZ1A0VUFQZWpHQnNmZHZZTElBLVRNaDBkWi1Vb1lEZE96RkNfbVVFQlJKZw?oc=5",
-          "published": "2026-11-13T09:50:15-06:00",
-          "date": "2026-11-13",
-          "label": "Nov 13, 2026 9:50 AM CT",
-          "weekday": "Fri",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:7a7570af69c5ff78",
-          "kind": "headline",
-          "lane": "news",
-          "source": "South China Morning Post",
-          "sourceId": "headline",
-          "title": "Opinion | America’s AI bubble is a Ponzi scheme - South China Morning Post",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOVUQtUWgwd2cwc3FzNGFxQWxBdm8wVVJTMlNLN1FNTGFwTUNXZFJLS2VSMjNta1AzMjY1LTFCaS1hM1BpVTVpX25RTFFfa01QbDFlR0FrV2pPcjR4eTJOUjR6X0s5REVFYnVrdDUzNlFNaHdJdkx1cFVNRWYwX1BTeU5oSFpKZ29kRmh3M2pHWTcteW4w0gGUAUFVX3lxTE1zbG5Hd00yYlUyLVJrbms2MXBlSkVzdjJCaXBUY3JiSU5vOFh3SFBuMTc4NW5WQlpNRTNQaEt5Z3JYaUREcHpaVC1iQlhpSlpXdG5CWVlKRHlZUFdZT0QyV25henh5NnljVG1sT1M4ajNSR2txNVpUMWtXbXdRQXFZZUFTTWlpZGNFbElUb2g4elVfREY?oc=5",
-          "published": "2026-11-13T06:30:07-06:00",
-          "date": "2026-11-13",
-          "label": "Nov 13, 2026 6:30 AM CT",
-          "weekday": "Fri",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:3c7c191b1bbd56dc",
-          "kind": "headline",
-          "lane": "news",
-          "source": "NerdWallet",
-          "sourceId": "headline",
-          "title": "7 Best-Performing China Stocks for November 2026 - NerdWallet",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9raWRYMHpiaEt6dzBFYVA1Z1otb05UNlQzaV9JSVJlZ210T2IteDNqZ0ZLWG9tay1RdFVBcnNKeVRKRHFTVVdwRVdBSFpRVy02UndpY1ViVHlDYkpsWmJHVXN4VGd5UC12?oc=5",
-          "published": "2026-11-13T02:00:00-06:00",
-          "date": "2026-11-13",
-          "label": "Nov 13, 2026 2:00 AM CT",
-          "weekday": "Fri",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ],
       "spikes": [
@@ -4585,6 +4580,48 @@
       ],
       "headlines": [
         {
+          "id": "headline:eed48f802f3c292f",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Briefs Finance",
+          "sourceId": "headline",
+          "title": "France Taps Laurence Boone for ECB Board Seat with Markets Remit in View - Briefs Finance",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQV3ZEdFl5ZEJyRVRYR0ZXWk16TXcxazF5SXVxdHVnUmREdUg2MFdRQS1NR29BUmlGSkJYdmlacDVzT3dMNGIxV0JOdWNGT0xILU9hZVNld0kxdmh4SUZ4MnA2d3BFbEs3RlFqbzYtUV80cUctMnhzNG1tT1BzTlg5Uk9MVFU5X1lnNV9fWVRHNE5lQQ?oc=5",
+          "published": "2026-11-20T17:16:30-06:00",
+          "date": "2026-11-20",
+          "label": "Nov 20, 2026 5:16 PM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:49047a4def359a15",
+          "kind": "headline",
+          "lane": "news",
+          "source": "www.tmgm.com",
+          "sourceId": "headline",
+          "title": "ECB's Santos Pereira flags risk of energy inflation spreading across the economy - www.tmgm.com",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPcFFkVWYxeTlXeDF3UGVGdW14dVlnMzd6T01HM3JFN1VWR1drUnRtX0hsVGVkR1lmS1JrNWxqV2Nib1RmMWRmTnktd05QUEdxbHBEc0pqc29uU3l5QWF6bmZTUU5XNEUtbUdMcEpEakpiLXRvQWdsbUhPNEl0dEczVzFROGViUldtUkFlSElIakdUR2g0anNoOWFGY1JqYkNZZ2NVeXd2NjhRdkZ5UExpYWNVc2ZyWXpQVXVRcFpRSzVDblV4VU1jREpKYkFBc3k1U0ZoUHVVeDV3SjhWVFE?oc=5",
+          "published": "2026-11-20T13:17:22-06:00",
+          "date": "2026-11-20",
+          "label": "Nov 20, 2026 1:17 PM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:41e8eb853ec9f701",
           "kind": "headline",
           "lane": "news",
@@ -4597,6 +4634,27 @@
           "published": "2026-11-20T11:15:13-06:00",
           "date": "2026-11-20",
           "label": "Nov 20, 2026 11:15 AM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:393a9b671cf17fc5",
+          "kind": "headline",
+          "lane": "news",
+          "source": "POLITICO.eu",
+          "sourceId": "headline",
+          "title": "France and Germany complete political deal for ECB leadership - POLITICO.eu",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQaXdLTndYc0J0SENSN3ZLSDR2Z1ZUVjB3cTFITXVPeVBFcERkNWktaWVPTElwNXhqUXhmdlhLOUxPQmh0ejB5OVlVN2N6d0dzX3hKb21NNzlsa0Z2UlRVMndUdjNLY0ZNalBrTkVsNGNvWkptS2RfcGNYTkJDVW5UTlRNZFRXU0xTYnQyTG1FXzNzb0J0?oc=5",
+          "published": "2026-11-20T10:50:00-06:00",
+          "date": "2026-11-20",
+          "label": "Nov 20, 2026 10:50 AM CT",
           "weekday": "Fri",
           "timeKnown": true,
           "tags": [
@@ -4690,6 +4748,27 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:6316282cb3deb36a",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Anadolu Ajansı",
+          "sourceId": "headline",
+          "title": "ECB chief urges public funding to attract private investment in chip plants, data centers - Anadolu Ajansı",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNTmkzRXd0M2Q2alpTNEFsbURrT1Zac0Q5dnlmc1JBWmRNRzEzalZ5ampNeGtFWlNVejNNS3pzUFdwNXU0c0Q2Zm9ZalRneFlKUUVJOEQxUlNQYnh3RXRaRWtNVnFYb0ZSZkdFZFlfd3lxaHpDb1daQ29CcXEtY0dDUERBNm4yamNILTd1dDYyeTRtaTBlelZNVGZ4cVBpQ19LVm5oRTNmRGhiRVRrWW0wZUxLaTdwc2g5clJGS1pUeTdfN0hpRFI0?oc=5",
+          "published": "2026-11-20T09:42:46-06:00",
+          "date": "2026-11-20",
+          "label": "Nov 20, 2026 9:42 AM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:2e76029d24251ee3",
           "kind": "headline",
           "lane": "news",
@@ -4723,6 +4802,27 @@
           "published": "2026-11-20T08:10:56-06:00",
           "date": "2026-11-20",
           "label": "Nov 20, 2026 8:10 AM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:1879d9e7370a47b4",
+          "kind": "headline",
+          "lane": "news",
+          "source": "www.tmgm.com",
+          "sourceId": "headline",
+          "title": "Energy inflation could spread across the economy, ECB's Santos Pereira warns - www.tmgm.com",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQQ3IyY1lCblBmX2FrejhMY05BWXVkSVlIVmZjcXgwWkRtc2hDYnNKTWotMURtSTJNeEJuMnY3WFJVZTRsMkVSelFzN2NvMlBuUlNGUDhiLWtHRU5CX044UXFWUHZCNXd0Qmc1d2I0R0pwYzNjLVdFVFlpc0UwMlFWN0NORmtPM2RpeDFDaW42amViZS1HZURDRmUzRGZhelJlQTVwbUlxZWM0MzlOeERQdm9HOEs0aTBtUWo0NW02LWYwYTIzc3pSa2s5bnV5QUFFZkt5cnZDR1pWWVB2SnNOMlFR?oc=5",
+          "published": "2026-11-20T06:44:17-06:00",
+          "date": "2026-11-20",
+          "label": "Nov 20, 2026 6:44 AM CT",
           "weekday": "Fri",
           "timeKnown": true,
           "tags": [
@@ -4849,6 +4949,27 @@
           "published": "2026-11-19T20:10:00-06:00",
           "date": "2026-11-19",
           "label": "Nov 19, 2026 8:10 PM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:9958c427d5504bab",
+          "kind": "headline",
+          "lane": "news",
+          "source": "www.tmgm.com",
+          "sourceId": "headline",
+          "title": "Euro stays below 1.10 as Dollar withstands weak US data - www.tmgm.com",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPd0NlZDd5SU9WLTZTQ25MbExoZFhxU0dfNE1WZG51dkhTMlJZOGtmRC1TdDVYd3NjYW1wQzlPZlZlSTVXSWdsV3hqbDhJWnlkVm5jOTZfRUM0NUlVZzJMSDhnV1ZMUDhKekJSSG1oNzFoMlpiaEFTXzVVdm8wWFBnYXFXb2Frc01BOTZvQ3RWRXVqYWUtYW9EY21KREFFUDhjRENJSjczWk1BYWp0NklIaGJpdUROeVM0bU1wckJPQU1Fbk5xa0U2TEt3?oc=5",
+          "published": "2026-11-19T16:31:34-06:00",
+          "date": "2026-11-19",
+          "label": "Nov 19, 2026 4:31 PM CT",
           "weekday": "Thu",
           "timeKnown": true,
           "tags": [
@@ -5297,159 +5418,9 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:714dbe213ba8d208",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Zprávy Kurzy.cz",
-          "sourceId": "headline",
-          "title": "Financial stability risks from large IPOs, equity issuance and passive investing - Zprávy Kurzy.cz",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQZEpNdVpVeEhEcFFTN3JXZmhudng5XzlvVUI4bjIxVy10Y29GZGhWUjlOa0dZSnUzS1phRDJQQnBSUk05bDI3R3VMUG9neHdOOWYweTAyTHVhNU9Jck1aRmJuVG1ibXlIVXg3SWlWQWJFeWZOUG1iUml6WnhKbzdDQzZvQ1o5OU1aQy1VU00zc3lFMFBTSFNOQUNsc2kySUZkdWFac2M4NDNTQXQxLUszcw?oc=5",
-          "published": "2026-11-18T03:00:00-06:00",
-          "date": "2026-11-18",
-          "label": "Nov 18, 2026 3:00 AM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:5a4c71660dbb5c3d",
-          "kind": "headline",
-          "lane": "news",
-          "source": "GIS Reports",
-          "sourceId": "headline",
-          "title": "The eurozone’s FROGS problem - GIS Reports",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBseFlwOUF2Ymswd1hhQV9iQTd2TUo3S3NXazVVcVRHSDdNd3B4eGd4VGgtR2VTYlBRN2NhMnUzNU9GMDh0bjU1VzdTblBSaGktOUlXLWs5MmxROWZPOE9JSEkyMC1VZ2c?oc=5",
-          "published": "2026-11-18T01:00:00-06:00",
-          "date": "2026-11-18",
-          "label": "Nov 18, 2026 1:00 AM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:d1f7cbfe4b83db5e",
-          "kind": "headline",
-          "lane": "news",
-          "source": "www.tmgm.com",
-          "sourceId": "headline",
-          "title": "Euro weakens below 1.1000 as December Fed hike odds increase; focus turns to FOMC Minutes - www.tmgm.com",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQU0FxS0habXAzRWYwY244V2R3X0pxa3VHcXdFcl9KaG9scTc2Z0M1RDdxQUNsX3NSZVNPSTkybkRaMEhwTEc4VFZsVk5pUGdSR0FqQXhkbGktTmZVQVl1T0RzeVk1SUhYQzZLZE04WUFKd1oxdnVhcFdnWjl4OXA1b05wQWlCbDdvUGo2UDlZbDExU3NuZ3N0ZWNSZnRvOFFpU0h1NkFwMlRoSUNQMUxTWDF2elNyNEY0cERrc2lkMDFlNUNXSmRTS2dSdWFZU3ZtajlnZFM0OFNxZ29OeHk3RVhyWl8?oc=5",
-          "published": "2026-11-18T00:53:10-06:00",
-          "date": "2026-11-18",
-          "label": "Nov 18, 2026 12:53 AM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:3126d5d927d4fff8",
-          "kind": "headline",
-          "lane": "news",
-          "source": "MLQ.ai",
-          "sourceId": "headline",
-          "title": "European Commission raises its euro zone growth forecast and sees inflation above 3% through 2027 - MLQ.ai",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOTnJsMWNEM0s2S1VRQnRiV0FEUnpSbG95VmVORERWa0hoUXp2X2ktdmUyNlEwTzNmXzA2WmNMaTdxN2FnU09IYTlQS2RkMlFyQkllYWh0eTBZZk01T2UzaFdfUGVSQkM1bVJjSEdhTXM0dWRwZEQ5ZU03OUlnMnp4LVo0WmdzYUYzUHdiYW5XdVJuZVcxcmFuVExZVUlOMTRhdm10WWNRclJjWkFXYk8wRnZfV2l5NkJM?oc=5",
-          "published": "2026-11-17T10:04:05-06:00",
-          "date": "2026-11-17",
-          "label": "Nov 17, 2026 10:04 AM CT",
-          "weekday": "Tue",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:a6ad5ae374aa67f8",
-          "kind": "headline",
-          "lane": "news",
-          "source": "WSJ",
-          "sourceId": "headline",
-          "title": "European Leaders Near Deal to Pick Spanish Economist as Next ECB President - WSJ",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOTnRmY2xlT3llVlRPWm5PNXFJQ25YVFY0OHp5NkJCbE1obGx1TkRjZzNET19NNTJLQVltSTB3c0lVbjdmaGxfTHMyeC02b3ZJRkpDV3VwQTJZc0RWdVNmRFdzcWJ6TUV2ZzRzWGtzcEY3SmlEM3NpUmNxNkVqYnNNUmtHM0h5M2ttN2YwTU9odWFMMjJJLXZnSk5HOE15MTAwd3RNNl8xdWg1RExNcUwwdnJxaDFpWXM?oc=5",
-          "published": "2026-11-17T06:11:00-06:00",
-          "date": "2026-11-17",
-          "label": "Nov 17, 2026 6:11 AM CT",
-          "weekday": "Tue",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:198252f5693e061a",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Global Banking & Finance Review",
-          "sourceId": "headline",
-          "title": "Spain's de Cos Nears ECB Presidency Backed by Germany - Global Banking & Finance Review",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOSnlQR09iQTNWWDJRVEVtNjdlLWg5RFlZenQ0enNxLVdJQkhmVmZORjVvMEt5aXRxYVBaSXlfTThJVjZuU18tY19JUGRWSUpGT1VVQk9BUk1NSVVZNjNLeldSTmFxaVFILXQ0ZmdUTDJZQUtiWjRSM2ZMWmNUVGpfb1ZmNVVhQVBiX1hZZUwtYzVvOVhGbmNYUXZRMEdSbDQ?oc=5",
-          "published": "2026-11-17T04:15:04-06:00",
-          "date": "2026-11-17",
-          "label": "Nov 17, 2026 4:15 AM CT",
-          "weekday": "Tue",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ],
-      "spikes": [
-        {
-          "topic": "inflation",
-          "outlets": 3,
-          "state": "RISING",
-          "links": [
-            {
-              "title": "Could energy inflation spread across the economy? ECB's Santos Pereira highlights the risk - www.tmgm.com",
-              "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNRGZQRWFKWWhkdldEeVNJQWNQUkllRFNRRU1DakdzVnZOZzZ3QmdoVFRkdHMtWDU4TTUtcFkxNTlPbklRd3VjaTB4ckt4UF90Z0NocDA1dFZ2RDR6SFdkMU1IRWU2Ulh0Y0pFYlVJcGFxWUNFS0h6NGt3czFnbHh0Q3ZCN0JIVXcwZEFQS2dKVTVLSjZFYjlVdkVrVzFEVDdpY1NwdzFGeEU3VlZ5YlJuRDl5UkFEcGkwbk9uSHcyRjBGUEFpc2NzTThaNTBaQWRWRjFxZ3NhSE5seWtFNjNXVm1B?oc=5",
-              "source": "www.tmgm.com"
-            },
-            {
-              "title": "Eurozone Inflation Jumps to 4%: Why Energy Costs Are Reshaping the ECB Outlook - kalkine.ca",
-              "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNWGYyZXFyaEsxWDRrLXBpaTlDWEFoNURqTE90VHNQQ201aHprOUh5NU9JQ29lTUg5R2FhemxWSm1aY2ZOQ09OVEl4OVh6dFNTOHEtUFJDMzVKRFlBWVl0VzI3ZTJoOHJMUEx6aXlfRGo2QjN1M3ZOV3ZPYU5ZMkQzeDhTZ2UzZ2pUbkJHQl9RY1RsVVFsLVdqSi1xLWNTSkZsT2tZVEh2QktvUWp0SGRSSHRsOVg?oc=5",
-              "source": "kalkine.ca"
-            },
-            {
-              "title": "European Commission raises its euro zone growth forecast and sees inflation above 3% through 2027 - MLQ.ai",
-              "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOTnJsMWNEM0s2S1VRQnRiV0FEUnpSbG95VmVORERWa0hoUXp2X2ktdmUyNlEwTzNmXzA2WmNMaTdxN2FnU09IYTlQS2RkMlFyQkllYWh0eTBZZk01T2UzaFdfUGVSQkM1bVJjSEdhTXM0dWRwZEQ5ZU03OUlnMnp4LVo0WmdzYUYzUHdiYW5XdVJuZVcxcmFuVExZVUlOMTRhdm10WWNRclJjWkFXYk8wRnZfV2l5NkJM?oc=5",
-              "source": "MLQ.ai"
-            }
-          ],
-          "title": "Could energy inflation spread across the economy? ECB's Santos Pereira highlights the risk - www.tmgm.com"
-        }
-      ]
+      "spikes": []
     },
     {
       "id": "asia",
@@ -5471,14 +5442,77 @@
             }
           ],
           "holidays": [],
-          "level": 22841.62,
-          "change": -453.13,
-          "changePct": -1.95,
+          "level": 22410.8,
+          "change": -430.82,
+          "changePct": -1.89,
           "asOf": "2026-11-20",
           "source": "https://finance.yahoo.com/quote/%5EHSI"
         }
       ],
       "headlines": [
+        {
+          "id": "headline:9895099fe944e5b1",
+          "kind": "headline",
+          "lane": "news",
+          "source": "BBN Times",
+          "sourceId": "headline",
+          "title": "Hong Kong Stock Exchange Today: Hang Seng Index Drops 1.55% to 23,637.60 as Tech Index Sinks 3% on Nvidia Fallout - BBN Times",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQZW9mUGVJZlB3djNoNmZ4a1FIdmdMWlR1TnhTMFZsazI4dV9ySGtjYmFLbENOSXNTN1VSdjAtWEo1b2FHdUN2TXV0X1ZudVFQVFBLa1JOQ2syUmtmV3UzblNRZFQxbFVUbi1QWUVEQUhqeGVhTWJaZ0hZRlJxeEJYcW1fM2ZpYXp3c2hCVU01VXh5TWtSdVBvNWJVeUxoUDdpdVZfWVBJTmZmeVVYYXd1RGtxNk9WWkkzclo2RzRtcWtjV3REd3c2Q2I3eERUejNPRjloX2o0MU5RaW0xX0E?oc=5",
+          "published": "2026-11-21T01:52:50-06:00",
+          "date": "2026-11-21",
+          "label": "Nov 21, 2026 1:52 AM CT",
+          "weekday": "Sat",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:f375cb1938ccb662",
+          "kind": "headline",
+          "lane": "news",
+          "source": "BBN Times",
+          "sourceId": "headline",
+          "title": "SSE Composite Drops to 3,533.79 as the AI Trade Cools and China Holds Rates - BBN Times",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOeXktYnZXX3ZXblJCVWxFUkFxaFRfRG5LUV9xWUNYbWRsNi1UN3o1OFNoVGVQZmZtX09PNlUyTjVHcUVma2tGMWxmX053eEIyYXFNd0hSNGxQemJFMVd2OHVIaVFmM2RISlNpNnNVNEFPY1h0STJvNUhfcGFxb0k0bFV5Vm80eXRxWGdBM2pBR2lSbzUtZEo0bGtOTF9CbkxlSVI1MldkNm9NRHRsWU5neV9ZSHNyZw?oc=5",
+          "published": "2026-11-20T15:58:24-06:00",
+          "date": "2026-11-20",
+          "label": "Nov 20, 2026 3:58 PM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:506a085d8d73645c",
+          "kind": "headline",
+          "lane": "news",
+          "source": "BBN Times",
+          "sourceId": "headline",
+          "title": "Hong Kong Stock Exchange: Hang Seng Index Slides to 22,410.80 Amid US-Iran Negotiations - BBN Times",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQM09FaGRiSmt4SDQxRW5ZUEM1OTV3dmE3MjdSeFAzT2F3djZMN3M3NnMyOWVzUnp1anVDYURUNC1wZkNqTl8wczVQOU9ZdHp0RFk5ZGhTenpaSEVIdjFtM0oxcE5KQUJuRmNZRTRrUTh0MHB0MGI0cEJBU1VRdk1JT00wdUdxajVjVENUOXpoLUNJZFlpdlBsTVRXcWV1LVEtaGZEMXFVd2N5blQ2Rk1maVo2SUdva3NIbDhoT3pB?oc=5",
+          "published": "2026-11-20T15:54:31-06:00",
+          "date": "2026-11-20",
+          "label": "Nov 20, 2026 3:54 PM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
         {
           "id": "headline:f490056e9a226107",
           "kind": "headline",
@@ -5534,27 +5568,6 @@
           "published": "2026-11-20T04:56:57-06:00",
           "date": "2026-11-20",
           "label": "Nov 20, 2026 4:56 AM CT",
-          "weekday": "Fri",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:9895099fe944e5b1",
-          "kind": "headline",
-          "lane": "news",
-          "source": "BBN Times",
-          "sourceId": "headline",
-          "title": "Hong Kong Stock Exchange Today: Hang Seng Index Drops 1.55% to 23,637.60 as Tech Index Sinks 3% on Nvidia Fallout - BBN Times",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQZW9mUGVJZlB3djNoNmZ4a1FIdmdMWlR1TnhTMFZsazI4dV9ySGtjYmFLbENOSXNTN1VSdjAtWEo1b2FHdUN2TXV0X1ZudVFQVFBLa1JOQ2syUmtmV3UzblNRZFQxbFVUbi1QWUVEQUhqeGVhTWJaZ0hZRlJxeEJYcW1fM2ZpYXp3c2hCVU01VXh5TWtSdVBvNWJVeUxoUDdpdVZfWVBJTmZmeVVYYXd1RGtxNk9WWkkzclo2RzRtcWtjV3REd3c2Q2I3eERUejNPRjloX2o0MU5RaW0xX0E?oc=5",
-          "published": "2026-11-20T04:54:02-06:00",
-          "date": "2026-11-20",
-          "label": "Nov 20, 2026 4:54 AM CT",
           "weekday": "Fri",
           "timeKnown": true,
           "tags": [
@@ -6276,48 +6289,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:cdff05742e3d80eb",
-          "kind": "headline",
-          "lane": "news",
-          "source": "BBN Times",
-          "sourceId": "headline",
-          "title": "Hong Kong Stock Exchange: Hang Seng Index Falls to 23,508.17 as Baidu, Alibaba and Tencent Tumble - BBN Times",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOYUZsZkpyZFQtSFBGSWdHcE5xVHBRUmhLbnQzTGNTRkZ6SEZaeDZDNDZUWTJjQWUyWklCZFZuMElNaHg0c2Z2LVR2eW1sdUlRYm9WN0JaOUpQdTJnM1VCRXdmVDl1MG14Q1A4RWVWSVBMeF9sVDU0WG5qd0ZjcE1hYllRSHBjeFpfV3dvU3FoTWtpS2pNclRMdEU5bHFfX05JdEtSR1pmN3pyS3B4eXBuWVBGRlRHSzZZUUM4bVg3R3dWVnhOUFRrQXl1V1c4ZVRH?oc=5",
-          "published": "2026-11-17T15:53:38-06:00",
-          "date": "2026-11-17",
-          "label": "Nov 17, 2026 3:53 PM CT",
-          "weekday": "Tue",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:6f72a0c7a229d37f",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Global Finance Magazine",
-          "sourceId": "headline",
-          "title": "World’s Safest Banks 2026 | Top 100 - Global Finance Magazine",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQakp4aE9uQWx3Q1lvQ3V3T1FsY0VrYW1wY1JYMzdmZXRUVU5tbEVYN1hKMk00Ti1adDBpM3NTRGt4SW9fTnMxMnRHaEpKY0FQTlBBRk9lcFYyWkxGSFkzVzJGN004dEdENHZHMlZxTEhMR25lb2ROcE5LOG5seVp1b1NLcw?oc=5",
-          "published": "2026-11-17T10:39:21-06:00",
-          "date": "2026-11-17",
-          "label": "Nov 17, 2026 10:39 AM CT",
-          "weekday": "Tue",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ],
       "spikes": []
@@ -6342,9 +6313,9 @@
             }
           ],
           "holidays": [],
-          "level": 59444.21,
-          "change": 419.93,
-          "changePct": 0.71,
+          "level": 56436.65,
+          "change": -3007.56,
+          "changePct": -5.06,
           "asOf": "2026-11-20",
           "source": "https://finance.yahoo.com/quote/%5EN225"
         }
@@ -6490,6 +6461,27 @@
           "date": "2026-11-19",
           "label": "Nov 19, 2026 7:16 AM CT",
           "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:3b05a731d1d3c6c2",
+          "kind": "headline",
+          "lane": "news",
+          "source": "WKZO",
+          "sourceId": "headline",
+          "title": "Bank of Japan to raise interest rates in December and again by end-March, economists say: Reuters poll - WKZO",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQOGtVbnRWY3pMQUZreGZrMDVBTE5TLWtNSTN2dzEtc3ZGT2MySWtLdE1WRnJCVmVNbHQxRkp3OHdzbkxOV2RRZTRzcWtka3Z0Z01jUzhvLW5FWW12M3c5UUtzcFNhdTNOZUNsS2hyZ2JRUUQwWXAtRWZyQ0R1WFZTTDMtbFdQT3l4bG1Ed1NuOEdVYXg2U2Y4YXZVMEdCbFdMR0RnYjk3TEZTRGh1RXR6RzdaRTN2czg?oc=5",
+          "published": "2026-11-18T16:54:34-06:00",
+          "date": "2026-11-18",
+          "label": "Nov 18, 2026 4:54 PM CT",
+          "weekday": "Wed",
           "timeKnown": true,
           "tags": [
             "headline",
@@ -7168,27 +7160,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:61c41fbe88e2650b",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Admirals",
-          "sourceId": "headline",
-          "title": "Japan GDP Q3 2026 Preview: Forecast, Yen and BoJ Outlook - Admirals",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQTFZ6cU5NQTVfNm1ueTNPWFFZS3c4Qmwzd2dkVldtbEJjV1FtZFVyTGRrWnFKclpDamxnQ181VkF0d1E0bG50X09Bb0tTUG5CTXNTLVY1Mmx5NWtGY2NZZUI4WUwzUDl3ektWUVhGbUZDZmxRLVlnNFRPSUNjWjFlS2E0RFlqV05IWXRTSkxOWQ?oc=5",
-          "published": "2026-11-14T17:15:44-06:00",
-          "date": "2026-11-14",
-          "label": "Nov 14, 2026 5:15 PM CT",
-          "weekday": "Sat",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ],
       "spikes": [
@@ -7219,6 +7190,29 @@
             }
           ],
           "title": "Japan Core Inflation Ticks up to 2.2% in October, Turning up the Heat on BOJ - Briefs Finance"
+        },
+        {
+          "topic": "interest rates",
+          "outlets": 3,
+          "state": "RISING",
+          "links": [
+            {
+              "title": "Bank of Japan to raise interest rates in December and again by end-March, economists say - Reuters",
+              "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNd2tVS3ktQThQZmhzbFBGVmwzRDlycmtudVhLTk1vLWpJeDlQMFBqV1J3bFZXNGtTT0VfRGJaWUxBeWNWck0tblgzbTJsQmM4SXNRbUVXZEo1Nk1UdWpONURjY1I5RnJsVmRuRzdra2VFSVlyYnJUTnhjUXNjNUJKU2YtWDBfQkZuWFV2d3FJZTdFSzZKdHgyM242QzVReUJENE52TEtXaWlfMnNlNGZkejlzRGR3TnM?oc=5",
+              "source": "Reuters"
+            },
+            {
+              "title": "Bank of Japan to raise interest rates in December and again by end-March, economists say: Reuters poll - WKZO",
+              "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQOGtVbnRWY3pMQUZreGZrMDVBTE5TLWtNSTN2dzEtc3ZGT2MySWtLdE1WRnJCVmVNbHQxRkp3OHdzbkxOV2RRZTRzcWtka3Z0Z01jUzhvLW5FWW12M3c5UUtzcFNhdTNOZUNsS2hyZ2JRUUQwWXAtRWZyQ0R1WFZTTDMtbFdQT3l4bG1Ed1NuOEdVYXg2U2Y4YXZVMEdCbFdMR0RnYjk3TEZTRGh1RXR6RzdaRTN2czg?oc=5",
+              "source": "WKZO"
+            },
+            {
+              "title": "Bank of Japan to raise interest rates in December and again by end-March, economists say: Reuters poll - WTVB",
+              "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOT1B3aHBzV3M4YkNTdUZHVE5lc1FpU0t2RGEzVkhVbzk1aUtjbXpiQXBIcndaQlhILXlVdFhlRThNNEpKbE14T1JzX2VpWk1CR2dmLXAtNzBBMG9jUmswWFRqclRPdF9sNnBQZjlETl9uN3FlYndpWUJjUXV3N2EtWkZyWG1mMTRYSGNFaE5lMDdZczlGaWdDaVBHR0tLRkVmZWY3MDhrQUZ3RUJfSFdBeW4zbjZOUmJyQlE?oc=5",
+              "source": "WTVB"
+            }
+          ],
+          "title": "Bank of Japan to raise interest rates in December and again by end-March, economists say - Reuters"
         }
       ]
     },
@@ -7238,9 +7232,9 @@
             }
           ],
           "holidays": [],
-          "level": 83021.75,
-          "change": 989.94,
-          "changePct": 1.21,
+          "level": 83919.71,
+          "change": 897.96,
+          "changePct": 1.08,
           "asOf": "2026-11-20",
           "source": "https://finance.yahoo.com/quote/%5EBSESN"
         },
@@ -7256,14 +7250,56 @@
             }
           ],
           "holidays": [],
-          "level": 25514.3,
-          "change": 286.35,
-          "changePct": 1.14,
+          "level": 25800.6,
+          "change": 286.3,
+          "changePct": 1.12,
           "asOf": "2026-11-20",
           "source": "https://finance.yahoo.com/quote/%5ENSEI"
         }
       ],
       "headlines": [
+        {
+          "id": "headline:f302a2d26ee1159e",
+          "kind": "headline",
+          "lane": "news",
+          "source": "theopenpress.in",
+          "sourceId": "headline",
+          "title": "Rupee Below 93: Currency at 92.67 Against US Dollar - theopenpress.in",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQd092S1NwM2NiYldTdkwzWjloNkoyZkNZOHVJVU1qTkNQTlZNcUJ4YVJBT3JxUEJPSlMwN2paWGlWZmIzQ05jYzlwb0xqdE9jc3h4X0xWSXNDOTVVRHFWY252S012YnJOcXhTc0N2UGtWWENSN1g3SXdVb0dWeUpReC13?oc=5",
+          "published": "2026-11-21T07:16:32-06:00",
+          "date": "2026-11-21",
+          "label": "Nov 21, 2026 7:16 AM CT",
+          "weekday": "Sat",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:5c05cf2f7078ba2c",
+          "kind": "headline",
+          "lane": "news",
+          "source": "The Economic Times",
+          "sourceId": "headline",
+          "title": "FIIs go big on Indian equities, pump over Rs 1.10 lakh crore in November: What comes next? - The Economic Times",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPcmloY21kNUFzZHRLa2FRc0xMUzJyVVVpNTF0YVM4c0ZkZUhWUTQyV2ZmekFMNlRmb3NrcFBFcEl3RkVJWmtrR3NmU3Zydy1sVV9kVV9hVkVWOC1rcnJtYUdNb0VVMi1EZHNtYjRjQXNvQ2pCSEtYbVoyU28yc3Z2eGpYOTdqdDUwYUttd3ZNWkh6M3R6TE83SFFYYzlBZi1XZmxnb0JSaFMtOVRDZ3k2aV9nWlNESjBwZXBMTHJLbGd0QTI2SzBZX2ZxWmFDcm53YU92NUR4cXZHRFNJUDdjUzh3V1pvZFJUdXppRzQ3M2o3X03SAfgBQVVfeXFMTkRRREcwQjNEWXF3VXdJLU80bjZLd1BLRjA0OHp0U1E4WmloT1BYZHVzZWpHZFpfM2ZBRUpHajVHZ1h2aXdQOC1PRzNqTVZEWldJYk0ybHlnT0U1RXVXdldDME9BTjhScEpyZ1paUDJQTndiRnBJZ0RmUkxyXzF3ZHRNeUZoUENyRWlYWk9jZnllUTdRZ09nQUlmT3NjWVlpRlh6UkpWQThCRmtGNGlMOUFtZVBldEVZLW9QcmlmRGxkX2hLakx0UWJjWUx6cmtFSEVVOW8yclJXeE1JTDVScXhOZXZMaDA0d0JyNHZPS0NVX0Zqam9oVXE?oc=5",
+          "published": "2026-11-21T02:09:23-06:00",
+          "date": "2026-11-21",
+          "label": "Nov 21, 2026 2:09 AM CT",
+          "weekday": "Sat",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
         {
           "id": "headline:faf09c9998b9ded4",
           "kind": "headline",
@@ -7811,6 +7847,27 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:c37f326dc36b9317",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Kotak Neo",
+          "sourceId": "headline",
+          "title": "Standing Deposit Facility (SDF): Meaning, Importance & RBI Policy Role - Kotak Neo",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOLUJUc3gxSTNIdGF1MGg2QjRvaWpQQXg2R2s2TTBhOVdxdjF3bC1MMDdBbV9MTllXUHFpaVVRYkY3RnFsR0UyTVBRNm1la2pCSVkyZGdKb0tnNDgtT3E3SUpld3p4c194cEhuMzFVMkRNeUlib0FJMEM5bG9zbVYxdkFFX2lKbFRvY05nYkpKOA?oc=5",
+          "published": "2026-11-17T02:00:00-06:00",
+          "date": "2026-11-17",
+          "label": "Nov 17, 2026 2:00 AM CT",
+          "weekday": "Tue",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:9de9a8fad763d7bd",
           "kind": "headline",
           "lane": "news",
@@ -7823,6 +7880,27 @@
           "published": "2026-11-17T01:53:00-06:00",
           "date": "2026-11-17",
           "label": "Nov 17, 2026 1:53 AM CT",
+          "weekday": "Tue",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:6d3b4dc281368651",
+          "kind": "headline",
+          "lane": "news",
+          "source": "LinkedIn",
+          "sourceId": "headline",
+          "title": "Nifty 500 at open: Tata Chemicals jumps 8% as RBI asks Tata Sons to list; Apar Industries slips 3% - CNBC TV18 - LinkedIn",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQZFdWT3A2a0IyMHF4N2RGSm1FRE1nQ1l4Rnd2RnFnQ0tVT1NfODRIMWxLLXZlUG1hRWhxdHBkS285NkhiSmtTSVdxd21tN1J6eWdYaVRXc29VR0czRUdienNoYzBCdzNpVnI1Y2hWeUtuMExBU3VIc2NOeTVHQWFYaUFUUFhjWl9fVE5fOEZ0T3hMY1lxcmV1U1NaQV9uaTFtX1ZoMDRhenhBMWd5aHZ2WTdiekZlQQ?oc=5",
+          "published": "2026-11-17T00:17:30-06:00",
+          "date": "2026-11-17",
+          "label": "Nov 17, 2026 12:17 AM CT",
           "weekday": "Tue",
           "timeKnown": true,
           "tags": [
@@ -7865,6 +7943,27 @@
           "published": "2026-11-16T22:29:34-06:00",
           "date": "2026-11-16",
           "label": "Nov 16, 2026 10:29 PM CT",
+          "weekday": "Mon",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:ba4c251c1e2f4349",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Kotak Neo",
+          "sourceId": "headline",
+          "title": "India’s Share of Global Market Cap Hits 10-Month High at 3.37% as Stock Market Value Reaches $5.42 Trillion - Kotak Neo",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQRGdFM3Z3ZlNXRmFaVnotNS1MQTVjRXh3VENLNFVVLV9vQm4zSWI4UnRYeEM0S3hjakdfam15Uld2eUowX0N3MDJlbU1zalVxdFBoMDBBMUJXaUUtNVk3ZkhJdVNBQzBLVVNtOWVDMTA1QThRWVl2eUVLNDE2cl9XSHZ0TzlLQmxHZ3RsaXZYbC1KVUIzTENOSmNrNnFjeVZ4cFR4YmFwQjNDdkpmZlc3anFDcFM?oc=5",
+          "published": "2026-11-16T22:20:59-06:00",
+          "date": "2026-11-16",
+          "label": "Nov 16, 2026 10:20 PM CT",
           "weekday": "Mon",
           "timeKnown": true,
           "tags": [
@@ -7998,117 +8097,12 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:2cc1f350c11ec4cb",
-          "kind": "headline",
-          "lane": "news",
-          "source": "WION",
-          "sourceId": "headline",
-          "title": "Indian economy watch: WPI inflation rises, unemployment eases, foreign inflows lift stock markets - What do the numbers tell us? - WION",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPUkFaT3BRYXFVYTJILVVyaE82OUh0cU83T0syMENsWFRYQ0Q0ODJ1VkJBZ2lOWW5IRnFiSWh2c0FhMFFzMnFzdm5VYWNUSnozMVMwRUFXUkJqODhaN1BiN05zTVFlbFVmWWg4QzlqZ1ZSaE4xRGkxd28yTzlGYTVDYmVXU2FSSHlfc0FrZU9UME5yb1d6aDM1WjVKSmdVWDF3aHVvRGhNY0ZhRXNwTGhIa1pNd0ZUX1lEeUJ6aVpTRmtuLTY4ZEh4UTZLbTFMSU40YWRmTmdGby1HODNhLVBRYVJEbk9oMmU3d0dTZml2Ml90RWRjckNKeUJQVkIwTTJ2OXBQR3dQYnfSAY4CQVVfeXFMT0JQVGZkSjVPemNLeWNJLWFqMmE4d3dJeHJVaEJUejFLN2RxY08yeDVZZ3Qwajh6YjJyQUFNcDVCYzZrRHNuWURhMnpJRExlNkxlTGVwTnpidlNKNTEzeU9Mcmh0aFFvY3dQN3NYaTBUQUI0b2JVeUhsTFdpVkZPNXhMRVBDbFpIRi01SDZqeUQzU3I3azh5a2hmU1RXYkFRck0zZ0x5YzE2UjB1bDFEMFcwS1FCazE3Wm1rS01lek93LUhVekdvNXY2YWstQVg0LVR1ZmgyaXYyVzZCcFA0ZVQyNzZPT3FhR2NvaVVUeHhkcW5KaTRtWlNiWjFIR2hrMVQ2S3E3QlNiRHgxSjNn?oc=5",
-          "published": "2026-11-16T05:49:00-06:00",
-          "date": "2026-11-16",
-          "label": "Nov 16, 2026 5:49 AM CT",
-          "weekday": "Mon",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:509e8177a4aeb537",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Kotak Neo",
-          "sourceId": "headline",
-          "title": "RBI Challenges Supreme Court's ₹8,415 Crore YES Bank AT-1 Bond Verdict, Seeks Review of Write-Off Ruling - Kotak Neo",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQUjZNR3FteDFBc2xHbEdNMGVocnpleWJkMW9VOUhJNG9KeUxxeWVZNnpKZ1NPVjl6d1VCYVZuN0lNbGFEU0RRZGZDMmF1N2ZRUDJqanhRSzBpZ0ZrSDhNS1VmbzBodmpxbjl4WjR2N3hBQ2paVXdPTXBrQ2JkamlCcmUxSXNPT0o4blJqZzU4Z3EyNzZ4M3A2eXVZcw?oc=5",
-          "published": "2026-11-16T03:44:38-06:00",
-          "date": "2026-11-16",
-          "label": "Nov 16, 2026 3:44 AM CT",
-          "weekday": "Mon",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:7ab59d3243b59d3e",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Kotak Neo",
-          "sourceId": "headline",
-          "title": "Pre-Market 16 November 2026: GIFT Nifty Signals Gap-Up Opening As Inflation Raises RBI Rate Concerns - Kotak Neo",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQN0RYUS1kM0UwQ1FRR0w5Y1JMeGlWNWM5MFZvcGdSNWRmeVNWQ0lSbzAwLVlLZEs3Z3BtTXIxT3BOQ3RhN1RvMEtCTEc0VVpNZkhVSXJzeGxXeEJHcmFkcmFmMHp3MjlSSjNoY2NGSjEya1NUblRQaEpCNTFOd291SHphajM0b1psaFV0WmJwVm1KVzZoZ0Rqc0pJeUdoV3h2ODJ1cDd5bw?oc=5",
-          "published": "2026-11-15T20:46:57-06:00",
-          "date": "2026-11-15",
-          "label": "Nov 15, 2026 8:46 PM CT",
-          "weekday": "Sun",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:8067a91b054f65f3",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Business Standard",
-          "sourceId": "headline",
-          "title": "India braces for higher interest rates as inflation, oil prices rise - Business Standard",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNcHdlTURmX1ljel9JMk1kR3M1dHQzUWpfTXMyWVB3alhkTS1ZOXFJWWV5Q0hIcDVQbk5KMG1zWXJPMm43Wkp1dzZtQUxYcWVMa2o5V1hJY2d5NUk1dEVsUm4zTmZmeThQMmI4ZTlKZjUzSEVqZWQzelhxdVpoMjdtTGFwU1FaTVBSVHh0aUxCNG1yb2NlellkQU82VWtvSVlCdFVneEtTSVFqendMRk55bHRkaC1yemRJVzdFOHNCX1d6Y1oybVBmdGxDZHhJbzDSAdQBQVVfeXFMTTZhUU5LNFk0OG1TLVBtcEZmVnZrZUFSQlRSM05yRGhwOGlHal91aW5qdTdhLWFYT2NsVVVTVGNNaHVDemZFQzd3SVM1ZVI3Nm5vUnBkbERMS2Z1akF1blJhOG9PNnYxSnZwQjdma2JhYVR6NDZpUDhlVldLbEZURnhhTksycFZDVkFqVXpHZUxUWEwzUzJMb2htY0J0eXE0ckpVUVRYaV91SmIyVmVHQk9yWE1JdjZJQmsxNE5VTkdUNEFxQmJyaVF6azFNeDRMRjJOMzI?oc=5",
-          "published": "2026-11-15T20:22:28-06:00",
-          "date": "2026-11-15",
-          "label": "Nov 15, 2026 8:22 PM CT",
-          "weekday": "Sun",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:8eda9cfd8801669a",
-          "kind": "headline",
-          "lane": "news",
-          "source": "BusinessLine",
-          "sourceId": "headline",
-          "title": "India's return to higher interest rates could hit growth and consumption - BusinessLine",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQeVYzbFdBMUtMLUIzeC10M0NiQ25CeWVGMTR2cDdfRnpVRUstWG9nUlJWQ3lBTGwxSEpRNjNKTlNmaXdXMllfX0JFV2Q5dGg1eDluNFE2eDk5Um9QcUl2UTdIRzJ2Z0ZISGRfUHJKNVR3bTE4dkUzNHZUNWtGbHJ2ellLMFZiLTM1WjFtTGlmYnZTSEt1bDV1WXZ4TTNvd05aRDBqYmpoQmM5aXZISHVoSWI1X3dYUmpSay02Q3cxcGJxcUdMb1YwaHkyVDB6X3NtWHp6ejZB0gHcAUFVX3lxTFBka0l2OTlNNHFVaEJTVWNGZWY4XzFjZUVKT3dwSE51Q01oWEZuWmRzYVRjaWdVWUQwXzlCTnA2ZjkyZ29FRHFFaWdGbmNRYi1fWDNyUG5kdzVWVm5qTkZaWGh0dWw2b3V3Mm9qZUQzTkZmZDBDNTVsU28zcDJ2TG1rVHFWRTV3U1c1NUtEQjQxaC15SndQZ210YWpBWEcxWU1oQ2lhX01FOEt1bWZPb0g5RThaUzhyN1Mxbml2SWdXYTE1c2J0MktBaGozT3diVDRMdUc4dXAtWjY1ekw?oc=5",
-          "published": "2026-11-15T20:09:50-06:00",
-          "date": "2026-11-15",
-          "label": "Nov 15, 2026 8:09 PM CT",
-          "weekday": "Sun",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ],
       "spikes": [
         {
           "topic": "inflation",
-          "outlets": 5,
+          "outlets": 4,
           "state": "RISING",
           "links": [
             {
