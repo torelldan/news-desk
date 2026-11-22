@@ -1,8 +1,8 @@
 {
   "baseline": false,
-  "brief": "The stock tape is the story: the S&P 500 is -3.7% today. What to do: no action unless you need cash this week. Open risk: ACTION M6.7 9 km NE of Carhuamayo, Peru. Current war coverage is on the board: Eight killed in Ukraine as Russia hits back after Crimea bridge attacks - Reuters. Global: Fossil fuel talks deadlock pushes COP31 climate summit into overtime - Al Jazeera. Infrastructure: Internet services disrupted across Pakistan due to undersea cable fault - Daily Ausaf (unconfirmed).",
-  "checkedAt": "2026-11-21T13:33:42-06:00",
-  "checkedLabel": "Nov 21, 2026 1:33 PM CT",
+  "brief": "The stock tape is the story: the S&P 500 is -3.7% today. What to do: no action unless you need cash this week. Open risk: ACTION M6.7 9 km NE of Carhuamayo, Peru. Current war coverage is on the board: Eight killed in Ukraine as Russia hits back after Crimea bridge attacks - Reuters. Global: What did Xi Jinping get from the bear hug with Trump at the Shenzhen summit? - NPR. Infrastructure: Internet services disrupted across Pakistan due to undersea cable fault - Daily Ausaf (unconfirmed).",
+  "checkedAt": "2026-11-22T11:02:56-06:00",
+  "checkedLabel": "Nov 22, 2026 11:02 AM CT",
   "errors": [
     "AP World: curl: (22) The requested URL returned error: 403\n",
     "Reuters World: curl: (22) The requested URL returned error: 401\n",
@@ -35,6 +35,35 @@
         "state": "EVENT",
         "title": "Combatting adversarial distillation - OpenAI",
         "topic": "OpenAI"
+      },
+      {
+        "field": "ai",
+        "links": [
+          {
+            "source": "Google AI blog",
+            "title": "Introducing Tool Retrieval in the Gemini API",
+            "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/"
+          },
+          {
+            "source": "DeepMind",
+            "title": "Introducing Gemini 4 Neon",
+            "url": "https://deepmind.google/blog/introducing-gemini-4-neon/"
+          },
+          {
+            "source": "Google AI blog",
+            "title": "The Gemini app is now available on lower-memory Android devices.",
+            "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/"
+          },
+          {
+            "source": "Google AI blog",
+            "title": "Put Gemini to work for you",
+            "url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/"
+          }
+        ],
+        "outlets": 2,
+        "state": "EVENT",
+        "title": "Introducing Tool Retrieval in the Gemini API",
+        "topic": "Gemini"
       }
     ],
     "markets": [
@@ -57,8 +86,8 @@
           },
           {
             "source": "India Today",
-            "title": "Comparing India and US economic growth amid Federal Reserve interest rate concerns - India Today - India Today",
-            "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOQjQ4ZmRNdVZMM1IxYmk5enV5aGwyem9MWm9mb1pqSi1Ud1loWnMydHRENjVreUxtd3hKOUNBSVotOXRaUGVCQVd1OEkyNV9uYUxGUGlVdmxudGZnaGItNU0tcndPWUkwYjVuMnZXbGxtVW9tZnNDN0VIUFZ0ZE5OZF8zZE9uem1PblhTakplOVg0NzIyM0tLWlNQQnota0FkaWpWR2ZiSzJKQmE5R3dWWDRXZFhST2xOR0E0blZXR2tJY2NvU2fSAcsBQVVfeXFMUElpX0xzUmhOc3VVd3FoN0NyZzNhZ1FoekFJWlM3YWVLb0ZTanhtQUo1LXZTaGRSa095OUdfVWNEbEw3Y3Zvd3dfNDZXSUtHQng5NWxESVFNaFhGTDA5WEtzdDRVMmJuak9HQkdtSkl5UFRYc3lfVl9yV21mOVM2NHNzZWxTU2s1YVZIdXVTcWhEM1pySkk1ZWZPOHAxMDAtdUlFMzZCbndHc1lMeExfcHJfaDhRWWhpMVQ5U2tjUzl5cmZESjVXenJxaUU?oc=5"
+            "title": "Donald Trump praises India’s economic growth and criticises US Federal Reserve policy - India Today - India Today",
+            "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPWFZ6U1VvS195SE4tUHVRMV95UFhMUmRIXzVyYVR0eHQxeUttdTFaelB6WkIxMEl4alZHX1Uzd2k1cXREZjJtVEd0LTJUUV9McGNyNVZ2dmd3Ti02ZXRzOHJnVFVqQ210VDBXZGpaNVd4NDU3R28zQWhVUTJmeG5GMlV4Ym5fS1hrSjVYSFlvb0FXYk1qVENNMWFTNlpPZ3RiWDRIZFVqdlUzeFYtZ3RrWUhfSTRNY0NMOVBVYmxib2Q1TWtQSkHSAcsBQVVfeXFMT3NnMEJfTHNyM2ZYVjdud3JFdlNOUmw1ZjlzSUhCbC12Wk1NcnFfME9heXZ5cDZxSHBMSWxKNi1PMUxYaGpDSUd6LTl2SWZMQ1FMTjd0QTBEU2dVenNRejloOGVJMUFCeTlNek5fekJLQnctMFlYdzFwcWpxZm9FQ0FQOE1DWUdJRlIzS2RXdFA4SzlpWTQ3VlFBWlpGV2hSS0VyenM0ZkhCMUlKSWlHek5FZGpFa0V2MUFIeDFPRkw3VGYtYlVDQ1dvOGs?oc=5"
           }
         ],
         "outlets": 10,
@@ -70,30 +99,30 @@
       {
         "links": [
           {
-            "source": "Livemint",
-            "title": "‘Look at India’: Trump says US could achieve 20% GDP growth with lower interest rates - Livemint",
-            "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQbEdyaUFEV09FcXZ2TTFOa0pPem93UHNXNkV3NFdoOFZ6bk9ENXd6V1p1OFN5eklkZm5nenMta2xhQjZtZ2diX3R0YzNTSlZ5ZW5DRUJpV0NWTjhUVnhXbFUyckwxeWw2RGF0WGx3Z3dFLV9SZWVoSEtLd0NwNS04VzE1SzlMRDZ1X3I4bmVSbkMyLWZXWnFrdXNxLXhwdGtJSVF3YnpHREFJWWNxTmZwdmhhbVZiUUJLb3hCdEtXZnlGcGIzaFlUeE5PSFJXVnVkU1N30gHYAUFVX3lxTE9HV1M1cHV6UDVpRTViUktPQktOeE5ETl9RNy1ERFVrVmh6c1hDTmJDQ25DZHpVRlFzeVBPbXBMaS1sb2FFRWExV3h0ME9fa3kwc3UzUW9NTmJMNnBYS3Q2ZHpoeFFLYThmTjdvaWpYVml5M1NyZDczYXNHQ3VDSlgtcjlTdkZ5V3BTSmVpRjhKNjZmSlVZRUdpanRfNGpXbUxSX3FRd29TNF9yNi1tTFp3LXl0VWM4dFVOYUVEcmV2QmtMQ0FKMWhpX2pabVhFNE1zbkgxNWZPWA?oc=5"
-          },
-          {
-            "source": "Firstpost",
-            "title": "Trump hails India's 7% GDP growth, low interest rates as he lambasts US Fed Reserve - Firstpost",
-            "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOb1FTc1k1NEJMOGRVdUZsaHB6b1ZqSF9sclM3Z2VZaHlpR1NUV3k1VFAwUmw4LU1sbVJ5NHg3UnZTTnpGLVJlLXlVcmdxR1JzWGN1WXAxN3gtbGR1OXI1UVliSlpkaGJtTTVDQm9vZXJXdllTR0hQMnFNMnRIbnFhcjJoNjd0SGVMUlRqMU01TEIzUTFROXlNMnVDUTNZMGJwVE9SenVPdWtwVURFdmcydDJrdV9oOXliQUdBaTl2d2FaOGF2ajR3ZmJYNlhlUFFheGVn0gHYAUFVX3lxTFBzZWpsMm9MQVR0RW9oOVNVSXNKS2FxbWp4eldCdGlJTmxyR2k0QlVJaTFVeGs4TE1SME41dHdJWkZQNXdZX0M3UHJ4Y19yYlRsV3AtRi00T25pVWJFb0JiZmFWR0hITTNyQWJkMVJnbjhJQXFRV1VPcmFBUm5DQUhBWnYwU21sYkhWeHhiV0dfOFZ1cENkREowN0VWWmFDLXRMNTBfNnUtaWs0c2tDblFaV1pOVzlhVmphR1F1cjRrY2UtRm5OOUZTcTk5QXhNSVpuVUE3SjhQbg?oc=5"
-          },
-          {
             "source": "News On AIR",
             "title": "US President praises India’s economic growth & low interest rates - News On AIR",
             "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxORmFLSkZkaUdadk5zT0t0NkhqSDZPTXM3a1Q4UGpCb1RrLTlIZEdCVEVXcXNkVWxLeHRuYm9FS2NNb1JUSzNXcGJjMERkRUVHZzQwXy1BanUySUd5VTBxZFF3YWsyUGt3WDByT1RYYTBLTm9vVVVjM1FwQm5jOXNhSU1NaTBYQVE3ZkpmLXJGY25wUQ?oc=5"
           },
           {
-            "source": "Deccan Chronicle",
-            "title": "Look at India: Trump Cites India's 7% GDP Growth to Slam US Fed over High Interest Rates - Deccan Chronicle",
-            "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOcnJPRmxjeGVyOWs5VXhKNHVyVk55Skt5RHFfR2tqbEVOMlNEelpPVlBhX1NoTFV0NlZEaV9iQXFnRkR1NFNUQmFzbno2b1lJX2xUcTJOQTQ3VWFMYnZmVm9LSFJTTnl6SkpSclJXelc4SG94RDVscDVYTnRJVm92Z0hvTXZnWHNLNlE2Q1F1Q2xnS1MwNWRYdWZmb1Q1eXdsLVl3OHJoMi1sN3hLeWFQRGpySlM4bU1OQ1FNZkdWYVI2eG1zX1Z0REhvVzVOdVJZREwyNXl1TdIB3AFBVV95cUxNLWpGT3RjRzZQdDJ1RExEczBWVHpCaGE3SmZFWTNmSzgwVkgtMFpaSFNhOXYxSFpkdngyY3otWGpkVU9ObEJId054UkpnZW8zdkQyNmd2Ym5IZVJJcS1POWFnNVJhc2hmUU9HOWV4OWlfNVhqXzdJWlJORXU5RjRac3psV2JVbnhxbmNVN2dwVGhMVGxQd05yVEdCYXhIMmxRU2tPRmdJZkMxLUdvUVo2VkhJaUZUeDVGTVhoeF9iS1R6RUxlZk1vaW54SU54dmJodGRZVWpCTkptNkh4?oc=5"
+            "source": "Livemint",
+            "title": "‘Look at India’: Trump says US could achieve 20% GDP growth with lower interest rates - Livemint",
+            "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQbEdyaUFEV09FcXZ2TTFOa0pPem93UHNXNkV3NFdoOFZ6bk9ENXd6V1p1OFN5eklkZm5nenMta2xhQjZtZ2diX3R0YzNTSlZ5ZW5DRUJpV0NWTjhUVnhXbFUyckwxeWw2RGF0WGx3Z3dFLV9SZWVoSEtLd0NwNS04VzE1SzlMRDZ1X3I4bmVSbkMyLWZXWnFrdXNxLXhwdGtJSVF3YnpHREFJWWNxTmZwdmhhbVZiUUJLb3hCdEtXZnlGcGIzaFlUeE5PSFJXVnVkU1N30gHYAUFVX3lxTE9HV1M1cHV6UDVpRTViUktPQktOeE5ETl9RNy1ERFVrVmh6c1hDTmJDQ25DZHpVRlFzeVBPbXBMaS1sb2FFRWExV3h0ME9fa3kwc3UzUW9NTmJMNnBYS3Q2ZHpoeFFLYThmTjdvaWpYVml5M1NyZDczYXNHQ3VDSlgtcjlTdkZ5V3BTSmVpRjhKNjZmSlVZRUdpanRfNGpXbUxSX3FRd29TNF9yNi1tTFp3LXl0VWM4dFVOYUVEcmV2QmtMQ0FKMWhpX2pabVhFNE1zbkgxNWZPWA?oc=5"
+          },
+          {
+            "source": "The New Indian Express",
+            "title": "'Look at India': Trump cites India's 7% GDP growth to slam US Fed over high interest rates - The New Indian Express",
+            "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQcUxSS3hBRlVtWkFVS2l6NGR1el9JUnhLeHpJVURTc1cyQlRuZjlldmVES09PcG5RSklpekotNEpQa2tOanhNU3c5eVBiWWZNVlBuS1gtWjVwcVk1NDBPZFNITk5uSXJHdXNwUlVqQjI2bHdPUUdvWlJobVoxQnFTcHdoR0JSZEFURzlueHVsSFRTek9zV21tUFBWalZwczZzaEpERFgwYXJMSGNnRG5KVXBmV2FiSk53SWpkcGt5eU5CLUdIZGR0UUJJZXlTY0szWUHSAd8BQVVfeXFMTldBekc1Q2ZRWS05Mi01RHJTZFBQajZxTFZOVnZNX1ZvS1RVdERrbmYyZEhZN3lTcUEyd2tpUWJ2eHNHSnQyNlZTUncxMVdodHZLZkJUa3VJWWtRdFFHWldSVkgyTUV1NlNycHQtSndGRzhKelhWam5pVXFUWVNzUFVDWjg5dHhZMXEzXzVTTm9qbjZTcTNuZVZDSWdjbHRBUnR6cWlhdWFrUGk0eHVhOThWNHYwVUZCclNPcVZIeFFHb05Mb1RTMkV3LVZ6X01JSVBvUVpzWTYyRG5LMEVlbw?oc=5"
+          },
+          {
+            "source": "Firstpost",
+            "title": "Trump hails India's 7% GDP growth, low interest rates as he lambasts US Fed Reserve - Firstpost",
+            "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOb1FTc1k1NEJMOGRVdUZsaHB6b1ZqSF9sclM3Z2VZaHlpR1NUV3k1VFAwUmw4LU1sbVJ5NHg3UnZTTnpGLVJlLXlVcmdxR1JzWGN1WXAxN3gtbGR1OXI1UVliSlpkaGJtTTVDQm9vZXJXdllTR0hQMnFNMnRIbnFhcjJoNjd0SGVMUlRqMU01TEIzUTFROXlNMnVDUTNZMGJwVE9SenVPdWtwVURFdmcydDJrdV9oOXliQUdBaTl2d2FaOGF2ajR3ZmJYNlhlUFFheGVn0gHYAUFVX3lxTFBzZWpsMm9MQVR0RW9oOVNVSXNKS2FxbWp4eldCdGlJTmxyR2k0QlVJaTFVeGs4TE1SME41dHdJWkZQNXdZX0M3UHJ4Y19yYlRsV3AtRi00T25pVWJFb0JiZmFWR0hITTNyQWJkMVJnbjhJQXFRV1VPcmFBUm5DQUhBWnYwU21sYkhWeHhiV0dfOFZ1cENkREowN0VWWmFDLXRMNTBfNnUtaWs0c2tDblFaV1pOVzlhVmphR1F1cjRrY2UtRm5OOUZTcTk5QXhNSVpuVUE3SjhQbg?oc=5"
           }
         ],
         "outlets": 9,
         "region": "USA",
         "state": "RISING",
-        "title": "‘Look at India’: Trump says US could achieve 20% GDP growth with lower interest rates - Livemint",
+        "title": "US President praises India’s economic growth & low interest rates - News On AIR",
         "topic": "interest rates"
       },
       {
@@ -102,6 +131,11 @@
             "source": "Wisevoter",
             "title": "Inflation Climbs to 4%, Fed Eyes Rate Hike - Wisevoter",
             "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPUm9PbVpUdUhsMVZ4ME1SX1haajdPY3Z1QUl5Y0ZyVXhwMlI1ejVZQ1JjcU0xZ2p6aWx3VkF2Qk5yTGdNbGFHMThBUjV4dFl5RDVoX2RlQ3hPd0R2Y2JkSVRCYWJnNkdhcHMxY2VsVXZ1dWctZ3F3MnN2c29vZTNQdDdCUXJpNE9JZFc4aDBxYzdzSjA?oc=5"
+          },
+          {
+            "source": "NiftyTrader",
+            "title": "Trump Wants Cheaper Credit, but US Inflation Was 3.6% in September: Fed’s Tough Call - NiftyTrader",
+            "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPbWlkUnIxNUhES0xTamg5X1FhZlg1RGJxSEQ4ZHdxTkM3RHJDaDhPN0lZU29US2pZOTdtZGVKTjdlMndTWWJKNTQ0SDFNVDBxNUNjeDdMQ3kzek9RekNZZ2hQTDBEMUlmODJ2TzZ5Um1HNURaWFRfdUJyZWFpaEpFTg?oc=5"
           },
           {
             "source": "Bloomberg.com",
@@ -114,7 +148,7 @@
             "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPOU1qMGxDcnlJbjg4eEJzbU82Z1pWSndxeUJSMXlPR1pRVmVMRlZUSUFfSFNlRU42RUxna3RPTUtuM1RURURWZlVaZHBmOFJPTVJDdU1KeWJYZUdhb0dLMmE5U2w1NzlPRWx1QjNNNUNvMUdnQ3JkblRhTXVuNnJEdnJZcWpZLUtJY3RPbWlZWURFNm5SV29QbkFQbTVqMTZTcWdOaVE4Wl9Rck9tYXIzOFQ2ZnlMZm5BY2d4YmtsZTBneXY3a3lGMHZTLU9kbjFKRC1ySlJtTkxqX2pSVnJfc29odEd0czVvRlJmNXVJcjJ6RjMtSHl5NGJJYnFfOGlwdUHSAYcCQVVfeXFMTXRtYTJOalJZLWhaaDFhUFJGdFh6d0xTV1VCcDV3amU0eUNYV0RFVWpjT01jTXZZOUxQbk91Y1MzanhvUmxQeVI5blN2LU9XVzU3UXRTS1VObjdJZ2xpNHlHMG03UlY2U1hwZGphbmREQlBsWm0tSnlDczZESU1GX3ZfaW5aSG1XU3FOWVk5c0F4U0hIQ3J3S3pVSmZra2ZSNk1FbTdZaGs3a3FGa2NlTmMydms4aTVlZE1IUEhXMEtMYm5jUDhYTVBnUmhDLW9QdGp4S19yNUt6NnZGdkhWeXJnUnFLV3NkTExINllKcWxZX2hMVzVfeDI5bUQ3ejRyMTFYWjNhSWM?oc=5"
           }
         ],
-        "outlets": 3,
+        "outlets": 4,
         "region": "USA",
         "state": "RISING",
         "title": "Inflation Climbs to 4%, Fed Eyes Rate Hike - Wisevoter",
@@ -123,55 +157,31 @@
       {
         "links": [
           {
+            "source": "Traders Union",
+            "title": "Bank of Canada raises benchmark rate as inflation pressures persist - Traders Union",
+            "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxONi1QVHc0a0wzbEVJV0tXRkNFUXB3a1FLQTRzaEhrRHRiSnJ4LWdZc0hVYXdLOGNDQnUtTTJVSTRBckV6ODZyUzJVLTdtV3pQbDQyY082U1JTWHBKQ1RZTi1NOW5mYk5sU3p5V2xBUndycnluM0l2WXAxelg2QkNxc2w1dkFXemZiQ3lMQWV2M3h1eFdJTHc?oc=5"
+          },
+          {
+            "source": "www.equiti.com",
+            "title": "Week Ahead: US GDP, PCE Inflation & Fed Rate Outlook - www.equiti.com",
+            "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPZGJtX1AyM2JjQmtHQlNrdzZ2blI1enNocTE1bXRrelRlR0JMNk9mck9WcnJUSng0SFMxZFNZdk93SHliU1NhZTBQczFEdW9MSEVONm9OaXpQZXUwRFJ2eVpTUzJCZXpicDg4VGdCZkNvY3hZSVdUaWg1aGwtcnY3OWg2bFNJRXBIWjR3YzVtUlFtY1VuR2JHTjA2QWVlQQ?oc=5"
+          },
+          {
             "source": "Investing.com Canada",
             "title": "Bank of Canada says public trust in 2% inflation target helps anchor expectations - Investing.com Canada",
             "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxObGg0cFpHbjYtclU0Zm81dE0zREY1MTNzNDYzYmU5cW0yVUVmM0dPQ0gyRVVKeS1Pa1c5aGVpM2JpMVVfa2psR3FLSEFkX0VheG5WR3JDMHhDdk1zOTdJa2lwX2U3VTRTVnpnbXR0VzMyZG9UQ0hzaXFmU2tqOHJqT1RCbzVLQXRnT0ZPVC1ySUs0TUg2ekZCaGVsT2lJSzRWNWlBT2JlV2dTX3ZHOTRubzFuWE5yRmZMSG1tSmxVdHNPQ2JGV0cyVERkUQ?oc=5"
           },
           {
-            "source": "Benefits Canada.com",
-            "title": "Inflationary pressures from energy market pushing central bank policy: expert - Benefits Canada.com",
-            "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOYjRNN09Zd2ZXaUhQT0NFVl9DMFJDay1HdTlTakI2NVc0eVY5Y0sybXAwbFgtb0FXRDVjRjl3bnl6NVpfWGluemJwbjFpQU9xT0U0UjJRakNGQUd4Y0RxcXBGUnZzQlBxMGFXNFZIYTNZMXZLcG5pMUtYUXU4eGJuckFieFZpdW1fUFVrY2RQWEtLNkhuRkU4bGdxVzVKRVRnWkREdHdqVEFXeEVTTnJKNFFqZUZPSHpaOVc2Z2h6X05fY0ZueFJDN2k3eFhUSnFTczdFSjhjSlJjZ0QyMWg4dHV3?oc=5"
-          },
-          {
-            "source": "WSJ",
-            "title": "Canada Inflation Holds Steady at 3.1% in October - WSJ",
-            "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOZUh2di02WldwU0Q2eVluc0Y4cktuNXNFYXc2M0ZIajJtY3ZoOUZFTHRxUTJUUl9uMkJUcnkyeFdvb1FMcDMzRy1YOXRVaHI3QmMteU9IRS1pOEVmMjhjVE44TVJfRkloclZKaXJ5M29WTmRuOXk1REQ4c0JWTk5vSU9tdGRCVkEtbjRSY3lXVXVNSmQ2T2dqMkdFVUxRNVhWbmc?oc=5"
-          },
-          {
-            "source": "richtv.io",
-            "title": "Canada’s annual inflation rate held steady in October, StatsCan says - richtv.io",
-            "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQMXpuMk1YMnRZbHlRcGNmZEZCc29HXzBuTHpJTmQxVDBlRTR3TUEycVJ2cGNJS3o2amFkN0ZqdVhyckFxOVQzXzM2X2ZXUU4xVUxCT3V4bjAtVHh5RWxJZTZBVjNacENWR083Y0xtUW5aR0xSa1lhQXN5bVdkajF4S2xmT09ZcHBGMzNWcHFFQ0J4b0k?oc=5"
+            "source": "Yahoo Finance",
+            "title": "Mexico cenbank's Borja says length of rate pause unclear, flags inflation risks - Yahoo Finance",
+            "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQYkpVc2U3aXlMaUVSOG9QOE9YWTdTXzB6R0liZUI5NzBGV0dqREVEc3JCSjZHVldsSVBSdnpfZGIxd0FTWXhRcXpfTnJ3RTJFdklFT0xWbXlXc3JCc1Z3X1BzWXFSZGZCdDFibmV1ZW9UZ3MxWVVfLU1kRE40dnhaTmdRSExQR19LOWJWR0IwM0ZxSUR1MV9tdXpobmZMaVk?oc=5"
           }
         ],
-        "outlets": 6,
+        "outlets": 9,
         "region": "North America",
         "state": "RISING",
-        "title": "Bank of Canada says public trust in 2% inflation target helps anchor expectations - Investing.com Canada",
+        "title": "Bank of Canada raises benchmark rate as inflation pressures persist - Traders Union",
         "topic": "inflation"
-      },
-      {
-        "links": [
-          {
-            "source": "The Globe and Mail",
-            "title": "Memo to Tiff Macklem: Stop hiking interest rates or risk ruining this economy and stock market - The Globe and Mail",
-            "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQTXpablhlZmt5LXVITlhkVkEzTWJPOTBHcXNfckVjNW9sclpzRDVNdDJLbUVWclJPZDM2aHI2bzZYLUJ2dXBGY1FUQ1VMU3lwRTR4Y0FWV1EyMWN4S0xHWDlPLUFqMDhlTFhkMlluVEZoLTVad205QVo1SFktcG4yWnZXQXZibG4xS1pmdVBRWVFpRDdnQXJDcy1kMGZNMUFpYTE2cWxpZ1JNNkc2VXd0N3RfNGJJTE9ESldSWUFxc2pOLXM?oc=5"
-          },
-          {
-            "source": "BNN Bloomberg",
-            "title": "Bank of Canada official discusses guidance on interest rate path - BNN Bloomberg",
-            "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOZmZkUERGNWRKeGdTX3BqTnVTaW1vMmRfVTk0RDRfR0hmQ3lpcWNkSTZWYjgxVWxVOEVablQ2a0dsY1daUVZhX2VaRnFmT0FSV0RlN2Nxd2lySzVEVm1tSU50X1FXZFhJSGhwVFBzbVY5VnZtNGZrMVlyWWw0dVRBd3o5cGltWUU5a2E0YjJFandFLWNQNDZUVml2OHRtdUtHaHlJQ2xMYXNHcUtIdDV4bUNsekdSYkQ3ZmZtYjh6MGZielNVclI2SXA0dVdsWDdXZnc?oc=5"
-          },
-          {
-            "source": "Switzer Daily",
-            "title": "Why Australia hiked interest rates faster and harder than any other advanced economy this year - Switzer Daily",
-            "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQdnpBTlZucFpwWkJxMDB3UHFnazNlUTJ4a2FIQUROZnpibGtxMGZrYmZhY0FLenRZUmdOQUVac3NjZFQ3U0hGaXR6WERQRUk4MEtPR2VIWDA3YmhUU1VfRWFvbnV0YnpZTkFlNWE4RjNDajRGc3hjUlZlelF1aEtDNWU0UXVHaFY0bURGMHMwY3ctOXFMczRpdTlGZmpMNGhhdlVCdjdRNUFGenoxaURpNEhYbXc1c1phVHc?oc=5"
-          }
-        ],
-        "outlets": 3,
-        "region": "North America",
-        "state": "RISING",
-        "title": "Memo to Tiff Macklem: Stop hiking interest rates or risk ruining this economy and stock market - The Globe and Mail",
-        "topic": "interest rates"
       },
       {
         "links": [
@@ -295,14 +305,9 @@
             "source": "The Economic Times",
             "title": "RBI may hike repo rate by 25-50 bps in December as inflation breaches 6%: Experts - The Economic Times",
             "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOdVFxbVpsWmxfSWp5YWEzRHZGT0duN1JDUE5VUHZKb1huakY1U2xpN2h3cHdQaWJxUHJzRkxVcmc4U1ZXWnFhQWlUbHFtMm5yN2wzSlQtal9NWUM0WVFNNGJPTkFxSkRLSDJuLXN3cGYxMTdZa05SbWNyTnZ5eHFaWk5POWVlZVRoNDZGa25hQklvWFJWaVFnWVktUkxzeENIZVI3NUViYUI4bGVUYUpRNUU4Y0NVUmJLTUR4eVg5TjdJOWtUQzhYelZNMjY0elp6WFMxWEJEcm1QaVYtcWUzTDlyVVUzWUc00gHuAUFVX3lxTE9CMGsybEZITUFMX1Fuei02NE5yajdGSXpKNmtCMEFndGFza1ZmNkhxWUowQ3VQUEZlZWhvSlZ4cEhJU3FfaTN5YWtyOHYxeDlKWERoaEVVUWRxWC1kX1h5d3dKUkkzNE5HVVNkd0tQTC1GdUQ0cy1iYmFxSXloRzhJUHotRk0xVnBoSjJCbUZ3ZzhKQVMxVVkxV2VyWUM2YmRMOWtWM1FwaHFzbEh0Wm45ODBvS2FWTUM1Vl9rMVdoSWsxeEpITURmQ1RpS2lYQnFDS3J3SkRIX19LOGEwOExBSzRjbWtRQTBPMHJLd0E?oc=5"
-          },
-          {
-            "source": "Business Standard",
-            "title": "RBI may need tighter monetary policy to contain persistent inflation - Business Standard",
-            "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQQWRnUUdBOHpNX1JzeXlXdlQ4aVJzZlhzcElINWxfWU8zX2N4TlRmMG1CMmItakc0VDk2TEIyQ3luOWlBeGdGZzcxVE5sMjlrR3o3Q1FCQkxkdnAxS0xKOEZlQWx0dGNaTUJqRE5lNGRXWmVrZHNicS10VkVrVUZpRk81ZGhOaWpZWHJFX05NdVZfQk56NlNUWUJNcVlJc0hnTFBCYmRzcU9EWVN0MnRoRmZNeVlZVlJMU19lVThvSFFsU2FpRTJrc25qSkhwNUNqNUxQcVhGOUdRUdIB2gFBVV95cUxQQWRnUUdBOHpNX1JzeXlXdlQ4aVJzZlhzcElINWxfWU8zX2N4TlRmMG1CMmItakc0VDk2TEIyQ3luOWlBeGdGZzcxVE5sMjlrR3o3Q1FCQkxkdnAxS0xKOEZlQWx0dGNaTUJqRE5lNGRXWmVrZHNicS10VkVrVUZpRk81ZGhOaWpZWHJFX05NdVZfQk56NlNUWUJNcVlJc0hnTFBCYmRzcU9EWVN0MnRoRmZNeVlZVlJMU19lVThvSFFsU2FpRTJrc25qSkhwNUNqNUxQcVhGOUdRUQ?oc=5"
           }
         ],
-        "outlets": 4,
+        "outlets": 3,
         "region": "India",
         "state": "RISING",
         "title": "Indias GDP Growth To Slow To 7.2% In 2027, Goldman Sachs Sees Inflation At 5.7% And More RBI Rate Hikes - Free Press Journal",
@@ -384,7 +389,7 @@
       }
     ]
   },
-  "today": "2026-11-21",
+  "today": "2026-11-22",
   "trends": {
     "google": "Google Trends US daily list answered (10 topics). Kept the ones that match a war, government, or threat topic. None of today's search trends matched.",
     "mode": "trends",

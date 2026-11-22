@@ -19,32 +19,29 @@
       "links": [
         {
           "source": "USGS",
-          "title": "M4.9 88 km WNW of El Aguilar, Argentina",
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucni"
+          "title": "M4.9 south of the Fiji Islands",
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucs1"
         },
         {
           "source": "USGS",
-          "title": "M4.6 68 km SSE of Tateyama, Japan",
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucn8"
+          "title": "M5.1 45 km SE of Ürümqi, China",
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucrp"
         },
         {
           "source": "USGS",
-          "title": "M4.6 18 km ESE of La Romana, Dominican Republic",
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr2026325000"
+          "title": "M5.4 224 km NE of Bitung, Indonesia",
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucrb"
         },
         {
           "source": "USGS",
-          "title": "M5.9 238 km SW of Yanglong, China",
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucly"
+          "title": "M4.9 246 km ESE of Sarangani, Philippines",
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucr3"
         }
       ],
-      "reasons": "1.6x usual volume · 5 or more outlets",
-      "score": 2,
+      "reasons": "5 or more outlets",
+      "score": 1,
       "sourceCount": 4,
       "spark": [
-        {
-          "price": 3
-        },
         {
           "price": 4
         },
@@ -83,6 +80,9 @@
         },
         {
           "price": 17
+        },
+        {
+          "price": 17
         }
       ],
       "state": "RISING",
@@ -111,7 +111,7 @@
           "url": "https://reliefweb.int/disaster/dr-2026-000178-idn"
         }
       ],
-      "reasons": "1.8x usual volume · 5 or more outlets",
+      "reasons": "1.5x usual volume · 5 or more outlets",
       "score": 2,
       "sourceCount": 4,
       "spark": [
@@ -141,6 +141,9 @@
         },
         {
           "price": 8
+        },
+        {
+          "price": 8
         }
       ],
       "state": "RISING",
@@ -154,14 +157,14 @@
           "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOaW5ZVDlLVDZMeWxSUU5VRnVsbVZja1A5bmhtTVd4OFBZWEZFSzFENVFIQUdaLV9JOHZVQjhGcGhqUHJtZ2JrTk5NX3FEV0NScmVwUWtrUmRqbkhGcThkMmp1bWw1SkRneVkzb2pVNzZqTmU0VnA2T1pCVlA3aGoyUEExU2xOSU1TcnpfaFRUa3hBRzNDZzlWOWxFR0RyeTZkeGRyMmtsbEJId3lMRUE?oc=5"
         },
         {
-          "source": "DW.com",
-          "title": "Ukraine updates: Russian attack 'one of largest,' Zelenskyy says - DW.com",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPeV9qSzNGLU5BaGd1UHRudmk5NjV5UDFnLVJuX2FYUUZnZmpVZjZkZFVSZzE3SnFzMkZLVVZDMktHTGdUbGJTM3E4S2VZMW9hcWhaR21uSFB5czM3ZDZBNkF2ZmlrUWtmOHF0S3Z4MzhLUzl2ZmxiWXlwUjdSODdHeHlOa29DUmNzTl9oTG5WbjlfbjJheEt3YmRBR2I?oc=5"
+          "source": "Al Jazeera",
+          "title": "Zelenskyy urges US to release Patriot missiles as Russia kills 3 in Ukraine - Al Jazeera",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQWDROSjJ4ZmFrSWp4VDNoeS1aRVlHb25QQXJvV0JhQWtrNjdJekNQWHEyQ0VhZUIyNHBpd3l2eEJSYmc4Zk45V2lhcWxwMzJBT09XYk1hRzZwa0FkT2ltdUl2STFtb1lBVHRtVFpDTGtYc2FVZWJqQXYyYlFSVzBhNzhpbE83NlByTGJHQjloNEZvZ9IBlwFBVV95cUxORzQwam00SzMzbWFrZHNQMlAxQU1sTmJ3ZEFQRU51V1B4MGxUb1FFeUo3R05ya0hQMFRVRjRGOTlVZDliV25wbGdnZzI1YlI5N2lpTnltOE5ZYUItZDViTlJvNkRCaGR0M2NxQ19zeEJrSmhVTGVKVGpoRFBNTlFlMFpxUzNKblhkYjlBek91OUJxbmZNdkRr?oc=5"
         },
         {
-          "source": "The Washington Post",
-          "title": "Opinion | There’s one encouraging sign in the grinding Ukraine war - The Washington Post",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOX1hmUnNEMHY4aFR5OTJRSEhvT1JTbGszenRQSE10ZFpSWF9RdG9jaC1NcVZPMzRjWGIzRks5ZXlxTTF4eDJJSzIxQWs0MmFMNmJFd2YyU3FScGJjelpwbXIzSU9qT2pCeTlLRXdiZkFTV0VKYmVpV1dLTVM5Uko0bmVWSWVreEkxTmNDZ2hIV0t0NmJHV3E1SE1LSTBSeEdGWWZqY3ByMy1hWG9VejdhMVV1aw?oc=5"
+          "source": "NBC News",
+          "title": "Deadly Russian strikes hit 3 Kyiv bridges after Putin vows revenge for Crimea attacks - NBC News",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPc2ZMT1N0Qk5yUzFfNEdMR3RYcFdxbG03VlBfeWtKOGhHM1ZkV0lXT3pVRjFNOGNjY2w1c3JtWVhMcFRoUXdZd2hKc0hlanVET0VoczdqNWlMbnFXSXROTlVUNnJsWjFtWGZjMEdqVEt0RDhpUk91SzBXY2RhQy1INHZhRzJRbnRHbVVBanVwTVphRUVvaC1jcTIxLXZ3MGt0OWZUMDJkRUprQ3E1bjJWYXl1eFZJQmhTY1E?oc=5"
         }
       ],
       "reasons": "3 outlets this window",
@@ -172,19 +175,19 @@
     {
       "links": [
         {
-          "source": "SCOTUSblog",
-          "title": "The next round of Supreme Court forecasts - SCOTUSblog",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQcEN1MjRvOExkMV8zS21aLVlNWHROUlA2VUhFQUY1akVXYUc1ZmwtMi0tdUwzajk5blhyeTU3SFRxVkRRYTFkbjBDZW5oWVQyUjBROEJCVnY2bjJIWExteG10anZ4TEVWdHBDSWFLc3VVeE5jWk9JZGtBUm5CY3N6MXhXMA?oc=5"
+          "source": "California State Portal | CA.gov",
+          "title": "In Washington D.C., Governor Newsom takes urgent call for LA wildfire recovery aid directly to Congress - California State Portal | CA.gov",
+          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPcFdlYnZfQUpiVWhfbmh1XzJEOTk0UXdza3RwTzVRU0h2ZjhnZkk1RXNaVnRLY3dCSUY5YUZET3hIRTJqU0VIOUs4XzVMMGs1REFrWENOOHJQMjZTUEhFUVk1SG54aUQ0Z2N4NGJ2aXNrSVczel90ZHJFNGRRcWpJRjZsZ215Y3BKdUROQUxaNWhrSjVZTUhOT2Q0bHRNQmNKTENMQlBxSGh4Y1h6b1kwZjA1WGlWWUQwdnA2cnRhTkw2NUpUSmNwaDIxVU1wUk1xbkE?oc=5"
         },
         {
-          "source": "PBS",
-          "title": "Mississippi saw a spike in 'inactive' voters for the midterms. Democratic lawmakers want answers - PBS",
-          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOYU5LRHplTi1UVm9ZdmQ5cnhwN1RMNzUzOExhQjMyRFo3MF9PQ21wSzZMRTY3Sno2b25Db3hDY184TUJDWHNVLVhoNHJjMUlfM2pGZ0hjWHUyR0hJeUUyX3p3SDNFNXZDVGNDclRUSEFZRlJtazA2SUVGNktPMVF4Q0gybWdUVTZQdWNaVVVMRVFLcmV4czMwNVhQS2N0NDFhNGk1c1JhS255d29kYW1NOXUwcjFHRDVUNG5HcWlWT2JsV2xEc0o5MWRWONIB0AFBVV95cUxNM1VWWDAyeC1WLTlBbmJROGdoTkVUd0FsSHl6N0RGTlJMZlMzUzBYYmlhcUk3UjQ4T055Q0FOMExLTHBNTzBDTWVNVUw4U3V1YnZSMWlEeVVadGlzSVZfRlprQ3QwdFd2YTNueEkzUWVXUy1rNnNscXJDSnJ6MU5fVVZhQXdNRFFJSXJwMU8xV3NkbnE2MFBzLUh4aURHeVFDSUJTUldLeEJGM2w4ODNvSXdwNDZ2YW10eWhUcEdnV3BpbTFqQWJHSHdUX2pjS2tE?oc=5"
+          "source": "NPR",
+          "title": "The midterms were the largest win for either party in 50 years - NPR",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQa2Jya1pVMGdtYW5PcWk4Z3ZGV29SUkR2RE5ranJBNlJYU1IxS05rQmd1M01jRjZyYnJaMUUzb2hCeDh0OUFHNlg3aU1lRUw1c0hXb0NlRnhSQmctSkpURTBlTnVlZ2dINmREaTFOYkxYWEV0dWpnZnRhbi1HbXNCb3p2aw?oc=5"
         },
         {
-          "source": "Pew Research Center",
-          "title": "In Wake of Democrats’ Midterm Victory, Majority of Americans Approve of the Party’s Policies and Plans - Pew Research Center",
-          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNa1hDMTJEcURyWkU1d21HWW1XZ2lGOTMzMlN5eVNDbjJ2bmRRQVItYzVPZWNKMDJzWFhBS3pTTUJLa0NUNFFnaTgwM1JfekNla08tZFVGU3JqUDFZZTlZQXdyd2xfS2xpZi1WeTZCUlFQT192UmlUeURvaVhteFBNUm16VVZ3TVhUVXE5ZGlWaXVadUdjQ2IyZVNGSXYwZkRsZUZ4UE14elN1dXhzdVpZVnlEZXE1enF6X1d5bWxWOUN0VVBGY053emFxekNBOVE1U0NfT1NrMm5rcS1NdlFEN1Vn?oc=5"
+          "source": "- Emerson Polling",
+          "title": "National Poll: Rubio Leads 2028 GOP Nomination Contest, Ossoff Rises Among Democrats - - Emerson Polling",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQeVEweVpGVHhhenR3TDljYVh2YklqcldyUGRMNDl0UDJWR0xYR3ptMFpIMXZBMHRXY252akhsRGFFdExkMHpzMUpGWDcxVjVxMFB5UG9OMHVlbUlFYmprUTg4VGQxbHBfUTUtSkw3LS1rR0VCZ0ltcUpOYTRZeUtqS1FOT1FTVGR0d3ZaZHMxU2I3VUtJVVp0VEoteU1sMDlIb2owVm1rZFhidjVRVkdlMzRGYkFXN3hq?oc=5"
         }
       ],
       "reasons": "4 outlets this window",
@@ -195,19 +198,19 @@
     {
       "links": [
         {
-          "source": "Time Magazine",
-          "title": "‘We’ve Got Time’: Trump Suggests Iran War Will Continue Into 2027 - Time Magazine",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOQjZGUzREbXRjRmtjM2dNZXc5eXVvVEJJOUdFdkpRNnZXVngwcDItZE9JYnJQc0diN3dRU1p3OGMzY0RQRkw4Q244ckR3UWVFWVc3ZkJHeThzU09aWnE4SHhxcVJqdld4bUtrdmdaVjA0QUdWT3dySkwzc0VVZXRDcWlHaTBZNERRWTUxbG1ZMzk?oc=5"
-        },
-        {
           "source": "PBS",
-          "title": "WATCH: Senate Republicans block latest Democratic effort to end war in Iran - PBS",
-          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQcUhzT1QtZUVQVTVHaGFKbVBKb0lxZVhYN2g2Q19qR2lzMVlEVnVZYVRYV1RWMUxVNGpqM1cwZGpfTGhrb1JXeW9xWFlCdzRoMmwtbVF6TUZERWVRcC1lUnI3V3ppQko3akt1VmVUai1VdEEzWG5FT3l2VDl0YUxlQ0FaWUNpUWZPbHpPNUE2bklUMjNGMUo0Y2FUZFhReWNLMkNNQlMzdzl3aUdWMzFQR0lKZ2VOTF9JU2dKSWtUMDJablkwdTFFRUJCT3HSAdIBQVVfeXFMTlhNN19IS01zdGtRU3BWaEZjVF94SDFtWU55Z0ZhdDVCQnBjWnE4dS14Uy0yVHVORUwtd2VqS0NjbDZmQ0lWUUFzeHd2Z1phZ3VSZmlseC1uVGN0Y28zNHFISEZRTHE0V2RGUzRCdmtyM1VKdmtvMHZjV3lJMk55Z254WUFPaVpCRVRPeTZ5T185MVJMRjdKNmQ4MmV4SVpCVFBpczJPMzlCVkl5NWFiYWEwU0tpSlEtYlJiUElwNDB3NTk4aXVrTDVyU29ZZmR1eWd3?oc=5"
+          "title": "Iran fires at U.S. facility in Bahrain as Tehran resumes strikes on Arab neighbors - PBS",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPTlVZWjRCSVZZOTdxbEJHVlVJTjVyV2xWVXdaQ2tqUmVRNFJkaElDa2xhYWFqbEcwRDlaWnpNWF9OMy05OE5mM2N4VkhRQVZHdTFUTTlyd2JUSkwxR0Q3ZEh1UDZZNDB5cmVHa1lfMkM0ZldWT1pJRmVTTWVPMWEzQnloMWY2Zjh1TDdaeHRONmIwbERZLWtfMy12Z19JcDV2eUJxZElIWDdBWW5CU1NEYU5TVjJRRjjSAbwBQVVfeXFMTm93R19jS3VPR050YTJCYXBSQ25mYlo1RXNhZ1JSSXVZdEdiYUJJeloyZHlkUnJYTTc5dGVzbmlqZHY3Tlhscjc5cWxqT1JRTHMtVHlORE5TUVpKQVZ1d3FGUjhwcDlHbk5JSFVoeXZya1lTU1ZIUW9SRkUwZ2t0akZGa2t4VEpfdEZJRS0xcFFEZGVaVGtNcWFvOWdLTFFRUmFhTXBsQ1FydjA5X3dZUHdDVmE4WnduNXVUMTc?oc=5"
         },
         {
-          "source": "VOA - Voice of America English News",
-          "title": "Rubio Says Economic Pressure on Iran is Working - VOA - Voice of America English News",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPZHlkaklMa1Q2MTJsRjhfbEFSc2p1T0JJUmRpRExVOEVZWXJXdFd1bTRleFpYeDE1M2ZldjI1R1AxTkVNc29vUFFIVE13cVVTNG9qTzRicUVoLVJVN0dEWExtcnJxVEdabWpHeEVEbkJWdXlkc1p6NjVRM0M1M2FMRXhYRGNKX2dha2ZvME5uNmJrajjSAZYBQVVfeXFMTl9raWJ3NXo3T0NJaVFKTF85bWxCanJ3S296ZjRvdEVtVEx2ZHI3Ui03aXpYODcyNGFWc3JuNFJhRGt1NVhzZUZDQ2RZQjMtdUYwS2txS2JZd2ljOE1FcjZ5ZFVJS1dYWFhFLTNNRXlsX1gxX0YzbkxCU3V1TG9iWElSNVlCTzhCV1g3WGdLNDAzZ3Q2Mk1R?oc=5"
+          "source": "The Atlantic",
+          "title": "What We Don’t Know About the Iran War - The Atlantic",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQa0RCaVNESHIyME5LaU1tX3F0NjNKdDhKX2xmNVhXRWxWOF80U3J0Wm1YNmNSdmFlNEh4YlJ2NFVfaEJVVHEwWnBveFdyekJHVDI5N0VHWGZTaGtxdFA5OUJ0WFFmMVV3ajltU01OamstbFNhMHNFSm5jWGQ2MTlQa3FsM0pFdGZLaEJ5NnJRNXZXU0FkS251WnF2NkRwb2s?oc=5"
+        },
+        {
+          "source": "Britannica",
+          "title": "2026 Iran war | Oil, Explained, United States, Israel, Strait of Hormuz, Map, & Conflict - Britannica",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5nTzlhOGZTS180cWNtVG91c2VWRVJFYlk0cW5Ba1RHUEFOSEtldU15QktQT0EzRVY1ZVdZZ0VTRHVWTVhyN1IzeU1wbmlDMUhrQ3Roc1YxcmdMUQ?oc=5"
         }
       ],
       "reasons": "4 outlets this window",
@@ -218,19 +221,19 @@
     {
       "links": [
         {
-          "source": "Al Jazeera",
-          "title": "Fossil fuel talks deadlock pushes COP31 climate summit into overtime - Al Jazeera",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPMWFDR0xQaUU0YWx6eFJhdUJiZ21DUzJrcGhDS2wtTW84Wm5uNUZGTTZTQ21uX3VVcEloN2piLWhzQ1B0ZGlyNHpGR21oeGJDYVI3d3pzYUxnY3pRYk5mbWpEZUhIcEhLN1p4cmYzYjEta1VVUmNOS29VR194NWFxUm9wTnZMWjI0cVhvZW81Q3dXWWdDTHk3andjS1BZVHlMaGk4bkVqdEdFZkdMMF9R0gG0AUFVX3lxTE14UHZVeFJxem43M285aGRrTVEtRmswUk80MDhZNlBrdF9GUzZFbjBmSjMxc1hxTnVvRlliOVB5a2RHVXJWR2Y5NFZmRG9PdmplSjA2VDF4d1NqWFhsNE5LdDk2M1FZak15dXQyVWhuQ0lkSnJnWTBaNlFObDNNUmNSY1k4VndKVDNLSmF2QS1DWGpGUjRPUzFRMmdNd1lVM2JpUWtBeU1wMXE5VDRvakhvNkFBNA?oc=5"
+          "source": "NPR",
+          "title": "What did Xi Jinping get from the bear hug with Trump at the Shenzhen summit? - NPR",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOQ3o5czdSSEZrYm9PNkFpdnZEZ0VCcHk2QXB6dUx4YXY0Q2gyWVBsU0FUUldBcFE0NGYzYkZZaWRwUjRFWDhfeFpYTlFwajZhTWVlRWltS1JKZTczdXFnX1A2TTRxTXJmM0JCeHFQZ1IyelJqdlZoV0RkdTFfMjVoLWJ3UjBvUTJlWkJSc3ZudmdiaUZiLVBZSWtQNkFySWFPTl9CRFFzYUZCN0FtRHNKNnlRT3ppT2R3bzV6eQ?oc=5"
         },
         {
-          "source": "Reuters",
-          "title": "As Trump basks in summit pomp, China's Xi strengthens his hand - Reuters",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPWm1waHdJRVp4M2dKRlhKSHRHQmpEOFZZdGJRRndnR3ZXb0pmc1d6cUNmZWcwX3VwTHBzY1VMVmh3RDJBNVYtV2tDV1pDX25kNFhMWlE4a3N0RVpIMV80alNzRl9VQ0NMNF81UzVXTUJWVk1ZSmkwSFZDOHFNNHBLZ2RlNWloalpTOWs5UXFVQWJqenE4RGFXLWZRN1JlS1l6MnJlWQ?oc=5"
+          "source": "The New York Times",
+          "title": "Putin Exits Summit With Symbolic Win, Saying He and Trump Share ‘Values’ - The New York Times",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOTm1ZZ1ZIdkpVNDBIVlJ1ekhTWGNFQXl0SERIZ3lfcWhrb2gxdUlqRHpTN3NCbjNlazIwMEFfa2VtWW5rcXRWUl9OY3BPMmRZZ3lsR3NPTDJxTXhaeE1Ja3VsWFltMjhsWl9DaUF0aGtqa1luaG5vLTFxZlpSREt2UjZmcjFMdw?oc=5"
         },
         {
-          "source": "Reuters",
-          "title": "Russia's Wildberries CEO steps down days after EU sanctions, media report - Reuters",
-          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPUHlnc2RFZFltcC0zMXMtb1VfaEx6VFhrWVJfS2tpaHF2Vm4yMnRDYjVLX3FSTWNHaDJKdUYwZ3o5SUJfNVpvRERfcEladlQ2RkRCaFhxaEVZRGdwUTAwOVdSRDZDWjlSYXVucW83NS1aMVN0QzFKbFhVXzhBSEZtUmxKdHpYT3gwNXdCUWZxbU9MbVh3bEU3Ul9ZcXQxZTI5QjlyTHgtTUNDdWVINk9qbUwwNmo1eUt3aFFsaWlTNEJfQnZYNkVOMlVDRkY?oc=5"
+          "source": "BBC World",
+          "title": "South Korea education minister resigns over exam cheating scandal",
+          "url": "https://www.bbc.co.uk/news/articles/cw3dgk29d37no?at_medium=RSS&at_campaign=rss"
         }
       ],
       "reasons": "3 outlets this window",

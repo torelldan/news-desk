@@ -1015,16 +1015,16 @@
         {
           "date": "2026-11-20",
           "price": 3515.3999,
-          "volume": 203702
+          "volume": 323896
         }
       ],
       "source": "https://finance.yahoo.com/quote/GC%3DF"
     },
     {
       "asOf": "2026-11-20",
-      "changePct": -7.41,
+      "changePct": -7.33,
       "id": "silver",
-      "level": 41.035,
+      "level": 41.07,
       "name": "Silver",
       "points": [
         {
@@ -1524,23 +1524,19 @@
         },
         {
           "date": "2026-11-20",
-          "price": 41.035,
-          "volume": 30
+          "price": 41.07,
+          "volume": 110375
         }
       ],
       "source": "https://finance.yahoo.com/quote/SI%3DF"
     },
     {
-      "asOf": "2026-11-21",
-      "changePct": 7.06,
+      "asOf": "2026-11-22",
+      "changePct": 3.25,
       "id": "btc",
-      "level": 60201.54,
+      "level": 61140.31,
       "name": "BTC",
       "points": [
-        {
-          "date": "2026-08-23",
-          "price": 76947.53
-        },
         {
           "date": "2026-08-24",
           "price": 80454.83
@@ -1899,22 +1895,22 @@
         },
         {
           "date": "2026-11-21",
-          "price": 60201.54
+          "price": 59213.61
+        },
+        {
+          "date": "2026-11-22",
+          "price": 61140.31
         }
       ],
       "source": "https://www.coingecko.com/en/coins/bitcoin"
     },
     {
-      "asOf": "2026-11-21",
-      "changePct": 7.88,
+      "asOf": "2026-11-22",
+      "changePct": 3.43,
       "id": "eth",
-      "level": 1682.17,
+      "level": 1718.34,
       "name": "ETH",
       "points": [
-        {
-          "date": "2026-08-23",
-          "price": 2431.25
-        },
         {
           "date": "2026-08-24",
           "price": 2498.08
@@ -2273,7 +2269,11 @@
         },
         {
           "date": "2026-11-21",
-          "price": 1682.17
+          "price": 1661.36
+        },
+        {
+          "date": "2026-11-22",
+          "price": 1718.34
         }
       ],
       "source": "https://www.coingecko.com/en/coins/ethereum"

@@ -7,13 +7,13 @@
     {
       "action": "no action needed",
       "confidence": "reported",
-      "date": "2026-11-21",
+      "date": "2026-11-22",
       "id": "local-nws-none",
       "kind": "nws",
-      "label": "Nov 21, 2026 1:33 PM CT",
+      "label": "Nov 22, 2026 11:02 AM CT",
       "lane": "local",
       "note": "api.weather.gov answered for 35.802,-86.907 and returned no alerts.",
-      "published": "2026-11-21T13:33:42-06:00",
+      "published": "2026-11-22T11:02:56-06:00",
       "severity": "STANDBY",
       "soWhat": "",
       "source": "NWS",
@@ -34,7 +34,7 @@
       "label": "2026-11-16",
       "lane": "local",
       "note": "Other Construction",
-      "published": "2026-11-21T13:33:42-06:00",
+      "published": "2026-11-22T11:02:56-06:00",
       "severity": "STANDBY",
       "soWhat": "",
       "source": "TDOT SmartWay",
@@ -44,48 +44,6 @@
         "williamson"
       ],
       "title": "State Route 100 EB in Williamson County - between LOG MILE 2 and LOG MILE 5 Other Construction may cause delays Mon 11/16/2026 through Fri 11/27/2026 from 9:00 AM to 3:00 PM (CT). ",
-      "url": "https://smartway.tn.gov/"
-    },
-    {
-      "action": "no action needed",
-      "confidence": "reported",
-      "date": "2026-11-16",
-      "id": "local-road:43d7291e6a961d61",
-      "kind": "road",
-      "label": "2026-11-16",
-      "lane": "local",
-      "note": "Resurfacing",
-      "published": "2026-11-21T13:33:42-06:00",
-      "severity": "STANDBY",
-      "soWhat": "",
-      "source": "TDOT SmartWay",
-      "sourceCount": 1,
-      "tags": [
-        "tennessee",
-        "williamson"
-      ],
-      "title": "Interstate 840 EB in Williamson County - between MILE MARKER 27.8 and MILE MARKER 37.2 Resurfacing may cause delays Mon 11/16/2026 through Sun 11/22/2026 from 8:00 PM to 5:00 AM (C",
-      "url": "https://smartway.tn.gov/"
-    },
-    {
-      "action": "no action needed",
-      "confidence": "reported",
-      "date": "2026-11-16",
-      "id": "local-road:9f11e322bbd94ea2",
-      "kind": "road",
-      "label": "2026-11-16",
-      "lane": "local",
-      "note": "Resurfacing",
-      "published": "2026-11-21T13:33:42-06:00",
-      "severity": "STANDBY",
-      "soWhat": "",
-      "source": "TDOT SmartWay",
-      "sourceCount": 1,
-      "tags": [
-        "tennessee",
-        "williamson"
-      ],
-      "title": "Interstate 65 NB in Williamson County - between MILE MARKER 59.8 and MILE MARKER 66.2 Resurfacing may cause delays Sun 11/15/2026 through Sun 11/22/2026 from 8:00 PM to 5:00 AM (CT",
       "url": "https://smartway.tn.gov/"
     },
     {
