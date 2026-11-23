@@ -6,6 +6,20 @@
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
+      "title": "CVE-2026-133968 Project MONAI MONAI Label Path Traversal Vulnerability"
+    },
+    {
+      "note": "New since 2026-11-16 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "CVE-2026-134624 N-able MailAssure (SpamExperts) Server-Side Request Forgery (SSRF) Vulnerability"
+    },
+    {
+      "note": "New since 2026-11-16 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
       "title": "⚡ Weekly Recap: VMware 0-Day, Java4Shell, NGINX2Root, Ruby2Shell, and a Whole Lot of Shell Trouble"
     },
     {
@@ -14,6 +28,13 @@
       "relatedSources": [],
       "severity": "ALERT",
       "title": "Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access"
+    },
+    {
+      "note": "New since 2026-11-16 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "At least 15 killed in Ukraine’s Kyiv region as Russia intensifies attacks - Al Jazeera"
     },
     {
       "note": "New since 2026-11-16 · now ALERT",
@@ -100,13 +121,6 @@
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Ukraine Facility: Council approves largest-ever payment of €8 billion to Kyiv - Council, European Union"
-    },
-    {
-      "note": "On the board 2026-11-16 at ALERT, absent now.",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
       "title": "WATCH: Rubio delivers keynote address at Federalist Society National Lawyers Convention - PBS"
     },
     {
@@ -114,17 +128,38 @@
       "related": 0,
       "relatedSources": [],
       "severity": "STANDBY",
-      "title": "Third U.S. aircraft carrier in Middle East as Trump keeps options open in Iran war - PBS"
+      "title": "Ukraine Facility: Council approves largest-ever payment of €8 billion to Kyiv - Council, European Union"
     },
     {
       "note": "ALERT → STANDBY since 2026-11-16",
       "related": 0,
       "relatedSources": [],
       "severity": "STANDBY",
-      "title": "Washington Letter: Iran war looms over the upcoming Congress and potential 2028 contenders - OSV News"
+      "title": "EU HR/VP Kaja Kallas Attended the G7 Foreign Affairs Ministers’ Meeting in Paris - EEAS"
+    },
+    {
+      "note": "ALERT → STANDBY since 2026-11-16",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "STANDBY",
+      "title": "Can Netanyahu and Eisenkot form a ‘unity’ government in Israel? - Al Jazeera"
     }
   ],
   "newSince": [
+    {
+      "note": "New since 2026-11-16 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "CVE-2026-133968 Project MONAI MONAI Label Path Traversal Vulnerability"
+    },
+    {
+      "note": "New since 2026-11-16 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "CVE-2026-134624 N-able MailAssure (SpamExperts) Server-Side Request Forgery (SSRF) Vulnerability"
+    },
     {
       "note": "New since 2026-11-16 · now ALERT",
       "related": 0,
@@ -138,6 +173,13 @@
       "relatedSources": [],
       "severity": "ALERT",
       "title": "Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access"
+    },
+    {
+      "note": "New since 2026-11-16 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "At least 15 killed in Ukraine’s Kyiv region as Russia intensifies attacks - Al Jazeera"
     },
     {
       "note": "New since 2026-11-16 · now ALERT",

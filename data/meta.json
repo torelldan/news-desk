@@ -1,11 +1,9 @@
 {
   "baseline": false,
-  "brief": "The stock tape is the story: the S&P 500 is +4.6% today. What to do: no action unless you need cash this week. Global: EU proposes sweeping new Russia sanctions targeting banks, crypto and sports events - AP News. Infrastructure: Internet services disrupted across Pakistan due to undersea cable fault - Daily Ausaf (unconfirmed). Rising topic: coastal flood watch (US daily list 20000+).",
-  "checkedAt": "2026-11-23T13:44:41-06:00",
-  "checkedLabel": "Nov 23, 2026 1:44 PM CT",
-  "errors": [
-    "ReliefWeb: the disasters page returned no cards from this network. The RSS feed is an AWS WAF challenge, and API v2 rejects appname=torelldan-news-desk until ReliefWeb approves it."
-  ],
+  "brief": "The stock tape is the story: the S&P 500 is +4.73% today. What to do: no action unless you need cash this week. Current war coverage is on the board: At least 15 killed in Ukraine’s Kyiv region as Russia intensifies attacks - Al Jazeera. Global: EU proposes sweeping new Russia sanctions targeting banks, crypto and sports events - AP News. Infrastructure: Internet services disrupted across Pakistan due to undersea cable fault - Daily Ausaf (unconfirmed). Rising topic: ukraine war (4 outlets this window).",
+  "checkedAt": "2026-11-23T15:13:01-06:00",
+  "checkedLabel": "Nov 23, 2026 3:13 PM CT",
+  "errors": [],
   "retainDays": 120,
   "spikes": {
     "labs": [
@@ -173,6 +171,30 @@
       {
         "links": [
           {
+            "source": "nesto.ca",
+            "title": "Bank of Canada Policy Interest Rate Schedule 2026 - nesto.ca",
+            "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPUU4wTTB3UERBamJiLUlER3ZUY1ZkTV80TUVFQ3BUQ0FTaV9CRmtTU0RxbzRXdGp2c1NDOHk1RkUzZFhQOGJXMWQ3cEtEay0xNjBKVTkzMnNNbzBhdlBTTERtN0cwejUyWkVNMHFBUzdsWnNzemx4WHIzMk4tUUtNRw?oc=5"
+          },
+          {
+            "source": "The Globe and Mail",
+            "title": "Memo to Tiff Macklem: Stop hiking interest rates or risk ruining this economy and stock market - The Globe and Mail",
+            "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQTXpablhlZmt5LXVITlhkVkEzTWJPOTBHcXNfckVjNW9sclpzRDVNdDJLbUVWclJPZDM2aHI2bzZYLUJ2dXBGY1FUQ1VMU3lwRTR4Y0FWV1EyMWN4S0xHWDlPLUFqMDhlTFhkMlluVEZoLTVad205QVo1SFktcG4yWnZXQXZibG4xS1pmdVBRWVFpRDdnQXJDcy1kMGZNMUFpYTE2cWxpZ1JNNkc2VXd0N3RfNGJJTE9ESldSWUFxc2pOLXM?oc=5"
+          },
+          {
+            "source": "BNN Bloomberg",
+            "title": "Bank of Canada official discusses guidance on interest rate path - BNN Bloomberg",
+            "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOZmZkUERGNWRKeGdTX3BqTnVTaW1vMmRfVTk0RDRfR0hmQ3lpcWNkSTZWYjgxVWxVOEVablQ2a0dsY1daUVZhX2VaRnFmT0FSV0RlN2Nxd2lySzVEVm1tSU50X1FXZFhJSGhwVFBzbVY5VnZtNGZrMVlyWWw0dVRBd3o5cGltWUU5a2E0YjJFandFLWNQNDZUVml2OHRtdUtHaHlJQ2xMYXNHcUtIdDV4bUNsekdSYkQ3ZmZtYjh6MGZielNVclI2SXA0dVdsWDdXZnc?oc=5"
+          }
+        ],
+        "outlets": 3,
+        "region": "North America",
+        "state": "RISING",
+        "title": "Bank of Canada Policy Interest Rate Schedule 2026 - nesto.ca",
+        "topic": "interest rates"
+      },
+      {
+        "links": [
+          {
             "source": "TradingView",
             "title": "Sanctions fears loom over Russia’s regulated crypto trading launch - TradingView",
             "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNdHZZQklYMWEzaTcwelNfS1dKYWpORkVrbG1hYzVuQjFwZ3plWVoxakNsWUNNalBGeUcxdjBkWFdXWllrQWlPd1VMSjBSTUF6bHRlTUVxVWtJMGdrQzY5aEJlNzg3bGVTWFo2SE4ydTBhRFdWX296aVZicGxnOWdYRzVodzU5VEM5V2dIbGpTX1NEREp4b0JPSE1yU2F6cUJicHlYSnRJXzFfd1FtMU1LYlB0dG56eTN0R3hyZjlrUjRfeUl0cFFVQ0V3?oc=5"
@@ -325,9 +347,9 @@
   },
   "today": "2026-11-23",
   "trends": {
-    "google": "Google Trends US daily list answered (10 topics). Kept the ones that match a war, government, or threat topic.",
+    "google": "Google Trends US daily list answered (10 topics). Kept the ones that match a war, government, or threat topic. None of today's search trends matched.",
     "mode": "trends",
-    "note": "X trends by WOEID (US 23424977 and worldwide 1). Kept only when the name matches a threat or preparedness theme. The endpoint answered and none of the names matched."
+    "note": "X trends by WOEID (US 23424977 and worldwide 1). Kept when the name matches a threat theme or a name on today's board. The endpoint answered and none of the names matched."
   },
   "x": {
     "detail": "",

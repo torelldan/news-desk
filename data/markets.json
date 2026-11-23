@@ -28,9 +28,9 @@
             "2026-11-26",
             "2026-12-25"
           ],
-          "level": 7228.11,
-          "change": 317.72,
-          "changePct": 4.6,
+          "level": 7237.17,
+          "change": 326.78,
+          "changePct": 4.73,
           "asOf": "2026-11-23",
           "source": "https://finance.yahoo.com/quote/%5EGSPC"
         }
@@ -975,9 +975,9 @@
             }
           ],
           "holidays": [],
-          "level": 34124.89,
-          "change": 934.99,
-          "changePct": 2.82,
+          "level": 34081.44,
+          "change": 891.54,
+          "changePct": 2.69,
           "asOf": "2026-11-23",
           "source": "https://finance.yahoo.com/quote/%5EGSPTSE"
         },
@@ -993,9 +993,9 @@
             }
           ],
           "holidays": [],
-          "level": 69603.1,
-          "change": 973.64,
-          "changePct": 1.42,
+          "level": 69341.39,
+          "change": 711.93,
+          "changePct": 1.04,
           "asOf": "2026-11-23",
           "source": "https://finance.yahoo.com/quote/%5EMXX"
         }
@@ -1140,6 +1140,27 @@
           "published": "2026-11-20T15:28:51-06:00",
           "date": "2026-11-20",
           "label": "Nov 20, 2026 3:28 PM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:dc2d29d5c3473cd4",
+          "kind": "headline",
+          "lane": "news",
+          "source": "nesto.ca",
+          "sourceId": "headline",
+          "title": "Bank of Canada Policy Interest Rate Schedule 2026 - nesto.ca",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPUU4wTTB3UERBamJiLUlER3ZUY1ZkTV80TUVFQ3BUQ0FTaV9CRmtTU0RxbzRXdGp2c1NDOHk1RkUzZFhQOGJXMWQ3cEtEay0xNjBKVTkzMnNNbzBhdlBTTERtN0cwejUyWkVNMHFBUzdsWnNzemx4WHIzMk4tUUtNRw?oc=5",
+          "published": "2026-11-20T15:11:17-06:00",
+          "date": "2026-11-20",
+          "label": "Nov 20, 2026 3:11 PM CT",
           "weekday": "Fri",
           "timeKnown": true,
           "tags": [
@@ -1819,27 +1840,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:b9d75db6867bccaa",
-          "kind": "headline",
-          "lane": "news",
-          "source": "The Globe and Mail",
-          "sourceId": "headline",
-          "title": "Search for new BoC governor begins as Macklem confirms he won’t seek second term - The Globe and Mail",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOWlB0ZGZYYnZ0NkxvWkZ6SUUxYmdOVGZhcEJHVDRmX3h1Qi1TSjJxM0cwd0JaNU1wbGgyUXFjQnMtdEtBMzZ5d2VsNEVDTGJ4X3FQRi01Z1R5cW92TmIxaWJJTmZsdkJwcGJ2TWVPOG1ta3hBczhObXhNQlh3VjZmbWdOWGQ2Zk5ZZko2UUd4THl0UE9XUGxqVXlyLTMxX3phWGdvcVBfaXhwQXc?oc=5",
-          "published": "2026-11-16T09:30:38-06:00",
-          "date": "2026-11-16",
-          "label": "Nov 16, 2026 9:30 AM CT",
-          "weekday": "Mon",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ],
       "spikes": [
@@ -1870,6 +1870,29 @@
             }
           ],
           "title": "US Consumers Are Holding Up Against Inflation Going Into Holiday Season - Bloomberg.com"
+        },
+        {
+          "topic": "interest rates",
+          "outlets": 3,
+          "state": "RISING",
+          "links": [
+            {
+              "title": "Bank of Canada Policy Interest Rate Schedule 2026 - nesto.ca",
+              "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPUU4wTTB3UERBamJiLUlER3ZUY1ZkTV80TUVFQ3BUQ0FTaV9CRmtTU0RxbzRXdGp2c1NDOHk1RkUzZFhQOGJXMWQ3cEtEay0xNjBKVTkzMnNNbzBhdlBTTERtN0cwejUyWkVNMHFBUzdsWnNzemx4WHIzMk4tUUtNRw?oc=5",
+              "source": "nesto.ca"
+            },
+            {
+              "title": "Memo to Tiff Macklem: Stop hiking interest rates or risk ruining this economy and stock market - The Globe and Mail",
+              "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQTXpablhlZmt5LXVITlhkVkEzTWJPOTBHcXNfckVjNW9sclpzRDVNdDJLbUVWclJPZDM2aHI2bzZYLUJ2dXBGY1FUQ1VMU3lwRTR4Y0FWV1EyMWN4S0xHWDlPLUFqMDhlTFhkMlluVEZoLTVad205QVo1SFktcG4yWnZXQXZibG4xS1pmdVBRWVFpRDdnQXJDcy1kMGZNMUFpYTE2cWxpZ1JNNkc2VXd0N3RfNGJJTE9ESldSWUFxc2pOLXM?oc=5",
+              "source": "The Globe and Mail"
+            },
+            {
+              "title": "Bank of Canada official discusses guidance on interest rate path - BNN Bloomberg",
+              "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOZmZkUERGNWRKeGdTX3BqTnVTaW1vMmRfVTk0RDRfR0hmQ3lpcWNkSTZWYjgxVWxVOEVablQ2a0dsY1daUVZhX2VaRnFmT0FSV0RlN2Nxd2lySzVEVm1tSU50X1FXZFhJSGhwVFBzbVY5VnZtNGZrMVlyWWw0dVRBd3o5cGltWUU5a2E0YjJFandFLWNQNDZUVml2OHRtdUtHaHlJQ2xMYXNHcUtIdDV4bUNsekdSYkQ3ZmZtYjh6MGZielNVclI2SXA0dVdsWDdXZnc?oc=5",
+              "source": "BNN Bloomberg"
+            }
+          ],
+          "title": "Bank of Canada Policy Interest Rate Schedule 2026 - nesto.ca"
         }
       ]
     },
@@ -1889,9 +1912,9 @@
             }
           ],
           "holidays": [],
-          "level": 164986.97,
-          "change": -1389.03,
-          "changePct": -0.83,
+          "level": 164843.98,
+          "change": -1532.02,
+          "changePct": -0.92,
           "asOf": "2026-11-23",
           "source": "https://finance.yahoo.com/quote/%5EBVSP"
         }
@@ -4150,10 +4173,10 @@
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPdDJHS2lJX1lSYkZKTVdzN0JXQ1l2YkxKRHNReTNKX3B5dGJKR19fUEdHOGZiMHFsaFpDNlJiY2tLUXhsYmFvZ25uVzV1TnZaeXY0dzRtWTZZdGhiSUZURHBGVjdhZUFzMzVfVWZHZXdFNjNUQWkzTm1wOFZNSGZtQ3VfT0sxb2VHWGtoZmJ1RGFfRVNGRzFGeWFRV3FZbFd4eWVKRlZDM0VyR0lXS3lZMDhRTU42cE81b0J4WEgtbnBmQndQSlh0c1VYc1lqNEpwVXlqbF96R0JzZFdoZ3VUdmZ3?oc=5",
-          "published": "2026-11-16T00:24:00-06:00",
-          "date": "2026-11-16",
-          "label": "Nov 16, 2026 12:24 AM CT",
-          "weekday": "Mon",
+          "published": "2026-11-15T02:00:00-06:00",
+          "date": "2026-11-15",
+          "label": "Nov 15, 2026 2:00 AM CT",
+          "weekday": "Sun",
           "timeKnown": true,
           "tags": [
             "headline",
@@ -7097,6 +7120,27 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:d0bc150f323a78b2",
+          "kind": "headline",
+          "lane": "news",
+          "source": "ET Now",
+          "sourceId": "headline",
+          "title": "ET Now Live TV: Business News Live TV Online, Finance & Market News Live Streaming - ET Now",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBvd2FadGE2UE41MGZPci1jSGJhcFNzbUhJd0FRblJGLTA0OEVRUE1sMW1LTlNxV2M1X0MxTTRXVVQwOGNURmpPadIBTkFVX3lxTE1Zb0xqWlh3RkdWaktyM3Njem8wZFB4VFAtd0tuQklxeGM0cXI4VWVmaWVDb2hma2NNVldvUW1FM29oUFZrcElNdjVZZDZTUQ?oc=5",
+          "published": "2026-11-21T13:14:21-06:00",
+          "date": "2026-11-21",
+          "label": "Nov 21, 2026 1:14 PM CT",
+          "weekday": "Sat",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:f302a2d26ee1159e",
           "kind": "headline",
           "lane": "news",
@@ -7697,27 +7741,6 @@
           "published": "2026-11-17T08:12:17-06:00",
           "date": "2026-11-17",
           "label": "Nov 17, 2026 8:12 AM CT",
-          "weekday": "Tue",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:d0bc150f323a78b2",
-          "kind": "headline",
-          "lane": "news",
-          "source": "ET Now",
-          "sourceId": "headline",
-          "title": "ET Now Live TV: Business News Live TV Online, Finance & Market News Live Streaming - ET Now",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBvd2FadGE2UE41MGZPci1jSGJhcFNzbUhJd0FRblJGLTA0OEVRUE1sMW1LTlNxV2M1X0MxTTRXVVQwOGNURmpPadIBTkFVX3lxTE1Zb0xqWlh3RkdWaktyM3Njem8wZFB4VFAtd0tuQklxeGM0cXI4VWVmaWVDb2hma2NNVldvUW1FM29oUFZrcElNdjVZZDZTUQ?oc=5",
-          "published": "2026-11-17T06:13:17-06:00",
-          "date": "2026-11-17",
-          "label": "Nov 17, 2026 6:13 AM CT",
           "weekday": "Tue",
           "timeKnown": true,
           "tags": [
