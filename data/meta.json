@@ -1,14 +1,9 @@
 {
   "baseline": false,
-  "brief": "The stock tape is the story: the S&P 500 is -3.7% today. What to do: no action unless you need cash this week. Open risk: ACTION M6.5 Vanuatu region. Current war coverage is on the board: What we know about the latest Russian missile strikes on Ukraine - BBC. Global: COP31 Climate Summit That Could Not Say ‘Fossil Fuels’ Ends With No Deal - Health Policy Watch. Infrastructure: Internet services disrupted across Pakistan due to undersea cable fault - Daily Ausaf (unconfirmed).",
+  "brief": "Infrastructure: Internet services disrupted across Pakistan due to undersea cable fault - Daily Ausaf (unconfirmed). Rising topic: ukraine war (4 outlets this window). The S&P 500 was -3.7% at Friday's close. What to do: no action unless you need cash this week.",
   "checkedAt": "2026-11-23T07:48:06-06:00",
   "checkedLabel": "Nov 23, 2026 7:48 AM CT",
-  "errors": [
-    "AP World: curl: (22) The requested URL returned error: 403\n",
-    "Reuters World: curl: (22) The requested URL returned error: 401\n",
-    "Gassco UMM: curl: (22) The requested URL returned error: 404\n",
-    "BSEE: curl: (22) The requested URL returned error: 404\n"
-  ],
+  "errors": [],
   "retainDays": 120,
   "spikes": {
     "labs": [

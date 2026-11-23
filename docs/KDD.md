@@ -103,7 +103,7 @@ Two rules adjust severity after classification:
 
 | Source (kind) | Rule in code | STANDBY | ALERT | ACTION | CRITICAL |
 |---|---|---|---|---|---|
-| **USGS quakes** (`quake`), `boards.quake_severity` | U.S. place or tsunami flag = "home" | home < M5.5; abroad < M7 | home M5.5–5.9; abroad M7–7.9; abroad M6+ with a USGS alert colour or ≥ 5 felt reports | home M6–6.9; abroad M8+ | home M7+ |
+| **USGS quakes** (`quake`), `boards.quake_severity` | A distant shock with no tsunami warning, deaths, or major damage stays standby. The board keeps M4.5+ in the U.S. and M5.5+ elsewhere, at most 6 rows. A GDACS earthquake next to a USGS shock is the same event | abroad, and home < M5.5 | home M5.5–5.9; a tsunami warning | home M6–6.9 | home M7+ |
 | **NWS alerts** (`nws`), `boards.alert_severity` | Event name first, then the CAP severity | anything else | Tornado / Hurricane / Tropical Storm / Flash Flood **Watch**; any other watch or advisory | Tropical Storm Warning, Flash Flood Warning, any other **Warning**; CAP `Severe` | **Tornado Warning**, **Hurricane Warning**; CAP `Extreme` |
 | **NHC RSS on the threat board** (`storm`), `_storm_severity` | Outlook / "no tropical cyclones" rows are dropped | other | — | "Hurricane <Name>", Tropical Storm Warning | Hurricane Warning |
 | **NHC Storm watch** (`tropical`), `tropical_severity` | Track and advisory vs Tennessee (box 34.98–36.72 N, 90.35–81.62 W, or ≤ 450 km of home) | no U.S. watch, track misses TN | U.S. hurricane / TS / storm-surge watch or warning in effect | forecast point reaches TN | forecast point reaches TN at ≥ 64 kt (hurricane strength) |

@@ -900,6 +900,8 @@ def keep_strike(title: str) -> bool:
         return False
     if re.search(r"\b(analysis|explainer|essay|op-ed|oped|commentary)\b|\balleged end\b", blob, re.I):
         return False
+    if re.search(r"\b(investigation into|frustrated with|warns of|warning of|after new year|what we know)\b", blob, re.I):
+        return False
     if re.search(r"\battacks?\b.{0,50}\b(usual targets|critics|reputation|narrative)\b", blob, re.I):
         return False
     if re.search(r"\b(weighs|weighing|considers|considering|threatens to|threatening to|may strike|plans to strike|mulls|mulling)\b", blob, re.I):

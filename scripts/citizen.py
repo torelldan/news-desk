@@ -1241,7 +1241,7 @@ def fetch_radar(now: datetime) -> dict:
     return {"items": stories, "note": "Public news search only. Spread velocity is how many of those headlines are from the last 3 days. Score is a desk count, not a prediction."}
 
 
-def _sp500(markets) -> float | None:
+def _sp500(markets) -> tuple:
     for region in (markets or {}).get("regions") or []:
         if (region.get("name") or "").lower() not in {"usa", "united states"}:
             continue
@@ -1249,17 +1249,28 @@ def _sp500(markets) -> float | None:
             name = f"{venue.get('indexName') or ''} {venue.get('name') or ''}".lower()
             if "s&p" in name or "spx" in name or "gspc" in name:
                 if venue.get("changePct") is None:
-                    return None
-                return float(venue["changePct"])
-    return None
+                    return None, ""
+                return float(venue["changePct"]), str(venue.get("asOf") or "")[:10]
+    return None, ""
 
 
-def morning_brief(threats, trends, triggers, assets, local, markets=None) -> str:
+def morning_brief(threats, trends, triggers, assets, local, markets=None, today: str = "") -> str:
     lines = []
-    sp = _sp500(markets)
+    sp, as_of = _sp500(markets)
+    tape = ""
+    stale = bool(today and as_of and as_of != today[:10])
     if sp is not None and abs(sp) >= 3:
         sign = "+" if sp > 0 else ""
-        lines.append(f"The stock tape is the story: the S&P 500 is {sign}{sp}% today. What to do: no action unless you need cash this week.")
+        if stale:
+            try:
+                weekday = datetime.fromisoformat(as_of).strftime("%A")
+            except ValueError:
+                weekday = as_of
+            tape = f"The S&P 500 was {sign}{sp}% at {weekday}'s close. What to do: no action unless you need cash this week."
+        else:
+            tape = f"The stock tape is the story: the S&P 500 is {sign}{sp}% today. What to do: no action unless you need cash this week."
+    if tape and not stale:
+        lines.append(tape)
     real = [
         item for item in threats or []
         if item.get("severity") in {"ACTION", "CRITICAL"}
@@ -1288,6 +1299,8 @@ def morning_brief(threats, trends, triggers, assets, local, markets=None) -> str
     local_hot = [item for item in (local or {}).get("items") or [] if item.get("severity") in {"ACTION", "CRITICAL"} and not item.get("stale")]
     if local_hot:
         lines.append(f"Local: {local_hot[0].get('title')}.")
+    if tape and stale and len(lines) < 4:
+        lines.append(tape)
     if not lines:
         lines.append("Nothing on the board needs an action today.")
     return " ".join(lines[:5])

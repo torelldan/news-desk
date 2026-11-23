@@ -222,15 +222,17 @@ def test_board_helpers():
     import boards
     assert boards.index_change(100, 80) == (20.0, 25.0)
     assert boards.index_change(None, 10) == (None, None)
-    assert boards.quake_severity(7.1) == "ALERT"
+    assert boards.quake_severity(7.1) == "STANDBY"
     assert boards.quake_severity(7.1, "12 km NE of Knoxville, Tennessee") == "CRITICAL"
     assert boards.quake_severity(6.2) == "STANDBY"
+    assert boards.quake_severity(6.5, "Vanuatu region") == "STANDBY"
     assert boards.quake_severity(6.2, "Ridgecrest, California") == "ACTION"
     assert boards.quake_severity(5.6, "Nashville, Tennessee") == "ALERT"
     assert boards.quake_severity(4.6) == "STANDBY"
-    assert boards.keep_quake(5.7, "Hasaki, Japan", False, "", 0) is False
+    assert boards.keep_quake(5.0, "Hasaki, Japan", False, "", 0) is False
+    assert boards.keep_quake(5.7, "Hasaki, Japan", False, "", 0) is True
     assert boards.keep_quake(6.4, "off Honshu, Japan", False, "yellow", 0) is True
-    assert boards.keep_quake(6.4, "off Honshu, Japan", False, "", 0) is False
+    assert boards.keep_quake(4.8, "10 km NW of Pinnacles, California") is True
     old = {"severity": "ALERT", "published": "2026-10-28T12:00:00-05:00", "title": "old wire"}
     fresh = {"severity": "ALERT", "published": "2026-11-09T08:00:00-06:00", "title": "new wire"}
     from datetime import datetime
@@ -739,6 +741,7 @@ def test_nov12_rules():
 
 def test_hazard_source_parsers():
     import boards
+    import citizen
     import deskextra
     gdacs = deskextra.parse_gdacs_events({
         "features": [
@@ -981,6 +984,33 @@ def test_hazard_source_parsers():
     assert deskextra.keep_strike("Dispatch from Kyiv: Let Ukraine strike Russia’s missile launchers at the source") is False
     assert deskextra.keep_strike('The Kraków Attack and the Alleged End of Poland\'s "Innocence" - ICCT') is False
     assert deskextra.keep_strike("Trump Weighs New Strikes on Iran as Israel Presses for Action") is False
+    assert deskextra.keep_strike("Trump warns of new strikes against Iran after new year") is False
+    assert deskextra.keep_strike("Gold Star families frustrated with Pentagon investigation into Iran drone strike that killed 6 soldiers") is False
+    assert boards.news_event_severity("What did Xi Jinping get from the bear hug with Trump at the Shenzhen summit? - NPR") == "STANDBY"
+    assert boards.news_event_severity("COP31 Climate Summit That Could Not Say Fossil Fuels Ends With No Deal") == "STANDBY"
+    assert boards.global_severity("COP31 Climate Summit Ends With No Deal") == "STANDBY"
+    assert boards.news_event_severity("UN arms conference falls short of treaty mandate on autonomous weapons") == "STANDBY"
+    stale_relief = boards.shape_board([
+        {"kind": "relief", "title": "Haiti: Floods", "date": "2026-07-31", "severity": "STANDBY"},
+        {"kind": "relief", "title": "Fresh flood", "date": "2026-11-20", "severity": "ALERT"},
+        {"kind": "quake", "title": "M4.6 Papua New Guinea", "mag": 4.6, "date": "2026-11-22", "severity": "STANDBY", "lat": 1, "lon": 1},
+        {"kind": "quake", "title": "M6.5 Vanuatu region", "mag": 6.5, "date": "2026-11-22", "severity": "ACTION", "lat": -13.5, "lon": 172.2, "note": "A tsunami flag is set."},
+        {"kind": "gdacs", "title": "Earthquake in Vanuatu Islands Region", "date": "2026-11-22", "lat": -13.7, "lon": 170.8, "severity": "STANDBY"},
+    ], "2026-11-23")
+    assert all(row.get("kind") != "relief" or row.get("date") == "2026-11-20" for row in stale_relief)
+    assert all("Vanuatu Islands" not in (row.get("title") or "") for row in stale_relief)
+    vanuatu = next(row for row in stale_relief if "Vanuatu region" in row["title"])
+    assert vanuatu["severity"] == "STANDBY"
+    kept_heads = boards.tidy_headlines([
+        {"title": "Ackman Urges Fed to Raise Inflation Target to 3 Percent - SuaraGarut.ID", "source": "SuaraGarut.ID", "url": "https://example.com/a"},
+        {"title": "Ackman Urges Fed to Raise Inflation Target to 3 Percent - Demokratis.co.id", "source": "Demokratis.co.id", "url": "https://example.com/b"},
+        {"title": "Ackman Urges Fed to Raise Inflation Target to 3 Percent - Reuters", "source": "Reuters", "url": "https://example.com/c"},
+    ])
+    assert len(kept_heads) == 1 and kept_heads[0]["source"] == "Reuters"
+    markets = {"regions": [{"name": "USA", "venues": [{"indexName": "S&P 500", "name": "NYSE", "changePct": -3.7, "asOf": "2026-11-20"}]}]}
+    brief = citizen.morning_brief([], {"items": []}, {"items": []}, {}, {"items": []}, markets, "2026-11-23")
+    assert "today" not in brief.split(".")[0]
+    assert "Friday" in brief
     assert deskextra.keep_strike("Iran says army targets U.S. drone and missile sites in Kuwait") is True
     kuwait = deskextra.merge_strikes({}, [
         {"title": "Iran says army targets U.S. drone and missile sites in Kuwait", "url": "https://example.com/cnbc", "source": "CNBC", "date": "2026-11-17", "published": "2026-11-17T10:00:00-06:00", "country": "Kuwait", "severity": "STANDBY"},

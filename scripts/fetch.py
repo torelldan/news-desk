@@ -1094,7 +1094,7 @@ def main() -> int:
         deskextra.stamp_infra_notes([row for row in threat_items if row.get("kind") == "infra"], note)
     except Exception as err:
         errors.append(f"Drivers: {err}")
-    brief = citizen.morning_brief(threat_items, trends, triggers, boards_out.get("assets") or {}, local, boards_out.get("markets") or {})
+    brief = citizen.morning_brief(threat_items, trends, triggers, boards_out.get("assets") or {}, local, boards_out.get("markets") or {}, today)
     history = citizen.record_history(prev_history, today, threat_items, trends, triggers, d.ct_label(now, True))
     lookback = citizen.weekly_lookback(history, today)
     if boards_out.get("threats"):
