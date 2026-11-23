@@ -1,4 +1,9 @@
 {
+  "counts": {
+    "energy": 1,
+    "total": 8
+  },
+  "gaps": [],
   "items": [
     {
       "country": "Sudan",
@@ -69,9 +74,9 @@
           "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNSHNFQ2hvQUxyR05zYXIyVjczNjE3eEVLWWhMdk1mS01BQV91dy03OU5SSzVzbzlvVk1ManQ2TFhqU2xkRkhZcGthVlZad0E1aVRKU1E5ZWxJTWRQVG5UYmFYYmcxZGJ1TFc1YzE0a2E4XzQ4SGJLNjNlc0otTGhGRnRWTHpmeW1mWnVBLTNhYmFLU3JOUTVfSTliN19fMG9rRWlmeFdKNHFSU1JVTTdnQUNhUlBUWmRSTDVXUUJuUW9fNEV2cjNWdTlPZw?oc=5"
         },
         {
+          "source": "Reuters",
           "title": "Russian cargo ship ablaze in Baltic Sea after drone strike, crew evacuates - Reuters",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPaUFLdlZmeWprX3A2YllLMmlQSXZrYTRIazVMOEExREZuTXFCYThyVUlnR3U0TDg3dGpUeHE5SHJyanJWQUZTRHdwUG5YYTFxVXMtUU5rY1pOVzZkRUxhQ29oUEVUS0NJTWFxcUJmLW9lRE52cGs3N2FLbXZzNmVFNFpXTmZNZnI4S1pWNDB5RWV0UFhUUGlCTVUwNjlWZDMxcXhxS0FvZUdNNWN4UU9jMEw4bWVaOVB0TlE?oc=5",
-          "source": "Reuters"
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPaUFLdlZmeWprX3A2YllLMmlQSXZrYTRIazVMOEExREZuTXFCYThyVUlnR3U0TDg3dGpUeHE5SHJyanJWQUZTRHdwUG5YYTFxVXMtUU5rY1pOVzZkRUxhQ29oUEVUS0NJTWFxcUJmLW9lRE52cGs3N2FLbXZzNmVFNFpXTmZNZnI4S1pWNDB5RWV0UFhUUGlCTVUwNjlWZDMxcXhxS0FvZUdNNWN4UU9jMEw4bWVaOVB0TlE?oc=5"
         }
       ],
       "means": "drone",
@@ -108,6 +113,27 @@
       "target_type": "military",
       "title": "Ballistic missile attack on Zelenskyy’s hometown in central Ukraine kills 2 and wounds dozens - NBC News",
       "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNMzJpY29YVU1acVMxZ0xDblVfODRXdlYwZTZzMGZERmxwR3dUc2pQYXhydjBYNjMyT3Q1SDVLN3dxY0JKRTJoZzlONkd6cHhEZ01oNnl2Qmh6Y0ZhQ3U4aFUySHl2a3U4WnF0OW9ibmpiLVkzU2ttRXdUQnNWZ2hXdy05T2Z2bk1Oa3BHdXRsX1VNME5TOF9iSFNrZVp1anZCclk4VU9yc1RWS0lUZnRrdldhNEs0WWVKYzI4?oc=5"
+    },
+    {
+      "country": "Russia",
+      "date": "2026-11-21",
+      "links": [
+        {
+          "source": "Reuters",
+          "title": "Russian cargo ship ablaze in Baltic Sea after drone strike, crew evacuates - Reuters",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPaUFLdlZmeWprX3A2YllLMmlQSXZrYTRIazVMOEExREZuTXFCYThyVUlnR3U0TDg3dGpUeHE5SHJyanJWQUZTRHdwUG5YYTFxVXMtUU5rY1pOVzZkRUxhQ29oUEVUS0NJTWFxcUJmLW9lRE52cGs3N2FLbXZzNmVFNFpXTmZNZnI4S1pWNDB5RWV0UFhUUGlCTVUwNjlWZDMxcXhxS0FvZUdNNWN4UU9jMEw4bWVaOVB0TlE?oc=5"
+        }
+      ],
+      "means": "drone",
+      "published": "2026-11-21T05:50:00-06:00",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "STANDBY",
+      "source": "Reuters",
+      "sourceCount": 1,
+      "target_type": "military",
+      "title": "Russian cargo ship ablaze in Baltic Sea after drone strike, crew evacuates - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPaUFLdlZmeWprX3A2YllLMmlQSXZrYTRIazVMOEExREZuTXFCYThyVUlnR3U0TDg3dGpUeHE5SHJyanJWQUZTRHdwUG5YYTFxVXMtUU5rY1pOVzZkRUxhQ29oUEVUS0NJTWFxcUJmLW9lRE52cGs3N2FLbXZzNmVFNFpXTmZNZnI4S1pWNDB5RWV0UFhUUGlCTVUwNjlWZDMxcXhxS0FvZUdNNWN4UU9jMEw4bWVaOVB0TlE?oc=5"
     },
     {
       "country": "Ukraine",
@@ -159,11 +185,48 @@
       "target_type": "military",
       "title": "Ukraine updates: Russian attack 'one of largest,' Zelenskyy says - DW.com",
       "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPeV9qSzNGLU5BaGd1UHRudmk5NjV5UDFnLVJuX2FYUUZnZmpVZjZkZFVSZzE3SnFzMkZLVVZDMktHTGdUbGJTM3E4S2VZMW9hcWhaR21uSFB5czM3ZDZBNkF2ZmlrUWtmOHF0S3Z4MzhLUzl2ZmxiWXlwUjdSODdHeHlOa29DUmNzTl9oTG5WbjlfbjJheEt3YmRBR2I?oc=5"
+    },
+    {
+      "country": "Ukraine",
+      "date": "2026-11-19",
+      "links": [
+        {
+          "source": "PBS",
+          "title": "News Wrap: Russian drone attack damages Dutch embassy and cathedral in Ukraine - PBS",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQTnVaQ0g4SURaeFZUVE14eW1BMWtLRlBYVlUxcnBEUG9zN1JyS2hnQllQRG0tZDlySEw2ZW1sZ29hak92OXo4aGt4dzVMSThrX05rZElveVJlcDE2bVI5ZVlYdktzRE9IUF84eV92ZWZfZGs3bEl1aWhoM1RyNGdoNnZROFBqN3BQNmQ1NmJKbTRFRWZLM3FjOUM3ejJPc01iQ0xnRENyZm9jLVdxcmVQcg?oc=5"
+        }
+      ],
+      "means": "drone",
+      "published": "2026-11-19T17:45:23-06:00",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "STANDBY",
+      "source": "PBS",
+      "sourceCount": 1,
+      "target_type": "military",
+      "title": "News Wrap: Russian drone attack damages Dutch embassy and cathedral in Ukraine - PBS",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQTnVaQ0g4SURaeFZUVE14eW1BMWtLRlBYVlUxcnBEUG9zN1JyS2hnQllQRG0tZDlySEw2ZW1sZ29hak92OXo4aGt4dzVMSThrX05rZElveVJlcDE2bVI5ZVlYdktzRE9IUF84eV92ZWZfZGs3bEl1aWhoM1RyNGdoNnZROFBqN3BQNmQ1NmJKbTRFRWZLM3FjOUM3ejJPc01iQ0xnRENyZm9jLVdxcmVQcg?oc=5"
+    },
+    {
+      "country": "Russia",
+      "date": "2026-11-18",
+      "links": [
+        {
+          "source": "Reuters",
+          "title": "EXCLUSIVE: Drone attacks nearly halve Russia's November oil refining, sources say - Reuters",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQOWZxREZPaThlNEtsN1Z2V2s3bVpMbkpiOEYyV19nS2paZndRczh0SG5pcURzTmFSMzYyNDlPbDJFRTIwZTBScFpSLUVrMDNtWm9xMndPT1JHdk00WTFNVlZOdGE1LS1TdHJJX0hsMXI4eEV2cEhEVTkzWVp6ZkNxWVdMbl9lS2FqRnl3TWlEbnRDb1NqLU1iYmtvSkxDa19GWEJpckk1bEI3U09TcDdvQ1ViS25jRXZTZ1U5RA?oc=5"
+        }
+      ],
+      "means": "drone",
+      "published": "2026-11-18T09:10:58-06:00",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "STANDBY",
+      "source": "Reuters",
+      "sourceCount": 1,
+      "target_type": "energy",
+      "title": "EXCLUSIVE: Drone attacks nearly halve Russia's November oil refining, sources say - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQOWZxREZPaThlNEtsN1Z2V2s3bVpMbkpiOEYyV19nS2paZndRczh0SG5pcURzTmFSMzYyNDlPbDJFRTIwZTBScFpSLUVrMDNtWm9xMndPT1JHdk00WTFNVlZOdGE1LS1TdHJJX0hsMXI4eEV2cEhEVTkzWVp6ZkNxWVdMbl9lS2FqRnl3TWlEbnRDb1NqLU1iYmtvSkxDa19GWEJpckk1bEI3U09TcDdvQ1ViS25jRXZTZ1U5RA?oc=5"
     }
-  ],
-  "counts": {
-    "total": 5,
-    "energy": 0
-  },
-  "gaps": []
+  ]
 }
