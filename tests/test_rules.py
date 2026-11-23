@@ -270,6 +270,31 @@ def test_trend_filter_and_confidence():
     assert "Taylor Swift" not in names
     assert "gold inflation" in names
     assert "Secretary of War" not in names
+    terms = citizen.board_terms(
+        [
+            {"kind": "quake", "title": "M5.8 150 km SW of Merizo Village, Guam", "mag": 5.8},
+            {"kind": "cyber", "title": "USDA hit with cyberattack: Sources - ABC News"},
+            {"kind": "infra", "title": "Internet services disrupted across Pakistan", "asset": "cable", "region": "Baltic Sea"},
+        ],
+        [{"country": "Sudan", "title": "Drone attacks kill four near Sudan’s capital"}],
+        {"markets": [{"topic": "inflation"}], "labs": [{"topic": "OpenAI"}]},
+    )
+    assert len(terms) <= 40
+    assert any(term["term"] == "guam" for term in terms)
+    assert any(term["term"] == "usda" for term in terms)
+    assert all(term["term"] not in {"the", "news", "update"} for term in terms)
+    guam = citizen.filter_trends([
+        {"trend_name": "Guam", "tweet_count": 1000},
+        {"trend_name": "USDA", "tweet_count": 800},
+        {"trend_name": "Taylor Swift", "tweet_count": 9},
+    ], "US", terms)
+    matched = {row["name"]: row["matched"] for row in guam}
+    assert "Guam" in matched and matched["Guam"].startswith("matches:")
+    assert "USDA" in matched and "USDA" in matched["USDA"]
+    assert "Taylor Swift" not in matched
+    assert citizen.trend_is_offline({"mode": "trends", "status": "ok", "note": "X trends by WOEID (US 23424977). The endpoint answered and none of the names matched."}) is False
+    assert citizen.trend_is_offline({"mode": "offline"}) is True
+    assert citizen.trend_is_offline({"mode": "trends", "note": "endpoint answered"}) is False
     assert citizen.topic_of("Iran war") == "iran-war"
     assert citizen.topic_of("Eisenkot asked to form Israel's government") == "israel"
     assert citizen.topic_of("COP31 opens in Antalya") == "climate"

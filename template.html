@@ -1287,12 +1287,17 @@ function renderToday() {
       note: [volume, publicText(item.note || "")].filter(Boolean).join(". ")
     });
     const html = card(body);
-    return samples ? html.replace("</article>", `<p class="meta">Sample sources: ${samples}</p></article>`) : html;
+    const matched = item.matched ? `<p class="meta">${esc(item.matched)}</p>` : "";
+    return html.replace("</article>", `${matched}${samples ? `<p class="meta">Sample sources: ${samples}</p>` : ""}</article>`);
   }).join("");
-  const offline = !doc.mode || doc.mode === "offline" || /bearer|token|woeid|endpoint/i.test(doc.note || "");
+  const status = doc.status || "";
+  const offline = status
+    ? status === "offline"
+    : (!doc.mode || doc.mode === "offline");
+  const checked = doc.dynamicTermCount ? ` ${doc.dynamicTermCount} board terms were checked.` : "";
   const note = items.length
-    ? (doc.mode === "recent-search" ? "Keyword counts, because the trends list was not available." : "Topics that match the threat list.")
-    : (offline ? "Trends are offline on this check." : "No topic matched the threat list.");
+    ? (doc.mode === "recent-search" ? "Keyword counts, because the trends list was not available." : "Topics that match the threat list.") + checked
+    : (offline ? "Trends are offline on this check." : "No topic matched the threat list." + checked);
   const host = document.getElementById("today");
   host.innerHTML = `<p class="note-plain">${esc(note)}</p>` + (cards ? `<div class="stack">${cards}</div>` : empty("No topic matched the threat list."));
 }

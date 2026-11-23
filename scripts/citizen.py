@@ -120,6 +120,124 @@ def match_theme(text: str) -> str:
     return found
 
 
+_TERM_STOP = {
+    "the", "news", "update", "updates", "and", "for", "with", "from", "that", "this",
+    "after", "before", "over", "into", "about", "says", "said", "new", "latest",
+    "breaking", "today", "world", "report", "reports", "sources", "officials",
+    "region", "near", "south", "north", "east", "west", "city", "county", "attack",
+    "attacks", "strike", "strikes", "quake", "earthquake", "cve", "linked", "found",
+    "during", "series", "data", "using", "path", "channel", "logic", "query",
+    "software", "medical", "imaging", "root", "access", "agents", "hackers",
+    "attackers", "zero", "expressway", "store", "systems", "department", "natural",
+    "resources", "investigating", "apparent", "attempt", "container", "restores",
+            "village", "alert", "green", "orange", "internet", "services", "disrupted",
+            "across", "undersea", "cable", "fault", "daily", "island", "weather",
+            "statement", "special", "vulnerability", "authentication", "bypass",
+            "exploited", "gained", "untrusted", "alternate", "improper", "elements",
+            "hard", "credentials", "chinese", "manager", "encoding", "escaping",
+            "output", "unprotected", "discloses", "critical", "mail", "assure",
+            "roller", "deserialization", "what", "know", "there", "will", "worse",
+            "reasons", "fires", "facility", "missile", "neighbors", "seeping",
+            "condemns", "spilling", "terrorism", "were", "been", "have", "rejects",
+            "excessive", "measures", "minister", "storm", "breach", "investigation",
+            "videos", "video",
+}
+
+
+def _fold_term(text: str) -> str:
+    import unicodedata
+    raw = unicodedata.normalize("NFKD", text or "")
+    raw = "".join(ch for ch in raw if not unicodedata.combining(ch))
+    return raw.lower()
+
+
+def _term_ok(token: str) -> bool:
+    token = (token or "").strip().lower()
+    if token in _TERM_STOP:
+        return False
+    if len(token) < 4:
+        return False
+    return True
+
+
+def board_terms(threats: list | None, strikes: list | None = None, spikes: dict | None = None, cap: int = 40) -> list[dict]:
+    """Names on today's board that a trend can match, besides the fixed theme list."""
+    found = []
+    seen = set()
+
+    def add(token: str, label: str) -> None:
+        token = _fold_term(token)
+        token = re.sub(r"[^a-z0-9]+", "", token)
+        if not _term_ok(token) or token in seen or len(found) >= cap:
+            return
+        seen.add(token)
+        found.append({"term": token, "label": (label or token)[:90]})
+
+    def words(text: str, label: str) -> None:
+        for word in re.findall(r"[A-Za-z][A-Za-z'-]{3,}", text or ""):
+            add(word, label)
+
+    def orgs(text: str, label: str) -> None:
+        raw = text or ""
+        for acro in re.findall(r"\b[A-Z]{3,5}\b", raw):
+            add(acro, label)
+        for word in re.findall(r"\b[A-Z][a-z]{3,12}\b", raw):
+            add(word, label)
+
+    cyber = []
+    storms = []
+    for row in strikes or []:
+        country = row.get("country") or ""
+        if country:
+            add(country, f"{country} strike")
+    for row in threats or []:
+        kind = row.get("kind") or ""
+        title = row.get("title") or ""
+        if kind == "quake":
+            place = re.sub(r"^M\d+(?:\.\d+)?\s+", "", title)
+            place = re.sub(r"\d+\s*km\s+\w+\s+of\s+", "", place, flags=re.I)
+            words(place, f"{title[:40]} quake")
+        elif kind in {"storm", "windstorm", "nws"}:
+            storms.append((title, f"{title[:60]} storm"))
+        elif kind == "cyber":
+            cyber.append(title)
+        elif kind == "infra":
+            if row.get("region"):
+                add(row["region"], f"{row.get('region')} infrastructure")
+            for place in re.findall(r"\b[A-Z][a-z]{3,}\b", title):
+                add(place, f"{title[:60]} infrastructure")
+    for title in cyber:
+        orgs(title, f"{title[:60]} cyber")
+    for group in ("labs", "markets"):
+        for spike in (spikes or {}).get(group) or []:
+            topic = spike.get("topic") or ""
+            if topic:
+                add(topic, f"{topic} spike")
+    for title, label in storms:
+        words(title, label)
+    return found
+
+
+def match_board_term(name: str, terms: list | None) -> str:
+    folded = " " + re.sub(r"[^a-z0-9]+", " ", _fold_term(name)) + " "
+    for term in terms or []:
+        token = term.get("term") or ""
+        if token and re.search(rf"\b{re.escape(token)}\b", folded):
+            return term.get("label") or token
+    return ""
+
+
+def trend_is_offline(doc: dict | None) -> bool:
+    """Offline only from an explicit status. Old files fall back to mode, never the note."""
+    doc = doc or {}
+    status = doc.get("status") or ""
+    if status in {"ok", "partial"}:
+        return False
+    if status == "offline":
+        return True
+    return not doc.get("mode") or doc.get("mode") == "offline"
+
+
 def _all_clear(title: str, note: str = "") -> bool:
     blob = f"{title} {note}".lower()
     return bool(re.search(r"there are no tropical cyclones|no tropical cyclones at this time|tropical weather outlook", blob) and not re.search(r"\b(hurricane|tropical storm)\s+[a-z]", blob))
@@ -652,12 +770,18 @@ def _read_corr(coeff: float | None, event_days: int, days: int, asset: str, cate
     }
 
 
-def filter_trends(raw: list[dict], place: str) -> list[dict]:
+def filter_trends(raw: list[dict], place: str, terms: list | None = None) -> list[dict]:
     kept = []
     seen = set()
     for row in raw or []:
         name = (row.get("trend_name") or row.get("name") or "").strip()
         theme = match_theme(name)
+        matched = f"matches: {theme.replace('-', ' ')}" if theme else ""
+        if not theme:
+            label = match_board_term(name, terms)
+            if label:
+                theme = "board"
+                matched = f"matches: {label}"
         if not name or not theme:
             continue
         key = name.lower()
@@ -686,7 +810,8 @@ def filter_trends(raw: list[dict], place: str) -> list[dict]:
             "lane": "x",
             "source": "X trends",
             "severity": "ALERT" if theme in {"hurricane", "tornado", "earthquake", "outbreak", "war"} else "STANDBY",
-            "note": f"{place} trend · {theme}",
+            "note": f"{place} trend · {matched or theme}",
+            "matched": matched,
         })
     return kept
 
@@ -724,6 +849,8 @@ def trends_from_search(buckets: list[dict]) -> dict:
         })
     return {
         "mode": "recent-search",
+        "status": "partial" if items else "offline",
+        "sources": {"x": "partial" if items else "offline"},
         "note": "The X trends endpoint was not available on this token. Showing recent-search counts for threat and preparedness keywords.",
         "items": items,
     }
@@ -877,7 +1004,7 @@ def keep_rising(trends: dict, history: dict, today: str, google_items: list, vel
     dropped = 0
     for item in (trends or {}).get("items") or []:
         name = item.get("name") or ""
-        if not topic_of(name):
+        if not topic_of(name) and not item.get("matched"):
             dropped += 1
             continue
         volume = item.get("volume")
@@ -888,8 +1015,11 @@ def keep_rising(trends: dict, history: dict, today: str, google_items: list, vel
         elif name.lower() in backed or topic_of(name) in backed:
             rise = "also showing up off X"
         if not rise:
-            dropped += 1
-            continue
+            if item.get("matched"):
+                rise = item["matched"]
+            else:
+                dropped += 1
+                continue
         row = _stamp_trend(item, when)
         row["rise"] = rise
         row["look"] = "chatter" if row.get("lane") == "x" else "news"
@@ -908,7 +1038,18 @@ def keep_rising(trends: dict, history: dict, today: str, google_items: list, vel
     note = (trends or {}).get("note") or ""
     if dropped:
         note = (note + " " if note else "") + f"Dropped {dropped} X topics that were a name match or had no rise versus yesterday."
-    return {"mode": (trends or {}).get("mode") or "trends", "note": note.strip(), "items": unique[:12]}
+    out = {
+        "mode": (trends or {}).get("mode") or "trends",
+        "note": note.strip(),
+        "items": unique[:12],
+        "status": (trends or {}).get("status") or "",
+        "sources": dict((trends or {}).get("sources") or {}),
+        "dynamicTermCount": (trends or {}).get("dynamicTermCount") or 0,
+        "raw": list((trends or {}).get("raw") or []),
+    }
+    if (trends or {}).get("googleNote"):
+        out["googleNote"] = trends.get("googleNote")
+    return out
 
 
 def _millis_day(value) -> str:

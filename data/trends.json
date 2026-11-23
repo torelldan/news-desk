@@ -37,7 +37,8 @@
       "sourceCount": 3,
       "title": "coastal flood watch",
       "url": "https://www.cnn.com/2026/11/23/weather/san-francisco-tide-storm-flooding-thanksgiving",
-      "volume": "20000+"
+      "volume": "20000+",
+      "matched": "matches: flood"
     },
     {
       "category": "iran-war",
@@ -79,7 +80,8 @@
       "source": "News velocity",
       "sourceCount": 4,
       "title": "iran war",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPTlVZWjRCSVZZOTdxbEJHVlVJTjVyV2xWVXdaQ2tqUmVRNFJkaElDa2xhYWFqbEcwRDlaWnpNWF9OMy05OE5mM2N4VkhRQVZHdTFUTTlyd2JUSkwxR0Q3ZEh1UDZZNDB5cmVHa1lfMkM0ZldWT1pJRmVTTWVPMWEzQnloMWY2Zjh1TDdaeHRONmIwbERZLWtfMy12Z19JcDV2eUJxZElIWDdBWW5CU1NEYU5TVjJRRjjSAbwBQVVfeXFMTm93R19jS3VPR050YTJCYXBSQ25mYlo1RXNhZ1JSSXVZdEdiYUJJeloyZHlkUnJYTTc5dGVzbmlqZHY3Tlhscjc5cWxqT1JRTHMtVHlORE5TUVpKQVZ1d3FGUjhwcDlHbk5JSFVoeXZya1lTU1ZIUW9SRkUwZ2t0akZGa2t4VEpfdEZJRS0xcFFEZGVaVGtNcWFvOWdLTFFRUmFhTXBsQ1FydjA5X3dZUHdDVmE4WnduNXVUMTc?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPTlVZWjRCSVZZOTdxbEJHVlVJTjVyV2xWVXdaQ2tqUmVRNFJkaElDa2xhYWFqbEcwRDlaWnpNWF9OMy05OE5mM2N4VkhRQVZHdTFUTTlyd2JUSkwxR0Q3ZEh1UDZZNDB5cmVHa1lfMkM0ZldWT1pJRmVTTWVPMWEzQnloMWY2Zjh1TDdaeHRONmIwbERZLWtfMy12Z19JcDV2eUJxZElIWDdBWW5CU1NEYU5TVjJRRjjSAbwBQVVfeXFMTm93R19jS3VPR050YTJCYXBSQ25mYlo1RXNhZ1JSSXVZdEdiYUJJeloyZHlkUnJYTTc5dGVzbmlqZHY3Tlhscjc5cWxqT1JRTHMtVHlORE5TUVpKQVZ1d3FGUjhwcDlHbk5JSFVoeXZya1lTU1ZIUW9SRkUwZ2t0akZGa2t4VEpfdEZJRS0xcFFEZGVaVGtNcWFvOWdLTFFRUmFhTXBsQ1FydjA5X3dZUHdDVmE4WnduNXVUMTc?oc=5",
+      "matched": "matches: iran war"
     },
     {
       "category": "ukraine-war",
@@ -121,7 +123,8 @@
       "source": "News velocity",
       "sourceCount": 4,
       "title": "ukraine war",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNTXIzTEt6SnNNSmRBWHdaUTBTSDRKRDhBdk5vTTBmSl9Rc0RWYnJFNkZIWTRNVEJVNjZxa2xPWTNPdTJqeGlpTDdRV21XbDI2S2NvLUJNQmdNS2dDUDZWaG1USWtqaW5wb0doUzNNSVg1enJhMl9CdUlPZjAwQ3BMdklmeWIxaTFoNG1j?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNTXIzTEt6SnNNSmRBWHdaUTBTSDRKRDhBdk5vTTBmSl9Rc0RWYnJFNkZIWTRNVEJVNjZxa2xPWTNPdTJqeGlpTDdRV21XbDI2S2NvLUJNQmdNS2dDUDZWaG1USWtqaW5wb0doUzNNSVg1enJhMl9CdUlPZjAwQ3BMdklmeWIxaTFoNG1j?oc=5",
+      "matched": "matches: Ukraine strike"
     },
     {
       "category": "us-gov",
@@ -163,7 +166,8 @@
       "source": "News velocity",
       "sourceCount": 4,
       "title": "us gov",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5hVTRDXzRRd0huN1JSdDdtNUFTRVZLd2ZpYWdmXy1SQ0ExZjlxdFRMTlJmOWVxUmRXYlBrRUxhOWVnam9hSXZSZ2c2V2gxRWlnbERR?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5hVTRDXzRRd0huN1JSdDdtNUFTRVZLd2ZpYWdmXy1SQ0ExZjlxdFRMTlJmOWVxUmRXYlBrRUxhOWVnam9hSXZSZ2c2V2gxRWlnbERR?oc=5",
+      "matched": "matches: us gov"
     },
     {
       "category": "global",
@@ -205,9 +209,16 @@
       "source": "News velocity",
       "sourceCount": 4,
       "title": "global",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOb0NpSVBZR3Vmakp2eTFDX3VKdWFHNkQ1UG04bG5PYjdudVpKZGpsVG5fYzJvajZYdUpXMGVuZWp1bTBSbk5EaG9yU3E1TFpOZk9wOHEyUDNKRXJWT3l5WEhKYnNmMXROeEpSN1RtWDNtTjhibzdzTjNCT3JYUVBRbWV6WUNxR05VZzk2dQ?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOb0NpSVBZR3Vmakp2eTFDX3VKdWFHNkQ1UG04bG5PYjdudVpKZGpsVG5fYzJvajZYdUpXMGVuZWp1bTBSbk5EaG9yU3E1TFpOZk9wOHEyUDNKRXJWT3l5WEhKYnNmMXROeEpSN1RtWDNtTjhibzdzTjNCT3JYUVBRbWV6WUNxR05VZzk2dQ?oc=5",
+      "matched": "matches: global"
     }
   ],
   "mode": "trends",
-  "note": "X trends by WOEID (US 23424977 and worldwide 1). Kept only when the name matches a threat or preparedness theme. The endpoint answered and none of the names matched."
+  "note": "X trends by WOEID (US 23424977 and worldwide 1). Kept only when the name matches a threat or preparedness theme. The endpoint answered and none of the names matched.",
+  "status": "ok",
+  "sources": {
+    "x": "ok",
+    "google": "ok"
+  },
+  "dynamicTermCount": 40
 }
