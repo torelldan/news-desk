@@ -757,9 +757,13 @@ def fetch_trends(token: str, now: datetime) -> dict:
         print("  X trends skipped: no bearer token")
         return {
             "mode": "offline",
+            "status": "offline",
+            "sources": {"x": "offline"},
             "note": "X trends skipped: missing X_BEARER_TOKEN. Direct messages are never requested.",
             "items": [],
+            "raw": [],
         }
+    raw_rows = []
     raw_kept = []
     errors = []
     endpoint_ok = False
@@ -771,6 +775,15 @@ def fetch_trends(token: str, now: datetime) -> dict:
                 {"max_trends": "50", "trend.fields": "trend_name,tweet_count"},
             )
             endpoint_ok = True
+            for row in payload.get("data") or []:
+                name = (row.get("trend_name") or row.get("name") or "").strip()
+                if not name:
+                    continue
+                raw_rows.append({
+                    "trend_name": name,
+                    "tweet_count": row.get("tweet_count"),
+                    "place": place,
+                })
             raw_kept.extend(citizen.filter_trends(payload.get("data") or [], place))
         except urllib.error.HTTPError as err:
             info = d.describe_x_error(err.code, http_error_body(err), token)
@@ -780,12 +793,20 @@ def fetch_trends(token: str, now: datetime) -> dict:
             errors.append(f"{place}: {d.scrub_secret(str(err), token)}")
             print(f"  X trends {place}: {err}")
     if endpoint_ok:
-        note = "X trends by WOEID (US 23424977 and worldwide 1). Kept only when the name matches a threat or preparedness theme."
+        x_status = "partial" if errors else "ok"
+        note = "X trends by WOEID (US 23424977 and worldwide 1). Kept when the name matches a threat theme or a name on today's board."
         if errors:
             note += " Partial: " + "; ".join(errors)
         if not raw_kept:
             note += " The endpoint answered and none of the names matched."
-        return {"mode": "trends", "note": note, "items": raw_kept[:12]}
+        return {
+            "mode": "trends",
+            "status": x_status,
+            "sources": {"x": x_status},
+            "note": note,
+            "items": raw_kept[:12],
+            "raw": raw_rows[:80],
+        }
 
     buckets = []
     search_errors = []
@@ -1023,7 +1044,7 @@ def main() -> int:
         trends = fetch_trends(token, now)
     except Exception as err:
         errors.append(f"X trends: {err}")
-        trends = {"mode": "offline", "note": f"X trends failed: {err}", "items": []}
+        trends = {"mode": "offline", "status": "offline", "sources": {"x": "offline"}, "note": f"X trends failed: {err}", "items": []}
     triggers = citizen.evaluate_triggers(threat_items, boards_out.get("assets") or {}, trends)
     citizen.apply_outlook(threat_items, prev_history, today)
     trends = citizen.annotate_trends(trends, threat_items)
@@ -1034,6 +1055,12 @@ def main() -> int:
     trends = citizen.keep_rising(trends, prev_history, today, google_trends.get("items") or [], velocity, now)
     if google_trends.get("note"):
         trends["googleNote"] = google_trends.get("note")
+    trends.setdefault("sources", {})
+    trends["sources"]["google"] = "ok" if google_trends.get("ok") else "offline"
+    if trends.get("status") == "ok" and trends["sources"]["google"] == "offline":
+        trends["status"] = "partial"
+    elif not trends.get("status"):
+        trends["status"] = "offline" if trends.get("mode") == "offline" else "ok"
     try:
         local = citizen.fetch_local(now)
     except Exception as err:
@@ -1253,6 +1280,25 @@ def main() -> int:
         if boards_out.get("threats"):
             boards_out["threats"]["items"] = threat_items
             save_json(DATA / "threats.json", boards_out["threats"])
+        terms = citizen.board_terms(threat_items, strike_doc.get("items") or [], meta.get("spikes") or {})
+        extra = []
+        for row in trends.get("raw") or []:
+            extra.extend(citizen.filter_trends([row], row.get("place") or "US", terms))
+        if extra:
+            have = {(item.get("name") or "").lower() for item in trends.get("items") or []}
+            for item in extra:
+                if (item.get("name") or "").lower() not in have:
+                    trends.setdefault("items", []).append(item)
+                    have.add((item.get("name") or "").lower())
+            trends["items"] = trends["items"][:12]
+        for item in trends.get("items") or []:
+            if item.get("matched"):
+                continue
+            label = citizen.match_board_term(item.get("name") or "", terms)
+            if label:
+                item["matched"] = f"matches: {label}"
+        trends["dynamicTermCount"] = len(terms)
+        save_json(DATA / "trends.json", trends)
     except Exception as err:
         errors.append(f"Strikes: {err}")
     try:

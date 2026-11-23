@@ -47,7 +47,7 @@ All sections are `<section data-sec=...>` blocks in `template.html`. Each one st
 | # | Section (on-screen title) | What it shows | Data it reads (`DESK.*`) |
 |---|---|---|---|
 | — | Header + **Refresh** link | Last refresh time (CT), X status, the Refresh link (opens the GitHub Actions page) | `meta.json` |
-| 02 | **Today** | X trending topics (US WOEID 23424977, world WOEID 1) kept only when they match a threat or preparedness theme. Falls back to X recent-search counts, and Google Trends adds context. | `trends.json` |
+| 02 | **Today** | X trending topics (US WOEID 23424977, world WOEID 1) kept when they match a fixed threat theme or a name on today's board (strike places, quake and storm locations, cyber organizations, infrastructure, war names, spike topics). `trends.status` is `ok`, `partial`, or `offline`; the page uses that field, not the wording of the note. `dynamicTermCount` is how many board terms were checked. Falls back to X recent-search counts, and Google Trends adds context. | `trends.json` |
 | — | **Morning brief** | 3–5 sentences built from the board by `citizen.morning_brief` | `meta.json` → `brief` |
 | — | **Standing orders** | Only threat and local items whose so-what line asks for an action (`needsAction`) | `threats.json`, `local.json` |
 | 01 | **Economic watch** | 7 regions, 10 index venues: index level, % change, OPEN/CLOSED in CT, region headlines (Google News) | `markets.json` |
