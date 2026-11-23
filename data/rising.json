@@ -38,8 +38,8 @@
           "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxORm4yT2x2ZGRxOXZfU1BjR1VaU0ctNTVGZ0pYY2NTM3NQNUhURUc1OW5kajAwa0k0cTF6ekVhM1BSR25ROEw2dmpGczVpaWtheFo5Y0c5X1NnSW45d05FaDlPOWpxNlBjcUFLbDViQmRoTk1ZRTlad056MjlPLW9wZGJRVThRTU5SWWx4QXAteG8xay13WlhwZVpIZ0J2ZS1zYUpEMGM2MVJkWFlx0gGyAUFVX3lxTE1hWGQyUEQxOVpuX3M5R0tfTm5wd0dQOXFQc01TbE42ZnhEV25MMmhJRTg2SzZ0ZzNaNkE2dGh4UVloWERSTmx3NUxnQUdCTVRpYXZQbmFlbnh3NHBoUURqc3dLRGJKUnhST3g4ODJDU2RUaXB3bk1mbWxDV1BnZGFXTG5PN3F0WE40cUYwUlVzaGQ3ZWl3N3BDM2h2d01HSGhkajZOcXEzTUVnVGJzY1RUMnc?oc=5"
         }
       ],
-      "reasons": "1.5x usual volume · 5 or more outlets",
-      "score": 2,
+      "reasons": "",
+      "score": 0,
       "sourceCount": 4,
       "spark": [
         {
@@ -82,7 +82,7 @@
           "price": 4
         },
         {
-          "price": 5
+          "price": 4
         }
       ],
       "state": "RISING",
@@ -91,162 +91,25 @@
     {
       "links": [
         {
-          "source": "USGS",
-          "title": "M4.8 209 km SSE of Tobi Village, Palau",
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucyd"
-        },
-        {
-          "source": "USGS",
-          "title": "M4.6 30 km SW of Finschhafen, Papua New Guinea",
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucy7"
-        },
-        {
-          "source": "USGS",
-          "title": "M4.7 52 km SW of Tyrma, Russia",
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucy6"
-        },
-        {
-          "source": "USGS",
-          "title": "M4.5 Vanuatu region",
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucxy"
-        }
-      ],
-      "reasons": "5 or more outlets",
-      "score": 1,
-      "sourceCount": 4,
-      "spark": [
-        {
-          "price": 5
-        },
-        {
-          "price": 7
-        },
-        {
-          "price": 6
-        },
-        {
-          "price": 4
-        },
-        {
-          "price": 3
-        },
-        {
-          "price": 3
-        },
-        {
-          "price": 11
-        },
-        {
-          "price": 12
-        },
-        {
-          "price": 13
-        },
-        {
-          "price": 14
-        },
-        {
-          "price": 15
-        },
-        {
-          "price": 17
-        },
-        {
-          "price": 17
-        },
-        {
-          "price": 18
-        }
-      ],
-      "state": "RISING",
-      "topic": "quake"
-    },
-    {
-      "links": [
-        {
-          "source": "ReliefWeb",
-          "title": "Haiti: Floods - Oct 2026",
-          "url": "https://reliefweb.int/disaster/fl-2026-000201-hti"
-        },
-        {
-          "source": "ReliefWeb",
-          "title": "Congo: Floods - Oct 2026",
-          "url": "https://reliefweb.int/disaster/fl-2026-000196-cog"
-        },
-        {
-          "source": "ReliefWeb",
-          "title": "Panama: Earthquake - Oct 2026",
-          "url": "https://reliefweb.int/disaster/eq-2026-000188-pan"
-        },
-        {
-          "source": "ReliefWeb",
-          "title": "Indonesia: Drought - Sep 2026",
-          "url": "https://reliefweb.int/disaster/dr-2026-000178-idn"
-        }
-      ],
-      "reasons": "5 or more outlets",
-      "score": 1,
-      "sourceCount": 4,
-      "spark": [
-        {
-          "price": 1
-        },
-        {
-          "price": 1
-        },
-        {
-          "price": 1
-        },
-        {
-          "price": 1
-        },
-        {
-          "price": 1
-        },
-        {
-          "price": 8
-        },
-        {
-          "price": 8
-        },
-        {
-          "price": 8
-        },
-        {
-          "price": 8
-        },
-        {
-          "price": 8
-        },
-        {
-          "price": 8
-        }
-      ],
-      "state": "RISING",
-      "topic": "relief"
-    },
-    {
-      "links": [
-        {
-          "source": "BBC",
-          "title": "What we know about the latest Russian missile strikes on Ukraine - BBC",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE4zS0VqN3l1NGtiUnM1SmZ5NjlFX0NXckFLMFlLQm5rYjlucGxlUWxhSHVQRFJ2akJ0SUpyVkQtTjBHb3BrSy1TRTdsM2ZnNXYxaHJvWjVua3Q?oc=5"
-        },
-        {
           "source": "CNN",
-          "title": "The Ukraine-Russia war is seeping out across Europe and there are two reasons it will get worse - CNN",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNTXIzTEt6SnNNSmRBWHdaUTBTSDRKRDhBdk5vTTBmSl9Rc0RWYnJFNkZIWTRNVEJVNjZxa2xPWTNPdTJqeGlpTDdRV21XbDI2S2NvLUJNQmdNS2dDUDZWaG1USWtqaW5wb0doUzNNSVg1enJhMl9CdUlPZjAwQ3BMdklmeWIxaTFoNG1j?oc=5"
+          "title": "San Francisco braces for near-record tides as a storm collides with Thanksgiving travel‌",
+          "url": "https://www.cnn.com/2026/11/23/weather/san-francisco-tide-storm-flooding-thanksgiving"
         },
         {
-          "source": "NPR",
-          "title": "Ukraine war spilling into NATO territory - NPR",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPRFRDMDZFOVFwdGd6UWJxTW9EeVdKN29TR0ZNZk9ISEdpUFpPZTBaQUhBYlZFUDBRNkNrTkJQWDBZeWFMMURYSm9MZkdLZEp0R2tFN0ZEVVRmT0ZqMW1hczVENlYtM0U1am1vcHA2dEx3ek4xdjBYUi1KMDlpVGhyWFZTTE5fX1VtZm9FMHlR?oc=5"
+          "source": "ABC7 Bay Area",
+          "title": "Live storm updates: King tides, rain to bring more flooding to Bay Area Thanksgiving week",
+          "url": "https://abc7news.com/live-updates/live-bay-area-weather-updates-san-francisco-recovers-severe-flooding-more-storms-king-tides-coming-northern-california/20069742/"
+        },
+        {
+          "source": "CBS News",
+          "title": "Bay Area officials rush to protect SFO, other key infrastructure ahead of expected flooding",
+          "url": "https://www.cbsnews.com/sanfrancisco/news/bay-area-protect-sfo-key-infrastructure-expected-flooding/"
         }
       ],
-      "reasons": "4 outlets this window",
-      "score": 4,
+      "reasons": "US daily list 20000+",
+      "score": 3,
       "state": "RISING",
-      "topic": "ukraine war"
+      "topic": "coastal flood watch"
     },
     {
       "links": [
@@ -274,14 +137,37 @@
     {
       "links": [
         {
+          "source": "CNN",
+          "title": "The Ukraine-Russia war is seeping out across Europe and there are two reasons it will get worse - CNN",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNTXIzTEt6SnNNSmRBWHdaUTBTSDRKRDhBdk5vTTBmSl9Rc0RWYnJFNkZIWTRNVEJVNjZxa2xPWTNPdTJqeGlpTDdRV21XbDI2S2NvLUJNQmdNS2dDUDZWaG1USWtqaW5wb0doUzNNSVg1enJhMl9CdUlPZjAwQ3BMdklmeWIxaTFoNG1j?oc=5"
+        },
+        {
+          "source": "Al Jazeera",
+          "title": "Ukraine urges US to release Patriot missiles as Russian strikes kill 15 - Al Jazeera",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQWDROSjJ4ZmFrSWp4VDNoeS1aRVlHb25QQXJvV0JhQWtrNjdJekNQWHEyQ0VhZUIyNHBpd3l2eEJSYmc4Zk45V2lhcWxwMzJBT09XYk1hRzZwa0FkT2ltdUl2STFtb1lBVHRtVFpDTGtYc2FVZWJqQXYyYlFSVzBhNzhpbE83NlByTGJHQjloNEZvZ9IBlwFBVV95cUxORzQwam00SzMzbWFrZHNQMlAxQU1sTmJ3ZEFQRU51V1B4MGxUb1FFeUo3R05ya0hQMFRVRjRGOTlVZDliV25wbGdnZzI1YlI5N2lpTnltOE5ZYUItZDViTlJvNkRCaGR0M2NxQ19zeEJrSmhVTGVKVGpoRFBNTlFlMFpxUzNKblhkYjlBek91OUJxbmZNdkRr?oc=5"
+        },
+        {
+          "source": "NPR",
+          "title": "Ukraine war spilling into NATO territory - NPR",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPRFRDMDZFOVFwdGd6UWJxTW9EeVdKN29TR0ZNZk9ISEdpUFpPZTBaQUhBYlZFUDBRNkNrTkJQWDBZeWFMMURYSm9MZkdLZEp0R2tFN0ZEVVRmT0ZqMW1hczVENlYtM0U1am1vcHA2dEx3ek4xdjBYUi1KMDlpVGhyWFZTTE5fX1VtZm9FMHlR?oc=5"
+        }
+      ],
+      "reasons": "4 outlets this window",
+      "score": 4,
+      "state": "RISING",
+      "topic": "ukraine war"
+    },
+    {
+      "links": [
+        {
+          "source": "Britannica",
+          "title": "Pentagon | History & Features - Britannica",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5hVTRDXzRRd0huN1JSdDdtNUFTRVZLd2ZpYWdmXy1SQ0ExZjlxdFRMTlJmOWVxUmRXYlBrRUxhOWVnam9hSXZSZ2c2V2gxRWlnbERR?oc=5"
+        },
+        {
           "source": "U.S. Department of War (.gov)",
           "title": "Department of War Publishes Eighth Release of Unidentified Anomalous Phenomena Files on WA - U.S. Department of War (.gov)",
           "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNYjhVNGpDYmwtTWFuOV9NMXJLb2xBVnJQNmtIWDNFQ0pMS0JWbUlRN2d6UW1obW94bERlX2xsa2R5ejFkSEk1LV9lUG02Y0VDNzAyZDMxc25JMG53TlNydnozQlZnZlg3WVp0OUktOHdtUGZrYUppRjJQQU9RYU9aSzVzbzhhOUpYaE1mQm9vMEM1MkhkdlNyVGZOeUJVWWJwUVRENXpJQ0U0WVdmZnQwZ19KcGVsSmpIOVRCTlZDbVd5LVU2UmVvTkFwazFQd3g3SHFj?oc=5"
-        },
-        {
-          "source": "Politico",
-          "title": "Inside Congress Live, Nov 20, 2026 - Live Updates - Politico",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1KamZfUTJ6ZktlcmFiWGVZdmhqME1sOWhRd0tfYTNIVVpIc1NXS3JKMDV3U1c3dUoxR0d3aUdqLVgtSzVxMzU4U1pqN0JUU0RwUFo4bHdxVXdMUQ?oc=5"
         },
         {
           "source": "PBS",
@@ -297,23 +183,23 @@
     {
       "links": [
         {
-          "source": "Health Policy Watch",
-          "title": "COP31 Climate Summit That Could Not Say ‘Fossil Fuels’ Ends With No Deal - Health Policy Watch",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQNjktMkhZVjVPMTFfZ0lIX2pjbjFWS1NyR3dJZFRWYUcxVjRud0ZBa3AyQXVhU1ZIVzBjVzBBeU5fVERrUDlCWnlXbWtwX05CUUw1Z25aNEZLZjVXMi1WbWxxX2QwT1I1TXB0R3pfaTNFbWlVM0JDQ2NhZDhtZkFGRw?oc=5"
+          "source": "CNN",
+          "title": "Global climate summit collapses as countries fail to agree on moving away from fossil fuels - CNN",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOb0NpSVBZR3Vmakp2eTFDX3VKdWFHNkQ1UG04bG5PYjdudVpKZGpsVG5fYzJvajZYdUpXMGVuZWp1bTBSbk5EaG9yU3E1TFpOZk9wOHEyUDNKRXJWT3l5WEhKYnNmMXROeEpSN1RtWDNtTjhibzdzTjNCT3JYUVBRbWV6WUNxR05VZzk2dQ?oc=5"
+        },
+        {
+          "source": "AP",
+          "title": "EU proposes sweeping new Russia sanctions targeting banks, crypto and sports events - AP News",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQc1FWT0FKN3NFS3JoRG0zYnZvTkpjNEZqR240QzdMQVJDM1lmUklKeHpLeUl4bmFNUnlSa29kaU13WmhBdkNmVkt1WVZDUkdycVl3elQ1c1BwelFsLWVJeDhNNVBORWZBLWlhd0VqQ1QzLXFaNEZjRHEydWY1MGJYcDlYeWc5RjE4UEVEekJDYURuTWJfbk1WMGo1dWR3Zl84TUs1NEFJemZPZHVOVEE?oc=5"
         },
         {
           "source": "NPR",
           "title": "What did Xi Jinping get from the bear hug with Trump at the Shenzhen summit? - NPR",
           "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOQ3o5czdSSEZrYm9PNkFpdnZEZ0VCcHk2QXB6dUx4YXY0Q2gyWVBsU0FUUldBcFE0NGYzYkZZaWRwUjRFWDhfeFpYTlFwajZhTWVlRWltS1JKZTczdXFnX1A2TTRxTXJmM0JCeHFQZ1IyelJqdlZoV0RkdTFfMjVoLWJ3UjBvUTJlWkJSc3ZudmdiaUZiLVBZSWtQNkFySWFPTl9CRFFzYUZCN0FtRHNKNnlRT3ppT2R3bzV6eQ?oc=5"
-        },
-        {
-          "source": "The Economist",
-          "title": "Europe tightens sanctions on Russia. America loosens them - The Economist",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPQkxzUWdBcFpHVy01Y3hvOURnd0drNUZuWW9rWC1QQk5GQVV0blFhU0ZnZVFpY2JWaVZrUlVhZ0pOV2hkVmNtUUZ0ODIyVGtxUWx6RU9LNWhJcDJNTjhCYVlvODk2eWYwRHRnbnE0NFAwOGdaQ1BsTFdSWUVFSFBzaHJaVWxDc3NSRF9ZRFVqTk1TdzZTWmNCUDhqLUJsN19YUTl1YUNPMEY0MTNnenN2aHNUeklwdw?oc=5"
         }
       ],
-      "reasons": "5 outlets this window",
-      "score": 5,
+      "reasons": "4 outlets this window",
+      "score": 4,
       "state": "RISING",
       "topic": "global"
     }

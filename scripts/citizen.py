@@ -185,6 +185,7 @@ def board_terms(threats: list | None, strikes: list | None = None, spikes: dict 
             add(word, label)
 
     cyber = []
+    storms = []
     for row in strikes or []:
         country = row.get("country") or ""
         if country:
@@ -197,7 +198,7 @@ def board_terms(threats: list | None, strikes: list | None = None, spikes: dict 
             place = re.sub(r"\d+\s*km\s+\w+\s+of\s+", "", place, flags=re.I)
             words(place, f"{title[:40]} quake")
         elif kind in {"storm", "windstorm", "nws"}:
-            words(title, f"{title[:60]} storm")
+            storms.append((title, f"{title[:60]} storm"))
         elif kind == "cyber":
             cyber.append(title)
         elif kind == "infra":
@@ -206,16 +207,14 @@ def board_terms(threats: list | None, strikes: list | None = None, spikes: dict 
             for place in re.findall(r"\b[A-Z][a-z]{3,}\b", title):
                 add(place, f"{title[:60]} infrastructure")
     for title in cyber:
-        label = f"{title[:60]} cyber"
-        for acro in re.findall(r"\b[A-Z]{3,5}\b", title):
-            add(acro, label)
-    for group in ("labs", "markets", "podcasts"):
+        orgs(title, f"{title[:60]} cyber")
+    for group in ("labs", "markets"):
         for spike in (spikes or {}).get(group) or []:
             topic = spike.get("topic") or ""
             if topic:
                 add(topic, f"{topic} spike")
-    for title in cyber:
-        orgs(title, f"{title[:60]} cyber")
+    for title, label in storms:
+        words(title, label)
     return found
 
 

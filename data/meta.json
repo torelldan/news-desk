@@ -1,9 +1,11 @@
 {
   "baseline": false,
-  "brief": "Infrastructure: Internet services disrupted across Pakistan due to undersea cable fault - Daily Ausaf (unconfirmed). Rising topic: ukraine war (4 outlets this window). The S&P 500 was -3.7% at Friday's close. What to do: no action unless you need cash this week.",
-  "checkedAt": "2026-11-23T07:48:06-06:00",
-  "checkedLabel": "Nov 23, 2026 7:48 AM CT",
-  "errors": [],
+  "brief": "The stock tape is the story: the S&P 500 is +4.6% today. What to do: no action unless you need cash this week. Global: EU proposes sweeping new Russia sanctions targeting banks, crypto and sports events - AP News. Infrastructure: Internet services disrupted across Pakistan due to undersea cable fault - Daily Ausaf (unconfirmed). Rising topic: coastal flood watch (US daily list 20000+).",
+  "checkedAt": "2026-11-23T13:44:41-06:00",
+  "checkedLabel": "Nov 23, 2026 1:44 PM CT",
+  "errors": [
+    "ReliefWeb: the disasters page returned no cards from this network. The RSS feed is an AWS WAF challenge, and API v2 rejects appname=torelldan-news-desk until ReliefWeb approves it."
+  ],
   "retainDays": 120,
   "spikes": {
     "labs": [
@@ -11,25 +13,20 @@
         "field": "ai",
         "links": [
           {
+            "source": "OpenAI",
+            "title": "Combatting adversarial distillation - OpenAI",
+            "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1aNG5qZG9TaTJHTlRrTmJBUzNINzVJT1B2cXZZelBweXRiTXJ1ZGphVkM0MWxySk4ydDZEa2dfdnZReHlJYjlpcVBfaGlyeWJ1WmVJSUI1TzFzeDM3SERWZkd2d2VsNGVRRmhFYXBB?oc=5"
+          },
+          {
             "source": "NPR",
-            "title": "Anthropic worker claims to have solved a Holy Grail of math problems with the help of AI - NPR",
-            "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNS3FPem5vX0lZRzBlVnN0UGR3UkFUSmZXek1yY3ZmOVlIX0lOVy1kR0dWcVZoenFHSGdRS1R6MHRtenpxX2ZOVnE3UkNmOWdteXpQZUhFTHFMSTZFcG16d0hPMm9SaVlMTDdLVVpHMDljMmg3S0ZyM1hmTXotZ2w3cGhMaGNjOWFILWV4UjQ2dGxreVRGUEVrQXdSWFFMWThHLUtwVEFrWHJVLVQyQmlWdFoyX2pRRElfRm1NTnNqTnlENmQtSXNvdjZFVQ?oc=5"
-          },
-          {
-            "source": "Reuters",
-            "title": "Anthropic's blockbuster debut tests Wall Street's faith in AI boom - Reuters",
-            "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPVmU0cXVPRUhwcDZpRkRudEI3bjNfMllQVEN3M09VWFNmQUJTck1UUE9mVERRbmFicElZMWxKVnd3UWpTNGY3R1JiZ0NnRnNBRHhLMkxkVC1vUWVOVzQ3NzcwMkoycTR0MC1LUnBfdUIyWl9OZE5xYnlVVmQ5bzdVZmdnVHFjUjh6dHZrbVVQdEFPaDNCUC1KSkZEMUlhcU9OeWFiWi10SGwxNTBpNE16aTd1MA?oc=5"
-          },
-          {
-            "source": "Anthropic",
-            "title": "Updating our coordinated vulnerability disclosure policy timelines - Anthropic",
-            "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPVmdyVmc1MjVDcWtuV0NsWG44R3ZzQU5rX1BkVHNkR1NlN2w4cFRselR2dTVLOS1EcjlRbU1idlVSMW11bGFWaFZjN2tydks4VkJUR1dlcXY3b2dZX1k5aE5NMUxFck5kQWZtcXlKNHF3bC1ZZXJTa0xjMDNIN1l3TlF6ZzlwMF8z?oc=5"
+            "title": "California sues OpenAI over hacking risks - NPR",
+            "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPVENfR2JteXlPbExMQ0pZTFlwaldLRTRhbTR4ZEQ1bzZXSHZjQmhQb3hjMS1ITGxuSVlSaE1qQWNvamJsNDNPZTU4RlBZdlZaNXoyVXdDWTVzTjJFaDZ1SjdHSzhJaXFDUG41NGFKN0FDWTVRQjVpQUtxbGV5X1dwRzN0Y2MtY2ZpVmVEZTB6UUFjRzNGTEZZWU5zMngwdw?oc=5"
           }
         ],
-        "outlets": 3,
-        "state": "RISING",
-        "title": "Anthropic worker claims to have solved a Holy Grail of math problems with the help of AI - NPR",
-        "topic": "Anthropic"
+        "outlets": 2,
+        "state": "EVENT",
+        "title": "Combatting adversarial distillation - OpenAI",
+        "topic": "OpenAI"
       },
       {
         "field": "ai",
@@ -50,9 +47,9 @@
             "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/"
           },
           {
-            "source": "Google AI blog",
-            "title": "Put Gemini to work for you",
-            "url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/"
+            "source": "DeepMind",
+            "title": "Introducing Gemini 4 Hydrogen",
+            "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/"
           }
         ],
         "outlets": 2,
@@ -65,6 +62,16 @@
       {
         "links": [
           {
+            "source": "Yeni Safak English",
+            "title": "US Federal Reserve keeps interest rate unchanged - Yeni Safak English",
+            "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPTXlqOUpmM3BCQmwzZHgtNEtEdXJlcmNqbm4zMFhMMjF1TzlMQ3g5MkRMQmRaeDZXZ3pNNmhtSG9FNlAyR19wTElxNE1XZVlEbkNJRWl0MWxmelVPT0JFbmhOSDVqanFjZnlRYUlSV3I1V0ZBU1hITWRLRV80T1RrX0ZoaFM5dTJCLUZfWG43YXdtdDA?oc=5"
+          },
+          {
+            "source": "Crowdfund Insider",
+            "title": "Bill Ackman Urges Federal Reserve To Drop 2% Target, Adopt 3% Inflation Goal - Crowdfund Insider",
+            "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOMWxlZHhWdXBxODI5eFM3Znp0ZFQyRC1XOFJEajFyelloRnFOZ2MzRXRiNVBsRFRkOWdfbHRrX2FtVld3MDdhYnkyTGJOcFhQLWdGZUNzUDloNTNaT3lJZWNNSWRTbnpTNHUwQXdYUHlwWDhfaDh1eFJhcnJDbmx6WHRVZWpFLTB6LVhWVGJqZDl6aHVLdl9RQTYzT1Zsc05lRUtLUVpXSjU5UDhtWVdnb2FwYzEtLWcyd0FNd0FQcw?oc=5"
+          },
+          {
             "source": "ABC News - Breaking News, Latest News and Videos",
             "title": "Federal Reserve raises interest rates for the 1st time since 2023 - ABC News - Breaking News, Latest News and Videos",
             "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOYktxZlJxRVNrdUZFRWViQjVMLUh3OGJwNGhrVFpJY2E5QTAyajNfcnFSb09rZUVkSnVMUHd4WkpsYktvZGczX05nRzVhSTdKNWtfU2hWb09IYnNQQ01tTlMwMV95YzJkbWVDMklwZ19XMC1RNmVsckpGS3FpNUpiRlUxZkVtNXk5NE5YRnpBSTI4eEhVOWxaUlBzZDlxb3p1ZVBFeHFR0gGrAUFVX3lxTFBrZzU3UXhjRlBBblFYNzJZZ3dINVFwMnpIOFQwRlJ1NmRTa3JNUGlkamJyS08wRjM5UlFuMkRJcHAtUEQxYjF3b2Yyc2E2V1hOOEhQRHRPckpidllEOHpLRG9VUTFxSUwyaE95SzNNZ0pkemQwQkNBYkZPbTBpN0ZMYTBWU25nT3FrUVNNal9Eb0lCNnJwZTVFUVVhM0dDRlMzQ1pQTF8xRTV6bw?oc=5"
@@ -73,22 +80,12 @@
             "source": "Oherald",
             "title": "Trump Accuses the Federal Reserve of Political Bias Over High Interest Rates - Oherald",
             "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOQzczUEd4RGRUMGpVbVNIeEZLb0NMUWN1UXd2dGVOY3VIX1ZsdW9xLU9IV2g4S0I2SEs2TmJJYmp1Znl3cWZJV0tYZW8ydUtEejhZTUtCR0I0NUxLa1Jia2tOWE00NE1zQS1xdUJHdnFnMElkcHlET01Vc2QtcS1qM2k5dUVrcU9zR0hWV3hyRjRacmtxa0oteENlcnRQYy1NdjN6NHltT3VFY0dCR21EQVQtWQ?oc=5"
-          },
-          {
-            "source": "NKTV",
-            "title": "Trump Praises India’s Economic Growth, Targets Federal Reserve Over Interest Rate Policy - NKTV",
-            "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNLU14OXoxX3hzUUk3LV8wRE95VTc0MllEY2RjNG5NTjVBWXJDeEtldWdweTE3STBhUDhBbU5fMGxza2R0RUI2TEN2VVFaWUduSmR2NHR5aUVlSjdZRnRWMU1pMzd6OG9CajFiSzZ2VFExM2hBQVlabFR2c3lRRmNabzVxM2xqV1hJZDdHbGNFbGREYVEzSVU2M2dwQ2oyczM5bFVTRUg5enRvT0E?oc=5"
-          },
-          {
-            "source": "NewsBytes",
-            "title": "'India has low-interest rates, 7% GDP': Trump slams Federal Reserve - NewsBytes",
-            "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOeHVqNk5DQXZQQThOMU9nc0M2bTFMOXhFdVA5UkphZmI4LWdkUFRnVWRNVlVTREQydmRTdkFhZTdJNDdzOFpZUHR1U3JKUFhkV0p3M0l0NlR0REtFNm1pV1ZEcjhMQW95Tzl0T3VZdUhHVFEyWHZET2FFdVBUeVJETVAxZFhPSmRTVWl4eS1icDQzY3hqcnc?oc=5"
           }
         ],
-        "outlets": 9,
+        "outlets": 11,
         "region": "USA",
         "state": "RISING",
-        "title": "Federal Reserve raises interest rates for the 1st time since 2023 - ABC News - Breaking News, Latest News and Videos",
+        "title": "US Federal Reserve keeps interest rate unchanged - Yeni Safak English",
         "topic": "Federal Reserve"
       },
       {
@@ -114,7 +111,7 @@
             "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOb1FTc1k1NEJMOGRVdUZsaHB6b1ZqSF9sclM3Z2VZaHlpR1NUV3k1VFAwUmw4LU1sbVJ5NHg3UnZTTnpGLVJlLXlVcmdxR1JzWGN1WXAxN3gtbGR1OXI1UVliSlpkaGJtTTVDQm9vZXJXdllTR0hQMnFNMnRIbnFhcjJoNjd0SGVMUlRqMU01TEIzUTFROXlNMnVDUTNZMGJwVE9SenVPdWtwVURFdmcydDJrdV9oOXliQUdBaTl2d2FaOGF2ajR3ZmJYNlhlUFFheGVn0gHYAUFVX3lxTFBzZWpsMm9MQVR0RW9oOVNVSXNKS2FxbWp4eldCdGlJTmxyR2k0QlVJaTFVeGs4TE1SME41dHdJWkZQNXdZX0M3UHJ4Y19yYlRsV3AtRi00T25pVWJFb0JiZmFWR0hITTNyQWJkMVJnbjhJQXFRV1VPcmFBUm5DQUhBWnYwU21sYkhWeHhiV0dfOFZ1cENkREowN0VWWmFDLXRMNTBfNnUtaWs0c2tDblFaV1pOVzlhVmphR1F1cjRrY2UtRm5OOUZTcTk5QXhNSVpuVUE3SjhQbg?oc=5"
           }
         ],
-        "outlets": 7,
+        "outlets": 6,
         "region": "USA",
         "state": "RISING",
         "title": "US President praises India’s economic growth & low interest rates - News On AIR",
@@ -123,39 +120,29 @@
       {
         "links": [
           {
-            "source": "SuaraGarut.ID",
-            "title": "Ackman Urges Fed to Raise Inflation Target to 3 Percent - SuaraGarut.ID",
-            "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9TR1MydnJuQk04anhqMUFteGY2azVMUVR6R29EWmpERGtLal9MUV9rM3RNdXdLUERlc040blJ2aDhJT1NhMHE1bVhfaU1ZeUpJV2hZU09JUmtOZUdjdzNFLVp3?oc=5"
-          },
-          {
-            "source": "Demokratis.co.id",
-            "title": "Ackman Urges Fed to Raise Inflation Target to 3 Percent - Demokratis.co.id",
-            "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE80a3JEd0p0bkRleVF0Uzg1RldEc2h3NTg4TWlJenhJMHBLdkpkWmJtcVFNbTAyWlp6b3NjdzRQSjhrc1hQY21nQnZVLUVMWkxxaG5nM2lNZ3Q5MWZCcHB4WVhkWF9RQQ?oc=5"
-          },
-          {
             "source": "www.tmgm.com",
             "title": "Week Ahead: Inflation data and Fed expectations set to drive markets amid AI sell-off - www.tmgm.com",
             "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOQ21CSjBfa3dxeGk5WWsxTmEycl9ZWXp3akJ3VU56RHFBYVprWmNwMmh4QmsxMUk4bnFndld6LTF1N0FjaUJWT3lpVnpZNlo5VnBaOFhxR1lQQkYyamdFRGdKRmlYclhhODlzV1JFMjhQenh1QW5ESGg0STRDUnlfYUVrSEo0NlhUeWFZck1DUDQtbXVudWVUWHREZGFoM1pSeFE2bmN5ekJVdHFmWkhLeTRGYzJtZnd5eTlSZ1g2Z1NFSHhPNnc?oc=5"
           },
           {
-            "source": "Wisevoter",
-            "title": "Ackman Urges Fed to Raise Inflation Target to 3% - Wisevoter",
-            "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQY2dLdFlkUTVsNHl2MThieS1BcFJEcGRQVFhEVnVJdWhNVDdaMVVUb2ZHLWdURFgwb2RqNkxHMFZRRmJrdFAxZ3NnbWtIWDQtMGQwVXo3aU9McUlleFpOTFR1VGJSRGZNZldHSUpxZ3pKMmhsNHc1RVJIbUpIVmYyNHBxT3J1MDNaVzU1VWRraUp0Nl9PZlE?oc=5"
+            "source": "The North State Journal",
+            "title": "Warsh grapples with AI’s potential economic impact, steers clear of inflation risk - The North State Journal",
+            "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5FRElBX2JxczZUSC1iOGZadnZsZDNxU0JWeWlvMnRQSGpxaEYyZEttdmVKa1NJRXdiaDA5RVRzenZMQ2Z0RGFrMnFOcmJ4eE9RcXI1b2lUS2hORjFmM0lyU0Y4SW5RWnRvX2hfTGJHU3Y?oc=5"
+          },
+          {
+            "source": "NiftyTrader",
+            "title": "Trump Wants Cheaper Credit, but US Inflation Was 3.6% in September: Fed’s Tough Call - NiftyTrader",
+            "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPbWlkUnIxNUhES0xTamg5X1FhZlg1RGJxSEQ4ZHdxTkM3RHJDaDhPN0lZU29US2pZOTdtZGVKTjdlMndTWWJKNTQ0SDFNVDBxNUNjeDdMQ3kzek9RekNZZ2hQTDBEMUlmODJ2TzZ5Um1HNURaWFRfdUJyZWFpaEpFTg?oc=5"
           }
         ],
-        "outlets": 6,
+        "outlets": 3,
         "region": "USA",
         "state": "RISING",
-        "title": "Ackman Urges Fed to Raise Inflation Target to 3 Percent - SuaraGarut.ID",
+        "title": "Week Ahead: Inflation data and Fed expectations set to drive markets amid AI sell-off - www.tmgm.com",
         "topic": "inflation"
       },
       {
         "links": [
-          {
-            "source": "WSJ",
-            "title": "Canada Inflation Holds Steady at 3.1% in October - WSJ",
-            "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOZUh2di02WldwU0Q2eVluc0Y4cktuNXNFYXc2M0ZIajJtY3ZoOUZFTHRxUTJUUl9uMkJUcnkyeFdvb1FMcDMzRy1YOXRVaHI3QmMteU9IRS1pOEVmMjhjVE44TVJfRkloclZKaXJ5M29WTmRuOXk1REQ4c0JWTk5vSU9tdGRCVkEtbjRSY3lXVXVNSmQ2T2dqMkdFVUxRNVhWbmc?oc=5"
-          },
           {
             "source": "Bloomberg.com",
             "title": "US Consumers Are Holding Up Against Inflation Going Into Holiday Season - Bloomberg.com",
@@ -170,12 +157,17 @@
             "source": "www.equiti.com",
             "title": "Week Ahead: US GDP, PCE Inflation & Fed Rate Outlook - www.equiti.com",
             "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPZGJtX1AyM2JjQmtHQlNrdzZ2blI1enNocTE1bXRrelRlR0JMNk9mck9WcnJUSng0SFMxZFNZdk93SHliU1NhZTBQczFEdW9MSEVONm9OaXpQZXUwRFJ2eVpTUzJCZXpicDg4VGdCZkNvY3hZSVdUaWg1aGwtcnY3OWg2bFNJRXBIWjR3YzVtUlFtY1VuR2JHTjA2QWVlQQ?oc=5"
+          },
+          {
+            "source": "Investing.com Canada",
+            "title": "Bank of Canada says public trust in 2% inflation target helps anchor expectations - Investing.com Canada",
+            "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxObGg0cFpHbjYtclU0Zm81dE0zREY1MTNzNDYzYmU5cW0yVUVmM0dPQ0gyRVVKeS1Pa1c5aGVpM2JpMVVfa2psR3FLSEFkX0VheG5WR3JDMHhDdk1zOTdJa2lwX2U3VTRTVnpnbXR0VzMyZG9UQ0hzaXFmU2tqOHJqT1RCbzVLQXRnT0ZPVC1ySUs0TUg2ekZCaGVsT2lJSzRWNWlBT2JlV2dTX3ZHOTRubzFuWE5yRmZMSG1tSmxVdHNPQ2JGV0cyVERkUQ?oc=5"
           }
         ],
         "outlets": 8,
         "region": "North America",
         "state": "RISING",
-        "title": "Canada Inflation Holds Steady at 3.1% in October - WSJ",
+        "title": "US Consumers Are Holding Up Against Inflation Going Into Holiday Season - Bloomberg.com",
         "topic": "inflation"
       },
       {
@@ -215,17 +207,17 @@
             "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPdExVV255cjRzVExMalZvUkJYTTI4Z0ZlWTJTN1FOdjRvVFV5Z2RkdWJ5RS1YUENENnhBTHJ1bmFkLW9yTGFjMUtkX1R3SlpHOGFPdG5pNmI3X0ZPMm02VGdPaFRNenhTVkpBR1l3eDFPOGE5YjZYVG95QnM5T0FYc1ZLRzR5WE4xdFctemFLcHF1NjhyQ2dfYnZnM1JJdDMzOHRrR1FTV0ppYWhlWFVra284Z1VWREpUQ01aT3lBaHpDTXZQRHJrN3NpY0x3TW94Z21USDg5OWhRdFpNbzl4cUR5ZE1wcEHSAewBQVVfeXFMTi1La2FrRDQtNHl4cDBGem5uYU01aE5DRFNNT3JNb2hWYUxpX01mZG95aExPSHFYMnhRU2I0dFdYbUN2N2pCVWw0TDdZT1g2dmVsaTJLRkNKODYwamVuSTVraGFORkZiWXlfN2trMmNxdjdXV1ZXMFZ3NkhpV1h6SUxnc29tamI3dHZPOXA4X3BHUTlhSXU4eW5fYXNMZEk0MDRLb0pPbmJZYTZDRHhKcmYzN0tieDNla2R3V01vM3ROWVF6WmU2T0xwTWhzV0hjZnRiZWV3eTNIbjFVVGF4aEhRZkkxanFrbXB5YVo?oc=5"
           },
           {
-            "source": "The Economic Times",
-            "title": "BOJ's Takata calls for early rate hikes to curb inflation risks - The Economic Times",
-            "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOLUtrYWtENC00eXhwMEZ6bm5hTTVoTkNEU01Pck1vaFZhTGlfTWZkb3loTE9IcVgyeFFTYjR0V1htQ3Y3akJVbDRMN1lPWDZ2ZWxpMktGQ0o4NjBqZW5JNWtoYU5GRmJZeV83a2syY3F2N1dXVlcwVnc2SGlXWHpJTGdzb21qYjd0dk85cDhfcEdROWFJdTh5bl9hc0xkSTQwNEtvSk9uYllhNkNEeEpyZjM3S2J4M2VrZHdXTW8zdE5ZUXpaZTZPTHBNaHNXSGNmdGJlZXd5M0huMVVUYXhoSFFmSTFqcWttcHlhWtIB7AFBVV95cUxOLUtrYWtENC00eXhwMEZ6bm5hTTVoTkNEU01Pck1vaFZhTGlfTWZkb3loTE9IcVgyeFFTYjR0V1htQ3Y3akJVbDRMN1lPWDZ2ZWxpMktGQ0o4NjBqZW5JNWtoYU5GRmJZeV83a2syY3F2N1dXVlcwVnc2SGlXWHpJTGdzb21qYjd0dk85cDhfcEdROWFJdTh5bl9hc0xkSTQwNEtvSk9uYllhNkNEeEpyZjM3S2J4M2VrZHdXTW8zdE5ZUXpaZTZPTHBNaHNXSGNmdGJlZXd5M0huMVVUYXhoSFFmSTFqcWttcHlhWg?oc=5"
-          },
-          {
             "source": "BigGo Finance",
             "title": "Japan's Economy Stalls in Q3 as Weak Yen, Middle East Conflict Fuel Inflation; BOJ December Rate Hike Expected - BigGo Finance",
             "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1OT3BHYXo0SzBmZkcwQlhHMjNfZG9yMWlRSG82U05iZTVQdHlvcFo2VWljaDhwbFViWWRwVVN4WGg3U0JZeUEtODVuVkt6dFE5RXdGQzNqZ2FNNTloZmdhbk14cUZySkViSHk0QzF4bGstS3d5a2c?oc=5"
+          },
+          {
+            "source": "investingLive",
+            "title": "Japan economy shrinks 0.1% in Q3, first fall in 4 quarters as inflation hits households - investingLive",
+            "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQdU9sMjNub1pTd01xZUptNDZRNUc1S1R2ZFZVeENBTmNWUnh5SXB2eVRPOEVqZ1RXZzU2XzRtaEE0RDI4dHc0TTNJVWhOWmFrZGlJaEVRTnpROWI0SnBzcUF4OE1GaHJFYVozMklyUUY1TE5xNUo0cWdnaHRWY21vWDU1TUhUckVjWW83UTZ3N0ZGc1U0czA4QU5ZYUpMNkcxTGRYTjc2Y1ZfOVlZMEJzc3NyWEZPUGxz?oc=5"
           }
         ],
-        "outlets": 4,
+        "outlets": 5,
         "region": "Japan",
         "state": "RISING",
         "title": "Japan Core Inflation Ticks up to 2.2% in October, Turning up the Heat on BOJ - Briefs Finance",
@@ -234,26 +226,26 @@
       {
         "links": [
           {
-            "source": "Reuters",
-            "title": "Bank of Japan to raise interest rates in December and again by end-March, economists say - Reuters",
-            "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNd2tVS3ktQThQZmhzbFBGVmwzRDlycmtudVhLTk1vLWpJeDlQMFBqV1J3bFZXNGtTT0VfRGJaWUxBeWNWck0tblgzbTJsQmM4SXNRbUVXZEo1Nk1UdWpONURjY1I5RnJsVmRuRzdra2VFSVlyYnJUTnhjUXNjNUJKU2YtWDBfQkZuWFV2d3FJZTdFSzZKdHgyM242QzVReUJENE52TEtXaWlfMnNlNGZkejlzRGR3TnM?oc=5"
+            "source": "NiftyTrader",
+            "title": "Home Loan EMI Alert: RBI Looks Set to Raise Rates in December as Inflation Crosses 6% - NiftyTrader",
+            "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBOVnkzTGNMekxoSWNYTDdmc09VRS1NZFFNSEo5b190WDNSaFJ3SnZFSTJ1enhhVG92S2tBcGYxS1V1bTF3TU5aOUFqR2h2cWFFeVhGTktJcWZGNDRXWTZCRk1CeWF0TVJrOF80?oc=5"
           },
           {
-            "source": "WKZO",
-            "title": "Bank of Japan to raise interest rates in December and again by end-March, economists say: Reuters poll - WKZO",
-            "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQOGtVbnRWY3pMQUZreGZrMDVBTE5TLWtNSTN2dzEtc3ZGT2MySWtLdE1WRnJCVmVNbHQxRkp3OHdzbkxOV2RRZTRzcWtka3Z0Z01jUzhvLW5FWW12M3c5UUtzcFNhdTNOZUNsS2hyZ2JRUUQwWXAtRWZyQ0R1WFZTTDMtbFdQT3l4bG1Ed1NuOEdVYXg2U2Y4YXZVMEdCbFdMR0RnYjk3TEZTRGh1RXR6RzdaRTN2czg?oc=5"
+            "source": "Free Press Journal",
+            "title": "Indias GDP Growth To Slow To 7.2% In 2027, Goldman Sachs Sees Inflation At 5.7% And More RBI Rate Hikes - Free Press Journal",
+            "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQNEQwaWwxVG54cjVzS3Z4SVR2UGluZkdBZVBLVlUyR2dpTVhCRVNOVzVmaFdsZmlwM2QzR3J0TXBoUXV5ZWJad18yNlRReDVHQTJPdG1jRFhNMDl4MlpRTm9zWjYxdUNJWEs0ZXFKcHBBdWRUWjhJNVFtaWF6YkZWWEtnSWh2dnYxT1Rkem55SkFVeEFFQ05aWEZ1dUltamFWdlZTTDNJMWotbzNiVFdJN01oQUZHVEpGV3lkeDJNUUNoRnZBakdod09XNW5Ba3Zua1dBV3Zn0gHbAUFVX3lxTE1jTEIyWnFVWFhrdmdkdEFvZ1pWOWczTEI0UlQ0c01faG1YZ2V2anFoa2UtX1lUakw5aHNJU01SNHlBRDNfUnFQSjg0N1hNUzZIV2NBRlh2LUpzQklOcGp0OEhDV1M2d2x1ak5fbnN1UlFHU1cwcURUSDU2N1YwRjlxbFRzd290c0RjVXBaeFRUNTcyYV9qZWdMMkhXUHVsTVZtNmNjRUJNV25JcWotZm9IY2xUUy0telMtREV2R2MtanZIQ2RvcnU1WDF6UC1xdHBxRmhZNnpYWjJGbw?oc=5"
           },
           {
-            "source": "WTVB",
-            "title": "Bank of Japan to raise interest rates in December and again by end-March, economists say: Reuters poll - WTVB",
-            "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOT1B3aHBzV3M4YkNTdUZHVE5lc1FpU0t2RGEzVkhVbzk1aUtjbXpiQXBIcndaQlhILXlVdFhlRThNNEpKbE14T1JzX2VpWk1CR2dmLXAtNzBBMG9jUmswWFRqclRPdF9sNnBQZjlETl9uN3FlYndpWUJjUXV3N2EtWkZyWG1mMTRYSGNFaE5lMDdZczlGaWdDaVBHR0tLRkVmZWY3MDhrQUZ3RUJfSFdBeW4zbjZOUmJyQlE?oc=5"
+            "source": "Kotak Neo",
+            "title": "RBI Repo Rate Outlook: Goldman Sachs Projects 75 Basis Points of Further Hikes as Inflation Pressures Persist - Kotak Neo",
+            "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPeXdxZG9waVBQa0tMR0NrNkZBMjhXa3dERlQySElzVTd1N0lsUkZBM21rM2dhYnlQTF9zUVdYQ2R5aTM3TjJzUVZxSWxGVEMwX2tjVGphVUNzMlZOZzhwS3NLUDN4SGwwOEJTcFBVYk5Sa203akxPMnRFbnBXY2dmczA1ZHlVNzc0Z0puTTFQYnBzWVJqVWV5ZU5PS3VMVXlVZ2loTlZuZVc3bUw3cDh3?oc=5"
           }
         ],
         "outlets": 3,
-        "region": "Japan",
+        "region": "India",
         "state": "RISING",
-        "title": "Bank of Japan to raise interest rates in December and again by end-March, economists say - Reuters",
-        "topic": "interest rates"
+        "title": "Home Loan EMI Alert: RBI Looks Set to Raise Rates in December as Inflation Crosses 6% - NiftyTrader",
+        "topic": "inflation"
       }
     ],
     "podcasts": [
@@ -333,7 +325,7 @@
   },
   "today": "2026-11-23",
   "trends": {
-    "google": "Google Trends US daily list answered (10 topics). Kept the ones that match a war, government, or threat topic. None of today's search trends matched.",
+    "google": "Google Trends US daily list answered (10 topics). Kept the ones that match a war, government, or threat topic.",
     "mode": "trends",
     "note": "X trends by WOEID (US 23424977 and worldwide 1). Kept only when the name matches a threat or preparedness theme. The endpoint answered and none of the names matched."
   },

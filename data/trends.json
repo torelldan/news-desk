@@ -1,48 +1,44 @@
 {
-  "googleNote": "Google Trends US daily list answered (10 topics). Kept the ones that match a war, government, or threat topic. None of today's search trends matched.",
+  "googleNote": "Google Trends US daily list answered (10 topics). Kept the ones that match a war, government, or threat topic.",
   "items": [
     {
-      "category": "ukraine-war",
+      "category": "flood",
       "confidence": "reported",
       "date": "2026-11-23",
-      "id": "velocity:efd2da34e68ca58f",
+      "id": "gtrend:aafa3ecca77ce3e2",
       "kind": "trend",
       "lane": "news",
       "look": "news",
-      "name": "ukraine war",
-      "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-23T07:48:06-06:00",
-      "rise": "4 outlets this window",
+      "name": "coastal flood watch",
+      "note": "US search trend. Traffic 20000+.",
+      "place": "US",
+      "published": "2026-11-23T13:20:00-06:00",
+      "rise": "US daily list 20000+",
       "samples": [
         {
-          "date": "2026-11-20",
-          "published": "2026-11-20T09:14:01-06:00",
-          "source": "BBC",
-          "text": "What we know about the latest Russian missile strikes on Ukraine - BBC",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE4zS0VqN3l1NGtiUnM1SmZ5NjlFX0NXckFLMFlLQm5rYjlucGxlUWxhSHVQRFJ2akJ0SUpyVkQtTjBHb3BrSy1TRTdsM2ZnNXYxaHJvWjVua3Q?oc=5"
-        },
-        {
-          "date": "2026-11-23",
-          "published": "2026-11-23T06:34:16-06:00",
           "source": "CNN",
-          "text": "The Ukraine-Russia war is seeping out across Europe and there are two reasons it will get worse - CNN",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNTXIzTEt6SnNNSmRBWHdaUTBTSDRKRDhBdk5vTTBmSl9Rc0RWYnJFNkZIWTRNVEJVNjZxa2xPWTNPdTJqeGlpTDdRV21XbDI2S2NvLUJNQmdNS2dDUDZWaG1USWtqaW5wb0doUzNNSVg1enJhMl9CdUlPZjAwQ3BMdklmeWIxaTFoNG1j?oc=5"
+          "text": "San Francisco braces for near-record tides as a storm collides with Thanksgiving travel‌",
+          "url": "https://www.cnn.com/2026/11/23/weather/san-francisco-tide-storm-flooding-thanksgiving"
         },
         {
-          "date": "2026-11-22",
-          "published": "2026-11-22T16:40:22-06:00",
-          "source": "NPR",
-          "text": "Ukraine war spilling into NATO territory - NPR",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPRFRDMDZFOVFwdGd6UWJxTW9EeVdKN29TR0ZNZk9ISEdpUFpPZTBaQUhBYlZFUDBRNkNrTkJQWDBZeWFMMURYSm9MZkdLZEp0R2tFN0ZEVVRmT0ZqMW1hczVENlYtM0U1am1vcHA2dEx3ek4xdjBYUi1KMDlpVGhyWFZTTE5fX1VtZm9FMHlR?oc=5"
+          "source": "ABC7 Bay Area",
+          "text": "Live storm updates: King tides, rain to bring more flooding to Bay Area Thanksgiving week",
+          "url": "https://abc7news.com/live-updates/live-bay-area-weather-updates-san-francisco-recovers-severe-flooding-more-storms-king-tides-coming-northern-california/20069742/"
+        },
+        {
+          "source": "CBS News",
+          "text": "Bay Area officials rush to protect SFO, other key infrastructure ahead of expected flooding",
+          "url": "https://www.cbsnews.com/sanfrancisco/news/bay-area-protect-sfo-key-infrastructure-expected-flooding/"
         }
       ],
-      "severity": "ALERT",
+      "severity": "STANDBY",
       "soWhat": "no action needed",
-      "source": "News velocity",
-      "sourceCount": 4,
-      "title": "ukraine war",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE4zS0VqN3l1NGtiUnM1SmZ5NjlFX0NXckFLMFlLQm5rYjlucGxlUWxhSHVQRFJ2akJ0SUpyVkQtTjBHb3BrSy1TRTdsM2ZnNXYxaHJvWjVua3Q?oc=5",
-      "matched": "matches: Ukraine strike"
+      "source": "Google Trends",
+      "sourceCount": 3,
+      "title": "coastal flood watch",
+      "url": "https://www.cnn.com/2026/11/23/weather/san-francisco-tide-storm-flooding-thanksgiving",
+      "volume": "20000+",
+      "matched": "matches: flood"
     },
     {
       "category": "iran-war",
@@ -54,7 +50,7 @@
       "look": "news",
       "name": "iran war",
       "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-23T07:48:06-06:00",
+      "published": "2026-11-23T13:44:41-06:00",
       "rise": "4 outlets this window",
       "samples": [
         {
@@ -88,6 +84,49 @@
       "matched": "matches: iran war"
     },
     {
+      "category": "ukraine-war",
+      "confidence": "reported",
+      "date": "2026-11-23",
+      "id": "velocity:efd2da34e68ca58f",
+      "kind": "trend",
+      "lane": "news",
+      "look": "news",
+      "name": "ukraine war",
+      "note": "The same topic showed up across several outlets.",
+      "published": "2026-11-23T13:44:41-06:00",
+      "rise": "4 outlets this window",
+      "samples": [
+        {
+          "date": "2026-11-23",
+          "published": "2026-11-23T06:34:16-06:00",
+          "source": "CNN",
+          "text": "The Ukraine-Russia war is seeping out across Europe and there are two reasons it will get worse - CNN",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNTXIzTEt6SnNNSmRBWHdaUTBTSDRKRDhBdk5vTTBmSl9Rc0RWYnJFNkZIWTRNVEJVNjZxa2xPWTNPdTJqeGlpTDdRV21XbDI2S2NvLUJNQmdNS2dDUDZWaG1USWtqaW5wb0doUzNNSVg1enJhMl9CdUlPZjAwQ3BMdklmeWIxaTFoNG1j?oc=5"
+        },
+        {
+          "date": "2026-11-22",
+          "published": "2026-11-22T23:29:58-06:00",
+          "source": "Al Jazeera",
+          "text": "Ukraine urges US to release Patriot missiles as Russian strikes kill 15 - Al Jazeera",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQWDROSjJ4ZmFrSWp4VDNoeS1aRVlHb25QQXJvV0JhQWtrNjdJekNQWHEyQ0VhZUIyNHBpd3l2eEJSYmc4Zk45V2lhcWxwMzJBT09XYk1hRzZwa0FkT2ltdUl2STFtb1lBVHRtVFpDTGtYc2FVZWJqQXYyYlFSVzBhNzhpbE83NlByTGJHQjloNEZvZ9IBlwFBVV95cUxORzQwam00SzMzbWFrZHNQMlAxQU1sTmJ3ZEFQRU51V1B4MGxUb1FFeUo3R05ya0hQMFRVRjRGOTlVZDliV25wbGdnZzI1YlI5N2lpTnltOE5ZYUItZDViTlJvNkRCaGR0M2NxQ19zeEJrSmhVTGVKVGpoRFBNTlFlMFpxUzNKblhkYjlBek91OUJxbmZNdkRr?oc=5"
+        },
+        {
+          "date": "2026-11-22",
+          "published": "2026-11-22T16:40:22-06:00",
+          "source": "NPR",
+          "text": "Ukraine war spilling into NATO territory - NPR",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPRFRDMDZFOVFwdGd6UWJxTW9EeVdKN29TR0ZNZk9ISEdpUFpPZTBaQUhBYlZFUDBRNkNrTkJQWDBZeWFMMURYSm9MZkdLZEp0R2tFN0ZEVVRmT0ZqMW1hczVENlYtM0U1am1vcHA2dEx3ek4xdjBYUi1KMDlpVGhyWFZTTE5fX1VtZm9FMHlR?oc=5"
+        }
+      ],
+      "severity": "ALERT",
+      "soWhat": "no action needed",
+      "source": "News velocity",
+      "sourceCount": 4,
+      "title": "ukraine war",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNTXIzTEt6SnNNSmRBWHdaUTBTSDRKRDhBdk5vTTBmSl9Rc0RWYnJFNkZIWTRNVEJVNjZxa2xPWTNPdTJqeGlpTDdRV21XbDI2S2NvLUJNQmdNS2dDUDZWaG1USWtqaW5wb0doUzNNSVg1enJhMl9CdUlPZjAwQ3BMdklmeWIxaTFoNG1j?oc=5",
+      "matched": "matches: Ukraine strike"
+    },
+    {
       "category": "us-gov",
       "confidence": "reported",
       "date": "2026-11-23",
@@ -97,22 +136,22 @@
       "look": "news",
       "name": "us gov",
       "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-23T07:48:06-06:00",
+      "published": "2026-11-23T13:44:41-06:00",
       "rise": "4 outlets this window",
       "samples": [
+        {
+          "date": "2026-11-21",
+          "published": "2026-11-21T02:00:00-06:00",
+          "source": "Britannica",
+          "text": "Pentagon | History & Features - Britannica",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5hVTRDXzRRd0huN1JSdDdtNUFTRVZLd2ZpYWdmXy1SQ0ExZjlxdFRMTlJmOWVxUmRXYlBrRUxhOWVnam9hSXZSZ2c2V2gxRWlnbERR?oc=5"
+        },
         {
           "date": "2026-11-20",
           "published": "2026-11-20T07:09:18-06:00",
           "source": "U.S. Department of War (.gov)",
           "text": "Department of War Publishes Eighth Release of Unidentified Anomalous Phenomena Files on WA - U.S. Department of War (.gov)",
           "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNYjhVNGpDYmwtTWFuOV9NMXJLb2xBVnJQNmtIWDNFQ0pMS0JWbUlRN2d6UW1obW94bERlX2xsa2R5ejFkSEk1LV9lUG02Y0VDNzAyZDMxc25JMG53TlNydnozQlZnZlg3WVp0OUktOHdtUGZrYUppRjJQQU9RYU9aSzVzbzhhOUpYaE1mQm9vMEM1MkhkdlNyVGZOeUJVWWJwUVRENXpJQ0U0WVdmZnQwZ19KcGVsSmpIOVRCTlZDbVd5LVU2UmVvTkFwazFQd3g3SHFj?oc=5"
-        },
-        {
-          "date": "2026-11-20",
-          "published": "2026-11-20T03:45:00-06:00",
-          "source": "Politico",
-          "text": "Inside Congress Live, Nov 20, 2026 - Live Updates - Politico",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1KamZfUTJ6ZktlcmFiWGVZdmhqME1sOWhRd0tfYTNIVVpIc1NXS3JKMDV3U1c3dUoxR0d3aUdqLVgtSzVxMzU4U1pqN0JUU0RwUFo4bHdxVXdMUQ?oc=5"
         },
         {
           "date": "2026-11-19",
@@ -127,7 +166,7 @@
       "source": "News velocity",
       "sourceCount": 4,
       "title": "us gov",
-      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNYjhVNGpDYmwtTWFuOV9NMXJLb2xBVnJQNmtIWDNFQ0pMS0JWbUlRN2d6UW1obW94bERlX2xsa2R5ejFkSEk1LV9lUG02Y0VDNzAyZDMxc25JMG53TlNydnozQlZnZlg3WVp0OUktOHdtUGZrYUppRjJQQU9RYU9aSzVzbzhhOUpYaE1mQm9vMEM1MkhkdlNyVGZOeUJVWWJwUVRENXpJQ0U0WVdmZnQwZ19KcGVsSmpIOVRCTlZDbVd5LVU2UmVvTkFwazFQd3g3SHFj?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5hVTRDXzRRd0huN1JSdDdtNUFTRVZLd2ZpYWdmXy1SQ0ExZjlxdFRMTlJmOWVxUmRXYlBrRUxhOWVnam9hSXZSZ2c2V2gxRWlnbERR?oc=5",
       "matched": "matches: us gov"
     },
     {
@@ -140,15 +179,22 @@
       "look": "news",
       "name": "global",
       "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-23T07:48:06-06:00",
-      "rise": "5 outlets this window",
+      "published": "2026-11-23T13:44:41-06:00",
+      "rise": "4 outlets this window",
       "samples": [
         {
           "date": "2026-11-22",
-          "published": "2026-11-22T19:06:48-06:00",
-          "source": "Health Policy Watch",
-          "text": "COP31 Climate Summit That Could Not Say ‘Fossil Fuels’ Ends With No Deal - Health Policy Watch",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQNjktMkhZVjVPMTFfZ0lIX2pjbjFWS1NyR3dJZFRWYUcxVjRud0ZBa3AyQXVhU1ZIVzBjVzBBeU5fVERrUDlCWnlXbWtwX05CUUw1Z25aNEZLZjVXMi1WbWxxX2QwT1I1TXB0R3pfaTNFbWlVM0JDQ2NhZDhtZkFGRw?oc=5"
+          "published": "2026-11-22T08:03:19-06:00",
+          "source": "CNN",
+          "text": "Global climate summit collapses as countries fail to agree on moving away from fossil fuels - CNN",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOb0NpSVBZR3Vmakp2eTFDX3VKdWFHNkQ1UG04bG5PYjdudVpKZGpsVG5fYzJvajZYdUpXMGVuZWp1bTBSbk5EaG9yU3E1TFpOZk9wOHEyUDNKRXJWT3l5WEhKYnNmMXROeEpSN1RtWDNtTjhibzdzTjNCT3JYUVBRbWV6WUNxR05VZzk2dQ?oc=5"
+        },
+        {
+          "date": "2026-11-23",
+          "published": "2026-11-23T11:31:00-06:00",
+          "source": "AP",
+          "text": "EU proposes sweeping new Russia sanctions targeting banks, crypto and sports events - AP News",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQc1FWT0FKN3NFS3JoRG0zYnZvTkpjNEZqR240QzdMQVJDM1lmUklKeHpLeUl4bmFNUnlSa29kaU13WmhBdkNmVkt1WVZDUkdycVl3elQ1c1BwelFsLWVJeDhNNVBORWZBLWlhd0VqQ1QzLXFaNEZjRHEydWY1MGJYcDlYeWc5RjE4UEVEekJDYURuTWJfbk1WMGo1dWR3Zl84TUs1NEFJemZPZHVOVEE?oc=5"
         },
         {
           "date": "2026-11-21",
@@ -156,21 +202,14 @@
           "source": "NPR",
           "text": "What did Xi Jinping get from the bear hug with Trump at the Shenzhen summit? - NPR",
           "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOQ3o5czdSSEZrYm9PNkFpdnZEZ0VCcHk2QXB6dUx4YXY0Q2gyWVBsU0FUUldBcFE0NGYzYkZZaWRwUjRFWDhfeFpYTlFwajZhTWVlRWltS1JKZTczdXFnX1A2TTRxTXJmM0JCeHFQZ1IyelJqdlZoV0RkdTFfMjVoLWJ3UjBvUTJlWkJSc3ZudmdiaUZiLVBZSWtQNkFySWFPTl9CRFFzYUZCN0FtRHNKNnlRT3ppT2R3bzV6eQ?oc=5"
-        },
-        {
-          "date": "2026-11-19",
-          "published": "2026-11-19T04:03:23-06:00",
-          "source": "The Economist",
-          "text": "Europe tightens sanctions on Russia. America loosens them - The Economist",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPQkxzUWdBcFpHVy01Y3hvOURnd0drNUZuWW9rWC1QQk5GQVV0blFhU0ZnZVFpY2JWaVZrUlVhZ0pOV2hkVmNtUUZ0ODIyVGtxUWx6RU9LNWhJcDJNTjhCYVlvODk2eWYwRHRnbnE0NFAwOGdaQ1BsTFdSWUVFSFBzaHJaVWxDc3NSRF9ZRFVqTk1TdzZTWmNCUDhqLUJsN19YUTl1YUNPMEY0MTNnenN2aHNUeklwdw?oc=5"
         }
       ],
       "severity": "ALERT",
       "soWhat": "no action needed",
       "source": "News velocity",
-      "sourceCount": 5,
+      "sourceCount": 4,
       "title": "global",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQNjktMkhZVjVPMTFfZ0lIX2pjbjFWS1NyR3dJZFRWYUcxVjRud0ZBa3AyQXVhU1ZIVzBjVzBBeU5fVERrUDlCWnlXbWtwX05CUUw1Z25aNEZLZjVXMi1WbWxxX2QwT1I1TXB0R3pfaTNFbWlVM0JDQ2NhZDhtZkFGRw?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOb0NpSVBZR3Vmakp2eTFDX3VKdWFHNkQ1UG04bG5PYjdudVpKZGpsVG5fYzJvajZYdUpXMGVuZWp1bTBSbk5EaG9yU3E1TFpOZk9wOHEyUDNKRXJWT3l5WEhKYnNmMXROeEpSN1RtWDNtTjhibzdzTjNCT3JYUVBRbWV6WUNxR05VZzk2dQ?oc=5",
       "matched": "matches: global"
     }
   ],
@@ -181,5 +220,5 @@
     "x": "ok",
     "google": "ok"
   },
-  "dynamicTermCount": 39
+  "dynamicTermCount": 40
 }

@@ -2,89 +2,40 @@
   "calls": [],
   "escalated": [
     {
-      "note": "New since 2026-11-16 · now ACTION",
+      "note": "New since 2026-11-16 · now ALERT",
       "related": 0,
       "relatedSources": [],
-      "severity": "ACTION",
-      "title": "M6.5 Vanuatu region"
-    },
-    {
-      "note": "New since 2026-11-16 · now ACTION",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ACTION",
-      "title": "M6.7 7 km ENE of Carhuamayo, Peru"
+      "severity": "ALERT",
+      "title": "⚡ Weekly Recap: VMware 0-Day, Java4Shell, NGINX2Root, Ruby2Shell, and a Whole Lot of Shell Trouble"
     },
     {
       "note": "New since 2026-11-16 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "M6.8 105 km NE of Lospalos, Timor Leste"
-    },
-    {
-      "note": "New since 2026-11-16 · now ALERT",
-      "related": 2,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "sourceCount": 1,
-      "title": "Amazon: China-Linked Hackers’ AI Agents Exploited Medical Software Zero-Day"
+      "title": "Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access"
     },
     {
       "note": "New since 2026-11-16 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "CVE-2026-129448 Apache Roller Deserialization of Untrusted Data Vulnerability"
+      "title": "EU proposes sweeping new Russia sanctions targeting banks, crypto and sports events - AP News"
     },
     {
       "note": "New since 2026-11-16 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "CVE-2026-123890 Broadcom VMWare vCenter Authentication Bypass Using an Alternate Path or Channel Vulnerability"
+      "title": "Internet services disrupted across Pakistan due to undersea cable fault - Daily Ausaf"
     },
     {
-      "note": "New since 2026-11-16 · now ALERT",
+      "note": "New since 2026-11-16 · now STANDBY",
       "related": 0,
       "relatedSources": [],
-      "severity": "ALERT",
-      "title": "CVE-2025-42884 SAP NetWeaver Improper Neutralization of Special Elements in Data Query Logic Vulnerability"
-    },
-    {
-      "note": "New since 2026-11-16 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "CVE-2026-76466 Cisco Expressway Series Use of Hard-coded Credentials Vulnerability"
-    },
-    {
-      "note": "New since 2026-11-16 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "What we know about the latest Russian missile strikes on Ukraine - BBC"
-    },
-    {
-      "note": "STANDBY → ALERT since 2026-11-16",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "COP31 Climate Summit That Could Not Say ‘Fossil Fuels’ Ends With No Deal - Health Policy Watch"
-    },
-    {
-      "note": "New since 2026-11-16 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "What did Xi Jinping get from the bear hug with Trump at the Shenzhen summit? - NPR"
-    },
-    {
-      "note": "New since 2026-11-16 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "UN arms conference falls short of treaty mandate on autonomous weapons due to US and Russia opposition - Jurist.org"
+      "severity": "STANDBY",
+      "source": "",
+      "title": "G7 Foreign Ministers' meeting: Press remarks by the High Representative/Vice-President Kaja Kallas upon arrival - European External Action Service (EEAS)"
     }
   ],
   "fizzled": [
@@ -175,89 +126,40 @@
   ],
   "newSince": [
     {
-      "note": "New since 2026-11-16 · now ACTION",
+      "note": "New since 2026-11-16 · now ALERT",
       "related": 0,
       "relatedSources": [],
-      "severity": "ACTION",
-      "title": "M6.5 Vanuatu region"
-    },
-    {
-      "note": "New since 2026-11-16 · now ACTION",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ACTION",
-      "title": "M6.7 7 km ENE of Carhuamayo, Peru"
+      "severity": "ALERT",
+      "title": "⚡ Weekly Recap: VMware 0-Day, Java4Shell, NGINX2Root, Ruby2Shell, and a Whole Lot of Shell Trouble"
     },
     {
       "note": "New since 2026-11-16 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "M6.8 105 km NE of Lospalos, Timor Leste"
-    },
-    {
-      "note": "New since 2026-11-16 · now ALERT",
-      "related": 2,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "sourceCount": 1,
-      "title": "Amazon: China-Linked Hackers’ AI Agents Exploited Medical Software Zero-Day"
+      "title": "Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access"
     },
     {
       "note": "New since 2026-11-16 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "CVE-2026-129448 Apache Roller Deserialization of Untrusted Data Vulnerability"
+      "title": "EU proposes sweeping new Russia sanctions targeting banks, crypto and sports events - AP News"
     },
     {
       "note": "New since 2026-11-16 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "CVE-2026-123890 Broadcom VMWare vCenter Authentication Bypass Using an Alternate Path or Channel Vulnerability"
+      "title": "Internet services disrupted across Pakistan due to undersea cable fault - Daily Ausaf"
     },
     {
-      "note": "New since 2026-11-16 · now ALERT",
+      "note": "New since 2026-11-16 · now STANDBY",
       "related": 0,
       "relatedSources": [],
-      "severity": "ALERT",
-      "title": "CVE-2025-42884 SAP NetWeaver Improper Neutralization of Special Elements in Data Query Logic Vulnerability"
-    },
-    {
-      "note": "New since 2026-11-16 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "CVE-2026-76466 Cisco Expressway Series Use of Hard-coded Credentials Vulnerability"
-    },
-    {
-      "note": "New since 2026-11-16 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "What we know about the latest Russian missile strikes on Ukraine - BBC"
-    },
-    {
-      "note": "STANDBY → ALERT since 2026-11-16",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "COP31 Climate Summit That Could Not Say ‘Fossil Fuels’ Ends With No Deal - Health Policy Watch"
-    },
-    {
-      "note": "New since 2026-11-16 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "What did Xi Jinping get from the bear hug with Trump at the Shenzhen summit? - NPR"
-    },
-    {
-      "note": "New since 2026-11-16 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "UN arms conference falls short of treaty mandate on autonomous weapons due to US and Russia opposition - Jurist.org"
+      "severity": "STANDBY",
+      "source": "",
+      "title": "G7 Foreign Ministers' meeting: Press remarks by the High Representative/Vice-President Kaja Kallas upon arrival - European External Action Service (EEAS)"
     }
   ],
   "note": "Compared with the stored board on 2026-11-16.",
