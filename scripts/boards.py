@@ -177,12 +177,15 @@ def is_us_place(place: str) -> bool:
 
 
 def quake_severity(mag, place: str = "", tsunami: bool = False) -> str:
-    """Distant quakes stay quiet. CRITICAL is a U.S. or tsunami-linked shock, not every M6."""
+    """A distant quake with no warning, deaths, or major damage stays standby.
+
+    ``tsunami`` here means a tsunami warning, not the USGS 'flag' bit on a routine ocean shock.
+    """
     try:
         mag = float(mag)
     except (TypeError, ValueError):
         return "STANDBY"
-    home = is_us_place(place) or bool(tsunami)
+    home = is_us_place(place)
     if home:
         if mag >= 7:
             return "CRITICAL"
@@ -191,45 +194,112 @@ def quake_severity(mag, place: str = "", tsunami: bool = False) -> str:
         if mag >= 5.5:
             return "ALERT"
         return "STANDBY"
-    if mag >= 8:
-        return "ACTION"
-    if mag >= 7:
-        return "ALERT"
-    if mag >= 6:
-        return "STANDBY"
+    if tsunami or mag >= 8:
+        return "ACTION" if mag >= 7 else "ALERT"
     return "STANDBY"
 
 
-def _cap_quakes(rows: list[dict], standby_cap: int = 8) -> list[dict]:
-    """Keep every notable quake, plus the newest smaller ones so the source date moves."""
-    notable = [row for row in rows if row.get("severity") != "STANDBY" or row.get("usImpact")]
-    spare = [row for row in rows if row not in notable]
-    spare.sort(key=lambda row: row.get("published") or "", reverse=True)
-    chosen = list(notable)
-    seen = {row.get("url") for row in chosen}
-    for row in spare:
-        if row.get("url") in seen:
-            continue
-        if sum(1 for item in chosen if item.get("severity") == "STANDBY" and not item.get("usImpact")) >= standby_cap:
-            break
-        chosen.append(row)
-        seen.add(row.get("url"))
-    chosen.sort(key=lambda row: row.get("published") or "", reverse=True)
-    return chosen[:30]
+def _cap_quakes(rows: list[dict], cap: int = 6) -> list[dict]:
+    """At most ``cap`` quakes. Larger and higher-status shocks come first."""
+    def rank(row):
+        try:
+            mag = float(row.get("mag") or 0)
+        except (TypeError, ValueError):
+            mag = 0.0
+        sev = {"STANDBY": 0, "ALERT": 1, "ACTION": 2, "CRITICAL": 3}.get((row.get("severity") or "").upper(), 0)
+        return (sev, mag, row.get("published") or "")
+    ordered = sorted(rows or [], key=rank, reverse=True)
+    return ordered[:cap]
 
 
 def keep_quake(mag, place: str = "", tsunami: bool = False, alert: str = "", felt: int = 0) -> bool:
-    """Distant quakes stay off the board unless they are M6+ with a reported impact."""
+    """M4.5 and up in the U.S. M5.5 and up everywhere else."""
     try:
         mag = float(mag)
     except (TypeError, ValueError):
         return False
-    if is_us_place(place) or tsunami:
-        return quake_severity(mag, place, tsunami) != "STANDBY" or True
-    impact = str(alert or "").lower() in {"yellow", "orange", "red"} or int(felt or 0) >= 5
-    if mag >= 6 and impact:
+    if mag < 4.5:
+        return False
+    if is_us_place(place):
         return True
-    return quake_severity(mag, place, tsunami) != "STANDBY"
+    return mag >= 5.5
+
+
+def _quake_place(title: str) -> str:
+    return re.sub(r"^M\d+(?:\.\d+)?\s+", "", title or "").strip()
+
+
+def _close_quake(left: dict, right: dict) -> bool:
+    try:
+        lat = abs(float(left.get("lat")) - float(right.get("lat")))
+        lon = abs(float(left.get("lon")) - float(right.get("lon")))
+    except (TypeError, ValueError):
+        return False
+    if lat > 5 or min(lon, 360 - lon) > 5:
+        return False
+    left_day = (left.get("date") or "")[:10]
+    right_day = (right.get("date") or "")[:10]
+    if not left_day or not right_day:
+        return True
+    try:
+        return abs((datetime.fromisoformat(left_day) - datetime.fromisoformat(right_day)).days) <= 1
+    except ValueError:
+        return False
+
+
+_WRAP_COPY = re.compile(
+    r"\b(what did|what we know|ends with no deal|falls short|investigation into|frustrated with|"
+    r"warns of(?: new)?|warning of|after new year)\b",
+    re.I,
+)
+
+
+def wrap_up(title: str, note: str = "") -> bool:
+    """Analysis, a recap, or a warning of a future strike is not a new event."""
+    return _WRAP_COPY.search(f"{title or ''} {note or ''}") is not None
+
+
+def shape_board(rows: list[dict], today: str) -> list[dict]:
+    """Floor and cap quakes, drop GDACS twins and stale relief, and demote wrap-ups."""
+    try:
+        relief_cutoff = (datetime.fromisoformat(today[:10]) - timedelta(days=14)).date().isoformat()
+    except ValueError:
+        relief_cutoff = ""
+    quakes = []
+    located = []
+    rest = []
+    for row in rows or []:
+        if row.get("kind") == "quake":
+            place = _quake_place(row.get("title") or "")
+            mag = row.get("mag")
+            warning = "tsunami warning" in (row.get("note") or "").lower()
+            sev = quake_severity(mag, place, warning)
+            fresh = dict(row)
+            fresh["severity"] = sev
+            fresh["usImpact"] = is_us_place(place)
+            fresh["tags"] = ["quake", sev.lower()]
+            located.append(fresh)
+            if keep_quake(mag if mag is not None else 0, place):
+                quakes.append(fresh)
+            continue
+        if row.get("kind") == "relief" and relief_cutoff and (row.get("date") or "9999") < relief_cutoff:
+            continue
+        fresh = dict(row)
+        if fresh.get("kind") not in {"quake", "gdacs", "nws", "storm", "who", "cdc", "neo", "sentry", "clock", "cyber"} and wrap_up(fresh.get("title") or "", fresh.get("note") or ""):
+            fresh["severity"] = "STANDBY"
+            tags = [tag for tag in (fresh.get("tags") or []) if tag not in {"alert", "action", "critical"}]
+            if "standby" not in tags:
+                tags.append("standby")
+            fresh["tags"] = tags
+        rest.append(fresh)
+    quakes = _cap_quakes(quakes, 6)
+    kept = []
+    for row in rest:
+        if row.get("kind") == "gdacs" and re.search(r"earthquake", row.get("title") or "", re.I):
+            if any(_close_quake(row, quake) for quake in located):
+                continue
+        kept.append(row)
+    return quakes + kept
 
 
 def alert_severity(event: str, severity: str) -> str:
@@ -371,6 +441,34 @@ def fetch_strikes(now: datetime, previous: dict | None, board_items: list | None
     return doc
 
 
+_OBSCURE_OUTLET = re.compile(
+    r"(suaragarut|demokratis\.co|wisevoter|blogspot|wordpress\.com|\.co\.id\b)",
+    re.I,
+)
+
+
+def headline_key(title: str) -> str:
+    text = re.sub(r"\s+[-–—|]\s+.*$", "", title or "")
+    text = text.replace("%", " percent")
+    return re.sub(r"[^a-z0-9]+", " ", text.lower()).strip()
+
+
+def tidy_headlines(rows: list | None) -> list[dict]:
+    """One row per headline. Obscure aggregators do not get a slot."""
+    kept = []
+    seen = set()
+    for row in rows or []:
+        source = f"{row.get('source') or ''} {row.get('title') or ''}"
+        if _OBSCURE_OUTLET.search(source):
+            continue
+        key = headline_key(row.get("title") or "")
+        if not key or key in seen:
+            continue
+        seen.add(key)
+        kept.append(row)
+    return kept
+
+
 def merge_rows(fresh, previous, cutoff: str, cap: int = 40) -> list[dict]:
     """Keep prior rows whose dates are still inside the window, then add new ones. Dedupe by URL."""
     chosen = {}
@@ -380,7 +478,7 @@ def merge_rows(fresh, previous, cutoff: str, cap: int = 40) -> list[dict]:
             continue
         chosen[url] = row
     rows = sorted(chosen.values(), key=lambda row: row.get("published") or "", reverse=True)
-    return rows[:cap]
+    return tidy_headlines(rows)[:cap]
 
 
 def _item(kind, lane, source, title, note, url, when, tags, extra=None) -> dict:
@@ -535,28 +633,25 @@ def fetch_threats(now: datetime) -> dict:
                 felt = int(props.get("felt") or 0)
             except (TypeError, ValueError):
                 felt = 0
-            sev = quake_severity(mag, place, tsunami)
-            impact = alert.lower() in {"yellow", "orange", "red"} or felt >= 5
-            if not is_us_place(place) and not tsunami and float(mag) >= 6 and impact and sev == "STANDBY":
-                sev = "ALERT"
-            notable = keep_quake(mag, place, tsunami, alert, felt)
-            if not notable and float(mag) < 4.5:
+            warning = str(alert or "").lower() in {"orange", "red"}
+            sev = quake_severity(mag, place, warning)
+            if not keep_quake(mag, place, warning, alert, felt):
                 continue
-            if not notable:
-                sev = "STANDBY"
-            note = "USGS earthquake, magnitude 4.5 or greater, past 7 days."
-            if impact and not is_us_place(place):
-                note += " Reported shaking or an alert color is on the USGS record."
-            if tsunami:
-                note += " A tsunami flag is set."
+            note = "USGS earthquake."
+            if warning:
+                note += " Orange or red alert: reported damage."
+            elif str(alert or "").lower() == "yellow":
+                note += " A yellow shaking alert is on the record, with no reported deaths."
+            if tsunami and not warning:
+                note += " A tsunami flag is set; that is not a warning of U.S. impact."
             elif not is_us_place(place):
-                note += " Outside the United States, with no tsunami flag."
+                note += " Outside the United States."
             quakes.append(_item(
                 "quake", "threat", "USGS",
                 f"M{float(mag):.1f} {place}",
                 note,
                 url, when, ["quake", sev.lower()],
-                {"severity": sev, "lat": coords[1], "lon": coords[0], "mag": float(mag), "usImpact": is_us_place(place) or tsunami},
+                {"severity": sev, "lat": coords[1], "lon": coords[0], "mag": float(mag), "usImpact": is_us_place(place)},
             ))
         quakes = _cap_quakes(quakes)
         items.extend(quakes)
@@ -594,6 +689,7 @@ def fetch_threats(now: datetime) -> dict:
     kept = [row for row in items + extras if _in_year(row, now.year) or row.get("kind") == "clock"]
     kept = finish_global(kept, now.strftime("%Y-%m-%d"))
     kept = _drop_old_health(kept, now)
+    kept = shape_board(kept, now.strftime("%Y-%m-%d"))
     return {"items": demote_stale_alerts(_dedupe_titles(kept), now), "gaps": gaps}
 
 
@@ -1698,7 +1794,7 @@ def news_event_severity(title: str, note: str = "", source: str = "") -> str:
     lead = event_lead(title)
     blob = f"{lead} {note or ''} {source or ''}"
     body = f"{lead} {note or ''}"
-    if _SOFT_NEWS.search(blob) or _NOT_AN_EVENT.search(body):
+    if wrap_up(lead, note) or _SOFT_NEWS.search(blob) or _NOT_AN_EVENT.search(body):
         return "STANDBY"
     if _FIGURATIVE_ATTACK.search(body) and not _PHYSICAL_CONTEXT.search(body):
         return "STANDBY"
@@ -1761,6 +1857,8 @@ def global_event_type(title: str, note: str = "") -> str:
 
 
 def global_severity(title: str, note: str = "", outlets: int = 1) -> str:
+    if wrap_up(title, note):
+        return "STANDBY" if global_event_type(title, note) else ""
     if not global_event_type(title, note):
         return ""
     if int(outlets or 1) >= 3 or len(major_powers(f"{title} {note}")) >= 2:
@@ -2073,8 +2171,10 @@ def _try_desks(now):
 GLOBAL_NEWS = '(Trump OR Putin OR "Xi Jinping" OR "United States" OR Russia OR China OR "European Union" OR India) (summit OR ceasefire OR "peace talks" OR treaty OR sanctions OR "Security Council" OR "NATO summit" OR "G7 summit" OR "G20 summit" OR coup OR resigns) when:7d'
 WORLD_FEEDS = (
     ("https://feeds.bbci.co.uk/news/world/rss.xml", "BBC World"),
-    ("https://apnews.com/world-news/rss", "AP World"),
-    ("https://www.reuters.com/world/rss", "Reuters World"),
+)
+WORLD_QUERIES = (
+    ('site:apnews.com (summit OR ceasefire OR treaty OR sanctions OR coup) when:7d', "AP"),
+    ('site:reuters.com (summit OR ceasefire OR treaty OR sanctions OR coup) when:7d', "Reuters"),
 )
 
 
@@ -2119,6 +2219,25 @@ def _try_global(now):
             if kept >= 4:
                 break
         print(f"  {name} {kept}")
+    for query, name in WORLD_QUERIES:
+        try:
+            found = _headlines(query, now, retain_days=7, limit=8)
+        except Exception as err:
+            gaps.append(f"{name}: {err}")
+            print(f"  {name}: {err}")
+            continue
+        for row in found:
+            title = row.get("title") or ""
+            if not global_event_type(title, row.get("note") or ""):
+                continue
+            fresh = dict(row)
+            fresh["kind"] = "global"
+            fresh["source"] = name
+            fresh["severity"] = global_severity(title, fresh.get("note") or "", 1)
+            fresh["tags"] = ["global", fresh["severity"].lower()]
+            fresh["sourceId"] = "global"
+            rows.append(fresh)
+        print(f"  {name} {len(found)}")
     folded = global_dedupe(rows)
     for row in folded:
         row["severity"] = global_severity(row.get("title") or "", row.get("note") or "", int(row.get("sourceCount") or 1))
@@ -2133,8 +2252,10 @@ INFRA_QUERIES = (
 )
 INFRA_FEEDS = (
     ("https://subtelforum.com/feed/", "SubTel Forum"),
-    ("https://umm.gassco.no/rss", "Gassco UMM"),
-    ("https://www.bsee.gov/newsroom/latest-news/feed", "BSEE"),
+)
+INFRA_SITE_QUERIES = (
+    ('site:gassco.no (pipeline OR outage OR maintenance OR interruption) when:14d', "Gassco"),
+    ('site:bsee.gov (pipeline OR outage OR production) when:14d', "BSEE"),
 )
 
 
@@ -2174,6 +2295,17 @@ def fetch_infra(now: datetime) -> tuple[list[dict], list[str]]:
             continue
         for row in found:
             built = _infra_row(row.get("title") or "", row.get("source") or "Google News", row.get("url") or "", d.parse_pubdate(row.get("published") or "") or now, row.get("note") or "")
+            if built:
+                rows.append(built)
+    for query, name in INFRA_SITE_QUERIES:
+        try:
+            found = _headlines(query, now, retain_days=14, limit=6)
+        except Exception as err:
+            gaps.append(f"{name}: {err}")
+            print(f"  {name}: {err}")
+            continue
+        for row in found:
+            built = _infra_row(row.get("title") or "", name, row.get("url") or "", d.parse_pubdate(row.get("published") or "") or now, row.get("note") or "")
             if built:
                 rows.append(built)
     for url, name in INFRA_FEEDS:
