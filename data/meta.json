@@ -1,8 +1,8 @@
 {
   "baseline": false,
-  "brief": "The stock tape is the story: the S&P 500 is -3.7% today. What to do: no action unless you need cash this week. Open risk: ACTION M6.7 9 km NE of Carhuamayo, Peru. Current war coverage is on the board: Eight killed in Ukraine as Russia hits back after Crimea bridge attacks - Reuters. Global: What did Xi Jinping get from the bear hug with Trump at the Shenzhen summit? - NPR. Infrastructure: Internet services disrupted across Pakistan due to undersea cable fault - Daily Ausaf (unconfirmed).",
-  "checkedAt": "2026-11-22T11:02:56-06:00",
-  "checkedLabel": "Nov 22, 2026 11:02 AM CT",
+  "brief": "The stock tape is the story: the S&P 500 is -3.7% today. What to do: no action unless you need cash this week. Open risk: ACTION M6.5 Vanuatu region. Global: What did Xi Jinping get from the bear hug with Trump at the Shenzhen summit? - NPR. Infrastructure: Internet services disrupted across Pakistan due to undersea cable fault - Daily Ausaf (unconfirmed). Rising topic: iran war hormuz (US daily list 1000+).",
+  "checkedAt": "2026-11-23T05:59:21-06:00",
+  "checkedLabel": "Nov 23, 2026 5:59 AM CT",
   "errors": [
     "AP World: curl: (22) The requested URL returned error: 403\n",
     "Reuters World: curl: (22) The requested URL returned error: 401\n",
@@ -21,54 +21,25 @@
             "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1aNG5qZG9TaTJHTlRrTmJBUzNINzVJT1B2cXZZelBweXRiTXJ1ZGphVkM0MWxySk4ydDZEa2dfdnZReHlJYjlpcVBfaGlyeWJ1WmVJSUI1TzFzeDM3SERWZkd2d2VsNGVRRmhFYXBB?oc=5"
           },
           {
-            "source": "OpenAI",
-            "title": "How OpenAI’s Performance Factory keeps ChatGPT fast",
-            "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast"
-          },
-          {
-            "source": "NPR",
-            "title": "California sues OpenAI over hacking risks - NPR",
-            "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPVENfR2JteXlPbExMQ0pZTFlwaldLRTRhbTR4ZEQ1bzZXSHZjQmhQb3hjMS1ITGxuSVlSaE1qQWNvamJsNDNPZTU4RlBZdlZaNXoyVXdDWTVzTjJFaDZ1SjdHSzhJaXFDUG41NGFKN0FDWTVRQjVpQUtxbGV5X1dwRzN0Y2MtY2ZpVmVEZTB6UUFjRzNGTEZZWU5zMngwdw?oc=5"
+            "source": "The New York Times",
+            "title": "California Sues OpenAI Over A.I. Safety Issues - The New York Times",
+            "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOem9ndlRta0lVanRIcmJ3Q0VBby14WkZHd3VRanhRNVNjYS1hZTRORHQ3WWhXYmozTDRnQ0o4MTJ4Y1ZNR0RuV0ZDX3Jqc3dHMnVOd1FpM0t3elhoQXdNSWlyS2NXdGZvUm5jMkJNQ3hUWnZieHZpeER5bkJTQVc3UWYxSi0?oc=5"
           }
         ],
         "outlets": 2,
         "state": "EVENT",
         "title": "Combatting adversarial distillation - OpenAI",
         "topic": "OpenAI"
-      },
-      {
-        "field": "ai",
-        "links": [
-          {
-            "source": "Google AI blog",
-            "title": "Introducing Tool Retrieval in the Gemini API",
-            "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/"
-          },
-          {
-            "source": "DeepMind",
-            "title": "Introducing Gemini 4 Neon",
-            "url": "https://deepmind.google/blog/introducing-gemini-4-neon/"
-          },
-          {
-            "source": "Google AI blog",
-            "title": "The Gemini app is now available on lower-memory Android devices.",
-            "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/"
-          },
-          {
-            "source": "Google AI blog",
-            "title": "Put Gemini to work for you",
-            "url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/"
-          }
-        ],
-        "outlets": 2,
-        "state": "EVENT",
-        "title": "Introducing Tool Retrieval in the Gemini API",
-        "topic": "Gemini"
       }
     ],
     "markets": [
       {
         "links": [
+          {
+            "source": "ABC News - Breaking News, Latest News and Videos",
+            "title": "Federal Reserve raises interest rates for the 1st time since 2023 - ABC News - Breaking News, Latest News and Videos",
+            "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOYktxZlJxRVNrdUZFRWViQjVMLUh3OGJwNGhrVFpJY2E5QTAyajNfcnFSb09rZUVkSnVMUHd4WkpsYktvZGczX05nRzVhSTdKNWtfU2hWb09IYnNQQ01tTlMwMV95YzJkbWVDMklwZ19XMC1RNmVsckpGS3FpNUpiRlUxZkVtNXk5NE5YRnpBSTI4eEhVOWxaUlBzZDlxb3p1ZVBFeHFR0gGrAUFVX3lxTFBrZzU3UXhjRlBBblFYNzJZZ3dINVFwMnpIOFQwRlJ1NmRTa3JNUGlkamJyS08wRjM5UlFuMkRJcHAtUEQxYjF3b2Yyc2E2V1hOOEhQRHRPckpidllEOHpLRG9VUTFxSUwyaE95SzNNZ0pkemQwQkNBYkZPbTBpN0ZMYTBWU25nT3FrUVNNal9Eb0lCNnJwZTVFUVVhM0dDRlMzQ1pQTF8xRTV6bw?oc=5"
+          },
           {
             "source": "Oherald",
             "title": "Trump Accuses the Federal Reserve of Political Bias Over High Interest Rates - Oherald",
@@ -83,17 +54,12 @@
             "source": "NewsBytes",
             "title": "'India has low-interest rates, 7% GDP': Trump slams Federal Reserve - NewsBytes",
             "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOeHVqNk5DQXZQQThOMU9nc0M2bTFMOXhFdVA5UkphZmI4LWdkUFRnVWRNVlVTREQydmRTdkFhZTdJNDdzOFpZUHR1U3JKUFhkV0p3M0l0NlR0REtFNm1pV1ZEcjhMQW95Tzl0T3VZdUhHVFEyWHZET2FFdVBUeVJETVAxZFhPSmRTVWl4eS1icDQzY3hqcnc?oc=5"
-          },
-          {
-            "source": "India Today",
-            "title": "Donald Trump praises India’s economic growth and criticises US Federal Reserve policy - India Today - India Today",
-            "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPWFZ6U1VvS195SE4tUHVRMV95UFhMUmRIXzVyYVR0eHQxeUttdTFaelB6WkIxMEl4alZHX1Uzd2k1cXREZjJtVEd0LTJUUV9McGNyNVZ2dmd3Ti02ZXRzOHJnVFVqQ210VDBXZGpaNVd4NDU3R28zQWhVUTJmeG5GMlV4Ym5fS1hrSjVYSFlvb0FXYk1qVENNMWFTNlpPZ3RiWDRIZFVqdlUzeFYtZ3RrWUhfSTRNY0NMOVBVYmxib2Q1TWtQSkHSAcsBQVVfeXFMT3NnMEJfTHNyM2ZYVjdud3JFdlNOUmw1ZjlzSUhCbC12Wk1NcnFfME9heXZ5cDZxSHBMSWxKNi1PMUxYaGpDSUd6LTl2SWZMQ1FMTjd0QTBEU2dVenNRejloOGVJMUFCeTlNek5fekJLQnctMFlYdzFwcWpxZm9FQ0FQOE1DWUdJRlIzS2RXdFA4SzlpWTQ3VlFBWlpGV2hSS0VyenM0ZkhCMUlKSWlHek5FZGpFa0V2MUFIeDFPRkw3VGYtYlVDQ1dvOGs?oc=5"
           }
         ],
-        "outlets": 10,
+        "outlets": 9,
         "region": "USA",
         "state": "RISING",
-        "title": "Trump Accuses the Federal Reserve of Political Bias Over High Interest Rates - Oherald",
+        "title": "Federal Reserve raises interest rates for the 1st time since 2023 - ABC News - Breaking News, Latest News and Videos",
         "topic": "Federal Reserve"
       },
       {
@@ -119,7 +85,7 @@
             "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOb1FTc1k1NEJMOGRVdUZsaHB6b1ZqSF9sclM3Z2VZaHlpR1NUV3k1VFAwUmw4LU1sbVJ5NHg3UnZTTnpGLVJlLXlVcmdxR1JzWGN1WXAxN3gtbGR1OXI1UVliSlpkaGJtTTVDQm9vZXJXdllTR0hQMnFNMnRIbnFhcjJoNjd0SGVMUlRqMU01TEIzUTFROXlNMnVDUTNZMGJwVE9SenVPdWtwVURFdmcydDJrdV9oOXliQUdBaTl2d2FaOGF2ajR3ZmJYNlhlUFFheGVn0gHYAUFVX3lxTFBzZWpsMm9MQVR0RW9oOVNVSXNKS2FxbWp4eldCdGlJTmxyR2k0QlVJaTFVeGs4TE1SME41dHdJWkZQNXdZX0M3UHJ4Y19yYlRsV3AtRi00T25pVWJFb0JiZmFWR0hITTNyQWJkMVJnbjhJQXFRV1VPcmFBUm5DQUhBWnYwU21sYkhWeHhiV0dfOFZ1cENkREowN0VWWmFDLXRMNTBfNnUtaWs0c2tDblFaV1pOVzlhVmphR1F1cjRrY2UtRm5OOUZTcTk5QXhNSVpuVUE3SjhQbg?oc=5"
           }
         ],
-        "outlets": 9,
+        "outlets": 7,
         "region": "USA",
         "state": "RISING",
         "title": "US President praises India’s economic growth & low interest rates - News On AIR",
@@ -128,34 +94,44 @@
       {
         "links": [
           {
+            "source": "SuaraGarut.ID",
+            "title": "Ackman Urges Fed to Raise Inflation Target to 3 Percent - SuaraGarut.ID",
+            "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9TR1MydnJuQk04anhqMUFteGY2azVMUVR6R29EWmpERGtLal9MUV9rM3RNdXdLUERlc040blJ2aDhJT1NhMHE1bVhfaU1ZeUpJV2hZU09JUmtOZUdjdzNFLVp3?oc=5"
+          },
+          {
+            "source": "Demokratis.co.id",
+            "title": "Ackman Urges Fed to Raise Inflation Target to 3 Percent - Demokratis.co.id",
+            "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE80a3JEd0p0bkRleVF0Uzg1RldEc2h3NTg4TWlJenhJMHBLdkpkWmJtcVFNbTAyWlp6b3NjdzRQSjhrc1hQY21nQnZVLUVMWkxxaG5nM2lNZ3Q5MWZCcHB4WVhkWF9RQQ?oc=5"
+          },
+          {
+            "source": "www.tmgm.com",
+            "title": "Week Ahead: Inflation data and Fed expectations set to drive markets amid AI sell-off - www.tmgm.com",
+            "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOQ21CSjBfa3dxeGk5WWsxTmEycl9ZWXp3akJ3VU56RHFBYVprWmNwMmh4QmsxMUk4bnFndld6LTF1N0FjaUJWT3lpVnpZNlo5VnBaOFhxR1lQQkYyamdFRGdKRmlYclhhODlzV1JFMjhQenh1QW5ESGg0STRDUnlfYUVrSEo0NlhUeWFZck1DUDQtbXVudWVUWHREZGFoM1pSeFE2bmN5ekJVdHFmWkhLeTRGYzJtZnd5eTlSZ1g2Z1NFSHhPNnc?oc=5"
+          },
+          {
             "source": "Wisevoter",
-            "title": "Inflation Climbs to 4%, Fed Eyes Rate Hike - Wisevoter",
-            "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPUm9PbVpUdUhsMVZ4ME1SX1haajdPY3Z1QUl5Y0ZyVXhwMlI1ejVZQ1JjcU0xZ2p6aWx3VkF2Qk5yTGdNbGFHMThBUjV4dFl5RDVoX2RlQ3hPd0R2Y2JkSVRCYWJnNkdhcHMxY2VsVXZ1dWctZ3F3MnN2c29vZTNQdDdCUXJpNE9JZFc4aDBxYzdzSjA?oc=5"
-          },
-          {
-            "source": "NiftyTrader",
-            "title": "Trump Wants Cheaper Credit, but US Inflation Was 3.6% in September: Fed’s Tough Call - NiftyTrader",
-            "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPbWlkUnIxNUhES0xTamg5X1FhZlg1RGJxSEQ4ZHdxTkM3RHJDaDhPN0lZU29US2pZOTdtZGVKTjdlMndTWWJKNTQ0SDFNVDBxNUNjeDdMQ3kzek9RekNZZ2hQTDBEMUlmODJ2TzZ5Um1HNURaWFRfdUJyZWFpaEpFTg?oc=5"
-          },
-          {
-            "source": "Bloomberg.com",
-            "title": "Watch US Economy: Fed’s Cook Sees Growing Urgency to Tackle Inflation - Bloomberg.com",
-            "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPcks5WThYRmV4cjRBcWZTMXhpYVU0MjZJSjZrLTM4bGJlOTFoNjBfcXlrTnpkNXhuTWJxVFQ0N0Qwd1gzWjBiem84OUtmNzRCdEk3em94dE1pbV9POHBYWTZldXdxc2ZqNnpUZDZZdHlqd2VlSlZORUw1YkdKRHRwTnZDRlFZRUw3MmxpYU9wS3lRc1RiSVZCemJiTkFWVFAzZWJHcWVkVkZmUQ?oc=5"
-          },
-          {
-            "source": "Hindustan Times",
-            "title": "US Treasury yields rise as Fed minutes flag AI inflation risks, Waller backs bigger December rate hike | Hindustan Times - Hindustan Times",
-            "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPOU1qMGxDcnlJbjg4eEJzbU82Z1pWSndxeUJSMXlPR1pRVmVMRlZUSUFfSFNlRU42RUxna3RPTUtuM1RURURWZlVaZHBmOFJPTVJDdU1KeWJYZUdhb0dLMmE5U2w1NzlPRWx1QjNNNUNvMUdnQ3JkblRhTXVuNnJEdnJZcWpZLUtJY3RPbWlZWURFNm5SV29QbkFQbTVqMTZTcWdOaVE4Wl9Rck9tYXIzOFQ2ZnlMZm5BY2d4YmtsZTBneXY3a3lGMHZTLU9kbjFKRC1ySlJtTkxqX2pSVnJfc29odEd0czVvRlJmNXVJcjJ6RjMtSHl5NGJJYnFfOGlwdUHSAYcCQVVfeXFMTXRtYTJOalJZLWhaaDFhUFJGdFh6d0xTV1VCcDV3amU0eUNYV0RFVWpjT01jTXZZOUxQbk91Y1MzanhvUmxQeVI5blN2LU9XVzU3UXRTS1VObjdJZ2xpNHlHMG03UlY2U1hwZGphbmREQlBsWm0tSnlDczZESU1GX3ZfaW5aSG1XU3FOWVk5c0F4U0hIQ3J3S3pVSmZra2ZSNk1FbTdZaGs3a3FGa2NlTmMydms4aTVlZE1IUEhXMEtMYm5jUDhYTVBnUmhDLW9QdGp4S19yNUt6NnZGdkhWeXJnUnFLV3NkTExINllKcWxZX2hMVzVfeDI5bUQ3ejRyMTFYWjNhSWM?oc=5"
+            "title": "Ackman Urges Fed to Raise Inflation Target to 3% - Wisevoter",
+            "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQY2dLdFlkUTVsNHl2MThieS1BcFJEcGRQVFhEVnVJdWhNVDdaMVVUb2ZHLWdURFgwb2RqNkxHMFZRRmJrdFAxZ3NnbWtIWDQtMGQwVXo3aU9McUlleFpOTFR1VGJSRGZNZldHSUpxZ3pKMmhsNHc1RVJIbUpIVmYyNHBxT3J1MDNaVzU1VWRraUp0Nl9PZlE?oc=5"
           }
         ],
-        "outlets": 4,
+        "outlets": 6,
         "region": "USA",
         "state": "RISING",
-        "title": "Inflation Climbs to 4%, Fed Eyes Rate Hike - Wisevoter",
+        "title": "Ackman Urges Fed to Raise Inflation Target to 3 Percent - SuaraGarut.ID",
         "topic": "inflation"
       },
       {
         "links": [
+          {
+            "source": "WSJ",
+            "title": "Canada Inflation Holds Steady at 3.1% in October - WSJ",
+            "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOZUh2di02WldwU0Q2eVluc0Y4cktuNXNFYXc2M0ZIajJtY3ZoOUZFTHRxUTJUUl9uMkJUcnkyeFdvb1FMcDMzRy1YOXRVaHI3QmMteU9IRS1pOEVmMjhjVE44TVJfRkloclZKaXJ5M29WTmRuOXk1REQ4c0JWTk5vSU9tdGRCVkEtbjRSY3lXVXVNSmQ2T2dqMkdFVUxRNVhWbmc?oc=5"
+          },
+          {
+            "source": "Bloomberg.com",
+            "title": "US Consumers Are Holding Up Against Inflation Going Into Holiday Season - Bloomberg.com",
+            "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOVzdHalZYY2s3bHVEeENKX0g4T0M4WWxHV3lacDRlejl2b2E5VWNPd1AxbXhaaUVyNXBFLWlYZFlKTk93R3QzeFdVazI3ajljUFVLYnFpb1VVQmNrVlNvYTIyajhxM1JBbjYxTkhJMkhObEJGSVdRdmZDVzItblZFd1A4NHZaWTZiZWdFVVc4REI2RGF5UjlGWndXeDFha2k0MWdqRkE4X1ozQ1h5N0ZxZmVVTVFldC1VRi1keUdBQQ?oc=5"
+          },
           {
             "source": "Traders Union",
             "title": "Bank of Canada raises benchmark rate as inflation pressures persist - Traders Union",
@@ -165,22 +141,12 @@
             "source": "www.equiti.com",
             "title": "Week Ahead: US GDP, PCE Inflation & Fed Rate Outlook - www.equiti.com",
             "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPZGJtX1AyM2JjQmtHQlNrdzZ2blI1enNocTE1bXRrelRlR0JMNk9mck9WcnJUSng0SFMxZFNZdk93SHliU1NhZTBQczFEdW9MSEVONm9OaXpQZXUwRFJ2eVpTUzJCZXpicDg4VGdCZkNvY3hZSVdUaWg1aGwtcnY3OWg2bFNJRXBIWjR3YzVtUlFtY1VuR2JHTjA2QWVlQQ?oc=5"
-          },
-          {
-            "source": "Investing.com Canada",
-            "title": "Bank of Canada says public trust in 2% inflation target helps anchor expectations - Investing.com Canada",
-            "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxObGg0cFpHbjYtclU0Zm81dE0zREY1MTNzNDYzYmU5cW0yVUVmM0dPQ0gyRVVKeS1Pa1c5aGVpM2JpMVVfa2psR3FLSEFkX0VheG5WR3JDMHhDdk1zOTdJa2lwX2U3VTRTVnpnbXR0VzMyZG9UQ0hzaXFmU2tqOHJqT1RCbzVLQXRnT0ZPVC1ySUs0TUg2ekZCaGVsT2lJSzRWNWlBT2JlV2dTX3ZHOTRubzFuWE5yRmZMSG1tSmxVdHNPQ2JGV0cyVERkUQ?oc=5"
-          },
-          {
-            "source": "Yahoo Finance",
-            "title": "Mexico cenbank's Borja says length of rate pause unclear, flags inflation risks - Yahoo Finance",
-            "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQYkpVc2U3aXlMaUVSOG9QOE9YWTdTXzB6R0liZUI5NzBGV0dqREVEc3JCSjZHVldsSVBSdnpfZGIxd0FTWXhRcXpfTnJ3RTJFdklFT0xWbXlXc3JCc1Z3X1BzWXFSZGZCdDFibmV1ZW9UZ3MxWVVfLU1kRE40dnhaTmdRSExQR19LOWJWR0IwM0ZxSUR1MV9tdXpobmZMaVk?oc=5"
           }
         ],
-        "outlets": 9,
+        "outlets": 8,
         "region": "North America",
         "state": "RISING",
-        "title": "Bank of Canada raises benchmark rate as inflation pressures persist - Traders Union",
+        "title": "Canada Inflation Holds Steady at 3.1% in October - WSJ",
         "topic": "inflation"
       },
       {
@@ -206,35 +172,6 @@
         "state": "RISING",
         "title": "Sanctions fears loom over Russia’s regulated crypto trading launch - TradingView",
         "topic": "sanctions"
-      },
-      {
-        "links": [
-          {
-            "source": "www.tmgm.com",
-            "title": "KOSPI falls as Asian stocks trade mixed ahead of Nvidia results - www.tmgm.com",
-            "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOclU2cWJWV2MtQ2poWDM2ZFRWR18weHhYcVg3WFUtT1dscUhMYzBfVGczdUtOOFR4VGVER2l6bk9RMVR6MUR3bkVvemJjVm44SDNNV253UjJSRldXSGgwLWJxam4xM0Q0cFJUMzZ3VmVwa016RG5NRjBoMjlvRWMtR2MzVDcyUFMzQ2FXTWZiZGdqQ0d2RF9pUXdxNUItR1hEOGQ4Qi0xY1lTNkF5aGFxakc3dFVleU1ScUVaYXlpWUp4bFFzS25ySlJzS1ZVamhCOWFNWmtR?oc=5"
-          },
-          {
-            "source": "www.tmgm.com",
-            "title": "Asian stocks stay mixed as KOSPI drops ahead of looming Nvidia results - www.tmgm.com",
-            "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNbGVjU2R1anpLZnpQMFJ1WElwVWRmVEp4N1lVZW9pUF9fTThnX0tJRHgxdlU1em5hSUowb2hpa1dYa0tycGU1eHVST3NSMTBLTjM0TzNVcmd6Y2UzaEliZjBQX1dZLXBlQy04UDdmSG1JVkNkWnMyZ3pkbEJ3dGZod1VMNUVFRWpEZ3YzcnA0clY5WHkzeGE0MERKaktRbE1BTnc2cUk2OTFCakgxYzVpME93OHF2ZXNwbnlrOWJ4UW5MX281blRwYkZrQlNlSUw3ZFhlRGdn?oc=5"
-          },
-          {
-            "source": "Seeking Alpha",
-            "title": "Asian markets mostly lower as weak Japan GDP, soft China data, and Nvidia caution weigh - Seeking Alpha",
-            "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNZk9HUm5mTmR3YnRiWElibWt0NjJ4RmVfckl2aTJrSUVwRVEwdzNlVm9aOVNLcUNxSW53blZSNklpb3RKQnN0bVJUMjZHYTRhelB4NXh3aDlrRFF2Z2hka3IwRDMtQWdabUN6YkgzMlFWamg1VGVwZm5fckRYb0tFY2t5TDZ5RHRvbnRJeFY1QURJREpzYng3U0xQY0x4OUNCMlFJWnQ4ZV85LXdDMXp6ZFlORS1fVXFkdzdkLVNFa0M?oc=5"
-          },
-          {
-            "source": "TradingView",
-            "title": "Asian markets mostly lower as weak Japan GDP, soft China data, and Nvidia caution weigh - TradingView",
-            "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPdDJHS2lJX1lSYkZKTVdzN0JXQ1l2YkxKRHNReTNKX3B5dGJKR19fUEdHOGZiMHFsaFpDNlJiY2tLUXhsYmFvZ25uVzV1TnZaeXY0dzRtWTZZdGhiSUZURHBGVjdhZUFzMzVfVWZHZXdFNjNUQWkzTm1wOFZNSGZtQ3VfT0sxb2VHWGtoZmJ1RGFfRVNGRzFGeWFRV3FZbFd4eWVKRlZDM0VyR0lXS3lZMDhRTU42cE81b0J4WEgtbnBmQndQSlh0c1VYc1lqNEpwVXlqbF96R0JzZFdoZ3VUdmZ3?oc=5"
-          }
-        ],
-        "outlets": 3,
-        "region": "China",
-        "state": "RISING",
-        "title": "KOSPI falls as Asian stocks trade mixed ahead of Nvidia results - www.tmgm.com",
-        "topic": "Nvidia"
       },
       {
         "links": [
@@ -288,30 +225,6 @@
         "state": "RISING",
         "title": "Bank of Japan to raise interest rates in December and again by end-March, economists say - Reuters",
         "topic": "interest rates"
-      },
-      {
-        "links": [
-          {
-            "source": "Free Press Journal",
-            "title": "Indias GDP Growth To Slow To 7.2% In 2027, Goldman Sachs Sees Inflation At 5.7% And More RBI Rate Hikes - Free Press Journal",
-            "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQNEQwaWwxVG54cjVzS3Z4SVR2UGluZkdBZVBLVlUyR2dpTVhCRVNOVzVmaFdsZmlwM2QzR3J0TXBoUXV5ZWJad18yNlRReDVHQTJPdG1jRFhNMDl4MlpRTm9zWjYxdUNJWEs0ZXFKcHBBdWRUWjhJNVFtaWF6YkZWWEtnSWh2dnYxT1Rkem55SkFVeEFFQ05aWEZ1dUltamFWdlZTTDNJMWotbzNiVFdJN01oQUZHVEpGV3lkeDJNUUNoRnZBakdod09XNW5Ba3Zua1dBV3Zn0gHbAUFVX3lxTE1jTEIyWnFVWFhrdmdkdEFvZ1pWOWczTEI0UlQ0c01faG1YZ2V2anFoa2UtX1lUakw5aHNJU01SNHlBRDNfUnFQSjg0N1hNUzZIV2NBRlh2LUpzQklOcGp0OEhDV1M2d2x1ak5fbnN1UlFHU1cwcURUSDU2N1YwRjlxbFRzd290c0RjVXBaeFRUNTcyYV9qZWdMMkhXUHVsTVZtNmNjRUJNV25JcWotZm9IY2xUUy0telMtREV2R2MtanZIQ2RvcnU1WDF6UC1xdHBxRmhZNnpYWjJGbw?oc=5"
-          },
-          {
-            "source": "Kotak Neo",
-            "title": "RBI Repo Rate Outlook: Goldman Sachs Projects 75 Basis Points of Further Hikes as Inflation Pressures Persist - Kotak Neo",
-            "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPeXdxZG9waVBQa0tMR0NrNkZBMjhXa3dERlQySElzVTd1N0lsUkZBM21rM2dhYnlQTF9zUVdYQ2R5aTM3TjJzUVZxSWxGVEMwX2tjVGphVUNzMlZOZzhwS3NLUDN4SGwwOEJTcFBVYk5Sa203akxPMnRFbnBXY2dmczA1ZHlVNzc0Z0puTTFQYnBzWVJqVWV5ZU5PS3VMVXlVZ2loTlZuZVc3bUw3cDh3?oc=5"
-          },
-          {
-            "source": "The Economic Times",
-            "title": "RBI may hike repo rate by 25-50 bps in December as inflation breaches 6%: Experts - The Economic Times",
-            "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOdVFxbVpsWmxfSWp5YWEzRHZGT0duN1JDUE5VUHZKb1huakY1U2xpN2h3cHdQaWJxUHJzRkxVcmc4U1ZXWnFhQWlUbHFtMm5yN2wzSlQtal9NWUM0WVFNNGJPTkFxSkRLSDJuLXN3cGYxMTdZa05SbWNyTnZ5eHFaWk5POWVlZVRoNDZGa25hQklvWFJWaVFnWVktUkxzeENIZVI3NUViYUI4bGVUYUpRNUU4Y0NVUmJLTUR4eVg5TjdJOWtUQzhYelZNMjY0elp6WFMxWEJEcm1QaVYtcWUzTDlyVVUzWUc00gHuAUFVX3lxTE9CMGsybEZITUFMX1Fuei02NE5yajdGSXpKNmtCMEFndGFza1ZmNkhxWUowQ3VQUEZlZWhvSlZ4cEhJU3FfaTN5YWtyOHYxeDlKWERoaEVVUWRxWC1kX1h5d3dKUkkzNE5HVVNkd0tQTC1GdUQ0cy1iYmFxSXloRzhJUHotRk0xVnBoSjJCbUZ3ZzhKQVMxVVkxV2VyWUM2YmRMOWtWM1FwaHFzbEh0Wm45ODBvS2FWTUM1Vl9rMVdoSWsxeEpITURmQ1RpS2lYQnFDS3J3SkRIX19LOGEwOExBSzRjbWtRQTBPMHJLd0E?oc=5"
-          }
-        ],
-        "outlets": 3,
-        "region": "India",
-        "state": "RISING",
-        "title": "Indias GDP Growth To Slow To 7.2% In 2027, Goldman Sachs Sees Inflation At 5.7% And More RBI Rate Hikes - Free Press Journal",
-        "topic": "inflation"
       }
     ],
     "podcasts": [
@@ -389,9 +302,9 @@
       }
     ]
   },
-  "today": "2026-11-22",
+  "today": "2026-11-23",
   "trends": {
-    "google": "Google Trends US daily list answered (10 topics). Kept the ones that match a war, government, or threat topic. None of today's search trends matched.",
+    "google": "Google Trends US daily list answered (10 topics). Kept the ones that match a war, government, or threat topic.",
     "mode": "trends",
     "note": "X trends by WOEID (US 23424977 and worldwide 1). Kept only when the name matches a threat or preparedness theme. The endpoint answered and none of the names matched."
   },

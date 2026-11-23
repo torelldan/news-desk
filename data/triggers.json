@@ -1,5 +1,31 @@
 {
-  "checklist": [],
-  "items": [],
+  "checklist": [
+    "fuel",
+    "water",
+    "cash",
+    "meds"
+  ],
+  "items": [
+    {
+      "action": "Run the short checklist: fuel, water, cash, meds.",
+      "checklist": [
+        "fuel",
+        "water",
+        "cash",
+        "meds"
+      ],
+      "confidence": "reported",
+      "id": "gold-3",
+      "kind": "trigger",
+      "lane": "desk",
+      "severity": "ALERT",
+      "soWhat": "no action needed",
+      "source": "Desk threshold",
+      "sourceCount": 1,
+      "title": "Gold 3.01% on the day (threshold +3%)",
+      "url": "https://finance.yahoo.com/quote/GC%3DF",
+      "why": "Daily move from the stored gold series."
+    }
+  ],
   "note": "Thresholds: Gulf tropical system, outbreak naming the US, quake M7+, Tennessee tornado or hurricane warning, gold +3% day, silver +5% day, BTC or ETH -10% day."
 }

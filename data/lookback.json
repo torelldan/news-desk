@@ -2,236 +2,264 @@
   "calls": [],
   "escalated": [
     {
-      "note": "New since 2026-11-15 · now ACTION",
+      "note": "New since 2026-11-16 · now ACTION",
       "related": 0,
       "relatedSources": [],
       "severity": "ACTION",
-      "title": "M6.7 9 km NE of Carhuamayo, Peru"
+      "title": "M6.5 Vanuatu region"
     },
     {
-      "note": "New since 2026-11-15 · now ALERT",
+      "note": "New since 2026-11-16 · now ACTION",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ACTION",
+      "title": "M6.7 7 km ENE of Carhuamayo, Peru"
+    },
+    {
+      "note": "New since 2026-11-16 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
       "title": "M6.8 105 km NE of Lospalos, Timor Leste"
     },
     {
-      "note": "STANDBY → ALERT since 2026-11-15",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "Ebola disease caused by Bundibugyo virus- Democratic Republic of the Congo, Kenya and Nigeria"
-    },
-    {
-      "note": "New since 2026-11-15 · now ALERT",
-      "related": 3,
+      "note": "New since 2026-11-16 · now ALERT",
+      "related": 2,
       "relatedSources": [],
       "severity": "ALERT",
       "sourceCount": 1,
       "title": "Amazon: China-Linked Hackers’ AI Agents Exploited Medical Software Zero-Day"
     },
     {
-      "note": "New since 2026-11-15 · now ALERT",
+      "note": "New since 2026-11-16 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
       "title": "CVE-2026-129448 Apache Roller Deserialization of Untrusted Data Vulnerability"
     },
     {
-      "note": "New since 2026-11-15 · now ALERT",
+      "note": "New since 2026-11-16 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
       "title": "CVE-2026-123890 Broadcom VMWare vCenter Authentication Bypass Using an Alternate Path or Channel Vulnerability"
     },
     {
-      "note": "New since 2026-11-15 · now ALERT",
+      "note": "New since 2026-11-16 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
       "title": "CVE-2025-42884 SAP NetWeaver Improper Neutralization of Special Elements in Data Query Logic Vulnerability"
     },
     {
-      "note": "New since 2026-11-15 · now ALERT",
+      "note": "New since 2026-11-16 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
       "title": "CVE-2026-76466 Cisco Expressway Series Use of Hard-coded Credentials Vulnerability"
     },
     {
-      "note": "STANDBY → ALERT since 2026-11-15",
+      "note": "STANDBY → ALERT since 2026-11-16",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "At least 6 killed, several injured in shooting at Polish market square: Police - ABC News - Breaking News, Latest News and Videos"
+      "title": "Deadly mass shooting in Poland investigated as terror act, prosecutor says - ABC News - Breaking News, Latest News and Videos"
     },
     {
-      "note": "New since 2026-11-15 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "Eight killed in Ukraine as Russia hits back after Crimea bridge attacks - Reuters"
-    },
-    {
-      "note": "New since 2026-11-15 · now ALERT",
+      "note": "New since 2026-11-16 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
       "title": "What did Xi Jinping get from the bear hug with Trump at the Shenzhen summit? - NPR"
     },
     {
-      "note": "New since 2026-11-15 · now ALERT",
+      "note": "New since 2026-11-16 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Putin Exits Summit With Symbolic Win, Saying He and Trump Share ‘Values’ - The New York Times"
+      "title": "UN arms conference falls short of treaty mandate on autonomous weapons due to US and Russia opposition - Jurist.org"
+    },
+    {
+      "note": "New since 2026-11-16 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "Internet services disrupted across Pakistan due to undersea cable fault - Daily Ausaf"
     }
   ],
   "fizzled": [
     {
-      "note": "On the board 2026-11-15 at ALERT, absent now.",
+      "note": "On the board 2026-11-16 at ACTION, absent now.",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ACTION",
+      "title": "Tropical Cyclone AKVAN-26"
+    },
+    {
+      "note": "On the board 2026-11-16 at ALERT, absent now.",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "With shifting Iran rhetoric following U.S. elections, Trump leaves Middle East in limbo about path ahead - PBS"
+      "title": "Earthquake in Peru"
     },
     {
-      "note": "On the board 2026-11-15 at ALERT, absent now.",
+      "note": "On the board 2026-11-16 at ALERT, absent now.",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Ukraine is running out of options, and Russia knows it - Al Jazeera"
+      "title": "Earthquake in Japan"
     },
     {
-      "note": "On the board 2026-11-15 at ALERT, absent now.",
+      "note": "On the board 2026-11-16 at ALERT, absent now.",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Ukraine updates: Europe to send united front to potential peace talks - DW.com"
+      "title": "Earthquake in Eastern Gulf Of Aden"
     },
     {
-      "note": "On the board 2026-11-15 at ALERT, absent now.",
+      "note": "On the board 2026-11-16 at ALERT, absent now.",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "How Congress might take back its trade powers and limit Trump's tariffs - Peterson Institute for International Economics"
+      "title": "Earthquake in Russia"
     },
     {
-      "note": "ALERT → STANDBY since 2026-11-15",
+      "note": "On the board 2026-11-16 at ALERT, absent now.",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "Earthquake in Indonesia"
+    },
+    {
+      "note": "On the board 2026-11-16 at ALERT, absent now.",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "Winter Nightmare Looms Early in Ukraine as Russia Strikes Relentlessly - The New York Times"
+    },
+    {
+      "note": "On the board 2026-11-16 at ALERT, absent now.",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "Coalition to move away from fossil fuels presses ahead without Colombia, its original champion - PBS"
+    },
+    {
+      "note": "On the board 2026-11-16 at ALERT, absent now.",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "Ukraine Facility: Council approves largest-ever payment of €8 billion to Kyiv - Council, European Union"
+    },
+    {
+      "note": "On the board 2026-11-16 at ALERT, absent now.",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "WATCH: Rubio delivers keynote address at Federalist Society National Lawyers Convention - PBS"
+    },
+    {
+      "note": "ALERT → STANDBY since 2026-11-16",
       "related": 0,
       "relatedSources": [],
       "severity": "STANDBY",
       "title": "EU HR/VP Kaja Kallas Attended the G7 Foreign Affairs Ministers’ Meeting in Paris - EEAS"
     },
     {
-      "note": "ALERT → STANDBY since 2026-11-15",
+      "note": "ALERT → STANDBY since 2026-11-16",
       "related": 0,
       "relatedSources": [],
       "severity": "STANDBY",
       "title": "Can Netanyahu and Eisenkot form a ‘unity’ government in Israel? - Al Jazeera"
-    },
-    {
-      "note": "ALERT → STANDBY since 2026-11-15",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "STANDBY",
-      "title": "EU at COP31 - climate.ec.europa.eu"
-    },
-    {
-      "note": "ALERT → STANDBY since 2026-11-15",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "STANDBY",
-      "title": "2026 Iran war | Oil, Explained, United States, Israel, Strait of Hormuz, Map, & Conflict - Britannica"
     }
   ],
   "newSince": [
     {
-      "note": "New since 2026-11-15 · now ACTION",
+      "note": "New since 2026-11-16 · now ACTION",
       "related": 0,
       "relatedSources": [],
       "severity": "ACTION",
-      "title": "M6.7 9 km NE of Carhuamayo, Peru"
+      "title": "M6.5 Vanuatu region"
     },
     {
-      "note": "New since 2026-11-15 · now ALERT",
+      "note": "New since 2026-11-16 · now ACTION",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ACTION",
+      "title": "M6.7 7 km ENE of Carhuamayo, Peru"
+    },
+    {
+      "note": "New since 2026-11-16 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
       "title": "M6.8 105 km NE of Lospalos, Timor Leste"
     },
     {
-      "note": "STANDBY → ALERT since 2026-11-15",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "Ebola disease caused by Bundibugyo virus- Democratic Republic of the Congo, Kenya and Nigeria"
-    },
-    {
-      "note": "New since 2026-11-15 · now ALERT",
-      "related": 3,
+      "note": "New since 2026-11-16 · now ALERT",
+      "related": 2,
       "relatedSources": [],
       "severity": "ALERT",
       "sourceCount": 1,
       "title": "Amazon: China-Linked Hackers’ AI Agents Exploited Medical Software Zero-Day"
     },
     {
-      "note": "New since 2026-11-15 · now ALERT",
+      "note": "New since 2026-11-16 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
       "title": "CVE-2026-129448 Apache Roller Deserialization of Untrusted Data Vulnerability"
     },
     {
-      "note": "New since 2026-11-15 · now ALERT",
+      "note": "New since 2026-11-16 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
       "title": "CVE-2026-123890 Broadcom VMWare vCenter Authentication Bypass Using an Alternate Path or Channel Vulnerability"
     },
     {
-      "note": "New since 2026-11-15 · now ALERT",
+      "note": "New since 2026-11-16 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
       "title": "CVE-2025-42884 SAP NetWeaver Improper Neutralization of Special Elements in Data Query Logic Vulnerability"
     },
     {
-      "note": "New since 2026-11-15 · now ALERT",
+      "note": "New since 2026-11-16 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
       "title": "CVE-2026-76466 Cisco Expressway Series Use of Hard-coded Credentials Vulnerability"
     },
     {
-      "note": "STANDBY → ALERT since 2026-11-15",
+      "note": "STANDBY → ALERT since 2026-11-16",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "At least 6 killed, several injured in shooting at Polish market square: Police - ABC News - Breaking News, Latest News and Videos"
+      "title": "Deadly mass shooting in Poland investigated as terror act, prosecutor says - ABC News - Breaking News, Latest News and Videos"
     },
     {
-      "note": "New since 2026-11-15 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "Eight killed in Ukraine as Russia hits back after Crimea bridge attacks - Reuters"
-    },
-    {
-      "note": "New since 2026-11-15 · now ALERT",
+      "note": "New since 2026-11-16 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
       "title": "What did Xi Jinping get from the bear hug with Trump at the Shenzhen summit? - NPR"
     },
     {
-      "note": "New since 2026-11-15 · now ALERT",
+      "note": "New since 2026-11-16 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Putin Exits Summit With Symbolic Win, Saying He and Trump Share ‘Values’ - The New York Times"
+      "title": "UN arms conference falls short of treaty mandate on autonomous weapons due to US and Russia opposition - Jurist.org"
+    },
+    {
+      "note": "New since 2026-11-16 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "Internet services disrupted across Pakistan due to undersea cable fault - Daily Ausaf"
     }
   ],
-  "note": "Compared with the stored board on 2026-11-15.",
-  "since": "2026-11-15"
+  "note": "Compared with the stored board on 2026-11-16.",
+  "since": "2026-11-16"
 }

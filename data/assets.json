@@ -1,17 +1,12 @@
 {
   "series": [
     {
-      "asOf": "2026-11-20",
-      "changePct": -0.09,
+      "asOf": "2026-11-23",
+      "changePct": 0.12,
       "id": "dxy",
-      "level": 103.81,
+      "level": 103.931,
       "name": "DXY",
       "points": [
-        {
-          "date": "2026-07-02",
-          "price": 100.86,
-          "volume": 0
-        },
         {
           "date": "2026-07-06",
           "price": 100.85,
@@ -506,22 +501,22 @@
           "date": "2026-11-20",
           "price": 103.81,
           "volume": 0
+        },
+        {
+          "date": "2026-11-23",
+          "price": 103.931,
+          "volume": 0
         }
       ],
       "source": "https://finance.yahoo.com/quote/DX-Y.NYB"
     },
     {
-      "asOf": "2026-11-20",
-      "changePct": -4.62,
+      "asOf": "2026-11-23",
+      "changePct": 3.02,
       "id": "gold",
-      "level": 3515.3999,
+      "level": 3621.7,
       "name": "Gold",
       "points": [
-        {
-          "date": "2026-07-02",
-          "price": 4125.7002,
-          "volume": 0
-        },
         {
           "date": "2026-07-06",
           "price": 4167.5,
@@ -1015,23 +1010,23 @@
         {
           "date": "2026-11-20",
           "price": 3515.3999,
-          "volume": 323896
+          "volume": 203702
+        },
+        {
+          "date": "2026-11-23",
+          "price": 3621.7,
+          "volume": 100239
         }
       ],
       "source": "https://finance.yahoo.com/quote/GC%3DF"
     },
     {
-      "asOf": "2026-11-20",
-      "changePct": -7.33,
+      "asOf": "2026-11-23",
+      "changePct": 3.35,
       "id": "silver",
-      "level": 41.07,
+      "level": 42.41,
       "name": "Silver",
       "points": [
-        {
-          "date": "2026-07-02",
-          "price": 60.643,
-          "volume": 197
-        },
         {
           "date": "2026-07-06",
           "price": 61.92,
@@ -1524,23 +1519,24 @@
         },
         {
           "date": "2026-11-20",
-          "price": 41.07,
-          "volume": 110375
+          "price": 41.035,
+          "volume": 30
+        },
+        {
+          "date": "2026-11-23",
+          "price": 42.41,
+          "volume": 36544
         }
       ],
       "source": "https://finance.yahoo.com/quote/SI%3DF"
     },
     {
-      "asOf": "2026-11-22",
-      "changePct": 3.25,
+      "asOf": "2026-11-23",
+      "changePct": 0.32,
       "id": "btc",
-      "level": 61140.31,
+      "level": 61364.39,
       "name": "BTC",
       "points": [
-        {
-          "date": "2026-08-24",
-          "price": 80454.83
-        },
         {
           "date": "2026-08-25",
           "price": 79069.09
@@ -1899,22 +1895,22 @@
         },
         {
           "date": "2026-11-22",
-          "price": 61140.31
+          "price": 61168.68
+        },
+        {
+          "date": "2026-11-23",
+          "price": 61364.39
         }
       ],
       "source": "https://www.coingecko.com/en/coins/bitcoin"
     },
     {
-      "asOf": "2026-11-22",
-      "changePct": 3.43,
+      "asOf": "2026-11-23",
+      "changePct": -0.09,
       "id": "eth",
-      "level": 1718.34,
+      "level": 1723.55,
       "name": "ETH",
       "points": [
-        {
-          "date": "2026-08-24",
-          "price": 2498.08
-        },
         {
           "date": "2026-08-25",
           "price": 2465.07
@@ -2273,7 +2269,11 @@
         },
         {
           "date": "2026-11-22",
-          "price": 1718.34
+          "price": 1725.07
+        },
+        {
+          "date": "2026-11-23",
+          "price": 1723.55
         }
       ],
       "source": "https://www.coingecko.com/en/coins/ethereum"
