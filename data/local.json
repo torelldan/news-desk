@@ -1,7 +1,8 @@
 {
   "gaps": [
     "Power_TN row hidden (2025-10-06, affected 0, served 0).",
-    "1 ended road projects hidden."
+    "1 ended road projects hidden.",
+    "TEMA: curl: (22) The requested URL returned error: 403\n"
   ],
   "items": [
     {
@@ -10,10 +11,10 @@
       "date": "2026-11-23",
       "id": "local-nws-none",
       "kind": "nws",
-      "label": "Nov 23, 2026 5:59 AM CT",
+      "label": "Nov 23, 2026 7:48 AM CT",
       "lane": "local",
       "note": "api.weather.gov answered for 35.802,-86.907 and returned no alerts.",
-      "published": "2026-11-23T05:59:21-06:00",
+      "published": "2026-11-23T07:48:06-06:00",
       "severity": "STANDBY",
       "soWhat": "",
       "source": "NWS",
@@ -34,7 +35,7 @@
       "label": "2026-11-16",
       "lane": "local",
       "note": "Other Construction",
-      "published": "2026-11-23T05:59:21-06:00",
+      "published": "2026-11-23T07:48:06-06:00",
       "severity": "STANDBY",
       "soWhat": "",
       "source": "TDOT SmartWay",
@@ -45,27 +46,6 @@
       ],
       "title": "State Route 100 EB in Williamson County - between LOG MILE 2 and LOG MILE 5 Other Construction may cause delays Mon 11/16/2026 through Fri 11/27/2026 from 9:00 AM to 3:00 PM (CT). ",
       "url": "https://smartway.tn.gov/"
-    },
-    {
-      "action": "no action needed",
-      "confidence": "reported",
-      "date": "2026-11-20",
-      "id": "local-tema:d04439d9c3f503fc",
-      "kind": "tema",
-      "label": "Nov 20, 2026",
-      "lane": "local",
-      "note": "TEMA news release, Nov 20, 2026. Polk County. Not a Williamson County / 37179 notice.",
-      "published": "2026-11-20T12:00:00-06:00",
-      "severity": "STANDBY",
-      "soWhat": "",
-      "source": "TEMA",
-      "sourceCount": 1,
-      "tags": [
-        "tennessee",
-        "polk"
-      ],
-      "title": "Tennessee Opens Polk County Flood Recovery Assistance Applications",
-      "url": "https://www.tn.gov/tema/news/2026/11/20/tennessee-opens-polk-county-flood-recovery-assistance-applications.html"
     }
   ],
   "place": "Thompson's Station / Williamson County / Middle Tennessee (37179)"

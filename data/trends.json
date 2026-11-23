@@ -1,43 +1,47 @@
 {
-  "googleNote": "Google Trends US daily list answered (10 topics). Kept the ones that match a war, government, or threat topic.",
+  "googleNote": "Google Trends US daily list answered (10 topics). Kept the ones that match a war, government, or threat topic. None of today's search trends matched.",
   "items": [
     {
-      "category": "iran-war",
+      "category": "ukraine-war",
       "confidence": "reported",
       "date": "2026-11-23",
-      "id": "gtrend:babfed0d7b867fb2",
+      "id": "velocity:efd2da34e68ca58f",
       "kind": "trend",
       "lane": "news",
       "look": "news",
-      "name": "iran war hormuz",
-      "note": "US search trend. Traffic 1000+.",
-      "place": "US",
-      "published": "2026-11-23T05:20:00-06:00",
-      "rise": "US daily list 1000+",
+      "name": "ukraine war",
+      "note": "The same topic showed up across several outlets.",
+      "published": "2026-11-23T07:48:06-06:00",
+      "rise": "4 outlets this window",
       "samples": [
         {
+          "date": "2026-11-20",
+          "published": "2026-11-20T09:14:01-06:00",
+          "source": "BBC",
+          "text": "What we know about the latest Russian missile strikes on Ukraine - BBC",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE4zS0VqN3l1NGtiUnM1SmZ5NjlFX0NXckFLMFlLQm5rYjlucGxlUWxhSHVQRFJ2akJ0SUpyVkQtTjBHb3BrSy1TRTdsM2ZnNXYxaHJvWjVua3Q?oc=5"
+        },
+        {
+          "date": "2026-11-23",
+          "published": "2026-11-23T06:34:16-06:00",
           "source": "CNN",
-          "text": "Iranian attacks in the Strait of Hormuz are at the highest levels since the conflict began",
-          "url": "https://www.cnn.com/2026/11/22/middleeast/hormuz-attacks-highest-levels-iran-war-intl"
+          "text": "The Ukraine-Russia war is seeping out across Europe and there are two reasons it will get worse - CNN",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNTXIzTEt6SnNNSmRBWHdaUTBTSDRKRDhBdk5vTTBmSl9Rc0RWYnJFNkZIWTRNVEJVNjZxa2xPWTNPdTJqeGlpTDdRV21XbDI2S2NvLUJNQmdNS2dDUDZWaG1USWtqaW5wb0doUzNNSVg1enJhMl9CdUlPZjAwQ3BMdklmeWIxaTFoNG1j?oc=5"
         },
         {
-          "source": "Al Jazeera",
-          "text": "Iran war updates: Navy says tankers ablaze near Hormuz after hitting mines",
-          "url": "https://www.aljazeera.com/news/liveblog/2026/11/21/iran-war-live-iran-targets-us-military-in-bahrain-houthi-strikes-continue"
-        },
-        {
-          "source": "WSJ",
-          "text": "The U.A.E. Is Shuttling Oil Past Iran in Risky Hormuz Operation",
-          "url": "https://www.wsj.com/world/middle-east/the-u-a-e-is-shuttling-oil-past-iran-in-risky-hormuz-operation-9150693e"
+          "date": "2026-11-22",
+          "published": "2026-11-22T16:40:22-06:00",
+          "source": "NPR",
+          "text": "Ukraine war spilling into NATO territory - NPR",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPRFRDMDZFOVFwdGd6UWJxTW9EeVdKN29TR0ZNZk9ISEdpUFpPZTBaQUhBYlZFUDBRNkNrTkJQWDBZeWFMMURYSm9MZkdLZEp0R2tFN0ZEVVRmT0ZqMW1hczVENlYtM0U1am1vcHA2dEx3ek4xdjBYUi1KMDlpVGhyWFZTTE5fX1VtZm9FMHlR?oc=5"
         }
       ],
       "severity": "ALERT",
       "soWhat": "no action needed",
-      "source": "Google Trends",
-      "sourceCount": 3,
-      "title": "iran war hormuz",
-      "url": "https://www.cnn.com/2026/11/22/middleeast/hormuz-attacks-highest-levels-iran-war-intl",
-      "volume": "1000+"
+      "source": "News velocity",
+      "sourceCount": 4,
+      "title": "ukraine war",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE4zS0VqN3l1NGtiUnM1SmZ5NjlFX0NXckFLMFlLQm5rYjlucGxlUWxhSHVQRFJ2akJ0SUpyVkQtTjBHb3BrSy1TRTdsM2ZnNXYxaHJvWjVua3Q?oc=5"
     },
     {
       "category": "iran-war",
@@ -49,7 +53,7 @@
       "look": "news",
       "name": "iran war",
       "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-23T05:59:21-06:00",
+      "published": "2026-11-23T07:48:06-06:00",
       "rise": "4 outlets this window",
       "samples": [
         {
@@ -61,10 +65,10 @@
         },
         {
           "date": "2026-11-22",
-          "published": "2026-11-22T11:52:35-06:00",
-          "source": "Fox News",
-          "text": "Trump warns of new strikes against Iran after new year, calls negotiators ‘professional tap dancers’ - Fox News",
-          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQTWlUTXBfYUZwTTVPcllIRkpMZ29FM2lHa25PdkJEZ3F4cXpYLVdpcV9zLVFEdmhKRkE5MUE4alNSZEFDZjQ3Y1JiWlNqQmctXzdTN1UtblpFWmJKRzZwbGNMWWthbUFXSEd6ZV80cWNhb1RNYkRzdElmNGJtLTExZkhvUzg1QkZhY3B5azhKRW1NU3RwVXFWdVk0Q18tZGprV3JVRXd0RnZRUURuOFBOMjBpSWxFMkh5eFl2TElOczBkY0l6c0E?oc=5"
+          "published": "2026-11-22T14:53:08-06:00",
+          "source": "Institute for the Study of War",
+          "text": "Iran Update, November 22, 2026 - Institute for the Study of War",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPc2E0R3NtQWFDT0kxVmxUQ1pfRXh4Z1FZUVpZUG10UFJpWGNYZnFibG1KSUVDek5tUDhSOVZnQVVqWFlOWnAweWdpZzVlOHlGT3VLSW85NUhPUWdnbF9WU0tQcHkzVnJwLWlmSjBxaVEwWE93MnJzbTJMTllZaXVhREdhOGFadw?oc=5"
         },
         {
           "date": "2026-11-22",
@@ -82,48 +86,6 @@
       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPTlVZWjRCSVZZOTdxbEJHVlVJTjVyV2xWVXdaQ2tqUmVRNFJkaElDa2xhYWFqbEcwRDlaWnpNWF9OMy05OE5mM2N4VkhRQVZHdTFUTTlyd2JUSkwxR0Q3ZEh1UDZZNDB5cmVHa1lfMkM0ZldWT1pJRmVTTWVPMWEzQnloMWY2Zjh1TDdaeHRONmIwbERZLWtfMy12Z19JcDV2eUJxZElIWDdBWW5CU1NEYU5TVjJRRjjSAbwBQVVfeXFMTm93R19jS3VPR050YTJCYXBSQ25mYlo1RXNhZ1JSSXVZdEdiYUJJeloyZHlkUnJYTTc5dGVzbmlqZHY3Tlhscjc5cWxqT1JRTHMtVHlORE5TUVpKQVZ1d3FGUjhwcDlHbk5JSFVoeXZya1lTU1ZIUW9SRkUwZ2t0akZGa2t4VEpfdEZJRS0xcFFEZGVaVGtNcWFvOWdLTFFRUmFhTXBsQ1FydjA5X3dZUHdDVmE4WnduNXVUMTc?oc=5"
     },
     {
-      "category": "ukraine-war",
-      "confidence": "reported",
-      "date": "2026-11-23",
-      "id": "velocity:efd2da34e68ca58f",
-      "kind": "trend",
-      "lane": "news",
-      "look": "news",
-      "name": "ukraine war",
-      "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-23T05:59:21-06:00",
-      "rise": "4 outlets this window",
-      "samples": [
-        {
-          "date": "2026-11-22",
-          "published": "2026-11-22T23:29:58-06:00",
-          "source": "Al Jazeera",
-          "text": "Ukraine urges US to release Patriot missiles as Russian strikes kill 15 - Al Jazeera",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQWDROSjJ4ZmFrSWp4VDNoeS1aRVlHb25QQXJvV0JhQWtrNjdJekNQWHEyQ0VhZUIyNHBpd3l2eEJSYmc4Zk45V2lhcWxwMzJBT09XYk1hRzZwa0FkT2ltdUl2STFtb1lBVHRtVFpDTGtYc2FVZWJqQXYyYlFSVzBhNzhpbE83NlByTGJHQjloNEZvZ9IBlwFBVV95cUxORzQwam00SzMzbWFrZHNQMlAxQU1sTmJ3ZEFQRU51V1B4MGxUb1FFeUo3R05ya0hQMFRVRjRGOTlVZDliV25wbGdnZzI1YlI5N2lpTnltOE5ZYUItZDViTlJvNkRCaGR0M2NxQ19zeEJrSmhVTGVKVGpoRFBNTlFlMFpxUzNKblhkYjlBek91OUJxbmZNdkRr?oc=5"
-        },
-        {
-          "date": "2026-11-22",
-          "published": "2026-11-22T16:40:22-06:00",
-          "source": "NPR",
-          "text": "Ukraine war spilling into NATO territory - NPR",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPRFRDMDZFOVFwdGd6UWJxTW9EeVdKN29TR0ZNZk9ISEdpUFpPZTBaQUhBYlZFUDBRNkNrTkJQWDBZeWFMMURYSm9MZkdLZEp0R2tFN0ZEVVRmT0ZqMW1hczVENlYtM0U1am1vcHA2dEx3ek4xdjBYUi1KMDlpVGhyWFZTTE5fX1VtZm9FMHlR?oc=5"
-        },
-        {
-          "date": "2026-11-20",
-          "published": "2026-11-20T15:30:19-06:00",
-          "source": "DW.com",
-          "text": "Ukraine updates: Russian attack 'one of largest,' Zelenskyy says - DW.com",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPeV9qSzNGLU5BaGd1UHRudmk5NjV5UDFnLVJuX2FYUUZnZmpVZjZkZFVSZzE3SnFzMkZLVVZDMktHTGdUbGJTM3E4S2VZMW9hcWhaR21uSFB5czM3ZDZBNkF2ZmlrUWtmOHF0S3Z4MzhLUzl2ZmxiWXlwUjdSODdHeHlOa29DUmNzTl9oTG5WbjlfbjJheEt3YmRBR2I?oc=5"
-        }
-      ],
-      "severity": "ALERT",
-      "soWhat": "no action needed",
-      "source": "News velocity",
-      "sourceCount": 4,
-      "title": "ukraine war",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQWDROSjJ4ZmFrSWp4VDNoeS1aRVlHb25QQXJvV0JhQWtrNjdJekNQWHEyQ0VhZUIyNHBpd3l2eEJSYmc4Zk45V2lhcWxwMzJBT09XYk1hRzZwa0FkT2ltdUl2STFtb1lBVHRtVFpDTGtYc2FVZWJqQXYyYlFSVzBhNzhpbE83NlByTGJHQjloNEZvZ9IBlwFBVV95cUxORzQwam00SzMzbWFrZHNQMlAxQU1sTmJ3ZEFQRU51V1B4MGxUb1FFeUo3R05ya0hQMFRVRjRGOTlVZDliV25wbGdnZzI1YlI5N2lpTnltOE5ZYUItZDViTlJvNkRCaGR0M2NxQ19zeEJrSmhVTGVKVGpoRFBNTlFlMFpxUzNKblhkYjlBek91OUJxbmZNdkRr?oc=5"
-    },
-    {
       "category": "us-gov",
       "confidence": "reported",
       "date": "2026-11-23",
@@ -133,22 +95,22 @@
       "look": "news",
       "name": "us gov",
       "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-23T05:59:21-06:00",
+      "published": "2026-11-23T07:48:06-06:00",
       "rise": "4 outlets this window",
       "samples": [
-        {
-          "date": "2026-11-20",
-          "published": "2026-11-20T10:52:23-06:00",
-          "source": "SCOTUSblog",
-          "text": "The next round of Supreme Court forecasts - SCOTUSblog",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQcEN1MjRvOExkMV8zS21aLVlNWHROUlA2VUhFQUY1akVXYUc1ZmwtMi0tdUwzajk5blhyeTU3SFRxVkRRYTFkbjBDZW5oWVQyUjBROEJCVnY2bjJIWExteG10anZ4TEVWdHBDSWFLc3VVeE5jWk9JZGtBUm5CY3N6MXhXMA?oc=5"
-        },
         {
           "date": "2026-11-20",
           "published": "2026-11-20T07:09:18-06:00",
           "source": "U.S. Department of War (.gov)",
           "text": "Department of War Publishes Eighth Release of Unidentified Anomalous Phenomena Files on WA - U.S. Department of War (.gov)",
           "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNYjhVNGpDYmwtTWFuOV9NMXJLb2xBVnJQNmtIWDNFQ0pMS0JWbUlRN2d6UW1obW94bERlX2xsa2R5ejFkSEk1LV9lUG02Y0VDNzAyZDMxc25JMG53TlNydnozQlZnZlg3WVp0OUktOHdtUGZrYUppRjJQQU9RYU9aSzVzbzhhOUpYaE1mQm9vMEM1MkhkdlNyVGZOeUJVWWJwUVRENXpJQ0U0WVdmZnQwZ19KcGVsSmpIOVRCTlZDbVd5LVU2UmVvTkFwazFQd3g3SHFj?oc=5"
+        },
+        {
+          "date": "2026-11-20",
+          "published": "2026-11-20T03:45:00-06:00",
+          "source": "Politico",
+          "text": "Inside Congress Live, Nov 20, 2026 - Live Updates - Politico",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1KamZfUTJ6ZktlcmFiWGVZdmhqME1sOWhRd0tfYTNIVVpIc1NXS3JKMDV3U1c3dUoxR0d3aUdqLVgtSzVxMzU4U1pqN0JUU0RwUFo4bHdxVXdMUQ?oc=5"
         },
         {
           "date": "2026-11-19",
@@ -163,7 +125,7 @@
       "source": "News velocity",
       "sourceCount": 4,
       "title": "us gov",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQcEN1MjRvOExkMV8zS21aLVlNWHROUlA2VUhFQUY1akVXYUc1ZmwtMi0tdUwzajk5blhyeTU3SFRxVkRRYTFkbjBDZW5oWVQyUjBROEJCVnY2bjJIWExteG10anZ4TEVWdHBDSWFLc3VVeE5jWk9JZGtBUm5CY3N6MXhXMA?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNYjhVNGpDYmwtTWFuOV9NMXJLb2xBVnJQNmtIWDNFQ0pMS0JWbUlRN2d6UW1obW94bERlX2xsa2R5ejFkSEk1LV9lUG02Y0VDNzAyZDMxc25JMG53TlNydnozQlZnZlg3WVp0OUktOHdtUGZrYUppRjJQQU9RYU9aSzVzbzhhOUpYaE1mQm9vMEM1MkhkdlNyVGZOeUJVWWJwUVRENXpJQ0U0WVdmZnQwZ19KcGVsSmpIOVRCTlZDbVd5LVU2UmVvTkFwazFQd3g3SHFj?oc=5"
     },
     {
       "category": "global",
@@ -175,22 +137,22 @@
       "look": "news",
       "name": "global",
       "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-23T05:59:21-06:00",
-      "rise": "4 outlets this window",
+      "published": "2026-11-23T07:48:06-06:00",
+      "rise": "5 outlets this window",
       "samples": [
+        {
+          "date": "2026-11-22",
+          "published": "2026-11-22T19:06:48-06:00",
+          "source": "Health Policy Watch",
+          "text": "COP31 Climate Summit That Could Not Say ‘Fossil Fuels’ Ends With No Deal - Health Policy Watch",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQNjktMkhZVjVPMTFfZ0lIX2pjbjFWS1NyR3dJZFRWYUcxVjRud0ZBa3AyQXVhU1ZIVzBjVzBBeU5fVERrUDlCWnlXbWtwX05CUUw1Z25aNEZLZjVXMi1WbWxxX2QwT1I1TXB0R3pfaTNFbWlVM0JDQ2NhZDhtZkFGRw?oc=5"
+        },
         {
           "date": "2026-11-21",
           "published": "2026-11-21T16:01:42-06:00",
           "source": "NPR",
           "text": "What did Xi Jinping get from the bear hug with Trump at the Shenzhen summit? - NPR",
           "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOQ3o5czdSSEZrYm9PNkFpdnZEZ0VCcHk2QXB6dUx4YXY0Q2gyWVBsU0FUUldBcFE0NGYzYkZZaWRwUjRFWDhfeFpYTlFwajZhTWVlRWltS1JKZTczdXFnX1A2TTRxTXJmM0JCeHFQZ1IyelJqdlZoV0RkdTFfMjVoLWJ3UjBvUTJlWkJSc3ZudmdiaUZiLVBZSWtQNkFySWFPTl9CRFFzYUZCN0FtRHNKNnlRT3ppT2R3bzV6eQ?oc=5"
-        },
-        {
-          "date": "2026-11-22",
-          "published": "2026-11-22T16:42:23-06:00",
-          "source": "Jurist.org",
-          "text": "UN arms conference falls short of treaty mandate on autonomous weapons due to US and Russia opposition - Jurist.org",
-          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOWko1UlNfa1V3NmhhVm1uTFZNUzdONlZzOXhuaFlOYXdxZjNRQ2QwV1A0R3JKb1paa0M1NlJOR0prQ3p1SzY0ZTZmYkcyRmNZUEpuQmNPTkJLLWZlQlJtaFNkc2dKOUR2N3lhMjNYNHk5OVFheTVyMDFBYk5keDIzbDQ0NWNJdnBvWFFuOS1meTBlajRNZGVGTFJ2MGpvMVUyZjctX2M2dlBiNjRWZnM4UXh4Q0k0MmVqRldjZzRtVlRWemxZRkVGSzMwd2VjOElYNFgtSS13?oc=5"
         },
         {
           "date": "2026-11-19",
@@ -203,9 +165,9 @@
       "severity": "ALERT",
       "soWhat": "no action needed",
       "source": "News velocity",
-      "sourceCount": 4,
+      "sourceCount": 5,
       "title": "global",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOQ3o5czdSSEZrYm9PNkFpdnZEZ0VCcHk2QXB6dUx4YXY0Q2gyWVBsU0FUUldBcFE0NGYzYkZZaWRwUjRFWDhfeFpYTlFwajZhTWVlRWltS1JKZTczdXFnX1A2TTRxTXJmM0JCeHFQZ1IyelJqdlZoV0RkdTFfMjVoLWJ3UjBvUTJlWkJSc3ZudmdiaUZiLVBZSWtQNkFySWFPTl9CRFFzYUZCN0FtRHNKNnlRT3ppT2R3bzV6eQ?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQNjktMkhZVjVPMTFfZ0lIX2pjbjFWS1NyR3dJZFRWYUcxVjRud0ZBa3AyQXVhU1ZIVzBjVzBBeU5fVERrUDlCWnlXbWtwX05CUUw1Z25aNEZLZjVXMi1WbWxxX2QwT1I1TXB0R3pfaTNFbWlVM0JDQ2NhZDhtZkFGRw?oc=5"
     }
   ],
   "mode": "trends",

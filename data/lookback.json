@@ -59,11 +59,18 @@
       "title": "CVE-2026-76466 Cisco Expressway Series Use of Hard-coded Credentials Vulnerability"
     },
     {
+      "note": "New since 2026-11-16 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "What we know about the latest Russian missile strikes on Ukraine - BBC"
+    },
+    {
       "note": "STANDBY → ALERT since 2026-11-16",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Deadly mass shooting in Poland investigated as terror act, prosecutor says - ABC News - Breaking News, Latest News and Videos"
+      "title": "COP31 Climate Summit That Could Not Say ‘Fossil Fuels’ Ends With No Deal - Health Policy Watch"
     },
     {
       "note": "New since 2026-11-16 · now ALERT",
@@ -78,13 +85,6 @@
       "relatedSources": [],
       "severity": "ALERT",
       "title": "UN arms conference falls short of treaty mandate on autonomous weapons due to US and Russia opposition - Jurist.org"
-    },
-    {
-      "note": "New since 2026-11-16 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "Internet services disrupted across Pakistan due to undersea cable fault - Daily Ausaf"
     }
   ],
   "fizzled": [
@@ -163,14 +163,14 @@
       "related": 0,
       "relatedSources": [],
       "severity": "STANDBY",
-      "title": "EU HR/VP Kaja Kallas Attended the G7 Foreign Affairs Ministers’ Meeting in Paris - EEAS"
+      "title": "Third U.S. aircraft carrier in Middle East as Trump keeps options open in Iran war - PBS"
     },
     {
       "note": "ALERT → STANDBY since 2026-11-16",
       "related": 0,
       "relatedSources": [],
       "severity": "STANDBY",
-      "title": "Can Netanyahu and Eisenkot form a ‘unity’ government in Israel? - Al Jazeera"
+      "title": "Washington Letter: Iran war looms over the upcoming Congress and potential 2028 contenders - OSV News"
     }
   ],
   "newSince": [
@@ -232,11 +232,18 @@
       "title": "CVE-2026-76466 Cisco Expressway Series Use of Hard-coded Credentials Vulnerability"
     },
     {
+      "note": "New since 2026-11-16 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "What we know about the latest Russian missile strikes on Ukraine - BBC"
+    },
+    {
       "note": "STANDBY → ALERT since 2026-11-16",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Deadly mass shooting in Poland investigated as terror act, prosecutor says - ABC News - Breaking News, Latest News and Videos"
+      "title": "COP31 Climate Summit That Could Not Say ‘Fossil Fuels’ Ends With No Deal - Health Policy Watch"
     },
     {
       "note": "New since 2026-11-16 · now ALERT",
@@ -251,13 +258,6 @@
       "relatedSources": [],
       "severity": "ALERT",
       "title": "UN arms conference falls short of treaty mandate on autonomous weapons due to US and Russia opposition - Jurist.org"
-    },
-    {
-      "note": "New since 2026-11-16 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "Internet services disrupted across Pakistan due to undersea cable fault - Daily Ausaf"
     }
   ],
   "note": "Compared with the stored board on 2026-11-16.",

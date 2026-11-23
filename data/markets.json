@@ -331,27 +331,6 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:97cbe145cc216cf8",
-          "kind": "headline",
-          "lane": "news",
-          "source": "TradingKey",
-          "sourceId": "headline",
-          "title": "Fed Chair Kevin Warsh: Three Scenarios Show How Superintelligence Impacts US Economy and Employment - TradingKey",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOdEZKbXlMdWFwZ2hsU2RPYm1mWEJqaHZjdTFMbnBkbHRrLXJ4bE80eFJ2aElSaHNhZE9Mbk1vWnlySFAwelpmZ1RxQ3R6ODROMFo0ZDQ2ekRSSkFKLXBJdlllNi0zSDhXbTZmakh4MmZOQW1NRnZzTHdMUVdhTmxrOVpGMjM3WWxvSGFzcGNySXBybWNXaFVROFRnUlpBQkoxZTNxaWk4YThwcjNKV2xZWGZGYWFvbFZBLVh5RVd3WWc4Ukl0TDdzSl9Fc3IwMXpyam53clNFQmg?oc=5",
-          "published": "2026-11-21T23:45:31-06:00",
-          "date": "2026-11-21",
-          "label": "Nov 21, 2026 11:45 PM CT",
-          "weekday": "Sat",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
           "id": "headline:0de3dde39de80f9e",
           "kind": "headline",
           "lane": "news",
@@ -868,6 +847,27 @@
           "published": "2026-11-20T15:16:36-06:00",
           "date": "2026-11-20",
           "label": "Nov 20, 2026 3:16 PM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:dace2dc470a6135c",
+          "kind": "headline",
+          "lane": "news",
+          "source": "CNBC",
+          "sourceId": "headline",
+          "title": "Peterson: The Fed's chairman sees an AI revolution coming. Now he has to figure out what it means - CNBC",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQNFNqUm9CTHJXWWFqem0xbVVJUXA0UjQ4MmprNk1YbWdKNl80dGR5ejdlV01lem03SkRQdi1YRVdPcmdld3FVSnl4VU1EaUNxOHFWQTZIY0ZNLWszR3E3cFpqMmVldk9KdnlMd09RVWZQWWRqZm56Y3luVk5CTTE2VDhFald6YWRHUkdzWVEyOUd4RTZRMnRv0gGcAUFVX3lxTFBzZE9SVGEzeVVBNTBWWjM4SmVtVFk0N1Z3R0hvLUxEcDJKTVF4OGFrVm1CNTJCSGlVdXNwMllWbzNqTWpSTEZMXzIxUUctMVJvWUVINXVjQWkyemtCY2JKZ1NJeGdXVThvc2QzNy10Zy1xX0o1SllaLTExM19ubzVKVC01eDJqSW1aWmZWQS1oRF9SQUNDMmNUeXJJaQ?oc=5",
+          "published": "2026-11-20T15:07:08-06:00",
+          "date": "2026-11-20",
+          "label": "Nov 20, 2026 3:07 PM CT",
           "weekday": "Fri",
           "timeKnown": true,
           "tags": [
@@ -1894,14 +1894,35 @@
             }
           ],
           "holidays": [],
-          "level": 166376.0,
-          "change": -1162.0,
-          "changePct": -0.69,
-          "asOf": "2026-11-19",
+          "level": 164557.48,
+          "change": -1818.52,
+          "changePct": -1.09,
+          "asOf": "2026-11-23",
           "source": "https://finance.yahoo.com/quote/%5EBVSP"
         }
       ],
       "headlines": [
+        {
+          "id": "headline:76423b795a2eeea3",
+          "kind": "headline",
+          "lane": "news",
+          "source": "ad-hoc-news.de",
+          "sourceId": "headline",
+          "title": "Ibovespa in Focus After Thursday's 0.69% Lower Close - ad-hoc-news.de",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQbU1NbEIzeFJtNkNGaDI3bnhDRzlJX2t2Y2VtX2Y3ZWxjVFE1M2xNLThSUml5UTZtbWxVR0pkRk5kcUctdXBEZ1BhX3NLdmRHYk05cGM0bFR2M29QbndRTXdNVnVrcG4wa2RWeWZicDZISGRHQ1RzRVNBMkxjRXZCYUI3OVlLX2tVZEs5bnJMSnpnckZpMnQwZDMzYWE0dEVhOWZSRHFaMDR4bks1LTRfQUdQTQ?oc=5",
+          "published": "2026-11-23T06:09:09-06:00",
+          "date": "2026-11-23",
+          "label": "Nov 23, 2026 6:09 AM CT",
+          "weekday": "Mon",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
         {
           "id": "headline:6d8efd9ad394d146",
           "kind": "headline",
@@ -2206,6 +2227,27 @@
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQYkphT1FIVlJmVHZPN0c2RnM0aGtGeVJWb0Rzd1o5YzFlRDBHLThIcDFyY3ZQdTVWVlFfZlFFa0dLN19qMEpXd2NIZGxhTlJGMWMzeWI1TWJXX2xMZ3BibjQ4UU95RUxlUExoUngwcGxGTWx5VHJkSDJPbm1TMHJrenpaUzlwX25hcUxiNXplQm9pdjExNUhmT2JhdlVpVTZlU0l1aHk5LUl4SFVTcWpaVmNYY29jWFNNODI4M0MwOVN0NXdVX2c?oc=5",
+          "published": "2026-11-13T02:00:00-06:00",
+          "date": "2026-11-13",
+          "label": "Nov 13, 2026 2:00 AM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:33277543e13a8e08",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Simply Wall St",
+          "sourceId": "headline",
+          "title": "MSCI (NYSE:MSCI) Stock Forecast & Analyst Predictions - Simply Wall St",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOd29zRkJBaVZ6QjVMRjJtWFZKSHFGdEFPS3BRT0MwYi1vUGFUUlhST0hDalR0UDktSFkyOFFiSjlXN3ZaZ2p5enEwNEtYODlrZTh5eDVaeE1qaG45Uy0yaXFJalFXWlBrU09EVjdYVlAzSlQyTVVLRlZQcEFBUU4zRkZB?oc=5",
           "published": "2026-11-13T02:00:00-06:00",
           "date": "2026-11-13",
           "label": "Nov 13, 2026 2:00 AM CT",
@@ -2699,48 +2741,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:418728c16dae8c6c",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Canal Solar",
-          "sourceId": "headline",
-          "title": "Brazilian stock market falls 17,5% after elections; energy company stocks drop by up to 33%. - Canal Solar",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNSklqb3pqRFRpdmhacWJWNFNBM25reTBMbi1maEJLLXRaOTRucUFRQjhhOHQ0R19EdllhYzBFZEtGUGJLc1ByZlZzV1EtRnNCU0tTTjNSTV9nRTlCd2NjZEtGdFY2bnlrbUlVNGtkOFVFNGlqUkhTUklDUS1zTjFxOVVVRDZtbUxHTzdqZA?oc=5",
-          "published": "2026-10-30T02:00:00-05:00",
-          "date": "2026-10-30",
-          "label": "Oct 30, 2026 2:00 AM CT",
-          "weekday": "Fri",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:f9dd1afca7825623",
-          "kind": "headline",
-          "lane": "news",
-          "source": "ad-hoc-news.de",
-          "sourceId": "headline",
-          "title": "Bovespa at 170,580 as fiscal concerns weigh on Brazil stocks - ad-hoc-news.de",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNMWRKbEQzMEQwcDFjSVdOQkliVjRvOXhyNWszN0FaMTNVTHItT0JZWnRDTU5acnltWTRKUm93dXRrZGxHYVFoMTE2X29DdmJDUElsSVV6QVA5WXdkV1U4VS1GSUNDdUNTWTBXTHJpTVlNRFFMVkFwNUhEd1d6UFY5WGFPMlllakVwTFFHRFBLTXpTY2pwM1p5N2lXOW5vaS1mQkY3bVczU091X2t0d2lxNW9NZmtGb0hfMHJuYkM3dw?oc=5",
-          "published": "2026-10-29T12:58:31-05:00",
-          "date": "2026-10-29",
-          "label": "Oct 29, 2026 12:58 PM CT",
-          "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ],
       "spikes": []
@@ -2761,9 +2761,9 @@
             }
           ],
           "holidays": [],
-          "level": 2363.59,
-          "change": 8.99,
-          "changePct": 0.38,
+          "level": 2377.92,
+          "change": 23.32,
+          "changePct": 0.99,
           "asOf": "2026-11-23",
           "source": "https://iss.moex.com/iss/engines/stock/markets/index/securities/IMOEX.json"
         }
@@ -3661,6 +3661,27 @@
       ],
       "headlines": [
         {
+          "id": "headline:d24e111e77262182",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Breakingviews",
+          "sourceId": "headline",
+          "title": "Asia AI rout puts governments in a bind - Breakingviews",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOdzRFd2R4cDdJaGlUSFNKdkVhVzlOV3dtZTNUaDdEU093ajlSUHZNdS1udjRJZGFTTlBOVWdfQ3BfNTNHRjEzNWo1NUN4TFVQZjJ6X2I4MmtiNzRudDN6MWpCdW5EeXNIbzRMdGZ2OVB0cEY5bjh4R2p5U1RWa2dFWkFMVXRKUkRwbXBjV1V4c05zdDAtS2NvbEM2N28wQ2c?oc=5",
+          "published": "2026-11-23T05:25:34-06:00",
+          "date": "2026-11-23",
+          "label": "Nov 23, 2026 5:25 AM CT",
+          "weekday": "Mon",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:39346de69dfd1254",
           "kind": "headline",
           "lane": "news",
@@ -3682,6 +3703,48 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:49ef91706ea391da",
+          "kind": "headline",
+          "lane": "news",
+          "source": "South China Morning Post",
+          "sourceId": "headline",
+          "title": "China’s shipbuilders turn to bankrupt yards for rapid expansion - South China Morning Post",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOUGFVTml3T2xoZS13YmwwUm9xSXROdU4wTXJzR3RVSE11cFBZdng0VGt5MnYwczJUSHB1a1RBX2djSVRoRUlvR05wSTJxSW9oRnIwNjNJTmYydWFXOEd6MHE3aDkwMi1zRmRwTzMxWlo0Q3ZKZ0l0RFBBZ2VneXBiMzBwYlRaUC1IS2FPREwzVUkyQ200LUVCV24yOF9zVXEzZ1U2ODUwZUwxV3BDR1c4ekp4SVc4cE5VRkk4aXBtUmdBVUR1UXFwekljNDlZb2dfUTdPQk1B0gHWAUFVX3lxTFBBa3prbEFIVHhIdmU2eGNjcDJMNy1YMjR6ZDVuYmQ0WXVkaHF2djZabmRTMWRpM1oxTzBmNDVuODZNYUtDMFQzbHBHUndTTnBvVGw0UmpfNjFkRWFwYl8ta2NWMVp2NHJFczk2TVB0Y2c0S2dqR1RROENPTjFPbmVxeTFnOURfNHc1aEFIcWU1V1JDUlBDQkpyaDJrdjBpaENkTkVod2ZNaElWWVd6QWtLNlh2LUlFLTZpQmZIUldrWTRoMEkyMlVQdXp2cjFudl9iVjNtNHc?oc=5",
+          "published": "2026-11-23T05:00:06-06:00",
+          "date": "2026-11-23",
+          "label": "Nov 23, 2026 5:00 AM CT",
+          "weekday": "Mon",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:91a9efeb1add5004",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Wisevoter",
+          "sourceId": "headline",
+          "title": "China Listed Firms Post 20% Profit Rise - Wisevoter",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOczFJUW95RW5zMGFvZ1MyRmdMeUtnVW9jTVoyb21McDBLVGZlbzBGdVlMQ2hWWjJqUTFQaUVyZjdhaFhPd19TY2VQZHUzX3JOQzluTXZpS0pxSWkzM2NUcWx3eVhEOW5hVm9sRmVKYjV6RmJYUmdmWTNfMVlzb05CYlk3cFdhU1FfVGc?oc=5",
+          "published": "2026-11-23T03:30:43-06:00",
+          "date": "2026-11-23",
+          "label": "Nov 23, 2026 3:30 AM CT",
+          "weekday": "Mon",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:bdd820162a3f7b4d",
           "kind": "headline",
           "lane": "news",
@@ -3694,6 +3757,27 @@
           "published": "2026-11-23T03:22:00-06:00",
           "date": "2026-11-23",
           "label": "Nov 23, 2026 3:22 AM CT",
+          "weekday": "Mon",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:e4969de36984a87a",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Seoul Economic Daily",
+          "sourceId": "headline",
+          "title": "China's Consumer Chill Deepens as Beijing, Shanghai Retail Sales Tumble - Seoul Economic Daily",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQNVVUVndmS1EyM0NNMW8zZzZiSk1oVmVMVkpXS3R1Zlh3WU1JTUZMOWRROXhycnJYekZsZW1sSlotR2g5T2ZrcHlKRWFvaVZob0Z1WmxNTmNXak1iWnVEU1hacXkzLUJGTWlJYnpvTEVxV0l0TU03OFJPU0hPNVVLZ0p2OXRuX0VGZHBWMTNyWVdGOUw1YkYta3dzdVY?oc=5",
+          "published": "2026-11-23T00:19:11-06:00",
+          "date": "2026-11-23",
+          "label": "Nov 23, 2026 12:19 AM CT",
           "weekday": "Mon",
           "timeKnown": true,
           "tags": [
@@ -4415,90 +4499,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:414d9bf0d6d26985",
-          "kind": "headline",
-          "lane": "news",
-          "source": "World Gold Council",
-          "sourceId": "headline",
-          "title": "China gold market update: Robust demand in October | Post by Ray Jia | Insights - World Gold Council",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOX01TX2R4cG4wLTNVNTBJcWI5UWdhTDdXRi12cVA5N2NoZHJFbkpmZ3d0Smx2WHdMVHozR2NTQUwwYkRLVjVpdVZrZ1NQQ0VlRzNTSm5GX2hCeGhBRlE5eVJCS2xEcTl2dC1GQXZJZlNUbHJxZ09BVkh1bWlUZ05PNndSN2dWLXZUQjNFLUZTRXFtYmktWnpnWl9n?oc=5",
-          "published": "2026-11-17T07:34:10-06:00",
-          "date": "2026-11-17",
-          "label": "Nov 17, 2026 7:34 AM CT",
-          "weekday": "Tue",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:49a573c414cb2002",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Share Talk",
-          "sourceId": "headline",
-          "title": "Copper prices fall to four-month low amid Shanghai market squeeze - Share Talk",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQekpJUEtPNnRrWWNHcHpfUEd3Ym5QeUxlRThkdnJpb2tUU085dEtjUGFMd3NYTmt5U1N6QUl3SFlhdTkzcDRObVVqQ1E1bUtHaGRKQ1BtZHlNdksycE85cWpkSGk3OFI2aktwQzR6WGxtc3ZpTUp0Q1QySXBuS25uLWw3Q2l6bGhuYzJsN0kwVUU0QU1pZ2NSYQ?oc=5",
-          "published": "2026-11-17T05:40:16-06:00",
-          "date": "2026-11-17",
-          "label": "Nov 17, 2026 5:40 AM CT",
-          "weekday": "Tue",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:a6e73ba7c83907f6",
-          "kind": "headline",
-          "lane": "news",
-          "source": "South China Morning Post",
-          "sourceId": "headline",
-          "title": "China stocks not yet at bottom as hurdles abound, fund firm says - South China Morning Post",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOZ1p5VWs3dVAzbkVCVzRBb3I1R2s5bXJRTTVNNkVHcWNiNjRHeDJXa00tSGE2MXh5ZExHN0NOT3JTbG16S1V5NkFxa3Zkd0tpNV9VbVU4NXpGLXNNOGdTZWRuQWc3YzczV0RBMFpzY3BJR2Rkb0JNWGpqR2JKTUwxeWVSWVFycmxmNUVKQUtWQVNHTUFSUTkwNTZ2LUpoQVlROEEwZzdicnpMdUZYUW0zM0hkREZMTlhkcGQ3WWg5bXFLdw?oc=5",
-          "published": "2026-11-16T22:00:07-06:00",
-          "date": "2026-11-16",
-          "label": "Nov 16, 2026 10:00 PM CT",
-          "weekday": "Mon",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:2b15ebc20f880668",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Global Times",
-          "sourceId": "headline",
-          "title": "More than meetings, businesses are expanding investment in Chinese market - Global Times",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5VUzBvVTlnTlBEUkFJZWd5aTdxLUZGS0wzUWFQQXd2SkpiRnBES1lyZlRwQm1Jem9pM0VQQkxJTnFDb1NCa2ZkNXRDdVJ1TDVSZUpxSF9qZ0JtOGwyRjEyU3V3?oc=5",
-          "published": "2026-11-16T17:57:00-06:00",
-          "date": "2026-11-16",
-          "label": "Nov 16, 2026 5:57 PM CT",
-          "weekday": "Mon",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ],
       "spikes": []
@@ -4519,9 +4519,9 @@
             }
           ],
           "holidays": [],
-          "level": 5998.5,
-          "change": 56.55,
-          "changePct": 0.95,
+          "level": 5991.74,
+          "change": 49.79,
+          "changePct": 0.84,
           "asOf": "2026-11-23",
           "source": "https://finance.yahoo.com/quote/%5ESTOXX50E"
         }
@@ -5399,6 +5399,48 @@
       ],
       "headlines": [
         {
+          "id": "headline:48d4f8d11d7faf38",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Armenpress",
+          "sourceId": "headline",
+          "title": "Asian Stocks down - 23/11/26 - Armenpress",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9pSDB5SURsYTFhNmFvMzVhckJWNGs1Wno1TERLT0FnVmM1VFp6MUZTa3ZHd2xaaDFSSnh6Sy1vR3ZMUGhrM2pmWGdkS1JHMVp2cGfSAVdBVV95cUxNT2ZFLWRXUDFYMzdNa0pZQUlqZG1GRFNuQ2RaWlE2N2l5bXhPeXdoZC11RmlqRFF1LV9hZUxzakR3Q2JnTmI4Zkw4b0M0TV90eDJBc0JmNDQ?oc=5",
+          "published": "2026-11-23T06:33:00-06:00",
+          "date": "2026-11-23",
+          "label": "Nov 23, 2026 6:33 AM CT",
+          "weekday": "Mon",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:717ab113b8d57ee2",
+          "kind": "headline",
+          "lane": "news",
+          "source": "CEO Economy",
+          "sourceId": "headline",
+          "title": "US stock futures jump about 2.6% after the S&P 500's worst week since April 2025 as Korea's Kospi falls 3.3% - CEO Economy",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9YOEZ2T21FaEFRd2JicU4yMFZDODJ0R241SmpMSGlBSWhiZzV5cEFfMFJnSEdhbElHeHhKMmk2bUhkcnF0a3FhQlpjdWlITE9obWlUQzB0QXl5eDBuaU9jbG14OFd1UDlkall3c0tsQzZ2TGtMWldJ?oc=5",
+          "published": "2026-11-23T06:15:00-06:00",
+          "date": "2026-11-23",
+          "label": "Nov 23, 2026 6:15 AM CT",
+          "weekday": "Mon",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:9259c8a1f5c32815",
           "kind": "headline",
           "lane": "news",
@@ -6188,48 +6230,6 @@
           "published": "2026-11-19T06:09:34-06:00",
           "date": "2026-11-19",
           "label": "Nov 19, 2026 6:09 AM CT",
-          "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:18851145595e9c8f",
-          "kind": "headline",
-          "lane": "news",
-          "source": "ATV Today",
-          "sourceId": "headline",
-          "title": "FTSE 100 flat as Anthropic debut boosts US tech stocks amid AI concerns - ATV Today",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB6SUdMa245dVlSR0QtNlk3elZYZnQ3U3BrdGs0ZlpwRTBCcUJYZXJNVVBZd1dsMVdCei10TlB5empDSG5MZFZJc2VQdzBrMlRFbzh0Z25hLVVzRE0?oc=5",
-          "published": "2026-11-19T02:50:14-06:00",
-          "date": "2026-11-19",
-          "label": "Nov 19, 2026 2:50 AM CT",
-          "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:f9cb14e879455c82",
-          "kind": "headline",
-          "lane": "news",
-          "source": "The Economic Times",
-          "sourceId": "headline",
-          "title": "Hong Kong stocks sink nearly 2% to four-month low as US-China trade tensions escalate - The Economic Times",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPSlgyaWlzN05GaGtVX1V4ZmxxZjdzQ2twakJLdUF4d2dfYTVTb2xYdEZ1MUhYd0RCZ3BIV1NZZkxuY28wX2s4NkdXTm1qNkFaeGl6WXJCb0lpTmxyOThuRzlRdXVfdmZJNmZwdlpDMUp1Z21CaHlFTzlOSzNHUnBWSEYzbzM2cTA1RF9ST25KekxJNXFOaWdZYXNXc2l2ZmdnV0ZRMllUa2RZUkt3NWRKS19oeDJTa3FfSTN1eUxHeWFTX3YzNWxhVmM4dHpRS1dvZFhmSEhySU1jOC1IRkJpNGNpejV4Z3l6Ymlsbnd5anZ3bmk3Q3A0V0tnS1loc03SAfgBQVVfeXFMTzFQNTI5WUJkZEhOVG9VX2tycVZiaWdWcklFMTY1Z2VpMWhSa2pKUHB2T3RHTkJLV0NDQ05VajV4bkgxZ3JueXZrOHUzejB2cktlT0VzQTByXzJmSFBaZUJvUkZ1c2g4YmVpQy1WZ2R1ckl5dHg0c0lCQkx6dFFXSEY3NGxUMVVTaXNSMmt3aGFBRlR2YU5NZjlqbWFwT2pvbkVFbXdlWURHWjN1aHd5NS1yenlkbDVJSWJULVIxcjZKZkxsSGdFaXhBZ2dQN1k2U20yVjNReWktQXVyNUtubVJvU3I3bnpyZ3otbnRaZTZaRV91VHdKNUs?oc=5",
-          "published": "2026-11-19T01:03:39-06:00",
-          "date": "2026-11-19",
-          "label": "Nov 19, 2026 1:03 AM CT",
           "weekday": "Thu",
           "timeKnown": true,
           "tags": [
@@ -7564,6 +7564,27 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:edb9cb07ae7927ac",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Livemint",
+          "sourceId": "headline",
+          "title": "Yes Bank Share Price Today 23 Nov 2026: Live NSE/BSE Rates, Technical Analysis and Expert Forecasts - Livemint",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOSHRZR2JVN0J2TG02ZGVqUE9oSFdoZU5PX3VVNXJZRS1QTlY0bGM0QU5Ib0dxU0s0WkZTNExVRkRJYmFwWFRIY01BTVl5MlhYeVVjMjdKbmdpdHBUX0FFcTZhc0JmQlpoOUR4WUFHUVd6Z0swOWxsUlA0QjBHc1RyMlpTLUdNMmE0N2hfS1EyYmZOdjA?oc=5",
+          "published": "2026-11-20T02:00:00-06:00",
+          "date": "2026-11-20",
+          "label": "Nov 20, 2026 2:00 AM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:b5df4108299adada",
           "kind": "headline",
           "lane": "news",
@@ -8017,27 +8038,6 @@
           "published": "2026-11-17T06:13:17-06:00",
           "date": "2026-11-17",
           "label": "Nov 17, 2026 6:13 AM CT",
-          "weekday": "Tue",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:aa2a95c177c96c24",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Business Today",
-          "sourceId": "headline",
-          "title": "'Good things going on in India...': Raghuram Rajan on India's strengths, Iran war and growth outlook - Business Today",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNVzFJYVcwUnUyMVZlUzlFNXdicEMtYkthS0ZZRUVFZXl6NnNVWUw2WnFDX0IxcWxab19NdTRWU2FWalc5UkNiSXY1M2l1N1dhZDUteFM3MlU2cHBqMzZDVUVYSGJDMEJNVzhrRmYtMDM3eVBJa19XbTU1a3hFbElmWEhNSUl0ODNLNmYycXpyaloxR25zWl9KdzJ4ZjF0YmJ4UzJYRmw2dGhCdE9kdjhyUHJsZEM1VURkaFlzTUhBSG94VDRBVnBaeDgzTXZFQkpVWEFZTW8taERTSkJuT3Q4M1ZjVHRSVHRYd21WSjMxOFhqZ9IB9wFBVV95cUxObjhNS0lyYTJyZjFYd1VZUExld05hcWNaTUFocjh1cEJKZ0hHbzB4MW15dDVGU2hQXzNDS1Z3clJtQUtnME55a3poeF9UbHBPWVZsdzdXSDBFQnloMDRFU3UxMExYMy1TcTAxcmRURDd2TU1yT0dXeF9iUW53VEhRdFFxdEZOYTIxWUxMdnI0RWFHRTlBYnUxY0dvakZLaDNjNE13dkYwVnppVHpReFFTRjdFMUwwZkstN3FyUFBiWXlZRkRuS1kzNmJrN3NHdFdDdWhuT0h4LWZKSjhOVzJZbjZzalNFU0Fob2lHcDJMeVBORUw0M0dj?oc=5",
-          "published": "2026-11-17T05:39:57-06:00",
-          "date": "2026-11-17",
-          "label": "Nov 17, 2026 5:39 AM CT",
           "weekday": "Tue",
           "timeKnown": true,
           "tags": [

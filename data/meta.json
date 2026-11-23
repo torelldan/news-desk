@@ -1,8 +1,8 @@
 {
   "baseline": false,
-  "brief": "The stock tape is the story: the S&P 500 is -3.7% today. What to do: no action unless you need cash this week. Open risk: ACTION M6.5 Vanuatu region. Global: What did Xi Jinping get from the bear hug with Trump at the Shenzhen summit? - NPR. Infrastructure: Internet services disrupted across Pakistan due to undersea cable fault - Daily Ausaf (unconfirmed). Rising topic: iran war hormuz (US daily list 1000+).",
-  "checkedAt": "2026-11-23T05:59:21-06:00",
-  "checkedLabel": "Nov 23, 2026 5:59 AM CT",
+  "brief": "The stock tape is the story: the S&P 500 is -3.7% today. What to do: no action unless you need cash this week. Open risk: ACTION M6.5 Vanuatu region. Current war coverage is on the board: What we know about the latest Russian missile strikes on Ukraine - BBC. Global: COP31 Climate Summit That Could Not Say ‘Fossil Fuels’ Ends With No Deal - Health Policy Watch. Infrastructure: Internet services disrupted across Pakistan due to undersea cable fault - Daily Ausaf (unconfirmed).",
+  "checkedAt": "2026-11-23T07:48:06-06:00",
+  "checkedLabel": "Nov 23, 2026 7:48 AM CT",
   "errors": [
     "AP World: curl: (22) The requested URL returned error: 403\n",
     "Reuters World: curl: (22) The requested URL returned error: 401\n",
@@ -16,20 +16,54 @@
         "field": "ai",
         "links": [
           {
-            "source": "OpenAI",
-            "title": "Combatting adversarial distillation - OpenAI",
-            "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1aNG5qZG9TaTJHTlRrTmJBUzNINzVJT1B2cXZZelBweXRiTXJ1ZGphVkM0MWxySk4ydDZEa2dfdnZReHlJYjlpcVBfaGlyeWJ1WmVJSUI1TzFzeDM3SERWZkd2d2VsNGVRRmhFYXBB?oc=5"
+            "source": "NPR",
+            "title": "Anthropic worker claims to have solved a Holy Grail of math problems with the help of AI - NPR",
+            "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNS3FPem5vX0lZRzBlVnN0UGR3UkFUSmZXek1yY3ZmOVlIX0lOVy1kR0dWcVZoenFHSGdRS1R6MHRtenpxX2ZOVnE3UkNmOWdteXpQZUhFTHFMSTZFcG16d0hPMm9SaVlMTDdLVVpHMDljMmg3S0ZyM1hmTXotZ2w3cGhMaGNjOWFILWV4UjQ2dGxreVRGUEVrQXdSWFFMWThHLUtwVEFrWHJVLVQyQmlWdFoyX2pRRElfRm1NTnNqTnlENmQtSXNvdjZFVQ?oc=5"
           },
           {
-            "source": "The New York Times",
-            "title": "California Sues OpenAI Over A.I. Safety Issues - The New York Times",
-            "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOem9ndlRta0lVanRIcmJ3Q0VBby14WkZHd3VRanhRNVNjYS1hZTRORHQ3WWhXYmozTDRnQ0o4MTJ4Y1ZNR0RuV0ZDX3Jqc3dHMnVOd1FpM0t3elhoQXdNSWlyS2NXdGZvUm5jMkJNQ3hUWnZieHZpeER5bkJTQVc3UWYxSi0?oc=5"
+            "source": "Reuters",
+            "title": "Anthropic's blockbuster debut tests Wall Street's faith in AI boom - Reuters",
+            "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPVmU0cXVPRUhwcDZpRkRudEI3bjNfMllQVEN3M09VWFNmQUJTck1UUE9mVERRbmFicElZMWxKVnd3UWpTNGY3R1JiZ0NnRnNBRHhLMkxkVC1vUWVOVzQ3NzcwMkoycTR0MC1LUnBfdUIyWl9OZE5xYnlVVmQ5bzdVZmdnVHFjUjh6dHZrbVVQdEFPaDNCUC1KSkZEMUlhcU9OeWFiWi10SGwxNTBpNE16aTd1MA?oc=5"
+          },
+          {
+            "source": "Anthropic",
+            "title": "Updating our coordinated vulnerability disclosure policy timelines - Anthropic",
+            "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPVmdyVmc1MjVDcWtuV0NsWG44R3ZzQU5rX1BkVHNkR1NlN2w4cFRselR2dTVLOS1EcjlRbU1idlVSMW11bGFWaFZjN2tydks4VkJUR1dlcXY3b2dZX1k5aE5NMUxFck5kQWZtcXlKNHF3bC1ZZXJTa0xjMDNIN1l3TlF6ZzlwMF8z?oc=5"
+          }
+        ],
+        "outlets": 3,
+        "state": "RISING",
+        "title": "Anthropic worker claims to have solved a Holy Grail of math problems with the help of AI - NPR",
+        "topic": "Anthropic"
+      },
+      {
+        "field": "ai",
+        "links": [
+          {
+            "source": "Google AI blog",
+            "title": "Introducing Tool Retrieval in the Gemini API",
+            "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/"
+          },
+          {
+            "source": "DeepMind",
+            "title": "Introducing Gemini 4 Neon",
+            "url": "https://deepmind.google/blog/introducing-gemini-4-neon/"
+          },
+          {
+            "source": "Google AI blog",
+            "title": "The Gemini app is now available on lower-memory Android devices.",
+            "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/"
+          },
+          {
+            "source": "Google AI blog",
+            "title": "Put Gemini to work for you",
+            "url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/"
           }
         ],
         "outlets": 2,
         "state": "EVENT",
-        "title": "Combatting adversarial distillation - OpenAI",
-        "topic": "OpenAI"
+        "title": "Introducing Tool Retrieval in the Gemini API",
+        "topic": "Gemini"
       }
     ],
     "markets": [
@@ -304,7 +338,7 @@
   },
   "today": "2026-11-23",
   "trends": {
-    "google": "Google Trends US daily list answered (10 topics). Kept the ones that match a war, government, or threat topic.",
+    "google": "Google Trends US daily list answered (10 topics). Kept the ones that match a war, government, or threat topic. None of today's search trends matched.",
     "mode": "trends",
     "note": "X trends by WOEID (US 23424977 and worldwide 1). Kept only when the name matches a threat or preparedness theme. The endpoint answered and none of the names matched."
   },
