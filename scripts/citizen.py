@@ -123,24 +123,31 @@ def match_theme(text: str) -> str:
 _TERM_STOP = {
     "the", "news", "update", "updates", "and", "for", "with", "from", "that", "this",
     "after", "before", "over", "into", "about", "says", "said", "new", "latest",
-    "breaking", "today", "world", "report", "reports", "sources", "officials",
+    "breaking", "today", "world", "global", "report", "reports", "sources", "officials",
     "region", "near", "south", "north", "east", "west", "city", "county", "attack",
     "attacks", "strike", "strikes", "quake", "earthquake", "cve", "linked", "found",
     "during", "series", "data", "using", "path", "channel", "logic", "query",
     "software", "medical", "imaging", "root", "access", "agents", "hackers",
     "attackers", "zero", "expressway", "store", "systems", "department", "natural",
     "resources", "investigating", "apparent", "attempt", "container", "restores",
-            "village", "alert", "green", "orange", "internet", "services", "disrupted",
-            "across", "undersea", "cable", "fault", "daily", "island", "weather",
-            "statement", "special", "vulnerability", "authentication", "bypass",
-            "exploited", "gained", "untrusted", "alternate", "improper", "elements",
-            "hard", "credentials", "chinese", "manager", "encoding", "escaping",
-            "output", "unprotected", "discloses", "critical", "mail", "assure",
-            "roller", "deserialization", "what", "know", "there", "will", "worse",
-            "reasons", "fires", "facility", "missile", "neighbors", "seeping",
-            "condemns", "spilling", "terrorism", "were", "been", "have", "rejects",
-            "excessive", "measures", "minister", "storm", "breach", "investigation",
-            "videos", "video",
+    "village", "alert", "green", "orange", "internet", "services", "disrupted",
+    "across", "undersea", "cable", "fault", "daily", "island", "weather",
+    "statement", "special", "vulnerability", "authentication", "bypass",
+    "exploited", "gained", "untrusted", "alternate", "improper", "elements",
+    "hard", "credentials", "chinese", "manager", "encoding", "escaping",
+    "output", "unprotected", "discloses", "critical", "mail", "assure",
+    "roller", "deserialization", "what", "know", "there", "will", "worse",
+    "reasons", "fires", "facility", "missile", "neighbors", "seeping",
+    "condemns", "spilling", "terrorism", "were", "been", "have", "rejects",
+    "excessive", "measures", "minister", "storm", "breach", "investigation",
+    "videos", "video", "national", "security", "state", "states", "government",
+    "people", "public", "center", "information", "crime", "office", "group",
+    "international", "second", "facing", "involving", "reportedly", "war",
+    "house", "white", "project", "label", "traversal", "server", "side",
+    "request", "forgery", "weekly", "recap", "whole", "shell", "trouble",
+    "patches", "flaw", "disclosed", "ridge", "foreign", "ministry", "austrian",
+    "series", "credentials", "coded", "assure", "contact", "details", "website",
+    "diplomats", "access", "hit", "neutralization", "cyberattack", "river",
 }
 
 
@@ -166,22 +173,23 @@ def board_terms(threats: list | None, strikes: list | None = None, spikes: dict 
     seen = set()
 
     def add(token: str, label: str) -> None:
-        token = _fold_term(token)
-        token = re.sub(r"[^a-z0-9]+", "", token)
+        raw = (token or "").strip()
+        token = re.sub(r"[^a-z0-9]+", "", _fold_term(raw))
         if not _term_ok(token) or token in seen or len(found) >= cap:
             return
         seen.add(token)
-        found.append({"term": token, "label": (label or token)[:90]})
+        display = raw if raw.isupper() else raw[:1].upper() + raw[1:]
+        found.append({"term": token, "display": display, "label": (label or display)[:90]})
 
     def words(text: str, label: str) -> None:
-        for word in re.findall(r"[A-Za-z][A-Za-z'-]{3,}", text or ""):
+        for word in re.findall(r"\b[A-Z][A-Za-z'-]{3,}\b", text or ""):
             add(word, label)
 
     def orgs(text: str, label: str) -> None:
         raw = text or ""
         for acro in re.findall(r"\b[A-Z]{3,5}\b", raw):
             add(acro, label)
-        for word in re.findall(r"\b[A-Z][a-z]{3,12}\b", raw):
+        for word in re.findall(r"\b[A-Z][A-Za-z0-9]{2,14}\b", raw):
             add(word, label)
 
     cyber = []
@@ -218,13 +226,105 @@ def board_terms(threats: list | None, strikes: list | None = None, spikes: dict 
     return found
 
 
+def _significant_tokens(name: str) -> list[str]:
+    folded = re.sub(r"[^a-z0-9]+", " ", _fold_term(name))
+    return [token for token in folded.split() if _term_ok(token)]
+
+
 def match_board_term(name: str, terms: list | None) -> str:
-    folded = " " + re.sub(r"[^a-z0-9]+", " ", _fold_term(name)) + " "
-    for term in terms or []:
-        token = term.get("term") or ""
-        if token and re.search(rf"\b{re.escape(token)}\b", folded):
-            return term.get("label") or token
-    return ""
+    """Match a trend name to a distinctive board term.
+
+    A single word matches only when that word is itself a board term.
+    A multi-word name matches when the whole name is a board term, or when
+    every significant word is a board term. Generic words never count.
+    The result is the term that matched, not the headline it came from.
+    """
+    by_term = {row.get("term"): row for row in terms or [] if row.get("term")}
+    collapsed = re.sub(r"[^a-z0-9]+", "", _fold_term(name))
+    whole = by_term.get(collapsed) if _term_ok(collapsed) else None
+    if whole:
+        return whole.get("display") or whole.get("term") or ""
+    tokens = _significant_tokens(name)
+    if not tokens:
+        return ""
+    hits = []
+    for token in tokens:
+        hit = by_term.get(token)
+        if not hit:
+            return ""
+        hits.append(hit.get("display") or hit.get("term") or token)
+    return ", ".join(hits)
+
+
+def x_trends_note(matched: int, total: int) -> str:
+    """Count sentence for the X list. 'None matched' only when the count is zero."""
+    prefix = "X trends by WOEID (US 23424977 and worldwide 1)."
+    matched = max(0, int(matched or 0))
+    total = max(matched, int(total or 0))
+    if matched <= 0:
+        return prefix + " The endpoint answered and none of the names matched."
+    return prefix + f" {matched} of {total} X trends matched today's board."
+
+
+def google_trends_note(matched: int, total: int) -> str:
+    matched = max(0, int(matched or 0))
+    total = max(matched, int(total or 0))
+    prefix = f"Google Trends US daily list answered ({total} topics)."
+    if matched <= 0:
+        return prefix + " None of today's search trends matched."
+    return prefix + f" {matched} of {total} Google trends matched today's board."
+
+
+def _raw_name_total(doc: dict | None) -> int:
+    seen = set()
+    for row in (doc or {}).get("raw") or []:
+        name = (row.get("trend_name") or row.get("name") or "").strip().lower()
+        if name:
+            seen.add(name)
+    return len(seen)
+
+
+def finish_trend_notes(doc: dict) -> dict:
+    """Rewrite note and googleNote from the items actually kept."""
+    items = doc.get("items") or []
+    if doc.get("mode") == "trends" and doc.get("status") != "offline":
+        matched = sum(1 for item in items if item.get("source") == "X trends")
+        doc["note"] = x_trends_note(matched, _raw_name_total(doc))
+    if (doc.get("sources") or {}).get("google") == "offline":
+        return doc
+    seen = doc.get("googleSeen")
+    if seen is None:
+        found = re.search(r"\((\d+) topics\)", doc.get("googleNote") or "")
+        seen = int(found.group(1)) if found else None
+    if seen is not None:
+        google_hits = sum(1 for item in items if item.get("source") == "Google Trends")
+        doc["googleSeen"] = int(seen)
+        doc["googleNote"] = google_trends_note(google_hits, int(seen))
+    return doc
+
+
+def reapply_x_trends(doc: dict, terms: list | None) -> dict:
+    """Rebuild X rows from the saved names and refresh the count notes."""
+    kept = []
+    for item in doc.get("items") or []:
+        if item.get("source") == "X trends" or (item.get("lane") == "x" and item.get("source") != "X recent search"):
+            continue
+        board = match_board_term(item.get("name") or "", terms)
+        if board:
+            item = dict(item)
+            item["matched"] = f"matches: {board}"
+        kept.append(item)
+    have = {(item.get("name") or "").lower() for item in kept}
+    for row in doc.get("raw") or []:
+        for item in filter_trends([row], row.get("place") or "US", terms):
+            key = (item.get("name") or "").lower()
+            if key in have:
+                continue
+            have.add(key)
+            kept.append(item)
+    doc["items"] = kept[:12]
+    doc["dynamicTermCount"] = len(terms or [])
+    return finish_trend_notes(doc)
 
 
 def trend_is_offline(doc: dict | None) -> bool:
@@ -776,12 +876,14 @@ def filter_trends(raw: list[dict], place: str, terms: list | None = None) -> lis
     for row in raw or []:
         name = (row.get("trend_name") or row.get("name") or "").strip()
         theme = match_theme(name)
-        matched = f"matches: {theme.replace('-', ' ')}" if theme else ""
-        if not theme:
-            label = match_board_term(name, terms)
-            if label:
-                theme = "board"
-                matched = f"matches: {label}"
+        board = match_board_term(name, terms)
+        if board:
+            matched = f"matches: {board}"
+            theme = theme or "board"
+        elif theme:
+            matched = f"matches: {theme.replace('-', ' ')}"
+        else:
+            matched = ""
         if not name or not theme:
             continue
         key = name.lower()
@@ -924,10 +1026,7 @@ def fetch_google_trends(now: datetime) -> dict:
         })
         if len(items) >= 6:
             break
-    note = f"Google Trends US daily list answered ({seen} topics). Kept the ones that match a war, government, or threat topic."
-    if not items:
-        note += " None of today's search trends matched."
-    return {"ok": True, "note": note, "items": items}
+    return {"ok": True, "note": google_trends_note(len(items), seen), "seen": seen, "items": items}
 
 
 def news_velocity(threats: list[dict], when: datetime | None = None) -> list[dict]:
@@ -1046,6 +1145,7 @@ def keep_rising(trends: dict, history: dict, today: str, google_items: list, vel
         "sources": dict((trends or {}).get("sources") or {}),
         "dynamicTermCount": (trends or {}).get("dynamicTermCount") or 0,
         "raw": list((trends or {}).get("raw") or []),
+        "googleSeen": (trends or {}).get("googleSeen"),
     }
     if (trends or {}).get("googleNote"):
         out["googleNote"] = trends.get("googleNote")

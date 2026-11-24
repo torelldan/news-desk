@@ -1,6 +1,6 @@
 {
   "dynamicTermCount": 40,
-  "googleNote": "Google Trends US daily list answered (10 topics). Kept the ones that match a war, government, or threat topic. None of today's search trends matched.",
+  "googleNote": "Google Trends US daily list answered (10 topics). None of today's search trends matched.",
   "items": [
     {
       "category": "ukraine-war",
@@ -10,7 +10,7 @@
       "kind": "trend",
       "lane": "news",
       "look": "news",
-      "matched": "matches: Ukraine strike",
+      "matched": "matches: Ukraine",
       "name": "ukraine war",
       "note": "The same topic showed up across several outlets.",
       "published": "2026-11-23T15:13:01-06:00",
@@ -170,26 +170,10 @@
       "sourceCount": 3,
       "title": "global",
       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQc1FWT0FKN3NFS3JoRG0zYnZvTkpjNEZqR240QzdMQVJDM1lmUklKeHpLeUl4bmFNUnlSa29kaU13WmhBdkNmVkt1WVZDUkdycVl3elQ1c1BwelFsLWVJeDhNNVBORWZBLWlhd0VqQ1QzLXFaNEZjRHEydWY1MGJYcDlYeWc5RjE4UEVEekJDYURuTWJfbk1WMGo1dWR3Zl84TUs1NEFJemZPZHVOVEE?oc=5"
-    },
-    {
-      "category": "board",
-      "id": "trend:a9683bd516070ccd",
-      "kind": "trend",
-      "lane": "x",
-      "matched": "matches: FBI reportedly facing second data breach involving National  cyber",
-      "name": "National Security",
-      "note": "US trend · matches: FBI reportedly facing second data breach involving National  cyber",
-      "place": "US",
-      "samples": [],
-      "severity": "STANDBY",
-      "source": "X trends",
-      "title": "National Security",
-      "url": "https://x.com/search?q=National%20Security&src=typed_query&f=live",
-      "volume": 53602
     }
   ],
   "mode": "trends",
-  "note": "X trends by WOEID (US 23424977 and worldwide 1). Kept when the name matches a threat theme or a name on today's board. The endpoint answered and none of the names matched.",
+  "note": "X trends by WOEID (US 23424977 and worldwide 1). The endpoint answered and none of the names matched.",
   "raw": [
     {
       "place": "US",
@@ -596,5 +580,6 @@
     "google": "ok",
     "x": "ok"
   },
-  "status": "ok"
+  "status": "ok",
+  "googleSeen": 10
 }
