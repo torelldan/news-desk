@@ -1,5 +1,14 @@
 {
-  "changes": [],
+  "changes": [
+    {
+      "change": "updated",
+      "date": "2026-11-24",
+      "note": "1.6x usual volume",
+      "section": "Rising situations",
+      "severity": "ALERT",
+      "title": "israel is RISING"
+    }
+  ],
   "gaps": [],
   "items": [
     {
@@ -91,10 +100,96 @@
     {
       "links": [
         {
-          "source": "CNBC",
-          "title": "Iran says army targets U.S. drone and missile sites in Kuwait as Gulf attacks mount - CNBC",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE0zaVp2b1pwY2FLSDN0b0VfZGRjQk1LSjJuSVE5QjduTXU4c2REYS1YeGJDM05lYkNtTGM3LVkwRDVSaFNLWEVNR2VwUnFUUTh5eUJFYnI4T2QzMzZYRjlZV1kxdWJBUW5FODk0R0ZsaG_SAXZBVV95cUxQN3lsMm1BeEpJNlRTYWloUEYwT1hiWFp5T0x4SXRUc2lkeER0VzFLUDFBS2YzN3IzMEFabHVJaTNmWHBSWTdqOXdDZXFzLWptSHA3bVlsTV9fU2xtNXB6a0lHd0xNa2JTVnJVNDV6eTh2c1kyUWJ3?oc=5"
+          "source": "Al Jazeera",
+          "title": "Why Eisenkot is negotiating with Netanyahu - Al Jazeera",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOZVU4TTNxQXdnX3cyZWdSTnFRUy1Dd21kSlNFRzEzYTUwU0NZcmpWYjVtS1dpc1VRNHBGdnNBaWhtZkkxLUdVdVVKdXVycTlneUhlWnB5WVlqamlpbUtZLTAxa05pdXJvZEtQeE5pN0QwbVJvSjFiclBpNE5wX2ZYc2NjT1dFQjV1WjIxYmRzODlZZ9IBlwFBVV95cUxQc1JKYmdfVXMya0JVOS1DME1abkdSTThFYXRwMGdCWjVDRDB5dU80b3NmRUpIcjN5dnlqVEtpSHVJZHJuWDNuQ2xsRXM2OGp1ZVRtY25ibE1kTm0zVVlKNVBkSkc4Mm5qY0hwMVVpYW1DTGhpRGdjNWhTdFVCUGRvR3ZYeC1YTWp2REc4UFRuX2ZMUGRUM2dB?oc=5"
         },
+        {
+          "source": "CSIS | Center for Strategic and International Studies",
+          "title": "Israel’s Elections and the Future of the Middle East - CSIS | Center for Strategic and International Studies",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBLcl9PN01Nc25wUDluZGJEd1FOckFRdlJSSk40Q2hlZGFjdFU2YklKUThSSlpPUUVVdDR0LTBBbU5lSTFPMWpYczZ4d2RELTFHdUFDZlcyem9mcXRfcHprWWhXcC1FUk13WUpLakpvWE9OS3F6YU1XeklB?oc=5"
+        },
+        {
+          "source": "DW.com",
+          "title": "Israel's Eisenkot condemns 'Jewish terrorism' in West Bank - DW.com",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOWmpGVkl4NHhEWktXbmlGbjdxSG5qU3p3T1hZaUd4VF9kaGk3SllxQlozZGp0amhickdyNkRNclZZandvSFdkTEczZmJ1bFV4RVZoczM4RWVUNHg4NThWc0VIVEhqRVRneEhXaF8xOFZCWTUxT3cwdF9Ed1QwaERKVncxdmE2Vmpo0gGIAUFVX3lxTFBEXzc1aXZGaVhld2w0aXB4S0ZtYjIxLTdpeEtzVjFIWVY3Z09rYmxTUlpacGVFOWw2Q0NvSlNQeDNneHliR3BEeGlLcTFoWkNmcUoxZEVqMDBqQ3VSZGpOZlo4QnQxUDg4dFR5Z09YN3JDUS1CV21LVC1MWVZPcU1nZThnVkt5aGU?oc=5"
+        }
+      ],
+      "reasons": "1.6x usual volume",
+      "score": 1,
+      "sourceCount": 3,
+      "spark": [
+        {
+          "price": 1
+        },
+        {
+          "price": 1
+        },
+        {
+          "price": 1
+        },
+        {
+          "price": 1
+        },
+        {
+          "price": 1
+        },
+        {
+          "price": 1
+        },
+        {
+          "price": 2
+        },
+        {
+          "price": 1
+        },
+        {
+          "price": 1
+        },
+        {
+          "price": 2
+        },
+        {
+          "price": 1
+        },
+        {
+          "price": 1
+        },
+        {
+          "price": 3
+        },
+        {
+          "price": 3
+        }
+      ],
+      "state": "RISING",
+      "topic": "israel"
+    },
+    {
+      "links": [
+        {
+          "source": "Al Jazeera",
+          "title": "At least 15 killed in Ukraine’s Kyiv region as Russia intensifies attacks - Al Jazeera",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQZGl2dEc3N1IyaHBuWF9vTjZPV2s4YnltNWNweldlZlR6RzJBUW5QR1gzTGhBX0dSR0FraU5mMzY2OGJxYnFmV1RyVFhhUW0yM1NKQXJ0aDNLcVk2STJQNWl0Q1Y0N25DMTBRY0N2XzIxd25WQ0dNUnIxYjRTeVRlVXJPTG82Y3VKYzZuX1hTZ29vaW45QkRLd2tnbHYyTm_SAaQBQVVfeXFMTTNMN2dTbWFtZERHLUQyNnloR1VrdDdOU2d4WHNQS21BalRPNTdXZmhOelNTZHFtYTJLUmludDQ3UlFvOHYzMV9HNUIzaTFkRENHWDRXZGlZVmRXT1l1Vy1rRjVoWUZSQnEtOVE2TVRsRE1WQTBvV2JiX3A0ci10d0NYOHVvYXlmcFk0NXFPcDRMWWFTUGNTbE5HajZUdUMyc0d3eFY?oc=5"
+        },
+        {
+          "source": "Pew Research Center",
+          "title": "Two-Thirds of Americans Disapprove of Trump’s Handling of the Russia-Ukraine War - Pew Research Center",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOOG1hX1hlajBaV2FvOXpqN0V4ZlI5anNUbGdmOXhWUmNIcy1aUy1uV0dJY1lOUkxKcnFGLTFIYV9YVTA2d3VtMDB3d2xnd0Q4YUEtYlRlVWVPbWZ4elZjb0N4enFpS3BEdTJPLTJseEpINFRVSldjdkFYQ2tkMUFGQVJCMzdMSE56OGhqTEM4ckNON21ZWlg3cVg3VTJIT2Y2cjlhMXc1MGFKVjBKLVR0WDEyLWhyd3dKVGNwNURKb21KbDZ2UzFkU2lxbw?oc=5"
+        },
+        {
+          "source": "Reuters",
+          "title": "France is not 'co-belligerent' in Ukraine, French minister says - Reuters",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQTWFlZkhscEw5dks5TlJXenZqOWNDa3d1SUlkWFMwd2dMSUVHakg3b082Z1piQXNUbmttN1pFTkdKT0JiOWowQ0VPLV9MTTN2UnloOVFYOTI3dTg4eGFmSjNSX0pubHk1R05rLS01R241NUd3Qjh4UkUwQUF4QTFwbWJIRDhPTWdmaTB1ZkdLanV3eDY4Rm1xMEMzTWlxbXJh?oc=5"
+        }
+      ],
+      "reasons": "4 outlets this window",
+      "score": 4,
+      "state": "RISING",
+      "topic": "ukraine war"
+    },
+    {
+      "links": [
         {
           "source": "PBS",
           "title": "Iran fires at U.S. facility in Bahrain as Tehran resumes strikes on Arab neighbors - PBS",
@@ -104,35 +199,17 @@
           "source": "Institute for the Study of War",
           "title": "Iran Update, November 23, 2026 - Institute for the Study of War",
           "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQd0VKNG41X05zSV9uTTEwNWJKVkJOMHU1WXpCa2kyN3lNcnBMVjVOREdKM1ZRMFZlYjExWlZwQzBDX1AxREZSTTVmaVhJYVBIeFFrMTFMRV9kUENna3dLcGR4S3FDOGlHNkdubVl0S0poSl9GYl8ySVJpejBKNWdsX1hPNUJUZw?oc=5"
+        },
+        {
+          "source": "The American Prospect",
+          "title": "Will Congress End the Iran War? - The American Prospect",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1BYy1SVndwYmpkRy13YnEtdkFPSHBjSE1pXzh6TXdzMHJ0UlhucUVZdDNHa3ZieGFLeC1hSjMtRG1FeUdwQy1SN2EtX1ljTEJydThMZjFXVVRuTExodnVBNC1Ic0d3SlUyLWhSR1BoMXo?oc=5"
         }
       ],
       "reasons": "4 outlets this window",
       "score": 4,
       "state": "RISING",
       "topic": "iran war"
-    },
-    {
-      "links": [
-        {
-          "source": "NPR",
-          "title": "NATO to meet after Russia-Ukraine war once again inches onto European territory - NPR",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNR05nOTY4VjA4TXR0SF9VSVphYkR3RmF2Qmxoajd6SW1JY2xtSUZURVhmZGRrSk4xYnFmZVN3Z2xMZFltUmY2OHZZUzBSVW5JZHZDak1nMXJ1S09Ha21nQzJFUVMtalo1NXU2Tlc3YXhqVDNOcFJYMk5pNEIzbE02X1hfTXlER2JVMDJMYjBEQUVZdVVWei01ZE94Y3h0Tzd5Zk9faUtuUkRhWHRaY01NYUJ3MGpMMU56Z2JLWDN6bFdGZw?oc=5"
-        },
-        {
-          "source": "Al Jazeera",
-          "title": "Ukraine urges US to release Patriot missiles as Russian strikes kill 15 - Al Jazeera",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQWDROSjJ4ZmFrSWp4VDNoeS1aRVlHb25QQXJvV0JhQWtrNjdJekNQWHEyQ0VhZUIyNHBpd3l2eEJSYmc4Zk45V2lhcWxwMzJBT09XYk1hRzZwa0FkT2ltdUl2STFtb1lBVHRtVFpDTGtYc2FVZWJqQXYyYlFSVzBhNzhpbE83NlByTGJHQjloNEZvZ9IBlwFBVV95cUxORzQwam00SzMzbWFrZHNQMlAxQU1sTmJ3ZEFQRU51V1B4MGxUb1FFeUo3R05ya0hQMFRVRjRGOTlVZDliV25wbGdnZzI1YlI5N2lpTnltOE5ZYUItZDViTlJvNkRCaGR0M2NxQ19zeEJrSmhVTGVKVGpoRFBNTlFlMFpxUzNKblhkYjlBek91OUJxbmZNdkRr?oc=5"
-        },
-        {
-          "source": "Pew Research Center",
-          "title": "Two-Thirds of Americans Disapprove of Trump’s Handling of the Russia-Ukraine War - Pew Research Center",
-          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOOG1hX1hlajBaV2FvOXpqN0V4ZlI5anNUbGdmOXhWUmNIcy1aUy1uV0dJY1lOUkxKcnFGLTFIYV9YVTA2d3VtMDB3d2xnd0Q4YUEtYlRlVWVPbWZ4elZjb0N4enFpS3BEdTJPLTJseEpINFRVSldjdkFYQ2tkMUFGQVJCMzdMSE56OGhqTEM4ckNON21ZWlg3cVg3VTJIT2Y2cjlhMXc1MGFKVjBKLVR0WDEyLWhyd3dKVGNwNURKb21KbDZ2UzFkU2lxbw?oc=5"
-        }
-      ],
-      "reasons": "4 outlets this window",
-      "score": 4,
-      "state": "RISING",
-      "topic": "ukraine war"
     },
     {
       "links": [
@@ -147,9 +224,9 @@
           "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQcnA0Z3loUWtHNHJUR1o1a3N0MGk3ZG5QZ25BSDd3bEgyaGc0ZllZMlp1SDRBRjVxNkU0LVRJQUtLY3NrUXpLaHlvaWc2YlozNVI4R09KRGlfWjg4QWlMc0Y2b1NidE05bVdGT01vVHlIVG1xN0I5ZzBadDdXM1ZkUl85TXBRd1R6eV9uUmhyNGx3dmliWl9rQ2hBQjIyUlJfd05ObmdpMFJOeUVUeFE?oc=5"
         },
         {
-          "source": "U.S. Department of War (.gov)",
-          "title": "Department of War Publishes Eighth Release of Unidentified Anomalous Phenomena Files on WA - U.S. Department of War (.gov)",
-          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNYjhVNGpDYmwtTWFuOV9NMXJLb2xBVnJQNmtIWDNFQ0pMS0JWbUlRN2d6UW1obW94bERlX2xsa2R5ejFkSEk1LV9lUG02Y0VDNzAyZDMxc25JMG53TlNydnozQlZnZlg3WVp0OUktOHdtUGZrYUppRjJQQU9RYU9aSzVzbzhhOUpYaE1mQm9vMEM1MkhkdlNyVGZOeUJVWWJwUVRENXpJQ0U0WVdmZnQwZ19KcGVsSmpIOVRCTlZDbVd5LVU2UmVvTkFwazFQd3g3SHFj?oc=5"
+          "source": "PBS",
+          "title": "Mississippi saw a spike in 'inactive' voters for the midterms. Democratic lawmakers want answers - PBS",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOYU5LRHplTi1UVm9ZdmQ5cnhwN1RMNzUzOExhQjMyRFo3MF9PQ21wSzZMRTY3Sno2b25Db3hDY184TUJDWHNVLVhoNHJjMUlfM2pGZ0hjWHUyR0hJeUUyX3p3SDNFNXZDVGNDclRUSEFZRlJtazA2SUVGNktPMVF4Q0gybWdUVTZQdWNaVVVMRVFLcmV4czMwNVhQS2N0NDFhNGk1c1JhS255d29kYW1NOXUwcjFHRDVUNG5HcWlWT2JsV2xEc0o5MWRWONIB0AFBVV95cUxNM1VWWDAyeC1WLTlBbmJROGdoTkVUd0FsSHl6N0RGTlJMZlMzUzBYYmlhcUk3UjQ4T055Q0FOMExLTHBNTzBDTWVNVUw4U3V1YnZSMWlEeVVadGlzSVZfRlprQ3QwdFd2YTNueEkzUWVXUy1rNnNscXJDSnJ6MU5fVVZhQXdNRFFJSXJwMU8xV3NkbnE2MFBzLUh4aURHeVFDSUJTUldLeEJGM2w4ODNvSXdwNDZ2YW10eWhUcEdnV3BpbTFqQWJHSHdUX2pjS2tE?oc=5"
         }
       ],
       "reasons": "4 outlets this window",
@@ -160,23 +237,23 @@
     {
       "links": [
         {
-          "source": "Reuters",
-          "title": "Japan accelerates ICC funding as US sanctions threaten court - Reuters",
-          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQeVlqQzhUUnlVXy11enMtemVoQURZSDZ4cFZ4czFBM091NW9GWDZVUmE2dGg2V2xCeHhzS2JINGI3RDdJdGw5N0t5bThLWDNGTk5DUVk0bnZJeEZSYWZTRElIbTQ5dzVMb2NySUhHaVZEZTNPZks2eldrbmt4ckx4YWpXR3UzWnE4bWhmS3BRdE5SZDZlam5vbC1VQndoWnQtcjgzMnhZRzVaalQ1?oc=5"
+          "source": "The New York Times",
+          "title": "Trump Administration Imposes Sanctions on Megaspeed, Singaporean Firm at Center of Nvidia Scandal - The New York Times",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNNXE4aUdTVGFvS0Nqd0tXS2E2Y2IyU0dQSEhGRVM2WlVwdXRRczRRUlNuZ09QWjY0OUJrLVZYeEdTaE9hTW83VG9mMV9aVFNVZWQzT3QwMXZaNGd0WmV5LXE2QURZQ1lUSlI5VWdSLWlOYkp0OFZZVFlvMDVYbmhERk91cUZkcGd1dm1UTkMtTEJvU2pmRHk4WW95RUc0SmNQdllqbw?oc=5"
+        },
+        {
+          "source": "Bloomberg",
+          "title": "Germany Eyes EU Sanctions to Bar Russia From Hockey Championship - Bloomberg",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNT3ZFdlhYd2h1RFFxTHFXTnp2T3dnbDFSU19ib1hMVFVRaEVfXzBTT1RudWFSbFN0ZDdnMTAycjFqQmhrVkplN1MzMVcyaXdhNTREeURXZFVhdmpfNWM3dUFRTmxlZnkybXZIdkdIdjBxRGtoSGl1Ujl3MUdfSXBPbG5uZmlTOUwzWHRRNUhIYWpaMEM5QUhsdWhSM3dTZW5PU2dibFlJNV90bDVXclRUY1lra0dqdw?oc=5"
         },
         {
           "source": "The New York Times",
           "title": "Trump, Xi and Putin Seek to Project Power at Their First Summit - The New York Times",
           "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1MQWU3M21LcmgtNFU4MmVaaEw2cnIyUGJVclVsc2JIWGZhcFVFMXE0SmJqaG5MQnpWN3BRLWZuWmh6cTRudTl0Nzc1SlJ4WVdQamZlR0hFMlRtTy04SEhhVVVsREp2RktrY0ZwUDFkcmpnaXM?oc=5"
-        },
-        {
-          "source": "Reuters",
-          "title": "Solomon Islands plans to replace China security pact with Australia treaty, report says - Reuters",
-          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPdFNLbGx2cFNYcnJoRU9LLUIwRUpVUVktaTRNeDBJbDJCT3BoelRQWEdYcGJwZXJTQVE3eG1RX0JuQVVVelotVjJxdzVmcWliSUhxUVlqQ0hoSDJzeE5OTjlYVWdGZTZOT2ZtNldqeTd4aVlaRHVEczlvN2h4Wk5JUGNTVWtreTJVeFNqOVF2R252dHI5ZWI5RXp0VXk5MXdJNFQwOFdQYktYbENvZHBNeDJGY24teFZVd1VrWWJ3eEp3ZS1n?oc=5"
         }
       ],
-      "reasons": "6 outlets this window",
-      "score": 6,
+      "reasons": "5 outlets this window",
+      "score": 5,
       "state": "RISING",
       "topic": "global"
     }

@@ -2044,21 +2044,21 @@
       "topic": "global"
     },
     {
-      "count": 2,
+      "count": 1,
       "countries": 1,
       "date": "2026-11-24",
       "keywords": [],
-      "outlets": 2,
+      "outlets": 1,
       "score": 0,
       "severity": "ALERT",
       "topic": "infra"
     },
     {
-      "count": 2,
+      "count": 3,
       "countries": 1,
       "date": "2026-11-24",
       "keywords": [],
-      "outlets": 2,
+      "outlets": 3,
       "score": 0,
       "severity": "STANDBY",
       "topic": "israel"
@@ -2110,7 +2110,7 @@
       "keywords": [],
       "outlets": 4,
       "score": 0,
-      "severity": "STANDBY",
+      "severity": "ALERT",
       "topic": "war-ukraine"
     },
     {
@@ -2139,6 +2139,7 @@
     "cyber": "EMERGING",
     "gdacs": "EMERGING",
     "global": "EMERGING",
+    "israel": "RISING",
     "quake": "RISING",
     "relief": "RISING"
   },
@@ -4746,21 +4747,21 @@
       "topic": "global"
     },
     {
-      "count": 2,
+      "count": 1,
       "countries": 1,
       "date": "2026-11-24",
       "keywords": [],
-      "outlets": 2,
+      "outlets": 1,
       "score": 0,
       "severity": "ALERT",
       "topic": "infra"
     },
     {
-      "count": 2,
+      "count": 3,
       "countries": 1,
       "date": "2026-11-24",
       "keywords": [],
-      "outlets": 2,
+      "outlets": 3,
       "score": 0,
       "severity": "STANDBY",
       "topic": "israel"
@@ -4812,7 +4813,7 @@
       "keywords": [],
       "outlets": 4,
       "score": 0,
-      "severity": "STANDBY",
+      "severity": "ALERT",
       "topic": "war-ukraine"
     },
     {

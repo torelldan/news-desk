@@ -1,5 +1,7 @@
 {
-  "gaps": [],
+  "gaps": [
+    "ReliefWeb: the disasters page returned no cards from this network. The RSS feed is an AWS WAF challenge, and API v2 rejects appname=torelldan-news-desk until ReliefWeb approves it."
+  ],
   "items": [
     {
       "action": "no action needed",
@@ -201,6 +203,36 @@
       "confidence": "reported",
       "date": "2026-11-23",
       "guest": "",
+      "id": "gdacs:1f7d814e7543739c",
+      "kind": "gdacs",
+      "label": "Nov 23, 2026 6:00 PM CT",
+      "lane": "threat",
+      "lat": 37.0918,
+      "lon": 27.779,
+      "note": "Green alert. Turkey",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "published": "2026-11-23T18:00:00-06:00",
+      "severity": "STANDBY",
+      "soWhat": "",
+      "source": "GDACS",
+      "sourceCount": 1,
+      "sourceId": "gdacs",
+      "tags": [
+        "gdacs",
+        "standby"
+      ],
+      "timeKnown": true,
+      "title": "Earthquake in Turkey",
+      "url": "https://www.gdacs.org/report.aspx?eventid=1579055&episodeid=1748500&eventtype=EQ",
+      "weekday": "Mon"
+    },
+    {
+      "action": "no action needed",
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "confidence": "reported",
+      "date": "2026-11-23",
+      "guest": "",
       "id": "gdacs:2be42bb0eced2398",
       "kind": "gdacs",
       "label": "Nov 23, 2026 6:00 PM CT",
@@ -373,36 +405,6 @@
       "title": "Earthquake in Nepal",
       "url": "https://www.gdacs.org/report.aspx?eventid=1578952&episodeid=1748389&eventtype=EQ",
       "weekday": "Mon"
-    },
-    {
-      "action": "no action needed",
-      "arrowDay": "→",
-      "arrowWeek": "→",
-      "confidence": "reported",
-      "date": "2026-11-22",
-      "guest": "",
-      "id": "gdacs:f7b9045d010f9e69",
-      "kind": "gdacs",
-      "label": "Nov 22, 2026 6:00 PM CT",
-      "lane": "threat",
-      "lat": -39.789,
-      "lon": 147.9625,
-      "note": "Green alert. Australia",
-      "outlook": "First reading. Watch the next 72 hours.",
-      "published": "2026-11-22T18:00:00-06:00",
-      "severity": "STANDBY",
-      "soWhat": "",
-      "source": "GDACS",
-      "sourceCount": 1,
-      "sourceId": "gdacs",
-      "tags": [
-        "gdacs",
-        "standby"
-      ],
-      "timeKnown": true,
-      "title": "Forest fires in Australia",
-      "url": "https://www.gdacs.org/report.aspx?eventid=1034037&episodeid=4&eventtype=WF",
-      "weekday": "Sun"
     },
     {
       "action": "no action needed",
@@ -808,30 +810,28 @@
       "arrowDay": "→",
       "arrowWeek": "→",
       "confidence": "reported",
-      "date": "2026-11-18",
-      "demoted": "older than 72h",
+      "date": "2026-11-24",
       "guest": "",
-      "id": "headline:eebbef6063002285",
+      "id": "cyber:d80d3bb1219cdac9",
       "kind": "cyber",
-      "label": "Nov 18, 2026 10:38 AM CT",
+      "label": "Nov 24, 2026 10:00 AM CT",
       "lane": "threat",
       "note": "",
       "outlook": "First reading. Watch the next 72 hours.",
-      "published": "2026-11-18T10:38:08-06:00",
+      "published": "2026-11-24T10:00:00-06:00",
       "severity": "STANDBY",
       "soWhat": "",
-      "source": "Cybersecurity Dive",
+      "source": "The Record",
       "sourceCount": 1,
       "sourceId": "cyber-news",
       "tags": [
-        "headline",
-        "standby",
-        "cyber"
+        "cyber",
+        "standby"
       ],
       "timeKnown": true,
-      "title": "Energy giant Equinor investigates cyberattack impacting IT systems - Cybersecurity Dive",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPYVlLNGp5Rk5xalV5ZUhRLVl6RGxENHBQcFlYM3g0YXMxT0ttV2g3N1F1YV9jbHJYZy15d0dYaDAzcnM4cTJkV0xlZnNueWo2V2wxczVBQTBvcThNSHV4c2o0X3F2X1A2eHFqeFN1RHBZeEtUMzZaV3lrZVpZcHJSTUdwTEhJSHg5R0ttRjJVQQ?oc=5",
-      "weekday": "Wed"
+      "title": "Carnegie Endowment for International Peace says third-party breach leaked donation info",
+      "url": "https://therecord.media/carnegie-endowment-data-breach",
+      "weekday": "Tue"
     },
     {
       "action": "no action needed",
@@ -986,32 +986,36 @@
       "arrowDay": "→",
       "arrowWeek": "→",
       "confidence": "reported",
-      "date": "2026-11-17",
-      "demoted": "older than 72h",
+      "date": "2026-11-23",
       "guest": "",
-      "id": "headline:05030e524a90b82f",
-      "kind": "war-iran",
-      "label": "Nov 17, 2026 11:24 PM CT",
+      "id": "headline:6195664d2b986e71",
+      "kind": "war-ukraine",
+      "label": "Nov 23, 2026 3:47 AM CT",
       "lane": "news",
       "note": "",
-      "outlook": "First reading. Watch the next 72 hours.",
-      "published": "2026-11-17T23:24:54-06:00",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "STANDBY",
+      "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+      "published": "2026-11-23T03:47:36-06:00",
+      "related": 3,
+      "relatedSources": [
+        "The Guardian",
+        "CNN",
+        "NPR"
+      ],
+      "severity": "ALERT",
       "soWhat": "What to do: no action at home. Skip travel into the named fighting if a trip was planned.",
-      "source": "CNBC",
-      "sourceCount": 1,
+      "source": "Al Jazeera",
+      "sourceCount": 4,
       "sourceId": "headline",
       "tags": [
         "headline",
         "standby",
-        "war-iran"
+        "war-ukraine",
+        "alert"
       ],
       "timeKnown": true,
-      "title": "Iran says army targets U.S. drone and missile sites in Kuwait as Gulf attacks mount - CNBC",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE0zaVp2b1pwY2FLSDN0b0VfZGRjQk1LSjJuSVE5QjduTXU4c2REYS1YeGJDM05lYkNtTGM3LVkwRDVSaFNLWEVNR2VwUnFUUTh5eUJFYnI4T2QzMzZYRjlZV1kxdWJBUW5FODk0R0ZsaG_SAXZBVV95cUxQN3lsMm1BeEpJNlRTYWloUEYwT1hiWFp5T0x4SXRUc2lkeER0VzFLUDFBS2YzN3IzMEFabHVJaTNmWHBSWTdqOXdDZXFzLWptSHA3bVlsTV9fU2xtNXB6a0lHd0xNa2JTVnJVNDV6eTh2c1kyUWJ3?oc=5",
-      "weekday": "Tue"
+      "title": "At least 15 killed in Ukraine’s Kyiv region as Russia intensifies attacks - Al Jazeera",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQZGl2dEc3N1IyaHBuWF9vTjZPV2s4YnltNWNweldlZlR6RzJBUW5QR1gzTGhBX0dSR0FraU5mMzY2OGJxYnFmV1RyVFhhUW0yM1NKQXJ0aDNLcVk2STJQNWl0Q1Y0N25DMTBRY0N2XzIxd25WQ0dNUnIxYjRTeVRlVXJPTG82Y3VKYzZuX1hTZ29vaW45QkRLd2tnbHYyTm_SAaQBQVVfeXFMTTNMN2dTbWFtZERHLUQyNnloR1VrdDdOU2d4WHNQS21BalRPNTdXZmhOelNTZHFtYTJLUmludDQ3UlFvOHYzMV9HNUIzaTFkRENHWDRXZGlZVmRXT1l1Vy1rRjVoWUZSQnEtOVE2TVRsRE1WQTBvV2JiX3A0ci10d0NYOHVvYXlmcFk0NXFPcDRMWWFTUGNTbE5HajZUdUMyc0d3eFY?oc=5",
+      "weekday": "Mon"
     },
     {
       "action": "What to do: no action at home. Skip travel into the named fighting if a trip was planned.",
@@ -1045,6 +1049,37 @@
       "timeKnown": true,
       "title": "Iran fires at U.S. facility in Bahrain as Tehran resumes strikes on Arab neighbors - PBS",
       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPTlVZWjRCSVZZOTdxbEJHVlVJTjVyV2xWVXdaQ2tqUmVRNFJkaElDa2xhYWFqbEcwRDlaWnpNWF9OMy05OE5mM2N4VkhRQVZHdTFUTTlyd2JUSkwxR0Q3ZEh1UDZZNDB5cmVHa1lfMkM0ZldWT1pJRmVTTWVPMWEzQnloMWY2Zjh1TDdaeHRONmIwbERZLWtfMy12Z19JcDV2eUJxZElIWDdBWW5CU1NEYU5TVjJRRjjSAbwBQVVfeXFMTm93R19jS3VPR050YTJCYXBSQ25mYlo1RXNhZ1JSSXVZdEdiYUJJeloyZHlkUnJYTTc5dGVzbmlqZHY3Tlhscjc5cWxqT1JRTHMtVHlORE5TUVpKQVZ1d3FGUjhwcDlHbk5JSFVoeXZya1lTU1ZIUW9SRkUwZ2t0akZGa2t4VEpfdEZJRS0xcFFEZGVaVGtNcWFvOWdLTFFRUmFhTXBsQ1FydjA5X3dZUHdDVmE4WnduNXVUMTc?oc=5",
+      "weekday": "Tue"
+    },
+    {
+      "action": "no action needed",
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "confidence": "reported",
+      "date": "2026-11-24",
+      "guest": "",
+      "id": "headline:fbcc9308572412b9",
+      "kind": "israel",
+      "label": "Nov 24, 2026 1:07 AM CT",
+      "lane": "news",
+      "note": "",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "published": "2026-11-24T01:07:06-06:00",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "STANDBY",
+      "soWhat": "",
+      "source": "Al Jazeera",
+      "sourceCount": 1,
+      "sourceId": "headline",
+      "tags": [
+        "headline",
+        "standby",
+        "israel"
+      ],
+      "timeKnown": true,
+      "title": "Why Eisenkot is negotiating with Netanyahu - Al Jazeera",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOZVU4TTNxQXdnX3cyZWdSTnFRUy1Dd21kSlNFRzEzYTUwU0NZcmpWYjVtS1dpc1VRNHBGdnNBaWhtZkkxLUdVdVVKdXVycTlneUhlWnB5WVlqamlpbUtZLTAxa05pdXJvZEtQeE5pN0QwbVJvSjFiclBpNE5wX2ZYc2NjT1dFQjV1WjIxYmRzODlZZ9IBlwFBVV95cUxQc1JKYmdfVXMya0JVOS1DME1abkdSTThFYXRwMGdCWjVDRDB5dU80b3NmRUpIcjN5dnlqVEtpSHVJZHJuWDNuQ2xsRXM2OGp1ZVRtY25ibE1kTm0zVVlKNVBkSkc4Mm5qY0hwMVVpYW1DTGhpRGdjNWhTdFVCUGRvR3ZYeC1YTWp2REc4UFRuX2ZMUGRUM2dB?oc=5",
       "weekday": "Tue"
     },
     {
@@ -1095,10 +1130,10 @@
       "related": 6,
       "relatedSources": [
         "The New York Times",
+        "BBC",
         "Health Policy Watch",
         "NBC News",
         "Reuters",
-        "PBS",
         "UN News"
       ],
       "severity": "STANDBY",
@@ -1117,6 +1152,37 @@
       "weekday": "Mon"
     },
     {
+      "action": "no action needed",
+      "arrowDay": "→",
+      "arrowWeek": "↓",
+      "confidence": "reported",
+      "date": "2026-11-23",
+      "guest": "",
+      "id": "headline:646c01aa4560e782",
+      "kind": "israel",
+      "label": "Nov 23, 2026 4:06 PM CT",
+      "lane": "news",
+      "note": "",
+      "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+      "published": "2026-11-23T16:06:26-06:00",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "STANDBY",
+      "soWhat": "",
+      "source": "CSIS | Center for Strategic and International Studies",
+      "sourceCount": 1,
+      "sourceId": "headline",
+      "tags": [
+        "headline",
+        "standby",
+        "israel"
+      ],
+      "timeKnown": true,
+      "title": "Israel’s Elections and the Future of the Middle East - CSIS | Center for Strategic and International Studies",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBLcl9PN01Nc25wUDluZGJEd1FOckFRdlJSSk40Q2hlZGFjdFU2YklKUThSSlpPUUVVdDR0LTBBbU5lSTFPMWpYczZ4d2RELTFHdUFDZlcyem9mcXRfcHprWWhXcC1FUk13WUpLakpvWE9OS3F6YU1XeklB?oc=5",
+      "weekday": "Mon"
+    },
+    {
       "action": "What to do: no action at home. Skip travel into the named fighting if a trip was planned.",
       "arrowDay": "→",
       "arrowWeek": "→",
@@ -1130,14 +1196,16 @@
       "note": "",
       "outlook": "First reading. Watch the next 72 hours.",
       "published": "2026-11-23T14:00:00-06:00",
-      "related": 1,
+      "related": 3,
       "relatedSources": [
-        "The Economist"
+        "Reason Foundation",
+        "The Economist",
+        "News From The States"
       ],
       "severity": "STANDBY",
       "soWhat": "What to do: no action at home. Skip travel into the named fighting if a trip was planned.",
       "source": "The American Prospect",
-      "sourceCount": 2,
+      "sourceCount": 4,
       "sourceId": "headline",
       "tags": [
         "headline",
@@ -1156,30 +1224,28 @@
       "confidence": "reported",
       "date": "2026-11-23",
       "guest": "",
-      "id": "headline:32b5b2716b9f8e1a",
-      "kind": "war-ukraine",
-      "label": "Nov 23, 2026 3:44 AM CT",
+      "id": "headline:c90af5b6ef04a0b2",
+      "kind": "war-iran",
+      "label": "Nov 23, 2026 1:21 PM CT",
       "lane": "news",
       "note": "",
       "outlook": "First reading. Watch the next 72 hours.",
-      "published": "2026-11-23T03:44:26-06:00",
-      "related": 1,
-      "relatedSources": [
-        "PBS"
-      ],
+      "published": "2026-11-23T13:21:18-06:00",
+      "related": 0,
+      "relatedSources": [],
       "severity": "STANDBY",
       "soWhat": "What to do: no action at home. Skip travel into the named fighting if a trip was planned.",
-      "source": "NPR",
-      "sourceCount": 2,
+      "source": "Al-Monitor",
+      "sourceCount": 1,
       "sourceId": "headline",
       "tags": [
         "headline",
         "standby",
-        "war-ukraine"
+        "war-iran"
       ],
       "timeKnown": true,
-      "title": "NATO to meet after Russia-Ukraine war once again inches onto European territory - NPR",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNR05nOTY4VjA4TXR0SF9VSVphYkR3RmF2Qmxoajd6SW1JY2xtSUZURVhmZGRrSk4xYnFmZVN3Z2xMZFltUmY2OHZZUzBSVW5JZHZDak1nMXJ1S09Ha21nQzJFUVMtalo1NXU2Tlc3YXhqVDNOcFJYMk5pNEIzbE02X1hfTXlER2JVMDJMYjBEQUVZdVVWei01ZE94Y3h0Tzd5Zk9faUtuUkRhWHRaY01NYUJ3MGpMMU56Z2JLWDN6bFdGZw?oc=5",
+      "title": "Rubio meets Qatari PM as Iran standoff deepens - Al-Monitor",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPVkp5aktLQmFfZG5ybm9xTElyUWphRlktZko5WkprRDIzbnE2N1JqTl9UUTBTZDBMUlNyWE9qajFqdk51XzVlUE03VzR4eHdnS0tPRTFvY3hUdHNlMjgzcWJXaXotM01wRHpDN0h6U3lxOEtQTEJ4LWxOVnptSk9sd0NrWEZfSEJxOTlXaVpRM28zQQ?oc=5",
       "weekday": "Mon"
     },
     {
@@ -1196,19 +1262,18 @@
       "note": "",
       "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
       "published": "2026-11-23T01:29:51-06:00",
-      "related": 6,
+      "related": 5,
       "relatedSources": [
-        "NBC News",
-        "Courthouse News",
         "The Guardian",
         "Reuters",
+        "NBC News",
         "The New York Times",
         "CNN"
       ],
       "severity": "STANDBY",
       "soWhat": "",
       "source": "DW.com",
-      "sourceCount": 7,
+      "sourceCount": 6,
       "sourceId": "headline",
       "tags": [
         "headline",
@@ -1219,37 +1284,6 @@
       "title": "Israel's Eisenkot condemns 'Jewish terrorism' in West Bank - DW.com",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOWmpGVkl4NHhEWktXbmlGbjdxSG5qU3p3T1hZaUd4VF9kaGk3SllxQlozZGp0amhickdyNkRNclZZandvSFdkTEczZmJ1bFV4RVZoczM4RWVUNHg4NThWc0VIVEhqRVRneEhXaF8xOFZCWTUxT3cwdF9Ed1QwaERKVncxdmE2Vmpo0gGIAUFVX3lxTFBEXzc1aXZGaVhld2w0aXB4S0ZtYjIxLTdpeEtzVjFIWVY3Z09rYmxTUlpacGVFOWw2Q0NvSlNQeDNneHliR3BEeGlLcTFoWkNmcUoxZEVqMDBqQ3VSZGpOZlo4QnQxUDg4dFR5Z09YN3JDUS1CV21LVC1MWVZPcU1nZThnVkt5aGU?oc=5",
       "weekday": "Mon"
-    },
-    {
-      "action": "What to do: no action at home. Skip travel into the named fighting if a trip was planned.",
-      "arrowDay": "→",
-      "arrowWeek": "→",
-      "confidence": "reported",
-      "date": "2026-11-22",
-      "guest": "",
-      "id": "headline:602f6dd60ac853dc",
-      "kind": "war-ukraine",
-      "label": "Nov 22, 2026 11:29 PM CT",
-      "lane": "news",
-      "note": "",
-      "outlook": "First reading. Watch the next 72 hours.",
-      "published": "2026-11-22T23:29:58-06:00",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "STANDBY",
-      "soWhat": "What to do: no action at home. Skip travel into the named fighting if a trip was planned.",
-      "source": "Al Jazeera",
-      "sourceCount": 1,
-      "sourceId": "headline",
-      "tags": [
-        "headline",
-        "standby",
-        "war-ukraine"
-      ],
-      "timeKnown": true,
-      "title": "Ukraine urges US to release Patriot missiles as Russian strikes kill 15 - Al Jazeera",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQWDROSjJ4ZmFrSWp4VDNoeS1aRVlHb25QQXJvV0JhQWtrNjdJekNQWHEyQ0VhZUIyNHBpd3l2eEJSYmc4Zk45V2lhcWxwMzJBT09XYk1hRzZwa0FkT2ltdUl2STFtb1lBVHRtVFpDTGtYc2FVZWJqQXYyYlFSVzBhNzhpbE83NlByTGJHQjloNEZvZ9IBlwFBVV95cUxORzQwam00SzMzbWFrZHNQMlAxQU1sTmJ3ZEFQRU51V1B4MGxUb1FFeUo3R05ya0hQMFRVRjRGOTlVZDliV25wbGdnZzI1YlI5N2lpTnltOE5ZYUItZDViTlJvNkRCaGR0M2NxQ19zeEJrSmhVTGVKVGpoRFBNTlFlMFpxUzNKblhkYjlBek91OUJxbmZNdkRr?oc=5",
-      "weekday": "Sun"
     },
     {
       "action": "No action for 37179. This is a European named storm, not an Atlantic hurricane.",
@@ -1282,37 +1316,6 @@
       "timeKnown": true,
       "title": "Portugal faces more rain after Storm Charles - The Portugal News",
       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQRDFWcjJsLXNlSjQ0RW5QOEVLSW1oT3pReGx6VEU4dDMxaHZUU19oMU5hNElhOTZnZm9XVHNrU1BrNEEzM2VQQlhSU0FYQXNXS1BycDJ4bXk4WEFhcGZmU3F0UnhlaFVoNVFFZVRvNTlGM0thNGxwWTdrMDVuaExycjQzbnhuam4zSUQ3SmJXYWdvVi11aWVpbVRHaVJWUmlmZlE?oc=5",
-      "weekday": "Sun"
-    },
-    {
-      "action": "no action needed",
-      "arrowDay": "→",
-      "arrowWeek": "→",
-      "confidence": "reported",
-      "date": "2026-11-22",
-      "guest": "",
-      "id": "headline:7f3d75fd544a1c14",
-      "kind": "israel",
-      "label": "Nov 22, 2026 3:39 PM CT",
-      "lane": "news",
-      "note": "",
-      "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
-      "published": "2026-11-22T15:39:54-06:00",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "STANDBY",
-      "soWhat": "",
-      "source": "Al Jazeera",
-      "sourceCount": 1,
-      "sourceId": "headline",
-      "tags": [
-        "headline",
-        "standby",
-        "israel"
-      ],
-      "timeKnown": true,
-      "title": "Netanyahu’s Likud, Eisenkot’s Yashar end coalition talks without deal - Al Jazeera",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPZlhyZjdYRzZCblJHeHNLcVM2Z1h6b0hoTnN5a1lXX2xRT1VVNHE0OXpBV2ZnS2ZFY092MDNWbFFPSzJ5LWFsU3JvN0dGUGIwbUl6VDU2U3ZZaUlNcTRUWkxJYnI2MGp2aTVmMDZLamxVZVZFd3c1YWFYSWw5NlN1N2gyLUUxZjFRbXFhZDhaOU9kNUVfdGhvSWpiWHp5VXlnVnVLR0ZXVllUTi1x0gGyAUFVX3lxTE5JRmJIdDhVUnl3eUw2bU0xVUhGWVBzWjJCT1ZURm5QdnVHbXNteGQ1WHQ4QWl1dmhuM01SZnhkdnI4OXFKRldjN2ttVUJscXk5Um1pNlRvQjVqX0JIMHBCT2Q2azRWX0xPZS13MEhNNjNsMVlRNC1UVERfa0JWMXo4MnZxdmQ1LVRMODlueWRmd2dBTFRnN0pkdDNrcjF6cjdWMWdrTUpLa0h4YlV0b2RDRmc?oc=5",
       "weekday": "Sun"
     },
     {
@@ -1511,37 +1514,6 @@
       "arrowDay": "→",
       "arrowWeek": "→",
       "confidence": "reported",
-      "date": "2026-11-20",
-      "guest": "",
-      "id": "headline:b2138df52d90cdcb",
-      "kind": "usgov",
-      "label": "Nov 20, 2026 7:09 AM CT",
-      "lane": "news",
-      "note": "",
-      "outlook": "First reading. Watch the next 72 hours.",
-      "published": "2026-11-20T07:09:18-06:00",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "STANDBY",
-      "soWhat": "",
-      "source": "U.S. Department of War (.gov)",
-      "sourceCount": 1,
-      "sourceId": "headline",
-      "tags": [
-        "headline",
-        "standby",
-        "usgov"
-      ],
-      "timeKnown": true,
-      "title": "Department of War Publishes Eighth Release of Unidentified Anomalous Phenomena Files on WA - U.S. Department of War (.gov)",
-      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNYjhVNGpDYmwtTWFuOV9NMXJLb2xBVnJQNmtIWDNFQ0pMS0JWbUlRN2d6UW1obW94bERlX2xsa2R5ejFkSEk1LV9lUG02Y0VDNzAyZDMxc25JMG53TlNydnozQlZnZlg3WVp0OUktOHdtUGZrYUppRjJQQU9RYU9aSzVzbzhhOUpYaE1mQm9vMEM1MkhkdlNyVGZOeUJVWWJwUVRENXpJQ0U0WVdmZnQwZ19KcGVsSmpIOVRCTlZDbVd5LVU2UmVvTkFwazFQd3g3SHFj?oc=5",
-      "weekday": "Fri"
-    },
-    {
-      "action": "no action needed",
-      "arrowDay": "→",
-      "arrowWeek": "→",
-      "confidence": "reported",
       "date": "2026-11-19",
       "guest": "",
       "id": "headline:393e3fe4014064f8",
@@ -1566,6 +1538,37 @@
       "timeKnown": true,
       "title": "Mississippi saw a spike in 'inactive' voters for the midterms. Democratic lawmakers want answers - PBS",
       "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOYU5LRHplTi1UVm9ZdmQ5cnhwN1RMNzUzOExhQjMyRFo3MF9PQ21wSzZMRTY3Sno2b25Db3hDY184TUJDWHNVLVhoNHJjMUlfM2pGZ0hjWHUyR0hJeUUyX3p3SDNFNXZDVGNDclRUSEFZRlJtazA2SUVGNktPMVF4Q0gybWdUVTZQdWNaVVVMRVFLcmV4czMwNVhQS2N0NDFhNGk1c1JhS255d29kYW1NOXUwcjFHRDVUNG5HcWlWT2JsV2xEc0o5MWRWONIB0AFBVV95cUxNM1VWWDAyeC1WLTlBbmJROGdoTkVUd0FsSHl6N0RGTlJMZlMzUzBYYmlhcUk3UjQ4T055Q0FOMExLTHBNTzBDTWVNVUw4U3V1YnZSMWlEeVVadGlzSVZfRlprQ3QwdFd2YTNueEkzUWVXUy1rNnNscXJDSnJ6MU5fVVZhQXdNRFFJSXJwMU8xV3NkbnE2MFBzLUh4aURHeVFDSUJTUldLeEJGM2w4ODNvSXdwNDZ2YW10eWhUcEdnV3BpbTFqQWJHSHdUX2pjS2tE?oc=5",
+      "weekday": "Thu"
+    },
+    {
+      "action": "no action needed",
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "confidence": "reported",
+      "date": "2026-11-19",
+      "guest": "",
+      "id": "headline:01599cbbedd6956c",
+      "kind": "usgov",
+      "label": "Nov 19, 2026 9:55 AM CT",
+      "lane": "news",
+      "note": "",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "published": "2026-11-19T09:55:05-06:00",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "STANDBY",
+      "soWhat": "",
+      "source": "NPR",
+      "sourceCount": 1,
+      "sourceId": "headline",
+      "tags": [
+        "headline",
+        "standby",
+        "usgov"
+      ],
+      "timeKnown": true,
+      "title": "The midterms were the largest win for either party in 50 years - NPR",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQa2Jya1pVMGdtYW5PcWk4Z3ZGV29SUkR2RE5ranJBNlJYU1IxS05rQmd1M01jRjZyYnJaMUUzb2hCeDh0OUFHNlg3aU1lRUw1c0hXb0NlRnhSQmctSkpURTBlTnVlZ2dINmREaTFOYkxYWEV0dWpnZnRhbi1HbXNCb3p2aw?oc=5",
       "weekday": "Thu"
     },
     {
@@ -1666,6 +1669,37 @@
       "weekday": "Tue"
     },
     {
+      "action": "What to do: no action at home. Skip travel into the named fighting if a trip was planned.",
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "confidence": "reported",
+      "date": "2026-11-16",
+      "guest": "",
+      "id": "headline:63e77d9b0f930858",
+      "kind": "war-ukraine",
+      "label": "Nov 16, 2026 2:00 AM CT",
+      "lane": "news",
+      "note": "",
+      "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+      "published": "2026-11-16T02:00:00-06:00",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "STANDBY",
+      "soWhat": "What to do: no action at home. Skip travel into the named fighting if a trip was planned.",
+      "source": "Council, European Union",
+      "sourceCount": 1,
+      "sourceId": "headline",
+      "tags": [
+        "headline",
+        "standby",
+        "war-ukraine"
+      ],
+      "timeKnown": true,
+      "title": "Ukraine Facility: Council approves largest-ever payment of €8 billion to Kyiv - Council, European Union",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOWlk5VTVlN2xzVVl3TjkwQWw5eVdJUzVSeGtra1dJWkY0Y2M0Q1ByWUpPTVZWSHc0TlhmX1dGN2pJRHhHR2w3Vjh3R2NsOXlpMWFLT1dETnVBZ3ZOb01qZDBXRnJzcjJKTndKcXZhZWlIMnpSYlBMS0R1Q0R5ZHJKLXZoYUZ4dlNJcUN1azR5YjYtSGFrbnFyNHl6MUdreFZySU1zUVd3LTJpdnJsdmZfU1JXdW5wWWNTNWhaNTdyMFNRemJIT1p0RGNsOTdEekJtSDB2Y3c4cVRUcGM?oc=5",
+      "weekday": "Mon"
+    },
+    {
       "action": "no action needed",
       "arrowDay": "→",
       "arrowWeek": "→",
@@ -1674,12 +1708,12 @@
       "guest": "",
       "id": "neo:9934e838c1539fdc",
       "kind": "neo",
-      "label": "Nov 24, 2026 9:55 AM CT",
+      "label": "Nov 24, 2026 10:27 AM CT",
       "lane": "threat",
       "lunar": 3.1,
       "note": "Miss distance about 739,358 miles (3.1 lunar distances). No Torino or Palermo impact risk on this flyby.",
       "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
-      "published": "2026-11-24T09:55:06-06:00",
+      "published": "2026-11-24T10:27:14-06:00",
       "severity": "STANDBY",
       "soWhat": "no action needed",
       "source": "NASA/JPL CNEOS",
@@ -1703,12 +1737,12 @@
       "guest": "",
       "id": "neo:1095427f35282423",
       "kind": "neo",
-      "label": "Nov 24, 2026 9:55 AM CT",
+      "label": "Nov 24, 2026 10:27 AM CT",
       "lane": "threat",
       "lunar": 3.52,
       "note": "Miss distance about 840,032 miles (3.5 lunar distances). No Torino or Palermo impact risk on this flyby.",
       "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
-      "published": "2026-11-24T09:55:06-06:00",
+      "published": "2026-11-24T10:27:14-06:00",
       "severity": "STANDBY",
       "soWhat": "no action needed",
       "source": "NASA/JPL CNEOS",
@@ -1732,12 +1766,12 @@
       "guest": "",
       "id": "neo:7b85606f3b77e4fb",
       "kind": "neo",
-      "label": "Nov 24, 2026 9:55 AM CT",
+      "label": "Nov 24, 2026 10:27 AM CT",
       "lane": "threat",
       "lunar": 3.71,
       "note": "Miss distance about 885,670 miles (3.7 lunar distances). No Torino or Palermo impact risk on this flyby.",
       "outlook": "First reading. Watch the next 72 hours.",
-      "published": "2026-11-24T09:55:06-06:00",
+      "published": "2026-11-24T10:27:14-06:00",
       "severity": "STANDBY",
       "soWhat": "no action needed",
       "source": "NASA/JPL CNEOS",
@@ -1761,12 +1795,12 @@
       "guest": "",
       "id": "neo:e57f65e56f659e8f",
       "kind": "neo",
-      "label": "Nov 24, 2026 9:55 AM CT",
+      "label": "Nov 24, 2026 10:27 AM CT",
       "lane": "threat",
       "lunar": 3.94,
       "note": "Miss distance about 941,140 miles (3.9 lunar distances). No Torino or Palermo impact risk on this flyby.",
       "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
-      "published": "2026-11-24T09:55:06-06:00",
+      "published": "2026-11-24T10:27:14-06:00",
       "severity": "STANDBY",
       "soWhat": "no action needed",
       "source": "NASA/JPL CNEOS",
@@ -1790,12 +1824,12 @@
       "guest": "",
       "id": "neo:d545dfda650a0803",
       "kind": "neo",
-      "label": "Nov 24, 2026 9:55 AM CT",
+      "label": "Nov 24, 2026 10:27 AM CT",
       "lane": "threat",
       "lunar": 4.56,
       "note": "Miss distance about 1,088,995 miles (4.6 lunar distances). No Torino or Palermo impact risk on this flyby.",
       "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
-      "published": "2026-11-24T09:55:06-06:00",
+      "published": "2026-11-24T10:27:14-06:00",
       "severity": "STANDBY",
       "soWhat": "no action needed",
       "source": "NASA/JPL CNEOS",
@@ -1819,11 +1853,11 @@
       "guest": "",
       "id": "clock:bulletin",
       "kind": "clock",
-      "label": "Nov 24, 2026 9:55 AM CT",
+      "label": "Nov 24, 2026 10:27 AM CT",
       "lane": "threat",
       "note": "The official setting is published by the Bulletin. This row is only the link.",
       "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
-      "published": "2026-11-24T09:55:06-06:00",
+      "published": "2026-11-24T10:27:14-06:00",
       "severity": "STANDBY",
       "soWhat": "",
       "source": "Bulletin of the Atomic Scientists",
@@ -1847,23 +1881,13 @@
       "guest": "",
       "id": "headline:ecac1a4c96e1c6cd",
       "kind": "global",
-      "label": "Nov 24, 2026 2:15 AM CT",
+      "label": "Nov 24, 2026 8:17 AM CT",
       "lane": "news",
       "links": [
-        {
-          "source": "Reuters",
-          "title": "Japan accelerates ICC funding as US sanctions threaten court - Reuters",
-          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQeVlqQzhUUnlVXy11enMtemVoQURZSDZ4cFZ4czFBM091NW9GWDZVUmE2dGg2V2xCeHhzS2JINGI3RDdJdGw5N0t5bThLWDNGTk5DUVk0bnZJeEZSYWZTRElIbTQ5dzVMb2NySUhHaVZEZTNPZks2eldrbmt4ckx4YWpXR3UzWnE4bWhmS3BRdE5SZDZlam5vbC1VQndoWnQtcjgzMnhZRzVaalQ1?oc=5"
-        },
         {
           "source": "The New York Times",
           "title": "Trump Administration Imposes Sanctions on Megaspeed, Singaporean Firm at Center of Nvidia Scandal - The New York Times",
           "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNNXE4aUdTVGFvS0Nqd0tXS2E2Y2IyU0dQSEhGRVM2WlVwdXRRczRRUlNuZ09QWjY0OUJrLVZYeEdTaE9hTW83VG9mMV9aVFNVZWQzT3QwMXZaNGd0WmV5LXE2QURZQ1lUSlI5VWdSLWlOYkp0OFZZVFlvMDVYbmhERk91cUZkcGd1dm1UTkMtTEJvU2pmRHk4WW95RUc0SmNQdllqbw?oc=5"
-        },
-        {
-          "source": "The Economist",
-          "title": "Europe tightens sanctions on Russia. America loosens them - The Economist",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPQkxzUWdBcFpHVy01Y3hvOURnd0drNUZuWW9rWC1QQk5GQVV0blFhU0ZnZVFpY2JWaVZrUlVhZ0pOV2hkVmNtUUZ0ODIyVGtxUWx6RU9LNWhJcDJNTjhCYVlvODk2eWYwRHRnbnE0NFAwOGdaQ1BsTFdSWUVFSFBzaHJaVWxDc3NSRF9ZRFVqTk1TdzZTWmNCUDhqLUJsN19YUTl1YUNPMEY0MTNnenN2aHNUeklwdw?oc=5"
         },
         {
           "source": "Courthouse News",
@@ -1871,157 +1895,72 @@
           "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNbXNXYXJ6enNBV2pJQ1BMY3B0SEZXM1VZemtfQW1yYlVKYmdEemhoU1Bvb19TVjVoZEprNXV1SEdVWUQtMWdjTXN0Q2N5U2xUVkJYTDVwU2YyMDJ6eXZxbW5DUkpoUlh4dzc3bmN6SU5aMUJNdFpYbWFYS183S3FFUUtWT1ltTVNERlVoaXV2UnBSa0E?oc=5"
         },
         {
+          "source": "The Economist",
+          "title": "Europe tightens sanctions on Russia. America loosens them - The Economist",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPQkxzUWdBcFpHVy01Y3hvOURnd0drNUZuWW9rWC1QQk5GQVV0blFhU0ZnZVFpY2JWaVZrUlVhZ0pOV2hkVmNtUUZ0ODIyVGtxUWx6RU9LNWhJcDJNTjhCYVlvODk2eWYwRHRnbnE0NFAwOGdaQ1BsTFdSWUVFSFBzaHJaVWxDc3NSRF9ZRFVqTk1TdzZTWmNCUDhqLUJsN19YUTl1YUNPMEY0MTNnenN2aHNUeklwdw?oc=5"
+        },
+        {
+          "source": "Reuters",
+          "title": "Xi, Putin blast Western 'protectionism' and sanctions as Trump lands in China - Reuters",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPb21UOHp4X2E2V05LRUhhUjhnSzI5b1NmNDRVQWhCb2RTV3gwQng0N3lKQ2lnV3JrbjB2cTBpSkNObTdwbXowR2d0UEt5NFp5blJtallNRjdFSjNoVDdxNkNXWFI4bmpETEV5TUs2OE16WW1lLTR0NkZCbEdXZF9OVDVycUFYV2p2aklNS3dR?oc=5"
+        },
+        {
           "source": "Reuters",
           "title": "US imposes sanctions on dozens linked to Iran's shadow banking networks - Reuters",
           "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxON2NaMVlXcGRFQ3BpRFVieGtVRzR4bXFtTXRTRnpSV3JmNzY1REhheG5xNlV5MlptZ1lIM1BQWUhGcTBZNWpHckdxZG1kWUZoZUdxSnRneHJhVzBpUzg0ZGpXQ1lQblItbHg5WXpNUXBqbHpWZ0NqZzdQZEdhNTZKbDZXaHNydXhYM05hd2YtY1lvU0JkVnJBQ3diRVNDV210Z0pZdm5mRnMtUEk4TTNkOXNDMGpvbmpD?oc=5"
+        },
+        {
+          "source": "Al Jazeera",
+          "title": "US escalates sanctions on Iran, targets ‘shadow banking’ networks - Al Jazeera",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQc3lGVWNUci1oN2FycENOck0ycGdzSERqSkJxdFYxRXFTVWxVRzkwNDlrc0ZOX28zODlIbjNmZnRkazFIR3JPNUlZNkFjR093UXZSX0VRdVlWZDZXWVBkbjN3TDFoemxGalQzV0NWazFnRGc2SjI4dTltMThaZG5GT213Vm93RlFvRnBqVGpMSGJRRWhuUHkta1pYeXp1RFJTOXRQX2hoY9IBrAFBVV95cUxPMklWbllGblFTbkk4b2FLY1lRRTl5U2p6cmFNVnFob2c4MWpBd1hvdHRndlFDVkRFZVkyTGVHOFR2QnRpaHk5REFsX2hLZVV5MXgtRFBjNWNUWEZGXzR5c3EyajlmaHNEQkliM2k2Sk5qR21WYWExMlFZWlhlSkZqM2hXSW9lekV6Wm9zQjRsOXZWa05McXRINEtLMzluVTRYRENlMUNYWGdWLUJs?oc=5"
+        },
+        {
+          "source": "Reuters",
+          "title": "Japan accelerates ICC funding as US sanctions threaten court - Reuters",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQeVlqQzhUUnlVXy11enMtemVoQURZSDZ4cFZ4czFBM091NW9GWDZVUmE2dGg2V2xCeHhzS2JINGI3RDdJdGw5N0t5bThLWDNGTk5DUVk0bnZJeEZSYWZTRElIbTQ5dzVMb2NySUhHaVZEZTNPZks2eldrbmt4ckx4YWpXR3UzWnE4bWhmS3BRdE5SZDZlam5vbC1VQndoWnQtcjgzMnhZRzVaalQ1?oc=5"
         }
       ],
       "note": "",
       "outlook": "First reading. Watch the next 72 hours.",
-      "published": "2026-11-24T02:15:28-06:00",
-      "related": 3,
+      "published": "2026-11-24T08:17:00-06:00",
+      "related": 4,
       "relatedSources": [
-        "The New York Times",
+        "Reuters",
+        "Courthouse News",
         "The Economist",
-        "Courthouse News"
+        "Al Jazeera"
       ],
       "severity": "ALERT",
       "soWhat": "no action needed",
-      "source": "Reuters",
-      "sourceCount": 4,
+      "source": "The New York Times",
+      "sourceCount": 5,
       "sourceId": "global",
       "tags": [
         "global",
         "alert"
       ],
       "timeKnown": true,
-      "title": "Japan accelerates ICC funding as US sanctions threaten court - Reuters",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQeVlqQzhUUnlVXy11enMtemVoQURZSDZ4cFZ4czFBM091NW9GWDZVUmE2dGg2V2xCeHhzS2JINGI3RDdJdGw5N0t5bThLWDNGTk5DUVk0bnZJeEZSYWZTRElIbTQ5dzVMb2NySUhHaVZEZTNPZks2eldrbmt4ckx4YWpXR3UzWnE4bWhmS3BRdE5SZDZlam5vbC1VQndoWnQtcjgzMnhZRzVaalQ1?oc=5",
-      "weekday": "Mon"
+      "title": "Trump Administration Imposes Sanctions on Megaspeed, Singaporean Firm at Center of Nvidia Scandal - The New York Times",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNNXE4aUdTVGFvS0Nqd0tXS2E2Y2IyU0dQSEhGRVM2WlVwdXRRczRRUlNuZ09QWjY0OUJrLVZYeEdTaE9hTW83VG9mMV9aVFNVZWQzT3QwMXZaNGd0WmV5LXE2QURZQ1lUSlI5VWdSLWlOYkp0OFZZVFlvMDVYbmhERk91cUZkcGd1dm1UTkMtTEJvU2pmRHk4WW95RUc0SmNQdllqbw?oc=5",
+      "weekday": "Tue"
     },
     {
       "action": "no action needed",
       "arrowDay": "→",
       "arrowWeek": "→",
       "confidence": "reported",
-      "date": "2026-11-20",
-      "demoted": "older than 72h",
-      "guest": "",
-      "id": "headline:6c1e2b6cd7974ad7",
-      "kind": "global",
-      "label": "Nov 20, 2026 7:26 AM CT",
-      "lane": "news",
-      "links": [
-        {
-          "source": "The New York Times",
-          "title": "Trump, Xi and Putin Seek to Project Power at Their First Summit - The New York Times",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1MQWU3M21LcmgtNFU4MmVaaEw2cnIyUGJVclVsc2JIWGZhcFVFMXE0SmJqaG5MQnpWN3BRLWZuWmh6cTRudTl0Nzc1SlJ4WVdQamZlR0hFMlRtTy04SEhhVVVsREp2RktrY0ZwUDFkcmpnaXM?oc=5"
-        },
-        {
-          "source": "Los Angeles Times",
-          "title": "Trump, Putin and Xi meet in an unprecedented summit with few tangible gains - Los Angeles Times",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxORTdjcE9vWnMzeXhSZ1BIdVR0YUdyTDdJNm1yc2QwbkNjZlE4Y1licnlrOENIU3pkWml0YVpUbDlCV1FBR3o5bzM1aEhYaTd1dGtPMFE0R2thdHZDVXltZVhaVWVMeVA0RFJtdkdsNG45Q3RQWEp5LW1jeUVuVkg2YWZHY2Z1UlI2RUt3elpXOGp5UXFiSGtVcEF0Vm1QUTRJUnJ1MUlfNXhNOEhyZi1HVXhVSTM?oc=5"
-        },
-        {
-          "source": "NPR",
-          "title": "Top House Democrat questions what Trump accomplished in Xi-Putin summit - NPR",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQQUdrWHZ0SlJLQzU1LUN1cTVhQUI2enJtRGdNU29TZ3pzckRNb1dOTHFTbE00U1VyendfVEZCM00tMXExaWotZE10SjVRcGRFdXRNaVRVZ3ZjSVRLR0Njc0JNM213R2V0NjgtbVViMDdUUm9Uck1xaVBWSUdDMHBHSWlLbldFc1U?oc=5"
-        },
-        {
-          "source": "The Atlantic",
-          "title": "Trump’s Embarrassing, Inconsequential Summit - The Atlantic",
-          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE4ybEhTTUxzVHYweTN1UXVYNjdHdTliMVZfbEFla041U2NYeVNLelRzdDBxLW11N05lZFotbm01eTV3SzdpODdSeFYtdG5RN1E2ZWZ6VWRVSENmeVBVUHF3bENwdmlpRzI1ZlZ2OEhWdzNmZVhvNnpGRUNBdw?oc=5"
-        },
-        {
-          "source": "The Hill",
-          "title": "Trump, Xi, Putin issue 4-point ‘declaration toward peace’ after summit - The Hill",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQckxJY2t2djJkZ2EzM05FaDlFWUU5NzlpQTlrU3Zxa04xLVI1OEdTdk9ORkxlOWxILUVoV0RITFN1V2w5cnZWOTZ4WFFhZjlHdHNKUzdfVWlHSFBBNkxMZHoycXFJa1lkRG1ncFRKRTNob21peUhWWTFDTEpybmtDUnJndXFycXBuOGtBN1Z5eVQtZERON05tREhtSdIBoAFBVV95cUxQNTVMMlF5ZURqckhCVlFKQnF4T0xhdGZDeTVrb19raWpVT0hIUjdheUJaLUpmQjg4eVJGYU9GX09WNmVfdlpMUEt0QXNEN3ptbkRJNWVhNDNlaEFJUE9kc2k1TlF1Wmx1ZTlYVkdxSVVVS1lXRkwwNmJfckVEMG93QnZsRm5GWXo5NnJ2alBLM0ROM1ZRTFJFM1YzZWZxVU9n?oc=5"
-        },
-        {
-          "source": "The Atlantic",
-          "title": "What Trump’s Summit in China Reveals - The Atlantic",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQRWVseXdYVlBvU3VSTGRrX3QzN2NMQzVOakNITnBBS1Z6b2NJR3NiMFpCUGxobE9TaVViLXBVUEdjT3J4aEZVSjdrZko1VTFGczlvTXd5T2RGTWN4MGN4bnVSaklFSi1lQ1RCdmk5TV9OWjN3NVlBY3ZFTFk2eDQ1dWNhZ3JnM015OUpnSV9uam4?oc=5"
-        },
-        {
-          "source": "PBS",
-          "title": "Trump lands in China for trade talks and high-stakes summit with Xi and Putin - PBS",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQb0cyRko0OEN1RlRLT0VFTjBfeU1zZWllR193RFc3WVl4T2h1NmFJQjl4UEZJcWdKUmFuOWVXUTl1Qi1uaERobk1iZGpIR20ycjlNcl9lVDY3MzIxbmhJblA1ejlQOGE5Yi1iZUpZMkhEemo4RGFrMVIwSzJjMW5OY0RURDFrRWRUaFBweFZlS3BwWUg2WUhhWDY1Sno4QVV1eTU5cjRyT1VCZkZ5ZExvRQ?oc=5"
-        }
-      ],
-      "note": "",
-      "outlook": "First reading. Watch the next 72 hours.",
-      "published": "2026-11-20T07:26:00-06:00",
-      "related": 5,
-      "relatedSources": [
-        "PBS",
-        "Los Angeles Times",
-        "NPR",
-        "The Atlantic",
-        "The Hill"
-      ],
-      "severity": "STANDBY",
-      "soWhat": "",
-      "source": "The New York Times",
-      "sourceCount": 6,
-      "sourceId": "global",
-      "tags": [
-        "global",
-        "standby"
-      ],
-      "timeKnown": true,
-      "title": "Trump, Xi and Putin Seek to Project Power at Their First Summit - The New York Times",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1MQWU3M21LcmgtNFU4MmVaaEw2cnIyUGJVclVsc2JIWGZhcFVFMXE0SmJqaG5MQnpWN3BRLWZuWmh6cTRudTl0Nzc1SlJ4WVdQamZlR0hFMlRtTy04SEhhVVVsREp2RktrY0ZwUDFkcmpnaXM?oc=5",
-      "weekday": "Thu"
-    },
-    {
-      "action": "no action needed",
-      "arrowDay": "→",
-      "arrowWeek": "→",
-      "confidence": "reported",
-      "date": "2026-11-23",
-      "guest": "",
-      "id": "headline:49512c370a28b3cb",
-      "kind": "global",
-      "label": "Nov 23, 2026 10:48 PM CT",
-      "lane": "news",
-      "links": [
-        {
-          "source": "Reuters",
-          "title": "Solomon Islands plans to replace China security pact with Australia treaty, report says - Reuters",
-          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPdFNLbGx2cFNYcnJoRU9LLUIwRUpVUVktaTRNeDBJbDJCT3BoelRQWEdYcGJwZXJTQVE3eG1RX0JuQVVVelotVjJxdzVmcWliSUhxUVlqQ0hoSDJzeE5OTjlYVWdGZTZOT2ZtNldqeTd4aVlaRHVEczlvN2h4Wk5JUGNTVWtreTJVeFNqOVF2R252dHI5ZWI5RXp0VXk5MXdJNFQwOFdQYktYbENvZHBNeDJGY24teFZVd1VrWWJ3eEp3ZS1n?oc=5"
-        }
-      ],
-      "note": "",
-      "outlook": "First reading. Watch the next 72 hours.",
-      "published": "2026-11-23T22:48:00-06:00",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "STANDBY",
-      "soWhat": "",
-      "source": "Reuters",
-      "sourceCount": 1,
-      "sourceId": "global",
-      "tags": [
-        "global",
-        "standby"
-      ],
-      "timeKnown": true,
-      "title": "Solomon Islands plans to replace China security pact with Australia treaty, report says - Reuters",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPdFNLbGx2cFNYcnJoRU9LLUIwRUpVUVktaTRNeDBJbDJCT3BoelRQWEdYcGJwZXJTQVE3eG1RX0JuQVVVelotVjJxdzVmcWliSUhxUVlqQ0hoSDJzeE5OTjlYVWdGZTZOT2ZtNldqeTd4aVlaRHVEczlvN2h4Wk5JUGNTVWtreTJVeFNqOVF2R252dHI5ZWI5RXp0VXk5MXdJNFQwOFdQYktYbENvZHBNeDJGY24teFZVd1VrWWJ3eEp3ZS1n?oc=5",
-      "weekday": "Mon"
-    },
-    {
-      "action": "no action needed",
-      "arrowDay": "→",
-      "arrowWeek": "→",
-      "confidence": "reported",
-      "date": "2026-11-23",
+      "date": "2026-11-24",
       "guest": "",
       "id": "headline:1126a8afc0efe03f",
       "kind": "global",
-      "label": "Nov 23, 2026 5:31 PM CT",
+      "label": "Nov 24, 2026 7:41 AM CT",
       "lane": "news",
       "links": [
+        {
+          "source": "Bloomberg",
+          "title": "Germany Eyes EU Sanctions to Bar Russia From Hockey Championship - Bloomberg",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNT3ZFdlhYd2h1RFFxTHFXTnp2T3dnbDFSU19ib1hMVFVRaEVfXzBTT1RudWFSbFN0ZDdnMTAycjFqQmhrVkplN1MzMVcyaXdhNTREeURXZFVhdmpfNWM3dUFRTmxlZnkybXZIdkdIdjBxRGtoSGl1Ujl3MUdfSXBPbG5uZmlTOUwzWHRRNUhIYWpaMEM5QUhsdWhSM3dTZW5PU2dibFlJNV90bDVXclRUY1lra0dqdw?oc=5"
+        },
         {
           "source": "Al Jazeera",
           "title": "EU plans sports ban in sweeping new Russia sanctions proposal - Al Jazeera",
@@ -2045,25 +1984,94 @@
       ],
       "note": "",
       "outlook": "First reading. Watch the next 72 hours.",
-      "published": "2026-11-23T17:31:34-06:00",
-      "related": 2,
+      "published": "2026-11-24T07:41:48-06:00",
+      "related": 3,
       "relatedSources": [
         "Reuters",
+        "Al Jazeera",
         "AP"
       ],
       "severity": "ALERT",
       "soWhat": "no action needed",
-      "source": "Al Jazeera",
-      "sourceCount": 3,
+      "source": "Bloomberg",
+      "sourceCount": 4,
       "sourceId": "global",
       "tags": [
         "global",
         "alert"
       ],
       "timeKnown": true,
-      "title": "EU plans sports ban in sweeping new Russia sanctions proposal - Al Jazeera",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNRFBWaUtNV2pMbGVsbFJlZkF3RU9mczNYSUF2Q1Q0N2JqV2ljOGtxaEVPcDVHeXZUVklUTHAwNXVTQjJjQTZKVlF3eXBaTWZnaVR2M0ZmdWdmRDVmMndYc2lQQjQyNWdIWjBkekR6d3ZSaE9ld0dINmhUX2JGaUJjejNCN2FxanBJbzdDeUlZV1piLWlVd2VzaDVSdHZnOEUtQW0xUFN30gGrAUFVX3lxTE10OG84bk5ZSWoyLUMwemdRWDRCVjUxOXIzeW9YaVdpbGpFWkNxLW9LYnJ4ZjhFRTlNZEtEWHVPVnRDbUw2TTVUVUpET19udXJBX0hrYmtGZEJUbG9UeEZZdmZZVXNLVnM2QjlsSUNWYTVvT1ZWcnlFZFdGTjM2RmxWZWl4cVhzZVkycWx2dzJYMHRPTzNTSTVpcDM5ZGlZWS1lYVhLUDEySXUwMA?oc=5",
+      "title": "Germany Eyes EU Sanctions to Bar Russia From Hockey Championship - Bloomberg",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNT3ZFdlhYd2h1RFFxTHFXTnp2T3dnbDFSU19ib1hMVFVRaEVfXzBTT1RudWFSbFN0ZDdnMTAycjFqQmhrVkplN1MzMVcyaXdhNTREeURXZFVhdmpfNWM3dUFRTmxlZnkybXZIdkdIdjBxRGtoSGl1Ujl3MUdfSXBPbG5uZmlTOUwzWHRRNUhIYWpaMEM5QUhsdWhSM3dTZW5PU2dibFlJNV90bDVXclRUY1lra0dqdw?oc=5",
       "weekday": "Mon"
+    },
+    {
+      "action": "no action needed",
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "confidence": "reported",
+      "date": "2026-11-20",
+      "demoted": "older than 72h",
+      "guest": "",
+      "id": "headline:6c1e2b6cd7974ad7",
+      "kind": "global",
+      "label": "Nov 20, 2026 7:26 AM CT",
+      "lane": "news",
+      "links": [
+        {
+          "source": "The New York Times",
+          "title": "Trump, Xi and Putin Seek to Project Power at Their First Summit - The New York Times",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1MQWU3M21LcmgtNFU4MmVaaEw2cnIyUGJVclVsc2JIWGZhcFVFMXE0SmJqaG5MQnpWN3BRLWZuWmh6cTRudTl0Nzc1SlJ4WVdQamZlR0hFMlRtTy04SEhhVVVsREp2RktrY0ZwUDFkcmpnaXM?oc=5"
+        },
+        {
+          "source": "U.S. Representative Ami Bera (.gov)",
+          "title": "Rep. Bera Statement on President Trump's Trilateral Summit with Putin and Xi - U.S. Representative Ami Bera (.gov)",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQWFpLWkVUR0wycFd2OXR3LTFoWFVtSmlDcFdFSW4tSUlZd2FnUTFFMjJPUHRQQl9XY1Jha29UWWM2c1JRTFZyWW45RDA1TlpFWnMwSE9xZTBmYmFkWXZzaWY5dzNSN3ZJV1RSY0g1aGpaOFN1bWs1ZG05YmVUd0wwOU9oTnZURUdXYUFRdVZmMGtlZ1FTcHpUODlFZzJha2pZNjAzeFBNVzczTnNuNjFpOHlscWtnQTB6U0E?oc=5"
+        },
+        {
+          "source": "The Atlantic",
+          "title": "Trump’s Embarrassing, Inconsequential Summit - The Atlantic",
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE4ybEhTTUxzVHYweTN1UXVYNjdHdTliMVZfbEFla041U2NYeVNLelRzdDBxLW11N05lZFotbm01eTV3SzdpODdSeFYtdG5RN1E2ZWZ6VWRVSENmeVBVUHF3bENwdmlpRzI1ZlZ2OEhWdzNmZVhvNnpGRUNBdw?oc=5"
+        },
+        {
+          "source": "The Hill",
+          "title": "Trump, Xi, Putin issue 4-point ‘declaration toward peace’ after summit - The Hill",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQckxJY2t2djJkZ2EzM05FaDlFWUU5NzlpQTlrU3Zxa04xLVI1OEdTdk9ORkxlOWxILUVoV0RITFN1V2w5cnZWOTZ4WFFhZjlHdHNKUzdfVWlHSFBBNkxMZHoycXFJa1lkRG1ncFRKRTNob21peUhWWTFDTEpybmtDUnJndXFycXBuOGtBN1Z5eVQtZERON05tREhtSdIBoAFBVV95cUxQNTVMMlF5ZURqckhCVlFKQnF4T0xhdGZDeTVrb19raWpVT0hIUjdheUJaLUpmQjg4eVJGYU9GX09WNmVfdlpMUEt0QXNEN3ptbkRJNWVhNDNlaEFJUE9kc2k1TlF1Wmx1ZTlYVkdxSVVVS1lXRkwwNmJfckVEMG93QnZsRm5GWXo5NnJ2alBLM0ROM1ZRTFJFM1YzZWZxVU9n?oc=5"
+        },
+        {
+          "source": "PBS",
+          "title": "Trump lands in China for trade talks and high-stakes summit with Xi and Putin - PBS",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQb0cyRko0OEN1RlRLT0VFTjBfeU1zZWllR193RFc3WVl4T2h1NmFJQjl4UEZJcWdKUmFuOWVXUTl1Qi1uaERobk1iZGpIR20ycjlNcl9lVDY3MzIxbmhJblA1ejlQOGE5Yi1iZUpZMkhEemo4RGFrMVIwSzJjMW5OY0RURDFrRWRUaFBweFZlS3BwWUg2WUhhWDY1Sno4QVV1eTU5cjRyT1VCZkZ5ZExvRQ?oc=5"
+        },
+        {
+          "source": "PBS",
+          "title": "What the historic Trump, Xi and Putin summit signals to the world - PBS",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxORzhPS3dxTGhkSkp0Zk55TFpiXzhKV3A5VzlPQ2tkU2pOVVJ3NngzMjRSaGxUNUo3WlJFQkpOQ1BzRDh4VnBHRWd4M1Jpb040X0Y3MUk5WGVvRkg2MXk3XzRPcUxkbDRsZkVMS3NVb0x5VjJvdHg1THMteU1xeVlmaHV3bG5OT1NWU0FlMm5Wb2lBZnZyWjhJU3VwLW9BVjl3NTJ2c0hMOXBNTkJYTk1XUWZLR0syTjZiTVBQSDJqYw?oc=5"
+        }
+      ],
+      "note": "",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "published": "2026-11-20T07:26:00-06:00",
+      "related": 4,
+      "relatedSources": [
+        "PBS",
+        "U.S. Representative Ami Bera (.gov)",
+        "The Atlantic",
+        "The Hill"
+      ],
+      "severity": "STANDBY",
+      "soWhat": "",
+      "source": "The New York Times",
+      "sourceCount": 5,
+      "sourceId": "global",
+      "tags": [
+        "global",
+        "standby"
+      ],
+      "timeKnown": true,
+      "title": "Trump, Xi and Putin Seek to Project Power at Their First Summit - The New York Times",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1MQWU3M21LcmgtNFU4MmVaaEw2cnIyUGJVclVsc2JIWGZhcFVFMXE0SmJqaG5MQnpWN3BRLWZuWmh6cTRudTl0Nzc1SlJ4WVdQamZlR0hFMlRtTy04SEhhVVVsREp2RktrY0ZwUDFkcmpnaXM?oc=5",
+      "weekday": "Thu"
     },
     {
       "action": "no action needed",
@@ -2105,51 +2113,6 @@
       "arrowDay": "→",
       "arrowWeek": "→",
       "confidence": "reported",
-      "date": "2026-11-23",
-      "guest": "",
-      "id": "headline:cab8c0a506c3d314",
-      "kind": "global",
-      "label": "Nov 23, 2026 6:30 PM CT",
-      "lane": "news",
-      "links": [
-        {
-          "source": "France 24",
-          "title": "Zelensky urges four-way peace talks with Russia, Europe and US 'as soon as possible' - France 24",
-          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNVEtqa25rSm4yYnMybWpTam9YNEVLTzFMbjQ4cDdqRkJoc1IxNUl2UWtGc0dkQXU0a3FjVGM1NTlYSXZoM1ZhakxfblhibjB1cXB2Mks1MWhITEVfZzVxYXVKQ1NGZDhvX2stbmNwU0NqdjhYWDFuVGp6SWZBTGJkejdOTVN6Q2MwN2tqSlpNLU93SU1NMndZeUhCY0NwQVRyR21PSkh6Z0NzZDNOLW5PemJGVFc3LVJ6NVJfRzFFWG1BY00?oc=5"
-        },
-        {
-          "source": "Atlantic Council",
-          "title": "Where the Russia-Ukraine peace talks stand after Abu Dhabi - Atlantic Council",
-          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQXzRIQ2x3ZExSYkJzT3FOWllvR0ZwN1o4THZjdlFvb3ZaSE5GSmdsNU5LNHNTS3gyRXg0OEF2bEI2U1UxeE1vaGZaZFhXUE5NSGRqWW5NMDJuQzI0UE9PblJtNDAxSlRxMWlGU3FqU3FhbFdyNno4RUdVX0kwVmYwSEU2bEVoU1ozOTlUOFo3dE9YcVF2YnMwalhyQXE1UmprRkpVX0xoRGJxdjFVdm9qUE5PQXdUN1NMLXlB?oc=5"
-        }
-      ],
-      "note": "",
-      "outlook": "First reading. Watch the next 72 hours.",
-      "published": "2026-11-23T18:30:11-06:00",
-      "related": 2,
-      "relatedSources": [
-        "Atlantic Council",
-        "Reuters"
-      ],
-      "severity": "ALERT",
-      "soWhat": "no action needed",
-      "source": "France 24",
-      "sourceCount": 3,
-      "sourceId": "global",
-      "tags": [
-        "global",
-        "alert"
-      ],
-      "timeKnown": true,
-      "title": "Zelensky urges four-way peace talks with Russia, Europe and US 'as soon as possible' - France 24",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNVEtqa25rSm4yYnMybWpTam9YNEVLTzFMbjQ4cDdqRkJoc1IxNUl2UWtGc0dkQXU0a3FjVGM1NTlYSXZoM1ZhakxfblhibjB1cXB2Mks1MWhITEVfZzVxYXVKQ1NGZDhvX2stbmNwU0NqdjhYWDFuVGp6SWZBTGJkejdOTVN6Q2MwN2tqSlpNLU93SU1NMndZeUhCY0NwQVRyR21PSkh6Z0NzZDNOLW5PemJGVFc3LVJ6NVJfRzFFWG1BY00?oc=5",
-      "weekday": "Mon"
-    },
-    {
-      "action": "no action needed",
-      "arrowDay": "→",
-      "arrowWeek": "→",
-      "confidence": "reported",
       "date": "2026-11-19",
       "guest": "",
       "id": "headline:859af8d6b434e2b1",
@@ -2181,6 +2144,76 @@
       "weekday": "Thu"
     },
     {
+      "action": "no action needed",
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "confidence": "reported",
+      "date": "2026-11-20",
+      "guest": "",
+      "id": "headline:f5017c44e909c1d9",
+      "kind": "global",
+      "label": "Nov 20, 2026 1:35 PM CT",
+      "lane": "news",
+      "links": [
+        {
+          "source": "AP",
+          "title": "Rights groups urge sanctions after top UN court finds Myanmar committed genocide against Rohingya - AP News",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQLTNLWmdYdncxbDRfcFZhVlRFeVRfN3Jic2JSb252SkQ4djE0ckRoaGpqcnZKWDU5Wm4tUXdjTHdPZVNtWkVRWVNSN29EcFNQQkhVeVF6WWQ5NFB2WUFURVFyWjI3dmRGeEJNSDJrMk1HYTdMMXVTMkZqZl9ZVjlJMVlhSWRTR0Nha0NJZ3J0TVBpVndia25nVXNDZi1GcnVxYTFtdklydElZQy1FMHo5TGhJcUpjcG5rWDZJaQ?oc=5"
+        }
+      ],
+      "note": "",
+      "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+      "published": "2026-11-20T13:35:00-06:00",
+      "severity": "STANDBY",
+      "soWhat": "",
+      "source": "AP",
+      "sourceCount": 1,
+      "sourceId": "global",
+      "tags": [
+        "global",
+        "standby"
+      ],
+      "timeKnown": true,
+      "title": "Rights groups urge sanctions after top UN court finds Myanmar committed genocide against Rohingya - AP News",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQLTNLWmdYdncxbDRfcFZhVlRFeVRfN3Jic2JSb252SkQ4djE0ckRoaGpqcnZKWDU5Wm4tUXdjTHdPZVNtWkVRWVNSN29EcFNQQkhVeVF6WWQ5NFB2WUFURVFyWjI3dmRGeEJNSDJrMk1HYTdMMXVTMkZqZl9ZVjlJMVlhSWRTR0Nha0NJZ3J0TVBpVndia25nVXNDZi1GcnVxYTFtdklydElZQy1FMHo5TGhJcUpjcG5rWDZJaQ?oc=5",
+      "weekday": "Fri"
+    },
+    {
+      "action": "no action needed",
+      "arrowDay": "→",
+      "arrowWeek": "→",
+      "confidence": "reported",
+      "date": "2026-11-23",
+      "guest": "",
+      "id": "headline:49512c370a28b3cb",
+      "kind": "global",
+      "label": "Nov 23, 2026 10:48 PM CT",
+      "lane": "news",
+      "links": [
+        {
+          "source": "Reuters",
+          "title": "Solomon Islands plans to replace China security pact with Australia treaty, report says - Reuters",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPdFNLbGx2cFNYcnJoRU9LLUIwRUpVUVktaTRNeDBJbDJCT3BoelRQWEdYcGJwZXJTQVE3eG1RX0JuQVVVelotVjJxdzVmcWliSUhxUVlqQ0hoSDJzeE5OTjlYVWdGZTZOT2ZtNldqeTd4aVlaRHVEczlvN2h4Wk5JUGNTVWtreTJVeFNqOVF2R252dHI5ZWI5RXp0VXk5MXdJNFQwOFdQYktYbENvZHBNeDJGY24teFZVd1VrWWJ3eEp3ZS1n?oc=5"
+        }
+      ],
+      "note": "",
+      "outlook": "First reading. Watch the next 72 hours.",
+      "published": "2026-11-23T22:48:00-06:00",
+      "severity": "STANDBY",
+      "soWhat": "",
+      "source": "Reuters",
+      "sourceCount": 1,
+      "sourceId": "global",
+      "tags": [
+        "global",
+        "standby"
+      ],
+      "timeKnown": true,
+      "title": "Solomon Islands plans to replace China security pact with Australia treaty, report says - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPdFNLbGx2cFNYcnJoRU9LLUIwRUpVUVktaTRNeDBJbDJCT3BoelRQWEdYcGJwZXJTQVE3eG1RX0JuQVVVelotVjJxdzVmcWliSUhxUVlqQ0hoSDJzeE5OTjlYVWdGZTZOT2ZtNldqeTd4aVlaRHVEczlvN2h4Wk5JUGNTVWtreTJVeFNqOVF2R252dHI5ZWI5RXp0VXk5MXdJNFQwOFdQYktYbENvZHBNeDJGY24teFZVd1VrWWJ3eEp3ZS1n?oc=5",
+      "weekday": "Mon"
+    },
+    {
       "asset": "cable",
       "cause": "unconfirmed",
       "date": "2026-11-19",
@@ -2196,8 +2229,8 @@
           "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQY25MT1kwVXhudUk1UlNybEpEa0lmNERtMFRkLXVOOGFqUjJ3VWVpb2hNakMxZmFUVVdGSGRvYUZvWnA0RVZkMWk0d19FRk1pUVNzQTN0cE5ET2hnRkNYYzdkQThxbWN1R05DdEpncFBkNzlEMnlRZHNMaUVjSUdNdFZmRTNEMkRFLThpdXF1cFlVYlJ5Q3NIYjdiRkNMN09EanBfa1h4SHlmd0HSAbABQVVfeXFMUFU0ZDJkZjE0YlNKREs1Y0pvUWQ1ZVVhZjUydERkNVFTTERPLWVucDRObFFBRGdScEh1UWtsSFBhX3BoRjhmck9YRko0azlQNDhMRkc0YXdQSzBoakEwa0lMRU1ZeGJ3Yl9Qc1gzVHFGeTJBbU9RUVZlVGVOYm9uWFI5VHRMTkZMVFZFUmFJZzNDVER0cUU1d2JEOXpUS3E5TV9kaERYUWVfRFNXbE0tXzc?oc=5"
         }
       ],
-      "market": "Brent -6.76% over 5 days · TTF 5.86% over 5 days",
-      "note": "Brent -6.76% over 5 days · TTF 5.86% over 5 days",
+      "market": "Brent -6.52% over 5 days · TTF 5.86% over 5 days",
+      "note": "Brent -6.52% over 5 days · TTF 5.86% over 5 days",
       "open": true,
       "published": "2026-11-19T03:59:26-06:00",
       "region": "",
@@ -2213,40 +2246,6 @@
       "title": "Internet services disrupted across Pakistan due to undersea cable fault - Daily Ausaf",
       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQY25MT1kwVXhudUk1UlNybEpEa0lmNERtMFRkLXVOOGFqUjJ3VWVpb2hNakMxZmFUVVdGSGRvYUZvWnA0RVZkMWk0d19FRk1pUVNzQTN0cE5ET2hnRkNYYzdkQThxbWN1R05DdEpncFBkNzlEMnlRZHNMaUVjSUdNdFZmRTNEMkRFLThpdXF1cFlVYlJ5Q3NIYjdiRkNMN09EanBfa1h4SHlmd0HSAbABQVVfeXFMUFU0ZDJkZjE0YlNKREs1Y0pvUWQ1ZVVhZjUydERkNVFTTERPLWVucDRObFFBRGdScEh1UWtsSFBhX3BoRjhmck9YRko0azlQNDhMRkc0YXdQSzBoakEwa0lMRU1ZeGJ3Yl9Qc1gzVHFGeTJBbU9RUVZlVGVOYm9uWFI5VHRMTkZMVFZFUmFJZzNDVER0cUU1d2JEOXpUS3E5TV9kaERYUWVfRFNXbE0tXzc?oc=5",
       "weekday": "Thu"
-    },
-    {
-      "asset": "pipeline",
-      "cause": "unconfirmed",
-      "date": "2026-11-18",
-      "guest": "",
-      "id": "infra:66b23ff5a74490b7",
-      "kind": "infra",
-      "label": "Nov 18, 2026 7:17 AM CT",
-      "lane": "threat",
-      "links": [
-        {
-          "source": "The Manila Times",
-          "title": "Hong Kong drops charge against captain over Baltic pipeline damage - The Manila Times",
-          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQaXNWQ09feWZ5dnNrQlF3WGVGTzdiekcxWEIyck41LW13UlI5dWw4R0prRzJKUzBLX3M0U0Y5S244UDVDUW9rUXhnYTkzdFVtTU51dkJZUmFEWmttd0c1MjIzSHBpNEw3ZW5WWUhlQmdnNVhEWFR3Q3JwSXRBV245TEU3LXBhQnFRMGQxQ0tPc0x6OXRMX3ZyaDdJOUduX05VVjU5LTEtcFI5TURERXlrRy1MN0doTGFLS2RhRVVDNXU2a3JWTVlna2gtc2jSAdIBQVVfeXFMUHNqSHNFMkZlbktDV2hac0wwZDRZdWdTRk1UX0JRLUh6N3ZzN2NHVGRoc1VKUGQ4cFJGQ2dTbVlaRGo2Y1ZsNnZqbkdPQnV1ejFKU0gza0ZzQThoNkRkNjdSM1A5OHVNajNnbmZ4MWJBYjFBUzZZR1RFNG84ZEpQQ01ybFE1NU9fZV9NcVpxQjB0SDNlLVZYdHprME4zTUREMGJ5cDFYMW9HYlFZcDR4YWNFUms2VjEtT0tEWk0yZkozWERNSVl1MEp2OXVONkhDdGh3?oc=5"
-        }
-      ],
-      "market": "Brent -6.76% over 5 days · TTF 5.86% over 5 days",
-      "note": "Brent -6.76% over 5 days · TTF 5.86% over 5 days",
-      "open": true,
-      "published": "2026-11-18T07:17:00-06:00",
-      "region": "Baltic Sea",
-      "severity": "STANDBY",
-      "source": "The Manila Times",
-      "sourceCount": 1,
-      "sourceId": "infra",
-      "tags": [
-        "infra",
-        "standby"
-      ],
-      "timeKnown": true,
-      "title": "Hong Kong drops charge against captain over Baltic pipeline damage - The Manila Times",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQaXNWQ09feWZ5dnNrQlF3WGVGTzdiekcxWEIyck41LW13UlI5dWw4R0prRzJKUzBLX3M0U0Y5S244UDVDUW9rUXhnYTkzdFVtTU51dkJZUmFEWmttd0c1MjIzSHBpNEw3ZW5WWUhlQmdnNVhEWFR3Q3JwSXRBV245TEU3LXBhQnFRMGQxQ0tPc0x6OXRMX3ZyaDdJOUduX05VVjU5LTEtcFI5TURERXlrRy1MN0doTGFLS2RhRVVDNXU2a3JWTVlna2gtc2jSAdIBQVVfeXFMUHNqSHNFMkZlbktDV2hac0wwZDRZdWdTRk1UX0JRLUh6N3ZzN2NHVGRoc1VKUGQ4cFJGQ2dTbVlaRGo2Y1ZsNnZqbkdPQnV1ejFKU0gza0ZzQThoNkRkNjdSM1A5OHVNajNnbmZ4MWJBYjFBUzZZR1RFNG84ZEpQQ01ybFE1NU9fZV9NcVpxQjB0SDNlLVZYdHprME4zTUREMGJ5cDFYMW9HYlFZcDR4YWNFUms2VjEtT0tEWk0yZkozWERNSVl1MEp2OXVONkhDdGh3?oc=5",
-      "weekday": "Wed"
     },
     {
       "date": "2026-11-23",

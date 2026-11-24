@@ -28,9 +28,9 @@
             "2026-11-26",
             "2026-12-25"
           ],
-          "level": 7167.87,
-          "change": -69.3,
-          "changePct": -0.96,
+          "level": 7170.22,
+          "change": -66.95,
+          "changePct": -0.93,
           "asOf": "2026-11-24",
           "source": "https://finance.yahoo.com/quote/%5EGSPC"
         }
@@ -310,12 +310,12 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:58c107d377a83311",
+          "id": "headline:60611a4e9c38710a",
           "kind": "headline",
           "lane": "news",
-          "source": "Bloomberg.com",
+          "source": "Bloomberg",
           "sourceId": "headline",
-          "title": "Bessent Says Fed Risks Jeopardizing Economy by Overtightening - Bloomberg.com",
+          "title": "Bessent Says Fed Risks Jeopardizing Economy by Overtightening - Bloomberg",
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNcXh5Rm5oX0xZaXpqczkwRTFfM2gzWGFGQzNsOWZlVVFuOTU1dHgwN1YwektGRmFBOW5LWUltcUE2Q0d2YThXTFQtSHctaFZmcUFWWTRsX0dMaWpKRUtnd2cyUFViMGt6b2N1RGJRMmdmUjF4aUlJR1J2dDF5c2lTZXd4dlFyVG5IQ2hFR2VyTG8zTWZvQ09Oc25Cd2x1Q2pFMFQtOW9FMjV4RnR1Vmc?oc=5",
@@ -1003,9 +1003,9 @@
             }
           ],
           "holidays": [],
-          "level": 33934.72,
-          "change": -147.38,
-          "changePct": -0.43,
+          "level": 33973.84,
+          "change": -108.26,
+          "changePct": -0.32,
           "asOf": "2026-11-24",
           "source": "https://finance.yahoo.com/quote/%5EGSPTSE"
         },
@@ -1021,9 +1021,9 @@
             }
           ],
           "holidays": [],
-          "level": 69988.72,
-          "change": 633.1,
-          "changePct": 0.91,
+          "level": 69703.93,
+          "change": 348.31,
+          "changePct": 0.5,
           "asOf": "2026-11-24",
           "source": "https://finance.yahoo.com/quote/%5EMXX"
         }
@@ -1261,6 +1261,27 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:17bf89efc23e3cff",
+          "kind": "headline",
+          "lane": "news",
+          "source": "www.equiti.com",
+          "sourceId": "headline",
+          "title": "Week Ahead: US GDP, PCE Inflation & Fed Rate Outlook - www.equiti.com",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPOGFOUE51WXJNSFhPYWJSRktSVS1YeVkwNFBabzlqUUhweEVsZ1BLZmVfOHlZMU1GSzRjY3V6aW5tN0p5M0ZBcnM4eVNtLTVyNTg3QVVWZnpKMnAwQ3N2d2lsbnBuM3ZxdkoyVGgydjFwWG1qS1p4X05kLVFtQlhnSjh1S1QwS0FnVmVubjFOSGVxa0tWQzluMmxsUlM5ejA?oc=5",
+          "published": "2026-11-20T18:15:14-06:00",
+          "date": "2026-11-20",
+          "label": "Nov 20, 2026 6:15 PM CT",
+          "weekday": "Fri",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:dc86def269fc755f",
           "kind": "headline",
           "lane": "news",
@@ -1399,27 +1420,6 @@
           "published": "2026-11-20T10:30:00-06:00",
           "date": "2026-11-20",
           "label": "Nov 20, 2026 10:30 AM CT",
-          "weekday": "Fri",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:fefbeed94097684c",
-          "kind": "headline",
-          "lane": "news",
-          "source": "www.equiti.com",
-          "sourceId": "headline",
-          "title": "Week Ahead: US GDP, PCE Inflation & Fed Rate Outlook - www.equiti.com",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPZGJtX1AyM2JjQmtHQlNrdzZ2blI1enNocTE1bXRrelRlR0JMNk9mck9WcnJUSng0SFMxZFNZdk93SHliU1NhZTBQczFEdW9MSEVONm9OaXpQZXUwRFJ2eVpTUzJCZXpicDg4VGdCZkNvY3hZSVdUaWg1aGwtcnY3OWg2bFNJRXBIWjR3YzVtUlFtY1VuR2JHTjA2QWVlQQ?oc=5",
-          "published": "2026-11-20T07:22:38-06:00",
-          "date": "2026-11-20",
-          "label": "Nov 20, 2026 7:22 AM CT",
           "weekday": "Fri",
           "timeKnown": true,
           "tags": [
@@ -1887,14 +1887,14 @@
               "source": "Bloomberg.com"
             },
             {
+              "title": "Week Ahead: US GDP, PCE Inflation & Fed Rate Outlook - www.equiti.com",
+              "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPOGFOUE51WXJNSFhPYWJSRktSVS1YeVkwNFBabzlqUUhweEVsZ1BLZmVfOHlZMU1GSzRjY3V6aW5tN0p5M0ZBcnM4eVNtLTVyNTg3QVVWZnpKMnAwQ3N2d2lsbnBuM3ZxdkoyVGgydjFwWG1qS1p4X05kLVFtQlhnSjh1S1QwS0FnVmVubjFOSGVxa0tWQzluMmxsUlM5ejA?oc=5",
+              "source": "www.equiti.com"
+            },
+            {
               "title": "Bank of Canada raises benchmark rate as inflation pressures persist - Traders Union",
               "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxONi1QVHc0a0wzbEVJV0tXRkNFUXB3a1FLQTRzaEhrRHRiSnJ4LWdZc0hVYXdLOGNDQnUtTTJVSTRBckV6ODZyUzJVLTdtV3pQbDQyY082U1JTWHBKQ1RZTi1NOW5mYk5sU3p5V2xBUndycnluM0l2WXAxelg2QkNxc2w1dkFXemZiQ3lMQWV2M3h1eFdJTHc?oc=5",
               "source": "Traders Union"
-            },
-            {
-              "title": "Week Ahead: US GDP, PCE Inflation & Fed Rate Outlook - www.equiti.com",
-              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPZGJtX1AyM2JjQmtHQlNrdzZ2blI1enNocTE1bXRrelRlR0JMNk9mck9WcnJUSng0SFMxZFNZdk93SHliU1NhZTBQczFEdW9MSEVONm9OaXpQZXUwRFJ2eVpTUzJCZXpicDg4VGdCZkNvY3hZSVdUaWg1aGwtcnY3OWg2bFNJRXBIWjR3YzVtUlFtY1VuR2JHTjA2QWVlQQ?oc=5",
-              "source": "www.equiti.com"
             }
           ],
           "title": "Mexico’s inflation hits six-month high but core measure undershoots forecasts - KFGO"
@@ -1940,9 +1940,9 @@
             }
           ],
           "holidays": [],
-          "level": 165612.94,
-          "change": 816.94,
-          "changePct": 0.5,
+          "level": 165352.19,
+          "change": 556.19,
+          "changePct": 0.34,
           "asOf": "2026-11-24",
           "source": "https://finance.yahoo.com/quote/%5EBVSP"
         }
@@ -2033,12 +2033,12 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:38539e29677491eb",
+          "id": "headline:297f4ce616485afa",
           "kind": "headline",
           "lane": "news",
-          "source": "Bloomberg",
+          "source": "Bloomberg.com",
           "sourceId": "headline",
-          "title": "B3 to Add Brazil Stocks Listed Abroad to Aid Ailing Local Market - Bloomberg",
+          "title": "B3 to Add Brazil Stocks Listed Abroad to Aid Ailing Local Market - Bloomberg.com",
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQUG1rRURHNlg3dFRKb3VqSW5zeWo5blBTeU1qcjRnaW1wUmxSSmhKRW5VNE5lVXAtb21scEI5UDVoQ01BX3dkMGNtZVZRSi1yRERLUnJmdHBnWHZ6TW96Rk9VSVBNMWw5ckFkUHQ0RDBTdnN0dHI3VW5Odm9pNV9mcUMxU054d2cwLUN6UUJ6Q3RBdGRIMGRIdUNhRWdmR1gweExyLWhocjd3a2MxWVYxZ1A5bVM1UQ?oc=5",
@@ -2762,9 +2762,9 @@
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOVmwtWW8tNlNYM2JXenVVaDZOaDVSQVJMR0swTndVWTJ3UU1qV2FTcl9YUXhlMVpCUkFMVGJCZDZyZDdiWkRsa3JmT1p5ZmFlX2J1c29NeDVKNFlTcG1ndWVaQjhla2N4VGlnZU42UkE3SExLX2NTSHppRTU2MEM0eG9YT2tCemhYZkVqemRJWUtUbk9mMUF2TkR1Wm1yN2dJMjFfU181TXhkRFNUZnMyUTB2UHlkcEJUUmpKOFlxTQ?oc=5",
-          "published": "2026-11-22T15:24:23-06:00",
+          "published": "2026-11-22T15:27:06-06:00",
           "date": "2026-11-22",
-          "label": "Nov 22, 2026 3:24 PM CT",
+          "label": "Nov 22, 2026 3:27 PM CT",
           "weekday": "Sun",
           "timeKnown": true,
           "tags": [
@@ -3448,14 +3448,35 @@
             }
           ],
           "holidays": [],
-          "level": 3548.37,
-          "change": 9.42,
-          "changePct": 0.27,
+          "level": 3538.95,
+          "change": 5.15,
+          "changePct": 0.15,
           "asOf": "2026-11-24",
           "source": "https://finance.yahoo.com/quote/000001.SS"
         }
       ],
       "headlines": [
+        {
+          "id": "headline:8d3ffb2e1185cc64",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Aktualita.co",
+          "sourceId": "headline",
+          "title": "Who Is Chen Jining? China Investigates Shanghai Party Chief in Major Corruption Probe - Aktualita.co",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPS215TnRjaWo3VzdCckxkWWdUY3ZvRmFCQi1vU2s1YVplMGNkUHJ0bEJSRGtNTjVwRnFfOFZ5cENmSWJyRzZSR1doMGFIQ3RFdldVVnVOd0lBb0lQRlhlc2JTc0hsdHJwU0Fidi1jWVFvUmM4YzBpWkFWRXB5bGk2NTVNOFhRRkdIVlphRA?oc=5",
+          "published": "2026-11-24T06:57:57-06:00",
+          "date": "2026-11-24",
+          "label": "Nov 24, 2026 6:57 AM CT",
+          "weekday": "Tue",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
         {
           "id": "headline:5650b8d14cfae079",
           "kind": "headline",
@@ -4274,27 +4295,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:49a573c414cb2002",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Share Talk",
-          "sourceId": "headline",
-          "title": "Copper prices fall to four-month low amid Shanghai market squeeze - Share Talk",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQekpJUEtPNnRrWWNHcHpfUEd3Ym5QeUxlRThkdnJpb2tUU085dEtjUGFMd3NYTmt5U1N6QUl3SFlhdTkzcDRObVVqQ1E1bUtHaGRKQ1BtZHlNdksycE85cWpkSGk3OFI2aktwQzR6WGxtc3ZpTUp0Q1QySXBuS25uLWw3Q2l6bGhuYzJsN0kwVUU0QU1pZ2NSYQ?oc=5",
-          "published": "2026-11-17T05:40:16-06:00",
-          "date": "2026-11-17",
-          "label": "Nov 17, 2026 5:40 AM CT",
-          "weekday": "Tue",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ],
       "spikes": []
@@ -4315,9 +4315,9 @@
             }
           ],
           "holidays": [],
-          "level": 6019.4,
-          "change": -55.07,
-          "changePct": -0.91,
+          "level": 5998.32,
+          "change": -76.15,
+          "changePct": -1.25,
           "asOf": "2026-11-24",
           "source": "https://finance.yahoo.com/quote/%5ESTOXX50E"
         }
@@ -5186,9 +5186,9 @@
             }
           ],
           "holidays": [],
-          "level": 22219.65,
-          "change": -164.09,
-          "changePct": -0.73,
+          "level": 22383.74,
+          "change": -27.06,
+          "changePct": -0.12,
           "asOf": "2026-11-24",
           "source": "https://finance.yahoo.com/quote/%5EHSI"
         }
@@ -5867,12 +5867,12 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:6f4265bfdca857e5",
+          "id": "headline:d49faf4d05db6ee2",
           "kind": "headline",
           "lane": "news",
-          "source": "Bloomberg.com",
+          "source": "Bloomberg",
           "sourceId": "headline",
-          "title": "Hong Kong Stocks Fall 20% From 2026 High as AI Selloff Spreads - Bloomberg.com",
+          "title": "Hong Kong Stocks Fall 20% From 2026 High as AI Selloff Spreads - Bloomberg",
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPbThIazd1YWxmaDlBTURHZmxKVzJPcWpOLXY3eVZGWXlua3ZwMlJxWDItMTJPTGhwakh4aEJSZFNVNE15LXhZazJveTVJQzVKUDZjUmJhNlVqd2FxWHQyQ3c5Zjl0d2FiM2ZMZl9MSXEwMXh5a0xtQXJxSUJIUGJfVmNBbW15XzNiQ211c3NwbXFwS2h5eW85YlJzTlAyNzh4X3JRWEptQ2pYODV4aVhQck45aXI?oc=5",
@@ -6696,27 +6696,6 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:c987aa3d5985263d",
-          "kind": "headline",
-          "lane": "news",
-          "source": "investingLive",
-          "sourceId": "headline",
-          "title": "Japan economy shrinks 0.1% in Q3, first fall in 4 quarters as inflation hits households - investingLive",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQdU9sMjNub1pTd01xZUptNDZRNUc1S1R2ZFZVeENBTmNWUnh5SXB2eVRPOEVqZ1RXZzU2XzRtaEE0RDI4dHc0TTNJVWhOWmFrZGlJaEVRTnpROWI0SnBzcUF4OE1GaHJFYVozMklyUUY1TE5xNUo0cWdnaHRWY21vWDU1TUhUckVjWW83UTZ3N0ZGc1U0czA4QU5ZYUpMNkcxTGRYTjc2Y1ZfOVlZMEJzc3NyWEZPUGxz?oc=5",
-          "published": "2026-11-15T20:44:54-06:00",
-          "date": "2026-11-15",
-          "label": "Nov 15, 2026 8:44 PM CT",
-          "weekday": "Sun",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
           "id": "headline:0eac1e357b9d888e",
           "kind": "headline",
           "lane": "news",
@@ -6771,6 +6750,27 @@
           "published": "2026-11-15T19:49:00-06:00",
           "date": "2026-11-15",
           "label": "Nov 15, 2026 7:49 PM CT",
+          "weekday": "Sun",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:c987aa3d5985263d",
+          "kind": "headline",
+          "lane": "news",
+          "source": "investingLive",
+          "sourceId": "headline",
+          "title": "Japan economy shrinks 0.1% in Q3, first fall in 4 quarters as inflation hits households - investingLive",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQdU9sMjNub1pTd01xZUptNDZRNUc1S1R2ZFZVeENBTmNWUnh5SXB2eVRPOEVqZ1RXZzU2XzRtaEE0RDI4dHc0TTNJVWhOWmFrZGlJaEVRTnpROWI0SnBzcUF4OE1GaHJFYVozMklyUUY1TE5xNUo0cWdnaHRWY21vWDU1TUhUckVjWW83UTZ3N0ZGc1U0czA4QU5ZYUpMNkcxTGRYTjc2Y1ZfOVlZMEJzc3NyWEZPUGxz?oc=5",
+          "published": "2026-11-15T02:00:00-06:00",
+          "date": "2026-11-15",
+          "label": "Nov 15, 2026 2:00 AM CT",
           "weekday": "Sun",
           "timeKnown": true,
           "tags": [
@@ -6980,6 +6980,90 @@
       ],
       "headlines": [
         {
+          "id": "headline:73c29d54960bd48a",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Business Upturn",
+          "sourceId": "headline",
+          "title": "RBI Warning: insurance, pension money shifts to stocks; could government borrowing get costlier? - Business Upturn",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOU0V3Q2F3R0lWejg5b3FYYUpzNGhydW14Yk54aWVDSUFPQndWU2paQ2ZZTnNWQ0ZnYlFDTTJpaGx4WTFTa21SWVlmNzFkSnljdEtzTjBhRlJtTldyaUs0WXR4VWFNQUEwbHFJQTI5ZmVYRzh6TUFVRlhfV0N1bWFBS05EeVpJTC15R0psd0JTVHN5ZjhidjRfcWZacEpDZWdDakhpZl9JYzZ6U3RIYWJCbWNGWC1ITE5BWGlVTnhqaXJUN3VldkIzUl9iSmZqYWhaNXpMQ0N3?oc=5",
+          "published": "2026-11-24T06:51:03-06:00",
+          "date": "2026-11-24",
+          "label": "Nov 24, 2026 6:51 AM CT",
+          "weekday": "Tue",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:b3fb25e9a520646c",
+          "kind": "headline",
+          "lane": "news",
+          "source": "The Economic Times",
+          "sourceId": "headline",
+          "title": "Shift in pension and insurance money to equities dampens long-term G-sec demand: RBI DG - The Economic Times",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOWVhqWjFiYWFvT0E3WVB2V1hCUFFZQ25oNEVVOElxallBdjVjYmlEM0k5QVBMQU94WlR4c0ItNHRCVS00QXJEbnpwUF9zMUtWN0VXUGZsMWdrc0VNdEt0VlAwR0dObjk5VnZyOC1zb1ZneGdmVG5Memw3ZmhzOGJqbGVFMmpCcHhrQzZSQ05leWxMV3V6dG9ZbllWMmxfanBXOVdXb19kcFRERm9Wdy05VEVkdWZRNXE3ZjU1Y2dhcUxVd1E3OTZmLUgxUmYwZ0s4MzJKa1lGZ3NreXBnVzdkbU95VzlDRE1qVkHSAe8BQVVfeXFMUEtmSGhVSkVTMTVqVG02U0FXYnR2V0pmMDNvSzJ1MUdWbVZxbWFBcWdrek9ESjFQY2xHXzN4SVRGRy0teXF6QjNoSFp2bXBIdG9tY05HQURzdjR4WHJVb0NacmdQWTdQci1CVEZ3MXh2b2ZXQjdVMFE1eUR5T1lrZHdnSFBtM3lxVmlabzdMSE9xaWY2UnRuVGpCVFZWRm5aVmo4TjlDZ3M4VmVwWVdBNDlYLXNhcUFld2EyVW5SenpCVkVEZjdnTkVpcWZNaG1FOERUd1R6M0NrNmVGMWJoYVhmQ20zVUdneVdzVjAtR28?oc=5",
+          "published": "2026-11-24T06:39:55-06:00",
+          "date": "2026-11-24",
+          "label": "Nov 24, 2026 6:39 AM CT",
+          "weekday": "Tue",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:1b83d843654f867d",
+          "kind": "headline",
+          "lane": "news",
+          "source": "The Economic Times",
+          "sourceId": "headline",
+          "title": "RBI DG asks primary dealers to bid responsibly in G-Sec underwriting auctions - The Economic Times",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNTHVrZ1pXR2J6dXR0REdWWGZsX3VxWXUtQzl1U0lZODAxV2JYZ0h3NWhWQ2ZDT0g5UTNjMU1TYm9lcWVCV18tU19DNWdVNEhUV2xtR3oteVJjUWo0M19nZnFtWmlXWXhGNEpPNlI4TWZVVkRMQ3VtbkVCQl93dzR5UU1iejY0NlcyN2ZPdTBXQzd2T1VCeXlKaHF4eVp0UXhuMjBzUDZJaEhHeGdubU5vSGFYS01uUFZfelZ0LUF2dDdRcEhYWllycGZoZUppME1MbE5mR1MxLXF5YlEyYXpjMW01UFIxN0VmdFHSAeMBQVVfeXFMTjJsSnlhbWp4Z25hWDhpWTkxNUdJdklTeGxHWkEwOE5yc2xfakl1dWNCbkZjNGItQUJuS2R6QWhsN1QtVk5NMTltbnFfLUFlYm0tcURKdWRhb0FKVkhnMzhYUHpOak9iLU83YjlzeFdSaERYRFlwcUl0aXRmeDk2UDlFLW9mYmVHTmhvVUlZMVoteXZfTWJ3Y0VDR2tRQ0NrNUZtWGZuc2dDOTVOM19CZ0ZsSmsyLTZwSV94MDlkdlJsMFJvUDZ5YVFIMC1IMFU5WWpPWEN0TFpLbDBIcEFSRUpDZlE?oc=5",
+          "published": "2026-11-24T03:26:23-06:00",
+          "date": "2026-11-24",
+          "label": "Nov 24, 2026 3:26 AM CT",
+          "weekday": "Tue",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:f352240847b78181",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Alice Blue",
+          "sourceId": "headline",
+          "title": "RBI Rate Hike in December 2026: Impact on India’s GDP Growth, Inflation and Stock Market - Alice Blue",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9KWGY3V3JXOEhRalZhZnVhWkxJd2ZJSURPNkpxU29Hc1lJSHZpcTZvUjBOUmc2VDg2LUczelFmNjZmU3RtT2pCNXdyYTlmWHVzV3lOSnh4RDJCaExzWTlrVHJkNkxtMFhyc0R6VS1XajVCN2xxZGhPQmZn?oc=5",
+          "published": "2026-11-24T02:25:19-06:00",
+          "date": "2026-11-24",
+          "label": "Nov 24, 2026 2:25 AM CT",
+          "weekday": "Tue",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:30683022c64339c4",
           "kind": "headline",
           "lane": "news",
@@ -7022,6 +7106,27 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:065a0f1904492406",
+          "kind": "headline",
+          "lane": "news",
+          "source": "The Hawk",
+          "sourceId": "headline",
+          "title": "Indian stock markets to remain closed for Guru Nanak Jayanti - The Hawk",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNYXB6MU4za04wTjdLT2NaUlA0Z2pieDUwdUphSV9DbXJMU2NsbVFnbk1OMXo4cV9wNy1yZjJ0X2tuOWkwVXZ4SG5wU0oxMjFTTnJpRXhhb3pScmpQSXJRcFg2Q2JwQllweFkyZ21iUm1GMmUxT1hVOThfdVZMY3l2WDJZa056dkhTdXk5b29ORzdzOTV5VWpNc2lwWGl2aXZTcHRfVDhMLXo3ZXdRZXc?oc=5",
+          "published": "2026-11-23T21:49:55-06:00",
+          "date": "2026-11-23",
+          "label": "Nov 23, 2026 9:49 PM CT",
+          "weekday": "Mon",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:b279368bf01a495a",
           "kind": "headline",
           "lane": "news",
@@ -7034,6 +7139,27 @@
           "published": "2026-11-23T19:43:12-06:00",
           "date": "2026-11-23",
           "label": "Nov 23, 2026 7:43 PM CT",
+          "weekday": "Mon",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:47ce514c8eb79349",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Business Upturn",
+          "sourceId": "headline",
+          "title": "RBI shifts cyber defence responsibility to NBFC boards as digital finance risks rise - Business Upturn",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPQV81NlFsdk8yRXJBWmNlTjhrSE8tN20ySkJvUVZrYllxZlB5Z19hUmhOcDZ3aUs1elNUbllCOGlhaEtXQmJzRmlJQ0pwSHAyWmRnMUNoQ2lMcGRGeEF5Q0tsNUhBTE44T1FibEd0X0k4UzBWc0UxWi1CVkxYcVBTME5XNzZ5NnpoZlVGLWVKSkVhSFdEREk4NkNfbDJPNnVQOXA2VVhiRjNBQmdsemZSWWdFd3RCdDYwTXBMUg?oc=5",
+          "published": "2026-11-23T10:21:26-06:00",
+          "date": "2026-11-23",
+          "label": "Nov 23, 2026 10:21 AM CT",
           "weekday": "Mon",
           "timeKnown": true,
           "tags": [
@@ -7692,132 +7818,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:4426aee7b2d63bc5",
-          "kind": "headline",
-          "lane": "news",
-          "source": "The Economic Times",
-          "sourceId": "headline",
-          "title": "Ahead of Market: 10 things that will decide stock market action on Thursday - The Economic Times",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPdVNXMkFmYkI1VzNmc1hLY293VmZPUk1NQUNSTk5vQ2hQYUpZdy1sdXVDTFNuMkFkU19DY0s5ZF9IX1RzdVpDRE9EM0RFLWVBQUZZNDVDVU50VktEZ3lIUEc5bXRyLXE3YU1RaFBPRF9lUGoyak9panpKSUNVQkNOclFPOUUtbUUzUGtQZ3BnRG8xeGwzUzktWlJPRXFLNlMtbWRLQWt4dkJFcC1Ya1JScHpnb2JYQWZIbFh3YlR1QTdnV1lNWm9hNlVyeTVGMTdfWC1UZkNJWFBId29OMGx4cVR30gHnAUFVX3lxTFBKN2JuVXhMTEJrZDNHcWhldkhNT2FFc3YzZXpnNTY4NWFFM1FoZEpNQUlHTDFfV2QyTGsxdkFkQkZTM3BxcDctUWdWUnh6ckVfNkNsNHFSZERwcTM5VVEtTWtTVjQ4d3lhaFdtV01EaFJaSG5tUnBYRG05ZmFzbUxmNHZWRndxa1lXMTdLelNad3ZNN1JFRUNXdkxzdjUtS2hXdS1qcEhxclNEdDlIVjYxN0txemNzdGlBb3FWeTNSUlRuV2tqU19ydHN5eUhuVTlPVGZRaDhLNWpqb0xlRFJ0cmhxbGtaZw?oc=5",
-          "published": "2026-11-18T09:54:56-06:00",
-          "date": "2026-11-18",
-          "label": "Nov 18, 2026 9:54 AM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:3ffcf5b0a16eeef1",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Kotak Neo",
-          "sourceId": "headline",
-          "title": "RBI Repo Rate Outlook: Goldman Sachs Projects 75 Basis Points of Further Hikes as Inflation Pressures Persist - Kotak Neo",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPeXdxZG9waVBQa0tMR0NrNkZBMjhXa3dERlQySElzVTd1N0lsUkZBM21rM2dhYnlQTF9zUVdYQ2R5aTM3TjJzUVZxSWxGVEMwX2tjVGphVUNzMlZOZzhwS3NLUDN4SGwwOEJTcFBVYk5Sa203akxPMnRFbnBXY2dmczA1ZHlVNzc0Z0puTTFQYnBzWVJqVWV5ZU5PS3VMVXlVZ2loTlZuZVc3bUw3cDh3?oc=5",
-          "published": "2026-11-18T09:48:34-06:00",
-          "date": "2026-11-18",
-          "label": "Nov 18, 2026 9:48 AM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:eb2f4356d47474c1",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Business Standard",
-          "sourceId": "headline",
-          "title": "Goldman Sachs sees RBI repo rate rising by 75 bps to 6.25% by mid-2027 - Business Standard",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOdFAyc3QtVnZNS2FUUm5yQTlwQmRhcnNKSVMweWJ1aXR0MlpNWXRmdzVpVHluQ1A5VXNyaXFMTHh3TWpic2U3TzEtakRUaWhsR1hSVjdEN3ZZVGVxSENaREE2dDdWMHlNamlfUXRVcS1SUU1qaEZEeDA0bkJMN0J3LV9SbWxSOWpfVUJXTEpRTnVQeXFSOWR1aHlrVWRTVU9MYkVCdE5vMDVOSk9sbUVmaHFKOEZCLThCWGxzdlBleEtwb1d3OFAwVHZGVWJnSnA4U3AyMS1jNNIB1wFBVV95cUxOdFAyc3QtVnZNS2FUUm5yQTlwQmRhcnNKSVMweWJ1aXR0MlpNWXRmdzVpVHluQ1A5VXNyaXFMTHh3TWpic2U3TzEtakRUaWhsR1hSVjdEN3ZZVGVxSENaREE2dDdWMHlNamlfUXRVcS1SUU1qaEZEeDA0bkJMN0J3LV9SbWxSOWpfVUJXTEpRTnVQeXFSOWR1aHlrVWRTVU9MYkVCdE5vMDVOSk9sbUVmaHFKOEZCLThCWGxzdlBleEtwb1d3OFAwVHZGVWJnSnA4U3AyMS1jNA?oc=5",
-          "published": "2026-11-18T08:35:57-06:00",
-          "date": "2026-11-18",
-          "label": "Nov 18, 2026 8:35 AM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:2844f2260f18f31b",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Business Standard",
-          "sourceId": "headline",
-          "title": "Forward market rupee bears retreat as hedging costs fall on strong inflows - Business Standard",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNWENLcF9ta3FtVGNlX1UyNTlzYmYzTDRMSWFqcjMybm8yWS1OOEtzbHBMLVZCZWlKVUtRbm5jN3I2RnMxMkw4VEYyQ1pGMFh5QkdiOTRQbUoyNktYcmtnd2NpM0pNd2xHTUtaclRneloyOVdKYUE3MGNkaEZZT3ZtMWV5anFhd3BzQnVCX1poRVZLRHNrcmJFbmNzSHZxbUU1ZlU5YWF5bHZVU1BFLUFCdnVsRXBKSXpydjJTbVdIckhuQ2wtVE1pUVAxNC11WUxuYTQyNjAzLXlGUdIB3wFBVV95cUxNeXBNc3YtOGlFUVFGSy1nNWtCVWJ1Q3Uxb0ktYlVBZS0ycXAzbWQtRUtOMjJCUTFCZGxyWUdJWkprVTRmenM5V29LaVRzMmtRSzBYMnlfQzYycVhWTW9lczdkMGFiTFV1N1p3QVk1Z0h0T2FjclhFNEdQUzh3czMyNWNreTdzTjVZOTV4cG44b1RZMmVMa2VmeUt6SFpFaEtydWwwbkZEbl9QZUt6VFpwdnlxamQzQk5UTmFrS2VybDV2NDVRNlROQjFlUzdINEtVbndBN20yWTY5RUEwVkln?oc=5",
-          "published": "2026-11-18T07:36:18-06:00",
-          "date": "2026-11-18",
-          "label": "Nov 18, 2026 7:36 AM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:24019203735c583b",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Business Standard",
-          "sourceId": "headline",
-          "title": "RBI may hike interest rates by 75 basis points by Q2 CY27: Goldman Sachs - Business Standard",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQb3B4QXNQcVo4MmRHRzFfV1E1cUdCMU5KdHpqZ2pVQWlRYXN6R0xhMFBnWEdIbXdXV1ppNWdOc19Jd1NQNjY3SGpENVdVN0hBcW1LTDJxb3Izc2llS3RRNnAxbWZrTExVMGhnZ19nRTJhZEFobkFvci0weHNYNm5nb3haM1dCd2Zsc0RMTDlkU2xvb1NIQ2x3VjdVNzJrUFJDdFh0Y0llTGVWU3B0SUIyZHN3dFVVbXNKR2xQbVZ2QXFMRDFfLVg1RGtXai04QlR1cXdqczcxXzRrd9IB2gFBVV95cUxQb3B4QXNQcVo4MmRHRzFfV1E1cUdCMU5KdHpqZ2pVQWlRYXN6R0xhMFBnWEdIbXdXV1ppNWdOc19Jd1NQNjY3SGpENVdVN0hBcW1LTDJxb3Izc2llS3RRNnAxbWZrTExVMGhnZ19nRTJhZEFobkFvci0weHNYNm5nb3haM1dCd2Zsc0RMTDlkU2xvb1NIQ2x3VjdVNzJrUFJDdFh0Y0llTGVWU3B0SUIyZHN3dFVVbXNKR2xQbVZ2QXFMRDFfLVg1RGtXai04QlR1cXdqczcxXzRrdw?oc=5",
-          "published": "2026-11-18T06:38:38-06:00",
-          "date": "2026-11-18",
-          "label": "Nov 18, 2026 6:38 AM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:988163690be768f1",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Business Today",
-          "sourceId": "headline",
-          "title": "Goldman Sachs sees three more RBI rate hikes; feels rupee's worst is over and Nifty at 28,500 - Business Today",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQQW1fcnkyWm1wZ2IyWnI3MG8xZWtMbmxjRTc4aGZsV2RmRDRPRWNRaGdxMHE2M2hYM0pzY0dlNWJ5NjJFWEl4dG04YjBxeW9Obi1QSEQ1SmI2STlFS0FRZDdhTUMxSEFBdExyUkVwaWgyT01iakllMy0zSllSQ3ltUDNzUjVIenY3cHBmbVYxU3dSNVpxUXhfRTg1cmVIbGlHaWpMUTJSaVhLSmw4eGVNVWxfQUV0Qko0NUpEZkRfdTh5eWZyOF9ZenFLRFF2Y0pBdFYwTkJ6c2g0V2FKblB3M2UxcHNydzlFcW16TG5aVdIB9AFBVV95cUxPMFEyeUxDMGVyUG9DQ2d3VlBTU3BWTzd5RVY2b3Q5UnByLUYxQWNxZlFRWVRIWWxTbjVqS3UtWmRDWDBiTzNQREVpVDEyY3NKLVlkR3Y4Sk5QTEVJQmdEc3NJYnpXRTNzWWthckFHYkZPLUxwdzh5M3NIWml1UTAtUWhIWEo5Y3NPWGZ6d09hVkJad1ZQbUhfV2E3SUZEbzVGaHVoeFhoZ1VGQlBZakFvMFdZNW45SVpQS1E3a0FRMUVxdGI1NGUzYWdKemlMaC1MMTRaWENkNDh3YURuc0VmMm5qdFpUaXI1MXR2MFQ0S2hOa1o4?oc=5",
-          "published": "2026-11-18T06:00:04-06:00",
-          "date": "2026-11-18",
-          "label": "Nov 18, 2026 6:00 AM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ],
       "spikes": [
@@ -7827,6 +7827,11 @@
           "state": "RISING",
           "links": [
             {
+              "title": "RBI Rate Hike in December 2026: Impact on India’s GDP Growth, Inflation and Stock Market - Alice Blue",
+              "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9KWGY3V3JXOEhRalZhZnVhWkxJd2ZJSURPNkpxU29Hc1lJSHZpcTZvUjBOUmc2VDg2LUczelFmNjZmU3RtT2pCNXdyYTlmWHVzV3lOSnh4RDJCaExzWTlrVHJkNkxtMFhyc0R6VS1XajVCN2xxZGhPQmZn?oc=5",
+              "source": "Alice Blue"
+            },
+            {
               "title": "Home Loan EMI Alert: RBI Looks Set to Raise Rates in December as Inflation Crosses 6% - NiftyTrader",
               "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBOVnkzTGNMekxoSWNYTDdmc09VRS1NZFFNSEo5b190WDNSaFJ3SnZFSTJ1enhhVG92S2tBcGYxS1V1bTF3TU5aOUFqR2h2cWFFeVhGTktJcWZGNDRXWTZCRk1CeWF0TVJrOF80?oc=5",
               "source": "NiftyTrader"
@@ -7835,14 +7840,9 @@
               "title": "Indias GDP Growth To Slow To 7.2% In 2027, Goldman Sachs Sees Inflation At 5.7% And More RBI Rate Hikes - Free Press Journal",
               "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQNEQwaWwxVG54cjVzS3Z4SVR2UGluZkdBZVBLVlUyR2dpTVhCRVNOVzVmaFdsZmlwM2QzR3J0TXBoUXV5ZWJad18yNlRReDVHQTJPdG1jRFhNMDl4MlpRTm9zWjYxdUNJWEs0ZXFKcHBBdWRUWjhJNVFtaWF6YkZWWEtnSWh2dnYxT1Rkem55SkFVeEFFQ05aWEZ1dUltamFWdlZTTDNJMWotbzNiVFdJN01oQUZHVEpGV3lkeDJNUUNoRnZBakdod09XNW5Ba3Zua1dBV3Zn0gHbAUFVX3lxTE1jTEIyWnFVWFhrdmdkdEFvZ1pWOWczTEI0UlQ0c01faG1YZ2V2anFoa2UtX1lUakw5aHNJU01SNHlBRDNfUnFQSjg0N1hNUzZIV2NBRlh2LUpzQklOcGp0OEhDV1M2d2x1ak5fbnN1UlFHU1cwcURUSDU2N1YwRjlxbFRzd290c0RjVXBaeFRUNTcyYV9qZWdMMkhXUHVsTVZtNmNjRUJNV25JcWotZm9IY2xUUy0telMtREV2R2MtanZIQ2RvcnU1WDF6UC1xdHBxRmhZNnpYWjJGbw?oc=5",
               "source": "Free Press Journal"
-            },
-            {
-              "title": "RBI Repo Rate Outlook: Goldman Sachs Projects 75 Basis Points of Further Hikes as Inflation Pressures Persist - Kotak Neo",
-              "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPeXdxZG9waVBQa0tMR0NrNkZBMjhXa3dERlQySElzVTd1N0lsUkZBM21rM2dhYnlQTF9zUVdYQ2R5aTM3TjJzUVZxSWxGVEMwX2tjVGphVUNzMlZOZzhwS3NLUDN4SGwwOEJTcFBVYk5Sa203akxPMnRFbnBXY2dmczA1ZHlVNzc0Z0puTTFQYnBzWVJqVWV5ZU5PS3VMVXlVZ2loTlZuZVc3bUw3cDh3?oc=5",
-              "source": "Kotak Neo"
             }
           ],
-          "title": "Home Loan EMI Alert: RBI Looks Set to Raise Rates in December as Inflation Crosses 6% - NiftyTrader"
+          "title": "RBI Rate Hike in December 2026: Impact on India’s GDP Growth, Inflation and Stock Market - Alice Blue"
         }
       ]
     }
