@@ -2,19 +2,19 @@
   "gaps": [
     "Power_TN row hidden (2025-10-06, affected 0, served 0).",
     "1 ended road projects hidden.",
-    "TEMA: curl: (22) The requested URL returned error: 403\n"
+    "TEMA news page answered with no dated notices."
   ],
   "items": [
     {
       "action": "no action needed",
       "confidence": "reported",
-      "date": "2026-11-23",
+      "date": "2026-11-24",
       "id": "local-nws-none",
       "kind": "nws",
-      "label": "Nov 23, 2026 3:13 PM CT",
+      "label": "Nov 24, 2026 9:55 AM CT",
       "lane": "local",
       "note": "api.weather.gov answered for 35.802,-86.907 and returned no alerts.",
-      "published": "2026-11-23T15:13:01-06:00",
+      "published": "2026-11-24T09:55:06-06:00",
       "severity": "STANDBY",
       "soWhat": "",
       "source": "NWS",
@@ -27,24 +27,24 @@
       "url": "https://api.weather.gov/alerts/active?point=35.802,-86.907"
     },
     {
-      "action": "Read the source. No kit change unless you are in the named area.",
+      "action": "no action needed",
       "confidence": "reported",
-      "date": "2026-11-23",
-      "id": "local-road:8428eaeb724dcf80",
+      "date": "2026-11-24",
+      "id": "local-road:50ce61859269cdc9",
       "kind": "road",
-      "label": "2026-11-23",
+      "label": "2026-11-24",
       "lane": "local",
-      "note": "Multi-Vehicle Crash",
-      "published": "2026-11-23T15:13:01-06:00",
-      "severity": "ALERT",
-      "soWhat": "no action needed",
+      "note": "Bridge Repair",
+      "published": "2026-11-24T09:55:06-06:00",
+      "severity": "STANDBY",
+      "soWhat": "",
       "source": "TDOT SmartWay",
       "sourceCount": 1,
       "tags": [
         "tennessee",
         "williamson"
       ],
-      "title": "Interstate 65 NB in Williamson County - near MILE MARKER 65 Multi-Vehicle Crash reported at 11/23/2026 2:46 PM (CT). NB 3 right lanes (of 4 lanes) blocked, left shoulder blocked, r",
+      "title": "State Route 96 WB in Williamson County - near LOG MILE 6 Bridge Repair will result in WB closed on Tue from 9:00 AM to 3:00 PM (CT).",
       "url": "https://smartway.tn.gov/"
     },
     {
@@ -56,7 +56,7 @@
       "label": "2026-11-16",
       "lane": "local",
       "note": "Other Construction",
-      "published": "2026-11-23T15:13:01-06:00",
+      "published": "2026-11-24T09:55:06-06:00",
       "severity": "STANDBY",
       "soWhat": "",
       "source": "TDOT SmartWay",

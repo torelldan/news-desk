@@ -1,63 +1,28 @@
 {
   "dynamicTermCount": 40,
   "googleNote": "Google Trends US daily list answered (10 topics). None of today's search trends matched.",
+  "googleSeen": 10,
   "items": [
-    {
-      "category": "ukraine-war",
-      "confidence": "reported",
-      "date": "2026-11-23",
-      "id": "velocity:efd2da34e68ca58f",
-      "kind": "trend",
-      "lane": "news",
-      "look": "news",
-      "matched": "matches: Ukraine",
-      "name": "ukraine war",
-      "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-23T15:13:01-06:00",
-      "rise": "4 outlets this window",
-      "samples": [
-        {
-          "date": "2026-11-23",
-          "published": "2026-11-23T03:47:36-06:00",
-          "source": "Al Jazeera",
-          "text": "At least 15 killed in Ukraine’s Kyiv region as Russia intensifies attacks - Al Jazeera",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQZGl2dEc3N1IyaHBuWF9vTjZPV2s4YnltNWNweldlZlR6RzJBUW5QR1gzTGhBX0dSR0FraU5mMzY2OGJxYnFmV1RyVFhhUW0yM1NKQXJ0aDNLcVk2STJQNWl0Q1Y0N25DMTBRY0N2XzIxd25WQ0dNUnIxYjRTeVRlVXJPTG82Y3VKYzZuX1hTZ29vaW45QkRLd2tnbHYyTm_SAaQBQVVfeXFMTTNMN2dTbWFtZERHLUQyNnloR1VrdDdOU2d4WHNQS21BalRPNTdXZmhOelNTZHFtYTJLUmludDQ3UlFvOHYzMV9HNUIzaTFkRENHWDRXZGlZVmRXT1l1Vy1rRjVoWUZSQnEtOVE2TVRsRE1WQTBvV2JiX3A0ci10d0NYOHVvYXlmcFk0NXFPcDRMWWFTUGNTbE5HajZUdUMyc0d3eFY?oc=5"
-        },
-        {
-          "date": "2026-11-18",
-          "published": "2026-11-18T10:56:09-06:00",
-          "source": "Pew Research Center",
-          "text": "Two-Thirds of Americans Disapprove of Trump’s Handling of the Russia-Ukraine War - Pew Research Center",
-          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOOG1hX1hlajBaV2FvOXpqN0V4ZlI5anNUbGdmOXhWUmNIcy1aUy1uV0dJY1lOUkxKcnFGLTFIYV9YVTA2d3VtMDB3d2xnd0Q4YUEtYlRlVWVPbWZ4elZjb0N4enFpS3BEdTJPLTJseEpINFRVSldjdkFYQ2tkMUFGQVJCMzdMSE56OGhqTEM4ckNON21ZWlg3cVg3VTJIT2Y2cjlhMXc1MGFKVjBKLVR0WDEyLWhyd3dKVGNwNURKb21KbDZ2UzFkU2lxbw?oc=5"
-        },
-        {
-          "date": "2026-11-17",
-          "published": "2026-11-17T14:03:43-06:00",
-          "source": "Reuters",
-          "text": "France is not 'co-belligerent' in Ukraine, French minister says - Reuters",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQTWFlZkhscEw5dks5TlJXenZqOWNDa3d1SUlkWFMwd2dMSUVHakg3b082Z1piQXNUbmttN1pFTkdKT0JiOWowQ0VPLV9MTTN2UnloOVFYOTI3dTg4eGFmSjNSX0pubHk1R05rLS01R241NUd3Qjh4UkUwQUF4QTFwbWJIRDhPTWdmaTB1ZkdLanV3eDY4Rm1xMEMzTWlxbXJh?oc=5"
-        }
-      ],
-      "severity": "ALERT",
-      "soWhat": "no action needed",
-      "source": "News velocity",
-      "sourceCount": 4,
-      "title": "ukraine war",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQZGl2dEc3N1IyaHBuWF9vTjZPV2s4YnltNWNweldlZlR6RzJBUW5QR1gzTGhBX0dSR0FraU5mMzY2OGJxYnFmV1RyVFhhUW0yM1NKQXJ0aDNLcVk2STJQNWl0Q1Y0N25DMTBRY0N2XzIxd25WQ0dNUnIxYjRTeVRlVXJPTG82Y3VKYzZuX1hTZ29vaW45QkRLd2tnbHYyTm_SAaQBQVVfeXFMTTNMN2dTbWFtZERHLUQyNnloR1VrdDdOU2d4WHNQS21BalRPNTdXZmhOelNTZHFtYTJLUmludDQ3UlFvOHYzMV9HNUIzaTFkRENHWDRXZGlZVmRXT1l1Vy1rRjVoWUZSQnEtOVE2TVRsRE1WQTBvV2JiX3A0ci10d0NYOHVvYXlmcFk0NXFPcDRMWWFTUGNTbE5HajZUdUMyc0d3eFY?oc=5"
-    },
     {
       "category": "iran-war",
       "confidence": "reported",
-      "date": "2026-11-23",
+      "date": "2026-11-24",
       "id": "velocity:4ee4bc978244e41e",
       "kind": "trend",
       "lane": "news",
       "look": "news",
       "name": "iran war",
       "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-23T15:13:01-06:00",
+      "published": "2026-11-24T09:55:06-06:00",
       "rise": "4 outlets this window",
       "samples": [
+        {
+          "date": "2026-11-17",
+          "published": "2026-11-17T23:24:54-06:00",
+          "source": "CNBC",
+          "text": "Iran says army targets U.S. drone and missile sites in Kuwait as Gulf attacks mount - CNBC",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE0zaVp2b1pwY2FLSDN0b0VfZGRjQk1LSjJuSVE5QjduTXU4c2REYS1YeGJDM05lYkNtTGM3LVkwRDVSaFNLWEVNR2VwUnFUUTh5eUJFYnI4T2QzMzZYRjlZV1kxdWJBUW5FODk0R0ZsaG_SAXZBVV95cUxQN3lsMm1BeEpJNlRTYWloUEYwT1hiWFp5T0x4SXRUc2lkeER0VzFLUDFBS2YzN3IzMEFabHVJaTNmWHBSWTdqOXdDZXFzLWptSHA3bVlsTV9fU2xtNXB6a0lHd0xNa2JTVnJVNDV6eTh2c1kyUWJ3?oc=5"
+        },
         {
           "date": "2026-11-17",
           "published": "2026-11-17T12:53:00-06:00",
@@ -66,18 +31,11 @@
           "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPTlVZWjRCSVZZOTdxbEJHVlVJTjVyV2xWVXdaQ2tqUmVRNFJkaElDa2xhYWFqbEcwRDlaWnpNWF9OMy05OE5mM2N4VkhRQVZHdTFUTTlyd2JUSkwxR0Q3ZEh1UDZZNDB5cmVHa1lfMkM0ZldWT1pJRmVTTWVPMWEzQnloMWY2Zjh1TDdaeHRONmIwbERZLWtfMy12Z19JcDV2eUJxZElIWDdBWW5CU1NEYU5TVjJRRjjSAbwBQVVfeXFMTm93R19jS3VPR050YTJCYXBSQ25mYlo1RXNhZ1JSSXVZdEdiYUJJeloyZHlkUnJYTTc5dGVzbmlqZHY3Tlhscjc5cWxqT1JRTHMtVHlORE5TUVpKQVZ1d3FGUjhwcDlHbk5JSFVoeXZya1lTU1ZIUW9SRkUwZ2t0akZGa2t4VEpfdEZJRS0xcFFEZGVaVGtNcWFvOWdLTFFRUmFhTXBsQ1FydjA5X3dZUHdDVmE4WnduNXVUMTc?oc=5"
         },
         {
-          "date": "2026-11-22",
-          "published": "2026-11-22T06:00:00-06:00",
-          "source": "The Atlantic",
-          "text": "What We Don’t Know About the Iran War - The Atlantic",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQa0RCaVNESHIyME5LaU1tX3F0NjNKdDhKX2xmNVhXRWxWOF80U3J0Wm1YNmNSdmFlNEh4YlJ2NFVfaEJVVHEwWnBveFdyekJHVDI5N0VHWGZTaGtxdFA5OUJ0WFFmMVV3ajltU01OamstbFNhMHNFSm5jWGQ2MTlQa3FsM0pFdGZLaEJ5NnJRNXZXU0FkS251WnF2NkRwb2s?oc=5"
-        },
-        {
-          "date": "2026-11-20",
-          "published": "2026-11-20T02:00:00-06:00",
-          "source": "Britannica",
-          "text": "2026 Iran war | Oil, Explained, United States, Israel, Strait of Hormuz, Map, & Conflict - Britannica",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5nTzlhOGZTS180cWNtVG91c2VWRVJFYlk0cW5Ba1RHUEFOSEtldU15QktQT0EzRVY1ZVdZZ0VTRHVWTVhyN1IzeU1wbmlDMUhrQ3Roc1YxcmdMUQ?oc=5"
+          "date": "2026-11-23",
+          "published": "2026-11-23T21:48:25-06:00",
+          "source": "Institute for the Study of War",
+          "text": "Iran Update, November 23, 2026 - Institute for the Study of War",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQd0VKNG41X05zSV9uTTEwNWJKVkJOMHU1WXpCa2kyN3lNcnBMVjVOREdKM1ZRMFZlYjExWlZwQzBDX1AxREZSTTVmaVhJYVBIeFFrMTFMRV9kUENna3dLcGR4S3FDOGlHNkdubVl0S0poSl9GYl8ySVJpejBKNWdsX1hPNUJUZw?oc=5"
         }
       ],
       "severity": "ALERT",
@@ -85,41 +43,84 @@
       "source": "News velocity",
       "sourceCount": 4,
       "title": "iran war",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPTlVZWjRCSVZZOTdxbEJHVlVJTjVyV2xWVXdaQ2tqUmVRNFJkaElDa2xhYWFqbEcwRDlaWnpNWF9OMy05OE5mM2N4VkhRQVZHdTFUTTlyd2JUSkwxR0Q3ZEh1UDZZNDB5cmVHa1lfMkM0ZldWT1pJRmVTTWVPMWEzQnloMWY2Zjh1TDdaeHRONmIwbERZLWtfMy12Z19JcDV2eUJxZElIWDdBWW5CU1NEYU5TVjJRRjjSAbwBQVVfeXFMTm93R19jS3VPR050YTJCYXBSQ25mYlo1RXNhZ1JSSXVZdEdiYUJJeloyZHlkUnJYTTc5dGVzbmlqZHY3Tlhscjc5cWxqT1JRTHMtVHlORE5TUVpKQVZ1d3FGUjhwcDlHbk5JSFVoeXZya1lTU1ZIUW9SRkUwZ2t0akZGa2t4VEpfdEZJRS0xcFFEZGVaVGtNcWFvOWdLTFFRUmFhTXBsQ1FydjA5X3dZUHdDVmE4WnduNXVUMTc?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE0zaVp2b1pwY2FLSDN0b0VfZGRjQk1LSjJuSVE5QjduTXU4c2REYS1YeGJDM05lYkNtTGM3LVkwRDVSaFNLWEVNR2VwUnFUUTh5eUJFYnI4T2QzMzZYRjlZV1kxdWJBUW5FODk0R0ZsaG_SAXZBVV95cUxQN3lsMm1BeEpJNlRTYWloUEYwT1hiWFp5T0x4SXRUc2lkeER0VzFLUDFBS2YzN3IzMEFabHVJaTNmWHBSWTdqOXdDZXFzLWptSHA3bVlsTV9fU2xtNXB6a0lHd0xNa2JTVnJVNDV6eTh2c1kyUWJ3?oc=5"
+    },
+    {
+      "category": "ukraine-war",
+      "confidence": "reported",
+      "date": "2026-11-24",
+      "id": "velocity:efd2da34e68ca58f",
+      "kind": "trend",
+      "lane": "news",
+      "look": "news",
+      "matched": "matches: Ukraine",
+      "name": "ukraine war",
+      "note": "The same topic showed up across several outlets.",
+      "published": "2026-11-24T09:55:06-06:00",
+      "rise": "4 outlets this window",
+      "samples": [
+        {
+          "date": "2026-11-23",
+          "published": "2026-11-23T03:44:26-06:00",
+          "source": "NPR",
+          "text": "NATO to meet after Russia-Ukraine war once again inches onto European territory - NPR",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNR05nOTY4VjA4TXR0SF9VSVphYkR3RmF2Qmxoajd6SW1JY2xtSUZURVhmZGRrSk4xYnFmZVN3Z2xMZFltUmY2OHZZUzBSVW5JZHZDak1nMXJ1S09Ha21nQzJFUVMtalo1NXU2Tlc3YXhqVDNOcFJYMk5pNEIzbE02X1hfTXlER2JVMDJMYjBEQUVZdVVWei01ZE94Y3h0Tzd5Zk9faUtuUkRhWHRaY01NYUJ3MGpMMU56Z2JLWDN6bFdGZw?oc=5"
+        },
+        {
+          "date": "2026-11-22",
+          "published": "2026-11-22T23:29:58-06:00",
+          "source": "Al Jazeera",
+          "text": "Ukraine urges US to release Patriot missiles as Russian strikes kill 15 - Al Jazeera",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQWDROSjJ4ZmFrSWp4VDNoeS1aRVlHb25QQXJvV0JhQWtrNjdJekNQWHEyQ0VhZUIyNHBpd3l2eEJSYmc4Zk45V2lhcWxwMzJBT09XYk1hRzZwa0FkT2ltdUl2STFtb1lBVHRtVFpDTGtYc2FVZWJqQXYyYlFSVzBhNzhpbE83NlByTGJHQjloNEZvZ9IBlwFBVV95cUxORzQwam00SzMzbWFrZHNQMlAxQU1sTmJ3ZEFQRU51V1B4MGxUb1FFeUo3R05ya0hQMFRVRjRGOTlVZDliV25wbGdnZzI1YlI5N2lpTnltOE5ZYUItZDViTlJvNkRCaGR0M2NxQ19zeEJrSmhVTGVKVGpoRFBNTlFlMFpxUzNKblhkYjlBek91OUJxbmZNdkRr?oc=5"
+        },
+        {
+          "date": "2026-11-18",
+          "published": "2026-11-18T10:56:09-06:00",
+          "source": "Pew Research Center",
+          "text": "Two-Thirds of Americans Disapprove of Trump’s Handling of the Russia-Ukraine War - Pew Research Center",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOOG1hX1hlajBaV2FvOXpqN0V4ZlI5anNUbGdmOXhWUmNIcy1aUy1uV0dJY1lOUkxKcnFGLTFIYV9YVTA2d3VtMDB3d2xnd0Q4YUEtYlRlVWVPbWZ4elZjb0N4enFpS3BEdTJPLTJseEpINFRVSldjdkFYQ2tkMUFGQVJCMzdMSE56OGhqTEM4ckNON21ZWlg3cVg3VTJIT2Y2cjlhMXc1MGFKVjBKLVR0WDEyLWhyd3dKVGNwNURKb21KbDZ2UzFkU2lxbw?oc=5"
+        }
+      ],
+      "severity": "ALERT",
+      "soWhat": "no action needed",
+      "source": "News velocity",
+      "sourceCount": 4,
+      "title": "ukraine war",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNR05nOTY4VjA4TXR0SF9VSVphYkR3RmF2Qmxoajd6SW1JY2xtSUZURVhmZGRrSk4xYnFmZVN3Z2xMZFltUmY2OHZZUzBSVW5JZHZDak1nMXJ1S09Ha21nQzJFUVMtalo1NXU2Tlc3YXhqVDNOcFJYMk5pNEIzbE02X1hfTXlER2JVMDJMYjBEQUVZdVVWei01ZE94Y3h0Tzd5Zk9faUtuUkRhWHRaY01NYUJ3MGpMMU56Z2JLWDN6bFdGZw?oc=5"
     },
     {
       "category": "us-gov",
       "confidence": "reported",
-      "date": "2026-11-23",
+      "date": "2026-11-24",
       "id": "velocity:bd817662251631b7",
       "kind": "trend",
       "lane": "news",
       "look": "news",
       "name": "us gov",
       "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-23T15:13:01-06:00",
+      "published": "2026-11-24T09:55:06-06:00",
       "rise": "4 outlets this window",
       "samples": [
         {
-          "date": "2026-11-23",
-          "published": "2026-11-23T12:00:22-06:00",
-          "source": "NBC News",
-          "text": "Midterm Elections 2026: Congress Polls, Charts and More - NBC News",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9qM2xEd3lHR1dpU2xwT1JLcDEyUXlVS0xaeGptQzlscXNJSHc1VVVXQnZpY2FfN0NYdlFLMGZfWW9SSDFLT3NQVEF5cDlKZUlaVGNmZW5VUlR6LXI1MGtGeHJZWU1icGs?oc=5"
+          "date": "2026-11-21",
+          "published": "2026-11-21T02:00:00-06:00",
+          "source": "News From The States",
+          "text": "The election is over. What’s supposed to happen next for Congress? - News From The States",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQNXlBSkZNZ2lWNEJjV2xGaTRxUU5tMFNiNFlWcTltd1ZoOHB3akYwdGJaWGZRdG9GM1N6RUIxRzZUc3AyanZqcUVEVk1vRnI0QkRPS3JIa21mOFNrSzRjNUt0NEV1cVoyRW9sVmI3cm1WRHZWWmFGZ1d2RmNVekNYdW9jSEhrZGNaZ0pQRDZPTldxU09ScUE?oc=5"
         },
         {
-          "date": "2026-11-23",
-          "published": "2026-11-23T08:47:18-06:00",
-          "source": "The White House (.gov)",
-          "text": "Voting Begins for the 2026 National Thanksgiving Turkey Pardon Ceremony - The White House (.gov)",
-          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQNUNZSHBGb1VyM1BFSW9oZk1Qd0FTbTk1ZkRVV0dnc3RBNlZXb3BXaUhlSEVmYnBWeVc5a0QxVnZjTTRVRG83QWRoZTNuNWlfV0hxUmJNYmRIUi1ETHBSejc5LU9EVHlVVS1QRU94cm1NRE8yb2RoeVVsd3l5U0ZFbjFERFJMUTM4Q3FZMkpRSEtjZDl0Uk56aW9zS1c4YzVMZ3A3dEg1QllFOHlDa1JQbnpKazdVdHM?oc=5"
+          "date": "2026-11-20",
+          "published": "2026-11-20T10:10:27-06:00",
+          "source": "Pew Research Center",
+          "text": "How the 2026 Midterms Played Out on Kalshi and Polymarket - Pew Research Center",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQcnA0Z3loUWtHNHJUR1o1a3N0MGk3ZG5QZ25BSDd3bEgyaGc0ZllZMlp1SDRBRjVxNkU0LVRJQUtLY3NrUXpLaHlvaWc2YlozNVI4R09KRGlfWjg4QWlMc0Y2b1NidE05bVdGT01vVHlIVG1xN0I5ZzBadDdXM1ZkUl85TXBRd1R6eV9uUmhyNGx3dmliWl9rQ2hBQjIyUlJfd05ObmdpMFJOeUVUeFE?oc=5"
         },
         {
-          "date": "2026-11-19",
-          "published": "2026-11-19T15:04:00-06:00",
-          "source": "LehighValleyLive.com",
-          "text": "Who’s ahead for 2028? Big midterm shakeup revealed in new poll - LehighValleyLive.com",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQNjNER1BmazlZRHJzeFNrNnk4ampmd3BKeGVEcnE4MHEzX0M0aUVKYTdsUVpzcFdwMDJVazYwX2FYNnF2aUNLS0gwTnJCa0NvWVJrLUNUVGJMYTRva3plckdpYnFfZDZYVWtqWXFzSXo3Z3dUWmRza1IwM0tDdWY4VmlhQ2ZUNWxOdE5fMW5KdFk5clJ4eklPdENaaWpZRnBCcS1BcHBBZDc4SUJNV0o1Sw?oc=5"
+          "date": "2026-11-20",
+          "published": "2026-11-20T07:09:18-06:00",
+          "source": "U.S. Department of War (.gov)",
+          "text": "Department of War Publishes Eighth Release of Unidentified Anomalous Phenomena Files on WA - U.S. Department of War (.gov)",
+          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNYjhVNGpDYmwtTWFuOV9NMXJLb2xBVnJQNmtIWDNFQ0pMS0JWbUlRN2d6UW1obW94bERlX2xsa2R5ejFkSEk1LV9lUG02Y0VDNzAyZDMxc25JMG53TlNydnozQlZnZlg3WVp0OUktOHdtUGZrYUppRjJQQU9RYU9aSzVzbzhhOUpYaE1mQm9vMEM1MkhkdlNyVGZOeUJVWWJwUVRENXpJQ0U0WVdmZnQwZ19KcGVsSmpIOVRCTlZDbVd5LVU2UmVvTkFwazFQd3g3SHFj?oc=5"
         }
       ],
       "severity": "ALERT",
@@ -127,49 +128,49 @@
       "source": "News velocity",
       "sourceCount": 4,
       "title": "us gov",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9qM2xEd3lHR1dpU2xwT1JLcDEyUXlVS0xaeGptQzlscXNJSHc1VVVXQnZpY2FfN0NYdlFLMGZfWW9SSDFLT3NQVEF5cDlKZUlaVGNmZW5VUlR6LXI1MGtGeHJZWU1icGs?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQNXlBSkZNZ2lWNEJjV2xGaTRxUU5tMFNiNFlWcTltd1ZoOHB3akYwdGJaWGZRdG9GM1N6RUIxRzZUc3AyanZqcUVEVk1vRnI0QkRPS3JIa21mOFNrSzRjNUt0NEV1cVoyRW9sVmI3cm1WRHZWWmFGZ1d2RmNVekNYdW9jSEhrZGNaZ0pQRDZPTldxU09ScUE?oc=5"
     },
     {
       "category": "global",
       "confidence": "reported",
-      "date": "2026-11-23",
+      "date": "2026-11-24",
       "id": "velocity:8001c27439650c5c",
       "kind": "trend",
       "lane": "news",
       "look": "news",
       "name": "global",
       "note": "The same topic showed up across several outlets.",
-      "published": "2026-11-23T15:13:01-06:00",
-      "rise": "3 outlets this window",
+      "published": "2026-11-24T09:55:06-06:00",
+      "rise": "6 outlets this window",
       "samples": [
         {
-          "date": "2026-11-23",
-          "published": "2026-11-23T11:31:00-06:00",
-          "source": "AP",
-          "text": "EU proposes sweeping new Russia sanctions targeting banks, crypto and sports events - AP News",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQc1FWT0FKN3NFS3JoRG0zYnZvTkpjNEZqR240QzdMQVJDM1lmUklKeHpLeUl4bmFNUnlSa29kaU13WmhBdkNmVkt1WVZDUkdycVl3elQ1c1BwelFsLWVJeDhNNVBORWZBLWlhd0VqQ1QzLXFaNEZjRHEydWY1MGJYcDlYeWc5RjE4UEVEekJDYURuTWJfbk1WMGo1dWR3Zl84TUs1NEFJemZPZHVOVEE?oc=5"
-        },
-        {
-          "date": "2026-11-21",
-          "published": "2026-11-21T16:01:42-06:00",
-          "source": "NPR",
-          "text": "What did Xi Jinping get from the bear hug with Trump at the Shenzhen summit? - NPR",
-          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOQ3o5czdSSEZrYm9PNkFpdnZEZ0VCcHk2QXB6dUx4YXY0Q2gyWVBsU0FUUldBcFE0NGYzYkZZaWRwUjRFWDhfeFpYTlFwajZhTWVlRWltS1JKZTczdXFnX1A2TTRxTXJmM0JCeHFQZ1IyelJqdlZoV0RkdTFfMjVoLWJ3UjBvUTJlWkJSc3ZudmdiaUZiLVBZSWtQNkFySWFPTl9CRFFzYUZCN0FtRHNKNnlRT3ppT2R3bzV6eQ?oc=5"
-        },
-        {
-          "date": "2026-11-23",
-          "published": "2026-11-23T13:39:43-06:00",
+          "date": "2026-11-24",
+          "published": "2026-11-24T02:15:28-06:00",
           "source": "Reuters",
-          "text": "US imposes sanctions on dozens linked to Iran's shadow banking networks - Reuters",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxON2NaMVlXcGRFQ3BpRFVieGtVRzR4bXFtTXRTRnpSV3JmNzY1REhheG5xNlV5MlptZ1lIM1BQWUhGcTBZNWpHckdxZG1kWUZoZUdxSnRneHJhVzBpUzg0ZGpXQ1lQblItbHg5WXpNUXBqbHpWZ0NqZzdQZEdhNTZKbDZXaHNydXhYM05hd2YtY1lvU0JkVnJBQ3diRVNDV210Z0pZdm5mRnMtUEk4TTNkOXNDMGpvbmpD?oc=5"
+          "text": "Japan accelerates ICC funding as US sanctions threaten court - Reuters",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQeVlqQzhUUnlVXy11enMtemVoQURZSDZ4cFZ4czFBM091NW9GWDZVUmE2dGg2V2xCeHhzS2JINGI3RDdJdGw5N0t5bThLWDNGTk5DUVk0bnZJeEZSYWZTRElIbTQ5dzVMb2NySUhHaVZEZTNPZks2eldrbmt4ckx4YWpXR3UzWnE4bWhmS3BRdE5SZDZlam5vbC1VQndoWnQtcjgzMnhZRzVaalQ1?oc=5"
+        },
+        {
+          "date": "2026-11-20",
+          "published": "2026-11-20T07:26:00-06:00",
+          "source": "The New York Times",
+          "text": "Trump, Xi and Putin Seek to Project Power at Their First Summit - The New York Times",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1MQWU3M21LcmgtNFU4MmVaaEw2cnIyUGJVclVsc2JIWGZhcFVFMXE0SmJqaG5MQnpWN3BRLWZuWmh6cTRudTl0Nzc1SlJ4WVdQamZlR0hFMlRtTy04SEhhVVVsREp2RktrY0ZwUDFkcmpnaXM?oc=5"
+        },
+        {
+          "date": "2026-11-23",
+          "published": "2026-11-23T22:48:00-06:00",
+          "source": "Reuters",
+          "text": "Solomon Islands plans to replace China security pact with Australia treaty, report says - Reuters",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPdFNLbGx2cFNYcnJoRU9LLUIwRUpVUVktaTRNeDBJbDJCT3BoelRQWEdYcGJwZXJTQVE3eG1RX0JuQVVVelotVjJxdzVmcWliSUhxUVlqQ0hoSDJzeE5OTjlYVWdGZTZOT2ZtNldqeTd4aVlaRHVEczlvN2h4Wk5JUGNTVWtreTJVeFNqOVF2R252dHI5ZWI5RXp0VXk5MXdJNFQwOFdQYktYbENvZHBNeDJGY24teFZVd1VrWWJ3eEp3ZS1n?oc=5"
         }
       ],
       "severity": "ALERT",
       "soWhat": "no action needed",
       "source": "News velocity",
-      "sourceCount": 3,
+      "sourceCount": 6,
       "title": "global",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQc1FWT0FKN3NFS3JoRG0zYnZvTkpjNEZqR240QzdMQVJDM1lmUklKeHpLeUl4bmFNUnlSa29kaU13WmhBdkNmVkt1WVZDUkdycVl3elQ1c1BwelFsLWVJeDhNNVBORWZBLWlhd0VqQ1QzLXFaNEZjRHEydWY1MGJYcDlYeWc5RjE4UEVEekJDYURuTWJfbk1WMGo1dWR3Zl84TUs1NEFJemZPZHVOVEE?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQeVlqQzhUUnlVXy11enMtemVoQURZSDZ4cFZ4czFBM091NW9GWDZVUmE2dGg2V2xCeHhzS2JINGI3RDdJdGw5N0t5bThLWDNGTk5DUVk0bnZJeEZSYWZTRElIbTQ5dzVMb2NySUhHaVZEZTNPZks2eldrbmt4ckx4YWpXR3UzWnE4bWhmS3BRdE5SZDZlam5vbC1VQndoWnQtcjgzMnhZRzVaalQ1?oc=5"
     }
   ],
   "mode": "trends",
@@ -177,409 +178,408 @@
   "raw": [
     {
       "place": "US",
-      "trend_name": "Nvidia",
-      "tweet_count": 545978
+      "trend_name": "Cubs",
+      "tweet_count": 16964
     },
     {
       "place": "US",
-      "trend_name": "Nvidia",
-      "tweet_count": 545978
+      "trend_name": "Trev Alberts",
+      "tweet_count": 1190
     },
     {
       "place": "US",
-      "trend_name": "Jensen",
-      "tweet_count": 666808
+      "trend_name": "Sato",
+      "tweet_count": 28138
     },
     {
       "place": "US",
-      "trend_name": "Swalwell",
-      "tweet_count": 10010
+      "trend_name": "Phillies",
+      "tweet_count": 2923
     },
     {
       "place": "US",
-      "trend_name": "X-Men",
-      "tweet_count": 146945
+      "trend_name": "Good Tuesday",
+      "tweet_count": 49805
     },
     {
       "place": "US",
-      "trend_name": "Cyclops",
-      "tweet_count": 65100
+      "trend_name": "Seiya",
+      "tweet_count": 3994
     },
     {
       "place": "US",
-      "trend_name": "Aiyuk",
-      "tweet_count": 4966
+      "trend_name": "Tidal",
+      "tweet_count": 6947
     },
     {
       "place": "US",
-      "trend_name": "Newt",
-      "tweet_count": 4517
+      "trend_name": "Ansem",
+      "tweet_count": 19608
     },
     {
       "place": "US",
-      "trend_name": "Doomsday",
-      "tweet_count": 438334
+      "trend_name": "Taco Tuesday",
+      "tweet_count": 15585
     },
     {
       "place": "US",
-      "trend_name": "Morejon",
-      "tweet_count": 1847
-    },
-    {
-      "place": "US",
-      "trend_name": "Brent Suter",
+      "trend_name": "Kris Bubic",
       "tweet_count": null
     },
     {
       "place": "US",
-      "trend_name": "PHIL",
-      "tweet_count": 61624
-    },
-    {
-      "place": "US",
-      "trend_name": "#WooSoxWishList",
-      "tweet_count": 8876
-    },
-    {
-      "place": "US",
-      "trend_name": "Steve Rogers",
-      "tweet_count": 59250
-    },
-    {
-      "place": "US",
-      "trend_name": "Thor",
-      "tweet_count": 53811
-    },
-    {
-      "place": "US",
-      "trend_name": "Teryl Austin",
+      "trend_name": "Dave Dombrowski",
       "tweet_count": null
     },
     {
       "place": "US",
-      "trend_name": "Jimmy Gomez",
-      "tweet_count": 1387
+      "trend_name": "Happy Thanksgiving",
+      "tweet_count": 18587
     },
     {
       "place": "US",
-      "trend_name": "Bill Clinton",
-      "tweet_count": 3104
-    },
-    {
-      "place": "US",
-      "trend_name": "Scott Galloway",
-      "tweet_count": 1854
-    },
-    {
-      "place": "US",
-      "trend_name": "Wright State",
+      "trend_name": "#gachiakuta176",
       "tweet_count": null
     },
     {
       "place": "US",
-      "trend_name": "Loki",
-      "tweet_count": 46079
+      "trend_name": "Pope Francis",
+      "tweet_count": 6061
     },
     {
       "place": "US",
-      "trend_name": "Fang Fang",
-      "tweet_count": 14966
+      "trend_name": "#tejran",
+      "tweet_count": 1015
     },
     {
       "place": "US",
-      "trend_name": "Endgame",
-      "tweet_count": 33540
+      "trend_name": "Senegal",
+      "tweet_count": 168061
     },
     {
       "place": "US",
-      "trend_name": "#jimromeonx",
+      "trend_name": "Rudy Giuliani",
+      "tweet_count": 6334
+    },
+    {
+      "place": "US",
+      "trend_name": "Morocco",
+      "tweet_count": 43144
+    },
+    {
+      "place": "US",
+      "trend_name": "Pearl Jam",
+      "tweet_count": 4670
+    },
+    {
+      "place": "US",
+      "trend_name": "Murakami",
+      "tweet_count": 2267
+    },
+    {
+      "place": "US",
+      "trend_name": "Orioles",
+      "tweet_count": 2621
+    },
+    {
+      "place": "US",
+      "trend_name": "University of Michigan",
       "tweet_count": null
     },
     {
       "place": "US",
-      "trend_name": "Everton",
-      "tweet_count": 16130
-    },
-    {
-      "place": "US",
-      "trend_name": "Uggs",
-      "tweet_count": 1320
-    },
-    {
-      "place": "US",
-      "trend_name": "VADA",
-      "tweet_count": 4283
-    },
-    {
-      "place": "US",
-      "trend_name": "Vanity Fair",
-      "tweet_count": 2883
-    },
-    {
-      "place": "US",
-      "trend_name": "Board",
-      "tweet_count": 294591
-    },
-    {
-      "place": "US",
-      "trend_name": "Peggy",
-      "tweet_count": 50287
-    },
-    {
-      "place": "US",
-      "trend_name": "Rob Sand",
-      "tweet_count": 1945
-    },
-    {
-      "place": "US",
-      "trend_name": "Bucky",
-      "tweet_count": 36005
-    },
-    {
-      "place": "US",
-      "trend_name": "#bilibili",
+      "trend_name": "Alec Bohm",
       "tweet_count": null
     },
     {
       "place": "US",
-      "trend_name": "Cramer",
-      "tweet_count": 8573
+      "trend_name": "#UditiSingh",
+      "tweet_count": 13919
     },
     {
       "place": "US",
-      "trend_name": "Spielberg",
-      "tweet_count": 5614
+      "trend_name": "Peralta",
+      "tweet_count": 10298
     },
     {
       "place": "US",
-      "trend_name": "Captain America",
-      "tweet_count": 25415
+      "trend_name": "AFCON",
+      "tweet_count": 73878
     },
     {
       "place": "US",
-      "trend_name": "First Lady",
-      "tweet_count": 20140
+      "trend_name": "#tuesdayvibe",
+      "tweet_count": null
     },
     {
       "place": "US",
-      "trend_name": "Chinese Spy",
-      "tweet_count": 35726
+      "trend_name": "#BB20",
+      "tweet_count": 48256
     },
     {
       "place": "US",
-      "trend_name": "CNBC",
-      "tweet_count": 18453
+      "trend_name": "EU and 14",
+      "tweet_count": null
     },
     {
       "place": "US",
-      "trend_name": "Feinstein",
+      "trend_name": "Diggs",
+      "tweet_count": 11306
+    },
+    {
+      "place": "US",
+      "trend_name": "Cuomo",
+      "tweet_count": 2885
+    },
+    {
+      "place": "US",
+      "trend_name": "America's Mayor",
+      "tweet_count": null
+    },
+    {
+      "place": "US",
+      "trend_name": "Jed Hoyer",
+      "tweet_count": null
+    },
+    {
+      "place": "US",
+      "trend_name": "Medal of Freedom",
+      "tweet_count": 5847
+    },
+    {
+      "place": "US",
+      "trend_name": "VENEZUELA VICTORIOSA",
+      "tweet_count": null
+    },
+    {
+      "place": "US",
+      "trend_name": "Ilhan Omar",
+      "tweet_count": 62075
+    },
+    {
+      "place": "US",
+      "trend_name": "Popcaan",
+      "tweet_count": null
+    },
+    {
+      "place": "US",
+      "trend_name": "Scott Pilgrim",
+      "tweet_count": 21221
+    },
+    {
+      "place": "US",
+      "trend_name": "Victory Tuesday",
+      "tweet_count": null
+    },
+    {
+      "place": "US",
+      "trend_name": "Chen Jining",
+      "tweet_count": null
+    },
+    {
+      "place": "US",
+      "trend_name": "Regents",
+      "tweet_count": 1546
+    },
+    {
+      "place": "US",
+      "trend_name": "Taylor Ward",
+      "tweet_count": null
+    },
+    {
+      "place": "US",
+      "trend_name": "Loy Krathong",
+      "tweet_count": 154458
+    },
+    {
+      "place": "US",
+      "trend_name": "Sanofi",
+      "tweet_count": 1501
+    },
+    {
+      "place": "US",
+      "trend_name": "Snopes",
+      "tweet_count": null
+    },
+    {
+      "place": "US",
+      "trend_name": "Bridgeport",
       "tweet_count": null
     },
     {
       "place": "US",
       "trend_name": "Kroger",
-      "tweet_count": 4091
+      "tweet_count": 9024
     },
     {
       "place": "US",
-      "trend_name": "#ONEPIECE1200",
-      "tweet_count": 6372
-    },
-    {
-      "place": "US",
-      "trend_name": "Marco Penge",
+      "trend_name": "Brie Larson",
       "tweet_count": null
     },
     {
       "place": "US",
-      "trend_name": "Svitolina",
+      "trend_name": "Henry Winkler",
       "tweet_count": null
     },
     {
       "place": "US",
-      "trend_name": "Nick Rallis",
+      "trend_name": "Uggs",
+      "tweet_count": 29483
+    },
+    {
+      "place": "worldwide",
+      "trend_name": "#アイドル・ヲタクタイプ診断",
+      "tweet_count": 3202
+    },
+    {
+      "place": "worldwide",
+      "trend_name": "何タイプ",
+      "tweet_count": 8630
+    },
+    {
+      "place": "worldwide",
+      "trend_name": "自分のタイプこれ",
+      "tweet_count": 2186
+    },
+    {
+      "place": "worldwide",
+      "trend_name": "#恋とき",
+      "tweet_count": 47965
+    },
+    {
+      "place": "worldwide",
+      "trend_name": "#HakkımızHaramZıkkımOlsun",
       "tweet_count": null
-    },
-    {
-      "place": "US",
-      "trend_name": "National Security",
-      "tweet_count": 53602
-    },
-    {
-      "place": "US",
-      "trend_name": "Terrance Ferguson",
-      "tweet_count": null
-    },
-    {
-      "place": "US",
-      "trend_name": "Yankees",
-      "tweet_count": 11755
-    },
-    {
-      "place": "US",
-      "trend_name": "Yelena",
-      "tweet_count": 29296
-    },
-    {
-      "place": "US",
-      "trend_name": "Parastoo Ahmadi",
-      "tweet_count": 11126
-    },
-    {
-      "place": "worldwide",
-      "trend_name": "Nvidia",
-      "tweet_count": 545978
-    },
-    {
-      "place": "worldwide",
-      "trend_name": "Jensen",
-      "tweet_count": 666808
-    },
-    {
-      "place": "worldwide",
-      "trend_name": "الاهلي",
-      "tweet_count": 135422
-    },
-    {
-      "place": "worldwide",
-      "trend_name": "#ايفونات_مرسول",
-      "tweet_count": 4025
-    },
-    {
-      "place": "worldwide",
-      "trend_name": "#الاتحاد_بختاكور",
-      "tweet_count": 5210
-    },
-    {
-      "place": "worldwide",
-      "trend_name": "#DebateA8RTVE",
-      "tweet_count": 1547
-    },
-    {
-      "place": "worldwide",
-      "trend_name": "Thanksgiving",
-      "tweet_count": 168811
-    },
-    {
-      "place": "worldwide",
-      "trend_name": "#Aslan",
-      "tweet_count": 26576
-    },
-    {
-      "place": "worldwide",
-      "trend_name": "X-Men",
-      "tweet_count": 146945
-    },
-    {
-      "place": "worldwide",
-      "trend_name": "Tarkowski",
-      "tweet_count": 2379
-    },
-    {
-      "place": "worldwide",
-      "trend_name": "المربع الاسود",
-      "tweet_count": 3556
-    },
-    {
-      "place": "worldwide",
-      "trend_name": "#استقيلوا_واقيلوا_بوسيتش",
-      "tweet_count": 8677
-    },
-    {
-      "place": "worldwide",
-      "trend_name": "الهلال",
-      "tweet_count": 76884
-    },
-    {
-      "place": "worldwide",
-      "trend_name": "Everton",
-      "tweet_count": 16130
-    },
-    {
-      "place": "worldwide",
-      "trend_name": "Steve Rogers",
-      "tweet_count": 59250
-    },
-    {
-      "place": "worldwide",
-      "trend_name": "$NVDA",
-      "tweet_count": 38378
-    },
-    {
-      "place": "worldwide",
-      "trend_name": "الزمالك",
-      "tweet_count": 5369
-    },
-    {
-      "place": "worldwide",
-      "trend_name": "Marvel",
-      "tweet_count": 111437
-    },
-    {
-      "place": "worldwide",
-      "trend_name": "Brentford",
-      "tweet_count": 10876
-    },
-    {
-      "place": "worldwide",
-      "trend_name": "مصطفي فتحي",
-      "tweet_count": 1770
-    },
-    {
-      "place": "worldwide",
-      "trend_name": "Thor",
-      "tweet_count": 53811
-    },
-    {
-      "place": "worldwide",
-      "trend_name": "Cyclops",
-      "tweet_count": 65100
     },
     {
       "place": "worldwide",
       "trend_name": "Senegal",
-      "tweet_count": 28118
+      "tweet_count": 168061
     },
     {
       "place": "worldwide",
-      "trend_name": "المعين الاسود",
-      "tweet_count": 3103
+      "trend_name": "#มาลอยกระทงกับตี๋ตี๋ป๋อ",
+      "tweet_count": 7501
     },
     {
       "place": "worldwide",
-      "trend_name": "Delta State",
-      "tweet_count": 27998
+      "trend_name": "#MakeAWishForShotaro",
+      "tweet_count": 18695
     },
     {
       "place": "worldwide",
-      "trend_name": "Bucky",
-      "tweet_count": 36005
+      "trend_name": "Morocco",
+      "tweet_count": 43144
     },
     {
       "place": "worldwide",
-      "trend_name": "Peggy",
-      "tweet_count": 50287
+      "trend_name": "サトテル",
+      "tweet_count": 1592
     },
     {
       "place": "worldwide",
-      "trend_name": "Mustafa Kemal Atatürk",
+      "trend_name": "PPP FAMILY YIPENG 2026",
+      "tweet_count": 148997
+    },
+    {
+      "place": "worldwide",
+      "trend_name": "Fatma Betül",
       "tweet_count": null
     },
     {
       "place": "worldwide",
-      "trend_name": "Swalwell",
-      "tweet_count": 10010
+      "trend_name": "Hikmet Çetin",
+      "tweet_count": 1613
     },
     {
       "place": "worldwide",
-      "trend_name": "Loki",
-      "tweet_count": 46079
+      "trend_name": "AFCON",
+      "tweet_count": 73878
+    },
+    {
+      "place": "worldwide",
+      "trend_name": "वैभव सूर्यवंशी",
+      "tweet_count": 10501
+    },
+    {
+      "place": "worldwide",
+      "trend_name": "佐藤輝明",
+      "tweet_count": 8713
+    },
+    {
+      "place": "worldwide",
+      "trend_name": "真島先生",
+      "tweet_count": 8170
+    },
+    {
+      "place": "worldwide",
+      "trend_name": "鈴木誠也",
+      "tweet_count": 3262
+    },
+    {
+      "place": "worldwide",
+      "trend_name": "JUMMO DRALLY SUNSCREEN LIVE",
+      "tweet_count": 38461
+    },
+    {
+      "place": "worldwide",
+      "trend_name": "現場応援団長",
+      "tweet_count": 2658
+    },
+    {
+      "place": "worldwide",
+      "trend_name": "CHIANGMAI LOYKRATHONG WT PNB",
+      "tweet_count": 121474
+    },
+    {
+      "place": "worldwide",
+      "trend_name": "OLOM",
+      "tweet_count": null
+    },
+    {
+      "place": "worldwide",
+      "trend_name": "Cubs",
+      "tweet_count": 16964
+    },
+    {
+      "place": "worldwide",
+      "trend_name": "推しの夢",
+      "tweet_count": 2186
+    },
+    {
+      "place": "worldwide",
+      "trend_name": "Maroc",
+      "tweet_count": 58159
+    },
+    {
+      "place": "worldwide",
+      "trend_name": "孤高のライブ狂い",
+      "tweet_count": 2183
+    },
+    {
+      "place": "worldwide",
+      "trend_name": "OLBH",
+      "tweet_count": null
+    },
+    {
+      "place": "worldwide",
+      "trend_name": "ビーバームーン",
+      "tweet_count": 18312
+    },
+    {
+      "place": "worldwide",
+      "trend_name": "暗殺の母",
+      "tweet_count": 2183
+    },
+    {
+      "place": "worldwide",
+      "trend_name": "المركز المالي",
+      "tweet_count": 12287
     }
   ],
   "sources": {
     "google": "ok",
     "x": "ok"
   },
-  "status": "ok",
-  "googleSeen": 10
+  "status": "ok"
 }

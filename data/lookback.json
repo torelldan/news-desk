@@ -2,56 +2,84 @@
   "calls": [],
   "escalated": [
     {
-      "note": "New since 2026-11-16 · now ALERT",
+      "note": "New since 2026-11-17 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "Influenza A(H5N1) - United States of America"
+    },
+    {
+      "note": "New since 2026-11-17 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "Circulating vaccine-derived poliovirus type 1 – Syrian Arab Republic"
+    },
+    {
+      "note": "New since 2026-11-17 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation"
+    },
+    {
+      "note": "New since 2026-11-17 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "Hackers Exploit N-able MailAssure Flaw While AI Agents Exploit MONAI Label Zero-Day"
+    },
+    {
+      "note": "STANDBY → ALERT since 2026-11-17",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
       "title": "CVE-2026-133968 Project MONAI MONAI Label Path Traversal Vulnerability"
     },
     {
-      "note": "New since 2026-11-16 · now ALERT",
+      "note": "STANDBY → ALERT since 2026-11-17",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
       "title": "CVE-2026-134624 N-able MailAssure (SpamExperts) Server-Side Request Forgery (SSRF) Vulnerability"
     },
     {
-      "note": "New since 2026-11-16 · now ALERT",
+      "note": "New since 2026-11-17 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
       "title": "⚡ Weekly Recap: VMware 0-Day, Java4Shell, NGINX2Root, Ruby2Shell, and a Whole Lot of Shell Trouble"
     },
     {
-      "note": "New since 2026-11-16 · now ALERT",
+      "note": "New since 2026-11-17 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access"
+      "title": "Japan accelerates ICC funding as US sanctions threaten court - Reuters"
     },
     {
-      "note": "New since 2026-11-16 · now ALERT",
+      "note": "New since 2026-11-17 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "At least 15 killed in Ukraine’s Kyiv region as Russia intensifies attacks - Al Jazeera"
+      "title": "EU plans sports ban in sweeping new Russia sanctions proposal - Al Jazeera"
     },
     {
-      "note": "New since 2026-11-16 · now ALERT",
+      "note": "New since 2026-11-17 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "EU proposes sweeping new Russia sanctions targeting banks, crypto and sports events - AP News"
+      "title": "Zelensky urges four-way peace talks with Russia, Europe and US 'as soon as possible' - France 24"
     },
     {
-      "note": "New since 2026-11-16 · now ALERT",
+      "note": "New since 2026-11-17 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
       "title": "Internet services disrupted across Pakistan due to undersea cable fault - Daily Ausaf"
     },
     {
-      "note": "New since 2026-11-16 · now STANDBY",
+      "note": "New since 2026-11-17 · now STANDBY",
       "related": 0,
       "relatedSources": [],
       "severity": "STANDBY",
@@ -61,142 +89,170 @@
   ],
   "fizzled": [
     {
-      "note": "On the board 2026-11-16 at ACTION, absent now.",
+      "note": "On the board 2026-11-17 at ACTION, absent now.",
       "related": 0,
       "relatedSources": [],
       "severity": "ACTION",
       "title": "Tropical Cyclone AKVAN-26"
     },
     {
-      "note": "On the board 2026-11-16 at ALERT, absent now.",
+      "note": "On the board 2026-11-17 at ALERT, absent now.",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Earthquake in Peru"
+      "title": "M6.6 148 km WSW of Tual, Indonesia"
     },
     {
-      "note": "On the board 2026-11-16 at ALERT, absent now.",
+      "note": "On the board 2026-11-17 at ALERT, absent now.",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Earthquake in Japan"
+      "title": "Earthquake in Vanuatu"
     },
     {
-      "note": "On the board 2026-11-16 at ALERT, absent now.",
+      "note": "On the board 2026-11-17 at ALERT, absent now.",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Earthquake in Eastern Gulf Of Aden"
+      "title": "Earthquake in Papua New Guinea"
     },
     {
-      "note": "On the board 2026-11-16 at ALERT, absent now.",
+      "note": "On the board 2026-11-17 at ALERT, absent now.",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
       "title": "Earthquake in Russia"
     },
     {
-      "note": "On the board 2026-11-16 at ALERT, absent now.",
+      "note": "On the board 2026-11-17 at ALERT, absent now.",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Earthquake in Indonesia"
+      "title": "Earthquake in South Of Kermadec Islands"
     },
     {
-      "note": "On the board 2026-11-16 at ALERT, absent now.",
+      "note": "On the board 2026-11-17 at ALERT, absent now.",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Winter Nightmare Looms Early in Ukraine as Russia Strikes Relentlessly - The New York Times"
+      "title": "Iran launches third round of strikes on Bahrain, host of U.S. Navy's 5th Fleet - NPR"
     },
     {
-      "note": "On the board 2026-11-16 at ALERT, absent now.",
+      "note": "On the board 2026-11-17 at ALERT, absent now.",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Coalition to move away from fossil fuels presses ahead without Colombia, its original champion - PBS"
+      "title": "What Is the Kerch Bridge—and Why Does Ukraine Keep Attacking It? - Time Magazine"
     },
     {
-      "note": "On the board 2026-11-16 at ALERT, absent now.",
+      "note": "On the board 2026-11-17 at ALERT, absent now.",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "WATCH: Rubio delivers keynote address at Federalist Society National Lawyers Convention - PBS"
+      "title": "Read the full White House memo requiring agencies to get approval before testifying in front of Congress - PBS"
     },
     {
-      "note": "ALERT → STANDBY since 2026-11-16",
+      "note": "On the board 2026-11-17 at ALERT, absent now.",
       "related": 0,
       "relatedSources": [],
-      "severity": "STANDBY",
-      "title": "Ukraine Facility: Council approves largest-ever payment of €8 billion to Kyiv - Council, European Union"
+      "severity": "ALERT",
+      "title": "Article | Europeans seek to head off COP31 climate science row - POLITICO Pro"
     },
     {
-      "note": "ALERT → STANDBY since 2026-11-16",
+      "note": "On the board 2026-11-17 at ALERT, absent now.",
       "related": 0,
       "relatedSources": [],
-      "severity": "STANDBY",
-      "title": "EU HR/VP Kaja Kallas Attended the G7 Foreign Affairs Ministers’ Meeting in Paris - EEAS"
+      "severity": "ALERT",
+      "title": "Israel’s Elections and the Future of the Middle East - CSIS | Center for Strategic and International Studies"
     },
     {
-      "note": "ALERT → STANDBY since 2026-11-16",
+      "note": "On the board 2026-11-17 at ALERT, absent now.",
       "related": 0,
       "relatedSources": [],
-      "severity": "STANDBY",
-      "title": "Can Netanyahu and Eisenkot form a ‘unity’ government in Israel? - Al Jazeera"
+      "severity": "ALERT",
+      "title": "Ukraine launches biggest drone attack on Russia since war began, defence ministry data shows - Reuters"
     }
   ],
   "newSince": [
     {
-      "note": "New since 2026-11-16 · now ALERT",
+      "note": "New since 2026-11-17 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "Influenza A(H5N1) - United States of America"
+    },
+    {
+      "note": "New since 2026-11-17 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "Circulating vaccine-derived poliovirus type 1 – Syrian Arab Republic"
+    },
+    {
+      "note": "New since 2026-11-17 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation"
+    },
+    {
+      "note": "New since 2026-11-17 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "Hackers Exploit N-able MailAssure Flaw While AI Agents Exploit MONAI Label Zero-Day"
+    },
+    {
+      "note": "STANDBY → ALERT since 2026-11-17",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
       "title": "CVE-2026-133968 Project MONAI MONAI Label Path Traversal Vulnerability"
     },
     {
-      "note": "New since 2026-11-16 · now ALERT",
+      "note": "STANDBY → ALERT since 2026-11-17",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
       "title": "CVE-2026-134624 N-able MailAssure (SpamExperts) Server-Side Request Forgery (SSRF) Vulnerability"
     },
     {
-      "note": "New since 2026-11-16 · now ALERT",
+      "note": "New since 2026-11-17 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
       "title": "⚡ Weekly Recap: VMware 0-Day, Java4Shell, NGINX2Root, Ruby2Shell, and a Whole Lot of Shell Trouble"
     },
     {
-      "note": "New since 2026-11-16 · now ALERT",
+      "note": "New since 2026-11-17 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access"
+      "title": "Japan accelerates ICC funding as US sanctions threaten court - Reuters"
     },
     {
-      "note": "New since 2026-11-16 · now ALERT",
+      "note": "New since 2026-11-17 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "At least 15 killed in Ukraine’s Kyiv region as Russia intensifies attacks - Al Jazeera"
+      "title": "EU plans sports ban in sweeping new Russia sanctions proposal - Al Jazeera"
     },
     {
-      "note": "New since 2026-11-16 · now ALERT",
+      "note": "New since 2026-11-17 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "EU proposes sweeping new Russia sanctions targeting banks, crypto and sports events - AP News"
+      "title": "Zelensky urges four-way peace talks with Russia, Europe and US 'as soon as possible' - France 24"
     },
     {
-      "note": "New since 2026-11-16 · now ALERT",
+      "note": "New since 2026-11-17 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
       "title": "Internet services disrupted across Pakistan due to undersea cable fault - Daily Ausaf"
     },
     {
-      "note": "New since 2026-11-16 · now STANDBY",
+      "note": "New since 2026-11-17 · now STANDBY",
       "related": 0,
       "relatedSources": [],
       "severity": "STANDBY",
@@ -204,6 +260,6 @@
       "title": "G7 Foreign Ministers' meeting: Press remarks by the High Representative/Vice-President Kaja Kallas upon arrival - European External Action Service (EEAS)"
     }
   ],
-  "note": "Compared with the stored board on 2026-11-16.",
-  "since": "2026-11-16"
+  "note": "Compared with the stored board on 2026-11-17.",
+  "since": "2026-11-17"
 }
