@@ -805,7 +805,7 @@ def fetch_trends(token: str, now: datetime) -> dict:
             "sources": {"x": x_status},
             "note": note,
             "items": raw_kept[:12],
-            "raw": raw_rows[:80],
+            "raw": citizen.dedupe_raw(raw_rows),
         }
 
     buckets = []
@@ -1057,6 +1057,7 @@ def main() -> int:
         trends["googleNote"] = google_trends.get("note")
     if google_trends.get("seen") is not None:
         trends["googleSeen"] = google_trends.get("seen")
+    trends["google_all"] = google_trends.get("all") or []
     trends.setdefault("sources", {})
     trends["sources"]["google"] = "ok" if google_trends.get("ok") else "offline"
     if trends.get("status") == "ok" and trends["sources"]["google"] == "offline":
@@ -1284,9 +1285,18 @@ def main() -> int:
             save_json(DATA / "threats.json", boards_out["threats"])
         terms = citizen.board_terms(threat_items, strike_doc.get("items") or [], meta.get("spikes") or {})
         trends = citizen.reapply_x_trends(trends, terms)
+        try:
+            citizen.fill_trend_headlines([trends.get("x_us") or [], trends.get("x_world") or [], trends.get("google_all") or []])
+        except Exception as err:
+            print(f"  trend headlines: {err}")
         save_json(DATA / "trends.json", trends)
     except Exception as err:
         errors.append(f"Strikes: {err}")
+        try:
+            trends = citizen.shape_trend_panel(trends, [])
+            save_json(DATA / "trends.json", trends)
+        except Exception:
+            pass
     try:
         import deskextra
         prev_macro = load_json(DATA / "macro.json", {})
