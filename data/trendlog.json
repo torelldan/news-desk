@@ -1974,11 +1974,11 @@
       "topic": "windstorm"
     },
     {
-      "count": 5,
+      "count": 4,
       "countries": 1,
       "date": "2026-11-24",
       "keywords": [],
-      "outlets": 5,
+      "outlets": 4,
       "score": 0,
       "severity": "ALERT",
       "topic": "attack"
@@ -2024,21 +2024,21 @@
       "topic": "diplomacy"
     },
     {
-      "count": 7,
+      "count": 6,
       "countries": 1,
       "date": "2026-11-24",
       "keywords": [],
-      "outlets": 7,
+      "outlets": 6,
       "score": 0,
       "severity": "STANDBY",
       "topic": "gdacs"
     },
     {
-      "count": 7,
+      "count": 8,
       "countries": 1,
       "date": "2026-11-24",
       "keywords": [],
-      "outlets": 7,
+      "outlets": 8,
       "score": 0,
       "severity": "ALERT",
       "topic": "global"
@@ -2072,6 +2072,16 @@
       "score": 0,
       "severity": "STANDBY",
       "topic": "neo"
+    },
+    {
+      "count": 1,
+      "countries": 1,
+      "date": "2026-11-24",
+      "keywords": [],
+      "outlets": 1,
+      "score": 0,
+      "severity": "STANDBY",
+      "topic": "nws"
     },
     {
       "count": 6,
@@ -2110,7 +2120,7 @@
       "keywords": [],
       "outlets": 4,
       "score": 0,
-      "severity": "ALERT",
+      "severity": "STANDBY",
       "topic": "war-ukraine"
     },
     {
@@ -4677,11 +4687,11 @@
       "topic": "windstorm"
     },
     {
-      "count": 5,
+      "count": 4,
       "countries": 1,
       "date": "2026-11-24",
       "keywords": [],
-      "outlets": 5,
+      "outlets": 4,
       "score": 0,
       "severity": "ALERT",
       "topic": "attack"
@@ -4727,21 +4737,21 @@
       "topic": "diplomacy"
     },
     {
-      "count": 7,
+      "count": 6,
       "countries": 1,
       "date": "2026-11-24",
       "keywords": [],
-      "outlets": 7,
+      "outlets": 6,
       "score": 0,
       "severity": "STANDBY",
       "topic": "gdacs"
     },
     {
-      "count": 7,
+      "count": 8,
       "countries": 1,
       "date": "2026-11-24",
       "keywords": [],
-      "outlets": 7,
+      "outlets": 8,
       "score": 0,
       "severity": "ALERT",
       "topic": "global"
@@ -4775,6 +4785,16 @@
       "score": 0,
       "severity": "STANDBY",
       "topic": "neo"
+    },
+    {
+      "count": 1,
+      "countries": 1,
+      "date": "2026-11-24",
+      "keywords": [],
+      "outlets": 1,
+      "score": 0,
+      "severity": "STANDBY",
+      "topic": "nws"
     },
     {
       "count": 6,
@@ -4813,7 +4833,7 @@
       "keywords": [],
       "outlets": 4,
       "score": 0,
-      "severity": "ALERT",
+      "severity": "STANDBY",
       "topic": "war-ukraine"
     },
     {

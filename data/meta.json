@@ -1,14 +1,61 @@
 {
   "baseline": false,
-  "brief": "No rare risk is on the board. A routine flyby or an empty storm outlook is not an emergency. Current war coverage is on the board: At least 15 killed in Ukraine’s Kyiv region as Russia intensifies attacks - Al Jazeera. Global: Trump Administration Imposes Sanctions on Megaspeed, Singaporean Firm at Center of Nvidia Scandal - The New York Times. Infrastructure: Internet services disrupted across Pakistan due to undersea cable fault - Daily Ausaf (unconfirmed). Rising topic: ukraine war (4 outlets this window).",
-  "checkedAt": "2026-11-24T10:27:14-06:00",
-  "checkedLabel": "Nov 24, 2026 10:27 AM CT",
-  "errors": [
-    "ReliefWeb: the disasters page returned no cards from this network. The RSS feed is an AWS WAF challenge, and API v2 rejects appname=torelldan-news-desk until ReliefWeb approves it."
-  ],
+  "brief": "No rare risk is on the board. A routine flyby or an empty storm outlook is not an emergency. Global: Trump Administration Imposes Sanctions on Megaspeed, Singaporean Firm at Center of Nvidia Scandal - The New York Times. Infrastructure: Internet services disrupted across Pakistan due to undersea cable fault - Daily Ausaf (unconfirmed). Rising topic: iran war (4 outlets this window).",
+  "checkedAt": "2026-11-24T15:35:03-06:00",
+  "checkedLabel": "Nov 24, 2026 3:35 PM CT",
+  "errors": [],
   "retainDays": 120,
   "spikes": {
-    "labs": [],
+    "labs": [
+      {
+        "field": "ai",
+        "links": [
+          {
+            "source": "Google AI blog",
+            "title": "How Gemini is changing the game for Golden State's organization and fans.",
+            "url": "https://blog.google/products-and-platforms/products/gemini/gemini-golden-state/"
+          },
+          {
+            "source": "Google AI blog",
+            "title": "Introducing Tool Retrieval in the Gemini API",
+            "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/"
+          },
+          {
+            "source": "DeepMind",
+            "title": "Introducing Gemini 4 Neon",
+            "url": "https://deepmind.google/blog/introducing-gemini-4-neon/"
+          },
+          {
+            "source": "DeepMind",
+            "title": "Introducing Gemini 4 Hydrogen",
+            "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/"
+          }
+        ],
+        "outlets": 2,
+        "state": "EVENT",
+        "title": "How Gemini is changing the game for Golden State's organization and fans.",
+        "topic": "Gemini"
+      },
+      {
+        "field": "ai",
+        "links": [
+          {
+            "source": "OpenAI",
+            "title": "Perplexity and Intelligence - OpenAI",
+            "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE96Sm1EaVlsMHctNGtBMDBYdVRreWpySVdVS1RhSVZCUzk3enZHQmlIS3lWY2Rmajh2Q3RNZWU2RDEwc3ZEX2tONEpsbEN6RXowZk1ySVdaWXVVR09jX21aelV6UQ?oc=5"
+          },
+          {
+            "source": "Oregon Public Broadcasting - OPB",
+            "title": "Oregon AG sues OpenAI, claims company knowingly endangers teens - Oregon Public Broadcasting - OPB",
+            "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPMU91cFBCaTN3aGJhX1pIVGhSTDBoLV9FWGwzY3FEQWZSR1FGR1VFSm85ODVsN1JSSUZWUG5WbU4yV2dWdGQ2c2prd2tZeW4xaURyOURuRDhKa0VCUDBUNE1sTGJsQUZWOXhMVkExTXZUMnE4WnIyZl9MREhWU0RFeUJGaG43Wnk3WGFfREVrVU5pRUlHSTVMR0hEZVdtVDFMYVVnUA?oc=5"
+          }
+        ],
+        "outlets": 2,
+        "state": "EVENT",
+        "title": "Perplexity and Intelligence - OpenAI",
+        "topic": "OpenAI"
+      }
+    ],
     "markets": [
       {
         "links": [
@@ -28,12 +75,12 @@
             "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOMWxlZHhWdXBxODI5eFM3Znp0ZFQyRC1XOFJEajFyelloRnFOZ2MzRXRiNVBsRFRkOWdfbHRrX2FtVld3MDdhYnkyTGJOcFhQLWdGZUNzUDloNTNaT3lJZWNNSWRTbnpTNHUwQXdYUHlwWDhfaDh1eFJhcnJDbmx6WHRVZWpFLTB6LVhWVGJqZDl6aHVLdl9RQTYzT1Zsc05lRUtLUVpXSjU5UDhtWVdnb2FwYzEtLWcyd0FNd0FQcw?oc=5"
           },
           {
-            "source": "ABC News - Breaking News, Latest News and Videos",
-            "title": "Federal Reserve raises interest rates for the 1st time since 2023 - ABC News - Breaking News, Latest News and Videos",
-            "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOYktxZlJxRVNrdUZFRWViQjVMLUh3OGJwNGhrVFpJY2E5QTAyajNfcnFSb09rZUVkSnVMUHd4WkpsYktvZGczX05nRzVhSTdKNWtfU2hWb09IYnNQQ01tTlMwMV95YzJkbWVDMklwZ19XMC1RNmVsckpGS3FpNUpiRlUxZkVtNXk5NE5YRnpBSTI4eEhVOWxaUlBzZDlxb3p1ZVBFeHFR0gGrAUFVX3lxTFBrZzU3UXhjRlBBblFYNzJZZ3dINVFwMnpIOFQwRlJ1NmRTa3JNUGlkamJyS08wRjM5UlFuMkRJcHAtUEQxYjF3b2Yyc2E2V1hOOEhQRHRPckpidllEOHpLRG9VUTFxSUwyaE95SzNNZ0pkemQwQkNBYkZPbTBpN0ZMYTBWU25nT3FrUVNNal9Eb0lCNnJwZTVFUVVhM0dDRlMzQ1pQTF8xRTV6bw?oc=5"
+            "source": "The American Action Forum",
+            "title": "Tracker: The Federal Reserve’s Balance Sheet Assets - The American Action Forum",
+            "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNR2NrRDdoQ1MwS0paZFliV01BelV0MS1tQkNMSEdJYmYweWctanpzZU5hMllmVUtjQWR2cXBPSVhFeFluSFlMbi1ZVTg1ZS1TYzRMam81MFlRbWxockRRN2RpeEk2OGhpYWVXUVpsX3lvcUx4QUFERERGQVdkeVRndHJNeExJTU9DLS1GRW9GTW0?oc=5"
           }
         ],
-        "outlets": 10,
+        "outlets": 9,
         "region": "USA",
         "state": "RISING",
         "title": "How the Federal Reserve Bank stays connected to you - The Commercial Appeal",
@@ -124,30 +171,30 @@
       {
         "links": [
           {
-            "source": "KFGO",
-            "title": "Mexico’s inflation hits six-month high but core measure undershoots forecasts - KFGO",
-            "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQRGc2R2pHcnYySGxZTWdHdFpBTFkyc3Z3cGw2Y0tZOEc0VHl5bmZDMUtvMlg5VkRYODhlSFhXaWJYQVJEUXlISzBGSEtwZlZ1RkFDMmtvMmNPM2phaU51bnJXNkdQd2RSZS1LYVFiUi1aTWJYaGFHdGlzbDBuajRJNGFhT1VnY0dYeVdCc1RNT2U0R0VUMEpXNHVXZGkxdGRpWmFRQUQwQm0?oc=5"
-          },
-          {
             "source": "Bloomberg.com",
-            "title": "US Consumers Are Holding Up Against Inflation Going Into Holiday Season - Bloomberg.com",
-            "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOVzdHalZYY2s3bHVEeENKX0g4T0M4WWxHV3lacDRlejl2b2E5VWNPd1AxbXhaaUVyNXBFLWlYZFlKTk93R3QzeFdVazI3ajljUFVLYnFpb1VVQmNrVlNvYTIyajhxM1JBbjYxTkhJMkhObEJGSVdRdmZDVzItblZFd1A4NHZaWTZiZWdFVVc4REI2RGF5UjlGWndXeDFha2k0MWdqRkE4X1ozQ1h5N0ZxZmVVTVFldC1VRi1keUdBQQ?oc=5"
+            "title": "Bank of Canada Fades Core Inflation, Switches Gauges - Bloomberg.com",
+            "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOUVJ3MVdLQjc0eVhETnJBR0xUWUp6UjVhMmtFcnQ5aEdBV2VqbnlNZkdlSnpMOENIYnNNWHV5X3kzVThaWjE2MXhVMXJnV0o3STlZRzdXWF9fMk9KWHhMMXliUXoyR1V6dHpISkVDbk14ODJWZGE4amhMNlZFMDZvNVRjT3pFUFdsZWlvbm0tcnNRVE1Eb0loSmw4VUZLa2VCbzZDTg?oc=5"
           },
           {
-            "source": "www.equiti.com",
-            "title": "Week Ahead: US GDP, PCE Inflation & Fed Rate Outlook - www.equiti.com",
-            "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPOGFOUE51WXJNSFhPYWJSRktSVS1YeVkwNFBabzlqUUhweEVsZ1BLZmVfOHlZMU1GSzRjY3V6aW5tN0p5M0ZBcnM4eVNtLTVyNTg3QVVWZnpKMnAwQ3N2d2lsbnBuM3ZxdkoyVGgydjFwWG1qS1p4X05kLVFtQlhnSjh1S1QwS0FnVmVubjFOSGVxa0tWQzluMmxsUlM5ejA?oc=5"
+            "source": "BNN Bloomberg",
+            "title": "Macklem admits Bank of Canada offered mixed messaging on core inflation in past - BNN Bloomberg",
+            "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQTEphb3RfRzU3bDlGa3RGekpDZnRTSG9aYTNyM2w3RjZDU3VKelJIZ3BjbnA5dFFKcW5ueFpsNWJuSkVELWs5a2FuMkFjQ2F3aWJva2hnR25KZFZkYW1yTDN6OFo4WTRzdXdqQ3hoNUFYVEY5MVdWbDFQTGtYZ1p5MkVSVThlbnh6bHZvVXpJaTVmRkhDN2tYNlJGOGNYM004MUtkWm41UlBDVE1FRVhGbDg5Znp6c2RPVjVoYjZ1SHp4UHdrUHNuM1RUUkhGeVJOV0praA?oc=5"
           },
           {
-            "source": "Traders Union",
-            "title": "Bank of Canada raises benchmark rate as inflation pressures persist - Traders Union",
-            "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxONi1QVHc0a0wzbEVJV0tXRkNFUXB3a1FLQTRzaEhrRHRiSnJ4LWdZc0hVYXdLOGNDQnUtTTJVSTRBckV6ODZyUzJVLTdtV3pQbDQyY082U1JTWHBKQ1RZTi1NOW5mYk5sU3p5V2xBUndycnluM0l2WXAxelg2QkNxc2w1dkFXemZiQ3lMQWV2M3h1eFdJTHc?oc=5"
+            "source": "The Globe and Mail",
+            "title": "Bank of Canada refines inflation-targeting framework for shock-prone world - The Globe and Mail",
+            "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNcTNyU2FfQ2ltNXpSQ3VmcldjbjVNclVUSUV5X2gzeG9lRzhEUlhtRm5rSWlHenl0OGtPZGkwWFEyT1l3S281T21XSkhpTF9STTQwZHlYY3luNlNhWmNfTGsxUGtoT1RjSTZXQWZFdlhITDEyUDRmMWlGd0JyY1lvNXZiYzY0bGo0cnF3Q01PeDdCbG1kZWZRMlJTOHZvTzBMYUR4bnZTeE51N09qMmxxckJrV3o?oc=5"
+          },
+          {
+            "source": "WSJ",
+            "title": "Bank of Canada Gov. Macklem Expects Inflation to Remain Persistent - WSJ",
+            "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQdmV5U2pibTRfUmJObWdlQl9rS1JlZ2xqQ0hkTTE5UG4zODdpTWRjbFNyQUxaY2pYRHdhTG1JNHFFUExBWV96S1dXaWRTV1llaEh3U0ZkeU9oLU5VRGVBajVhcmRpemh4SkZncUlvb2ROUlVwdVQtSzJZU2Z3WEREMXp2SndmeW0wTWI4RWpIaDlwS2dNYzZXN2FfYkhURmlPUENCX1hqMnV0MWdxX2xPWGh5bmlfLW10VGc?oc=5"
           }
         ],
-        "outlets": 7,
+        "outlets": 11,
         "region": "North America",
         "state": "RISING",
-        "title": "Mexico’s inflation hits six-month high but core measure undershoots forecasts - KFGO",
+        "title": "Bank of Canada Fades Core Inflation, Switches Gauges - Bloomberg.com",
         "topic": "inflation"
       },
       {
@@ -197,6 +244,59 @@
         "state": "RISING",
         "title": "Sanctions fears loom over Russia’s regulated crypto trading launch - TradingView",
         "topic": "sanctions"
+      },
+      {
+        "links": [
+          {
+            "source": "Bloomberg.com",
+            "title": "ECB’s Simkus Says It’s ‘Prudent’ to Hike as Inflation Broadens - Bloomberg.com",
+            "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPeUR3LTdfWnVXRUZxMy1QdVQyejN5NjQzMVhvOUdiUkhlUm9TOG90NzA1MEluQS1HdFdtR29DcGMtT1o5Njl3ZkVvM1IxblM5dWNUb2hBbndwbUhXU21OQmRNdXhVdWQwU0o2eUx1WXBCN0FlUllJS0NnalgxX3V2R2JFWjgtT3pPZ1ZpWFlDa1NTY0FpVlBjNFB6SDRzbTZvSHlJMlNqb2ZUTkRpeVdQYg?oc=5"
+          },
+          {
+            "source": "Business Upturn",
+            "title": "ECB's Gediminas Simkus warns euro weakness could fuel inflation as further rate hikes loom in 2027 - Business Upturn",
+            "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPcHlsUEtwY1hocGwweGNKclp2djBtXzdVdmVBYXNvc3dvRU9jWEJWZThQYmN2VFdCak9XeUZORTFyTEVNTU5yazc3TWFnZ2FjZFhuY1RyektUUDQyM1FndHZ2dk1kRUZBZGFCZlpRbzJPTmwwNlFueXNhOEhyQWQtX2F1VUxKT0ltZlFJRHdfM1l2Z0trT0FBTFBzZzZRRDBsMk4tN1ZwczFVVmRpRnluR0tXOTMtc3lrMVVmMWdrZDQxMXhTQzhkdnNyb2JPek5I?oc=5"
+          },
+          {
+            "source": "MLQ.ai",
+            "title": "ECB's Simkus says a December rate hike may not be enough to contain inflation - MLQ.ai",
+            "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNTGdCOXNESTdkT1dDU1JIcmpCQlRyTjlPWUh1RnlzU3JNSzlWWnI4UmpOVmhicEdJRVgzeW9Yc2RrUFBDX0RISWc1QUJyc211M25SU1BocWRxekpNSEUwY3VTd2pjcGRadnR4aWtQc2FPV0tnZk5kZkZQeHN1Y3lhZFBGQjV4cVhRdm1XdmtwZ042ZXlOUnhVQURKVnhQZw?oc=5"
+          },
+          {
+            "source": "IDNFinancials",
+            "title": "Black Friday and inflation test Asian markets. Why? - IDNFinancials",
+            "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQekVZV0RIaHQxYnd0YWJ5MnoxLWtUNU9IcTdGcnp4ZG50b2VMYWpWSU4wRHh2TF9RSHQ2SHZpaWY3MEN5X0twbnVwdDEwaEtTQUVNa3RISDR6QnZuenZXRXRXdk14N0Y2X2UzWTNLRGxnTDBUelp5TFhTTkVra1NodnhnOEpHWlk1MV94c3AxOGM2RUt2?oc=5"
+          }
+        ],
+        "outlets": 6,
+        "region": "Europe",
+        "state": "RISING",
+        "title": "ECB’s Simkus Says It’s ‘Prudent’ to Hike as Inflation Broadens - Bloomberg.com",
+        "topic": "inflation"
+      },
+      {
+        "links": [
+          {
+            "source": "NST Online",
+            "title": "China stocks lag global AI rally as Nvidia's Huang returns - NST Online",
+            "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQaFhpV0pidEM2SDFtX1ljX0pTb3dTODlObmh4SENVa2h4ZUFfVmJwZF81cG90dEtnVmtERzJNRW11UGVmNnV3R2p4SWk1RjBfUlF0c09wMlY0NXdzSWdWZk9DYkRSb0FBZG40dlhnSkxybDZkOVdXOUkwdGQ4QXNPWExucWY4VEt5OS1JUFl3NWk1LU1MNlBhTmNKREdCY0FnMG9XaG82amtMcVMtaHAya1FZMUJuZ05kSnpxWExHUmdOOEZV0gG3AUFVX3lxTE1XSkxpSFJoWnVvQS1fdmJEdkpNV0VSSmwwVGJPYWdKVkFMWXFseGROdVp2bkZRR1h3LWVaVnpLTGZfVnFCaTV4UjlWRmdvYWphenM4TlB5WnhfakFwQWdrbzlyVmJITlFIZGlIck1idlV0YlZwZkl4QmpPOGh3b3VkX2lBTjJPYzFhMjBBaHVCX0g0VkVfZDJVREFWM3hqZEliRFpWTk9UOENkVm1PUUtvVnhnQU9hbw?oc=5"
+          },
+          {
+            "source": "International Business Times Australia",
+            "title": "ASX 200 Jumps 1.6% to Snap Eight-Day Losing Streak as Nvidia Huang Return Sparks Tech Rally in Sydney Today - International Business Times Australia",
+            "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQOWFsMXJaekN1SDltQTBoQkR0dzRqMmVBb2JncGpPQlRSNkdwMXZCUVFBRWZVanFpV0lDYXJIV2ZvN2kxOW94WnJWYjVhRDd0WmNSbXVIZjJjTWtIWnBwLUhjaFVYYnpoN05mWDF3cXJnOC0zczkxT0VpTjU2YUxsbi03WGgycnRGeGpNVVpUbmY?oc=5"
+          },
+          {
+            "source": "BBN Times",
+            "title": "Hong Kong Stock Exchange Today: Hang Seng Index Drops 1.55% to 23,637.60 as Tech Index Sinks 3% on Nvidia Fallout - BBN Times",
+            "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQZW9mUGVJZlB3djNoNmZ4a1FIdmdMWlR1TnhTMFZsazI4dV9ySGtjYmFLbENOSXNTN1VSdjAtWEo1b2FHdUN2TXV0X1ZudVFQVFBLa1JOQ2syUmtmV3UzblNRZFQxbFVUbi1QWUVEQUhqeGVhTWJaZ0hZRlJxeEJYcW1fM2ZpYXp3c2hCVU01VXh5TWtSdVBvNWJVeUxoUDdpdVZfWVBJTmZmeVVYYXd1RGtxNk9WWkkzclo2RzRtcWtjV3REd3c2Q2I3eERUejNPRjloX2o0MU5RaW0xX0E?oc=5"
+          }
+        ],
+        "outlets": 3,
+        "region": "Asia",
+        "state": "RISING",
+        "title": "China stocks lag global AI rally as Nvidia's Huang returns - NST Online",
+        "topic": "Nvidia"
       },
       {
         "links": [
@@ -257,6 +357,24 @@
         "links": [
           {
             "source": "Danny Jones",
+            "title": "#451 - \"This Footage May Get Me Killed\" (It's Worse Than You Think) | Reckless Ben",
+            "url": "https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/traffic.megaphone.fm/QCD4935993311.mp3"
+          },
+          {
+            "source": "Shawn Ryan Show",
+            "title": "#354 Reckless Ben - The Internet's Most Controversial Investigative YouTuber",
+            "url": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pdrl.fm/55dc8e/pscrb.fm/rss/p/mgln.ai/e/433/www.claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD3189793089.mp3"
+          }
+        ],
+        "outlets": 2,
+        "state": "RISING",
+        "title": "#451 - \"This Footage May Get Me Killed\" (It's Worse Than You Think) | Reckless Ben",
+        "topic": "Reckless Ben"
+      },
+      {
+        "links": [
+          {
+            "source": "Danny Jones",
             "title": "#449 - \"They Broke Reality\" NASA Physicist WARNS of 100-Year Cover-Up | Thomas Campbell",
             "url": "https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/traffic.megaphone.fm/QCD4993240466.mp3"
           },
@@ -306,24 +424,6 @@
         "state": "RISING",
         "title": "#2567 - Mariana van Zeller",
         "topic": "Mariana van Zeller"
-      },
-      {
-        "links": [
-          {
-            "source": "Julian Dorey",
-            "title": "“Final WARNING Before…” - AI Extinction Event, Superintelligence & Population Control | Connor Leahy",
-            "url": "https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/QCD5166988294.mp3"
-          },
-          {
-            "source": "Danny Jones",
-            "title": "#432 - \"Terrifying New Behavior\" Real Reason AI CEOs Are Building Bunkers | Connor Leahy",
-            "url": "https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/traffic.megaphone.fm/QCD7124180443.mp3"
-          }
-        ],
-        "outlets": 2,
-        "state": "RISING",
-        "title": "“Final WARNING Before…” - AI Extinction Event, Superintelligence & Population Control | Connor Leahy",
-        "topic": "Connor Leahy"
       }
     ]
   },

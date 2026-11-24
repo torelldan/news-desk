@@ -6,6 +6,7 @@
       "date": "2026-11-18",
       "drivers": [
         "officials",
+        "press",
         "social"
       ],
       "followThrough": [
@@ -25,14 +26,14 @@
           "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQd1NiOHpJRW8wOThvTnZFM0pOYXRJSnJpVWhfY1pBOXpLUm5PVUhvbHBrek51c3BZUmdxa093NGQxZEpIZnlyb0dwdE8waU5DbXZKN2RPYXFRbE96Nzdtb1BYU2ZmZWg5OUtnVG9iOGpaWGFnbGhibTNhN29rYmdmU2g1WjFwZFZHR2FNZ2JURkxMNDY0Z3JDWl9WVDAxbV8ydy0tQ2tkcFcxSm5paVIwaWQ3MU92dzVXTnlwRE5WMDloMS02SFItT3lB?oc=5"
         },
         {
-          "source": "Department of Energy (.gov)",
-          "title": "Rising to the Challenge: DOE/NNSA Recognizes National Preparedness Month with the Phoenix Ascent Exercise - Department of Energy (.gov)",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNdkFKTkg3N1pKMnJuamNMV09QNlNkT1pGcWwyZzZNT1NpaEs2QVhNYW5OdERnTkhTWnpaOXpiUXJVYVAyTE5MQ01LWWlTVWtXd1lDOE9BS0h1LXY2dGROb0F1TUVCZWFyLUtaNXAwLTB2OXNESnJLdUNKRFotei16b1lfcUpYaDVjODFnTkRrWE1GS01MVnk1OVNBeUdxWWQxWUswUkhaWGJLR1prMnotS1ZlSXQwZw?oc=5"
-        },
-        {
           "source": "Homeland Security Today",
           "title": "COLUMN: Connecting the Dots: Are Governments Rethinking Preparedness? - Homeland Security Today",
           "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPMl9KQW9RdWxQN01hWlVpTy1yUHpRSW9Qbjh1ZHppUXNld3d2WG1PRGVDSERzVVFvSmRWUU9sSE5oR1pGOURwa0ZuejRpQkR1XzdYcGJsLXNLSUNKZUkwcGRKOUVLN1o1VGxwM1JONUVsZ18taGVHQ0NPSC1RcWFLVExTeWxNMl95TERxV3JYRVkwTm1icks1QWg4VlBrclAyZEx3Vk1RcGRON0NGbWhoOXk0czQyS1JuT0tKVHNVc28tbFpoa1pKU1duRGhETGs?oc=5"
+        },
+        {
+          "source": "USA Today",
+          "title": "'Be prepared for everything': Doomsday prep is having a big moment - USA Today",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNeXVycmt5MEZ1eHdId2FOTjdKR2UxQUlRaEc1b3RESWI2WFpjQjBhaV9EVkFPQXpRVDFGaE40TzQxS21mMDdaWTFnUHRsTFVVY3o5UVZrOWFxMUdSdURhLXBRZDM1MUJKYk5xSlFzbXBqTVRYb1o0TTJoM3F0dFFrSUJuQkEtc3RKa1BpbThmWmlnTDRzbWlOQQ?oc=5"
         },
         {
           "source": "CBS News",
@@ -40,14 +41,14 @@
           "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPci1TRElnUzZ1b1FWakQxbThWeUVRTGZEbWV0R1NSV0o3a2NzbWYxWlgwMW9rdjNvb1RtNzkxNFdWSWcyckFTYWgyZHRndUJnRnBEeTd6ZEdlMXNuUko0NGoyNncyVEtmVUFVdDE0R1BIN1dBS3FyVUhQUTBpSkYwRDdhbzBQYm5oMzA2eFV4M3Q2WHFHaE5VYw?oc=5"
         }
       ],
-      "score": 92,
+      "score": 68,
       "severity": "ALERT",
       "soWhat": "no action needed",
       "source": "International Atomic Energy Agency",
       "sourceCount": 8,
       "title": "US and Europe preparedness surge",
       "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQd1NiOHpJRW8wOThvTnZFM0pOYXRJSnJpVWhfY1pBOXpLUm5PVUhvbHBrek51c3BZUmdxa093NGQxZEpIZnlyb0dwdE8waU5DbXZKN2RPYXFRbE96Nzdtb1BYU2ZmZWg5OUtnVG9iOGpaWGFnbGhibTNhN29rYmdmU2g1WjFwZFZHR2FNZ2JURkxMNDY0Z3JDWl9WVDAxbV8ydy0tQ2tkcFcxSm5paVIwaWQ3MU92dzVXTnlwRE5WMDloMS02SFItT3lB?oc=5",
-      "velocity": "building"
+      "velocity": "slow"
     },
     {
       "call": "real",
@@ -80,14 +81,14 @@
           "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNemloall4RTlGdkhKUjNBSHYzZWZad2E2NDNnMmlmeXZleWw0eWd3TkVBNjlrbklqVXNVUVZuVmhScGdManRSTzFNYWJ3TW1qQWtxUlZIMHkteVhfblMtZ2xRZmtDbGJpV0JYd0pDdFhLdzNRQW9adUNrSjFyU3FWTlRVVXVUNlBqbjRZT9IBkgFBVV95cUxPMWpyVzFpZlVFOG9VWDVtSEg4X3lhNlU5TGhtXzFhSmNTdUZDYkc1RjBCb2dlMHhlUzZlbkIzNVRKVm1kdEFpbG5EYV9NOGxIZmNwUEVrVVBaQ3E0SzdYRVBoampPa3dwaktVZkVBdk5CQUtCZWtvVG9jMm9MN1VQajdyaHZVT1FVUGdHU0JrM1RfQQ?oc=5"
         },
         {
-          "source": "National News Desk",
-          "title": "Former FBI deputy director warns Americans to have 30 days worth of food and water - National News Desk",
-          "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQM1BXRUt6eG1zSHh5b1B3SThiZ3llcXZ4YjFybk80LXgyUThvYmxXdjA1dlFDbUswQzFDaXJrN1JFdTBSTFB5NTBfRktTVkE5WUYzVDdjMmRGYnJDTktKQnk0U2JBVUQ4bW9TVW9fUzA2TE01bFd1eDJFXzRHeTNEU05zMXdTYU90UXliUTcyTUtLY1J1aExNTDd6SlFBQ1paRlpSS2JOdVpYb1FVaDdhUk9tWXJSSkg4U0Fsa3NkYTBLeFNzQ3RXTXhxV3RuQ1dhczBjcmFELTdSN200b25JaUxmNzNzb3VtX0Fn?oc=5"
-        },
-        {
           "source": "The Presidential Prayer Team",
           "title": "Secretary Hegseth Orders U.S. Bases to Prep for 90-Day Off-Grid Operations Under FORTRESS Initiative - The Presidential Prayer Team",
           "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOMDRPWVE2U3FLblliWXk0ZGtuUDZHQ19NeTBCVngydFhITU9nWmEtcFBqeEFlbzlCaE5XcktlRk4yamprOGNjdE5ZTjNEYmFBa2JsV19zY0dwQ3llZF9ZeGdLSURIaTE0cWlLOWs1QmVKbl8tU0JEdGlidFlZRTJFc1dCREh0V2tRazRFUlJGRGY4bnBDSjVpNDljNXdmeV9nMEhMeDVoWlFDbWROc3NkcENBQk5qLV9FdVJsZ0dQbDRXeWZKOEJTRUdCWWVRR1NPckFKM1R4RmdUVEEtU1hBQVhfaWU?oc=5"
+        },
+        {
+          "source": "Yahoo Finance",
+          "title": "US Pentagon prepares for America’s ‘doomsday’: Military now bracing for 90 days of isolation. Crisis-proof your nest egg - Yahoo Finance",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQblRSM3B1QUx6dG1BRnJRcDZTNUx4c190Y3FHVGhmN19mQVlfMGJoYm9uSWN4OXRMbmM1ZGwwNjlEUUdmM1VMMzJadGMzUzRKVWhhcUhXaEo2TmQzQWw3MTJOeVE4S3ZiSERKdDcwRFUtdk45cnE1dFdiaHFDY2o5MzhSS1NNNHR2ei1NX241WDlZekoyWV9iWUlTNGUwdmhhOF8wLQ?oc=5"
         }
       ],
       "score": 64,
@@ -108,7 +109,7 @@
         "social"
       ],
       "followThrough": [
-        "official step"
+        "legislation"
       ],
       "id": "radar:39da30b683ff4744",
       "kind": "radar",
@@ -139,7 +140,7 @@
           "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPT09mVWs5Q2NHd05qQ0ZRV1h3LTFYbXNsMkxpTGVPMERZbFJtRVowTXFNaVdQeVNfYmZzdnhNR1lteDllUGJiQ0hkYUtzLWJKcEdOWlNTaXZwN0djVlFSZ2lsQnBkUEE1YlpjakpSUUxMdklkTFhRRmRKbFc2Z2pnajIzaE1YVkw5YVBXQXlSN1RHVWZO?oc=5"
         }
       ],
-      "score": 64,
+      "score": 83,
       "severity": "ALERT",
       "soWhat": "no action needed",
       "source": "GovTech",
