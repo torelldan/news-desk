@@ -1055,6 +1055,8 @@ def main() -> int:
     trends = citizen.keep_rising(trends, prev_history, today, google_trends.get("items") or [], velocity, now)
     if google_trends.get("note"):
         trends["googleNote"] = google_trends.get("note")
+    if google_trends.get("seen") is not None:
+        trends["googleSeen"] = google_trends.get("seen")
     trends.setdefault("sources", {})
     trends["sources"]["google"] = "ok" if google_trends.get("ok") else "offline"
     if trends.get("status") == "ok" and trends["sources"]["google"] == "offline":
@@ -1281,23 +1283,7 @@ def main() -> int:
             boards_out["threats"]["items"] = threat_items
             save_json(DATA / "threats.json", boards_out["threats"])
         terms = citizen.board_terms(threat_items, strike_doc.get("items") or [], meta.get("spikes") or {})
-        extra = []
-        for row in trends.get("raw") or []:
-            extra.extend(citizen.filter_trends([row], row.get("place") or "US", terms))
-        if extra:
-            have = {(item.get("name") or "").lower() for item in trends.get("items") or []}
-            for item in extra:
-                if (item.get("name") or "").lower() not in have:
-                    trends.setdefault("items", []).append(item)
-                    have.add((item.get("name") or "").lower())
-            trends["items"] = trends["items"][:12]
-        for item in trends.get("items") or []:
-            if item.get("matched"):
-                continue
-            label = citizen.match_board_term(item.get("name") or "", terms)
-            if label:
-                item["matched"] = f"matches: {label}"
-        trends["dynamicTermCount"] = len(terms)
+        trends = citizen.reapply_x_trends(trends, terms)
         save_json(DATA / "trends.json", trends)
     except Exception as err:
         errors.append(f"Strikes: {err}")

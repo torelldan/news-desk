@@ -292,6 +292,25 @@ def test_trend_filter_and_confidence():
     assert "Guam" in matched and matched["Guam"].startswith("matches:")
     assert "USDA" in matched and "USDA" in matched["USDA"]
     assert "Taylor Swift" not in matched
+    weak = citizen.board_terms(
+        [{"kind": "cyber", "title": "FBI reportedly facing second data breach involving National Crime Information Center"}],
+        [{"country": "Ukraine", "title": "Missile strikes on Ukraine"}],
+        {},
+    )
+    assert all(term["term"] not in {"national", "security", "crime", "information", "center"} for term in weak)
+    weak_kept = citizen.filter_trends([
+        {"trend_name": "National Security", "tweet_count": 5000},
+        {"trend_name": "Ukraine", "tweet_count": 8000},
+    ], "US", weak)
+    weak_names = {row["name"]: row["matched"] for row in weak_kept}
+    assert "National Security" not in weak_names
+    assert "Ukraine" in weak_names and weak_names["Ukraine"] == "matches: Ukraine"
+    assert citizen.match_board_term("National Security", weak) == ""
+    assert "none of the names matched" in citizen.x_trends_note(0, 80).lower()
+    assert citizen.x_trends_note(1, 80).endswith("1 of 80 X trends matched today's board.")
+    assert "none of the names matched" not in citizen.x_trends_note(1, 80).lower()
+    assert "None of today's search trends matched" in citizen.google_trends_note(0, 10)
+    assert "2 of 10 Google trends matched today's board" in citizen.google_trends_note(2, 10)
     assert citizen.trend_is_offline({"mode": "trends", "status": "ok", "note": "X trends by WOEID (US 23424977). The endpoint answered and none of the names matched."}) is False
     assert citizen.trend_is_offline({"mode": "offline"}) is True
     assert citizen.trend_is_offline({"mode": "trends", "note": "endpoint answered"}) is False

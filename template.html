@@ -1295,9 +1295,12 @@ function renderToday() {
     ? status === "offline"
     : (!doc.mode || doc.mode === "offline");
   const checked = doc.dynamicTermCount ? ` ${doc.dynamicTermCount} board terms were checked.` : "";
-  const note = items.length
-    ? (doc.mode === "recent-search" ? "Keyword counts, because the trends list was not available." : "Topics that match the threat list.") + checked
-    : (offline ? "Trends are offline on this check." : "No topic matched the threat list." + checked);
+  const written = [doc.note, doc.googleNote].filter(Boolean).join(" ");
+  const note = (offline && !items.length)
+    ? "Trends are offline on this check."
+    : ((doc.mode === "recent-search"
+        ? "Keyword counts, because the trends list was not available."
+        : (written || (items.length ? "Topics that match the threat list." : "No topic matched the threat list."))) + checked);
   const host = document.getElementById("today");
   host.innerHTML = `<p class="note-plain">${esc(note)}</p>` + (cards ? `<div class="stack">${cards}</div>` : empty("No topic matched the threat list."));
 }
