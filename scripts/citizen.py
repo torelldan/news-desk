@@ -324,7 +324,175 @@ def reapply_x_trends(doc: dict, terms: list | None) -> dict:
             kept.append(item)
     doc["items"] = kept[:12]
     doc["dynamicTermCount"] = len(terms or [])
-    return finish_trend_notes(doc)
+    doc = finish_trend_notes(doc)
+    return shape_trend_panel(doc, terms)
+
+
+def volume_rank(value) -> float:
+    """Numeric sort key. Unknown volume sorts last."""
+    if isinstance(value, bool):
+        return -1
+    if isinstance(value, (int, float)):
+        return float(value)
+    text = str(value or "").strip().replace(",", "").replace("+", "").upper()
+    if not text:
+        return -1
+    mult = 1.0
+    if text.endswith("K"):
+        mult, text = 1_000.0, text[:-1]
+    elif text.endswith("M"):
+        mult, text = 1_000_000.0, text[:-1]
+    elif text.endswith("B"):
+        mult, text = 1_000_000_000.0, text[:-1]
+    try:
+        return float(text) * mult
+    except ValueError:
+        return -1
+
+
+def dedupe_raw(raw: list | None) -> list[dict]:
+    """One row per place and name. Keep the spelling and volume of the larger count."""
+    best: dict[tuple, dict] = {}
+    for row in raw or []:
+        name = (row.get("trend_name") or row.get("name") or "").strip()
+        place = (row.get("place") or "US").strip() or "US"
+        if not name:
+            continue
+        volume = row.get("tweet_count")
+        if volume is None:
+            volume = row.get("volume")
+        key = (place.casefold(), name.casefold())
+        chosen = {"trend_name": name, "place": place, "tweet_count": volume}
+        prev = best.get(key)
+        if prev is None or volume_rank(volume) > volume_rank(prev.get("tweet_count")):
+            best[key] = chosen
+    return list(best.values())
+
+
+def _headlines(rows: list | None, limit: int = 5) -> list[dict]:
+    out = []
+    for row in rows or []:
+        title = (row.get("title") or row.get("text") or "").strip()
+        url = d.http_url(row.get("url") or "")
+        if not title or not url:
+            continue
+        out.append({"title": title[:180], "url": url, "source": (row.get("source") or "")[:80]})
+        if len(out) >= limit:
+            break
+    return out
+
+
+def _panel_row(name: str, place: str, volume, terms: list | None, headlines: list | None = None) -> dict:
+    matched = ""
+    try:
+        found = filter_trends([{"trend_name": name, "tweet_count": volume}], place or "US", terms)
+    except Exception:
+        found = []
+    if found:
+        matched = found[0].get("matched") or ""
+    return {
+        "name": name,
+        "place": place,
+        "volume": volume,
+        "matched": matched,
+        "headlines": _headlines(headlines, 5),
+    }
+
+
+def shape_trend_panel(doc: dict, terms: list | None = None) -> dict:
+    """Full X and Google lists for the Trending now panel. Does not change which names the board keeps."""
+    raw = dedupe_raw(doc.get("raw") or [])
+    doc["raw"] = raw
+    us, world = [], []
+    for row in raw:
+        place = row.get("place") or "US"
+        item = _panel_row(row.get("trend_name") or "", place, row.get("tweet_count"), terms)
+        if place.casefold() in {"worldwide", "world"}:
+            world.append(item)
+        else:
+            us.append(item)
+    us.sort(key=lambda row: volume_rank(row.get("volume")), reverse=True)
+    world.sort(key=lambda row: volume_rank(row.get("volume")), reverse=True)
+    google = []
+    for row in doc.get("google_all") or []:
+        name = (row.get("name") or row.get("title") or "").strip()
+        if not name:
+            continue
+        google.append(_panel_row(name, row.get("place") or "US", row.get("volume"), terms, row.get("headlines")))
+    google.sort(key=lambda row: volume_rank(row.get("volume")), reverse=True)
+    doc["x_us"] = us
+    doc["x_world"] = world
+    doc["google_all"] = google
+    return doc
+
+
+def google_news_headlines(query: str, limit: int = 5) -> list[dict]:
+    """Public Google News RSS for one topic. Empty list on any failure."""
+    import xml.etree.ElementTree as ET
+    import boards
+
+    name = (query or "").strip()
+    if not name:
+        return []
+    url = "https://news.google.com/rss/search?q=" + urllib.parse.quote(name) + "&hl=en-US&gl=US&ceid=US:en"
+    try:
+        raw = boards._get(url, timeout=8, headers={"Accept": "application/rss+xml", "User-Agent": "news-desk/1.0"})
+        root = ET.fromstring(raw)
+    except Exception:
+        return []
+    out = []
+    for node in root.findall(".//item"):
+        title = (node.findtext("title") or "").strip()
+        link = d.http_url(node.findtext("link") or "")
+        if not title or not link:
+            continue
+        source = ""
+        if " - " in title:
+            source = title.rsplit(" - ", 1)[-1][:80]
+        out.append({"title": title[:180], "url": link, "source": source})
+        if len(out) >= limit:
+            break
+    return out
+
+
+def fill_trend_headlines(groups: list, per_list: int = 15, budget_s: float = 35) -> None:
+    """Fetch Google News headlines for the top names that do not already have any. Fail soft."""
+    import time
+    from concurrent.futures import ThreadPoolExecutor, as_completed
+
+    jobs = []
+    for rows in groups or []:
+        taken = 0
+        for row in rows or []:
+            if row.get("headlines"):
+                continue
+            if taken >= per_list:
+                break
+            jobs.append(row)
+            taken += 1
+    if not jobs:
+        return
+    deadline = time.monotonic() + budget_s
+    try:
+        pool = ThreadPoolExecutor(max_workers=6)
+        futures = {pool.submit(google_news_headlines, row.get("name") or ""): row for row in jobs}
+        try:
+            for fut in as_completed(futures, timeout=budget_s):
+                row = futures[fut]
+                try:
+                    row["headlines"] = fut.result() or []
+                except Exception:
+                    row["headlines"] = []
+                if time.monotonic() > deadline:
+                    break
+        except Exception:
+            pass
+        finally:
+            pool.shutdown(wait=False, cancel_futures=True)
+    except Exception:
+        return
+    for row in jobs:
+        row.setdefault("headlines", [])
 
 
 def trend_is_offline(doc: dict | None) -> bool:
@@ -985,12 +1153,12 @@ def fetch_google_trends(now: datetime) -> dict:
         return {"ok": False, "note": f"Google Trends did not answer: {err}", "items": []}
     ht = "{https://trends.google.com/trending/rss}"
     items = []
+    all_rows = []
     seen = 0
     for node in root.findall(".//item"):
         seen += 1
         title = (node.findtext("title") or "").strip()
-        topic = topic_of(title)
-        if not title or not topic:
+        if not title:
             continue
         traffic = (node.findtext(f"{ht}approx_traffic") or "").strip()
         samples = []
@@ -999,7 +1167,16 @@ def fetch_google_trends(now: datetime) -> dict:
             nurl = d.http_url(news.findtext(f"{ht}news_item_url") or "")
             nsrc = (news.findtext(f"{ht}news_item_source") or "").strip()
             if nurl and ntitle:
-                samples.append({"text": ntitle[:180], "url": nurl, "source": nsrc})
+                samples.append({"title": ntitle[:180], "text": ntitle[:180], "url": nurl, "source": nsrc})
+        all_rows.append({
+            "name": title,
+            "place": "US",
+            "volume": traffic or None,
+            "headlines": samples[:5],
+        })
+        topic = topic_of(title)
+        if not topic or len(items) >= 6:
+            continue
         published = d.parse_pubdate(node.findtext("pubDate") or "")
         stamp = published.isoformat(timespec="seconds") if published else now.isoformat(timespec="seconds")
         items.append({
@@ -1024,9 +1201,7 @@ def fetch_google_trends(now: datetime) -> dict:
             "published": stamp,
             "date": stamp[:10],
         })
-        if len(items) >= 6:
-            break
-    return {"ok": True, "note": google_trends_note(len(items), seen), "seen": seen, "items": items}
+    return {"ok": True, "note": google_trends_note(len(items), seen), "seen": seen, "items": items, "all": all_rows}
 
 
 def news_velocity(threats: list[dict], when: datetime | None = None) -> list[dict]:
@@ -1146,6 +1321,9 @@ def keep_rising(trends: dict, history: dict, today: str, google_items: list, vel
         "dynamicTermCount": (trends or {}).get("dynamicTermCount") or 0,
         "raw": list((trends or {}).get("raw") or []),
         "googleSeen": (trends or {}).get("googleSeen"),
+        "google_all": list((trends or {}).get("google_all") or []),
+        "x_us": list((trends or {}).get("x_us") or []),
+        "x_world": list((trends or {}).get("x_world") or []),
     }
     if (trends or {}).get("googleNote"):
         out["googleNote"] = trends.get("googleNote")

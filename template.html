@@ -215,7 +215,34 @@
     text-transform: uppercase;
   }
   .chips button.on, .tabs button.on { border-color: var(--green); color: var(--green); }
-  .tabs { display: flex; gap: 6px; margin-bottom: 10px; }
+  .tabs { display: flex; gap: 6px; margin-bottom: 10px; flex-wrap: wrap; }
+  .trending { margin: 12px 0; }
+  .trend-list { display: grid; gap: 6px; }
+  .trend-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 8px;
+    background: transparent;
+    border: 1px solid var(--line);
+    padding: 8px 10px;
+    text-align: left;
+  }
+  .trend-row.hit { border-color: var(--green); }
+  .trend-name {
+    font-family: "IBM Plex Mono", ui-sans-serif, system-ui, "Segoe UI", "Noto Sans", sans-serif;
+    min-width: 0;
+  }
+  .trend-name b { display: block; font-weight: 400; color: var(--bright); }
+  .trend-detail {
+    border: 1px solid var(--line);
+    border-top: 0;
+    padding: 8px 10px 10px;
+    margin-top: -6px;
+  }
+  .trend-detail ul { margin: 6px 0 0; padding-left: 18px; }
+  .trend-detail li { margin: 4px 0; }
   .row { padding: 8px 10px; }
   .row h3 { margin: 2px 0; font-size: 15px; font-weight: 400; }
   .empty { color: var(--dim); border: 1px dashed var(--line); padding: 12px; }
@@ -381,7 +408,7 @@
 <div id="tip" role="tooltip"></div>
 <script>
 /*__DATA__*/
-const state = { q: "", tag: "", tab: "ledger", range: "all", field: "", focus: "", open: {}, more: {}, assetsOff: [] };
+const state = { q: "", tag: "", tab: "ledger", range: "all", field: "", focus: "", open: {}, more: {}, assetsOff: [], trendTab: "x-us", trendOpen: "" };
 
 function ageHours(item) {
   let stamp = Date.parse(item && item.published || "");
@@ -1302,7 +1329,50 @@ function renderToday() {
         ? "Keyword counts, because the trends list was not available."
         : (written || (items.length ? "Topics that match the threat list." : "No topic matched the threat list."))) + checked);
   const host = document.getElementById("today");
-  host.innerHTML = `<p class="note-plain">${esc(note)}</p>` + (cards ? `<div class="stack">${cards}</div>` : empty("No topic matched the threat list."));
+  host.innerHTML = `<p class="note-plain">${esc(note)}</p>` + renderTrending(doc) + (cards ? `<div class="stack">${cards}</div>` : empty("No topic matched the threat list."));
+}
+function trendVolume(value) {
+  if (value == null || value === "") return "volume n/a";
+  if (typeof value === "number") return `${value.toLocaleString("en-US")} posts`;
+  return String(value);
+}
+function renderTrending(doc) {
+  const lists = {
+    "x-us": doc.x_us || [],
+    "x-world": doc.x_world || [],
+    "google": doc.google_all || []
+  };
+  const tab = lists[state.trendTab] ? state.trendTab : "x-us";
+  const tabs = [
+    ["x-us", "X US"],
+    ["x-world", "X worldwide"],
+    ["google", "Google US"]
+  ].map(([id, label]) => `<button type="button" data-trend-tab="${id}" class="${tab === id ? "on" : ""}" role="tab" aria-selected="${tab === id ? "true" : "false"}">${label}</button>`).join("");
+  const query = (state.q || "").trim().toLowerCase();
+  const rows = (lists[tab] || []).filter((row) => !query || String(row.name || "").toLowerCase().includes(query));
+  const body = rows.length ? rows.map((row, index) => {
+    const key = `${tab}|${index}|${row.name || ""}`;
+    const open = state.trendOpen === key;
+    const volume = trendVolume(row.volume);
+    const hit = row.matched ? " hit" : "";
+    const label = row.matched ? `<span class="meta">${esc(row.matched)}</span>` : "";
+    const q = encodeURIComponent(row.name || "");
+    const xUrl = safeUrl(`https://x.com/search?q=${q}&src=typed_query&f=live`);
+    const newsUrl = safeUrl(`https://news.google.com/search?q=${q}&hl=en-US&gl=US&ceid=US:en`);
+    const heads = (row.headlines || []).slice(0, 5).map((item) => {
+      const url = safeUrl(item.url);
+      if (!url) return "";
+      const source = item.source ? ` <span class="meta">${esc(item.source)}</span>` : "";
+      return `<li><a href="${esc(url)}" target="_blank" rel="noopener">${esc(item.title || item.text || "headline")}</a>${source}</li>`;
+    }).filter(Boolean).join("");
+    const detail = open ? `<div class="trend-detail">
+      <p class="meta">${esc(volume)} · ${esc(row.place || "place n/a")}</p>
+      <p>${xUrl ? `<a href="${esc(xUrl)}" target="_blank" rel="noopener">Live X search</a>` : ""} ${newsUrl ? `<a href="${esc(newsUrl)}" target="_blank" rel="noopener">Google News search</a>` : ""}</p>
+      ${heads ? `<ul>${heads}</ul>` : `<p class="meta">No recent headlines stored for this name.</p>`}
+    </div>` : "";
+    return `<div class="trend-item"><button type="button" class="trend-row${hit}" data-trend="${esc(key)}" aria-expanded="${open ? "true" : "false"}"><span class="trend-name"><b>${esc(row.name || "")}</b>${label}</span><span class="meta">${esc(volume)}</span></button>${detail}</div>`;
+  }).join("") : `<p class="empty">${(lists[tab] || []).length ? "No names match this search." : (tab === "google" ? "Google's daily list was not stored on this check." : "No names in this list.")}</p>`;
+  return `<section class="trending"><h3 class="group">Trending now</h3><div class="tabs" role="tablist">${tabs}</div><div class="trend-list">${body}</div></section>`;
 }
 function renderOrders() {
   const unique = orderItems();
@@ -2170,6 +2240,20 @@ function boot() {
     btn.setAttribute("aria-selected", on ? "true" : "false");
   });
   document.getElementById("app").addEventListener("click", (event) => {
+    const trendTab = event.target.closest("[data-trend-tab]");
+    if (trendTab) {
+      state.trendTab = trendTab.dataset.trendTab || "x-us";
+      state.trendOpen = "";
+      render();
+      return;
+    }
+    const trend = event.target.closest("[data-trend]");
+    if (trend && !event.target.closest("a")) {
+      const key = trend.dataset.trend || "";
+      state.trendOpen = state.trendOpen === key ? "" : key;
+      render();
+      return;
+    }
     const fold = event.target.closest("[data-fold]");
     if (fold) {
       state.open[fold.dataset.fold] = fold.getAttribute("aria-expanded") !== "true";

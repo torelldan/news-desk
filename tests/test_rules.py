@@ -311,6 +311,37 @@ def test_trend_filter_and_confidence():
     assert "none of the names matched" not in citizen.x_trends_note(1, 80).lower()
     assert "None of today's search trends matched" in citizen.google_trends_note(0, 10)
     assert "2 of 10 Google trends matched today's board" in citizen.google_trends_note(2, 10)
+    shaped = citizen.shape_trend_panel({
+        "raw": [
+            {"place": "US", "trend_name": "Cubs", "tweet_count": 10},
+            {"place": "US", "trend_name": "Cubs", "tweet_count": 50},
+            {"place": "worldwide", "trend_name": "Cubs", "tweet_count": 5},
+            {"place": "US", "trend_name": "東京", "tweet_count": 3},
+            {"place": "worldwide", "trend_name": "Ukraine", "tweet_count": None},
+            {"place": "worldwide", "trend_name": "Nvidia", "tweet_count": 100},
+            {"place": "worldwide", "trend_name": "National Security", "tweet_count": 9000},
+        ],
+        "google_all": [
+            {"name": "東京", "place": "US", "volume": "200K+", "headlines": [
+                {"title": "Tokyo story", "url": "https://example.com/t", "source": "NHK"},
+                {"title": "skip", "url": "javascript:alert(1)", "source": "bad"},
+            ]},
+            {"name": "Weather", "place": "US", "volume": "50K+", "headlines": []},
+        ],
+    }, weak)
+    us_names = [row["name"] for row in shaped["x_us"]]
+    assert us_names.count("Cubs") == 1
+    assert shaped["x_us"][0]["name"] == "Cubs" and shaped["x_us"][0]["volume"] == 50
+    assert "東京" in us_names
+    world = shaped["x_world"]
+    assert [row["name"] for row in world] == ["National Security", "Nvidia", "Cubs", "Ukraine"]
+    ukraine = next(row for row in world if row["name"] == "Ukraine")
+    assert ukraine["matched"] == "matches: Ukraine"
+    assert ukraine["volume"] is None
+    assert world[0]["matched"] == ""
+    assert shaped["google_all"][0]["name"] == "東京"
+    assert shaped["google_all"][0]["headlines"] == [{"title": "Tokyo story", "url": "https://example.com/t", "source": "NHK"}]
+    assert len(shaped["raw"]) == 6
     assert citizen.trend_is_offline({"mode": "trends", "status": "ok", "note": "X trends by WOEID (US 23424977). The endpoint answered and none of the names matched."}) is False
     assert citizen.trend_is_offline({"mode": "offline"}) is True
     assert citizen.trend_is_offline({"mode": "trends", "note": "endpoint answered"}) is False
