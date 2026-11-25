@@ -53,7 +53,56 @@
     {
       "call": "real",
       "confidence": "confirmed",
-      "date": "2026-10-26",
+      "date": "2026-11-13",
+      "drivers": [
+        "officials",
+        "social"
+      ],
+      "followThrough": [
+        "official step"
+      ],
+      "id": "radar:04a94119d0a7648b",
+      "kind": "radar",
+      "label": "Nov 13, 2026 2:00 AM CT",
+      "lane": "news",
+      "note": "Stockpiling for disaster: What does the Pentagon know that it isn’t telling us? - The Hill",
+      "published": "2026-11-13T02:00:00-06:00",
+      "read": "An official body acted or is named in the sources: an agency, a budget, a law, or a procurement step. That is follow-through.",
+      "samples": [
+        {
+          "source": "The Hill",
+          "title": "Stockpiling for disaster: What does the Pentagon know that it isn’t telling us? - The Hill",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNemloall4RTlGdkhKUjNBSHYzZWZad2E2NDNnMmlmeXZleWw0eWd3TkVBNjlrbklqVXNVUVZuVmhScGdManRSTzFNYWJ3TW1qQWtxUlZIMHkteVhfblMtZ2xRZmtDbGJpV0JYd0pDdFhLdzNRQW9adUNrSjFyU3FWTlRVVXVUNlBqbjRZT9IBkgFBVV95cUxPMWpyVzFpZlVFOG9VWDVtSEg4X3lhNlU5TGhtXzFhSmNTdUZDYkc1RjBCb2dlMHhlUzZlbkIzNVRKVm1kdEFpbG5EYV9NOGxIZmNwUEVrVVBaQ3E0SzdYRVBoampPa3dwaktVZkVBdk5CQUtCZWtvVG9jMm9MN1VQajdyaHZVT1FVUGdHU0JrM1RfQQ?oc=5"
+        },
+        {
+          "source": "Fortune",
+          "title": "'On par with what the DoD pursued during the Cold War': Pentagon’s war stockpile plan hits a minerals wall - Fortune",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPYk16QXpYdk5FdnpoNXhwQVdfX3NKY3UtTXlkVFFMT2pQNUV1NHliVzhDbGRrTFdwUmV3ZW5SZ2hWZUpVQWlwRmJGV2VuYkVOckIyUHBzY19OeF92MHNYMTE1cTFJcVppLXdGSkRNT3plUXlxZjdjRnVxVElLc0Vad2loR3NnZUhmeEJ2WmctbnBqb2FMUmJ3ZWl1R29aUQ?oc=5"
+        },
+        {
+          "source": "National News Desk",
+          "title": "Former FBI deputy director warns Americans to have 30 days worth of food and water - National News Desk",
+          "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQM1BXRUt6eG1zSHh5b1B3SThiZ3llcXZ4YjFybk80LXgyUThvYmxXdjA1dlFDbUswQzFDaXJrN1JFdTBSTFB5NTBfRktTVkE5WUYzVDdjMmRGYnJDTktKQnk0U2JBVUQ4bW9TVW9fUzA2TE01bFd1eDJFXzRHeTNEU05zMXdTYU90UXliUTcyTUtLY1J1aExNTDd6SlFBQ1paRlpSS2JOdVpYb1FVaDdhUk9tWXJSSkg4U0Fsa3NkYTBLeFNzQ3RXTXhxV3RuQ1dhczBjcmFELTdSN200b25JaUxmNzNzb3VtX0Fn?oc=5"
+        },
+        {
+          "source": "The Presidential Prayer Team",
+          "title": "Secretary Hegseth Orders U.S. Bases to Prep for 90-Day Off-Grid Operations Under FORTRESS Initiative - The Presidential Prayer Team",
+          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOMDRPWVE2U3FLblliWXk0ZGtuUDZHQ19NeTBCVngydFhITU9nWmEtcFBqeEFlbzlCaE5XcktlRk4yamprOGNjdE5ZTjNEYmFBa2JsV19zY0dwQ3llZF9ZeGdLSURIaTE0cWlLOWs1QmVKbl8tU0JEdGlidFlZRTJFc1dCREh0V2tRazRFUlJGRGY4bnBDSjVpNDljNXdmeV9nMEhMeDVoWlFDbWROc3NkcENBQk5qLV9FdVJsZ0dQbDRXeWZKOEJTRUdCWWVRR1NPckFKM1R4RmdUVEEtU1hBQVhfaWU?oc=5"
+        }
+      ],
+      "score": 64,
+      "severity": "ALERT",
+      "soWhat": "no action needed",
+      "source": "The Hill",
+      "sourceCount": 8,
+      "title": "Pentagon off-grid and 90-day stories",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNemloall4RTlGdkhKUjNBSHYzZWZad2E2NDNnMmlmeXZleWw0eWd3TkVBNjlrbklqVXNVUVZuVmhScGdManRSTzFNYWJ3TW1qQWtxUlZIMHkteVhfblMtZ2xRZmtDbGJpV0JYd0pDdFhLdzNRQW9adUNrSjFyU3FWTlRVVXVUNlBqbjRZT9IBkgFBVV95cUxPMWpyVzFpZlVFOG9VWDVtSEg4X3lhNlU5TGhtXzFhSmNTdUZDYkc1RjBCb2dlMHhlUzZlbkIzNVRKVm1kdEFpbG5EYV9NOGxIZmNwUEVrVVBaQ3E0SzdYRVBoampPa3dwaktVZkVBdk5CQUtCZWtvVG9jMm9MN1VQajdyaHZVT1FVUGdHU0JrM1RfQQ?oc=5",
+      "velocity": "slow"
+    },
+    {
+      "call": "real",
+      "confidence": "confirmed",
+      "date": "2026-11-17",
       "drivers": [
         "officials",
         "press",
@@ -62,68 +111,14 @@
       "followThrough": [
         "official step"
       ],
-      "id": "radar:04a94119d0a7648b",
-      "kind": "radar",
-      "label": "Oct 26, 2026 2:00 AM CT",
-      "lane": "news",
-      "note": "Pentagon orders bases to plan for 90 days without the grid as Britain urges families to stockpile food and water - Fortune",
-      "published": "2026-10-26T02:00:00-05:00",
-      "read": "An official body acted or is named in the sources: an agency, a budget, a law, or a procurement step. That is follow-through.",
-      "samples": [
-        {
-          "source": "Fortune",
-          "title": "Pentagon orders bases to plan for 90 days without the grid as Britain urges families to stockpile food and water - Fortune",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNdXJuX0NKeklxRkMzdjV2MUQ5MHVpWGJubmZ0MVhwZmlWTjJyTkNYbnBnQXRaS0poX3djd2I1dl9NeWZEcDlNV2FOMHhuX2tiNkFhNU8tRmhneWFIQjdmZkxSRTVVZnZYYjB5RDMwY3ZlWWVDSWlOTlpjWE1jUW14ZWtNVWJKSmJTX2RxYUhPa1RzeFI0NjJEMy1B?oc=5"
-        },
-        {
-          "source": "The Hill",
-          "title": "Stockpiling for disaster: What does the Pentagon know that it isn’t telling us? - The Hill",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNemloall4RTlGdkhKUjNBSHYzZWZad2E2NDNnMmlmeXZleWw0eWd3TkVBNjlrbklqVXNVUVZuVmhScGdManRSTzFNYWJ3TW1qQWtxUlZIMHkteVhfblMtZ2xRZmtDbGJpV0JYd0pDdFhLdzNRQW9adUNrSjFyU3FWTlRVVXVUNlBqbjRZT9IBkgFBVV95cUxPMWpyVzFpZlVFOG9VWDVtSEg4X3lhNlU5TGhtXzFhSmNTdUZDYkc1RjBCb2dlMHhlUzZlbkIzNVRKVm1kdEFpbG5EYV9NOGxIZmNwUEVrVVBaQ3E0SzdYRVBoampPa3dwaktVZkVBdk5CQUtCZWtvVG9jMm9MN1VQajdyaHZVT1FVUGdHU0JrM1RfQQ?oc=5"
-        },
-        {
-          "source": "The Presidential Prayer Team",
-          "title": "Secretary Hegseth Orders U.S. Bases to Prep for 90-Day Off-Grid Operations Under FORTRESS Initiative - The Presidential Prayer Team",
-          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOMDRPWVE2U3FLblliWXk0ZGtuUDZHQ19NeTBCVngydFhITU9nWmEtcFBqeEFlbzlCaE5XcktlRk4yamprOGNjdE5ZTjNEYmFBa2JsV19zY0dwQ3llZF9ZeGdLSURIaTE0cWlLOWs1QmVKbl8tU0JEdGlidFlZRTJFc1dCREh0V2tRazRFUlJGRGY4bnBDSjVpNDljNXdmeV9nMEhMeDVoWlFDbWROc3NkcENBQk5qLV9FdVJsZ0dQbDRXeWZKOEJTRUdCWWVRR1NPckFKM1R4RmdUVEEtU1hBQVhfaWU?oc=5"
-        },
-        {
-          "source": "Yahoo Finance",
-          "title": "US Pentagon prepares for America’s ‘doomsday’: Military now bracing for 90 days of isolation. Crisis-proof your nest egg - Yahoo Finance",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQblRSM3B1QUx6dG1BRnJRcDZTNUx4c190Y3FHVGhmN19mQVlfMGJoYm9uSWN4OXRMbmM1ZGwwNjlEUUdmM1VMMzJadGMzUzRKVWhhcUhXaEo2TmQzQWw3MTJOeVE4S3ZiSERKdDcwRFUtdk45cnE1dFdiaHFDY2o5MzhSS1NNNHR2ei1NX241WDlZekoyWV9iWUlTNGUwdmhhOF8wLQ?oc=5"
-        }
-      ],
-      "score": 64,
-      "severity": "ALERT",
-      "soWhat": "no action needed",
-      "source": "Fortune",
-      "sourceCount": 8,
-      "title": "Pentagon off-grid and 90-day stories",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNdXJuX0NKeklxRkMzdjV2MUQ5MHVpWGJubmZ0MVhwZmlWTjJyTkNYbnBnQXRaS0poX3djd2I1dl9NeWZEcDlNV2FOMHhuX2tiNkFhNU8tRmhneWFIQjdmZkxSRTVVZnZYYjB5RDMwY3ZlWWVDSWlOTlpjWE1jUW14ZWtNVWJKSmJTX2RxYUhPa1RzeFI0NjJEMy1B?oc=5",
-      "velocity": "slow"
-    },
-    {
-      "call": "real",
-      "confidence": "confirmed",
-      "date": "2026-10-27",
-      "drivers": [
-        "officials",
-        "social"
-      ],
-      "followThrough": [
-        "legislation"
-      ],
       "id": "radar:39da30b683ff4744",
       "kind": "radar",
-      "label": "Oct 27, 2026 2:00 AM CT",
+      "label": "Nov 17, 2026 4:05 PM CT",
       "lane": "news",
-      "note": "FEMA Memo Shifts Disaster Recovery Responsibility to States - GovTech",
-      "published": "2026-10-27T02:00:00-05:00",
+      "note": "TCS Letter on FEMA Mission Readiness Ahead of November 19 Hearing - Taxpayers for Common Sense",
+      "published": "2026-11-17T16:05:31-06:00",
       "read": "An official body acted or is named in the sources: an agency, a budget, a law, or a procurement step. That is follow-through.",
       "samples": [
-        {
-          "source": "GovTech",
-          "title": "FEMA Memo Shifts Disaster Recovery Responsibility to States - GovTech",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQeUFnXzllUG9EbHVYNWpkdWF3a2s2UlpJbFF3YkFvakM2bFVVcTlyM2djcVdOOXFlVUN4NzBaaDdCN3JvY1djcVZSc1lBZHhXLVRxTlU0UEhFbFZjbDJfUkpvWWluQlRzUVZXN2hTM3BaM21ITU9Nd19HQlNVUUY4YVNsX0pHY1FWdXRGM0tVcDc3eVVpOUpJc3NiOA?oc=5"
-        },
         {
           "source": "Taxpayers for Common Sense",
           "title": "TCS Letter on FEMA Mission Readiness Ahead of November 19 Hearing - Taxpayers for Common Sense",
@@ -135,18 +130,23 @@
           "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOQXpXV29TYkxvY2FaZ1BuaXFiZ2tRSHh3RFhMc0NDc0syc2tTR1NhZDRhTUM1ZmxQekRJVkNEWGFMUUs5VmZUQ3VXLXZoY3FkNTdaY21HM0NEZmFxYno5ajVZWERSNnFJTDBDSFdmWnBlS29JeDVTZGpqTUZXSjFNQllPRQ?oc=5"
         },
         {
-          "source": "The Arkansas Democrat-Gazette",
-          "title": "Arkansas Division of Emergency Management director pressed on FEMA’s declaration that states handle their own natural disasters - The Arkansas Democrat-Gazette",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPT09mVWs5Q2NHd05qQ0ZRV1h3LTFYbXNsMkxpTGVPMERZbFJtRVowTXFNaVdQeVNfYmZzdnhNR1lteDllUGJiQ0hkYUtzLWJKcEdOWlNTaXZwN0djVlFSZ2lsQnBkUEE1YlpjakpSUUxMdklkTFhRRmRKbFc2Z2pnajIzaE1YVkw5YVBXQXlSN1RHVWZO?oc=5"
+          "source": "ABC News - Breaking News, Latest News and Videos",
+          "title": "FEMA says it's providing water trailers to Puerto Rico amid water crisis - ABC News - Breaking News, Latest News and Videos",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPQUoySU8zSkk2VGJ2SVpYWWZsSHZRVXdjcEd3V1dnamFFVWprdWFsSU90bWV3ODctdUVuZkVyWXRYTUloMWNteHhUNVF5UW53M2oyeHhyZ29pMjVpcTBSQnlhRzhxWEwxNkJEQ0NzZ2xHUzl1anFWcHFoMEd2ZGE1a2ZlbkZPUnI3dktIT3VKa0ZUamo5aDJZNFVOZThlUmJ5Q1HSAacBQVVfeXFMTmVWemJMNFJvVVRNWkNybDlwb3o5V0V3VU12ZFN1WkhKdmdtY3dnUDN6SFJ2RWFzSC1GRDNQNHVMbXFIdlFSUVJRVE9JYnFQV21WZHJnbTNIUkw4RVVvd3k4REZTU3hLZTdPa2hyYUttSENHZFZNMHpnbHhLU1ZWSUpFUm8zeHZINDZpSy1SdzBSWjV4dzVJZXZOUmxLQldqcFFmY09wLXc?oc=5"
+        },
+        {
+          "source": "WJLA",
+          "title": "Bed bugs found in FEMA Headquarters office prompts building closure - WJLA",
+          "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOVnBwSEZKTnNGbGVJWUw4M0lMc0RfeTZ1MnVnVExnQXl5cXFFSjVZcDhEc3FseExIRWtQcFVTelFubDJfM0xmUzByMVlrakhyMk93cFNDaUVtYjdSLWxBMnRqTFlKd3ppNG1BVDZKN2hLT1FWSjFXVkhXNlpCUmFqZDNNQk12QWNsamk1MHVjOTFzSURMUUI0WnFZYnhNVURoR2lkRWpCT0VrT0ROOExJT0hIa1BTelBGaVBRc1lpNEpVMlFJSFdKNUJic2dTazlOd29Kb19hSm1jdXRPYmhxNFBCZHVMaVpURjhZUjc3VjNzRWQ3dXc?oc=5"
         }
       ],
-      "score": 83,
+      "score": 68,
       "severity": "ALERT",
       "soWhat": "no action needed",
-      "source": "GovTech",
+      "source": "Taxpayers for Common Sense",
       "sourceCount": 8,
       "title": "Official follow-through",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQeUFnXzllUG9EbHVYNWpkdWF3a2s2UlpJbFF3YkFvakM2bFVVcTlyM2djcVdOOXFlVUN4NzBaaDdCN3JvY1djcVZSc1lBZHhXLVRxTlU0UEhFbFZjbDJfUkpvWWluQlRzUVZXN2hTM3BaM21ITU9Nd19HQlNVUUY4YVNsX0pHY1FWdXRGM0tVcDc3eVVpOUpJc3NiOA?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPSWl0dmlubnRZcjZZZ05yWWhrQWVOMjR5SzNQWndKYW1NV2djOW5iel9nV1lfODQ0OE9UbVJyZEp3ZkU5b1c5LUk1ZGYtWmZ5YW90bXhqMzVSQjZtN2ZjSndyT0tyaE5nQnRFcmtFakVWT0J5Wm9RU3llVzNhOENhYTdWREptWURTOGZucjBIUl9fd3FncUhOQ2gwYjJ3QkFjZjVqS3ltbU9BZXpCaFZmN0JZeFRVbkdM?oc=5",
       "velocity": "slow"
     }
   ],
