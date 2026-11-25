@@ -16,6 +16,14 @@
       "title": "Circulating vaccine-derived poliovirus type 1 – Syrian Arab Republic"
     },
     {
+      "note": "STANDBY → ALERT since 2026-11-18",
+      "related": 1,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "sourceCount": 1,
+      "title": "CVE-2025-41450 Danfoss AK-SM 800A Series Improper Authentication Vulnerability"
+    },
+    {
       "note": "New since 2026-11-18 · now ALERT",
       "related": 0,
       "relatedSources": [],
@@ -34,7 +42,14 @@
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Mass held in Poland for gunman who killed six people - CathNews"
+      "title": "Ukraine tells Putin to ‘stop complaining’ over oil refinery attacks as Russia promises retaliation - CNBC"
+    },
+    {
+      "note": "New since 2026-11-18 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "At least 6 killed, several injured in shooting at Polish market square: Police - ABC News - Breaking News, Latest News and Videos"
     },
     {
       "note": "New since 2026-11-18 · now ALERT",
@@ -55,6 +70,13 @@
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
+      "title": "Zelenskyy says Ukraine waiting for US to set date for new round of peace talks with Russia - Anadolu Ajansı"
+    },
+    {
+      "note": "New since 2026-11-18 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
       "title": "EU plans sports ban in sweeping new Russia sanctions proposal - Al Jazeera"
     },
     {
@@ -63,7 +85,7 @@
       "relatedSources": [],
       "severity": "STANDBY",
       "source": "",
-      "title": "G7 finance ministers look to rein in tech giants at French meeting - Yeni Safak English"
+      "title": "Reaffirmed at the UN, cut in Berlin, London and Paris: The 0.7% Target and the G7 - Global Policy Journal"
     }
   ],
   "fizzled": [
@@ -87,6 +109,13 @@
       "relatedSources": [],
       "severity": "ALERT",
       "title": "Earthquake in Near Islands, Aleutian Islands"
+    },
+    {
+      "note": "On the board 2026-11-18 at ALERT, absent now.",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "Earthquake in Pacific-Antarctic Ridge"
     },
     {
       "note": "On the board 2026-11-18 at ALERT, absent now.",
@@ -128,13 +157,6 @@
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "CVE-2026-40217 BerriAI LiteLLM Unprotected Alternate Channel Vulnerability"
-    },
-    {
-      "note": "On the board 2026-11-18 at ALERT, absent now.",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
       "title": "Rubio says there's 'zero' information that U.S. outages are caused by a malign actor - NPR"
     },
     {
@@ -168,6 +190,14 @@
       "title": "Circulating vaccine-derived poliovirus type 1 – Syrian Arab Republic"
     },
     {
+      "note": "STANDBY → ALERT since 2026-11-18",
+      "related": 1,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "sourceCount": 1,
+      "title": "CVE-2025-41450 Danfoss AK-SM 800A Series Improper Authentication Vulnerability"
+    },
+    {
       "note": "New since 2026-11-18 · now ALERT",
       "related": 0,
       "relatedSources": [],
@@ -186,7 +216,14 @@
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Mass held in Poland for gunman who killed six people - CathNews"
+      "title": "Ukraine tells Putin to ‘stop complaining’ over oil refinery attacks as Russia promises retaliation - CNBC"
+    },
+    {
+      "note": "New since 2026-11-18 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "At least 6 killed, several injured in shooting at Polish market square: Police - ABC News - Breaking News, Latest News and Videos"
     },
     {
       "note": "New since 2026-11-18 · now ALERT",
@@ -207,6 +244,13 @@
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
+      "title": "Zelenskyy says Ukraine waiting for US to set date for new round of peace talks with Russia - Anadolu Ajansı"
+    },
+    {
+      "note": "New since 2026-11-18 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
       "title": "EU plans sports ban in sweeping new Russia sanctions proposal - Al Jazeera"
     },
     {
@@ -215,7 +259,7 @@
       "relatedSources": [],
       "severity": "STANDBY",
       "source": "",
-      "title": "G7 finance ministers look to rein in tech giants at French meeting - Yeni Safak English"
+      "title": "Reaffirmed at the UN, cut in Berlin, London and Paris: The 0.7% Target and the G7 - Global Policy Journal"
     }
   ],
   "note": "Compared with the stored board on 2026-11-18.",

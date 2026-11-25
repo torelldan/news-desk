@@ -1,30 +1,6 @@
 {
   "items": [
     {
-      "id": "paper:3bf1493fd882d7ef",
-      "kind": "paper",
-      "lane": "science",
-      "source": "NASA",
-      "sourceId": "paper",
-      "title": "NASA Enhances Supplier Program, Announces Mentor-Protégé Agreement",
-      "guest": "",
-      "note": "How NASA works with small businesses is evolving, and as a result, the agency is strengthening the domestic aerospace industrial base to support future exploration missions through its recently renamed Small Business Supplier Development Program.",
-      "url": "https://www.nasa.gov/organizations/osbp/nasa-enhances-supplier-program-announces-mentor-protege-agreement/",
-      "published": "2026-11-25T13:06:56-06:00",
-      "date": "2026-11-25",
-      "label": "Nov 25, 2026 1:06 PM CT",
-      "weekday": "Wed",
-      "timeKnown": true,
-      "tags": [
-        "science",
-        "propulsion",
-        "news"
-      ],
-      "field": "propulsion",
-      "review": "NEWS",
-      "severity": ""
-    },
-    {
       "id": "paper:7b4f5266ac6478e7",
       "kind": "paper",
       "lane": "science",
@@ -34,9 +10,9 @@
       "guest": "",
       "note": "",
       "url": "https://www.nature.com/articles/d41586-026-03468-3",
-      "published": "2026-11-25T13:06:50-06:00",
+      "published": "2026-11-25T15:28:56-06:00",
       "date": "2026-11-25",
-      "label": "Nov 25, 2026 1:06 PM CT",
+      "label": "Nov 25, 2026 3:28 PM CT",
       "weekday": "Wed",
       "timeKnown": true,
       "tags": [
@@ -58,9 +34,9 @@
       "guest": "",
       "note": "",
       "url": "https://www.nature.com/articles/d41586-026-03853-y",
-      "published": "2026-11-25T13:06:50-06:00",
+      "published": "2026-11-25T15:28:56-06:00",
       "date": "2026-11-25",
-      "label": "Nov 25, 2026 1:06 PM CT",
+      "label": "Nov 25, 2026 3:28 PM CT",
       "weekday": "Wed",
       "timeKnown": true,
       "tags": [
@@ -82,9 +58,9 @@
       "guest": "",
       "note": "",
       "url": "https://www.nature.com/articles/s41586-026-11465-9",
-      "published": "2026-11-25T13:06:50-06:00",
+      "published": "2026-11-25T15:28:56-06:00",
       "date": "2026-11-25",
-      "label": "Nov 25, 2026 1:06 PM CT",
+      "label": "Nov 25, 2026 3:28 PM CT",
       "weekday": "Wed",
       "timeKnown": true,
       "tags": [
@@ -106,9 +82,9 @@
       "guest": "",
       "note": "",
       "url": "https://www.nature.com/articles/d41586-026-03472-7",
-      "published": "2026-11-25T13:06:50-06:00",
+      "published": "2026-11-25T15:28:56-06:00",
       "date": "2026-11-25",
-      "label": "Nov 25, 2026 1:06 PM CT",
+      "label": "Nov 25, 2026 3:28 PM CT",
       "weekday": "Wed",
       "timeKnown": true,
       "tags": [
@@ -118,6 +94,30 @@
       ],
       "field": "biomedical",
       "review": "PEER-REVIEWED",
+      "severity": ""
+    },
+    {
+      "id": "paper:3bf1493fd882d7ef",
+      "kind": "paper",
+      "lane": "science",
+      "source": "NASA",
+      "sourceId": "paper",
+      "title": "NASA Enhances Supplier Program, Announces Mentor-Protégé Agreement",
+      "guest": "",
+      "note": "How NASA works with small businesses is evolving, and as a result, the agency is strengthening the domestic aerospace industrial base to support future exploration missions through its recently renamed Small Business Supplier Development Program.",
+      "url": "https://www.nasa.gov/organizations/osbp/nasa-enhances-supplier-program-announces-mentor-protege-agreement/",
+      "published": "2026-11-25T13:06:56-06:00",
+      "date": "2026-11-25",
+      "label": "Nov 25, 2026 1:06 PM CT",
+      "weekday": "Wed",
+      "timeKnown": true,
+      "tags": [
+        "science",
+        "propulsion",
+        "news"
+      ],
+      "field": "propulsion",
+      "review": "NEWS",
       "severity": ""
     },
     {
@@ -359,58 +359,6 @@
       "field": "biomedical",
       "review": "NEWS",
       "severity": ""
-    },
-    {
-      "id": "headline:2bfe3f47908b6b18",
-      "kind": "paper",
-      "lane": "science",
-      "source": "The Quantum Insider",
-      "sourceId": "headline",
-      "title": "ARQUE Systems and Forschungszentrum Jülich Plan 200-Qubit Quantum Computer - The Quantum Insider",
-      "guest": "",
-      "note": "",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQRzA1N1RBLUg3YjR3V1VvSmJnQjRNZWQtSXJ4Z2xPQUcxM05tYTRQUmFDc2Y4VWprYk9YX1JYbHRUOEdseTlQNUt5QWFiUGt5QXZ6akFMSDd0cXMzbVlmOWdHQnpxUnhZWnZpNE9MenBrOFNZdXQ0NVRYZDF6TEVpN1BCZmpaN3kwbGlfQVdVRFY5OW5HcGQ2eWJLQWhqT3NQTzJxd3ViVVNoOEk?oc=5",
-      "published": "2026-11-25T04:20:27-06:00",
-      "date": "2026-11-25",
-      "label": "Nov 25, 2026 4:20 AM CT",
-      "weekday": "Wed",
-      "timeKnown": true,
-      "tags": [
-        "headline",
-        "standby",
-        "science",
-        "quantum",
-        "news"
-      ],
-      "severity": "STANDBY",
-      "field": "quantum",
-      "review": "NEWS"
-    },
-    {
-      "id": "headline:3dc9d7a79c229c9b",
-      "kind": "paper",
-      "lane": "science",
-      "source": "ScienceDaily",
-      "sourceId": "headline",
-      "title": "Physicists trap antimatter in a breakthrough that could explain why the universe exists - ScienceDaily",
-      "guest": "",
-      "note": "",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFAzZE8zX3NUUW1nSEoxbDJKTEwxZXlXLXJVZlRxUzNjYnFGM0pEZ3NzUXhPVC1tc2d1UjNKd3NyeUV4QndMN2ZrOWZMMFRhX2xneEpia3c4LS0tMVpyNEVhbndONEl1NkVGcThZTE5Gcw?oc=5",
-      "published": "2026-11-25T04:08:14-06:00",
-      "date": "2026-11-25",
-      "label": "Nov 25, 2026 4:08 AM CT",
-      "weekday": "Wed",
-      "timeKnown": true,
-      "tags": [
-        "headline",
-        "standby",
-        "science",
-        "physics",
-        "news"
-      ],
-      "severity": "STANDBY",
-      "field": "physics",
-      "review": "NEWS"
     },
     {
       "id": "paper:be05fbea24446328",
@@ -1043,6 +991,32 @@
       "severity": ""
     },
     {
+      "id": "headline:7be2d80778beb061",
+      "kind": "paper",
+      "lane": "science",
+      "source": "ScienceDaily",
+      "sourceId": "headline",
+      "title": "IBM quantum computer solves problem classical computers can’t in just 15 minutes - ScienceDaily",
+      "guest": "",
+      "note": "",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9mYU5WcDhjaUxnNW1hUUJKZE1xNHpUejJ0X1NWbmxGZVFVOWtrS0Z6blp2X1hWV2dYbG1pRW5TRmlyWlFpbnNUU1BUd2Y5aEVobHZQU0tTRWZvTXVZN19GNVJrMVJ4TEZheEZoWUFqNA?oc=5",
+      "published": "2026-11-23T22:48:39-06:00",
+      "date": "2026-11-23",
+      "label": "Nov 23, 2026 10:48 PM CT",
+      "weekday": "Mon",
+      "timeKnown": true,
+      "tags": [
+        "headline",
+        "standby",
+        "science",
+        "quantum",
+        "news"
+      ],
+      "severity": "STANDBY",
+      "field": "quantum",
+      "review": "NEWS"
+    },
+    {
       "id": "paper:8feafb91d6c4c78b",
       "kind": "paper",
       "lane": "science",
@@ -1167,29 +1141,29 @@
       "review": "NEWS"
     },
     {
-      "id": "headline:6c26f04df196c15c",
+      "id": "headline:49a75a9fd01da745",
       "kind": "paper",
       "lane": "science",
-      "source": "HPCwire",
+      "source": "The Texas Tribune",
       "sourceId": "headline",
-      "title": "Inside Nvidia’s Plan to Accelerate Quantum Error Correction - HPCwire",
+      "title": "Mexico demands cleanup of suspected SpaceX rocket debris - The Texas Tribune",
       "guest": "",
       "note": "",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNSUJsaFVtV2Z3d2pJVzJTZVFXcUx5R01YY0JlX3BDY3l1alhQSFlaZWVqZ2Z5Z2NBMzFES3VSeGxadmI4Tm84Z24wX19vX3ZDZFZpVXJKTXRzYUE4OHZhcm8xeWhsbzJINXcwWl9mT3o1LXVRN2VCZ0ZxdTFVN3FFQVFoZmJlZ0lxT0hDeUd2MDJNUU1iUnZaOUpB?oc=5",
-      "published": "2026-11-23T14:57:08-06:00",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNQjBZWHpxYW9ta0lDRld5QTJ5Yl9VX0p3MkRLSkM3QjRubVNDTko5X0dtNWQ3YWVmZWliTklFajBmeW9wSVRwT3FQOGlkUWVTZU9NemRjWlp6cEtpU3ppMnZiWk0zX01NYmFtWENQTXBJaF9ncFBjb3NHNV9CNjRlXzFlUldKbzg?oc=5",
+      "published": "2026-11-23T11:39:40-06:00",
       "date": "2026-11-23",
-      "label": "Nov 23, 2026 2:57 PM CT",
+      "label": "Nov 23, 2026 11:39 AM CT",
       "weekday": "Mon",
       "timeKnown": true,
       "tags": [
         "headline",
         "standby",
         "science",
-        "quantum",
+        "propulsion",
         "news"
       ],
       "severity": "STANDBY",
-      "field": "quantum",
+      "field": "propulsion",
       "review": "NEWS"
     },
     {
@@ -1447,6 +1421,32 @@
       "review": "NEWS"
     },
     {
+      "id": "headline:83e8137cfbd2882b",
+      "kind": "paper",
+      "lane": "science",
+      "source": "Space",
+      "sourceId": "headline",
+      "title": "SpaceX launches 2 rockets from same pad 32 hours apart, smashing turnaround record (video) - Space",
+      "guest": "",
+      "note": "",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxONEZiYjVhWTBHd18zRFRDbUVLa2NTZ01tb1ZmZ1dQYzhuR0tqbkVELWRfX1ppSEJiZENiSWdJaW9aSE1RdzlfTUwzelNKOXphaVptMENyenR2TEJySXRMb2VYcUpwMjN4bUdzSGRpeFloS1M2QnV2cGVsT2ZpWVdhdzNKQ0VPWDJzTTZlUnpIQUJ3RklLNm9QYmN1RTVtQUxDb0REY2sxOGd5b0kxN0xTSjB5NmcxcmF6dElqeUxFYw?oc=5",
+      "published": "2026-11-22T22:05:29-06:00",
+      "date": "2026-11-22",
+      "label": "Nov 22, 2026 10:05 PM CT",
+      "weekday": "Sun",
+      "timeKnown": true,
+      "tags": [
+        "headline",
+        "standby",
+        "science",
+        "propulsion",
+        "news"
+      ],
+      "severity": "STANDBY",
+      "field": "propulsion",
+      "review": "NEWS"
+    },
+    {
       "id": "headline:1cd24796df3cf47c",
       "kind": "paper",
       "lane": "science",
@@ -1495,32 +1495,6 @@
       "field": "propulsion",
       "review": "PREPRINT",
       "severity": ""
-    },
-    {
-      "id": "headline:651a7e945cf5d1ff",
-      "kind": "paper",
-      "lane": "science",
-      "source": "Space",
-      "sourceId": "headline",
-      "title": "SpaceX launches classified mission for US Space Force from California (video) - Space",
-      "guest": "",
-      "note": "",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNaFpmRmxNQ2N6MU5PdnZrbHYyMWtzanU0QWZVZjY1aEJKX29VcFZ5Zkx5YkpNVGZ3dlRlQ3Y0VDZmR3U2ZFZtQXY4cEVTRm1ZSDdkbzV1TGpYYzFUVlJIOG9jeDIwS3dVR2cwandlREJac2dRMU43anlpX3lRYl90emVISEotNjRBTVNwY1cxYm1sUmlJckw2YWc2NGczRWlYU2xTUjdTejNwTFVzeWdCWEk1dU0?oc=5",
-      "published": "2026-11-20T23:30:07-06:00",
-      "date": "2026-11-20",
-      "label": "Nov 20, 2026 11:30 PM CT",
-      "weekday": "Fri",
-      "timeKnown": true,
-      "tags": [
-        "headline",
-        "standby",
-        "science",
-        "propulsion",
-        "news"
-      ],
-      "severity": "STANDBY",
-      "field": "propulsion",
-      "review": "NEWS"
     },
     {
       "id": "paper:cf9d2b28fd1be002",
@@ -1597,6 +1571,32 @@
       "severity": ""
     },
     {
+      "id": "headline:0631e8a8a792d9de",
+      "kind": "paper",
+      "lane": "science",
+      "source": "ScienceDaily",
+      "sourceId": "headline",
+      "title": "CERN scientists finally find evidence of a particle decay so rare it took 40 years to detect - ScienceDaily",
+      "guest": "",
+      "note": "",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9rTVk5dExmdThleGpnbFZmYWRweWVibGJrQnptWXM4bnFYWWxaRENyX0V3NTluN2ZCdjZQajZYZWJxMmJCU3hfWkNqUThjeVJnU2FzcGFRbV9GaU1iRzVsVHBieW10b3ZJbXlUSURVQQ?oc=5",
+      "published": "2026-11-20T06:25:06-06:00",
+      "date": "2026-11-20",
+      "label": "Nov 20, 2026 6:25 AM CT",
+      "weekday": "Fri",
+      "timeKnown": true,
+      "tags": [
+        "headline",
+        "standby",
+        "science",
+        "physics",
+        "news"
+      ],
+      "severity": "STANDBY",
+      "field": "physics",
+      "review": "NEWS"
+    },
+    {
       "id": "headline:36b188b0c6eb51a0",
       "kind": "paper",
       "lane": "science",
@@ -1620,32 +1620,6 @@
       ],
       "severity": "STANDBY",
       "field": "biomedical",
-      "review": "NEWS"
-    },
-    {
-      "id": "headline:603e6422cbdc474f",
-      "kind": "paper",
-      "lane": "science",
-      "source": "SpaceX",
-      "sourceId": "headline",
-      "title": "USSF-317 Mission - SpaceX",
-      "guest": "",
-      "note": "",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9uVDBzdUJ6c2tQSEUzVmdWb1oxdzY5dTVQWUVTOWE1THJBbURxaTVUaDJPYUtFTF84WDFQa1oxOTh1dk55cXRjczNFVi1zUjdw?oc=5",
-      "published": "2026-11-20T02:00:00-06:00",
-      "date": "2026-11-20",
-      "label": "Nov 20, 2026 2:00 AM CT",
-      "weekday": "Fri",
-      "timeKnown": true,
-      "tags": [
-        "headline",
-        "standby",
-        "science",
-        "propulsion",
-        "news"
-      ],
-      "severity": "STANDBY",
-      "field": "propulsion",
       "review": "NEWS"
     },
     {
@@ -1890,6 +1864,32 @@
       ],
       "severity": "STANDBY",
       "field": "propulsion",
+      "review": "NEWS"
+    },
+    {
+      "id": "headline:66d14f55461c12ce",
+      "kind": "paper",
+      "lane": "science",
+      "source": "Google Research",
+      "sourceId": "headline",
+      "title": "A game you cannot win unless you have a quantum computer - Google Research",
+      "guest": "",
+      "note": "",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQRHdhc1FobXI5WVRSRXQ2Y2dpTFJ6NDN2a0w3OEFiNjhUcjNfR1hYZHNCT25VWlVQaXJFTUVtU2R0Q0pvOWJtb0JkWS1yanJxT1RvanN4bDBScUw1SVZEVUM0bU5wdGxoTThSMm14TTFHcG56RDZNeFBkb24yLTh2cVRFVXFGMHpQVkFFblZEMA?oc=5",
+      "published": "2026-11-19T14:34:12-06:00",
+      "date": "2026-11-19",
+      "label": "Nov 19, 2026 2:34 PM CT",
+      "weekday": "Thu",
+      "timeKnown": true,
+      "tags": [
+        "headline",
+        "standby",
+        "science",
+        "quantum",
+        "news"
+      ],
+      "severity": "STANDBY",
+      "field": "quantum",
       "review": "NEWS"
     },
     {
