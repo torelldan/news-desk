@@ -2,21 +2,21 @@
   "calls": [],
   "escalated": [
     {
-      "note": "New since 2026-11-18 · now ALERT",
+      "note": "New since 2026-11-19 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "Winter Weather Advisory"
+    },
+    {
+      "note": "New since 2026-11-19 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
       "title": "Influenza A(H5N1) - United States of America"
     },
     {
-      "note": "New since 2026-11-18 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "Circulating vaccine-derived poliovirus type 1 – Syrian Arab Republic"
-    },
-    {
-      "note": "STANDBY → ALERT since 2026-11-18",
+      "note": "STANDBY → ALERT since 2026-11-19",
       "related": 1,
       "relatedSources": [],
       "severity": "ALERT",
@@ -24,63 +24,28 @@
       "title": "CVE-2025-41450 Danfoss AK-SM 800A Series Improper Authentication Vulnerability"
     },
     {
-      "note": "New since 2026-11-18 · now ALERT",
+      "note": "New since 2026-11-19 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Suspected ransomware attack disrupts cancer treatments, surgeries at Guadeloupe hospital"
+      "title": "An unclassified CIA system was breached in a cyberattack, AP source says - Federal News Network"
     },
     {
-      "note": "New since 2026-11-18 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation"
-    },
-    {
-      "note": "New since 2026-11-18 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "Ukraine tells Putin to ‘stop complaining’ over oil refinery attacks as Russia promises retaliation - CNBC"
-    },
-    {
-      "note": "New since 2026-11-18 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "At least 6 killed, several injured in shooting at Polish market square: Police - ABC News - Breaking News, Latest News and Videos"
-    },
-    {
-      "note": "New since 2026-11-18 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "ICC president thanks Japan for early 2027 payment as US sanctions squeeze the court - AP News"
-    },
-    {
-      "note": "New since 2026-11-18 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "Solomon Islands signs treaty with Australia that checks China's influence in the South Pacific - AP News"
-    },
-    {
-      "note": "New since 2026-11-18 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "Zelenskyy says Ukraine waiting for US to set date for new round of peace talks with Russia - Anadolu Ajansı"
-    },
-    {
-      "note": "New since 2026-11-18 · now ALERT",
+      "note": "New since 2026-11-19 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
       "title": "EU plans sports ban in sweeping new Russia sanctions proposal - Al Jazeera"
     },
     {
-      "note": "New since 2026-11-18 · now STANDBY",
+      "note": "New since 2026-11-19 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "ICC president thanks Japan for early 2027 payment as US sanctions squeeze the court - AP News"
+    },
+    {
+      "note": "New since 2026-11-19 · now STANDBY",
       "related": 0,
       "relatedSources": [],
       "severity": "STANDBY",
@@ -90,107 +55,86 @@
   ],
   "fizzled": [
     {
-      "note": "On the board 2026-11-18 at ALERT, absent now.",
+      "note": "On the board 2026-11-19 at ALERT, absent now.",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
       "title": "M5.8 150 km SW of Merizo Village, Guam"
     },
     {
-      "note": "On the board 2026-11-18 at ALERT, absent now.",
+      "note": "On the board 2026-11-19 at ALERT, absent now.",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "M6.6 148 km WSW of Tual, Indonesia"
+      "title": "Cyberattack may have exposed Chase Bank and Mastercard customer data - The Washington Post"
     },
     {
-      "note": "On the board 2026-11-18 at ALERT, absent now.",
+      "note": "On the board 2026-11-19 at ALERT, absent now.",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Earthquake in Near Islands, Aleutian Islands"
+      "title": "Newly Patched VMware vCenter Flaw Exploited as Zero-Day by Chinese APT"
     },
     {
-      "note": "On the board 2026-11-18 at ALERT, absent now.",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "Earthquake in Pacific-Antarctic Ridge"
-    },
-    {
-      "note": "On the board 2026-11-18 at ALERT, absent now.",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "Earthquake in Chile"
-    },
-    {
-      "note": "On the board 2026-11-18 at ALERT, absent now.",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "Earthquake in Tanzania"
-    },
-    {
-      "note": "On the board 2026-11-18 at ALERT, absent now.",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "Earthquake in Japan"
-    },
-    {
-      "note": "On the board 2026-11-18 at ALERT, absent now.",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "Earthquake in South Of Mariana Islands"
-    },
-    {
-      "note": "On the board 2026-11-18 at ALERT, absent now.",
+      "note": "On the board 2026-11-19 at ALERT, absent now.",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
       "title": "CVE-2024-10441 Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability"
     },
     {
-      "note": "On the board 2026-11-18 at ALERT, absent now.",
+      "note": "On the board 2026-11-19 at ALERT, absent now.",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Rubio says there's 'zero' information that U.S. outages are caused by a malign actor - NPR"
+      "title": "Ukraine: Civilian casualties in 2026 already far exceed previous years’ tolls - UN News"
     },
     {
-      "note": "On the board 2026-11-18 at ALERT, absent now.",
+      "note": "On the board 2026-11-19 at ALERT, absent now.",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "France is not 'co-belligerent' in Ukraine, French minister says - Reuters"
+      "title": "For Trump, the meeting was the whole point after trilateral summit with Xi and Putin - NPR"
     },
     {
-      "note": "On the board 2026-11-18 at ALERT, absent now.",
+      "note": "On the board 2026-11-19 at ALERT, absent now.",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Read the full White House memo requiring agencies to get approval before testifying in front of Congress - PBS"
+      "title": "Internet services disrupted across Pakistan due to undersea cable fault - Daily Ausaf"
+    },
+    {
+      "note": "ALERT → STANDBY since 2026-11-19",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "STANDBY",
+      "title": "Chikungunya virus disease - Switzerland"
+    },
+    {
+      "note": "ALERT → STANDBY since 2026-11-19",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "STANDBY",
+      "title": "Iran widens Gulf attacks by targeting U.S. air base in Kuwait and sites in Bahrain - PBS"
     }
   ],
   "newSince": [
     {
-      "note": "New since 2026-11-18 · now ALERT",
+      "note": "New since 2026-11-19 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "Winter Weather Advisory"
+    },
+    {
+      "note": "New since 2026-11-19 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
       "title": "Influenza A(H5N1) - United States of America"
     },
     {
-      "note": "New since 2026-11-18 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "Circulating vaccine-derived poliovirus type 1 – Syrian Arab Republic"
-    },
-    {
-      "note": "STANDBY → ALERT since 2026-11-18",
+      "note": "STANDBY → ALERT since 2026-11-19",
       "related": 1,
       "relatedSources": [],
       "severity": "ALERT",
@@ -198,63 +142,28 @@
       "title": "CVE-2025-41450 Danfoss AK-SM 800A Series Improper Authentication Vulnerability"
     },
     {
-      "note": "New since 2026-11-18 · now ALERT",
+      "note": "New since 2026-11-19 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Suspected ransomware attack disrupts cancer treatments, surgeries at Guadeloupe hospital"
+      "title": "An unclassified CIA system was breached in a cyberattack, AP source says - Federal News Network"
     },
     {
-      "note": "New since 2026-11-18 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation"
-    },
-    {
-      "note": "New since 2026-11-18 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "Ukraine tells Putin to ‘stop complaining’ over oil refinery attacks as Russia promises retaliation - CNBC"
-    },
-    {
-      "note": "New since 2026-11-18 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "At least 6 killed, several injured in shooting at Polish market square: Police - ABC News - Breaking News, Latest News and Videos"
-    },
-    {
-      "note": "New since 2026-11-18 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "ICC president thanks Japan for early 2027 payment as US sanctions squeeze the court - AP News"
-    },
-    {
-      "note": "New since 2026-11-18 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "Solomon Islands signs treaty with Australia that checks China's influence in the South Pacific - AP News"
-    },
-    {
-      "note": "New since 2026-11-18 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "Zelenskyy says Ukraine waiting for US to set date for new round of peace talks with Russia - Anadolu Ajansı"
-    },
-    {
-      "note": "New since 2026-11-18 · now ALERT",
+      "note": "New since 2026-11-19 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
       "title": "EU plans sports ban in sweeping new Russia sanctions proposal - Al Jazeera"
     },
     {
-      "note": "New since 2026-11-18 · now STANDBY",
+      "note": "New since 2026-11-19 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "ICC president thanks Japan for early 2027 payment as US sanctions squeeze the court - AP News"
+    },
+    {
+      "note": "New since 2026-11-19 · now STANDBY",
       "related": 0,
       "relatedSources": [],
       "severity": "STANDBY",
@@ -262,6 +171,6 @@
       "title": "Reaffirmed at the UN, cut in Berlin, London and Paris: The 0.7% Target and the G7 - Global Policy Journal"
     }
   ],
-  "note": "Compared with the stored board on 2026-11-18.",
-  "since": "2026-11-18"
+  "note": "Compared with the stored board on 2026-11-19.",
+  "since": "2026-11-19"
 }

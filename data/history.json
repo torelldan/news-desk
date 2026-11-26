@@ -1,340 +1,6 @@
 {
   "days": [
     {
-      "date": "2026-11-05",
-      "label": "Nov 5, 2026 6:37 PM CT",
-      "outlooks": [
-        {
-          "id": "quake:4aacdd22d8fcf171",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "STANDBY"
-        },
-        {
-          "id": "quake:734d191ecf71fad1",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "STANDBY"
-        },
-        {
-          "id": "quake:ab77a03e5cf52daa",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "STANDBY"
-        },
-        {
-          "id": "relief:0109da81b6fc36e7",
-          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
-          "severity": "STANDBY"
-        },
-        {
-          "id": "who:53dcad2ca08ee68e",
-          "outlook": "Lower than yesterday. The 72-hour path is easing if it holds.",
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:e690bd89fc9d54af",
-          "outlook": "Lower than yesterday. The 72-hour path is easing if it holds.",
-          "severity": "ALERT"
-        },
-        {
-          "id": "cdc:12c7ca9ea1a41c99",
-          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:90b337ad3de37707",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ALERT"
-        },
-        {
-          "id": "headline:421e3f4743e0ca4c",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ALERT"
-        },
-        {
-          "id": "headline:4244127e9d33cc93",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ALERT"
-        },
-        {
-          "id": "headline:6a4e9dc101a1757e",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ALERT"
-        },
-        {
-          "id": "headline:b6ce1bcd90f751dc",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ALERT"
-        },
-        {
-          "id": "headline:a5c4e99876afbe8b",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ALERT"
-        },
-        {
-          "id": "headline:57a21ad6ee992e96",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ALERT"
-        },
-        {
-          "id": "headline:973092ca57a30c74",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ALERT"
-        },
-        {
-          "id": "headline:e8b24ea6c3b3f5b9",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ALERT"
-        },
-        {
-          "id": "headline:f6304544d0edab83",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ALERT"
-        },
-        {
-          "id": "headline:2a7d9bd233dda8db",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ALERT"
-        },
-        {
-          "id": "headline:db580f48dc0ba9f9",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "ALERT"
-        },
-        {
-          "id": "neo:b6525019da5f0286",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "STANDBY"
-        },
-        {
-          "id": "neo:7ef188732835b7d0",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "STANDBY"
-        },
-        {
-          "id": "neo:6e5db1d2bf656873",
-          "outlook": "Lower than yesterday. The 72-hour path is easing if it holds.",
-          "severity": "STANDBY"
-        },
-        {
-          "id": "neo:77f0360ca43ad1fb",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "STANDBY"
-        },
-        {
-          "id": "neo:9934e838c1539fdc",
-          "outlook": "Lower than yesterday. The 72-hour path is easing if it holds.",
-          "severity": "STANDBY"
-        },
-        {
-          "id": "neo:1095427f35282423",
-          "outlook": "Lower than yesterday. The 72-hour path is easing if it holds.",
-          "severity": "STANDBY"
-        },
-        {
-          "id": "neo:9931f86a7752cac2",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "STANDBY"
-        },
-        {
-          "id": "neo:da8d506430a87192",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "STANDBY"
-        },
-        {
-          "id": "clock:bulletin",
-          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
-          "severity": "STANDBY"
-        }
-      ],
-      "threats": [
-        {
-          "id": "quake:4aacdd22d8fcf171",
-          "kind": "quake",
-          "severity": "STANDBY",
-          "title": "M4.6 147 km SSE of False Pass, Alaska"
-        },
-        {
-          "id": "quake:734d191ecf71fad1",
-          "kind": "quake",
-          "severity": "STANDBY",
-          "title": "M4.5 111 km ESE of Atka, Alaska"
-        },
-        {
-          "id": "quake:ab77a03e5cf52daa",
-          "kind": "quake",
-          "severity": "STANDBY",
-          "title": "M4.5 121 km SE of Atka, Alaska"
-        },
-        {
-          "id": "relief:0109da81b6fc36e7",
-          "kind": "relief",
-          "severity": "STANDBY",
-          "title": "ReliefWeb disasters"
-        },
-        {
-          "id": "who:53dcad2ca08ee68e",
-          "kind": "who",
-          "severity": "STANDBY",
-          "title": "New WHO technical package to help countries improve health data for COVID-19 response and beyond"
-        },
-        {
-          "id": "headline:e690bd89fc9d54af",
-          "kind": "cdc",
-          "severity": "ALERT",
-          "title": "Another child dies of measles as CDC reportedly holds up health alert - Ars Technica"
-        },
-        {
-          "id": "cdc:12c7ca9ea1a41c99",
-          "kind": "cdc",
-          "severity": "STANDBY",
-          "title": "CDC Health Alert Network notices"
-        },
-        {
-          "id": "headline:90b337ad3de37707",
-          "kind": "war-iran",
-          "severity": "ALERT",
-          "title": "Vance blames Iran war for GOP midterm losses - PBS"
-        },
-        {
-          "id": "headline:421e3f4743e0ca4c",
-          "kind": "war-iran",
-          "severity": "ALERT",
-          "title": "Iran Update, November 4, 2026 - Institute for the Study of War"
-        },
-        {
-          "id": "headline:4244127e9d33cc93",
-          "kind": "war-iran",
-          "severity": "ALERT",
-          "title": "Iran, Qatari mediators hold third day of talks to end US-Iran war - Reuters"
-        },
-        {
-          "id": "headline:6a4e9dc101a1757e",
-          "kind": "war-iran",
-          "severity": "ALERT",
-          "title": "Trump confirms strikes on Iran as Tehran warns against return to war - AFP.com"
-        },
-        {
-          "id": "headline:b6ce1bcd90f751dc",
-          "kind": "war-ukraine",
-          "severity": "ALERT",
-          "title": "What to know about the Melania Trump-brokered ceasefire in Russian-occupied Oleshky - AP News"
-        },
-        {
-          "id": "headline:a5c4e99876afbe8b",
-          "kind": "war-ukraine",
-          "severity": "ALERT",
-          "title": "Local ceasefire brokered by Melania Trump starts in southern Ukraine - NPR"
-        },
-        {
-          "id": "headline:57a21ad6ee992e96",
-          "kind": "war-ukraine",
-          "severity": "ALERT",
-          "title": "Russian Offensive Campaign Assessment, November 4, 2026 - Institute for the Study of War"
-        },
-        {
-          "id": "headline:973092ca57a30c74",
-          "kind": "war-ukraine",
-          "severity": "ALERT",
-          "title": "US to mediate trilateral talks with Ukraine, Russia in Abu Dhabi next week, US envoy says - Reuters"
-        },
-        {
-          "id": "headline:e8b24ea6c3b3f5b9",
-          "kind": "usgov",
-          "severity": "ALERT",
-          "title": "Supreme Court: SCOTUS Decisions & News on the U.S. Federal Court - NBC News"
-        },
-        {
-          "id": "headline:f6304544d0edab83",
-          "kind": "usgov",
-          "severity": "ALERT",
-          "title": "Democrats Win Control of Congress. Here’s How That Could Affect U.S. Foreign Policy. - Council on Foreign Relations"
-        },
-        {
-          "id": "headline:2a7d9bd233dda8db",
-          "kind": "usgov",
-          "severity": "ALERT",
-          "title": "Democrats win full control of Congress, ushering in a new era of divided government - NPR"
-        },
-        {
-          "id": "headline:db580f48dc0ba9f9",
-          "kind": "usgov",
-          "severity": "ALERT",
-          "title": "Trump White House maps path to govern without Congress if Democrats win - Reuters"
-        },
-        {
-          "id": "neo:b6525019da5f0286",
-          "kind": "neo",
-          "severity": "STANDBY",
-          "title": "Close approach 2026 VP1"
-        },
-        {
-          "id": "neo:7ef188732835b7d0",
-          "kind": "neo",
-          "severity": "STANDBY",
-          "title": "Close approach 2026 VG3"
-        },
-        {
-          "id": "neo:6e5db1d2bf656873",
-          "kind": "neo",
-          "severity": "STANDBY",
-          "title": "Close approach 2026 VN1"
-        },
-        {
-          "id": "neo:77f0360ca43ad1fb",
-          "kind": "neo",
-          "severity": "STANDBY",
-          "title": "Close approach 2026 VK2"
-        },
-        {
-          "id": "neo:9934e838c1539fdc",
-          "kind": "neo",
-          "severity": "STANDBY",
-          "title": "Close approach 2019 XF2"
-        },
-        {
-          "id": "neo:1095427f35282423",
-          "kind": "neo",
-          "severity": "STANDBY",
-          "title": "Close approach 2026 QQ8"
-        },
-        {
-          "id": "neo:9931f86a7752cac2",
-          "kind": "neo",
-          "severity": "STANDBY",
-          "title": "Close approach 2026 VY1"
-        },
-        {
-          "id": "neo:da8d506430a87192",
-          "kind": "neo",
-          "severity": "STANDBY",
-          "title": "Close approach 2026 VT3"
-        },
-        {
-          "id": "clock:bulletin",
-          "kind": "clock",
-          "severity": "STANDBY",
-          "title": "Doomsday Clock"
-        }
-      ],
-      "trends": [
-        {
-          "category": "iran-war",
-          "name": "iran war",
-          "volume": null
-        },
-        {
-          "category": "ukraine-war",
-          "name": "ukraine war",
-          "volume": null
-        },
-        {
-          "category": "us-gov",
-          "name": "us gov",
-          "volume": null
-        }
-      ],
-      "triggers": []
-    },
-    {
       "date": "2026-11-06",
       "label": "Nov 6, 2026 1:58 PM CT",
       "outlooks": [
@@ -12299,6 +11965,820 @@
           "kind": "global",
           "severity": "STANDBY",
           "title": "North Korea expels Swiss diplomat in sanctions row"
+        }
+      ],
+      "trends": [
+        {
+          "category": "ukraine-war",
+          "name": "ukraine war",
+          "volume": null
+        },
+        {
+          "category": "iran-war",
+          "name": "iran war",
+          "volume": null
+        },
+        {
+          "category": "us-gov",
+          "name": "us gov",
+          "volume": null
+        },
+        {
+          "category": "global",
+          "name": "global",
+          "volume": null
+        }
+      ],
+      "triggers": [
+        "outbreak-us"
+      ]
+    },
+    {
+      "date": "2026-11-26",
+      "label": "Nov 26, 2026 12:56 PM CT",
+      "outlooks": [
+        {
+          "id": "quake:df4be4887a047082",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:ff961ba7aa28ec8f",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:499621be80c78574",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:2ee9e58d76037f21",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:35deed5d09a14ec6",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "quake:291f92718b93521c",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "nws:5e56bed3fdba26a3",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "nws:eb048539e0494e65",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "nws:387837ed2daee28e",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "nws:0893eda78fab3b02",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "gdacs:4714e6ec11944405",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "gdacs:fb0a29b3022ece46",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "gdacs:b68f553a2f796d67",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "gdacs:ad54c72d3be516a5",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "gdacs:6b356b6111fcf7f1",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "gdacs:779113d8fc0a8f2d",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "who:5f55a69471a9b14a",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "who:744cc6c7c9502795",
+          "outlook": "Lower than yesterday. The 72-hour path is easing if it holds.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "who:778d5a5f4f90f206",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "who:0347bc994bb6a179",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "who:10253c286a612334",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "cyber:395f1c696ef9eda8",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "cyber:2262daca88f543a9",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "cyber:2529ba84b51ee418",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "cyber:aa4d8ea4b9d2de4a",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "cyber:6b4de675a10d3235",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:033391b59ffb29d5",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:261d7177be908387",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "cyber:5293f29ca050f3ec",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:f0c8c34334ec15a8",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "cyber:c25cdcd94815b0d3",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "cyber:a73b8983a161205b",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "cyber:7114826ff72afc5c",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:bc8d04f27c34ffd0",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:5d179f1cbdc1d2ff",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:516bd6dfbeafd855",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:e8e2adc80c942465",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:05030e524a90b82f",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:9ae1c881d2394b64",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:32fae8aac86477e4",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:6a199e5223933b9d",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:c645c8c1949bff97",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:93b2aaf7b4312b3e",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:1a550e52825a7fb7",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:bb6cff923c122d0c",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:fe942e4801937827",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:c96d219ff0863ff7",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:1e768db510da2c3a",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:8a08d0603bb97968",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:138e783f2a18cddb",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:7dfd9dec55fbc5f7",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:32b5b2716b9f8e1a",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:ffbfc2ed6517c7aa",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:59a30da158a71eaf",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:6c3ce9eee0199b2f",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:aee0775d994972a4",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:63e77d9b0f930858",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "neo:9934e838c1539fdc",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "neo:1095427f35282423",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "neo:7b85606f3b77e4fb",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "neo:e57f65e56f659e8f",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "neo:d545dfda650a0803",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "clock:bulletin",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:6eb94e82f389d616",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:3f7de9541eae49ec",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:1126a8afc0efe03f",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:939fe9e3c016d4a2",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:c6a39a5b152afbc2",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:ecac1a4c96e1c6cd",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
+        },
+        {
+          "id": "headline:7354c31ac8bf2dfa",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:4a0a59402e13a295",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        }
+      ],
+      "threats": [
+        {
+          "id": "quake:df4be4887a047082",
+          "kind": "quake",
+          "severity": "STANDBY",
+          "title": "M6.8 105 km NE of Lospalos, Timor Leste"
+        },
+        {
+          "id": "quake:ff961ba7aa28ec8f",
+          "kind": "quake",
+          "severity": "STANDBY",
+          "title": "M6.7 7 km ENE of Carhuamayo, Peru"
+        },
+        {
+          "id": "quake:499621be80c78574",
+          "kind": "quake",
+          "severity": "STANDBY",
+          "title": "M6.5 Vanuatu region"
+        },
+        {
+          "id": "quake:2ee9e58d76037f21",
+          "kind": "quake",
+          "severity": "STANDBY",
+          "title": "M6.4 Mauritius - Reunion region"
+        },
+        {
+          "id": "quake:35deed5d09a14ec6",
+          "kind": "quake",
+          "severity": "STANDBY",
+          "title": "M5.9 Balleny Islands region"
+        },
+        {
+          "id": "quake:291f92718b93521c",
+          "kind": "quake",
+          "severity": "STANDBY",
+          "title": "M5.9 238 km SW of Yanglong, China"
+        },
+        {
+          "id": "nws:5e56bed3fdba26a3",
+          "kind": "nws",
+          "severity": "ALERT",
+          "title": "Winter Weather Advisory"
+        },
+        {
+          "id": "nws:eb048539e0494e65",
+          "kind": "nws",
+          "severity": "STANDBY",
+          "title": "Wind Advisory"
+        },
+        {
+          "id": "nws:387837ed2daee28e",
+          "kind": "nws",
+          "severity": "STANDBY",
+          "title": "Winter Storm Warning"
+        },
+        {
+          "id": "nws:0893eda78fab3b02",
+          "kind": "nws",
+          "severity": "STANDBY",
+          "title": "Special Weather Statement"
+        },
+        {
+          "id": "gdacs:4714e6ec11944405",
+          "kind": "gdacs",
+          "severity": "STANDBY",
+          "title": "Earthquake in Indonesia"
+        },
+        {
+          "id": "gdacs:fb0a29b3022ece46",
+          "kind": "gdacs",
+          "severity": "STANDBY",
+          "title": "Earthquake in Revilla Gigedo Islands Region"
+        },
+        {
+          "id": "gdacs:b68f553a2f796d67",
+          "kind": "gdacs",
+          "severity": "STANDBY",
+          "title": "Earthquake in Fiji"
+        },
+        {
+          "id": "gdacs:ad54c72d3be516a5",
+          "kind": "gdacs",
+          "severity": "STANDBY",
+          "title": "Earthquake in South Of Sumbawa, Indonesia"
+        },
+        {
+          "id": "gdacs:6b356b6111fcf7f1",
+          "kind": "gdacs",
+          "severity": "STANDBY",
+          "title": "Earthquake in México"
+        },
+        {
+          "id": "gdacs:779113d8fc0a8f2d",
+          "kind": "gdacs",
+          "severity": "STANDBY",
+          "title": "Earthquake in Off E. Coast Of N. Island, N.Z."
+        },
+        {
+          "id": "who:5f55a69471a9b14a",
+          "kind": "who",
+          "severity": "ALERT",
+          "title": "Influenza A(H5N1) - United States of America"
+        },
+        {
+          "id": "who:744cc6c7c9502795",
+          "kind": "who",
+          "severity": "STANDBY",
+          "title": "Circulating vaccine-derived poliovirus type 1 – Syrian Arab Republic"
+        },
+        {
+          "id": "who:778d5a5f4f90f206",
+          "kind": "who",
+          "severity": "STANDBY",
+          "title": "Ebola disease caused by Bundibugyo virus- Democratic Republic of the Congo, Kenya and Nigeria"
+        },
+        {
+          "id": "who:0347bc994bb6a179",
+          "kind": "who",
+          "severity": "STANDBY",
+          "title": "Chikungunya virus disease - Switzerland"
+        },
+        {
+          "id": "who:10253c286a612334",
+          "kind": "who",
+          "severity": "STANDBY",
+          "title": "Middle East respiratory syndrome (MERS) – Qatar"
+        },
+        {
+          "id": "cyber:395f1c696ef9eda8",
+          "kind": "cyber",
+          "severity": "ALERT",
+          "title": "CVE-2026-103406 Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router OS Command Injection Vulnerability"
+        },
+        {
+          "id": "cyber:2262daca88f543a9",
+          "kind": "cyber",
+          "severity": "ALERT",
+          "title": "CVE-2026-133469 Vates Xen Orchestra Improper Validation of Specified Type of Input Vulnerability"
+        },
+        {
+          "id": "cyber:2529ba84b51ee418",
+          "kind": "cyber",
+          "severity": "ALERT",
+          "title": "CVE-2025-41450 Danfoss AK-SM 800A Series Improper Authentication Vulnerability"
+        },
+        {
+          "id": "cyber:aa4d8ea4b9d2de4a",
+          "kind": "cyber",
+          "severity": "ALERT",
+          "title": "CVE-2023-25914 Danfoss AK-SM 800A Series Path Traversal Vulnerability"
+        },
+        {
+          "id": "cyber:6b4de675a10d3235",
+          "kind": "cyber",
+          "severity": "ALERT",
+          "title": "CVE-2026-133324 Mitel MiCollab Not Failing Securely Vulnerability"
+        },
+        {
+          "id": "headline:033391b59ffb29d5",
+          "kind": "cyber",
+          "severity": "ALERT",
+          "title": "An unclassified CIA system was breached in a cyberattack, AP source says - Federal News Network"
+        },
+        {
+          "id": "headline:261d7177be908387",
+          "kind": "cyber",
+          "severity": "STANDBY",
+          "title": "Equinor thwarts cyberattack as separate intrusion at Skagerak Energi raises concerns across Norway’s energy sector - Industrial Cyber"
+        },
+        {
+          "id": "cyber:5293f29ca050f3ec",
+          "kind": "cyber",
+          "severity": "STANDBY",
+          "title": "FIFA Says It Has Been Victim of a Cyberattack Accessing ‘Personal and Business Information’"
+        },
+        {
+          "id": "headline:f0c8c34334ec15a8",
+          "kind": "cyber",
+          "severity": "STANDBY",
+          "title": "FIFA hit by cyberattack as hackers gain access to personal and business data - ESPN"
+        },
+        {
+          "id": "cyber:c25cdcd94815b0d3",
+          "kind": "cyber",
+          "severity": "STANDBY",
+          "title": "1Password Breach Exposes Customer Data, Internal Source Code"
+        },
+        {
+          "id": "cyber:a73b8983a161205b",
+          "kind": "cyber",
+          "severity": "STANDBY",
+          "title": "Florida ransomware recovery CEO indicted for allegedly paying hacker ransoms"
+        },
+        {
+          "id": "cyber:7114826ff72afc5c",
+          "kind": "cyber",
+          "severity": "STANDBY",
+          "title": "Plagiarism Checker Turnitin Investigating Cyberattack"
+        },
+        {
+          "id": "headline:bc8d04f27c34ffd0",
+          "kind": "cyber",
+          "severity": "STANDBY",
+          "title": "Suspected cyberattack targets city of El Cajon - NBC 7 San Diego"
+        },
+        {
+          "id": "headline:5d179f1cbdc1d2ff",
+          "kind": "cyber",
+          "severity": "STANDBY",
+          "title": "USDA hit with cyberattack: Sources - ABC News - Breaking News, Latest News and Videos"
+        },
+        {
+          "id": "headline:516bd6dfbeafd855",
+          "kind": "attack",
+          "severity": "ALERT",
+          "title": "Deadly mass shooting in Poland investigated as terror act, prosecutor says - ABC News - Breaking News, Latest News and Videos"
+        },
+        {
+          "id": "headline:e8e2adc80c942465",
+          "kind": "war-ukraine",
+          "severity": "STANDBY",
+          "title": "Russian missile hit south-east Poland during attack on Ukraine, no-one hurt: Warsaw - The New Indian Express"
+        },
+        {
+          "id": "headline:05030e524a90b82f",
+          "kind": "war-iran",
+          "severity": "STANDBY",
+          "title": "Iran says army targets U.S. drone and missile sites in Kuwait as Gulf attacks mount - CNBC"
+        },
+        {
+          "id": "headline:9ae1c881d2394b64",
+          "kind": "war-iran",
+          "severity": "STANDBY",
+          "title": "Iran launches a third round of strikes on Bahrain, host of U.S. Navy's 5th Fleet - NPR"
+        },
+        {
+          "id": "headline:32fae8aac86477e4",
+          "kind": "usgov",
+          "severity": "STANDBY",
+          "title": "Midterm Elections 2026: Congress Polls, Charts and More - NBC News"
+        },
+        {
+          "id": "headline:6a199e5223933b9d",
+          "kind": "war-iran",
+          "severity": "STANDBY",
+          "title": "What Trump should do next about Iran - Atlantic Council"
+        },
+        {
+          "id": "headline:c645c8c1949bff97",
+          "kind": "israel",
+          "severity": "STANDBY",
+          "title": "Opposition Makes Progress Toward Ousting Netanyahu, Party Leader Says - The New York Times"
+        },
+        {
+          "id": "headline:93b2aaf7b4312b3e",
+          "kind": "israel",
+          "severity": "STANDBY",
+          "title": "Eisenkot, pushing to oust Netanyahu, sharpens warnings over new Iran strikes - The Washington Post"
+        },
+        {
+          "id": "headline:1a550e52825a7fb7",
+          "kind": "israel",
+          "severity": "STANDBY",
+          "title": "Israel’s Eisenkot secures first coalition partner in bid to form government - Al Jazeera"
+        },
+        {
+          "id": "headline:bb6cff923c122d0c",
+          "kind": "diplomacy",
+          "severity": "STANDBY",
+          "title": "Reaffirmed at the UN, cut in Berlin, London and Paris: The 0.7% Target and the G7 - Global Policy Journal"
+        },
+        {
+          "id": "headline:fe942e4801937827",
+          "kind": "war-iran",
+          "severity": "STANDBY",
+          "title": "Congress’s Options for Ending the Iran War - Lawfare"
+        },
+        {
+          "id": "headline:c96d219ff0863ff7",
+          "kind": "attack",
+          "severity": "STANDBY",
+          "title": "Visit to Kraków, meeting at the Polish Senate, Ostrogski Forum. Weekly updates from Sviatlana Tsikhanouskaya’s Office: November 16–22 - Святлана Ціханоўская"
+        },
+        {
+          "id": "headline:1e768db510da2c3a",
+          "kind": "usgov",
+          "severity": "STANDBY",
+          "title": "2026 National Thanksgiving Turkey Pardon - The White House (.gov)"
+        },
+        {
+          "id": "headline:8a08d0603bb97968",
+          "kind": "windstorm",
+          "severity": "STANDBY",
+          "title": "Portugal’s Interior Minister defends storm Charles precautions - The Portugal News"
+        },
+        {
+          "id": "headline:138e783f2a18cddb",
+          "kind": "climate",
+          "severity": "STANDBY",
+          "title": "Why COP31 climate talks collapsed and what to expect next - Atlantic Council"
+        },
+        {
+          "id": "headline:7dfd9dec55fbc5f7",
+          "kind": "usgov",
+          "severity": "STANDBY",
+          "title": "Trump’s new contractor executive order is an affront to Congress’ oversight authority - Government Executive"
+        },
+        {
+          "id": "headline:32b5b2716b9f8e1a",
+          "kind": "war-ukraine",
+          "severity": "STANDBY",
+          "title": "NATO to meet after Russia-Ukraine war once again inches onto European territory - NPR"
+        },
+        {
+          "id": "headline:ffbfc2ed6517c7aa",
+          "kind": "climate",
+          "severity": "STANDBY",
+          "title": "Climate change talks fall apart in final hours over fossil fuels - NPR"
+        },
+        {
+          "id": "headline:59a30da158a71eaf",
+          "kind": "usgov",
+          "severity": "STANDBY",
+          "title": "Trump initially accepted the midterm results, but most GOP voters doubt they were fair - NPR"
+        },
+        {
+          "id": "headline:6c3ce9eee0199b2f",
+          "kind": "attack",
+          "severity": "STANDBY",
+          "title": "Cost of living protests sweep across Europe - BBC"
+        },
+        {
+          "id": "headline:aee0775d994972a4",
+          "kind": "war-ukraine",
+          "severity": "STANDBY",
+          "title": "Two-Thirds of Americans Disapprove of Trump’s Handling of the Russia-Ukraine War - Pew Research Center"
+        },
+        {
+          "id": "headline:63e77d9b0f930858",
+          "kind": "war-ukraine",
+          "severity": "STANDBY",
+          "title": "Ukraine Facility: Council approves largest-ever payment of €8 billion to Kyiv - Council, European Union"
+        },
+        {
+          "id": "neo:9934e838c1539fdc",
+          "kind": "neo",
+          "severity": "STANDBY",
+          "title": "Close approach 2019 XF2"
+        },
+        {
+          "id": "neo:1095427f35282423",
+          "kind": "neo",
+          "severity": "STANDBY",
+          "title": "Close approach 2026 QQ8"
+        },
+        {
+          "id": "neo:7b85606f3b77e4fb",
+          "kind": "neo",
+          "severity": "STANDBY",
+          "title": "Close approach 2015 DG200"
+        },
+        {
+          "id": "neo:e57f65e56f659e8f",
+          "kind": "neo",
+          "severity": "STANDBY",
+          "title": "Close approach 2026 VQ19"
+        },
+        {
+          "id": "neo:d545dfda650a0803",
+          "kind": "neo",
+          "severity": "STANDBY",
+          "title": "Close approach 2010 VQ"
+        },
+        {
+          "id": "clock:bulletin",
+          "kind": "clock",
+          "severity": "STANDBY",
+          "title": "Doomsday Clock"
+        },
+        {
+          "id": "headline:6eb94e82f389d616",
+          "kind": "global",
+          "severity": "STANDBY",
+          "title": "Was Japan Prime Minister Takaichi Snubbed at China’s Big Summit? - The New York Times"
+        },
+        {
+          "id": "headline:3f7de9541eae49ec",
+          "kind": "global",
+          "severity": "STANDBY",
+          "title": "EU leaders seek agreement on long-term budget and Ukraine at summit - DW.com"
+        },
+        {
+          "id": "headline:1126a8afc0efe03f",
+          "kind": "global",
+          "severity": "ALERT",
+          "title": "EU plans sports ban in sweeping new Russia sanctions proposal - Al Jazeera"
+        },
+        {
+          "id": "headline:939fe9e3c016d4a2",
+          "kind": "global",
+          "severity": "STANDBY",
+          "title": "Israel intensifies assassinations in Gaza as US urges Netanyahu to proceed with ceasefire plan - CNN"
+        },
+        {
+          "id": "headline:c6a39a5b152afbc2",
+          "kind": "global",
+          "severity": "STANDBY",
+          "title": "Russia and Ukraine Hold First Exchange of War Dead Since Rebooted Peace Talks - The Moscow Times"
+        },
+        {
+          "id": "headline:ecac1a4c96e1c6cd",
+          "kind": "global",
+          "severity": "ALERT",
+          "title": "ICC president thanks Japan for early 2027 payment as US sanctions squeeze the court - AP News"
+        },
+        {
+          "id": "headline:7354c31ac8bf2dfa",
+          "kind": "global",
+          "severity": "STANDBY",
+          "title": "Solomon Islands signs treaty with Australia that checks China's influence in the South Pacific - AP News"
+        },
+        {
+          "id": "headline:4a0a59402e13a295",
+          "kind": "global",
+          "severity": "STANDBY",
+          "title": "India-UK investment treaty talks stall, pact unlikely soon, officials say - Reuters"
         }
       ],
       "trends": [
