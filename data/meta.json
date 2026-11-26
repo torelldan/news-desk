@@ -1,12 +1,37 @@
 {
   "baseline": false,
-  "brief": "No rare risk is on the board. A routine flyby or an empty storm outlook is not an emergency. Global: EU plans sports ban in sweeping new Russia sanctions proposal - Al Jazeera. Rising topic: ukraine war (4 outlets this window).",
-  "checkedAt": "2026-11-26T12:56:42-06:00",
-  "checkedLabel": "Nov 26, 2026 12:56 PM CT",
+  "brief": "No rare risk is on the board. A routine flyby or an empty storm outlook is not an emergency. Global: Was Japan’s Leader Snubbed at China’s Big Summit? A Visual Evaluation. - The New York Times. Rising topic: ukraine war (4 outlets this window).",
+  "checkedAt": "2026-11-26T16:23:24-06:00",
+  "checkedLabel": "Nov 26, 2026 4:23 PM CT",
   "errors": [],
   "retainDays": 120,
   "spikes": {
-    "labs": [],
+    "labs": [
+      {
+        "field": "ai",
+        "links": [
+          {
+            "source": "Google AI blog",
+            "title": "How Gemini is changing the game for Golden State's organization and fans.",
+            "url": "https://blog.google/products-and-platforms/products/gemini/gemini-golden-state/"
+          },
+          {
+            "source": "Google AI blog",
+            "title": "Introducing Tool Retrieval in the Gemini API",
+            "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/"
+          },
+          {
+            "source": "DeepMind",
+            "title": "Introducing Gemini 4 Neon",
+            "url": "https://deepmind.google/blog/introducing-gemini-4-neon/"
+          }
+        ],
+        "outlets": 2,
+        "state": "EVENT",
+        "title": "How Gemini is changing the game for Golden State's organization and fans.",
+        "topic": "Gemini"
+      }
+    ],
     "markets": [
       {
         "links": [
@@ -74,11 +99,6 @@
             "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPSkthNkNZdXFrZG8za2FfVk9PaFNYa003NUtQZTZNUTFORjc4cUo5Uk15bE5BYTBlVHZtejM1NTBzZC1JY3hfOXN5UWxZelVRVVBrLVBEM1FvY3RFcXFDTGlXN0NORnVsSGg5d0VPWUNINkJtNU5jdWdqT2JsUm9HRWZUUXpCdGxfOWtIQlZQV3ExNGJvSzBSeHI0d0tHVTM3OURZOXdn?oc=5"
           },
           {
-            "source": "BNN Bloomberg",
-            "title": "Falling global oil prices could mean inflation ends below forecast, Bank of Canada says - BNN Bloomberg",
-            "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPT1NwZUhEUk1EN0VUT1dwa2U0cXQwY3JTMm11NXRsVS1mNUFfZ0ZrYXZldVdZbmRoektXRGo4NWI5d3VwUFNsRHJ6XzVHZ1h3Yl93OFY2QlFDODJUdzZpRlBkNXVGYW9KOTY2SEQ4bG1QZWE1WklQZDNMM3pZd0ZQR1BkZHZua1IxOGx1bGU5Mk1qTUZBWE0xM0FpMFhVdUFmT0JVclFkenZqZ2hESHNoMEREZjlHRzNEZ2c1QlRSSGh1QWpWc1BjR3FZcXhqckpNZV9J?oc=5"
-          },
-          {
             "source": "Bloomberg.com",
             "title": "Bank of Canada Warns of Broadening Inflation; Bonds Decline - Bloomberg.com",
             "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOZjlZeVdJWEZiVnUyT3ItWjQ0MzNiS1JUX3RzT2M4NDN5Y2tjM0VOZGhhLUZsMS1YZG54ci1raFdQVnRucy1VYVdWMVpjVUFEY08ySGNXWU5EV2Q2Z1Q2WkdKTXdmeFU2NWdNbEdaRGVLT1lfbldUWGtXbDl1RVJPZzk4dm1QdjRZeTRuMjR3dDM0QnJ0SVZwR0VVdHdDVHZwaTI0RzZQZkptdnltRWtGS1Ixbw?oc=5"
@@ -87,9 +107,14 @@
             "source": "CBC",
             "title": "Bank of Canada expects 2nd round of oil-linked inflation in 2027, Macklem says - CBC",
             "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOSGQ0dkVVaHR2dHpPWVBhUnlIb3d5Y2dJaE5SbW9NNnhCYkJQRHJVOFNIMklxSXdoVllXVVlJemwtVHVpT3p1RTRaZDE5S296S1lKN3BmTWQ1MEd6REVXclhlUS01VEtBNThzbVJKMzQtTVAyeE5tS2FZN3dGYWctQzJnVTVhRVdFUWNz?oc=5"
+          },
+          {
+            "source": "BNN Bloomberg",
+            "title": "Falling global oil prices could mean inflation ends below forecast, Bank of Canada says - BNN Bloomberg",
+            "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPT1NwZUhEUk1EN0VUT1dwa2U0cXQwY3JTMm11NXRsVS1mNUFfZ0ZrYXZldVdZbmRoektXRGo4NWI5d3VwUFNsRHJ6XzVHZ1h3Yl93OFY2QlFDODJUdzZpRlBkNXVGYW9KOTY2SEQ4bG1QZWE1WklQZDNMM3pZd0ZQR1BkZHZua1IxOGx1bGU5Mk1qTUZBWE0xM0FpMFhVdUFmT0JVclFkenZqZ2hESHNoMEREZjlHRzNEZ2c1QlRSSGh1QWpWc1BjR3FZcXhqckpNZV9J?oc=5"
           }
         ],
-        "outlets": 12,
+        "outlets": 11,
         "region": "North America",
         "state": "RISING",
         "title": "Bank Of Canada Maintains 2% Inflation Target - TradingView",
@@ -175,6 +200,11 @@
       {
         "links": [
           {
+            "source": "investingLive",
+            "title": "Tokyo CPI preview: core inflation seen jumping to 3% three weeks before BoJ decision - investingLive",
+            "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOOHF4cTNXZ2w4MUtRdm9zZ0trOVcyWnFCOVpkdFFlU1F3cHJ3Vy1qeEdHeWRqaWxUbnJWNC14NDJnbVRSWE41RXhWRkd2cWJoMHdqN0NuSml3TFFULUJkVzJGUmo4MlRBRlR1YWlQOTJ0VkVCa0xySTU1QjF6eUNvVDkzWklkODhTdmdGYUgwNXp5djRCY2lFUURkVGlaRGQ3cWZlVXJOMlNYR2JHZGFNLTkzQ19TODBEc3dKM2hTNEc?oc=5"
+          },
+          {
             "source": "BeInCrypto",
             "title": "What Could Stall Japan's December Rate Hike? Look Beyond Inflation - BeInCrypto",
             "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5ybWhBLWJHSktFOXJvQndOMmczYnc1NFVfaVAyOVpkX1owLWxhWjU3ay1GTFVJNDhrSDBOTFVpZTZIbFpuRHJkY1Zwb3Nxal9ZWHlCQTR0ZlRBcFRsd0ZXemNpUEdYMGFDOEE?oc=5"
@@ -188,18 +218,37 @@
             "source": "The Economic Times",
             "title": "BOJ's Takata calls for early rate hikes to curb inflation risks - The Economic Times",
             "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPdExVV255cjRzVExMalZvUkJYTTI4Z0ZlWTJTN1FOdjRvVFV5Z2RkdWJ5RS1YUENENnhBTHJ1bmFkLW9yTGFjMUtkX1R3SlpHOGFPdG5pNmI3X0ZPMm02VGdPaFRNenhTVkpBR1l3eDFPOGE5YjZYVG95QnM5T0FYc1ZLRzR5WE4xdFctemFLcHF1NjhyQ2dfYnZnM1JJdDMzOHRrR1FTV0ppYWhlWFVra284Z1VWREpUQ01aT3lBaHpDTXZQRHJrN3NpY0x3TW94Z21USDg5OWhRdFpNbzl4cUR5ZE1wcEHSAewBQVVfeXFMTi1La2FrRDQtNHl4cDBGem5uYU01aE5DRFNNT3JNb2hWYUxpX01mZG95aExPSHFYMnhRU2I0dFdYbUN2N2pCVWw0TDdZT1g2dmVsaTJLRkNKODYwamVuSTVraGFORkZiWXlfN2trMmNxdjdXV1ZXMFZ3NkhpV1h6SUxnc29tamI3dHZPOXA4X3BHUTlhSXU4eW5fYXNMZEk0MDRLb0pPbmJZYTZDRHhKcmYzN0tieDNla2R3V01vM3ROWVF6WmU2T0xwTWhzV0hjZnRiZWV3eTNIbjFVVGF4aEhRZkkxanFrbXB5YVo?oc=5"
-          },
-          {
-            "source": "investingLive",
-            "title": "Japan economy shrinks 0.1% in Q3, first fall in 4 quarters as inflation hits households - investingLive",
-            "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQdU9sMjNub1pTd01xZUptNDZRNUc1S1R2ZFZVeENBTmNWUnh5SXB2eVRPOEVqZ1RXZzU2XzRtaEE0RDI4dHc0TTNJVWhOWmFrZGlJaEVRTnpROWI0SnBzcUF4OE1GaHJFYVozMklyUUY1TE5xNUo0cWdnaHRWY21vWDU1TUhUckVjWW83UTZ3N0ZGc1U0czA4QU5ZYUpMNkcxTGRYTjc2Y1ZfOVlZMEJzc3NyWEZPUGxz?oc=5"
           }
         ],
-        "outlets": 5,
+        "outlets": 4,
         "region": "Japan",
         "state": "RISING",
-        "title": "What Could Stall Japan's December Rate Hike? Look Beyond Inflation - BeInCrypto",
+        "title": "Tokyo CPI preview: core inflation seen jumping to 3% three weeks before BoJ decision - investingLive",
         "topic": "inflation"
+      },
+      {
+        "links": [
+          {
+            "source": "Briefs Finance",
+            "title": "JGBs Rally as Nikkei Soars After Nvidia Leadership Return - Briefs Finance",
+            "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQSkdsMEM2Z2E2SkgxWkx4dS1fbXBNQ2FxUEZuRi1tcEM3d0tqNmRWbS1LZjh5QjlHWXo3dVNnR3RaRExVYUJubXBKUlY4NDVOREdCbXdVZk5VTXJreGRpcG52YmRLNVRwX3ZrWlo1RnlyTjkyR3czVk0wOTlyS3ZXMTFsSHItdjlqZjdCTkxpQQ?oc=5"
+          },
+          {
+            "source": "www.tmgm.com",
+            "title": "KOSPI leads gains as Asian stocks diverge following Nvidia earnings - www.tmgm.com",
+            "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPX2l0cTQ2QUhnVDNzMkJQRjFhbnQ3ZlJVTG82amd1RC16QmFzNnVob1VQQTUySWpPYllQZk12SUJoY2Z3cm9DZFFOUmxTTEZYei1jVFlLanpxXzZSVFotVEFXQlhWbWxpSVN2b3RhaGJiVjQ0dHpiaU52M3RaM2JVY3IzNEQtTzNrTUFNZ3NKeEpZZmxhYURZR2U0d2h5QW5UdVhhYkFKY2t0Vk1VRFc5M3VnbEpjakJrMVNmUEx0N3IwdnRQNnFjVzh0OA?oc=5"
+          },
+          {
+            "source": "FXStreet",
+            "title": "Asian stocks trade mixed after Nvidia earnings, KOSPI leads gains - FXStreet",
+            "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQMWZhN0FfLWRQRkZyOFBVd09SVUNOMnFKWkQtVzB6S2dWRDdiQWtfMGlwNGJPaHlRWWNudUVyZU9kdGxGemRmVG93N1FlSm0zY3ZaT29wNVNPd1M0Uk1fVlRvamhNTm5NdXdOMFEyMGtjS25yWUNYVGpVeTM2SzRVM1J6bmRabzMyNm1QYlFOVDNLbUE0VWhRRV9PX0FhOVVOVVRsMGVwV2QyRXc?oc=5"
+          }
+        ],
+        "outlets": 3,
+        "region": "Japan",
+        "state": "RISING",
+        "title": "JGBs Rally as Nikkei Soars After Nvidia Leadership Return - Briefs Finance",
+        "topic": "Nvidia"
       },
       {
         "links": [

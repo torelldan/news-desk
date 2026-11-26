@@ -952,9 +952,9 @@
             }
           ],
           "holidays": [],
-          "level": 34412.94,
-          "change": 232.94,
-          "changePct": 0.68,
+          "level": 34426.88,
+          "change": 246.88,
+          "changePct": 0.72,
           "asOf": "2026-11-26",
           "source": "https://finance.yahoo.com/quote/%5EGSPTSE"
         },
@@ -970,21 +970,126 @@
             }
           ],
           "holidays": [],
-          "level": 70659.48,
-          "change": -712.77,
-          "changePct": -1.0,
+          "level": 70353.18,
+          "change": -1019.07,
+          "changePct": -1.43,
           "asOf": "2026-11-26",
           "source": "https://finance.yahoo.com/quote/%5EMXX"
         }
       ],
       "headlines": [
         {
-          "id": "headline:1ab01436210e856d",
+          "id": "headline:e33b09ec71ebe402",
           "kind": "headline",
           "lane": "news",
-          "source": "Bloomberg.com",
+          "source": "Mexico Business News",
           "sourceId": "headline",
-          "title": "All of Canada’s Big Six Banks Now See December Rate Hike - Bloomberg.com",
+          "title": "Banxico Lifts Mexico 2026 GDP Growth Forecast to 1.9% - Mexico Business News",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQdjdENGstTU5EM3Z5eV9xOVBiWGt5bzMwNHRkU1V0RVRiY1liR2c5amY3MmMxLWFKMVNMYkJBMzZwRmRlaXBrTjNGc3B4dmJTNEdCWVMzMXVjVmh3Vmk2YUVNZlQwaVQzWVA2RFhxd09ueTVxaHE4c2JhRmg2c090bE1uQjVUajBRc3ZnNXRnazY1Nlk?oc=5",
+          "published": "2026-11-26T15:31:11-06:00",
+          "date": "2026-11-26",
+          "label": "Nov 26, 2026 3:31 PM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:d723370aa4ea7180",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Bloomberg",
+          "sourceId": "headline",
+          "title": "Mexico Central Bank Lifts Growth Outlook in Boost to Sheinbaum - Bloomberg",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQaFRpY2dXcW9hcTV2cU5xZm9EZXdrUW1ieXpYVUVXQjMyRDRGcWV5b0F2eHF5aFBrQXNFdTZyRklkdTZ1enRQOHB2aVBRNW54dktnajJrcWNjUWw3UXNjUXp4TmFGU3RsT0EyNFJibUE2WTlFbWE4UGV2Z1NpU3IweTVMaHJtaG5fYzk4SWx6S3Rra0RFd1FuLVl6TExYZENYVzBvMVVDRUdWRDVESVBRUENiVQ?oc=5",
+          "published": "2026-11-26T15:09:06-06:00",
+          "date": "2026-11-26",
+          "label": "Nov 26, 2026 3:09 PM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:7efd8d195dc2aa8a",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Devdiscourse",
+          "sourceId": "headline",
+          "title": "Mexico central bank lifts 2026 growth forecast after stronger third quarter - Devdiscourse",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxObzNiNjAteE1oYjBxRC15ZmhSS1BIYlpUbzJycHVrMkdTd1FORTk1NEdQVjEyNHpTZXM1eUk1R0FfSnJFSnpTZWFpbXp0clp3bk5qdmpkUXZvNmRscGNmMEZwT2tRa0wxSnlYMVdXQjlFTWdCSTdxcnJrQUJ0enhIUUNSTTlBRXpSZl9idm9BWVJHd0JEZUtCU1ZURHJiWm9WLUJWbHhVMDF1bld6eUR3RTZfcHBzcmVWV0xWcW5ZbkxPMDJYbHFCWGt0NWpFaWfSAdQBQVVfeXFMTktKX2hHUUZ1dUZYZzJlUmJJbVc1MG9ueXgya3UxdWFnbExGam9LV2pqZGU0YUhXUTJNQ0tmdnkyR05TN2x2bE1ORGI4MnZ0dUVvM0JkVFVxOXRxWjZlc3pEaFhSaDJsOGctRlB0cEs1TjB6V21iMk5ISXAzVjJQTWdFbFRQZ2gxd3pIemRIa0FsNnNldjRzWnNYMnp1eVdSOHFvWHVMTFdRS09lVkdPTEhTYk50eWxUR0NFeW42V1FqbUJTX1VJREJWWV9sTDZMSmJyaFI?oc=5",
+          "published": "2026-11-26T13:32:34-06:00",
+          "date": "2026-11-26",
+          "label": "Nov 26, 2026 1:32 PM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:6a97879962a1d2f3",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Devdiscourse",
+          "sourceId": "headline",
+          "title": "Mexico's central bank raises 2026 growth forecast - Devdiscourse",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNSllLWkI0Rl9rZ3htMll3b3N1NzlyMzdOUGZhLUV6ZXpLaVByV3dZaFlVSVpVYzhmdTZfVGdtRnVBTWhCbnpPRkV5T3BnMmxHQmJQUWVZRWo3aHBKZ1I1eUpVUm1aempGZFhtblA5R1lRb3NEdGwwSjJQOGt4Z2Rob0NTdEhmVl95VUpfTmRnVHFaVm11bTlTOG5oRGRGSjZ3MzMzYjAyMGpKdFplT2pKMdIBsAFBVV95cUxNSllLWkI0Rl9rZ3htMll3b3N1NzlyMzdOUGZhLUV6ZXpLaVByV3dZaFlVSVpVYzhmdTZfVGdtRnVBTWhCbnpPRkV5T3BnMmxHQmJQUWVZRWo3aHBKZ1I1eUpVUm1aempGZFhtblA5R1lRb3NEdGwwSjJQOGt4Z2Rob0NTdEhmVl95VUpfTmRnVHFaVm11bTlTOG5oRGRGSjZ3MzMzYjAyMGpKdFplT2pKMQ?oc=5",
+          "published": "2026-11-26T12:57:16-06:00",
+          "date": "2026-11-26",
+          "label": "Nov 26, 2026 12:57 PM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:917390541dc8dbde",
+          "kind": "headline",
+          "lane": "news",
+          "source": "TradingView",
+          "sourceId": "headline",
+          "title": "Bank Of Canada Governor Hints At December Rate Hike - TradingView",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQd3R3WjdNTlhMMUwxZ1J6MnlEMkdseDVzVUVaQXUtVU0zQUFlZmdubHUwWm9RRXpMRWVGNFE0MXY5NUVqVW4xU2FyY3pYRkxaWGNIR0JXNGJEcVA2QW0yUVlja0dXczV6RkZaVDBOdzRUUVNUZXBIeGc1MG1YcGVwNms0a1lMVVlDS2o5a0tvb243SGZiN251NlNuMGpuWXdYVnVpWW1NRUFIRVpPX1VRUw?oc=5",
+          "published": "2026-11-26T08:02:59-06:00",
+          "date": "2026-11-26",
+          "label": "Nov 26, 2026 8:02 AM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:937f0e92ecbae17e",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Bloomberg",
+          "sourceId": "headline",
+          "title": "All of Canada’s Big Six Banks Now See December Rate Hike - Bloomberg",
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOQVRvaXZTZ0xxRVE0RzZ6M3FBcHhsbnIwVWQ4b0E5Uzl2WTY2VENGM1ZDTGlBUHgzaE1jaTU2eTVsNVhLRFVEUF9Ec05HUEZ6RkN5M3k3NFdMeUZJSDg3SjlMbzYyUnFPWHpDY3d2NkQ3Vk5GM2o2LWJSdHQ5OEtWRUtuOUh2cnRPN2t4YjhyT0V0d0JodjJzSkV1UGtkRTgycmFyLTZOTzJoSGM?oc=5",
@@ -1084,27 +1189,6 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:52bdff34459f4474",
-          "kind": "headline",
-          "lane": "news",
-          "source": "BNN Bloomberg",
-          "sourceId": "headline",
-          "title": "Falling global oil prices could mean inflation ends below forecast, Bank of Canada says - BNN Bloomberg",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPT1NwZUhEUk1EN0VUT1dwa2U0cXQwY3JTMm11NXRsVS1mNUFfZ0ZrYXZldVdZbmRoektXRGo4NWI5d3VwUFNsRHJ6XzVHZ1h3Yl93OFY2QlFDODJUdzZpRlBkNXVGYW9KOTY2SEQ4bG1QZWE1WklQZDNMM3pZd0ZQR1BkZHZua1IxOGx1bGU5Mk1qTUZBWE0xM0FpMFhVdUFmT0JVclFkenZqZ2hESHNoMEREZjlHRzNEZ2c1QlRSSGh1QWpWc1BjR3FZcXhqckpNZV9J?oc=5",
-          "published": "2026-11-25T05:47:32-06:00",
-          "date": "2026-11-25",
-          "label": "Nov 25, 2026 5:47 AM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
           "id": "headline:8decc7d6fe5e5d88",
           "kind": "headline",
           "lane": "news",
@@ -1147,12 +1231,33 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:617d77a88ac508c7",
+          "id": "headline:52bdff34459f4474",
           "kind": "headline",
           "lane": "news",
-          "source": "Bloomberg",
+          "source": "BNN Bloomberg",
           "sourceId": "headline",
-          "title": "Bank of Canada Fades Core Inflation, Switches Gauges - Bloomberg",
+          "title": "Falling global oil prices could mean inflation ends below forecast, Bank of Canada says - BNN Bloomberg",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPT1NwZUhEUk1EN0VUT1dwa2U0cXQwY3JTMm11NXRsVS1mNUFfZ0ZrYXZldVdZbmRoektXRGo4NWI5d3VwUFNsRHJ6XzVHZ1h3Yl93OFY2QlFDODJUdzZpRlBkNXVGYW9KOTY2SEQ4bG1QZWE1WklQZDNMM3pZd0ZQR1BkZHZua1IxOGx1bGU5Mk1qTUZBWE0xM0FpMFhVdUFmT0JVclFkenZqZ2hESHNoMEREZjlHRzNEZ2c1QlRSSGh1QWpWc1BjR3FZcXhqckpNZV9J?oc=5",
+          "published": "2026-11-24T15:35:31-06:00",
+          "date": "2026-11-24",
+          "label": "Nov 24, 2026 3:35 PM CT",
+          "weekday": "Tue",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:266e4383c6d445de",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Bloomberg.com",
+          "sourceId": "headline",
+          "title": "Bank of Canada Fades Core Inflation, Switches Gauges - Bloomberg.com",
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOUVJ3MVdLQjc0eVhETnJBR0xUWUp6UjVhMmtFcnQ5aEdBV2VqbnlNZkdlSnpMOENIYnNNWHV5X3kzVThaWjE2MXhVMXJnV0o3STlZRzdXWF9fMk9KWHhMMXliUXoyR1V6dHpISkVDbk14ODJWZGE4amhMNlZFMDZvNVRjT3pFUFdsZWlvbm0tcnNRVE1Eb0loSmw4VUZLa2VCbzZDTg?oc=5",
@@ -1441,6 +1546,27 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:9247f5422f9637dc",
+          "kind": "headline",
+          "lane": "news",
+          "source": "McKinsey & Company",
+          "sourceId": "headline",
+          "title": "Global Economics Intelligence executive summary (October 2026) - McKinsey & Company",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPSmgzTkdja3YzVE1LaEtHbGFYak1oUU9Pei1CR1AwOW4wak5uY3hRQk0wb1o1SWhObGhxTUZDaEZqSUZ0TjdqUS1Ed3hwclZJRi1YV0RLQzZIY3paTzR3R2l0dkp5TkhLYVdXbm5NREhjc0lSazNjRmhJNlc4Y0Z5c2d0MWZ0WWNqNVhWRjFIRUdnWHJvaEYzdmp6NnV3cXd3bjdybm9EVTN4TEgwdUJsVA?oc=5",
+          "published": "2026-11-23T18:00:00-06:00",
+          "date": "2026-11-23",
+          "label": "Nov 23, 2026 6:00 PM CT",
+          "weekday": "Mon",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:0a249cdb923db9e5",
           "kind": "headline",
           "lane": "news",
@@ -1691,149 +1817,18 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:8a301ddd0332de55",
-          "kind": "headline",
-          "lane": "news",
-          "source": "WSJ",
-          "sourceId": "headline",
-          "title": "Canada Retail Sales Pull Back After 0.8% Rise in September - WSJ",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQSl92MlFqS1VzUVh4M242bVBlRHFSaVMxTzBac0hWU1B0WlZXUEhTZVk5Tm16UDBVVmZwVXF2T2tmaUVIMUNtZkxyUUY5a0d1MlVCMXdDekJDck52eEJ2bnNLTnJUN251cGY4MldGWHhGZG9iWnVHb09DaDR3WmJ5UFBQSENPN2JNNnk5WjJNbEE5d1BMUHZ2OVg3eHFZcVUyLThlaDRiUQ?oc=5",
-          "published": "2026-11-20T10:30:00-06:00",
-          "date": "2026-11-20",
-          "label": "Nov 20, 2026 10:30 AM CT",
-          "weekday": "Fri",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:f6dd42c16846fc8a",
-          "kind": "headline",
-          "lane": "news",
-          "source": "nesto.ca",
-          "sourceId": "headline",
-          "title": "Mortgage Rates Forecast Canada 2026-2030 - nesto.ca",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE12LW9MRGhnV0thQk5NbFJibFFESWRpOTBSM3p3dGVXSWY3UGRiem1ZQzdwX2U0MVFTTDYwdWZ6Qm1rUmZITnFfNW92SDNad0pjT3RhOHNoYzRSSkhZM1F6Yi12TjNnb0gteXR2dFJOeWJJZXlVUndv?oc=5",
-          "published": "2026-11-19T15:55:37-06:00",
-          "date": "2026-11-19",
-          "label": "Nov 19, 2026 3:55 PM CT",
-          "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:c67390db43704146",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Baker Institute",
-          "sourceId": "headline",
-          "title": "Why Banking Competition Matters for Mexico’s Economic Growth - Baker Institute",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQWnJHajZCakM5SlZYak1aOWFiaXpoaEZSNUdVai03WmpNQWRhZ3RLSnJIU1lOQXBXQkJxbU1EV0dGMWg2NGhySktNS0lTOGZDRjZtSU5TSHlJZVVkNUtIclRQMW9kdU1hckswRnFNN2x4TmVYR28xbmZrZVhVSWNIbUFkdk5Mc3M5V2dfMUVJOGF5OHFtcGZIUktOcw?oc=5",
-          "published": "2026-11-19T15:18:26-06:00",
-          "date": "2026-11-19",
-          "label": "Nov 19, 2026 3:18 PM CT",
-          "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:ec2f28e2b93a40a8",
-          "kind": "headline",
-          "lane": "news",
-          "source": "The Globe and Mail",
-          "sourceId": "headline",
-          "title": "Memo to Tiff Macklem: Stop hiking interest rates or risk ruining this economy and stock market - The Globe and Mail",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQTXpablhlZmt5LXVITlhkVkEzTWJPOTBHcXNfckVjNW9sclpzRDVNdDJLbUVWclJPZDM2aHI2bzZYLUJ2dXBGY1FUQ1VMU3lwRTR4Y0FWV1EyMWN4S0xHWDlPLUFqMDhlTFhkMlluVEZoLTVad205QVo1SFktcG4yWnZXQXZibG4xS1pmdVBRWVFpRDdnQXJDcy1kMGZNMUFpYTE2cWxpZ1JNNkc2VXd0N3RfNGJJTE9ESldSWUFxc2pOLXM?oc=5",
-          "published": "2026-11-18T17:43:30-06:00",
-          "date": "2026-11-18",
-          "label": "Nov 18, 2026 5:43 PM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:c00e5dbc219b4cf9",
-          "kind": "headline",
-          "lane": "news",
-          "source": "SSBCrack",
-          "sourceId": "headline",
-          "title": "Bank of Canada to use scenarios to communicate economic uncertainty and guide policy decisions - SSBCrack",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNOVdWRkZHTUhuYjhRWEVyYTV2T1FuMmFXelN1aUtid3ZhSFpfMGJUckVOcFNseXFCcGhqSlVBRmI2aHZMYnBQb2MyT1YtWUVmQXZSVjVzVk1mc2hqcmp2VTdWa2FVTWt0QXQ4Y2ozb0dOUE9XTTBxQ1preUhnN1BXSGR5QVI2ejZqbGU5Zm5IV2dKcXRLVWF1T0RIR0lNLVh0cU9BRGxiUVMwV05KQVdpUEg0c1BhMmFjYkhSWm1R?oc=5",
-          "published": "2026-11-18T16:14:14-06:00",
-          "date": "2026-11-18",
-          "label": "Nov 18, 2026 4:14 PM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:33ae64cfd8f502bb",
-          "kind": "headline",
-          "lane": "news",
-          "source": "BigGo Finance",
-          "sourceId": "headline",
-          "title": "Bank of Canada Publishes More Scenarios as Trade Shocks Cloud Outlook, Gravelle Says - BigGo Finance",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBjWXk1ZjZxU2h3TGNfNWhkZFdpdEV1X2ZKd0ppTmpHLUZ6MnpENjhzeG11UWJwVTRIbG9NZzkwTDRKR29PSTRRTWJZc1R1SzA1M096MFEwVTFfQkFVN2xUUzJUWHhiVU4xUGVkbXNZc1p5RHFvN2c?oc=5",
-          "published": "2026-11-18T15:05:00-06:00",
-          "date": "2026-11-18",
-          "label": "Nov 18, 2026 3:05 PM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ],
       "spikes": [
         {
           "topic": "inflation",
-          "outlets": 12,
+          "outlets": 11,
           "state": "RISING",
           "links": [
             {
               "title": "Bank Of Canada Maintains 2% Inflation Target - TradingView",
               "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPSkthNkNZdXFrZG8za2FfVk9PaFNYa003NUtQZTZNUTFORjc4cUo5Uk15bE5BYTBlVHZtejM1NTBzZC1JY3hfOXN5UWxZelVRVVBrLVBEM1FvY3RFcXFDTGlXN0NORnVsSGg5d0VPWUNINkJtNU5jdWdqT2JsUm9HRWZUUXpCdGxfOWtIQlZQV3ExNGJvSzBSeHI0d0tHVTM3OURZOXdn?oc=5",
               "source": "TradingView"
-            },
-            {
-              "title": "Falling global oil prices could mean inflation ends below forecast, Bank of Canada says - BNN Bloomberg",
-              "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPT1NwZUhEUk1EN0VUT1dwa2U0cXQwY3JTMm11NXRsVS1mNUFfZ0ZrYXZldVdZbmRoektXRGo4NWI5d3VwUFNsRHJ6XzVHZ1h3Yl93OFY2QlFDODJUdzZpRlBkNXVGYW9KOTY2SEQ4bG1QZWE1WklQZDNMM3pZd0ZQR1BkZHZua1IxOGx1bGU5Mk1qTUZBWE0xM0FpMFhVdUFmT0JVclFkenZqZ2hESHNoMEREZjlHRzNEZ2c1QlRSSGh1QWpWc1BjR3FZcXhqckpNZV9J?oc=5",
-              "source": "BNN Bloomberg"
             },
             {
               "title": "Bank of Canada Warns of Broadening Inflation; Bonds Decline - Bloomberg.com",
@@ -1844,6 +1839,11 @@
               "title": "Bank of Canada expects 2nd round of oil-linked inflation in 2027, Macklem says - CBC",
               "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOSGQ0dkVVaHR2dHpPWVBhUnlIb3d5Y2dJaE5SbW9NNnhCYkJQRHJVOFNIMklxSXdoVllXVVlJemwtVHVpT3p1RTRaZDE5S296S1lKN3BmTWQ1MEd6REVXclhlUS01VEtBNThzbVJKMzQtTVAyeE5tS2FZN3dGYWctQzJnVTVhRVdFUWNz?oc=5",
               "source": "CBC"
+            },
+            {
+              "title": "Falling global oil prices could mean inflation ends below forecast, Bank of Canada says - BNN Bloomberg",
+              "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPT1NwZUhEUk1EN0VUT1dwa2U0cXQwY3JTMm11NXRsVS1mNUFfZ0ZrYXZldVdZbmRoektXRGo4NWI5d3VwUFNsRHJ6XzVHZ1h3Yl93OFY2QlFDODJUdzZpRlBkNXVGYW9KOTY2SEQ4bG1QZWE1WklQZDNMM3pZd0ZQR1BkZHZua1IxOGx1bGU5Mk1qTUZBWE0xM0FpMFhVdUFmT0JVclFkenZqZ2hESHNoMEREZjlHRzNEZ2c1QlRSSGh1QWpWc1BjR3FZcXhqckpNZV9J?oc=5",
+              "source": "BNN Bloomberg"
             }
           ],
           "title": "Bank Of Canada Maintains 2% Inflation Target - TradingView"
@@ -1866,9 +1866,9 @@
             }
           ],
           "holidays": [],
-          "level": 173329.5,
-          "change": 6644.5,
-          "changePct": 3.99,
+          "level": 176799.84,
+          "change": 10114.84,
+          "changePct": 6.07,
           "asOf": "2026-11-26",
           "source": "https://finance.yahoo.com/quote/%5EBVSP"
         }
@@ -2001,12 +2001,12 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:38539e29677491eb",
+          "id": "headline:297f4ce616485afa",
           "kind": "headline",
           "lane": "news",
-          "source": "Bloomberg",
+          "source": "Bloomberg.com",
           "sourceId": "headline",
-          "title": "B3 to Add Brazil Stocks Listed Abroad to Aid Ailing Local Market - Bloomberg",
+          "title": "B3 to Add Brazil Stocks Listed Abroad to Aid Ailing Local Market - Bloomberg.com",
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQUG1rRURHNlg3dFRKb3VqSW5zeWo5blBTeU1qcjRnaW1wUmxSSmhKRW5VNE5lVXAtb21scEI5UDVoQ01BX3dkMGNtZVZRSi1yRERLUnJmdHBnWHZ6TW96Rk9VSVBNMWw5ckFkUHQ0RDBTdnN0dHI3VW5Odm9pNV9mcUMxU054d2cwLUN6UUJ6Q3RBdGRIMGRIdUNhRWdmR1gweExyLWhocjd3a2MxWVYxZ1A5bVM1UQ?oc=5",
@@ -3425,6 +3425,48 @@
       ],
       "headlines": [
         {
+          "id": "headline:a2ae03d38b7d0d6e",
+          "kind": "headline",
+          "lane": "news",
+          "source": "South China Morning Post",
+          "sourceId": "headline",
+          "title": "Opinion | Shenzhen’s Apec legacy: China’s shift from recognition to responsibility - South China Morning Post",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPWFNZRGFrdjR2dE1NdUtuUEVNS0UzaW9PQ2VvWGYwZlZZV0dSUmdIa2RXQlQ3YlJkXzlPQ014dGhVLVFYa0lyZTB3eEtteU5waUh6NzltbURNdGZWbGNxWUVuLTZYSHgwaWFjVGRyTER6UnRTRkFkOFAtVzRlZkMzMVV0bldWRXRZVldrSWxGeUNWZjVHVDNpeHhhcUtoM3hJY2lHelAzNlc0aDUyWktsd29CbURBcEhoRnQxX9IBvAFBVV95cUxPaTJsMGcwTUx4T0g5WGgwYVkzcUg2RFZPSl9JUzJEOVZTV19Ca1hfc2FtRnBXX3EzOVdPTmdoSGVuTHJuYUhyOVFPN3hjbE5YNlNrODlnbUtRb3FQMk1MUUdKVHRsX01tT1ZCTVh1a3pyRUZvdzd1Sncza2oxZWx4YjByb3ZzeDlmUjlVTDE1aDFpVmt3VTluUHlkWjc0YjY4eWNhVld0UXVHVnA1eU9SN3BFWk1tU2RwNkdLeg?oc=5",
+          "published": "2026-11-26T06:30:10-06:00",
+          "date": "2026-11-26",
+          "label": "Nov 26, 2026 6:30 AM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:f037832ff3d4b149",
+          "kind": "headline",
+          "lane": "news",
+          "source": "IOL",
+          "sourceId": "headline",
+          "title": "Sharing the benefits of openness to promote common prosperity - IOL",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQY2ZMRllJM3RDQXR6OXk0cTFrOXRoUl9EVno1eTdqQVhJUy1fbDBFU2c0bkZUeUR5NTh2ZWUycEp1YzM0QTc1UU5aYzRfSWo1N3o4RmVRWDZFUDRXdjlRVjVIQ21VTHZGTDcyYWhBenR4SHRQa19pME9iQW9Ha0h1M2N5RDl6aUpNQVdBbUE5WWllUnFWMjliNHpDT0QybUU5aGFmZjhRbFhzWjk4S2htM3JrVjV3ZW8?oc=5",
+          "published": "2026-11-26T01:51:52-06:00",
+          "date": "2026-11-26",
+          "label": "Nov 26, 2026 1:51 AM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:3fddf9490753c92f",
           "kind": "headline",
           "lane": "news",
@@ -4221,48 +4263,6 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:788c07cd0b39fa42",
-          "kind": "headline",
-          "lane": "news",
-          "source": "China Daily",
-          "sourceId": "headline",
-          "title": "Shanghai, Singapore deepen cooperation with 16 agreements - China Daily",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxORzJ4dkNvaUFKLWRVQ1c2UWU0RGFtVV9CV1hOVVBQQ3hRWU1MRW9Vb2lqLVVFRU1wSDVlWUE4X3IzOUctY1E3RUxSVzZEOVBWSnFJZlZ1YUxST0Jhak9OMzVGd2tBT0NGUk0tV3JpUjItWGtlbHZ6WV9Sb2EwZk14cw?oc=5",
-          "published": "2026-11-19T21:22:38-06:00",
-          "date": "2026-11-19",
-          "label": "Nov 19, 2026 9:22 PM CT",
-          "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:0ae91266029ab5ed",
-          "kind": "headline",
-          "lane": "news",
-          "source": "China Daily",
-          "sourceId": "headline",
-          "title": "Closer APEC ties to unleash more growth potential - China Daily",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1jMVc2SHFjTHM0cUlIcDdTNllNNXBmaDRpamgzNnNjOVBsMURVVEJhNDZ3d3VfYXBJdGVWT28xanpEbm1pQURlblBpdmNVc1BCLW5NN28waGNLQnUteVdwVnBjRkdiRGRJRk95cU01TTNzdWQtRlgxbGJwT1hFZw?oc=5",
-          "published": "2026-11-19T19:59:28-06:00",
-          "date": "2026-11-19",
-          "label": "Nov 19, 2026 7:59 PM CT",
-          "weekday": "Thu",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ],
       "spikes": []
@@ -4292,18 +4292,39 @@
       ],
       "headlines": [
         {
-          "id": "headline:242dd8264f506689",
+          "id": "headline:74ba43cac68bb8cf",
           "kind": "headline",
           "lane": "news",
           "source": "The New York Times",
           "sourceId": "headline",
-          "title": "Europe Assembles a New Team to Steer Its Economy - The New York Times",
+          "title": "European Central Bank Chooses Pablo Hernández de Cos as Next President - The New York Times",
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOcldadmZ3enZsMDN0X3N2VXJsUnhGSjR6N1VHek1HU0kzdmhFanM2cExXa3lxZ2pvUFhULTlaZFlQQ2c3Nzc2RWtmdVA0SWt6RndQckRRRHg3ZW9iYlBwODdGeHd1OXNGbmwzQ2lxaGh5ZnA2VThsbW5nLUtocnRsaA?oc=5",
-          "published": "2026-11-26T10:29:52-06:00",
+          "published": "2026-11-26T13:41:34-06:00",
           "date": "2026-11-26",
-          "label": "Nov 26, 2026 10:29 AM CT",
+          "label": "Nov 26, 2026 1:41 PM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:b83362f104997bfe",
+          "kind": "headline",
+          "lane": "news",
+          "source": "CNN",
+          "sourceId": "headline",
+          "title": "European Central Bank set to appoint its first Spanish leader - CNN",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOXzZnS2tTME93WGtEeHFtb3VqQVBTb3g0eWFoa19jV3ByclEwTjh0em8wZC1OLXgxWVJ6WWlPV1BMVkRoeERyMU41Q2FuMi1QdV9Cd3JXS1k5VDVmV0kzLVV3QjdFXzhtbEM4S2NWZzhEUVl5cjVlazVwRjVxNTlzd2tzbHR3T3lp?oc=5",
+          "published": "2026-11-26T10:44:35-06:00",
+          "date": "2026-11-26",
+          "label": "Nov 26, 2026 10:44 AM CT",
           "weekday": "Thu",
           "timeKnown": true,
           "tags": [
@@ -4410,6 +4431,27 @@
           "date": "2026-11-26",
           "label": "Nov 26, 2026 8:20 AM CT",
           "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:0e900aa736b9e6e0",
+          "kind": "headline",
+          "lane": "news",
+          "source": "www.tmgm.com",
+          "sourceId": "headline",
+          "title": "Euro Holds Steady Below 1.1000 Against USD as Markets Await ECB Accounts for Direction - www.tmgm.com",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNT1ZRVS1Odkh6RzhGclFad2UzUEJLaXoycWtPNWpZSjgtTnNiWjNmV3BtdU9sN3lLMkJWcDZpVjFjZy1HeG1YQ1ZCX05UWngxY1JqU1dHVGFZbE9PUzh6dW83Z3M1cWpkODNremROVU1lNmpNVmx6Vm9nWXVaRXhiLWRkZi1CbDlkRmNnNHB2OXZPTTUzR1Uyd2VWTVlmNFR4cGNHWGxsMFlpSFlTZVpZbDM0NGEyMWpYVHlUWmhqay1rc3pqOTNmSXVIc2pNbVpuanhVa1ZNeDYtZw?oc=5",
+          "published": "2026-11-25T22:46:41-06:00",
+          "date": "2026-11-25",
+          "label": "Nov 25, 2026 10:46 PM CT",
+          "weekday": "Wed",
           "timeKnown": true,
           "tags": [
             "headline",
@@ -5081,48 +5123,6 @@
           "published": "2026-11-20T11:15:13-06:00",
           "date": "2026-11-20",
           "label": "Nov 20, 2026 11:15 AM CT",
-          "weekday": "Fri",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:393a9b671cf17fc5",
-          "kind": "headline",
-          "lane": "news",
-          "source": "POLITICO.eu",
-          "sourceId": "headline",
-          "title": "France and Germany complete political deal for ECB leadership - POLITICO.eu",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQaXdLTndYc0J0SENSN3ZLSDR2Z1ZUVjB3cTFITXVPeVBFcERkNWktaWVPTElwNXhqUXhmdlhLOUxPQmh0ejB5OVlVN2N6d0dzX3hKb21NNzlsa0Z2UlRVMndUdjNLY0ZNalBrTkVsNGNvWkptS2RfcGNYTkJDVW5UTlRNZFRXU0xTYnQyTG1FXzNzb0J0?oc=5",
-          "published": "2026-11-20T10:50:00-06:00",
-          "date": "2026-11-20",
-          "label": "Nov 20, 2026 10:50 AM CT",
-          "weekday": "Fri",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:48f368ce31295d75",
-          "kind": "headline",
-          "lane": "news",
-          "source": "Bloomberg.com",
-          "sourceId": "headline",
-          "title": "France Picks Boone to Run Markets at ECB in Pivotal Crisis Role - Bloomberg.com",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNZGhiUWRuSXN6LXdVbk9KTFQzb1hYa1dKVHBNMmdVSnF2TzVYalZ6bm96WVh3VXJCbTNTa2d3czJNckhHSWktODFqbHJCdEIxQllMWl93aXRsYzgyUjFlX2lZSlh5Uk5GTEV6S1hUZlR6V1NLcmkxaVltY0xIU0ZORkpVR1NUeUk4TEx0VG5aZ3NaU29QTUFFUFozWko1YVM2Zl9zX3piYUFkdl9reTBfLUYxcVA?oc=5",
-          "published": "2026-11-20T10:41:48-06:00",
-          "date": "2026-11-20",
-          "label": "Nov 20, 2026 10:41 AM CT",
           "weekday": "Fri",
           "timeKnown": true,
           "tags": [
@@ -6087,6 +6087,27 @@
       ],
       "headlines": [
         {
+          "id": "headline:9e79dbae03e2f2c8",
+          "kind": "headline",
+          "lane": "news",
+          "source": "investingLive",
+          "sourceId": "headline",
+          "title": "Tokyo CPI preview: core inflation seen jumping to 3% three weeks before BoJ decision - investingLive",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOOHF4cTNXZ2w4MUtRdm9zZ0trOVcyWnFCOVpkdFFlU1F3cHJ3Vy1qeEdHeWRqaWxUbnJWNC14NDJnbVRSWE41RXhWRkd2cWJoMHdqN0NuSml3TFFULUJkVzJGUmo4MlRBRlR1YWlQOTJ0VkVCa0xySTU1QjF6eUNvVDkzWklkODhTdmdGYUgwNXp5djRCY2lFUURkVGlaRGQ3cWZlVXJOMlNYR2JHZGFNLTkzQ19TODBEc3dKM2hTNEc?oc=5",
+          "published": "2026-11-26T15:01:59-06:00",
+          "date": "2026-11-26",
+          "label": "Nov 26, 2026 3:01 PM CT",
+          "weekday": "Thu",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:1e291d9b2e610ef2",
           "kind": "headline",
           "lane": "news",
@@ -6162,6 +6183,27 @@
           "published": "2026-11-24T18:35:00-06:00",
           "date": "2026-11-24",
           "label": "Nov 24, 2026 6:35 PM CT",
+          "weekday": "Tue",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:7b74b66bde42b853",
+          "kind": "headline",
+          "lane": "news",
+          "source": "Briefs Finance",
+          "sourceId": "headline",
+          "title": "JGBs Rally as Nikkei Soars After Nvidia Leadership Return - Briefs Finance",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQSkdsMEM2Z2E2SkgxWkx4dS1fbXBNQ2FxUEZuRi1tcEM3d0tqNmRWbS1LZjh5QjlHWXo3dVNnR3RaRExVYUJubXBKUlY4NDVOREdCbXdVZk5VTXJreGRpcG52YmRLNVRwX3ZrWlo1RnlyTjkyR3czVk0wOTlyS3ZXMTFsSHItdjlqZjdCTkxpQQ?oc=5",
+          "published": "2026-11-24T03:15:00-06:00",
+          "date": "2026-11-24",
+          "label": "Nov 24, 2026 3:15 AM CT",
           "weekday": "Tue",
           "timeKnown": true,
           "tags": [
@@ -6360,6 +6402,27 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:292cf4ce80b599a4",
+          "kind": "headline",
+          "lane": "news",
+          "source": "MLQ.ai",
+          "sourceId": "headline",
+          "title": "BOJ's Ueda tells parliament the drop in consumption was within expectations and repeats that the bank will keep raising rates - MLQ.ai",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNYzlkSndMbG5YM2VVRVZMcVBYdDFBN1BRcktFb0hyUjVpVjFJSzd6VkVYbjhuVHhZX3NMbHNqSnl4bXJxZ2p2RTVjVjNoMmthaUdEVndjRWExVHV5SkxIbkZtTU5obkpQZlhFbEptVlhIc2FtX255bXRSVnF3d2pnR3RLX1RRNGc4NWtIX2pjLVBqb0oxUXV2aFFsVFZPd09STjFaZTdZc3RoQ1FJbG8xV3d1ZFpUc09sVkVjX3cwZjAtalpXMDE2U0FnMWlnR3cteEZ0eFNYU0FFMzZnSXc?oc=5",
+          "published": "2026-11-18T23:01:46-06:00",
+          "date": "2026-11-18",
+          "label": "Nov 18, 2026 11:01 PM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:3b05a731d1d3c6c2",
           "kind": "headline",
           "lane": "news",
@@ -6372,27 +6435,6 @@
           "published": "2026-11-18T16:54:34-06:00",
           "date": "2026-11-18",
           "label": "Nov 18, 2026 4:54 PM CT",
-          "weekday": "Wed",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:88d352f94536ad99",
-          "kind": "headline",
-          "lane": "news",
-          "source": "investingLive",
-          "sourceId": "headline",
-          "title": "BOJ tipped to hike to 1.50% in December, its first three-hike year in 37 years - investingLive",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPWlNOZUJVaWRlU19qc1ptTXM0QmkwNEVyM2F5dXJERjdMRlY5ZTZMcm1fY3N3T1dURDJIM1hoRy1NdEZRRnpvY3F6ekVScG0tY21ibUxVdmJMUmM3Vk4zSG9kX3RMbXUzcWVvaFp2WVBlaS02ZlBrZjdYM1J3eDlmVU8tUktOZUxyUHhFOW5oblFPSnhTcWhKYWdSeHhJdElxcERTWnFDdlhuX2xkYlhvVVdIQmRGbE5f?oc=5",
-          "published": "2026-11-18T16:26:25-06:00",
-          "date": "2026-11-18",
-          "label": "Nov 18, 2026 4:26 PM CT",
           "weekday": "Wed",
           "timeKnown": true,
           "tags": [
@@ -6423,6 +6465,27 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:88d352f94536ad99",
+          "kind": "headline",
+          "lane": "news",
+          "source": "investingLive",
+          "sourceId": "headline",
+          "title": "BOJ tipped to hike to 1.50% in December, its first three-hike year in 37 years - investingLive",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPWlNOZUJVaWRlU19qc1ptTXM0QmkwNEVyM2F5dXJERjdMRlY5ZTZMcm1fY3N3T1dURDJIM1hoRy1NdEZRRnpvY3F6ekVScG0tY21ibUxVdmJMUmM3Vk4zSG9kX3RMbXUzcWVvaFp2WVBlaS02ZlBrZjdYM1J3eDlmVU8tUktOZUxyUHhFOW5oblFPSnhTcWhKYWdSeHhJdElxcERTWnFDdlhuX2xkYlhvVVdIQmRGbE5f?oc=5",
+          "published": "2026-11-18T02:00:00-06:00",
+          "date": "2026-11-18",
+          "label": "Nov 18, 2026 2:00 AM CT",
+          "weekday": "Wed",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:02902a96369393a1",
           "kind": "headline",
           "lane": "news",
@@ -6432,10 +6495,10 @@
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQMWZhN0FfLWRQRkZyOFBVd09SVUNOMnFKWkQtVzB6S2dWRDdiQWtfMGlwNGJPaHlRWWNudUVyZU9kdGxGemRmVG93N1FlSm0zY3ZaT29wNVNPd1M0Uk1fVlRvamhNTm5NdXdOMFEyMGtjS25yWUNYVGpVeTM2SzRVM1J6bmRabzMyNm1QYlFOVDNLbUE0VWhRRV9PX0FhOVVOVVRsMGVwV2QyRXc?oc=5",
-          "published": "2026-11-17T23:16:46-06:00",
-          "date": "2026-11-17",
-          "label": "Nov 17, 2026 11:16 PM CT",
-          "weekday": "Tue",
+          "published": "2026-11-18T02:00:00-06:00",
+          "date": "2026-11-18",
+          "label": "Nov 18, 2026 2:00 AM CT",
+          "weekday": "Wed",
           "timeKnown": true,
           "tags": [
             "headline",
@@ -6549,27 +6612,6 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:8726bd18b870b8d4",
-          "kind": "headline",
-          "lane": "news",
-          "source": "TradingKey",
-          "sourceId": "headline",
-          "title": "Kospi Slumps 2% Below 5,000, Nikkei Drops for Fourth Day; Kioxia Plunges Over 5%, Samsung and SoftBank Fall Over 3% - TradingKey",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOTno4Z1VJZEt1VmRDTENjZlNZa01xaHlOdTBmV2R6NF9KWF9mSFlqa3BlVTBQWGtldXlaN04wclVONmF3YVQ3VHZSTnY0SGpqVnBtZC1rTHlvSlkzeW5IYzRlOHhCQUpEUFlEX2FsZlFOVWxzS2FwbVk3RWh4UzF2dFpIbmNOWTZtcV9vWFVGMFV3bFFZbTNncjVkSjlZVHZJaDhpOWNZUXhQNEsxTkJ5Y3lYYVRLckhuMjlKNjVIZURjeVVMQ0owRDU5X0pJZ0c4aTBXSWpMYWcwaGkxR2Vv?oc=5",
-          "published": "2026-11-17T01:11:38-06:00",
-          "date": "2026-11-17",
-          "label": "Nov 17, 2026 1:11 AM CT",
-          "weekday": "Tue",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
           "id": "headline:98e02a8ac2d06c4e",
           "kind": "headline",
           "lane": "news",
@@ -6633,6 +6675,27 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:8726bd18b870b8d4",
+          "kind": "headline",
+          "lane": "news",
+          "source": "TradingKey",
+          "sourceId": "headline",
+          "title": "Kospi Slumps 2% Below 5,000, Nikkei Drops for Fourth Day; Kioxia Plunges Over 5%, Samsung and SoftBank Fall Over 3% - TradingKey",
+          "guest": "",
+          "note": "",
+          "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOTno4Z1VJZEt1VmRDTENjZlNZa01xaHlOdTBmV2R6NF9KWF9mSFlqa3BlVTBQWGtldXlaN04wclVONmF3YVQ3VHZSTnY0SGpqVnBtZC1rTHlvSlkzeW5IYzRlOHhCQUpEUFlEX2FsZlFOVWxzS2FwbVk3RWh4UzF2dFpIbmNOWTZtcV9vWFVGMFV3bFFZbTNncjVkSjlZVHZJaDhpOWNZUXhQNEsxTkJ5Y3lYYVRLckhuMjlKNjVIZURjeVVMQ0owRDU5X0pJZ0c4aTBXSWpMYWcwaGkxR2Vv?oc=5",
+          "published": "2026-11-16T02:00:00-06:00",
+          "date": "2026-11-16",
+          "label": "Nov 16, 2026 2:00 AM CT",
+          "weekday": "Mon",
+          "timeKnown": true,
+          "tags": [
+            "headline",
+            "standby"
+          ],
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:8c5ea0ee11a928ab",
           "kind": "headline",
           "lane": "news",
@@ -6642,9 +6705,9 @@
           "guest": "",
           "note": "",
           "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNZmtWNGo0ZFQybHg5NDBhMmxTd1d6ZTZ6QkJFTWpNaVlnenFMVFpuR0c4VHlZR2JzSjBwLWVGNzh6SDVYMWNyQnN6dDlCaGI0clVrczQ3cURUT0pyZG9jMWtkaXMyTElFamZYZXNkNEtJTl9kNVZpQnhuWmw5YzhzTGYyXzc5a0VmMmhralJsOFpxdVFyVGsyeHpWQ1BsY2ZnWHZSZmcyS0FxeS1WcUVab0ZBSjUtSVhUVGFv?oc=5",
-          "published": "2026-11-16T09:30:32-06:00",
+          "published": "2026-11-16T02:00:00-06:00",
           "date": "2026-11-16",
-          "label": "Nov 16, 2026 9:30 AM CT",
+          "label": "Nov 16, 2026 2:00 AM CT",
           "weekday": "Mon",
           "timeKnown": true,
           "tags": [
@@ -6862,77 +6925,19 @@
             "standby"
           ],
           "severity": "STANDBY"
-        },
-        {
-          "id": "headline:c987aa3d5985263d",
-          "kind": "headline",
-          "lane": "news",
-          "source": "investingLive",
-          "sourceId": "headline",
-          "title": "Japan economy shrinks 0.1% in Q3, first fall in 4 quarters as inflation hits households - investingLive",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQdU9sMjNub1pTd01xZUptNDZRNUc1S1R2ZFZVeENBTmNWUnh5SXB2eVRPOEVqZ1RXZzU2XzRtaEE0RDI4dHc0TTNJVWhOWmFrZGlJaEVRTnpROWI0SnBzcUF4OE1GaHJFYVozMklyUUY1TE5xNUo0cWdnaHRWY21vWDU1TUhUckVjWW83UTZ3N0ZGc1U0czA4QU5ZYUpMNkcxTGRYTjc2Y1ZfOVlZMEJzc3NyWEZPUGxz?oc=5",
-          "published": "2026-11-15T02:00:00-06:00",
-          "date": "2026-11-15",
-          "label": "Nov 15, 2026 2:00 AM CT",
-          "weekday": "Sun",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:b7e8b9a0e277fcef",
-          "kind": "headline",
-          "lane": "news",
-          "source": "BigGo Finance",
-          "sourceId": "headline",
-          "title": "Japan's Economy Stalls in Q3 as Weak Yen, Middle East Conflict Fuel Inflation; BOJ December Rate Hike Expected - BigGo Finance",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1OT3BHYXo0SzBmZkcwQlhHMjNfZG9yMWlRSG82U05iZTVQdHlvcFo2VWljaDhwbFViWWRwVVN4WGg3U0JZeUEtODVuVkt6dFE5RXdGQzNqZ2FNNTloZmdhbk14cUZySkViSHk0QzF4bGstS3d5a2c?oc=5",
-          "published": "2026-11-15T02:00:00-06:00",
-          "date": "2026-11-15",
-          "label": "Nov 15, 2026 2:00 AM CT",
-          "weekday": "Sun",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:1ad567b24fd80695",
-          "kind": "headline",
-          "lane": "news",
-          "source": "investingLive",
-          "sourceId": "headline",
-          "title": "Japan Q3 GDP shrinks 0.1% annualised vs +0.3% expected as exports and consumers weigh - investingLive",
-          "guest": "",
-          "note": "",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPOFZxX3FIbkJGcjF5R216cFJpbEpYOUFhUEdVdzRCS0xHR3ZrRmh6clpYNUZGdmc5VkRvTUk0RGN6RW93Q3lXcjJra25jSnZpOVlpSHA4NTZuX1EzZC1NSTQwZzdwZExTNmJ4VWNQT2RSeV84bXJlV3A3cjVFbnRNbW1aa1lkT2gxblExMGdlSHJiZ3Y1MTNwN0FidHFGVDJTUnJoX2twYW8wazkzWll0c1hCSkc?oc=5",
-          "published": "2026-11-15T02:00:00-06:00",
-          "date": "2026-11-15",
-          "label": "Nov 15, 2026 2:00 AM CT",
-          "weekday": "Sun",
-          "timeKnown": true,
-          "tags": [
-            "headline",
-            "standby"
-          ],
-          "severity": "STANDBY"
         }
       ],
       "spikes": [
         {
           "topic": "inflation",
-          "outlets": 5,
+          "outlets": 4,
           "state": "RISING",
           "links": [
+            {
+              "title": "Tokyo CPI preview: core inflation seen jumping to 3% three weeks before BoJ decision - investingLive",
+              "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOOHF4cTNXZ2w4MUtRdm9zZ0trOVcyWnFCOVpkdFFlU1F3cHJ3Vy1qeEdHeWRqaWxUbnJWNC14NDJnbVRSWE41RXhWRkd2cWJoMHdqN0NuSml3TFFULUJkVzJGUmo4MlRBRlR1YWlQOTJ0VkVCa0xySTU1QjF6eUNvVDkzWklkODhTdmdGYUgwNXp5djRCY2lFUURkVGlaRGQ3cWZlVXJOMlNYR2JHZGFNLTkzQ19TODBEc3dKM2hTNEc?oc=5",
+              "source": "investingLive"
+            },
             {
               "title": "What Could Stall Japan's December Rate Hike? Look Beyond Inflation - BeInCrypto",
               "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5ybWhBLWJHSktFOXJvQndOMmczYnc1NFVfaVAyOVpkX1owLWxhWjU3ay1GTFVJNDhrSDBOTFVpZTZIbFpuRHJkY1Zwb3Nxal9ZWHlCQTR0ZlRBcFRsd0ZXemNpUEdYMGFDOEE?oc=5",
@@ -6947,14 +6952,32 @@
               "title": "BOJ's Takata calls for early rate hikes to curb inflation risks - The Economic Times",
               "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPdExVV255cjRzVExMalZvUkJYTTI4Z0ZlWTJTN1FOdjRvVFV5Z2RkdWJ5RS1YUENENnhBTHJ1bmFkLW9yTGFjMUtkX1R3SlpHOGFPdG5pNmI3X0ZPMm02VGdPaFRNenhTVkpBR1l3eDFPOGE5YjZYVG95QnM5T0FYc1ZLRzR5WE4xdFctemFLcHF1NjhyQ2dfYnZnM1JJdDMzOHRrR1FTV0ppYWhlWFVra284Z1VWREpUQ01aT3lBaHpDTXZQRHJrN3NpY0x3TW94Z21USDg5OWhRdFpNbzl4cUR5ZE1wcEHSAewBQVVfeXFMTi1La2FrRDQtNHl4cDBGem5uYU01aE5DRFNNT3JNb2hWYUxpX01mZG95aExPSHFYMnhRU2I0dFdYbUN2N2pCVWw0TDdZT1g2dmVsaTJLRkNKODYwamVuSTVraGFORkZiWXlfN2trMmNxdjdXV1ZXMFZ3NkhpV1h6SUxnc29tamI3dHZPOXA4X3BHUTlhSXU4eW5fYXNMZEk0MDRLb0pPbmJZYTZDRHhKcmYzN0tieDNla2R3V01vM3ROWVF6WmU2T0xwTWhzV0hjZnRiZWV3eTNIbjFVVGF4aEhRZkkxanFrbXB5YVo?oc=5",
               "source": "The Economic Times"
-            },
-            {
-              "title": "Japan economy shrinks 0.1% in Q3, first fall in 4 quarters as inflation hits households - investingLive",
-              "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQdU9sMjNub1pTd01xZUptNDZRNUc1S1R2ZFZVeENBTmNWUnh5SXB2eVRPOEVqZ1RXZzU2XzRtaEE0RDI4dHc0TTNJVWhOWmFrZGlJaEVRTnpROWI0SnBzcUF4OE1GaHJFYVozMklyUUY1TE5xNUo0cWdnaHRWY21vWDU1TUhUckVjWW83UTZ3N0ZGc1U0czA4QU5ZYUpMNkcxTGRYTjc2Y1ZfOVlZMEJzc3NyWEZPUGxz?oc=5",
-              "source": "investingLive"
             }
           ],
-          "title": "What Could Stall Japan's December Rate Hike? Look Beyond Inflation - BeInCrypto"
+          "title": "Tokyo CPI preview: core inflation seen jumping to 3% three weeks before BoJ decision - investingLive"
+        },
+        {
+          "topic": "Nvidia",
+          "outlets": 3,
+          "state": "RISING",
+          "links": [
+            {
+              "title": "JGBs Rally as Nikkei Soars After Nvidia Leadership Return - Briefs Finance",
+              "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQSkdsMEM2Z2E2SkgxWkx4dS1fbXBNQ2FxUEZuRi1tcEM3d0tqNmRWbS1LZjh5QjlHWXo3dVNnR3RaRExVYUJubXBKUlY4NDVOREdCbXdVZk5VTXJreGRpcG52YmRLNVRwX3ZrWlo1RnlyTjkyR3czVk0wOTlyS3ZXMTFsSHItdjlqZjdCTkxpQQ?oc=5",
+              "source": "Briefs Finance"
+            },
+            {
+              "title": "KOSPI leads gains as Asian stocks diverge following Nvidia earnings - www.tmgm.com",
+              "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPX2l0cTQ2QUhnVDNzMkJQRjFhbnQ3ZlJVTG82amd1RC16QmFzNnVob1VQQTUySWpPYllQZk12SUJoY2Z3cm9DZFFOUmxTTEZYei1jVFlLanpxXzZSVFotVEFXQlhWbWxpSVN2b3RhaGJiVjQ0dHpiaU52M3RaM2JVY3IzNEQtTzNrTUFNZ3NKeEpZZmxhYURZR2U0d2h5QW5UdVhhYkFKY2t0Vk1VRFc5M3VnbEpjakJrMVNmUEx0N3IwdnRQNnFjVzh0OA?oc=5",
+              "source": "www.tmgm.com"
+            },
+            {
+              "title": "Asian stocks trade mixed after Nvidia earnings, KOSPI leads gains - FXStreet",
+              "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQMWZhN0FfLWRQRkZyOFBVd09SVUNOMnFKWkQtVzB6S2dWRDdiQWtfMGlwNGJPaHlRWWNudUVyZU9kdGxGemRmVG93N1FlSm0zY3ZaT29wNVNPd1M0Uk1fVlRvamhNTm5NdXdOMFEyMGtjS25yWUNYVGpVeTM2SzRVM1J6bmRabzMyNm1QYlFOVDNLbUE0VWhRRV9PX0FhOVVOVVRsMGVwV2QyRXc?oc=5",
+              "source": "FXStreet"
+            }
+          ],
+          "title": "JGBs Rally as Nikkei Soars After Nvidia Leadership Return - Briefs Finance"
         }
       ]
     },

@@ -11995,7 +11995,7 @@
     },
     {
       "date": "2026-11-26",
-      "label": "Nov 26, 2026 12:56 PM CT",
+      "label": "Nov 26, 2026 4:23 PM CT",
       "outlooks": [
         {
           "id": "quake:df4be4887a047082",
@@ -12044,6 +12044,11 @@
         },
         {
           "id": "nws:0893eda78fab3b02",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "gdacs:8af48de85e1a1704",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "STANDBY"
         },
@@ -12133,7 +12138,7 @@
           "severity": "ALERT"
         },
         {
-          "id": "headline:261d7177be908387",
+          "id": "headline:0de66f630e02dff4",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "STANDBY"
         },
@@ -12158,18 +12163,18 @@
           "severity": "STANDBY"
         },
         {
+          "id": "headline:a7317a58957d6e1c",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
           "id": "cyber:7114826ff72afc5c",
           "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
           "severity": "STANDBY"
         },
         {
-          "id": "headline:bc8d04f27c34ffd0",
-          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:5d179f1cbdc1d2ff",
-          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "id": "headline:30e363bbe46a0113",
+          "outlook": "First reading. Watch the next 72 hours.",
           "severity": "STANDBY"
         },
         {
@@ -12178,22 +12183,32 @@
           "severity": "ALERT"
         },
         {
+          "id": "headline:0c8d97c28f2fdf57",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
           "id": "headline:e8e2adc80c942465",
           "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
           "severity": "STANDBY"
         },
         {
-          "id": "headline:05030e524a90b82f",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:9ae1c881d2394b64",
-          "outlook": "First reading. Watch the next 72 hours.",
+          "id": "headline:1cfec0aff90cddb7",
+          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
           "severity": "STANDBY"
         },
         {
           "id": "headline:32fae8aac86477e4",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:ac51c2d040b99ab2",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:2c71a9b51798f9b2",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "STANDBY"
         },
@@ -12208,23 +12223,18 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:93b2aaf7b4312b3e",
+          "id": "headline:fe942e4801937827",
           "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
           "severity": "STANDBY"
         },
         {
-          "id": "headline:1a550e52825a7fb7",
+          "id": "headline:928e58103ae3abb1",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "STANDBY"
         },
         {
-          "id": "headline:bb6cff923c122d0c",
-          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:fe942e4801937827",
-          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "id": "headline:5da5518f47304170",
+          "outlook": "First reading. Watch the next 72 hours.",
           "severity": "STANDBY"
         },
         {
@@ -12238,13 +12248,18 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:8a08d0603bb97968",
-          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "id": "headline:68a80c9a9328022b",
+          "outlook": "First reading. Watch the next 72 hours.",
           "severity": "STANDBY"
         },
         {
           "id": "headline:138e783f2a18cddb",
           "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:c90af5b6ef04a0b2",
+          "outlook": "First reading. Watch the next 72 hours.",
           "severity": "STANDBY"
         },
         {
@@ -12258,12 +12273,7 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:ffbfc2ed6517c7aa",
-          "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:59a30da158a71eaf",
+          "id": "headline:9ea87f93ccb7d50b",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "STANDBY"
         },
@@ -12273,12 +12283,12 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:aee0775d994972a4",
+          "id": "headline:e3cb3b73023123fd",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "STANDBY"
         },
         {
-          "id": "headline:63e77d9b0f930858",
+          "id": "headline:af4dc89f4f3706be",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "STANDBY"
         },
@@ -12313,9 +12323,14 @@
           "severity": "STANDBY"
         },
         {
-          "id": "headline:6eb94e82f389d616",
+          "id": "headline:f083b07dfa9ffa17",
           "outlook": "First reading. Watch the next 72 hours.",
           "severity": "STANDBY"
+        },
+        {
+          "id": "headline:e2c07d9687a20801",
+          "outlook": "First reading. Watch the next 72 hours.",
+          "severity": "ALERT"
         },
         {
           "id": "headline:3f7de9541eae49ec",
@@ -12326,16 +12341,6 @@
           "id": "headline:1126a8afc0efe03f",
           "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
           "severity": "ALERT"
-        },
-        {
-          "id": "headline:939fe9e3c016d4a2",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "STANDBY"
-        },
-        {
-          "id": "headline:c6a39a5b152afbc2",
-          "outlook": "First reading. Watch the next 72 hours.",
-          "severity": "STANDBY"
         },
         {
           "id": "headline:ecac1a4c96e1c6cd",
@@ -12350,6 +12355,11 @@
         {
           "id": "headline:4a0a59402e13a295",
           "outlook": "Steady versus yesterday. No 72-hour escalation in the stored record.",
+          "severity": "STANDBY"
+        },
+        {
+          "id": "headline:8be6910a02075421",
+          "outlook": "First reading. Watch the next 72 hours.",
           "severity": "STANDBY"
         }
       ],
@@ -12413,6 +12423,12 @@
           "kind": "nws",
           "severity": "STANDBY",
           "title": "Special Weather Statement"
+        },
+        {
+          "id": "gdacs:8af48de85e1a1704",
+          "kind": "gdacs",
+          "severity": "STANDBY",
+          "title": "Earthquake in Japan"
         },
         {
           "id": "gdacs:4714e6ec11944405",
@@ -12517,10 +12533,10 @@
           "title": "An unclassified CIA system was breached in a cyberattack, AP source says - Federal News Network"
         },
         {
-          "id": "headline:261d7177be908387",
+          "id": "headline:0de66f630e02dff4",
           "kind": "cyber",
           "severity": "STANDBY",
-          "title": "Equinor thwarts cyberattack as separate intrusion at Skagerak Energi raises concerns across Norway’s energy sector - Industrial Cyber"
+          "title": "Chinese-nexus actor’s Cairn AI agents found a zero-day on their own | Amazon Web Services - Amazon Web Services (AWS)"
         },
         {
           "id": "cyber:5293f29ca050f3ec",
@@ -12547,22 +12563,22 @@
           "title": "Florida ransomware recovery CEO indicted for allegedly paying hacker ransoms"
         },
         {
+          "id": "headline:a7317a58957d6e1c",
+          "kind": "cyber",
+          "severity": "STANDBY",
+          "title": "Cyberattack exposes unclassified information from CIA system, US media reports - France 24"
+        },
+        {
           "id": "cyber:7114826ff72afc5c",
           "kind": "cyber",
           "severity": "STANDBY",
           "title": "Plagiarism Checker Turnitin Investigating Cyberattack"
         },
         {
-          "id": "headline:bc8d04f27c34ffd0",
+          "id": "headline:30e363bbe46a0113",
           "kind": "cyber",
           "severity": "STANDBY",
-          "title": "Suspected cyberattack targets city of El Cajon - NBC 7 San Diego"
-        },
-        {
-          "id": "headline:5d179f1cbdc1d2ff",
-          "kind": "cyber",
-          "severity": "STANDBY",
-          "title": "USDA hit with cyberattack: Sources - ABC News - Breaking News, Latest News and Videos"
+          "title": "Important Notice of Data Breach for ECM/HOME Team Clients - Nevada County (.gov)"
         },
         {
           "id": "headline:516bd6dfbeafd855",
@@ -12571,28 +12587,40 @@
           "title": "Deadly mass shooting in Poland investigated as terror act, prosecutor says - ABC News - Breaking News, Latest News and Videos"
         },
         {
+          "id": "headline:0c8d97c28f2fdf57",
+          "kind": "war-ukraine",
+          "severity": "STANDBY",
+          "title": "Russian attack damaged St. Volodymyr's Cathedral in Kyiv: blast wave shattered windows in sanctuary - Ukranews"
+        },
+        {
           "id": "headline:e8e2adc80c942465",
           "kind": "war-ukraine",
           "severity": "STANDBY",
           "title": "Russian missile hit south-east Poland during attack on Ukraine, no-one hurt: Warsaw - The New Indian Express"
         },
         {
-          "id": "headline:05030e524a90b82f",
+          "id": "headline:1cfec0aff90cddb7",
           "kind": "war-iran",
           "severity": "STANDBY",
-          "title": "Iran says army targets U.S. drone and missile sites in Kuwait as Gulf attacks mount - CNBC"
-        },
-        {
-          "id": "headline:9ae1c881d2394b64",
-          "kind": "war-iran",
-          "severity": "STANDBY",
-          "title": "Iran launches a third round of strikes on Bahrain, host of U.S. Navy's 5th Fleet - NPR"
+          "title": "Iran widens Gulf attacks by targeting U.S. air base in Kuwait and sites in Bahrain - PBS"
         },
         {
           "id": "headline:32fae8aac86477e4",
           "kind": "usgov",
           "severity": "STANDBY",
           "title": "Midterm Elections 2026: Congress Polls, Charts and More - NBC News"
+        },
+        {
+          "id": "headline:ac51c2d040b99ab2",
+          "kind": "israel",
+          "severity": "STANDBY",
+          "title": "Israel’s Eisenkot takes steps towards replacing Netanyahu - Financial Times"
+        },
+        {
+          "id": "headline:2c71a9b51798f9b2",
+          "kind": "war-ukraine",
+          "severity": "STANDBY",
+          "title": "Trump, NATO chief caution Russia as attacks on Ukraine’s energy infrastructure intensify - CNBC"
         },
         {
           "id": "headline:6a199e5223933b9d",
@@ -12607,28 +12635,22 @@
           "title": "Opposition Makes Progress Toward Ousting Netanyahu, Party Leader Says - The New York Times"
         },
         {
-          "id": "headline:93b2aaf7b4312b3e",
-          "kind": "israel",
-          "severity": "STANDBY",
-          "title": "Eisenkot, pushing to oust Netanyahu, sharpens warnings over new Iran strikes - The Washington Post"
-        },
-        {
-          "id": "headline:1a550e52825a7fb7",
-          "kind": "israel",
-          "severity": "STANDBY",
-          "title": "Israel’s Eisenkot secures first coalition partner in bid to form government - Al Jazeera"
-        },
-        {
-          "id": "headline:bb6cff923c122d0c",
-          "kind": "diplomacy",
-          "severity": "STANDBY",
-          "title": "Reaffirmed at the UN, cut in Berlin, London and Paris: The 0.7% Target and the G7 - Global Policy Journal"
-        },
-        {
           "id": "headline:fe942e4801937827",
           "kind": "war-iran",
           "severity": "STANDBY",
           "title": "Congress’s Options for Ending the Iran War - Lawfare"
+        },
+        {
+          "id": "headline:928e58103ae3abb1",
+          "kind": "diplomacy",
+          "severity": "STANDBY",
+          "title": "G7 finance ministers look to rein in tech giants at French meeting - Yeni Safak English"
+        },
+        {
+          "id": "headline:5da5518f47304170",
+          "kind": "attack",
+          "severity": "STANDBY",
+          "title": "Streamlight ProTac HP-X & HP-X USB – where range matters most - MILMAG"
         },
         {
           "id": "headline:c96d219ff0863ff7",
@@ -12643,16 +12665,22 @@
           "title": "2026 National Thanksgiving Turkey Pardon - The White House (.gov)"
         },
         {
-          "id": "headline:8a08d0603bb97968",
+          "id": "headline:68a80c9a9328022b",
           "kind": "windstorm",
           "severity": "STANDBY",
-          "title": "Portugal’s Interior Minister defends storm Charles precautions - The Portugal News"
+          "title": "Portugal Weather Today (11 November): Storm Charles - Portugal on Red Alert - The Portugal News"
         },
         {
           "id": "headline:138e783f2a18cddb",
           "kind": "climate",
           "severity": "STANDBY",
           "title": "Why COP31 climate talks collapsed and what to expect next - Atlantic Council"
+        },
+        {
+          "id": "headline:c90af5b6ef04a0b2",
+          "kind": "war-iran",
+          "severity": "STANDBY",
+          "title": "Rubio meets Qatari PM as Iran standoff deepens - Al-Monitor"
         },
         {
           "id": "headline:7dfd9dec55fbc5f7",
@@ -12667,16 +12695,10 @@
           "title": "NATO to meet after Russia-Ukraine war once again inches onto European territory - NPR"
         },
         {
-          "id": "headline:ffbfc2ed6517c7aa",
-          "kind": "climate",
-          "severity": "STANDBY",
-          "title": "Climate change talks fall apart in final hours over fossil fuels - NPR"
-        },
-        {
-          "id": "headline:59a30da158a71eaf",
+          "id": "headline:9ea87f93ccb7d50b",
           "kind": "usgov",
           "severity": "STANDBY",
-          "title": "Trump initially accepted the midterm results, but most GOP voters doubt they were fair - NPR"
+          "title": "Trump auditions potential successors as Rubio and Vance join him for White House briefing - PBS"
         },
         {
           "id": "headline:6c3ce9eee0199b2f",
@@ -12685,16 +12707,16 @@
           "title": "Cost of living protests sweep across Europe - BBC"
         },
         {
-          "id": "headline:aee0775d994972a4",
-          "kind": "war-ukraine",
+          "id": "headline:e3cb3b73023123fd",
+          "kind": "diplomacy",
           "severity": "STANDBY",
-          "title": "Two-Thirds of Americans Disapprove of Trump’s Handling of the Russia-Ukraine War - Pew Research Center"
+          "title": "User Clip: Rank 1 - Trump News Conference Opening, Nov 20 2026 - C-SPAN"
         },
         {
-          "id": "headline:63e77d9b0f930858",
-          "kind": "war-ukraine",
+          "id": "headline:af4dc89f4f3706be",
+          "kind": "israel",
           "severity": "STANDBY",
-          "title": "Ukraine Facility: Council approves largest-ever payment of €8 billion to Kyiv - Council, European Union"
+          "title": "Washington Policy Weekly: Senators Push to Remove US-Israel Defense Cooperation Provisions from NDAA - Arab Center Washington DC"
         },
         {
           "id": "neo:9934e838c1539fdc",
@@ -12733,10 +12755,16 @@
           "title": "Doomsday Clock"
         },
         {
-          "id": "headline:6eb94e82f389d616",
+          "id": "headline:f083b07dfa9ffa17",
           "kind": "global",
           "severity": "STANDBY",
-          "title": "Was Japan Prime Minister Takaichi Snubbed at China’s Big Summit? - The New York Times"
+          "title": "Global climate summit collapses as countries fail to agree on moving away from fossil fuels - CNN"
+        },
+        {
+          "id": "headline:e2c07d9687a20801",
+          "kind": "global",
+          "severity": "ALERT",
+          "title": "Was Japan’s Leader Snubbed at China’s Big Summit? A Visual Evaluation. - The New York Times"
         },
         {
           "id": "headline:3f7de9541eae49ec",
@@ -12749,18 +12777,6 @@
           "kind": "global",
           "severity": "ALERT",
           "title": "EU plans sports ban in sweeping new Russia sanctions proposal - Al Jazeera"
-        },
-        {
-          "id": "headline:939fe9e3c016d4a2",
-          "kind": "global",
-          "severity": "STANDBY",
-          "title": "Israel intensifies assassinations in Gaza as US urges Netanyahu to proceed with ceasefire plan - CNN"
-        },
-        {
-          "id": "headline:c6a39a5b152afbc2",
-          "kind": "global",
-          "severity": "STANDBY",
-          "title": "Russia and Ukraine Hold First Exchange of War Dead Since Rebooted Peace Talks - The Moscow Times"
         },
         {
           "id": "headline:ecac1a4c96e1c6cd",
@@ -12779,6 +12795,12 @@
           "kind": "global",
           "severity": "STANDBY",
           "title": "India-UK investment treaty talks stall, pact unlikely soon, officials say - Reuters"
+        },
+        {
+          "id": "headline:8be6910a02075421",
+          "kind": "global",
+          "severity": "STANDBY",
+          "title": "North Korea expels Swiss diplomat over sanctions weeks after office reopening - Reuters"
         }
       ],
       "trends": [
