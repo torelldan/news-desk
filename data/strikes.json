@@ -7,21 +7,72 @@
   "items": [
     {
       "country": "Kuwait",
+      "date": "2026-11-27",
+      "links": [
+        {
+          "source": "CBS News",
+          "title": "Iran accused of deadly drone attack in Kuwait that sparks EU call to step up pressure on Tehran - CBS News",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE05bmJOWEtxU1hnYmlGcXV2cHM2SzlfUnBhVUk3QklXMzFEd3Eyd1BhRmhORDBNM21BZmhfMnZObENxQTB4QWFDWnJwX0xhdnFUQmVkT1FSYnlBWUNsc0dtc1hVZTk5eDBMbEJDV2hNcl9qN2tEX2Q0RUl6N3pFdw?oc=5"
+        }
+      ],
+      "means": "drone",
+      "published": "2026-11-27T04:07:00-06:00",
+      "related": 1,
+      "relatedSources": [
+        "EnergyNow.com"
+      ],
+      "severity": "STANDBY",
+      "source": "CBS News",
+      "sourceCount": 2,
+      "target_type": "military",
+      "title": "Iran accused of deadly drone attack in Kuwait that sparks EU call to step up pressure on Tehran - CBS News",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE05bmJOWEtxU1hnYmlGcXV2cHM2SzlfUnBhVUk3QklXMzFEd3Eyd1BhRmhORDBNM21BZmhfMnZObENxQTB4QWFDWnJwX0xhdnFUQmVkT1FSYnlBWUNsc0dtc1hVZTk5eDBMbEJDV2hNcl9qN2tEX2Q0RUl6N3pFdw?oc=5"
+    },
+    {
+      "country": "Iran",
+      "date": "2026-11-26",
+      "links": [
+        {
+          "source": "Reuters",
+          "title": "Australia sanctions alleged Iranian agents suspected of directing antisemitic attacks - Reuters",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNSHBtblZnbWZBQUo5LVNGb2sxQkpHOFdJTGI0YlozM0YxUGh0bnZkLWZOeWJrMFBoX0h3aGNkTEtCVVA3Zjg0WEpuYi1MdjBEa2dKVDg3Rk5yWFJCNEs1NDFnYTRrVmpJeVQ1Y1lMR0daaDItcWczSEhzT3VfVTRxVno4Zm9HVGdTN2RDT2NtYmk5NlZqTGJnekNMSTI5dERMY1dZaFpFUy1IM01aVUFjbzI3MDEteXFNS2FvaEhFLTJhZnBvRTVRbzln?oc=5"
+        }
+      ],
+      "means": "",
+      "published": "2026-11-26T21:17:00-06:00",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "STANDBY",
+      "source": "Reuters",
+      "sourceCount": 1,
+      "target_type": "military",
+      "title": "Australia sanctions alleged Iranian agents suspected of directing antisemitic attacks - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNSHBtblZnbWZBQUo5LVNGb2sxQkpHOFdJTGI0YlozM0YxUGh0bnZkLWZOeWJrMFBoX0h3aGNkTEtCVVA3Zjg0WEpuYi1MdjBEa2dKVDg3Rk5yWFJCNEs1NDFnYTRrVmpJeVQ1Y1lMR0daaDItcWczSEhzT3VfVTRxVno4Zm9HVGdTN2RDT2NtYmk5NlZqTGJnekNMSTI5dERMY1dZaFpFUy1IM01aVUFjbzI3MDEteXFNS2FvaEhFLTJhZnBvRTVRbzln?oc=5"
+    },
+    {
+      "country": "Kuwait",
       "date": "2026-11-26",
       "links": [
         {
           "source": "Al Jazeera",
           "title": "Two Italians killed by ‘drone strike debris’ in Kuwait - Al Jazeera",
           "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNTTJLR040dFNoUlFYaVk0RF9CMUp2d1drUlVYVkNXWGQ4MldxM0VFTE52MDMzTHNXVmpFVEZjeGUteHlCY00zWjFNcFVVX1ZWOWhLSE9GeF9tRGE2bWVVd1l4eHVtY3hUc0dnN19rbVZfN0k4cUtZcTRwQlgzbXF5NUZmM242RmU2UGVXR2tGRHM1RUNOMF9qdVZDTjBFZFZDOWp1blozM3lhU1VXcVhR0gG0AUFVX3lxTFBoVDAzRnVkN1JNUEliazROM0hQamFsWVF0a3lxZXBISlcwOFhoWndKNnlDU1JVMzZWVXM1aVVLRm1aQXNNOU45bnZIVHlqcUg2R2hCbHY4bEtHaEFqS2dmY0RmUlpRMG9MRTZoZTYxMDRLLXhaLWtla2dzNWY1b0xzMU15R0dlVkdJTW9EeFNHYkdRN0RwT2llT2ZWUVlKQ3IwS1ZrRWRHSXdwMUdGZGVkcjF0WA?oc=5"
+        },
+        {
+          "source": "WSJ",
+          "title": "Iranian Drone Attack Kills Two Italians in Kuwait - WSJ",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPR0JXYTAzOTNnajlLczdFM0FKUXdjbHlSLUFPRlhHQWpXaV9JRnQzNGRETWR6c1pWM3hQZnptczZaQVZqeExWa1JqdFRDWlJDcUItNEVra09WVEFfSDlSUm1nT3B3SUVZRGZHMTdieHlaSDhBWDdvMUhTVjJ0eTZmbFlfWHM2MUYyYnpHNWtFcTg3Q2JndEw4LTl3MHg?oc=5"
         }
       ],
       "means": "drone",
-      "published": "2026-11-26T10:43:19-06:00",
-      "related": 0,
-      "relatedSources": [],
+      "published": "2026-11-26T21:04:58-06:00",
+      "related": 1,
+      "relatedSources": [
+        "WSJ"
+      ],
       "severity": "ALERT",
       "source": "Al Jazeera",
-      "sourceCount": 1,
+      "sourceCount": 2,
       "target_type": "military",
       "title": "Two Italians killed by ‘drone strike debris’ in Kuwait - Al Jazeera",
       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNTTJLR040dFNoUlFYaVk0RF9CMUp2d1drUlVYVkNXWGQ4MldxM0VFTE52MDMzTHNXVmpFVEZjeGUteHlCY00zWjFNcFVVX1ZWOWhLSE9GeF9tRGE2bWVVd1l4eHVtY3hUc0dnN19rbVZfN0k4cUtZcTRwQlgzbXF5NUZmM242RmU2UGVXR2tGRHM1RUNOMF9qdVZDTjBFZFZDOWp1blozM3lhU1VXcVhR0gG0AUFVX3lxTFBoVDAzRnVkN1JNUEliazROM0hQamFsWVF0a3lxZXBISlcwOFhoWndKNnlDU1JVMzZWVXM1aVVLRm1aQXNNOU45bnZIVHlqcUg2R2hCbHY4bEtHaEFqS2dmY0RmUlpRMG9MRTZoZTYxMDRLLXhaLWtla2dzNWY1b0xzMU15R0dlVkdJTW9EeFNHYkdRN0RwT2llT2ZWUVlKQ3IwS1ZrRWRHSXdwMUdGZGVkcjF0WA?oc=5"
@@ -147,55 +198,6 @@
       "target_type": "military",
       "title": "Russian drone flies into Poland during overnight strikes on Ukraine, Warsaw says - ABC News - Breaking News, Latest News and Videos",
       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPeUIxeHFScUhhcU90TUF6dTgxVkN2TUJEWTU0SnNuMjR1Wk5LQkRueXd1azNuVW9iS3QzbjJVazB5MDBieFNEQUhVcEJGcjFYVkhuMDhGckREMWxoVC0wMDV6TXBjN3hqYlJiYVRJbHdRMHZncEQ3NGRUMFFYN1N2VXRYUkVZTjdSLUVtZEhfcUk0aWp1RTcyN0ZpOHg2al9aWnFLUEF0NWtxWXktWmR4ZlpB0gG3AUFVX3lxTE45dDBKR2VtY0ZMRU5UVDFrUE5iaFdkb0xET1h3ZFRRTEpLOWZ6S3ZXalJldE52WkF2cndyQlZRWVQyNjVYTHNWdFZheHJWNTJ0aU5tSjZZT3d2ZjNwbkhURWx4MHFNYUJPbGNhay1DN2xERkg5a1hXN2ZnYjM2LXVCVmhaaGNPTmNaMy1GNFZMUlV6Y1RJbmx2OElKbldXWmNPM0hqeEtqWlV1Y1hOblRQV0Z2a1R6aw?oc=5"
-    },
-    {
-      "country": "Russia",
-      "date": "2026-11-23",
-      "links": [
-        {
-          "source": "Al Jazeera",
-          "title": "Ukraine claims drone strikes on Russian ships off Libya: What do we know? - Al Jazeera",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQYjA5Vkd4bTB6NXROUWJMSjlIM3FVaFhEejlrd0cyUDBJeUtwVTk3YkRGSjMzcHh4RFVBR0xlZm5uMy1vWWVSRUJIb29ZTk00Vl80amk5bHQ0M0ZDOVgwODhZYXByMGp2b3M2bnF4ekV2WGJBSzBHWWJGMnN5Qml6SVNLNWNhV1RKMmZ0NWRJYXIxcUZtTXU3YUx1MWpvU1RtQmlj0gGoAUFVX3lxTE50VUxhLVBnZTZyZHZWZHVaTTV3Qk1fcnJYQlJQMmRqTGxVWFRBbk5VeFpEcVBoREgtVWRZanpaWG5LYm9pRzlPY3NIQnVOX0ZvcWJrNmNmT2JlTmdiNHp6OV93cGVxdGxDeTQ3RGxfakZPc1h2V3hfRkp2TUFnTjNVejh1emVGRi1WZ3Y5ZDlPQlNKc1VrcW1LUURjRGgtWVZZQnpqZHNRYw?oc=5"
-        },
-        {
-          "source": "NPR",
-          "title": "Zelenskyy hails Ukraine's attack on a Russian warship docked at a naval base in Libya - NPR",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQS2RQU25hVGVUaGQ1cEM3WmFqLVphcjhqTHBMcUllODNJcFBzNy1oRWZUZXdsSXQ5aWZpQjY2UEw1ODJXRnRXSjlPT1RtVlZKRVJBUG5JOV9LOXZ4UG8xdWNSTVFDb2pSdVh0QnZLQWhIdUV0ZF9qN1dOYWFhTlpxcENJY1VFdw?oc=5"
-        }
-      ],
-      "means": "drone",
-      "published": "2026-11-23T07:30:44-06:00",
-      "related": 1,
-      "relatedSources": [
-        "NPR"
-      ],
-      "severity": "STANDBY",
-      "source": "Al Jazeera",
-      "sourceCount": 2,
-      "target_type": "military",
-      "title": "Ukraine claims drone strikes on Russian ships off Libya: What do we know? - Al Jazeera",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQYjA5Vkd4bTB6NXROUWJMSjlIM3FVaFhEejlrd0cyUDBJeUtwVTk3YkRGSjMzcHh4RFVBR0xlZm5uMy1vWWVSRUJIb29ZTk00Vl80amk5bHQ0M0ZDOVgwODhZYXByMGp2b3M2bnF4ekV2WGJBSzBHWWJGMnN5Qml6SVNLNWNhV1RKMmZ0NWRJYXIxcUZtTXU3YUx1MWpvU1RtQmlj0gGoAUFVX3lxTE50VUxhLVBnZTZyZHZWZHVaTTV3Qk1fcnJYQlJQMmRqTGxVWFRBbk5VeFpEcVBoREgtVWRZanpaWG5LYm9pRzlPY3NIQnVOX0ZvcWJrNmNmT2JlTmdiNHp6OV93cGVxdGxDeTQ3RGxfakZPc1h2V3hfRkp2TUFnTjNVejh1emVGRi1WZ3Y5ZDlPQlNKc1VrcW1LUURjRGgtWVZZQnpqZHNRYw?oc=5"
-    },
-    {
-      "country": "Sudan",
-      "date": "2026-11-23",
-      "links": [
-        {
-          "source": "Al Jazeera",
-          "title": "Drone attacks kill four near Sudan’s capital, damage UN building - Al Jazeera",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE95V2lBM1hDaWY4eHByMlh4RnpLTkhIOVBtQnFXMHM3R0hfV2lxZEZSNTNBbEg5cHowV2VobnNxU3VnZzlTMU16alVwNjJ0XzBNNlRCVElvdEFkVkV0RFhSV3ZvV2FUQThMSzdqLXVYNDBIeWxmTHpjd3FwUncwME3SAYQBQVVfeXFMUGo3NGlSR1RUbFN2RGd1QkNpQUV3YlpOOGhNc2lvYWs1WVVEbmpJNjVBanY2Mk1LZWFvLWJCLVdYU0pqaFRLUGNHYi1wM2J0cGdqSkVUQkRlbGo4bEh3SENuQjRFUC1uSms0TDJCR19UU21VSEk3b2I0UmR5NVdWTjFIdjFS?oc=5"
-        }
-      ],
-      "means": "drone",
-      "published": "2026-11-23T03:57:03-06:00",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "source": "Al Jazeera",
-      "sourceCount": 1,
-      "target_type": "military",
-      "title": "Drone attacks kill four near Sudan’s capital, damage UN building - Al Jazeera",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE95V2lBM1hDaWY4eHByMlh4RnpLTkhIOVBtQnFXMHM3R0hfV2lxZEZSNTNBbEg5cHowV2VobnNxU3VnZzlTMU16alVwNjJ0XzBNNlRCVElvdEFkVkV0RFhSV3ZvV2FUQThMSzdqLXVYNDBIeWxmTHpjd3FwUncwME3SAYQBQVVfeXFMUGo3NGlSR1RUbFN2RGd1QkNpQUV3YlpOOGhNc2lvYWs1WVVEbmpJNjVBanY2Mk1LZWFvLWJCLVdYU0pqaFRLUGNHYi1wM2J0cGdqSkVUQkRlbGo4bEh3SENuQjRFUC1uSms0TDJCR19UU21VSEk3b2I0UmR5NVdWTjFIdjFS?oc=5"
     }
   ]
 }

@@ -6,25 +6,25 @@
   ],
   "items": [
     {
-      "action": "Read the source. No kit change unless you are in the named area.",
+      "action": "no action needed",
       "confidence": "reported",
-      "date": "2026-11-26",
-      "id": "local-nws:cf2abfb8bcd74fa5",
+      "date": "2026-11-27",
+      "id": "local-nws-none",
       "kind": "nws",
-      "label": "Nov 26, 2026 4:23 PM CT",
+      "label": "Nov 27, 2026 6:39 AM CT",
       "lane": "local",
-      "note": "* WHAT...Wet snow expected. Total snow accumulations of 1 to 3\ninches.\n\n* WHERE...A portion of Middle Tennessee.\n\n* WHEN...Until 9 PM CST this evening.\n\n* IMPACTS...The hazardous conditions will impact the Thursday evening\ncommute.",
-      "published": "2026-11-26T16:23:24-06:00",
-      "severity": "ALERT",
-      "soWhat": "no action needed",
+      "note": "api.weather.gov answered for 35.802,-86.907 and returned no alerts.",
+      "published": "2026-11-27T06:39:47-06:00",
+      "severity": "STANDBY",
+      "soWhat": "",
       "source": "NWS",
       "sourceCount": 1,
       "tags": [
         "tennessee",
         "williamson"
       ],
-      "title": "Winter Weather Advisory issued November 26 at 10:40AM CST until November 26 at 9:00PM CST by NWS Nashville TN",
-      "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ddd14a2ad51dd8940c93d3663783b26468cd12a0.002.1"
+      "title": "No active NWS alert for Thompson's Station (37179)",
+      "url": "https://api.weather.gov/alerts/active?point=35.802,-86.907"
     },
     {
       "action": "no action needed",
@@ -35,7 +35,7 @@
       "label": "2026-11-24",
       "lane": "local",
       "note": "Bridge Repair",
-      "published": "2026-11-26T16:23:24-06:00",
+      "published": "2026-11-27T06:39:47-06:00",
       "severity": "STANDBY",
       "soWhat": "",
       "source": "TDOT SmartWay",
@@ -56,7 +56,7 @@
       "label": "2026-11-16",
       "lane": "local",
       "note": "Other Construction",
-      "published": "2026-11-26T16:23:24-06:00",
+      "published": "2026-11-27T06:39:47-06:00",
       "severity": "STANDBY",
       "soWhat": "",
       "source": "TDOT SmartWay",

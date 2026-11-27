@@ -1,13 +1,27 @@
 {
-  "changes": [],
+  "changes": [
+    {
+      "change": "updated",
+      "date": "2026-11-27",
+      "note": "",
+      "section": "Rising situations",
+      "severity": "ALERT",
+      "title": "nws is RISING"
+    }
+  ],
   "gaps": [],
   "items": [
     {
       "links": [
         {
           "source": "ABC News - Breaking News, Latest News and Videos",
-          "title": "Deadly mass shooting in Poland investigated as terror act, prosecutor says - ABC News - Breaking News, Latest News and Videos",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOb1pFNDZDUm5SZkhOYWNkVS0waDU0bXBlXzJZVHlKTW5BVkdCWVFKYUVUTXZ2TnZMdExJM2FfcWF2MUVmVm5MNnBjeW9fVmpWaDZpeDhaTUE2LWdOQ1BVRDMwNFFsbTExaVhXS2dnd3gybmljTE9pRGowck5ER2xpQnp1eVBhVTkwdU92cl9uZi1iMV9kYXBFQTJDVEJGZWFqakZWMWlpQkxCSUdkYTBubVJuSThQZ9IBuwFBVV95cUxPM2I3U25ZNVUwdUlUbGVEN1lrRDlwcWFQb2VsVnMzZWMyY2RDaUYyelRqejVOX3BaMC1CQU8wbFh1RU1EdEFhWUdUR1dLT1RNMWtESWVLdE13QUxJRWlWZ3E5YVA5OGZscmFMbnB5XzNaRlpwelk4U2pUWTY0ZXFBMjJxdHIwU3FpWFRSVmJyQ25fTzdFa2l5SGl1MTRaTGNjaW1hbm9ReERvaXFvUmtvTU9jazB6WENsUllV?oc=5"
+          "title": "At least 6 killed, several injured in shooting at Polish market square: Police - ABC News - Breaking News, Latest News and Videos",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNNTRKanQ2WnJGUDc4cWc3bjM5TU9CX1AybDFYNHVQMUhIV1dOamIxZ3pwc3k0aWt6MW5LWll6dmJRWUdNalFob19CWkJhLUpOejhyQnQxWmZfaFpubGVJOWh5RnlXLTVDbmVqOXhRZmNKcGVza096OWs3MmpabTRfMWdQN2RIcTM4eU4wMnVJMVRQVkl5SVZzODg2cXc5YkY40gGmAUFVX3lxTE5SckpHX3FqLVpRSFBUeU56SFFGbm00aG1pbXltRExOaHhyWHo4Y3BScHJsQ0ZsMU9WLW5PQmdmVElva1dvRnJmblY4bFZmbUIycVBNWFFoS0VRSUlCdTVsU1hJZVE3S2xoQ3dsM1hMWC1pckJCb0pRYTRhUFFQb2tOX0Q5WjZkMTB1TTd5NVROcTdudkFYdXlCX2twM2FjNE5sVENXVlE?oc=5"
+        },
+        {
+          "source": "BBC",
+          "title": "'It's impossible': Spain's young people on housing ahead of Sunday's election - BBC",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1GYjJZeUFtUHRoVTBZWGU5T1BtX1JtdGhHNTBiNG9FcXFBSEFuUzNiZGZwNGxyay1zZ1VQMnN4U3NlcXBseVhRTHFIXzBubFJaX0pzSGszOVQ?oc=5"
         },
         {
           "source": "MILMAG",
@@ -18,20 +32,12 @@
           "source": "Святлана Ціханоўская",
           "title": "Visit to Kraków, meeting at the Polish Senate, Ostrogski Forum. Weekly updates from Sviatlana Tsikhanouskaya’s Office: November 16–22 - Святлана Ціханоўская",
           "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxPTzl6aDBCMFlCY0ViS3pOeTNVYU5DQnB4Vkp3YVFvSlp0QWpOQnhkSUppMUFkODgxRFBPYjZ3T0ZFVlV1OHVUWVJpLVNTeW9TMVlqSEh2RkxzN2ZRdzZPQW1Fa2FHTVFqczRqbkdzQ1lLSTN1ZnNPdXZWRXRNMWdEeklHX2FhSkwyVjRrYlpILUJld1hkcGJJTzVPY1VfTzUxM0ZTelNIVDV5aFVtaE81M1c1REZmNl9IazExV3lucHl5cEhKMFhJOWNKd2NxQ1RWNUI1MllpOVJ2WWotQWRJMV9fRWJ5UklUZWVhRHNiRmVkYV9tTjZaSnlGdlU3NC0yTDBNZzk3MHYxZw?oc=5"
-        },
-        {
-          "source": "BBC",
-          "title": "Cost of living protests sweep across Europe - BBC",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBFY3RPVGR4YnFUdlpOQTB2YlBncnJUcDN2TjRHcnUtYjVFRnRiZ3g4Tl9mbFhwY0k0eWNPNFJzYnNUUFVrN0p6U04xRERaTnN2SlpOcjBvcFk?oc=5"
         }
       ],
       "reasons": "5 or more outlets",
       "score": 1,
       "sourceCount": 4,
       "spark": [
-        {
-          "price": 1
-        },
         {
           "price": 1
         },
@@ -70,6 +76,9 @@
         },
         {
           "price": 6
+        },
+        {
+          "price": 5
         }
       ],
       "state": "RISING",
@@ -78,19 +87,19 @@
     {
       "links": [
         {
-          "source": "Financial Times",
-          "title": "Israel’s Eisenkot takes steps towards replacing Netanyahu - Financial Times",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5BelpxUlA5cVVCM05xOUtUbGwtMHQ1dzVhNUg2Um5rdmFZS2YtVnJJYUF6Q2hUQW5jY29ZcWNoRXBOV3JVRXliRk05UlpBamhVQlR4WVB2a2FDQmtPY2dWRlZHaDBEU3QxdGtCcHVSTW0?oc=5"
+          "source": "NWS",
+          "title": "Winter Storm Warning",
+          "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e8b9656ef00a1e413a9b57b6128ea02a7606e3af.002.1"
         },
         {
-          "source": "The New York Times",
-          "title": "Opposition Makes Progress Toward Ousting Netanyahu, Party Leader Says - The New York Times",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQNmJVU2pvd1otVEZZUWs1MUdHdXVvS3I2V2hjSUEyRGRtZ3NXSzB0Z0xkeEtFVkxYV05Bam5RT2RYa3dxQmVUdWlvTnVSa2pBU3ZyZVplaHAweF9yU3l3QWZScHFJQkxPbDdmWWc5RGNyTVluRjlwanF0TGxMTUV3OUdoWVVoOXE3UEgwRjJnOWg4UWFaQVVZRlhWbFdpV3I5?oc=5"
+          "source": "NWS",
+          "title": "Special Weather Statement",
+          "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a460cb32102ec496de1364a1df274c15b0f4154c.001.1"
         },
         {
-          "source": "Arab Center Washington DC",
-          "title": "Washington Policy Weekly: Senators Push to Remove US-Israel Defense Cooperation Provisions from NDAA - Arab Center Washington DC",
-          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOQUwwcDJoZ01fbkZQT3A1UVJ2LUZFUS1aQzU2SGJoaURUbzBNLWhMLXdDVjFQaGJ3YTNQUkJJZzdWNHdLeVdpU0taMU1oOFlBd3pUbjJHeHFQVFRMSlVENEhfS2MyZndUdlloRnA1T0lGdC1sRDNMX1BkQ0R6UmZGNWRGT0NsQkVCaGdYMVVuOEJDYk1za1h1UHVWTjRUWEc1NWdqaElxa245TlhXQXQyX2l1UE1fS0h2T09ncS02RlZMVk9tc1ZSU1hzTWtoNG8?oc=5"
+          "source": "NWS",
+          "title": "Wind Advisory",
+          "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1f2bca184ad303f663de4b5a2eb470c7809d5a7e.001.1"
         }
       ],
       "reasons": "",
@@ -113,81 +122,60 @@
           "price": 2
         },
         {
-          "price": 1
-        },
-        {
-          "price": 1
-        },
-        {
-          "price": 2
-        },
-        {
-          "price": 1
-        },
-        {
-          "price": 1
-        },
-        {
-          "price": 3
-        },
-        {
-          "price": 3
-        },
-        {
-          "price": 2
+          "price": 4
         },
         {
           "price": 3
         }
       ],
       "state": "RISING",
-      "topic": "israel"
+      "topic": "nws"
     },
     {
       "links": [
         {
-          "source": "Ukranews",
-          "title": "Russian attack damaged St. Volodymyr's Cathedral in Kyiv: blast wave shattered windows in sanctuary - Ukranews",
-          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNbG8ycG5pel9jVDlvSXkxT25YakYwMVp3THhEbFpnZkJZWU9iZk5BME5aeUdWZTBjVVluOWx0N1UyS2dCY2JYX09kVDV2SGdjN1RRSWdLa2NKeW5uZmFXa3RFWXhrajZoTHd6SjE1M2pDd1ZsbkdjTkVDX3ItT2lUWFBlc0t2SUFfRnljcVBLd2F2QU41TDVNcEMzUF9nb3pnNFNVLVo2eHdLLUI3WVREYnZRaDFqYWNtRnh5YUowV3JBMDdOdXRfRW5ZaEVXUdIB0wFBVV95cUxPN3drS0ViQjZLYkRzTDJTVkJyNURtV2dhLThybzFtaUNYVGhMa2tyWGZDXzFXSEVZZUZuMW50ZnEwcDltNEdDMTg5NGxiRXBQd0c2WGFvbDNmeFNkcGwxZGpWVHltc2k5b0hKSDMyZzRVOHczT1VMOUQtelNDQ3B4MW5xeWV5WVRReEFwZVZ0LU1KZTZzVWxIZ2xyVkU1NlhpblhLLVJCclFnTG1jVGF5Mm9vSVplel95SC02ZmxwM25QUjZCVVcyRExLaFdPRmt0RnFF?oc=5"
+          "source": "CBS News",
+          "title": "Iran accused of deadly drone attack in Kuwait that sparks EU call to step up pressure on Tehran - CBS News",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE05bmJOWEtxU1hnYmlGcXV2cHM2SzlfUnBhVUk3QklXMzFEd3Eyd1BhRmhORDBNM21BZmhfMnZObENxQTB4QWFDWnJwX0xhdnFUQmVkT1FSYnlBWUNsc0dtc1hVZTk5eDBMbEJDV2hNcl9qN2tEX2Q0RUl6N3pFdw?oc=5"
         },
         {
-          "source": "The New Indian Express",
-          "title": "Russian missile hit south-east Poland during attack on Ukraine, no-one hurt: Warsaw - The New Indian Express",
-          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNcThhMUp3TTZ2Q2ZNYVdkTjRmTmJMcHdQRVRnQkd2TmdEemxLNC12bDY3V2w4TG9mM085ZWlzVWFSZzNUSnBwbzNFZmFqcXhoNEpNTFNwOFZaN28zcE11ZlNLMF9HOWJMSG5LZ3duTmMwOGNGQ3VEV3F0UVlucFhybVJfS3RJYUYtY1ZEd2tpakVEVGN3b0N5MDhza05JSGhTLXoyRExwbVY5b2hqeVlYbXh6MlYxbDFKWlpVZjRNb20yckN1YklUWnZHSlnSAdoBQVVfeXFMUHRhMWI3Y0luR0VpN3RONFVFa1RWbGc3TUFjZUctVFVmamVpVjFSbDhtV0stNFl2ckNiaVU1YXQ3UUR3ZWZIOGhlVWd2clJyNkd2cVlYZkJLajMzNHV3NXlVS19TRnZxeTc1SmZScVZfLTdodFZ4YlNfTkEzWFkzdmNKOWZ2ZW1HdThlS2hLVnh4TUhiTmpIcHktVy0tVVhtcEVPUXFUb2plbFVESGc4clVkTk0zZjJaaVNRZ3d5YkZPYVk3dzdNbS04akxvRHpjdDhHTHQ1Q29UTnc?oc=5"
+          "source": "NPR",
+          "title": "Iran launches a third round of strikes on Bahrain, host of U.S. Navy's 5th Fleet - NPR",
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFA3RGxpNDRlLU9XRVNDenV4bWMzQU03QzRvRlc0eEN0aFF5aV9OYkg3VGZtT3M1UUNyRnpWVmFnbDdRbmRKazhsQnNmVjh2MFJUNk45dmVIaUtucWh5bW9haDR0Z2ZIZjBfMU1QVVhFc05BMlVIZnB4RUF0WQ?oc=5"
         },
         {
-          "source": "CNBC",
-          "title": "Trump, NATO chief caution Russia as attacks on Ukraine’s energy infrastructure intensify - CNBC",
-          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1UYkNOcV9TeElnTHlhSTRvWktGNmtNRS1fWGcxQUtKX3I1b0dhRkkxLUE4VW1XUC01UXVUd1FGVjh0aGdHVTBGVHJvbVdsMjZ3bDR0UC0xSTRVYzRWSU1vbHJoanNBZnhzYkkzQUZYWGNIWDR0bmtEMlluQTjSAYIBQVVfeXFMTVBta3Z1MXJQQ1htZ3AtNExvaW5wTlg5TFRyWDdBdUVjX3o3MjFqOE9pcDVFNm9iQjEwMkpDOGZpWldTX2VhUW5FX3ZTekQ1V0JDbzdtamxsRkpWLUtDSmNySWt3M1N2MmhLcW4xdTJhRnhLNTBXaVJFNm9zR0V4OVNwUQ?oc=5"
-        }
-      ],
-      "reasons": "4 outlets this window",
-      "score": 4,
-      "state": "RISING",
-      "topic": "ukraine war"
-    },
-    {
-      "links": [
-        {
-          "source": "PBS",
-          "title": "Iran widens Gulf attacks by targeting U.S. air base in Kuwait and sites in Bahrain - PBS",
-          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNaW9yLUs5SFJFWmk1NUp3aUpBc0lfYl95MEJsUl83dUs2ck9rT1ctbllHMFU0bWpseVFKSG01MV9ueV9LNW9EazJ2M2xla19qSzBPWklsM0F6ZHhDd3h1TzRxTFhSMm5aamtzN3AtZnFORWlNVk1yM0tTY0phUXRORmJwUmFIbU1BZ3ZyanlTVkg0TDMzekV3V0ZkVEl2MTNENkQyOTNSWjVsZGhVNWhZZHpFdjNDTUnSAbwBQVVfeXFMT2g5NGpZdnN5R1R2QXVsV2txeXQzYWhVdllQa1NrY2RSM2JsSHNvNmNWRnNzSGk2UlpoRnlJVFdGbGNQZnJwd0M2S2FDdEdRWmRDTEJ6UFdMUXp0d040UjlHdWFLLVROcjdmRHhCNzdySDNvWFdfWWRsS1BNVkNVYUYybnFmX2RaTFh3TmQxeFFqb2VvUnVxbWlpM3E5Y1Q0dWRPNVBJMzFGSDZZQnltTlQyYTlNUllQa09WZWw?oc=5"
-        },
-        {
-          "source": "Atlantic Council",
-          "title": "What Trump should do next about Iran - Atlantic Council",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQVW9kOUVYOU9ZUkVFaEM1OTV2WGVfeVhYNTFFOVg4QkJycEZrV0w3VmVHSUNPSW14alU0V3dKVTBUSGdCUEthdmo2MnR4b3ItdW1adUYteTRQQXl5bmZSdFJlUUlrNkxuNHhsdGtaT1hJSHNZTU1VRU9EclZjV2h2bE9GS1NlQXM?oc=5"
-        },
-        {
-          "source": "Lawfare",
-          "title": "Congress’s Options for Ending the Iran War - Lawfare",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOT3Z1VUlpamdTQlAwN2RDc2RjeTROMUtReDQ1RndLeEktVEZIRHVodFQxaFN0YVZZMHRlb19UNFNIZjFsUzBEbTI0Q1lpY2R4N0pocmdFVlJqc2Y3SFZLODZDUDUyRldUemk1dHp4S0Q0S1JtZUdlZVR2VE5uMDdsclRfRDhnUQ?oc=5"
+          "source": "The Hill",
+          "title": "Trump: Iran war will be over ‘sort of whenever I want it to be’ - The Hill",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPYndFMTFFMlRhOElWM09BSS1fQ0FQb3kyVWhpYVZ5ZEJlM2t2UTlKRjlFQTlrekVxaVpQa3JucEcwdVFONnB3aUJMMzdCUUpNcG1VcXpOQm1ZTThuME1WdlB2UlhCamI5b2ZVcGI2a1VfajhCeTNqZ2xMRW04Z0tUZS0xNjVESXFLVmx6SERaUdIBlAFBVV95cUxNUFRSSTRfUWdXdWtSWWlrX2pHUm95MHFmSUEzYzAwRkd4dDVyRkxwajJGRTNDb0JyUjNPN2RuRzdfVjlKQ0F0LURjd2x5NmdodkNzVnI3anpZTURQZXhfUXlwdWxTZG84VEdweWFqX0trWVhSTm1nQ0pNaVEweWRmU3g3Nnd2bE82RThqSC1TNUxXN3Zz?oc=5"
         }
       ],
       "reasons": "4 outlets this window",
       "score": 4,
       "state": "RISING",
       "topic": "iran war"
+    },
+    {
+      "links": [
+        {
+          "source": "CNBC",
+          "title": "Trump, NATO chief caution Russia as attacks on Ukraine’s energy infrastructure intensify - CNBC",
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1UYkNOcV9TeElnTHlhSTRvWktGNmtNRS1fWGcxQUtKX3I1b0dhRkkxLUE4VW1XUC01UXVUd1FGVjh0aGdHVTBGVHJvbVdsMjZ3bDR0UC0xSTRVYzRWSU1vbHJoanNBZnhzYkkzQUZYWGNIWDR0bmtEMlluQTjSAYIBQVVfeXFMTVBta3Z1MXJQQ1htZ3AtNExvaW5wTlg5TFRyWDdBdUVjX3o3MjFqOE9pcDVFNm9iQjEwMkpDOGZpWldTX2VhUW5FX3ZTekQ1V0JDbzdtamxsRkpWLUtDSmNySWt3M1N2MmhLcW4xdTJhRnhLNTBXaVJFNm9zR0V4OVNwUQ?oc=5"
+        },
+        {
+          "source": "NPR",
+          "title": "NATO to meet after Russia-Ukraine war once again inches onto European territory - NPR",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNR05nOTY4VjA4TXR0SF9VSVphYkR3RmF2Qmxoajd6SW1JY2xtSUZURVhmZGRrSk4xYnFmZVN3Z2xMZFltUmY2OHZZUzBSVW5JZHZDak1nMXJ1S09Ha21nQzJFUVMtalo1NXU2Tlc3YXhqVDNOcFJYMk5pNEIzbE02X1hfTXlER2JVMDJMYjBEQUVZdVVWei01ZE94Y3h0Tzd5Zk9faUtuUkRhWHRaY01NYUJ3MGpMMU56Z2JLWDN6bFdGZw?oc=5"
+        },
+        {
+          "source": "Pew Research Center",
+          "title": "Two-Thirds of Americans Disapprove of Trump’s Handling of the Russia-Ukraine War - Pew Research Center",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOOG1hX1hlajBaV2FvOXpqN0V4ZlI5anNUbGdmOXhWUmNIcy1aUy1uV0dJY1lOUkxKcnFGLTFIYV9YVTA2d3VtMDB3d2xnd0Q4YUEtYlRlVWVPbWZ4elZjb0N4enFpS3BEdTJPLTJseEpINFRVSldjdkFYQ2tkMUFGQVJCMzdMSE56OGhqTEM4ckNON21ZWlg3cVg3VTJIT2Y2cjlhMXc1MGFKVjBKLVR0WDEyLWhyd3dKVGNwNURKb21KbDZ2UzFkU2lxbw?oc=5"
+        }
+      ],
+      "reasons": "4 outlets this window",
+      "score": 4,
+      "state": "RISING",
+      "topic": "ukraine war"
     },
     {
       "links": [
@@ -202,9 +190,9 @@
           "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxPTzl6aDBCMFlCY0ViS3pOeTNVYU5DQnB4Vkp3YVFvSlp0QWpOQnhkSUppMUFkODgxRFBPYjZ3T0ZFVlV1OHVUWVJpLVNTeW9TMVlqSEh2RkxzN2ZRdzZPQW1Fa2FHTVFqczRqbkdzQ1lLSTN1ZnNPdXZWRXRNMWdEeklHX2FhSkwyVjRrYlpILUJld1hkcGJJTzVPY1VfTzUxM0ZTelNIVDV5aFVtaE81M1c1REZmNl9IazExV3lucHl5cEhKMFhJOWNKd2NxQ1RWNUI1MllpOVJ2WWotQWRJMV9fRWJ5UklUZWVhRHNiRmVkYV9tTjZaSnlGdlU3NC0yTDBNZzk3MHYxZw?oc=5"
         },
         {
-          "source": "The White House (.gov)",
-          "title": "2026 National Thanksgiving Turkey Pardon - The White House (.gov)",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9BUWdWNW1XeE9uSmpCNzNVdXl3SGU1SC11QkdOZ0Z1SXFDVlRGTU5RTnZKT3JsV1A1MHRBT0E0M1luNF9EQnZXZ0dwQ3cwN19sTWc?oc=5"
+          "source": "Government Executive",
+          "title": "Trump’s new contractor executive order is an affront to Congress’ oversight authority - Government Executive",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPYndmMl94MmJTQ1dFc0V0QmtVMFZ2Rm00Q0tFNW1oTm4wR1dfMmxBd21OZDkyc05aejNLV1ZCTmsySU1odjJ4TzRIdlQ1X05HNnJXYXdnUWdVSHlLYURvTHR6Ym1XOFhvRURGTGxLOFhoemdoaFRoOElYTWQtaGJqRng1THVGM0szbzJBVGE5bnhmMUw0SU1SNDVVR3pXdnNiQVZ6RVJuVXUzT01CR3ZWNVdSc2lRMi11ZnZZcG5Hbk5UZw?oc=5"
         }
       ],
       "reasons": "5 outlets this window",
@@ -215,23 +203,23 @@
     {
       "links": [
         {
-          "source": "CNN",
-          "title": "Global climate summit collapses as countries fail to agree on moving away from fossil fuels - CNN",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOb0NpSVBZR3Vmakp2eTFDX3VKdWFHNkQ1UG04bG5PYjdudVpKZGpsVG5fYzJvajZYdUpXMGVuZWp1bTBSbk5EaG9yU3E1TFpOZk9wOHEyUDNKRXJWT3l5WEhKYnNmMXROeEpSN1RtWDNtTjhibzdzTjNCT3JYUVBRbWV6WUNxR05VZzk2dQ?oc=5"
+          "source": "Reuters",
+          "title": "IAEA working with Russia, Ukraine on ceasefire to repair power link at Zaporizhzhia nuclear plant - Reuters",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQQXlld0FmMFoxdUVjNlhmNURVMmZwLXJNcXZrVkhEQWxOLS14ajJFb2VQZzBOOUZKM1Z1VGwzLURERG9lUWdGczh0bTZGTGJqdC00Nk9tYjZLR21iN1ZRbEtmTHhnRFAzV3lYRzVRN2txb3h0TUxoeENQbmNTeHlmN1AtNnBnTE1rYTRnYmxxTXNBUkh1WTdZVHpBN3h2XzNYMXlUaWVLRmlOR051bTIwbE9BWVhJRjRHSWxVd0pXQy1tdnc?oc=5"
         },
         {
           "source": "The New York Times",
-          "title": "Was Japan’s Leader Snubbed at China’s Big Summit? A Visual Evaluation. - The New York Times",
+          "title": "Was Japan Prime Minister Takaichi Snubbed at China’s Big Summit? - The New York Times",
           "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNc0pLUEZsX0FSZ1BkN3NfS2laZGh2dlg4R3hQUktxdXh2Q3RzQ0RwWGNmbUUwS09YODlVYThWWVBxOUFybnY4TWlrbzkyZEVXTERTOExSeVJudk9RekNvYnJwRUFSR0czRUllaUlNcEhDeVJFRlBCc19KR09vcG9OQjViTF85dw?oc=5"
         },
         {
-          "source": "DW.com",
-          "title": "EU leaders seek agreement on long-term budget and Ukraine at summit - DW.com",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPZzZLdThHT2FQanhGWUJibzNIOEhXSnhOeUlsOXprZHpMUFRad1RCSzBYN05YbGc1ME1FeG9keF9QVkhMSnVfanNLUHJpb1ZxUThYb1hwZ3JOdHJfSGFMclItZmRWVVNsMDRrWTFZY0VaZlFkRlF3TlM2NmRzaWVsX0RURW9fdnZvVXM0VlBlQmJsd2UtM3BnT2hybGVlX0tUa1NwX0ZB?oc=5"
+          "source": "Al Jazeera",
+          "title": "EU plans sports ban in sweeping new Russia sanctions proposal - Al Jazeera",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNRFBWaUtNV2pMbGVsbFJlZkF3RU9mczNYSUF2Q1Q0N2JqV2ljOGtxaEVPcDVHeXZUVklUTHAwNXVTQjJjQTZKVlF3eXBaTWZnaVR2M0ZmdWdmRDVmMndYc2lQQjQyNWdIWjBkekR6d3ZSaE9ld0dINmhUX2JGaUJjejNCN2FxanBJbzdDeUlZV1piLWlVd2VzaDVSdHZnOEUtQW0xUFN30gGrAUFVX3lxTE10OG84bk5ZSWoyLUMwemdRWDRCVjUxOXIzeW9YaVdpbGpFWkNxLW9LYnJ4ZjhFRTlNZEtEWHVPVnRDbUw2TTVUVUpET19udXJBX0hrYmtGZEJUbG9UeEZZdmZZVXNLVnM2QjlsSUNWYTVvT1ZWcnlFZFdGTjM2RmxWZWl4cVhzZVkycWx2dzJYMHRPTzNTSTVpcDM5ZGlZWS1lYVhLUDEySXUwMA?oc=5"
         }
       ],
-      "reasons": "6 outlets this window",
-      "score": 6,
+      "reasons": "5 outlets this window",
+      "score": 5,
       "state": "RISING",
       "topic": "global"
     }

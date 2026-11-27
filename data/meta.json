@@ -1,44 +1,55 @@
 {
   "baseline": false,
-  "brief": "No rare risk is on the board. A routine flyby or an empty storm outlook is not an emergency. Global: Was Japan’s Leader Snubbed at China’s Big Summit? A Visual Evaluation. - The New York Times. Rising topic: ukraine war (4 outlets this window).",
-  "checkedAt": "2026-11-26T16:23:24-06:00",
-  "checkedLabel": "Nov 26, 2026 4:23 PM CT",
-  "errors": [],
+  "brief": "No rare risk is on the board. A routine flyby or an empty storm outlook is not an emergency. Current war coverage is on the board: Iran accused of deadly drone attack in Kuwait that sparks EU call to step up pressure on Tehran - CBS News. Global: Solomon Islands signs treaty with Australia that checks China's influence in the South Pacific - AP News. Rising topic: iran war (4 outlets this window).",
+  "checkedAt": "2026-11-27T06:39:47-06:00",
+  "checkedLabel": "Nov 27, 2026 6:39 AM CT",
+  "errors": [
+    "GDACS: curl: (28) Operation timed out after 40001 milliseconds with 0 bytes received\n"
+  ],
   "retainDays": 120,
   "spikes": {
-    "labs": [
+    "labs": [],
+    "markets": [
       {
-        "field": "ai",
         "links": [
           {
-            "source": "Google AI blog",
-            "title": "How Gemini is changing the game for Golden State's organization and fans.",
-            "url": "https://blog.google/products-and-platforms/products/gemini/gemini-golden-state/"
+            "source": "Gulf Times",
+            "title": "US economy roars ahead in Q3; inflation remains high in October | Gulf Times - Gulf Times",
+            "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNeS01Z05TS2pZQWJ3X25fT1pDWUZsRFZPd2lSRllRcV96bEFlUzFtajNVbjZObE5OUWpmcUhzSDNBMUc0MkR4VlNEX0UzNDluVi1MVllIYXJidzA2M3d5ci1XTDJNNGhIZmhtU2ZQMlFsZjBfUHZmQ2Jfb2RhQ0RpNzBLMmJNWDdfOTFQRlo0dy1OR0NDa0RlT204dXpJY3BPM1VFZDJwbEp5WnZTTzg4Q2kzRdIBuAFBVV95cUxPRGhaazZxVW9xUUo5dGVVeTFLVDkyT0tsYnJpSjMzazFkakR1aXBFMU9ldkYxOVJrdC1Md2NyanR2SlZSOEllUUtXZkNHYkplT3RacWp2ektOZ0hwS0RIWk1sTGVIWUpyQTRBM1V3MUI0U3JUVDhTSm1VNHN1d2ZtS1p4eDhrYmFzSVVOd1ZDbndqTXdWS1pWS3pINmM2NUxKbmg0MW93eFpuM1dtM0QzN3VuQ1VRWWpJ?oc=5"
           },
           {
-            "source": "Google AI blog",
-            "title": "Introducing Tool Retrieval in the Gemini API",
-            "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/"
+            "source": "Malay Mail",
+            "title": "Will the US Fed hike rates again? Hot inflation and strong GDP point to December jump - Malay Mail",
+            "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOUlRXallQaUN2OGtGUzNjX1pzQ2RWYnFaQVBIUW4xbGFfMTVMbGEwTmFjeUVtc205eDRUWEttV0pyTlZ3Q3BuanF3cm1pekxlZ1QzaGFTVXRRYVp2YzRTbUFsTFJST0Z3a2NqYldQYy11X2NLYkpaQm9OTzV3aVdDZmJYcVpMZkxyVUxtMjBydVlKX0ZJVzRNSFNfRG5DdmV5ZE5FX2FVX2Q1U2VzcU5YT1dlQ0hjek5hTEhFUlY0aHdkdy1CeWlENUpkZ2pvR3dfRS1vMU9n0gHbAUFVX3lxTE1xSzBPOWR0eG9oY0ZRUW9Bak9PYzgwa1BUS0lzUFpEQlJNb1F0X3lzR2lCN3A3ZkFKYk94TE5vTEc0a09MYzJ4T1VjaU9LVkdoSExLWjJLa3lhZjdYMmFzY3Q3OHFRRUxOX3lwdzNSOWJROGZ1RlRTRHZJQm4wY1FrX21vdXhjTEw1Vm5EaVhlRElabUtHUlVJeUx5R1VEeEZRcmRSOE90M3hFZkx1bEM2NmV3Mkx5SXRHZVZpY3B3Qnk3N0hGU0hfb0luRE1WVlJiZkxTYU9JdW4wdw?oc=5"
           },
           {
-            "source": "DeepMind",
-            "title": "Introducing Gemini 4 Neon",
-            "url": "https://deepmind.google/blog/introducing-gemini-4-neon/"
+            "source": "Reuters",
+            "title": "US economy roars ahead in third quarter, inflation remains high in October - Reuters",
+            "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNalBrRjhRWHdhRDduMzduLU1kN1lGVFpzNFllX0RzdjJXMjdtajRZS1l1dms2MFJFbkhJQmx3Qzgydi1nTTJnQ1JPLUtoa1R5LWZjWjItUXJhXzhoZG51NU9ENzVBQjVSZWFpdHlqbV9PSkVncWtjUlptdXhjd0ZKRXZ6d2Y1dw?oc=5"
+          },
+          {
+            "source": "France 24",
+            "title": "US Q3 GDP revised strongly upward, Fed's inflation gauge hits three-year high - France 24",
+            "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQT1VPMUY4dHUtcE5rWEF3SENCZUdzVnl2dW8xVnN6eTZaV0pGazNnRGRMZl9uQlRpZDlGUW9pOXR5eXpUZ0JEaEpQVERrU0FhS1dSbGR2Q0x3S1NzR0NTRzQweVotTTdVX1YxblJGTG1zNFhjd3FndU54SWFCZlNLLUU2dVFUZW43QVh3NHF3N0pWT1VWVVFacGxISHdua18xNlFtemtuSFRzdFJ2emctZDBjU21LTjRUNUd3VHdXV2k?oc=5"
           }
         ],
-        "outlets": 2,
-        "state": "EVENT",
-        "title": "How Gemini is changing the game for Golden State's organization and fans.",
-        "topic": "Gemini"
-      }
-    ],
-    "markets": [
+        "outlets": 8,
+        "region": "USA",
+        "state": "RISING",
+        "title": "US economy roars ahead in Q3; inflation remains high in October | Gulf Times - Gulf Times",
+        "topic": "inflation"
+      },
       {
         "links": [
           {
             "source": "The Arkansas Democrat-Gazette",
             "title": "Arkansas’ economy growing moderately thanks to data center construction, defense spending, Federal Reserve says - The Arkansas Democrat-Gazette",
             "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNSHlSYlM5aWdmN3NfaWJBWGVnZlNHdlczeUozOHpEYURkaTVNeGpWbGZWbFBaYXI0TWtTc2RtNTlEdnZwR3lScGtGcXpBMm42SlRhRkV4NWc3ZW5MdUtDNUZMbUJlc0hLM2YtQzlhZ2xRclRKVHBrcGRSNGFVY2FGYmdqV0hxRW9zY1RyTHFpOUtweWxyLWhjOEEyem8?oc=5"
+          },
+          {
+            "source": "ABC News - Breaking News, Latest News and Videos",
+            "title": "Federal Reserve raises interest rates for the 1st time since 2023 - ABC News - Breaking News, Latest News and Videos",
+            "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOYktxZlJxRVNrdUZFRWViQjVMLUh3OGJwNGhrVFpJY2E5QTAyajNfcnFSb09rZUVkSnVMUHd4WkpsYktvZGczX05nRzVhSTdKNWtfU2hWb09IYnNQQ01tTlMwMV95YzJkbWVDMklwZ19XMC1RNmVsckpGS3FpNUpiRlUxZkVtNXk5NE5YRnpBSTI4eEhVOWxaUlBzZDlxb3p1ZVBFeHFR0gGrAUFVX3lxTFBrZzU3UXhjRlBBblFYNzJZZ3dINVFwMnpIOFQwRlJ1NmRTa3JNUGlkamJyS08wRjM5UlFuMkRJcHAtUEQxYjF3b2Yyc2E2V1hOOEhQRHRPckpidllEOHpLRG9VUTFxSUwyaE95SzNNZ0pkemQwQkNBYkZPbTBpN0ZMYTBWU25nT3FrUVNNal9Eb0lCNnJwZTVFUVVhM0dDRlMzQ1pQTF8xRTV6bw?oc=5"
           },
           {
             "source": "www.tmgm.com",
@@ -49,47 +60,13 @@
             "source": "www.tmgm.com",
             "title": "US core PCE inflation set to heat up in October, prompting Federal Reserve rate hikes in 2027 - www.tmgm.com",
             "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPenQ0cmc5bERueVZGTThZdDJfSXgtZDZUenlDQVd2aVBRVHVmS0w0M1FQSEt1WEJ5cVZpQjBCcHloQ3cycFhxRW1FOXVqdHJLVlZDWUY4cmVMbGNKc0oyOHJ3STU4RV9KQmQ5MVBmVTFnRVBUczNQbDVHeGY1MjdOcmxDNnFpX1dGODdYRmN2TUlDZFh0NTZCeXlzV2JIaWRkdHNaSUV4bVpyaE1qZENxeml3X09hOVo4V3k4OXNfZEcwMDhOLWkteGNpNjJkU2VUVFEyVkJIOE1mallmOGhobVRjLWFQZEtrX0VsbFVRcw?oc=5"
-          },
-          {
-            "source": "www.tmgm.com",
-            "title": "2027 Federal Reserve rate hikes expected as US core PCE inflation is set to accelerate in October - www.tmgm.com",
-            "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQSUVUdzRtTXZaT2Q3bjZTemZJdjdHRzdkSENuTVE2WjFnY0lWcXU3dFpQaDRnT2tnQzdkaTdQMTdmR1M2cVQ3QXlMTWFqc1dTVEZLSml2RjY3cGxENFBMMmgzd2VoUkJyc1hjZ21nSVh3RFBpU3hpaUp3bXNpQmRsbmZ6SnJwYXFveHZLeHZkV1VSNy01M1JfMFZJNUlEMDdITFpRbHlGOXFYdUZVd3VFWlRYTnItczhjdnBXcTJRX1U5OTVPMkF6Q0F5TGVtVW1kc1ZyeEZ4c3JjQ3ZOY29VdkxDWlljSVBEeVdjVTh4cDM?oc=5"
-          }
-        ],
-        "outlets": 7,
-        "region": "USA",
-        "state": "RISING",
-        "title": "Arkansas’ economy growing moderately thanks to data center construction, defense spending, Federal Reserve says - The Arkansas Democrat-Gazette",
-        "topic": "Federal Reserve"
-      },
-      {
-        "links": [
-          {
-            "source": "Reuters",
-            "title": "US economy roars ahead in third quarter, inflation remains high in October - Reuters",
-            "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNalBrRjhRWHdhRDduMzduLU1kN1lGVFpzNFllX0RzdjJXMjdtajRZS1l1dms2MFJFbkhJQmx3Qzgydi1nTTJnQ1JPLUtoa1R5LWZjWjItUXJhXzhoZG51NU9ENzVBQjVSZWFpdHlqbV9PSkVncWtjUlptdXhjd0ZKRXZ6d2Y1dw?oc=5"
-          },
-          {
-            "source": "France 24",
-            "title": "US Q3 GDP revised strongly upward, Fed's inflation gauge hits three-year high - France 24",
-            "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQT1VPMUY4dHUtcE5rWEF3SENCZUdzVnl2dW8xVnN6eTZaV0pGazNnRGRMZl9uQlRpZDlGUW9pOXR5eXpUZ0JEaEpQVERrU0FhS1dSbGR2Q0x3S1NzR0NTRzQweVotTTdVX1YxblJGTG1zNFhjd3FndU54SWFCZlNLLUU2dVFUZW43QVh3NHF3N0pWT1VWVVFacGxISHdua18xNlFtemtuSFRzdFJ2emctZDBjU21LTjRUNUd3VHdXV2k?oc=5"
-          },
-          {
-            "source": "FXStreet",
-            "title": "Breaking: US core PCE inflation rises to 3.3% YoY in October vs 3.2% expected - FXStreet",
-            "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPQUZzWXlBNFZYYlJKZzB0Sk50eDNkVDl4cGowSFlianpHVzc5d1RTc25hQzAxNFNwX3VablB3c0tmZEhkNkxvSC1pS2JsaDRvMkJMUlY4N3ZvSEF6UkcwSnZsZTM2VUxNQ2IxdGRNSGNydTJ4LVpSTFluTFZVcEZ0MVlpRnltaE94MmsxLUtxZk9RRDNpVTkwSnZtQWZ3bzI3WVYzQks2T2FkbHctbjBGcm5JR3FQendHTDNYQ2tIUC1SQTBfWUxkWGZOZFVzT2Ex?oc=5"
-          },
-          {
-            "source": "BusinessToday Malaysia",
-            "title": "Dollar Consolidates Ahead Of US GDP And Inflation Readings - BusinessToday Malaysia",
-            "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPa1FvdW1pb3FpeEc0dDJzQ09nYzROclptX0pHcDBOVy1PaGVEVWx4enZXcWo3RTkyQ2g5XzQtbzNFY1AxY2daQ2d6aXRZcUIyR0xzaGFzbVI3dUd4UUFjTTlWUXNUTWk0YkNYaG1CTHNfMWFkSVZGNE9MSXVaay1FcXRfeGNGT00xeU1NcF9TOWRXYkl6Z3hFMTIxc0ROa21wSUpDMnhR?oc=5"
           }
         ],
         "outlets": 6,
         "region": "USA",
         "state": "RISING",
-        "title": "US economy roars ahead in third quarter, inflation remains high in October - Reuters",
-        "topic": "inflation"
+        "title": "Arkansas’ economy growing moderately thanks to data center construction, defense spending, Federal Reserve says - The Arkansas Democrat-Gazette",
+        "topic": "Federal Reserve"
       },
       {
         "links": [
@@ -114,7 +91,7 @@
             "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPT1NwZUhEUk1EN0VUT1dwa2U0cXQwY3JTMm11NXRsVS1mNUFfZ0ZrYXZldVdZbmRoektXRGo4NWI5d3VwUFNsRHJ6XzVHZ1h3Yl93OFY2QlFDODJUdzZpRlBkNXVGYW9KOTY2SEQ4bG1QZWE1WklQZDNMM3pZd0ZQR1BkZHZua1IxOGx1bGU5Mk1qTUZBWE0xM0FpMFhVdUFmT0JVclFkenZqZ2hESHNoMEREZjlHRzNEZ2c1QlRSSGh1QWpWc1BjR3FZcXhqckpNZV9J?oc=5"
           }
         ],
-        "outlets": 11,
+        "outlets": 10,
         "region": "North America",
         "state": "RISING",
         "title": "Bank Of Canada Maintains 2% Inflation Target - TradingView",
@@ -147,30 +124,30 @@
       {
         "links": [
           {
+            "source": "EU Today",
+            "title": "Hernández de Cos to Lead European Central Bank as Inflation and Public Debt Test Eurozone Stability - EU Today",
+            "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE0zZDJhT2hMMk9iR24xWEZjTHlfLWI4a1M3RFNreTRiZHdzMVdZOWxtRHYtbE9WOEJ5a2tMSTIwT1BDZzRLQjNXRWhkcXpfaE4zWlAzYXBBTkxVZ0JKdnRaaQ?oc=5"
+          },
+          {
             "source": "Morningstar",
             "title": "What to Expect From November’s Eurozone Inflation Data - Morningstar",
             "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNZ1BKcTVlWjY3TllxTDNGS19nVmRwclZ3NlU4dWtMZUlNQl90VXBXZEUyVVBSdWpWekI1a1RLdWhaMDNaeEVjeVlJNFNYM2I3ZTlMcDdIVzdZUTNHSVM2UUdfdjRIWGhkbXQwZTZ5aDZGbmtsMTZvZHlXcnV1bVlJYWpZaEtIRld4QVpISzZoQVoyM2tk?oc=5"
           },
           {
+            "source": "Le Monde.fr",
+            "title": "ECB: The new trio tasked with protecting Europe from inflation - Le Monde.fr",
+            "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOMlJDV2x2YzBidGM4Y2ZYWGxrbUNsT2ViNTNxZFN6MEg4TXdMcHMzakhFNnVWYnl0cFB5dWtqQ1FGd09VeXF3bE5idlpRekR1bFBrMkMwLVhoTFowRGtjWm9feGt2TFlFWl9Za2JfYXAtYWFBYnNLSVh1aW9XaVFuTjJrNFNkQ2R2RjdXTnR0cnU0UTZnVm8zakxTUmhHRDNqNmlXWllUSmlLY1Z3aEc0NGFuLWZSUWZnaWVrMFNQMUt5MVZIaWxaOXhR?oc=5"
+          },
+          {
             "source": "www.tmgm.com",
             "title": "Euro stages recovery from 19-month low ahead of ECB minutes and US inflation - www.tmgm.com",
             "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNcjRtbjh1OE9uVkpHWG9QYWF6NkZqSjUxd1lhaVNBLU9DMHo5VGJPVVZfWEM0cU1KSmRXNlNPRWFJNW5SM2ZCYmhxUGJUWW5pNEl2NDNwMUh2UUViYnBGTmtHdDQtb3N0OTF1U1R4ODNRdG9VTUVRUnI2MTZ3dVl5RVpHcVp3dFlxNFNoMWViVEdhRXRDN1R1U0JKOXNIT2daQnJQd2JVNGtZWXoteTV4eE1teWNMdUpMZnpVMGdlVmFBN0UtSjRIblNnLWRrOG01TmhnVg?oc=5"
-          },
-          {
-            "source": "www.tmgm.com",
-            "title": "Euro recovers from a 19-month low as ECB minutes and US inflation data approach - www.tmgm.com",
-            "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQNmlMbVRZMm5DSnM0azJ5azBfQ2JJb3p6LTZydkJQVFJsQjNQOHV5XzRXMDUyNEd6YnB3ZjZVRHM1X0pGeXBVSGZqMUo5NnQ4Q3dPUWNDMXpINTNNV25zSG5RQ0VjN2tiVURLNmRJa0Z0T1pPejNkOTVIQXY3VWFfQnJkOV9VbnZGbkdjZWotUlBoZjJTUjBzTHpUMUxMVmFXeHRhbENaaG9LRjFrSndLREl5NXdVV1p2SlZLRWZLcG1NUDAxV1NzTWRuMml4SzFkRmRibQ?oc=5"
-          },
-          {
-            "source": "Bloomberg.com",
-            "title": "ECB’s Simkus Says It’s ‘Prudent’ to Hike as Inflation Broadens - Bloomberg.com",
-            "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPeUR3LTdfWnVXRUZxMy1QdVQyejN5NjQzMVhvOUdiUkhlUm9TOG90NzA1MEluQS1HdFdtR29DcGMtT1o5Njl3ZkVvM1IxblM5dWNUb2hBbndwbUhXU21OQmRNdXhVdWQwU0o2eUx1WXBCN0FlUllJS0NnalgxX3V2R2JFWjgtT3pPZ1ZpWFlDa1NTY0FpVlBjNFB6SDRzbTZvSHlJMlNqb2ZUTkRpeVdQYg?oc=5"
           }
         ],
         "outlets": 7,
         "region": "Europe",
         "state": "RISING",
-        "title": "What to Expect From November’s Eurozone Inflation Data - Morningstar",
+        "title": "Hernández de Cos to Lead European Central Bank as Inflation and Public Debt Test Eurozone Stability - EU Today",
         "topic": "inflation"
       },
       {
@@ -200,6 +177,11 @@
       {
         "links": [
           {
+            "source": "Nikkei Asia",
+            "title": "Core inflation in Tokyo hits 16-month high, bolsters case for rate hike - Nikkei Asia",
+            "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNcjdFdmk5ejkxcUtaY0FXczVsOVpuQWtEY3VyUWE3SkZJbjBCdW43YWtKcHNtY0FEZ3VlN0VRUTh5LWZYdEtXU21OSHdLVzZIRS1OamU3c3BOX3hCUmpDWV9tc1JvTnpITGxHVGtVMC11dEVZZFBuaUx1S1B4UjktX0VEalJzRE1zTXE5SE91NUhmSlpzcFZHRnpnbUVWOHhid00zMw?oc=5"
+          },
+          {
             "source": "investingLive",
             "title": "Tokyo CPI preview: core inflation seen jumping to 3% three weeks before BoJ decision - investingLive",
             "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOOHF4cTNXZ2w4MUtRdm9zZ0trOVcyWnFCOVpkdFFlU1F3cHJ3Vy1qeEdHeWRqaWxUbnJWNC14NDJnbVRSWE41RXhWRkd2cWJoMHdqN0NuSml3TFFULUJkVzJGUmo4MlRBRlR1YWlQOTJ0VkVCa0xySTU1QjF6eUNvVDkzWklkODhTdmdGYUgwNXp5djRCY2lFUURkVGlaRGQ3cWZlVXJOMlNYR2JHZGFNLTkzQ19TODBEc3dKM2hTNEc?oc=5"
@@ -213,17 +195,12 @@
             "source": "Briefs Finance",
             "title": "Japan Core Inflation Ticks up to 2.2% in October, Turning up the Heat on BOJ - Briefs Finance",
             "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPTDE0eEJrVjR4SWxiNnNmdmUzdDA0dEUxeVhzbDhSTUhvWU9ZeUJ4aldmYVlxeDlTTHU4LWFxc2s0and6dWRUcHEtNzJub2NnSkxkUDQyQW9Gc0RFaVlNdmNYaHpyekdtZldySndxc3BGX3ZBMHNtSjQ1cElidnJrdzd5WE51Z0Y0QzliaTBKVHYxQQ?oc=5"
-          },
-          {
-            "source": "The Economic Times",
-            "title": "BOJ's Takata calls for early rate hikes to curb inflation risks - The Economic Times",
-            "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPdExVV255cjRzVExMalZvUkJYTTI4Z0ZlWTJTN1FOdjRvVFV5Z2RkdWJ5RS1YUENENnhBTHJ1bmFkLW9yTGFjMUtkX1R3SlpHOGFPdG5pNmI3X0ZPMm02VGdPaFRNenhTVkpBR1l3eDFPOGE5YjZYVG95QnM5T0FYc1ZLRzR5WE4xdFctemFLcHF1NjhyQ2dfYnZnM1JJdDMzOHRrR1FTV0ppYWhlWFVra284Z1VWREpUQ01aT3lBaHpDTXZQRHJrN3NpY0x3TW94Z21USDg5OWhRdFpNbzl4cUR5ZE1wcEHSAewBQVVfeXFMTi1La2FrRDQtNHl4cDBGem5uYU01aE5DRFNNT3JNb2hWYUxpX01mZG95aExPSHFYMnhRU2I0dFdYbUN2N2pCVWw0TDdZT1g2dmVsaTJLRkNKODYwamVuSTVraGFORkZiWXlfN2trMmNxdjdXV1ZXMFZ3NkhpV1h6SUxnc29tamI3dHZPOXA4X3BHUTlhSXU4eW5fYXNMZEk0MDRLb0pPbmJZYTZDRHhKcmYzN0tieDNla2R3V01vM3ROWVF6WmU2T0xwTWhzV0hjZnRiZWV3eTNIbjFVVGF4aEhRZkkxanFrbXB5YVo?oc=5"
           }
         ],
-        "outlets": 4,
+        "outlets": 5,
         "region": "Japan",
         "state": "RISING",
-        "title": "Tokyo CPI preview: core inflation seen jumping to 3% three weeks before BoJ decision - investingLive",
+        "title": "Core inflation in Tokyo hits 16-month high, bolsters case for rate hike - Nikkei Asia",
         "topic": "inflation"
       },
       {
@@ -253,30 +230,30 @@
       {
         "links": [
           {
-            "source": "NiftyTrader",
-            "title": "Will the RBI Raise Rates on Dec 4? Most Economists Expect a Quarter-Point Hike as Inflation Tops 6% - NiftyTrader",
-            "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5haEMtTnI1ZWdHbEZ3RGlBOUk5aXpSRGNwZ2czTXlYRkFnWDh6OVF5U3pmcnAxYlk4bGlnTXA0UDgwZDdET29sU012TEk1MXlhOFM0eFlCbXhGUkEtQy1zdjgxQlNub1R0ZHVuM2NaT3FBVWZJX0E?oc=5"
+            "source": "The Economic Times",
+            "title": "RBI may surprise markets with 50-bps rate hike in December as inflation risks mount: Nomura - The Economic Times",
+            "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQWmVNVS1zM1E0ZFhmQW05b3VOR0wyQUdfM3lMdjdXOGYyWVBVZGtWVExJY21LYUxQMzJPd0FsRHFuX0VFaWVjUVFOYS1SbXFxQlV3UWhacHhIN0FpbXBNZGExQUFnU1dfNU1ITWt1alFfektwR0NERkY1WVQ0cTU3VThhakw4ZmM2Yk11d0VaaWdhM1BUazVudkFmLXNKazB4Q0xHY3VfYVIxakx0Z2ZQcmpPanNvWDRfellROWhqakFkSU1IOHNuX2p0a0JTRlB1N2tFYTNkV3FrZFp3X0VJRE40Mm5HejJ0cUFndzJ6OFlfaFlUWFVr0gH8AUFVX3lxTE94M3h2eEo5S3VqZmtDaENWZkZ2ZEhHTEwzRmljYTc1a284N25ieGxsQi1UTzduU3ZYX2pycTl4Sjk1elFhYzRxRWJZbkg2YzJ5R0p2cjFocnhSel9wTURmSU9ZeVNEbjNfaElRWkxUelg5Q2xoSTloYXpxOEU5OEZ4cTcyMVJvOWF6dlRGcUo5SlNTamdlTk5CR0ppbVEwSGxrZHNUc3BtUGZ6ZGd5RnhpdXdBSWdXRGFORmxIZGdVcXpDTG1oYVRHall2MlZRSnpyMklOVDlsM09HR29MZ1BsU3oyUTlZejRsUThLLW9wYjVZQTNjWFVvSkZZRA?oc=5"
+          },
+          {
+            "source": "The Economic Times",
+            "title": "India bonds decline ahead of fresh debt sale as elevated oil prices fan inflation worries - The Economic Times",
+            "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPeW5oTWdXUXVOSFVNMWJsY3A4RklDQ0w3UWhVLVNMYm1zaTZZQzVSSl9HN0w2VFNReEhYSWZRbFRIU244ZUVmLTNlTnE1M2tHOXhTX21zUnhLNmo3OXh0SjNBNkxFOEdTQi1Db2ZPeTk1VDVYSHZlMmx4U1VUbjBhcFR2a1hobXEzazlNTzRCM2h2eDNxT1RnMUY4TGN2R3htMVEyaVhJVldPMklENGwxM3pMZ0RBRjFsQ0tQREtsajY0T2FIbVh3TGdjT242X0NGUkdqYzk5NF9OSXRta0dxaHE1bHF3RmE0TDAwS19B0gHzAUFVX3lxTFBjNXZYaW5VbVJIZEhQczlrN3JPQjc5XzlvUkUwQlRQSFBfaGlfVjF5TmF2UE5kUm95cjNXdmVFVmNUR2ZqaXhTODFMZjRYaUFaQzExMDh2S1QtQUZsM3B2UVlMOTIycmlSd1JUc3pwanRZLWRRaDBkcTFFS1VPMmQwZm9VaTAxamR1bllHaGpPTURzZ0JyNUh4Mk1idTBFaTc3Z05iRWRjak1MRmI0aUlmNG44anlZeEdhT0treTYwMWxhdkVvYjhFdnl3eFdzMjhiQ3hKRkV6b1hBZ1BpRzZTeUk2U29lOVFxRHRnQW8zYk12aw?oc=5"
           },
           {
             "source": "The Economic Times",
             "title": "India bonds tumble as Brent tops $95 per barrel, RBI flags food inflation risks - The Economic Times",
-            "url": "https://news.google.com/rss/articles/CBMixwJBVV95cUxPRnVqWnFVS0lpZVBGQU9NcDAxeURXRzVJX3E3R1YwZFNKSUZqYTF3N1o0d2NuQjZKWC0wcUduYURiVUs3NEprRG1CbnVpTDBpaWxFbVVRQVo3eExZY09rdDltX0x3SHFqaWVnMmpLTEZHOVg4cjRUc3BuME5BV1UzMXczQUI1VUVHV1prVUtQdEJHRUc0UDNvbFhkYW9IQ0Y5N0Rkajh0M251aWRJU08xNmtMVUo5T0NCbTJOaEhQLUtUN3ZPS3A0SEwyV3kxWDUwQzhOUTJfQ1VMY0p3OTZLa0p2aEx6aUhJSlFaN0NaSWVCSnVfQmRlMmYxTzdjeElwcUZjR29PTHBobFJCSWh3SUwyN1U0NEpsd2JlVjhBcjJzdlVJb3FoRURGMXdrcWJVaUFxOWdoV05qcVVhNGMwcVg2RmZYbWPSAeMBQVVfeXFMTU9hdFJYa3JMY3dIZjFGOVVLc2NCUUN1NlFIeGlJU0RJSjJ0X1NvOG1jY3FCaTJJMEs4Rm9pNkJ3eFRTc1EzVGtkazlZcWVTaGZxYXJKV3ItdUM5VkFWeExxRGVnNWJ6clc1bTNBUjdzMTdLTzV1YTIxM1VZd003Nk9tV1VKSkZLdTgzR3RvN0kyYkpkVDhOb2Y5VkxWd2oyZjQ2QWtkR3gyWFREWi1qWVZNb0NGc1l1VllSX2Njd1NXN1FDYThBV3QyRUtUVDVWZ0lvSDZVR2kwdTNYMm8wa0l1TlE?oc=5"
+            "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPd1d0S1UzNm5Kei1JRUZSZ3FLeFBVNm5YQ3BJcEZYb1JfZkZXTHFfd0ZWVHhOQUZDUl9VeEJPcjhUVzY3ODJaUjMwbElBNjFNck5ZLTd2LUNhdmR1RUc2OE5vb2dQYWU3a3pFZUhTbDA0VjNNX25mdzZEOGtSWjF2VTRySzFpcEtkek9FU3c3clktZFpTbmdwUFVJSE9fZXFhRkNnWklsWTFFQ2JST3Q0YUV6ZnFsci0tclA3QlZXQ2tXV3RQWXFWaG04ZW11OENoR2s5T05QLXd2UjcwblHSAeMBQVVfeXFMTmtVR21jeGdSWjF6QUJrdEdBcGU0SzgxeW9pY29haFdyaFBLakNxdWlnX3lDdVMzLWNPQ2hpQ0MxMGQ2ZlUyTktBbDZyMEhkeVV6OVFZTEgyS2ZhanN4dmFJM195dV9FQlh5QzdWN19UQV9mOEY1NDRLMFBtRlFqa0NCUHBPUHltRzUxaFJwNWVseVI4bXppSVhQOC14TjQza3k4RVVWcGNyR2xKb2VtcVhYMXFRdzlWSzU1RkNLc1diRjNNbUJGX0RTRVJfWU1GVHp4UXNyRVVTZG53bWNZUFE3bW8?oc=5"
           },
           {
-            "source": "The Times of India",
-            "title": "RBI flags rising inflation, says economist on firm footing - The Times of India",
-            "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxObzlLc1ltbnNKNW9Ya3MxWkdDVUNDaGh5NVA0TFNmTWs4N0ZBYVlMNFdLMWZzV1IzODlaaTNwVDZILV9ERUM3OEVYY2VSaFpLQ3E5a2ljRHhKRmdzXy1RVEhKLTl2RGg1WlBoTVdMVlp5R0JBUUthb3dEaFdla3dVWHBfN3pTOVdvdFJzcnlaVzBZNVpwMlg5MXFEakQyRXZkLWhNN0tpZ3VMZjNRUjZJSmZWcm13enJaYTJONGdTVW05MVdqVWRHU2cwUFRRY1Q1ejdkcEFRWHRTaW_SAeABQVVfeXFMTl9tODlqRGhjd1FMRC1sMTZsOXQwenNnMVpsMEMyaS1Dcms1VkF1QUFxX0JEd0duV1J1YlhZYXcyRExFbmI1T25GR1dIdDB1QnMtX1lPM0dRSmdFdmFtV3BjRnhWdVRsWlRrQUg2ZnJUcFg0RXZ2WXpISWNORWpaWE1mMUJXMk8wQkJvajN5Qlp4d3ZPZWt0M1U3VVJ5b0ZuSFoyYWh6SW8yeEJ5eG5lZWZ6RnpzNzcxQUZ2LUNROTNrdHRyREtfS0tWWXcybFlDaFM3RkN0T2VCWmh4bUJMWEo?oc=5"
-          },
-          {
-            "source": "The Economic Times",
-            "title": "RBI may opt for 25 bps rate hike as oil eases, inflation risks persist: Baroda BNP Paribas MF CIO - The Economic Times",
-            "url": "https://news.google.com/rss/articles/CBMi5wJBVV95cUxOMzFYbnF3emNwdHRtcmdsOGl5eHA1RTFzaDZWV0dZRUcyOG1XVlpJWm52UE11dnVRQkxlR2xHWFN2enVqdUhqdEpzaTRnTjEzaWp2Y0M1WTYwdXNheUN0YjItdFZGT3FRMG9pODhsaTJ1Nkk1ZmJDaFZkelB0a3A1RkJiVk0tQUFrV0hLRVkwRFNLRVBEeFpFUkVwM1pzWkRxZDNqeEFHSmF3RUJQTUxqbjlvdDFlZjlvSHJGeGJyTmV3RkdTTUN6ZDJsdWVRNFZCek1RczZMWDhmY1l5WnBMTlVmb19IdjFhSXVmRHR4NXlzRFJ5S0NTVnpsbUwtam1UNHdQbDZuaW8yZjUzNUhzY0pSbWt4VHAxUjA3b24wLVRtZ1FvUkhScnlHUDE2eVNaWXMzem9FYml5cXBjQ05QTDlPbjdJV0RMdDNPakREZk5QT0ExMXdZTE5qNHRrOFoxalN1azZyWdIBgwJBVV95cUxQTmVYbThTMHp5ZHRlRjVDMTNYTFdKdmZOMm1zNVVjSUk5MlVpYklBWUp3cHF0eWR6REJWTEM1SC1HOWpxTTJiX1FxYVN3YmlEUTJsRzVWekM3QVRDaEwzd3JUN1VqczM3bHpxX0ZUWUJhOEZUMjdlNTltX3ZNWVFZbldBbkFSLUVFTXZOcFBBVG5xYks4aGZtZUZQU3NzV0VuTWJBMkk1Rld6NWRCTWREQmxOWE40bUpOWHBzb3k2bUlKd3owVVJ4bkNiN1NEbWg5SGc3Y2xfZUZPTllaaDZjZFZsWEFfYm5ueDNxX3RoT3FmYlZkcFNka0ZhVUVsVzYwbm9z?oc=5"
+            "source": "NiftyTrader",
+            "title": "Will the RBI Raise Rates on Dec 4? Most Economists Expect a Quarter-Point Hike as Inflation Tops 6% - NiftyTrader",
+            "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5haEMtTnI1ZWdHbEZ3RGlBOUk5aXpSRGNwZ2czTXlYRkFnWDh6OVF5U3pmcnAxYlk4bGlnTXA0UDgwZDdET29sU012TEk1MXlhOFM0eFlCbXhGUkEtQy1zdjgxQlNub1R0ZHVuM2NaT3FBVWZJX0E?oc=5"
           }
         ],
         "outlets": 4,
         "region": "India",
         "state": "RISING",
-        "title": "Will the RBI Raise Rates on Dec 4? Most Economists Expect a Quarter-Point Hike as Inflation Tops 6% - NiftyTrader",
+        "title": "RBI may surprise markets with 50-bps rate hike in December as inflation risks mount: Nomura - The Economic Times",
         "topic": "inflation"
       }
     ],
@@ -355,7 +332,7 @@
       }
     ]
   },
-  "today": "2026-11-26",
+  "today": "2026-11-27",
   "trends": {
     "google": "Google Trends US daily list answered (10 topics). None of today's search trends matched.",
     "mode": "trends",

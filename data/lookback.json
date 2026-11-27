@@ -2,189 +2,223 @@
   "calls": [],
   "escalated": [
     {
-      "note": "New since 2026-11-19 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "Winter Weather Advisory"
-    },
-    {
-      "note": "New since 2026-11-19 · now ALERT",
+      "note": "New since 2026-11-20 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
       "title": "Influenza A(H5N1) - United States of America"
     },
     {
-      "note": "STANDBY → ALERT since 2026-11-19",
-      "related": 1,
+      "note": "New since 2026-11-20 · now ALERT",
+      "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "sourceCount": 1,
-      "title": "CVE-2025-41450 Danfoss AK-SM 800A Series Improper Authentication Vulnerability"
+      "title": "Unpatched Cacti Zero-Day Enables RCE in Just Four HTTP Requests via Guest Access"
     },
     {
-      "note": "New since 2026-11-19 · now ALERT",
+      "note": "New since 2026-11-20 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "CVE-2026-103406 Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router OS Command Injection Vulnerability"
+    },
+    {
+      "note": "New since 2026-11-20 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "CVE-2026-133469 Vates Xen Orchestra Improper Validation of Specified Type of Input Vulnerability"
+    },
+    {
+      "note": "New since 2026-11-20 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "CVE-2023-25914 Danfoss AK-SM 800A Series Path Traversal Vulnerability"
+    },
+    {
+      "note": "New since 2026-11-20 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "The US Government Is Under AI Cyberattack - Forbes"
+    },
+    {
+      "note": "New since 2026-11-20 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
       "title": "An unclassified CIA system was breached in a cyberattack, AP source says - Federal News Network"
     },
     {
-      "note": "New since 2026-11-19 · now ALERT",
+      "note": "New since 2026-11-20 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Was Japan’s Leader Snubbed at China’s Big Summit? A Visual Evaluation. - The New York Times"
+      "title": "Iran accused of deadly drone attack in Kuwait that sparks EU call to step up pressure on Tehran - CBS News"
     },
     {
-      "note": "New since 2026-11-19 · now ALERT",
+      "note": "New since 2026-11-20 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "EU plans sports ban in sweeping new Russia sanctions proposal - Al Jazeera"
+      "title": "Solomon Islands signs treaty with Australia that checks China's influence in the South Pacific - AP News"
     },
     {
-      "note": "New since 2026-11-19 · now ALERT",
+      "note": "New since 2026-11-20 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "ICC president thanks Japan for early 2027 payment as US sanctions squeeze the court - AP News"
+      "title": "ICC judge Kimberly Prost tries war crimes. She’s a target of US sanctions - Al Jazeera"
     },
     {
-      "note": "New since 2026-11-19 · now STANDBY",
+      "note": "New since 2026-11-20 · now STANDBY",
       "related": 0,
       "relatedSources": [],
       "severity": "STANDBY",
       "source": "",
-      "title": "G7 finance ministers look to rein in tech giants at French meeting - Yeni Safak English"
+      "title": "G7 Engagement Group: The Young Ambassadors Society is recruiting the Italian Delegates for the Y7 - Ministero degli Affari Esteri e della Cooperazione Internazionale"
     }
   ],
   "fizzled": [
     {
-      "note": "On the board 2026-11-19 at ALERT, absent now.",
+      "note": "On the board 2026-11-20 at ALERT, absent now.",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
       "title": "M5.8 150 km SW of Merizo Village, Guam"
     },
     {
-      "note": "On the board 2026-11-19 at ALERT, absent now.",
+      "note": "On the board 2026-11-20 at ALERT, absent now.",
+      "related": 2,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "sourceCount": 1,
+      "title": "China-Linked Hackers Exploit Critical VMware vCenter Zero-Day to Gain Admin Access and Steal Data"
+    },
+    {
+      "note": "On the board 2026-11-20 at ALERT, absent now.",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Cyberattack may have exposed Chase Bank and Mastercard customer data - The Washington Post"
+      "title": "New Unpatched Windows 0-Day FastUnlock Lets Someone Holding a Locked PC Run Programs on It"
     },
     {
-      "note": "On the board 2026-11-19 at ALERT, absent now.",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "Newly Patched VMware vCenter Flaw Exploited as Zero-Day by Chinese APT"
-    },
-    {
-      "note": "On the board 2026-11-19 at ALERT, absent now.",
+      "note": "On the board 2026-11-20 at ALERT, absent now.",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
       "title": "CVE-2024-10441 Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability"
     },
     {
-      "note": "On the board 2026-11-19 at ALERT, absent now.",
+      "note": "On the board 2026-11-20 at ALERT, absent now.",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Ukraine: Civilian casualties in 2026 already far exceed previous years’ tolls - UN News"
+      "title": "Trump, Xi and Putin Seek to Project Power at Their First Summit - The New York Times"
     },
     {
-      "note": "On the board 2026-11-19 at ALERT, absent now.",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "For Trump, the meeting was the whole point after trilateral summit with Xi and Putin - NPR"
-    },
-    {
-      "note": "On the board 2026-11-19 at ALERT, absent now.",
+      "note": "On the board 2026-11-20 at ALERT, absent now.",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
       "title": "Internet services disrupted across Pakistan due to undersea cable fault - Daily Ausaf"
     },
     {
-      "note": "ALERT → STANDBY since 2026-11-19",
+      "note": "ALERT → STANDBY since 2026-11-20",
       "related": 0,
       "relatedSources": [],
       "severity": "STANDBY",
-      "title": "Chikungunya virus disease - Switzerland"
+      "title": "Amazon says Chinese hackers used Cairn AI tool to discover apparent zero-day during attack on university"
     },
     {
-      "note": "ALERT → STANDBY since 2026-11-19",
+      "note": "ALERT → STANDBY since 2026-11-20",
       "related": 0,
       "relatedSources": [],
       "severity": "STANDBY",
-      "title": "Iran widens Gulf attacks by targeting U.S. air base in Kuwait and sites in Bahrain - PBS"
+      "title": "COP31: UN Climate summit enters final phase with no deal in sight after fossil fuels omitted from draft - DW.com"
     }
   ],
   "newSince": [
     {
-      "note": "New since 2026-11-19 · now ALERT",
-      "related": 0,
-      "relatedSources": [],
-      "severity": "ALERT",
-      "title": "Winter Weather Advisory"
-    },
-    {
-      "note": "New since 2026-11-19 · now ALERT",
+      "note": "New since 2026-11-20 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
       "title": "Influenza A(H5N1) - United States of America"
     },
     {
-      "note": "STANDBY → ALERT since 2026-11-19",
-      "related": 1,
+      "note": "New since 2026-11-20 · now ALERT",
+      "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "sourceCount": 1,
-      "title": "CVE-2025-41450 Danfoss AK-SM 800A Series Improper Authentication Vulnerability"
+      "title": "Unpatched Cacti Zero-Day Enables RCE in Just Four HTTP Requests via Guest Access"
     },
     {
-      "note": "New since 2026-11-19 · now ALERT",
+      "note": "New since 2026-11-20 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "CVE-2026-103406 Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router OS Command Injection Vulnerability"
+    },
+    {
+      "note": "New since 2026-11-20 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "CVE-2026-133469 Vates Xen Orchestra Improper Validation of Specified Type of Input Vulnerability"
+    },
+    {
+      "note": "New since 2026-11-20 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "CVE-2023-25914 Danfoss AK-SM 800A Series Path Traversal Vulnerability"
+    },
+    {
+      "note": "New since 2026-11-20 · now ALERT",
+      "related": 0,
+      "relatedSources": [],
+      "severity": "ALERT",
+      "title": "The US Government Is Under AI Cyberattack - Forbes"
+    },
+    {
+      "note": "New since 2026-11-20 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
       "title": "An unclassified CIA system was breached in a cyberattack, AP source says - Federal News Network"
     },
     {
-      "note": "New since 2026-11-19 · now ALERT",
+      "note": "New since 2026-11-20 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "Was Japan’s Leader Snubbed at China’s Big Summit? A Visual Evaluation. - The New York Times"
+      "title": "Iran accused of deadly drone attack in Kuwait that sparks EU call to step up pressure on Tehran - CBS News"
     },
     {
-      "note": "New since 2026-11-19 · now ALERT",
+      "note": "New since 2026-11-20 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "EU plans sports ban in sweeping new Russia sanctions proposal - Al Jazeera"
+      "title": "Solomon Islands signs treaty with Australia that checks China's influence in the South Pacific - AP News"
     },
     {
-      "note": "New since 2026-11-19 · now ALERT",
+      "note": "New since 2026-11-20 · now ALERT",
       "related": 0,
       "relatedSources": [],
       "severity": "ALERT",
-      "title": "ICC president thanks Japan for early 2027 payment as US sanctions squeeze the court - AP News"
+      "title": "ICC judge Kimberly Prost tries war crimes. She’s a target of US sanctions - Al Jazeera"
     },
     {
-      "note": "New since 2026-11-19 · now STANDBY",
+      "note": "New since 2026-11-20 · now STANDBY",
       "related": 0,
       "relatedSources": [],
       "severity": "STANDBY",
       "source": "",
-      "title": "G7 finance ministers look to rein in tech giants at French meeting - Yeni Safak English"
+      "title": "G7 Engagement Group: The Young Ambassadors Society is recruiting the Italian Delegates for the Y7 - Ministero degli Affari Esteri e della Cooperazione Internazionale"
     }
   ],
-  "note": "Compared with the stored board on 2026-11-19.",
-  "since": "2026-11-19"
+  "note": "Compared with the stored board on 2026-11-20.",
+  "since": "2026-11-20"
 }
